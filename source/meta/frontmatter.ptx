@@ -5,12 +5,11 @@
 
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
   <titlepage>
-    <author>
-      <personname>Me</personname>
-      <department>My department</department>
-      <institution>My school</institution>
-    </author>
-    <date><today/></date>
+        <author>
+            <personname>TBIL Institute 2021</personname>
+            <email>drew.lewis+tbil2021@southalabama.edu</email>
+        </author>
+        <date><today /></date>
   </titlepage>
 
   <colophon>

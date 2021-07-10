@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xml:id="LT" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Limits (LT)</title>
+    <objectives>
+        <ul>
+            <xi:include href="outcomes/main.ptx"/>
+        </ul>
+    </objectives>
+    <xi:include href="./01.ptx"/>
+    <xi:include href="./02.ptx"/>
+    <xi:include href="./03.ptx"/>
+    <xi:include href="./04.ptx"/>
+    <xi:include href="./05.ptx"/>
+    <xi:include href="./06.ptx"/>
+</chapter>
