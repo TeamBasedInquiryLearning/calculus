@@ -1,7 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<li xmlns:xi="http://www.w3.org/2001/XInclude">
-    <xi:include href="./question.ptx"/>
-    <ul>
+<objectives xmlns:xi="http://www.w3.org/2001/XInclude">>
+    <introduction>
+        <p>
+How do we measure <q>close-by</q> values?
+        </p>
+        <p>
+By the end of this chapter, you should be able to...
+        </p>
+    </introduction>
+    <ol>
         <li>
             <xi:include href="./01.ptx"/>
         </li>
@@ -20,5 +27,5 @@
         <li>
             <xi:include href="./06.ptx"/>
         </li>
-    </ul>
-</li>
+    </ol>
+</objectives>
