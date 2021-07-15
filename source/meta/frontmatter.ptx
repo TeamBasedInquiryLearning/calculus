@@ -5,56 +5,91 @@
 
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
   <titlepage>
-        <author>
-            <personname>TBIL Institute 2021</personname>
-            <email>drew.lewis+tbil2021@southalabama.edu</email>
-        </author>
+      <author>
+        <personname>TBIL Institute 2021</personname>
+        <email>drewlewis@southalabama.edu</email>
+      </author>
+
+  <credit>
+    <title>Editors</title>
+      <author>
+        <personname>Steven Clontz</personname>
+        <department>Department of Mathematics and Statistics</department>
+        <institution>University of South Alabama</institution>
+        <email>sclontz@southalabama.edu</email>
+      </author>
+      <author>
+        <personname>Drew Lewis</personname>
+        <department>Department of Mathematics and Statistics</department>
+        <institution>University of South Alabama</institution>
+        <email>drewlewis@southalabama.edu</email>
+      </author>
+  </credit>
+  <credit>
+    <title>Contributing Authors</title>
+    <author>
+      <personname>TODO</personname>
+      <department>TODO</department>
+      <institution>TODO</institution>
+      <email>todo@todo.edu</email>
+    </author>
+    <author>
+      <personname>TODO</personname>
+      <department>TODO</department>
+      <institution>TODO</institution>
+      <email>todo@todo.edu</email>
+    </author>
+  </credit>
         <date><today /></date>
   </titlepage>
 
+
   <colophon>
     <website>
-      <name><c>my-website.org</c></name>
-      <address>http://my.website.org</address>
+        <name>
+            Transforming Lower Division Undergraduate Mathematics Through Team-Based Inquiry Learning
+            <c>https://sites.google.com/southalabama.edu/tbil/</c>
+        </name>
+        <address>https://sites.google.com/southalabama.edu/tbil/</address>
     </website>
 
     <copyright>
       <!-- In addition to specifying the copyright holder, you should  -->
       <!-- include a license, such as the cc-by-sa license shown below -->
       <!-- so people reading your book know how they can use it.       -->
-      <year>2020<ndash/>2021</year>
-      <holder>Me</holder>
+      <year>2021<ndash/>2021</year>
+      <holder>Steven Clontz and Drew Lewis</holder>
       <!-- <minilicense><image source="../images/by-sa.png" /></minilicense> -->
       <shortlicense>
-        <!-- <image source="../images/by-sa.png" width="15%"/>  -->
-        This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/">http://creativecommons.org/licenses/by-sa/4.0/</url>
+          Additional copyright and licensing information may be found at our
+          <url href="https://github.com/StevenClontz/cal1-tbil-2021">GitHub repository</url>.
       </shortlicense>
 
     </copyright>
 
   </colophon>
 
-  <dedication>
+<!--  <dedication>
     <p>
       For ...
     </p>
-  </dedication>
+  </dedication> -->
 
-  <acknowledgement>
+<!--  <acknowledgement>
     <p>
       I would like to thank...
     </p>
 
-  </acknowledgement>
+  </acknowledgement> -->
 
-  <preface xml:id="preface">
     <!-- You should be a little careful about what you put here -->
     <!-- Avoid elements that should have a number, for example  -->
+<!--  <preface xml:id="preface">
     <p>
       About this book:
     </p>
 
-  </preface>
+  </preface> -->
 
   <!-- You can have more than one preface. -->
 </frontmatter>
