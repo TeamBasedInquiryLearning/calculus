@@ -7,15 +7,15 @@
 <!-- with all notation generated, and finally the index.  -->
 <backmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="backmatter">
   <title>Backmatter</title>
-  
-  <solutions divisional="hint">
+
+<!--  <solutions divisional="hint">
     <title>Selected Hints</title>
   </solutions>
-  
+
   <solutions divisional="solution">
     <title>Selected Solutions</title>
   </solutions>
-  
+
   <appendix>
     <title>List of Symbols</title>
     <notation-list/>
@@ -24,8 +24,16 @@
   <index>
     <title>Index</title>
     <index-list/>
-  </index>
+  </index>-->
 
+  <colophon xml:id="tbil-rl">
+      <title>TBIL Resource Library</title>
+      <p>
+This work is made available as part of the
+<url href="https://sites.google.com/southalabama.edu/tbil">TBIL Resource Library</url>,
+a product of <url href="https://nsf.gov/awardsearch/showAward?AWD_ID=2011807">NSF DUE Award #2011807</url>.
+      </p>
+  </colophon>
   <colophon xml:id="pretext">
       <title>Authored with <pretext/></title>
       <p>
