@@ -26,10 +26,11 @@
     <index-list/>
   </index>
 
-  <colophon>
-    <p>
-      This book was authored in <pretext />.
-    </p>
+  <colophon xml:id="pretext">
+      <title>Authored with <pretext/></title>
+      <p>
+This book was authored using the <url href="https://pretextbook.org"><pretext/></url> markup language.
+      </p>
   </colophon>
 </backmatter>
 

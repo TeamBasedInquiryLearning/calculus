@@ -44,7 +44,7 @@
   </titlepage>
 
 
-  <colophon>
+  <colophon xml:id="colophon">
     <website>
         <name>
             Transforming Lower Division Undergraduate Mathematics Through Team-Based Inquiry Learning
@@ -53,19 +53,25 @@
         <address>https://sites.google.com/southalabama.edu/tbil/</address>
     </website>
 
-    <copyright>
-      <!-- In addition to specifying the copyright holder, you should  -->
-      <!-- include a license, such as the cc-by-sa license shown below -->
-      <!-- so people reading your book know how they can use it.       -->
-      <year>2021<ndash/>2021</year>
-      <holder>Steven Clontz and Drew Lewis</holder>
-      <!-- <minilicense><image source="../images/by-sa.png" /></minilicense> -->
-      <shortlicense>
-          Additional copyright and licensing information may be found at our
-          <url href="https://github.com/StevenClontz/cal1-tbil-2021">GitHub repository</url>.
-      </shortlicense>
+    <xi:include href="./copyright.ptx" />
 
-    </copyright>
+      <p>
+This work includes materials used under license from the following works:
+      </p>
+      <ul>
+          <li>
+              <p><pubtitle>Active Calculus - single variable</pubtitle></p>
+              <ul>
+                  <li>
+                      <p><url href="https://activecalculus.org/ACS.html"/></p>
+                  </li>
+                  <li>
+                      <p>CC BY-SA 2.0</p>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+
 
   </colophon>
 
