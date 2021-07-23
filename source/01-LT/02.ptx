@@ -9,5 +9,38 @@
             </li>
         </ul>
     </objectives>
-    <p>foo</p>
+    <activity xml:id="activity-limits-numerically">
+        <figure xml:id="figure-limit-numerical-cts">
+            <image source="limit-numerical-cts.png">
+<!--                 <latex-image>
+                \begin{tikzpicture}
+                    \begin{axis}[
+                            xmin=0, xmax=0.2, % x scale
+                            ymin=0, ymax=1, % y scale
+                            domain=0:1,% added, key improvements
+                            xticklabel style={/pgf/number format/.cd, fixed},% formattin ticks' labels
+                            font=\large,
+                            line width=1pt,
+                            tick style={line width=0.8pt}
+                    ]
+                        \addplot [blue,no marks]    {1/(1e9*x/11.778*3.273e-8 - 3.273e-8 + 1)};
+                        \addplot [red,mark=square*] coordinates{(.125, .744)};
+                    \end{axis}
+                \end{tikzpicture}
+                </latex-image> -->
+            </image>
+            <caption>PUT IN THE FIGURE</caption>
+        </figure>
+        <table xml:id="table-limit-numerical-cts">
+            <tabular></tabular>
+        </table>
+        <p><xref ref="table-limit-numerical-cts" /> has values for the function given in <xref ref="figure-limit-numerical-cts" />.  Using this information, what is the best approximation for the limit of the function as x goes to -2?</p>
+        <ol label="A">
+            <li><p></p></li>
+            <li><p></p></li>
+            <li><p></p></li>
+            <li><p></p></li>
+        </ol>
+
+    </activity>
 </section>

@@ -13,3 +13,6 @@ error-syntax.log
 # cocalc
 *.term
 !.gitignore
+
+# static files not put into Git
+static

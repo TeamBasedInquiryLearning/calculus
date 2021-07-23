@@ -68,12 +68,6 @@
     </slide>
 </xsl:template>
 
-<xsl:template match="task">
-    <li>
-        <xsl:apply-templates select="*" mode="slideshow-copy"/>
-    </li>
-</xsl:template>
-
 <!-- Identity template : copy all text nodes, elements and attributes -->
     <!-- modified from https://stackoverflow.com/a/14985831 -->
     <!-- Identity template : copy all text nodes, elements and attributes -->   
@@ -82,6 +76,18 @@
             <xsl:apply-templates select="@*|node()" mode="slideshow-copy" />
         </xsl:copy>
     </xsl:template>
+
+<xsl:template match="xref" mode="slideshow-copy">
+    <xsl:variable name="target-id">
+        <xsl:call-template name="id-lookup-by-name">
+            <xsl:with-param name="name" select="@ref"/>
+        </xsl:call-template>
+    </xsl:variable>
+    <xsl:variable name="target" select="id($target-id)"/>
+    <xsl:apply-templates select="$target" mode="type-name"/>
+    <xsl:text> </xsl:text>
+    <xsl:apply-templates select="$target" mode="number"/>
+</xsl:template>
 
 <xsl:template match="image" mode="slideshow-copy">
     <xsl:choose>

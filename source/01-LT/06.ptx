@@ -9,5 +9,286 @@
             </li>
         </ul>
     </objectives>
-    <p>foo</p>
+<!-- start of activities     -->
+       <activity estimated-time="5">
+        <introduction>
+            <p>
+                Consider the graph in <xref ref="vert-asymp" />.
+            </p>
+            <figure xml:id="vert-asymp">
+                <image width="50%" source="vert-asymp.png" />
+                <caption>Graph of <m> \frac{1}{x^2}</m></caption>
+            </figure>
+
+        </introduction>
+        <task>
+            <p>
+Which of the following best describes the relationship between the line x=0 and the graph of the function?
+            </p>
+            <ol label="A">
+                <li><p>The limit is 0</p></li>
+                <li><p>The limit is positive infinity </p></li>
+                <li><p>The limit does not exist </p></li>
+                <li><p>This limit is negative infinity</p></li>
+            </ol>
+        </task>
+        <task>
+            <p>
+                Which of the following best describes the relationship between the line <m>x=0 </m> and the graph of the function?
+            </p>
+            <ol label="A">
+                <li><p>The line <m>x=0</m> is a horizontal asymptote for the function</p></li>
+                <li><p>The function is not continuous at the point <m>x=0</m> </p></li>
+                <li><p>The function is moving away from the line <m>x=0</m> </p></li>
+                <li><p>The function is getting closer and closer to the line <m>x=0</m></p></li>
+                <li><p>The function has a jump in outputs around <m>x=0</m></p></li>
+            </ol>
+        </task>
+    </activity>
+
+ <definition>
+        <statement>
+      <p> A function has a <term>vertical asymptote</term> at <m>x=a</m> when
+<!--             <me>
+    \lim_{x\to a} f(x) = + \infty
+            </me> -->
+    or
+<!--             <me>
+    \lim_{x\to a} f(x) = - \infty
+            </me> -->
+The limit being equal to positive infinity means that we can make the output of <m>f(x)</m> as large as we want as long as we are sufficiently close to <m>x=a</m>. Similarly, the limit being equal to negative infinity means that we can make the output of <m>f(x)</m> as small as we want as long as we are sufficiently close to <m>x=a</m>.</p>
+        </statement>
+    </definition>
+
+
+    <activity estimated-time="5">
+        <introduction>
+            <p>
+                Which of the following functions have vertical asymptotes? Select all!
+<!-- TO-DO tabular+tikz with graphs of functions  e^x, ln(x), ln(x+3), 1/x, x^2, x+1/x-1, x^2+1/x-1, e^x-1/e^x+1 for now just some simple functions-->
+<!-- make sure to add a function that crosses the asymptote                 -->
+            </p>
+<!--         <sbsgroup> -->
+            <sidebyside>
+                <figure>
+                    <image>
+                    <latex-image>
+
+                        \begin{tikzpicture}[scale=0.6]
+                        \begin{axis}[
+                                axis x line=middle,
+                                axis y line=middle,
+                                 x label style={at={(axis description cs:1,-0.2)}},
+                                 y label style={at={(axis description cs:0.3,1)}},
+                                 ylabel=$y$,
+                                 xlabel=$x$
+                                ]
+                            \addplot[domain=-10:10, blue, ultra thick] {x^2};
+                        \end{axis}
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+                    <caption>A</caption>
+                </figure>
+                <figure>
+                    <image>
+                    <latex-image>
+                        \begin{tikzpicture}[scale=0.6]
+                        \begin{axis}[
+                                axis x line=middle,
+                                axis y line=middle,
+                                 x label style={at={(axis description cs:1,-0.2)}},
+                                 y label style={at={(axis description cs:0.3,1)}},
+                                 ylabel=$y$,
+                                 xlabel=$x$
+                                ]
+                            \addplot[domain=-10:10, blue, ultra thick] {3.2};
+                        \end{axis}
+                        \end{tikzpicture}
+                    </latex-image>
+                    </image>
+                    <caption>B</caption>
+                </figure>
+                <figure>
+                    <image>
+                    <latex-image>
+                        \begin{tikzpicture}[scale=0.6]
+                        \begin{axis}[
+                                axis x line=middle,
+                                axis y line=middle,
+                                 x label style={at={(axis description cs:1,-0.2)}},
+                                 y label style={at={(axis description cs:-0.2,1)}},
+                                 ylabel=$y$,
+                                 xlabel=$x$
+                                ]
+                        \end{axis}
+                        \draw[thick, blue] (0,1)--(1,0)--(2,3)--(3,1)--(4,1)--(5,2)--(6,2)--(6,4);
+                        \end{tikzpicture} \\
+                    </latex-image>
+                    </image>
+                    <caption>C</caption>
+                </figure>
+            </sidebyside>
+            <sidebyside>
+                <figure>
+                    <image>
+                    <latex-image>
+                        \begin{tikzpicture}[scale=0.6]
+                        \begin{axis}[
+                                axis x line=middle,
+                                axis y line=middle,
+                                 x label style={at={(axis description cs:1,0.6)}},
+                                 y label style={at={(axis description cs:0.3,1)}},
+                                 ylabel=$y$,
+                                 xlabel=$x$
+                                ]
+                            \addplot[domain=-10:-3, blue, ultra thick] {0.5*x-1};
+                            \addplot[domain=-1:5, blue, ultra thick] {x+1};
+                            \addplot[domain=7:10, blue, ultra thick] {-2*x+15};
+                        \end{axis}
+                        \end{tikzpicture}
+                    </latex-image>
+                    </image>
+                    <caption>D</caption>
+                </figure>
+                <figure>
+                    <image>
+                    <latex-image>
+                        \begin{tikzpicture}[scale=0.6]
+                        \begin{axis}[
+                                axis x line=middle,
+                                axis y line=middle,
+                                 x label style={at={(axis description cs:1,-0.2)}},
+                                 y label style={at={(axis description cs:-0.2,1)}},
+                                 ylabel=$y$,
+                                 xlabel=$x$
+                                ]
+                        \end{axis}
+                        \draw[thick,blue] (3,3) circle[radius=1.5];
+                        \end{tikzpicture}
+                    </latex-image>
+                    </image>
+                    <caption>E</caption>
+                </figure>
+                <figure>
+                    <image>
+                    <latex-image>
+                        \begin{tikzpicture}[scale=0.6]
+                        \begin{axis}[
+                                axis x line=middle,
+                                axis y line=middle,
+                                x label style={at={(axis description cs:1,-0.2)}},
+                                 y label style={at={(axis description cs:-0.2,1)}},
+                                 ylabel=$y$,
+                                 xlabel=$x$
+                                ]
+                                \end{axis}
+                        \draw [domain=0:6, samples=100, blue, thick] plot (\x, {1+cos(pi*\x r});
+                        \end{tikzpicture}
+                    </latex-image>
+                    </image>
+                    <caption>F</caption>
+                </figure>
+            </sidebyside>
+<!--         </sbsgroup> -->
+            <figure xml:id="figure-1-2">
+                <image width="50%" source="image-1.2.png" />
+                <caption>My figure caption</caption>
+            </figure>
+                   </introduction>
+
+<!-- old stuff to copy/paste  -->
+        <task>
+            <p>
+                Imagine moving along the graph toward the missing portion from the left, so that you are climbing up and to the right toward the obscured area of the graph. What <m>y</m>-value are you approaching?
+            </p>
+<!--             <p>EVIL updates...</p> -->
+            <ol label="A">
+                <li><p>0.5</p></li>
+                <li><p>1</p></li>
+                <li><p>1.5</p></li>
+                <li><p>2</p></li>
+                <li><p>2.5</p></li>
+            </ol>
+        </task>
+        <task>
+            <p>
+                Think of the same process, but this time from the right. You’re falling down and to the left this time as you come close to the missing portion. What <m>y</m>-value are you approaching?
+            </p>
+            <ol label="A">
+                <li><p>0.5</p></li>
+                <li><p>1</p></li>
+                <li><p>1.5</p></li>
+                <li><p>2</p></li>
+                <li><p>2.5</p></li>
+            </ol>
+        </task>
+    </activity>
+
+
+
+    <definition>
+        <statement>
+            <p>Let's define a <term>thing</term>.</p>
+        </statement>
+    </definition>
+    <activity estimated-time="15">
+        <introduction>
+            <p>An activity with three parts.</p>
+        </introduction>
+        <task>
+            <statement>
+                <p>Do this.</p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>Then this.</p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>Finally this.</p>
+            </statement>
+        </task>
+    </activity>
+    <theorem>
+        <statement>
+            <p>
+                For all right triangles,
+                <me>a^2+b^2=c^2</me>.
+            </p>
+        </statement>
+    </theorem>
+    <example>
+        <statement>
+            <p>For example, here's an example.</p>
+        </statement>
+    </example>
+    <observation>
+        <statement>
+            <p>Observe this frog.</p>
+            <figure>
+                <image source="frog.jpg"/>
+                <caption>An amphibian</caption>
+            </figure>
+        </statement>
+    </observation>
+    <remark>
+        <statement>
+            <p>Something that just needs to be said.</p>
+            <p>It has a picture.</p>
+            <figure>
+                <image width="50%">
+                    <latex-image>
+\begin{tikzpicture}
+    \draw (0,0) circle (2);
+\end{tikzpicture}
+                    </latex-image>
+                </image>
+                <caption>A circle</caption>
+            </figure>
+        </statement>
+    </remark>
 </section>
+

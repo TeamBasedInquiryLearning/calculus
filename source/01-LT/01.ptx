@@ -10,21 +10,106 @@
         </ul>
     </objectives>
     <activity estimated-time="10">
-        <statement>
-            <p>An activity with only one multiple choice question.</p>
-            <ol label="a">
-                <li><p>option a</p></li>
-                <li><p>option 2</p></li>
-                <li><p>option <m>\gamma</m></p></li>
-                <li><p>option IV</p></li>
+        <introduction>
+            <p>
+                In <xref ref="figure-1-1" /> the graph of a function is given, but something is wrong. The graphic card failed and one portion did not render properly. We can’t see what is happening in the neighborhood of <m>x=2</m>. 
+            </p>
+            <figure xml:id="figure-1-1">
+                <image width="50%" source="image-1.1.png" />
+                <caption>Graph...</caption>
+            </figure>
+
+        </introduction>
+        <task>
+            <p>
+                Imagine moving along the graph toward the missing portion from the left, so that you are climbing up and to the right toward the obscured area of the graph. What <m>y</m>-value are you approaching?
+            </p>
+<!--             <p>EVIL updates...</p> -->
+            <ol label="A">
+                <li><p>0.5</p></li>
+                <li><p>1</p></li>
+                <li><p>1.5</p></li>
+                <li><p>2</p></li>
+                <li><p>2.5</p></li>
             </ol>
-        </statement>
+        </task>
+        <task>
+            <p>
+                Think of the same process, but this time from the right. You’re falling down and to the left this time as you come close to the missing portion. What <m>y</m>-value are you approaching?
+            </p>
+            <ol label="A">
+                <li><p>0.5</p></li>
+                <li><p>1</p></li>
+                <li><p>1.5</p></li>
+                <li><p>2</p></li>
+                <li><p>2.5</p></li>
+            </ol>
+        </task>
     </activity>
+    <activity estimated-time="10">
+        <introduction>
+            <p>
+                In <!--<xref ref="figure-1-1" /> --> the same graph as in Activity 1.1.1 <!-- is there a way to ref. and activity-->, but now the graph is uncensored.
+            </p>
+           <!-- <figure xml:id="figure-1-2">
+                <image width="50%" source="image-1.2.png" />
+                <caption>My figure caption</caption>
+            </figure>
+-->
+        </introduction>
+        <task>
+            <p>
+               What is the value of <m>f(2)</m>?
+            </p>
+        </task>
+        <task>
+            <p>
+        What is the <m>y</m>-value that is approached as we move toward <m>x = 2</m> from the left?
+            </p>
+            <ol label="A">
+                <li><p>0.5</p></li>
+                <li><p>1</p></li>
+                <li><p>1.5</p></li>
+                <li><p>2</p></li>
+                <li><p>2.5</p></li>
+            </ol>
+        </task>
+        <task>
+            <p>
+                What is the <m>y</m>-value that is approached as we move toward <m>x = 2</m> from the right?
+            </p>
+            <ol label="A">
+                <li><p>0.5</p></li>
+                <li><p>1</p></li>
+                <li><p>1.5</p></li>
+                <li><p>2</p></li>
+                <li><p>2.5</p></li>
+            </ol>
+        </task>
+    </activity>
+    <remark>
+        <statement>
+            <p>
+             In Activity 1.1.1 and 1.1.2 we have been trying to understand what is happening as we approach a value on a graph.  This concept in mathematics is known as approaching a limit.
+            </p>
+        </statement>
+    </remark>
+    <activity estimated-time="15">
+        <introduction>
+            <p> Based on activities 1.1 and 1.2, in your groups write the definition of a limit.  (You can use concepts of limits from your daily life to motivate or define what a limit is.)
+            </p>
+        </introduction>
+    </activity>
+    
     <definition>
         <statement>
             <p>Let's define a <term>thing</term>.</p>
         </statement>
     </definition>
+    
+    
+    
+    
     <activity estimated-time="15">
         <introduction>
             <p>An activity with three parts.</p>

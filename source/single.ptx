@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <xi:include href="meta/docinfo.ptx" />
+
+  <book xml:id="cal1">
+    <title>Calculus 1 for Team-Based Inquiry Learning</title>
+    <subtitle>Single Section Preview</subtitle>
+
+    <xi:include href="meta/frontmatter.ptx" />
+
+      <chapter>
+          <title>Chapter</title>
+          <!-- update href with the section you want to edit -->
+          <xi:include href="01-LT/01.ptx"/>
+      </chapter>
+
+    <xi:include href="meta/backmatter.ptx" />
+  </book>
+</pretext>
