@@ -12,13 +12,23 @@
       <publication>publication/publication.ptx</publication>
       <output-dir>output/html</output-dir>
       <stringparam key="debug.project.number" value="the-way-it-should-be"/>
+      <stringparam key="commentary" value="yes"/><!-- temporary -->
     </target>
-    <target name="single">
+    <target name="instructor">
       <format>html</format>
-      <source>source/single.ptx</source>
+      <source>source/main.ptx</source>
       <publication>publication/publication.ptx</publication>
-      <output-dir>output/single</output-dir>
+      <output-dir>output/instructor</output-dir>
       <stringparam key="debug.project.number" value="the-way-it-should-be"/>
+      <stringparam key="commentary" value="yes"/>
+    </target>
+    <target name="subset">
+      <format>html</format>
+      <source>source/main-subset.ptx</source>
+      <publication>publication/publication-subset.ptx</publication>
+      <output-dir>output/instructor</output-dir>
+      <stringparam key="debug.project.number" value="the-way-it-should-be"/>
+      <stringparam key="commentary" value="yes"/>
     </target>
     <target name="latex">
       <format>latex</format>

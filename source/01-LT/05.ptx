@@ -9,5 +9,392 @@
             </li>
         </ul>
     </objectives>
-    <p>foo</p>
+    
+<!--   start of activities    -->
+    
+   <activity estimated-time="5">
+        <introduction>
+            <p>
+                    Consider the graph of the polynomial function <m>f(x) = x^3</m> . We want to think about what the long term behavior of this function might be. Which of the following best describes its behavior?
+            </p>
+            <figure>
+                <image/>
+                <caption>TO-DO add picture</caption>
+            </figure>
+
+        </introduction>
+
+            <ol label="A">
+                <li><p>As x gets larger the function x^3 gets larger and larger</p></li>
+                <li><p>As x gets more and more negative, x^3 gets more and more negative
+ </p></li>
+                <li><p>As x gets more and more positive, x^3 gets more and more negative
+ </p></li>
+                <li><p>As x gets smaller the function x^3 gets smaller and smaller</p></li>
+            </ol>
+   
+    </activity>
+
+<remark> <p>We say that the limit as x tends to negative infinity of x^3 is negative infinity and the limit as x tends to positive infinity of x^3 is positive infinity, in symbols </p>
+    <me>
+    \lim_{x \to + \infty} x^3 = + \infty \, ,  \, \lim_{x \to - \infty} x^3 = - \infty. </me>
+    </remark>
+
+   <activity estimated-time="5">
+        <introduction>
+            <p>
+                    Consider the graph of the polynomial function <m>f(x) = 1/ x^3</m> . We want to think about what the long term behavior of this function might be. Which of the following best describes its behavior?
+            </p>
+            <figure>
+                <image/>
+                <caption>TO-DO add picture</caption>
+            </figure>
+
+        </introduction>
+
+            <ol label="A">
+                <li><p> As x tends to positive infinity, 1/x^3 go to positive infinity</p></li>
+                <li><p>As x tends to negative infinity, 1/x^3 tends to 0
+ </p></li>
+                <li><p>As x tends to positive infinity, 1/x^3 tends to negative infinity
+ </p></li>
+                <li><p>As x tends to 0, 1/x^3 tends to 0</p></li>
+            </ol>
+   
+    </activity>    
+
+    <definition>
+        <statement>
+      <p> A function has a <term>horizontal asymptote</term> at <m>y=b</m> when </p>
+            <me>
+    \lim_{x\to +\infty} f(x) = b
+            </me>
+      <p> or </p>
+            <me>
+    \lim_{x\to -\infty} f(x) = b
+            </me>
+   <p> This means that we can make the output of <m> f(x)</m> as close as we want to <m>b</m>, as long as we take <m> x</m> large enough (or small enough).</p>
+        </statement>
+    </definition>
+    
+      <remark>
+        <statement>
+            <p>    We say that the function 1/x^3 has horizontal asymptote y=0 because the limit as x tends to positive infinity of 1/x^3 is 0. Alternatively, we could also justify it by saying that the limit as x goes to negative infinity is 0. </p>
+             </statement>
+        </remark>
+
+    <activity estimated-time="5">
+        <introduction>
+            <p>
+                Which of the following functions have horizontal asymptotes? Select all!
+<!-- TO-DO make the graphs prettier-->
+            </p>
+            <sidebyside>
+                <figure>
+                    <image>
+                    <latex-image>
+
+                        \begin{tikzpicture}[scale=0.6]
+                        \begin{axis}[
+                                axis x line=middle,
+                                axis y line=middle,
+                                 x label style={at={(axis description cs:1,-0.2)}},
+                                 y label style={at={(axis description cs:0.3,1)}},
+                                 ylabel=$y$,
+                                 xlabel=$x$
+                                ]
+                            \addplot[domain=-5:5, blue, ultra thick] {e^x};
+                        \end{axis}
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+                    <caption>A</caption>
+                </figure>
+                <figure>
+                    <image>
+                    <latex-image>
+                        \begin{tikzpicture}[scale=0.6]
+                        \begin{axis}[
+                                axis x line=middle,
+                                axis y line=middle,
+                                 x label style={at={(axis description cs:1,-0.2)}},
+                                 y label style={at={(axis description cs:0.3,1)}},
+                                 ylabel=$y$,
+                                 xlabel=$x$
+                                ]
+                            \addplot[domain=0.01:5, blue, ultra thick] {ln(x)};
+                        \end{axis}
+                        \end{tikzpicture}
+                    </latex-image>
+                    </image>
+                    <caption>B</caption>
+                </figure>
+                <figure>
+                    <image>
+                    <latex-image>
+                  \begin{tikzpicture}[scale=0.6]
+                        \begin{axis}[
+                                axis x line=middle,
+                                axis y line=middle,
+                                 x label style={at={(axis description cs:1,-0.2)}},
+                                 y label style={at={(axis description cs:0.3,1)}},
+                                 ylabel=$y$,
+                                 xlabel=$x$
+                                ]
+                            \addplot[domain=-5:-0.1, blue, ultra thick] {-1/x};
+                           \addplot[domain=0.1:5, blue, ultra thick] {-1/x};
+                        \end{axis}
+                        \end{tikzpicture}
+                    </latex-image>
+                    </image>
+                    <caption>C</caption>
+                </figure>
+            </sidebyside>
+            <sidebyside>
+                <figure>
+                    <image>
+                    <latex-image>
+                \begin{tikzpicture}[scale=0.6]
+                        \begin{axis}[
+                                axis x line=middle,
+                                axis y line=middle,
+                                 x label style={at={(axis description cs:1,-0.2)}},
+                                 y label style={at={(axis description cs:0.3,1)}},
+                                 ylabel=$y$,
+                                 xlabel=$x$
+                                ]
+                            \addplot[domain=-5:0.9, blue, ultra thick] { (5*x+1)/(x-1)};
+                        \addplot[domain=1.1:5, blue, ultra thick] { (5*x+1)/(x-1)};
+                        \end{axis}
+                        \end{tikzpicture}
+                    </latex-image>
+                    </image>
+                    <caption>D</caption>
+                </figure>
+                <figure>
+                    <image>
+                    <latex-image>
+                       \begin{tikzpicture}[scale=0.6]
+                        \begin{axis}[
+                                axis x line=middle,
+                                axis y line=middle,
+                                 x label style={at={(axis description cs:1,-0.2)}},
+                                 y label style={at={(axis description cs:0.3,1)}},
+                                 ylabel=$y$,
+                                 xlabel=$x$
+                                ]
+                            \addplot[domain=-2:-0.1, blue, ultra thick] { (e^x+1)/(e^x-1)};
+                        \addplot[domain=0.1:2, blue, ultra thick] { (e^x+1)/(e^x-1)};
+                        \end{axis}
+                        \end{tikzpicture}
+                    </latex-image>
+                    </image>
+                    <caption>E</caption>
+                </figure>
+                <figure>
+                    <image>
+                    <latex-image>
+                     \begin{tikzpicture}[scale=0.6]
+                        \begin{axis}[
+                                axis x line=middle,
+                                axis y line=middle,
+                                 x label style={at={(axis description cs:1,-0.2)}},
+                                 y label style={at={(axis description cs:0.3,1)}},
+                                 ylabel=$y$,
+                                 xlabel=$x$
+                                ]
+                            \addplot[domain=-5:0.9, blue, ultra thick] { (x^2+1)/(x-1)};
+                          \addplot[domain=1.1:5, blue, ultra thick] { (x^2+1)/(x-1)};
+                        \end{axis}
+                        \end{tikzpicture}
+                    </latex-image>
+                    </image>
+                    <caption>F</caption>
+                </figure>
+            </sidebyside>
+            <figure xml:id="figure-1-2">
+                <image width="50%" source="image-1.2.png" />
+                <caption>Six graphs that may or may not have vertical asymptotes</caption>
+            </figure>
+                   </introduction>
+    </activity>
+
+   <activity estimated-time="5">
+        <introduction>
+            <p>
+   Recall that a rational function is a ratio of two polynomials. For any given rational function, what are all the possible behaviors as <m>x</m> tends to + or - infinity?
+            </p>
+        </introduction>
+
+            <ol label="A">
+                <li><p>The only possible limit is 0</p></li>
+                <li><p>The only possible limits are 0 or +/- infinity
+ </p></li>
+                <li><p>The only possible limits are 0, 1 or +/- infinity
+ </p></li>
+                <li><p>The only possible limits are any constant number or +/- infinity</p></li>
+            </ol>
+   
+    </activity>        
+    
+<remark>
+    <statement> In the long run a rational function behaves like a ratio of the leading terms of the numerator and denominator. So the rational function
+        <me>
+            r(x) =  \displaystyle\frac{5(x+2)(x+4)}{x^2+3x-4}
+        </me>
+behaves like the ratio <m>\frac{5x^2}{x^2}</m> and so as <m>x</m> tends to positive infinity, <m>r(x)</m> tends to 5.  
+    </statement>
+    </remark>
+
+  
+   <activity estimated-time="10">
+        <introduction> <p>  In this activity you will first conjecture the general behavior of rational functions and then test your conjectures.</p>
+              </introduction>
+          <task> <p>
+  Consider a rational function <m>r(x) = \frac{p(x)}{q(x)}</m>. Looking at the numerator <m>p(x)</m> and the denominator <m>q(x)</m>, when does the function <m>r(x) </m> have limit equal to 0 as <m>x \to \infinity? </m>
+            </p>
+     <ol label="A">
+                <li><p> When the leading tems of the numberator and denominator are equal. </p></li>
+         <li><p> When the ratio of the leading terms is a constant. </p></li>
+                <li><p>When the degree of the leading tem of the numberator is larger than the degree of the leading term of the numerator.
+ </p></li>
+                <li><p>When the degree of the leading tem of the denominator is larger than the degree of the leading term of the numerator.
+ </p></li>                      
+              </ol>          
+</task>
+                 <task> <p>
+  Consider a rational function <m>r(x) = \frac{p(x)}{q(x)}</m>. Looking at the numerator <m>p(x)</m> and the denominator <m>q(x)</m>, when does the function <m>r(x) </m> have limit equal to 1 as <m>x \to \infinity? </m>
+            </p>
+     <ol label="A">
+                <li><p> When the leading tems of the numberator and denominator are equal. </p></li>
+         <li><p> When the ratio of the leading terms is a constant. </p></li>
+                <li><p>When the degree of the leading tem of the numberator is larger than the degree of the leading term of the numerator.
+ </p></li>
+                <li><p>When the degree of the leading tem of the denominator is larger than the degree of the leading term of the numerator.
+ </p></li>                      
+              </ol>          
+</task>
+<task> Test your conjecures by computing the following limits.
+            <ol label="a">
+                <li><p><m>\displaystyle  \lim_{x\to -\infty} \frac{x^3-x+83}{1} </m></p></li>
+                 <li><p><m>\displaystyle  \lim_{x\to -\infty} \frac{1}{x^3-x+83} </m></p></li>
+                <li><p><m>\displaystyle  \lim_{x\to +\infty} \frac{x+3}{2-x}</m></p></li>
+                 <li><p><m>\displaystyle  \lim_{x\to -\infty} \frac{\pi-3x}{\pi x-3}</m></p></li>
+                 <li><p>(Challenge) <m>\displaystyle  \lim_{x\to + \infty} \frac{3e^x+2}{2e^x+3}</m></p></li>
+                <li><p>(Challenge) <m>\displaystyle  \lim_{x\to - \infty} \frac{3e^x+2}{2e^x+3}</m></p></li>
+            </ol>
+   </task>
+    </activity>          
+
+ <activity estimated-time="5">
+        <introduction>
+            <p>
+What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of the function graphed below?
+            </p>
+            <figure>
+                <image>
+                          <latex-image> 
+                \begin{tikzpicture}
+\begin{axis}[
+		 axis lines=middle,
+    % 	 grid=major,
+    % 	 xmin=-3.14,
+    % 	 xmax=9.42,
+    	 ymin=-1.5,
+    	 ymax=1.5,
+    % 	 xtick={-3.14,0,...,9.42},
+    % 	 ytick={-1,-0.75,...,1},
+        ]
+   \addplot[samples=500,domain=-4*pi:4*pi, blue, thick]{sin(deg(x))};
+\end{axis}
+\end{tikzpicture}
+                        </latex-image>
+                    </image>
+                    <caption> A misterious periodic function.</caption>
+                </figure>
+        </introduction>
+
+            <ol label="A">
+                <li><p> The limit is 0</p></li>
+                <li><p>The limit is 1
+ </p></li>
+                <li><p>The limit is -1
+ </p></li>
+                <li><p>The limit is positive infinity</p></li>
+                  <li><p>The limit DNE </p></li>
+            </ol>
+   
+    </activity>          
+
+<warning>
+     For a periodic function, a function whose outputs repeat periodically, there is not one distinguished long term behavior, so the limit DNE. Notice that this is different from the limit being +infinity in which case the outputs have a clear behavior: they are getting larger and larger. Unfortunately, you will find in many cases that the notation DNE is used both for a limit equal to infinity and a limit that does not tend to one distinguished value. Beware!
+</warning>
+
+   <activity estimated-time="10">
+        <introduction>
+            <p>   The graph below represents the function <m>f(x) =  \displaystyle\frac{2(x+3)(x+1)}{x^2-2x-3}</m>.   </p>
+             <figure>
+                    <image>
+                    <latex-image>  
+\begin{tikzpicture}[scale=1]
+\begin{axis}[
+	axis lines=middle,
+    grid=major,
+    xmin=-10, xmax=10,
+    ymin=-5, ymax=8,
+    xtick={-10,-8,...,10},
+    ytick={-4,-2,...,10},
+  	tick style={thick},
+% 	x label style={at={(axis description cs:1,0.7)}},
+% 	y label style={at={(axis description cs:0.4,1)}}, 
+    ylabel=$y$,
+	xlabel=$x$,
+        ]
+    % \addplot[domain=-2:0.9, blue, ultra thick] {(1/3)*(x)-1/3};
+    % \addplot[domain=1.1:5, blue, ultra thick] {-0.5*x +0.5};
+    \addplot[domain=-10:-1.1, blue,  thick] {(2*x^2+8*x+6)/(x^2-2*x-3)};
+     \addplot[domain=-0.9:2.9, blue,  thick] {(2*x^2+8*x+6)/(x^2-2*x-3)};
+       \addplot[domain=3.1:10, blue,  thick] {(2*x^2+8*x+6)/(x^2-2*x-3)};
+    %  \addplot[domain=6.05:7, blue, ultra thick] {x-5};
+    \addplot[mark=none, color=blue, nodes near coords={$f(x)$}] coordinates {(2,1)};
+% \addplot [only marks, blue] table {
+% 5	0
+% 1 2
+% 7	2
+% };
+\addplot [only marks, blue, mark=o] table {
+-1	-1
+};
+
+\end{axis}
+\end{tikzpicture}
+  
+    </latex-image>
+                    </image>
+                    <caption>The graph of <m> f(x)</m></caption>
+                </figure>
+        </introduction>
+ <task>
+            <statement>
+                <p> Find the horizontal asymptote of <m> f(x) </m>. First, guess it from the graph. Then, prove that your guess is right using algebra.</p>
+            </statement>
+        </task>
+         <task>
+            <statement>
+                <p> Use limit notation to describe the behavior of  <m> f(x)</m> at its horizontal asymptotes.</p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p> Use limit notation to describe the behavior of  <m> f(x)</m> at its horizontal asymptotes.</p>
+            </statement>
+        </task> Come up with the formula of a rational function that has horizontal asymptote <m>y=3 </m>.
+        <task>
+            <statement>
+                <p> What do you think is happening at <m>x=1</m>? We will come back to this in the next section! </p>
+            </statement>
+        </task>
+    </activity>
+  
+<!-- TO-DO add application activities  -->
 </section>

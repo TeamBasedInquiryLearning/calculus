@@ -3,6 +3,7 @@ output
 
 # assets generated from source
 generated-assets
+generated-assets-subset
 
 # error logs
 .error-schema.log
@@ -14,5 +15,5 @@ error-syntax.log
 *.term
 !.gitignore
 
-# static files not put into Git
-static
+# RAT files not put into Git
+RATs

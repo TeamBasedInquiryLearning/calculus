@@ -4,7 +4,7 @@
   xmlns:xml="http://www.w3.org/XML/1998/namespace"
 >
 
-<!-- Inserted <xsl:include href="pretext/xsl/pretext-common.xsl"/>-->
+<xsl:include pretext-href="pretext-common.xsl"/>
 
 <xsl:output method="xml" indent="yes"/>
 
@@ -40,6 +40,8 @@
         <xsl:apply-templates select="." mode="type-name"/><xsl:text> </xsl:text>
         <xsl:apply-templates select="." mode="number"/><xsl:if test="title">:
         <xsl:value-of select="title"/></xsl:if>
+        <xsl:text> </xsl:text>
+        <xsl:if test="@estimated-time">(~<xsl:value-of select="@estimated-time"/> min)</xsl:if>
     </title>
 </xsl:template>
 
@@ -66,6 +68,13 @@
         <xsl:apply-templates select="." mode="slides-title"/>
         <xsl:apply-templates select="statement/*|introduction/*|task" mode="slideshow-copy"/>
     </slide>
+</xsl:template>
+
+<xsl:template match="task" mode="slideshow-copy">
+    <p>Part <xsl:value-of select="count(preceding-sibling::task)+1"/>.</p>
+    <subslide>
+        <xsl:apply-templates select="*" mode="slideshow-copy"/>
+    </subslide>
 </xsl:template>
 
 <!-- Identity template : copy all text nodes, elements and attributes -->

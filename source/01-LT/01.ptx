@@ -9,14 +9,14 @@
             </li>
         </ul>
     </objectives>
-    <activity estimated-time="10">
+    <activity xml:id="activity-limits-graphically1">
         <introduction>
             <p>
-                In <xref ref="figure-1-1" /> the graph of a function is given, but something is wrong. The graphic card failed and one portion did not render properly. We can’t see what is happening in the neighborhood of <m>x=2</m>. 
+                In <xref ref="limit_censored" /> the graph of a function is given, but something is wrong. The graphic card failed and one portion did not render properly. We can’t see what is happening in the neighborhood of <m>x=2</m>. 
             </p>
-            <figure xml:id="figure-1-1">
-                <image width="50%" source="image-1.1.png" />
-                <caption>Graph...</caption>
+            <figure xml:id="limit_censored">
+                <image width="50%" source="limit_censored.png" />
+                <caption>A graph of a function that has not been rendered properly.</caption>
             </figure>
 
         </introduction>
@@ -24,7 +24,6 @@
             <p>
                 Imagine moving along the graph toward the missing portion from the left, so that you are climbing up and to the right toward the obscured area of the graph. What <m>y</m>-value are you approaching?
             </p>
-<!--             <p>EVIL updates...</p> -->
             <ol label="A">
                 <li><p>0.5</p></li>
                 <li><p>1</p></li>
@@ -49,13 +48,13 @@
     <activity estimated-time="10">
         <introduction>
             <p>
-                In <!--<xref ref="figure-1-1" /> --> the same graph as in Activity 1.1.1 <!-- is there a way to ref. and activity-->, but now the graph is uncensored.
+                In <xref ref="limit_uncensored" /> the graphic card is working again and we can see more clearly what is happening in the neighborhood of <m>x=2</m>. 
             </p>
-           <!-- <figure xml:id="figure-1-2">
-                <image width="50%" source="image-1.2.png" />
-                <caption>My figure caption</caption>
+            <figure xml:id="limit_uncensored">
+                <image width="50%" source="limit_uncensored.png" />
+                <caption>A graph of a function that has rendered properly</caption>
             </figure>
--->
+
         </introduction>
         <task>
             <p>
@@ -106,10 +105,11 @@
             <p>Let's define a <term>thing</term>.</p>
         </statement>
     </definition>
-    
-    
-    
-    
+
+    <commentary>
+        <p>Sample facilitation note.</p>
+    </commentary>
+
     <activity estimated-time="15">
         <introduction>
             <p>An activity with three parts.</p>

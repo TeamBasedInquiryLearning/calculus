@@ -9,6 +9,7 @@
             </li>
         </ul>
     </objectives>
+    
 <!-- start of activities     -->
        <activity estimated-time="5">
         <introduction>
@@ -48,15 +49,15 @@ Which of the following best describes the relationship between the line x=0 and 
 
  <definition>
         <statement>
-      <p> A function has a <term>vertical asymptote</term> at <m>x=a</m> when
-<!--             <me>
+      <p> A function has a <term>vertical asymptote</term> at <m>x=a</m> when </p>
+            <me>
     \lim_{x\to a} f(x) = + \infty
-            </me> -->
-    or
-<!--             <me>
+            </me>
+      <p> or </p>
+            <me>
     \lim_{x\to a} f(x) = - \infty
-            </me> -->
-The limit being equal to positive infinity means that we can make the output of <m>f(x)</m> as large as we want as long as we are sufficiently close to <m>x=a</m>. Similarly, the limit being equal to negative infinity means that we can make the output of <m>f(x)</m> as small as we want as long as we are sufficiently close to <m>x=a</m>.</p>
+            </me>
+   <p> The limit being equal to positive infinity means that we can make the output of <m>f(x)</m> as large as we want as long as we are sufficiently close to <m>x=a</m>. Similarly, the limit being equal to negative infinity means that we can make the output of <m>f(x)</m> as small as we want as long as we are sufficiently close to <m>x=a</m>.</p>
         </statement>
     </definition>
 
@@ -65,10 +66,8 @@ The limit being equal to positive infinity means that we can make the output of 
         <introduction>
             <p>
                 Which of the following functions have vertical asymptotes? Select all!
-<!-- TO-DO tabular+tikz with graphs of functions  e^x, ln(x), ln(x+3), 1/x, x^2, x+1/x-1, x^2+1/x-1, e^x-1/e^x+1 for now just some simple functions-->
-<!-- make sure to add a function that crosses the asymptote                 -->
+<!-- TO-DO make the graphs prettier-->
             </p>
-<!--         <sbsgroup> -->
             <sidebyside>
                 <figure>
                     <image>
@@ -83,7 +82,7 @@ The limit being equal to positive infinity means that we can make the output of 
                                  ylabel=$y$,
                                  xlabel=$x$
                                 ]
-                            \addplot[domain=-10:10, blue, ultra thick] {x^2};
+                            \addplot[domain=-5:5, blue, ultra thick] {e^x};
                         \end{axis}
                         \end{tikzpicture}
                         </latex-image>
@@ -102,7 +101,7 @@ The limit being equal to positive infinity means that we can make the output of 
                                  ylabel=$y$,
                                  xlabel=$x$
                                 ]
-                            \addplot[domain=-10:10, blue, ultra thick] {3.2};
+                            \addplot[domain=0.01:5, blue, ultra thick] {ln(x)};
                         \end{axis}
                         \end{tikzpicture}
                     </latex-image>
@@ -112,18 +111,19 @@ The limit being equal to positive infinity means that we can make the output of 
                 <figure>
                     <image>
                     <latex-image>
-                        \begin{tikzpicture}[scale=0.6]
+                  \begin{tikzpicture}[scale=0.6]
                         \begin{axis}[
                                 axis x line=middle,
                                 axis y line=middle,
                                  x label style={at={(axis description cs:1,-0.2)}},
-                                 y label style={at={(axis description cs:-0.2,1)}},
+                                 y label style={at={(axis description cs:0.3,1)}},
                                  ylabel=$y$,
                                  xlabel=$x$
                                 ]
+                            \addplot[domain=-5:-0.1, blue, ultra thick] {-1/x};
+                           \addplot[domain=0.1:5, blue, ultra thick] {-1/x};
                         \end{axis}
-                        \draw[thick, blue] (0,1)--(1,0)--(2,3)--(3,1)--(4,1)--(5,2)--(6,2)--(6,4);
-                        \end{tikzpicture} \\
+                        \end{tikzpicture}
                     </latex-image>
                     </image>
                     <caption>C</caption>
@@ -133,18 +133,17 @@ The limit being equal to positive infinity means that we can make the output of 
                 <figure>
                     <image>
                     <latex-image>
-                        \begin{tikzpicture}[scale=0.6]
+                \begin{tikzpicture}[scale=0.6]
                         \begin{axis}[
                                 axis x line=middle,
                                 axis y line=middle,
-                                 x label style={at={(axis description cs:1,0.6)}},
+                                 x label style={at={(axis description cs:1,-0.2)}},
                                  y label style={at={(axis description cs:0.3,1)}},
                                  ylabel=$y$,
                                  xlabel=$x$
                                 ]
-                            \addplot[domain=-10:-3, blue, ultra thick] {0.5*x-1};
-                            \addplot[domain=-1:5, blue, ultra thick] {x+1};
-                            \addplot[domain=7:10, blue, ultra thick] {-2*x+15};
+                            \addplot[domain=-5:0.9, blue, ultra thick] { (5*x+1)/(x-1)};
+                        \addplot[domain=1.1:5, blue, ultra thick] { (5*x+1)/(x-1)};
                         \end{axis}
                         \end{tikzpicture}
                     </latex-image>
@@ -154,17 +153,18 @@ The limit being equal to positive infinity means that we can make the output of 
                 <figure>
                     <image>
                     <latex-image>
-                        \begin{tikzpicture}[scale=0.6]
+                       \begin{tikzpicture}[scale=0.6]
                         \begin{axis}[
                                 axis x line=middle,
                                 axis y line=middle,
                                  x label style={at={(axis description cs:1,-0.2)}},
-                                 y label style={at={(axis description cs:-0.2,1)}},
+                                 y label style={at={(axis description cs:0.3,1)}},
                                  ylabel=$y$,
                                  xlabel=$x$
                                 ]
+                            \addplot[domain=-2:-0.1, blue, ultra thick] { (e^x+1)/(e^x-1)};
+                        \addplot[domain=0.1:2, blue, ultra thick] { (e^x+1)/(e^x-1)};
                         \end{axis}
-                        \draw[thick,blue] (3,3) circle[radius=1.5];
                         \end{tikzpicture}
                     </latex-image>
                     </image>
@@ -173,122 +173,218 @@ The limit being equal to positive infinity means that we can make the output of 
                 <figure>
                     <image>
                     <latex-image>
-                        \begin{tikzpicture}[scale=0.6]
+                     \begin{tikzpicture}[scale=0.6]
                         \begin{axis}[
                                 axis x line=middle,
                                 axis y line=middle,
-                                x label style={at={(axis description cs:1,-0.2)}},
-                                 y label style={at={(axis description cs:-0.2,1)}},
+                                 x label style={at={(axis description cs:1,-0.2)}},
+                                 y label style={at={(axis description cs:0.3,1)}},
                                  ylabel=$y$,
                                  xlabel=$x$
                                 ]
-                                \end{axis}
-                        \draw [domain=0:6, samples=100, blue, thick] plot (\x, {1+cos(pi*\x r});
+                            \addplot[domain=-5:0.9, blue, ultra thick] { (x^2+1)/(x-1)};
+                          \addplot[domain=1.1:5, blue, ultra thick] { (x^2+1)/(x-1)};
+                        \end{axis}
                         \end{tikzpicture}
                     </latex-image>
                     </image>
                     <caption>F</caption>
                 </figure>
             </sidebyside>
-<!--         </sbsgroup> -->
             <figure xml:id="figure-1-2">
                 <image width="50%" source="image-1.2.png" />
-                <caption>My figure caption</caption>
+                <caption>Six graphs that may or may not have vertical asymptotes</caption>
             </figure>
                    </introduction>
-
-<!-- old stuff to copy/paste  -->
-        <task>
-            <p>
-                Imagine moving along the graph toward the missing portion from the left, so that you are climbing up and to the right toward the obscured area of the graph. What <m>y</m>-value are you approaching?
-            </p>
-<!--             <p>EVIL updates...</p> -->
-            <ol label="A">
-                <li><p>0.5</p></li>
-                <li><p>1</p></li>
-                <li><p>1.5</p></li>
-                <li><p>2</p></li>
-                <li><p>2.5</p></li>
-            </ol>
-        </task>
-        <task>
-            <p>
-                Think of the same process, but this time from the right. You’re falling down and to the left this time as you come close to the missing portion. What <m>y</m>-value are you approaching?
-            </p>
-            <ol label="A">
-                <li><p>0.5</p></li>
-                <li><p>1</p></li>
-                <li><p>1.5</p></li>
-                <li><p>2</p></li>
-                <li><p>2.5</p></li>
-            </ol>
-        </task>
     </activity>
 
-
-
-    <definition>
+         <remark>
         <statement>
-            <p>Let's define a <term>thing</term>.</p>
-        </statement>
-    </definition>
-    <activity estimated-time="15">
+            <p>If <m>x=a</m> is a vertical asymptote for the function <m>f(x) </m>,  the function <m> f(x)</m> is not defined at <m> x=a</m> because the output tends to infinity so it is not equal to a number. </p>
+             </statement>
+        </remark>
+
+             <activity estimated-time="5">
         <introduction>
-            <p>An activity with three parts.</p>
+            <p>
+        Notice that as <m>x</m> goes to 0, the value of <m> x^2</m> goes to 0 but the value of <m>1/x^2</m>  goes to infinity. What is the best explanation for this behavior?
+                 </p>
+                </introduction>
+            <ol label="A">
+                <li><p>When dividing by an increasingly small number we get an increasing big number
+</p></li>
+                <li><p>When dividing by an increasingly large number we get an increasing small number
+</p></li>
+                <li><p>A rational function always has a vertical asymptote
+</p></li>
+                <li><p>A rational function always has a horizontal asymptote
+</p></li>
+            </ol>
+    </activity>
+
+  <activity estimated-time="5">
+        <introduction>
+            <p>
+Consider the rational function <m>\frac{2}{x-3} </m>. Which of the following options best describes the limits as x approaches 3 from the right and from the left?
+  </p> </introduction>
+            <ol label="A">
+                <li><p>As x tends to 3+, the limit DNE, but as x tends to 3- the limit is -infinity
+</p></li>
+                <li><p>As x tends to 3+, the limit is positive infinity, but as x tends to 3- the limit DNE
+</p></li>
+                <li><p>As x tends to 3+, the limit is positive infinity, but as x tends to 3- the limit is -infinity
+</p></li>
+                <li><p>As x tends to 3+, the limit DNE and as x tends to 3- the limit DNE
+</p></li>
+            </ol>
+     </activity>
+
+<activity estimated-time="5">
+        <introduction>
+            <p>
+Consider the function <m>f(x)=\frac{x^2-1}{x-1}</m>. The line <m>x=1</m> is NOT a vertical asymptote for <m> f(x)</m>. Why?
+  </p> </introduction>
+            <ol label="A">
+                <li> <p> When x is not equal to 1, we can simplify the fraction to x-1, so the limit is 1.
+</p></li>
+                <li><p>When x is not equal to 1, we can simplify the fraction to x+1, so the limit is 2.
+</p></li>
+                <li><p>The function is always equal to x+1.
+</p></li>
+                              <li><p>The function is always equal to x-1.
+</p></li>
+            </ol>
+     </activity>
+
+     <remark>
+        <statement>
+            <p>When considering a ratio of functions <m>f(x)/g(x) </m>, the inputs <m> a</m> where <m> g(a)=0</m> are not in the domain of the ratio. If <m>g(a)=0 </m> but <m>f(a) </m> is not equal to 0, then <m> x=a</m> is a vertical asymptote </p>
+             </statement>
+        </remark>
+
+   <activity estimated-time="10">
+        <introduction>
+            <p>    Find all the vertical asymptotes of the following rational function    </p>
         </introduction>
-        <task>
+ <task>
             <statement>
-                <p>Do this.</p>
+                <p><m> y = \frac{3x-4}{7x+1}</m>
+</p>
             </statement>
         </task>
         <task>
             <statement>
-                <p>Then this.</p>
+                <p><m>y= \frac{x^2+10x+24}{x^2-2x+1}</m>
+</p>
             </statement>
         </task>
         <task>
             <statement>
-                <p>Finally this.</p>
+                <p><m>y= \frac{(x^2-4)(x^2+1)}{x^6}</m></p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p><m>y= \frac{2x+1}{2x^2+8x-10}</m></p>
             </statement>
         </task>
     </activity>
-    <theorem>
-        <statement>
-            <p>
-                For all right triangles,
-                <me>a^2+b^2=c^2</me>.
-            </p>
-        </statement>
-    </theorem>
-    <example>
-        <statement>
-            <p>For example, here's an example.</p>
-        </statement>
-    </example>
-    <observation>
-        <statement>
-            <p>Observe this frog.</p>
-            <figure>
-                <image source="frog.jpg"/>
-                <caption>An amphibian</caption>
-            </figure>
-        </statement>
-    </observation>
-    <remark>
-        <statement>
-            <p>Something that just needs to be said.</p>
-            <p>It has a picture.</p>
-            <figure>
-                <image width="50%">
+
+
+   <activity estimated-time="10">
+        <introduction>
+            <p>   The graph below represents the function <m>f(x) =  \displaystyle\frac{(x+2)(x+4)}{x^2+3x-4}</m>.   </p>
+             <figure>
+                    <image>
                     <latex-image>
-\begin{tikzpicture}
-    \draw (0,0) circle (2);
+            \begin{tikzpicture}[scale=1]
+\begin{axis}[
+	axis lines=middle,
+    grid=major,
+    xmin=-6, xmax=8,
+    ymin=-5, ymax=8,
+    xtick={-6,-5,...,8},
+    ytick={-5,-4,...,8},
+  	tick style={thick},
+    ylabel=$y$,
+	xlabel=$x$,
+        ]
+    \addplot[domain=-6:-4.1, blue,  thick] {(x^2+6*x+8)/(x^2+3*x-4)};
+     \addplot[domain=-3.9:0.99, blue,  thick] {(x^2+6*x+8)/(x^2+3*x-4)};
+       \addplot[domain=1.1:8, blue,  thick] {(x^2+6*x+8)/(x^2+3*x-4)};
+    \addplot[mark=none, color=blue, nodes near coords={$f(x)$}] coordinates {(2,1)};
+      \draw[fill=white, draw=blue](axis cs:-4,0.4) circle(1mm);
+<!-- \addplot [only marks, blue, mark=o] table {
+-4	0.4
+}; -->
+
+\end{axis}
 \end{tikzpicture}
-                    </latex-image>
-                </image>
-                <caption>A circle</caption>
-            </figure>
-        </statement>
-    </remark>
+   </latex-image>
+                    </image>
+                    <caption>The graph of <m> f(x)</m></caption>
+                </figure>
+        </introduction>
+ <task>
+            <statement>
+                <p>Explain the behavior of <m> f(x)</m> at <m>x=-4 </m>.</p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p> Find the vertical asymptote(s) of <m> f(x)</m> . First, guess it from the graph. Then, prove that your guess is right using algebra.</p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p> Find the horizontal asymptote(s) of  <m> f(x)</m>. First, guess it from the graph. Then, prove that your guess is right using algebra.</p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p> Use limit notation to describe the behavior of  <m> f(x)</m> at its asymptotes.</p>
+            </statement>
+        </task>
+    </activity>
+
+
+    
+   <activity estimated-time="10">
+        <introduction>
+            <p>    You want to draw a function with all these properties.   </p>            
+            <ul>
+            <li> <p> <m>\displaystyle  \lim_{x\to 3} f(x)=5</m></p></li>
+                  <li> <p> <m>f(3)=0 </m></p></li>
+                 <li> <p> <m>\displaystyle  \lim_{x\to 0^{-}} f(x) = -\infty</m></p></li>
+                  <li> <p> <m>\displaystyle  \lim_{x\to 0^{+}} f(x) = 0</m></p></li>
+                   <li> <p> <m>\displaystyle  \lim_{x\to +\infty} f(x) = 2</m></p></li>
+            </ul>
+       Before you start drawing, consider the following guiding questions. 
+       </introduction>
+ <task>
+            <statement>
+                <p> At which <m>x</m> values the limit will not be defined?
+</p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p> What are the asymptotes of this function?
+</p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>At which <m>x</m> values the function will not be continous? </p>
+            </statement>
+        </task>
+        <task>
+            <statement>
+                <p>Draw the graph of one function with all the properties above. Make sure that your graph is a function! You only need to draw a graph, writing a formula would be very challenging!</p>
+            </statement>
+        </task>
+    </activity>
+
+
 </section>
 

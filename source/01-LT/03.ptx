@@ -9,5 +9,185 @@
             </li>
         </ul>
     </objectives>
-    <p>foo</p>
+    <activity xml:id="activity-limits-analytically1">
+        <statement>
+            <p>Recall that in activity 2.5 we used numerical methods and table of values to find the limit of a degree 3 polynomial at a point. This was inefficient, “there’s gotta be a better way!”</p>
+
+            <p>Given <m>f(x)=3x^2-\frac{1}{2}x+4</m>, evaluate <m>f(2)</m> and approximate <m>\lim_{x\to2}f(x)</m> numerically. What can we most definitively state?</p>
+            <ol>
+                <li><m>\lim_{x \to 2}f(x)=f(2)</m></li>
+                <li><m>\lim_{x \to 2}f(x) \approx f(2)</m></li>
+                <li><m>\lim_{x \to 2}f(x) \neq f(2)</m></li>
+            </ol>
+        </statement>
+    </activity>
+    <activity xml:id="activity-limits-analytically2">
+        <statement>
+            <p>The table below gives values of a few different functions.</p>
+            <table xml:id="table-activity-limits-analytically2">
+              <tabular>
+                <row>
+                  <cell>
+                    x
+                  </cell>
+                  <cell>
+                    6.99
+                  </cell>
+                  <cell>
+                    6.999
+                  </cell>
+                  <cell>
+                    7.001
+                  </cell>
+                  <cell>
+                    7.01
+                  </cell>
+                </row>
+                <row>
+                  <cell>
+                    f(x)
+                  </cell>
+                  <cell>
+                    13.99
+                  </cell>
+                  <cell>
+                    13.999
+                  </cell>
+                  <cell>
+                    14.001
+                  </cell>
+                  <cell>
+                    14.01
+                  </cell>
+                </row>
+                <row>
+                  <cell>
+                    g(x)
+                  </cell>
+                  <cell>
+                    22.97
+                  </cell>
+                  <cell>
+                    22.997
+                  </cell>
+                  <cell>
+                    23.003
+                  </cell>
+                  <cell>
+                    23.03
+                  </cell>
+                </row>
+                <row>
+                  <cell>
+                    3f(x)
+                  </cell>
+                  <cell>
+                    41.97
+                  </cell>
+                  <cell>
+                    41.997
+                  </cell>
+                  <cell>
+                    42.003
+                  </cell>
+                  <cell>
+                    42.03
+                  </cell>
+                </row>
+                <row>
+                  <cell>
+                    f(x)+g(x)
+                  </cell>
+                  <cell>
+                    36.96
+                  </cell>
+                  <cell>
+                    36.996
+                  </cell>
+                  <cell>
+                    37.004
+                  </cell>
+                  <cell>
+                    37.04
+                  </cell>
+                </row>
+                <row>
+                  <cell>
+                    f(x)g(x)
+                  </cell>
+                  <cell>
+                    321.3503
+                  </cell>
+                  <cell>
+                    321.935004
+                  </cell>
+                  <cell>
+                    322.065003
+                  </cell>
+                  <cell>
+                    322.6503
+                  </cell>
+                </row>
+              </tabular>
+            </table>
+            <p>Using the table above, which of the following is <em>least</em> likely to be true?</p>
+            <ol>
+                <li><m>\lim_{x\to 7}f(x)= 14</m> and <m>\lim_{x\to 7}g(x)= 23</m></li>
+                <li><m>\lim_{x \to 7}3f(x) = 3  \lim_{x\to 7}f(x)</m></li>
+                <li><m>\lim_{x\to 7}\left( f(x)+g(x) \right) = \lim_{x\to 7}f(x) + \lim_{x\to 7}g(x)</m></li>
+                <li><m>\lim_{x\to 7}\left( f(x)g(x) \right) =f(7)   \left( \lim_{x\to 7}g(x) \right)</m></li>
+            </ol>
+        </statement>
+    </activity>
+    <theorem xml:id="theorem-limit-laws-1">
+        <title>Limit Laws, I</title>
+            <statement>
+            <p>
+                Let <m>b</m>, <m>c</m>, <m>L</m>, and <m>K</m> be real numbers, let <m>n</m> be a positive integer, and let <m>f</m> and <m>g</m> be functions defined on an open interval <m>I</m> containing <m>c</m> satisfying<me>
+                \lim_{x \to c} f(x) = L \text{and} \lim_{x \to c} g(x) = K
+                </me>. Then we have the following limits as well.
+                <ol>
+                    <li><m>\lim_{x \to c} b = b</m></li>
+                    <li><m>\lim_{x \to c} x = c</m></li>
+                    <li><m>\lim_{x \to c} (f(x) \pm g(x)) = L \pm K</m></li>
+                    <li><m>\lim_{x \to c} b \cdot f(x) = bL</m></li>
+                    <li><m>\lim_{x \to c} f(x) \cdot g(x) = LK</m></li>
+                    <li><m>\lim_{x \to c} f(x) / g(x) = L/K</m> (provided that <m>K \ne 0</m></li>
+                </ol>
+            </p>
+        </statement>
+    </theorem>
+    <theorem xml:id="theorem-limit-laws-2">
+        <title>Limit Laws, II</title>
+        <statement>
+            <p>foo</p>
+            <ol>
+                <li><m>\lim_{x \to c} f(x)^n = L^n</m></li>
+                <li><m>\lim_{x \to c} \sqrt[n]{f(x)} = \sqrt[n]{L}</m></li>
+                <li><m>composition</m></li>
+            </ol>
+        </statement>
+    </theorem>
+    <activity xml:id="activity-limits-analytically3">
+        <statement>
+            <p>If <m>\lim f(x) = 2</m> and <m>\lim g(x) = -3</m>, which of the following statements are true?</p>
+            <ol>
+                <li><m>\lim (f(x) \cdot g(x)) = -6</m></li>
+                <li><m>\lim (f(x) + g(x)) = -1</m></li>
+                <li><m>\lim (f(x) - g(x)) = -2</m></li>
+                <li><m>\lim (f(x)/g(x)) = -2/3</m></li>
+            </ol>
+        </statement>
+    </activity>
+    <activity xml:id="activity-limits-analytically4">
+        <statement>
+            <p>Given <m>p(x) = -3x^2 - 5x+7</m>, which of the following describe the limit properties that can best be used to determine <m>\lim_{x\to 2} p(x)</m>?</p>
+            <ol>
+                <li>Sums/differences, scalar multiples, and products properties</li>
+                <li>Compositions and identity properties</li>
+                <li>Powers, sums/differences, scalar multiples, and constants properties</li>
+                <li>Quotients and roots properties</li>
+            </ol>
+        </statement>
+    </activity>
 </section>

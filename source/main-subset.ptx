@@ -5,16 +5,17 @@
 
   <book xml:id="cal1">
     <title>Calculus 1 for Team-Based Inquiry Learning</title>
-    <subtitle>Single Section Preview</subtitle>
+    <subtitle>Subset Preview</subtitle>
 
-    <xi:include href="meta/frontmatter.ptx" />
-
+      <!-- Use this for a single section -->
       <chapter>
-          <title>Chapter</title>
-          <!-- update href with the section you want to edit -->
+          <title>Chapter Title</title>
           <xi:include href="01-LT/01.ptx"/>
       </chapter>
 
-    <xi:include href="meta/backmatter.ptx" />
+      <!-- Use this for a single chapter
+        <xi:include href="01-LT/main.ptx"/>
+        -->
+
   </book>
 </pretext>

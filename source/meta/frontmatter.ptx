@@ -29,33 +29,33 @@
     <title>Contributing Authors</title>
     <author>
       <personname>Francesca Gandini</personname>
-      <department>TODO</department>
-      <institution>TODO</institution>
-      <email>todo@todo.edu</email>
+      <department>Department of Mathematics</department>
+      <institution>Kalamazoo College</institution>
+      <email>fra.gandi.phd@gmail.com</email>
     </author>
     <author>
       <personname>Joseph Hibdon</personname>
-      <department>TODO</department>
-      <institution>TODO</institution>
-      <email>todo@todo.edu</email>
+      <department>Department of Mathematics</department>
+      <institution>Northeastern Illinois University</institution>
+      <email>j-hibdonjr@neiu.edu</email>
     </author>
     <author>
       <personname>Abby Noble</personname>
-      <department>TODO</department>
-      <institution>TODO</institution>
-      <email>todo@todo.edu</email>
+      <department>Department of Mathematics and Statistics</department>
+      <institution>Middle Georgia State University</institution>
+      <email>abby.noble@mga.edu</email>
     </author>
     <author>
       <personname>Dave Rosoff</personname>
-      <department>TODO</department>
-      <institution>TODO</institution>
-      <email>todo@todo.edu</email>
+      <department>Department of Mathematics and Physical Sciences</department>
+      <institution>The College of Idaho</institution>
+      <email>drosoff@collegeofidaho.edu</email>
     </author>
     <author>
       <personname>Belin Tsinnajinnie</personname>
-      <department>TODO</department>
-      <institution>TODO</institution>
-      <email>todo@todo.edu</email>
+      <department>Department of Mathematics</department>
+      <institution>Santa Fe Community College</institution>
+      <email>belin.tsinnajinnie@sfcc.edu</email>
     </author>
   </credit>
         <date><today /></date>
@@ -93,6 +93,7 @@ This work includes materials used under license from the following works:
 
   </colophon>
 
+    <xi:include href="./slideshow.ptx" />
 <!--  <dedication>
     <p>
       For ...

@@ -9,9 +9,9 @@
             </li>
         </ul>
     </objectives>
-    <activity xml:id="activity-limits-numerically">
-        <figure xml:id="figure-limit-numerical-cts">
-            <image source="limit-numerical-cts.png">
+<!--     <activity xml:id="activity-limits-numerically1"> -->
+<!--         <figure xml:id="figure-limit-numerical-cts"> -->
+<!--             <image source="limit-numerical-cts.png"> -->
 <!--                 <latex-image>
                 \begin{tikzpicture}
                     \begin{axis}[
@@ -28,19 +28,157 @@
                     \end{axis}
                 \end{tikzpicture}
                 </latex-image> -->
-            </image>
-            <caption>PUT IN THE FIGURE</caption>
-        </figure>
+<!--             </image> -->
+<!--             <caption>PUT IN THE FIGURE</caption> -->
+<!--         </figure> -->
+
+<!--         <p><xref ref="table-limit-numerical-cts" /> has values for the function given in <xref ref="figure-limit-numerical-cts" />.  Using this information, what is the best approximation for the limit of the function as x goes to -2?</p> -->
+<!--         <ol label="A"> -->
+<!--             <li><p> the limit is approximately </p></li> -->
+<!--             <li><p> the limit is approximately </p></li> -->
+<!--             <li><p> the limit is approximately </p></li> -->
+<!--             <li><p> the limit is approximately </p></li> -->
+<!--         </ol> -->
+
+<!--     </activity> -->
+
+    <activity xml:id="activity-limits-numerically">
         <table xml:id="table-limit-numerical-cts">
-            <tabular></tabular>
+            <tabular>
+                <row>
+                  <cell>
+                      <m>x</m>
+                  </cell>
+                  <cell>
+                    6.9
+                  </cell>
+                  <cell>
+                    6.99
+                  </cell>
+                  <cell>
+                    6.999
+                  </cell>
+                  <cell>
+                    7
+                  </cell>
+                  <cell>
+                    7.001
+                  </cell>
+                  <cell>
+                    7.01
+                  </cell>
+                  <cell>
+                    7.1
+                  </cell>
+                </row>
+                <row>
+                  <cell>
+                      <m>f(x)</m>
+                  </cell>
+                  <cell>
+                    0.1695
+                  </cell>
+                  <cell>
+                    0.1699
+                  </cell>
+                  <cell>
+                    0.1667
+                  </cell>
+                  <cell>
+                    ?
+                  </cell>
+                  <cell>
+                    0.1667
+                  </cell>
+                  <cell>
+                    0.1664
+                  </cell>
+                  <cell>
+                    0.1639
+                  </cell>
+                </row>
+            </tabular>
         </table>
-        <p><xref ref="table-limit-numerical-cts" /> has values for the function given in <xref ref="figure-limit-numerical-cts" />.  Using this information, what is the best approximation for the limit of the function as x goes to -2?</p>
+        <p>
+        Based on the values of <xref ref="table-limit-numerical-cts"/>, what is the best approximation for <m>\lim_{x\to 7}</m>?
         <ol label="A">
-            <li><p></p></li>
-            <li><p></p></li>
-            <li><p></p></li>
-            <li><p></p></li>
+            <li><p> the limit is approximately 7</p></li>
+            <li><p> the limit is approximately 0.17 </p></li>
+            <li><p> the limit is approximately 0.16</p></li>
+            <li><p> the limit is approximately 0.1667</p></li>
+            <li><p> the limit is approximately 6.9999</p></li>
+        </ol>
+        </p>
+        <remark>
+            <p>
+            Notice that the value we obtained in Activity 2 is only an approximation, based on the trends that we have seen within the table.
+            </p>
+        </remark>
+    </activity>
+
+    <activity xml:id = "activity-limits-numerically3">
+        <table xml:id="table-limit-numerical3">
+        <tabular></tabular>
+        </table>
+        <p>In <xref ref = "activity-limits-graphically1"/> we got an approximation to the limit of the function as x tends to 2.  Now let us say you are given the same plot as in <xref ref = "activity-limits-graphically1"/>, but also given a table of numerical values (<xref ref="table-limit-numerical3"/>) for the function. Given this new information what is the limit of the function as x tends to 2?  </p>
+    <ol label="A">
+            <li><p> There is not enough information because we do not know the value of the function at <m>x = 2</m></p></li>
+            <li><p> Can be approximated to be 1 because the data in the table and the graph show that from the left and the right the function approaches 1 as <m>x</m> goes to 2 </p></li>
+            <li><p> Can be approximated to be 1 because the values appaer to approach 1 and the graph appears to approach 1, but we should zoom in on the graph to be sure </p></li>
+            <li><p> Cannot be approximates because the function might not exist at <m>x = 2</m>.</p></li>
+        </ol>
+    </activity>
+
+    <activity xml:id = "activity-limits-numerically4">
+    <table xml:id="table-limit-numerical4">
+        <tabular></tabular>
+        </table>
+    <p>Based on <xref ref = "table-limit-numerical4"/>, what information can be inferred about <m>\lim_{x\to 1}f(x)</m>, <m>\lim_{x\to 1^-}</m>f(x), and <m>\lim_{x\to 1^+}f(x)</m>?
+</p>
+        <ol label="A">
+            <li><p> <m>\lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\lim_{x\rightarrow 1}f(x) = 0</m></p></li>
+            <li><p> <m>\lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\lim_{x\rightarrow 1}f(x)</m> does not exist </p></li>
+            <li><p> <m>\lim_{x\rightarrow 1^-}f(x) = 0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = -0.5</m>, and <m>\lim_{x\rightarrow 1}f(x)</m> does not exist</p></li>
+            <li><p> <m>\lim_{x\rightarrow 1^-}f(x) = 0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = -0.5</m>, and <m>\lim_{x\rightarrow 1}f(x) = 0</m></p></li>
+        </ol>
+    </activity>
+
+    <activity xml:id = "activity-limits-numerically5">
+    <p>Consider the following function <m>f(x)= 3x^3 + 2x^2- 5x+20.</m></p>
+       <ol label="A">
+           <li><p> Choose 6 values of x that you think will help you find <m>\lim_{x \to 2}f(x)</m> numerically.</p></li>
+           <!-- Can we add space between lines???-->
+
+
+           <li><p> Use the values that you chose in part A to calculate an approximation for <m>\lim_{x \to 2}f(x)</m>. </p></li>
+
+            <li><p> Which value best describes the limit that you obtained in part B?</p></li>
+            <ol label="a">
+            <li><p> the approximate value is 41.25</p></li>
+            <li><p> the approximate value is 41.5 </p></li>
+            <li><p> approximate value is 41.75</p></li>
+            <li><p> approximate value is 42</p></li>
+        </ol>
         </ol>
 
+
+    </activity>
+
+
+    <activity xml:id = "activity-limits-numerically6">
+        <figure xml:id="figure-limit-numerical-6">
+
+        </figure>
+        <table xml:id="table-limit-numerical6">
+        <tabular></tabular>
+        </table>
+        <p> In <xref ref="figure-limit-numerical-6" />is the graph for <m>f(x) = \sin\left(\frac{1}{x}\right)</m>.  Several values for <m>f(x)</m> in the neighborhood of <m>x = 0</m> are approximated in  <xref ref = "table-limit-numerical6"/>.  Based on the graph and table what is the best explanation for the limit as x tends to zero.</p>
+        <ol label="A">
+            <li><p> the limit does not exist because the left and right limits have opposite values</p></li>
+            <li><p> the limit does exist but we do not have enough information to answer the question </p></li>
+            <li><p> the limit does exist, and is between -1 and 1, because the graph is oscillating between -1 and 1.</p></li>
+            <li><p> the limit does not exist because you are dividing be zero when <m>x = 0</m> for <m>f(x)</m></p></li>
+
+        </ol>
     </activity>
 </section>
