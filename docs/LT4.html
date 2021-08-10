@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-07-31T19:40:47Z       *-->
+<!--*       on 2021-08-10T15:42:10Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -99,7 +99,141 @@
 <span class="type">Section</span> <span class="codenumber">1.4</span> <span class="title">Continuity (LT4)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-5"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
-<ul class="disc"><li id="li-110"><p id="p-125">Determine where a function is and is not continuous.</p></li></ul></article><p id="p-126">foo</p></section></div></main>
+<ul class="disc"><li id="li-145"><p id="p-168">Determine where a function is and is not continuous.</p></li></ul></article><p id="p-169">A continuous function is one whose values change smoothly, with no jumps or gaps in the graph. We'll explore the idea first, and arrive at a mathematical definition soon.</p>
+<article class="activity project-like" id="activity-continuous-scenarios"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="period">.</span>
+</h6>
+<p id="p-170">Which of the following scenarios best describes a continuous function?</p>
+<ol class="decimal">
+<li id="li-146"><p id="p-171">The age of a person reported in years</p></li>
+<li id="li-147"><p id="p-172">The price of postage for a parcel depending on its weight</p></li>
+<li id="li-148"><p id="p-173">The volume of water in a tank that is gradually filled over time</p></li>
+<li id="li-149"><p id="p-174">The number of likes on my latest TikTok depending on the time since I posted it</p></li>
+</ol>
+<p id="p-175">Can you use the language of limits to clarify the definition of continuity?</p></article><article class="activity project-like" id="activity-continuous-graph1"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="period">.</span>
+</h6>
+<p id="p-176">A function \(f\) defined on \(-4 \lt x \lt 4\) has the graph pictured below. Use the graph to answer each of the following questions.</p>
+<figure class="figure figure-like" id="figure-limits-different-kinds"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/limits-different-kinds.png" class="contained" alt="I need help with alt text for this that doesn't give the answers away."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure><ol class="decimal">
+<li id="li-does-limit-exist"><p id="p-177">For each of the values \(a = -3\text{,}\) \(-2\text{,}\) \(-1\text{,}\) \(0\text{,}\) \(1\text{,}\) \(2\text{,}\) \(3\text{,}\) determine whether the limit \(\lim_{x \to a} f(x)\) exists. If the limit does not exist, be ready to explain why not.</p></li>
+<li id="li-151"><p id="p-178">For each of the values of \(a\) from <a class="xref" data-knowl="./knowl/li-does-limit-exist.html" title="Item 1">Item 1</a> where \(f\) has a limit, determine the value of \(f(a)\) at each such point.</p></li>
+<li id="li-152"><p id="p-179">For each such \(a\) value, is \(f(a)\) equal to \(\lim_{x \to a} f(x)\text{?}\)</p></li>
+<li id="li-153"><p id="p-180">Use your understanding of continuity to determine whether \(f\) is continuous at each value of \(a\text{.}\)</p></li>
+<li id="li-154"><p id="p-181">Discuss any revisions you want to make to your definition of continuity that you arrived at toward the end of <a class="xref" data-knowl="./knowl/activity-continuous-scenarios.html" title="Activity 1.4.1">Activity 1.4.1</a>?</p></li>
+</ol></article><article class="definition definition-like" id="definition-continuity"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.4.4</span><span class="period">.</span>
+</h6>
+<p id="p-182">A function \(f\) is <dfn class="terminology">continuous</dfn> at \(x = a\) provided that</p>
+<ol class="lower-alpha">
+<li id="li-155"><p id="p-183">\(f\) has a limit as \(x \to a\)</p></li>
+<li id="li-156"><p id="p-184">\(f\) is defined at \(x = a\) (equivalently, \(a\) is in the domain of \(f\)), and</p></li>
+<li id="li-157"><p id="p-185">\(\lim_{x \to a} f(x) = f(a)\text{.}\)</p></li>
+</ol></article><article class="activity project-like" id="activity-continuity-which-are-equal"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.5</span><span class="period">.</span>
+</h6>
+<p id="p-186">Suppose that some function \(h(x)\) is continuous at \(x = -3\text{.}\) Use <a class="xref" data-knowl="./knowl/definition-continuity.html" title="Definition 1.4.4">Definition 1.4.4</a> to decide which of the following quantities are equal to each other.</p>
+<ol class="decimal">
+<li id="li-158"><p id="p-187">\(\displaystyle \lim_{x \to a^+} f(x)\)</p></li>
+<li id="li-159"><p id="p-188">\(\displaystyle \lim_{x \to a^-} f(x)\)</p></li>
+<li id="li-160"><p id="p-189">\(\displaystyle \lim_{x \to a} f(x)\)</p></li>
+<li id="li-161"><p id="p-190">\(\displaystyle f(a)\)</p></li>
+</ol></article><article class="activity project-like" id="activity-continuous-graph2"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.6</span><span class="period">.</span>
+</h6>
+<p id="p-191">Consider the function \(f\) whose graph is pictured below (it's the same graph from <a class="xref" data-knowl="./knowl/activity-continuous-graph1.html" title="Activity 1.4.2">Activity 1.4.2</a>).</p>
+<figure class="figure figure-like" id="figure-continuous-graph2"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/limits-different-kinds.png" class="contained" alt="(for accessibility)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4.7<span class="period">.</span></span><span class="space"> </span></figcaption></figure><ol class="lower-alpha">
+<li id="li-162"><p id="p-192">For which values of \(a\) do we have \(\lim_{x \to a^-} \ne \lim_{x \to a^+} f(x)\text{?}\)</p></li>
+<li id="li-163"><p id="p-193">For which values of \(a\) is \(f(a)\) not defined?</p></li>
+<li id="li-164"><p id="p-194">For which values of \(a\) does \(f\) fail to have a limit at \(a\text{,}\) yet \(f(a) \ne \lim_{x \to a} f(x)\text{?}\)</p></li>
+<li id="li-165"><p id="p-195">For which values of \(a\) does \(f\) fail to be continuous? Give a complete list of intervals on which \(f\) is continuous.</p></li>
+</ol></article><article class="activity project-like" id="activity-continuity-limit-strength"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.8</span><span class="period">.</span>
+</h6>
+<p id="p-196">Which condition is <em class="emphasis">stronger</em>, meaning it implies the other?</p>
+<ol class="decimal">
+<li id="li-166"><p id="p-197">\(f\) has a limit at \(x = a\text{,}\) or</p></li>
+<li id="li-167"><p id="p-198">\(f\) is continuous at \(x = a\text{?}\)</p></li>
+</ol></article><article class="activity project-like" id="activity-continuity-graph-vs-table-vs-formula"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.9</span><span class="period">.</span>
+</h6>
+<p id="p-199">Previously, you have used graphs, tables, and formulas to answer questions about limits. Which of those are suitable for answering questions about continuity?</p>
+<ol class="lower-alpha">
+<li id="li-168"><p id="p-200">Graphs only</p></li>
+<li id="li-169"><p id="p-201">Formulas only</p></li>
+<li id="li-170"><p id="p-202">Graphs and formulas only</p></li>
+<li id="li-171"><p id="p-203">Tables and formulas only</p></li>
+</ol></article><article class="activity project-like" id="activity-continuity-graphs-and-discontinuities"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.10</span><span class="period">.</span>
+</h6>
+<p id="p-204">Consider the function \(f\) whose graph is pictured below.</p>
+<figure class="figure figure-like" id="figure-continuity-graphs-and-discontinuities"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/limits-find-discontinuities.png" class="contained" alt="(for accessibility)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.4.11<span class="period">.</span></span><span class="space"> </span></figcaption></figure><p id="p-205">Give a list of \(x\)-values where \(f(x)\) is not continuous. Be prepared to defend your answer based on <a class="xref" data-knowl="./knowl/definition-continuity.html" title="Definition 1.4.4">Definition 1.4.4</a>.</p></article><article class="remark remark-like" id="remark-3"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.4.12</span><span class="period">.</span>
+</h6>
+<p id="p-206">When \(\lim_{x \to a} f(x)\) exists but is not equal to \(f(a)\text{,}\) we say that \(f\) has a <dfn class="terminology">removable discontinuity</dfn> at \(x = a\text{.}\) This is because if \(f(a)\) were redefined to be equal to \(\lim_{x \to a} f(x)\text{,}\) the redefined function would be continuous at \(x = a\text{,}\) thus “removing” the discontinuity.</p>
+<p id="p-207">When the left and right limit exist separately, but are not equal, the discontinuity is not removable and is called a <dfn class="terminology">jump discontinuity</dfn>.</p></article><article class="activity project-like" id="activity-continuity-piecewise"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.13</span><span class="period">.</span>
+</h6>
+<p id="p-208">Answer the questions below. It may be helpful to look at some graphs.</p>
+<ol class="lower-alpha">
+<li id="li-172">
+<p id="p-209">Which values of \(c\text{,}\) if any, could make the following function continuous on the real line?</p>
+<div class="displaymath">
+\begin{equation*}
+g(x) = \begin{cases}
+x + c \amp x \leq 2 \\
+x^2   \amp x \gt  2
+\end{cases}
+\end{equation*}
+</div>
+</li>
+<li id="li-173">
+<p id="p-210">Which values of \(c\text{,}\) if any, could make the following function continuous on the real line?</p>
+<div class="displaymath">
+\begin{equation*}
+h(x) = \begin{cases}
+4     \amp x \leq c \\
+x^2   \amp x \gt  c
+\end{cases}
+\end{equation*}
+</div>
+</li>
+<li id="li-174">
+<p id="p-211">Which values of \(c\text{,}\) if any, could make the following function continuous on the real line?</p>
+<div class="displaymath">
+\begin{equation*}
+k(x) = \begin{cases}
+x   \amp x \leq c \\
+x^2 \amp x \gt c
+\end{cases}
+\end{equation*}
+</div>
+</li>
+</ol></article><article class="theorem theorem-like" id="theorem-continuity-combining-functions"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.4.14</span><span class="period">.</span>
+</h6>
+<p id="p-212">If \(f\) and \(g\) are continuous at \(x = a\) and \(c\) is a real number, then the functions \(f + g\text{,}\) \(f - g\text{,}\) \(cf\text{,}\) and \(fg\) are also continuous at \(x = a\text{.}\) Moreover, \(f/g\) is continuous at \(x = a\) provided that \(g(a) \ne 0\text{.}\)</p></article><article class="activity project-like" id="activity-29"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.4.15</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-13">
+<p id="p-213">In this activity we will explore a mathematical theorem, the Intermediate Value Theorem. Here is the statement of the theorem.</p>
+<article class="theorem theorem-like" id="theorem-7"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.4.16</span><span class="period">.</span>
+</h6>
+<p id="p-214">Suppose that:</p>
+<ul class="disc">
+<li id="li-175"><p id="p-215">the function \(f\) is continuous on the interval \([a,b]\) ;</p></li>
+<li id="li-176"><p id="p-216">you pick a value \(N\) such that \(f(a)\leq N \leq f(b)\) or \(f(b)\leq N \leq f(a)\text{.}\)</p></li>
+</ul>
+<p id="p-217">Then, there is some input \(c\) in the interval \([a,b]\) such that \(f(c)=N\text{.}\)</p></article>
+</div>
+<article class="task exercise-like" id="task-29"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-218">To get an idea for the theorem, draw a continuous function \(f(x)\) on the interval \([0,10]\) such that \(f(0)=8\) and \(f(10)=2\text{.}\) Find an input \(c\) where \(f(c)=5\text{.}\)</p></article><article class="task exercise-like" id="task-30"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-219">Now try to draw a graph similar to the previous one, but that does not have any input corresponding to the output 5. Find where your graph violates the requirements for the previous graph.</p></article><article class="task exercise-like" id="task-31"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-220">The part of the theorem that starts with “Suppose…” forms the assumptions of the theorem, whilst the part of the theorem that starts with “Then…” is the conclusion of the theorem. What are the assumptions of the Intermediate Value Theorem? What is the conclusion?</p></article><article class="task exercise-like" id="task-32"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-221">Apply the Intermediate Value Theorem to show that the function \(f(x) = x^3  +x -3\) has a zero (so crosses the \(x\)-axis) at some point between \(x=-1\) and \(x=2\text{.}\) (Hint: What interval of \(x\) values is being considered here? What is \(N\text{?}\) Why is \(N\) between \(f(a)\) and \(f(b)\text{?}\))</p></article></article></section></div></main>
 </div>
 </body>
 </html>

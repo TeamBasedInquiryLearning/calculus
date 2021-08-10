@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-07-31T19:40:47Z       *-->
+<!--*       on 2021-08-10T15:42:10Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -99,131 +99,131 @@
 <span class="type">Section</span> <span class="codenumber">1.6</span> <span class="title">Limits with infinite outputs (LT6)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-7"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
-<ul class="disc"><li id="li-143"><p id="p-177">Determine limits of functions approaching vertical asymptotes.</p></li></ul></article><article class="activity project-like" id="activity-21"><h6 class="heading">
+<ul class="disc"><li id="li-209"><p id="p-281">Determine limits of functions approaching vertical asymptotes.</p></li></ul></article><article class="activity project-like" id="activity-38"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.1</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-14">
-<p id="p-178">Consider the graph in <a class="xref" data-knowl="./knowl/vert-asymp.html" title="Figure 1.6.2">Figure 1.6.2</a>.</p>
+<div class="introduction" id="introduction-22">
+<p id="p-282">Consider the graph in <a class="xref" data-knowl="./knowl/vert-asymp.html" title="Figure 1.6.2">Figure 1.6.2</a>.</p>
 <figure class="figure figure-like" id="vert-asymp"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/vert-asymp.png" class="contained" alt=""></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.6.2<span class="period">.</span></span><span class="space"> </span>Graph of \(\frac{1}{x^2}\)</figcaption></figure>
 </div>
-<article class="task exercise-like" id="task-16"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-179">Which of the following best describes the relationship between the line x=0 and the graph of the function?</p>
+<article class="task exercise-like" id="task-45"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-283">Which of the following best describes the relationship between the line x=0 and the graph of the function?</p>
 <ol class="upper-alpha">
-<li id="li-144"><p id="p-180">The limit is 0</p></li>
-<li id="li-145"><p id="p-181">The limit is positive infinity</p></li>
-<li id="li-146"><p id="p-182">The limit does not exist</p></li>
-<li id="li-147"><p id="p-183">This limit is negative infinity</p></li>
-</ol></article><article class="task exercise-like" id="task-17"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-184">Which of the following best describes the relationship between the line \(x=0 \) and the graph of the function?</p>
+<li id="li-210"><p id="p-284">The limit is 0</p></li>
+<li id="li-211"><p id="p-285">The limit is positive infinity</p></li>
+<li id="li-212"><p id="p-286">The limit does not exist</p></li>
+<li id="li-213"><p id="p-287">This limit is negative infinity</p></li>
+</ol></article><article class="task exercise-like" id="task-46"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-288">Which of the following best describes the relationship between the line \(x=0 \) and the graph of the function?</p>
 <ol class="upper-alpha">
-<li id="li-148"><p id="p-185">The line \(x=0\) is a horizontal asymptote for the function</p></li>
-<li id="li-149"><p id="p-186">The function is not continuous at the point \(x=0\)</p></li>
-<li id="li-150"><p id="p-187">The function is moving away from the line \(x=0\)</p></li>
-<li id="li-151"><p id="p-188">The function is getting closer and closer to the line \(x=0\)</p></li>
-<li id="li-152"><p id="p-189">The function has a jump in outputs around \(x=0\)</p></li>
-</ol></article></article><article class="definition definition-like" id="definition-3"><h6 class="heading">
+<li id="li-214"><p id="p-289">The line \(x=0\) is a horizontal asymptote for the function</p></li>
+<li id="li-215"><p id="p-290">The function is not continuous at the point \(x=0\)</p></li>
+<li id="li-216"><p id="p-291">The function is moving away from the line \(x=0\)</p></li>
+<li id="li-217"><p id="p-292">The function is getting closer and closer to the line \(x=0\)</p></li>
+<li id="li-218"><p id="p-293">The function has a jump in outputs around \(x=0\)</p></li>
+</ol></article></article><article class="definition definition-like" id="definition-5"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.6.3</span><span class="period">.</span>
 </h6>
-<p id="p-190">A function has a <dfn class="terminology">vertical asymptote</dfn> at \(x=a\) when</p>
+<p id="p-294">A function has a <dfn class="terminology">vertical asymptote</dfn> at \(x=a\) when</p>
 <div class="displaymath">
 \begin{equation*}
 \lim_{x\to a} f(x) = + \infty
 \end{equation*}
 </div>
-<p id="p-191">or</p>
+<p id="p-295">or</p>
 <div class="displaymath">
 \begin{equation*}
 \lim_{x\to a} f(x) = - \infty
 \end{equation*}
 </div>
-<p id="p-192">The limit being equal to positive infinity means that we can make the output of \(f(x)\) as large as we want as long as we are sufficiently close to \(x=a\text{.}\) Similarly, the limit being equal to negative infinity means that we can make the output of \(f(x)\) as small as we want as long as we are sufficiently close to \(x=a\text{.}\)</p></article><article class="activity project-like" id="activity-22"><h6 class="heading">
+<p id="p-296">The limit being equal to positive infinity means that we can make the output of \(f(x)\) as large as we want as long as we are sufficiently close to \(x=a\text{.}\) Similarly, the limit being equal to negative infinity means that we can make the output of \(f(x)\) as small as we want as long as we are sufficiently close to \(x=a\text{.}\)</p></article><article class="activity project-like" id="activity-39"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.4</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-15">
-<p id="p-193">Which of the following functions have vertical asymptotes? Select all! </p>
+<div class="introduction" id="introduction-23">
+<p id="p-297">Which of the following functions have vertical asymptotes? Select all! </p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-18"><img src="generated/latex-image/image-17.svg" role="img" class="contained" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.6.5<span class="period">.</span></span><span class="space"> </span>A</figcaption></figure></div>
-<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-19"><img src="generated/latex-image/image-18.svg" role="img" class="contained" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.6.6<span class="period">.</span></span><span class="space"> </span>B</figcaption></figure></div>
-<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-20"><img src="generated/latex-image/image-19.svg" role="img" class="contained" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.6.7<span class="period">.</span></span><span class="space"> </span>C</figcaption></figure></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-22"><img src="generated/latex-image/image-22.svg" role="img" class="contained" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.6.5<span class="period">.</span></span><span class="space"> </span>A</figcaption></figure></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-23"><img src="generated/latex-image/image-23.svg" role="img" class="contained" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.6.6<span class="period">.</span></span><span class="space"> </span>B</figcaption></figure></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-24"><img src="generated/latex-image/image-24.svg" role="img" class="contained" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.6.7<span class="period">.</span></span><span class="space"> </span>C</figcaption></figure></div>
 </div></div>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
-<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-21"><img src="generated/latex-image/image-20.svg" role="img" class="contained" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.6.8<span class="period">.</span></span><span class="space"> </span>D</figcaption></figure></div>
-<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-22"><img src="generated/latex-image/image-21.svg" role="img" class="contained" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.6.9<span class="period">.</span></span><span class="space"> </span>E</figcaption></figure></div>
-<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-23"><img src="generated/latex-image/image-22.svg" role="img" class="contained" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.6.10<span class="period">.</span></span><span class="space"> </span>F</figcaption></figure></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-25"><img src="generated/latex-image/image-25.svg" role="img" class="contained" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.6.8<span class="period">.</span></span><span class="space"> </span>D</figcaption></figure></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-26"><img src="generated/latex-image/image-26.svg" role="img" class="contained" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.6.9<span class="period">.</span></span><span class="space"> </span>E</figcaption></figure></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-27"><img src="generated/latex-image/image-27.svg" role="img" class="contained" alt=""><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.6.10<span class="period">.</span></span><span class="space"> </span>F</figcaption></figure></div>
 </div></div>
 <figure class="figure figure-like" id="figure-1-2"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/image-1.2.png" class="contained" alt=""></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.6.11<span class="period">.</span></span><span class="space"> </span>Six graphs that may or may not have vertical asymptotes</figcaption></figure>
 </div></article><article class="remark remark-like" id="remark-7"><h6 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.6.12</span><span class="period">.</span>
 </h6>
-<p id="p-194">If \(x=a\) is a vertical asymptote for the function \(f(x) \text{,}\)  the function \(f(x)\) is not defined at \(x=a\) because the output tends to infinity so it is not equal to a number.</p></article><article class="activity project-like" id="activity-23"><h6 class="heading">
+<p id="p-298">If \(x=a\) is a vertical asymptote for the function \(f(x) \text{,}\)  the function \(f(x)\) is not defined at \(x=a\) because the output tends to infinity so it is not equal to a number.</p></article><article class="activity project-like" id="activity-40"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.13</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-16"><p id="p-195">Notice that as \(x\) goes to 0, the value of \(x^2\) goes to 0 but the value of \(1/x^2\)  goes to infinity. What is the best explanation for this behavior?</p></div>
+<div class="introduction" id="introduction-24"><p id="p-299">Notice that as \(x\) goes to 0, the value of \(x^2\) goes to 0 but the value of \(1/x^2\)  goes to infinity. What is the best explanation for this behavior?</p></div>
 <ol class="upper-alpha">
-<li id="li-153"><p id="p-196">When dividing by an increasingly small number we get an increasing big number</p></li>
-<li id="li-154"><p id="p-197">When dividing by an increasingly large number we get an increasing small number</p></li>
-<li id="li-155"><p id="p-198">A rational function always has a vertical asymptote</p></li>
-<li id="li-156"><p id="p-199">A rational function always has a horizontal asymptote</p></li>
-</ol></article><article class="activity project-like" id="activity-24"><h6 class="heading">
+<li id="li-219"><p id="p-300">When dividing by an increasingly small number we get an increasing big number</p></li>
+<li id="li-220"><p id="p-301">When dividing by an increasingly large number we get an increasing small number</p></li>
+<li id="li-221"><p id="p-302">A rational function always has a vertical asymptote</p></li>
+<li id="li-222"><p id="p-303">A rational function always has a horizontal asymptote</p></li>
+</ol></article><article class="activity project-like" id="activity-41"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.14</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-17"><p id="p-200">Consider the rational function \(\frac{2}{x-3} \text{.}\) Which of the following options best describes the limits as x approaches 3 from the right and from the left?</p></div>
+<div class="introduction" id="introduction-25"><p id="p-304">Consider the rational function \(\frac{2}{x-3} \text{.}\) Which of the following options best describes the limits as x approaches 3 from the right and from the left?</p></div>
 <ol class="upper-alpha">
-<li id="li-157"><p id="p-201">As x tends to 3+, the limit DNE, but as x tends to 3- the limit is -infinity</p></li>
-<li id="li-158"><p id="p-202">As x tends to 3+, the limit is positive infinity, but as x tends to 3- the limit DNE</p></li>
-<li id="li-159"><p id="p-203">As x tends to 3+, the limit is positive infinity, but as x tends to 3- the limit is -infinity</p></li>
-<li id="li-160"><p id="p-204">As x tends to 3+, the limit DNE and as x tends to 3- the limit DNE</p></li>
-</ol></article><article class="activity project-like" id="activity-25"><h6 class="heading">
+<li id="li-223"><p id="p-305">As x tends to 3+, the limit DNE, but as x tends to 3- the limit is -infinity</p></li>
+<li id="li-224"><p id="p-306">As x tends to 3+, the limit is positive infinity, but as x tends to 3- the limit DNE</p></li>
+<li id="li-225"><p id="p-307">As x tends to 3+, the limit is positive infinity, but as x tends to 3- the limit is -infinity</p></li>
+<li id="li-226"><p id="p-308">As x tends to 3+, the limit DNE and as x tends to 3- the limit DNE</p></li>
+</ol></article><article class="activity project-like" id="activity-42"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.15</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-18"><p id="p-205">Consider the function \(f(x)=\frac{x^2-1}{x-1}\text{.}\) The line \(x=1\) is NOT a vertical asymptote for \(f(x)\text{.}\) Why?</p></div>
+<div class="introduction" id="introduction-26"><p id="p-309">Consider the function \(f(x)=\frac{x^2-1}{x-1}\text{.}\) The line \(x=1\) is NOT a vertical asymptote for \(f(x)\text{.}\) Why?</p></div>
 <ol class="upper-alpha">
-<li id="li-161"><p id="p-206">When x is not equal to 1, we can simplify the fraction to x-1, so the limit is 1.</p></li>
-<li id="li-162"><p id="p-207">When x is not equal to 1, we can simplify the fraction to x+1, so the limit is 2.</p></li>
-<li id="li-163"><p id="p-208">The function is always equal to x+1.</p></li>
-<li id="li-164"><p id="p-209">The function is always equal to x-1.</p></li>
+<li id="li-227"><p id="p-310">When x is not equal to 1, we can simplify the fraction to x-1, so the limit is 1.</p></li>
+<li id="li-228"><p id="p-311">When x is not equal to 1, we can simplify the fraction to x+1, so the limit is 2.</p></li>
+<li id="li-229"><p id="p-312">The function is always equal to x+1.</p></li>
+<li id="li-230"><p id="p-313">The function is always equal to x-1.</p></li>
 </ol></article><article class="remark remark-like" id="remark-8"><h6 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.6.16</span><span class="period">.</span>
 </h6>
-<p id="p-210">When considering a ratio of functions \(f(x)/g(x) \text{,}\) the inputs \(a\) where \(g(a)=0\) are not in the domain of the ratio. If \(g(a)=0 \) but \(f(a) \) is not equal to 0, then \(x=a\) is a vertical asymptote</p></article><article class="activity project-like" id="activity-26"><h6 class="heading">
+<p id="p-314">When considering a ratio of functions \(f(x)/g(x) \text{,}\) the inputs \(a\) where \(g(a)=0\) are not in the domain of the ratio. If \(g(a)=0 \) but \(f(a) \) is not equal to 0, then \(x=a\) is a vertical asymptote</p></article><article class="activity project-like" id="activity-43"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.17</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-19"><p id="p-211">Find all the vertical asymptotes of the following rational function</p></div>
-<article class="task exercise-like" id="task-18"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-212">\(y = \frac{3x-4}{7x+1}\)</p></article><article class="task exercise-like" id="task-19"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-213">\(y= \frac{x^2+10x+24}{x^2-2x+1}\)</p></article><article class="task exercise-like" id="task-20"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-214">\(y= \frac{(x^2-4)(x^2+1)}{x^6}\)</p></article><article class="task exercise-like" id="task-21"><h6 class="heading"><span class="codenumber">(d)</span></h6>
-<p id="p-215">\(y= \frac{2x+1}{2x^2+8x-10}\)</p></article></article><article class="activity project-like" id="activity-27"><h6 class="heading">
+<div class="introduction" id="introduction-27"><p id="p-315">Find all the vertical asymptotes of the following rational function</p></div>
+<article class="task exercise-like" id="task-47"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-316">\(y = \frac{3x-4}{7x+1}\)</p></article><article class="task exercise-like" id="task-48"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-317">\(y= \frac{x^2+10x+24}{x^2-2x+1}\)</p></article><article class="task exercise-like" id="task-49"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-318">\(y= \frac{(x^2-4)(x^2+1)}{x^6}\)</p></article><article class="task exercise-like" id="task-50"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-319">\(y= \frac{2x+1}{2x^2+8x-10}\)</p></article></article><article class="activity project-like" id="activity-44"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.18</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-20">
-<p id="p-216">The graph below represents the function \(f(x) =  \displaystyle\frac{(x+2)(x+4)}{x^2+3x-4}\text{.}\)</p>
-<figure class="figure figure-like" id="figure-25"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-24.svg" role="img" class="contained" alt=""></div>
+<div class="introduction" id="introduction-28">
+<p id="p-320">The graph below represents the function \(f(x) =  \displaystyle\frac{(x+2)(x+4)}{x^2+3x-4}\text{.}\)</p>
+<figure class="figure figure-like" id="figure-29"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-29.svg" role="img" class="contained" alt=""></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.6.19<span class="period">.</span></span><span class="space"> </span>The graph of \(f(x)\)</figcaption></figure>
 </div>
-<article class="task exercise-like" id="task-22"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-217">Explain the behavior of \(f(x)\) at \(x=-4 \text{.}\)</p></article><article class="task exercise-like" id="task-23"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-218">Find the vertical asymptote(s) of \(f(x)\) . First, guess it from the graph. Then, prove that your guess is right using algebra.</p></article><article class="task exercise-like" id="task-24"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-219">Find the horizontal asymptote(s) of  \(f(x)\text{.}\) First, guess it from the graph. Then, prove that your guess is right using algebra.</p></article><article class="task exercise-like" id="task-25"><h6 class="heading"><span class="codenumber">(d)</span></h6>
-<p id="p-220">Use limit notation to describe the behavior of  \(f(x)\) at its asymptotes.</p></article></article><article class="activity project-like" id="activity-28"><h6 class="heading">
+<article class="task exercise-like" id="task-51"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-321">Explain the behavior of \(f(x)\) at \(x=-4 \text{.}\)</p></article><article class="task exercise-like" id="task-52"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-322">Find the vertical asymptote(s) of \(f(x)\) . First, guess it from the graph. Then, prove that your guess is right using algebra.</p></article><article class="task exercise-like" id="task-53"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-323">Find the horizontal asymptote(s) of  \(f(x)\text{.}\) First, guess it from the graph. Then, prove that your guess is right using algebra.</p></article><article class="task exercise-like" id="task-54"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-324">Use limit notation to describe the behavior of  \(f(x)\) at its asymptotes.</p></article></article><article class="activity project-like" id="activity-45"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.6.20</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-21">
-<p id="p-221">You want to draw a function with all these properties.</p>
+<div class="introduction" id="introduction-29">
+<p id="p-325">You want to draw a function with all these properties.</p>
 <ul class="disc">
-<li id="li-165"><p id="p-222">\(\displaystyle \displaystyle  \lim_{x\to 3} f(x)=5\)</p></li>
-<li id="li-166"><p id="p-223">\(\displaystyle f(3)=0 \)</p></li>
-<li id="li-167"><p id="p-224">\(\displaystyle \displaystyle  \lim_{x\to 0^{-}} f(x) = -\infty\)</p></li>
-<li id="li-168"><p id="p-225">\(\displaystyle \displaystyle  \lim_{x\to 0^{+}} f(x) = 0\)</p></li>
-<li id="li-169"><p id="p-226">\(\displaystyle \displaystyle  \lim_{x\to +\infty} f(x) = 2\)</p></li>
+<li id="li-231"><p id="p-326">\(\displaystyle \displaystyle  \lim_{x\to 3} f(x)=5\)</p></li>
+<li id="li-232"><p id="p-327">\(\displaystyle f(3)=0 \)</p></li>
+<li id="li-233"><p id="p-328">\(\displaystyle \displaystyle  \lim_{x\to 0^{-}} f(x) = -\infty\)</p></li>
+<li id="li-234"><p id="p-329">\(\displaystyle \displaystyle  \lim_{x\to 0^{+}} f(x) = 0\)</p></li>
+<li id="li-235"><p id="p-330">\(\displaystyle \displaystyle  \lim_{x\to +\infty} f(x) = 2\)</p></li>
 </ul> Before you start drawing, consider the following guiding questions.</div>
-<article class="task exercise-like" id="task-26"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-227">At which \(x\) values the limit will not be defined?</p></article><article class="task exercise-like" id="task-27"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-228">What are the asymptotes of this function?</p></article><article class="task exercise-like" id="task-28"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-229">At which \(x\) values the function will not be continous?</p></article><article class="task exercise-like" id="task-29"><h6 class="heading"><span class="codenumber">(d)</span></h6>
-<p id="p-230">Draw the graph of one function with all the properties above. Make sure that your graph is a function! You only need to draw a graph, writing a formula would be very challenging!</p></article></article></section></div></main>
+<article class="task exercise-like" id="task-55"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-331">At which \(x\) values the limit will not be defined?</p></article><article class="task exercise-like" id="task-56"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-332">What are the asymptotes of this function?</p></article><article class="task exercise-like" id="task-57"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-333">At which \(x\) values the function will not be continous?</p></article><article class="task exercise-like" id="task-58"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-334">Draw the graph of one function with all the properties above. Make sure that your graph is a function! You only need to draw a graph, writing a formula would be very challenging!</p></article></article></section></div></main>
 </div>
 </body>
 </html>
