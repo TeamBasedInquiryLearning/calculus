@@ -303,10 +303,18 @@
         <p>Would your conclusion that resulted from <xref ref = "activity-limits-numerically5"/> if the function was <m>f(x) = \cos(1/x)</m> or <m>f(x) = \tan(1/x)</m>?</p>
         </statement> </task>   
     </activity>
-    
+
+    <commentary>
+        <p><xref ref="activity-bolt1"/> was inspired by <url href = "https://www.quantamagazine.org/infinite-powers-usain-bolt-and-the-art-of-calculus-20190403/"/></p>
+        <p>Its data was taken from <url href = "https://speedendurance.com/2008/08/22/usain-bolt-100m-10-meter-splits-and-speed-endurance/"/></p>
+    </commentary>
         <activity xml:id = "activity-bolt1">
               <introduction> 
-                <p> In this activity you will study the velocity of Usain Bolt in his Beijing 100 meters dash (inspired by <url> href = "https://www.quantamagazine.org/infinite-powers-usain-bolt-and-the-art-of-calculus-20190403/" </url>). He completed 100 meters in 9.69 seconds for an overall average speed of 100/9.69 = 10.32 meters per second (about 23 miles per hour). But this is the average velocity on the whole interval. How fast was he at different instances? What was his maximum velocity? Let's explore this. The table <xref ref = "table-bolt1"/> shows his split times recorded every 10 meters (data from <url> href = "https://speedendurance.com/2008/08/22/usain-bolt-100m-10-meter-splits-and-speed-endurance/" </url>) .  </p>
+                <p> In this activity you will study the velocity of Usain Bolt in his Beijing 100 meters
+                    dash.
+                    He completed 100 meters in 9.69 seconds for an overall average speed of 100/9.69 = 10.32 meters per second (about 23 miles per hour).
+                    But this is the average velocity on the whole interval. How fast was he at different instances? What was his maximum velocity?
+                    Let's explore this. The table <xref ref = "table-bolt1"/> shows his split times recorded every 10 meters. </p>
         <table xml:id="table-bolt1">
         <tabular>
             <row>

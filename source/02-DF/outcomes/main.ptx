@@ -2,10 +2,10 @@
 <objectives xmlns:xi="http://www.w3.org/2001/XInclude">>
     <introduction>
         <p>
-            How do we measure <q>close-by</q> values?
+            Need a question for this chapter
         </p>
         <p>
-By the end of this chapter, you should be able to...
+            By the end of this chapter, you should be able to...
         </p>
     </introduction>
     <ol>
@@ -26,6 +26,12 @@ By the end of this chapter, you should be able to...
         </li>
         <li>
             <xi:include href="./06.ptx"/>
+        </li>
+        <li>
+            <xi:include href="./07.ptx"/>
+        </li>
+        <li>
+            <xi:include href="./08.ptx"/>
         </li>
     </ol>
 </objectives>
