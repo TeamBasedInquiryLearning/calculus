@@ -68,7 +68,7 @@
             </tabular>
         </table>
         <p>
-        Based on the values of <xref ref="table-limit-numerical1"/>, what is the best approximation for <m>\lim_{x\to 7}</m>?
+        Based on the values of <xref ref="table-limit-numerical1"/>, what is the best approximation for <m>\lim_{x\to 7} f(x)</m>?
         <ol label="A">
             <li><p> the limit is approximately 7</p></li>
             <li><p> the limit is approximately 0.17 </p></li>
@@ -210,24 +210,35 @@
 
 
     <activity xml:id = "activity-limits-numerically4">
+        <introduction>
     <p>Consider the following function <m>f(x)= 3x^3 + 2x^2- 5x+20.</m></p>
-       <ol label="A">
-           <li><p> Choose 6 values of x that you think will help you find <m>\lim_{x \to 2}f(x)</m> numerically.</p></li>
-           <!-- Can we add space between lines???-->
+           </introduction>
+       <task>
+        <p> Of the following options, which of the 5 values would be best to help you find <m>\lim_{x \to 2}f(x)</m> numerically?</p>
+        
+               <ol label="A">
+                    <li><p> 1.9, 1.99, 2.0, 2.01, 2.1</p></li>
+                    <li><p> 1.98, 1.99, 2.0, 2.01, 2.02 </p></li>
+                    <li><p> 1.8, 1.9, 2.0, 2.1, 2.2</p></li>
+                    <li><p> 1.0, 1.5, 2.0, 2.5, 3.0</p></li>
+                </ol>
 
+        </task>
 
-           <li><p> Use the values that you chose in part A to calculate an approximation for <m>\lim_{x \to 2}f(x)</m>. </p></li>
-
-            <li><p> Which value best describes the limit that you obtained in part B?</p></li>
-            <ol label="a">
+<task>  
+        <p> Use the values that you chose in part A to calculate an approximation for <m>\lim_{x \to 2}f(x)</m>. </p>
+        </task>
+<task>
+        <p> Which value best describes the limit that you obtained in part (b)?</p>
+        
+            <ol label="A">
             <li><p> the approximate value is 41.25</p></li>
             <li><p> the approximate value is 41.5 </p></li>
             <li><p> approximate value is 41.75</p></li>
             <li><p> approximate value is 42</p></li>
         </ol>
-        </ol>
-
-
+        
+</task>
     </activity>
 
 
@@ -292,15 +303,15 @@
 </introduction>
      <task> <statement> <p>Based on the graph and table what is the best explanation for the limit as x tends to zero?</p>
         <ol label="A">
-            <li><p> the limit does not exist because the left and right limits have opposite values</p></li>
-            <li><p> the limit does exist but we do not have enough information to answer the question </p></li>
-            <li><p> the limit does exist, and is between -1 and 1, because the graph is oscillating between -1 and 1.</p></li>
-            <li><p> the limit does not exist because you are dividing be zero when <m>x = 0</m> for <m>f(x)</m></p></li>
+            <li><p> the limit does not exist because the left and right limits have opposite values.</p></li>
+            <li><p> the limit does not exist because we do not have enough information to answer the question. </p></li>
+            <li><p> the limit does not exist bacuase the function is oscillating between -1 and 1.</p></li>
+            <li><p> the limit does not exist because you are dividing by zero when <m>x = 0</m> for <m>f(x).</m></p></li>
 
         </ol>
          </statement> </task>   
  <task> <statement>
-        <p>Would your conclusion that resulted from <xref ref = "activity-limits-numerically5"/> if the function was <m>f(x) = \cos(1/x)</m> or <m>f(x) = \tan(1/x)</m>?</p>
+        <p>Would your conclusion that resulted from <xref ref = "activity-limits-numerically5"/> change if the function was <m>f(x) = \cos(1/x)</m> or <m>f(x) = \tan(1/x)</m>?</p>
         </statement> </task>   
     </activity>
 

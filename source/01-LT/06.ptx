@@ -24,7 +24,7 @@
         </introduction>
         <task>
             <p>
-Which of the following best describes the relationship between the line x=0 and the graph of the function?
+Which of the following best describes the limit as <m>x</m> approaches zero in the graph?
             </p>
             <ol label="A">
                 <li><p>The limit is 0</p></li>
@@ -200,7 +200,7 @@ Which of the following best describes the relationship between the line x=0 and 
 
          <remark>
         <statement>
-            <p>If <m>x=a</m> is a vertical asymptote for the function <m>f(x) </m>,  the function <m> f(x)</m> is not defined at <m> x=a</m> because the output tends to infinity so it is not equal to a number. </p>
+            <p>If <m>x=a</m> is a vertical asymptote for the function <m>f(x) </m>,  the function <m> f(x)</m> is not continuous at <m> x=a</m> because the function's output tends to plus or minus infinity and so the limit is not equal to a number. </p>
              </statement>
         </remark>
 
@@ -228,11 +228,13 @@ Which of the following best describes the relationship between the line x=0 and 
 Consider the rational function <m>\frac{2}{x-3} </m>. Which of the following options best describes the limits as x approaches 3 from the right and from the left?
   </p> </introduction>
             <ol label="A">
-                <li><p>As x tends to 3+, the limit DNE, but as x tends to 3- the limit is -infinity
+                <li><p>As x tends to 3+, the limit DNE, but as x tends to 3- the limit is negative infinity
 </p></li>
                 <li><p>As x tends to 3+, the limit is positive infinity, but as x tends to 3- the limit DNE
 </p></li>
-                <li><p>As x tends to 3+, the limit is positive infinity, but as x tends to 3- the limit is -infinity
+                <li><p>As x tends to 3+, the limit is positive infinity, but as x tends to 3- the limit is  negative infinity
+</p></li>
+                 <li><p>As x tends to 3+, the limit is negative infinity, but as x tends to 3- the limit is positive infinity
 </p></li>
                 <li><p>As x tends to 3+, the limit DNE and as x tends to 3- the limit DNE
 </p></li>
@@ -363,7 +365,7 @@ Consider the function <m>f(x)=\frac{x^2-1}{x-1}</m>. The line <m>x=1</m> is NOT 
        </introduction>
  <task>
             <statement>
-                <p> At which <m>x</m> values the limit will not be defined?
+                <p> At which <m>x</m> values will the limit not exist?
 </p>
             </statement>
         </task>
@@ -375,7 +377,7 @@ Consider the function <m>f(x)=\frac{x^2-1}{x-1}</m>. The line <m>x=1</m> is NOT 
         </task>
         <task>
             <statement>
-                <p>At which <m>x</m> values the function will not be continous? </p>
+                <p>At which <m>x</m> values will the function be discontinuous? </p>
             </statement>
         </task>
         <task>

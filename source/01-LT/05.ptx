@@ -18,7 +18,7 @@
                     Consider the graph of the polynomial function <m>f(x) = x^3</m> . We want to think about what the long term behavior of this function might be. Which of the following best describes its behavior?
             </p>
             <figure>
-                <image>
+                <image width="50%">
                           <latex-image> 
                 \begin{tikzpicture}[scale=0.5]
 \begin{axis}[
@@ -41,17 +41,17 @@
         </introduction>
 
             <ol label="A">
-                <li><p>As x gets larger the function x^3 gets larger and larger</p></li>
-                <li><p>As x gets more and more negative, x^3 gets more and more negative
+                <li><p>As <m>x</m> gets larger, the function <m>x^3</m> gets smaller and smaller</p></li>
+                <li><p>As <m>x</m> gets more and more negative, the function <m>x^3</m> gets more and more negative
  </p></li>
-                <li><p>As x gets more and more positive, x^3 gets more and more negative
+                <li><p>As <m>x</m> gets more and more positive, the function <m>x^3</m> gets more and more negative
  </p></li>
-                <li><p>As x gets smaller the function x^3 gets smaller and smaller</p></li>
+                <li><p>As <m>x</m> gets smaller, the function <m>x^3</m> gets smaller and smaller</p></li>
             </ol>
    
     </activity>
 
-<remark> <p>We say that the limit as x tends to negative infinity of x^3 is negative infinity and the limit as x tends to positive infinity of x^3 is positive infinity, in symbols </p>
+<remark> <p>We say that the limit as <m>x</m> tends to negative infinity of <m>x^3</m> is negative infinity and that the limit as <m>x</m> tends to positive infinity of <m>x^3</m> is positive infinity. In symbols, we write </p>
     <me>
     \lim_{x \to + \infty} x^3 = + \infty \, ,  \, \lim_{x \to - \infty} x^3 = - \infty. </me>
     </remark>
@@ -59,10 +59,10 @@
    <activity estimated-time="5">
         <introduction>
             <p>
-                    Consider the graph of the polynomial function <m>f(x) = 1/ x^3</m> . We want to think about what the long term behavior of this function might be. Which of the following best describes its behavior?
+                    Consider the graph of the rational function <m>f(x) = 1/ x^3</m> . We want to think about what the long term behavior of this function might be. Which of the following best describes its behavior?
             </p>
             <figure>
-                <image>
+                <image width="50%">
                           <latex-image> 
                 \begin{tikzpicture}[scale=0.5]
 \begin{axis}[
@@ -87,12 +87,12 @@
         </introduction>
 
             <ol label="A">
-                <li><p> As x tends to positive infinity, 1/x^3 go to positive infinity</p></li>
-                <li><p>As x tends to negative infinity, 1/x^3 tends to 0
+                <li><p> As <m>x</m> tends to positive infinity, the function <m>1/x^3</m> tends to positive infinity</p></li>
+                <li><p>As <m>x</m> tends to negative infinity, the function <m>1/x^3</m>  tends to 0
  </p></li>
-                <li><p>As x tends to positive infinity, 1/x^3 tends to negative infinity
+                <li><p>As <m>x</m> tends to positive infinity, the function <m>1/x^3</m>  tends to negative infinity
  </p></li>
-                <li><p>As x tends to 0, 1/x^3 tends to 0</p></li>
+                <li><p>As <m>x</m> tends to 0, the function <m>1/x^3</m>  tends to 0</p></li>
             </ol>
    
     </activity>    
@@ -368,7 +368,7 @@ What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of t
         <introduction>
             <p>   The graph below represents the function <m>f(x) =  \displaystyle\frac{2(x+3)(x+1)}{x^2-2x-3}</m>.   </p>
              <figure>
-                    <image>
+                    <image width="50%">
                     <latex-image>  
 \begin{tikzpicture}[scale=1]
 \begin{axis}[
@@ -412,13 +412,13 @@ What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of t
             </statement>
         </task>
         <task>
-            <statement>
+<!--             <statement>
                 <p> Use limit notation to describe the behavior of  <m> f(x)</m> at its horizontal asymptotes.</p>
-            </statement>
+            </statement> -->
         </task> Come up with the formula of a rational function that has horizontal asymptote <m>y=3 </m>.
         <task>
             <statement>
-                <p> What do you think is happening at <m>x=1</m>? We will come back to this in the next section! </p>
+                <p> What do you think is happening at <m>x=-1</m>? We will come back to this in the next section! </p>
             </statement>
         </task>
     </activity>
@@ -431,7 +431,7 @@ What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of t
   </p>            
          <note>
              <statement> 
-             <p> A function <m>P(t) = a \, b^t</m> exhibiting exponential decay will have the long term behavior <m>P(t) \to 0</m> as <m> t \to \infty</m>. If we shift the graph up by <m>c</m> units, we obtain the new function <m>Q(t) = a \, b^t + c</m>, with the long term behavior <m>\lim_{t \to \infty} Q(t) = c</m>. A cooling object can be represented by the exponential decay model <m>Q(t) = a \, b^t + c</m>. </p> 
+             <p> An exponential function <m>P(t) = a \, b^t</m> exhibiting exponential decay will have the long term behavior <m>P(t) \to 0</m> as <m> t \to \infty</m>. If we shift the graph up by <m>c</m> units, we obtain the new function <m>Q(t) = a \, b^t + c</m>, with the long term behavior <m>\lim_{t \to \infty} Q(t) = c</m>. A cooling object can be represented by the exponential decay model <m>Q(t) = a \, b^t + c</m>. </p> 
            </statement> </note>
     <p>Consider a cup of coffee initially at 100 degrees Farenheit. The said cup of coffee was forgotten this morning on the kitchen counter where the thermostat is set at 72 degrees Farenheit. From previous observations, we can assume that a cup of coffee looses 10 percent of its temperature each minute. </p>
        </introduction>

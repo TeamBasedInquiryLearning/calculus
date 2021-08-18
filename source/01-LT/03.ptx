@@ -149,10 +149,10 @@
                 <ol>
                     <li><m>\lim_{x \to c} b = b</m></li>
                     <li><m>\lim_{x \to c} x = c</m></li>
-                    <li><m>\lim_{x \to c} (f(x) \pm g(x)) = L \pm K</m></li>
-                    <li><m>\lim_{x \to c} b \cdot f(x) = bL</m></li>
-                    <li><m>\lim_{x \to c} f(x) \cdot g(x) = LK</m></li>
-                    <li><m>\lim_{x \to c} f(x) / g(x) = L/K</m> (provided that <m>K \ne 0</m></li>
+                    <li>Sum/Difference Property <m>\lim_{x \to c} (f(x) \pm g(x)) = L \pm K</m></li>
+                    <li>Scalar Multiples Property <m>\lim_{x \to c} b \cdot f(x) = bL</m></li>
+                    <li>Product Property <m>\lim_{x \to c} f(x) \cdot g(x) = LK</m></li>
+                    <li><m>\lim_{x \to c} f(x) / g(x) = L/K</m> (provided that <m>K \ne 0</m>)</li>
                 </ol>
             </p>
         </statement>
@@ -165,20 +165,20 @@
                 </me>. Then we have the following limits as well.
             </p>
             <ol>
-                <li><m>\lim_{x \to c} f(x)^n = L^n</m></li>
-                <li><m>\lim_{x \to c} \sqrt[n]{f(x)} = \sqrt[n]{L}</m></li>
-                <li><m>\lim_{x \to } g(f(x)) = K. </m></li>
+                <li>Power Property <m>\lim_{x \to c} f(x)^n = L^n</m></li>
+                <li>Root Property <m>\lim_{x \to c} \sqrt[n]{f(x)} = \sqrt[n]{L}</m></li>
+                <li>Composition Property <m>\lim_{x \to c} g(f(x)) = K. </m></li>
             </ol>
         </statement>
     </theorem>
     <activity xml:id="activity-limits-analytically3">
         <statement>
-            <p>If <m>\lim f(x) = 2</m> and <m>\lim g(x) = -3</m>, which of the following statements are true? Select all that apply! </p>
+            <p>If <m>\lim_{x\to 2} f(x) = 2</m> and <m>\lim_{x\to 2} g(x) = -3</m>, which of the following statements are true? Select all that apply! </p>
      <ol label="A">
-                <li><m>\lim (f(x) \cdot g(x)) = -6</m></li>
-                <li><m>\lim (f(x) + g(x)) = -1</m></li>
-                <li><m>\lim (f(x) - g(x)) = -2</m></li>
-                <li><m>\lim (f(x)/g(x)) = -2/3</m></li>
+                <li><m>\lim_{x\to 2} (f(x) \cdot g(x)) = -6</m></li>
+                <li><m>\lim_{x\to 2} (f(x) + g(x)) = -1</m></li>
+                <li><m>\lim_{x\to 2} (f(x) - g(x)) = -2</m></li>
+                <li><m>\lim_{x\to 2} (f(x)/g(x)) = -2/3</m></li>
             </ol>
         </statement>
     </activity>
@@ -196,7 +196,7 @@
      <theorem xml:id="theorem-limits-polynomials">
         <title>General Limits of Polynomials</title>
         <statement>
-            <p>If  <m>p(x)</m> is a polynomial and <m>c</m> is a real number, then <m>\lim_{x \to c} p(x) = c</m>.
+            <p>If  <m>p(x)</m> is a polynomial and <m>c</m> is a real number, then <m>\lim_{x \to c} p(x) = p(c)</m>.
             </p>
         </statement>
     </theorem>
@@ -232,7 +232,7 @@
     
       <activity xml:id = "activity-bolt2">
               <introduction> 
-                <p> In activity <xref ref = "activity-bolt1"/> you studied the velocity of Usain Bolt in his Beijing 100 meters dash. We will now study this situation analytically. To make our computations simpler, we will approximate that he run 100 meters in 10 seconds and we will consider the model <m>d=f(t)=t^2</m>, where <m>d</m> is the distance in meters and <m>t</m> is the time in seconds. </p>
+                <p> In activity <xref ref = "activity-bolt1"/> you studied the velocity of Usain Bolt in his Beijing 100 meters dash. We will now study this situation analytically. To make our computations simpler, we will approximate that he could run 100 meters in 10 seconds and we will consider the model <m>d=f(t)=t^2</m>, where <m>d</m> is the distance in meters and <m>t</m> is the time in seconds. </p>
                   <p> The average velocity is the ratio distance covered over time elapsed. If we consider the interval that starts at <m>t=a</m> and has width <m>h</m>, written <m>[a,a+h]</m>, the average velocity on this interval is <m> \frac{f(a+h)-f(a)}{(a+h) - a} = \frac{f(a+h)-f(a)}{h}</m>. The instantaneous velocity at time <m>t=a</m> is given by: </p>
        <me> \lim_{h \to 0} \frac{f(a+h)-f(a)}{h}</me>
     </introduction>
