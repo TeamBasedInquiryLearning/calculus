@@ -213,27 +213,25 @@
         </introduction>
         <task>
             <p>
-       For which <m>x</m>-values does the <em>left</em> limit exist? Select all.
+       Find  <m>\lim_{x \to -3^-} f(x)</m> and <m>\lim_{x \to -3^+} f(x)</m>.
             </p>
-            <ol label="A">
-                <li><m>-3</m></li>
-                 <li><m>-1</m></li>
-                 <li><m>2</m></li>
-                <li><m>4</m></li>
-            </ol>
          </task>
-        <task>
+          <task>
             <p>
-       For which <m>x</m>-values does the <em>right</em> limit exist? Select all.
+       Find  <m>\lim_{x \to -1^-} f(x)</m> and <m>\lim_{x \to -1^+} f(x)</m>.
             </p>
-            <ol label="A">
-                <li><m>-3</m></li>
-                 <li><m>-1</m></li>
-                 <li><m>2</m></li>
-                <li><m>4</m></li>
-            </ol>
          </task>
-    <task>
+          <task>
+            <p>
+       Find  <m>\lim_{x \to 2^-} f(x)</m> and <m>\lim_{x \to 2^+} f(x)</m>.
+            </p>
+         </task>       
+          <task>
+            <p>
+       Find  <m>\lim_{x \to 4^-} f(x)</m> and <m>\lim_{x \to 4^+} f(x)</m>.
+            </p>
+         </task>
+         <task>
             <p>
        For which <m>x</m>-values does the <em>overall</em> limit exist? Select all. If the limit exists, find it. If it does not, explain why. 
             </p>
@@ -293,7 +291,29 @@
                 <p> Using trigonometry, one can show algebraically that <m>\cos(x) \leq \frac{\sin(x)}{x} \leq 1 </m> for <m>x</m> values close to zero. Moreover, <m>\lim_{x \to 0} \cos(x) = \cos(0)=1</m> (we say that cosine is a continuous function). Use these facts and the Squeeze Theorem, to find the limit <m>\lim_{x\to 0} \frac{\sin(x)}{x} </m>.</p>
             </statement>
         </task>
-    </activity>    
+    </activity> 
+    
+    <activity checkit-seed="3831" checkit-slug="LimitGraph" checkit-title="Limits graphically">
+    <statement>
+        <p>Sketch the graph of a function <m>f(x)</m> that meets all of the following criteria. Be sure to scale your axes and label any important features of your graph.</p>
+        <ol>
+            <!-- Vertical Asymptote -->
+                    <li><p><m>\lim_{x\to 5^-} f(x)</m> is finite, but <m>\lim_{x\to 5^+} f(x)</m> is infinite.</p></li>
+            <!-- Removable Discontinuity -->
+            <!-- Jump Discontinuity -->
+            <!-- Vertical Asymptote -->
+            <!-- Removable Discontinuity -->
+                    <li><p><m>\lim_{x\to -3} f(x)=-4</m>, but <m>f(-3)=0</m>.</p></li>
+            <!-- Jump Discontinuity -->
+            <!-- Vertical Asymptote -->
+            <!-- Removable Discontinuity -->
+            <!-- Jump Discontinuity -->
+                    <li><p><m>\lim_{x\to -1^-} f(x)=-1</m> but <m>\lim_{x\to -1^+} f(x)\neq-1</m>.</p></li>
+        </ol>
+    </statement>
+    
+</activity>
+    
 <!--     <theorem>
         <statement>
             <p>

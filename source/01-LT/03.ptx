@@ -229,6 +229,19 @@
         </ol>
         </statement>
     </activity>
+
+<activity checkit-seed="0006" checkit-slug="LT3" checkit-title="Limits analytically">
+    <statement>
+        <p>
+            Determine the following limits and explain your reasoning.
+        </p>
+        
+            <task><me>\lim_{x\to-6 } \frac{ x^{2} - 6 \, x + 5 }{ x^{2} - 3 \, x - 18 }</me></task>
+            <task><me>\lim_{x\to-1 } \frac{ x^{2} - 1 }{ x^{2} + 3 \, x + 2 }</me></task>
+        <task><me>\lim_{x\to5 } \frac{ x - 5 }{ \sqrt{x + 31} - 6 }</me></task>
+       
+    </statement>
+    </activity>
     
       <activity xml:id = "activity-bolt2">
               <introduction> 
