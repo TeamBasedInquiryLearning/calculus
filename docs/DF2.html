@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-10T18:19:19Z       *-->
+<!--*       on 2021-08-18T06:04:13Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -11,7 +11,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal1 Difference quotients, secant lines, and tangent lines (DF2)</title>
+<title>TBIL-Cal1 Derivatives graphically and numerically (DF1)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>window.MathJax = {
@@ -66,10 +66,10 @@
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="DF1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="DF3.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="DF.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="DF1.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="DF1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a class="next-button button toolbar-item" href="DF3.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="DF.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a class="next-button button toolbar-item" href="DF1.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -92,8 +92,8 @@
 </li>
 <li class="link">
 <a href="DF.html" data-scroll="DF"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
-<li><a href="DF1.html" data-scroll="DF1">Definition of derivative (DF1)</a></li>
-<li><a href="DF2.html" data-scroll="DF2" class="active">Difference quotients, secant lines, and tangent lines (DF2)</a></li>
+<li><a href="DF2.html" data-scroll="DF2" class="active">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1">Derivatives analytically (DF2)</a></li>
 <li><a href="DF3.html" data-scroll="DF3">Basic derivative rules (DF3)</a></li>
 <li><a href="DF4.html" data-scroll="DF4">The product and quotient rules (DF4)</a></li>
 <li><a href="DF5.html" data-scroll="DF5">The chain rule (DF5)</a></li>
@@ -108,13 +108,153 @@
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="DF2"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">2.2</span> <span class="title">Difference quotients, secant lines, and tangent lines (DF2)</span>
+<span class="type">Section</span> <span class="codenumber">2.1</span> <span class="title">Derivatives graphically and numerically (DF1)</span>
 </h2>
-<article class="objectives goal-like" id="objectives-10"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
-<ul class="disc"><li id="li-246"><p id="p-349">Estimate the value of a derivative using difference quotients, and draw corresponding secant and tangent lines on the graph of a function.</p></li></ul></article><article class="activity project-like" id="activity-47"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span>
+<article class="objectives goal-like" id="objectives-9"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
+<ul class="disc"><li id="li-247"><p id="p-353">Estimate the value of a derivative using difference quotients, and draw corresponding secant and tangent lines on the graph of a function.</p></li></ul></article><article class="activity project-like" id="activity-ball1"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-33"><p id="p-350">Lorem ipsum dolor sit amet.</p></div></article></section></div></main>
+<div class="introduction" id="introduction-33">
+<p id="p-354">In this activity you will study the velocity of a ball falling under gravity. The height of the ball is given by the formula \(f(t) = 64-16(t-1)^2\text{.}\) For your convenience, below you will find a table of values for \(f(t)\text{.}\) Recall that the average velocity is given by the change in height over the change in time.</p>
+<figure class="table table-like" id="table-ball1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.2<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(t\, \text{(seconds)} \)</td>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+<td class="l m b0 r0 l0 t0 lines">1.5</td>
+<td class="l m b0 r0 l0 t0 lines">1.75</td>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">2.25</td>
+<td class="l m b0 r0 l0 t0 lines">2.5</td>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(h \, \text{(feet)} \)</td>
+<td class="l m b0 r0 l0 t0 lines">64</td>
+<td class="l m b0 r0 l0 t0 lines">60</td>
+<td class="l m b0 r0 l0 t0 lines">55</td>
+<td class="l m b0 r0 l0 t0 lines">48</td>
+<td class="l m b0 r0 l0 t0 lines">39</td>
+<td class="l m b0 r0 l0 t0 lines">28</td>
+<td class="l m b0 r0 l0 t0 lines">0</td>
+</tr>
+</table></div></figure>
+</div>
+<article class="task exercise-like" id="task-62"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-355">What was the average velocity on the interval \([1,2]\text{?}\) What about on the interval \([2,3]\text{?}\)</p></article><article class="task exercise-like" id="task-63"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-356">What was the average velocity on the interval \([1.5,2]\text{?}\) What about on the interval \([2,2.5]\text{?}\)</p></article><article class="task exercise-like" id="task-64"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-357">What was the average velocity on the interval \([1.75,2]\text{?}\) What about on the interval \([2,2.25]\text{?}\)</p></article><article class="task exercise-like" id="task-65"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-358">If we wanted to approximate the velocity at the instant \(t=2\text{,}\) what would be your best estimate for this instantaneous velocity?</p></article></article><article class="observation remark-like" id="observation-1"><h6 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.1.3</span><span class="period">.</span>
+</h6>
+<p id="p-359">If we want to study the velocity at the instant \(t=2\text{,}\) it is helpful to study the average velocity on small intervals around \(t=2\text{.}\) If we consider the interval \([2,2+h]\text{,}\) where \(h\) is the width of the interval, the average velocity is given by the difference quotient</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{f(2+h)-f(2)}{(2+h)-2} = \frac{f(2+h)-f(2)}{h}.
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-ball2"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.4</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-34"><p id="p-360">Consider the height of the ball falling under gravity as in <a class="xref" data-knowl="./knowl/table-ball1.html" title="Table 2.1.2">Table 2.1.2</a> .</p></div>
+<article class="task exercise-like" id="task-66"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-361">What was the average velocity on the interval \([2,2+h]\) for \(h=1\) and \(h=-1\text{?}\)</p></article><article class="task exercise-like" id="task-67"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-362">What was the average velocity on the interval \([2,2+h]\) for \(h=0.5\) and \(h=-0.5\text{?}\)</p></article><article class="task exercise-like" id="task-68"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-363">What was the average velocity on the interval \([2,2+h]\) for \(h=0.25\) and \(h=-0.25\text{?}\)</p></article><article class="task exercise-like" id="task-69"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-364">How would you express the instaneous velocity at \(t=2\) the average velocity and the language of limits?</p></article></article><article class="definition definition-like" id="definition-6"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.5</span><span class="period">.</span>
+</h6>
+<p id="p-365">The instanteous velocity at \(t=a\) is the limit as \(h \to 0\) of the difference quotient \(\frac{f(a+h)-f(a)}{h}\text{.}\) In the activity above the instantaneous velocity at \(t=2\) is given by the limit</p>
+<div class="displaymath">
+\begin{equation*}
+v(2) = \lim_{h\to 0} \frac{f(2+h)-f(2)}{h}
+\end{equation*}
+</div></article><article class="observation remark-like" id="observation-2"><h6 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.1.6</span><span class="period">.</span>
+</h6>
+<p id="p-366">The slope of the secant line to \(f(x)\) through the points \(x=a\) and \(x=b\) is given by the difference quotient</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{f(b)-f(a)}{b-a}.
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-der-graph1"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.7</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-35">
+<p id="p-367">In this activity you will study the slope of a graph at a point. The graph of the function \(g(x)\) is given below. For your convenience, below you will find a table of values for \(g(x)\text{.}\) Recall that the slope of a line through the points \((a,g(a))\) and  \((b,g(b))\) is given by \(m = \frac{g(b)-g(a)}{b-a}\)</p>
+<figure class="figure figure-like" id="figure-30"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/image-30.svg" role="img" class="contained" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.1.8<span class="period">.</span></span><span class="space"> </span>The graph of \(g(x)\)</figcaption></figure><figure class="table table-like" id="table-der-graph1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.1.9<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(x \)</td>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">2.5</td>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines">3.5</td>
+<td class="l m b0 r0 l0 t0 lines">4</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(g(x) \)</td>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">4.25</td>
+<td class="l m b0 r0 l0 t0 lines">7</td>
+<td class="l m b0 r0 l0 t0 lines">10.25</td>
+<td class="l m b0 r0 l0 t0 lines">14</td>
+</tr>
+</table></div></figure>
+</div>
+<article class="task exercise-like" id="task-70"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-368">What is the slope of the line through \((2,g(2))\) and \((3,g(3))\text{?}\) What about through \((3,g(3))\) and \((4,g(4))\text{?}\) Draw these lines on the graph of \(g(x)\text{.}\)</p></article><article class="task exercise-like" id="task-71"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-369">What is the slope of the line through \((2.5,g(2.5))\) and \((3,g(3))\text{?}\) What about through \((3,g(3))\) and \((3.5,g(3.5))\text{?}\)  Draw these lines on the graph of \(g(x)\text{.}\)</p></article><article class="task exercise-like" id="task-72"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-370">Draw the line tangent to \(g(x)\) at \(x=3\text{.}\) What would be your best estimate for the slope of this tangent line?</p></article></article><article class="observation remark-like" id="observation-3"><h6 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.1.10</span><span class="period">.</span>
+</h6>
+<p id="p-371">The slope of the secant line to \(f(x)\) through the points \(x=a\) and \(x=b\) is given by the difference quotient \(\frac{f(b)-f(a)}{b-a}\) and as \(b\) gets closer to \(a\text{,}\) the slope of the secant line tends to the slope of the tangent line. Letting \(b=a+h\text{,}\) we say that the slope of the tangent line at \(x=a\) is given by the limit</p>
+<div class="displaymath">
+\begin{equation*}
+\lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
+\end{equation*}
+</div></article><article class="definition definition-like" id="definition-7"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.11</span><span class="period">.</span>
+</h6>
+<p id="p-372">The derivative of \(f(x)\) at \(x=a\text{,}\) denoted \(f'(a)\text{,}\) is given by</p>
+<div class="displaymath">
+\begin{equation*}
+f'(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-49"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.12</span><span class="period">.</span>
+</h6>
+<p id="p-373">Suppose that the function \(f(x)\) gives the position of an object at time \(x\text{.}\) Which of the following quantities are the same? Select all!</p>
+<ol class="upper-alpha">
+<li id="li-248"><p id="p-374">The value of the derivative of \(f(x)\) at \(x=a\)</p></li>
+<li id="li-249"><p id="p-375">The slope of the tangent line to \(f(x)\) at \(x=a\)</p></li>
+<li id="li-250"><p id="p-376">The instantaneous velocity of the object at \(x=a\)</p></li>
+<li id="li-251"><p id="p-377">The difference quotient \(\frac{f(a+h)-f(a)}{h} \)</p></li>
+<li id="li-252"><p id="p-378">The limit \(\lim_{h \to 0} \frac{f(a+h)-f(a)}{h} \)</p></li>
+</ol></article><article class="observation remark-like" id="observation-4"><h6 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.1.13</span><span class="period">.</span>
+</h6>
+<p id="p-379">We can use the difference quotient \(\frac{f(a+h)-f(a)}{h} \) for small values of \(h\) to estimate \(f'(a)\text{,}\) the value of the derivative at \(x=a\text{.}\)</p></article><article class="activity project-like" id="activity-50"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.14</span><span class="period">.</span>
+</h6>
+<p id="p-380">Suppose that you know that the function \(g(x)\) has values \(g(-0.5)=7\text{,}\) \(g(0)=4\text{,}\) and \(g(0.5)=2\text{.}\) What is your best estimate for \(g'(0)?\)</p>
+<ol class="upper-alpha">
+<li id="li-253"><p id="p-381">\(\displaystyle g'(0) \approx -3\)</p></li>
+<li id="li-254"><p id="p-382">\(\displaystyle g'(0) \approx -2\)</p></li>
+<li id="li-255"><p id="p-383">\(\displaystyle g'(0) \approx -6\)</p></li>
+<li id="li-256"><p id="p-384">\(\displaystyle g'(0) \approx -4\)</p></li>
+<li id="li-257"><p id="p-385">\(\displaystyle g'(0) \approx -5\)</p></li>
+</ol></article><article class="activity project-like" id="activity-51"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.15</span><span class="period">.</span>
+</h6>
+<p id="p-386">Suppose that you know that the function \(f(x)\) has value \(f(1)=3\) and has derivative at \(x=1\) given by \(f'(1)=2\text{.}\) Which of the following scenarios is most likely?</p>
+<ol class="upper-alpha">
+<li id="li-258"><p id="p-387">\(f(2)=3\) because the function is constant</p></li>
+<li id="li-259"><p id="p-388">\(f(2)=2\) because the derivative is constant</p></li>
+<li id="li-260"><p id="p-389">\(f(2) \approx 1\) because the function's output decreases by about 2 units for each increase by 1 unit in the input</p></li>
+<li id="li-261"><p id="p-390">\(f(2) \approx 5\) because the function's output increases by about 2 units for each increase by 1 unit in the input</p></li>
+</ol></article><article class="observation remark-like" id="observation-5"><h6 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.1.16</span><span class="period">.</span>
+</h6>
+<p id="p-391">We can use the derivative at \(x=a\) to estimate the increase/decrease of the function \(f(x)\) close to \(x=a\text{.}\)</p></article></section></div></main>
 </div>
 </body>
 </html>
