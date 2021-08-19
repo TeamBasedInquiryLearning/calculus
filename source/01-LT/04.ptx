@@ -88,7 +88,7 @@
       <statement>
         <p>
           A function <m>f</m> is <term>continuous</term> at <m>x = a</m> provided that
-          <ol label="a">
+          <ol label="1">
             <li>
               <p>
                 <m>f</m> has a limit as <m>x \to a</m>
@@ -114,7 +114,7 @@
         <p>
           Suppose that some function <m>h(x)</m> is continuous at <m>x = -3</m>. Use <xref ref="definition-continuity"/> to decide which of the following quantities are equal to each other.
         </p>
-        <ol>
+        <ol label="1">
           <li>
             <p>
               <m>\lim_{x \to a^+} f(x)</m>
@@ -150,7 +150,7 @@
           </image>
           <caption></caption>
         </figure>
-        <ol label="a">
+        <ol label="1">
           <li>
             <p>
               For which values of <m>a</m> do we have <m>\lim_{x \to a^-} f(x) \ne \lim_{x \to a^+} f(x)</m>?
@@ -258,7 +258,7 @@
         <p>
           Answer the questions below. It may be helpful to look at some graphs.
         </p>
-        <ol label="a">
+        <ol label="1">
           <li>
             <p>
               Which values of <m>c</m>, if any, could make the following function continuous on the real line?<me>
