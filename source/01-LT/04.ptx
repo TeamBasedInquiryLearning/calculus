@@ -142,7 +142,8 @@
     <activity xml:id="activity-continuous-graph2" estimated-time="10">
       <statement>
         <p>
-          Consider the function <m>f</m> whose graph is pictured below (it's the same graph from <xref ref="activity-continuous-graph1"/>).
+          Consider the function <m>f</m> whose graph is pictured below (it's the same graph from <xref ref="activity-continuous-graph1"/>). In the
+            questions below, consider the values <m>a = -3</m>, <m>-2</m>, <m>-1</m>, <m>0</m>, <m>1</m>, <m>2</m>, <m>3</m>.
         </p>
         <figure xml:id="figure-continuous-graph2">
           <image source="limits-different-kinds.png" width="50%">
