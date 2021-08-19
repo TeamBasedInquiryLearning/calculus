@@ -16,7 +16,7 @@
           <p>
             Which of the following scenarios best describes a continuous function?
           </p>
-          <ol>
+          <ol label="A">
             <li>
               <p>
                 The age of a person reported in years
@@ -153,7 +153,7 @@
         <ol label="a">
           <li>
             <p>
-              For which values of <m>a</m> do we have <m>\lim_{x \to a^-} \ne \lim_{x \to a^+} f(x)</m>?
+              For which values of <m>a</m> do we have <m>\lim_{x \to a^-} f(x) \ne \lim_{x \to a^+} f(x)</m>?
             </p>
           </li>
           <li>
@@ -163,7 +163,7 @@
           </li>
           <li>
             <p>
-              For which values of <m>a</m> does <m>f</m> fail to have a limit at <m>a</m>, yet <m>f(a) \ne \lim_{x \to a} f(x)</m>?
+              For which values of <m>a</m> does <m>f</m> have a limit at <m>a</m>, yet <m>f(a) \ne \lim_{x \to a} f(x)</m>?
             </p>
           </li>
           <li>
@@ -180,7 +180,7 @@
         <p>
           Which condition is <em>stronger</em>, meaning it implies the other?
         </p>
-        <ol>
+        <ol label="A">
           <li>
             <p>
               <m>f</m> has a limit at <m>x = a</m>, or
@@ -200,7 +200,7 @@
         <p>
           Previously, you have used graphs, tables, and formulas to answer questions about limits. Which of those are suitable for answering questions about continuity?
         </p>
-        <ol label="a">
+        <ol label="A">
           <li>
             <p>
               Graphs only
