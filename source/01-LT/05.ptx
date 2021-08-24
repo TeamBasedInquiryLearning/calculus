@@ -9,9 +9,9 @@
             </li>
         </ul>
     </objectives>
-    
+
 <!--   start of activities    -->
-    
+
    <activity estimated-time="5">
         <introduction>
             <p>
@@ -19,7 +19,7 @@
             </p>
             <figure>
                 <image width="50%">
-                          <latex-image> 
+                          <latex-image>
                 \begin{tikzpicture}[scale=0.5]
 \begin{axis}[
 		 axis lines=middle,
@@ -48,10 +48,10 @@
  </p></li>
                 <li><p>As <m>x</m> gets smaller, the function <m>x^3</m> gets smaller and smaller</p></li>
             </ol>
-   
+
     </activity>
 
-<remark> <p>We say that the limit as <m>x</m> tends to negative infinity of <m>x^3</m> is negative infinity and that the limit as <m>x</m> tends to positive infinity of <m>x^3</m> is positive infinity. In symbols, we write </p>
+<remark> <p>We say that <q>the limit as <m>x</m> tends to negative infinity of <m>x^3</m> is negative infinity</q> and that <q>the limit as <m>x</m> tends to positive infinity of <m>x^3</m> is positive infinity</q>. In symbols, we write </p>
     <me>
     \lim_{x \to + \infty} x^3 = + \infty \, ,  \, \lim_{x \to - \infty} x^3 = - \infty. </me>
     </remark>
@@ -63,7 +63,7 @@
             </p>
             <figure>
                 <image width="50%">
-                          <latex-image> 
+                          <latex-image>
                 \begin{tikzpicture}[scale=0.5]
 \begin{axis}[
 		 axis lines=middle,
@@ -94,8 +94,8 @@
  </p></li>
                 <li><p>As <m>x</m> tends to 0, the function <m>1/x^3</m>  tends to 0</p></li>
             </ol>
-   
-    </activity>    
+
+    </activity>
 
     <definition>
         <statement>
@@ -107,13 +107,13 @@
             <me>
     \lim_{x\to -\infty} f(x) = b
             </me>
-   <p> This means that we can make the output of <m> f(x)</m> as close as we want to <m>b</m>, as long as we take <m> x</m> large enough (or small enough).</p>
+   <p> This means that we can make the output of <m> f(x)</m> as close as we want to <m>b</m>, as long as we take <m> x</m> a large enough positive number (<m>x \to \infty</m>) or a large enough negative number (<m>x \to -\infty</m>).</p>
         </statement>
     </definition>
-    
+
       <remark>
         <statement>
-            <p>    We say that the function 1/x^3 has horizontal asymptote y=0 because the limit as x tends to positive infinity of 1/x^3 is 0. Alternatively, we could also justify it by saying that the limit as x goes to negative infinity is 0. </p>
+            <p>    We say that the function <m>1/x^3</m> has horizontal asymptote y=0 because the limit as x tends to positive infinity of 1/x^3 is 0. Alternatively, we could also justify it by saying that the limit as x goes to negative infinity is 0. </p>
              </statement>
         </remark>
 
@@ -248,7 +248,7 @@
             </sidebyside>
             <figure xml:id="figure-1-2">
                 <image width="50%" source="image-1.2.png" />
-                <caption>Six graphs that may or may not have vertical asymptotes</caption>
+                <caption>Six graphs that may or may not have horizontal asymptotes</caption>
             </figure>
                    </introduction>
     </activity>
@@ -261,26 +261,26 @@
         </introduction>
 
             <ol label="A">
-                <li><p>The only possible limit is 0</p></li>
-                <li><p>The only possible limits are 0 or +/- infinity
+                <li><p>The only possible limit is <m>0</m></p></li>
+                <li><p>The only possible limits are <m>0</m> or <m>\pm \infty</m>
  </p></li>
-                <li><p>The only possible limits are 0, 1 or +/- infinity
+                <li><p>The only possible limits are <m>0</m>, <m>1</m> or <m>\pm \infty</m>
  </p></li>
-                <li><p>The only possible limits are any constant number or +/- infinity</p></li>
+                        <li><p>The only possible limits are any constant number or <m>\pm \infty</m></p></li>
             </ol>
-   
-    </activity>        
-    
+
+    </activity>
+
 <remark>
-    <statement> In the long run a rational function behaves like a ratio of the leading terms of the numerator and denominator. So the rational function
+    <statement> In the long run, a rational function behaves like a ratio of the leading terms of the numerator and denominator. So the rational function
         <me>
             r(x) =  \displaystyle\frac{5(x+2)(x+4)}{x^2+3x-4}
         </me>
-behaves like the ratio <m>\frac{5x^2}{x^2}</m> and so as <m>x</m> tends to positive infinity, <m>r(x)</m> tends to 5.  
+        behaves like the ratio <m>\frac{5x^2}{x^2}</m> and so as <m>x</m> tends to <m>+\infty</m>, <m>r(x)</m> tends to 5.
     </statement>
     </remark>
 
-  
+
    <activity estimated-time="10">
         <introduction> <p>  In this activity you will first conjecture the general behavior of rational functions and then test your conjectures.</p>
               </introduction>
@@ -288,27 +288,27 @@ behaves like the ratio <m>\frac{5x^2}{x^2}</m> and so as <m>x</m> tends to posit
   Consider a rational function <m>r(x) = \frac{p(x)}{q(x)}</m>. Looking at the numerator <m>p(x)</m> and the denominator <m>q(x)</m>, when does the function <m>r(x) </m> have limit equal to 0 as <m>x \to \infty? </m>
             </p>
      <ol label="A">
-                <li><p> When the leading tems of the numberator and denominator are equal. </p></li>
+                <li><p> When the leading terms of the numerator and denominator are equal. </p></li>
          <li><p> When the ratio of the leading terms is a constant. </p></li>
-                <li><p>When the degree of the leading tem of the numberator is larger than the degree of the leading term of the numerator.
+                <li><p>When the degree of the leading term of the numerator is larger than the degree of the leading term of the numerator.
  </p></li>
-                <li><p>When the degree of the leading tem of the denominator is larger than the degree of the leading term of the numerator.
- </p></li>                      
-              </ol>          
+                <li><p>When the degree of the leading term of the denominator is larger than the degree of the leading term of the numerator.
+ </p></li>
+              </ol>
 </task>
                  <task> <p>
   Consider a rational function <m>r(x) = \frac{p(x)}{q(x)}</m>. Looking at the numerator <m>p(x)</m> and the denominator <m>q(x)</m>, when does the function <m>r(x) </m> have limit equal to 1 as <m>x \to \infty? </m>
             </p>
      <ol label="A">
-                <li><p> When the leading tems of the numberator and denominator are equal. </p></li>
+                <li><p> When the leading terms of the numerator and denominator are equal. </p></li>
          <li><p> When the ratio of the leading terms is a constant. </p></li>
-                <li><p>When the degree of the leading tem of the numberator is larger than the degree of the leading term of the numerator.
+                <li><p>When the degree of the leading term of the numerator is larger than the degree of the leading term of the numerator.
  </p></li>
-                <li><p>When the degree of the leading tem of the denominator is larger than the degree of the leading term of the numerator.
- </p></li>                      
-              </ol>          
+                <li><p>When the degree of the leading term of the denominator is larger than the degree of the leading term of the numerator.
+ </p></li>
+              </ol>
 </task>
-<task> <p>Test your conjecures by computing the following limits.</p>
+<task> <p>Test your conjectures by computing the following limits.</p>
             <ol label="a">
                 <li><p><m>\displaystyle  \lim_{x\to -\infty} \frac{x^3-x+83}{1} </m></p></li>
                  <li><p><m>\displaystyle  \lim_{x\to -\infty} \frac{1}{x^3-x+83} </m></p></li>
@@ -318,7 +318,7 @@ behaves like the ratio <m>\frac{5x^2}{x^2}</m> and so as <m>x</m> tends to posit
                 <li><p>(Challenge) <m>\displaystyle  \lim_{x\to - \infty} \frac{3e^x+2}{2e^x+3}</m></p></li>
             </ol>
    </task>
-    </activity>          
+    </activity>
 
  <activity estimated-time="5">
         <introduction>
@@ -327,7 +327,7 @@ What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of t
             </p>
             <figure>
                 <image>
-                          <latex-image> 
+                          <latex-image>
                 \begin{tikzpicture}[scale=0.5]
 \begin{axis}[
 		 axis lines=middle,
@@ -344,21 +344,21 @@ What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of t
 \end{tikzpicture}
                         </latex-image>
                     </image>
-                    <caption> A misterious periodic function.</caption>
+                    <caption> A mysterious periodic function.</caption>
                 </figure>
         </introduction>
 
             <ol label="A">
-                <li><p> The limit is 0</p></li>
-                <li><p>The limit is 1
+                <li><p> The limit is <m>0</m></p></li>
+                <li><p>The limit is <m>1</m>
  </p></li>
-                <li><p>The limit is -1
+                    <li><p>The limit is <m>-1</m>
  </p></li>
-                <li><p>The limit is positive infinity</p></li>
+                <li><p>The limit is <m>+\infty</m></p></li>
                   <li><p>The limit DNE </p></li>
             </ol>
-   
-    </activity>          
+
+    </activity>
 
 <warning>
      For a periodic function, a function whose outputs repeat periodically, there is not one distinguished long term behavior, so the limit DNE. Notice that this is different from the limit being +infinity in which case the outputs have a clear behavior: they are getting larger and larger. Unfortunately, you will find in many cases that the notation DNE is used both for a limit equal to infinity and a limit that does not tend to one distinguished value. Beware!
@@ -369,7 +369,7 @@ What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of t
             <p>   The graph below represents the function <m>f(x) =  \displaystyle\frac{2(x+3)(x+1)}{x^2-2x-3}</m>.   </p>
              <figure>
                     <image width="50%">
-                    <latex-image>  
+                    <latex-image>
 \begin{tikzpicture}[scale=1]
 \begin{axis}[
 	axis lines=middle,
@@ -380,7 +380,7 @@ What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of t
     ytick={-4,-2,...,10},
   	tick style={thick},
 % 	x label style={at={(axis description cs:1,0.7)}},
-% 	y label style={at={(axis description cs:0.4,1)}}, 
+% 	y label style={at={(axis description cs:0.4,1)}},
     ylabel=$y$,
 	xlabel=$x$,
         ]
@@ -395,7 +395,7 @@ What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of t
 
 \end{axis}
 \end{tikzpicture}
-  
+
     </latex-image>
                     </image>
                     <caption>The graph of <m> f(x)</m></caption>
@@ -411,29 +411,30 @@ What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of t
                 <p> Use limit notation to describe the behavior of  <m> f(x)</m> at its horizontal asymptotes.</p>
             </statement>
         </task>
-        <task>
+<!--         <task> -->
 <!--             <statement>
                 <p> Use limit notation to describe the behavior of  <m> f(x)</m> at its horizontal asymptotes.</p>
             </statement> -->
-        </task> Come up with the formula of a rational function that has horizontal asymptote <m>y=3 </m>.
+<!--         </task>  -->
+    <task><statement><p>Come up with the formula of a rational function that has horizontal asymptote <m>y=3 </m>.</p></statement></task>
         <task>
             <statement>
                 <p> What do you think is happening at <m>x=-1</m>? We will come back to this in the next section! </p>
             </statement>
         </task>
     </activity>
-  
+
 <!-- application activity  -->
-        
+
    <activity estimated-time="10">
         <introduction>
             <p>    In this activity you will explore an exponential model for a cooling object.
-  </p>            
+  </p>
          <note>
-             <statement> 
-             <p> An exponential function <m>P(t) = a \, b^t</m> exhibiting exponential decay will have the long term behavior <m>P(t) \to 0</m> as <m> t \to \infty</m>. If we shift the graph up by <m>c</m> units, we obtain the new function <m>Q(t) = a \, b^t + c</m>, with the long term behavior <m>\lim_{t \to \infty} Q(t) = c</m>. A cooling object can be represented by the exponential decay model <m>Q(t) = a \, b^t + c</m>. </p> 
+             <statement>
+             <p> An exponential function <m>P(t) = a \, b^t</m> exhibiting exponential decay will have the long term behavior <m>P(t) \to 0</m> as <m> t \to \infty</m>. If we shift the graph up by <m>c</m> units, we obtain the new function <m>Q(t) = a \, b^t + c</m>, with the long term behavior <m>\lim_{t \to \infty} Q(t) = c</m>. A cooling object can be represented by the exponential decay model <m>Q(t) = a \, b^t + c</m>. </p>
            </statement> </note>
-    <p>Consider a cup of coffee initially at 100 degrees Farenheit. The said cup of coffee was forgotten this morning on the kitchen counter where the thermostat is set at 72 degrees Farenheit. From previous observations, we can assume that a cup of coffee looses 10 percent of its temperature each minute. </p>
+    <p>Consider a cup of coffee initially at 100 degrees Fahrenheit. The said cup of coffee was forgotten this morning on the kitchen counter where the thermostat is set at 72 degrees Fahrenheit. From previous observations, we can assume that a cup of coffee looses 10 percent of its temperature each minute. </p>
        </introduction>
  <task>
             <statement>
@@ -462,7 +463,7 @@ What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of t
                 <p> You should have found that this scenario has exponential model <m> Q(t) = 28 \, (0.9)^t + 72</m>. If you go back to drink the cup of coffee 30 minutes after it was left on the counter, what temperature will the coffee have reached?  </p>
             </statement>
         </task>
-          
-       
-    </activity> 
+
+
+    </activity>
 </section>

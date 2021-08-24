@@ -9,12 +9,243 @@
       </li>
     </ul>
   </objectives>
-  <activity>
-    <introduction>
-      <p>
-        Lorem ipsum dolor sit amet.
-      </p>
-    </introduction>
-  </activity>
 
+ <activity xml:id="activity-df-product-rule-intro">
+ <introduction>
+     <p permid="TEn">
+    Let <m>f</m> and <m>g</m> be the functions defined by
+    <m>f(t) = 2t^2</m> and <m>g(t) = t^3 + 4t</m>.
+     </p>
+</introduction> 
+   <task><p>
+          Determine <m>f'(t)</m> and <m>g'(t)</m>.
+        </p></task>
+        
+      
+
+      <task>
+        <p>
+          Let <m>p(t) = 2t^2 (t^3 + 4t)</m> and observe that <m>p(t) = f(t) \cdot g(t)</m>.
+          Rewrite the formula for <m>p</m> by distributing the <m>2t^2</m> term.
+          Then,
+          compute <m>p'(t)</m> using the sum and constant multiple rules.
+        </p>
+      </task>
+
+      <task>
+        <p>
+          True or false: <m>p'(t) = f'(t) \cdot g'(t)</m>.
+        </p>
+      </task>
+</activity>
+    
+<theorem>
+ <title>Product Rule</title>
+      <p>
+           
+        If <m>f</m> and <m>g</m> are differentiable functions,
+        then their product <m>P(x) = f(x) \cdot g(x)</m> is also a differentiable function, and
+        <me>
+          P'(x) = f(x) g'(x) + g(x) f'(x)
+        </me>.
+      </p>
+    
+    </theorem>   
+    
+<!--     <remark>For a proof of the Product Rule, see (insert reference here) </remark>
+ -->
+    
+       <activity xml:id="activity-df-product-rule-simplify">
+        <introduction>
+            <p>
+              The product rule is a powerful tool, but sometimes it isn’t necessary; a more elementary rule may suffice. Which of the following products could you find the derivative of without using the product rule? Select all that apply.
+  
+            </p>
+           
+
+        </introduction>
+        
+           
+            <ol label="A">
+                <li><m>f(x)=e^x \sin x</m></li>
+                <li><m>\sqrt{x}(x^3+3x-3)</m></li>
+                <li><m>(4)(x^5)</m></li>
+                <li><m>x \ln x</m></li>
+             
+            </ol>
+    </activity>
+
+ <activity xml:id="activity-df-product-rule-fluency">
+        <introduction>
+            <p>
+              Find the derivative of the following functions by using the product rule.
+            </p>
+        </introduction>
+       <task><m>f(x)=(x^2+3x)\sin x</m></task>
+     <task><m>f(x)=e^x \cos x</m></task>
+      <task><m>f(x)=x^2\ln x</m></task>
+    </activity>
+
+<activity xml:id="activity-df-quotient-rule-intro">
+ <introduction>
+     <p permid="TEn">
+    Let <m>f</m> and <m>g</m> be the functions defined by
+    <m>f(t) = 2t^2</m> and <m>g(t) = t^3 + 4t</m>.
+     </p>
+</introduction> 
+   <task><p>
+       Determine <m>f'(t)</m> and <m>g'(t)</m>. (These were found previously in <xref ref="activity-df-product-rule-intro" />.) 
+        </p></task>
+        
+      
+
+      <task>
+        <p>
+           Let <m>q(t) = \frac{t^3 + 4t}{2t^2}</m> and observe that <m>q(t) = \frac{g(t)}{f(t)}</m>.
+          Rewrite the formula for <m>q</m> by dividing each term in the numerator by the denominator and simplify to write <m>q</m> as a sum of constant multiples of powers of <m>t</m>.
+          Then,
+          compute <m>q'(t)</m> using the sum and constant multiple rules.
+        </p>
+      </task>
+
+      <task>
+        <p>
+          True or false: <m>q'(t) = \frac{g'(t)}{f'(t)}</m>.
+        </p>
+      </task>
+</activity>
+    
+<theorem>
+ <title>Quotient Rule</title>
+      <p>
+           
+       If <m>f</m> and <m>g</m> are differentiable functions,
+        then their quotient <m>Q(x) = \frac{f(x)}{g(x)}</m> is also a differentiable function for all <m>x</m> where <m>g(x) \ne 0</m> and
+        <me>
+          Q'(x) = \frac{g(x) f'(x) -  f(x) g'(x)}{g(x)^2}
+        </me>.
+      </p>
+    
+    </theorem>      
+
+ <activity xml:id="activity-df-quotient-rule-simplify">
+        <introduction>
+            <p>
+              Just like with the product rule, there are times where we can find the derivative of a quotient using elementary rules rather than the quotient rule. Which of the following quotients could you find the derivative of without using the quotient rule? Select all that apply.
+  
+            </p>
+           
+
+        </introduction>
+        
+           
+            <ol label="A">
+                <li><m>f(x) = \frac{6}{x^3}</m></li>
+                <li><m>f(x) = \frac{2}{\ln x}</m></li>
+                <li><m>f(x) = \frac{e^x}{\sin x}</m></li>
+                <li><m>f(x) = \frac{x^3+3x}{x}</m></li>
+                
+            </ol>
+    </activity>    
+
+ <activity xml:id="activity-df-quotient-rule-fluency">
+        <introduction>
+            <p>
+              Find the derivative of the following functions using the quotient rule (or, if applicable, an elementary rule).
+
+            </p>
+        </introduction>
+       <task><m>f(x) = \frac{6}{x^3}</m></task>
+                <task><m>f(x) = \frac{2}{\ln x}</m></task>
+                <task><m>f(x) = \frac{e^x}{\sin x}</m></task>
+                <task><m>f(x) = \frac{x^3+3x}{x}</m></task>
+     
+    </activity>
+    
+ <activity xml:id="activity-df-quotient-rule-tanx">
+        <introduction>
+            <p>
+              We have found the derivatives of <m>\sin x</m> and <m>\cos x</m>, but what about the other trigonometric functions? It turns out that the quotient rule along with some trig identities can help us! (See <url href="https://www.khanacademy.org/math/trigonometry/trig-equations-and-identities/using-trig-identities/a/trig-identity-reference"/> for a reminder of the reciprocal and Pythagorean identities.)
+
+               Consider the function <m>f(x) = \tan x </m>, and remember that
+    <m>\tan x  = \frac{\sin x}{\cos x}</m>.
+
+
+            </p>
+        </introduction>
+     <task> <p> What is the domain of <m>f</m>?</p></task>
+     <task> <p>  Use the quotient rule to show that one expression for <m>f'(x)</m> is
+          <me>
+            f'(x) = \frac{(\cos x)(\cos x) + (\sin x)(\sin x)}{(\cos x)^2}
+          </me>.</p> </task>
+     <task><p>Which Pythagorean identity might be useful here?
+          How can this identity be used to find a simpler form for <m>f'(x)</m>?</p></task>
+     <task><p> Recall that <m>\sec x = \frac{1}{\cos x}</m>.
+          How can we express <m>f'(x)</m> in terms of the secant function?</p></task>
+     <task><p>  For what values of <m>x</m> is <m>f'(x)</m> defined?
+          How does this set compare to the domain of <m>f</m>?</p></task>
+     
+    </activity>
+
+    <activity xml:id="activity-df-quotient-rule-cotx">
+        <introduction>
+            <p> Let <m>g(x) = \cot x </m>, and recall that
+    <m>\cot  x  = \frac{\sin x }{\cos x }</m>.
+
+
+            </p>
+        </introduction>
+     <task> <p> What is the domain of <m>g(x)</m>?</p></task>
+     <task> <p>  Use the quotient rule to develop a formula for <m> g'(x)</m> that is expressed completely in terms of <m>\sin x</m> and <m>\cos x</m>.
+</p> </task>
+     <task><p>Use other relationships among trigonometric functions to write <m> g'(x)</m> only in terms of the cosecant function.</p></task>
+     <task><p>  What is the domain of <m>g'(x)</m>?
+          How does this compare to the domain of <m>g'(x)</m>?</p></task>
+     
+    </activity>
+
+    <activity xml:id="activity-df-quotient-rule-secx">
+        <introduction>
+            <p> Let <m>h(x) = \sec x </m>, and recall that
+    <m>\sec x  = \frac{1}{\cos x }</m>.
+
+
+            </p>
+        </introduction>
+     <task> <p> What is the domain of <m>h(x)</m>?</p></task>
+     <task> <p>  Use the quotient rule to develop a formula for <m> h'(x)</m> that is expressed completely in terms of <m>\sin x</m> and <m>\cos x</m>.
+</p> </task>
+     <task><p>Use other relationships among trigonometric functions to write <m> h'(x)</m> only in terms of the the tangent and secant functions.</p></task>
+     <task><p>  What is the domain of <m>h'(x)</m>?
+          How does this compare to the domain of <m>h'(x)</m>?</p></task>
+     
+    </activity>
+
+    <activity xml:id="activity-df-quotient-rule-cscx">
+        <introduction>
+            <p> Let <m>p(x) = \csc x </m>, and recall that
+    <m>\csc x  = \frac{1}{\cos x }</m>.
+
+
+            </p>
+        </introduction>
+     <task> <p> What is the domain of <m>p(x)</m>?</p></task>
+     <task> <p>  Use the quotient rule to develop a formula for <m> p'(x)</m> that is expressed completely in terms of <m>\sin x</m> and <m>\cos x</m>.
+</p> </task>
+     <task><p>Use other relationships among trigonometric functions to write <m> h'(x)</m> only in terms of the the cotangent and cosecant functions.</p></task>
+     <task><p>  What is the domain of <m>p'(x)</m>?
+          How does this compare to the domain of <m>p'(x)</m>?</p></task>
+     
+    </activity> 
+    
+<remark> <p> We can now summarize the derivatives for all six trigonometric functions.</p>
+    <ul>
+        <li><m>\frac{d}{dx} \sin x = \cos x</m></li>
+        <li><m>\frac{d}{dx} \cos x = -\sin x</m></li>
+        <li><m>\frac{d}{dx} \tan x = (\sec x)^2</m></li>
+        <li><m>\frac{d}{dx} \cot x = -(\csc x)^2</m></li>
+        <li><m>\frac{d}{dx} \sec x = \sec x \tan x </m></li>
+        <li><m>\frac{d}{dx} \csc x = \csc x \cot x </m></li>
+    </ul>
+    </remark>
 </section>

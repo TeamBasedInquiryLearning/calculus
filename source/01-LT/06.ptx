@@ -57,7 +57,7 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
             <me>
     \lim_{x\to a} f(x) = - \infty
             </me>
-   <p> The limit being equal to positive infinity means that we can make the output of <m>f(x)</m> as large as we want as long as we are sufficiently close to <m>x=a</m>. Similarly, the limit being equal to negative infinity means that we can make the output of <m>f(x)</m> as small as we want as long as we are sufficiently close to <m>x=a</m>.</p>
+   <p> The limit being equal to positive infinity means that we can make the output of <m>f(x)</m> as large a positive number as we want as long as we are sufficiently close to <m>x=a</m>. Similarly, the limit being equal to negative infinity means that we can make the output of <m>f(x)</m> as large a negative number as we want as long as we are sufficiently close to <m>x=a</m>.</p>
         </statement>
     </definition>
 
@@ -225,18 +225,18 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
   <activity estimated-time="5">
         <introduction>
             <p>
-Consider the rational function <m>\frac{2}{x-3} </m>. Which of the following options best describes the limits as x approaches 3 from the right and from the left?
+Consider the rational function <m>f(x) = \frac{2}{x-3} </m>. Which of the following options best describes the limits as x approaches <m>3</m> from the right and from the left?
   </p> </introduction>
             <ol label="A">
-                <li><p>As x tends to 3+, the limit DNE, but as x tends to 3- the limit is negative infinity
+                <li><p>As <m>x \to 3^+</m>, the limit DNE, but as <m>x \to 3^-</m> the limit is <m>-\infty</m>
 </p></li>
-                <li><p>As x tends to 3+, the limit is positive infinity, but as x tends to 3- the limit DNE
+                <li><p>As <m>x \to 3+</m>, the limit is positive infinity, but as <m>x \to 3^-</m> the limit DNE
 </p></li>
-                <li><p>As x tends to 3+, the limit is positive infinity, but as x tends to 3- the limit is  negative infinity
+                    <li><p>As <m>x \to 3+</m>, the limit is positive infinity, but as <m>x \to 3^-</m> the limit is <m>+\infty</m>
 </p></li>
-                 <li><p>As x tends to 3+, the limit is negative infinity, but as x tends to 3- the limit is positive infinity
+                    <li><p>As <m>x \to 3+</m>, the limit is negative infinity, but as <m>x \to 3^-</m> the limit is <m>-\infty</m>
 </p></li>
-                <li><p>As x tends to 3+, the limit DNE and as x tends to 3- the limit DNE
+                        <li><p>As <m>x \to 3+</m>, the limit DNE and as <m>x \to 3^-</m> the limit DNE
 </p></li>
             </ol>
      </activity>
@@ -334,7 +334,7 @@ Consider the function <m>f(x)=\frac{x^2-1}{x-1}</m>. The line <m>x=1</m> is NOT 
         </task>
         <task>
             <statement>
-                <p> Find the vertical asymptote(s) of <m> f(x)</m> . First, guess it from the graph. Then, prove that your guess is right using algebra.</p>
+                <p> Find the vertical asymptote(s) of <m> f(x)</m>. First, guess it from the graph. Then, prove that your guess is right using algebra.</p>
             </statement>
         </task>
         <task>

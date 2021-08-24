@@ -114,25 +114,25 @@
         <p>
           Suppose that some function <m>h(x)</m> is continuous at <m>x = -3</m>. Use <xref ref="definition-continuity"/> to decide which of the following quantities are equal to each other.
         </p>
-        <ol label="1">
+        <ol label="A">
           <li>
             <p>
-              <m>\lim_{x \to a^+} f(x)</m>
+              <m>\lim_{x \to -3^+} f(x)</m>
             </p>
           </li>
           <li>
             <p>
-              <m>\lim_{x \to a^-} f(x)</m>
+              <m>\lim_{x \to -3^-} f(x)</m>
             </p>
           </li>
           <li>
             <p>
-              <m>\lim_{x \to a} f(x)</m>
+              <m>\lim_{x \to 3} f(x)</m>
             </p>
           </li>
           <li>
             <p>
-              <m>f(a)</m>
+              <m>f(-3)</m>
             </p>
           </li>
         </ol>
