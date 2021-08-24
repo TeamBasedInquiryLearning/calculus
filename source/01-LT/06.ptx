@@ -9,7 +9,7 @@
             </li>
         </ul>
     </objectives>
-    
+
 <!-- start of activities     -->
        <activity estimated-time="5">
         <introduction>
@@ -230,13 +230,13 @@ Consider the rational function <m>f(x) = \frac{2}{x-3} </m>. Which of the follow
             <ol label="A">
                 <li><p>As <m>x \to 3^+</m>, the limit DNE, but as <m>x \to 3^-</m> the limit is <m>-\infty</m>
 </p></li>
-                <li><p>As <m>x \to 3+</m>, the limit is positive infinity, but as <m>x \to 3^-</m> the limit DNE
+                <li><p>As <m>x \to 3^+</m>, the limit is positive infinity, but as <m>x \to 3^-</m> the limit DNE
 </p></li>
-                    <li><p>As <m>x \to 3+</m>, the limit is positive infinity, but as <m>x \to 3^-</m> the limit is <m>+\infty</m>
+                    <li><p>As <m>x \to 3^+</m>, the limit is positive infinity, but as <m>x \to 3^-</m> the limit is <m>+\infty</m>
 </p></li>
-                    <li><p>As <m>x \to 3+</m>, the limit is negative infinity, but as <m>x \to 3^-</m> the limit is <m>-\infty</m>
+                    <li><p>As <m>x \to 3^+</m>, the limit is negative infinity, but as <m>x \to 3^-</m> the limit is <m>-\infty</m>
 </p></li>
-                        <li><p>As <m>x \to 3+</m>, the limit DNE and as <m>x \to 3^-</m> the limit DNE
+                        <li><p>As <m>x \to 3^+</m>, the limit DNE and as <m>x \to 3^-</m> the limit DNE
 </p></li>
             </ol>
      </activity>
@@ -247,13 +247,13 @@ Consider the rational function <m>f(x) = \frac{2}{x-3} </m>. Which of the follow
 Consider the function <m>f(x)=\frac{x^2-1}{x-1}</m>. The line <m>x=1</m> is NOT a vertical asymptote for <m> f(x)</m>. Why?
   </p> </introduction>
             <ol label="A">
-                <li> <p> When x is not equal to 1, we can simplify the fraction to x-1, so the limit is 1.
+                <li> <p> When <m>x</m> is not equal to <m>1</m>, we can simplify the fraction to <m>x-1</m>, so the limit is <m>1</m>.
 </p></li>
-                <li><p>When x is not equal to 1, we can simplify the fraction to x+1, so the limit is 2.
+                    <li><p>When <m>x</m> is not equal to <m>1</m>, we can simplify the fraction to <m>x+1</m>, so the limit is <m>2</m>.
 </p></li>
-                <li><p>The function is always equal to x+1.
+                <li><p>The function is always equal to <m>x+1</m>.
 </p></li>
-                              <li><p>The function is always equal to x-1.
+                    <li><p>The function is always equal to <m>x-1</m>.
 </p></li>
             </ol>
      </activity>
@@ -350,10 +350,10 @@ Consider the function <m>f(x)=\frac{x^2-1}{x-1}</m>. The line <m>x=1</m> is NOT 
     </activity>
 
 
-    
+
    <activity estimated-time="10">
         <introduction>
-            <p>    You want to draw a function with all these properties.   </p>            
+            <p>    You want to draw a function with all these properties.   </p>
             <ul>
             <li> <p> <m>\displaystyle  \lim_{x\to 3} f(x)=5</m></p></li>
                   <li> <p> <m>f(3)=0 </m></p></li>
@@ -361,7 +361,7 @@ Consider the function <m>f(x)=\frac{x^2-1}{x-1}</m>. The line <m>x=1</m> is NOT 
                   <li> <p> <m>\displaystyle  \lim_{x\to 0^{+}} f(x) = 0</m></p></li>
                    <li> <p> <m>\displaystyle  \lim_{x\to +\infty} f(x) = 2</m></p></li>
             </ul>
-       Before you start drawing, consider the following guiding questions. 
+       Before you start drawing, consider the following guiding questions.
        </introduction>
  <task>
             <statement>
