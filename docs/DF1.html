@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-18T15:17:19Z       *-->
+<!--*       on 2021-08-24T17:37:53Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -66,10 +66,10 @@
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="DF2.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="DF3.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="DF2.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="DF2.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a class="next-button button toolbar-item" href="DF3.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="DF2.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -94,12 +94,6 @@
 <a href="DF.html" data-scroll="DF"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
 <li><a href="DF2.html" data-scroll="DF2">Derivatives graphically and numerically (DF1)</a></li>
 <li><a href="DF1.html" data-scroll="DF1" class="active">Derivatives analytically (DF2)</a></li>
-<li><a href="DF3.html" data-scroll="DF3">Basic derivative rules (DF3)</a></li>
-<li><a href="DF4.html" data-scroll="DF4">The product and quotient rules (DF4)</a></li>
-<li><a href="DF5.html" data-scroll="DF5">The chain rule (DF5)</a></li>
-<li><a href="DF6.html" data-scroll="DF6">Differentiation strategy (DF6)</a></li>
-<li><a href="DF7.html" data-scroll="DF7">Differentiating implicitly defined functions (DF7)</a></li>
-<li><a href="DF8.html" data-scroll="DF8">Differentiating inverse functions (DF8)</a></li>
 </ul>
 </li>
 <li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
@@ -111,10 +105,60 @@
 <span class="type">Section</span> <span class="codenumber">2.2</span> <span class="title">Derivatives analytically (DF2)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-10"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
-<ul class="disc"><li id="li-257"><p id="p-401">Find derivatives using the definition of derivative as a limit.</p></li></ul></article><article class="activity project-like" id="activity-55"><h6 class="heading">
+<ul class="disc"><li id="li-257"><p id="p-402">Find derivatives using the definition of derivative as a limit.</p></li></ul></article><article class="activity project-like" id="activity-derivative-analytically-point"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-36"><p id="p-402">Lorem ipsum dolor sit amet.</p></div></article></section></div></main>
+<p id="p-403">For the function \(f(x)=x-x^2\) use the limite definition of the derivative to compute \(f'(2)\text{.}\)</p>
+<ol class="upper-alpha">
+<li id="li-258"><p id="p-derived-li-258">\(\displaystyle f'(2)= \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2+2^2}{h}=-3\)</p></li>
+<li id="li-259"><p id="p-derived-li-259">The limit \(f'(2)= \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2}{h}=\lim_{h\to 0}\) simplifies algebraically to \(\lim_{h\to 0} -3-h \frac{4}{h}\) which does not exist, thus \(f'(2)\) is not defined.</p></li>
+<li id="li-260"><p id="p-derived-li-260">f'(2)= -2</p></li>
+<li id="li-261"><p id="p-derived-li-261">\(\displaystyle f'(2) =\lim_{h\to 0} \frac{(2+h)-(2+h)^2-2+2^2}{h}= 3\)</p></li>
+</ol></article><article class="activity project-like" id="activity-derivative-analytically-linear1"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="period">.</span>
+</h6>
+<p id="p-404">Consider the function \(f(x)=3-2x\text{.}\) Which of the following best summarizes the average rates of changes of  on \(f\) on the intervals \([1,4]\text{,}\) \([3,7]\text{,}\) and \([5, 5+h]\text{?}\)</p>
+<ol class="upper-alpha">
+<li id="li-262"><p id="p-derived-li-262">The average rate of change on the intervals \([1,4]\) and \([3,7]\) are equal to the slope of \(f(x)\text{,}\) but the average rate of change of \(f\) cannot be determined on \([5,5+h]\) without a specific value of \(h\text{.}\)</p></li>
+<li id="li-263"><p id="p-derived-li-263">The average rate of change on the intervals \([1,4]\text{,}\) \([3,7]\text{,}\) and \([5, 5+h]\) are all different values.</p></li>
+<li id="li-264"><p id="p-derived-li-264">The average rate of change on the intervals \([1,4]\text{,}\)  \([3,7]\text{,}\) and \([5,5+h]\) are all equal to \(-2\text{.}\)</p></li>
+</ol></article><article class="activity project-like" id="activity-derivative-analytically-linear2"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="period">.</span>
+</h6>
+<p id="p-405">Can \(f'(\pi)\) when \(f(x)=3-2x\) without computing?</p>
+<ol class="upper-alpha">
+<li id="li-265"><p id="p-derived-li-265">Choice</p></li>
+<li id="li-266"><p id="p-derived-li-266">Choice</p></li>
+<li id="li-267"><p id="p-derived-li-267">Choice</p></li>
+<li id="li-268"><p id="p-derived-li-268">Yes, \(f'(\pi)=-2\) because the slope of the tangent line at any point \((a, f(a))\) is equal to the slope of \(f(x)\text{.}\)</p></li>
+</ol></article><article class="activity project-like" id="activity-derivative-analytically-algebraic1"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="period">.</span>
+</h6>
+<p id="p-406">Determine the derivative at any \(a\) of \(f(x)=-x^2+4\text{.}\)</p>
+<ol class="upper-alpha">
+<li id="li-269"><p id="p-derived-li-269">Choice</p></li>
+<li id="li-270"><p id="p-derived-li-270">Choice</p></li>
+<li id="li-271"><p id="p-derived-li-271">Choice</p></li>
+<li id="li-272"><p id="p-derived-li-272">Correct choice.</p></li>
+</ol></article><article class="activity project-like" id="activity-derivative-analytically-algebraic2"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.5</span><span class="period">.</span>
+</h6>
+<p id="p-407">Determine the derivative at any \(a\) of \(f(x)=-x^2+2x-4\text{.}\)</p>
+<ol class="upper-alpha">
+<li id="li-273"><p id="p-derived-li-273">Choice</p></li>
+<li id="li-274"><p id="p-derived-li-274">Choice</p></li>
+<li id="li-275"><p id="p-derived-li-275">Choice</p></li>
+<li id="li-276"><p id="p-derived-li-276">Correct choice.</p></li>
+</ol></article><article class="activity project-like" id="activity-derivative-analytically-instantvelocity"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.6</span><span class="period">.</span>
+</h6>
+<p id="p-408">A water balloon is tossed vertically in the air from a window. The balloon's height in feet at time \(t\) in seconds after being launched is given by \(s(t)=-16t^2+16t+32\text{.}\) Use the limit definition to compute the instantaneous rate of change of \(s\) at the instant \(a=1\text{.}\)</p>
+<ol class="upper-alpha">
+<li id="li-277"><p id="p-derived-li-277">Choice</p></li>
+<li id="li-278"><p id="p-derived-li-278">Choice</p></li>
+<li id="li-279"><p id="p-derived-li-279">Choice</p></li>
+<li id="li-280"><p id="p-derived-li-280">Correct choice.</p></li>
+</ol></article></section></div></main>
 </div>
 </body>
 </html>
