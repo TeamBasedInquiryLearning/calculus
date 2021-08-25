@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-24T18:25:27Z       *-->
+<!--*       on 2021-08-25T17:49:54Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -151,7 +151,7 @@
 <p id="p-251">This means that we can make the output of \(f(x)\) as close as we want to \(b\text{,}\) as long as we take \(x\) a large enough positive number (\(x \to \infty\)) or a large enough negative number (\(x \to -\infty\)).</p></article><article class="remark remark-like" id="remark-5"><h6 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.5.7</span><span class="period">.</span>
 </h6>
-<p id="p-252">We say that the function \(1/x^3\) has horizontal asymptote y=0 because the limit as x tends to positive infinity of 1/x^3 is 0. Alternatively, we could also justify it by saying that the limit as x goes to negative infinity is 0.</p></article><article class="activity project-like" id="activity-35"><h6 class="heading">
+<p id="p-252">We say that the function \(1/x^3\) has horizontal asymptote y=0 because the limit as \(x\) tends to positive infinity of \(1/x^3\) is 0. Alternatively, we could also justify it by saying that the limit as \(x\) goes to negative infinity is 0.</p></article><article class="activity project-like" id="activity-35"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.8</span><span class="period">.</span>
 </h6>
 <div class="introduction" id="introduction-17">
@@ -177,83 +177,93 @@
 <li id="li-183"><p id="p-256">The only possible limits are \(0\) or \(\pm \infty\)</p></li>
 <li id="li-184"><p id="p-257">The only possible limits are \(0\text{,}\) \(1\) or \(\pm \infty\)</p></li>
 <li id="li-185"><p id="p-258">The only possible limits are any constant number or \(\pm \infty\)</p></li>
-</ol></article><article class="remark remark-like" id="remark-6"><h6 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.5.17</span><span class="period">.</span>
-</h6>In the long run, a rational function behaves like a ratio of the leading terms of the numerator and denominator. So the rational function<div class="displaymath">
-\begin{equation*}
-r(x) =  \displaystyle\frac{5(x+2)(x+4)}{x^2+3x-4}
-\end{equation*}
-</div>behaves like the ratio \(\frac{5x^2}{x^2}\) and so as \(x\) tends to \(+\infty\text{,}\) \(r(x)\) tends to 5.</article><article class="activity project-like" id="activity-37"><h6 class="heading">
+</ol></article><article class="activity project-like" id="activity-37"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.17</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-19">In this activity we will examine functions whose limit as \(x\) approaches positive and negative infinity is a nonzero constant.</div>
+<article class="task exercise-like" id="task-41"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-259">Graph the following functions and consider their limits as \(x\) approaches positive and negative infinity. Which function(s) have a limit that is nonzero and constant? Find each of these limits.</p>
+<ol class="upper-alpha">
+<li id="li-186"><p id="p-260">\(\displaystyle \displaystyle  f(x)= \frac{x^3-x+3}{2x^3-6x+1} \)</p></li>
+<li id="li-187"><p id="p-261">\(\displaystyle \displaystyle  f(x)= \frac{x^2-3}{5x^3-2x^2+5} \)</p></li>
+<li id="li-188"><p id="p-262">\(\displaystyle \displaystyle  f(x)= \frac{x^4-3x-2}{3x^3-5x+1} \)</p></li>
+<li id="li-189"><p id="p-263">\(\displaystyle \displaystyle  f(x)= \frac{10x^5-3x+2}{5x^5-3x^2+1} \)</p></li>
+<li id="li-190"><p id="p-264">\(\displaystyle \displaystyle  f(x)= \frac{-8x^2-5x+1}{2x^2-2x+3} \)</p></li>
+</ol></article><article class="task exercise-like" id="task-42"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-265">Conjecture a rule for how to determine that a rational function has a nonzero constant limit as \(x\) approaches positive and negative infinity. Test your rule by creating a rational function whose limit as \(x \to \infty\) equals 3 and then check it graphically.</p></article></article><article class="activity project-like" id="activity-38"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.18</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-19"><p id="p-259">In this activity you will first conjecture the general behavior of rational functions and then test your conjectures.</p></div>
-<article class="task exercise-like" id="task-41"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-260">Consider a rational function \(r(x) = \frac{p(x)}{q(x)}\text{.}\) Looking at the numerator \(p(x)\) and the denominator \(q(x)\text{,}\) when does the function \(r(x) \) have limit equal to 0 as \(x \to \infty? \)</p>
+<div class="introduction" id="introduction-20"><p id="p-266">What about when the limit is not a nonzero constant? How do we recognize those? In this activity you will first conjecture the general behavior of rational functions and then test your conjectures.</p></div>
+<article class="task exercise-like" id="task-43"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-267">Consider a rational function \(r(x) = \frac{p(x)}{q(x)}\text{.}\) Looking at the numerator \(p(x)\) and the denominator \(q(x)\text{,}\) when does the function \(r(x) \) have limit equal to 0 as \(x \to \infty? \)</p>
 <ol class="upper-alpha">
-<li id="li-186"><p id="p-261">When the leading terms of the numerator and denominator are equal.</p></li>
-<li id="li-187"><p id="p-262">When the ratio of the leading terms is a constant.</p></li>
-<li id="li-188"><p id="p-263">When the degree of the leading term of the numerator is larger than the degree of the leading term of the numerator.</p></li>
-<li id="li-189"><p id="p-264">When the degree of the leading term of the denominator is larger than the degree of the leading term of the numerator.</p></li>
-</ol></article><article class="task exercise-like" id="task-42"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-265">Consider a rational function \(r(x) = \frac{p(x)}{q(x)}\text{.}\) Looking at the numerator \(p(x)\) and the denominator \(q(x)\text{,}\) when does the function \(r(x) \) have limit equal to 1 as \(x \to \infty? \)</p>
+<li id="li-191"><p id="p-268">When the ratio of the leading terms is a constant.</p></li>
+<li id="li-192"><p id="p-269">When the degree of the numerator is greater than the degree of the denominator.</p></li>
+<li id="li-193"><p id="p-270">When the degree of the numerator is less than the degree of the denominator.</p></li>
+<li id="li-194"><p id="p-271">When the degree of the numerator is equal to the degree of the denominator.</p></li>
+</ol></article><article class="task exercise-like" id="task-44"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-272">Consider a rational function \(r(x) = \frac{p(x)}{q(x)}\text{.}\) Looking at the numerator \(p(x)\) and the denominator \(q(x)\text{,}\) when does the function \(r(x) \) have limit approaching infinity as \(x \to \infty? \)</p>
 <ol class="upper-alpha">
-<li id="li-190"><p id="p-266">When the leading terms of the numerator and denominator are equal.</p></li>
-<li id="li-191"><p id="p-267">When the ratio of the leading terms is a constant.</p></li>
-<li id="li-192"><p id="p-268">When the degree of the leading term of the numerator is larger than the degree of the leading term of the numerator.</p></li>
-<li id="li-193"><p id="p-269">When the degree of the leading term of the denominator is larger than the degree of the leading term of the numerator.</p></li>
-</ol></article><article class="task exercise-like" id="task-43"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-270">Test your conjectures by computing the following limits.</p>
-<ol class="lower-alpha">
-<li id="li-194"><p id="p-271">\(\displaystyle \displaystyle  \lim_{x\to -\infty} \frac{x^3-x+83}{1} \)</p></li>
-<li id="li-195"><p id="p-272">\(\displaystyle \displaystyle  \lim_{x\to -\infty} \frac{1}{x^3-x+83} \)</p></li>
-<li id="li-196"><p id="p-273">\(\displaystyle \displaystyle  \lim_{x\to +\infty} \frac{x+3}{2-x}\)</p></li>
-<li id="li-197"><p id="p-274">\(\displaystyle \displaystyle  \lim_{x\to -\infty} \frac{\pi-3x}{\pi x-3}\)</p></li>
-<li id="li-198"><p id="p-275">(Challenge) \(\displaystyle  \lim_{x\to + \infty} \frac{3e^x+2}{2e^x+3}\)</p></li>
-<li id="li-199"><p id="p-276">(Challenge) \(\displaystyle  \lim_{x\to - \infty} \frac{3e^x+2}{2e^x+3}\)</p></li>
-</ol></article></article><article class="activity project-like" id="activity-38"><h6 class="heading">
+<li id="li-195"><p id="p-273">When the ratio of the leading terms is a constant.</p></li>
+<li id="li-196"><p id="p-274">When the degree of the numerator is greater than the degree of the denominator.</p></li>
+<li id="li-197"><p id="p-275">When the degree of the numerator is less than the degree of the denominator.</p></li>
+<li id="li-198"><p id="p-276">When the degree of the numerator is equal to the degree of the denominator.</p></li>
+</ol></article><article class="task exercise-like" id="task-45"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-277">Conjecture a rule for the each of the previous two parts of the activity. Test your rules by creating a rational function whose limit as \(x \to \infty\) equals 0 and another whose limit as \(x \to \infty\) is infinite. Then check them graphically.</p></article></article><article class="activity project-like" id="activity-39"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.19</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-20">
-<p id="p-277">What is your best guess for the limit as \(x\) goes to \(+ \infty \) of the function graphed below?</p>
-<figure class="figure figure-like" id="figure-19"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-19.svg" role="img" class="contained" alt=""></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.5.20<span class="period">.</span></span><span class="space"> </span>A mysterious periodic function.</figcaption></figure>
-</div>
-<ol class="upper-alpha">
-<li id="li-200"><p id="p-278">The limit is \(0\)</p></li>
-<li id="li-201"><p id="p-279">The limit is \(1\)</p></li>
-<li id="li-202"><p id="p-280">The limit is \(-1\)</p></li>
-<li id="li-203"><p id="p-281">The limit is \(+\infty\)</p></li>
-<li id="li-204"><p id="p-282">The limit DNE</p></li>
-</ol></article><article class="warning remark-like" id="warning-1"><h6 class="heading">
-<span class="type">Warning</span><span class="space"> </span><span class="codenumber">1.5.21</span><span class="period">.</span>
-</h6>For a periodic function, a function whose outputs repeat periodically, there is not one distinguished long term behavior, so the limit DNE. Notice that this is different from the limit being +infinity in which case the outputs have a clear behavior: they are getting larger and larger. Unfortunately, you will find in many cases that the notation DNE is used both for a limit equal to infinity and a limit that does not tend to one distinguished value. Beware!</article><article class="activity project-like" id="activity-39"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.22</span><span class="period">.</span>
-</h6>
-<div class="introduction" id="introduction-21">
-<p id="p-283">The graph below represents the function \(f(x) =  \displaystyle\frac{2(x+3)(x+1)}{x^2-2x-3}\text{.}\)</p>
-<figure class="figure figure-like" id="figure-20"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/image-20.svg" role="img" class="contained" alt=""></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.5.23<span class="period">.</span></span><span class="space"> </span>The graph of \(f(x)\)</figcaption></figure>
-</div>
-<article class="task exercise-like" id="task-44"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-284">Find the horizontal asymptote of \(f(x) \text{.}\) First, guess it from the graph. Then, prove that your guess is right using algebra.</p></article><article class="task exercise-like" id="task-45"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-285">Use limit notation to describe the behavior of  \(f(x)\) at its horizontal asymptotes.</p></article><article class="task exercise-like" id="task-46"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-286">Come up with the formula of a rational function that has horizontal asymptote \(y=3 \text{.}\)</p></article><article class="task exercise-like" id="task-47"><h6 class="heading"><span class="codenumber">(d)</span></h6>
-<p id="p-287">What do you think is happening at \(x=-1\text{?}\) We will come back to this in the next section!</p></article></article><article class="activity project-like" id="activity-40"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.24</span><span class="period">.</span>
+<div class="introduction" id="introduction-21"><p id="p-278">Compute the following limits.</p></div>
+<ol id="p-279" class="lower-alpha">
+<li id="li-199"><p id="p-280">\(\displaystyle \displaystyle  \lim_{x\to -\infty} \frac{x^3-x+83}{1} \)</p></li>
+<li id="li-200"><p id="p-281">\(\displaystyle \displaystyle  \lim_{x\to -\infty} \frac{1}{x^3-x+83} \)</p></li>
+<li id="li-201"><p id="p-282">\(\displaystyle \displaystyle  \lim_{x\to +\infty} \frac{x+3}{2-x}\)</p></li>
+<li id="li-202"><p id="p-283">\(\displaystyle \displaystyle  \lim_{x\to -\infty} \frac{\pi-3x}{\pi x-3}\)</p></li>
+<li id="li-203"><p id="p-284">(Challenge) \(\displaystyle  \lim_{x\to + \infty} \frac{3e^x+2}{2e^x+3}\)</p></li>
+<li id="li-204"><p id="p-285">(Challenge) \(\displaystyle  \lim_{x\to - \infty} \frac{3e^x+2}{2e^x+3}\)</p></li>
+</ol></article><article class="activity project-like" id="activity-40"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.20</span><span class="period">.</span>
 </h6>
 <div class="introduction" id="introduction-22">
-<p id="p-288">In this activity you will explore an exponential model for a cooling object.</p>
-<article class="note remark-like" id="note-1"><h6 class="heading">
-<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.5.25</span><span class="period">.</span>
-</h6>
-<p id="p-289">An exponential function \(P(t) = a \, b^t\) exhibiting exponential decay will have the long term behavior \(P(t) \to 0\) as \(t \to \infty\text{.}\) If we shift the graph up by \(c\) units, we obtain the new function \(Q(t) = a \, b^t + c\text{,}\) with the long term behavior \(\lim_{t \to \infty} Q(t) = c\text{.}\) A cooling object can be represented by the exponential decay model \(Q(t) = a \, b^t + c\text{.}\)</p></article><p id="p-290">Consider a cup of coffee initially at 100 degrees Fahrenheit. The said cup of coffee was forgotten this morning on the kitchen counter where the thermostat is set at 72 degrees Fahrenheit. From previous observations, we can assume that a cup of coffee looses 10 percent of its temperature each minute.</p>
+<p id="p-286">What is your best guess for the limit as \(x\) goes to \(+ \infty \) of the function graphed below?</p>
+<figure class="figure figure-like" id="figure-19"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-19.svg" role="img" class="contained" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.5.21<span class="period">.</span></span><span class="space"> </span>A mysterious periodic function.</figcaption></figure>
 </div>
-<article class="task exercise-like" id="task-48"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-291">In the long run, what temperature do you expect the coffee to tend to? Write your observation with limit notation.</p></article><article class="task exercise-like" id="task-49"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-292">In the model \(Q(t) = a \, b^t +c\text{,}\) your previous answer gives you the value of one of the parameters in this model. Which one?</p></article><article class="task exercise-like" id="task-50"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-293">From the information given, we notice that the cup of coffee has decay rate of 10 % or \(r = -0.1\text{.}\) When an exponential model has decay rate \(r\text{,}\) its exponential base \(b\) has value \(b=1+r\text{.}\) Use this to find the value of \(b\) for the exponential model described in this scenario.</p></article><article class="task exercise-like" id="task-51"><h6 class="heading"><span class="codenumber">(d)</span></h6>
-<p id="p-294">Assume that the initial temperature corresponds to input \(t=0\text{.}\) Use the data about the initial temperature to find the value of the parameter \(a\) in the model \(Q(t) = a \, b^t + c\)</p></article><article class="task exercise-like" id="task-52"><h6 class="heading"><span class="codenumber">(e)</span></h6>
-<p id="p-295">You should have found that this scenario has exponential model \(Q(t) = 28 \, (0.9)^t + 72\text{.}\) If you go back to drink the cup of coffee 30 minutes after it was left on the counter, what temperature will the coffee have reached?</p></article></article></section></div></main>
+<ol class="upper-alpha">
+<li id="li-205"><p id="p-287">The limit is \(0\)</p></li>
+<li id="li-206"><p id="p-288">The limit is \(1\)</p></li>
+<li id="li-207"><p id="p-289">The limit is \(-1\)</p></li>
+<li id="li-208"><p id="p-290">The limit is \(+\infty\)</p></li>
+<li id="li-209"><p id="p-291">The limit DNE</p></li>
+</ol></article><article class="warning remark-like" id="warning-1"><h6 class="heading">
+<span class="type">Warning</span><span class="space"> </span><span class="codenumber">1.5.22</span><span class="period">.</span>
+</h6>For a periodic function, a function whose outputs repeat periodically, there is not one distinguished long term behavior, so the limit DNE. Notice that this is different from the limit being +infinity in which case the outputs have a clear behavior: they are getting larger and larger. Unfortunately, you will find in many cases that the notation DNE is used both for a limit equal to infinity and a limit that does not tend to one distinguished value. Beware!</article><article class="activity project-like" id="activity-41"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.23</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-23">
+<p id="p-292">The graph below represents the function \(f(x) =  \displaystyle\frac{2(x+3)(x+1)}{x^2-2x-3}\text{.}\)</p>
+<figure class="figure figure-like" id="figure-20"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/image-20.svg" role="img" class="contained" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.5.24<span class="period">.</span></span><span class="space"> </span>The graph of \(f(x)\)</figcaption></figure>
+</div>
+<article class="task exercise-like" id="task-46"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-293">Find the horizontal asymptote of \(f(x) \text{.}\) First, guess it from the graph. Then, prove that your guess is right using algebra.</p></article><article class="task exercise-like" id="task-47"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-294">Use limit notation to describe the behavior of  \(f(x)\) at its horizontal asymptotes.</p></article><article class="task exercise-like" id="task-48"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-295">Come up with the formula of a rational function that has horizontal asymptote \(y=3 \text{.}\)</p></article><article class="task exercise-like" id="task-49"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-296">What do you think is happening at \(x=-1\text{?}\) We will come back to this in the next section!</p></article></article><article class="activity project-like" id="activity-42"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.25</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-24">
+<p id="p-297">In this activity you will explore an exponential model for a cooling object.</p>
+<article class="note remark-like" id="note-1"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.5.26</span><span class="period">.</span>
+</h6>
+<p id="p-298">An exponential function \(P(t) = a \, b^t\) exhibiting exponential decay will have the long term behavior \(P(t) \to 0\) as \(t \to \infty\text{.}\) If we shift the graph up by \(c\) units, we obtain the new function \(Q(t) = a \, b^t + c\text{,}\) with the long term behavior \(\lim_{t \to \infty} Q(t) = c\text{.}\) A cooling object can be represented by the exponential decay model \(Q(t) = a \, b^t + c\text{.}\)</p></article><p id="p-299">Consider a cup of coffee initially at 100 degrees Fahrenheit. The said cup of coffee was forgotten this morning on the kitchen counter where the thermostat is set at 72 degrees Fahrenheit. From previous observations, we can assume that a cup of coffee looses 10 percent of its temperature each minute.</p>
+</div>
+<article class="task exercise-like" id="task-50"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-300">In the long run, what temperature do you expect the coffee to tend to? Write your observation with limit notation.</p></article><article class="task exercise-like" id="task-51"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-301">In the model \(Q(t) = a \, b^t +c\text{,}\) your previous answer gives you the value of one of the parameters in this model. Which one?</p></article><article class="task exercise-like" id="task-52"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-302">From the information given, we notice that the cup of coffee has decay rate of 10 % or \(r = -0.1\text{.}\) When an exponential model has decay rate \(r\text{,}\) its exponential base \(b\) has value \(b=1+r\text{.}\) Use this to find the value of \(b\) for the exponential model described in this scenario.</p></article><article class="task exercise-like" id="task-53"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-303">Assume that the initial temperature corresponds to input \(t=0\text{.}\) Use the data about the initial temperature to find the value of the parameter \(a\) in the model \(Q(t) = a \, b^t + c\)</p></article><article class="task exercise-like" id="task-54"><h6 class="heading"><span class="codenumber">(e)</span></h6>
+<p id="p-304">You should have found that this scenario has exponential model \(Q(t) = 28 \, (0.9)^t + 72\text{.}\) If you go back to drink the cup of coffee 30 minutes after it was left on the counter, what temperature will the coffee have reached?</p></article></article></section></div></main>
 </div>
 </body>
 </html>
