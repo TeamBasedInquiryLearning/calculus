@@ -230,11 +230,11 @@ Consider the rational function <m>f(x) = \frac{2}{x-3} </m>. Which of the follow
             <ol label="A">
                 <li><p>As <m>x \to 3^+</m>, the limit DNE, but as <m>x \to 3^-</m> the limit is <m>-\infty</m>
 </p></li>
-                <li><p>As <m>x \to 3^+</m>, the limit is positive infinity, but as <m>x \to 3^-</m> the limit DNE
+                <li><p>As <m>x \to 3^+</m>, the limit is <m>+\infty</m>, but as <m>x \to 3^-</m> the limit is <m>-\infty</m>
 </p></li>
-                    <li><p>As <m>x \to 3^+</m>, the limit is positive infinity, but as <m>x \to 3^-</m> the limit is <m>+\infty</m>
+                    <li><p>As <m>x \to 3^+</m>, the limit is <m>+\infty</m>, but as <m>x \to 3^-</m> the limit is <m>+\infty</m>
 </p></li>
-                    <li><p>As <m>x \to 3^+</m>, the limit is negative infinity, but as <m>x \to 3^-</m> the limit is <m>-\infty</m>
+                    <li><p>As <m>x \to 3^+</m>, the limit is <m>-\infty</m>, but as <m>x \to 3^-</m> the limit is <m>-\infty</m>
 </p></li>
                         <li><p>As <m>x \to 3^+</m>, the limit DNE and as <m>x \to 3^-</m> the limit DNE
 </p></li>
