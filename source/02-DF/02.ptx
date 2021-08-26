@@ -9,14 +9,19 @@
       </li>
     </ul>
   </objectives>
+   <observation>
+       Recall that <m>f'(a)</m>, the derivative of <m>f(x)</m> at <m>x=a</m>, was defined as the limit for <m>h \to 0</m> of the difference quotient on the interval <m>[a,a+h]</m> as in <xref ref="def-derivative-point"/>.
+    </observation>
+    
+    
     <activity xml:id="activity-derivative-analytically-point">
         <statement>
-            <p>For the function <m>f(x)=x-x^2</m> use the limite definition of the derivative to compute <m>f'(2)</m>.</p>
+            <p>For the function <m>f(x)=x-x^2</m> use the limit definition of the derivative to compute <m>f'(2)</m>.</p>
          <ol label="A">
                 <li> <m>f'(2)= \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2+2^2}{h}=-3</m> </li>
-             <li>The limit <m>f'(2)= \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2}{h}=\lim_{h\to 0}</m> simplifies algebraically to <m>\lim_{h\to 0} -3-h \frac{4}{h}</m> which does not exist, thus <m>f'(2)</m> is not defined.</li>
-                <li>f'(2)= -2</li>
-                <li><m>f'(2) =\lim_{h\to 0} \frac{(2+h)-(2+h)^2-2+2^2}{h}= 3</m> </li>
+             <li>The limit <m>f'(2)= \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2}{h}</m> simplifies algebraically to <m>\lim_{h\to 0} \frac{-3h - h^2}{h}</m> which does not exist, thus <m>f'(2)</m> is not defined.</li>
+                   <li>The limit <m>f'(2)= \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2}{h}</m> simplifies algebraically to <m>\lim_{h\to 0} \frac{h -h^2}{h}</m> which does not exist, thus <m>f'(2)</m> is not defined.</li>
+                <li><m>f'(2) =\lim_{h\to 0} \frac{(2+h)-(2^2+h^2)-2+2^2}{h}= 1</m> </li>
             </ol>
         </statement>
     </activity>
@@ -32,29 +37,47 @@
     </activity>
     <activity xml:id="activity-derivative-analytically-linear2">
         <statement>
-            <p>Can <m>f'(\pi)</m> when <m>f(x)=3-2x</m> without computing? </p>
+            <p>Can you find <m>f'(\pi)</m> when <m>f(x)=3-2x</m> without computing? </p>
             <ol label="A">
-                <li>Choice</li>
-                <li>Choice</li>
-                <li>Choice</li>
-                <li>Yes, <m>f'(\pi)=-2</m> because the slope of the tangent line at any point <m>(a, f(a))</m> is equal to the slope of <m>f(x)</m>.</li>
+                <li>No, because we cannot compute the value <m>f(\pi)</m>. </li>
+                <li>No, because we cannot compute the average rate of change on the interval <m>[\pi, \pi+h]</m>. </li>
+                <li>Yes, <m>f'(\pi)=3</m> because the intercept of the tangent line at any point is equal to the constant intercept of <m>f(x)</m>.</li>
+                <li>Yes, <m>f'(\pi)=-2</m> because the slope of the tangent line at any point is equal to the constant slope of <m>f(x)</m>.</li>
             </ol>
         </statement>
     </activity>
+        <definition xml:id="def-derivative-function">
+       <p> The derivative function of <m>f(x)</m>, denoted <m>f'(x)</m>, is given by 
+</p>
+        <me>f'(x) = \lim_{h\to 0} \frac{f(x+h)-f(x)}{h}.</me>
+         <p>At any particular input <m>x=a</m>, the derivative function outputs <m>f'(a)</m>, the derivative at <m>x=a</m>. </p>
+    </definition>
     <activity xml:id="activity-derivative-analytically-algebraic1">
-          <statement>
-            <p>Determine the derivative at any <m>a</m> of <m>f(x)=-x^2+4</m>. </p>
+        <introduction> <p> In this activity you will consider  <m>f(x)=-x^2+4</m> and compute its derivative function <m>f'(x)</m> using the definition of the derivative function   <xref ref="def-derivative-function"/>.
+            </p>
+            </introduction>
+        <task> <p> What expression do you get when you simplify the difference quotient  </p>
+            <me>\frac{(-(x+h)^2+4)-(-x^2+4)}{h}?</me>
+              
             <ol label="A">
-                <li>Choice</li>
-                <li>Choice</li>
-                <li>Choice</li>
-                <li>Correct choice.</li>
+                <li><m>\frac{x^2 + h^2 +4 -x^2 -4}{h} = \frac{h^2}{h}</m></li>
+                  <li><m>\frac{-x^2 - h^2 +4 +x^2 -4}{h} = \frac{-h^2}{h}</m></li>
+                 <li><m>\frac{-x^2 -2xh - h^2 +4 +x^2 -4}{h} = \frac{-2xh - h^2}{h}</m></li>
+                 <li><m>\frac{x^2 + 2xh + h^2 +4 - x^2 -4}{h} = \frac{2xh + h^2}{h}</m></li>
+            </ol></task>
+        <task> <p>Which of the following is the derivativive function <m>f'(x)</m>? </p>
+            <ol label="A">
+                <li><m>f'(x)=x </m></li>
+                <li><m>f'(x)=-x </m></li>
+                <li><m>f'(x)=2x </m></li>
+                <li><m>f'(x)=-2x </m></li>
             </ol>
-        </statement>
+            </task>
+   
     </activity>
         <activity xml:id="activity-derivative-analytically-algebraic2">
           <statement>
-            <p>Determine the derivative at any <m>a</m> of <m>f(x)=-x^2+2x-4</m>. </p>
+            <p>Find <m>f'(x)</m> for <m>f(x)=-x^2+2x-4</m>. </p>
             <ol label="A">
                 <li>Choice</li>
                 <li>Choice</li>

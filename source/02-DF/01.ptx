@@ -102,7 +102,7 @@
     <task> <statement> <p> What was the average velocity on the interval <m>[2,2+h]</m> for <m>h=0.25</m> and <m>h=-0.25</m>?</p>
          </statement> </task> 
                  
-     <task> <statement> <p>How would you express the instaneous velocity at <m>t=2</m> the average velocity and the language of limits? </p>
+     <task> <statement> <p>What is your best estimate for the limiting value of these velocities as <m>h\to 0</m>? Notice that this is your estimate for the instantaneous velocity at <m>t=2</m>! </p>
          </statement> </task> 
     </activity>
     
@@ -133,8 +133,8 @@
     grid=major,
 %    xmin=-10, xmax=10,
  %   ymin=-5, ymax=8,
-    xtick={-2,-1.5,...,4},
-   ytick={-1,0,...,14},
+    xtick={-1,-0.5,...,4},
+   ytick={0,1,...,14},
   	tick style={thick},
 % 	x label style={at={(axis description cs:1,0.7)}},
 % 	y label style={at={(axis description cs:0.4,1)}}, 
@@ -211,7 +211,7 @@
     <me>\lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.</me>
     </observation>
   
-    <definition>
+    <definition xml:id="def-derivative-point">
        <p> The derivative of <m>f(x)</m> at <m>x=a</m>, denoted <m>f'(a)</m>, is given by 
 </p>
         <me>f'(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.</me>
@@ -240,7 +240,46 @@
          <li><p> <m>g'(0) \approx -5</m> </p></li>
               </ol>    
                    </activity>
-   
+ 
+    <activity>
+        <p>You are given the graph of the function <m>f(x)</m>.</p>
+         <figure>
+                    <image width="50%">
+                    <latex-image>  
+\begin{tikzpicture}[scale=1]
+\begin{axis}[
+	axis lines=middle,
+    grid=major,
+%    xmin=-10, xmax=10,
+ %   ymin=-5, ymax=8,
+   xtick={-1,-0.5,...,3},
+   ytick={-7,-6,...,1},
+  	tick style={thick},
+% 	x label style={at={(axis description cs:1,0.7)}},
+% 	y label style={at={(axis description cs:0.4,1)}}, 
+    ylabel=$y$,
+	xlabel=$x$,
+        ]
+    \addplot[domain=-2:4, blue,  thick] {-x^2+2};
+\end{axis}
+\end{tikzpicture}
+  
+    </latex-image>
+                    </image>
+                    <caption>The graph of <m> f(x)</m></caption>
+                </figure>
+        <task> <p>  Using the graph, estimate the slope of the tangent line at <m>x=2</m>. Make sure you can carefully describe your process for obtaining this estimate! </p>
+        </task>
+        <task> <p> If you call your approximation for the slope <m>m</m>, which one of the following expression gives you the equation of the tangent line at <m>x=2</m>? </p>
+             <ol label="A">
+                <li><p> <m> y - 2 = m (x-2)</m> using point-slope form with the point <m>(2,-2)</m>.</p></li>
+                <li><p> <m> y + 2 = m (x-2)</m> using point-slope form with the point <m>(2,-2)</m>.</p></li>
+                  <li><p> <m> y - 2 = m (x+2)</m> using point-slope form with the point <m>(2,-2)</m>.</p></li>
+                    <li><p> <m> y + 2 = m (x+2)</m> using point-slope form with the point <m>(2,-2)</m>.</p></li>
+              </ol>    
+        </task>
+                   </activity>
+    
         <activity>
         <p>Suppose that you know that the function <m>f(x)</m> has value <m>f(1)=3</m> and has derivative at <m>x=1</m> given by <m>f'(1)=2</m>. Which of the following scenarios is most likely? </p>
            <ol label="A">
