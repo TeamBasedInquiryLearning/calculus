@@ -380,8 +380,44 @@
          <li><p> <m>g'(0) \approx -5</m> </p></li>
               </ol>    
                    </activity>
- 
+
     <activity>
+     <p>
+Sketch the graph of a function <m>f(x)</m>
+that satisfies the following criteria.
+(You do not need to define the function algebraically.)
+                </p>
+                <ul>
+                    <li>
+                        <p>
+Defined and continuous on the interval <m>[-5,5]</m>.
+                        </p>
+                    </li>
+                        <li>
+                            <p>
+<m>f'(x)</m> does not exist at <m>x=0</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+<m>\lim_{h\to 0} \frac{f( 2 +h)-f( 2 )}{h}&lt; 0</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+The slope tangent to the graph of <m>f(x)</m> at <m>x=3</m> is zero
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+The rate of change of <m>f(x)</m> when <m>x=-1</m> is positive
+                            </p>
+                        </li>
+                </ul>
+    </activity>
+    
+    <activity>
+        
         <introduction>
         <p>You are given the graph of the function <m>f(x)</m>.</p>
          <figure>
@@ -422,7 +458,7 @@
         </task>
         <task> <p> Find the equation of the tangent line at <m>x=2</m>. </p> </task>
                    </activity>
-    
+
         <activity>
         <p>Suppose that you know that the function <m>f(x)</m> has value <m>f(1)=3</m> and has derivative at <m>x=1</m> given by <m>f'(1)=2</m>. Which of the following scenarios is most likely? </p>
            <ol label="A">

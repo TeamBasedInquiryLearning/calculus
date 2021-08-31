@@ -182,7 +182,7 @@
                   x^2   \amp x \gt  2
                 \end{cases}
               </me>
-         <p> Consider the interval <m>[2,2+h]</m>. When <m> h \st 0 </m>, the interval falls under the first definition of <m>g(x)</m> and the derivative is always equal to 1. What is the derivative function for <m>x</m> values greater than 2? Show that at <m>x=2</m> the value of this derivative is not equal to 1 and so <m> g(x) </m> is not differentiable at <m>x=2</m>. 
+         <p> Consider the interval <m>[2,2+h]</m>. When <m> h \lt 0 </m>, the interval falls under the first definition of <m>g(x)</m> and the derivative is always equal to 1. What is the derivative function for <m>x</m> values greater than 2? Show that at <m>x=2</m> the value of this derivative is not equal to 1 and so <m> g(x) </m> is not differentiable at <m>x=2</m>. 
             </p>
             </task>
           <task>
@@ -208,5 +208,5 @@
             </p>
             </task>
     </activity>
- <observation> <p>A function can only be differentiable at <m>x=a</m> if it is also continuous at <m>x=a</m>. But not all continuous functions are differentiable: when we have a corner in the graph the function, the function is continuous at the corner point, but it is not differentiable at that point! </p> </observation>
+ <observation> <p>A function can only be differentiable at <m>x=a</m> if it is also continuous at <m>x=a</m>. But not all continuous functions are differentiable: when we have a corner in the graph of a the function, the function is continuous at the corner point, but it is not differentiable at that point! </p> </observation>
 </section>
