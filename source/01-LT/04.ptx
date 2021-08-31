@@ -323,7 +323,7 @@
         </task>
         <task>
             <statement>
-                <p> Now try to draw a graph similar to the previous one, but that does not have any input corresponding to the output 5. Find where your graph violates the requirements for the previous graph.
+                <p> Now try to draw a graph similar to the previous one, but that does not have any input corresponding to the output 5. Then, find where your graph violates these conditions: <m>f(x) </m> is continuous on <m>[0,10]</m>, <m>f(0)=8</m>, and <m>f(10)=2</m>. 
 </p>
             </statement>
         </task>

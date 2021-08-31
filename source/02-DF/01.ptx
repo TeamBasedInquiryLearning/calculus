@@ -113,12 +113,12 @@
      v(2) = \lim_{h\to 0} \frac{f(2+h)-f(2)}{h}</me>    
   </definition>   
  
-     <observation> 
+ <definition>
      <p>
          The slope of the secant line to <m>f(x)</m> through the points <m>x=a</m> and <m>x=b</m> is given by the difference quotient 
          </p>
     <me>\frac{f(b)-f(a)}{b-a}.</me>
-    </observation>
+</definition>
     
         <activity xml:id = "activity-der-graph1">
               <introduction> 
@@ -133,15 +133,15 @@
     grid=major,
 %    xmin=-10, xmax=10,
  %   ymin=-5, ymax=8,
-    xtick={-1,-0.5,...,4},
-   ytick={0,1,...,14},
+    xtick={2,2.5,...,4},
+   ytick={2,4,...,14},
   	tick style={thick},
 % 	x label style={at={(axis description cs:1,0.7)}},
 % 	y label style={at={(axis description cs:0.4,1)}}, 
     ylabel=$y$,
 	xlabel=$x$,
         ]
-    \addplot[domain=-2:4, blue,  thick] {x^2-2};
+    \addplot[domain=2:4, blue,  thick] {x^2-2};
 \end{axis}
 \end{tikzpicture}
   
@@ -200,14 +200,20 @@
          </statement> </task>
      <task> <statement> <p>Draw the line tangent to <m>g(x)</m> at <m>x=3</m>. What would be your best estimate for the slope of this tangent line? </p>
          </statement> </task> 
+             <task> <statement> <p> Notice that the slope of the tangent line at <m>x=3</m> is positive. What feature of the graph of <m>f(x)</m> around <m>x=3</m> do you think causes the tangent line to have positive slope? </p>
+              <ol label="A">
+                <li><p> The function <m>f(x)</m> is concave up </p></li>
+                  <li><p> The function <m>f(x)</m> is increasing </p></li>
+                  <li><p> The function <m>f(x)</m> is concave down </p></li>
+                  <li><p> The function <m>f(x)</m> is decreasing </p></li>               
+              </ol>         
+         </statement> </task> 
     </activity>
-    
-
     
      <observation> 
      <p>
          The slope of the secant line to <m>f(x)</m> through the points <m>x=a</m> and <m>x=b</m> is given by the difference quotient 
-    <m>\frac{f(b)-f(a)}{b-a}</m> and as <m>b</m> gets closer to <m>a</m>, the slope of the secant line tends to the slope of the tangent line. Letting <m>b=a+h</m>, we say that the slope of the tangent line at <m>x=a</m> is given by the limit</p>
+    <m>\frac{f(b)-f(a)}{b-a}</m>. As the point <m>x=b</m> gets closer to <m>x=a</m>, the slope of the secant line tends to the slope of the tangent line. Letting <m>b=a+h</m>, we say that the slope of the tangent line at <m>x=a</m> is given by the limit</p>
     <me>\lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.</me>
     </observation>
   
@@ -217,6 +223,140 @@
         <me>f'(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.</me>
     </definition>
     
+      <observation> <p>In <xref ref ="activity-ball1" />  and <xref ref ="activity-ball2" /> you studied a ball falling under gravity and estimated the instantaneous velocity as a limiting value of average velocities on smaller and smaller intervals. Drawing the corresponding secant lines, we see how the secant lines approximate better the tangent line, showing graphically what we previouly saw numericaly. Here is a Desmos animation showing the secant lines approaching the tangent line  <url href = "https://www.desmos.com/calculator/bzs1bxz7fa"/>.  </p></observation>
+    
+     <activity xml:id = "activity-der-graph1">
+              <introduction> 
+                <p> In this activity you will study the abolute value function <m>f(x)=|x|</m>. The absolute value function is a piecewise defined function which outputs <m>x</m> when <m>x</m> is positive (or zero) and outputs <m>-x</m> when <m>x</m> is negative. So the absolute value always outputs a number which is positive (or zero). Here is the graph of this function. </p>
+                   <figure>
+                    <image width="50%">
+                    <latex-image>  
+\begin{tikzpicture}[scale=1]
+\begin{axis}[
+	axis lines=middle,
+    grid=major,
+%    xmin=-10, xmax=10,
+ %   ymin=-5, ymax=8,
+    xtick={-4,-3,...,4},
+   ytick={0,1,...,4},
+  	tick style={thick},
+% 	x label style={at={(axis description cs:1,0.7)}},
+% 	y label style={at={(axis description cs:0.4,1)}}, 
+    ylabel=$y$,
+	xlabel=$x$,
+        ]
+    \addplot[domain=-4:4, blue,  thick] {abs(x)};
+\end{axis}
+\end{tikzpicture}
+  
+    </latex-image>
+                    </image>
+                    <caption>The graph of <m> |x|</m></caption>
+                    </figure>         
+</introduction>
+     <task> <statement> <p>  What do you think is the slope of the function for any <m>x</m> value smaller than zero?</p>
+          <ol label="A">
+                <li><p> 0 </p></li>
+                  <li><p> 1 </p></li>
+                  <li><p> -1 </p></li>
+                  <li><p> DNE </p></li>               
+              </ol>         
+         </statement> </task>  
+          <task> <statement> <p>  What do you think is the slope of the function for any <m>x</m> value greater than zero?</p>
+          <ol label="A">
+                <li><p> 0 </p></li>
+                  <li><p> 1 </p></li>
+                  <li><p> -1 </p></li>
+                  <li><p> DNE </p></li>               
+              </ol>         
+         </statement> </task>  
+          <task> <statement> <p>  What do you think is the slope of the function at zero?</p>
+          <ol label="A">
+                <li><p> 0 </p></li>
+                  <li><p> 1 </p></li>
+                  <li><p> -1 </p></li>
+                  <li><p> DNE </p></li>               
+              </ol>         
+         </statement> </task>  
+    </activity>
+    
+    <observation xml:id = "differentiability"><p> Because the derivative at a point is defined in terms of a limit, the quantity <m>f'(a)</m> might not exist! In that case we say that <m>f(x)</m> is not differentiable at <m>x=a</m>. This might happen when the slope on the left of the point is different from the slope on the right, like in the case of the absolute value function. We call this behavior a corner in the graph. </p></observation>
+    
+    <activity>
+        <introduction>
+        <p>Consider the graph of function <m>h(x)</m>. </p>
+       <figure>
+                    <image width="50%">
+                    <latex-image>  
+        \begin{tikzpicture}[scale=1]
+\begin{axis}[
+	axis lines=middle,
+    grid=major,
+    xtick={-2,-1,...,7},
+    ytick={-2,-1,...,4},
+    ymin=-1.2, ymax=1.2,
+  	tick style={thick},
+% 	x label style={at={(axis description cs:1,0.7)}},
+% 	y label style={at={(axis description cs:0.4,1)}}, 
+    ylabel=$y$,
+	xlabel=$x$,
+        ]
+    \addplot[domain=-2:1, blue, thick] {(1/3)*(x)-1/3};
+    \addplot[domain=1:5, blue, thick] {0.0625*(x-5)^2-1};
+    \addplot[domain=5:7, blue, thick] {(x-6)^2 };
+\addplot [only marks, blue] table {
+5	1
+1 1
+};
+\draw[fill=white, draw=blue](axis cs:1,0) circle(1mm);
+\draw[fill=white, draw=blue](axis cs:5,-1) circle(1mm);                                               
+\end{axis}
+\end{tikzpicture}
+    
+  </latex-image>
+                    </image>
+                    <caption>The graph of <m> h(x)</m>.</caption>
+                    </figure>         
+ </introduction>   
+    <task> <p> For which of the following points <m>a</m> is <m>f'(a)</m> positive? Select all that apply! </p>
+           <ol label="A">
+                <li><p> -1 </p></li>
+                 <li><p> 1 </p></li>  
+                  <li><p> 2 </p></li>  
+                  <li><p> 5 </p></li>    
+                  <li><p> 6 </p></li> 
+              </ol>                 
+        </task>
+          <task> <p> For which of the following points <m>a</m> is <m>f'(a)</m> negative? Select all that apply! </p>
+           <ol label="A">
+                <li><p> -1 </p></li>
+                 <li><p> 1 </p></li>  
+                  <li><p> 2 </p></li>  
+                  <li><p> 5 </p></li>    
+                  <li><p> 6 </p></li> 
+              </ol>                 
+        </task>
+          <task> <p> For which of the following points <m>a</m> is <m>f'(a)</m> zero? Select all that apply! </p>
+           <ol label="A">
+                <li><p> -1 </p></li>
+                 <li><p> 1 </p></li>  
+                  <li><p> 2 </p></li>  
+                  <li><p> 5 </p></li>    
+                  <li><p> 6 </p></li>
+              </ol>                 
+        </task>
+          <task> <p> For which of the following points <m>a</m> the quantity <m>f'(a)</m> does NOT exist? Select all that apply! </p>
+           <ol label="A">
+                <li><p> -1 </p></li>
+                 <li><p> 1 </p></li>  
+                  <li><p> 2 </p></li>  
+                  <li><p> 5 </p></li>
+               <li><p> 6 </p></li>
+              </ol>                 
+        </task>
+    </activity>
+    
+  
     <activity>
         <p>Suppose that the function <m>f(x)</m> gives the position of an object at time <m>x</m>. Which of the following quantities are the same? Select all!</p>
            <ol label="A">
@@ -242,6 +382,7 @@
                    </activity>
  
     <activity>
+        <introduction>
         <p>You are given the graph of the function <m>f(x)</m>.</p>
          <figure>
                     <image width="50%">
@@ -260,7 +401,7 @@
     ylabel=$y$,
 	xlabel=$x$,
         ]
-    \addplot[domain=-2:4, blue,  thick] {-x^2+2};
+    \addplot[domain=-1:3, blue,  thick] {-x^2+2};
 \end{axis}
 \end{tikzpicture}
   
@@ -268,6 +409,7 @@
                     </image>
                     <caption>The graph of <m> f(x)</m></caption>
                 </figure>
+            </introduction>
         <task> <p>  Using the graph, estimate the slope of the tangent line at <m>x=2</m>. Make sure you can carefully describe your process for obtaining this estimate! </p>
         </task>
         <task> <p> If you call your approximation for the slope <m>m</m>, which one of the following expression gives you the equation of the tangent line at <m>x=2</m>? </p>
@@ -278,6 +420,7 @@
                     <li><p> <m> y + 2 = m (x+2)</m> using point-slope form with the point <m>(2,-2)</m>.</p></li>
               </ol>    
         </task>
+        <task> Find the equation of the tangent line at <m>x=2</m>. </task>
                    </activity>
     
         <activity>

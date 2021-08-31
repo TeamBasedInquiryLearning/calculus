@@ -71,10 +71,35 @@
         <me>f'(x) = nx^{n-1}.</me>
     </definition>
     <observation>
-    So far we have been using <m>f'(x)</m> or <m>f</m> prime to denote a derivative of the function <m>y = f(x)</m>.  However there are other ways to denote the derivative of a function.  Besides <m>f'(x)</m> there is also <m>\frac{dy}{dx}</m> or dee-y dee-x.  Both notations can be used interchangabley.  If you want to take the derivative of <m>f'(x)</m> or <m>\frac{dy}{dx}</m>, the notation is <m>f''(x)</m> or <m>\frac{d^2y}{dx^2}</m> the second derivative of <m>y = f(x)</m>.
+    So far we have been using <m>f'(x)</m> or <m>f</m> prime to denote a derivative of the function <m>f(x)</m>.  However there are other ways to denote the derivative of a function.  Besides <m>f'(x)</m> there is also <m>\frac{df}{dx}</m> or dee-f dee-x.  Both notations can be used interchangabley.  If you want to take the derivative of <m>f'(x)</m> or <m>\frac{df}{dx}</m>, the notation is <m>f''(x)</m> or <m>\frac{d^2f}{dx^2}</m>; this is known as second derivative of <m>f(x)</m>.
     </observation>
     
-    <activity>
-    
+    <activity xml:id="activity-derivative-elementary2">
+    <statement>
+            <p>Using <xref ref = "def-powerlaw-derivative" />, which of the following statement(s) are true?  For those statements that are wrong, correct </p>
+            <ol label="A">
+                <li>The derivative of <m>y = x^{10}</m> is <m>y' = 10x^{11}.</m></li>
+                <li>The derivative of <m>y = x^{-8}</m> is <m>y' = -8x^{-9}.</m></li>
+                <li>The derivative of <m>y = x^{100}</m> is <m>y' = 100x^{99}.</m></li>
+                <li>The derivative of <m>y = x^{-17}</m> is <m>y' = -17x^{-16}.</m>.</li>
+            </ol>
+        </statement>
     </activity>
+    <definition>
+    <p>If <m>f(x) = c</m>, for some constant <m>c\in\mathbb{R}</m>, then <m>f'(x) = 0</m>.
+        </p>
+    </definition>
+    <definition>
+    <p>The Constant Multiple Rule: If <m>c</m> is a constant and <m>f(x)</m> is a differentiable function, then
+        <me>\frac{d}{dx}\left[cf(x)\right] = c\frac{d}{dx}\left[f(x)\right]</me>
+        </p>
+    </definition>
+    <definition>
+    <p>The Sum(Difference) Rule: If <m>f(x)</m> and <m>g(x)</m> are both differentiable, then
+        <me>\frac{d}{dx}\left[f(x) \pm g(x)\right] = \frac{d}{dx}\left[f(x)\right]\pm\frac{d}{dx}\left[g(x)\right]</me>
+        </p>
+    </definition>
+    <observation>
+    The above definitions will be explored in the following activities
+    </observation>
 </section>

@@ -10,13 +10,18 @@
     </ul>
   </objectives>
    <observation>
-       Recall that <m>f'(a)</m>, the derivative of <m>f(x)</m> at <m>x=a</m>, was defined as the limit for <m>h \to 0</m> of the difference quotient on the interval <m>[a,a+h]</m> as in <xref ref="def-derivative-point"/>.
+      <p> Recall that <m>f'(a)</m>, the derivative of <m>f(x)</m> at <m>x=a</m>, was defined as the limit as <m>h \to 0</m> of the difference quotient on the interval <m>[a,a+h]</m> as in <xref ref="def-derivative-point"/>. </p>
     </observation>
-    
+<!--         <definition xml:id="def-derivative-function">
+       <p> Let <m>f(x)</m> be a function  The derivative function of <m>f(x)</m>, denoted <m>f'(x)</m>, is given by the limit
+</p>
+        <me>f'(x) = \lim_{h\to 0} \frac{f(x+h)-f(x)}{h}.</me>
+         <p>At any particular input <m>x=a</m>, the derivative function outputs <m>f'(a)</m>, the derivative at <m>x=a</m>. </p>
+    </definition>     -->
     
     <activity xml:id="activity-derivative-analytically-point">
         <statement>
-            <p>For the function <m>f(x)=x-x^2</m> use the limit definition of the derivative to compute <m>f'(2)</m>.</p>
+            <p>For the function <m>f(x)=x-x^2</m> use the limit definition of the derivative at a point to compute <m>f'(2)</m>.</p>
          <ol label="A">
                 <li> <m>f'(2)= \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2+2^2}{h}=-3</m> </li>
              <li>The limit <m>f'(2)= \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2}{h}</m> simplifies algebraically to <m>\lim_{h\to 0} \frac{-3h - h^2}{h}</m> which does not exist, thus <m>f'(2)</m> is not defined.</li>
@@ -46,18 +51,18 @@
             </ol>
         </statement>
     </activity>
-        <definition xml:id="def-derivative-function">
-       <p> The derivative function of <m>f(x)</m>, denoted <m>f'(x)</m>, is given by 
+    <definition xml:id="def-derivative-function">
+       <p> The derivative function of <m>f(x)</m>, denoted <m>f'(x)</m>, is given by the limit
 </p>
         <me>f'(x) = \lim_{h\to 0} \frac{f(x+h)-f(x)}{h}.</me>
-         <p>At any particular input <m>x=a</m>, the derivative function outputs <m>f'(a)</m>, the derivative at <m>x=a</m>. </p>
+         <p>At any particular input <m>x=a</m>, the derivative function outputs <m>f'(a)</m>, the value of derivative at the point <m>x=a</m>. </p>
     </definition>
     <activity xml:id="activity-derivative-analytically-algebraic1">
-        <introduction> <p> In this activity you will consider  <m>f(x)=-x^2+4</m> and compute its derivative function <m>f'(x)</m> using the definition of the derivative function   <xref ref="def-derivative-function"/>.
+        <introduction> <p> In this activity you will consider  <m>f(x)=-x^2+4</m> and compute its derivative function <m>f'(x)</m> using the limit definition of the derivative function  <xref ref="def-derivative-function"/>.
             </p>
             </introduction>
         <task> <p> What expression do you get when you simplify the difference quotient  </p>
-            <me>\frac{(-(x+h)^2+4)-(-x^2+4)}{h}?</me>
+            <me>\frac{f(x+h)-f(x)}{h}= \frac{(-(x+h)^2+4)-(-x^2+4)}{h}?</me>
               
             <ol label="A">
                 <li><m>\frac{x^2 + h^2 +4 -x^2 -4}{h} = \frac{h^2}{h}</m></li>
@@ -65,7 +70,7 @@
                  <li><m>\frac{-x^2 -2xh - h^2 +4 +x^2 -4}{h} = \frac{-2xh - h^2}{h}</m></li>
                  <li><m>\frac{x^2 + 2xh + h^2 +4 - x^2 -4}{h} = \frac{2xh + h^2}{h}</m></li>
             </ol></task>
-        <task> <p>Which of the following is the derivativive function <m>f'(x)</m>? </p>
+        <task> <p>After taking the limit as <m>h \to 0</m>, which of the following is your result for the derivativive function <m>f'(x)</m>? </p>
             <ol label="A">
                 <li><m>f'(x)=x </m></li>
                 <li><m>f'(x)=-x </m></li>
@@ -77,26 +82,131 @@
     </activity>
         <activity xml:id="activity-derivative-analytically-algebraic2">
           <statement>
-            <p>Find <m>f'(x)</m> for <m>f(x)=-x^2+2x-4</m>. </p>
-            <ol label="A">
-                <li>Choice</li>
-                <li>Choice</li>
-                <li>Choice</li>
-                <li>Correct choice.</li>
+            <p>Using the limit definition of the derivative, find <m>f'(x)</m> for <m>f(x)=-x^2+2x-4</m>. Which of the following is and expression for <m>f'(x)</m>? </p>
+           <ol label="A">
+                <li><m>f'(x)=2x +2</m></li>
+                <li><m>f'(x)=-2x </m></li>
+                <li><m>f'(x)=-2x+2 </m></li>
+                <li><m>f'(x)=-2x -2 </m></li>
             </ol>
         </statement>
     </activity>
-        <activity xml:id="activity-derivative-analytically-instantvelocity">
+          <activity xml:id="activity-derivative-analytically-algebraic3">
           <statement>
-            <p>A water balloon is tossed vertically in the air from a window. The balloon's height in feet at time <m>t</m> in seconds after being launched is given by <m>s(t)=-16t^2+16t+32</m>. Use the limit definition to compute the instantaneous rate of change of <m>s</m> at the instant <m>a=1</m>. </p>
+            <p>Using the limit definition of the derivative, you want to find <m>f'(x)</m> for <m>f(x)=\frac{1}{x}</m>. We will do this by first simplifying the difference quotient and then taking the limit as <m>h\to 0</m>.   </p>   </statement>
+                 <task> <p> What expression do you get when you simplify the difference quotient  </p>
+            <me>\frac{f(x+h)-f(x)}{h}= \frac{\frac{1}{x+h}-\frac{1}{x}}{h}?</me>
             <ol label="A">
-                <li>Choice</li>
-                <li>Choice</li>
-                <li>Choice</li>
-                <li>Correct choice.</li>
+                <li><m>\frac{\frac{1}{x+h}}{h} = \frac{1}{(x+h)h}</m></li>
+                             <li><m>\frac{\frac{h}{x+h}}{h} = \frac{h}{h(x+h)}</m></li>
+                              <li><m>\frac{\frac{x-(x+h)}{(x+h)x}}{h} = \frac{-h}{h(x+h)x}</m></li>
+                             <li><m>\frac{\frac{x-(x+h)}{(x+h)x}}{h} = \frac{-h^2}{(x+h)x}</m></li>
+                             <li><m>\frac{\frac{h}{(x+h)x}}{h} = \frac{h}{h(x+h)x}</m></li>
+            </ol></task>
+        <task> <p>After taking the limit as <m>h \to 0</m>, which of the following is your result for the derivativive function <m>f'(x)</m>? </p>
+            <ol label="A">
+                <li><m>f'(x)=0 </m></li>
+                <li><m>f'(x)=1/x </m></li>
+                <li><m>f'(x)=-1/x </m></li>
+                <li><m>f'(x)=1/x^2 </m></li>
+                <li><m>f'(x)=-1/x^2 </m></li>
             </ol>
-        </statement>
+            </task>
+    </activity>  
+
+    
+    
+    <observation><p>We now have two ways to compute the derivative at a point! For example, to compute <m>f'(1)</m>, the derivative at <m>x=1</m>, we have two methods</p>
+        <ol>
+        <li>We can directly compute <m>f'(1)</m> by finiding the difference quotient on the interval <m>[1,1+h]</m> and then taking the limit as <m>h\to 0</m>. </li>
+             <li>We can first find the derivative function <m>f'(x)</m> by finiding the difference quotient on the interval <m>[x,x+h]</m>,  taking the limit as <m>h\to 0</m>, and then finally plugging in <m>x=1</m>. </li>
+        </ol>
+        <p> The latter approach is more convenient when you want to consider the value of the derivative function at several points! </p></observation>
+    
+      <activity xml:id="activity-derivative-analytically-algebraic3">
+          <statement>
+            <p> Consider the function <m>f(x) = \frac{1}{x^2}</m>. You will find <m>f'(1)</m> in two ways!  </p>   </statement>
+                 <task> <p> Using the limit definition of the derivative at a point, compute the difference quotient on the interval <m>[1,1+h]</m> and then take the limit as <m>h\to 0</m>. What do you get? </p> 
+             <ol label="A">
+                <li><p> -1 </p></li>
+                 <li><p> 1 </p></li>  
+                  <li><p> 2 </p></li>  
+                  <li><p> -2 </p></li>    
+              </ol>          </task>
+        <task> <p> Now, using the limit definition of the derivative function, find <m>f'(x)</m>. Which of the following is your result for the derivativive function <m>f'(x)</m>? </p>
+            <ol label="A">
+                <li><m>f'(x)=-1/x^3 </m></li>
+                <li><m>f'(x)=1/x^3 </m></li>
+                <li><m>f'(x)=-2/x^3 </m></li>
+                <li><m>f'(x)=2/x^3 </m></li>
+            </ol>
+            </task>
+          <task> <p> Make sure that your answers match! So if you plug in <m>x=1</m> in <m>f'(x)</m>, you should get the same number you got when you computed <m>f'(1)</m>. </p> </task>
+    </activity>  
+    
+    
+       <activity xml:id = "activity-ball2">
+              <introduction> 
+                <p> In this activity you will study (again!) the velocity of a ball falling under gravity. A ball is tossed vertically in the air from a window. The height of the ball (in feet) is given by the formula
+<m> f(t) = 64-16(t-1)^2</m>, where <m>t</m> is the seconds after the ball is launched. </p> </introduction>  
+                  <task> <p> Using the limit definition of the derivative function, find the velocity function of the ball <m>v(t)=f'(t)</m>. </p></task>
+             <task> <p> Using the velocity function <m>v(t)</m>, what is <m>v'(1)</m>, the instantaneous velocity at <m>t=1</m>? </p>   
+            <ol label="A">
+                <li><p>-32 feet per second </p></li>
+                <li><p>32 feet per second </p></li>
+                <li><p>0 feet per second </p></li>
+                <li><p>-16 feet per second </p></li>
+                <li><p>16 feet per second </p></li>
+            </ol>
+  </task>  
+       <task> <p> What behavior would explain your finding? </p>   
+            <ol label="A">
+                <li><p> After 1 second the ball is falling at a speed of 32 meters per second. </p></li>
+                 <li><p> After 1 second the ball is moving upwards at a speed of 32 meters per second. </p></li>
+                <li><p> After 1 second the ball reaches its highest point and it stops for an instant. </p></li>
+                  <li><p> After 1 second the ball is falling at a speed of 16 meters per second. </p></li>
+                 <li><p> After 1 second the ball is moving upwards at a speed of 16 meters per second. </p></li>
+            </ol>
+  </task>              
     </activity>
 
-
+ <activity xml:id="activity-differentiability-piecewise" estimated-time="10">
+       <introduction>
+        <p>
+         In  <xref ref = "differentiability"/>, we said that a function is not differentiable when the limit that defines it does not exist. In this activity we will study differentiability analytically.  </p> </introduction>
+     <task>
+            <p>
+              Consider the following continuous function </p><me>
+                g(x) = \begin{cases}
+                  x + 2 \amp x \leq 2 \\
+                  x^2   \amp x \gt  2
+                \end{cases}
+              </me>
+         <p> Consider the interval <m>[2,2+h]</m>. When <m> h \st 0 </m>, the interval falls under the first definition of <m>g(x)</m> and the derivative is always equal to 1. What is the derivative function for <m>x</m> values greater than 2? Show that at <m>x=2</m> the value of this derivative is not equal to 1 and so <m> g(x) </m> is not differentiable at <m>x=2</m>. 
+            </p>
+            </task>
+          <task>
+            <p>
+              Consider the following discontinuous function </p><me>
+                g(x) = \begin{cases}
+                  x + 2 \amp x \leq 2 \\
+                  x   \amp x \gt  2
+                \end{cases}
+              </me>
+         <p> On both sides of <m>x=2</m> it seems that the slope is the same, but this function is still not differentiable at <m>x=2</m>. Notice that <m>g(2)=4</m>. When <m> h \gt 0 </m>, the interval <m>[2,2+h]</m>falls under the second definition of <m>g(x)</m>, but <m>g(2)</m> is always fixed at 4. Compute the difference quotient <m>\frac{g(2+h)-g(2)}{h}</m> assuming that <m>h \gt 0 </m> and notice that this does not simplify as expected! Moreover, if you take the limit as <m>h\to 0</m>, you will get infinity and not the expected slope of 1! 
+            </p>
+            </task>
+         <task>
+            <p>
+              Consider the following function </p><me>
+                g(x) = \begin{cases}
+                  ax + 2 \amp x \leq 2 \\
+                  bx^2   \amp x \gt  2
+                \end{cases}
+              </me>
+         <p> where <m>a,b</m> are some parameters you will find. Find an equation in <m>a,b</m> that needs to be true if we want the function to be continuous at <m>x=2</m>. Also, find an equation in <m>a,b</m> that needs to be true if we want the function to be differentiable at <m>x=2</m>. Solve the system of two linear equations... you should find that <m>a=-2</m> and <m>b=-1/2</m> are the only values that make the function differentiable (and continuous!).
+            </p>
+            </task>
+    </activity>
+ <observation> <p>A function can only be differentiable at <m>x=a</m> if it is also continuous at <m>x=a</m>. But not all continuous functions are differentiable: when we have a corner in the graph the function, the function is continuous at the corner point, but it is not differentiable at that point! </p> </observation>
 </section>
