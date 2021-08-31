@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-26T18:52:12Z       *-->
+<!--*       on 2021-08-31T16:45:54Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -108,29 +108,215 @@
 <span class="type">Section</span> <span class="codenumber">2.5</span> <span class="title">The chain rule (DF5)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-13"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
-<ul class="disc"><li id="li-331"><p id="p-494">Compute derivatives using the Chain Rule.</p></li></ul></article><article class="activity project-like" id="activity-75"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.1</span><span class="period">.</span>
+<ul class="disc"><li id="li-397"><p id="p-581">Compute derivatives using the Chain Rule.</p></li></ul></article><article class="note remark-like" id="note-2"><h6 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">2.5.1</span><span class="period">.</span>
 </h6>
-<article class="task exercise-like" id="task-118"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-495">Suppose that the function \(f(x) = -x^2+5 \) and \(g(x)=2x-1\text{.}\) Which of the following is a formula for \(f(g(x))\text{?}\)</p>
-<ol class="upper-alpha">
-<li id="li-332"><p id="p-496">\(\displaystyle -4x^2 +4x +4 \)</p></li>
-<li id="li-333"><p id="p-497">\(\displaystyle 4x^2 -4x +5 \)</p></li>
-<li id="li-334"><p id="p-498">\(\displaystyle -2x^2 +9 \)</p></li>
-<li id="li-335"><p id="p-499">\(\displaystyle -2x^2 +4 \)</p></li>
-</ol></article><article class="task exercise-like" id="task-119"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-500">One of the options above is a formula for \(g(f(x))\text{.}\) Which one?</p></article></article><article class="activity project-like" id="activity-76"><h6 class="heading">
+<p id="p-582">When we consider the consider the composition \(f \circ g\)of the function \(f\) with the function \(g\text{,}\) we mean the composite function \(f(g(x))\text{,}\) where the function \(g\) is applied first  and then \(f\) is applied to the output of \(g\text{.}\) We also call \(f\) the outside function whilst \(g\) is the inside function.</p></article><article class="activity project-like" id="activity-81"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.2</span><span class="period">.</span>
 </h6>
-<article class="task exercise-like" id="task-120"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-501">Consider the composite function \(\sqrt{e^x}\text{.}\) Which function is the outside function \(f(x)\) and which one is the inside function \(g(x)\text{?}\)</p>
+<article class="task exercise-like" id="task-138"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-583">Consider the function \(f(x) = -x^2+5 \) and \(g(x)=2x-1\text{.}\) Which of the following is a formula for \(f(g(x))\text{?}\)</p>
 <ol class="upper-alpha">
-<li id="li-336"><p id="p-502">\(\displaystyle f(x)=x^2 \, , \, g(x)=e^x \)</p></li>
-<li id="li-337"><p id="p-503">\(\displaystyle f(x)=\sqrt{x} \, , \, g(x)=e^x \)</p></li>
-<li id="li-338"><p id="p-504">\(\displaystyle f(x)=e^x \, , \, g(x)=\sqrt{x} \)</p></li>
-<li id="li-339"><p id="p-505">\(\displaystyle f(x)=e^x \, , \, g(x)=x^2 \)</p></li>
-</ol></article><article class="task exercise-like" id="task-121"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-506">Using properties of the exponents, we can rewrite the original function as \(e^{\frac{x}{2}}\text{.}\)</p></article></article></section></div></main>
+<li id="li-398"><p id="p-584">\(\displaystyle -4x^2 +4x +4 \)</p></li>
+<li id="li-399"><p id="p-585">\(\displaystyle 4x^2 -4x +5 \)</p></li>
+<li id="li-400"><p id="p-586">\(\displaystyle -2x^2 +9 \)</p></li>
+<li id="li-401"><p id="p-587">\(\displaystyle -2x^2 +4 \)</p></li>
+</ol></article><article class="task exercise-like" id="task-139"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-588">One of the options above is a formula for \(g(f(x))\text{.}\) Which one?</p></article></article><article class="activity project-like" id="activity-82"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.3</span><span class="period">.</span>
+</h6>
+<article class="task exercise-like" id="task-140"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-589">Consider the composite function \(f(g(x))= \sqrt{e^x}\text{.}\) Which function is the outside function \(f(x)\) and which one is the inside function \(g(x)\text{?}\)</p>
+<ol class="upper-alpha">
+<li id="li-402"><p id="p-590">\(\displaystyle f(x)=x^2 \, , \, g(x)=e^x \)</p></li>
+<li id="li-403"><p id="p-591">\(\displaystyle f(x)=\sqrt{x} \, , \, g(x)=e^x \)</p></li>
+<li id="li-404"><p id="p-592">\(\displaystyle f(x)=e^x \, , \, g(x)=\sqrt{x} \)</p></li>
+<li id="li-405"><p id="p-593">\(\displaystyle f(x)=e^x \, , \, g(x)=x^2 \)</p></li>
+</ol></article><article class="task exercise-like" id="task-141"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-594">Using properties of the exponents, we can rewrite the original function as \(\displaystyle e^{\frac{x}{2}}\text{.}\) Using this new expression, what is your new inside function and your new outside function?</p></article><article class="task exercise-like" id="task-142"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-595">Consider the function \(\displaystyle e^{\sqrt{x}}\text{.}\) In this case, what are the inside and outside functions in this case?</p></article></article><article class="activity project-like" id="activity-83"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.4</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-55">
+<p id="p-596">In this activity we will build the intuition for the chain rule using a real-world scenario and differential notation for derivatives. Consider the following scenario.</p>
+<p id="p-597">My neighborhood is being invaded! The squirrel population grows based on acorn availability, at a rate of 2 squirrels per bushel of acorns.  Acorn availability grows at a rate of 100 bushels of acorns per week. How fast is the squirrel population growing per week?</p>
+</div>
+<article class="task exercise-like" id="task-143"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-598">The scenario gives you information regarding the rate of growth of \(s(a)\text{,}\) the squirrel population as a function of acorn availability (measured in bushels). What is the current value of \(\frac{ds}{da}\text{?}\)</p>
+<ol class="upper-alpha">
+<li id="li-406"><p id="p-599">2</p></li>
+<li id="li-407"><p id="p-600">100</p></li>
+<li id="li-408"><p id="p-601">200</p></li>
+<li id="li-409"><p id="p-602">50</p></li>
+</ol></article><article class="task exercise-like" id="task-144"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-603">The scenario gives you information regarding the rate of growth of \(a(t)\text{,}\) the acorn availability as a function of time (measured in weeks). What is the current value of \(\frac{da}{dt}\text{?}\)</p>
+<ol class="upper-alpha">
+<li id="li-410"><p id="p-604">2</p></li>
+<li id="li-411"><p id="p-605">100</p></li>
+<li id="li-412"><p id="p-606">200</p></li>
+<li id="li-413"><p id="p-607">50</p></li>
+</ol></article><article class="task exercise-like" id="task-145"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-608">Given all the information provided, what is your best guess for the value of  \(\frac{ds}{dt}\text{,}\) the rate at which the quirrel population is growing per week?</p>
+<ol class="upper-alpha">
+<li id="li-414"><p id="p-609">2</p></li>
+<li id="li-415"><p id="p-610">100</p></li>
+<li id="li-416"><p id="p-611">200</p></li>
+<li id="li-417"><p id="p-612">50</p></li>
+</ol></article><article class="task exercise-like" id="task-146"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-613">Given your answers above, what is the relationship between \(\frac{ds}{da}, \frac{da}{dt}, \frac{ds}{dt}\text{?}\)</p></article></article><article class="definition definition-like" id="definition-14"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.5.5</span><span class="period">.</span>
+</h6>
+<p id="p-614">When looking at the composite function \(f(g(x))\text{,}\) we have that</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{d}{dx}\Big(f( g(x) )\Big)= f'(g(x)) \cdot g'(x). 
+\end{equation*}
+</div>
+<p id="p-615">Using differential notation, if we consider the composite function \((v \circ u)(x)\text{,}\) we have that</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{dv}{dx}= \frac{dv}{du} \cdot \frac{du}{dx} 
+\end{equation*}
+</div></article><article class="warning remark-like" id="warning-2"><h6 class="heading">
+<span class="type">Warning</span><span class="space"> </span><span class="codenumber">2.5.6</span><span class="period">.</span>
+</h6>
+<p id="p-616">It's important to consider the input of a function when taking the derivative! In fact, \(f'(g(x))\)  and \(f'(x)\) are different functions. Also computing \(\frac{dv}{dx} \) gives a different result than computing \(\frac{dv}{du} \text{.}\)</p></article><article class="activity project-like" id="activity-84"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.7</span><span class="period">.</span>
+</h6>
+<article class="task exercise-like" id="task-147"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-617">Consider the function \(f(x) = -x^2+5 \) and \(g(x)=2x-1\text{.}\) Notice that \(f(g(x))= -4x^2 +4x +4 \text{.}\) Which of the following is the derivative function of the composite function \(f(g(x))\text{?}\)</p>
+<ol class="upper-alpha">
+<li id="li-418"><p id="p-618">\(\displaystyle -8x +4 \)</p></li>
+<li id="li-419"><p id="p-619">\(\displaystyle -4x \)</p></li>
+<li id="li-420"><p id="p-620">\(\displaystyle -2x \)</p></li>
+<li id="li-421"><p id="p-621">\(\displaystyle 2 \)</p></li>
+</ol></article><article class="task exercise-like" id="task-148"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-622">One of the options above is a formula for \(f'(x) \cdot g'(x) \text{.}\) Which one? Notice that this is not the same as the derivative of \(f(g(x))\text{!}\)</p></article></article><article class="activity project-like" id="activity-85"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.8</span><span class="period">.</span>
+</h6>
+<p id="p-623">Consider the composite function \(\displaystyle h(x) =\sqrt{e^x} = e^{\frac{x}{2}}\text{.}\) For each of the two expressions, find the derivative using the chain rule. Which of the following expressions are equal to \(h'(x)\text{?}\) Select all!</p>
+<ol class="upper-alpha">
+<li id="li-422"><p id="p-624">\(\displaystyle \displaystyle \frac{1}{2} \left( e^x \right)^{\frac{-1}{2}} \cdot e^x \)</p></li>
+<li id="li-423"><p id="p-625">\(\displaystyle \displaystyle \frac{1}{2} \left( e^x \right)^{\frac{3}{2}} \cdot e^x \)</p></li>
+<li id="li-424"><p id="p-626">\(\displaystyle \displaystyle \frac{1}{2} e^{\frac{-x}{2}}  \)</p></li>
+<li id="li-425"><p id="p-627">\(\displaystyle \displaystyle e^{\frac{x}{2}} \cdot \frac{1}{2} \)</p></li>
+<li id="li-426"><p id="p-628">\(\displaystyle \displaystyle \frac{1}{2} \sqrt{e^x}  \)</p></li>
+<li id="li-427"><p id="p-629">\(\displaystyle \displaystyle\sqrt{e^x} \cdot e^x \)</p></li>
+</ol></article><article class="activity project-like" id="activity-86"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.9</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-56">
+<p id="p-630">Below you are given the graphs of two functions: \(a(x)\) and \(b(x)\text{.}\) Use the graphs to compute the required vaules of the functions and of their derivatives, when possible (there are points where the derivative of these functions is not defined!). Notice that to compute the derivative at a point, you first want to find the general formula for the derivative as a function of \(x\) and then plug in the input you want to study.</p>
+<figure class="figure figure-like" id="figure-34"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/image-34.svg" role="img" class="contained" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.5.10<span class="period">.</span></span><span class="space"> </span>The graphs of \(a(x)\) and \(b(x)\)</figcaption></figure>
+</div>
+<article class="task exercise-like" id="task-149"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-631">Notice that the derivative of \(a \circ b\) is given by \(a'(b(x)) \cdot b'(x)\text{,}\) so the derivative of \(a \circ b\)  at \(x= 4\) is given by the quantity \(a'(b(4)) \cdot b'(4) = a'(-2) \cdot b'(4)\) because \(b(4)=-2\text{.}\) Using the graphs to find the slopes, what is the final value of the derivative of \(a \circ b\) at \(x= 4\text{?}\)</p>
+<ol class="upper-alpha">
+<li id="li-428"><p id="p-632">\(\displaystyle 0 \)</p></li>
+<li id="li-429"><p id="p-633">\(\displaystyle -1 \)</p></li>
+<li id="li-430"><p id="p-634">\(\displaystyle 1 \)</p></li>
+<li id="li-431"><p id="p-635">\(\) -2</p></li>
+<li id="li-432"><p id="p-636">\(\) 2</p></li>
+<li id="li-433"><p id="p-637">The derivative does not exist at this point.</p></li>
+</ol></article><article class="task exercise-like" id="task-150"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-638">Which of the following values is equal to the derivative of \(a \circ b\) at \(x=2 \text{?}\)</p>
+<ol class="upper-alpha">
+<li id="li-434"><p id="p-639">\(\displaystyle 0 \)</p></li>
+<li id="li-435"><p id="p-640">\(\displaystyle -1 \)</p></li>
+<li id="li-436"><p id="p-641">\(\displaystyle 1 \)</p></li>
+<li id="li-437"><p id="p-642">\(\) -2</p></li>
+<li id="li-438"><p id="p-643">\(\) 2</p></li>
+<li id="li-439"><p id="p-644">The derivative does not exist at this point.</p></li>
+</ol></article><article class="task exercise-like" id="task-151"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-645">Which of the following values is equal to the derivative of \(b \circ a\) (different order!) at \(x=-2 \text{?}\)</p>
+<ol class="upper-alpha">
+<li id="li-440"><p id="p-646">\(\displaystyle 0 \)</p></li>
+<li id="li-441"><p id="p-647">\(\displaystyle -1 \)</p></li>
+<li id="li-442"><p id="p-648">\(\displaystyle 1 \)</p></li>
+<li id="li-443"><p id="p-649">\(\) -2</p></li>
+<li id="li-444"><p id="p-650">\(\) 2</p></li>
+<li id="li-445"><p id="p-651">The derivative does not exist at this point.</p></li>
+</ol></article></article><article class="activity project-like" id="activity-87"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.11</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-57"><p id="p-652">In this activity you will study the derivative of \(\cos^n(x)\) for different powers \(n\text{.}\)</p></div>
+<article class="task exercise-like" id="task-152"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-653">Consider the function \(\cos^2(x) = \left( \cos(x) \right)^2\text{.}\) Combining power and chain rule, what do you get if you differentiate \(\cos^2(x)\text{?}\)</p>
+<ol class="upper-alpha">
+<li id="li-446"><p id="p-654">\(\displaystyle -\cos^2(x)\sin(x) \)</p></li>
+<li id="li-447"><p id="p-655">\(\displaystyle -\cos^2(x)\sin(x) \)</p></li>
+<li id="li-448"><p id="p-656">\(\displaystyle 2\cos(x)\sin(x) \)</p></li>
+<li id="li-449"><p id="p-657">\(\displaystyle - 2\cos(x)\sin(x) \)</p></li>
+</ol></article><article class="task exercise-like" id="task-153"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-658">Consider the function \(\cos^3(x)\text{.}\) Find its derivative.</p></article><article class="task exercise-like" id="task-154"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-659">Consider the function \(\cos^n(x)\text{,}\) for \(n\) any number. Find the general formula for its derivative.</p></article></article><article class="activity project-like" id="activity-88"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.12</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-58"><p id="p-660">In this activity you will study the derivative of \(b^{\cos(x)}\) for different bases \(b\text{.}\)</p></div>
+<article class="task exercise-like" id="task-155"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-661">Consider the function \(e^{\cos(x)} \text{.}\) Combining exponential and chain rule, what do you get if you differentiate \(e^{\cos(x)}\text{?}\)</p>
+<ol class="upper-alpha">
+<li id="li-450"><p id="p-662">\(\displaystyle e^{\cos(x)} \)</p></li>
+<li id="li-451"><p id="p-663">\(\displaystyle - e^{\cos(x)} \sin(x)\)</p></li>
+<li id="li-452"><p id="p-664">\(\displaystyle e^{-\sin(x)} \)</p></li>
+<li id="li-453"><p id="p-665">\(\displaystyle e^{\cos(x)}\sin(x) \)</p></li>
+</ol></article><article class="task exercise-like" id="task-156"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-666">Consider the function \(2^{\cos(x)}\text{.}\) Find its derivative.</p></article><article class="task exercise-like" id="task-157"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-667">Consider the function \(b^{\cos(x)}\text{,}\) for \(b\) any positive number. Find the general formula for its derivative.</p></article></article><article class="remark remark-like" id="remark-9"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.5.13</span><span class="period">.</span>
+</h6>
+<p id="p-668">Remember that exponential and power functions obey very different differentiation rules. This behavior continues when we consider composite function. The composite power function \(f(x)^3\) has derivative</p>
+<div class="displaymath">
+\begin{equation*}
+3 [f(x)]^2  \cdot f'(x) 
+\end{equation*}
+</div>
+<p id="p-669">but the composite exponential function \(3^{f(x)}\) has derivative</p>
+<div class="displaymath">
+\begin{equation*}
+\ln(3) \,  3^{f(x)} \cdot f'(x) 
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-89"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.14</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-59"><p id="p-670">Use the chain rule and all the rest of the rules you know to find the derivatives of the following functions.</p></div>
+<article class="task exercise-like" id="task-158"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<div class="displaymath" id="p-671">
+\begin{equation*}
+f(x)= -2 \, \sin\left(x^{\frac{7}{4}}\right)
+\end{equation*}
+</div></article><article class="task exercise-like" id="task-159"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<div class="displaymath" id="p-672">
+\begin{equation*}
+h(y)= 7 \, e^{\left( -4 \, y^{3} - 2 \, y - 2\right)}
+\end{equation*}
+</div></article><article class="task exercise-like" id="task-160"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<div class="displaymath" id="p-673">
+\begin{equation*}
+k(t)= {\left(4 \, t - 6 \, 2^{t} - 2\right)}^{4}
+\end{equation*}
+</div></article><article class="task exercise-like" id="task-161"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<div class="displaymath" id="p-674">
+\begin{equation*}
+g(w)= -3 \, \sin\left(w\right)^{\frac{3}{11}}
+\end{equation*}
+</div></article></article><article class="activity project-like" id="activity-90"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.15</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-60">
+<p id="p-675">Remember my neighborhood squirrel invasion? The squirrel population grows based on acorn availability, at a rate of 2 squirrels per bushel of acorns.  Acorn availability grows at a rate of 100 bushels of acorns per week. Considering this information as pertaining to the moment \(t=0\text{,}\) you are given the following possible model for the squirrel:</p>
+<div class="displaymath">
+\begin{equation*}
+s(a(t))= 2a(t)+10
+= 2\left[50\sin(2t)+60\right]+10. 
+\end{equation*}
+</div>
+</div>
+<article class="task exercise-like" id="task-162"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-676">Check that the model satisfies the data \(\frac{ds}{da}=2\) and \(\frac{da}{dt}\big|_{t=0} = 100 \)</p></article><article class="task exercise-like" id="task-163"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-677">Find the derivative function \(\frac{ds}{dt}\) and check that \(\frac{ds}{dt}|_{t=0} = 200\text{.}\)</p></article><article class="task exercise-like" id="task-164"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-678">According to this model, what is the maximum and minimum squirrel population? What is the fastest rate of increase and decrease of the squirrel population? When will these extremal scenarions occur?</p></article></article></section></div></main>
 </div>
 </body>
 </html>
