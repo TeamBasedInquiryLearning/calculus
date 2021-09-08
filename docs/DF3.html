@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-31T16:45:53Z       *-->
+<!--*       on 2021-09-08T02:53:46Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -66,10 +66,10 @@
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="DF1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="DF4.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="DF1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="DF1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a class="next-button button toolbar-item" href="DF4.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="DF1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -95,8 +95,6 @@
 <li><a href="DF2.html" data-scroll="DF2">Derivatives graphically and numerically (DF1)</a></li>
 <li><a href="DF1.html" data-scroll="DF1">Derivatives analytically (DF2)</a></li>
 <li><a href="DF3.html" data-scroll="DF3" class="active">Elementary derivative rules (DF3)</a></li>
-<li><a href="DF4.html" data-scroll="DF4">The product and quotient rules (DF4)</a></li>
-<li><a href="DF5.html" data-scroll="DF5">The chain rule (DF5)</a></li>
 </ul>
 </li>
 <li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
@@ -108,81 +106,156 @@
 <span class="type">Section</span> <span class="codenumber">2.3</span> <span class="title">Elementary derivative rules (DF3)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-11"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
-<ul class="disc"><li id="li-361"><p id="p-517">Compute basic derivatives using algebraic rules.</p></li></ul></article><article class="observation remark-like" id="observation-10"><h6 class="heading">
+<ul class="disc"><li id="li-362"><p id="p-528">Compute basic derivatives using algebraic rules.</p></li></ul></article><article class="observation remark-like" id="observation-12"><h6 class="heading">
 <span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.3.1</span><span class="period">.</span>
-</h6>If we recall from the previous section we learned about how to find the derivative of functions using the limit definition of a derivative.  From the activities we see that this gets cumbursome when the functions are more complicated.  In this section we will discuss a more convenient way to to calculate derivatives.</article><article class="activity project-like" id="activity-derivative-elementary1"><h6 class="heading">
+</h6>If we recall from the previous section we learned about how to find the derivative of functions using the limit definition of a derivative.  From the activities we see that this gets cumbersome when the functions are more complicated.  In this section we will discuss a more convenient way to to calculate derivatives.</article><article class="activity project-like" id="activity-derivative-elementary1"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.2</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-44"><p id="p-518">In this activity we will try to deduce what the derivative of a power function.  Note, a power function is one in which the function is of the form \(f(x) = x^{n}\) where \(n = 1, 2, 3,...\text{.}\)</p></div>
-<article class="task exercise-like" id="task-104"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-519">Using the limit defintion of a function what is \(f'(x)\) for the power function \(f(x) = x\text{?}\)</p>
+<div class="introduction" id="introduction-47"><p id="p-529">In this activity we will try to deduce a rule for finding the derivative of a power function.  Note, a power function is one in which the function is of the form \(f(x) = x^{n}\) where \(n = 1, 2, 3,...\text{.}\)</p></div>
+<article class="task exercise-like" id="task-108"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-530">Using the limit definition of the derivative, what is \(f'(x)\) for the power function \(f(x) = x\text{?}\)</p>
 <ol class="upper-alpha">
-<li id="li-362"><p id="p-520">-1</p></li>
-<li id="li-363"><p id="p-521">1</p></li>
-<li id="li-364"><p id="p-522">0</p></li>
-<li id="li-365"><p id="p-523">Does not exist</p></li>
-</ol></article><article class="task exercise-like" id="task-105"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-524">Using the limit defintion of a function what is \(f'(x)\) for the power function \(f(x) = x^{2}\text{?}\)</p>
+<li id="li-363"><p id="p-531">-1</p></li>
+<li id="li-364"><p id="p-532">1</p></li>
+<li id="li-365"><p id="p-533">0</p></li>
+<li id="li-366"><p id="p-534">Does not exist</p></li>
+</ol></article><article class="task exercise-like" id="task-109"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-535">Using the limit definition of the derivative, what is \(f'(x)\) for the power function \(f(x) = x^{2}\text{?}\)</p>
 <ol class="upper-alpha">
-<li id="li-366"><p id="p-525">0</p></li>
-<li id="li-367"><p id="p-526">\(\displaystyle -2x\)</p></li>
-<li id="li-368"><p id="p-527">\(\displaystyle 2x\)</p></li>
-<li id="li-369"><p id="p-528">\(\displaystyle 2x+1\)</p></li>
-</ol></article><article class="task exercise-like" id="task-106"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-529">Using the limit defintion of a function what is \(f'(x)\) for the power function \(f(x) = x^{3}\text{?}\)</p>
+<li id="li-367"><p id="p-536">0</p></li>
+<li id="li-368"><p id="p-537">\(\displaystyle -2x\)</p></li>
+<li id="li-369"><p id="p-538">\(\displaystyle 2x\)</p></li>
+<li id="li-370"><p id="p-539">\(\displaystyle 2x+1\)</p></li>
+</ol></article><article class="task exercise-like" id="task-110"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-540">Using the limit definition of the derivative, what is \(f'(x)\) for the power function \(f(x) = x^{3}\text{?}\)</p>
 <ol class="upper-alpha">
-<li id="li-370"><p id="p-530">\(\displaystyle 3x^2\)</p></li>
-<li id="li-371"><p id="p-531">\(\displaystyle -3x^2\)</p></li>
-<li id="li-372"><p id="p-532">\(\displaystyle 3x^2-3x\)</p></li>
-<li id="li-373"><p id="p-533">\(\displaystyle -3x^2+3x\)</p></li>
-</ol></article><article class="task exercise-like" id="task-107"><h6 class="heading"><span class="codenumber">(d)</span></h6>
-<p id="p-534">WITHOUT using the limit defintion of a function what is \(f'(x)\) for the power function \(f(x) = x^{4}\text{?}\) (See if you can find a pattern from the first three tasks of this activity.)</p>
+<li id="li-371"><p id="p-541">\(\displaystyle 3x^2\)</p></li>
+<li id="li-372"><p id="p-542">\(\displaystyle -3x^2\)</p></li>
+<li id="li-373"><p id="p-543">\(\displaystyle 3x^2-3x\)</p></li>
+<li id="li-374"><p id="p-544">\(\displaystyle -3x^2+3x\)</p></li>
+</ol></article><article class="task exercise-like" id="task-111"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-545">WITHOUT using the limit definition of the derivative, what is \(f'(x)\) for the power function \(f(x) = x^{4}\text{?}\) (See if you can find a pattern from the first three tasks of this activity.)</p>
 <ol class="upper-alpha">
-<li id="li-374"><p id="p-535">\(\displaystyle 3x^2\)</p></li>
-<li id="li-375"><p id="p-536">\(\displaystyle 3x^3\)</p></li>
-<li id="li-376"><p id="p-537">\(\displaystyle 4x^2\)</p></li>
-<li id="li-377"><p id="p-538">\(\displaystyle 4x^3\)</p></li>
-</ol></article></article><article class="definition definition-like" id="def-powerlaw-derivative"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.3.3</span><span class="period">.</span>
+<li id="li-375"><p id="p-546">\(\displaystyle 3x^2\)</p></li>
+<li id="li-376"><p id="p-547">\(\displaystyle 3x^3\)</p></li>
+<li id="li-377"><p id="p-548">\(\displaystyle 4x^2\)</p></li>
+<li id="li-378"><p id="p-549">\(\displaystyle 4x^3\)</p></li>
+</ol></article></article><article class="theorem theorem-like" id="def-powerlaw-derivative"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.3</span><span class="period">.</span>
 </h6>
-<p id="p-539">The derivative of the function\(f(x) = x^n\text{,}\) for any nonzero real number \(n\)is</p>
+<p id="p-550">The derivative of the function\(f(x) = x^n\text{,}\) for any nonzero real number \(n\) is</p>
 <div class="displaymath">
 \begin{equation*}
 f'(x) = nx^{n-1}.
 \end{equation*}
-</div></article><article class="observation remark-like" id="observation-11"><h6 class="heading">
+</div></article><article class="observation remark-like" id="observation-13"><h6 class="heading">
 <span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.3.4</span><span class="period">.</span>
-</h6>So far we have been using \(f'(x)\) or \(f\) prime to denote a derivative of the function \(f(x)\text{.}\)  However there are other ways to denote the derivative of a function.  Besides \(f'(x)\) there is also \(\frac{df}{dx}\) or dee-f dee-x.  Both notations can be used interchangabley.  If you want to take the derivative of \(f'(x)\) or \(\frac{df}{dx}\text{,}\) the notation is \(f''(x)\) or \(\frac{d^2f}{dx^2}\text{;}\) this is known as second derivative of \(f(x)\text{.}\)</article><article class="activity project-like" id="activity-derivative-elementary2"><h6 class="heading">
+</h6>So far we have been using \(f'(x)\) or \(f\) prime to denote a derivative of the function \(f(x)\text{.}\)  However there are other ways to denote the derivative of a function.  Besides \(f'(x)\) there is also \(\frac{df}{dx}\text{,}\) pronounced "dee-f dee-x."  Both notations can be used interchangeably.  If you want to take the derivative of \(f'(x)\) or \(\frac{df}{dx}\text{,}\) the notation is \(f''(x)\) or \(\frac{d^2f}{dx^2}\text{;}\) this is known as second derivative of \(f(x)\text{.}\)</article><article class="activity project-like" id="activity-derivative-elementary2"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.5</span><span class="period">.</span>
 </h6>
-<p id="p-540">Using <a class="xref" data-knowl="./knowl/def-powerlaw-derivative.html" title="Definition 2.3.3">Definition 2.3.3</a>, which of the following statement(s) are true?  For those statements that are wrong, correct</p>
+<p id="p-551">Using <a class="xref" data-knowl="./knowl/def-powerlaw-derivative.html" title="Theorem 2.3.3">Theorem 2.3.3</a>, which of the following statement(s) are true?  For those statements that are wrong, give the correct derivative.</p>
 <ol class="upper-alpha">
-<li id="li-378"><p id="p-derived-li-378">The derivative of \(y = x^{10}\) is \(y' = 10x^{11}.\)</p></li>
-<li id="li-379"><p id="p-derived-li-379">The derivative of \(y = x^{-8}\) is \(y' = -8x^{-9}.\)</p></li>
-<li id="li-380"><p id="p-derived-li-380">The derivative of \(y = x^{100}\) is \(y' = 100x^{99}.\)</p></li>
-<li id="li-381"><p id="p-derived-li-381">The derivative of \(y = x^{-17}\) is \(y' = -17x^{-16}.\text{.}\)</p></li>
-</ol></article><article class="definition definition-like" id="definition-11"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.3.6</span><span class="period">.</span>
+<li id="li-379"><p id="p-derived-li-379">The derivative of \(y = x^{10}\) is \(y' = 10x^{11}.\)</p></li>
+<li id="li-380"><p id="p-derived-li-380">The derivative of \(y = x^{-8}\) is \(y' = -8x^{-9}.\)</p></li>
+<li id="li-381"><p id="p-derived-li-381">The derivative of \(y = x^{100}\) is \(y' = 100x^{99}.\)</p></li>
+<li id="li-382"><p id="p-derived-li-382">The derivative of \(y = x^{-17}\) is \(y' = -17x^{-16}.\text{.}\)</p></li>
+</ol></article><article class="theorem theorem-like" id="def-constant-derivative"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.6</span><span class="period">.</span>
 </h6>
-<p id="p-541">If \(f(x) = c\text{,}\) for some constant \(c\in\mathbb{R}\text{,}\) then \(f'(x) = 0\text{.}\)</p></article><article class="definition definition-like" id="definition-12"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.3.7</span><span class="period">.</span>
+<p id="p-552">If \(f(x) = c\text{,}\) for some constant \(c\in\mathbb{R}\text{,}\) then \(f'(x) = 0\text{.}\)</p></article><article class="activity project-like" id="activity-derivative-elementary3"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.7</span><span class="period">.</span>
 </h6>
-<p id="p-542">The Constant Multiple Rule: If \(c\) is a constant and \(f(x)\) is a differentiable function, then</p>
+<p id="p-553">Using <a class="xref" data-knowl="./knowl/def-constant-derivative.html" title="Theorem 2.3.6">Theorem 2.3.6</a>, which of the following statement(s) are true?  Note: Pay attention to the dependent variable of the function.</p>
+<ol class="upper-alpha">
+<li id="li-383"><p id="p-derived-li-383">The derivative of \(y(x) = 10\) is \(y'(x) = 9.\)</p></li>
+<li id="li-384"><p id="p-derived-li-384">The derivative of \(y(t) = x\) is \(y'(t) = 0.\)</p></li>
+<li id="li-385"><p id="p-derived-li-385">The derivative of \(y(a) = x^2\) is \(y'(a) = 2x.\)</p></li>
+<li id="li-386"><p id="p-derived-li-386">The derivative of \(y(x) = -5\) is \(y'(x) = -4.\text{.}\)</p></li>
+</ol></article><article class="theorem theorem-like" id="def-constmult-derivative"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.8</span><span class="period">.</span>
+</h6>
+<p id="p-554">The Constant Multiple Rule: If \(c\) is a constant and \(f(x)\) is a differentiable function, then</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{d}{dx}\left[cf(x)\right] = c\frac{d}{dx}\left[f(x)\right]
 \end{equation*}
-</div></article><article class="definition definition-like" id="definition-13"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.3.8</span><span class="period">.</span>
+</div></article><article class="activity project-like" id="activity-derivative-elementary4"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.9</span><span class="period">.</span>
 </h6>
-<p id="p-543">The Sum(Difference) Rule: If \(f(x)\) and \(g(x)\) are both differentiable, then</p>
+<p id="p-555">What is the derivative of the function \(y(x) = 12x^{2/3}\text{?}\)</p>
+<ol class="upper-alpha">
+<li id="li-387"><p id="p-derived-li-387">\(\displaystyle y'(x) = 8x^{5/3}.\)</p></li>
+<li id="li-388"><p id="p-derived-li-388">\(\displaystyle y'(x) = 18x^{-1/3}.\)</p></li>
+<li id="li-389"><p id="p-derived-li-389">\(\displaystyle y'(x) = 8x^{-1/3}.\)</p></li>
+<li id="li-390"><p id="p-derived-li-390">\(\displaystyle y'(x) = 18x^{5/3}.\)</p></li>
+</ol></article><article class="theorem theorem-like" id="def-sumdiff-derivative"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.10</span><span class="period">.</span>
+</h6>
+<p id="p-556">The Sum (Difference) Rule: If \(f(x)\) and \(g(x)\) are both differentiable, then</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{d}{dx}\left[f(x) \pm g(x)\right] = \frac{d}{dx}\left[f(x)\right]\pm\frac{d}{dx}\left[g(x)\right]
 \end{equation*}
-</div></article><article class="observation remark-like" id="observation-12"><h6 class="heading">
-<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.3.9</span><span class="period">.</span>
-</h6>The above definitions will be explored in the following activities</article></section></div></main>
+</div></article><article class="activity project-like" id="activity-derivative-elementary5"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.11</span><span class="period">.</span>
+</h6>
+<p id="p-557">What is the derivative for the arbitrary parabola given by \(f(x) = ax^2 + bx + c\text{,}\) where \(a,\,b,\,c\) are any real numbers and \(a \neq 0\text{?}\)</p>
+<ol class="upper-alpha">
+<li id="li-391"><p id="p-derived-li-391">\(\displaystyle f'(x) = 2ax + bx + c.\)</p></li>
+<li id="li-392"><p id="p-derived-li-392">\(\displaystyle f'(x) = 2x + 1.\)</p></li>
+<li id="li-393"><p id="p-derived-li-393">\(\displaystyle f'(x) = 2ax + b.\)</p></li>
+<li id="li-394"><p id="p-derived-li-394">\(\displaystyle f'(x) = ax + b.\)</p></li>
+</ol></article><article class="theorem theorem-like" id="def-expon-derivative"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.12</span><span class="period">.</span>
+</h6>
+<p id="p-558">For any real number \(a\text{,}\) if \(f(x) = a^x\text{,}\) then \(f'(x) = a^x\ln(a)\text{.}\)</p></article><article class="observation remark-like" id="observation-14"><h6 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.3.13</span><span class="period">.</span>
+</h6>
+<p id="p-559">A special case of <a class="xref" data-knowl="./knowl/def-expon-derivative.html" title="Theorem 2.3.12">Theorem 2.3.12</a> is when \(a = e\text{,}\) where \(e\) is the base of the natural logarithm function. In this case let \(f(x) = e^x\text{.}\) Then</p>
+<div class="displaymath">
+\begin{equation*}
+f'(x) = e^{x}\ln(e) = e^{x}.
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-derivative-elementary6"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.14</span><span class="period">.</span>
+</h6>
+<p id="p-560">The first derivative of the function \(g(x) = x^e + e^{x}\) is given by \(g'(x) = ex^{e-1} + e^{x}\text{.}\)  What is the second derivative of \(g(x)\text{?}\)</p>
+<ol class="upper-alpha">
+<li id="li-395"><p id="p-derived-li-395">\(\displaystyle g''(x) = x^{e} + e^{x}.\)</p></li>
+<li id="li-396"><p id="p-derived-li-396">\(\displaystyle g''(x) = e(e-1)x^{e-2} + e^x.\)</p></li>
+<li id="li-397"><p id="p-derived-li-397">\(\displaystyle g''(x) = ex^{e-1} + e^x.\)</p></li>
+<li id="li-398"><p id="p-derived-li-398">\(\displaystyle g''(x) = e^x.\)</p></li>
+</ol></article><article class="theorem theorem-like" id="def-trig-derivative"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.15</span><span class="period">.</span>
+</h6>
+<p id="p-561">If \(f(x) = \sin(x)\text{,}\) then \(f'(x) = \cos(x)\text{.}\)  If \(f(x) = \cos(x)\text{,}\) then \(f'(x) = -\sin(x)\text{.}\)</p></article><article class="activity project-like" id="activity-derivative-elementary7"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.16</span><span class="period">.</span>
+</h6>
+<p id="p-562">The derivative of \(f(x) = 7\sin(x) + 2e^x + 3x^{1/3} - 2\) is,</p>
+<ol class="upper-alpha">
+<li id="li-399"><p id="p-derived-li-399">\(\displaystyle f'(x) = 7\cos(x) + 2e^{x} + x^{-2/3} - 2x.\)</p></li>
+<li id="li-400"><p id="p-derived-li-400">\(\displaystyle f'(x) = 7\cos(x) + 2e^{x} + -2x^{-2/3} - 2.\)</p></li>
+<li id="li-401"><p id="p-derived-li-401">\(\displaystyle f'(x) = -7\sin(x) + e^{x} + x^{-2/3}.\)</p></li>
+<li id="li-402"><p id="p-derived-li-402">\(\displaystyle f'(x) = -7\cos(x) + 2e^{x}\ln(x) + x^{-2/3}.\)</p></li>
+<li id="li-403"><p id="p-derived-li-403">\(\displaystyle f'(x) = 7\cos(x) + 2e^x + x^{-2/3}.\)</p></li>
+</ol></article><article class="theorem theorem-like" id="def-log-derivative"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.17</span><span class="period">.</span>
+</h6>
+<p id="p-563">If \(f(x) = \ln(x)\text{,}\) then</p>
+<div class="displaymath">
+\begin{equation*}
+f'(x) = \frac{1}{x}\text{.}
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-77"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.18</span><span class="period">.</span>
+</h6>
+<p id="p-564">Which of the following statements is NOT true?</p>
+<ol class="upper-alpha">
+<li id="li-404"><p id="p-derived-li-404">The derivative of \(y = 2\ln(x)\) is \(y' = \frac{2}{x}.\)</p></li>
+<li id="li-405"><p id="p-derived-li-405">The derivative of \(y = \frac{\ln(x)}{2}\) is \(y' = \frac{1}{2x}.\)</p></li>
+<li id="li-406"><p id="p-derived-li-406">The derivative of \(y = \frac{2}{3}\ln(x)\) is \(y' = \frac{3}{2x}.\)</p></li>
+<li id="li-407"><p id="p-derived-li-407">The derivative of \(y = \ln(x^{2})\) is \(y' = \frac{2}{x}\text{.}\)</p></li>
+</ol></article></section></div></main>
 </div>
 </body>
 </html>
