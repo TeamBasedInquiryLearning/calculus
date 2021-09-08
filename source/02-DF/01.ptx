@@ -13,8 +13,8 @@
 
              <activity xml:id = "activity-ball1">
               <introduction> 
-                <p> In this activity you will study the velocity of a ball falling under gravity. The height of the ball is given by the formula
-<m> f(t) = 64-16(t-1)^2</m>. For your convenience, below you will find a table of values for <m>f(t)</m>. Recall that the average velocity is given by the change in height over the change in time.
+                <p> In this activity you will study the velocity of a ball falling under gravity. The height of the ball (in feet) is given by the formula
+<m> f(t) = 64-16(t-1)^2</m>, where <m>t</m> is measured in seconds. We want to study the velocity at the instant <m>t=2</m>, so we will look at smaller and smaller intervals around <m>t=2</m>. For your convenience, below you will find a table of values for <m>f(t)</m>. Recall that the average velocity is given by the change in height over the change in time.
 </p>
         <table xml:id="table-ball1">
         <tabular>
@@ -74,9 +74,9 @@
             </tabular>
         </table>
 </introduction>
-     <task> <statement> <p>What was the average velocity on the interval <m>[1,2]</m>? What about on the interval <m>[2,3]</m>? </p>
+     <task> <statement> <p>To start we will look at an interval of length one before <m>t=2</m> and after <m>t=2</m>, so we consider the intervals <m>[1,2]</m> and <m>[2,3]</m>. What was the average velocity on the interval <m>[1,2]</m>? What about on the interval <m>[2,3]</m>? </p>
          </statement> </task>  
-     <task> <statement> <p>What was the average velocity on the interval <m>[1.5,2]</m>? What about on the interval <m>[2,2.5]</m>? </p>
+     <task> <statement> <p>Now let's consider smaller intervals of length <m>0.5</m>. What was the average velocity on the interval <m>[1.5,2]</m>? What about on the interval <m>[2,2.5]</m>? </p>
          </statement> </task>
                  
      <task> <statement> <p>What was the average velocity on the interval <m>[1.75,2]</m>? What about on the interval <m>[2,2.25]</m>? </p>
@@ -88,6 +88,10 @@
     
     <observation> <p> If we want to study the velocity at the instant <m>t=2</m>, it is helpful to study the average velocity on small intervals around <m>t=2</m>. If we consider the interval <m>[2,2+h]</m>, where <m>h</m> is the width of the interval, the average velocity is given by the difference quotient </p>
         <me> \frac{f(2+h)-f(2)}{(2+h)-2} = \frac{f(2+h)-f(2)}{h}.</me>
+    </observation>
+    
+    <observation><p>We want to be able to consider intervals before and after <m>t=2</m>. A positive value of <m>h</m> will give an interval after <m>t=2</m> for example, the interval <m>[2,3]</m> for <m>h=1</m>. A negative value of <m>h</m> will give an interval before <m>t=2</m> for example, the interval <m>[1,2]</m> corresponds <m>h=-1</m>. In the formula above, it looks like the interval would be <m>[2,1]</m>, but the standard notation in an interval is to write the smallest number first. This does not change the difference quotient because </p>
+       <me> \frac{f(2+h)-f(2)}{(2+h)-2} = \frac{f(2)-f(2+h)}{2-(2+h)}.</me>
     </observation>
     
      <activity xml:id = "activity-ball2">
@@ -133,15 +137,15 @@
     grid=major,
 %    xmin=-10, xmax=10,
  %   ymin=-5, ymax=8,
-    xtick={2,2.5,...,4},
-   ytick={2,4,...,14},
+    xtick={0,0.5,...,6},
+   ytick={2,4,...,22},
   	tick style={thick},
 % 	x label style={at={(axis description cs:1,0.7)}},
 % 	y label style={at={(axis description cs:0.4,1)}}, 
     ylabel=$y$,
 	xlabel=$x$,
         ]
-    \addplot[domain=2:4, blue,  thick] {x^2-2};
+    \addplot[domain=0:5, blue,  thick] {x^2-2};
 \end{axis}
 \end{tikzpicture}
   

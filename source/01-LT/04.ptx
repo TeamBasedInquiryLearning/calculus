@@ -117,22 +117,22 @@
         <ol label="A">
           <li>
             <p>
-              <m>\lim_{x \to -3^+} f(x)</m>
+              <m>\lim_{x \to -3^+} h(x)</m>
             </p>
           </li>
           <li>
             <p>
-              <m>\lim_{x \to -3^-} f(x)</m>
+              <m>\lim_{x \to -3^-} h(x)</m>
             </p>
           </li>
           <li>
             <p>
-              <m>\lim_{x \to -3} f(x)</m>
+              <m>\lim_{x \to -3} h(x)</m>
             </p>
           </li>
           <li>
             <p>
-              <m>f(-3)</m>
+              <m>h(-3)</m>
             </p>
           </li>
         </ol>
@@ -140,7 +140,7 @@
     </activity>
 
     <activity xml:id="activity-continuous-graph2" estimated-time="10">
-      <statement>
+      <introduction>
         <p>
           Consider the function <m>f</m> whose graph is pictured below (it's the same graph from <xref ref="activity-continuous-graph1"/>). In the
             questions below, consider the values <m>a = -3</m>, <m>-2</m>, <m>-1</m>, <m>0</m>, <m>1</m>, <m>2</m>, <m>3</m>.
@@ -149,32 +149,29 @@
           <image source="limits-different-kinds.png" width="50%">
             <description>(for accessibility)</description>
           </image>
-          <caption></caption>
         </figure>
-        <ol label="1">
-          <li>
+      </introduction>
+        <task>
             <p>
               For which values of <m>a</m> do we have <m>\lim_{x \to a^-} f(x) \ne \lim_{x \to a^+} f(x)</m>?
             </p>
-          </li>
-          <li>
+        </task>
+        <task>
             <p>
               For which values of <m>a</m> is <m>f(a)</m> not defined?
             </p>
-          </li>
-          <li>
+        </task>
+        <task>
             <p>
               For which values of <m>a</m> does <m>f</m> have a limit at <m>a</m>, yet <m>f(a) \ne \lim_{x \to a} f(x)</m>?
             </p>
-          </li>
-          <li>
+        </task>
+        <task>
             <p>
               For which values of <m>a</m> does <m>f</m> fail to be continuous? Give a complete list of intervals on which <m>f</m> is continuous.
             </p>
-          </li>
-        </ol>
-      </statement>
-    </activity>
+        </task>
+      </activity>
 
     <activity xml:id="activity-continuity-limit-strength" estimated-time="5">
       <statement>
@@ -323,7 +320,7 @@
         </task>
         <task>
             <statement>
-                <p> Now try to draw a graph similar to the previous one, but that does not have any input corresponding to the output 5. Then, find where your graph violates these conditions: <m>f(x) </m> is continuous on <m>[0,10]</m>, <m>f(0)=8</m>, and <m>f(10)=2</m>. 
+                <p> Now try to draw a graph similar to the previous one, but that does not have any input corresponding to the output 5. Then, find where your graph violates these conditions: <m>f(x) </m> is continuous on <m>[0,10]</m>, <m>f(0)=8</m>, and <m>f(10)=2</m>.
 </p>
             </statement>
         </task>
