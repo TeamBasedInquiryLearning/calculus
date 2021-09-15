@@ -15,7 +15,7 @@
   <activity xml:id="activity-derivative-elementary1">
     <introduction>
       <p>
-        In this activity we will try to deduce a rule for finding the derivative of a power function.  Note, a power function is one in which the function is of the form <m>f(x) = x^{n}</m> where <m>n = 1, 2, 3,...</m>.
+        In this activity we will try to deduce a rule for finding the derivative of a power function.  Note, a power function is one in which the function is of the form <m>f(x) = x^{n}</m> where <m>n</m> is any real number.
       </p>
     </introduction>
       <task>
@@ -66,7 +66,7 @@
       </task>
   </activity>
 <theorem xml:id="def-powerlaw-derivative">
-       <p> The derivative of the function<m>f(x) = x^n</m>, for any nonzero real number <m>n</m> is
+       <p> The derivative of the function<m>f(x) = x^n</m>, for any real number <m>n</m> is
 </p>
         <me>f'(x) = nx^{n-1}.</me>
     </theorem>
