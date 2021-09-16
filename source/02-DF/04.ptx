@@ -190,7 +190,7 @@
     <activity xml:id="activity-df-quotient-rule-cotx">
         <introduction>
             <p> Let <m>g(x) = \cot x </m>, and recall that
-    <m>\cot  x  = \frac{\sin x }{\cos x }</m>.
+    <m>\cot  x  = \frac{\cos x }{\sin x }</m>.
 
 
             </p>
