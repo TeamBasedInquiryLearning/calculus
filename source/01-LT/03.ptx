@@ -11,9 +11,9 @@
     </objectives>
     <activity xml:id="activity-limits-analytically1">
         <statement>
-            <p>Recall that in activity 2.5 we used numerical methods and table of values to find the limit of a degree 3 polynomial at a point. This was inefficient, “there’s gotta be a better way!”</p>
+            <p>Recall that in <xref ref="activity-limits-numerically4"/> we used numerical methods and table of values to find the limit of a degree 3 polynomial at a point. This was inefficient, “there’s gotta be a better way!”</p>
 
-            <p>Given <m>f(x)=3x^2-\frac{1}{2}x+4</m>, evaluate <m>f(2)</m> and approximate <m>\lim_{x\to2}f(x)</m> numerically. What can we most definitively state?</p>
+            <p>Given <m>f(x)=3x^2-\frac{1}{2}x+4</m>, evaluate <m>f(2)</m> and approximate <m>\lim_{x\to2}f(x)</m> numerically (or graphically). What do you think is more likely?</p>
       <ol label="A">
                 <li><m>\lim_{x \to 2}f(x)=f(2)</m></li>
                 <li><m>\lim_{x \to 2}f(x) \approx f(2)</m></li>
@@ -147,12 +147,12 @@
                 \lim_{x \to c} f(x) = L \, \text{and} \, \lim_{x \to c} g(x) = K
                 </me>. Then we have the following limits as well.
                 <ol>
-                    <li><m>\lim_{x \to c} b = b</m></li>
-                    <li><m>\lim_{x \to c} x = c</m></li>
+                    <li>Constant Property <m>\lim_{x \to c} b = b</m></li>
+                    <li>Identity Propery <m>\lim_{x \to c} x = c</m></li>
                     <li>Sum/Difference Property <m>\lim_{x \to c} (f(x) \pm g(x)) = L \pm K</m></li>
-                    <li>Scalar Multiples Property <m>\lim_{x \to c} b \cdot f(x) = bL</m></li>
+                    <li>Scalar Multiple Property <m>\lim_{x \to c} b \cdot f(x) = bL</m></li>
                     <li>Product Property <m>\lim_{x \to c} f(x) \cdot g(x) = LK</m></li>
-                    <li><m>\lim_{x \to c} f(x) / g(x) = L/K</m> (provided that <m>K \ne 0</m>)</li>
+                    <li>Quotient Property <m>\lim_{x \to c} f(x) / g(x) = L/K</m> (provided that <m>K \ne 0</m>)</li>
                 </ol>
             </p>
         </statement>
@@ -184,12 +184,14 @@
     </activity>
     <activity xml:id="activity-limits-analytically4">
         <statement>
-            <p>Given <m>p(x) = -3x^2 - 5x+7</m>, which of the following describe the limit properties that can best be used to determine <m>\lim_{x\to 2} p(x)</m>?</p>
+            <p>Given <m>p(x) = -3x^2 - 5x+7</m>, which of the following limit properties would use to determine <m>\lim_{x\to 2} p(x)</m>? Choose all that apply. </p>
          <ol label="A">
-                <li>Sums/differences, scalar multiples, and products properties</li>
-                <li>Compositions and identity properties</li>
-                <li>Powers, sums/differences, scalar multiples, and constants properties</li>
-                <li>Quotients and roots properties</li>
+                <li>Sums/Difference  Property</li>
+                <li>Scalar Multiple  Property</li>
+                <li>Product  Property</li>
+                <li>Identity  Property</li>
+                <li>Power  Property</li>
+                <li>Constant Property</li>
             </ol>
         </statement>
     </activity>
@@ -202,7 +204,7 @@
     </theorem>
         <activity xml:id="activity-limits-polynomials">
         <statement>
-            <p> Given <m>p(x)=-3x^2-5x+7</m> and <m>q(x)=x^4-x^2+3</m>, which of the following describes the limit properties that can best be used to determine <m>\lim_{x \to -1} \frac{p(x)}{q(x)}</m>?
+            <p> Given <m>p(x)=-3x^2-5x+7</m> and <m>q(x)=x^4-x^2+3</m>, which of the following best describes the limit properties that you would use to determine <m>\lim_{x \to -1} \frac{p(x)}{q(x)}</m>?
             </p>
        <ol label="A">
                 <li>Sums/differences, scalar multiples, and products properties </li> 
@@ -262,4 +264,88 @@
             <task> <statement> <p> The model <m>d=f(t)=t^2</m> does not really capture the real-world situation. Think of at least one reason why this model does not fit the scenario of Usain Bolt's 100 meters dash. </p>
          </statement> </task>
    </activity>
+    
+     <activity xml:id = "limit-laws-graphically">
+              <introduction>
+               <p>   Below you are given the graphs of two functions. Compute the limits below (if possible).
+    </p>
+                       <sidebyside>
+                   <figure>
+                <image width="50%">
+                          <latex-image>
+                  \begin{tikzpicture}[scale=1]
+\begin{axis}[
+    human, 
+	axis lines=middle,
+    grid=major,
+    xmin=-2, xmax=8.5,
+    ymin=-3, ymax=3,
+    xtick={-2,-1,...,8},
+    ytick={-4,-3,...,4},
+  	tick style={thick},
+% 	x label style={at={(axis description cs:1,0.7)}},
+% 	y label style={at={(axis description cs:0.4,1)}}, 
+    ylabel=$y$,
+	xlabel=$x$,
+        ]
+    \addplot[domain=-2:0.88, blue, ultra thick] {(1/3)*(x)-1/3};
+    \addplot[domain=1.12:5, blue, ultra thick] {-0.5*x +0.5};
+    \addplot[domain=5:7, blue, ultra thick] {x-5};
+    \addplot[mark=none, color=blue, nodes near coords={$f(x)$}] coordinates {(2,1)};
+\addplot [only marks, blue] table {
+5	0
+1 2
+8 2
+};
+
+    \addplot[only marks, color=blue, mark=*, fill=white] coordinates{(1,0) };
+    
+    \addplot[only marks, color=blue, mark=*, fill=white] coordinates {(5,-2) };
+    
+    \addplot[only marks, color=blue, mark=*, fill=white] coordinates {(7,2) };
+                              
+
+\end{axis}
+\end{tikzpicture}
+                               </latex-image>
+                    </image>
+                    <caption> The graph of <m>f(x)</m>.</caption>
+                </figure>
+  <figure>
+                <image width="50%">
+                          <latex-image>
+\begin{tikzpicture}[scale=1]
+
+\begin{axis}[	axis lines=middle,
+    grid=major, human, grid,xtick={-3,-2,...,3}, ytick={-2,-1,...,4}, ymin=-2.2,xmin=-3.5,ymax=4.5,xmax=3.5, ylabel={}, xlabel={$x$}]
+\addplot[domain=-3:0, color=blue, samples=100]{0.5*x};
+\addplot[domain=0:2, color=blue, samples=100]{2^x};
+\addplot[domain=2:4, color=blue, samples=50]{0.5*x+3};
+
+    \addplot[only marks, color=blue, mark=*, fill=blue] coordinates{(0,1) };
+    
+    \addplot[only marks, color=blue, mark=*, fill=white] coordinates {(0,0) };
+   
+    
+	    \addplot[mark=none, color=blue, nodes near coords={$g(x)$}] coordinates {(2,1)};
+\end{axis}
+\end{tikzpicture}
+                   </latex-image>
+                    </image>
+                    <caption> The graph of <m>g(x)</m>.</caption>
+                </figure>
+                  </sidebyside>
+        </introduction>
+ <task> <statement> <p> <m>\displaystyle \lim_{x \to 1} f(x) + g(x) </m>. </p>
+         </statement> </task>    
+ <task> <statement> <p> <m>\displaystyle \lim_{x \to 5^+} 3f(x)  </m>. </p>
+         </statement> </task>    
+          <task> <statement> <p> <m>\displaystyle \lim_{x \to 0^+ } f(x)g(x)  </m>. </p>
+         </statement> </task>
+          <task> <statement> <p> (Challenge) <m>\displaystyle \lim_{x \to 1} g(x) / f(x) </m>. </p>
+         </statement> </task>
+             <task> <statement> <p> (Challenge) <m>\displaystyle \lim_{x \to 0^+} f(g(x)) </m>. </p>
+         </statement> </task>
+                  </activity>
+    
 </section>

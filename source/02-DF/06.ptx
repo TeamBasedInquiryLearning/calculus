@@ -9,12 +9,55 @@
       </li>
     </ul>
   </objectives>
-  <activity>
-    <introduction>
-      <p>
-        Lorem ipsum dolor sit amet.
-      </p>
-    </introduction>
-  </activity>
+
+    
+    <remark>
+  <p> We've learned a lot of rules for derivatives - constant multiple, sum, difference, power, trig, product, quotient, and chain. Now we need to be sure we can take the derivative of a function that might have some of these situations mixed together. </p>
+
+<p>Whenever you are given a function and asked to find its derivative, you should first analyze what's going on in that function. Questions you might ask yourself include (but are not limited to):
+   <ol>
+        <li> What's the big picture? What kind of function is this?</li>
+        <li>Where do you start?  </li>
+        <li>Is there an easier or better way to write the function?  </li>
+        <li> Are there products or quotients involved? </li>
+        <li> Is it a composition of two (or more) functions? </li>
+        <li> Is there a chain rule involved? If so, what are the outside and inside functions?  </li>
+        <li>What types of derivatives rules will I have to use along the way? </li>
+    </ol>
+     </p>   
+        
+    </remark>
+
+ <activity xml:id="activity-df-strat1">
+ <introduction>
+  <p> Consider the function <m>f(x)=x^3\sqrt{3-8x^2}</m>.</p>
+   
+</introduction> 
+   <task><p>
+       You will need multiple derivative rules to find <m>f'(x)</m>. Which rule would need to be used first? In other words, what is the big picture here? 
+       <ol label="A">
+           <li>Chain rule</li>
+           <li>Power rule</li>
+           <li>Product rule</li>
+           <li>Quotient rule</li>
+           <li>Sum and difference rule</li>
+            </ol>
+        </p></task>
+ 
+        <task><p>
+         What other rules would be needed along the way? Select all that apply.
+       <ol label="A">
+           <li>Chain rule</li>
+           <li>Power rule</li>
+           <li>Product rule</li>
+           <li>Quotient rule</li>
+           <li>Sum and difference rule</li>
+            </ol>
+        </p></task>
+     
+     <task>Write an outline of the steps needed if you were asked to take the derivative of <m>f(x)</m>.</task>
+
+    
+</activity>
 
 </section>
