@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-09-19T12:16:32Z       *-->
+<!--*       on 2021-09-21T20:45:09Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -97,6 +97,7 @@
 <li><a href="DF3.html" data-scroll="DF3">Elementary derivative rules (DF3)</a></li>
 <li><a href="DF4.html" data-scroll="DF4">The product and quotient rules (DF4)</a></li>
 <li><a href="DF5.html" data-scroll="DF5">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6">Differentiation strategy (DF6)</a></li>
 </ul>
 </li>
 <li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
@@ -108,34 +109,35 @@
 <span class="type">Chapter</span> <span class="codenumber">2</span> <span class="title">Derivatives (DF)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-8"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
-<div class="introduction" id="introduction-34">
-<p id="p-360">Need a question for this chapter</p>
-<p id="p-361">By the end of this chapter, you should be able to...</p>
+<div class="introduction" id="introduction-35">
+<p id="p-366">Need a question for this chapter</p>
+<p id="p-367">By the end of this chapter, you should be able to...</p>
 </div>
 <ol class="decimal">
-<li id="li-234"><p id="p-362">Estimate the value of a derivative using difference quotients, and draw corresponding secant and tangent lines on the graph of a function.</p></li>
-<li id="li-235"><p id="p-363">Find derivatives using the definition of derivative as a limit.</p></li>
-<li id="li-236"><p id="p-364">Compute basic derivatives using algebraic rules.</p></li>
-<li id="li-237"><p id="p-365">Compute derivatives using the Product and Quotient Rules.</p></li>
-<li id="li-238"><p id="p-366">Compute derivatives using the Chain Rule.</p></li>
-<li id="li-239"><p id="p-367">Compute derivatives using a combination of algebraic derivative rules.</p></li>
-<li id="li-240"><p id="p-368">Compute derivatives of implicitly-defined functions.</p></li>
-<li id="li-241"><p id="p-369">Compute derivatives of inverse functions.</p></li>
+<li id="li-236"><p id="p-368">Estimate the value of a derivative using difference quotients, and draw corresponding secant and tangent lines on the graph of a function.</p></li>
+<li id="li-237"><p id="p-369">Find derivatives using the definition of derivative as a limit.</p></li>
+<li id="li-238"><p id="p-370">Compute basic derivatives using algebraic rules.</p></li>
+<li id="li-239"><p id="p-371">Compute derivatives using the Product and Quotient Rules.</p></li>
+<li id="li-240"><p id="p-372">Compute derivatives using the Chain Rule.</p></li>
+<li id="li-241"><p id="p-373">Compute derivatives using a combination of algebraic derivative rules.</p></li>
+<li id="li-242"><p id="p-374">Compute derivatives of implicitly-defined functions.</p></li>
+<li id="li-243"><p id="p-375">Compute derivatives of inverse functions.</p></li>
 </ol></article><section class="introduction" id="DF-intro"><section class="paragraphs" id="DF-readiness"><h5 class="heading"><span class="title">Readiness Assurance.</span></h5>
-<p id="p-370">Before beginning this chapter, you should be able to...</p>
+<p id="p-376">Before beginning this chapter, you should be able to...</p>
 <ol class="lower-alpha">
-<li id="li-242"><p id="p-371">Write equations of lines using slope-intercept and/or point-slope form (<a class="external" href="https://www.mathsisfun.com/algebra/line-equation-point-slope.html" target="_blank">Math is Fun</a>)</p></li>
-<li id="li-243"><p id="p-372">Find the average rate of change of a function over some interval (<a class="external" href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:average-rate-of-change/v/average-rate-of-change-example-3" target="_blank">Khan Academy</a>)</p></li>
-<li id="li-244"><p id="p-373">Evaluate functions at variable expressions (<a class="external" href="https://www.purplemath.com/modules/fcnnot2.htm" target="_blank">Purple Math</a>)</p></li>
-<li id="li-245"><p id="p-374">Use the laws of exponents to rewrite a given expression (<a class="external" href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-differentiation-1/xa350bf684c056c5c:rational-exponents/v/basic-fractional-exponents" target="_blank">Khan Academy (1)</a> and <a class="external" href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-differentiation-1/xa350bf684c056c5c:properties-of-exponents/v/simplifying-exponent-expression-with-division" target="_blank">Khan Academy (2)</a>)</p></li>
-<li id="li-246"><p id="p-375">Compose and decompose functions (<a class="external" href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-differentiation-2/xa350bf684c056c5c:composing-functions/v/function-composition" target="_blank">Khan Academy</a>)</p></li>
-<li id="li-247"><p id="p-376">Recall special trig values on the unit circle (<a class="external" href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-limits-and-continuity/xa350bf684c056c5c:special-trig-values-in-q1/v/solving-triangle-unit-circle" target="_blank">Khan Academy (1)</a> and <a class="external" href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-limits-and-continuity/xa350bf684c056c5c:unit-circle-introduction/v/unit-circle-definition-of-trig-functions-1" target="_blank">Khan Academy (2)</a>)</p></li>
+<li id="li-244"><p id="p-377">Write equations of lines using slope-intercept and/or point-slope form (<a class="external" href="https://www.mathsisfun.com/algebra/line-equation-point-slope.html" target="_blank">Math is Fun</a>)</p></li>
+<li id="li-245"><p id="p-378">Find the average rate of change of a function over some interval (<a class="external" href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:average-rate-of-change/v/average-rate-of-change-example-3" target="_blank">Khan Academy</a>)</p></li>
+<li id="li-246"><p id="p-379">Evaluate functions at variable expressions (<a class="external" href="https://www.purplemath.com/modules/fcnnot2.htm" target="_blank">Purple Math</a>)</p></li>
+<li id="li-247"><p id="p-380">Use the laws of exponents to rewrite a given expression (<a class="external" href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-differentiation-1/xa350bf684c056c5c:rational-exponents/v/basic-fractional-exponents" target="_blank">Khan Academy (1)</a> and <a class="external" href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-differentiation-1/xa350bf684c056c5c:properties-of-exponents/v/simplifying-exponent-expression-with-division" target="_blank">Khan Academy (2)</a>)</p></li>
+<li id="li-248"><p id="p-381">Compose and decompose functions (<a class="external" href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-differentiation-2/xa350bf684c056c5c:composing-functions/v/function-composition" target="_blank">Khan Academy</a>)</p></li>
+<li id="li-249"><p id="p-382">Recall special trig values on the unit circle (<a class="external" href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-limits-and-continuity/xa350bf684c056c5c:special-trig-values-in-q1/v/solving-triangle-unit-circle" target="_blank">Khan Academy (1)</a> and <a class="external" href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-limits-and-continuity/xa350bf684c056c5c:unit-circle-introduction/v/unit-circle-definition-of-trig-functions-1" target="_blank">Khan Academy (2)</a>)</p></li>
 </ol></section></section><nav class="summary-links"><ul>
 <li><a href="DF2.html"><span class="codenumber">2.1</span> <span class="title">Derivatives graphically and numerically (DF1)</span></a></li>
 <li><a href="DF1.html"><span class="codenumber">2.2</span> <span class="title">Derivatives analytically (DF2)</span></a></li>
 <li><a href="DF3.html"><span class="codenumber">2.3</span> <span class="title">Elementary derivative rules (DF3)</span></a></li>
 <li><a href="DF4.html"><span class="codenumber">2.4</span> <span class="title">The product and quotient rules (DF4)</span></a></li>
 <li><a href="DF5.html"><span class="codenumber">2.5</span> <span class="title">The chain rule (DF5)</span></a></li>
+<li><a href="DF6.html"><span class="codenumber">2.6</span> <span class="title">Differentiation strategy (DF6)</span></a></li>
 </ul></nav></section></div></main>
 </div>
 </body>

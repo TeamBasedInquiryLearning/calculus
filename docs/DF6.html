@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-08-19T19:22:26Z       *-->
+<!--*       on 2021-09-21T20:45:10Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -66,10 +66,10 @@
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="DF5.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="DF7.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="DF5.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="DF5.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a class="next-button button toolbar-item" href="DF7.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="DF5.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -94,12 +94,10 @@
 <a href="DF.html" data-scroll="DF"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
 <li><a href="DF2.html" data-scroll="DF2">Derivatives graphically and numerically (DF1)</a></li>
 <li><a href="DF1.html" data-scroll="DF1">Derivatives analytically (DF2)</a></li>
-<li><a href="DF3.html" data-scroll="DF3">Basic derivative rules (DF3)</a></li>
+<li><a href="DF3.html" data-scroll="DF3">Elementary derivative rules (DF3)</a></li>
 <li><a href="DF4.html" data-scroll="DF4">The product and quotient rules (DF4)</a></li>
 <li><a href="DF5.html" data-scroll="DF5">The chain rule (DF5)</a></li>
 <li><a href="DF6.html" data-scroll="DF6" class="active">Differentiation strategy (DF6)</a></li>
-<li><a href="DF7.html" data-scroll="DF7">Differentiating implicitly defined functions (DF7)</a></li>
-<li><a href="DF8.html" data-scroll="DF8">Differentiating inverse functions (DF8)</a></li>
 </ul>
 </li>
 <li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
@@ -111,10 +109,40 @@
 <span class="type">Section</span> <span class="codenumber">2.6</span> <span class="title">Differentiation strategy (DF6)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-14"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
-<ul class="disc"><li id="li-265"><p id="p-415">Compute derivatives using a combination of algebraic derivative rules.</p></li></ul></article><article class="activity project-like" id="activity-61"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.6.1</span><span class="period">.</span>
+<ul class="disc"><li id="li-482"><p id="p-706">Compute derivatives using a combination of algebraic derivative rules.</p></li></ul></article><article class="remark remark-like" id="remark-10"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.6.1</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-42"><p id="p-416">Lorem ipsum dolor sit amet.</p></div></article></section></div></main>
+<p id="p-707">We've learned a lot of rules for derivatives - constant multiple, sum, difference, power, trig, product, quotient, and chain. Now we need to be sure we can take the derivative of a function that might have some of these situations mixed together.</p>
+<p id="p-708">Whenever you are given a function and asked to find its derivative, you should first analyze what's going on in that function. Questions you might ask yourself include (but are not limited to):</p>
+<ol class="decimal">
+<li id="li-483"><p id="p-derived-li-483">What's the big picture? What kind of function is this?</p></li>
+<li id="li-484"><p id="p-derived-li-484">Where do you start?</p></li>
+<li id="li-485"><p id="p-derived-li-485">Is there an easier or better way to write the function?</p></li>
+<li id="li-486"><p id="p-derived-li-486">Are there products or quotients involved?</p></li>
+<li id="li-487"><p id="p-derived-li-487">Is it a composition of two (or more) functions?</p></li>
+<li id="li-488"><p id="p-derived-li-488">Is there a chain rule involved? If so, what are the outside and inside functions?</p></li>
+<li id="li-489"><p id="p-derived-li-489">What types of derivatives rules will I have to use along the way?</p></li>
+</ol></article><article class="activity project-like" id="activity-df-strat1"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.6.2</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-65"><p id="p-709">Consider the function \(f(x)=x^3\sqrt{3-8x^2}\text{.}\)</p></div>
+<article class="task exercise-like" id="task-174"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-710">You will need multiple derivative rules to find \(f'(x)\text{.}\) Which rule would need to be used first? In other words, what is the big picture here?</p>
+<ol class="upper-alpha">
+<li id="li-490"><p id="p-derived-li-490">Chain rule</p></li>
+<li id="li-491"><p id="p-derived-li-491">Power rule</p></li>
+<li id="li-492"><p id="p-derived-li-492">Product rule</p></li>
+<li id="li-493"><p id="p-derived-li-493">Quotient rule</p></li>
+<li id="li-494"><p id="p-derived-li-494">Sum and difference rule</p></li>
+</ol></article><article class="task exercise-like" id="task-175"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-711">What other rules would be needed along the way? Select all that apply.</p>
+<ol class="upper-alpha">
+<li id="li-495"><p id="p-derived-li-495">Chain rule</p></li>
+<li id="li-496"><p id="p-derived-li-496">Power rule</p></li>
+<li id="li-497"><p id="p-derived-li-497">Product rule</p></li>
+<li id="li-498"><p id="p-derived-li-498">Quotient rule</p></li>
+<li id="li-499"><p id="p-derived-li-499">Sum and difference rule</p></li>
+</ol></article><article class="task exercise-like" id="task-176"><h6 class="heading"><span class="codenumber">(c)</span></h6>\(f(x)\)</article></article></section></div></main>
 </div>
 </body>
 </html>
