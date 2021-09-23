@@ -45,7 +45,7 @@
     </activity>
 
     <activity xml:id="activity-continuous-graph1" estimated-time="10">
-      <statement>
+      <introduction>
         <p>
           A function <m>f</m> defined on <m>-4 \lt x \lt 4</m> has the graph pictured below. Use the graph to answer each of the following questions.
         </p>
@@ -54,35 +54,33 @@
             <description>I need help with alt text for this that doesn't give the answers away.</description>
           </image>
         </figure>
-        <ol>
-          <li xml:id="li-does-limit-exist">
+          </introduction>
+        <task>
             <p>
               For each of the values <m>a = -3</m>, <m>-2</m>, <m>-1</m>, <m>0</m>, <m>1</m>, <m>2</m>, <m>3</m>, determine whether the limit <m>\lim_{x \to a} f(x)</m> exists. If the limit does not exist, be ready to explain why not.
             </p>
-          </li>
-          <li>
+        </task>
+        <task>
             <p>
-              For each of the values of <m>a</m> from <xref ref="li-does-limit-exist"/> where <m>f</m> has a limit, determine the value of <m>f(a)</m> at each such point.
+              For each of the values of <m>a</m> where the limit of <m>f</m> exists, determine the value of <m>f(a)</m> at each such point.
             </p>
-          </li>
-          <li>
+         </task>
+         <task>
             <p>
               For each such <m>a</m> value, is <m>f(a)</m> equal to <m>\lim_{x \to a} f(x)</m>?
             </p>
-          </li>
-          <li>
+         </task>
+         <task>
             <p>
               Use your understanding of continuity to determine whether <m>f</m> is continuous at each value of <m>a</m>.
             </p>
-          </li>
-          <li>
+          </task>
+          <task>
             <p>
               Discuss any revisions you want to make to your definition of continuity that you arrived at toward the end of <xref ref="activity-continuous-scenarios"/>?
             </p>
-          </li>
-        </ol>
-      </statement>
-    </activity>
+          </task>
+          </activity>
 
     <definition xml:id="definition-continuity">
       <statement>
@@ -224,16 +222,51 @@
     </activity>
 
     <activity xml:id="activity-continuity-graphs-and-discontinuities" estimated-time="10">
-      <statement>
+     <statement>
         <p>
           Consider the function <m>f</m> whose graph is pictured below.
         </p>
-        <figure xml:id="figure-continuity-graphs-and-discontinuities">
-          <image source="limits-find-discontinuities.png" width="50%">
-            <description>(for accessibility)</description>
-          </image>
-          <caption></caption>
-        </figure>
+                    <figure>
+                <image width="50%">
+                          <latex-image>
+                  \begin{tikzpicture}[scale=1]
+\begin{axis}[
+    human, 
+	axis lines=middle,
+    grid=major,
+    xmin=-2, xmax=8.5,
+    ymin=-3, ymax=3,
+    xtick={-2,-1,...,8},
+    ytick={-4,-3,...,4},
+  	tick style={thick},
+% 	x label style={at={(axis description cs:1,0.7)}},
+% 	y label style={at={(axis description cs:0.4,1)}}, 
+    ylabel=$y$,
+	xlabel=$x$,
+        ]
+    \addplot[domain=-2:1, blue, ultra thick] {(1/3)*(x)-1/3};
+    \addplot[domain=1:5, blue, ultra thick] {-0.5*x +0.5};
+    \addplot[domain=5:7, blue, ultra thick] {x-5};
+    \addplot[mark=none, color=blue, nodes near coords={$f(x)$}] coordinates {(2,1)};
+\addplot [only marks, blue] table {
+5	0
+1 2
+8 2
+};
+
+    \addplot[only marks, color=blue, mark=*, fill=white] coordinates{(1,0) };
+    
+    \addplot[only marks, color=blue, mark=*, fill=white] coordinates {(5,-2) };
+    
+    \addplot[only marks, color=blue, mark=*, fill=white] coordinates {(7,2) };
+                              
+
+\end{axis}
+\end{tikzpicture}
+                               </latex-image>
+                    </image>
+                    <caption> The graph of <m>f(x)</m>.</caption>
+                </figure> 
         <p>
           Give a list of <m>x</m>-values where <m>f(x)</m> is not continuous. Be prepared to defend your answer based on <xref ref="definition-continuity"/>.
         </p>
@@ -251,13 +284,21 @@
       </statement>
     </remark>
 
-    <activity xml:id="activity-continuity-piecewise" estimated-time="10">
+      <theorem xml:id="theorem-continuity-combining-functions">
       <statement>
         <p>
-          Answer the questions below. It may be helpful to look at some graphs.
+          If <m>f</m> and <m>g</m> are continuous at <m>x = a</m> and <m>c</m> is a real number, then the functions <m>f + g</m>, <m>f - g</m>, <m>cf</m>, and <m>fg</m> are also continuous at <m>x = a</m>. Moreover, <m>f/g</m> is continuous at <m>x = a</m> provided that <m>g(a) \ne 0</m>.
         </p>
-        <ol label="1">
-          <li>
+      </statement>
+    </theorem>
+    
+    <activity xml:id="activity-continuity-piecewise" estimated-time="10">
+     <introduction> 
+        <p>
+          Answer the questions below about piecewise functions. It may be helpful to look at some graphs.
+        </p>
+         </introduction>
+        <task>
             <p>
               Which values of <m>c</m>, if any, could make the following function continuous on the real line?<me>
                 g(x) = \begin{cases}
@@ -266,8 +307,8 @@
                 \end{cases}
               </me>
             </p>
-          </li>
-          <li>
+        </task>  
+        <task>
             <p>
               Which values of <m>c</m>, if any, could make the following function continuous on the real line?<me>
                 h(x) = \begin{cases}
@@ -276,8 +317,8 @@
                 \end{cases}
               </me>
             </p>
-          </li>
-          <li>
+          </task>
+          <task>
             <p>
               Which values of <m>c</m>, if any, could make the following function continuous on the real line?<me>
                 k(x) = \begin{cases}
@@ -286,18 +327,10 @@
                 \end{cases}
               </me>
             </p>
-          </li>
-        </ol>
-      </statement>
-    </activity>
+          </task>
+        </activity>
 
-    <theorem xml:id="theorem-continuity-combining-functions">
-      <statement>
-        <p>
-          If <m>f</m> and <m>g</m> are continuous at <m>x = a</m> and <m>c</m> is a real number, then the functions <m>f + g</m>, <m>f - g</m>, <m>cf</m>, and <m>fg</m> are also continuous at <m>x = a</m>. Moreover, <m>f/g</m> is continuous at <m>x = a</m> provided that <m>g(a) \ne 0</m>.
-        </p>
-      </statement>
-    </theorem>
+  
 
     <activity estimated-time="10">
         <introduction>
