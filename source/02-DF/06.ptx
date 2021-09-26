@@ -10,19 +10,19 @@
     </ul>
   </objectives>
 
+
     
     <remark>
-  <p> We've learned a lot of rules for derivatives - constant multiple, sum, difference, power, trig, product, quotient, and chain. Now we need to be sure we can take the derivative of a function that might have some of these situations mixed together. </p>
+  <p> We've learned a lot of rules to help us take derivatives of functions, and these rules are applied based on the algebraic structure of the function. (Note that we often see that algebraic structure come up in the names of the rules. Sum/difference, power, product, and quotient rules for example!) To take a derivative, we need to examine how the function is built and then proceed accordingly. Up until now we have not seen many situations where these rules were mixed together too much. Now we turn our attention to those types of situations. </p>
 
-<p>Whenever you are given a function and asked to find its derivative, you should first analyze what's going on in that function. Questions you might ask yourself include (but are not limited to):
+<p> Below are some questions you might ask yourself as you take the derivative of a function, especially one where multiple rules might need to be used:
    <ol>
-        <li> What's the big picture? What kind of function is this?</li>
-        <li>Where do you start?  </li>
-        <li>Is there an easier or better way to write the function?  </li>
+        <li> How is this function built algebraically? What kind of function is this? What is the big picture?</li>
+        <li> Where do you start?  </li>
+        <li> Is there an easier or more convenient way to write the function?  </li>
         <li> Are there products or quotients involved? </li>
-        <li> Is it a composition of two (or more) functions? </li>
-        <li> Is there a chain rule involved? If so, what are the outside and inside functions?  </li>
-        <li>What types of derivatives rules will I have to use along the way? </li>
+        <li> Is it a composition of two (or more) functions? If so, what are the outside and inside functions? </li>
+        <li> What derivatives rules will be needed along the way? </li>
     </ol>
      </p>   
         
@@ -34,7 +34,7 @@
    
 </introduction> 
    <task><p>
-       You will need multiple derivative rules to find <m>f'(x)</m>. Which rule would need to be used first? In other words, what is the big picture here? 
+       You will need multiple derivative rules to find <m>f'(x)</m>. Which rule would need to be applied first? In other words, what is the big picture here? 
        <ol label="A">
            <li>Chain rule</li>
            <li>Power rule</li>
@@ -55,7 +55,116 @@
             </ol>
         </p></task>
      
-     <task><p>Write an outline of the steps needed if you were asked to take the derivative of <m>f(x)</m>.</p></task>
+     <task><p>Write an outline of the steps needed if you were asked to take the derivative of <m>f(x)</m>. </p></task>
+
+    
+</activity>
+    
+ <activity xml:id="activity-df-strat2">
+ <introduction>
+  <p> Consider the function <m>f(x)= \left(\frac{\ln x}{(3x-4)^3} \right)^5</m>.</p>
+   
+</introduction> 
+   <task><p>
+       You will need multiple derivative rules to find <m>f'(x)</m>. Which rule would need to be applied first? In other words, what is the big picture here? 
+       <ol label="A">
+           <li>Chain rule</li>
+           <li>Power rule</li>
+           <li>Product rule</li>
+           <li>Quotient rule</li>
+           <li>Sum and difference rule</li>
+            </ol>
+        </p></task>
+ 
+        <task><p>
+         What other rules would be needed along the way? Select all that apply.
+       <ol label="A">
+           <li>Chain rule</li>
+           <li>Power rule</li>
+           <li>Product rule</li>
+           <li>Quotient rule</li>
+           <li>Sum and difference rule</li>
+            </ol>
+        </p></task>
+     
+     <task><p>Write an outline of the steps needed if you were asked to take the derivative of <m>f(x)</m>. </p></task>
+
+    
+</activity>
+    
+ <activity xml:id="activity-df-strat3">
+ <introduction>
+  <p> Consider the function <m>f(x)= \sin(\cos(\tan(2x^3-1)))</m>.</p>
+   
+</introduction> 
+   <task><p>
+       You will need multiple derivative rules to find <m>f'(x)</m>. Which rule would need to be applied first? In other words, what is the big picture here? 
+       <ol label="A">
+           <li>Chain rule</li>
+           <li>Power rule</li>
+           <li>Product rule</li>
+           <li>Quotient rule</li>
+           <li>Sum and difference rule</li>
+            </ol>
+        </p></task>
+ 
+        <task><p>
+         What other rules would be needed along the way? Select all that apply.
+       <ol label="A">
+           <li>Chain rule</li>
+           <li>Power rule</li>
+           <li>Product rule</li>
+           <li>Quotient rule</li>
+           <li>Sum and difference rule</li>
+            </ol>
+        </p></task>
+     
+     <task><p>Write an outline of the steps needed if you were asked to take the derivative of <m>f(x)</m>. </p></task>
+
+    
+</activity>    
+    
+ <activity xml:id="activity-df-strat4">
+ <introduction>
+  <p> Consider the function <m>f(x)= \frac{x^2 e^x}{2x^3-5x+\sqrt{x}}</m>.</p>
+   
+</introduction> 
+   <task><p>
+       You will need multiple derivative rules to find <m>f'(x)</m>. Which rule would need to be applied first? In other words, what is the big picture here? 
+       <ol label="A">
+           <li>Chain rule</li>
+           <li>Power rule</li>
+           <li>Product rule</li>
+           <li>Quotient rule</li>
+           <li>Sum and difference rule</li>
+            </ol>
+        </p></task>
+ 
+        <task><p>
+         What other rules would be needed along the way? Select all that apply.
+       <ol label="A">
+           <li>Chain rule</li>
+           <li>Power rule</li>
+           <li>Product rule</li>
+           <li>Quotient rule</li>
+           <li>Sum and difference rule</li>
+            </ol>
+        </p></task>
+     
+     <task><p>Write an outline of the steps needed if you were asked to take the derivative of <m>f(x)</m>. </p></task>
+
+    
+</activity>
+    
+ <activity xml:id="activity-df-strat-fluency">
+ <introduction>
+  <p> Find the derivative of the following functions. For each, include an explanation of the steps involved that references the algebraic structure of the function.</p>
+   
+</introduction> 
+   <task> <m> f(x) = e^{5x}(x^2+7^x)^3</m></task>        
+   <task> <m> f(x) = \left( \frac{3x + 1}{2x^{6} - 1} \right)^{ 5 } </m></task>
+   <task> <m> f(x) = \sqrt{\cos\left(2 \, x^{2} + x\right)}</m></task>    
+   <task> <m> f(x) = \tan(xe^x)</m></task>       
 
     
 </activity>
