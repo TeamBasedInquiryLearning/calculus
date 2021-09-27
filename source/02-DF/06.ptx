@@ -10,7 +10,23 @@
     </ul>
   </objectives>
 
+ <activity xml:id="activity-df-strat-intro">
+ <introduction>
+  <p> Consider the functions defined below: </p>
 
+        <me>f(x)=\sin((x^2+3x)\cos(2x))</me>
+      <me>g(x)=\sin(x^2+3x)\cos(2x)</me>
+</introduction> 
+   <task><p>
+      What do you notice that is similar about these two functions?
+        </p></task>
+   <task><p>
+      What do you notice that is different about these two functions?
+        </p></task>
+   <task><p>
+    Imagine that you are sorting functions into different categories based on how you would differentiate them. In what category (or categories) might these functions fall?
+        </p></task>     
+</activity>   
     
     <remark>
   <p> We've learned a lot of rules to help us take derivatives of functions, and these rules are applied based on the algebraic structure of the function. (Note that we often see that algebraic structure come up in the names of the rules. Sum/difference, power, product, and quotient rules for example!) To take a derivative, we need to examine how the function is built and then proceed accordingly. Up until now we have not seen many situations where these rules were mixed together too much. Now we turn our attention to those types of situations. </p>
@@ -27,6 +43,8 @@
      </p>   
         
     </remark>
+    
+ 
 
  <activity xml:id="activity-df-strat1">
  <introduction>
