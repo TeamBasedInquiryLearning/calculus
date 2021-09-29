@@ -1,30 +1,33 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<introduction xml:id="DF-intro" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <paragraphs xml:id="DF-readiness">
+<introduction xml:id="AD-intro" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <paragraphs xml:id="AD-readiness">
     <title>Readiness Assurance</title>
       <p>
         Before beginning this chapter, you should be able to...
       </p>
      <ol label="a">
-        <li>
-            <p>Write equations of lines using slope-intercept and/or point-slope form (<url href="https://www.mathsisfun.com/algebra/line-equation-point-slope.html">Math is Fun</url>)</p>
+         <li>
+            <p>Find the derivative of a function using methods from <xref ref="DF3" />, <xref ref="DF4" />, <xref ref="DF5" />, and <xref ref="DF6" />.</p>
+        </li>
+        <li> <p> Find the second derivative of a function.  (<url href="https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-6/a/second-derivatives-review">Khan Academy</url>)</p>
+         </li>
+         <li>
+            <p>Determine whether values are in the domain of a function (<url href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:determining-the-domain-of-a-function/v/determine-values-domain">Khan Academy</url>)</p>
         </li>
         <li>
-            <p>Find the average rate of change of a function over some interval (<url href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:average-rate-of-change/v/average-rate-of-change-example-3">Khan Academy</url>)</p>
-        </li> 
+            <p>Find relative and absolute extrema given the graph of a function (<url href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:maximum-and-minimum-points/v/identifying-relative-and-absolute-maxima-and-minima">Khan Academy</url>)</p>
+        </li>
                  <li>
-            <p>Evaluate functions at variable expressions (<url href="https://www.purplemath.com/modules/fcnnot2.htm">Purple Math</url>)</p>
+       <p>Find the intervals where a graph is increasing or decreasing (<url href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:intervals-where-a-function-is-positive-negative-increasing-or-decreasing/v/increasing-decreasing-positive-and-negative-intervals">Khan Academy</url>)</p>
         </li>
-        <li>
-            <p>Use the laws of exponents to rewrite a given expression (<url href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-differentiation-1/xa350bf684c056c5c:rational-exponents/v/basic-fractional-exponents">Khan Academy (1) </url> and <url href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-differentiation-1/xa350bf684c056c5c:properties-of-exponents/v/simplifying-exponent-expression-with-division">Khan Academy (2) </url>)</p>
-        </li> 
-        <li>
-            <p>Compose and decompose functions (<url href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-differentiation-2/xa350bf684c056c5c:composing-functions/v/function-composition">Khan Academy </url>) </p>
-        </li>   
-        <li>
-            <p>Recall special trig values on the unit circle (<url href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-limits-and-continuity/xa350bf684c056c5c:special-trig-values-in-q1/v/solving-triangle-unit-circle">Khan Academy (1) </url> and <url href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-limits-and-continuity/xa350bf684c056c5c:unit-circle-introduction/v/unit-circle-definition-of-trig-functions-1">Khan Academy (2) </url>)</p>
-        </li>           
+    <li>
+            <p>Determine the zeros of a polynomial (<url href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:poly-graphs/x2ec2f6f830c9fb89:poly-zeros/v/polynomial-zeros-introduction">Khan Academy</url>)</p>
+        </li>
+    <li>
+            <p>Modeling with multiple variables (<url href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:modeling/x2ec2f6f830c9fb89:modeling-with-multiple-variables/v/modeling-with-multiple-variables-pancakes">Khan Academy</url>)</p>
+        </li>         
+         
       </ol>
   </paragraphs>
 </introduction>
