@@ -46,7 +46,7 @@
                 </row>
                 <row>
                   <cell>
-                      <m>h \, \text{(feet)} </m>
+                      <m>f(t) \, \text{(feet)} </m>
                   </cell>
                   <cell>
                     64
@@ -135,17 +135,17 @@
 \begin{axis}[
 	axis lines=middle,
     grid=major,
-%    xmin=-10, xmax=10,
- %   ymin=-5, ymax=8,
-    xtick={0,0.5,...,6},
-   ytick={2,4,...,22},
+   xmin=0, xmax=4,
+   ymin=-2, ymax=10,
+    xtick={0,0.5,...,4},
+   ytick={-2,-1,...,10},
   	tick style={thick},
 % 	x label style={at={(axis description cs:1,0.7)}},
 % 	y label style={at={(axis description cs:0.4,1)}}, 
     ylabel=$y$,
 	xlabel=$x$,
         ]
-    \addplot[domain=0:5, blue,  thick] {x^2-2};
+    \addplot[domain=0:4, blue,  thick] {x^2-2};
 \end{axis}
 \end{tikzpicture}
   
@@ -159,7 +159,13 @@
                   <cell>
                       <m> x </m>
                   </cell>
+                 <cell>
+                    1
+                  </cell>
                   <cell>
+                    1.5
+                  </cell>  
+                <cell>
                     2
                   </cell>
                   <cell>
@@ -178,6 +184,12 @@
                 <row>
                   <cell>
                       <m>g(x) </m>
+                  </cell>
+                    <cell>
+                    -1
+                  </cell>
+                  <cell>
+                    0.25
                   </cell>
                   <cell>
                     2
@@ -198,13 +210,13 @@
             </tabular>
         </table>
 </introduction>
-     <task> <statement> <p>What is the slope of the line through <m>(2,g(2))</m> and <m>(3,g(3))</m>? What about through <m>(3,g(3))</m> and <m>(4,g(4))</m>? Draw these lines on the graph of <m>g(x)</m>.</p>
+     <task> <statement> <p>What is the slope of the line through <m>(1,g(1))</m> and <m>(2,g(2))</m>? Draw this line on the graph of <m>g(x)</m>.</p>
          </statement> </task>  
-         <task> <statement> <p>What is the slope of the line through <m>(2.5,g(2.5))</m> and <m>(3,g(3))</m>? What about through <m>(3,g(3))</m> and <m>(3.5,g(3.5))</m>?  Draw these lines on the graph of <m>g(x)</m>. </p>
+         <task> <statement> <p>What is the slope of the line through <m>(1.5,g(1.5))</m> and <m>(2,g(2))</m>?  Draw this line on the graph of <m>g(x)</m>. </p>
          </statement> </task>
-     <task> <statement> <p>Draw the line tangent to <m>g(x)</m> at <m>x=3</m>. What would be your best estimate for the slope of this tangent line? </p>
+     <task> <statement> <p>Draw the line tangent to <m>g(x)</m> at <m>x=2</m>. What would be your best estimate for the slope of this tangent line? </p>
          </statement> </task> 
-             <task> <statement> <p> Notice that the slope of the tangent line at <m>x=3</m> is positive. What feature of the graph of <m>f(x)</m> around <m>x=3</m> do you think causes the tangent line to have positive slope? </p>
+             <task> <statement> <p> Notice that the slope of the tangent line at <m>x=2</m> is positive. What feature of the graph of <m>f(x)</m> around <m>x=2</m> do you think causes the tangent line to have positive slope? </p>
               <ol label="A">
                 <li><p> The function <m>f(x)</m> is concave up </p></li>
                   <li><p> The function <m>f(x)</m> is increasing </p></li>
@@ -362,7 +374,7 @@
     
   
     <activity>
-        <p>Suppose that the function <m>f(x)</m> gives the position of an object at time <m>x</m>. Which of the following quantities are the same? Select all!</p>
+        <p>Suppose that the function <m>f(x)</m> gives the position of an object at time <m>x</m>. Which of the following quantities are the same? Select all that apply!</p>
            <ol label="A">
                 <li><p> The value of the derivative of <m>f(x)</m> at <m>x=a</m> </p></li>
          <li><p> The slope of the tangent line to <m>f(x)</m> at <m>x=a</m> </p></li>
