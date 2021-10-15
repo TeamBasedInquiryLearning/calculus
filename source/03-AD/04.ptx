@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="AD4" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Extreme Value Theorem</title>
+  <title>Extreme values (AD4)</title>
   <objectives>
     <ul>
       <li>
@@ -10,10 +10,86 @@
     </ul>
   </objectives>
 
-  <activity>
-    <introduction>
-      <p>Lorem ipsum dolor sit amet.</p>
+  <introduction>
+    <p>
+      In many different settings,
+      we are interested in knowing where a function achieves its least and greatest values.
+      These can be important in applications <mdash /> say to identify a point at which maximum profit or minimum cost occurs <mdash /> or in theory to characterize the behavior of a function or a family of related functions.
+    </p>
     </introduction>
+    <p>
+      Consider the simple and familiar example of a parabolic function such as <m>s(t) = -16t^2 + 32t + 48</m>
+      that represents the height of an object tossed vertically:
+      its maximum value occurs at the vertex of the parabola and represents the greatest height the object reaches.
+      This maximum value is an especially important point on the graph,
+      the point at which the curve changes from increasing to decreasing.
+    </p>
+
+ <figure xml:id="height-function">
+                    <image width="50%">
+                    <latex-image>  
+\begin{tikzpicture}[scale=1]
+\begin{axis}[
+	samples = 900, 
+	axis lines=middle,
+    grid=major,
+ %  xmin=0, xmax=4,
+   ymin=0, ymax=70,
+   % xtick={0,0.5,...,4},
+  % ytick={-2,-1,...,10},
+  %	tick style={thick},
+% 	x label style={at={(axis description cs:1,0.7)}},
+% 	y label style={at={(axis description cs:0.4,1)}}, 
+    ylabel=$s(t)$,
+	xlabel=$t$,
+        ]
+    \addplot[domain=0:3, blue,  thick] {-16*x^2+32*x+48};
+\end{axis}
+\end{tikzpicture}
+  
+    </latex-image>
+                    </image>
+                    <caption>The graph of <m>s(t) = -16t^2 + 32t + 48</m></caption>
+                </figure>    
+    
+    <definition>
+      <statement>
+        <p>
+          Given a function <m>f</m>,
+          we say that <m>f(c)</m> is a <term>global</term> or
+          <term>absolute maximum</term>
+              <idx><h>maximum</h><h>global</h></idx>
+              <idx><h>maximum</h><h>absolute</h></idx>
+          of <m>f</m> provided that
+          <m>f(c) \ge f(x)</m> for all <m>x</m> in the domain of <m>f</m>,
+          and similarly we call <m>f(c)</m> a <term>global</term>
+              <idx><h>minimum</h><h>global</h></idx>
+          or
+          <term>absolute minimum</term>
+              <idx><h>minimum</h><h>absolute</h></idx>
+          of <m>f</m> whenever <m>f(c) \le f(x)</m> for all <m>x</m> in the domain of <m>f</m>.
+        </p>
+      </statement>
+    </definition>    
+    
+  <activity xml:id="activity-derivative-implicit1">
+    <introduction>
+      <p>
+        For this activity we want to find the equation of a tangent line for a circle with radius 5 centered at the origin, <m>x^2+y^2 = 25,</m> at the point <m>(-3,-4).</m>
+      </p>
+    </introduction>
+      <task>
+      <statement>
+          <p>The derivative with respect to <m>x</m> for the equation of the circle is given by which expression.</p>
+          <ol label="A">
+                <li><p><m>2x + 2y\frac{dy}{dx} = 25</m></p></li>
+                <li><p><m>2x + y\frac{dy}{dx} = 0</m></p></li>
+                <li><p><m>2x + 2y\frac{dy}{dx} = 0</m></p></li>
+                <li><p><m>2x + 2\frac{dy}{dx} = 25</m></p></li>
+            </ol>
+          </statement>
+      </task>
+     
   </activity>
 
 </section>
