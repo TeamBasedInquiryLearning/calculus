@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-10-07T16:52:19Z       *-->
+<!--*       on 2021-10-15T22:42:44Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -66,10 +66,10 @@
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="AD.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="AD2.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="AD4.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="AD.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="AD2.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a class="next-button button toolbar-item" href="AD4.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -99,10 +99,15 @@
 <li><a href="DF5.html" data-scroll="DF5">The chain rule (DF5)</a></li>
 <li><a href="DF6.html" data-scroll="DF6">Differentiation strategy (DF6)</a></li>
 <li><a href="DF7.html" data-scroll="DF7">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8">Differentiating inverse functions (DF8)</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="AD.html" data-scroll="AD"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul><li><a href="AD3.html" data-scroll="AD3" class="active">Related rates (AD3)</a></li></ul>
+<a href="AD.html" data-scroll="AD"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD2.html" data-scroll="AD2">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3" class="active">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4">Extreme values (AD4)</a></li>
+</ul>
 </li>
 <li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
 <li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl"><span class="title">TBIL Resource Library</span></a></li>
@@ -110,129 +115,129 @@
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="AD3"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">3.1</span> <span class="title">Related rates (AD3)</span>
+<span class="type">Section</span> <span class="codenumber">3.2</span> <span class="title">Related rates (AD3)</span>
 </h2>
-<article class="objectives goal-like" id="objectives-17"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
-<ul class="disc"><li id="li-558"><p id="p-778">Model and analyze scenarios using related rates.</p></li></ul></article><article class="remark remark-like" id="remark-11"><h6 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span>
+<article class="objectives goal-like" id="objectives-19"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
+<ul class="disc"><li id="li-615"><p id="p-892">Model and analyze scenarios using related rates.</p></li></ul></article><article class="remark remark-like" id="remark-14"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="period">.</span>
 </h6>
-<p id="p-779">In most of our applications of the derivative so far, we have been interested in the instantaneous rate at which one variable, say \(y\text{,}\) changes with respect to another, say \(x\text{,}\) leading us to compute and interpret \(\frac{dy}{dx}\text{.}\) We next consider situations where several variable quantities are related, but where each quantity is implicitly a function of time, which will be represented by the variable \(t\text{.}\) Through knowing how the quantities are related, we will be interested in determining how their respective rates of change with respect to time are related.</p></article><article class="example example-like" id="example-1"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="period">.</span>
+<p id="p-893">In most of our applications of the derivative so far, we have been interested in the instantaneous rate at which one variable, say \(y\text{,}\) changes with respect to another, say \(x\text{,}\) leading us to compute and interpret \(\frac{dy}{dx}\text{.}\) We next consider situations where several variable quantities are related, but where each quantity is implicitly a function of time, which will be represented by the variable \(t\text{.}\) Through knowing how the quantities are related, we will be interested in determining how their respective rates of change with respect to time are related.</p></article><article class="example example-like" id="example-1"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.2</span><span class="period">.</span>
 </h6>
-<p id="p-780">In a sense, the chain rule is our first example of related rates: recall that when \(y\) is a function of \(x\text{,}\) which in turn is a function of \(t\text{,}\) we are considering the composite function \(y(x(t))\text{,}\) and we learned that by the chain rule</p>
+<p id="p-894">In a sense, the chain rule is our first example of related rates: recall that when \(y\) is a function of \(x\text{,}\) which in turn is a function of \(t\text{,}\) we are considering the composite function \(y(x(t))\text{,}\) and we learned that by the chain rule</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{d y}{d t} = \frac{d y}{d x} \cdot \frac{d x}{d t} 
 \end{equation*}
 </div>
-<p id="p-781">Notice that the chain rule gives a relationship between three rates: \(\frac{d y}{d t} , \frac{d y}{d x},  \frac{d x}{d t}\text{.}\)</p></article><article class="activity project-like" id="activity-109"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.3</span><span class="period">.</span>
+<p id="p-895">Notice that the chain rule gives a relationship between three rates: \(\frac{d y}{d t} , \frac{d y}{d x},  \frac{d x}{d t}\text{.}\)</p></article><article class="activity project-like" id="activity-124"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.3</span><span class="period">.</span>
 </h6>
-<p id="p-782">Remember the squirrels taking over my neighborhood?  The population \(s\) grows based on acorn availability \(a\text{,}\) at a rate of 2 squirrels per bushel. The acorn availability \(a\) is currently growing at a rate of 100 bushels per week. What is \(\frac{ds}{dt}\) in this situation?</p>
+<p id="p-896">Remember the squirrels taking over my neighborhood?  The population \(s\) grows based on acorn availability \(a\text{,}\) at a rate of 2 squirrels per bushel. The acorn availability \(a\) is currently growing at a rate of 100 bushels per week. What is \(\frac{ds}{dt}\) in this situation?</p>
 <ol class="upper-alpha">
-<li id="li-559"><p id="p-783">2</p></li>
-<li id="li-560"><p id="p-784">100</p></li>
-<li id="li-561"><p id="p-785">200</p></li>
-<li id="li-562"><p id="p-786">Not enough information</p></li>
+<li id="li-616"><p id="p-897">2</p></li>
+<li id="li-617"><p id="p-898">100</p></li>
+<li id="li-618"><p id="p-899">200</p></li>
+<li id="li-619"><p id="p-900">Not enough information</p></li>
 </ol></article><article class="example example-like" id="example-2"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.1.4</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.2.4</span><span class="period">.</span>
 </h6>
-<p id="p-787">In a more serious example, suppose that air is being pumped into a spherical balloon so that its volume increases at a constant rate of 20 cubic inches per second. Since the balloon's volume and radius are related, by knowing how fast the volume is changing, we ought to be able to discover how fast the radius is changing. We are interested in questions such as: can we determine how fast the radius of the balloon is increasing at the moment the balloon's diameter is 12 inches?</p></article><article class="activity project-like" id="rel-rates-spherical-balloon"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.5</span><span class="period">.</span>
+<p id="p-901">In a more serious example, suppose that air is being pumped into a spherical balloon so that its volume increases at a constant rate of 20 cubic inches per second. Since the balloon's volume and radius are related, by knowing how fast the volume is changing, we ought to be able to discover how fast the radius is changing. We are interested in questions such as: can we determine how fast the radius of the balloon is increasing at the moment the balloon's diameter is 12 inches?</p></article><article class="activity project-like" id="rel-rates-spherical-balloon"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.5</span><span class="period">.</span>
 </h6>
-<p id="p-788">A spherical balloon is being inflated at a constant rate of 20 cubic inches per second. How fast is the radius of the balloon changing at the instant the balloon's diameter is 12 inches? Is the radius changing more rapidly when \(d = 12\) or when \(d = 16\text{?}\) Why? <article class="task exercise-like" id="task-205"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-789">Draw several spheres with different radii, and observe that as volume changes, the radius, diameter, and surface area of the balloon also change.</p></article> <article class="task exercise-like" id="task-206"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-790">Recall that the volume of a sphere of radius \(r\) is \(V = \frac{4}{3} \pi r^3\text{.}\) Note as well that in the setting of this problem, <em class="emphasis">both</em> \(V\) and \(r\) are changing as time \(t\) changes, and thus both \(V\) and \(r\) may be viewed as <em class="emphasis">implicit</em> functions of \(t\text{,}\) with respective derivatives \(\frac{dV}{dt}\) and \(\frac{dr}{dt}\text{.}\) Differentiate both sides of the equation \(V = \frac{4}{3} \pi r^3\) with respect to \(t\) (using the chain rule on the right) to find a formula for \(\frac{dV}{dt}\) that depends on both \(r\) and \(\frac{dr}{dt}\text{.}\)</p></article> <article class="task exercise-like" id="task-207"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-791">At this point in the problem, by differentiating we have “related the rates” of change of \(V\) and \(r\text{.}\) Recall that we are given in the problem that the balloon is being inflated at a constant <em class="emphasis">rate</em> of 20 cubic inches per second. Is this rate the value of \(\frac{dr}{dt}\) or \(\frac{dV}{dt}\text{?}\) Why?</p></article> <article class="task exercise-like" id="task-208"><h6 class="heading"><span class="codenumber">(d)</span></h6>
-<p id="p-792">From part (c), we know the value of \(\frac{dV}{dt}\) at every value of \(t\text{.}\) Next, observe that when the diameter of the balloon is 12, we know the value of the radius. In the equation \(\frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt}\text{,}\) substitute these values for the relevant quantities and solve for the remaining unknown quantity, which is \(\frac{dr}{dt}\text{.}\) How fast is the radius changing at the instant \(d = 12\text{?}\)</p></article> <article class="task exercise-like" id="task-209"><h6 class="heading"><span class="codenumber">(e)</span></h6>
-<p id="p-793">How is the situation different when \(d = 16\text{?}\) When is the radius changing more rapidly, when \(d = 12\) or when \(d = 16\text{?}\)</p></article></p></article><article class="remark remark-like" id="remark-12"><h6 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.1.6</span><span class="period">.</span>
+<p id="p-902">A spherical balloon is being inflated at a constant rate of 20 cubic inches per second. How fast is the radius of the balloon changing at the instant the balloon's diameter is 12 inches? Is the radius changing more rapidly when \(d = 12\) or when \(d = 16\text{?}\) Why? <article class="task exercise-like" id="task-238"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-903">Draw several spheres with different radii, and observe that as volume changes, the radius, diameter, and surface area of the balloon also change.</p></article> <article class="task exercise-like" id="task-239"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-904">Recall that the volume of a sphere of radius \(r\) is \(V = \frac{4}{3} \pi r^3\text{.}\) Note as well that in the setting of this problem, <em class="emphasis">both</em> \(V\) and \(r\) are changing as time \(t\) changes, and thus both \(V\) and \(r\) may be viewed as <em class="emphasis">implicit</em> functions of \(t\text{,}\) with respective derivatives \(\frac{dV}{dt}\) and \(\frac{dr}{dt}\text{.}\) Differentiate both sides of the equation \(V = \frac{4}{3} \pi r^3\) with respect to \(t\) (using the chain rule on the right) to find a formula for \(\frac{dV}{dt}\) that depends on both \(r\) and \(\frac{dr}{dt}\text{.}\)</p></article> <article class="task exercise-like" id="task-240"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-905">At this point in the problem, by differentiating we have “related the rates” of change of \(V\) and \(r\text{.}\) Recall that we are given in the problem that the balloon is being inflated at a constant <em class="emphasis">rate</em> of 20 cubic inches per second. Is this rate the value of \(\frac{dr}{dt}\) or \(\frac{dV}{dt}\text{?}\) Why?</p></article> <article class="task exercise-like" id="task-241"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-906">From part (c), we know the value of \(\frac{dV}{dt}\) at every value of \(t\text{.}\) Next, observe that when the diameter of the balloon is 12, we know the value of the radius. In the equation \(\frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt}\text{,}\) substitute these values for the relevant quantities and solve for the remaining unknown quantity, which is \(\frac{dr}{dt}\text{.}\) How fast is the radius changing at the instant \(d = 12\text{?}\)</p></article> <article class="task exercise-like" id="task-242"><h6 class="heading"><span class="codenumber">(e)</span></h6>
+<p id="p-907">How is the situation different when \(d = 16\text{?}\) When is the radius changing more rapidly, when \(d = 12\) or when \(d = 16\text{?}\)</p></article></p></article><article class="remark remark-like" id="remark-15"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.2.6</span><span class="period">.</span>
 </h6>
-<p id="p-794">In problems where two or more quantities can be related to one another, and all of the variables involved are implicitly functions of time, \(t\text{,}\) we are often interested in how their rates are related; we call these <em class="emphasis">related rates</em> problems.  Once we have an equation establishing the relationship among the variables, we differentiate implicitly with respect to time to find connections among the rates of change.</p></article><article class="remark remark-like" id="remark-13"><h6 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">A guide to solving related rated problems.</span>
+<p id="p-908">In problems where two or more quantities can be related to one another, and all of the variables involved are implicitly functions of time, \(t\text{,}\) we are often interested in how their rates are related; we call these <em class="emphasis">related rates</em> problems.  Once we have an equation establishing the relationship among the variables, we differentiate implicitly with respect to time to find connections among the rates of change.</p></article><article class="remark remark-like" id="remark-16"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">A guide to solving related rated problems.</span>
 </h6>
-<ol id="p-795" class="decimal">
-<li id="li-563"><p id="p-derived-li-563"><em class="emphasis">Picture it!</em> Draw a diagram to represent the situation.</p></li>
-<li id="li-564"><p id="p-derived-li-564"><em class="emphasis">What do we know?</em> Make a list of all quantities you are given in the problem, choosing clearly defined variable names for them. If a quantity is changing (a rate), then it should be labeled as a derivative.</p></li>
-<li id="li-565"><p id="p-derived-li-565"><em class="emphasis">What do we want to know?</em> Make a list of all quantities to be determined. Again, choose clearly defined variable names.</p></li>
-<li id="li-566"><p id="p-derived-li-566"><em class="emphasis">How are the variables related to each other?</em> Find an equation that relates the variables whose rates of change are known to those variables whose rates of change are to be found.</p></li>
-<li id="li-567"><p id="p-derived-li-567"><em class="emphasis">How are the rates related?</em> Differentiate implicitly with respect to time. This will give an equation that relates the rates together.</p></li>
-<li id="li-568"><p id="p-derived-li-568"><em class="emphasis">Time to evaluate!</em> Evaluate the derivatives and variables at the information relevant to the instant at which a certain rate of change is sought.</p></li>
-</ol></article><article class="remark remark-like" id="remark-14"><h6 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.1.8</span><span class="period">.</span><span class="space"> </span><span class="title">Volume formulas.</span>
+<ol id="p-909" class="decimal">
+<li id="li-620"><p id="p-derived-li-620"><em class="emphasis">Picture it!</em> Draw a diagram to represent the situation.</p></li>
+<li id="li-621"><p id="p-derived-li-621"><em class="emphasis">What do we know?</em> Make a list of all quantities you are given in the problem, choosing clearly defined variable names for them. If a quantity is changing (a rate), then it should be labeled as a derivative.</p></li>
+<li id="li-622"><p id="p-derived-li-622"><em class="emphasis">What do we want to know?</em> Make a list of all quantities to be determined. Again, choose clearly defined variable names.</p></li>
+<li id="li-623"><p id="p-derived-li-623"><em class="emphasis">How are the variables related to each other?</em> Find an equation that relates the variables whose rates of change are known to those variables whose rates of change are to be found.</p></li>
+<li id="li-624"><p id="p-derived-li-624"><em class="emphasis">How are the rates related?</em> Differentiate implicitly with respect to time. This will give an equation that relates the rates together.</p></li>
+<li id="li-625"><p id="p-derived-li-625"><em class="emphasis">Time to evaluate!</em> Evaluate the derivatives and variables at the information relevant to the instant at which a certain rate of change is sought.</p></li>
+</ol></article><article class="remark remark-like" id="remark-17"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Volume formulas.</span>
 </h6>
-<ul id="p-796" class="disc">
-<li id="li-569"><p id="p-derived-li-569">A sphere of radius \(r\) has volume \(V= \frac{4}{3} \pi r^3 \)</p></li>
-<li id="li-570"><p id="p-derived-li-570">A vertical cylinder of radius \(r\) and height \(h\) has volume \(V=  \pi r^2 h\)</p></li>
-<li id="li-571"><p id="p-derived-li-571">A cone of radius \(r\) and height \(h\) has volume \(V= \frac{\pi}{3} r^2 h \)</p></li>
+<ul id="p-910" class="disc">
+<li id="li-626"><p id="p-derived-li-626">A sphere of radius \(r\) has volume \(V= \frac{4}{3} \pi r^3 \)</p></li>
+<li id="li-627"><p id="p-derived-li-627">A vertical cylinder of radius \(r\) and height \(h\) has volume \(V=  \pi r^2 h\)</p></li>
+<li id="li-628"><p id="p-derived-li-628">A cone of radius \(r\) and height \(h\) has volume \(V= \frac{\pi}{3} r^2 h \)</p></li>
 </ul></article><article class="activity project-like" id="rel-rates-cyl-tank"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.9</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.9</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-79"><p id="p-797">A vertical cylindrical water tank has a radius of 1 meter. If water is pumped out at a rate of 3 cubic meters per minute, at what rate will the water level drop?</p></div>
-<article class="task exercise-like" id="task-210"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-798">Draw a figure to represent the situation. Introduce variables that measure the radius of the water's surface, the water's depth in the tank, and the volume of the water. Label your diagram.</p></article><article class="task exercise-like" id="task-211"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-799">What information about rates of changes does the problem give you?</p></article><article class="task exercise-like" id="task-212"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-800">Recall that the volume of a cylinder of radius \(r\) and height \(h\) is \(V = \pi r^2 h\text{.}\) What is the related rates equation in the context of the vertical cylindrical tank? What derivative rules did you use to find this equation?</p>
+<div class="introduction" id="introduction-89"><p id="p-911">A vertical cylindrical water tank has a radius of 1 meter. If water is pumped out at a rate of 3 cubic meters per minute, at what rate will the water level drop?</p></div>
+<article class="task exercise-like" id="task-243"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-912">Draw a figure to represent the situation. Introduce variables that measure the radius of the water's surface, the water's depth in the tank, and the volume of the water. Label your diagram.</p></article><article class="task exercise-like" id="task-244"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-913">What information about rates of changes does the problem give you?</p></article><article class="task exercise-like" id="task-245"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-914">Recall that the volume of a cylinder of radius \(r\) and height \(h\) is \(V = \pi r^2 h\text{.}\) What is the related rates equation in the context of the vertical cylindrical tank? What derivative rules did you use to find this equation?</p>
 <ol class="upper-alpha">
-<li id="li-572"><p id="p-derived-li-572">\(\displaystyle \frac{dV}{dt}= \pi 2 r \frac{dh}{dt}\)</p></li>
-<li id="li-573"><p id="p-derived-li-573">\(\displaystyle \frac{dV}{dt}= \pi r^2 \frac{dh}{dt}\)</p></li>
-<li id="li-574"><p id="p-derived-li-574">\(\displaystyle \frac{dV}{dt}= \pi \frac{dr}{dt} h\)</p></li>
-<li id="li-575"><p id="p-derived-li-575">\(\displaystyle \frac{dV}{dt}= \pi 2r \frac{dr}{dt} h + \pi r^2 \frac{dh}{dt}\)</p></li>
-<li id="li-576"><p id="p-derived-li-576">\(\displaystyle \frac{dV}{dt}= \pi 2r h + \pi r^2 \)</p></li>
-</ol></article><article class="task exercise-like" id="task-213"><h6 class="heading"><span class="codenumber">(d)</span></h6>
-<p id="p-801">Which variable(s) have a constant value in this situation? Why?</p>
+<li id="li-629"><p id="p-derived-li-629">\(\displaystyle \frac{dV}{dt}= \pi 2 r \frac{dh}{dt}\)</p></li>
+<li id="li-630"><p id="p-derived-li-630">\(\displaystyle \frac{dV}{dt}= \pi r^2 \frac{dh}{dt}\)</p></li>
+<li id="li-631"><p id="p-derived-li-631">\(\displaystyle \frac{dV}{dt}= \pi \frac{dr}{dt} h\)</p></li>
+<li id="li-632"><p id="p-derived-li-632">\(\displaystyle \frac{dV}{dt}= \pi 2r \frac{dr}{dt} h + \pi r^2 \frac{dh}{dt}\)</p></li>
+<li id="li-633"><p id="p-derived-li-633">\(\displaystyle \frac{dV}{dt}= \pi 2r h + \pi r^2 \)</p></li>
+</ol></article><article class="task exercise-like" id="task-246"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-915">Which variable(s) have a constant value in this situation? Why?</p>
 <ol class="upper-alpha">
-<li id="li-577"><p id="p-802">The variable measuring the radius of the water's surface</p></li>
-<li id="li-578"><p id="p-803">The variable measuring the depth of the water</p></li>
-<li id="li-579"><p id="p-804">The variable measuring the volume of the water</p></li>
-</ol></article><article class="task exercise-like" id="task-214"><h6 class="heading"><span class="codenumber">(e)</span></h6>
-<p id="p-805">Which variable(s) have a constant rate of change in this situation? Why?</p>
+<li id="li-634"><p id="p-916">The variable measuring the radius of the water's surface</p></li>
+<li id="li-635"><p id="p-917">The variable measuring the depth of the water</p></li>
+<li id="li-636"><p id="p-918">The variable measuring the volume of the water</p></li>
+</ol></article><article class="task exercise-like" id="task-247"><h6 class="heading"><span class="codenumber">(e)</span></h6>
+<p id="p-919">Which variable(s) have a constant rate of change in this situation? Why?</p>
 <ol class="upper-alpha">
-<li id="li-580"><p id="p-806">The variable measuring the radius of the water's surface</p></li>
-<li id="li-581"><p id="p-807">The variable measuring the depth of the water</p></li>
-<li id="li-582"><p id="p-808">The variable measuring the volume of the water</p></li>
-</ol></article><article class="task exercise-like" id="task-215"><h6 class="heading"><span class="codenumber">(f)</span></h6>
-<p id="p-809">Using your finding above, find at what rate the water level is dropping.</p></article><article class="task exercise-like" id="task-216"><h6 class="heading"><span class="codenumber">(g)</span></h6>
-<p id="p-810">If the full tank contains 12 cubic centimeters of water, how long does it take to empty the tank?</p></article><article class="task exercise-like" id="task-217"><h6 class="heading"><span class="codenumber">(h)</span></h6>
-<p id="p-811">Confirm your finding in the previous part by finding the initial water level for 12 cubic centimeters of water and determine how long it takes for the water level to reach 0.</p></article></article><article class="activity project-like" id="DEn"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.10</span><span class="period">.</span>
+<li id="li-637"><p id="p-920">The variable measuring the radius of the water's surface</p></li>
+<li id="li-638"><p id="p-921">The variable measuring the depth of the water</p></li>
+<li id="li-639"><p id="p-922">The variable measuring the volume of the water</p></li>
+</ol></article><article class="task exercise-like" id="task-248"><h6 class="heading"><span class="codenumber">(f)</span></h6>
+<p id="p-923">Using your finding above, find at what rate the water level is dropping.</p></article><article class="task exercise-like" id="task-249"><h6 class="heading"><span class="codenumber">(g)</span></h6>
+<p id="p-924">If the full tank contains 12 cubic centimeters of water, how long does it take to empty the tank?</p></article><article class="task exercise-like" id="task-250"><h6 class="heading"><span class="codenumber">(h)</span></h6>
+<p id="p-925">Confirm your finding in the previous part by finding the initial water level for 12 cubic centimeters of water and determine how long it takes for the water level to reach 0.</p></article></article><article class="activity project-like" id="DEn"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.10</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-80"><p id="p-812">A water tank has the shape of an inverted circular cone (the cone points downwards) with a base of radius 6 feet and a depth of 8 feet. Suppose that water is being pumped into the tank at a constant instantaneous rate of 4 cubic feet per minute.</p></div>
-<article class="task exercise-like" id="task-218"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-813">Draw a picture of the conical tank, including a sketch of the water level at a point in time when the tank is not yet full. Introduce variables that measure the radius of the water's surface and the water's depth in the tank, and label them on your figure.</p></article><article class="task exercise-like" id="task-219"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-814">Say that \(r\) is the radius and \(h\) the depth of the water at a given time, \(t\text{.}\) What proportional equation relates the radius and height of the water, and why?</p></article><article class="task exercise-like" id="task-220"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-815">Determine an equation that relates the volume of water in the tank at time \(t\) to the depth \(h\) of the water at that time.</p></article><article class="task exercise-like" id="task-221"><h6 class="heading"><span class="codenumber">(d)</span></h6>
-<p id="p-816">Through differentiation, find an equation that relates the instantaneous rate of change of water volume with respect to time to the instantaneous rate of change of water depth at time \(t\text{.}\)</p></article><article class="task exercise-like" id="task-222"><h6 class="heading"><span class="codenumber">(e)</span></h6>
-<p id="p-817">Find the instantaneous rate at which the water level is rising when the water in the tank is 3 feet deep.</p></article><article class="task exercise-like" id="task-223"><h6 class="heading"><span class="codenumber">(f)</span></h6>
-<p id="p-818">When is the water rising most rapidly?</p>
+<div class="introduction" id="introduction-90"><p id="p-926">A water tank has the shape of an inverted circular cone (the cone points downwards) with a base of radius 6 feet and a depth of 8 feet. Suppose that water is being pumped into the tank at a constant instantaneous rate of 4 cubic feet per minute.</p></div>
+<article class="task exercise-like" id="task-251"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-927">Draw a picture of the conical tank, including a sketch of the water level at a point in time when the tank is not yet full. Introduce variables that measure the radius of the water's surface and the water's depth in the tank, and label them on your figure.</p></article><article class="task exercise-like" id="task-252"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-928">Say that \(r\) is the radius and \(h\) the depth of the water at a given time, \(t\text{.}\) What proportional equation relates the radius and height of the water, and why?</p></article><article class="task exercise-like" id="task-253"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-929">Determine an equation that relates the volume of water in the tank at time \(t\) to the depth \(h\) of the water at that time.</p></article><article class="task exercise-like" id="task-254"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-930">Through differentiation, find an equation that relates the instantaneous rate of change of water volume with respect to time to the instantaneous rate of change of water depth at time \(t\text{.}\)</p></article><article class="task exercise-like" id="task-255"><h6 class="heading"><span class="codenumber">(e)</span></h6>
+<p id="p-931">Find the instantaneous rate at which the water level is rising when the water in the tank is 3 feet deep.</p></article><article class="task exercise-like" id="task-256"><h6 class="heading"><span class="codenumber">(f)</span></h6>
+<p id="p-932">When is the water rising most rapidly?</p>
 <ol class="upper-alpha">
-<li id="li-583"><p id="p-819">\(\displaystyle h = 3\)</p></li>
-<li id="li-584"><p id="p-820">\(\displaystyle h = 4\)</p></li>
-<li id="li-585"><p id="p-821">\(\displaystyle h = 5\)</p></li>
-<li id="li-586"><p id="p-822">The water level rises at a constant rate</p></li>
+<li id="li-640"><p id="p-933">\(\displaystyle h = 3\)</p></li>
+<li id="li-641"><p id="p-934">\(\displaystyle h = 4\)</p></li>
+<li id="li-642"><p id="p-935">\(\displaystyle h = 5\)</p></li>
+<li id="li-643"><p id="p-936">The water level rises at a constant rate</p></li>
 </ol></article></article><article class="remark remark-like" id="right-triangles-sides-theorem"><h6 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.1.11</span><span class="period">.</span>
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.2.11</span><span class="period">.</span>
 </h6>
-<p id="p-823">Recall that in a right triangle with sides \(a,b\) and hypotenuse \(c\) we have the relationship</p>
+<p id="p-937">Recall that in a right triangle with sides \(a,b\) and hypotenuse \(c\) we have the relationship</p>
 <div class="displaymath">
 \begin{equation*}
 a^2 + b^2 = c^2,
 \end{equation*}
 </div>
-<p id="p-824">also known in the western world as Pythagoras theorem (even though this result was well know well before his time by other civilizations).</p></article><article class="activity project-like" id="activity-113"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.12</span><span class="period">.</span>
+<p id="p-938">also known in the western world as Pythagoras theorem (even though this result was well know well before his time by other civilizations).</p></article><article class="activity project-like" id="activity-128"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.12</span><span class="period">.</span>
 </h6>
-<p id="p-825">Notice that by differentiating each variable in the equation above with respect to \(t\text{,}\) we get a relationship between \(\frac{da}{dt}, \frac{db}{dt}, \frac{dc}{dt}\text{.}\) Find this related rates equation!</p></article><article class="activity project-like" id="activity-114"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.13</span><span class="period">.</span>
+<p id="p-939">Notice that by differentiating each variable in the equation above with respect to \(t\text{,}\) we get a relationship between \(\frac{da}{dt}, \frac{db}{dt}, \frac{dc}{dt}\text{.}\) Find this related rates equation!</p></article><article class="activity project-like" id="activity-129"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.13</span><span class="period">.</span>
 </h6>
-<p id="p-826">A rectangle has one side of 8 cm. How fast is the diagonal of the rectangle changing at the instant when the other side is 6 cm and increaing at a rate of 3 cm per minute?</p></article><article class="activity project-like" id="activity-115"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.14</span><span class="period">.</span>
+<p id="p-940">A rectangle has one side of 8 cm. How fast is the diagonal of the rectangle changing at the instant when the other side is 6 cm and increaing at a rate of 3 cm per minute?</p></article><article class="activity project-like" id="activity-130"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.14</span><span class="period">.</span>
 </h6>
-<p id="p-827">A 10 m ladder leans against a vertical wall and the bottom of the ladder slides away at a rate of 0.5 m/sec. When is the top of the ladder sliding the fastest down the wall?</p>
+<p id="p-941">A 10 m ladder leans against a vertical wall and the bottom of the ladder slides away at a rate of 0.5 m/sec. When is the top of the ladder sliding the fastest down the wall?</p>
 <ol class="upper-alpha">
-<li id="li-587"><p id="p-828">When the bottom of the ladder is 4 meters from the wall</p></li>
-<li id="li-588"><p id="p-829">When the bottom of the laddre is 8 meters from the wall</p></li>
-<li id="li-589"><p id="p-830">The top of the ladder is sliding down at a constant rate</p></li>
+<li id="li-644"><p id="p-942">When the bottom of the ladder is 4 meters from the wall</p></li>
+<li id="li-645"><p id="p-943">When the bottom of the laddre is 8 meters from the wall</p></li>
+<li id="li-646"><p id="p-944">The top of the ladder is sliding down at a constant rate</p></li>
 </ol></article></section></div></main>
 </div>
 </body>

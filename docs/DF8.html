@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-09-27T13:24:05Z       *-->
+<!--*       on 2021-10-15T22:42:44Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -66,10 +66,10 @@
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="DF7.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="DF7.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="AD.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="DF7.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="DF7.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a class="next-button button toolbar-item" href="AD.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -102,6 +102,13 @@
 <li><a href="DF8.html" data-scroll="DF8" class="active">Differentiating inverse functions (DF8)</a></li>
 </ul>
 </li>
+<li class="link">
+<a href="AD.html" data-scroll="AD"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD2.html" data-scroll="AD2">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4">Extreme values (AD4)</a></li>
+</ul>
+</li>
 <li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
 <li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl"><span class="title">TBIL Resource Library</span></a></li>
 <li class="link"><a href="pretext.html" data-scroll="pretext"><span class="title">Authored with PreTeXt</span></a></li>
@@ -111,10 +118,208 @@
 <span class="type">Section</span> <span class="codenumber">2.8</span> <span class="title">Differentiating inverse functions (DF8)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-16"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
-<ul class="disc"><li id="li-538"><p id="p-754">Compute derivatives of inverse functions.</p></li></ul></article><article class="activity project-like" id="activity-108"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.8.1</span><span class="period">.</span>
+<ul class="disc"><li id="li-542"><p id="p-759">Compute derivatives of inverse functions.</p></li></ul></article><article class="remark remark-like" id="remark-11"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.8.1</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-76"><p id="p-755">Lorem ipsum dolor sit amet.</p></div></article></section></div></main>
+<p id="p-760">Let \(f^{-1}\) be the inverse function of \(f\text{.}\) The relationship between a function and its inverse can be expressed with the equation</p>
+<div class="displaymath">
+\begin{equation*}
+f(f^{-1}(x))=x.
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-109"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.8.2</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-77"><p id="p-761">In this activity you will use implicit differentiation and the inverse function identity above to find the derivative of \(y = \ln(x)\text{.}\)</p></div>
+<article class="task exercise-like" id="task-205"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-762">Suppose that \(y=\ln(x)\text{.}\) Then we have that</p>
+<div class="displaymath">
+\begin{equation*}
+e^y = x .
+\end{equation*}
+</div>
+<p id="p-763">Using implicit implicit differentiation, what do you get?</p>
+<ol class="upper-alpha">
+<li id="li-543"><p id="p-764">\(\displaystyle \frac{dy}{dx} = \frac{x}{y}\)</p></li>
+<li id="li-544"><p id="p-765">\(\displaystyle \frac{dy}{dx} = \frac{1}{e^x}\)</p></li>
+<li id="li-545"><p id="p-766">\(\displaystyle \frac{dy}{dx} = \frac{x}{e^y}\)</p></li>
+<li id="li-546"><p id="p-767">\(\displaystyle \frac{dy}{dx} = \frac{1}{e^y}\)</p></li>
+</ol></article><article class="task exercise-like" id="task-206"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-768">Notice that we started with the relationship \(e^y=x\text{.}\) Use this to simplify \(\frac{dy}{dx}\text{.}\) You should get that when \(y=\ln(x)\) we have that \(\frac{dy}{dx} = \frac{1}{x}\text{...}\) as expected!</p></article></article><article class="activity project-like" id="activity-110"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.8.3</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-78">
+<p id="p-769">In this activity we will try to find a general formula for the derivative of the inverse function.  Let \(g\) be the inverse function of \(f\text{.}\) We have also used the notation \(f^{-1}\) before, but for the purpose of this problem, let's use \(g\) to avoid too many exponents. We can express the relationship "\(g\) is the inverse of \(f\)" with the equation</p>
+<div class="displaymath">
+\begin{equation*}
+f(g(x))=x.
+\end{equation*}
+</div>
+</div>
+<article class="task exercise-like" id="task-207"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-770">Looking at the equation \(f(g(x))=x\text{,}\) what is the derivative with respect to \(x\) of the right hand side of the equation?</p>
+<ol class="upper-alpha">
+<li id="li-547"><p id="p-771">\(\displaystyle x\)</p></li>
+<li id="li-548"><p id="p-772">\(\displaystyle 1\)</p></li>
+<li id="li-549"><p id="p-773">\(\displaystyle 0\)</p></li>
+<li id="li-550"><p id="p-774">\(\displaystyle x^2\)</p></li>
+</ol></article><article class="task exercise-like" id="task-208"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-775">Looking at the equation \(f(g(x))=x\text{,}\) what is the derivative with respect to \(x\) of the left hand side of the equation?</p>
+<ol class="upper-alpha">
+<li id="li-551"><p id="p-776">\(\displaystyle f'(g(x))\)</p></li>
+<li id="li-552"><p id="p-777">\(\displaystyle f'(g'(x))\)</p></li>
+<li id="li-553"><p id="p-778">\(\displaystyle f(g(x))\, g'(x) \)</p></li>
+<li id="li-554"><p id="p-779">\(\displaystyle f'(g(x))\, g'(x)\)</p></li>
+</ol></article><article class="task exercise-like" id="task-209"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-780">Setting the two sides of the equation equal after differentiating, we can solve for \(g'(x)\text{.}\) What do you get?</p>
+<ol class="upper-alpha">
+<li id="li-555"><p id="p-781">\(\displaystyle g'(x) = \frac{x}{f(g(x))}\)</p></li>
+<li id="li-556"><p id="p-782">\(\displaystyle g'(x) = \frac{x}{f'(g(x))}\)</p></li>
+<li id="li-557"><p id="p-783">\(\displaystyle g'(x) = \frac{1}{f(g(x))}\)</p></li>
+<li id="li-558"><p id="p-784">\(\displaystyle g'(x) = \frac{1}{f'(g(x))}\)</p></li>
+</ol></article></article><article class="observation remark-like" id="observation-17"><h6 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.8.4</span><span class="period">.</span>
+</h6>
+<p id="p-785">In the above activity you should have found that the derivative of \(g = f^{-1}\text{,}\) the inverse function of \(f\text{,}\) is given by</p>
+<div class="displaymath">
+\begin{equation*}
+(f^{-1})'(x) = \frac{1}{f'(f^{-1}(x))}. 
+\end{equation*}
+</div>
+<p id="p-786">Notice that because of the chain rule, the derivative of \(f\) has to be evaluated at \(\boldsymbol{f^{-1}(x)}\)</p></article><article class="activity project-like" id="activity-111"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.8.5</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-79">
+<p id="p-787">In this problem you will apply the general formula for the derivative of the inverse function to find the values of some derivatives graphically.</p>
+<figure class="figure figure-like" id="figure-39"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-39.svg" role="img" class="contained" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.8.6<span class="period">.</span></span><span class="space"> </span>The graphs of \(f(x)\) and \(f'(x)\text{.}\)</figcaption></figure>
+</div>
+<article class="task exercise-like" id="task-210"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-788">The derivative of the inverse function at \(x=12\) given by \((f^{-1})' (12) = \frac{1}{f'(f^{-1}(12))}\text{.}\) Using the graphs, what is your best approximation for this quantity?</p>
+<ol class="upper-alpha">
+<li id="li-559"><p id="p-789">\(\displaystyle (f^{-1})' (12)\approx \frac{1}{0.2} = 5 \)</p></li>
+<li id="li-560"><p id="p-790">\(\displaystyle (f^{-1})' (12) \approx \frac{1}{0.6} \approx 1.67 \)</p></li>
+<li id="li-561"><p id="p-791">\(\displaystyle (f^{-1})' (12) \approx \frac{1}{0.4} = 2.5 \)</p></li>
+<li id="li-562"><p id="p-792">\(\displaystyle (f^{-1})' (12) \approx \frac{1}{0.1} = 10 \)</p></li>
+</ol></article><article class="task exercise-like" id="task-211"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-793">What is your best estimate for \((f^{-1})' (6) \) ?</p>
+<ol class="upper-alpha">
+<li id="li-563"><p id="p-794">\(\displaystyle (f^{-1})' (6) \approx \frac{1}{0.2} = 5 \)</p></li>
+<li id="li-564"><p id="p-795">\(\displaystyle (f^{-1})' (6) \approx \frac{1}{0.6} \approx 1.67 \)</p></li>
+<li id="li-565"><p id="p-796">\(\displaystyle (f^{-1})' (6) \approx \frac{1}{0.4} = 2.5 \)</p></li>
+<li id="li-566"><p id="p-797">\(\displaystyle (f^{-1})' (6) \approx \frac{1}{0.1} = 10 \)</p></li>
+</ol></article></article><article class="activity project-like" id="activity-112"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.8.7</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-80"><p id="p-798">Use the general formula for the derivative of the inverse function to find...</p></div>
+<article class="task exercise-like" id="task-212"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-799">The derivative of the inverse function of \(f(x) = e^x\text{...}\) This should match what you found before!</p></article><article class="task exercise-like" id="task-213"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-800">The derivative of the inverse function of \(f(x) = \frac{1}{x}\text{...}\) This should match something you have seen before! See if you can explain whay this holds.</p></article></article><article class="definition definition-like" id="definition-11"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.8.8</span><span class="period">.</span>
+</h6>
+<p id="p-801">We can only invert the function \(y=\sin(x)\) on the restricted domain \([-\pi/2,\pi/2]\) (Why?). On this domain we define arcsine by the condition</p>
+<div class="displaymath">
+\begin{equation*}
+x = \sin^{-1}(y) \quad \text{ when } \quad y=\sin(x). 
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-113"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.8.9</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-81"><p id="p-802">In this activity you will study the arcsine function.</p></div>
+<article class="task exercise-like" id="task-214"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-803">Consider the values of \(y=\sin(x)\) given in the table below for an angle \(x\) between \(-\pi/2\) and \(\pi/2\text{.}\) Fill in the corresponding values for the inverse function arcsine \(x = \sin^{-1}(y)\text{.}\) In other words, you need to provide the angle whose sine is given. You can use the unit circle to help you remember which angles yield the given values of sine. The first entry is provided: a sine value of \(-1\) corresponds to the angle \(-\pi/2\text{.}\) <figure class="table table-like" id="table-sine"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">2.8.10<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b1 r0 l0 t0 lines">\(y = \sin(x) \)</td>
+<td class="l m b1 r0 l0 t0 lines">\(-1\)</td>
+<td class="l m b1 r0 l0 t0 lines">\(-\sqrt{3}/2\)</td>
+<td class="l m b1 r0 l0 t0 lines">\(-1/2\)</td>
+<td class="l m b1 r0 l0 t0 lines">\(0\)</td>
+<td class="l m b1 r0 l0 t0 lines">\(1/2\)</td>
+<td class="l m b1 r0 l0 t0 lines">\(\sqrt{3}/2\)</td>
+<td class="l m b1 r0 l0 t0 lines">\(1\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(x = \sin^{-1}(y)\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(-\pi/2\)</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+</table></div></figure></p></article><article class="task exercise-like" id="task-215"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-804">From the graph of \(y=\sin(x)\) and your table above, graph the arcsine function  \(y=\sin^{-1}(x)\)</p>
+<figure class="figure figure-like" id="figure-40"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-40.svg" role="img" class="contained" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.8.11<span class="period">.</span></span><span class="space"> </span>The graphs of \(\sin(x)\) and one point on \(\sin^{-1}(x)\text{.}\)</figcaption></figure></article><article class="task exercise-like" id="task-216"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-805">Let's now work with the function arccosine. Again, we need to restrict the domain of cosine to be able to invert the function (Why?). The convention is to restrict cosine to the domain \([0,\pi]\) in order to define arccosine. Given this restriction, what are the domain and range of arccosine? Create a table of values and graph the function arccosine.</p></article><article class="task exercise-like" id="task-217"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-806">Let's now work with the function arctangent. Again, we need to restrict the domain of tangent to be able to invert the function (Why?). The convention is to restrict tangent to the domain \((-\pi/2,\pi/2)\) in order to define arctangent. Given this restriction, what are the domain and range of arctangent? Create a table of values and graph the function arctangent.</p></article></article><article class="activity project-like" id="activity-114"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.8.12</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-82"><p id="p-807">In this activity you will find a formula for the derivative of arctangent.</p></div>
+<article class="task exercise-like" id="task-218"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-808">Differentiate the implicit equation \(\tan(y) = x\text{,}\) what do you get for \(\frac{dy}{dx}\text{?}\)</p>
+<ol class="upper-alpha">
+<li id="li-567"><p id="p-809">\(\displaystyle \frac{dy}{dx} = \frac{x}{\tan(y)}\)</p></li>
+<li id="li-568"><p id="p-810">\(\displaystyle \frac{dy}{dx} = \frac{1}{\tan(y)}\)</p></li>
+<li id="li-569"><p id="p-811">\(\displaystyle \frac{dy}{dx} = \frac{x}{\sec^2(y)}\)</p></li>
+<li id="li-570"><p id="p-812">\(\displaystyle \frac{dy}{dx} = \frac{1}{\sec^2(y)}\)</p></li>
+</ol></article><article class="task exercise-like" id="task-219"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-813">For what function \(y=g(x)\) have you found the derivative \(\frac{dy}{dx}\text{?}\)</p></article><article class="task exercise-like" id="task-220"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-814">We want to rewrite \(\frac{dy}{dx}\) only in terms of \(x\text{.}\) Notice that</p>
+<div class="displaymath">
+\begin{equation*}
+\tan^2(y) = \frac{\sin^2(y)}{\cos^2(y)} = \frac{1 - \cos^2(y)}{\cos^2(y)}. 
+\end{equation*}
+</div>
+<p id="p-815">Multiplying out by the denominator, isolating, and solving for \(\cos^2(y)\text{,}\) we get that</p>
+<ol class="upper-alpha">
+<li id="li-571"><p id="p-816">\(\displaystyle \cos^2(y) = \frac{\tan^2(y)}{\cos^2(y)}\)</p></li>
+<li id="li-572"><p id="p-817">\(\displaystyle \cos^2(y) = \frac{1}{\tan^2(y) + 1 }\)</p></li>
+<li id="li-573"><p id="p-818">\(\displaystyle \cos^2(y) = \frac{1- \cos^2(y)}{\tan^2(y)}\)</p></li>
+<li id="li-574"><p id="p-819">\(\displaystyle \cos^2(y) = \frac{1}{\tan^2(y) -1 }\)</p></li>
+</ol></article><article class="task exercise-like" id="task-221"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-820">Finally, rewrite \(\frac{dy}{dx}\) as \(\frac{dy}{dx} = \cos^2(y)\) and use the fact that \(\tan(y)=x\) to get a nice formula for the derivative of the arctangent function of \(x\text{.}\)</p></article></article><article class="remark remark-like" id="remark-12"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.8.13</span><span class="period">.</span>
+</h6>
+<p id="p-821">Consider the functions \(y = \tan^{-1}(x)\text{.}\) Using your algebra above, you should have found that</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{d}{dx}\Big(\tan^{-1}(x)\Big)=\frac{1}{1+x^2}.
+\end{equation*}
+</div>
+<p id="p-822">In a similar fashion, one can find that</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{d}{dx}\Big(\sin^{-1}(x)\Big)=\frac{1}{\sqrt{1-x^2}}, \quad \frac{d}{dx}\Big(\cos^{-1}(x)\Big)= - \frac{1}{\sqrt{1-x^2}}.
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-115"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.8.14</span><span class="period">.</span>
+</h6>
+<article class="task exercise-like" id="task-222"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-823">Find the equation of the tangent line to \(y=\tan^{-1}(x)\) at \(x=0\text{.}\) Draw the function and the tangent on Desmos to check your work!</p></article><article class="task exercise-like" id="task-223"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-824">Find the equation of the tangent line to \(y=\sin^{-1}(x)\) at \(x=0.5\text{.}\) Draw the function and the tangent on Desmos to check your work!</p></article><article class="task exercise-like" id="task-224"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-825">Find the equation of the tangent line to \(y=\cos^{-1}(x)\) at \(x=-0.5\text{.}\) Draw the function and the tangent on Desmos to check your work!</p></article></article><article class="activity project-like" id="activity-116"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.8.15</span><span class="period">.</span>
+</h6>
+<p id="p-826">Demonstrate and explain how to find the derivative of the following functions. Be sure to explicitly denote which derivative rules (product, quotient, sum and difference, etc.) you are using in your work.</p>
+<ol class="lower-alpha">
+<li id="li-575"><p id="p-derived-li-575"><div class="displaymath">
+\begin{equation*}
+k(t)= \frac{\arctan\left(-4 \, t\right)}{\ln\left(-4 \, t\right)}
+\end{equation*}
+</div></p></li>
+<li id="li-576"><p id="p-derived-li-576"><div class="displaymath">
+\begin{equation*}
+j(u)= -5 \, \arcsin\left(u\right) \log\left(u^{6} + 2\right)
+\end{equation*}
+</div></p></li>
+<li id="li-577"><p id="p-derived-li-577"><div class="displaymath">
+\begin{equation*}
+n(x)= \ln\left(-\arcsin\left(x\right) + 4 \, \arctan\left(x\right)\right)
+\end{equation*}
+</div></p></li>
+</ol></article></section></div></main>
 </div>
 </body>
 </html>
