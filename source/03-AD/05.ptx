@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="AD5" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Derivative tests</title>
+  <title>Derivative tests (AD5) </title>
   <objectives>
     <ul>
       <li>
@@ -10,10 +10,162 @@
     </ul>
   </objectives>
 
-  <activity>
+  <activity xml:id="activity-derivative-derivativetests1">
     <introduction>
-      <p>Lorem ipsum dolor sit amet.</p>
+      <p>
+        Let <m>f</m> be a function defined on some interval <m>(a,b)</m>. Let <m>x_1</m> and <m>x_2</m> be two points in the interval such that <m>x_1 &lt; x_2 </m>.  
+      </p>
     </introduction>
+      <task>
+      <statement>
+          <p>What can we say about the graph of the function on <m>(a,b)</m> if <m>f(x_1)</m> is always less than <m>f(x_2)</m> on <m>(a,b)</m>?</p>
+          <ol label="A">
+              <li><p>The function is decreasing on <m>(a,b)</m>.</p></li>
+                <li><p>The function is increasing on <m>(a,b)</m>.</p></li>
+                <li><p>The function is constant on <m>(a,b)</m>.</p></li>
+                <li><p>The function could be some combination of increasing, decreasing, and/or constant on <m>(a,b)</m></p></li>
+            </ol>
+          </statement>
+      </task>
   </activity>
 
+      <activity xml:id="activity-derivative-derivativetests2">
+    <introduction>
+      <p>
+        Sketch a graph of a continuous function that is increasing on <m>(-\infty, -2)</m> and constant on <m>(3,5)</m> and decreasing on <m>(-2,1)</m>.  
+      </p>
+    </introduction>
+      <task>
+      <statement>
+          <p>How would you describe the derivative of the function on each interval?</p>
+          <ol label="A">
+              <li><p><m>f'(x) &lt; 0</m> on <m>(-2,1)</m> and <m>(3,5)</m> and <m>f'(x) &gt; 0</m> on <m>(-2,1)</m>.</p></li>
+              <li><p> <m>f'(x) &gt; 0</m> on <m>(-2,1)</m>, <m>f'(x) &lt; 0</m> on <m>(-2,1)</m> and <m>f'(x)</m> is undefined on <m>(3,5)</m>.</p></li>
+              <li><p><m>f'(x) &gt; 0</m> on <m>(-2,1)</m>, <m>f'(x) &lt; 0</m> on <m>(-2,1)</m> and <m>f'(x) = 0</m> on <m>(3,5)</m>. </p></li>
+              <li><p><m>f'(x) &gt; 0</m> on <m>(-2,1)</m>, <m>f'(x) &lt; 0</m> on <m>(-2,1)</m> and <m>f'(x)</m> is constant on <m>(3,5)</m>.</p></li>
+            </ol>
+          </statement>
+      </task>
+  </activity>
+    
+      <activity xml:id="activity-derivative-derivativetests3">
+    <introduction>
+      <p>
+       Look back at the graph you made for <xref ref="activity-derivative-derivativetests2"/>.  
+      </p>
+    </introduction>
+      <task>
+      <statement>
+          <p>Which of the following best describes what is occurring when graph changes from increasing to decreasing or decreasing to increasing?</p>
+          <ol label="A">
+              <li><p> There is a critical point.</p></li>
+                <li><p> There is a relative maximum or minimum. </p></li>
+                <li><p> The derivative might be undefined. </p></li>
+                <li><p> The derivative might equal zero. </p></li>
+            </ol>
+          </statement>
+      </task>
+  </activity>
+    
+    <theorem xml:id="first-derivative-test"> <title>The First Derivative Test</title>  
+      <introduction>
+      <p>
+       Suppose that <m>x=c</m> is a critical point of <m>f(x)</m> and that <m>f(x)</m> is continuous at <m>x=c</m>.   
+      </p>
+      </introduction>
+    <p>
+    <ol>   
+    <li>If <m>f'(x) &gt; 0</m> to the left of <m>c</m> and <m>f'(x) &lt; 0</m> to the right of <m>c</m>, then a <b>relative maximum</b> occurs when <m>x=c</m>. </li>
+    <li>If <m>f'(x) &lt; 0</m> to the left of <m>c</m> and <m>f'(x) &gt; 0 </m> to the right of <m>c</m>, then a <b>relative minimum </b> occurs when <m>x=c</m>.</li>
+    <li>If <m>f'(x)</m> is the same sign on both sices of <m>x=c</m>, then neither a relative maximum nor a relative minimum occur when <m>x=c</m>.</li>
+     </ol> </p>
+    </theorem>
+
+    <activity xml:id="activity-derivitative-derivativetests4">
+        <introduction>
+            <p> Let <m>f(x)=x^4-4x^3+4x^2</m></p>
+        </introduction>
+        <task> 
+            <p>Find all critical points of <m>f(x)</m>. Plot them on the same number line.</p>
+        </task>
+        <task> 
+            <p>What intervals have been created by subdividing the number line at the critical points?</p>
+        </task>
+        <task> 
+            <p>Pick an <m>x</m>-value that lies in each interval. Determine whether <m>f'(x)</m> is positive or negative at each point.</p>
+        </task>
+        <task> 
+            <p>On which intervals is <m>f(x)</m> increasing? On which intervals is <m>f(x)</m> decreasing?</p>
+        </task>
+        <task> 
+            <p>List all relative maxima and relative minima.</p>
+        </task>
+    </activity>
+    
+    <remark> <title>Dealing with discontinuities</title>
+        <introduction>
+            <p>Our previous activity dealt with a function that was continuous for all real numbers. Because of that, we could trust our chart to point out relative extrema. Let's now consider what might happen if a function has any discontinuities.</p>
+            <p> Draw a function that is increasing on the left of <m>x=1</m>, discontinuous at <m>x=1, </m><m>f(1)=\lim_{x \to 1^-}f(x)</m>, and decreasing to the right of <m>x=1</m>. Does the derivative of <m>f(x)</m> exist at <m>x=1</m>?  Does your graph have a local maximum or minimum at <m>x=1</m>?</p>
+        </introduction>
+    </remark>
+    
+    <activity xml:id="activity-derivative-derviativetest5">
+        <introduction>
+            <p>Let <m>f(x)=\frac{x}{(x-2)^2}</m>.</p>
+            <p>Note that <m>f(x)</m> is not defined for <m>x=2</m>. So <m>x=2</m> cannot be a critical point and thus cannot be the location of a relative extrema. However, the function may be increasing on one side of <m>x=2</m> and decreasing on the other, so we must still include it on our number line.</p>
+        </introduction>
+        <task>
+            <p> Find all critical points of <m>f(x)</m>. Plot them and any discontinuities for <m>f(x)</m> on the same number line.</p>
+        </task>
+        <task>
+            <p> What intervals have been created by subdividing the number line at the critical points and discontinuities?</p>
+        </task>
+        <task>
+            <p> Pick an <m>x</m>-value that lies in each interval. Determine whether <m>f'(x)</m> is positive or negative each point.</p>
+        </task>
+        <task>
+            <p> On which intervals is <m>f(x)</m> increasing? On which intervals is <m>f(x)</m> decreasing?</p>
+        </task>
+        <task>
+            <p> List all relative maxima and relative minima. </p>
+        </task>
+    </activity>
+    
+    <activity xml:id="activity-derivative-derivativetest6">
+        <introduction>
+            <p>For each of the following functions, find the intervals on which <m>f(x)</m> is increasing or decreasing. Then identify any relative extrema.</p>
+        </introduction>
+        <task>
+            <p><m>f(x)=x^3+3x^2+3x+1</m></p>
+        </task>
+        <task>
+            <p><m>f(x)=\frac{1}{2}x+\cos x</m> on <m>(0,2\pi)</m></p>
+        </task>
+        <task>
+            <p><m>f(x)=(x^2-9)^{2/3}</m></p>
+        </task>
+        <task>
+            <p><m>f(x)= \ln(2x-1)</m>. (Hint: think about the domain of this one before you get started!)</p>
+        </task>
+        <task>
+            <p><m>f(x)=\frac{x^2}{x^2-4}</m></p>
+        </task>
+    </activity>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
