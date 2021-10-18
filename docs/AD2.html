@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-10-15T22:42:44Z       *-->
+<!--*       on 2021-10-18T14:00:29Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -66,10 +66,10 @@
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="AD.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="AD3.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="AD1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="AD3.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="AD.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a class="next-button button toolbar-item" href="AD3.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="AD1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a class="next-button button toolbar-item" href="AD3.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -104,9 +104,12 @@
 </li>
 <li class="link">
 <a href="AD.html" data-scroll="AD"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1">Rates of change and tangents (AD1)</a></li>
 <li><a href="AD2.html" data-scroll="AD2" class="active">Linear approximation (AD2)</a></li>
 <li><a href="AD3.html" data-scroll="AD3">Related rates (AD3)</a></li>
 <li><a href="AD4.html" data-scroll="AD4">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6">Concavity and inflection (AD6)</a></li>
 </ul>
 </li>
 <li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
@@ -115,119 +118,119 @@
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="AD2"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">3.1</span> <span class="title">Linear approximation (AD2)</span>
+<span class="type">Section</span> <span class="codenumber">3.2</span> <span class="title">Linear approximation (AD2)</span>
 </h2>
-<article class="objectives goal-like" id="objectives-18"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
-<ul class="disc"><li id="li-594"><p id="p-846">Use tangent lines to approximate functions.</p></li></ul></article><article class="definition definition-like" id="definition-12"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span>
+<article class="objectives goal-like" id="objectives-19"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
+<ul class="disc"><li id="li-595"><p id="p-847">Use tangent lines to approximate functions.</p></li></ul></article><article class="definition definition-like" id="definition-12"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="period">.</span>
 </h6>
-<p id="p-847">The tangent line approximation (or linear approximation, or linearization) of a function \(f(x)\) at \(x=a\) is the tangent line \(L(x)\) at \(x=a\text{.}\) In formulas, \(L(x)\) is the linear function</p>
+<p id="p-848">The tangent line approximation (or linear approximation, or linearization) of a function \(f(x)\) at \(x=a\) is the tangent line \(L(x)\) at \(x=a\text{.}\) In formulas, \(L(x)\) is the linear function</p>
 <div class="displaymath">
 \begin{equation*}
 L(x) = f'(a)(x-a) + f(a). 
 \end{equation*}
 </div>
 <p class="continuation">Notice that this is obtained by writing the tangent line to \(f(x)\) at \((a,f(a))\) in point-slope form and calling the resulting linear function \(L(x)\text{.}\)</p></article><article class="activity project-like" id="activity-117"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.2</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-85"><p id="p-848">Without using a calculator, we will use calculus to approximate \(\ln(1.1)\text{.}\)</p></div>
+<div class="introduction" id="introduction-85"><p id="p-849">Without using a calculator, we will use calculus to approximate \(\ln(1.1)\text{.}\)</p></div>
 <article class="task exercise-like" id="task-225"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-849">Find the equation of the tangent line to \(\ln(x)\) at \(x=1\text{.}\) This will be your linear approximation \(L(x)\text{.}\) What do you get for \(L(x)\text{?}\)</p>
+<p id="p-850">Find the equation of the tangent line to \(\ln(x)\) at \(x=1\text{.}\) This will be your linear approximation \(L(x)\text{.}\) What do you get for \(L(x)\text{?}\)</p>
 <ol class="upper-alpha">
-<li id="li-595"><p id="p-850">\(\displaystyle L(x) = x\)</p></li>
-<li id="li-596"><p id="p-851">\(\displaystyle L(x) = x+1\)</p></li>
-<li id="li-597"><p id="p-852">\(\displaystyle L(x)= x - 1\)</p></li>
-<li id="li-598"><p id="p-853">\(\displaystyle L(x)= -x + 1\)</p></li>
+<li id="li-596"><p id="p-851">\(\displaystyle L(x) = x\)</p></li>
+<li id="li-597"><p id="p-852">\(\displaystyle L(x) = x+1\)</p></li>
+<li id="li-598"><p id="p-853">\(\displaystyle L(x)= x - 1\)</p></li>
+<li id="li-599"><p id="p-854">\(\displaystyle L(x)= -x + 1\)</p></li>
 </ol></article><article class="task exercise-like" id="task-226"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-854">As 1.1 is close to 1, we can use \(L(1.1)\) to approximate \(\ln(1.1)\text{.}\) What approximation do you get?</p>
+<p id="p-855">As 1.1 is close to 1, we can use \(L(1.1)\) to approximate \(\ln(1.1)\text{.}\) What approximation do you get?</p>
 <ol class="upper-alpha">
-<li id="li-599"><p id="p-855">\(\displaystyle \ln(1.1) \approx 1.1 \)</p></li>
-<li id="li-600"><p id="p-856">\(\displaystyle \ln(1.1) \approx 2.1 \)</p></li>
-<li id="li-601"><p id="p-857">\(\displaystyle \ln(1.1) \approx 0.1 \)</p></li>
-<li id="li-602"><p id="p-858">\(\displaystyle \ln(1.1) \approx -0.1 \)</p></li>
+<li id="li-600"><p id="p-856">\(\displaystyle \ln(1.1) \approx 1.1 \)</p></li>
+<li id="li-601"><p id="p-857">\(\displaystyle \ln(1.1) \approx 2.1 \)</p></li>
+<li id="li-602"><p id="p-858">\(\displaystyle \ln(1.1) \approx 0.1 \)</p></li>
+<li id="li-603"><p id="p-859">\(\displaystyle \ln(1.1) \approx -0.1 \)</p></li>
 </ol></article><article class="task exercise-like" id="task-227"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-859">Sketch the tangent line \(L(x)\) on the same plane as the graph of \(\ln(x)\text{.}\) What do you notice? What's the relationship between the two graphs?</p>
+<p id="p-860">Sketch the tangent line \(L(x)\) on the same plane as the graph of \(\ln(x)\text{.}\) What do you notice? What's the relationship between the two graphs?</p>
 <figure class="figure figure-like" id="figure-41"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/image-41.svg" role="img" class="contained" alt=""></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.1.3<span class="period">.</span></span><span class="space"> </span>The graph of \(\ln(x)\)</figcaption></figure></article></article><article class="activity project-like" id="activity-118"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.4</span><span class="period">.</span>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.2.3<span class="period">.</span></span><span class="space"> </span>The graph of \(\ln(x)\)</figcaption></figure></article></article><article class="activity project-like" id="activity-118"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.4</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-86"><p id="p-860">Using the equation of the tangent line to the graph of \(\ln(x)\) at \(x=1\) and the shape of this graph, you can show that for all values of \(x\text{,}\) we have that \(\ln(x) \leq x-1\text{.}\)</p></div>
+<div class="introduction" id="introduction-86"><p id="p-861">Using the equation of the tangent line to the graph of \(\ln(x)\) at \(x=1\) and the shape of this graph, you can show that for all values of \(x\text{,}\) we have that \(\ln(x) \leq x-1\text{.}\)</p></div>
 <article class="task exercise-like" id="task-228"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-861">Compute the second derivative of \(\ln(x)\text{.}\) What do you notice about the sign of the second derivative of \(\ln(x)\text{?}\) What does this tell you about the shape of the graph?</p></article><article class="task exercise-like" id="task-229"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-862">Conclude that because the graph of \(\ln(x)\) has a certain shape, the graph will bend below the tangent line and so the tangent line approximation \(L(x)= x -1 \) is always greater than \(\ln(x)\text{.}\)</p></article></article><article class="activity project-like" id="activity-119"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.5</span><span class="period">.</span>
+<p id="p-862">Compute the second derivative of \(\ln(x)\text{.}\) What do you notice about the sign of the second derivative of \(\ln(x)\text{?}\) What does this tell you about the shape of the graph?</p></article><article class="task exercise-like" id="task-229"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-863">Conclude that because the graph of \(\ln(x)\) has a certain shape, the graph will bend below the tangent line and so the tangent line approximation \(L(x)= x -1 \) is always greater than \(\ln(x)\text{.}\)</p></article></article><article class="activity project-like" id="activity-119"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.5</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-87"><p id="p-863">In this activity you will approximate power functions near \(x=1\text{.}\)</p></div>
+<div class="introduction" id="introduction-87"><p id="p-864">In this activity you will approximate power functions near \(x=1\text{.}\)</p></div>
 <article class="task exercise-like" id="task-230"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-864">Find the tangent line approximation to \(x^2\) at  \(x=1\text{.}\)</p>
+<p id="p-865">Find the tangent line approximation to \(x^2\) at  \(x=1\text{.}\)</p>
 <ol class="upper-alpha">
-<li id="li-603"><p id="p-865">\(\displaystyle L(x) = 2x\)</p></li>
-<li id="li-604"><p id="p-866">\(\displaystyle L(x) = 2x+1\)</p></li>
-<li id="li-605"><p id="p-867">\(\displaystyle L(x)= 2x - 1\)</p></li>
-<li id="li-606"><p id="p-868">\(\displaystyle L(x)= -2x + 1\)</p></li>
+<li id="li-604"><p id="p-866">\(\displaystyle L(x) = 2x\)</p></li>
+<li id="li-605"><p id="p-867">\(\displaystyle L(x) = 2x+1\)</p></li>
+<li id="li-606"><p id="p-868">\(\displaystyle L(x)= 2x - 1\)</p></li>
+<li id="li-607"><p id="p-869">\(\displaystyle L(x)= -2x + 1\)</p></li>
 </ol></article><article class="task exercise-like" id="task-231"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-869">Show that for any constant \(k\text{,}\) the tangent line approximation to \(x^k\) at \(x=1\) is \(L(x) = kx + 1\text{.}\)</p></article><article class="task exercise-like" id="task-232"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-870">Someone claims that the square root of 1.1 is about 1.05. Use the linear approximation to check this estimate. Do you think this estimate is about right? Why or why not?</p></article><article class="task exercise-like" id="task-233"><h6 class="heading"><span class="codenumber">(d)</span></h6>
-<p id="p-871">Is the actual value \(\sqrt{1.1}\) above or below 1.05? What feature of the graph of \(\sqrt{x}\) makes this an over or under estimate?</p></article></article><article class="remark remark-like" id="remark-13"><h6 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.1.6</span><span class="period">.</span>
+<p id="p-870">Show that for any constant \(k\text{,}\) the tangent line approximation to \(x^k\) at \(x=1\) is \(L(x) = kx + 1\text{.}\)</p></article><article class="task exercise-like" id="task-232"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-871">Someone claims that the square root of 1.1 is about 1.05. Use the linear approximation to check this estimate. Do you think this estimate is about right? Why or why not?</p></article><article class="task exercise-like" id="task-233"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-872">Is the actual value \(\sqrt{1.1}\) above or below 1.05? What feature of the graph of \(\sqrt{x}\) makes this an over or under estimate?</p></article></article><article class="remark remark-like" id="remark-13"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.2.6</span><span class="period">.</span>
 </h6>
-<p id="p-872">If a function \(f(x)\) is <em class="emphasis">concave up</em> around \(x=a\text{,}\) then the function is turning upwards from its tangent line. So when we use a linear approximation, the value of the approximation will be below the actual value of the function and the approximation is an underestimate. If a function \(f(x)\) is <em class="emphasis">concave down</em> around \(x=a\text{,}\) then the function is turning downwards from its tangent line. So when we use a linear approximation, the value of the approximation will be above the actual value of the function and the approximation is an overestimate.</p></article><article class="activity project-like" id="activity-120"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.7</span><span class="period">.</span>
+<p id="p-873">If a function \(f(x)\) is <em class="emphasis">concave up</em> around \(x=a\text{,}\) then the function is turning upwards from its tangent line. So when we use a linear approximation, the value of the approximation will be below the actual value of the function and the approximation is an underestimate. If a function \(f(x)\) is <em class="emphasis">concave down</em> around \(x=a\text{,}\) then the function is turning downwards from its tangent line. So when we use a linear approximation, the value of the approximation will be above the actual value of the function and the approximation is an overestimate.</p></article><article class="activity project-like" id="activity-120"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.7</span><span class="period">.</span>
 </h6>
-<p id="p-873">Suppose \(f\) has a continuous positive second derivative and \(\Delta x\) is a small increment in \(x\) (like \(h\) in the limit definition of the derivative). Which one is larger...</p>
+<p id="p-874">Suppose \(f\) has a continuous positive second derivative and \(\Delta x\) is a small increment in \(x\) (like \(h\) in the limit definition of the derivative). Which one is larger...</p>
 <div class="displaymath">
 \begin{equation*}
 f(1 + \Delta x ) \quad \text{or} \quad  f'(1) \Delta x + f(1) \quad? 
 \end{equation*}
 </div></article><article class="activity project-like" id="activity-121"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.8</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.8</span><span class="period">.</span>
 </h6>
-<p id="p-874">A certain function \(p(x)\) satisfies \(p(7) = 49\) and \(p'(7) = 8\text{.}\)</p>
+<p id="p-875">A certain function \(p(x)\) satisfies \(p(7) = 49\) and \(p'(7) = 8\text{.}\)</p>
 <ol class="decimal">
-<li id="li-607"><p id="p-875">Explain how to find the local linearization \(L(x)\) of \(p(x)\) at \(7\text{.}\)</p></li>
-<li id="li-608"><p id="p-876">Explain how to estimate the value of \(p(6.951)\text{.}\)</p></li>
-<li id="li-609"><p id="p-877">Suppose that \(p'(7)=0\) and you know that \(p''(x) &lt; 0\) for \(x &lt; 7\text{.}\) Explain how to determine if your estimate of \(p(6.951)\) is too large or too small.</p></li>
-<li id="li-610"><p id="p-878">Suppose that \(p''(x) &gt; 0\) for \(x &gt; 7\text{.}\) Use this fact and the additional information above to sketch an accurate graph of \(y=p(x)\) near \(x=7\text{.}\)</p></li>
+<li id="li-608"><p id="p-876">Explain how to find the local linearization \(L(x)\) of \(p(x)\) at \(7\text{.}\)</p></li>
+<li id="li-609"><p id="p-877">Explain how to estimate the value of \(p(6.951)\text{.}\)</p></li>
+<li id="li-610"><p id="p-878">Suppose that \(p'(7)=0\) and you know that \(p''(x) &lt; 0\) for \(x &lt; 7\text{.}\) Explain how to determine if your estimate of \(p(6.951)\) is too large or too small.</p></li>
+<li id="li-611"><p id="p-879">Suppose that \(p''(x) &gt; 0\) for \(x &gt; 7\text{.}\) Use this fact and the additional information above to sketch an accurate graph of \(y=p(x)\) near \(x=7\text{.}\)</p></li>
 </ol></article><article class="activity project-like" id="activity-122"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.9</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.9</span><span class="period">.</span>
 </h6>
 <div class="introduction" id="introduction-88">
-<p id="p-879">Let's find the quadratic polynomial</p>
+<p id="p-880">Let's find the quadratic polynomial</p>
 <div class="displaymath">
 \begin{equation*}
 q(x) = ax^2 +bx +c \quad \text{where $a,b,c$ are parameters}
 \end{equation*}
 </div>
-<p id="p-880">that best approximates the graph of \(f(x)=\ln(x)\) at \(x=1\text{.}\)</p>
+<p id="p-881">that best approximates the graph of \(f(x)=\ln(x)\) at \(x=1\text{.}\)</p>
 </div>
 <article class="task exercise-like" id="task-234"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-881">We want to choose \(a,b,c\) such that our quadratic polynomial resembles \(f(x)\) at \(x=1\text{.}\) First thing, we want \(f(1)=q(1)\text{.}\) What equation in \(a,b,c\) does this condition give you?</p>
+<p id="p-882">We want to choose \(a,b,c\) such that our quadratic polynomial resembles \(f(x)\) at \(x=1\text{.}\) First thing, we want \(f(1)=q(1)\text{.}\) What equation in \(a,b,c\) does this condition give you?</p>
 <ol class="upper-alpha">
-<li id="li-611"><p id="p-882">\(\displaystyle a+b+c = 1\)</p></li>
-<li id="li-612"><p id="p-883">\(\displaystyle a+b+c = 0\)</p></li>
-<li id="li-613"><p id="p-884">\(\displaystyle c = 0\)</p></li>
-<li id="li-614"><p id="p-885">\(\displaystyle = 1\)</p></li>
+<li id="li-612"><p id="p-883">\(\displaystyle a+b+c = 1\)</p></li>
+<li id="li-613"><p id="p-884">\(\displaystyle a+b+c = 0\)</p></li>
+<li id="li-614"><p id="p-885">\(\displaystyle c = 0\)</p></li>
+<li id="li-615"><p id="p-886">\(\displaystyle = 1\)</p></li>
 </ol></article><article class="task exercise-like" id="task-235"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-886">We also want \(f'(1)=q'(1)\text{.}\) What equation in \(a,b,c\) does this condition give you?</p></article><article class="task exercise-like" id="task-236"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-887">Finally, we want \(f''(1)=q''(1)\text{.}\) What equation in \(a,b,c\) does this condition give you?</p></article><article class="task exercise-like" id="task-237"><h6 class="heading"><span class="codenumber">(d)</span></h6>
-<p id="p-888">Find a solution to this system of linear equations! Your answer will give you values of \(a,b,c\) that can be used to draw a quadratic approximating the natural logarithm. You can check your answer on Desmos <a class="external" href="https://www.desmos.com/calculator/bad2xrwmvl" target="_blank"><code class="code-inline tex2jax_ignore">https://www.desmos.com/calculator/bad2xrwmvl</code></a></p></article></article><article class="observation remark-like" id="observation-18"><h6 class="heading">
-<span class="type">Observation</span><span class="space"> </span><span class="codenumber">3.1.10</span><span class="period">.</span>
+<p id="p-887">We also want \(f'(1)=q'(1)\text{.}\) What equation in \(a,b,c\) does this condition give you?</p></article><article class="task exercise-like" id="task-236"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-888">Finally, we want \(f''(1)=q''(1)\text{.}\) What equation in \(a,b,c\) does this condition give you?</p></article><article class="task exercise-like" id="task-237"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-889">Find a solution to this system of linear equations! Your answer will give you values of \(a,b,c\) that can be used to draw a quadratic approximating the natural logarithm. You can check your answer on Desmos <a class="external" href="https://www.desmos.com/calculator/bad2xrwmvl" target="_blank"><code class="code-inline tex2jax_ignore">https://www.desmos.com/calculator/bad2xrwmvl</code></a></p></article></article><article class="observation remark-like" id="observation-18"><h6 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">3.2.10</span><span class="period">.</span>
 </h6>
-<p id="p-889">A linear approximation \(L(x)\) to \(f(x)\) at \(x=a\) is a linear function with</p>
+<p id="p-890">A linear approximation \(L(x)\) to \(f(x)\) at \(x=a\) is a linear function with</p>
 <div class="displaymath">
 \begin{equation*}
 L(a) = f(a), \quad L'(a) = f'(a). 
 \end{equation*}
 </div>
-<p id="p-890">A quadratic approximation \(Q(x)\) to \(f(x)\) at \(x=a\) is a quadratic function with</p>
+<p id="p-891">A quadratic approximation \(Q(x)\) to \(f(x)\) at \(x=a\) is a quadratic function with</p>
 <div class="displaymath">
 \begin{equation*}
 Q(a) = f(a), \quad Q'(a) = f'(a), \quad Q''(a) = f''(a) .
 \end{equation*}
 </div></article><article class="activity project-like" id="activity-123"><h6 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.11</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.11</span><span class="period">.</span>
 </h6>
-<p id="p-891">Find the linear approximation \(L(x)\) of \(\cos(x)\) at \(x=0\text{.}\) Then find the quadratic approximation \(Q(x)\) of \(\cos(x)\) at \(x=0\text{.}\) Graph both and compare the two approximations!</p></article></section></div></main>
+<p id="p-892">Find the linear approximation \(L(x)\) of \(\cos(x)\) at \(x=0\text{.}\) Then find the quadratic approximation \(Q(x)\) of \(\cos(x)\) at \(x=0\text{.}\) Graph both and compare the two approximations!</p></article></section></div></main>
 </div>
 </body>
 </html>
