@@ -232,7 +232,7 @@
               <li><p> <m>f'(x) &gt; 0 </m> on the entire interval shown. </p></li>
               <li><p> <m> f'(x) &lt; 0 </m> on the entire interval shown. </p></li>
               <li><p> <m> f''(x) &gt; 0 </m> on the entire interval shown. </p></li>
-              <li><p> <m> f''(x) &gt; 0 </m> on the entire interval shown. </p></li>
+              <li><p> <m> f''(x) &lt; 0 </m> on the entire interval shown. </p></li>
             </ol>
           </statement>
       </task>        
@@ -254,7 +254,7 @@
               <li><p> <m>f'(x) &gt; 0 </m> on the entire interval shown. </p></li>
               <li><p> <m> f'(x) &lt; 0 </m> on the entire interval shown. </p></li>
               <li><p> <m> f''(x) &gt; 0 </m> on the entire interval shown. </p></li>
-              <li><p> <m> f''(x) &gt; 0 </m> on the entire interval shown. </p></li>
+              <li><p> <m> f''(x) &lt; 0 </m> on the entire interval shown. </p></li>
             </ol>
           </statement>
       </task>
@@ -293,7 +293,7 @@
             <p>What intervals have been created by subdividing the number line at zeros of <m>f'(x)</m>?</p>
         </task>
         <task> 
-            <p>Pick an <m>x</m>-value that lies in each interval. Determine whether <m>f''(x)</m> is positive or negative at each point.</p>
+            <p>Pick an <m>x</m>-value that lies in each interval. Determine whether <m>f'(x)</m> is positive or negative at each point.</p>
         </task>
         <task> 
             <p>On which intervals is <m>f'(x)</m> increasing? On which intervals is <m>f'(x)</m> decreasing?</p>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="AD1" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Rates of change and tangents (AD1) </title>
+  <title>Tangents, motion, and marginals (AD1) </title>
   <objectives>
     <ul>
       <li>
@@ -16,4 +16,183 @@
     </introduction>
   </activity> -->
     
+    
+<definition><p>
+The tangent line of a function <m>f(x)</m> at <m>x=a</m> is the linear function <m>L(x)</m>
+<me>L(x) = f'(a)(x-a) + f(a). </me>
+Notice that this is the linear function with slope <m>f'(a)</m> and passing through <m>(a,f(a))</m> in point-slope form.
+</p></definition>
+
+      <activity>
+    <introduction>
+      <p>For the following functions, find the required tangent line.</p>
+    </introduction>
+          <task> <p> Find the tangent line to <m>f(x) = \ln(x)</m> at <m>x=1</m></p>
+               <ol label="A">
+                <li><p>  <m>L(x) = x</m> </p></li>
+                  <li><p>  <m>L(x) = x+1</m></p></li> 
+                  <li><p>  <m>L(x)= x - 1</m> </p></li>     
+       <li><p>  <m>L(x)= -x + 1</m> </p></li>               
+    </ol>      
+          </task>
+           <task> <p> Find the tangent line to <m>f(x) = e^x</m> at <m>x=0</m></p>
+               <ol label="A">
+                <li><p>  <m>L(x) = x</m> </p></li>
+                  <li><p>  <m>L(x) = x+1</m></p></li> 
+                  <li><p>  <m>L(x)= x - 1</m> </p></li>     
+       <li><p>  <m>L(x)= -x + 1</m> </p></li>               
+    </ol>      
+          </task>
+  </activity>
+    
+<activity>
+ 
+                <p>
+                Let <m>f(x) = -2 \, x^{4} + 4 \, x^{2} - x + 5</m>. Find an equation of the line tangent to the graph at the point <m>(-2, -9)</m>.
+                </p>
+    </activity>
+
+    <definition><p>
+        If a particle has position function <m>s = f(t)</m>, where <m>t</m> is measured in seconds and <m>s</m> is measured in meters, then 
+        <ul>
+        <li><p><m>v(t) = f'(t)</m> is the velocity of the particle </p></li>
+        <li><p><m>a(t) = f''(t)</m> is the acceleration of the particle </p></li>
+        </ul>
+        
+        </p></definition>
+
+<activity>
+    <introduction>
+       <p> A particle moves on a vertical line so that its <m>y</m> coordinate at time <m>t</m> is </p>
+<me> y = t^{3}-9t^{2}+24t + 3 </me>
+<p>for <m>t\geq 0</m>. Here <m>t</m> is measured in seconds and <m>y</m> is measured in feet. </p>
+</introduction>
+    <task><p>Find the velocity and acceleration functions.</p></task>
+     <task><p>Sketch graphs of the position, velocity and acceleration functions for <m>0 \leq t \leq 5</m>.</p></task>
+    <task><p>When is the particle moving upward and when is it moving downward?</p></task>
+    <task><p>When is the particle's velocity increasing?</p></task>
+    <task><p>Find the total distance that the particle travels in the time interval <m>0 \leq t \leq 5</m>. Careful: the total distance is not the same as the displacement! Compute how much the particle moves up and add it to how much the particle moves down. </p></task>
+     </activity>   
+     
+     
+    <observation><p>In some cases, we want to also consider the speed of a particle, which is the absolute value of the velocity. In symbols <m>|v(t)|= |f'(t)|</m> is the speed of the particle.</p></observation>
+    
+      <activity xml:id = "speed">
+    <introduction>
+      <p>
+          Consider the speed of a particle. What is the behavior of the speed in relation to velocity and acceleration? </p>
+    </introduction>
+    <ol label="A">
+                <li><p>  The speed is always positive and it is increasing when the velocity and the acceleration have the same sign. </p></li>
+                <li><p>  The speed is positive when the velocity is positive and negative when the velocity is negative. </p></li>
+                <li><p>  The speed is positive when the acceleration is positive and negative when the acceleration is negative. </p></li>
+             <li><p>  The speed is always positive and it is increasing when the velocity and the acceleration have opposite signs. </p></li>
+           
+    </ol>      
+    </activity>
+  
+<defintion><p> In a parametric motion on a curve <m>C</m> given by <m>x=f(t)</m> and <m>y=g(t)</m> we have that </p>
+    <ul>
+    <li><p><m>\frac{dx}{dt}</m> is the rate of change of the horizontal motion, the horizontal component to the velocity</p></li>
+         <li><p><m>\frac{dy}{dt}</m> is the rate of change of the vertical motion, the vertical component to the velocity</p></li>
+        <li><p><m></m>frac{dy}{dx}$ is the slope of $C$. This is the actual velocity of the object. Recall that by the chain rule 
+    \[\frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}} \]</p></li>
+        <li><p></p></li>
+    </ul>
+\begin{itemize}
+    \item $$ 
+    \item $\frac{dy}{dt}$ is the rate of change of $g$. We can think of this as the vertical component to the velocity.
+    \item $\frac{dy}{dx}$ is the slope of $C$. This is the actual velocity of the object. Recall that by the chain rule 
+    \[\frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}} \]
+</defintion>
+
+\subsection*{Activity 10.2: Motion of an airplane}
+An airplane is traveling in a pattern described by the parametric equations
+\[x = 4 t , \quad  y = -t^4 + 4t - 1 ,\]
+where $x$ and $y$ have units of miles, and $t$ is in hours. 
+\begin{enumerate}[(a)]
+    \item Find the slope of the curve $C$ at any point $(x,y)$
+    \item Prove that $(0,-1)$ lies on the curve $C$. 
+    \item What is the slope of the curve at $(0,-1)$?
+    \item Write the equation of the tangent line to the curve at $(0,-1)$.
+    \item Suppose that the control tower is 5 miles east of the origin. At what point in the plane is the control tower positioned?  
+    \item Write an equation that, when solved, will allow you to figure out at what point will the airplane by flying directly toward the control tower. To answer this question, think geometrically about what does it mean to be flying directly toward a point. You will want to express the idea of slope in two ways: in terms of the slope of the tangent line at a point and in terms of the slope of a line through the curve and the control tower.
+    \item (Challenge) Solve the equation and find when the plane is directly pointing towards the control tower.
+
+\end{enumerate}
+
+
+
+
+\defn{If $C (x)$ is the cost of producing $x$ items and $R(x)$ is the revenue from selling $x$ items, then \begin{itemize}
+    \item $C'(x) $ is the marginal cost,
+    \item $R'(x)$ is the marginal revenue,
+    \item $P(x) = R(x) - C(x)$ is the profit function. $P'(x)$ is the marginal profit.
+\end{itemize}}
+
+
+\subsection*{Activity 10.3: Cost, revenue, and profit I}
+
+The manager of a computer shop has to decide how many computers to store in the back of the shop. If she stores a large number, she has to pay
+extra in storage costs. If she stores only a small number, she will have to reorder
+more often, which will involve additional handling costs. She has found that if she
+stores $x$ computers, the storage and handling costs for a year will
+be $C$ dollars, where
+\[ C(x) = 10x^{3}-900x^{2}+16000x+210000\]
+
+\begin{enumerate}[(a)]
+    \item What is the fixed cost of the computer shop? In practical terms this may account for rent and utilities expenses.
+\item What is the marginal cost?
+\item What does the marginal cost function look like?
+\item Now suppose that $x$ computers give revenue $R(x) = 1000x$. What is the marginal revenue? What is the real world interpretation of your finding?
+\item Find a formula for the profit function $P(x)$.
+\item Find the marginal profit using the marginal revenue and the marginal cost.
+\item What does the marginal profit function look like?
+\item When is the profit increasing? When is it decreasing?
+
+\end{enumerate}
+
+\newpage 
+
+\subsection*{Activity 10.4: Cost, revenue, and profit II}
+The manager of a music shop has to decide how many keyboards to order
+from the manufacturer at one time. If she orders a large number, she has to pay
+extra in storage costs. If she orders only a small number, she will have to reorder
+more often, which will involve additional handling costs. She has found that if she
+orders keyboards in lots of size $x$ , the storage and handling costs for a year will
+be $C$ dollars, where
+\[ C(x) = 15x + \frac{24000}{x} + 6000\]
+
+\begin{enumerate}[(a)]
+    \item What is cost of ordering a lot of size one? What about a lot of size 24000?
+\item What is the marginal cost? Find it two ways: first by differentiating the function as is, second by rewriting $C(x)$ with a common denominator.
+\item When is the cost increasing when is it decreasing?
+\item Now suppose that a lot of size $x$ gives revenue $R(x) = 1000x$. What is the marginal revenue? What is the real world interpretation of your finding?
+\item Find a formula for the profit function $P(x)$.
+\item Find the marginal profit using the marginal revenue and the marginal cost.
+\item When is the profit increasing? When is it decreasing?
+
+\end{enumerate}
+
+
+
+\defn{Recall that a cooling object has temperature modelled by
+\[y=  a e^{-kt} +c , \]
+where $a$,$c$,$k$ are positive constants determined by the local conditions.}
+
+\subsection*{Activity 10.5: Cooling Law}
+Consider the following scenario.
+\begin{quote}
+    Consider a cup of coffee initially at $100^\circ$F. The said cup of coffee was forgotten this morning in my living room where the thermostat is set at $72^\circ$F. After checking the temperature temperature for a few minutes, I discovered that initially the temperature is decreasing at a rate of $3.8$ degrees per minute.
+\end{quote}
+
+\begin{enumerate}[(a)]
+
+\item In the long run, what temperature do you expect the coffee to tend to?
+\item Using the model $y=ae^{-kt}t+c$, what does your answer above tell you about the model?
+\item Using the initial temperature of the coffee and your answer above, find the value of $a$ in the model $y=ae^{-kt}t+c$.
+\item Given the information about the rate of change of the temperature, find the value of the decay rate $k$.
+\item You should find that the temperature model for this coffee cup is $y= 72 + 38 e^{-0.1t}$. Explain how the values of each parameter connects to the information about the situation.
+
+\end{enumerate}    
 </section>
