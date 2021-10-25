@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-10-18T14:25:55Z       *-->
+<!--*       on 2021-10-25T01:46:02Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -11,7 +11,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal1 Rates of change and tangents (AD1)</title>
+<title>TBIL-Cal1 Tangents, motion, and marginals (AD1)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>window.MathJax = {
@@ -104,12 +104,13 @@
 </li>
 <li class="link">
 <a href="AD.html" data-scroll="AD"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
-<li><a href="AD1.html" data-scroll="AD1" class="active">Rates of change and tangents (AD1)</a></li>
+<li><a href="AD1.html" data-scroll="AD1" class="active">Tangents, motion, and marginals (AD1)</a></li>
 <li><a href="AD2.html" data-scroll="AD2">Linear approximation (AD2)</a></li>
 <li><a href="AD3.html" data-scroll="AD3">Related rates (AD3)</a></li>
 <li><a href="AD4.html" data-scroll="AD4">Extreme values (AD4)</a></li>
 <li><a href="AD5.html" data-scroll="AD5">Derivative tests (AD5)</a></li>
 <li><a href="AD6.html" data-scroll="AD6">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7">Graphing with derivatives (AD7)</a></li>
 </ul>
 </li>
 <li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
@@ -118,10 +119,80 @@
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="AD1"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">3.1</span> <span class="title">Rates of change and tangents (AD1)</span>
+<span class="type">Section</span> <span class="codenumber">3.1</span> <span class="title">Tangents, motion, and marginals (AD1)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-18"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
-<ul class="disc"><li id="li-594"><p id="p-846">Use derivatives to answer questions about rates of change and equations of tangents. (Use tangent lines to approximate functions?)</p></li></ul></article></section></div></main>
+<ul class="disc"><li id="li-594"><p id="p-846">Use derivatives to answer questions about rates of change and equations of tangents.</p></li></ul></article><article class="definition definition-like" id="definition-12"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span>
+</h6>
+<p id="p-847">The tangent line of a function \(f(x)\) at \(x=a\) is the linear function \(L(x)\)</p>
+<div class="displaymath">
+\begin{equation*}
+L(x) = f'(a)(x-a) + f(a). 
+\end{equation*}
+</div>
+<p class="continuation">Notice that this is the linear function with slope \(f'(a)\) and passing through \((a,f(a))\) in point-slope form.</p></article><article class="activity project-like" id="activity-117"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-85"><p id="p-848">For the following functions, find the required tangent line.</p></div>
+<article class="task exercise-like" id="task-225"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-849">Find the tangent line to \(f(x) = \ln(x)\) at \(x=1\)</p>
+<ol class="upper-alpha">
+<li id="li-595"><p id="p-850">\(\displaystyle L(x) = x\)</p></li>
+<li id="li-596"><p id="p-851">\(\displaystyle L(x) = x+1\)</p></li>
+<li id="li-597"><p id="p-852">\(\displaystyle L(x)= x - 1\)</p></li>
+<li id="li-598"><p id="p-853">\(\displaystyle L(x)= -x + 1\)</p></li>
+</ol></article><article class="task exercise-like" id="task-226"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-854">Find the tangent line to \(f(x) = e^x\) at \(x=0\)</p>
+<ol class="upper-alpha">
+<li id="li-599"><p id="p-855">\(\displaystyle L(x) = x\)</p></li>
+<li id="li-600"><p id="p-856">\(\displaystyle L(x) = x+1\)</p></li>
+<li id="li-601"><p id="p-857">\(\displaystyle L(x)= x - 1\)</p></li>
+<li id="li-602"><p id="p-858">\(\displaystyle L(x)= -x + 1\)</p></li>
+</ol></article></article><article class="activity project-like" id="activity-118"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.3</span><span class="period">.</span>
+</h6>
+<p id="p-859">Let \(f(x) = -2 \, x^{4} + 4 \, x^{2} - x + 5\text{.}\) Find an equation of the line tangent to the graph at the point \((-2, -9)\text{.}\)</p></article><article class="definition definition-like" id="definition-13"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.4</span><span class="period">.</span>
+</h6>
+<p id="p-860">If a particle has position function \(s = f(t)\text{,}\) where \(t\) is measured in seconds and \(s\) is measured in meters, then</p>
+<ul class="disc">
+<li id="li-603"><p id="p-861">\(v(t) = f'(t)\) is the velocity of the particle</p></li>
+<li id="li-604"><p id="p-862">\(a(t) = f''(t)\) is the acceleration of the particle</p></li>
+</ul></article><article class="activity project-like" id="activity-119"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.5</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-86">
+<p id="p-863">A particle moves on a vertical line so that its \(y\) coordinate at time \(t\) is</p>
+<div class="displaymath">
+\begin{equation*}
+y = t^{3}-9t^{2}+24t + 3 
+\end{equation*}
+</div>
+<p id="p-864">for \(t\geq 0\text{.}\) Here \(t\) is measured in seconds and \(y\) is measured in feet.</p>
+</div>
+<article class="task exercise-like" id="task-227"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-865">Find the velocity and acceleration functions.</p></article><article class="task exercise-like" id="task-228"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-866">Sketch graphs of the position, velocity and acceleration functions for \(0 \leq t \leq 5\text{.}\)</p></article><article class="task exercise-like" id="task-229"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-867">When is the particle moving upward and when is it moving downward?</p></article><article class="task exercise-like" id="task-230"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-868">When is the particle's velocity increasing?</p></article><article class="task exercise-like" id="task-231"><h6 class="heading"><span class="codenumber">(e)</span></h6>
+<p id="p-869">Find the total distance that the particle travels in the time interval \(0 \leq t \leq 5\text{.}\) Careful: the total distance is not the same as the displacement! Compute how much the particle moves up and add it to how much the particle moves down.</p></article></article><article class="observation remark-like" id="observation-18"><h6 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">3.1.6</span><span class="period">.</span>
+</h6>
+<p id="p-870">In some cases, we want to also consider the speed of a particle, which is the absolute value of the velocity. In symbols \(|v(t)|= |f'(t)|\) is the speed of the particle.</p></article><article class="activity project-like" id="speed"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.7</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-87"><p id="p-871">Consider the speed of a particle. What is the behavior of the speed in relation to velocity and acceleration?</p></div>
+<ol class="upper-alpha">
+<li id="li-605"><p id="p-872">The speed is always positive and it is increasing when the velocity and the acceleration have the same sign.</p></li>
+<li id="li-606"><p id="p-873">The speed is positive when the velocity is positive and negative when the velocity is negative.</p></li>
+<li id="li-607"><p id="p-874">The speed is positive when the acceleration is positive and negative when the acceleration is negative.</p></li>
+<li id="li-608"><p id="p-875">The speed is always positive and it is increasing when the velocity and the acceleration have opposite signs.</p></li>
+</ol></article><p id="p-876">In a parametric motion on a curve \(C\) given by \(x=f(t)\) and \(y=g(t)\) we have that</p> <ul class="disc">
+<li id="li-609"><p id="p-877">\(\displaystyle \frac{dx}{dt}\)</p></li>
+<li id="li-610"><p id="p-878"></p></li>
+<li id="li-611"><p id="p-879"></p></li>
+</ul> \​begin{itemize} \item $$ \item $\frac{dy}{dt}$ is the rate of change of $g$. We can think of this as the vertical component to the velocity. \item $\frac{dy}{dx}$ is the slope of $C$. This is the actual velocity of the object. Recall that by the chain rule \[\frac{dy}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}} \] \subsection*{Activity 10.2: Motion of an airplane} An airplane is traveling in a pattern described by the parametric equations \[x = 4 t , \quad  y = -t^4 + 4t - 1 ,\] where $x$ and $y$ have units of miles, and $t$ is in hours. \​begin{enumerate}[(a)] \item Find the slope of the curve $C$ at any point $(x,y)$ \item Prove that $(0,-1)$ lies on the curve $C$. \item What is the slope of the curve at $(0,-1)$? \item Write the equation of the tangent line to the curve at $(0,-1)$. \item Suppose that the control tower is 5 miles east of the origin. At what point in the plane is the control tower positioned? \item Write an equation that, when solved, will allow you to figure out at what point will the airplane by flying directly toward the control tower. To answer this question, think geometrically about what does it mean to be flying directly toward a point. You will want to express the idea of slope in two ways: in terms of the slope of the tangent line at a point and in terms of the slope of a line through the curve and the control tower. \item (Challenge) Solve the equation and find when the plane is directly pointing towards the control tower. \end{enumerate} \defn{If $C (x)$ is the cost of producing $x$ items and $R(x)$ is the revenue from selling $x$ items, then \​begin{itemize} \item $C'(x) $ is the marginal cost, \item $R'(x)$ is the marginal revenue, \item $P(x) = R(x) - C(x)$ is the profit function. $P'(x)$ is the marginal profit. \end{itemize}} \subsection*{Activity 10.3: Cost, revenue, and profit I} The manager of a computer shop has to decide how many computers to store in the back of the shop. If she stores a large number, she has to pay extra in storage costs. If she stores only a small number, she will have to reorder more often, which will involve additional handling costs. She has found that if she stores $x$ computers, the storage and handling costs for a year will be $C$ dollars, where \[ C(x) = 10x^{3}-900x^{2}+16000x+210000\] \​begin{enumerate}[(a)] \item What is the fixed cost of the computer shop? In practical terms this may account for rent and utilities expenses. \item What is the marginal cost? \item What does the marginal cost function look like? \item Now suppose that $x$ computers give revenue $R(x) = 1000x$. What is the marginal revenue? What is the real world interpretation of your finding? \item Find a formula for the profit function $P(x)$. \item Find the marginal profit using the marginal revenue and the marginal cost. \item What does the marginal profit function look like? \item When is the profit increasing? When is it decreasing? \end{enumerate} \newpage \subsection*{Activity 10.4: Cost, revenue, and profit II} The manager of a music shop has to decide how many keyboards to order from the manufacturer at one time. If she orders a large number, she has to pay extra in storage costs. If she orders only a small number, she will have to reorder more often, which will involve additional handling costs. She has found that if she orders keyboards in lots of size $x$ , the storage and handling costs for a year will be $C$ dollars, where \[ C(x) = 15x + \frac{24000}{x} + 6000\] \​begin{enumerate}[(a)] \item What is cost of ordering a lot of size one? What about a lot of size 24000? \item What is the marginal cost? Find it two ways: first by differentiating the function as is, second by rewriting $C(x)$ with a common denominator. \item When is the cost increasing when is it decreasing? \item Now suppose that a lot of size $x$ gives revenue $R(x) = 1000x$. What is the marginal revenue? What is the real world interpretation of your finding? \item Find a formula for the profit function $P(x)$. \item Find the marginal profit using the marginal revenue and the marginal cost. \item When is the profit increasing? When is it decreasing? \end{enumerate} \defn{Recall that a cooling object has temperature modelled by \[y=  a e^{-kt} +c , \] where $a$,$c$,$k$ are positive constants determined by the local conditions.} \subsection*{Activity 10.5: Cooling Law} Consider the following scenario. \​begin{quote} Consider a cup of coffee initially at $100^\circ$F. The said cup of coffee was forgotten this morning in my living room where the thermostat is set at $72^\circ$F. After checking the temperature temperature for a few minutes, I discovered that initially the temperature is decreasing at a rate of $3.8$ degrees per minute. \end{quote} \​begin{enumerate}[(a)] \item In the long run, what temperature do you expect the coffee to tend to? \item Using the model $y=ae^{-kt}t+c$, what does your answer above tell you about the model? \item Using the initial temperature of the coffee and your answer above, find the value of $a$ in the model $y=ae^{-kt}t+c$. \item Given the information about the rate of change of the temperature, find the value of the decay rate $k$. \item You should find that the temperature model for this coffee cup is $y= 72 + 38 e^{-0.1t}$. Explain how the values of each parameter connects to the information about the situation. \end{enumerate}</section></div></main>
 </div>
 </body>
 </html>

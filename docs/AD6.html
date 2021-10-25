@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-10-18T14:25:56Z       *-->
+<!--*       on 2021-10-25T01:46:03Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -66,10 +66,10 @@
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="AD5.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="AD5.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="AD7.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="AD5.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="AD5.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a class="next-button button toolbar-item" href="AD7.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -104,12 +104,13 @@
 </li>
 <li class="link">
 <a href="AD.html" data-scroll="AD"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
-<li><a href="AD1.html" data-scroll="AD1">Rates of change and tangents (AD1)</a></li>
+<li><a href="AD1.html" data-scroll="AD1">Tangents, motion, and marginals (AD1)</a></li>
 <li><a href="AD2.html" data-scroll="AD2">Linear approximation (AD2)</a></li>
 <li><a href="AD3.html" data-scroll="AD3">Related rates (AD3)</a></li>
 <li><a href="AD4.html" data-scroll="AD4">Extreme values (AD4)</a></li>
 <li><a href="AD5.html" data-scroll="AD5">Derivative tests (AD5)</a></li>
 <li><a href="AD6.html" data-scroll="AD6" class="active">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7">Graphing with derivatives (AD7)</a></li>
 </ul>
 </li>
 <li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
@@ -121,57 +122,57 @@
 <span class="type">Section</span> <span class="codenumber">3.6</span> <span class="title">Concavity and inflection (AD6)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-23"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
-<ul class="disc"><li id="li-665"><p id="p-992">Determine the intervals of concavity of a twice differentiable function and find all of its points of inflection.</p></li></ul></article><p id="p-993">In addition to asking <em class="emphasis">whether</em> a function is increasing or decreasing, it is also natural to inquire <em class="emphasis">how</em> a function is increasing or decreasing. <a class="xref" data-knowl="./knowl/activity-derivative-concavity1.html" title="Activity 3.6.2">Activity 3.6.2</a> describes three basic behaviors that an increasing function can demonstrate on an interval, as pictured in <a class="xref" data-knowl="./knowl/concavity-1.html" title="Figure 3.6.1">Figure 3.6.1</a>: the function can increase more and more rapidly, it can increase at the same rate, or it can increase in a way that is slowing down. We are beginning to think about how a particular curve bends, with the natural comparison being made to lines, which don't bend at all. More than this, we want to understand how the bend in a function's graph is tied to behavior characterized by the first derivative of the function.</p>
+<ul class="disc"><li id="li-682"><p id="p-1025">Determine the intervals of concavity of a twice differentiable function and find all of its points of inflection.</p></li></ul></article><p id="p-1026">In addition to asking <em class="emphasis">whether</em> a function is increasing or decreasing, it is also natural to inquire <em class="emphasis">how</em> a function is increasing or decreasing. <a class="xref" data-knowl="./knowl/activity-derivative-concavity1.html" title="Activity 3.6.2">Activity 3.6.2</a> describes three basic behaviors that an increasing function can demonstrate on an interval, as pictured in <a class="xref" data-knowl="./knowl/concavity-1.html" title="Figure 3.6.1">Figure 3.6.1</a>: the function can increase more and more rapidly, it can increase at the same rate, or it can increase in a way that is slowing down. We are beginning to think about how a particular curve bends, with the natural comparison being made to lines, which don't bend at all. More than this, we want to understand how the bend in a function's graph is tied to behavior characterized by the first derivative of the function.</p>
 <figure class="figure figure-like" id="concavity-1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/concavity-1.svg" role="img" class="contained" alt=""></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.6.1<span class="period">.</span></span><span class="space"> </span>Three increasing functions</figcaption></figure><article class="activity project-like" id="activity-derivative-concavity1"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.6.2</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-100"><p id="p-994">Sketch a sequence of tangent lines at various points to each of the following curves in <a class="xref" data-knowl="./knowl/concavity-1.html" title="Figure 3.6.1">Figure 3.6.1</a>.</p></div>
-<article class="task exercise-like" id="task-275"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-995">Look at the curve pictured on the left. How would you describe the slopes of the tangent lines as you move from left to right?</p>
+<div class="introduction" id="introduction-103"><p id="p-1027">Sketch a sequence of tangent lines at various points to each of the following curves in <a class="xref" data-knowl="./knowl/concavity-1.html" title="Figure 3.6.1">Figure 3.6.1</a>.</p></div>
+<article class="task exercise-like" id="task-282"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-1028">Look at the curve pictured on the left. How would you describe the slopes of the tangent lines as you move from left to right?</p>
 <ol class="upper-alpha">
-<li id="li-666"><p id="p-996">The slopes of the tangent lines decrease as you move from left to right.</p></li>
-<li id="li-667"><p id="p-997">The slopes of the tangent lines remain constant as you move from left to right.</p></li>
-<li id="li-668"><p id="p-998">The slopes of the tangent lines increase as you move from left to right.</p></li>
-</ol></article><article class="task exercise-like" id="task-276"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-999">Look at the curve pictured in the middle. How would you describe the slopes of the tangent lines as you move from left to right?</p>
+<li id="li-683"><p id="p-1029">The slopes of the tangent lines decrease as you move from left to right.</p></li>
+<li id="li-684"><p id="p-1030">The slopes of the tangent lines remain constant as you move from left to right.</p></li>
+<li id="li-685"><p id="p-1031">The slopes of the tangent lines increase as you move from left to right.</p></li>
+</ol></article><article class="task exercise-like" id="task-283"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-1032">Look at the curve pictured in the middle. How would you describe the slopes of the tangent lines as you move from left to right?</p>
 <ol class="upper-alpha">
-<li id="li-669"><p id="p-1000">The slopes of the tangent lines decrease as you move from left to right.</p></li>
-<li id="li-670"><p id="p-1001">The slopes of the tangent lines remain constant as you move from left to right.</p></li>
-<li id="li-671"><p id="p-1002">The slopes of the tangent lines increase as you move from left to right.</p></li>
-</ol></article><article class="task exercise-like" id="task-277"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-1003">Look at the curve pictured on the right. How would you describe the slopes of the tangent lines as you move from left to right?</p>
+<li id="li-686"><p id="p-1033">The slopes of the tangent lines decrease as you move from left to right.</p></li>
+<li id="li-687"><p id="p-1034">The slopes of the tangent lines remain constant as you move from left to right.</p></li>
+<li id="li-688"><p id="p-1035">The slopes of the tangent lines increase as you move from left to right.</p></li>
+</ol></article><article class="task exercise-like" id="task-284"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-1036">Look at the curve pictured on the right. How would you describe the slopes of the tangent lines as you move from left to right?</p>
 <ol class="upper-alpha">
-<li id="li-672"><p id="p-1004">The slopes of the tangent lines decrease as you move from left to right.</p></li>
-<li id="li-673"><p id="p-1005">The slopes of the tangent lines remain constant as you move from left to right.</p></li>
-<li id="li-674"><p id="p-1006">The slopes of the tangent lines increase as you move from left to right.</p></li>
+<li id="li-689"><p id="p-1037">The slopes of the tangent lines decrease as you move from left to right.</p></li>
+<li id="li-690"><p id="p-1038">The slopes of the tangent lines remain constant as you move from left to right.</p></li>
+<li id="li-691"><p id="p-1039">The slopes of the tangent lines increase as you move from left to right.</p></li>
 </ol></article></article><article class="remark remark-like" id="remark-20"><h6 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.6.3</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-101"><p id="p-1007">On the leftmost curve in <a class="xref" data-knowl="./knowl/concavity-1.html" title="Figure 3.6.1">Figure 3.6.1</a>, draw a sequence of tangent lines to the curve. As we move from left to right, the slopes of those tangent lines will increase. Therefore, the rate of change of the pictured function is increasing, and this explains why we say this function is <em class="emphasis">increasing at an increasing rate</em>. For the rightmost graph in <a class="xref" data-knowl="./knowl/concavity-1.html" title="Figure 3.6.1">Figure 3.6.1</a>, observe that as \(x\) increases, the function increases, but the slopes of the tangent lines decrease. This function is <em class="emphasis">increasing at a decreasing rate</em>.</p></div></article><p id="SDL">Similar options hold for how a function can decrease. Here we must be extra careful with our language, because decreasing functions involve negative slopes. Negative numbers present an interesting tension between common language and mathematical language. For example, it can be tempting to say that “\(-100\) is bigger than \(-2\text{.}\)” But we must remember that “greater than” describes how numbers lie on a number line: \(x \gt y\) provided that \(x\) lies to the right of \(y\text{.}\) So of course, \(-100\) is less than \(-2\text{.}\) Informally, it might be helpful to say that “\(-100\) is more negative than \(-2\text{.}\)” When a function's values are negative, and those values get more negative as the input increases, the function must be decreasing.</p>
+<div class="introduction" id="introduction-104"><p id="p-1040">On the leftmost curve in <a class="xref" data-knowl="./knowl/concavity-1.html" title="Figure 3.6.1">Figure 3.6.1</a>, draw a sequence of tangent lines to the curve. As we move from left to right, the slopes of those tangent lines will increase. Therefore, the rate of change of the pictured function is increasing, and this explains why we say this function is <em class="emphasis">increasing at an increasing rate</em>. For the rightmost graph in <a class="xref" data-knowl="./knowl/concavity-1.html" title="Figure 3.6.1">Figure 3.6.1</a>, observe that as \(x\) increases, the function increases, but the slopes of the tangent lines decrease. This function is <em class="emphasis">increasing at a decreasing rate</em>.</p></div></article><p id="SDL">Similar options hold for how a function can decrease. Here we must be extra careful with our language, because decreasing functions involve negative slopes. Negative numbers present an interesting tension between common language and mathematical language. For example, it can be tempting to say that “\(-100\) is bigger than \(-2\text{.}\)” But we must remember that “greater than” describes how numbers lie on a number line: \(x \gt y\) provided that \(x\) lies to the right of \(y\text{.}\) So of course, \(-100\) is less than \(-2\text{.}\) Informally, it might be helpful to say that “\(-100\) is more negative than \(-2\text{.}\)” When a function's values are negative, and those values get more negative as the input increases, the function must be decreasing.</p>
 <figure class="figure figure-like" id="PJf"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/concavity-2.svg" role="img" class="contained" alt=""></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.6.4<span class="period">.</span></span><span class="space"> </span>From left to right, three functions that are all decreasing.</figcaption></figure><article class="activity project-like" id="activity-derivative-concavity2"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.6.5</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-102"><p id="p-1009">Sketch a sequence of tangent lines at various points to each of the following curves in <a class="xref" data-knowl="./knowl/concavity-2.html" title="Figure 3.6.4">Figure 3.6.4</a>.</p></div>
-<article class="task exercise-like" id="task-278"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-1010">Look at the curve pictured on the left. How would you describe the slopes of the tangent lines as you move from left to right?</p>
+<div class="introduction" id="introduction-105"><p id="p-1042">Sketch a sequence of tangent lines at various points to each of the following curves in <a class="xref" data-knowl="./knowl/concavity-2.html" title="Figure 3.6.4">Figure 3.6.4</a>.</p></div>
+<article class="task exercise-like" id="task-285"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-1043">Look at the curve pictured on the left. How would you describe the slopes of the tangent lines as you move from left to right?</p>
 <ol class="upper-alpha">
-<li id="li-675"><p id="p-1011">The slopes of the tangent lines decrease as you move from left to right.</p></li>
-<li id="li-676"><p id="p-1012">The slopes of the tangent lines remain constant as you move from left to right.</p></li>
-<li id="li-677"><p id="p-1013">The slopes of the tangent lines increase as you move from left to right.</p></li>
-</ol></article><article class="task exercise-like" id="task-279"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-1014">Look at the curve pictured in the middle. How would you describe the slopes of the tangent lines as you move from left to right?</p>
+<li id="li-692"><p id="p-1044">The slopes of the tangent lines decrease as you move from left to right.</p></li>
+<li id="li-693"><p id="p-1045">The slopes of the tangent lines remain constant as you move from left to right.</p></li>
+<li id="li-694"><p id="p-1046">The slopes of the tangent lines increase as you move from left to right.</p></li>
+</ol></article><article class="task exercise-like" id="task-286"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-1047">Look at the curve pictured in the middle. How would you describe the slopes of the tangent lines as you move from left to right?</p>
 <ol class="upper-alpha">
-<li id="li-678"><p id="p-1015">The slopes of the tangent lines decrease as you move from left to right.</p></li>
-<li id="li-679"><p id="p-1016">The slopes of the tangent lines remain constant as you move from left to right.</p></li>
-<li id="li-680"><p id="p-1017">The slopes of the tangent lines increase as you move from left to right.</p></li>
-</ol></article><article class="task exercise-like" id="task-280"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-1018">Look at the curve pictured on the right. How would you describe the slopes of the tangent lines as you move from left to right?</p>
+<li id="li-695"><p id="p-1048">The slopes of the tangent lines decrease as you move from left to right.</p></li>
+<li id="li-696"><p id="p-1049">The slopes of the tangent lines remain constant as you move from left to right.</p></li>
+<li id="li-697"><p id="p-1050">The slopes of the tangent lines increase as you move from left to right.</p></li>
+</ol></article><article class="task exercise-like" id="task-287"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-1051">Look at the curve pictured on the right. How would you describe the slopes of the tangent lines as you move from left to right?</p>
 <ol class="upper-alpha">
-<li id="li-681"><p id="p-1019">The slopes of the tangent lines decrease as you move from left to right.</p></li>
-<li id="li-682"><p id="p-1020">The slopes of the tangent lines remain constant as you move from left to right.</p></li>
-<li id="li-683"><p id="p-1021">The slopes of the tangent lines increase as you move from left to right.</p></li>
+<li id="li-698"><p id="p-1052">The slopes of the tangent lines decrease as you move from left to right.</p></li>
+<li id="li-699"><p id="p-1053">The slopes of the tangent lines remain constant as you move from left to right.</p></li>
+<li id="li-700"><p id="p-1054">The slopes of the tangent lines increase as you move from left to right.</p></li>
 </ol></article></article><p id="KZm">We now introduce the notion of <em class="emphasis">concavity</em>  which provides simpler language to describe these behaviors. When a curve opens upward on a given interval, like the parabola \(y = x^2\) or the exponential growth function \(y = e^x\text{,}\) we say that the curve is <em class="emphasis">concave up</em> on that interval. Likewise, when a curve opens down, like the parabola \(y = -x^2\) or the opposite of the exponential function \(y = -e^{x}\text{,}\) we say that the function is <em class="emphasis">concave down</em>. Concavity is linked to both the first and second derivatives of the function.</p>
 <p id="rgv">In <a class="xref" data-knowl="./knowl/concavity-3.html" title="Figure 3.6.6">Figure 3.6.6</a>, we see two functions and a sequence of tangent lines to each. On the lefthand plot, where the function is concave up, observe that the tangent lines always lie below the curve itself, and the slopes of the tangent lines are increasing as we move from left to right. In other words, the function \(f\) is concave up on the interval shown because its derivative, \(f'\text{,}\) is increasing on that interval. Similarly, on the righthand plot in <a class="xref" data-knowl="./knowl/concavity-3.html" title="Figure 3.6.6">Figure 3.6.6</a>, where the function shown is concave down, we see that the tangent lines alway lie above the curve, and the slopes of the tangent lines are decreasing as we move from left to right. The fact that its derivative, \(f'\text{,}\) is decreasing makes \(f\) concave down on the interval.</p>
 <figure class="figure figure-like" id="vQo"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="external/concavity-3.svg" role="img" class="contained" alt=""></div>
@@ -182,63 +183,63 @@
 <p id="slO">Let \(f\) be a differentiable function on an interval \((a,b)\text{.}\) Then \(f\) is <dfn class="terminology">concave up</dfn>  on \((a,b)\) if and only if \(f'\) is increasing on \((a,b)\text{;}\) \(f\) is <dfn class="terminology">concave down</dfn>  on \((a,b)\) if and only if \(f'\) is decreasing on \((a,b)\text{.}\)</p></article> In <a href="AD5.html" class="internal" title="Section 3.5: Derivative tests (AD5)">Section 3.5</a>, we used <a class="xref" data-knowl="./knowl/first-derivative-test.html" title="Theorem 3.5.4: The First Derivative Test">Theorem 3.5.4</a> as a tool to determine when continuous functions had local maxima and local minima. In this section, we would like to develop a similar test that can identify where continous fucntions are concave up and concave down. <article class="activity project-like" id="activity-derivativy-concavity3"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.6.8</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-103"><p id="p-1026">Look at how the slopes of the tangent lines change from left to right for each of the two graphs in <a class="xref" data-knowl="./knowl/concavity-3.html" title="Figure 3.6.6">Figure 3.6.6</a></p></div>
-<article class="task exercise-like" id="task-281"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-1027">Look at the curve pictured on the left. How would you describe the slopes of the tangent lines as you move from left to right?</p>
+<div class="introduction" id="introduction-106"><p id="p-1059">Look at how the slopes of the tangent lines change from left to right for each of the two graphs in <a class="xref" data-knowl="./knowl/concavity-3.html" title="Figure 3.6.6">Figure 3.6.6</a></p></div>
+<article class="task exercise-like" id="task-288"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-1060">Look at the curve pictured on the left. How would you describe the slopes of the tangent lines as you move from left to right?</p>
 <ol class="upper-alpha">
-<li id="li-684"><p id="p-1028">The slopes of the tangent lines decrease as you move from left to right.</p></li>
-<li id="li-685"><p id="p-1029">The slopes of the tangent lines increase as you move from left to right.</p></li>
-<li id="li-686"><p id="p-1030">The slopes of the tangent lines go from increasing to decreasing as you move from right to left.</p></li>
-<li id="li-687"><p id="p-1031">The slopes of the tangent lines go from decreasing to increasing as you move from right to left.</p></li>
-</ol></article><article class="task exercise-like" id="task-282"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-1032">Which of the following statements is true about the function on the left in <a class="xref" data-knowl="./knowl/concavity-3.html" title="Figure 3.6.6">Figure 3.6.6</a>?</p>
+<li id="li-701"><p id="p-1061">The slopes of the tangent lines decrease as you move from left to right.</p></li>
+<li id="li-702"><p id="p-1062">The slopes of the tangent lines increase as you move from left to right.</p></li>
+<li id="li-703"><p id="p-1063">The slopes of the tangent lines go from increasing to decreasing as you move from right to left.</p></li>
+<li id="li-704"><p id="p-1064">The slopes of the tangent lines go from decreasing to increasing as you move from right to left.</p></li>
+</ol></article><article class="task exercise-like" id="task-289"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-1065">Which of the following statements is true about the function on the left in <a class="xref" data-knowl="./knowl/concavity-3.html" title="Figure 3.6.6">Figure 3.6.6</a>?</p>
 <ol class="upper-alpha">
-<li id="li-688"><p id="p-1033">\(f'(x) &gt; 0 \) on the entire interval shown.</p></li>
-<li id="li-689"><p id="p-1034">\(f'(x) &lt; 0 \) on the entire interval shown.</p></li>
-<li id="li-690"><p id="p-1035">\(f''(x) &gt; 0 \) on the entire interval shown.</p></li>
-<li id="li-691"><p id="p-1036">\(f''(x) &gt; 0 \) on the entire interval shown.</p></li>
-</ol></article><article class="task exercise-like" id="task-283"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-1037">Look at the curve pictured on the right. How would you describe the slopes of the tangent lines as you move from left to right?</p>
+<li id="li-705"><p id="p-1066">\(f'(x) &gt; 0 \) on the entire interval shown.</p></li>
+<li id="li-706"><p id="p-1067">\(f'(x) &lt; 0 \) on the entire interval shown.</p></li>
+<li id="li-707"><p id="p-1068">\(f''(x) &gt; 0 \) on the entire interval shown.</p></li>
+<li id="li-708"><p id="p-1069">\(f''(x) &lt; 0 \) on the entire interval shown.</p></li>
+</ol></article><article class="task exercise-like" id="task-290"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-1070">Look at the curve pictured on the right. How would you describe the slopes of the tangent lines as you move from left to right?</p>
 <ol class="upper-alpha">
-<li id="li-692"><p id="p-1038">The slopes of the tangent lines decrease as you move from left to right.</p></li>
-<li id="li-693"><p id="p-1039">The slopes of the tangent lines increase as you move from left to right.</p></li>
-<li id="li-694"><p id="p-1040">The slopes of the tangent lines go from increasing to decreasing as you move from right to left.</p></li>
-<li id="li-695"><p id="p-1041">The slopes of the tangent lines go from decreasing to increasing as you move from right to left.</p></li>
-</ol></article><article class="task exercise-like" id="task-284"><h6 class="heading"><span class="codenumber">(d)</span></h6>
-<p id="p-1042">Which of the following statements is true about the function on the right in <a class="xref" data-knowl="./knowl/concavity-3.html" title="Figure 3.6.6">Figure 3.6.6</a>?</p>
+<li id="li-709"><p id="p-1071">The slopes of the tangent lines decrease as you move from left to right.</p></li>
+<li id="li-710"><p id="p-1072">The slopes of the tangent lines increase as you move from left to right.</p></li>
+<li id="li-711"><p id="p-1073">The slopes of the tangent lines go from increasing to decreasing as you move from right to left.</p></li>
+<li id="li-712"><p id="p-1074">The slopes of the tangent lines go from decreasing to increasing as you move from right to left.</p></li>
+</ol></article><article class="task exercise-like" id="task-291"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-1075">Which of the following statements is true about the function on the right in <a class="xref" data-knowl="./knowl/concavity-3.html" title="Figure 3.6.6">Figure 3.6.6</a>?</p>
 <ol class="upper-alpha">
-<li id="li-696"><p id="p-1043">\(f'(x) &gt; 0 \) on the entire interval shown.</p></li>
-<li id="li-697"><p id="p-1044">\(f'(x) &lt; 0 \) on the entire interval shown.</p></li>
-<li id="li-698"><p id="p-1045">\(f''(x) &gt; 0 \) on the entire interval shown.</p></li>
-<li id="li-699"><p id="p-1046">\(f''(x) &gt; 0 \) on the entire interval shown.</p></li>
+<li id="li-713"><p id="p-1076">\(f'(x) &gt; 0 \) on the entire interval shown.</p></li>
+<li id="li-714"><p id="p-1077">\(f'(x) &lt; 0 \) on the entire interval shown.</p></li>
+<li id="li-715"><p id="p-1078">\(f''(x) &gt; 0 \) on the entire interval shown.</p></li>
+<li id="li-716"><p id="p-1079">\(f''(x) &lt; 0 \) on the entire interval shown.</p></li>
 </ol></article></article><article class="theorem theorem-like" id="concavity-test"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.6.9</span><span class="period">.</span><span class="space"> </span><span class="title">Test for Concavity.</span>
 </h6>
-<div class="introduction" id="introduction-104"><p id="p-1047">Suppose that \(f(x)\) is twice differentiable on some interval \((a,b)\text{.}\) If \(f'' &gt; 0\) on \((a,b)\text{,}\) then \(f\) is concave up on \((a,b)\text{.}\) If \(f'' &lt; 0\) on \((a,b)\text{,}\) then \(f\) is concave down on \((a,b)\text{.}\)</p></div>
-<ol id="p-1048" class="decimal">
-<li id="li-700"><p id="p-derived-li-700">If \(f'(x) &gt; 0\) and \(f''(x) &gt; 0 \) on \((a,b)\text{,}\) then \(f\) is increasing and concave up on \((a,b)\text{.}\)</p></li>
-<li id="li-701"><p id="p-derived-li-701">If \(f'(x) &gt; 0\) and \(f''(x) &lt; 0 \) on \((a,b)\text{,}\) then \(f\) is increasing and concave down on \((a,b)\text{.}\)</p></li>
-<li id="li-702"><p id="p-derived-li-702">If \(f'(x) &lt; 0\) and \(f''(x) &gt; 0 \) on \((a,b)\text{,}\) then \(f\) is decreasing and concave up on \((a,b)\text{.}\)</p></li>
-<li id="li-703"><p id="p-derived-li-703">If \(f'(x) &lt; 0\) and \(f''(x) &lt; 0 \) on \((a,b)\text{,}\) then \(f\) is decreasing and concave down on \((a,b)\text{.}\)</p></li>
-</ol></article><p id="p-1049"><a class="xref" data-knowl="./knowl/activity-derivitative-derivativetests4.html" title="Activity 3.5.5">Activity 3.5.5</a> highlighted how to use the first derivative to identify intervals of increase and intervals of decrease of a function. <a class="xref" data-knowl="./knowl/activity-derivative-concavity4.html" title="Activity 3.6.10">Activity 3.6.10</a> uses <a class="xref" data-knowl="./knowl/concavity-test.html" title="Theorem 3.6.9: Test for Concavity">Theorem 3.6.9</a> to identify where a function is concave up and concave down.</p>
+<div class="introduction" id="introduction-107"><p id="p-1080">Suppose that \(f(x)\) is twice differentiable on some interval \((a,b)\text{.}\) If \(f'' &gt; 0\) on \((a,b)\text{,}\) then \(f\) is concave up on \((a,b)\text{.}\) If \(f'' &lt; 0\) on \((a,b)\text{,}\) then \(f\) is concave down on \((a,b)\text{.}\)</p></div>
+<ol id="p-1081" class="decimal">
+<li id="li-717"><p id="p-derived-li-717">If \(f'(x) &gt; 0\) and \(f''(x) &gt; 0 \) on \((a,b)\text{,}\) then \(f\) is increasing and concave up on \((a,b)\text{.}\)</p></li>
+<li id="li-718"><p id="p-derived-li-718">If \(f'(x) &gt; 0\) and \(f''(x) &lt; 0 \) on \((a,b)\text{,}\) then \(f\) is increasing and concave down on \((a,b)\text{.}\)</p></li>
+<li id="li-719"><p id="p-derived-li-719">If \(f'(x) &lt; 0\) and \(f''(x) &gt; 0 \) on \((a,b)\text{,}\) then \(f\) is decreasing and concave up on \((a,b)\text{.}\)</p></li>
+<li id="li-720"><p id="p-derived-li-720">If \(f'(x) &lt; 0\) and \(f''(x) &lt; 0 \) on \((a,b)\text{,}\) then \(f\) is decreasing and concave down on \((a,b)\text{.}\)</p></li>
+</ol></article><p id="p-1082"><a class="xref" data-knowl="./knowl/activity-derivitative-derivativetests4.html" title="Activity 3.5.5">Activity 3.5.5</a> highlighted how to use the first derivative to identify intervals of increase and intervals of decrease of a function. <a class="xref" data-knowl="./knowl/activity-derivative-concavity4.html" title="Activity 3.6.10">Activity 3.6.10</a> uses <a class="xref" data-knowl="./knowl/concavity-test.html" title="Theorem 3.6.9: Test for Concavity">Theorem 3.6.9</a> to identify where a function is concave up and concave down.</p>
 <article class="activity project-like" id="activity-derivative-concavity4"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.6.10</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-105"><p id="p-1050">Let \(f(x)=x^4-4x^3+4x^2\text{.}\)</p></div>
-<article class="task exercise-like" id="task-285"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<p id="p-1051">Find all the zeros of \(f'(x)\text{.}\)</p></article><article class="task exercise-like" id="task-286"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<p id="p-1052">What intervals have been created by subdividing the number line at zeros of \(f'(x)\text{?}\)</p></article><article class="task exercise-like" id="task-287"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<p id="p-1053">Pick an \(x\)-value that lies in each interval. Determine whether \(f''(x)\) is positive or negative at each point.</p></article><article class="task exercise-like" id="task-288"><h6 class="heading"><span class="codenumber">(d)</span></h6>
-<p id="p-1054">On which intervals is \(f'(x)\) increasing? On which intervals is \(f'(x)\) decreasing?</p></article><article class="task exercise-like" id="task-289"><h6 class="heading"><span class="codenumber">(e)</span></h6>
-<p id="p-1055">List all the intervals where \(f(x)\) is concave up and all the intervals where \(f(x)\) is concave down.</p></article></article><article class="remark remark-like" id="remark-21"><h6 class="heading">
+<div class="introduction" id="introduction-108"><p id="p-1083">Let \(f(x)=x^4-4x^3+4x^2\text{.}\)</p></div>
+<article class="task exercise-like" id="task-292"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-1084">Find all the zeros of \(f'(x)\text{.}\)</p></article><article class="task exercise-like" id="task-293"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-1085">What intervals have been created by subdividing the number line at zeros of \(f'(x)\text{?}\)</p></article><article class="task exercise-like" id="task-294"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-1086">Pick an \(x\)-value that lies in each interval. Determine whether \(f'(x)\) is positive or negative at each point.</p></article><article class="task exercise-like" id="task-295"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-1087">On which intervals is \(f'(x)\) increasing? On which intervals is \(f'(x)\) decreasing?</p></article><article class="task exercise-like" id="task-296"><h6 class="heading"><span class="codenumber">(e)</span></h6>
+<p id="p-1088">List all the intervals where \(f(x)\) is concave up and all the intervals where \(f(x)\) is concave down.</p></article></article><article class="remark remark-like" id="remark-21"><h6 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.6.11</span><span class="period">.</span>
-</h6>Just like the first derivative tells us when a function goes from increasing to decreasing and vice versa, we want to know when a function goes from concave up to concave down and vice versa.</article><article class="definition definition-like" id="definition-15"><h6 class="heading">
+</h6>Just like the first derivative tells us when a function goes from increasing to decreasing and vice versa, we want to know when a function goes from concave up to concave down and vice versa.</article><article class="definition definition-like" id="definition-17"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.6.12</span><span class="period">.</span>
 </h6>
-<p id="p-1056">If \(x=c\) is a point where the concavity of graph of \(f\) changes from concave up to concave down or from concave down to concave up, then \(c\) is an <dfn class="terminology">inflection point</dfn> of \(f\text{.}\)</p></article><article class="activity project-like" id="activity-derivative-concavity5"><h6 class="heading">
+<p id="p-1089">If \(x=c\) is a point where the concavity of graph of \(f\) changes from concave up to concave down or from concave down to concave up, then \(c\) is an <dfn class="terminology">inflection point</dfn> of \(f\text{.}\)</p></article><article class="activity project-like" id="activity-derivative-concavity5"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.6.13</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-106"><p id="p-1057">Use the results from <a class="xref" data-knowl="./knowl/activity-derivative-concavity4.html" title="Activity 3.6.10">Activity 3.6.10</a> to identify all of the inflection points of \(f(x)=x^4-4x^3+4x^2\text{.}\)</p></div></article></section></div></main>
+<div class="introduction" id="introduction-109"><p id="p-1090">Use the results from <a class="xref" data-knowl="./knowl/activity-derivative-concavity4.html" title="Activity 3.6.10">Activity 3.6.10</a> to identify all of the inflection points of \(f(x)=x^4-4x^3+4x^2\text{.}\)</p></div></article></section></div></main>
 </div>
 </body>
 </html>

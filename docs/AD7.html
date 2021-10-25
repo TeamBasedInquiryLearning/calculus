@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-10-25T01:46:04Z       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Cal1 Graphing with derivatives (AD7)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus 1 for Team-Based Inquiry Learning:</span> <span class="subtitle">Fall 2021 Development Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="AD6.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="AD6.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
+<li><a href="slideshow-link.html" data-scroll="slideshow-link">Slideshow</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="LT.html" data-scroll="LT"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6">Limits with infinite outputs (LT6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="DF.html" data-scroll="DF"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8">Differentiating inverse functions (DF8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AD.html" data-scroll="AD"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1">Tangents, motion, and marginals (AD1)</a></li>
+<li><a href="AD2.html" data-scroll="AD2">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7" class="active">Graphing with derivatives (AD7)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl"><span class="title">TBIL Resource Library</span></a></li>
+<li class="link"><a href="pretext.html" data-scroll="pretext"><span class="title">Authored with PreTeXt</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="AD7"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.7</span> <span class="title">Graphing with derivatives (AD7)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-24"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
+<ul class="disc"><li id="li-721"><p id="p-1091">Sketch the graph of a differentiable function whose derivatives satisfy given criteria.</p></li></ul></article><p id="p-1092">In <a href="AD5.html" class="internal" title="Section 3.5: Derivative tests (AD5)">Section 3.5</a> and <a href="AD6.html" class="internal" title="Section 3.6: Concavity and inflection (AD6)">Section 3.6</a> we learned how the first and second derivatives give us information about the graph of a function. Specifically, we can determine the intervals where a function is increasing, decreasing, concave up, or concave down as well as any relative extrema or inflection points. Now we will put that information together to draw a sketch of the graph.</p>
+<article class="activity project-like" id="activity-graphing-words"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.7.1</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-110">
+<p id="p-1093">Which of the following best describes the curve graphed below?</p>
+<figure class="figure figure-like" id="dec-cdown"><div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/dec-cdown.png" class="contained" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.2<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
+</div>
+<ol class="upper-alpha">
+<li id="li-722"><p id="p-1094">Increasing and concave up</p></li>
+<li id="li-723"><p id="p-1095">Increasing and concave down</p></li>
+<li id="li-724"><p id="p-1096">Decreasing and concave up</p></li>
+<li id="li-725"><p id="p-1097">Decreasing and concave down</p></li>
+</ol></article><article class="activity project-like" id="activity-graphing-der-signs"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.7.3</span><span class="period">.</span>
+</h6>
+<article class="task exercise-like" id="task-297"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-1098">Which of the following best describes the curve graphed below?</p>
+<figure class="figure figure-like" id="inc-cdown"><div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/inc-cdown.png" class="contained" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3.7.4<span class="period">.</span></span><span class="space"> </span></figcaption></figure><ol class="upper-alpha">
+<li id="li-726"><p id="p-1099">\(f'&gt;0\) and \(f''&gt;0\)</p></li>
+<li id="li-727"><p id="p-1100">\(f'&gt;0\) and \(f''&lt;0 \)</p></li>
+<li id="li-728"><p id="p-1101">\(f'&lt;0\) and \(f''&gt;0\)</p></li>
+<li id="li-729"><p id="p-1102">\(f'&lt;0\) and \(f''&lt;0 \)</p></li>
+</ol></article><article class="task exercise-like" id="task-298"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-1103">For the other three answer choices above that you did not select, sketch a portion of a curve that matches each description.</p></article></article><article class="activity project-like" id="activity-graphing-ac"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.7.5</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-111"><p id="p-1104">For each prompt that follows, sketch a possible graph of a function on the interval \(-3 \lt x \lt 3\) that satisfies the stated properties.</p></div>
+<article class="task exercise-like" id="task-299"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-1105">\(y = f(x)\) such that \(f\) is increasing on \(-3 \lt x \lt 3\text{,}\) concave up on \(-3 \lt x \lt 0\text{,}\) and concave down on \(0 \lt x \lt 3\text{.}\)</p></article><article class="task exercise-like" id="task-300"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-1106">\(y = g(x)\) such that \(g\) is increasing on \(-3 \lt x \lt 3\text{,}\) concave down on \(-3 \lt x \lt 0\text{,}\) and concave up on \(0 \lt x \lt 3\text{.}\)</p></article><article class="task exercise-like" id="task-301"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-1107">\(y = h(x)\) such that \(h\) is decreasing on \(-3 \lt x \lt 3\text{,}\) concave up on \(-3 \lt x \lt -1\text{,}\) neither concave up nor concave down on \(-1 \lt x \lt 1\text{,}\) and concave down on \(1 \lt x \lt 3\text{.}\)</p></article><article class="task exercise-like" id="task-302"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-1108">\(y = p(x)\) such that \(p\) is decreasing and concave down on \(-3 \lt x \lt 0\) and is increasing and concave down on \(0 \lt x \lt 3\text{.}\)</p></article></article><p id="p-1109">We must also be mindful of other characteristics of a function, such as the domain and the existence (or non-existence) of horizontal and vertical asymptotes. <a class="xref" data-knowl="./knowl/activity-graphing-checkit.html" title="Activity 3.7.6">Activity 3.7.6</a> includes those aspects in addition to increasing, decreasing, and concavity.</p>
+<article class="activity project-like" id="activity-graphing-checkit"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.7.6</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-112">
+<p id="p-1110">The following chart describes the values of \(f(x)\) and its first and second derivatives at or between a few given values of \(x\text{,}\) where \(\nexists\) denotes that \(f(x)\) does not exist at that value of \(x\text{.}\)</p>
+<div class="displaymath" id="p-1111">
+\begin{equation*}
+\begin{array}{c|cccccccccccccccccccc}
+x
+&amp; &amp; -8
+&amp; &amp; -6
+&amp; &amp; -3
+&amp; &amp; 0
+&amp; &amp; 2
+&amp; &amp; 5
+&amp; &amp; 8
+&amp; &amp; 11
+&amp; &amp; 13
+\\\hline
+f(x)
+&amp; &amp; 3
+&amp; &amp; 5
+&amp; &amp; \nexists
+&amp; &amp; -5
+&amp; &amp; \nexists
+&amp; &amp; 4
+&amp; &amp; \nexists
+&amp; &amp; -5
+&amp; &amp; -3
+\\
+f'(x) &amp;
++ &amp; &amp;
++ &amp; &amp;
+- &amp; &amp;
+- &amp; &amp;
+- &amp; &amp;
+- &amp; &amp;
++ &amp; &amp;
++ &amp; &amp;
++ &amp; &amp;
++ 
+\\
+f''(x) &amp;
++ &amp; &amp;
+- &amp; &amp;
+- &amp; &amp;
++ &amp; &amp;
+- &amp; &amp;
++ &amp; &amp;
++ &amp; &amp;
+- &amp; &amp;
+- &amp; &amp;
+- 
+\\
+\end{array}
+\end{equation*}
+</div>
+<p id="p-1112">Assume that \(f(x)\) has vertical asymptotes at each \(x\)-value where \(f(x)\) does not exist, that \(\lim_{x\to-\infty}f(x)= 1\text{,}\) and that \(\lim_{x\to\infty}f(x)= -1\text{.}\)</p>
+</div>
+<article class="task exercise-like" id="task-303"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-1113">Use this information to sketch a reasonable graph of \(f(x)\text{.}\)</p></article><article class="task exercise-like" id="task-304"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-1114">Does \(f(x)\) have any relative maxima or relative minima? If so, at what point(s)?</p></article><article class="task exercise-like" id="task-305"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-1115">Does \(f(x)\) have any inflection points? If so, at what point(s)?</p></article></article><p id="p-1116">Now we will practice sketching the graph of a function from start to finish. We'll begin with an overview of the process.</p>
+<article class="remark remark-like" id="guide-curve-sketching"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.7.7</span><span class="period">.</span><span class="space"> </span><span class="title">A guide to curve sketching.</span>
+</h6>
+<ol id="p-1117" class="decimal">
+<li id="li-730"><p id="p-derived-li-730">Identify the domain of the function.</p></li>
+<li id="li-731"><p id="p-derived-li-731">Identify any vertical or horizontal asymptotes, if they exist.</p></li>
+<li id="li-732"><p id="p-derived-li-732">Find \(f'(x)\text{.}\) Then use it to determine the intervals where the function is increasing and the intervals where the function is decreasing. State any relative extrema.</p></li>
+<li id="li-733"><p id="p-derived-li-733">Find \(f''(x)\text{.}\) Then use it to determine the intervals where the function is concave up and the intervals where the function is concave down. State any inflection points.</p></li>
+<li id="li-734"><p id="p-derived-li-734">Put everything together and draw sketch.</p></li>
+</ol></article><article class="activity project-like" id="activity-graphing-full"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.7.8</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-113">Sketch the graph of each of the following functions using the guide to curve sketching found in <a class="xref" data-knowl="./knowl/guide-curve-sketching.html" title="Remark 3.7.7: A guide to curve sketching">Remark 3.7.7</a>
+</div>
+<article class="task exercise-like" id="task-306"><h6 class="heading"><span class="codenumber">(a)</span></h6>\(f(x)=x^4-4x^3+10\)</article><article class="task exercise-like" id="task-307"><h6 class="heading"><span class="codenumber">(b)</span></h6>\(f(x)=\frac{x^2-4}{x^2-9}\)</article><article class="task exercise-like" id="task-308"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-1118">\(f(x)=x+2\cos x\) on the interval \([0,2\pi]\)</p></article><article class="task exercise-like" id="task-309"><h6 class="heading"><span class="codenumber">(d)</span></h6>\(f(x)=\frac{x^2+x-2}{x+3}\)</article><article class="task exercise-like" id="task-310"><h6 class="heading"><span class="codenumber">(e)</span></h6>\(f(x)=\frac{x}{\sqrt{x^2+2}}\)</article><article class="task exercise-like" id="task-311"><h6 class="heading"><span class="codenumber">(f)</span></h6>\(f(x)=x^6+\frac{12}{5}x^5-12x^4+10\)</article></article></section></div></main>
+</div>
+</body>
+</html>
