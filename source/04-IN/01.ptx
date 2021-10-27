@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="IN1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Tangents, motion, and marginals (IN1) </title>
+  <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/01.ptx" />
+      </li>
+    </ul>
+  </objectives>
+
+<!--   <activity>
+    <introduction>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </introduction>
+  </activity> -->
+    
+    
+<definition><p>
+The tangent line of a function <m>f(x)</m> at <m>x=a</m> is the linear function <m>L(x)</m>
+<me>L(x) = f'(a)(x-a) + f(a). </me>
+Notice that this is the linear function with slope <m>f'(a)</m> and passing through <m>(a,f(a))</m> in point-slope form.
+</p></definition>
+
+      <activity>
+    <introduction>
+      <p>For the following functions, find the required tangent line.</p>
+    </introduction>
+          <task> <p> Find the tangent line to <m>f(x) = \ln(x)</m> at <m>x=1</m></p>
+               <ol label="A">
+                <li><p>  <m>L(x) = x</m> </p></li>
+                  <li><p>  <m>L(x) = x+1</m></p></li> 
+                  <li><p>  <m>L(x)= x - 1</m> </p></li>     
+       <li><p>  <m>L(x)= -x + 1</m> </p></li>               
+    </ol>      
+          </task>
+           <task> <p> Find the tangent line to <m>f(x) = e^x</m> at <m>x=0</m></p>
+               <ol label="A">
+                <li><p>  <m>L(x) = x</m> </p></li>
+                  <li><p>  <m>L(x) = x+1</m></p></li> 
+                  <li><p>  <m>L(x)= x - 1</m> </p></li>     
+       <li><p>  <m>L(x)= -x + 1</m> </p></li>               
+    </ol>      
+          </task>
+  </activity>
+    
+<activity>
+ 
+                <p>
+                Let <m>f(x) = -2 \, x^{4} + 4 \, x^{2} - x + 5</m>. Find an equation of the line tangent to the graph at the point <m>(-2, -9)</m>.
+                </p>
+    </activity>
+
+    <definition><p>
+        If a particle has position function <m>s = f(t)</m>, where <m>t</m> is measured in seconds and <m>s</m> is measured in meters, then 
+        <ul>
+        <li><p><m>v(t) = f'(t)</m> is the velocity of the particle </p></li>
+        <li><p><m>a(t) = f''(t)</m> is the acceleration of the particle </p></li>
+        </ul>
+        
+        </p></definition>
+
+<activity>
+    <introduction>
+       <p> A particle moves on a vertical line so that its <m>y</m> coordinate at time <m>t</m> is </p>
+<me> y = t^{3}-9t^{2}+24t + 3 </me>
+<p>for <m>t\geq 0</m>. Here <m>t</m> is measured in seconds and <m>y</m> is measured in feet. </p>
+</introduction>
+    <task><p>Find the velocity and acceleration functions.</p></task>
+     <task><p>Sketch graphs of the position, velocity and acceleration functions for <m>0 \leq t \leq 5</m>.</p></task>
+    <task><p>When is the particle moving upward and when is it moving downward?</p></task>
+    <task><p>When is the particle's velocity increasing?</p></task>
+    <task><p>Find the total distance that the particle travels in the time interval <m>0 \leq t \leq 5</m>. Careful: the total distance is not the same as the displacement! Compute how much the particle moves up and add it to how much the particle moves down. </p></task>
+     </activity>   
+     
+     
+    <observation><p>In some cases, we want to also consider the speed of a particle, which is the absolute value of the velocity. In symbols <m>|v(t)|= |f'(t)|</m> is the speed of the particle.</p></observation>
+    
+      <activity xml:id = "speed">
+    <introduction>
+      <p>
+          Consider the speed of a particle. What is the behavior of the speed in relation to velocity and acceleration? </p>
+    </introduction>
+    <ol label="A">
+                <li><p>  The speed is always positive and it is increasing when the velocity and the acceleration have the same sign. </p></li>
+                <li><p>  The speed is positive when the velocity is positive and negative when the velocity is negative. </p></li>
+                <li><p>  The speed is positive when the acceleration is positive and negative when the acceleration is negative. </p></li>
+             <li><p>  The speed is always positive and it is increasing when the velocity and the acceleration have opposite signs. </p></li>
+           
+    </ol>      
+    </activity>
+  
+<definition><p> In a parametric motion on a curve <m>C</m> given by <m>x=f(t)</m> and <m>y=g(t)</m> we have that </p>
+    <ul>
+    <li><p><m>\frac{dx}{dt}=f'(t)</m> is the rate of change of <m>f(t)</m>, one component of the velocity</p></li>
+         <li><p><m>\frac{dy}{dt}=g'(t)</m> is the rate of change of <m>g(t)</m>, one component of the velocity</p></li>
+        <li><p><m>\frac{dy}{dx}</m> is the actual velocity of the object and by the chain rule <m>\frac{dy}{dx} = \frac{g'(t)}{f'(t)} </m></p></li>
+    </ul>
+</definition>
+
+    <activity>
+    <introduction><p>An airplane is cruising at a fixed height and traveling in a pattern described by the parametric equations</p>
+        <me>x = 4 t , \quad  y = -t^4 + 4t - 1 , </me>
+        <p>where <m>x, y</m> have units of miles, and <m>t</m> is in hours.  </p></introduction>
+        <task>
+        <p>Find the slope of the curve.
+            </p></task>
+          <task>
+        <p>What is the slope of the curve at <m>(0,-1)</m>.
+            </p></task>
+         <task>
+        <p>Write the equation of the tangent line to the curve at  <m>(0,-1)</m>.
+            </p></task>
+    </activity>
+
+<definition><p>
+    If <m>C (x)</m> is the cost of producing <m>x</m> items and <m>R(x)</m> is the revenue from selling <m>x</m> items, then <m>P(x)= R(x) - C(x)</m> is the profit. We can study their derivatives, the marginals
+    <ul>
+    <li><m>C'(x)</m> is the marginal cost</li>
+    <li><m>R'(x)</m> is the marginal revenue</li>
+    <li><m>P'(x)= R'(x) - C'(x)</m> is the marginal profit</li>
+    </ul>
+    </p></definition>
+
+<activity>
+    <introduction><p>The manager of a computer shop has to decide how many computers to store in the back of the shop. If she stores a large number, she has to pay
+extra in storage costs. If she stores only a small number, she will have to reorder
+more often, which will involve additional handling costs. She has found that if she
+stores <m>x</m> computers, the storage and handling costs will
+be <m>C</m> dollars, where
+<me>C(x) = 10x^{3}-900x^{2}+16000x+210000 </me>
+</p></introduction>
+     <task>
+        <p> What is the fixed cost of the computer shop, the cost when no computers are in storage? In practical terms this may account for rent and utilities expenses.
+            </p></task>
+          <task>
+        <p>Find the marginal cost
+            </p></task>
+         <task>
+        <p>Now suppose that <m>x</m> computers give revenue <m>R(x) = 1000x</m>. What is the marginal revenue? What is the real world interpretation of your finding?
+            </p></task>
+    <task>
+        <p>Find a formula for the profit function <m>P(x)</m> and find the marginal profit using the marginal revenue and the marginal cost.
+            </p></task>
+    </activity>
+
+
+<definition>
+    <p> A cooling object has temperature modelled by </p>
+<me>y=  a e^{-kt} +c , </me>
+<p> where <m>a,c,k</m> are positive constants determined by the local conditions.
+    </p></definition>
+
+
+<activity>
+    <introduction>
+    <p> Consider a cup of coffee initially at <m> 100^\circ</m>F. The said cup of coffee was forgotten this morning in my living room where the thermostat is set at <m>72^\circ</m>F. I also observed that when I initially prepared the coffee, the temperature was decreasing at a rate of <m>3.8</m> degrees per minute.
+        </p></introduction>
+    <task>
+        <p> In the long run, what temperature do you expect the coffee to tend to? Use this information in the model <m>y=ae^{-kt}t+c</m> to determine the value of <m>c</m>.
+            </p></task>
+    <task>
+        <p> Using the initial temperature of the coffee and your value of <m>c</m>, find the value of <m>a</m> in the model <m>y=ae^{-kt}t+c</m>.
+            </p></task>
+     <task>
+        <p> The scenario also gives you information about the value of the rate of change at <m>t=0</m>. Use this additional information to determine the model <m>y=ae^{-kt}t+c</m> completely.
+            </p></task>
+     <task>
+        <p>  You should find that the temperature model for this coffee cup is <m>y= 72 + 38 e^{-0.1t}</m>. Explain how the values of each parameter connects to the information given.
+    </p></task>
+    </activity>    
+</section>
