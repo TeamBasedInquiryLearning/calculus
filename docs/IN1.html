@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-10-27T13:39:47Z       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Cal1 Tangents, motion, and marginals (IN1)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus 1 for Team-Based Inquiry Learning:</span> <span class="subtitle">Fall 2021 Development Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="IN.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="IN.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="IN.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="IN.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
+<li><a href="slideshow-link.html" data-scroll="slideshow-link">Slideshow</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="LT.html" data-scroll="LT"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6">Limits with infinite outputs (LT6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="DF.html" data-scroll="DF"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8">Differentiating inverse functions (DF8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AD.html" data-scroll="AD"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1">Tangents, motion, and marginals (AD1)</a></li>
+<li><a href="AD2.html" data-scroll="AD2">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7">Graphing with derivatives (AD7)</a></li>
+<li><a href="AD8.html" data-scroll="AD8">Applied optimization (AD8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="IN.html" data-scroll="IN"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul><li><a href="IN1.html" data-scroll="IN1" class="active">Tangents, motion, and marginals (IN1)</a></li></ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl"><span class="title">TBIL Resource Library</span></a></li>
+<li class="link"><a href="pretext.html" data-scroll="pretext"><span class="title">Authored with PreTeXt</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="IN1"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4.1</span> <span class="title">Tangents, motion, and marginals (IN1)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-27"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
+<ul class="disc"><li id="li-795"><p id="p-1206">Use derivatives to answer questions about rates of change and equations of tangents.</p></li></ul></article><article class="definition definition-like" id="definition-22"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.1.1</span><span class="period">.</span>
+</h6>
+<p id="p-1207">The tangent line of a function \(f(x)\) at \(x=a\) is the linear function \(L(x)\)</p>
+<div class="displaymath">
+\begin{equation*}
+L(x) = f'(a)(x-a) + f(a). 
+\end{equation*}
+</div>
+<p class="continuation">Notice that this is the linear function with slope \(f'(a)\) and passing through \((a,f(a))\) in point-slope form.</p></article><article class="activity project-like" id="activity-166"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.2</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-124"><p id="p-1208">For the following functions, find the required tangent line.</p></div>
+<article class="task exercise-like" id="task-341"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-1209">Find the tangent line to \(f(x) = \ln(x)\) at \(x=1\)</p>
+<ol class="upper-alpha">
+<li id="li-796"><p id="p-1210">\(\displaystyle L(x) = x\)</p></li>
+<li id="li-797"><p id="p-1211">\(\displaystyle L(x) = x+1\)</p></li>
+<li id="li-798"><p id="p-1212">\(\displaystyle L(x)= x - 1\)</p></li>
+<li id="li-799"><p id="p-1213">\(\displaystyle L(x)= -x + 1\)</p></li>
+</ol></article><article class="task exercise-like" id="task-342"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-1214">Find the tangent line to \(f(x) = e^x\) at \(x=0\)</p>
+<ol class="upper-alpha">
+<li id="li-800"><p id="p-1215">\(\displaystyle L(x) = x\)</p></li>
+<li id="li-801"><p id="p-1216">\(\displaystyle L(x) = x+1\)</p></li>
+<li id="li-802"><p id="p-1217">\(\displaystyle L(x)= x - 1\)</p></li>
+<li id="li-803"><p id="p-1218">\(\displaystyle L(x)= -x + 1\)</p></li>
+</ol></article></article><article class="activity project-like" id="activity-167"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.3</span><span class="period">.</span>
+</h6>
+<p id="p-1219">Let \(f(x) = -2 \, x^{4} + 4 \, x^{2} - x + 5\text{.}\) Find an equation of the line tangent to the graph at the point \((-2, -9)\text{.}\)</p></article><article class="definition definition-like" id="definition-23"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.1.4</span><span class="period">.</span>
+</h6>
+<p id="p-1220">If a particle has position function \(s = f(t)\text{,}\) where \(t\) is measured in seconds and \(s\) is measured in meters, then</p>
+<ul class="disc">
+<li id="li-804"><p id="p-1221">\(v(t) = f'(t)\) is the velocity of the particle</p></li>
+<li id="li-805"><p id="p-1222">\(a(t) = f''(t)\) is the acceleration of the particle</p></li>
+</ul></article><article class="activity project-like" id="activity-168"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.5</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-125">
+<p id="p-1223">A particle moves on a vertical line so that its \(y\) coordinate at time \(t\) is</p>
+<div class="displaymath">
+\begin{equation*}
+y = t^{3}-9t^{2}+24t + 3 
+\end{equation*}
+</div>
+<p id="p-1224">for \(t\geq 0\text{.}\) Here \(t\) is measured in seconds and \(y\) is measured in feet.</p>
+</div>
+<article class="task exercise-like" id="task-343"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-1225">Find the velocity and acceleration functions.</p></article><article class="task exercise-like" id="task-344"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-1226">Sketch graphs of the position, velocity and acceleration functions for \(0 \leq t \leq 5\text{.}\)</p></article><article class="task exercise-like" id="task-345"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-1227">When is the particle moving upward and when is it moving downward?</p></article><article class="task exercise-like" id="task-346"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-1228">When is the particle's velocity increasing?</p></article><article class="task exercise-like" id="task-347"><h6 class="heading"><span class="codenumber">(e)</span></h6>
+<p id="p-1229">Find the total distance that the particle travels in the time interval \(0 \leq t \leq 5\text{.}\) Careful: the total distance is not the same as the displacement! Compute how much the particle moves up and add it to how much the particle moves down.</p></article></article><article class="observation remark-like" id="observation-20"><h6 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">4.1.6</span><span class="period">.</span>
+</h6>
+<p id="p-1230">In some cases, we want to also consider the speed of a particle, which is the absolute value of the velocity. In symbols \(|v(t)|= |f'(t)|\) is the speed of the particle.</p></article><article class="activity project-like" id="speed"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.7</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-126"><p id="p-1231">Consider the speed of a particle. What is the behavior of the speed in relation to velocity and acceleration?</p></div>
+<ol class="upper-alpha">
+<li id="li-806"><p id="p-1232">The speed is always positive and it is increasing when the velocity and the acceleration have the same sign.</p></li>
+<li id="li-807"><p id="p-1233">The speed is positive when the velocity is positive and negative when the velocity is negative.</p></li>
+<li id="li-808"><p id="p-1234">The speed is positive when the acceleration is positive and negative when the acceleration is negative.</p></li>
+<li id="li-809"><p id="p-1235">The speed is always positive and it is increasing when the velocity and the acceleration have opposite signs.</p></li>
+</ol></article><article class="definition definition-like" id="definition-24"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.1.8</span><span class="period">.</span>
+</h6>
+<p id="p-1236">In a parametric motion on a curve \(C\) given by \(x=f(t)\) and \(y=g(t)\) we have that</p>
+<ul class="disc">
+<li id="li-810"><p id="p-1237">\(\frac{dx}{dt}=f'(t)\) is the rate of change of \(f(t)\text{,}\) one component of the velocity</p></li>
+<li id="li-811"><p id="p-1238">\(\frac{dy}{dt}=g'(t)\) is the rate of change of \(g(t)\text{,}\) one component of the velocity</p></li>
+<li id="li-812"><p id="p-1239">\(\frac{dy}{dx}\) is the actual velocity of the object and by the chain rule \(\frac{dy}{dx} = \frac{g'(t)}{f'(t)} \)</p></li>
+</ul></article><article class="activity project-like" id="activity-170"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.9</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-127">
+<p id="p-1240">An airplane is cruising at a fixed height and traveling in a pattern described by the parametric equations</p>
+<div class="displaymath">
+\begin{equation*}
+x = 4 t , \quad  y = -t^4 + 4t - 1 , 
+\end{equation*}
+</div>
+<p id="p-1241">where \(x, y\) have units of miles, and \(t\) is in hours.</p>
+</div>
+<article class="task exercise-like" id="task-348"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-1242">Find the slope of the curve.</p></article><article class="task exercise-like" id="task-349"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-1243">What is the slope of the curve at \((0,-1)\text{.}\)</p></article><article class="task exercise-like" id="task-350"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-1244">Write the equation of the tangent line to the curve at  \((0,-1)\text{.}\)</p></article></article><article class="definition definition-like" id="definition-25"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.1.10</span><span class="period">.</span>
+</h6>
+<p id="p-1245">If \(C (x)\) is the cost of producing \(x\) items and \(R(x)\) is the revenue from selling \(x\) items, then \(P(x)= R(x) - C(x)\) is the profit. We can study their derivatives, the marginals</p>
+<ul class="disc">
+<li id="li-813"><p id="p-derived-li-813">\(C'(x)\) is the marginal cost</p></li>
+<li id="li-814"><p id="p-derived-li-814">\(R'(x)\) is the marginal revenue</p></li>
+<li id="li-815"><p id="p-derived-li-815">\(P'(x)= R'(x) - C'(x)\) is the marginal profit</p></li>
+</ul></article><article class="activity project-like" id="activity-171"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.11</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-128">
+<p id="p-1246">The manager of a computer shop has to decide how many computers to store in the back of the shop. If she stores a large number, she has to pay extra in storage costs. If she stores only a small number, she will have to reorder more often, which will involve additional handling costs. She has found that if she stores \(x\) computers, the storage and handling costs will be \(C\) dollars, where</p>
+<div class="displaymath">
+\begin{equation*}
+C(x) = 10x^{3}-900x^{2}+16000x+210000 
+\end{equation*}
+</div>
+</div>
+<article class="task exercise-like" id="task-351"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-1247">What is the fixed cost of the computer shop, the cost when no computers are in storage? In practical terms this may account for rent and utilities expenses.</p></article><article class="task exercise-like" id="task-352"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-1248">Find the marginal cost</p></article><article class="task exercise-like" id="task-353"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-1249">Now suppose that \(x\) computers give revenue \(R(x) = 1000x\text{.}\) What is the marginal revenue? What is the real world interpretation of your finding?</p></article><article class="task exercise-like" id="task-354"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-1250">Find a formula for the profit function \(P(x)\) and find the marginal profit using the marginal revenue and the marginal cost.</p></article></article><article class="definition definition-like" id="definition-26"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.1.12</span><span class="period">.</span>
+</h6>
+<p id="p-1251">A cooling object has temperature modelled by</p>
+<div class="displaymath">
+\begin{equation*}
+y=  a e^{-kt} +c , 
+\end{equation*}
+</div>
+<p id="p-1252">where \(a,c,k\) are positive constants determined by the local conditions.</p></article><article class="activity project-like" id="activity-172"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.1.13</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-129"><p id="p-1253">Consider a cup of coffee initially at \(100^\circ\)F. The said cup of coffee was forgotten this morning in my living room where the thermostat is set at \(72^\circ\)F. I also observed that when I initially prepared the coffee, the temperature was decreasing at a rate of \(3.8\) degrees per minute.</p></div>
+<article class="task exercise-like" id="task-355"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-1254">In the long run, what temperature do you expect the coffee to tend to? Use this information in the model \(y=ae^{-kt}t+c\) to determine the value of \(c\text{.}\)</p></article><article class="task exercise-like" id="task-356"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-1255">Using the initial temperature of the coffee and your value of \(c\text{,}\) find the value of \(a\) in the model \(y=ae^{-kt}t+c\text{.}\)</p></article><article class="task exercise-like" id="task-357"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-1256">The scenario also gives you information about the value of the rate of change at \(t=0\text{.}\) Use this additional information to determine the model \(y=ae^{-kt}t+c\) completely.</p></article><article class="task exercise-like" id="task-358"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-1257">You should find that the temperature model for this coffee cup is \(y= 72 + 38 e^{-0.1t}\text{.}\) Explain how the values of each parameter connects to the information given.</p></article></article></section></div></main>
+</div>
+</body>
+</html>
