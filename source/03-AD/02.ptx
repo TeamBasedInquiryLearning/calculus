@@ -111,7 +111,7 @@ Find the tangent line approximation to <m>x^2</m> at  <m>x=1</m>.</p>
        <li><p>  <m>L(x)= -2x + 1</m> </p></li>               
     </ol>      
  </task>
-<task> <p>Show that for any constant <m>k</m>, the tangent line approximation to <m>x^k</m> at <m>x=1</m> is <m>L(x) = kx + 1</m>. </p> </task>
+<task> <p>Show that for any constant <m>k</m>, the tangent line approximation to <m>x^k</m> at <m>x=1</m> is <m>L(x) = kx -k + 1</m>. </p> </task>
 <task> <p> Someone claims that the square root of 1.1 is about 1.05. Use the linear approximation to check this estimate. Do you think this estimate is about right? Why or why not? </p> </task>
 <task> <p>  Is the actual value <m>\sqrt{1.1}</m> above or below 1.05? What feature of the graph of <m>\sqrt{x}</m> makes this an over or under estimate? </p> </task>
  
@@ -177,8 +177,8 @@ graph of <m>y=p(x)</m> near <m>x=7</m>.
 <!--   Better approximations   -->
 <introduction> <p>
          Let's find the quadratic polynomial </p>
-<me> q(x) = ax^2 +bx +c \quad \text{where $a,b,c$ are parameters}</me>
-    <p>that best approximates the graph of <m>f(x)=\ln(x)</m> at <m>x=1</m>. 
+<me> q(x) = ax^2 +bx +c </me>
+    <p> where <m>a,b,c</m> are parameters to be determined so that <m>q(x)</m> best approximates the graph of <m>f(x)=\ln(x)</m> at <m>x=1</m>. 
     </p>
     </introduction>
     <task><p>We want to choose <m>a,b,c</m> such that our quadratic polynomial resembles <m>f(x)</m> at <m>x=1</m>. First thing, we want <m>f(1)=q(1)</m>. What equation in <m>a,b,c</m> does this condition give you?</p> 
@@ -186,7 +186,7 @@ graph of <m>y=p(x)</m> near <m>x=7</m>.
                 <li><p>  <m>a+b+c = 1</m> </p></li>
                   <li><p>  <m>a+b+c = 0</m></p></li> 
                   <li><p>  <m>c = 0</m> </p></li>     
-       <li><p>  <m>= 1</m> </p></li>               
+       <li><p>  <m>c = 1</m> </p></li>               
     </ol>      
     </task>
     <task><p>We also want <m>f'(1)=q'(1)</m>. What equation in <m>a,b,c</m> does this condition give you?</p></task>

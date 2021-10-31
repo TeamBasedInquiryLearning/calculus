@@ -1,5 +1,142 @@
 <?xml version='1.0' encoding='utf-8'?>
 
+<section xml:id="AD1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Limits and Derivatives (AD9) </title>
+  <objectives>
+    <ul>
+      <li>
+        <xi:include href="outcomes/09.ptx" />
+      </li>
+    </ul>
+  </objectives>
+    
+    
+<remark><p>When we compute a limit algebraically, we often encounter the indeterminate form </p>
+<me>\frac{0}{0}</me>
+    <p> but this means that limit can equal any number, infinity, or might even not exist. When we encounter an indeterminate form, we just do not know (yet) what the value of the limit is. </p></remark>
+
+<activity>
+    <introduction> <p>We can compute limits that give indeterminate forms via algebraic manipulations. Consider </p>
+<me> \lim_{x\to 1} \frac{2x - 2}{x^2 -1} .</me> </introduction>
+    <task>
+    <p>  Verify that this limit gives an indeterminate form of the type <m>\frac{0}{0}</m>.
+        </p></task>
+    <task>
+    <p> In the limit, you can cancel common factors. After you simplify the fraction, what is this limit equal to?
+        </p>
+        <ol label="A">
+                <li><p>  2 </p></li>
+                  <li><p>  1 </p></li> 
+                  <li><p>  <m>\frac{1}{2}</m> </p></li>     
+       <li><p> The limit does not exist. </p></li>               
+    </ol>      
+    </task>
+    
+    </activity>
+
+
+<remark><p> Consider the limits </p>
+<me> \lim_{h \to 0} \frac{f(a+h)-f(a)}{h} = f'(a). </me>
+<me>  \lim_{x \to a} \frac{f(x)-f(a)}{x-a} = f'(a). </me>
+    <p>Notice that these limits give indeterminate forms of the type <m>\frac{0}{0}</m>! However, these limits are equal to the limit defintion of <m>f'(a)</m>, the derivative of <m>f(x)</m> at <m>x=a</m>. If you can compute <m>f'(a)</m>, then you can compute the value of the limit! </p> </remark>
+
+<activity>
+    <introduction> <p> Use the limit definition of the derivative to compute the following limits. Each limit is <m>f'(a)</m>, the derivative of some function <m>f(x)</m> at <m>x=a</m>. You need to determine the function and the point to then find the value of the limit: <m>f'(a)</m>.</p>
+ </introduction>
+    <task>
+    <p>  Notice that <m>\displaystyle \lim_{x\to 0} \frac{e^{2+x}-e^2}{x}</m> is the limit definition of the derivative of <m>e^x</m> at <m>x=2</m> (where <m>x</m> was used for <m>h</m>). Given these observations, what is this limit equal to?
+        </p>
+    <ol label="A">
+                <li><p>  2 </p></li>
+                  <li><p>  <m>e</m> </p></li> 
+                  <li><p>  <m>e^2</m> </p></li>     
+       <li><p> The limit does not exist. </p></li>               
+    </ol>      
+    </task>
+    <task>
+    <p>  Consider <m>\displaystyle \lim_{x\to 0}  \frac{\ln(1+x)}{x}</m>. This limit is also the limit definition of some derivative at a point. What is the value of this limit?
+        </p>
+    <ol label="A">
+                <li><p>  1 </p></li>
+                  <li><p> 0 </p></li> 
+                  <li><p>  <m>\ln(2)</m> </p></li>     
+       <li><p> The limit does not exist. </p></li>               
+    </ol>      
+    </task>
+    
+     </activity>
+    <activity><introduction><p> Compute the following limits using the limit defintion of the derivative at a point.</p> </introduction>
+    <task><p> <m>\displaystyle \lim_{x\to 0} \frac{\sin(x)}{x}</m></p></task>
+     <task><p> <m>\displaystyle \lim_{x\to 0} \frac{\tan(x)}{x}</m></p></task>
+      <task><p> <m>\displaystyle \lim_{x\to 0} \frac{\cos(\frac{\pi}{3}+x) - \frac{1}{2} }{x}</m></p></task>  
+    
+    </activity>
+
+    <remark><p>When we compute a limit algebraically, we might encounter the indeterminate form </p>
+<me>\frac{\infty}{\infty}</me>
+    <p> but this means that limit can equal any number, infinity, or might even not exist. When we encounter an indeterminate form, we just do not know (yet) what the value of the limit is. </p></remark>
+
+<activity>
+    <introduction> <p>We can compute limits that give indeterminate forms via algebraic manipulations. Consider </p>
+<me> \lim_{x\to +\infty} \frac{2x^2 + 1}{x^2 -1} .</me> </introduction>
+    <task>
+    <p>  Verify that this limit gives an indeterminate form of the type <m>\frac{\infty}{\infty}</m>.
+        </p></task>
+    <task>
+    <p> You can manipulate this fraction algebraically by dividing numerator and denominator by <m>x^2</m>. Notice that <m>\pm \frac{1}{x^2} \to 0</m> as <m>x \to \infty </m>. So after you manipulate and simplify the fraction, what is this limit equal to?
+        </p>
+        <ol label="A">
+                <li><p>  2 </p></li>
+                  <li><p>  1 </p></li> 
+                  <li><p>  <m>\frac{1}{2}</m> </p></li>     
+       <li><p> The limit does not exist. </p></li>               
+    </ol>      
+    </task>
+    
+    </activity>
+
+
+<theorem> <title>L' Hospital Rule</title> <statement> <p> If for the limit of <m>\frac{f(x)}{g(x)}</m> as <m>x \to a</m> we have one of the indeterminate forms <m>\frac{0}{0}</m> or <m>\frac{\infty}{\infty}</m>  and <m>f(x), g(x)</m> are both differentiable around <m>x = a</m>, then </p>
+<me> \lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \frac{f'(x)}{g'(x)} </me> 
+<p>provided that the limit exists! </p> 
+    </statement>
+    </theorem>
+
+
+
+<activity><p>Look back at some limits that gave you an indeterminate form. Can you use l'Hospital rule to find the limit? If using the L'Hospital rule is appropriate... then try to compute the limit this way! It should give you the same result...  </p></activity>
+
+
+<activity>
+    <introduction><p>
+    For the following limits, check if they give an indeterminate form. If they do, try to use l'Hospital rule. Does it help? It may or may not... or you may just need to use the rule repeatedly! Either way, try to compute the value of the limit. </p>
+    </introduction>
+    <task>
+    <p><m>\displaystyle \lim_{x\to 0} \frac{\sin(x)}{x}</m></p>
+    </task>
+    <task>
+    <p><m>\displaystyle \lim_{x\to 0} \frac{e^x-1}{x}</m></p>
+    </task>
+     <task>
+    <p><m>\displaystyle \lim_{x\to \infty} \frac{3x^2+3}{x^2+ 2x}</m></p>
+    </task>
+     <task>
+    <p><m>\displaystyle \lim_{x\to 0^{+}} \frac{\ln(x)}{-x}</m></p>
+    </task>
+    <task>
+    <p><m>\displaystyle \lim_{x\to 0^{+}} \frac{\ln(x)}{1/x}</m></p>
+    </task>
+     <task>
+    <p><m>\displaystyle \lim_{x\to 0} \frac{\sin^2(3x)}{5x^3 - 3x^2}</m></p>
+    </task>
+    </activity>
+
+</section>
+
+
+
+<!-- <?xml version='1.0' encoding='utf-8'?>
+
 <section xml:id="AD9" xmlns:xi="http://www.w3.org/2001/XInclude">
    <title>Concavity</title>
     <p permid="Gpt">
@@ -531,5 +668,4 @@
       </p>
     </introduction>
   </activity>
-
-</section>
+ -->
