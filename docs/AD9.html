@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-11-01T16:12:00Z       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Cal1 Limits and Derivatives (AD9)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus 1 for Team-Based Inquiry Learning:</span> <span class="subtitle">Fall 2021 Development Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="AD8.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="04-IN.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="AD8.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a class="next-button button toolbar-item" href="04-IN.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
+<li><a href="slideshow-link.html" data-scroll="slideshow-link">Slideshow</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="LT.html" data-scroll="LT"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6">Limits with infinite outputs (LT6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="DF.html" data-scroll="DF"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8">Differentiating inverse functions (DF8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AD.html" data-scroll="AD"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1">Tangents, motion, and marginals (AD1)</a></li>
+<li><a href="AD2.html" data-scroll="AD2">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7">Graphing with derivatives (AD7)</a></li>
+<li><a href="AD8.html" data-scroll="AD8">Applied optimization (AD8)</a></li>
+<li><a href="AD9.html" data-scroll="AD9" class="active">Limits and Derivatives (AD9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="04-IN.html" data-scroll="04-IN"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul><li><a href="IN2.html" data-scroll="IN2">Approximating definite integrals (IN2)</a></li></ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl"><span class="title">TBIL Resource Library</span></a></li>
+<li class="link"><a href="pretext.html" data-scroll="pretext"><span class="title">Authored with PreTeXt</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="AD9"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.9</span> <span class="title">Limits and Derivatives (AD9)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-26"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
+<ul class="disc"><li id="li-782"><p id="p-1195">Compute the values of indeterminate limits using L'Hopital's Rule.</p></li></ul></article><article class="remark remark-like" id="remark-24"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.9.1</span><span class="period">.</span>
+</h6>
+<p id="p-1196">When we compute a limit algebraically, we often encounter the indeterminate form</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{0}{0}
+\end{equation*}
+</div>
+<p id="p-1197">but this means that limit can equal any number, infinity, or might even not exist. When we encounter an indeterminate form, we just do not know (yet) what the value of the limit is.</p></article><article class="activity project-like" id="activity-167"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.9.2</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-123">
+<p id="p-1198">We can compute limits that give indeterminate forms via algebraic manipulations. Consider</p>
+<div class="displaymath">
+\begin{equation*}
+\lim_{x\to 1} \frac{2x - 2}{x^2 -1} .
+\end{equation*}
+</div>
+</div>
+<article class="task exercise-like" id="task-345"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-1199">Verify that this limit gives an indeterminate form of the type \(\frac{0}{0}\text{.}\)</p></article><article class="task exercise-like" id="task-346"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-1200">In the limit, you can cancel common factors. After you simplify the fraction, what is this limit equal to?</p>
+<ol class="upper-alpha">
+<li id="li-783"><p id="p-1201">2</p></li>
+<li id="li-784"><p id="p-1202">1</p></li>
+<li id="li-785"><p id="p-1203">\(\displaystyle \frac{1}{2}\)</p></li>
+<li id="li-786"><p id="p-1204">The limit does not exist.</p></li>
+</ol></article></article><article class="remark remark-like" id="remark-25"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.9.3</span><span class="period">.</span>
+</h6>
+<p id="p-1205">Consider the limits</p>
+<div class="displaymath">
+\begin{equation*}
+\lim_{h \to 0} \frac{f(a+h)-f(a)}{h} = f'(a). 
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+\lim_{x \to a} \frac{f(x)-f(a)}{x-a} = f'(a). 
+\end{equation*}
+</div>
+<p id="p-1206">Notice that these limits give indeterminate forms of the type \(\frac{0}{0}\text{!}\) However, these limits are equal to the limit defintion of \(f'(a)\text{,}\) the derivative of \(f(x)\) at \(x=a\text{.}\) If you can compute \(f'(a)\text{,}\) then you can compute the value of the limit!</p></article><article class="activity project-like" id="activity-168"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.9.4</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-124"><p id="p-1207">Use the limit definition of the derivative to compute the following limits. Each limit is \(f'(a)\text{,}\) the derivative of some function \(f(x)\) at \(x=a\text{.}\) You need to determine the function and the point to then find the value of the limit: \(f'(a)\text{.}\)</p></div>
+<article class="task exercise-like" id="task-347"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-1208">Notice that \(\displaystyle \lim_{x\to 0} \frac{e^{2+x}-e^2}{x}\) is the limit definition of the derivative of \(e^x\) at \(x=2\) (where \(x\) was used for \(h\)). Given these observations, what is this limit equal to?</p>
+<ol class="upper-alpha">
+<li id="li-787"><p id="p-1209">2</p></li>
+<li id="li-788"><p id="p-1210">\(\displaystyle e\)</p></li>
+<li id="li-789"><p id="p-1211">\(\displaystyle e^2\)</p></li>
+<li id="li-790"><p id="p-1212">The limit does not exist.</p></li>
+</ol></article><article class="task exercise-like" id="task-348"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-1213">Consider \(\displaystyle \lim_{x\to 0}  \frac{\ln(1+x)}{x}\text{.}\) This limit is also the limit definition of some derivative at a point. What is the value of this limit?</p>
+<ol class="upper-alpha">
+<li id="li-791"><p id="p-1214">1</p></li>
+<li id="li-792"><p id="p-1215">0</p></li>
+<li id="li-793"><p id="p-1216">\(\displaystyle \ln(2)\)</p></li>
+<li id="li-794"><p id="p-1217">The limit does not exist.</p></li>
+</ol></article></article><article class="activity project-like" id="activity-169"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.9.5</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-125"><p id="p-1218">Compute the following limits using the limit defintion of the derivative at a point.</p></div>
+<article class="task exercise-like" id="task-349"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-1219">\(\displaystyle \lim_{x\to 0} \frac{\sin(x)}{x}\)</p></article><article class="task exercise-like" id="task-350"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-1220">\(\displaystyle \lim_{x\to 0} \frac{\tan(x)}{x}\)</p></article><article class="task exercise-like" id="task-351"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-1221">\(\displaystyle \lim_{x\to 0} \frac{\cos(\frac{\pi}{3}+x) - \frac{1}{2} }{x}\)</p></article></article><article class="remark remark-like" id="remark-26"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.9.6</span><span class="period">.</span>
+</h6>
+<p id="p-1222">When we compute a limit algebraically, we might encounter the indeterminate form</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{\infty}{\infty}
+\end{equation*}
+</div>
+<p id="p-1223">but this means that limit can equal any number, infinity, or might even not exist. When we encounter an indeterminate form, we just do not know (yet) what the value of the limit is.</p></article><article class="activity project-like" id="activity-170"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.9.7</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-126">
+<p id="p-1224">We can compute limits that give indeterminate forms via algebraic manipulations. Consider</p>
+<div class="displaymath">
+\begin{equation*}
+\lim_{x\to +\infty} \frac{2x^2 + 1}{x^2 -1} .
+\end{equation*}
+</div>
+</div>
+<article class="task exercise-like" id="task-352"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-1225">Verify that this limit gives an indeterminate form of the type \(\frac{\infty}{\infty}\text{.}\)</p></article><article class="task exercise-like" id="task-353"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-1226">You can manipulate this fraction algebraically by dividing numerator and denominator by \(x^2\text{.}\) Notice that \(\pm \frac{1}{x^2} \to 0\) as \(x \to \infty \text{.}\) So after you manipulate and simplify the fraction, what is this limit equal to?</p>
+<ol class="upper-alpha">
+<li id="li-795"><p id="p-1227">2</p></li>
+<li id="li-796"><p id="p-1228">1</p></li>
+<li id="li-797"><p id="p-1229">\(\displaystyle \frac{1}{2}\)</p></li>
+<li id="li-798"><p id="p-1230">The limit does not exist.</p></li>
+</ol></article></article><article class="theorem theorem-like" id="theorem-20"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.9.8</span><span class="period">.</span><span class="space"> </span><span class="title">L' Hospital Rule.</span>
+</h6>
+<p id="p-1231">If for the limit of \(\frac{f(x)}{g(x)}\) as \(x \to a\) we have one of the indeterminate forms \(\frac{0}{0}\) or \(\frac{\infty}{\infty}\)  and \(f(x), g(x)\) are both differentiable around \(x = a\text{,}\) then</p>
+<div class="displaymath">
+\begin{equation*}
+\lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \frac{f'(x)}{g'(x)} 
+\end{equation*}
+</div>
+<p id="p-1232">provided that the limit exists!</p></article><article class="activity project-like" id="activity-171"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.9.9</span><span class="period">.</span>
+</h6>
+<p id="p-1233">Look back at some limits that gave you an indeterminate form. Can you use l'Hospital rule to find the limit? If using the L'Hospital rule is appropriate... then try to compute the limit this way! It should give you the same result...</p></article><article class="activity project-like" id="activity-172"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.9.10</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-127"><p id="p-1234">For the following limits, check if they give an indeterminate form. If they do, try to use l'Hospital rule. Does it help? It may or may not... or you may just need to use the rule repeatedly! Either way, try to compute the value of the limit.</p></div>
+<article class="task exercise-like" id="task-354"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-1235">\(\displaystyle \lim_{x\to 0} \frac{\sin(x)}{x}\)</p></article><article class="task exercise-like" id="task-355"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-1236">\(\displaystyle \lim_{x\to 0} \frac{e^x-1}{x}\)</p></article><article class="task exercise-like" id="task-356"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-1237">\(\displaystyle \lim_{x\to \infty} \frac{3x^2+3}{x^2+ 2x}\)</p></article><article class="task exercise-like" id="task-357"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-1238">\(\displaystyle \lim_{x\to 0^{+}} \frac{\ln(x)}{-x}\)</p></article><article class="task exercise-like" id="task-358"><h6 class="heading"><span class="codenumber">(e)</span></h6>
+<p id="p-1239">\(\displaystyle \lim_{x\to 0^{+}} \frac{\ln(x)}{1/x}\)</p></article><article class="task exercise-like" id="task-359"><h6 class="heading"><span class="codenumber">(f)</span></h6>
+<p id="p-1240">\(\displaystyle \lim_{x\to 0} \frac{\sin^2(3x)}{5x^3 - 3x^2}\)</p></article></article></section></div></main>
+</div>
+</body>
+</html>
