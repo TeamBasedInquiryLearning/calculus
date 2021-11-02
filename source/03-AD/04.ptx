@@ -88,7 +88,7 @@
 
 <observation>
     <p>
-    From <xref ref="activity-ad-extrema-1"/> we notice that there are some issues when determining the absolute mimimum and maximum values of a function from its graph alone.  This leads us to the following Extreme Value Theorem.
+    From <xref ref="activity-ad-extrema-1"/> we notice that there are some issues when determining the absolute mimimum and maximum values of a function from its graph alone.  The Extreme Value Theorem will guarantee the existence of extrema on a closed interval. Thne we will learn about critical points to be able to detect extrema algebraically.
     </p>
 </observation>
     
@@ -169,7 +169,7 @@ A strategy for finding the extreme values of a function will be to consider all 
     
 <activity xml:id = "activity-ad-extrema-5">
 <statement>
-    <p>Which of the following are critical numbers for <m>f(x) = \frac{1}{3}x^3 - 2x + 2</m>? Select all that apply.</p>
+    <p>Which of the following are critical numbers for <m>f(x) = \frac{1}{3}x^3 - 2x + 2</m>?</p>
     <ol label="A">
                 <li><m>x = \sqrt{2}</m> and <m>x = -\sqrt{2}</m>. </li>
                 <li><m>x = \sqrt{2}</m>. </li>
