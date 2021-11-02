@@ -38,7 +38,7 @@
 <remark><p> Consider the limits </p>
 <me> \lim_{h \to 0} \frac{f(a+h)-f(a)}{h} = f'(a). </me>
 <me>  \lim_{x \to a} \frac{f(x)-f(a)}{x-a} = f'(a). </me>
-    <p>Notice that these limits give indeterminate forms of the type <m>\frac{0}{0}</m>! However, these limits are equal to the limit defintion of <m>f'(a)</m>, the derivative of <m>f(x)</m> at <m>x=a</m>. If you can compute <m>f'(a)</m>, then you can compute the value of the limit! </p> </remark>
+    <p>Notice that these limits give indeterminate forms of the type <m>\frac{0}{0}</m>. However, these limits are equal to the limit defintion of <m>f'(a)</m>, the derivative of <m>f(x)</m> at <m>x=a</m>. If you can compute <m>f'(a)</m>, then you can compute the value of the limit. </p> </remark>
 
 <activity>
     <introduction> <p> Use the limit definition of the derivative to compute the following limits. Each limit is <m>f'(a)</m>, the derivative of some function <m>f(x)</m> at <m>x=a</m>. You need to determine the function and the point to then find the value of the limit: <m>f'(a)</m>.</p>
@@ -96,7 +96,7 @@
     </activity>
 
 
-<theorem> <title>L' Hospital Rule</title> <statement> <p> If for the limit of <m>\frac{f(x)}{g(x)}</m> as <m>x \to a</m> we have one of the indeterminate forms <m>\frac{0}{0}</m> or <m>\frac{\infty}{\infty}</m>  and <m>f(x), g(x)</m> are both differentiable around <m>x = a</m>, then </p>
+<theorem> <title>L' Hospital's Rule</title> <statement> <p> If for the limit of <m>\frac{f(x)}{g(x)}</m> as <m>x \to a</m> we have one of the indeterminate forms <m>\frac{0}{0}</m> or <m>\frac{\infty}{\infty}</m>  and <m>f(x), g(x)</m> are both differentiable around <m>x = a</m>, then </p>
 <me> \lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \frac{f'(x)}{g'(x)} </me> 
 <p>provided that the limit exists! </p> 
     </statement>
@@ -104,12 +104,12 @@
 
 
 
-<activity><p>Look back at some limits that gave you an indeterminate form. Can you use l'Hospital rule to find the limit? If using the L'Hospital rule is appropriate... then try to compute the limit this way! It should give you the same result...  </p></activity>
+<activity><p>Look back at some limits that gave you an indeterminate form. Can you use l'Hospital's Rule to find the limit? If using the L'Hospital's Rule is appropriate, then try to compute the limit this way. It should give you the same result.  </p></activity>
 
 
 <activity>
     <introduction><p>
-    For the following limits, check if they give an indeterminate form. If they do, try to use l'Hospital rule. Does it help? It may or may not... or you may just need to use the rule repeatedly! Either way, try to compute the value of the limit. </p>
+    For the following limits, check if they give an indeterminate form. If they do, try to use l'Hospital's Rule. Does it help? It may or may not, or you may just need to use the rule repeatedly. Either way, try to compute the value of the following limits. </p>
     </introduction>
     <task>
     <p><m>\displaystyle \lim_{x\to 0} \frac{\sin(x)}{x}</m></p>

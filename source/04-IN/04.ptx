@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="IN4" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Extreme values (IN4)</title>
+  <title>Initial Value Problems (IN4)</title>
   <objectives>
     <ul>
       <li>
@@ -12,65 +12,15 @@
 
   <introduction>
     <p>
-      In many different settings,
-      we are interested in knowing where a function achieves its least and greatest values.
-      These can be important in applications <mdash /> say to identify a point at which maximum profit or minimum cost occurs <mdash /> or in theory to characterize the behavior of a function or a family of related functions.
+      In this section we will discuss the relationship between antiderivatives and solving simple differential equations.  A differential equation is an equation that has a derivative.  For this section we will focus on differential equations of the form 
+        <me>\frac{dy}{dx} = f(x).</me>
+        Our goal is to find <m>y</m>
     </p>
     </introduction>
-    <p>
-      Consider the simple and familiar example of a parabolic function such as <m>s(t) = -16t^2 + 32t + 48</m>
-      that represents the height of an object tossed verticall: its maximum value occurs at the vertex of the parabola and represents the greatest height the object reaches.  This maximum value is an especially important point on the graph,
-      the point at which the curve changes from increasing to decreasing.
-    </p>
 
- <figure xml:id="height-function">
-                    <image width="50%">
-                    <latex-image>  
-\begin{tikzpicture}[scale=1]
-\begin{axis}[
-	samples = 900, 
-	axis lines=middle,
-    grid=major,
- %  xmin=0, xmax=4,
-   ymin=0, ymax=70,
-   % xtick={0,0.5,...,4},
-  % ytick={-2,-1,...,10},
-  %	tick style={thick},
-% 	x label style={at={(axis description cs:1,0.7)}},
-% 	y label style={at={(axis description cs:0.4,1)}}, 
-    ylabel=$s(t)$,
-	xlabel=$t$,
-        ]
-    \addplot[domain=0:3, blue,  thick] {-16*x^2+32*x+48};
-\end{axis}
-\end{tikzpicture}
-  
-    </latex-image>
-                    </image>
-                    <caption>The graph of <m>s(t) = -16t^2 + 32t + 48</m></caption>
-  </figure>    
-    <definition xml:id="defn-absolute-extrema">
-      <statement>
-        <p>
-          Given a function <m>f</m>,
-          we say that <m>f(c)</m> is a <term>global</term> or
-          <term>absolute maximum</term>
-              <idx><h>maximum</h><h>global</h></idx>
-              <idx><h>maximum</h><h>absolute</h></idx>
-          of <m>f</m> provided that
-          <m>f(c) \ge f(x)</m> for all <m>x</m> in the domain of <m>f</m>,
-          and similarly we call <m>f(c)</m> a <term>global</term>
-              <idx><h>minimum</h><h>global</h></idx>
-          or
-          <term>absolute minimum</term>
-              <idx><h>minimum</h><h>absolute</h></idx>
-          of <m>f</m> whenever <m>f(c) \le f(x)</m> for all <m>x</m> in the domain of <m>f</m>.
-        </p>
-      </statement>
-    </definition>
-<activity xml:id="activity-ad-extrema-1">
+<activity xml:id="activity-in-ivp-1">
 <statement>
-    <P>Using <xref ref="def-absolute-extrema"/> which of the following statements best describes the absolute extrema (maximum and minimum) of <xref ref="height-function"/>.</P>
+    <P>Some fun.</P>
     
     </statement>
     
