@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-11-02T17:46:51Z       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Cal1 Something about integrals (testing webwork probs right now) (IN7)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://pretextbook.org/js/0.13/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus 1 for Team-Based Inquiry Learning:</span> <span class="subtitle">Fall 2021 Development Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="IN2.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="04-IN.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="IN2.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="04-IN.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
+<li><a href="slideshow-link.html" data-scroll="slideshow-link">Slideshow</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="LT.html" data-scroll="LT"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6">Limits with infinite outputs (LT6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="DF.html" data-scroll="DF"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8">Differentiating inverse functions (DF8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AD.html" data-scroll="AD"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1">Tangents, motion, and marginals (AD1)</a></li>
+<li><a href="AD2.html" data-scroll="AD2">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7">Graphing with derivatives (AD7)</a></li>
+<li><a href="AD8.html" data-scroll="AD8">Applied optimization (AD8)</a></li>
+<li><a href="AD9.html" data-scroll="AD9">Limits and Derivatives (AD9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="04-IN.html" data-scroll="04-IN"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul>
+<li><a href="IN2.html" data-scroll="IN2">Approximating definite integrals (IN2)</a></li>
+<li><a href="IN7.html" data-scroll="IN7" class="active">Something about integrals (testing webwork probs right now) (IN7)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl"><span class="title">TBIL Resource Library</span></a></li>
+<li class="link"><a href="pretext.html" data-scroll="pretext"><span class="title">Authored with PreTeXt</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="IN7"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4.2</span> <span class="title">Something about integrals (testing webwork probs right now) (IN7)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-29"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
+<ul class="disc"><li id="li-835"><p id="p-1303">Sketch the graph of a differentiable function whose derivatives satisfy given criteria.</p></li></ul></article><p id="p-1304">Maybe there should be some text.</p>
+<section class="exercises" id="DGR"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="aBs"><h6 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Evaluating Riemann sums for a quadratic function.</span>
+</h6>
+<p id="p-1305">The rectangles in the graph below illustrate a left endpoint Riemann sum for \(\displaystyle f(x) = \frac{-x^{2}}{4}+2x\) on the interval \(\lbrack 3, 7 \rbrack\text{.}\)</p>
+<p id="p-1306">The value of this left endpoint Riemann sum is <span class="fillin" role="img" aria-label="30-character blank" style="width: 13.6363636363636em;"></span>, and this Riemann sum is <ul style="list-style:circle;">
+<li id="li-836"><p id="p-1307">[select an answer]</p></li>
+<li id="li-837"><p id="p-1308">an overestimate of</p></li>
+<li id="li-838"><p id="p-1309">equal to</p></li>
+<li id="li-839"><p id="p-1310">an underestimate of</p></li>
+<li id="li-840"><p id="p-1311">there is ambiguity</p></li>
+</ul> the area of the region enclosed by \(\displaystyle y = f(x)\text{,}\) the x-axis, and the vertical lines x = 3 and x = 7.</p>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr><td class="l m b2 r2 l2 t2 lines"><div class="image-box" style="width: 66.6666666666667%; margin-left: 16.6666666666667%; margin-right: 16.6666666666667%;"><img src="external/images/webwork-1-image-1.png" class="contained" alt=""></div></td></tr>
+<tr><td class="l m b2 r2 l2 t0 lines">Left endpoint Riemann sum for \(y = \frac{-x^{2}}{4}+2x\) on \(\lbrack 3, 7 \rbrack\)</td></tr>
+</table></div>
+<p id="p-1312">The rectangles in the graph below illustrate a right endpoint Riemann sum for \(\displaystyle f(x) = \frac{-x^{2}}{4}+2x\) on the interval \(\lbrack 3, 7 \rbrack\text{.}\)</p>
+<p id="p-1313">The value of this right endpoint Riemann sum is <span class="fillin" role="img" aria-label="30-character blank" style="width: 13.6363636363636em;"></span>, and this Riemann sum is <ul style="list-style:circle;">
+<li id="li-841"><p id="p-1314">[select an answer]</p></li>
+<li id="li-842"><p id="p-1315">an overestimate of</p></li>
+<li id="li-843"><p id="p-1316">equal to</p></li>
+<li id="li-844"><p id="p-1317">an underestimate of</p></li>
+<li id="li-845"><p id="p-1318">there is ambiguity</p></li>
+</ul> the area of the region enclosed by \(\displaystyle y = f(x)\text{,}\) the x-axis, and the vertical lines x = 3 and x = 7.</p>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr><td class="l m b2 r2 l2 t2 lines"><div class="image-box" style="width: 66.6666666666667%; margin-left: 16.6666666666667%; margin-right: 16.6666666666667%;"><img src="external/images/webwork-1-image-2.png" class="contained" alt=""></div></td></tr>
+<tr><td class="l m b2 r2 l2 t0 lines">Right endpoint Riemann sum for \(y = \frac{-x^{2}}{4}+2x\) on \(\lbrack 3, 7 \rbrack\)</td></tr>
+</table></div>
+<div class="solutions">
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-2" id="answer-2"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-2"><div class="answer solution-like"><p id="p-1319">\(14.125\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-3" id="answer-3"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-3"><div class="answer solution-like"><p id="p-1320">\(\text{there is ambiguity}\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-4" id="answer-4"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-4"><div class="answer solution-like"><p id="p-1321">\(13.125\)</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-5" id="answer-5"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">4</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-5"><div class="answer solution-like"><p id="p-1322">\(\text{there is ambiguity}\)</p></div></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-2" id="solution-2"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-2"><div class="solution solution-like">
+<p id="p-1323"><em class="alert">Solution:</em></p>
+<p id="p-1324">(A) The left endpoint Riemann sum is \(f(3) \cdot 0.5 + f(3.5) \cdot 0.5 + \cdots + f(6.5) \cdot 0.5
+= ( 3.75 + 3.9375 + \cdots + 2.4375 ) \cdot 0.5 = 14.125.\)</p>
+<p id="p-1325">(B) The right endpoint Riemann sum is \(f(3.5) \cdot 0.5 + f(4) \cdot 0.5 + \cdots + f(7) \cdot 0.5
+= ( 3.9375 + 4 + \cdots + 1.75 ) \cdot 0.5  = 13.125.\)</p>
+</div></div>
+</div></article></section></section></div></main>
+</div>
+</body>
+</html>
