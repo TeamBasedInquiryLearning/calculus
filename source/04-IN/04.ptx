@@ -14,13 +14,19 @@
     <p>
       In this section we will discuss the relationship between antiderivatives and solving simple differential equations.  A differential equation is an equation that has a derivative.  For this section we will focus on differential equations of the form 
         <me>\frac{dy}{dx} = f(x).</me>
-        Our goal is to find <m>y</m>
+        Our goal is to find a relationship of <m>y(x)</m> that satisfies the differential equation.  We can solve for <m>y(x)</m> by finding the antiderivative of <m>f(x)</m>.
     </p>
     </introduction>
 
 <activity xml:id="activity-in-ivp-1">
 <statement>
-    <P>Some fun.</P>
+    <p>Which of the following equations for <m>y(x)</m> satisfies the differential equation <me>\frac{dy}{dx} = x^2+2x</me>.</p>
+    <ol label="A">
+        <li><p>  <m>y(x) = \frac{x^3}{3} + x^2 + 4</m> </p></li>
+        <li><p>  <m>y(x) = 2x + 2</m> </p></li> 
+        <li><p>  <m>y(x) = \frac{x^3}{3} + x^2 + 10</m> </p></li>     
+       <li><p>   <m>y(x) = \frac{x^3}{3} </m></p></li> 
+    
     
     </statement>
     

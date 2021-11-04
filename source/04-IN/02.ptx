@@ -398,7 +398,7 @@
         
     <!--SECTION 4.1.2 from Active Calculus -->
     
-  <subsection permid="ldB">
+<!--   <subsection permid="ldB">
     <title>Two approaches: area and antidifferentiation</title>
     <idx><h>antidifferentiation</h></idx>
     <idx><h>distance traveled</h></idx>
@@ -477,11 +477,11 @@
       We say that <m>s</m> is an
       <em>antiderivative</em> of <m>v</m>.
       More generally, we have the following formal definition.
-    </p>
+    </p> -->
 
           
     <!--DEFINITION OF ANTIDERIVATIVE from Active Calculus -->
-    <definition permid="dzc">
+<!--     <definition permid="dzc">
       <statement>
         <p permid="ctJ">
           If <m>g</m> and <m>G</m> are functions such that <m>G' = g</m>,
@@ -503,5 +503,5 @@
       and thus <m>H</m> is another antiderivative of <m>g</m>.
     </p>
 
-  </subsection>
+  </subsection> -->
 </section>

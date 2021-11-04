@@ -13,12 +13,12 @@
   <activity xml:id="activity-derivative-derivativetests1">
     <introduction>
       <p>
-        Let <m>f</m> be a function defined on some interval <m>(a,b)</m>. Let <m>x_1</m> and <m>x_2</m> be two points in the interval such that <m>x_1 &lt; x_2 </m>.  
+        Let <m>f</m> be a function defined on some interval <m>(a,b)</m>. Let <m>x_1</m> and <m>x_2</m> be any two points in the interval such that <m>x_1 &lt; x_2 </m>.  
       </p>
     </introduction>
-      <task>
+
       <statement>
-          <p>What can we say about the graph of the function on <m>(a,b)</m> if <m>f(x_1)</m> is always less than <m>f(x_2)</m> on <m>(a,b)</m>?</p>
+          <p>What can we say about the graph of the function <m>f(x)</m> if <m>f(x_1)</m> is always less than <m>f(x_2)</m> on the interval <m>(a,b)</m> ?</p>
           <ol label="A">
               <li><p>The function is decreasing on <m>(a,b)</m>.</p></li>
                 <li><p>The function is increasing on <m>(a,b)</m>.</p></li>
@@ -26,15 +26,15 @@
                 <li><p>The function could be some combination of increasing, decreasing, and/or constant on <m>(a,b)</m></p></li>
             </ol>
           </statement>
-      </task>
+
   </activity>
 
       <activity xml:id="activity-derivative-derivativetests2">
-    <introduction>
+    <task>
       <p>
         Sketch a graph of a continuous function that is increasing on <m>(-\infty, -2)</m> and constant on <m>(3,5)</m> and decreasing on <m>(-2,1)</m>.  
       </p>
-    </introduction>
+        </task>
       <task>
       <statement>
           <p>How would you describe the derivative of the function on each interval?</p>
@@ -49,35 +49,30 @@
   </activity>
     
       <activity xml:id="activity-derivative-derivativetests3">
-    <introduction>
+
       <p>
        Look back at the graph you made for <xref ref="activity-derivative-derivativetests2"/>.  
       </p>
-    </introduction>
-      <task>
-      <statement>
           <p>Which of the following best describes what is occurring when graph changes from increasing to decreasing or decreasing to increasing?</p>
           <ol label="A">
               <li><p> There is a critical point.</p></li>
                 <li><p> There is a relative maximum or minimum. </p></li>
-                <li><p> The derivative might be undefined. </p></li>
-                <li><p> The derivative might equal zero. </p></li>
+                <li><p> The derivative is undefined. </p></li>
+                <li><p> The derivative is equal to zero. </p></li>
             </ol>
-          </statement>
-      </task>
   </activity>
     
     <theorem xml:id="first-derivative-test"> <title>The First Derivative Test</title>  
       <introduction>
       <p>
-       Suppose that <m>x=c</m> is a critical point of <m>f(x)</m> and that <m>f(x)</m> is continuous at <m>x=c</m>.   
+       Suppose <m>f(x)</m> is continuous at <m>x=c</m> and that <m>x=c</m> is a critical point of <m>f(x)</m>.   
       </p>
       </introduction>
     <p>
     <ol>   
     <li>If <m>f'(x) &gt; 0</m> to the left of <m>c</m> and <m>f'(x) &lt; 0</m> to the right of <m>c</m>, then a <b>relative maximum</b> occurs when <m>x=c</m>. </li>
     <li>If <m>f'(x) &lt; 0</m> to the left of <m>c</m> and <m>f'(x) &gt; 0 </m> to the right of <m>c</m>, then a <b>relative minimum </b> occurs when <m>x=c</m>.</li>
-    <li>If <m>f'(x)</m> is the same sign on both sices of <m>x=c</m>, then neither a relative maximum nor a relative minimum occur when <m>x=c</m>.</li>
+    <li>If <m>f'(x)</m> is the same sign on both sides of <m>x=c</m>, then neither a relative maximum nor a relative minimum occur when <m>x=c</m>.</li>
      </ol> </p>
     </theorem>
 
@@ -86,7 +81,7 @@
             <p> Let <m>f(x)=x^4-4x^3+4x^2</m></p>
         </introduction>
         <task> 
-            <p>Find all critical points of <m>f(x)</m>. Plot them on the same number line.</p>
+            <p>Find all critical points of <m>f(x)</m>. Draw them on the same number line.</p>
         </task>
         <task> 
             <p>What intervals have been created by subdividing the number line at the critical points?</p>
@@ -105,9 +100,12 @@
     <remark> <title>Dealing with discontinuities</title>
         <introduction>
             <p>Our previous activity dealt with a function that was continuous for all real numbers. Because of that, we could trust our chart to point out relative extrema. Let's now consider what might happen if a function has any discontinuities.</p>
-            <p> Draw a function that is increasing on the left of <m>x=1</m>, discontinuous at <m>x=1, </m><m>f(1)=\lim_{x \to 1^-}f(x)</m>, and decreasing to the right of <m>x=1</m>. Does the derivative of <m>f(x)</m> exist at <m>x=1</m>?  Does your graph have a local maximum or minimum at <m>x=1</m>?</p>
+           
         </introduction>
     </remark>
+      <activity xml:id="activity-derivative-derviativetest-disc">
+     <p> Draw a function that is increasing on the left of <m>x=1</m>, discontinuous at <m>x=1, </m><m>f(1)=\lim_{x \to 1^+}f(x)</m>, and decreasing to the right of <m>x=1</m>. Does the derivative of <m>f(x)</m> exist at <m>x=1</m>?  Does your graph have a local maximum or minimum at <m>x=1</m>?</p>
+  </activity>
     
     <activity xml:id="activity-derivative-derviativetest5">
         <introduction>
@@ -151,6 +149,54 @@
             <p><m>f(x)=\frac{x^2}{x^2-4}</m></p>
         </task>
     </activity>
+    
+    <theorem xml:id="second-derivative-test"> <title>The Second Derivative Test</title>  
+      <introduction>
+      <p>
+       Suppose that <m>x=c</m> is a critical point of <m>f(x)</m> and that <m>f''(x)</m> is continuous at <m>x=c</m>.   
+      </p>
+      </introduction>
+    <p>
+    <ol>   
+    <li>If <m>f'(c) = 0</m> and <m>f''(c) &lt; 0  </m>, then a <b>relative maximum</b> occurs when <m>x=c</m>. </li>
+         <li>If <m>f'(c) = 0</m> and <m>f''(c) &gt; 0  </m>, then a <b>relative minimum</b> occurs when <m>x=c</m>. </li>
+         <li>If <m>f'(c) = 0</m> and <m>f''(c) = 0  </m>, then this test is inconclusive. </li>
+     </ol> </p>
+     <p>In case of an inconclusive Seconf Derivative Test, we need to go back to the First Derivative Test to classify the critical point.</p>   
+    </theorem>
+    
+    
+     <activity xml:id="activity-derivative-derivativetest-second">
+        <introduction>
+            <p>For each of the following functions, now identify any relative extrema using the Second Derivative Test, if possible.</p>
+        </introduction>
+        <task>
+            <p><m>f(x)=x^3+3x^2+3x+1</m></p>
+        </task>
+        <task>
+            <p><m>f(x)=\frac{1}{2}x+\cos x</m> on <m>(0,2\pi)</m></p>
+        </task>
+        <task>
+            <p><m>f(x)=(x^2-9)^{2/3}</m></p>
+        </task>
+        <task>
+            <p><m>f(x)= \ln(2x-1)</m>. (Hint: think about the domain of this one before you get started!)</p>
+        </task>
+        <task>
+            <p><m>f(x)=\frac{x^2}{x^2-4}</m></p>
+        </task>
+    </activity>
+    
+    <theorem><title>The Mean Value Theorem</title>  
+    <p>If <m>f</m> is continuous and differentiable on the closed interval <m>[a,b]</m>, then there is some point <m>c</m> in the interval where <m>f'(c)</m>  is equal to the slope of the secant line through the points <m>(a,f(a))</m> and <m>(b,f(b))</m>. In symbols, for some <m>c</m> in <m>(a,b)</m> we have that </p>
+<me>f'(c) = \frac{f(b)-f(a)}{b-a} </me>
+    </theorem>
+
+<activity xml:id="activity-connection-MVT">
+        <task> <p>Suppose <m>f</m> is continuous and differentiable on <m>[a,b]</m> and also suppose that <m>f(a)=f(b)</m>. What is the average rate of change of <m>f(x)</m> on <m>[a,b]</m>? What does the MVT (Mean Value Theorem) tell you?</p> </task>
+       <task> <p> Use part (a) to show with the MWT that <m>f(x) = (x-1)^2 + 3</m> has a critical point on <m>[0,2]</m> . </p> </task>
+    </activity>   
+
 </section>
 
 
