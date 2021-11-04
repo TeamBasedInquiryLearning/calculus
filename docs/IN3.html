@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-11-04T22:54:30Z       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Cal1 Elementary antiderivatives (IN3)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus 1 for Team-Based Inquiry Learning:</span> <span class="subtitle">Fall 2021 Development Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="IN2.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="04-IN.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="IN2.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="04-IN.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
+<li><a href="slideshow-link.html" data-scroll="slideshow-link">Slideshow</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="LT.html" data-scroll="LT"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6">Limits with infinite outputs (LT6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="DF.html" data-scroll="DF"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8">Differentiating inverse functions (DF8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AD.html" data-scroll="AD"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1">Tangents, motion, and marginals (AD1)</a></li>
+<li><a href="AD2.html" data-scroll="AD2">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7">Graphing with derivatives (AD7)</a></li>
+<li><a href="AD8.html" data-scroll="AD8">Applied optimization (AD8)</a></li>
+<li><a href="AD9.html" data-scroll="AD9">Limits and Derivatives (AD9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="04-IN.html" data-scroll="04-IN"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul>
+<li><a href="IN1.html" data-scroll="IN1">Geometry of definite integrals (IN1)</a></li>
+<li><a href="IN2.html" data-scroll="IN2">Approximating definite integrals (IN2)</a></li>
+<li><a href="IN3.html" data-scroll="IN3" class="active">Elementary antiderivatives (IN3)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl"><span class="title">TBIL Resource Library</span></a></li>
+<li class="link"><a href="pretext.html" data-scroll="pretext"><span class="title">Authored with PreTeXt</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="IN3"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4.3</span> <span class="title">Elementary antiderivatives (IN3)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-30"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
+<ul class="disc"><li id="li-841"><p id="p-1314">Determine basic antiderivatives.</p></li></ul></article><p id="Kqf">In <a class="xref" data-knowl="./knowl/integration-riemann-1.html" title="Activity 4.2.1">Activity 4.2.1</a>, we established that whenever \(v\) is constant on an interval, the exact distance traveled is the area under the velocity curve. When \(v\) is not constant, we can estimate the total distance traveled by finding the areas of rectangles that approximate the area under the velocity curve.</p>
+<p id="qxo">Thus, we see that finding the area between a curve and the horizontal axis is an important exercise: besides being an interesting geometric question, if the curve gives the velocity of a moving object, the area under the curve tells us the exact distance traveled on an interval. We can estimate this area if we have a graph or a table of values for the velocity function.</p>
+<p id="WEx">In <a class="xref" data-knowl="./knowl/act-4-1-1.html" title="Activity 4.2.5">Activity 4.2.5</a>, we encountered an alternate approach to finding the distance traveled. If \(y = v(t)\) is a formula for the instantaneous velocity of a moving object, then \(v\) must be the derivative of the object's position function, \(s\text{.}\) If we can find a formula for \(s(t)\) from the formula for \(v(t)\text{,}\) we will know the position of the object at time \(t\text{,}\) and the change in position over a particular time interval tells us the distance traveled on that interval.</p>
+<p id="CLG">For example, let's consider the situation from <a class="xref" data-knowl="./knowl/integration-riemann-1.html" title="Activity 4.2.1">Activity 4.2.1</a>, where a person is walking along a straight line with velocity function \(v(t) = 3\) mph.</p>
+<figure class="figure figure-like" id="Hvz"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/4_1_PA1Soln.svg" class="contained" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.1<span class="period">.</span></span><span class="space"> </span>The velocity function \(v(t) = 3\) and corresponding position function \(s(t) = 3t\text{.}\)</figcaption></figure><p id="iSP">On the left-hand graph of the velocity function in <a class="xref" data-knowl="./knowl/F-4-1-PA1Soln.html" title="Figure 4.3.1">Figure 4.3.1</a>, we see the relationship between area and distance traveled,</p>
+<div class="displaymath">
+\begin{equation*}
+A= 3 \, \frac{\text{miles} }{\text{hour} } \cdot 1.25 \, \text{hours}  = 3.75 \, \text{miles}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">In addition, we observe<a data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-3" id="fn-3"><sup> 1 </sup></a> that if \(s(t) = 3t\text{,}\) then \(s'(t) = 3\text{,}\) so \(s(t) = 3t\) is the position function whose derivative is the given velocity function, \(v(t) = 3\text{.}\) The respective locations of the person at times \(t = 0.25\) and \(t = 1.5\) are \(s(1.5) = 4.5\) and \(s(0.25) = 0.75\text{,}\) and therefore</p>
+<div class="displaymath">
+\begin{equation*}
+s(1.5) - s(0.25) = 4.5 - 0.75 = 3.75 \ \text{miles}\text{.}
+\end{equation*}
+</div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-3"><div class="fn">Here we are making the implicit assumption that \(s(0) = 0\text{.}\)</div></div>
+<p id="OZY">This is the person's change in position on \([0.25,1.5]\text{,}\) which is precisely the distance traveled.</p>
+<p id="vhh">Observe that if we know a formula for a velocity function \(v\text{,}\) it can be very helpful to find a function \(s\) that satisfies \(s' = v\text{.}\) We say that \(s\) is an <em class="emphasis">antiderivative</em> of \(v\text{.}\) More generally, we have the following formal definition.</p>
+<article class="definition definition-like" id="dzc"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.3.2</span><span class="period">.</span>
+</h6>
+<p id="ctJ">If \(g\) and \(G\) are functions such that \(G' = g\text{,}\) we say that \(G\) is an <dfn class="terminology">antiderivative</dfn>  of \(g\text{.}\)</p></article><p id="boq">For example, if \(g(x) = 3x^2 + 2x\text{,}\) \(G(x) = x^3 + x^2\) is an antiderivative of \(g\text{,}\) because \(G'(x) = g(x)\text{.}\) Note that we say “an” antiderivative of \(g\) rather than “the” antiderivative of \(g\text{,}\) because \(H(x) = x^3 + x^2 + 5\) is also a function whose derivative is \(g\text{,}\) and thus \(H\) is another antiderivative of \(g\text{.}\)</p>
+<p id="PRj">The general problem of finding an antiderivative is difficult. In part, this is due to the fact that we are trying to undo the process of differentiating, and the undoing is much more difficult than the doing. However, some antiderivatives can be fairly simple to find if we remember our elementary derivative rules. (See <a href="DF3.html" class="internal" title="Section 2.3: Elementary derivative rules (DF3)">Section 2.3</a>.)</p>
+<article class="activity project-like" id="elem-antider-intro"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.3.3</span><span class="period">.</span>
+</h6>
+<p id="p-1325">Consider the function \(f(x)=\cos x\text{.}\) Which of the following could be \(F(x)\text{,}\) an antiderivative of \(f(x)\text{?}\)</p>
+<ol class="upper-alpha">
+<li id="li-842"><p id="p-1326">\(\displaystyle \sin x\)</p></li>
+<li id="li-843"><p id="p-1327">\(\displaystyle \cos x\)</p></li>
+<li id="li-844"><p id="p-1328">\(\displaystyle \tan x\)</p></li>
+<li id="li-845"><p id="p-1329">\(\displaystyle \sec x\)</p></li>
+</ol></article><article class="activity project-like" id="elem-antider-intro2"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.3.4</span><span class="period">.</span>
+</h6>
+<p id="p-1330">Consider the function \(f(x)=x^2\text{.}\) Which of the following could be \(F(x)\text{,}\) an antiderivative of \(f(x)\text{?}\)</p>
+<ol class="upper-alpha">
+<li id="li-846"><p id="p-1331">\(\displaystyle 2x \)</p></li>
+<li id="li-847"><p id="p-1332">\(\displaystyle \frac{1}{3}x^3 \)</p></li>
+<li id="li-848"><p id="p-1333">\(\displaystyle x^3\)</p></li>
+<li id="li-849"><p id="p-1334">\(\displaystyle \frac{2}{3}x^3 \)</p></li>
+</ol></article><p id="cfB">We now note that whenever we know the derivative of a function, we have a <em class="emphasis">function-derivative pair</em>, so we also know the antiderivative of a function. For instance, in <a class="xref" data-knowl="./knowl/elem-antider-intro.html" title="Activity 4.3.3">Activity 4.3.3</a> we could use our prior knowledge that</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{d}{dx}[\sin(x)] = \cos(x)\text{,}
+\end{equation*}
+</div>
+<p class="continuation">to determine that \(F(x) = \sin(x)\) is an antiderivative of \(f(x) = \cos(x)\text{.}\) \(F\) and \(f\) together form a function-derivative pair. Every elementary derivative rule leads us to such a pair, and thus to a known antiderivative.</p>
+<p id="otT">Finally, before proceeding to build a list of common functions whose antiderivatives we know, we recall that each function has more than one antiderivative. Because the derivative of any constant is zero, we may add a constant of our choice to any antiderivative. For instance, we know that \(G(x) = \frac{1}{3}x^3\) is an antiderivative of \(g(x) = x^2\text{.}\) But we could also have chosen \(G(x) = \frac{1}{3}x^3 + 7\text{,}\) since in this case as well, \(G'(x) = x^2\text{.}\) If \(g(x) = x^2\text{,}\) we say that the <em class="emphasis">general antiderivative</em>  of \(g\) is</p>
+<div class="displaymath">
+\begin{equation*}
+G(x) = \frac{1}{3}x^3 + C\text{,}
+\end{equation*}
+</div>
+<p class="continuation">where \(C\) represents an arbitrary real number constant. Regardless of the formula for \(g\text{,}\) including \(+C\) in the formula for its antiderivative \(G\) results in the most general possible antiderivative.</p>
+<p id="UBc">Our current interest in antiderivatives is so that we can evaluate definite integrals by the Fundamental Theorem of Calculus. For that task, the constant \(C\) is irrelevant, and we usually omit it. To see why, consider the definite integral</p>
+<div class="displaymath">
+\begin{equation*}
+\int_0^1 x^2 \, dx\text{.}
+\end{equation*}
+</div>
+<p id="AIl">For the integrand \(g(x) = x^2\text{,}\) suppose we find and use the general antiderivative \(G(x) = \frac{1}{3} x^3 + C\text{.}\) Then, by the FTC,</p>
+<div class="displaymath">
+\begin{align*}
+\int_0^1 x^2 \, dx &amp;=  \left. \frac{1}{3} x^3 + C \right|_0^1\\
+&amp;= \left(\frac{1}{3} (1)^3 + C  \right) - \left(\frac{1}{3} (0)^3 + C  \right)\\
+&amp;= \frac{1}{3} + C - 0 - C\\
+&amp;= \frac{1}{3}\text{.}
+\end{align*}
+</div>
+<p id="gPu">Observe that the \(C\)-values appear as opposites in the evaluation of the integral and thus do not affect the definite integral's value.</p>
+<p id="MWD">In the following activity, we work to build a list of basic functions whose antiderivatives we already know.</p>
+<article class="activity project-like" id="ovP"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.3.5</span><span class="period">.</span>
+</h6>
+<p id="yUU">Use your knowledge of derivatives of basic functions to complete <a class="xref" data-knowl="./knowl/T-4-4-Act2.html" title="Table 4.3.6">Table 4.3.6</a> of antiderivatives. For each entry, your task is to find a function \(F\) whose derivative is the given function \(f\text{.}\) When finished, use the FTC and the results in the table to evaluate the three given definite integrals.</p>
+<figure class="table table-like" id="PTf"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">4.3.6<span class="period">.</span></span><span class="space"> </span>Familiar basic functions and their antiderivatives.</figcaption><div class="tabular-box natural-width"><table class="tabular" id="wao">
+<tr>
+<td class="l m b2 r0 l0 t1 lines">given function, \(f(x)\)</td>
+<td class="l m b2 r0 l0 t1 lines">antiderivative, \(F(x)\)    </td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">\(k\text{,}\) (\(k\) is constant)</td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">\(x^n\text{,}\) \(n \ne -1\)</td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">\(\frac{1}{x}\text{,}\) \(x \gt 0\)</td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">\(\sin(x)\)</td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">\(\cos(x)\)</td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">\(\sec(x) \tan(x)\)</td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">\(\csc(x) \cot(x)\)</td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">\(\sec^2 (x)\)</td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">\(\csc^2 (x)\)</td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">\(e^x\)</td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">\(a^x\) \((a \gt 1)\)</td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">\(\frac{1}{1+x^2}\)</td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">\(\frac{1}{\sqrt{1-x^2}}\)</td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+</tr>
+</table></div></figure></article><p id="ImK">In <a class="xref" data-knowl="./knowl/act-4-4-2.html" title="Activity 4.3.5">Activity 4.3.5</a>, we constructed a list of the basic antiderivatives we know at this time. Those rules will help us  antidifferentiate sums and constant multiples of basic functions. For example, since \(-\cos(x)\) is an antiderivative of \(\sin(x)\) and \(\frac{1}{3}x^3\) is an antiderivative of \(x^2\text{,}\) it follows that</p>
+<div class="displaymath">
+\begin{equation*}
+F(x) = -5\cos(x) - \frac{4}{3}x^3
+\end{equation*}
+</div>
+<p class="continuation">is an antiderivative of \(f(x) = 5\sin(x) - 4x^2\text{,}\) by the sum and constant multiple rules for differentiation.</p>
+<p id="Ojn">It is useful to have shorthand notation that indicates the instruction to find an antiderivative. Thus, in a similar way to how the notation</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{d}{dx} \left[ f(x) \right]
+\end{equation*}
+</div>
+<p class="continuation">represents the derivative of \(f(x)\) with respect to \(x\text{,}\) we use the notation of the <em class="emphasis">indefinite integral</em>, </p>
+<div class="displaymath">
+\begin{equation*}
+\int f(x) \, dx
+\end{equation*}
+</div>
+<p class="continuation">to represent the general antiderivative of \(f\) with respect to \(x\text{.}\) Returning to the earlier example with \(h(x) = (5x-3)^6\text{,}\) we can rephrase the relationship between \(h\) and its antiderivative \(H\) through the notation</p>
+<div class="displaymath">
+\begin{equation*}
+\int (5x-3)^6 \, dx = \frac{1}{35} (5x-6)^7 + C\text{.}
+\end{equation*}
+</div>
+<p id="uqw">When we find an antiderivative, we will often say that we <em class="emphasis">evaluate an indefinite integral</em>.  Just as the notation \(\frac{d}{dx} [ \Box ]\) means “find the derivative with respect to \(x\) of \(\Box\text{,}\)” the notation \(\int \Box \, dx\) means “find a function of \(x\) whose derivative is \(\Box\text{.}\)”</p></section></div></main>
+</div>
+</body>
+</html>
