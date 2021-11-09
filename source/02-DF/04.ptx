@@ -245,7 +245,7 @@
         <li><m>\frac{d}{dx} \tan x = (\sec x)^2</m></li>
         <li><m>\frac{d}{dx} \cot x = -(\csc x)^2</m></li>
         <li><m>\frac{d}{dx} \sec x = \sec x \tan x </m></li>
-        <li><m>\frac{d}{dx} \csc x = \csc x \cot x </m></li>
+        <li><m>\frac{d}{dx} \csc x = -\csc x \cot x </m></li>
     </ul>
     </remark>
 </section>
