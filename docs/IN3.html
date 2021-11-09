@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-11-08T15:58:36Z       *-->
+<!--*       on 2021-11-08T23:59:34Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -132,7 +132,7 @@
 <span class="type">Section</span> <span class="codenumber">4.3</span> <span class="title">Elementary antiderivatives (IN3)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-30"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
-<ul class="disc"><li id="li-840"><p id="p-1313">Determine basic antiderivatives.</p></li></ul></article><p id="Kqf">In <a class="xref" data-knowl="./knowl/integration-riemann-1.html" title="Activity 4.2.1">Activity 4.2.1</a>, we established that whenever \(v\) is constant on an interval, the exact distance traveled is the area under the velocity curve. When \(v\) is not constant, we can estimate the total distance traveled by finding the areas of rectangles that approximate the area under the velocity curve.</p>
+<ul class="disc"><li id="li-859"><p id="p-1343">Determine basic antiderivatives.</p></li></ul></article><p id="Kqf">In <a class="xref" data-knowl="./knowl/integration-riemann-1.html" title="Activity 4.2.1">Activity 4.2.1</a>, we established that whenever \(v\) is constant on an interval, the exact distance traveled is the area under the velocity curve. When \(v\) is not constant, we can estimate the total distance traveled by finding the areas of rectangles that approximate the area under the velocity curve.</p>
 <p id="qxo">Thus, we see that finding the area between a curve and the horizontal axis is an important exercise: besides being an interesting geometric question, if the curve gives the velocity of a moving object, the area under the curve tells us the exact distance traveled on an interval. We can estimate this area if we have a graph or a table of values for the velocity function.</p>
 <p id="WEx">In <a class="xref" data-knowl="./knowl/act-4-1-1.html" title="Activity 4.2.5">Activity 4.2.5</a>, we encountered an alternate approach to finding the distance traveled. If \(y = v(t)\) is a formula for the instantaneous velocity of a moving object, then \(v\) must be the derivative of the object's position function, \(s\text{.}\) If we can find a formula for \(s(t)\) from the formula for \(v(t)\text{,}\) we will know the position of the object at time \(t\text{,}\) and the change in position over a particular time interval tells us the distance traveled on that interval.</p>
 <p id="CLG">For example, let's consider the situation from <a class="xref" data-knowl="./knowl/integration-riemann-1.html" title="Activity 4.2.1">Activity 4.2.1</a>, where a person is walking along a straight line with velocity function \(v(t) = 3\) mph.</p>
@@ -160,21 +160,21 @@ s(1.5) - s(0.25) = 4.5 - 0.75 = 3.75 \ \text{miles}\text{.}
 <article class="activity project-like" id="elem-antider-intro"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.3.3</span><span class="period">.</span>
 </h6>
-<p id="p-1324">Consider the function \(f(x)=\cos x\text{.}\) Which of the following could be \(F(x)\text{,}\) an antiderivative of \(f(x)\text{?}\)</p>
+<p id="p-1354">Consider the function \(f(x)=\cos x\text{.}\) Which of the following could be \(F(x)\text{,}\) an antiderivative of \(f(x)\text{?}\)</p>
 <ol class="upper-alpha">
-<li id="li-841"><p id="p-1325">\(\displaystyle \sin x\)</p></li>
-<li id="li-842"><p id="p-1326">\(\displaystyle \cos x\)</p></li>
-<li id="li-843"><p id="p-1327">\(\displaystyle \tan x\)</p></li>
-<li id="li-844"><p id="p-1328">\(\displaystyle \sec x\)</p></li>
+<li id="li-860"><p id="p-1355">\(\displaystyle \sin x\)</p></li>
+<li id="li-861"><p id="p-1356">\(\displaystyle \cos x\)</p></li>
+<li id="li-862"><p id="p-1357">\(\displaystyle \tan x\)</p></li>
+<li id="li-863"><p id="p-1358">\(\displaystyle \sec x\)</p></li>
 </ol></article><article class="activity project-like" id="elem-antider-intro2"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.3.4</span><span class="period">.</span>
 </h6>
-<p id="p-1329">Consider the function \(f(x)=x^2\text{.}\) Which of the following could be \(F(x)\text{,}\) an antiderivative of \(f(x)\text{?}\)</p>
+<p id="p-1359">Consider the function \(f(x)=x^2\text{.}\) Which of the following could be \(F(x)\text{,}\) an antiderivative of \(f(x)\text{?}\)</p>
 <ol class="upper-alpha">
-<li id="li-845"><p id="p-1330">\(\displaystyle 2x \)</p></li>
-<li id="li-846"><p id="p-1331">\(\displaystyle \frac{1}{3}x^3 \)</p></li>
-<li id="li-847"><p id="p-1332">\(\displaystyle x^3\)</p></li>
-<li id="li-848"><p id="p-1333">\(\displaystyle \frac{2}{3}x^3 \)</p></li>
+<li id="li-864"><p id="p-1360">\(\displaystyle 2x \)</p></li>
+<li id="li-865"><p id="p-1361">\(\displaystyle \frac{1}{3}x^3 \)</p></li>
+<li id="li-866"><p id="p-1362">\(\displaystyle x^3\)</p></li>
+<li id="li-867"><p id="p-1363">\(\displaystyle \frac{2}{3}x^3 \)</p></li>
 </ol></article><p id="cfB">We now note that whenever we know the derivative of a function, we have a <em class="emphasis">function-derivative pair</em>, so we also know the antiderivative of a function. For instance, in <a class="xref" data-knowl="./knowl/elem-antider-intro.html" title="Activity 4.3.3">Activity 4.3.3</a> we could use our prior knowledge that</p>
 <div class="displaymath">
 \begin{equation*}
@@ -254,12 +254,12 @@ G(x) = \frac{1}{3}x^3 + C\text{,}
 <article class="activity project-like" id="act-antider-const-mult"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.3.7</span><span class="period">.</span>
 </h6>
-<p id="p-1339">Using this information, which of the following is an antiderivative for \(f(x) = 5\sin(x) - 4x^2\text{?}\)</p>
+<p id="p-1369">Using this information, which of the following is an antiderivative for \(f(x) = 5\sin(x) - 4x^2\text{?}\)</p>
 <ol class="upper-alpha">
-<li id="li-849"><p id="p-1340">\(F(x) = -5\cos(x) +\frac{4}{3}x^3\text{.}\)</p></li>
-<li id="li-850"><p id="p-1341">\(F(x) = 5\cos(x) + \frac{4}{3}x^3\text{.}\)</p></li>
-<li id="li-851"><p id="p-1342">\(F(x) = -5\cos(x) - \frac{4}{3}x^3\text{.}\)</p></li>
-<li id="li-852"><p id="p-1343">\(F(x) = 5\cos(x) - \frac{4}{3}x^3\text{.}\)</p></li>
+<li id="li-868"><p id="p-1370">\(F(x) = -5\cos(x) +\frac{4}{3}x^3\text{.}\)</p></li>
+<li id="li-869"><p id="p-1371">\(F(x) = 5\cos(x) + \frac{4}{3}x^3\text{.}\)</p></li>
+<li id="li-870"><p id="p-1372">\(F(x) = -5\cos(x) - \frac{4}{3}x^3\text{.}\)</p></li>
+<li id="li-871"><p id="p-1373">\(F(x) = 5\cos(x) - \frac{4}{3}x^3\text{.}\)</p></li>
 </ol></article><p id="Ojn">It is useful to have shorthand notation that indicates the instruction to find an antiderivative. Thus, in a similar way to how the notation</p>
 <div class="displaymath">
 \begin{equation*}
@@ -282,13 +282,13 @@ G(x) = \frac{1}{3}x^3 + C\text{,}
 <article class="activity project-like" id="act-antider-fluency"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.3.8</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-132"><p id="p-1346">Find the general antiderivative for each function.</p></div>
-<article class="task exercise-like" id="task-370"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<div class="introduction" id="introduction-133"><p id="p-1376">Find the general antiderivative for each function.</p></div>
+<article class="task exercise-like" id="task-374"><h6 class="heading"><span class="codenumber">(a)</span></h6>
 <div class="displaymath">
 \begin{equation*}
 f(x) = -4 \, \sec^2\left(x\right)
 \end{equation*}
-</div></article><article class="task exercise-like" id="task-371"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+</div></article><article class="task exercise-like" id="task-375"><h6 class="heading"><span class="codenumber">(b)</span></h6>
 <div class="displaymath">
 \begin{equation*}
 f(x) = \frac{8}{\sqrt{x}}
@@ -296,13 +296,13 @@ f(x) = \frac{8}{\sqrt{x}}
 </div></article></article><article class="activity project-like" id="act-ind-int-fluency"><h6 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.3.9</span><span class="period">.</span>
 </h6>
-<div class="introduction" id="introduction-133"><p id="p-1347">Find each indefinite integral.</p></div>
-<article class="task exercise-like" id="task-372"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<div class="introduction" id="introduction-134"><p id="p-1377">Find each indefinite integral.</p></div>
+<article class="task exercise-like" id="task-376"><h6 class="heading"><span class="codenumber">(a)</span></h6>
 <div class="displaymath">
 \begin{equation*}
 \int (-9 \, x^{4} - 7 \, x^{2} + 4) \, dx
 \end{equation*}
-</div></article><article class="task exercise-like" id="task-373"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+</div></article><article class="task exercise-like" id="task-377"><h6 class="heading"><span class="codenumber">(b)</span></h6>
 <div class="displaymath">
 \begin{equation*}
 \int 3 \, e^{x}\, dx
