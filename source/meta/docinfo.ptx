@@ -16,11 +16,13 @@
 <!-- macros for defining latex math shortcuts. It is good practice  -->
 <!-- to define these semantically, so that the macro relates to what-->
 <!-- it defines.                                                    -->
+<!-- borrowed \unknown from cal-2 text for IN-9 [dave r]            -->
 <macros>
 \newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
 </macros>
 
 <!-- If you put any latex-image elements you can include preambles  -->
@@ -29,7 +31,7 @@
   \usepackage{tikz, pgfplots}
   \usetikzlibrary{positioning,matrix,arrows}
   \usetikzlibrary{shapes,decorations,shadows,fadings,patterns}
-  \usetikzlibrary{decorations.markings} 
+  \usetikzlibrary{decorations.markings}
 </latex-image-preamble>
 
 <!-- It is possible to rename elements using the tags below -->
@@ -39,7 +41,7 @@
 
 <!-- Specify the default type of cross reference:           -->
   <cross-references text="type-global" />
-  
+
 
 </docinfo>
 

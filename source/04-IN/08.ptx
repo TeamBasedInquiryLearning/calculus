@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="IN8" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Applied optimization</title>
+  <title>Area between curves (IN8)</title>
   <objectives>
     <ul>
       <li>
@@ -9,12 +9,186 @@
       </li>
     </ul>
   </objectives>
-  <activity>
-    <introduction>
-      <p>
-        Lorem ipsum dolor sit amet.
-      </p>
+  <introduction>
+      <p> In <xref ref="IN7"/>, we learned how to find the area between a curve and the <m>x</m>-axis (<m>f(x)=0</m>) using a definite integral. What if we want the area between any two functions? What if the <m>x</m>-axis is not one of the boundaries?</p>
+       
+       <p>In this section, we'll investigate how a definite integral may be used to represent the area between two curves.</p>
+    </introduction>    
+    
+<activity xml:id="act-area-concept">
+<introduction>
+    <p>Consider the functions given by <m>f(x) = 5-(x-1)^2</m> and <m>g(x) = 4-x</m>.</p>
+    
     </introduction>
-  </activity>
+    
+    <task><p>Use algebra to find the points where the graphs of <m>f</m> and <m>g</m> intersect. </p></task>
+    
+    <task><p>Sketch an accurate graph of <m>f</m> and <m>g</m> on the axes provided,
+          labeling the curves by name and the intersection points with ordered pairs.</p>
+     
+        <figure xml:id="act_concept_axes">
+    <caption>Axes for plotting <m>f</m> and <m>g</m> in <xref ref="act-area-concept"/></caption>
+    <image width="47%" source="IN8_act_concept_axes.png" />
+  </figure></task>
+    
+    <task><p>  Find and evaluate exactly an integral expression that represents the area between
+          <m>y = f(x)</m> and the <m>x</m>-axis on the interval between the intersection points of <m>f</m> and <m>g</m>. Shade in this area on the axes provided in <xref ref = "act_concept_axes"/></p></task>
+    
+    <task><p>Find and evaluate exactly an integral expression that represents the area between
+          <m>y = g(x)</m> and the <m>x</m>-axis on the interval between the intersection points of <m>f</m> and <m>g</m>. Shade in this area on the axes provided in <xref ref = "act_concept_axes"/> in a different color or pattern than you used for the area between <m>y=f(x)</m> and the <m>x</m>-axis.</p></task>
+    
+    <task><p>Let's denote the area between
+          <m>y = f(x)</m> and the <m>x</m>-axis as <m>A_f</m> and the area between
+          <m>y = g(x)</m> and the <m>x</m>-axis as <m>A_g</m>. How could we use <m>A_f</m> and <m> A_g</m> to find exact area between <m>f</m> and <m>g</m> between their intersection points? </p>
+    
+    <ol label="A">
+        <li><p> We could find <m>A_f + A_g</m> to find the area between the curves.  </p></li>
+       <li><p> We could find <m>A_f - A_g</m> to find the area between the curves.  </p></li>
+        <li><p> We could find <m>A_g - A_f</m> to find the area between the curves.  </p></li>
 
+    </ol> 
+        
+    </task>
+    
+    </activity>
+    
+    <p> We've seen from <xref ref="act-area-concept"/> that a natural way to think about the area between two curve is as the area beneath the upper curve minus the area beneath the lower curve.</p>
+    
+<activity xml:id="act-area-concept2">
+<introduction>
+    <p>We now look for a general way of writing definite integrals for the area between two given curves, <m>f(x)</m> and <m>g(x)</m>. Consider this area, illustrated in <xref ref="area_concept_general"/>. </p>
+    
+     <figure xml:id="area_concept_general">
+    <caption> Area between <m>f(x)</m> and <m>g(x)</m>.</caption>
+    <image width="55%" source="area_between.png" />
+  </figure>
+    
+    </introduction>    
+
+    <task> <p>How could we represent the shaded area in <xref ref="area_concept_general"/>?</p>
+    <ol label="A">
+        <li><p> <m>\int_b^a f(x) \,dx - \int_b^a g(x) \,dx</m> </p></li>
+        <li><p> <m>\int_a^b f(x) \,dx - \int_a^b g(x) \,dx</m> </p></li>
+        <li><p> <m>\int_b^a g(x) \,dx - \int_b^a f(x) \,dx</m> </p></li>
+        <li><p> <m>\int_a^b g(x) \,dx - \int_a^b f(x) \,dx</m> </p></li>
+
+    </ol> </task>
+    
+        <task> <p>The two definite integrals above can be rewritten as one definite integral using the sum and difference property of definite integrals: </p>
+            <p>If <m>f</m> and <m>g</m> are continuous functions, then <me>\int_a^b ( f(x) \pm  g(x)) \,dx = \int_a^b f(x) \,dx \pm  \int_a^b g(x) \,dx</me></p>
+            <p>Use the property above to represent the shaded area in <xref ref="area_concept_general"/> using one definite integral. </p>
+    <ol label="A">
+        <li><p> <m>\int_b^a (f(x) - g(x)) \,dx</m> </p></li>
+        <li><p> <m>\int_a^b (f(x) - g(x)) \,dx</m> </p></li>
+        <li><p> <m>\int_b^a (g(x) - f(x)) \,dx</m> </p></li>
+        <li><p> <m>\int_a^b (g(x) - f(x)) \,dx</m> </p></li>
+
+    </ol> </task>
+    </activity>    
+
+    
+    
+ <p permid="xlp">
+      We can also think of the area this way:
+      if we slice up the region between two curves into thin vertical rectangles,
+      we see (as shown in <xref ref="area-as-slices"/>) that the height of a typical rectangle is given by the difference between the two functions,
+      <m>f(x) - g(x)</m>,
+      and its width is <m>\Delta x</m>.
+      Thus the area of the rectangle is
+      <me permid="cnf">
+        A_{\text{rect} } = (f(x) - g(x)) \Delta x
+      </me>.
+    </p>
+
+    <figure xml:id="area-as-slices" permid="icr">
+      <caption>The area bounded by the functions <m>f(x)</m> and <m>g(x)</m> on the interval <m>[a,b]</m>.</caption>
+      <image width="75%" source="area-slices.png" />
+    </figure>
+
+    <p permid="dsy">
+      The area between the two curves on <m>[a,b]</m> is thus approximated by the Riemann sum
+      <me permid="Iuo">
+        A \approx \sum_{i=1}^{n} (f(x_i) - g(x_i)) \Delta x
+      </me>,
+      and as we let <m>n \to \infty</m>,
+      it follows that the area is given by the single definite integral
+      <me>
+        A = \int_a^b (f(x) - g(x)) \, dx
+      </me>.
+    </p>
+
+    <p permid="JzH">
+      In many applications of the definite integral,
+      we will find it helpful to think of a
+      <q>representative slice</q>
+      and use the definite integral to add these slices.
+      Here, the integral sums the areas of thin rectangles.
+    </p>
+
+    <p permid="pGQ">
+      Finally, it doesn't matter whether we think of the area between two curves as the difference between the area bounded by the individual curves
+      (as in<nbsp /><xref ref="act-area-concept2" />)
+      or as the limit of a Riemann sum of the areas of thin rectangles between the curves
+      (as in<nbsp /><xref ref="area-as-slices" />).
+      These two results are the same,
+      since the difference of two integrals is the integral of the difference:
+      <me permid="UIG">
+        \int_a^b f(x) \, dx -  \int_a^b g(x) \, dx = \int_a^b (f(x) - g(x)) \, dx
+      </me>.
+    </p>
+
+    <p permid="VNZ">
+      Our work so far in this section illustrates the following general principle.
+    </p>
+
+    <assemblage permid="LKt">
+      <p permid="BVi">
+        If two curves <m>y = f(x)</m> and
+        <m>y = g(x)</m> intersect at <m>(a,g(a))</m> and <m>(b,g(b))</m>,
+        and for all <m>x</m> such that
+        <m>a \le x \le b</m>, <m>f(x) \ge g(x)</m>,
+        then the area between the curves is <m>A = \int_a^b (f(x) - g(x)) \, dx</m>.
+      </p>
+    </assemblage>
+    
+    
+<activity xml:id="IN8-fluency-vertical">
+  <introduction>
+    <p>
+      In each of the following problems,
+      our goal is to determine the area of the region described.
+      For each region, (i) determine the intersection points of the curves, (ii) sketch the region whose area is being found, (iii) draw and label a representative slice,
+      and (iv) state the area of the representative slice.
+      Then, state a definite integral whose value is the exact area of the region,
+      and evaluate the integral to find the numeric value of the region's area.   
+      </p></introduction>
+    
+    <task><p>The finite region bounded by
+            <m>y = \sqrt{x}</m> and <m>y = \frac{1}{4}x</m>.</p></task>
+    
+    <task><p> The finite region bounded by
+        <m>y = 12-2x^2</m> and <m>y = x^2 - 8</m>.</p></task>
+    
+    <task><p>  The area bounded by the <m>y</m>-axis,
+            <m>f(x) = \cos(x)</m>,
+            and <m>g(x) = \sin(x)</m>,
+            where we consider the region formed by the first positive value of <m>x</m> for which <m>f</m> and <m>g</m> intersect.</p></task>
+    
+    <task><p>The finite regions between the curves <m>y = x^3-x</m> and <m>y = x^2</m>.</p></task>
+    </activity>
+    
+<!--    Horizontal slices to be added later  -->
+    
 </section>
+
+
+
+
+<!-- <ol label="A">
+        <li><p>  <m>y(x) = \frac{x^3}{3} + x^2 + 4</m> </p></li>
+        <li><p>  <m>y(x) = 2x + 2</m> </p></li> 
+        <li><p>  <m>y(x) = \frac{x^3}{3} + x^2 + 10</m> </p></li>     
+        <li><p>  <m>y(x) = \frac{x^3}{3} + x^2</m></p></li> 
+        <li><p>  <m>y(x) = 2x </m> </p></li> 
+
+    </ol> -->

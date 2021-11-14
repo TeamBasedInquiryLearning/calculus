@@ -1,20 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 
 <section xml:id="IN7" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Something about integrals (testing webwork probs right now) (IN7)</title>
+  <title>Area under curves (IN7)</title>
   <objectives>
     <ul>
       <li>
-          <xi:include href="outcomes/07.ptx" /></li>
-
+          <xi:include href="outcomes/07.ptx" />
+      </li>
     </ul>
   </objectives>
-    <p>Maybe there should be some text.</p>
-  <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-4-2" permid="DGR">
-
-  <exercise xml:id="ez-4-2-WW1" permid="aBs">
-    <title>Evaluating Riemann sums for a quadratic function</title>
-    <webwork source="Library/Rochester/setIntegrals0Theory/S05.01.AreaDistance.PTP00.pg" />
-  </exercise>
-    </exercises>
 </section>
