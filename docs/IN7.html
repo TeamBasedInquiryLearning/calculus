@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-11-05T03:21:52Z       *-->
+<!--*       on 2021-11-14T19:32:25Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -11,7 +11,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal1 Something about integrals (testing webwork probs right now) (IN7)</title>
+<title>TBIL-Cal1 Area under curves (IN7)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>window.MathJax = {
@@ -26,19 +26,6 @@
   options: {
     ignoreHtmlClass: "tex2jax_ignore",
     processHtmlClass: "has_am",
-    renderActions: {
-        findScript: [10, function (doc) {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
-                var display = !!node.type.match(/; *mode=display/);
-                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-                var text = document.createTextNode('');
-                node.parentNode.replaceChild(text, node);
-                math.start = {node: text, delim: '', n: 0};
-                math.end = {node: text, delim: '', n: 0};
-                doc.math.push(math);
-            });
-        }, '']
-    },
   },
   chtml: {
     scale: 0.88,
@@ -49,8 +36,7 @@
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
-<script src="https://pretextbook.org/js/0.13/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
 </script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
@@ -68,6 +54,7 @@
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -80,10 +67,10 @@
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="IN3.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="04-IN.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="IN6.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="04-IN.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="IN8.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="IN3.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="04-IN.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="IN6.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="04-IN.html" title="Up">Up</a><a class="next-button button toolbar-item" href="IN8.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -134,7 +121,12 @@
 <li><a href="IN1.html" data-scroll="IN1">Geometry of definite integrals (IN1)</a></li>
 <li><a href="IN2.html" data-scroll="IN2">Approximating definite integrals (IN2)</a></li>
 <li><a href="IN3.html" data-scroll="IN3">Elementary antiderivatives (IN3)</a></li>
-<li><a href="IN7.html" data-scroll="IN7" class="active">Something about integrals (testing webwork probs right now) (IN7)</a></li>
+<li><a href="IN4.html" data-scroll="IN4">Initial Value Problems (IN4)</a></li>
+<li><a href="IN5.html" data-scroll="IN5">FTC for definite integrals (IN5)</a></li>
+<li><a href="IN6.html" data-scroll="IN6">FTC for derivatives of integrals (IN6)</a></li>
+<li><a href="IN7.html" data-scroll="IN7" class="active">Area under curves (IN7)</a></li>
+<li><a href="IN8.html" data-scroll="IN8">Area between curves (IN8)</a></li>
+<li><a href="IN9.html" data-scroll="IN9">Substitution method (IN9)</a></li>
 </ul>
 </li>
 <li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
@@ -143,53 +135,10 @@
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="IN7"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">4.4</span> <span class="title">Something about integrals (testing webwork probs right now) (IN7)</span>
+<span class="type">Section</span> <span class="codenumber">4.7</span> <span class="title">Area under curves (IN7)</span>
 </h2>
-<article class="objectives goal-like" id="objectives-31"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
-<ul class="disc"><li id="li-849"><p id="p-1344">Use definite integrals to find area under a curve.</p></li></ul></article><p id="p-1345">Maybe there should be some text.</p>
-<section class="exercises" id="DGR"><h3 class="heading hide-type">
-<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Exercises</span>
-</h3>
-<article class="exercise exercise-like" id="aBs"><h6 class="heading">
-<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Evaluating Riemann sums for a quadratic function.</span>
-</h6>
-<p id="p-1346">The rectangles in the graph below illustrate a left endpoint Riemann sum for \(\displaystyle f(x) = \frac{-x^{2}}{4}+2x\) on the interval \(\lbrack 3, 7 \rbrack\text{.}\)</p>
-<p id="p-1347">The value of this left endpoint Riemann sum is <span class="fillin" role="img" aria-label="30-character blank" style="width: 13.6363636363636em;"></span>, and this Riemann sum is <ul style="list-style:circle;">
-<li id="li-850"><p id="p-1348">[select an answer]</p></li>
-<li id="li-851"><p id="p-1349">an overestimate of</p></li>
-<li id="li-852"><p id="p-1350">equal to</p></li>
-<li id="li-853"><p id="p-1351">an underestimate of</p></li>
-<li id="li-854"><p id="p-1352">there is ambiguity</p></li>
-</ul> the area of the region enclosed by \(\displaystyle y = f(x)\text{,}\) the x-axis, and the vertical lines x = 3 and x = 7.</p>
-<div class="tabular-box natural-width"><table class="tabular">
-<tr><td class="l m b2 r2 l2 t2 lines"><div class="image-box" style="width: 66.6666666666667%; margin-left: 16.6666666666667%; margin-right: 16.6666666666667%;"><img src="external/images/webwork-1-image-1.png" class="contained" alt=""></div></td></tr>
-<tr><td class="l m b2 r2 l2 t0 lines">Left endpoint Riemann sum for \(y = \frac{-x^{2}}{4}+2x\) on \(\lbrack 3, 7 \rbrack\)</td></tr>
-</table></div>
-<p id="p-1353">The rectangles in the graph below illustrate a right endpoint Riemann sum for \(\displaystyle f(x) = \frac{-x^{2}}{4}+2x\) on the interval \(\lbrack 3, 7 \rbrack\text{.}\)</p>
-<p id="p-1354">The value of this right endpoint Riemann sum is <span class="fillin" role="img" aria-label="30-character blank" style="width: 13.6363636363636em;"></span>, and this Riemann sum is <ul style="list-style:circle;">
-<li id="li-855"><p id="p-1355">[select an answer]</p></li>
-<li id="li-856"><p id="p-1356">an overestimate of</p></li>
-<li id="li-857"><p id="p-1357">equal to</p></li>
-<li id="li-858"><p id="p-1358">an underestimate of</p></li>
-<li id="li-859"><p id="p-1359">there is ambiguity</p></li>
-</ul> the area of the region enclosed by \(\displaystyle y = f(x)\text{,}\) the x-axis, and the vertical lines x = 3 and x = 7.</p>
-<div class="tabular-box natural-width"><table class="tabular">
-<tr><td class="l m b2 r2 l2 t2 lines"><div class="image-box" style="width: 66.6666666666667%; margin-left: 16.6666666666667%; margin-right: 16.6666666666667%;"><img src="external/images/webwork-1-image-2.png" class="contained" alt=""></div></td></tr>
-<tr><td class="l m b2 r2 l2 t0 lines">Right endpoint Riemann sum for \(y = \frac{-x^{2}}{4}+2x\) on \(\lbrack 3, 7 \rbrack\)</td></tr>
-</table></div>
-<div class="solutions">
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-2" id="answer-2"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-2"><div class="answer solution-like"><p id="p-1360">\(14.125\)</p></div></div>
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-3" id="answer-3"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">2</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-3"><div class="answer solution-like"><p id="p-1361">\(\text{there is ambiguity}\)</p></div></div>
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-4" id="answer-4"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">3</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-4"><div class="answer solution-like"><p id="p-1362">\(13.125\)</p></div></div>
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-5" id="answer-5"><span class="type">Answer.</span> <span class="space"> </span><span class="codenumber">4</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-5"><div class="answer solution-like"><p id="p-1363">\(\text{there is ambiguity}\)</p></div></div>
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-2" id="solution-2"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-2"><div class="solution solution-like">
-<p id="p-1364"><em class="alert">Solution:</em></p>
-<p id="p-1365">(A) The left endpoint Riemann sum is \(f(3) \cdot 0.5 + f(3.5) \cdot 0.5 + \cdots + f(6.5) \cdot 0.5
-= ( 3.75 + 3.9375 + \cdots + 2.4375 ) \cdot 0.5 = 14.125.\)</p>
-<p id="p-1366">(B) The right endpoint Riemann sum is \(f(3.5) \cdot 0.5 + f(4) \cdot 0.5 + \cdots + f(7) \cdot 0.5
-= ( 3.9375 + 4 + \cdots + 1.75 ) \cdot 0.5  = 13.125.\)</p>
-</div></div>
-</div></article></section></section></div></main>
+<article class="objectives goal-like" id="objectives-34"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
+<ul class="disc"><li id="li-901"><p id="p-1416">Use definite integrals to find area under a curve.</p></li></ul></article></section></div></main>
 </div>
 </body>
 </html>
