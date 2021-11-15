@@ -9,79 +9,35 @@
       </li>
     </ul>
   </objectives>
-  <activity xml:id="activity-ad8-1">
-    <introduction>
-  <p>
-    According to U.S.<nbsp />postal regulations,
-    the girth plus the length of a parcel sent by mail may not exceed 108 inches,
-    where by <q>girth</q> we mean the perimeter of the smallest end.
-    What is the largest possible volume of a rectangular parcel with a square end that can be sent by mail?
-    What are the dimensions of the package of largest volume?
-  </p>
-    </introduction>
-
-  <p>
-    <ol label="a." >
-      <li>
-        <p>
-          Let <m>x</m> represent the length of one side of the square end and <m>y</m> the length of the longer side.
-          Label these quantities appropriately on the image shown in <xref ref="F-3-4-PA1">Figure</xref>.
-        </p>
-
-        <figure xml:id="F-3-4-PA1" permid="RHW">
-          <caption>A rectangular parcel with a square end.</caption>
-          <image width="47%" source="3_4_PA1.svg" />
-        </figure>
-
-      </li>
-
-      <li>
-        <p>
-          What is the quantity to be optimized in this problem?
-          Find a formula for this quantity in terms of <m>x</m> and <m>y</m>.
-        </p>
-      </li>
-
-      <li>
-        <p>
-          The problem statement tells us that the parcel's girth plus length may not exceed 108 inches.
-          In order to maximize volume,
-          we assume that we will actually need the girth plus length to equal 108 inches.
-          What equation does this produce involving <m>x</m> and <m>y</m>?
-        </p>
-      </li>
-
-      <li>
-        <p>
-          Solve the equation you found in (c) for one of <m>x</m> or <m>y</m>
-          (whichever is easier).
-        </p>
-      </li>
-
-      <li>
-        <p>
-          Now use your work in (b) and (d) to determine a formula for the volume of the parcel so that this formula is a function of a single variable.
-        </p>
-      </li>
-
-      <li>
-        <p>
-          Over what domain should we consider this function?
-          Note that both <m>x</m> and <m>y</m> must be positive;
-          how does the constraint that girth plus length is 108 inches produce intervals of possible values for <m>x</m> and <m>y</m>?
-        </p>
-      </li>
-
-      <li>
-        <p>
-          Find the absolute maximum of the volume of the parcel on the domain you established in (f) and hence also determine the dimensions of the box of greatest volume.
-          Justify that you've found the maximum using calculus.
-        </p>
-      </li>
-    </ol>
-  </p>
-  </activity>
     
+      <activity xml:id="activity-ad8-box"> <title>The box</title>
+        <introduction>
+            <p>
+              Help your company design a box with maximum volume given the following constraints:
+                <ul>
+                <li>The box must be made from the following material: an 8 by 8 inches piece of cardboard.</li>
+                <li>To create the box, you are asked to cut the same size square from each corner of the 8 by 8 inches piece of cardboard and to fold the remaining cardboard.</li>
+                </ul>
+            </p>
+        </introduction>
+        <task>
+            <p>Draw a diagram illustrating how the box is created.</p>
+        </task>
+        <task>
+         <p> Explain why the volume of the box is a <em>function</em> of the side length <m>x</m> of the cutout squares.</p>
+        </task>
+        <task>
+         <p>Express the volume of the box <m>V</m> as a function of the length of the cuts <m>x</m>.</p>
+        </task>
+        <task>
+         <p>What is a realistic the domain of this function?</p>
+        </task>
+        <task>
+         <p>What cut length <m>x</m> maximizes the volume of the box?</p>
+        </task>
+    </activity>
+    
+      
 <remark xml:id="AD8-remark1"><title>Approaching optimization problems</title>
     <p permid="xdy">
         <ul permid="Kxj">
@@ -107,12 +63,10 @@
             <p permid="stF">
               Determine a function of a single variable that models the quantity to be optimized;
               this may involve using other relationships among variables to eliminate one or more variables in the function formula.
-              For example, in <xref ref="activity-ad8-1">Activity </xref>,
-              we initially found that <m>V = x^2 y</m>,
-              but then the additional relationship that <m>4x + y = 108</m>
-              (girth plus length equals 108 inches)
-              allows us to relate <m>x</m> and <m>y</m> and thus observe equivalently that <m>y = 108-4x</m>.
-              Substituting for <m>y</m> in the volume equation yields <m>V(x) = x^2(108-4x)</m>,
+              For example, in <xref ref="activity-ad8-box">Activity </xref>,
+              we initially found that <m>V = (8-2x)^2 y</m>,
+              but then the additional relationship that <m>y = x</m>
+              allows us to relate <m>x</m> and <m>y</m> and thus substituting for <m>y</m> in the volume equation yields <m>V(x) = (8-2x)^2 x</m>,
               and thus we have written the volume as a function of the single variable <m>x</m>.
             </p>
           </li>
@@ -131,25 +85,95 @@
               This always involves finding the critical numbers of the function first.
               Then, depending on the domain,
               we either construct a first derivative sign chart
-              (for an open or unbounded interval)
+              (for an open or unbounded interval we use the First or Second Derivative Tests)
               or evaluate the function at the endpoints and critical numbers
-              (for a closed, bounded interval),
-              using ideas we've studied so far.
+              (for a closed, bounded interval and a continuous function we use the Closed Interval Method).
             </p>
           </li>
 
           <li permid="nJM">
             <p permid="kPg">
               Finally, we make certain we have answered the question:
-              does the question seek the absolute maximum of a quantity,
-              or the values of the variables that produce the maximum?
-              That is,
-              finding the absolute maximum volume of a parcel is different from finding the dimensions of the parcel that produce the maximum.
+             what are the optimal points and what optimal values do we obtain at these points? 
             </p>
           </li>
         </ul>
       </p>
-</remark>
+</remark>  
+    
+  <activity xml:id="activity-ad8-1">
+    <introduction>
+  <p>
+    According to U.S.<nbsp />postal regulations,
+    the girth plus the length of a parcel sent by mail may not exceed 108 inches,
+    where by <q>girth</q> we mean the perimeter of the smallest end.
+    What is the largest possible volume of a rectangular parcel with a square end that can be sent by mail?
+    What are the dimensions of the package of largest volume?
+  </p>
+    </introduction>
+
+   
+  <task>
+     
+        <p>
+          Let <m>x</m> represent the length of one side of the square end and <m>y</m> the length of the longer side.
+          Label these quantities appropriately on the image shown in <xref ref="F-3-4-PA1">Figure</xref>.
+        </p>
+
+        <figure xml:id="F-3-4-PA1" permid="RHW">
+          <caption>A rectangular parcel with a square end.</caption>
+          <image width="47%" source="3_4_PA1.svg" />
+        </figure>
+</task>
+    
+
+<task>
+        <p>
+          What is the quantity to be optimized in this problem?
+<!--           Find a formula for this quantity in terms of <m>x</m> and <m>y</m>. -->
+        </p>
+<ol label="A">
+                <li><p>  maximize volume (V) </p></li>
+<li><p>  maximize the girth plus length (L) </p></li>
+            <li><p>  minimize volume (V) </p></li>
+                    <li><p>  minimize the girth plus length (L) </p></li>
+    </ol>  
+</task>
+ <task><p>  Which formula below represents the quantity you want to optimize in terms of x and y?</p>
+        <ol label="A">
+                <li><p>  <m>V=x^2y</m> </p></li>
+<li><p> <m>V=xy^2</m> </p></li>
+            <li><p>  <m>L=2x+y</m> </p></li>
+                    <li><p>   <m>L=4x+y</m> </p></li>
+    </ol>  
+      
+      </task>
+        <p>
+          The problem statement tells us that the parcel's girth plus length (L) may not exceed 108 inches.
+          In order to maximize volume,
+          we assume that we will actually need the girth plus length (L) to equal 108 inches.
+          What equation does this produce involving <m>x</m> and <m>y</m>?
+        </p>
+          <ol label="A">
+                <li><p>  <m>108=4x+y</m> </p></li>
+<li><p> <m>108 = 2x +y</m> </p></li>
+            <li><p>  <m>108 = x^2 +y</m> </p></li>
+                    <li><p>   <m>108 = xy^2</m> </p></li>
+    </ol>  
+
+<task><p>Solve the equation you found in for one of <m>x</m> or <m>y</m>
+          (whichever is easier). Use this to find a formula for the volume of the parcel as a function of a single variable.</p></task>
+  
+   <task><p> Over what domain should we consider this function?
+          Note that both <m>x</m> and <m>y</m> must be positive;
+          how does the constraint that girth plus length is 108 inches produce intervals of possible values for <m>x</m> and <m>y</m>?</p></task>   
+<task>
+        <p>
+          Find the absolute maximum of the volume of the parcel on the domain you just established and hence also determine the dimensions of the box of greatest volume. Justify that you've found the maximum using calculus!
+        </p>
+   </task>   
+  </activity>
+
     <activity xml:id="activity-ad8-2"> <title>Revenue = Number of tickets <m>\times</m> Price of ticket</title>
         <introduction>
             <p>
@@ -183,32 +207,7 @@ profit? (Recall that Profit = Revenue - Cost).</p>
         </task>
     </activity>
 
-    <activity xml:id="activity-ad8-3"> <title>The box</title>
-        <introduction>
-            <p>
-              Help your company design a box with maximum volume given the following constraints:
-                <ul>
-                <li>The box must be made from the following material: an 8 by 8 inches piece of cardboard.</li>
-                <li>To create the box, you are asked to cut the same size square from each corner of the 8 by 8 inches piece of cardboard and to fold the remaining cardboard.</li>
-                </ul>
-            </p>
-        </introduction>
-        <task>
-            <p>Draw a diagram illustrating how the box is created.</p>
-        </task>
-        <task>
-         <p> Explain why the volume of the box is a <em>function</em> of the side length <m>x</m> of the cutout squares.</p>
-        </task>
-        <task>
-         <p>Express the volume of the box <m>V</m> as a function of the length of the cuts <m>x</m>.</p>
-        </task>
-        <task>
-         <p>What is a realistic the domain of this function?</p>
-        </task>
-        <task>
-         <p>What cut length <m>x</m> maximizes the volume of the box?</p>
-        </task>
-    </activity>
+  
     
     <activity xml:id="activity-ad8-4"> <title>Modeling given a geometric shape</title>
         <introduction>

@@ -194,7 +194,7 @@ A strategy for finding the extreme values of a function will be to consider all 
     
 
 <remark><title>The Closed Interval Method</title>
-    <p>The following is a way of finding the absolute extrema of a differentiable function <m>f</m> on a closed interval.</p>
+    <p>The following is a way of finding the absolute extrema of a continuous  <m>f</m> on a closed interval.</p>
     <ol label="1">
         <li>Make a list of all critical points of <m>f</m> in <m>(a,b)</m>. (Do not include any critical points outside of the interval). </li>
         <li>Add the endpoints <m>a</m> and <m>b</m> to the list. </li>
