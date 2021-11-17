@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-11-15T04:41:35Z       *-->
+<!--*       on 2021-11-17T05:44:37Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -138,7 +138,106 @@
 <span class="type">Section</span> <span class="codenumber">4.5</span> <span class="title">FTC for definite integrals (IN5)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-32"><h6 class="heading"><span class="type">Learning Outcomes</span></h6>
-<ul class="disc"><li id="li-904"><p id="p-1425">Evaluate a definite integral using the Fundamental Theorem of Calculus.</p></li></ul></article></section></div></main>
+<ul class="disc"><li id="li-904"><p id="p-1425">Evaluate a definite integral using the Fundamental Theorem of Calculus.</p></li></ul></article><article class="activity project-like" id="activity-in5-1"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.1</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-136"><p id="p-1426">Find the area beteween \(f(x)=\frac{1}{2}x+2\) and the \(x\)-axis from \(x=2\) to \(x=6\text{.}\)</p></div>
+<figure class="figure figure-like" id="in5-figure-1"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/area1.png" class="contained" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.5.2<span class="period">.</span></span><span class="space"> </span></figcaption></figure></article><article class="activity project-like" id="activity-in5-2"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.3</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-137"><p id="p-1427">Approximate the area under the curve  \(f(x)=(x-1)^2+2\)m&gt; on the interval \([1,5]\)m&gt; using a left Riemann sum with four uniform subdivisions. Draw your rectangles on the graph.</p></div>
+<figure class="figure figure-like" id="in5-figure-2"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/riemann1.png" class="contained" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.5.4<span class="period">.</span></span><span class="space"> </span></figcaption></figure></article><section class="subsection" id="subsection-2"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.5.1</span> <span class="title">Definite Integrals</span>
+</h3>
+<article class="definition definition-like" id="definition-in5-2"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.5.5</span><span class="period">.</span>
+</h6>
+<p id="p-1428">Let \(f(x)\) be a continuous function on the interval \([a,b]\text{.}\) Divide the interval into \(n\) subdivisions of equal width, \(\Delta x\text{,}\) and choose a point \(x_i\) in each interval. Then, the definite integral of \(f(x)\) from \(a\) to \(b\) is</p>
+<div class="displaymath">
+\begin{equation*}
+\lim_{n \to \infty} \sum_{i=1}^{n} f(x_i) \Delta x = \int_a^bf(x)dx
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-in5-3"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.6</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-138"><p id="p-1429">How does \(\displaystyle \int_2^6 \left(\frac{1}{2}x+2\right) \, dx\) relate to <a class="xref" data-knowl="./knowl/activity-in5-1.html" title="Activity 4.5.1">Activity 4.5.1</a>? Could you use <a class="xref" data-knowl="./knowl/activity-in5-1.html" title="Activity 4.5.1">Activity 4.5.1</a> to find \(\displaystyle \int_0^4 \left(\frac{1}{2}x+2\right) \, dx\text{?}\) What about \(\displaystyle \int_1^7 \left(\frac{1}{2}x+2\right) \, dx\text{?}\)</p></div></article><article class="remark remark-like" id="remark-in5-1"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">4.5.7</span><span class="period">.</span><span class="space"> </span><span class="title">Properties of Definite Integrals.</span>
+</h6>
+<ol id="p-1430" class="decimal">
+<li id="li-905"><p id="p-derived-li-905">If \(f\) is defined at \(x=a\text{,}\) then \(\displaystyle \int_a^a f(x)  \, dx =0\text{.}\)</p></li>
+<li id="li-906"><p id="p-derived-li-906">If \(f\) is integrable on \([a,b]\text{,}\) then \(\displaystyle \int_a^b f(x)  \, dx = - \displaystyle \int_b^a f(x)  \, dx\text{.}\)</p></li>
+<li id="li-907"><p id="p-derived-li-907">If \(f\) is integrable on \([a,b]\) and \(c\) is in \([a,b]\text{,}\) then \(\displaystyle \int_a^b f(x)  \, dx  = \displaystyle \int_a^c f(x)  \, dx + \displaystyle \int_c^b f(x)  \, dx\text{.}\)</p></li>
+<li id="li-908"><p id="p-derived-li-908">If \(f\) is integrable on \([a,b]\) and \(k\) is a constant, then \(kf\) is integrable on \([a,b]\) and \(\displaystyle \int_a^b kf(x)  \, dx = k\displaystyle \int_a^b f(x)  \, dx\text{.}\)</p></li>
+<li id="li-909"><p id="p-derived-li-909">If \(f\) and \(g\) are integrable on \([a,b]\text{,}\) then \(f\pm g\) are integrable on \([a,b]\) and \(\displaystyle \int_a^b [f(x) \pm g(x)]  \, dx =\displaystyle \int_a^b f(x) \, dx \pm \displaystyle  \int_a^b g(x) \, dx\text{.}\)</p></li>
+</ol></article><article class="activity project-like" id="activity-in5-4"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.8</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-139"><p id="p-1431">Suppose that \(\displaystyle\int_1^5 f(x)\, dx = 10\) and \(\displaystyle\int_5^7 f(x)\, dx = 4 \text{.}\)Find each of the following.</p></div>
+<article class="task exercise-like" id="task-386"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-1432">\(\displaystyle\int_1^7 f(x)\, dx \)</p></article><article class="task exercise-like" id="task-387"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-1433">\(\displaystyle\int_5^1 f(x)\, dx \)</p></article><article class="task exercise-like" id="task-388"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-1434">\(\displaystyle\int_7^7 f(x)\, dx \)</p></article><article class="task exercise-like" id="task-389"><h6 class="heading"><span class="codenumber">(d)</span></h6>
+<p id="p-1435">\(3 \displaystyle\int_5^7 f(x)\, dx \)</p></article></article></section><section class="subsection" id="subsection-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.5.2</span> <span class="title">Fundamental Theorem of Calculus</span>
+</h3>
+<p id="p-1436">We've been looking at two big things in this chapter: antiderivatives and the area under a curve. In the early days of the development of calculus, they were not known to be connected to one another. The integral sign wasn't originally used in both instances. (Gottfried Leibniz introduced it as an elongated S to represent the sum when finding the area.) Connecting these two seemingly separate problems is done by the Fundamental Theorem of Calculus</p>
+<article class="theorem theorem-like" id="theorem-in5-2"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.5.9</span><span class="period">.</span><span class="space"> </span><span class="title">The Fundamental Theorem of Calculus.</span>
+</h6>
+<div class="introduction" id="introduction-140">
+<p id="p-1437">If a function \(f\) is continuous on the closed interval \([a,b]\) and \(F\) is an antiderivative of \(f\) on the interval \([a,b]\text{,}\) then</p>
+<div class="displaymath">
+\begin{equation*}
+\displaystyle \int_a^b f(x) \, dx = F(b)-F(a)
+\end{equation*}
+</div>
+</div></article><article class="activity project-like" id="activity-in5-5"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.10</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-141"><p id="p-1438">Evaluate the following definite integrals. Include a sketch of the graph with the area you've found shaded in. Approximate the area to check to see if your definite integral answer makes sense. (Note: Just a guess, you don't have to use Riemann sums. Use the grid to help.)</p></div>
+<article class="task exercise-like" id="task-390"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-1439">\(\displaystyle \int_0^2 \left(x^2+3\right) \, dx \)</p>
+<figure class="figure figure-like" id="in5-figure-2"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/x2plus3.png" class="contained" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.5.11<span class="period">.</span></span><span class="space"> </span></figcaption></figure></article><article class="task exercise-like" id="task-391"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-1440">\(\displaystyle \int_1^9 \left(\sqrt{x}\right) \, dx \)</p>
+<figure class="figure figure-like" id="in5-figure-3"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/sqrtx.png" class="contained" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.5.12<span class="period">.</span></span><span class="space"> </span></figcaption></figure></article><article class="task exercise-like" id="task-392"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-1441">\(\displaystyle \int_{-\pi/4}^{\pi/2} \left(\cos x\right) \, dx \)</p>
+<figure class="figure figure-like" id="in5-figure-4"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/cosx.png" class="contained" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.5.13<span class="period">.</span></span><span class="space"> </span></figcaption></figure></article></article></section><section class="subsection" id="subsection-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.5.3</span> <span class="title">Area</span>
+</h3>
+<article class="activity project-like" id="activity-201"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.14</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-142">
+<p id="p-1442">Find the area between \(f(x)=2x-6 \) on the interval \([0,8]\) using</p>
+<ol class="decimal">
+<li id="li-910"><p id="p-derived-li-910">geometry</p></li>
+<li id="li-911"><p id="p-derived-li-911">the definite integral</p></li>
+</ol>
+<figure class="figure figure-like" id="in5-figure-5"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/linedefint.png" class="contained" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.5.15<span class="period">.</span></span><span class="space"> </span></figcaption></figure><p id="p-1443">What do you notice?</p>
+</div></article><article class="activity project-like" id="activity-202"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.16</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-143">
+<p id="p-1444">Find the area bounded by the curves \(f(x)=e^x-2\text{,}\) the \(x\)-axis, \(x=0\text{,}\) and \(x=1\text{.}\)</p>
+<figure class="figure figure-like" id="in5-figure-6"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/exminus2.png" class="contained" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.5.17<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
+</div></article><article class="activity project-like" id="activity-203"><h6 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.5.18</span><span class="period">.</span>
+</h6>
+<div class="introduction" id="introduction-144"><p id="p-1445">Set up a definite integral that represents the shaded area. Then find the area of the given region using the definite integral.</p></div>
+<article class="task exercise-like" id="task-393"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-1446">\(y=\frac{1}{x^2}\)</p>
+<figure class="figure figure-like" id="in5-figure-7"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/defintarea1.png" class="contained" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.5.19<span class="period">.</span></span><span class="space"> </span></figcaption></figure></article><article class="task exercise-like" id="task-394"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-1447">\(y=3x^2-x^3\)</p>
+<figure class="figure figure-like" id="in5-figure-8"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/defintarea2.png" class="contained" alt=""></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.5.20<span class="period">.</span></span><span class="space"> </span></figcaption></figure></article></article></section></section></div></main>
 </div>
 </body>
 </html>
