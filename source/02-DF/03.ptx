@@ -66,7 +66,7 @@
       </task>
   </activity>
 <theorem xml:id="def-powerlaw-derivative">
-       <p> The derivative of the function<m>f(x) = x^n</m>, for any real number <m>n</m> is
+       <title>The Power Rule</title><p>The derivative of the function<m>f(x) = x^n</m>, for any real number <m>n</m> is
 </p>
         <me>f'(x) = nx^{n-1}.</me>
     </theorem>
@@ -86,7 +86,7 @@
         </statement>
     </activity>
     <theorem  xml:id="def-constant-derivative">
-    <p>If <m>f(x) = c</m>, for some constant <m>c\in\mathbb{R}</m>, then <m>f'(x) = 0</m>.
+    <title>The Derivative of a Constant Function</title><p>The If <m>f(x) = c</m>, for some constant <m>c\in\mathbb{R}</m>, then <m>f'(x) = 0</m>.
         </p>
     </theorem>
     <activity xml:id="activity-derivative-elementary3">
@@ -101,7 +101,7 @@
         </statement>
     </activity>
     <theorem xml:id="def-constmult-derivative">
-    <p>The Constant Multiple Rule: If <m>c</m> is a constant and <m>f(x)</m> is a differentiable function, then
+   <title>The Constant Multiple Rule </title> <p>If <m>c</m> is a constant and <m>f(x)</m> is a differentiable function, then
         <me>\frac{d}{dx}\left[cf(x)\right] = c\frac{d}{dx}\left[f(x)\right]</me>
         </p>
     </theorem>
@@ -117,7 +117,7 @@
         </statement>
     </activity>
     <theorem xml:id="def-sumdiff-derivative">
-    <p>The Sum (Difference) Rule: If <m>f(x)</m> and <m>g(x)</m> are both differentiable, then
+    <title>The Sum and Difference Rule</title> <p>If <m>f(x)</m> and <m>g(x)</m> are both differentiable, then
         <me>\frac{d}{dx}\left[f(x) \pm g(x)\right] = \frac{d}{dx}\left[f(x)\right]\pm\frac{d}{dx}\left[g(x)\right]</me>
         </p>
     </theorem>
@@ -133,7 +133,7 @@
         </statement>
     </activity>
     <theorem xml:id="def-expon-derivative">
-    <p>For any real number <m>a</m>, if <m>f(x) = a^x</m>, then <m>f'(x) = a^x\ln(a)</m>. </p>
+   <title>The Derivative of an Exponential Function</title><p>For any real number <m>a</m>, if <m>f(x) = a^x</m>, then <m>f'(x) = a^x\ln(a)</m>. </p>
     </theorem>
    <observation>
     <p>A special case of <xref ref = "def-expon-derivative" /> is when <m>a = e</m>, where <m>e</m> is the base of the natural logarithm function. In this case let <m>f(x) = e^x</m>. Then </p>
@@ -151,7 +151,7 @@
         </statement>
     </activity>
     <theorem xml:id="def-trig-derivative">
-    <p>If <m>f(x) = \sin(x)</m>, then <m>f'(x) = \cos(x)</m>.  If <m>f(x) = \cos(x)</m>, then <m>f'(x) = -\sin(x)</m>.</p>
+    <title>The Derivative of the Sine and Cosine Functions</title><p>If <m>f(x) = \sin(x)</m>, then <m>f'(x) = \cos(x)</m>.  If <m>f(x) = \cos(x)</m>, then <m>f'(x) = -\sin(x)</m>.</p>
     </theorem>
     <activity xml:id="activity-derivative-elementary7">
         <statement>
@@ -168,7 +168,7 @@
     
     </activity>
     <theorem xml:id="def-log-derivative">
-    <p>If <m>f(x) = \ln(x)</m>, then <me>f'(x) = \frac{1}{x}</me>.</p>
+    <title>The Derivative of the Natural Log Function</title><p>If <m>f(x) = \ln(x)</m>, then <me>f'(x) = \frac{1}{x}</me>.</p>
     </theorem>
     <activity>
     <statement>

@@ -18,18 +18,20 @@
       <format>html</format>
       <source>source/main.ptx</source>
       <publication>publication/publication.ptx</publication>
-      <output-dir>output/instructor</output-dir>
+      <output-dir>output/html/instructor</output-dir>
       <stringparam key="debug.project.number" value="the-way-it-should-be"/>
       <stringparam key="commentary" value="yes"/>
     </target>
     <target name="subset">
       <format>html</format>
-      <source>source/main-subset.ptx</source>
+      <source>source/main.ptx</source>
       <publication>publication/publication-subset.ptx</publication>
-      <output-dir>output/instructor</output-dir>
+      <output-dir>output/subset</output-dir>
       <stringparam key="debug.project.number" value="the-way-it-should-be"/>
       <stringparam key="commentary" value="yes"/>
       <stringparam key="debug.skip-knowls" value="yes"/>
+      <!-- edit this to change the section/chapter/etc. to build -->
+      <xmlid-root>LT</xmlid-root>
     </target>
     <target name="latex">
       <format>latex</format>
@@ -42,7 +44,7 @@
       <format>pdf</format>
       <source>source/main.ptx</source>
       <publication>publication/publication.ptx</publication>
-      <output-dir>output/pdf</output-dir>
+      <output-dir>output/html/pdf</output-dir>
       <stringparam key="debug.project.number" value="the-way-it-should-be"/>
     </target>
   </targets>

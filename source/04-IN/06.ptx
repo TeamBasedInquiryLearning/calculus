@@ -10,6 +10,26 @@
     </ul>
   </objectives>
 
-  
+      <introduction>
+    <p>
+      In this section we extend the Fundamental Theorem of Calculus discussed in <xref ref="IN5"/> to include taking the derivatives of integrals.  We will call this addition to the Fundamental Theorem of Calculus (FTC) part II.  First we will introduce part II and then discuss the implications of this addition.
+    </p>
+    </introduction>
+  <theorem xml:id="theorem-in6-1"><title>The Fundamental Theorem of Calculus (Part II) </title>
+    <introduction>
+        <p>If a function <m>f</m> is continuous on the closed interval <m>[a,b]</m>, then the area function 
+        <me>A(x) = \int_a^x f(t)\,dt \,\,\,\,\, \mathrm{for}\,\,\, a\leq x\leq b,</me>
+            is continuous on <m>[a,b]</m> and differentiable on <m>(a,b)</m>.  The area function satisfies <m>A'(x) = f(x)</m>.  Equivalently,
+            <me>A'(x) = \frac{d}{dx}\int_0^x f(t)\,dt = f(x),</me>
+            which means that the area function of <m>f</m> is an antiderivative of f on <m>[a,b]</m>.
+        </p>
+    </introduction>
+</theorem>
+    
+    <activity xml:id="activity-in6-1">
+        <introduction>
+        <p>For the following </p>
+        </introduction>
+    </activity>
 
 </section>

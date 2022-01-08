@@ -198,13 +198,13 @@
                 </row>
         </tabular>
         </table>
-    <p>Based on <xref ref = "table-limit-numerical3"/>, what information can be inferred about <m>\lim_{x\to 1^-}f(x)</m>, <m>\lim_{x\to 1^+}f(x)</m>, and <m>\lim_{x\to 1}f(x)</m>?
+    <p>Based on <xref ref = "table-limit-numerical3"/>, what information can be inferred about <m>\displaystyle \lim_{x\to 1^-}f(x)</m>, <m>\displaystyle \lim_{x\to 1^+}f(x)</m>, and <m>\displaystyle \lim_{x\to 1}f(x)</m>?
 </p>
         <ol label="A">
-            <li><p> <m>\lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\lim_{x\rightarrow 1}f(x) = 0</m></p></li>
-            <li><p> <m>\lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\lim_{x\rightarrow 1}f(x)</m> does not exist </p></li>
-            <li><p> <m>\lim_{x\rightarrow 1^-}f(x) = 0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = -0.5</m>, and <m>\lim_{x\rightarrow 1}f(x)</m> does not exist</p></li>
-            <li><p> <m>\lim_{x\rightarrow 1^-}f(x) = 0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = -0.5</m>, and <m>\lim_{x\rightarrow 1}f(x) = 0</m></p></li>
+            <li><p> <m> \displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\lim_{x\rightarrow 1}f(x) = 0</m></p></li>
+            <li><p> <m> \displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\lim_{x\rightarrow 1}f(x)</m> does not exist </p></li>
+            <li><p> <m>\displaystyle \lim_{x\rightarrow 1^-}f(x) = 0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = -0.5</m>, and <m>\lim_{x\rightarrow 1}f(x)</m> does not exist</p></li>
+            <li><p> <m>\displaystyle \lim_{x\rightarrow 1^-}f(x) = 0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = -0.5</m>, and <m>\lim_{x\rightarrow 1}f(x) = 0</m></p></li>
         </ol>
     </activity>
 
@@ -214,7 +214,7 @@
     <p>Consider the following function <m>f(x)= 3x^3 + 2x^2- 5x+20.</m></p>
            </introduction>
        <task>
-        <p> Of the following options, which of the 5 values would be best to help you find <m>\lim_{x \to 2}f(x)</m> numerically?</p>
+        <p> Of the following options, at which values given would you evaluate <m>f(x)</m> to best determine <m>\displaystyle \lim_{x \to 2}f(x)</m> numerically?</p>
         
                <ol label="A">
                     <li><p> 1.9, 1.99, 2.0, 2.01, 2.1</p></li>
@@ -315,10 +315,42 @@
         </statement> </task>   
     </activity>
 
-    <commentary>
+        <activity checkit-seed="0014" checkit-slug="LT2" checkit-title="Limits numerically">
+    <statement>
+        <p>
+Use technology to complete the following table of values.
+<me>f(x)=\frac{ x^{2} - x - 12 }{ x^{2} + 16 \, x + 39 }</me>
+            <me>
+\begin{array}{c|ccccccc}
+x &amp; -3.1&amp; -3.01&amp; -3.001&amp; -3&amp; -2.999&amp; -2.99&amp; -2.9 \\\hline
+f(x) &amp; &amp; &amp; &amp; &amp; &amp; &amp;  \\
+\end{array}
+            </me>
+        </p>
+        <p>
+Then explain how to use it to make an educated guess as to the value of
+the limit <me>\displaystyle \lim_{ x\to -3 } \frac{ x^{2} - x - 12 }{ x^{2} + 16 \, x + 39 }</me>
+        </p>
+    </statement>
+<!--     <answer>
+        <p>
+            <me>
+\begin{array}{c|ccccccc}
+x &amp; -3.1&amp; -3.01&amp; -3.001&amp; -3&amp; -2.999&amp; -2.99&amp; -2.9 \\\hline
+f(x) &amp; -0.71717&amp; -0.7017&amp; -0.70017&amp; DNE&amp; -0.69983&amp; -0.6983&amp; -0.68317 \\
+\end{array}
+            </me>
+        </p>
+        <p>
+The limit is <m>-0.7</m>.
+        </p>
+    </answer> -->
+</activity>
+    
+    <aside>
         <p><xref ref="activity-bolt1"/> was inspired by <url href = "https://www.quantamagazine.org/infinite-powers-usain-bolt-and-the-art-of-calculus-20190403/"/></p>
         <p>Its data was taken from <url href = "https://speedendurance.com/2008/08/22/usain-bolt-100m-10-meter-splits-and-speed-endurance/"/></p>
-    </commentary>
+    </aside>
         <activity xml:id = "activity-bolt1">
               <introduction> 
                 <p> In this activity you will study the velocity of Usain Bolt in his Beijing 100 meters
@@ -413,36 +445,6 @@
          </statement> </task> 
     </activity>
     
-    <activity checkit-seed="0014" checkit-slug="LT2" checkit-title="Limits numerically">
-    <statement>
-        <p>
-Use technology to complete the following table of values.
-<me>f(x)=\frac{ x^{2} - x - 12 }{ x^{2} + 16 \, x + 39 }</me>
-            <me>
-\begin{array}{c|ccccccc}
-x &amp; -3.1&amp; -3.01&amp; -3.001&amp; -3&amp; -2.999&amp; -2.99&amp; -2.9 \\\hline
-f(x) &amp; &amp; &amp; &amp; &amp; &amp; &amp;  \\
-\end{array}
-            </me>
-        </p>
-        <p>
-Then explain how to use it to make an educated guess as to the value of
-the limit <me>\lim_{ x\to -3 } \frac{ x^{2} - x - 12 }{ x^{2} + 16 \, x + 39 }</me>
-        </p>
-    </statement>
-<!--     <answer>
-        <p>
-            <me>
-\begin{array}{c|ccccccc}
-x &amp; -3.1&amp; -3.01&amp; -3.001&amp; -3&amp; -2.999&amp; -2.99&amp; -2.9 \\\hline
-f(x) &amp; -0.71717&amp; -0.7017&amp; -0.70017&amp; DNE&amp; -0.69983&amp; -0.6983&amp; -0.68317 \\
-\end{array}
-            </me>
-        </p>
-        <p>
-The limit is <m>-0.7</m>.
-        </p>
-    </answer> -->
-</activity>
+
     
 </section>

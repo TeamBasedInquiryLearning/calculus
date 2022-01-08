@@ -93,7 +93,12 @@ This work includes materials used under license from the following works:
 
   </colophon>
 
-    <xi:include href="./slideshow.ptx" />
+    <preface xml:id="printable-pdf">
+    <title>Printable PDF</title>
+    <p>
+A PDF with all activities may be printed by visiting <url href="pdf/main.pdf"/>.
+    </p>
+</preface>
 <!--  <dedication>
     <p>
       For ...

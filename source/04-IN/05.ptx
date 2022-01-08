@@ -95,21 +95,21 @@
     
    <task>
        <p> <m> \displaystyle \int_0^2 \left(x^2+3\right) \, dx </m></p>
-       <figure xml:id="in5-figure-2">
+       <figure xml:id="in5-figure-3">
           <image width="50%" source="x2plus3.png" />
        </figure>
     </task>
     
     <task>
        <p> <m> \displaystyle \int_1^9 \left(\sqrt{x}\right) \, dx </m></p>
-       <figure xml:id="in5-figure-3">
+       <figure xml:id="in5-figure-4">
           <image width="50%" source="sqrtx.png" />
        </figure>
     </task>
     
     <task>
        <p> <m> \displaystyle \int_{-\pi/4}^{\pi/2} \left(\cos x\right) \, dx </m></p>
-       <figure xml:id="in5-figure-4">
+       <figure xml:id="in5-figure-5">
           <image width="50%" source="cosx.png" />
        </figure>
     </task>
@@ -125,7 +125,7 @@
                    <li> the definite integral </li>
                </ol>         
            </p>
-           <figure xml:id="in5-figure-5">
+           <figure xml:id="in5-figure-6">
           <image width="50%" source="linedefint.png" />
        </figure>
            <p>What do you notice?</p>
@@ -135,7 +135,7 @@
    <activity>
        <introduction>
            <p>Find the area bounded by the curves <m>f(x)=e^x-2</m>, the <m>x</m>-axis, <m>x=0</m>, and <m>x=1</m>. </p>
-           <figure xml:id="in5-figure-6">
+           <figure xml:id="in5-figure-7">
           <image width="50%" source="exminus2.png" />
        </figure>
        </introduction>
@@ -147,13 +147,13 @@
         </introduction>
         <task>
             <p><m>y=\frac{1}{x^2}</m></p>
-            <figure xml:id="in5-figure-7">
+            <figure xml:id="in5-figure-8">
           <image width="50%" source="defintarea1.png" />
        </figure>
         </task>
         <task>
             <p><m>y=3x^2-x^3</m></p>
-            <figure xml:id="in5-figure-8">
+            <figure xml:id="in5-figure-9">
           <image width="50%" source="defintarea2.png" />
        </figure>
         </task>

@@ -120,9 +120,7 @@
       </statement>
     </definition>
 
-<!--     <commentary>
-        <p>Sample facilitation note.</p>
-    </commentary> -->
+
 
     <activity xml:id="activity-limits-graphically-one-sided" estimated-time="10">
         <introduction>
@@ -213,22 +211,22 @@
         </introduction>
         <task>
             <p>
-       Find  <m>\lim_{x \to -3^-} f(x)</m> and <m>\lim_{x \to -3^+} f(x)</m>.
+       Find  <m>\displaystyle \lim_{x \to -3^-} f(x)</m> and <m>\displaystyle \lim_{x \to -3^+} f(x)</m>.
             </p>
          </task>
           <task>
             <p>
-       Find  <m>\lim_{x \to -1^-} f(x)</m> and <m>\lim_{x \to -1^+} f(x)</m>.
+       Find  <m>\displaystyle \lim_{x \to -1^-} f(x)</m> and <m>\displaystyle \lim_{x \to -1^+} f(x)</m>.
             </p>
          </task>
           <task>
             <p>
-       Find  <m>\lim_{x \to 2^-} f(x)</m> and <m>\lim_{x \to 2^+} f(x)</m>.
+       Find  <m> \displaystyle \lim_{x \to 2^-} f(x)</m> and <m>\displaystyle \lim_{x \to 2^+} f(x)</m>.
             </p>
          </task>       
           <task>
             <p>
-       Find  <m>\lim_{x \to 4^-} f(x)</m> and <m>\lim_{x \to 4^+} f(x)</m>.
+       Find  <m>\displaystyle \lim_{x \to 4^-} f(x)</m> and <m> \displaystyle \lim_{x \to 4^+} f(x)</m>.
             </p>
          </task>
          <task>
@@ -244,9 +242,26 @@
          </task>
     </activity>
 
+     <activity checkit-seed="3831" checkit-slug="LimitGraph" checkit-title="Limits graphically">
+    <statement>
+        <p>Sketch the graph of a function <m>f(x)</m> that meets all of the following criteria. Be sure to scale your axes and label any important features of your graph.</p>
+        <ol>
+            <!-- Vertical Asymptote -->
+                    <li><p><m>\displaystyle \lim_{x\to 5^-} f(x)</m> is finite, but <m>\displaystyle \lim_{x\to 5^+} f(x)</m> is infinite.</p></li>
+            <!-- Removable Discontinuity -->
+            <!-- Jump Discontinuity -->
+            <!-- Vertical Asymptote -->
+            <!-- Removable Discontinuity -->
+                    <li><p><m>\displaystyle \lim_{x\to -3} f(x)=-4</m>, but <m>f(-3)=0</m>.</p></li>
+            <!-- Jump Discontinuity -->
+            <!-- Vertical Asymptote -->
+            <!-- Removable Discontinuity -->
+            <!-- Jump Discontinuity -->
+                    <li><p><m>\displaystyle \lim_{x\to -1^-} f(x)=-1</m> but <m>\displaystyle \lim_{x\to -1^+} f(x)\neq-1</m>.</p></li>
+        </ol>
+    </statement>   
     
-    
-   <activity estimated-time="10">
+   <activity  xml:id="activity-limits-graphically-ext" estimated-time="10">
         <introduction>
             <p>    In this activity we will explore a mathematical theorem, the Squeeze Theorem. Here is the statement of the theorem.
   </p>            
@@ -293,64 +308,10 @@
         </task>
     </activity> 
     
-    <activity checkit-seed="3831" checkit-slug="LimitGraph" checkit-title="Limits graphically">
-    <statement>
-        <p>Sketch the graph of a function <m>f(x)</m> that meets all of the following criteria. Be sure to scale your axes and label any important features of your graph.</p>
-        <ol>
-            <!-- Vertical Asymptote -->
-                    <li><p><m>\lim_{x\to 5^-} f(x)</m> is finite, but <m>\lim_{x\to 5^+} f(x)</m> is infinite.</p></li>
-            <!-- Removable Discontinuity -->
-            <!-- Jump Discontinuity -->
-            <!-- Vertical Asymptote -->
-            <!-- Removable Discontinuity -->
-                    <li><p><m>\lim_{x\to -3} f(x)=-4</m>, but <m>f(-3)=0</m>.</p></li>
-            <!-- Jump Discontinuity -->
-            <!-- Vertical Asymptote -->
-            <!-- Removable Discontinuity -->
-            <!-- Jump Discontinuity -->
-                    <li><p><m>\lim_{x\to -1^-} f(x)=-1</m> but <m>\lim_{x\to -1^+} f(x)\neq-1</m>.</p></li>
-        </ol>
-    </statement>
+
     
 </activity>
     
-<!--     <theorem>
-        <statement>
-            <p>
-                For all right triangles,
-                <me>a^2+b^2=c^2</me>.
-            </p>
-        </statement>
-    </theorem>
-    <example>
-        <statement>
-            <p>For example, here's an example.</p>
-        </statement>
-    </example>
-    <observation>
-        <statement>
-            <p>Observe this frog.</p>
-            <figure>
-                <image source="frog.jpg"/>
-                <caption>An amphibian</caption>
-            </figure>
-        </statement>
-    </observation>
-    <remark>
-        <statement>
-            <p>Something that just needs to be said.</p>
-            <p>It has a picture.</p>
-            <figure>
-                <image width="50%">
-                    <latex-image>
-\begin{tikzpicture}
-    \draw (0,0) circle (2);
-\end{tikzpicture}
-                    </latex-image>
-                </image>
-                <caption>A circle</caption>
-            </figure>
-        </statement>
-    </remark> -->
+
 </section>
 

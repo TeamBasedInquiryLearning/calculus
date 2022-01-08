@@ -1,22 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
-
-  <xi:include href="meta/docinfo.ptx" />
-
-  <book xml:id="cal1">
-    <title>Calculus 1 for Team-Based Inquiry Learning</title>
-    <subtitle>Subset Preview</subtitle>
-
-      <!-- Use this for a single section -->
-      <chapter>
-          <title>Chapter Title</title>
-          <xi:include href="04-IN/07.ptx"/>
-          <xi:include href="04-IN/09.ptx"/>
-      </chapter>
-
-      <!-- Use this for a single chapter
-        <xi:include href="01-LT/main.ptx"/>
-        -->
-
-  </book>
+  <!-- THIS IS NO LONGER USED! -->
+  <!-- Edit project.ptx's subset target to change the xmlid-root to the subset
+    of the book you want to view. -->
 </pretext>

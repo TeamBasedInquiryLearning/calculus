@@ -124,7 +124,7 @@
         </ol>
         <p> The latter approach is more convenient when you want to consider the value of the derivative function at multiple points! </p></observation>
     
-      <activity xml:id="activity-derivative-analytically-algebraic3">
+      <activity xml:id="activity-derivative-analytically-algebraic4">
           <introduction>
             <p> Consider the function <m>f(x) = \frac{1}{x^2}</m>. You will find <m>f'(1)</m> in two ways!  </p>   </introduction>
                  <task> <p> Using the limit definition of the derivative at a point, compute the difference quotient on the interval <m>[1,1+h]</m> and then take the limit as <m>h\to 0</m>. What do you get? </p> 
