@@ -88,7 +88,7 @@
     <activity xml:id = "activity-limits-numerically2">
         <table xml:id="table-limit-numerical2">
         <tabular>
-             <row>
+                <row bottom="minor">
                   <cell>
                       <m>x</m>
                   </cell>
@@ -149,7 +149,7 @@
     <activity xml:id = "activity-limits-numerically3">
     <table xml:id="table-limit-numerical3">
         <tabular>
-        <row>
+            <row bottom="minor">
                   <cell>
                       <m>x</m>
                   </cell>
@@ -251,7 +251,7 @@
         </figure>
         <table xml:id="table-limit-numerical5">
         <tabular>
-            <row>
+                <row bottom="minor">
                   <cell>
                       <m>x</m>
                   </cell>
@@ -347,10 +347,10 @@ The limit is <m>-0.7</m>.
     </answer> -->
 </activity>
     
-    <aside>
+    <commentary>
         <p><xref ref="activity-bolt1"/> was inspired by <url href = "https://www.quantamagazine.org/infinite-powers-usain-bolt-and-the-art-of-calculus-20190403/"/></p>
         <p>Its data was taken from <url href = "https://speedendurance.com/2008/08/22/usain-bolt-100m-10-meter-splits-and-speed-endurance/"/></p>
-    </aside>
+   </commentary>
         <activity xml:id = "activity-bolt1">
               <introduction> 
                 <p> In this activity you will study the velocity of Usain Bolt in his Beijing 100 meters
@@ -360,7 +360,7 @@ The limit is <m>-0.7</m>.
                     Let's explore this. The table <xref ref = "table-bolt1"/> shows his split times recorded every 10 meters. </p>
         <table xml:id="table-bolt1">
         <tabular>
-            <row>
+                <row bottom="minor">
                   <cell>
                       <m> t\, \text{(seconds)} </m>
                   </cell>

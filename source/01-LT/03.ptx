@@ -17,11 +17,11 @@
     </remark>
     
     <activity xml:id="activity-limits-analytically1">
-            <p>Given <m>f(x)=3x^2-\frac{1}{2}x+4</m>, evaluate <m>f(2)</m> and approximate <m>\lim_{x\to2}f(x)</m> numerically (or graphically). What do you think is more likely?</p>
+            <p>Given <m>f(x)=3x^2-\frac{1}{2}x+4</m>, evaluate <m>f(2)</m> and approximate <m>\displaystyle \lim_{x\to2}f(x)</m> numerically (or graphically). What do you think is more likely?</p>
       <ol label="A">
-                <li><m>\lim_{x \to 2}f(x)=f(2)</m></li>
-                <li><m>\lim_{x \to 2}f(x) \approx f(2)</m></li>
-                <li><m>\lim_{x \to 2}f(x) \neq f(2)</m></li>
+                <li><m>\displaystyle \lim_{x \to 2}f(x)=f(2)</m></li>
+                <li><m>\displaystyle \lim_{x \to 2}f(x) \approx f(2)</m></li>
+                <li><m>\displaystyle \lim_{x \to 2}f(x) \neq f(2)</m></li>
             </ol>
     </activity>
     
@@ -30,7 +30,7 @@
             <p>The table below gives values of a few different functions.</p>
             <table xml:id="table-activity-limits-analytically2">
               <tabular>
-                <row>
+                    <row bottom="minor">
                   <cell>
                     x
                   </cell>
@@ -167,7 +167,7 @@
     
      <activity xml:id="activity-limits-analytically3">
         <statement>
-            <p>If <m>\lim_{x\to 2} f(x) = 2</m> and <m>\lim_{x\to 2} g(x) = -3</m>, which of the following statements are true? Select all that apply! </p>
+            <p>If <m>\displaystyle \lim_{x\to 2} f(x) = 2</m> and <m>\displaystyle \lim_{x\to 2} g(x) = -3</m>, which of the following statements are true? Select all that apply! </p>
      <ol label="A">
                 <li><m>\displaystyle \lim_{x\to 2} (f(x) \cdot g(x)) = -6</m></li>
                 <li><m>\displaystyle \lim_{x\to 2} (f(x) + g(x)) = -1</m></li>
@@ -181,14 +181,15 @@
     <theorem xml:id="theorem-limit-laws-2">
         <title>Limit Laws, II</title>
         <statement>
-            <p>Let <m>f</m> and <m>g</m> be functions defined on an open interval <m>I</m> containing <m>c</m> satisfying<me>
-                \lim_{x \to c} f(x) = L \,  \, \, \lim_{x \to L} g(x) = K,  \, text{and}  g(L)=K
-                </me>. Then we have the following limits as well.
+            <p>Let <m>f</m> and <m>g</m> be functions defined on an open interval <m>I</m> containing <m>c</m> satisfying
+                <me>
+                \lim_{x \to c} f(x) = L, \,  \, \, \, \lim_{x \to L} g(x) = K,  \text{and} \, g(L)=K.
+                </me> Then we have the following limits as well.
             </p>
             <ol>
-                <li>Power Law <m>\lim_{x \to c} f(x)^n = L^n</m>, for  <m>n</m> a positive integer;</li>
-                <li>Root Law <m>\lim_{x \to c} \sqrt[n]{f(x)} = \sqrt[n]{L}, for  <m>n</m> a positive integer;</m></li>
-                <li>Composition Law <m>\lim_{x \to c} g(f(x)) = K. </m></li>
+                <li>Power Law: <m>\displaystyle \lim_{x \to c} f(x)^n = L^n</m>, for  <m>n</m> a positive integer;</li>
+                <li>Root Law: <m>\displaystyle \lim_{x \to c} \sqrt[n]{f(x)} = \sqrt[n]{L}</m>, for  <m>n</m> a positive integer;</li>
+                <li>Composition Law: <m>\displaystyle \lim_{x \to c} g(f(x)) = K. </m></li>
             </ol>
         </statement>
     </theorem>
@@ -278,7 +279,7 @@
     
     <activity xml:id="activity-limits-analytically4">
         <statement>
-            <p>Given <m>p(x) = -3x^2 - 5x+7</m>, which of the following limit laws would use to determine <m>\lim_{x\to 2} p(x)</m>? Choose all that apply. </p>
+            <p>Given <m>p(x) = -3x^2 - 5x+7</m>, which of the following limit laws would use to determine <m>\displaystyle \lim_{x\to 2} p(x)</m>? Choose all that apply. </p>
          <ol label="A">
                 <li>Sums/Difference Law</li>
                 <li>Scalar Multiple Law</li>
@@ -295,14 +296,14 @@
      <theorem xml:id="theorem-limits-polynomials">
         <title>Limits of Polynomials</title>
         <statement>
-            <p>If  <m>p(x)</m> is a polynomial and <m>c</m> is a real number, then <m>\lim_{x \to c} p(x) = p(c)</m>. This is also known as the <term>Direct Substitution Property</term> for polynomials.
+            <p>If  <m>p(x)</m> is a polynomial and <m>c</m> is a real number, then <m>\displaystyle \lim_{x \to c} p(x) = p(c)</m>. This is also known as the <term>Direct Substitution Property</term> for polynomials.
             </p>
         </statement>
     </theorem>
     
         <activity xml:id="activity-limits-rationals1">
         <statement>
-            <p> Given <m>p(x)=-3x^2-5x+7</m> and <m>q(x)=x^4-x^2+3</m>, which of the following describes the most efficient way to determine <m>\lim_{x \to -1} \frac{p(x)}{q(x)}</m>?
+            <p> Given <m>p(x)=-3x^2-5x+7</m> and <m>q(x)=x^4-x^2+3</m>, which of the following describes the most efficient way to determine <m>\displaystyle \lim_{x \to -1} \frac{p(x)}{q(x)}</m>?
             </p>
        <ol label="A">
                 <li>Sums/difference, scalar multiple, and product laws </li> 
@@ -317,7 +318,7 @@
     <theorem xml:id="theorem-limits-rationals">
     <title>Limits of Rational Functions </title>
         <statement>
-        <p>If <m>p(x)</m> and <m>q(x)</m> are polynomials, <m>c</m> is a real number, and <m>q(c) \neq 0</m> then <m>\lim_{x \to c} \frac{p(x)}{q(x)}=\frac{p(c)}{q(c)}</m>.</p>
+        <p>If <m>p(x)</m> and <m>q(x)</m> are polynomials, <m>c</m> is a real number, and <m>q(c) \neq 0</m> then <m>\displaystyle \lim_{x \to c} \frac{p(x)}{q(x)}=\frac{p(c)}{q(c)}</m>.</p>
         </statement>
     </theorem>
     
@@ -349,14 +350,14 @@
     <statement> <p> When we compute the limit of a ratio where both the numerator and denominator have limit equal to zero, we have to compute the value of a <m>\frac{0}{0}</m> <term>indeterminate form</term>. The value of an indeteminate form can be any real number or even infinity or not existent, we just do not know yet! We can usually determine the value of an indeterminate form using some algebraic manipulations of the expression given. </p></statement>
     </remark>
     
-<definition><statement><p>A function <m>f(x)</m> has a <term>hole</term> at <m>x=c</m> if <m>f(c)</m> does not exist but <m>\dispalystyle \lim_{x \to c} f(x)</m> does exist and is equal to a real number. </p></statement></definition>    
+<definition xml:id="def-hole"><statement><p>A function <m>f(x)</m> has a <term>hole</term> at <m>x=c</m> if <m>f(c)</m> does not exist but <m>\displaystyle \lim_{x \to c} f(x)</m> does exist and is equal to a real number. </p></statement></definition>    
     
 <example><statement><p>The function <m>f(x)=\frac{x^2-1}{x-1}</m> has a hole at <m>x=1</m> because <m>f(1)</m> is not defined but 
-    <me>\lim_{x \to 1} \frac{x^2-1}{x-1} = \lim_{x \to 1} \frac{(x-1)(x+1)}{x-1} = \lim_{x \to 1} )(x+1) = 2 ,</me>
+    <me>\lim_{x \to 1} \frac{x^2-1}{x-1} = \lim_{x \to 1} \frac{(x-1)(x+1)}{x-1} = \lim_{x \to 1} (x+1) = 2 ,</me>
     so the limit exists and is equal to a real number. Notice that <m>\displaystyle \lim_{x \to 1} \frac{x^2-1}{x-1}</m> is also an example of a limit giving an indeterminate form <m>\frac{0}{0}</m> which we could then compute using an algebraic manipulation of the function given.
     </p></statement></example>
 
-<activity checkit-seed="0006" checkit-slug="LT3" checkit-title="Limits analytically">
+<activity xml:id="limits-alg-checkit">
     <statement>
         <p>
             Determine the following limits and explain your reasoning.
@@ -374,8 +375,10 @@
       <activity xml:id = "activity-bolt2">
               <introduction> 
                 <p> In activity <xref ref = "activity-bolt1"/> you studied the velocity of Usain Bolt in his Beijing 100 meters dash. We will now study this situation analytically. To make our computations simpler, we will approximate that he could run 100 meters in 10 seconds and we will consider the model <m>d=f(t)=t^2</m>, where <m>d</m> is the distance in meters and <m>t</m> is the time in seconds. </p>
-                  <p> The average velocity is the ratio distance covered over time elapsed. If we consider the interval that starts at <m>t=a</m> and has width <m>h</m>, written <m>[a,a+h]</m>, the average velocity on this interval is <m> \frac{f(a+h)-f(a)}{(a+h) - a} = \frac{f(a+h)-f(a)}{h}</m>. The instantaneous velocity at time <m>t=a</m> is given by: </p>
-       <me> \lim_{h \to 0} \frac{f(a+h)-f(a)}{h}</me>
+                  
+                  <note xml:id="inst-velocity">
+                  <p> The average velocity is the ratio distance covered over time elapsed. If we consider the interval that starts at <m>t=a</m> and has width <m>h</m>, written <m>[a,a+h]</m>, the average velocity on this interval is <m> \displaystlyle \frac{f(a+h)-f(a)}{(a+h) - a} = \frac{f(a+h)-f(a)}{h}</m>. The instantaneous velocity at time <m>t=a</m> is given by: </p>
+       <me> \lim_{h \to 0} \frac{f(a+h)-f(a)}{h}</me>. </note>
     </introduction>
              <task> <statement> <p> Compute the average velocity on the interval <m>[5,6]</m>. We think of this interval as <m>[5,5+h]</m> for the value of <m>h=1</m>.</p>
          </statement> </task>    

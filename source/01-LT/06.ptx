@@ -11,15 +11,33 @@
     </objectives>
 
 <!-- start of activities     -->
-       <activity estimated-time="5">
+       <activity xml:id="infinity-inutition2">
         <introduction>
             <p>
                 Consider the graph in <xref ref="vert-asymp" />.
             </p>
             <figure xml:id="vert-asymp">
-                <image width="50%" source="vert-asymp.png" />
-                <caption>Graph of <m> \frac{1}{x^2}</m></caption>
-            </figure>
+                <image width="50%">
+                          <latex-image>
+                \begin{tikzpicture}[scale=0.5]
+\begin{axis}[
+		 axis lines=middle,
+    % 	 grid=major,
+    % 	 xmin=-3.14,
+    % 	 xmax=9.42,
+    %	 ymin=-1.5,
+    %	 ymax=1.5,
+    % 	 xtick={-3.14,0,...,9.42},
+    % 	 ytick={-1,-0.75,...,1},
+        ]
+   \addplot[samples=500,domain=-2:-0.1, blue, thick]{1/x^2};
+    \addplot[samples=500,domain=0.1:2, blue, thick]{1/x^2};
+\end{axis}
+\end{tikzpicture}
+                        </latex-image>
+                    </image>
+                    <caption> The graph of <m>1/x^2</m>.</caption>
+                </figure>
 
         </introduction>
         <task>
@@ -62,12 +80,12 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
     </definition>
 
 
-    <activity estimated-time="5">
+    <activity xml:id="asymptote-vert">
         <introduction>
             <p>
                 Which of the following functions have vertical asymptotes? Select all!
 <!-- TO-DO make the graphs prettier-->
-            </p>
+                     </p>
             <sidebyside>
                 <figure>
                     <image>
@@ -82,7 +100,7 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
                                  ylabel=$y$,
                                  xlabel=$x$
                                 ]
-                            \addplot[domain=-5:5, blue, ultra thick] {e^x};
+                            \addplot[samples=500, domain=-5:5, blue, ultra thick] {e^x};
                         \end{axis}
                         \end{tikzpicture}
                         </latex-image>
@@ -101,7 +119,7 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
                                  ylabel=$y$,
                                  xlabel=$x$
                                 ]
-                            \addplot[domain=0.01:5, blue, ultra thick] {ln(x)};
+                            \addplot[samples=500, domain=0.01:5, blue, ultra thick] {ln(x)};
                         \end{axis}
                         \end{tikzpicture}
                     </latex-image>
@@ -182,8 +200,8 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
                                  ylabel=$y$,
                                  xlabel=$x$
                                 ]
-                            \addplot[domain=-5:0.9, blue, ultra thick] { (x^2+1)/(x-1)};
-                          \addplot[domain=1.1:5, blue, ultra thick] { (x^2+1)/(x-1)};
+                            \addplot[samples=500, domain=-5:0.9, blue, ultra thick] { (x^2+1)/(x-1)};
+                          \addplot[samples=500, domain=1.1:5, blue, ultra thick] { (x^2+1)/(x-1)};
                         \end{axis}
                         \end{tikzpicture}
                     </latex-image>
@@ -191,20 +209,16 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
                     <caption>F</caption>
                 </figure>
             </sidebyside>
-            <figure xml:id="figure-1-2">
-                <image width="50%" source="image-1.2.png" />
-                <caption>Six graphs that may or may not have vertical asymptotes</caption>
-            </figure>
-                   </introduction>
+        </introduction>             
     </activity>
 
          <remark>
         <statement>
-            <p>If <m>x=a</m> is a vertical asymptote for the function <m>f(x) </m>,  the function <m> f(x)</m> is not continuous at <m> x=a</m> because the function's output tends to plus or minus infinity and so the limit is not equal to a number. </p>
+            <p>If <m>x=a</m> is a vertical asymptote for the function <m>f(x) </m>,  the function <m> f(x)</m> is not defined at <m>x=a</m>. As <m>f(a)</m> does not exist, the function is NOT continuous at <m> x=a</m>. Moreover, the function's output tends to plus or minus infinity and so the limit is not equal to a number. </p>
              </statement>
         </remark>
 
-             <activity estimated-time="5">
+             <activity xml:id="infinity-divide-zero">
         <introduction>
             <p>
         Notice that as <m>x</m> goes to 0, the value of <m> x^2</m> goes to 0 but the value of <m>1/x^2</m>  goes to infinity. What is the best explanation for this behavior?
@@ -221,8 +235,10 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
 </p></li>
             </ol>
     </activity>
+    
+    <remark><statement><p>Informally, we say that the limit of "<m>\frac{1}{0}</m>" is infinite. Notice that this could be either positive or negative infinity, depending on how whether the outputs are becoming more and more positive or more and more negative as we approach zero.</p></statement></remark>
 
-  <activity estimated-time="5">
+  <activity xml:id="limits-vert-asymptote">
         <introduction>
             <p>
 Consider the rational function <m>f(x) = \frac{2}{x-3} </m>. Which of the following options best describes the limits as x approaches <m>3</m> from the right and from the left?
@@ -240,8 +256,14 @@ Consider the rational function <m>f(x) = \frac{2}{x-3} </m>. Which of the follow
 </p></li>
             </ol>
      </activity>
+    
+      <remark xml:id="vert-asymptote-den">
+        <statement>
+            <p>When considering a ratio of functions <m>f(x)/g(x) </m>, the inputs <m> a</m> where <m> g(a)=0</m> are not in the domain of the ratio. If <m>g(a)=0 </m> but <m>f(a) </m> is not equal to 0, then <m> x=a</m> is a vertical asymptote </p>
+             </statement>
+        </remark>
 
-<activity estimated-time="5">
+<activity xml:id="limits-intuition-hole">
         <introduction>
             <p>
 Consider the function <m>f(x)=\frac{x^2-1}{x-1}</m>. The line <m>x=1</m> is NOT a vertical asymptote for <m> f(x)</m>. Why?
@@ -258,13 +280,10 @@ Consider the function <m>f(x)=\frac{x^2-1}{x-1}</m>. The line <m>x=1</m> is NOT 
             </ol>
      </activity>
 
-     <remark>
-        <statement>
-            <p>When considering a ratio of functions <m>f(x)/g(x) </m>, the inputs <m> a</m> where <m> g(a)=0</m> are not in the domain of the ratio. If <m>g(a)=0 </m> but <m>f(a) </m> is not equal to 0, then <m> x=a</m> is a vertical asymptote </p>
-             </statement>
-        </remark>
+  <remark xml:id="rational-hole">
+      <statement><p>Recall the definition of a hole from <xref ref = "def-hole"/>. In <xref ref ="limits-intuition-hole"/> we have a hole at <m>x=1</m>. </p></statement></remark> 
 
-   <activity estimated-time="10">
+   <activity xml:id="rational-practice1">
         <introduction>
             <p>    Find all the vertical asymptotes of the following rational function    </p>
         </introduction>
@@ -293,11 +312,55 @@ Consider the function <m>f(x)=\frac{x^2-1}{x-1}</m>. The line <m>x=1</m> is NOT 
     </activity>
 
 
-   <activity estimated-time="10">
+  <activity xml:id="limits-infinite-output-checkit">
+    <statement>
+        <p>
+Explain and demonstrate how to find the value of each limit.
+        </p>
+        <ol>
+            <li>
+                <p> 
+                    <me>\lim_{x\to-3^- } \frac{{\left(x + 4\right)}^{2} {\left(x - 2\right)}}{{\left(x + 3\right)} {\left(x - 5\right)}}</me>
+                </p>
+            </li>
+            <li>
+                <p> 
+                    <me>\lim_{x\to-3^+ } \frac{{\left(x + 4\right)}^{2} {\left(x - 2\right)}}{{\left(x + 3\right)} {\left(x - 5\right)}}</me>
+                </p>
+            </li>
+            <li>
+                <p> 
+                    <me>\lim_{x\to-3 } \frac{{\left(x + 4\right)}^{2} {\left(x - 2\right)}}{{\left(x + 3\right)} {\left(x - 5\right)}}</me>
+                </p>
+            </li>
+        </ol>
+    </statement>
+    <answer>
+        <ol>
+            <li>
+                <p> 
+                    <me>\lim_{x\to-3^- } \frac{{\left(x + 4\right)}^{2} {\left(x - 2\right)}}{{\left(x + 3\right)} {\left(x - 5\right)}}=-\infty</me>
+                </p>
+            </li>
+            <li>
+                <p> 
+                    <me>\lim_{x\to-3^+ } \frac{{\left(x + 4\right)}^{2} {\left(x - 2\right)}}{{\left(x + 3\right)} {\left(x - 5\right)}}=+\infty</me>
+                </p>
+            </li>
+            <li>
+                <p> 
+                    <me>\lim_{x\to-3 } \frac{{\left(x + 4\right)}^{2} {\left(x - 2\right)}}{{\left(x + 3\right)} {\left(x - 5\right)}} \text{ does not exist }</me>
+                </p>
+            </li>
+        </ol>
+    </answer>
+    </activity>   
+    
+        <activity xml:id="rational-practice2">
         <introduction>
             <p>   The graph below represents the function <m>f(x) =  \displaystyle\frac{(x+2)(x+4)}{x^2+3x-4}</m>.   </p>
              <figure>
-                    <image>
+                    <image width="50%">
                     <latex-image>
             \begin{tikzpicture}[scale=1]
 \begin{axis}[
@@ -349,9 +412,29 @@ Consider the function <m>f(x)=\frac{x^2-1}{x-1}</m>. The line <m>x=1</m> is NOT 
         </task>
     </activity>
 
-
-
-   <activity estimated-time="10">
+<activity xml:id="rational-checkit"> 
+  <statement>
+        <p>
+          Consider the following rational function.
+      <me> r(x) =  \frac{ 5 \, {\left(x - 3\right)} {\left(x - 6\right)}^{3} }{ 6 \, {\left(x + 2\right)}^{3} {\left(x - 3\right)} }</me>
+        </p>
+            <ol> 
+                <li><p>Exlain how to find the horizontal asymptote(s) of <m>r(x)</m>, if there are any. Then express your findings using limit notation.</p></li>
+                 <li><p>Exlain how to find the hole(s) of <m>r(x)</m>, if there are any. Then express your findings using limit notation.</p></li>
+              <li><p>Exlain how to find the vertical asymptote(s) of <m>r(x)</m>, if there are any. Then express your findings using limit notation.</p></li>
+                   <li><p>Draw a rough sketch of <m>r(x)</m> that showcases all the limits that you have found above. </p></li>
+      </ol>
+    </statement>
+    <answer>
+        <ol>
+                <li>The horizontal asymptote is <m>\frac{5}{6}</m></li>
+              <li>The vertical asymptote is <m>-2</m></li>
+            <li>There is a hole at <m>(3 , -\frac{9}{50}) </m></li>
+        </ol>
+    </answer>
+</activity>
+    
+   <activity xml:id="limits-graphing-infinity"> 
         <introduction>
             <p>    You want to draw a function with all these properties.   </p>
             <ul>
