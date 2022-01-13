@@ -50,6 +50,7 @@ Notice that this is obtained by writing the tangent line to <m>f(x)</m> at <m>(a
          <figure>
                     <image width="50%">
                     <latex-image>  
+\begin{minipage}{\textwidth}
 \begin{center}
     \begin{tikzpicture}[scale=0.9]
 \begin{axis}[
@@ -79,6 +80,7 @@ Notice that this is obtained by writing the tangent line to <m>f(x)</m> at <m>(a
  \end{axis}
 \end{tikzpicture}
 \end{center}
+                        \end{minipage}
                           </latex-image>
                     </image>
                     <caption>The graph of <m> \ln(x)</m></caption>

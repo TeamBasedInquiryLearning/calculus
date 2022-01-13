@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<section xml:id="LT4" xmlns:xi="http://www.w3.org/2001/XInclude">
+<section xml:id="LT4" tbil-slides="build" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Continuity (LT4)</title>
     <objectives>
         <ul>
@@ -45,11 +45,13 @@
         </statement>
     </activity>
 
-    <activity xml:id="activity-continuity-def">
+    <remark xml:id="activity-continuity-def">
+        <statement>
      <p>
             How would you use the language of limits to clarify the definition of continuity? 
           </p>
-    </activity>
+        </statement>
+    </remark>
     <activity xml:id="activity-continuous-graph1" estimated-time="10">
       <introduction>
         <p>
@@ -236,8 +238,7 @@
                 <image width="50%">
                           <latex-image>
                   \begin{tikzpicture}[scale=1]
-\begin{axis}[
-    human, 
+\begin{axis}[  %human, 
 	axis lines=middle,
     grid=major,
     xmin=-2, xmax=8.5,
@@ -255,9 +256,9 @@
     \addplot[domain=5:7, blue, ultra thick] {x-5};
     \addplot[mark=none, color=blue, nodes near coords={$f(x)$}] coordinates {(2,1)};
 \addplot [only marks, blue] table {
-5	0
-1 2
-8 2
+5 0 \\
+1 2 \\
+8 2 \\
 };
 
     \addplot[only marks, color=blue, mark=*, fill=white] coordinates{(1,0) };
@@ -418,5 +419,10 @@ jump discontinuity.
             </statement>
         </task>
                  </activity>
+
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="LT4.slides.html"/>.</p>
+    </subsection>
 
 </section>

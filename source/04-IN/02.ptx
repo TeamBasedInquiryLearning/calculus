@@ -27,7 +27,7 @@
           axes for plotting <m>y = v(t)</m>;
           at right, for plotting
           <m>y = s(t)</m>.</caption>
-          <image width="100%" source="4_1_PA1.svg" />
+          <image width="100%" source="4_1_PA1" />
         </figure>
 
         <p permid="tPg">
@@ -85,7 +85,7 @@
 
     <figure xml:id="F-4-1-VelArea" permid="ybN">
       <caption>At left, a constant velocity function; at right, a non-constant velocity function.</caption>
-      <image width="74%" source="4_1_VelArea.svg" />
+      <image width="74%" source="4_1_VelArea" />
     </figure>
 
     <p permid="NkL">
@@ -149,7 +149,7 @@
 
     <figure xml:id="F-4-1-VelArea2" permid="eiW">
       <caption>Using six rectangles to estimate the area under <m>y = v(t)</m> on <m>[0,3]</m>.</caption>
-      <image width="47%" source="4_1_VelArea2.svg" />
+      <image width="47%" source="4_1_VelArea2" />
     </figure>
 <!--</sidebyside>-->
     <p permid="RUE">
@@ -173,7 +173,7 @@
     <sidebyside widths="47% 47%" margins="auto" valign="middle" permid="nSM">
 
       <table xml:id="T-4-1-Act1" permid="bEu">
-        <caption>Velocity data for the person walking.</caption>
+        <title>Velocity data for the person walking.</title>
         <tabular permid="HLD">
           <row bottom="minor" halign="center">
             <cell><m>t</m></cell>
@@ -221,7 +221,7 @@
 
       <figure xml:id="F-4-1-Act1" permid="qNs">
         <caption>The graph of <m>y = v(t)</m>.</caption>
-        <image source="4_1_Act1.svg" />
+        <image source="4_1_Act1" />
       </figure>
     </sidebyside>
 
@@ -300,7 +300,7 @@
         <li permid="HbJ">
 
           <sidebyside width="40%" permid="TZV">
-            <image source="images/4_1_Act1Soln" />
+            <image source="4_1_Act1Soln" />
           </sidebyside>
 
           <p permid="Bmx">
@@ -351,7 +351,7 @@
           </p>
 
           <sidebyside width="30%" permid="Ahe">
-            <image source="4_1_Act1Soln.svg" />
+            <image source="4_1_Act1Soln" />
           </sidebyside>
 
         </li>
@@ -441,7 +441,7 @@
 
     <figure xml:id="F-4-1-PA1Soln" permid="Hvz">
       <caption>The velocity function <m>v(t) = 3</m> and corresponding position function <m>s(t) = 3t</m>.</caption>
-      <image width="100%" source="4_1_PA1Soln.svg" />
+      <image width="100%" source="4_1_PA1Soln" />
     </figure>
 
     <p permid="iSP">

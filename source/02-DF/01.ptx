@@ -321,19 +321,19 @@
     \addplot[domain=1:5, blue, thick] {0.0625*(x-5)^2-1};
     \addplot[domain=5:7, blue, thick] {(x-6)^2 };
 \addplot [only marks, blue] table {
-5	1
-1 1
+5 1 \\
+1 1 \\
 };
 \draw[fill=white, draw=blue](axis cs:1,0) circle(1mm);
-\draw[fill=white, draw=blue](axis cs:5,-1) circle(1mm);                                               
+\draw[fill=white, draw=blue](axis cs:5,-1) circle(1mm);
 \end{axis}
 \end{tikzpicture}
-    
+
   </latex-image>
                     </image>
                     <caption>The graph of <m> h(x)</m>.</caption>
-                    </figure>         
- </introduction>   
+                    </figure>
+ </introduction>
     <task> <p> For which of the following points <m>a</m> is <m>f'(a)</m> positive? Select all that apply! </p>
            <ol label="A">
                 <li><p> -1 </p></li>

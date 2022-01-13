@@ -48,7 +48,7 @@
 
     <figure xml:id="F-4-1-PA1Soln" permid="Hvz">
       <caption>The velocity function <m>v(t) = 3</m> and corresponding position function <m>s(t) = 3t</m>.</caption>
-      <image width="100%" source="4_1_PA1Soln.svg" />
+      <image width="100%" source="4_1_PA1Soln" />
     </figure>
 
     <p permid="iSP">
@@ -198,7 +198,7 @@
     </p>
 
     <table xml:id="T-4-4-Act2" permid="PTf">
-      <caption>Familiar basic functions and their antiderivatives.</caption>
+      <title>Familiar basic functions and their antiderivatives.</title>
       <tabular top="minor" bottom="minor" permid="wao">
         <row bottom="medium">
           <cell>given function, <m>f(x)</m></cell>

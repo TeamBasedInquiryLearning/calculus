@@ -203,8 +203,7 @@
                 <image width="50%">
                           <latex-image>
                   \begin{tikzpicture}[scale=1]
-\begin{axis}[
-    human, 
+\begin{axis}[ %human,
 	axis lines=middle,
     grid=major,
     xmin=-2, xmax=8.5,
@@ -222,9 +221,9 @@
     \addplot[domain=5:7, blue, ultra thick] {x-5};
     \addplot[mark=none, color=blue, nodes near coords={$f(x)$}] coordinates {(2,1)};
 \addplot [only marks, blue] table {
-5	0
-1 2
-8 2
+5 0 \\
+1 2 \\
+8 2 \\
 };
 
     \addplot[only marks, color=blue, mark=*, fill=white] coordinates{(1,0) };
@@ -245,8 +244,8 @@
                           <latex-image>
 \begin{tikzpicture}[scale=1]
 
-\begin{axis}[	axis lines=middle,
-    grid=major, human, grid,xtick={-3,-2,...,3}, ytick={-2,-1,...,4}, ymin=-2.2,xmin=-3.5,ymax=4.5,xmax=3.5, ylabel={}, xlabel={$x$}]
+\begin{axis}[	axis lines=middle, %human,
+    grid=major, grid,xtick={-3,-2,...,3}, ytick={-2,-1,...,4}, ymin=-2.2,xmin=-3.5,ymax=4.5,xmax=3.5, ylabel={}, xlabel={$x$}]
 \addplot[domain=-3:0, color=blue, samples=100]{0.5*x};
 \addplot[domain=0:2, color=blue, samples=100]{2^x};
 \addplot[domain=2:4, color=blue, samples=50]{0.5*x+3};

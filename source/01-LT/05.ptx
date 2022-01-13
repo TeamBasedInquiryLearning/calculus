@@ -12,7 +12,7 @@
 
 <!--   start of activities    -->
 
-   <activity xml:id="infinity-inutition1">
+   <activity xml:id="LT5-infinity-inutition1">
         <introduction>
             <p>
                     Consider the graph of the polynomial function <m>f(x) = x^3</m> . We want to think about what the long term behavior of this function might be. Which of the following best describes its behavior?
@@ -56,7 +56,7 @@
     \lim_{x \to + \infty} x^3 = + \infty \, ,  \, \lim_{x \to - \infty} x^3 = - \infty. </me>
     </remark>
 
-   <activity xml:id="infinity-inutition2">
+   <activity xml:id="LT5-infinity-inutition2">
         <introduction>
             <p>
                     Consider the graph of the rational function <m>f(x) = 1/ x^3</m> . We want to think about what the long term behavior of this function might be. Which of the following best describes its behavior?

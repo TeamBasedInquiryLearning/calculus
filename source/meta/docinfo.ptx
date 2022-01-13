@@ -32,6 +32,9 @@
   \usetikzlibrary{positioning,matrix,arrows}
   \usetikzlibrary{shapes,decorations,shadows,fadings,patterns}
   \usetikzlibrary{decorations.markings}
+  \tikzset{%
+    /pgfplots/table/row sep=crcr
+  }
 </latex-image-preamble>
 
 <!-- It is possible to rename elements using the tags below -->

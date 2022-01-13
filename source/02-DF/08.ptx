@@ -195,27 +195,6 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
                     <cell>
                   <m>-\pi/2</m>
                   </cell>
-                  <cell>
-                 
-                  </cell>
-                  <cell>
-                
-                  </cell>
-                  <cell>
-                 
-                  </cell>
-                  <cell>
-                
-                  </cell>
-                                      <cell>
-                 
-                  </cell>
-                  <cell>
-               
-                  </cell>  
-                    <cell>
-               
-                  </cell>   
                 </row>
             </tabular>
         </table>
@@ -224,6 +203,7 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
      <figure>
                     <image>
                     <latex-image>  
+\begin{minipage}{\textwidth}
 \begin{center}
 \begin{tikzpicture}
 \begin{axis}[
@@ -255,13 +235,11 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
 %   \addplot[domain=-2*pi:2*pi,blue, samples=500]  {sin(deg(x))} ;
     % \addplot[domain=-2*pi:2*pi,blue] {tan(deg(x))};
     %  \addplot[domain=pi/2:3*pi/2,blue] {tan(deg(x))};
-     \addplot [only marks, blue] table {
- -1	-1.57
-% 12 28
-};
+     \addplot [only marks, blue] coordinates {(-1,-1.57)};
 \end{axis}
 \end{tikzpicture}
 \end{center}
+\end{minipage}
      </latex-image>
                     </image>
                     <caption>The graphs of <m> \sin(x)</m> and one point on <m> \sin^{-1}(x)</m>.</caption>

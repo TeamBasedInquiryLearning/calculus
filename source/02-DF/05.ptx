@@ -131,18 +131,11 @@
     ]
   \addplot[domain=-4:-0.1,blue, ultra thick,samples=500]  {-2} ;
    \addplot[domain=0:4,blue,ultra thick, samples=500]  {2} ;
-   \addplot [only marks, blue] table {
-0	2
-};
-\addplot [only marks, blue, mark=o] table {
-0 -2
-};
+   \addplot [only marks, blue] coordinates {(0,2)};
+\addplot [only marks, blue, mark=o] coordinates {(0,-2)};
  \addplot[mark=none, color=blue, nodes near coords={$a(x)$}] coordinates {(-4,2)};
 \end{axis}
 \end{tikzpicture}
-\end{center}
-\columnbreak
-\begin{center}
 \begin{tikzpicture}
 \begin{axis}[
     axis lines=middle,
@@ -158,8 +151,6 @@
     \addplot[mark=none, color=blue, nodes near coords={$b(x)$}] coordinates {(4,2)};
 \end{axis}
 \end{tikzpicture}
-
-
     </latex-image>
                     </image>
                     <caption>The graphs of <m> a(x)</m> and <m> b(x)</m></caption>
