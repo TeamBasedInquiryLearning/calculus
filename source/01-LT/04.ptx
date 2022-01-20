@@ -383,11 +383,7 @@ jump discontinuity.
         </activity>
 
   
-
-    <activity estimated-time="10">
-        <introduction>
-            <p>    In this activity we will explore a mathematical theorem, the Intermediate Value Theorem. Here is the statement of the theorem.</p>
-         <theorem>
+<theorem xml:id="IVT">
              <statement>
              <p> Suppose that: </p>
              <ul>
@@ -396,6 +392,10 @@ jump discontinuity.
              </ul>
 <p>Then, there is some input <m>c</m> in the interval <m>[a,b]</m> such that <m>f(c)=N</m>.  </p></statement> </theorem>
 
+    
+    <activity xml:id="IVT-ex">
+        <introduction>
+            <p>    In this activity we will explore a mathematical theorem, the Intermediate Value Theorem. Here is the statement of the theorem.</p> 
        </introduction>
  <task>
             <statement>
