@@ -260,12 +260,9 @@
                     <li><p><m>\displaystyle \lim_{x\to -1^-} f(x)=-1</m> but <m>\displaystyle \lim_{x\to -1^+} f(x)\neq-1</m>.</p></li>
         </ol>
     </statement>   
+    </activity>
     
-   <activity  xml:id="activity-limits-graphically-ext" estimated-time="10">
-        <introduction>
-            <p>    In this activity we will explore a mathematical theorem, the Squeeze Theorem. Here is the statement of the theorem.
-  </p>            
-         <theorem> 
+          <theorem xml:id="squeeze-thm"> 
              <statement> 
              <p> Suppose that: </p> 
              <ul>
@@ -273,7 +270,10 @@
                   <li> <p> the limit as <m>x</m> approaches <m>a</m> of <m> f(x) </m> is equal to the same value <m>L</m> as the limit of <m>h(x)</m>, so <m>\lim_{x\to a} f(x) = L =\lim_{x\to a} h(x) .</m></p></li>
              </ul>
 <p>Then, the limit of <m>g(x)</m> as <m>x \to a</m> is also <m> L</m>, so <m>\lim_{x\to a} g(x) = L </m> </p></statement> </theorem>
-    
+         
+   <activity  xml:id="squeeze-thm-ex" estimated-time="10">
+        <introduction>
+            <p>    In this activity we will explore a mathematical theorem, the Squeeze Theorem <xref ref="squeeze-thm"/>. </p>
        </introduction>
  <task>
             <statement>
@@ -309,8 +309,6 @@
     </activity> 
     
 
-    
-</activity>
     
 
 </section>
