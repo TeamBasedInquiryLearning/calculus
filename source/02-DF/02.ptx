@@ -9,18 +9,20 @@
       </li>
     </ul>
   </objectives>
-   <observation>
-      <p> Recall that <m>f'(a)</m>, the derivative of <m>f(x)</m> at <m>x=a</m>, was defined as the limit as <m>h \to 0</m> of the difference quotient on the interval <m>[a,a+h]</m> as in <xref ref="def-derivative-point"/>. If <m>f'(a)</m>exists, then say that <m>f(x)</m> is differentiable at <m>a</m>. If for some interval <m>I</m>, <m>f'(x)</m> exists for every point <m>x</m> in <m>I</m>, then we say that <m>f(x)</m> is differentiable on <m>I</m>. </p>
+   <observation xml:id="derivative-on-interval">
+       <statement>
+      <p> Recall that <m>f'(a)</m>, the derivative of <m>f(x)</m> at <m>x=a</m>, was defined as the limit as <m>h \to 0</m> of the difference quotient on the interval <m>[a,a+h]</m> as in <xref ref="def-derivative-point"/>. If <m>f'(a)</m>exists, then say that <m>f(x)</m> is differentiable at <m>a</m>.</p>
+        <p> If for some interval <m>I</m>, <m>f'(x)</m> exists for every point <m>x</m> in <m>I</m>, then we say that <m>f(x)</m> is differentiable on <m>I</m>. </p> </statement>
     </observation>
 
     <activity xml:id="activity-derivative-analytically-point">
         <statement>
             <p>For the function <m>f(x)=x-x^2</m> use the limit definition of the derivative at a point to compute <m>f'(2)</m>.</p>
          <ol label="A">
-                <li> <m>f'(2)= \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2+4}{h}=-3</m> </li>
-             <li>The limit <m>f'(2)= \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2}{h}</m> simplifies algebraically to <m>\lim_{h\to 0} \frac{-3h - h^2}{h}</m> which does not exist, thus <m>f'(2)</m> is not defined.</li>
-                   <li>The limit <m>f'(2)= \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2}{h}</m> simplifies algebraically to <m>\lim_{h\to 0} \frac{h -h^2}{h}</m> which does not exist, thus <m>f'(2)</m> is not defined.</li>
-                <li><m>f'(2) =\lim_{h\to 0} \frac{(2+h)-(2^2+h^2)-2+4}{h}= 1</m> </li>
+                <li> <m>f'(2)= \displaystyle \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2+4}{h}=-3</m> </li>
+             <li>The limit <m>f'(2)=  \displaystyle \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2}{h}</m> simplifies algebraically to <m>  \displaystyle \lim_{h\to 0} \frac{-3h - h^2}{h}</m> which does not exist, thus <m>f'(2)</m> is not defined.</li>
+                   <li>The limit <m>f'(2)=  \displaystyle \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2}{h}</m> simplifies algebraically to <m>  \displaystyle \lim_{h\to 0} \frac{h -h^2}{h}</m> which does not exist, thus <m>f'(2)</m> is not defined.</li>
+                <li><m>f'(2) =  \displaystyle \lim_{h\to 0} \frac{(2+h)-(2^2+h^2)-2+4}{h}= 1</m> </li>
             </ol>
         </statement>
     </activity>
@@ -50,13 +52,15 @@
 </p>
         <me>f'(x) = \lim_{h\to 0} \frac{f(x+h)-f(x)}{h}.</me>
          <p>At any particular input <m>x=a</m>, the derivative function outputs <m>f'(a)</m>, the value of derivative at the point <m>x=a</m>. </p>
-        <p>To specify the indendent variable of our functions, we say that <m>f'(x)</m> is the derivative of <m>f(x)</m> with respect to <m>x</m>. When <m>y=f(x)</m> is a function that is differentiable on an interval <m>I</m>, each of the following are equivalent expressions of the derivative function of <m>y=f(x)</m>:</p>
-        <p><m>f'(x)=y'=\frac{dy}{dx}=\frac{df}{dx}</m>.</p>
+       
     </definition>
     
-    <observation>
+    <notation xml:id="derivative-notation1">  <p>To specify the indendent variable of our functions, we say that <m>f'(x)</m> is the derivative of <m>f(x)</m> with respect to <m>x</m>. When <m>y=f(x)</m> is a function that is differentiable on an interval <m>I</m>, each of the following are equivalent expressions of the derivative function of <m>y=f(x)</m>:</p>
+        <p><m>f'(x)=y'=\frac{dy}{dx}=\frac{df}{dx}</m>.</p></notation>
+    
+   <notation xml:id="derivative-notation2"> 
     <p>Notice that our notation for derivatives of functions is based on the names that we assign functions along with our choices of notations we use for indendent and dependent variables.  For example, if we have a differentiable function <m>y=v(t)</m>, the derivative function of <m>v(t)</m> with respect to <m>t</m> can be written as <m>v'(t)=y'=\frac{dy}{dt}=\frac{dv}{dt}</m>.</p>
-    </observation>
+    </notation>
     
     <activity xml:id="activity-derivative-analytically-algebraic1">
         <introduction> <p> In this activity you will consider  <m>f(x)=-x^2+4</m> and compute its derivative function <m>f'(x)</m> using the limit definition of the derivative function  <xref ref="def-derivative-function"/>.
@@ -115,12 +119,51 @@
             </task>
     </activity>  
 
+    <definition xml:id="second-derivative"><p>Once we have computed the first derivative <m>f'(x)</m>, the <strong>second derivative</strong> of <m>f(x)</m> is the first derivative of <m>f'(x)</m> or 
+        <me>f''(x) = \lim_{h\to 0} \frac{f'(x+h)-f'(x)}{h}.</me>
+        </p> </definition>
     
+    <activity xml:id="second-der-easy">
+    <statement><p>Consider the function <m>f(x)=-x^2+2x-4</m>. Earlier you saw that <m>f'(x)=-2x+2</m>. What is the second derivative of <m>f(x)</m>?</p>
+         <ol label="A">
+                <li><m>f''(x)=2 </m></li>
+                <li><m>f'(x)=-2 </m></li>
+                <li><m>f'(x)=2x </m></li>
+                <li><m>f'(x)=-2x </m></li>
+            </ol>
+        </statement>
+    </activity>
     
-    <observation><p>We now have two ways to compute the derivative at a point! For example, to compute the derivative of <m>f(x)</m> at <m>x=1</m>, we have two methods</p>
+    <remark><statement><p>The first derivative encodes information about the rate of change of the original function. In particular,
+<ul>
+<li>If <m>f'\gt 0 </m>, then <m>f</m> is increasing;</li>
+<li>If <m>f'\lt 0 </m>, then <m>f</m> is decreasing;</li>
+    <li>If <m>f' = 0 </m>, then <m>f</m> has a horizontal tangent line (and it might have a max or min or it might just be changing pace);</li>
+</ul>
+        </p>
+        <p>
+The second derivative is the derivative of the derivative. It encodes information about the rate of change of the rate of change of the original function. In particular,
+<ul>
+<li>If <m>f'' \gt 0 </m>, then <m>f</m> is concave up;</li>
+<li>If <m>f'' \lt 0 </m>, then <m>f</m> is concave down;</li>
+    <li>If <m>f'' = 0 </m>, then <m>f</m> might have an inflection point (or it might just be changing pace);</li>
+</ul> </p> </statement></remark>
+    
+     <activity xml:id="second-first-der-graph">
+    <statement><p>Consider the function <m>f(x)=-x^2+2x-4</m>. Earlier you saw that <m>f'(x)=-2x+2</m> and <m>f''(x)=-2</m>. What does this tell you about the graph of <m>f(x)</m> for <m>x \gt 1</m>?</p>
+         <ol label="A">
+                <li>The graph is increasing and concave up</li>
+               <li>The graph is increasing and concave down</li>
+              <li>The graph is decreasing and concave up</li>
+              <li>The graph is decreasing and concave down</li>
+            </ol>
+        </statement>
+    </activity>
+    
+    <observation xml:id="two-ways-derivative-at-point"><p>We have two ways to compute analytically the derivative at a point. For example, to compute <m>f'(1)</m>, the derivative of <m>f(x)</m> at <m>x=1</m>, we have two methods</p>
         <ol>
         <li>We can directly compute <m>f'(1)</m> by finding the difference quotient on the interval <m>[1,1+h]</m> and then taking the limit as <m>h\to 0</m>. </li>
-             <li>We can first find the derivative function <m>f'(x)</m> by finding the difference quotient on the interval <m>[x,x+h]</m>,  taking the limit as <m>h\to 0</m>, and then finally plugging in <m>x=1</m> for the resulting expression for <m>f'(x)</m>. </li>
+             <li>We can first find the derivative function <m>f'(x)</m> by computing the difference quotient on the interval <m>[x,x+h]</m>, then taking the limit as <m>h\to 0</m>, and finally plugging in the expression for <m>f'(x)</m> the input <m>x=1</m>. </li>
         </ol>
         <p> The latter approach is more convenient when you want to consider the value of the derivative function at multiple points! </p></observation>
     
@@ -171,6 +214,9 @@
   </task>              
     </activity>
 
+    
+ <observation xml:id="continuity-differentiability"> <p>A function can only be differentiable at <m>x=a</m> if it is also continuous at <m>x=a</m>. But not all continuous functions are differentiable: when we have a corner in the graph of a the function, the function is continuous at the corner point, but it is not differentiable at that point! </p> </observation>
+    
  <activity xml:id="activity-differentiability-piecewise" estimated-time="10">
        <introduction>
         <p>
@@ -209,5 +255,5 @@
             </p>
             </task>
     </activity>
- <observation> <p>A function can only be differentiable at <m>x=a</m> if it is also continuous at <m>x=a</m>. But not all continuous functions are differentiable: when we have a corner in the graph of a the function, the function is continuous at the corner point, but it is not differentiable at that point! </p> </observation>
+    
 </section>
