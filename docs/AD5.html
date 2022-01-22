@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-01-20T05:09:11Z       *-->
+<!--*       on 2022-01-22T06:30:25Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -138,102 +138,102 @@
 <span class="type">Section</span> <span class="codenumber">3.5</span> <span class="title">Derivative tests (AD5)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-22"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-726"><p id="p-1062">Determine where a differentiable function is increasing and decreasing and classify the critical points as local extrema.</p></li></ul></article><article class="activity project-like" id="activity-derivative-derivativetests1"><h3 class="heading">
+<ul class="disc"><li id="li-740"><p id="p-1068">Determine where a differentiable function is increasing and decreasing and classify the critical points as local extrema.</p></li></ul></article><article class="activity project-like" id="activity-derivative-derivativetests1"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.5.1</span><span class="period">.</span>
 </h3>
-<p id="p-1064">What can we say about the graph of the function <span class="process-math">\(f(x)\)</span> if <span class="process-math">\(f(x_1)\)</span> is always less than <span class="process-math">\(f(x_2)\)</span> on the interval <span class="process-math">\((a,b)\)</span> ?</p>
+<p id="p-1070">What can we say about the graph of the function <span class="process-math">\(f(x)\)</span> if <span class="process-math">\(f(x_1)\)</span> is always less than <span class="process-math">\(f(x_2)\)</span> on the interval <span class="process-math">\((a,b)\)</span> ?</p>
 <ol class="upper-alpha">
-<li id="li-727"><p id="p-1065">The function is decreasing on <span class="process-math">\((a,b)\text{.}\)</span></p></li>
-<li id="li-728"><p id="p-1066">The function is increasing on <span class="process-math">\((a,b)\text{.}\)</span></p></li>
-<li id="li-729"><p id="p-1067">The function is constant on <span class="process-math">\((a,b)\text{.}\)</span></p></li>
-<li id="li-730"><p id="p-1068">The function could be some combination of increasing, decreasing, and/or constant on <span class="process-math">\((a,b)\)</span></p></li>
+<li id="li-741"><p id="p-1071">The function is decreasing on <span class="process-math">\((a,b)\text{.}\)</span></p></li>
+<li id="li-742"><p id="p-1072">The function is increasing on <span class="process-math">\((a,b)\text{.}\)</span></p></li>
+<li id="li-743"><p id="p-1073">The function is constant on <span class="process-math">\((a,b)\text{.}\)</span></p></li>
+<li id="li-744"><p id="p-1074">The function could be some combination of increasing, decreasing, and/or constant on <span class="process-math">\((a,b)\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-derivative-derivativetests2"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.5.2</span><span class="period">.</span>
 </h3>
 <article class="task exercise-like" id="task-285"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1069">Sketch a graph of a continuous function that is increasing on <span class="process-math">\((-\infty, -2)\)</span> and constant on <span class="process-math">\((3,5)\)</span> and decreasing on <span class="process-math">\((-2,1)\text{.}\)</span></p></article><article class="task exercise-like" id="task-286"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1070">How would you describe the derivative of the function on each interval?</p>
+<p id="p-1075">Sketch a graph of a continuous function that is increasing on <span class="process-math">\((-\infty, -2)\)</span> and constant on <span class="process-math">\((3,5)\)</span> and decreasing on <span class="process-math">\((-2,1)\text{.}\)</span></p></article><article class="task exercise-like" id="task-286"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1076">How would you describe the derivative of the function on each interval?</p>
 <ol class="upper-alpha">
-<li id="li-731"><p id="p-1071"><span class="process-math">\(f'(x) &lt; 0\)</span> on <span class="process-math">\((-2,1)\)</span> and <span class="process-math">\((3,5)\)</span> and <span class="process-math">\(f'(x) &gt; 0\)</span> on <span class="process-math">\((-2,1)\text{.}\)</span></p></li>
-<li id="li-732"><p id="p-1072"><span class="process-math">\(f'(x) &gt; 0\)</span> on <span class="process-math">\((-2,1)\text{,}\)</span> <span class="process-math">\(f'(x) &lt; 0\)</span> on <span class="process-math">\((-2,1)\)</span> and <span class="process-math">\(f'(x)\)</span> is undefined on <span class="process-math">\((3,5)\text{.}\)</span></p></li>
-<li id="li-733"><p id="p-1073"><span class="process-math">\(f'(x) &gt; 0\)</span> on <span class="process-math">\((-2,1)\text{,}\)</span> <span class="process-math">\(f'(x) &lt; 0\)</span> on <span class="process-math">\((-2,1)\)</span> and <span class="process-math">\(f'(x) = 0\)</span> on <span class="process-math">\((3,5)\text{.}\)</span></p></li>
-<li id="li-734"><p id="p-1074"><span class="process-math">\(f'(x) &gt; 0\)</span> on <span class="process-math">\((-2,1)\text{,}\)</span> <span class="process-math">\(f'(x) &lt; 0\)</span> on <span class="process-math">\((-2,1)\)</span> and <span class="process-math">\(f'(x)\)</span> is constant on <span class="process-math">\((3,5)\text{.}\)</span></p></li>
+<li id="li-745"><p id="p-1077"><span class="process-math">\(f'(x) &lt; 0\)</span> on <span class="process-math">\((-2,1)\)</span> and <span class="process-math">\((3,5)\)</span> and <span class="process-math">\(f'(x) &gt; 0\)</span> on <span class="process-math">\((-2,1)\text{.}\)</span></p></li>
+<li id="li-746"><p id="p-1078"><span class="process-math">\(f'(x) &gt; 0\)</span> on <span class="process-math">\((-2,1)\text{,}\)</span> <span class="process-math">\(f'(x) &lt; 0\)</span> on <span class="process-math">\((-2,1)\)</span> and <span class="process-math">\(f'(x)\)</span> is undefined on <span class="process-math">\((3,5)\text{.}\)</span></p></li>
+<li id="li-747"><p id="p-1079"><span class="process-math">\(f'(x) &gt; 0\)</span> on <span class="process-math">\((-2,1)\text{,}\)</span> <span class="process-math">\(f'(x) &lt; 0\)</span> on <span class="process-math">\((-2,1)\)</span> and <span class="process-math">\(f'(x) = 0\)</span> on <span class="process-math">\((3,5)\text{.}\)</span></p></li>
+<li id="li-748"><p id="p-1080"><span class="process-math">\(f'(x) &gt; 0\)</span> on <span class="process-math">\((-2,1)\text{,}\)</span> <span class="process-math">\(f'(x) &lt; 0\)</span> on <span class="process-math">\((-2,1)\)</span> and <span class="process-math">\(f'(x)\)</span> is constant on <span class="process-math">\((3,5)\text{.}\)</span></p></li>
 </ol></article></article><article class="activity project-like" id="activity-derivative-derivativetests3"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.5.3</span><span class="period">.</span>
 </h3>
-<p id="p-1075">Look back at the graph you made for <a href="" class="xref" data-knowl="./knowl/activity-derivative-derivativetests2.html" title="Activity 3.5.2">Activity 3.5.2</a>.</p>
-<p id="p-1076">Which of the following best describes what is occurring when graph changes from increasing to decreasing or decreasing to increasing?</p>
+<p id="p-1081">Look back at the graph you made for <a href="" class="xref" data-knowl="./knowl/activity-derivative-derivativetests2.html" title="Activity 3.5.2">Activity 3.5.2</a>.</p>
+<p id="p-1082">Which of the following best describes what is occurring when graph changes from increasing to decreasing or decreasing to increasing?</p>
 <ol class="upper-alpha">
-<li id="li-735"><p id="p-1077">There is a critical point.</p></li>
-<li id="li-736"><p id="p-1078">There is a relative maximum or minimum.</p></li>
-<li id="li-737"><p id="p-1079">The derivative is undefined.</p></li>
-<li id="li-738"><p id="p-1080">The derivative is equal to zero.</p></li>
+<li id="li-749"><p id="p-1083">There is a critical point.</p></li>
+<li id="li-750"><p id="p-1084">There is a relative maximum or minimum.</p></li>
+<li id="li-751"><p id="p-1085">The derivative is undefined.</p></li>
+<li id="li-752"><p id="p-1086">The derivative is equal to zero.</p></li>
 </ol></article><article class="theorem theorem-like" id="first-derivative-test"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.5.4</span><span class="period">.</span><span class="space"> </span><span class="title">The First Derivative Test.</span>
 </h3>
-<div class="introduction" id="introduction-103"><p id="p-1081">Suppose <span class="process-math">\(f(x)\)</span> is continuous at <span class="process-math">\(x=c\)</span> and that <span class="process-math">\(x=c\)</span> is a critical point of <span class="process-math">\(f(x)\text{.}\)</span></p></div>
-<ol id="p-1082" class="decimal">
-<li id="li-739"><p id="p-derived-li-739">If <span class="process-math">\(f'(x) &gt; 0\)</span> to the left of <span class="process-math">\(c\)</span> and <span class="process-math">\(f'(x) &lt; 0\)</span> to the right of <span class="process-math">\(c\text{,}\)</span> then a relative maximum occurs when <span class="process-math">\(x=c\text{.}\)</span></p></li>
-<li id="li-740"><p id="p-derived-li-740">If <span class="process-math">\(f'(x) &lt; 0\)</span> to the left of <span class="process-math">\(c\)</span> and <span class="process-math">\(f'(x) &gt; 0 \)</span> to the right of <span class="process-math">\(c\text{,}\)</span> then a relative minimum occurs when <span class="process-math">\(x=c\text{.}\)</span></p></li>
-<li id="li-741"><p id="p-derived-li-741">If <span class="process-math">\(f'(x)\)</span> is the same sign on both sides of <span class="process-math">\(x=c\text{,}\)</span> then neither a relative maximum nor a relative minimum occur when <span class="process-math">\(x=c\text{.}\)</span></p></li>
+<div class="introduction" id="introduction-103"><p id="p-1087">Suppose <span class="process-math">\(f(x)\)</span> is continuous at <span class="process-math">\(x=c\)</span> and that <span class="process-math">\(x=c\)</span> is a critical point of <span class="process-math">\(f(x)\text{.}\)</span></p></div>
+<ol id="p-1088" class="decimal">
+<li id="li-753"><p id="p-derived-li-753">If <span class="process-math">\(f'(x) &gt; 0\)</span> to the left of <span class="process-math">\(c\)</span> and <span class="process-math">\(f'(x) &lt; 0\)</span> to the right of <span class="process-math">\(c\text{,}\)</span> then a relative maximum occurs when <span class="process-math">\(x=c\text{.}\)</span></p></li>
+<li id="li-754"><p id="p-derived-li-754">If <span class="process-math">\(f'(x) &lt; 0\)</span> to the left of <span class="process-math">\(c\)</span> and <span class="process-math">\(f'(x) &gt; 0 \)</span> to the right of <span class="process-math">\(c\text{,}\)</span> then a relative minimum occurs when <span class="process-math">\(x=c\text{.}\)</span></p></li>
+<li id="li-755"><p id="p-derived-li-755">If <span class="process-math">\(f'(x)\)</span> is the same sign on both sides of <span class="process-math">\(x=c\text{,}\)</span> then neither a relative maximum nor a relative minimum occur when <span class="process-math">\(x=c\text{.}\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-derivitative-derivativetests4"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.5.5</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-104"><p id="p-1083">Let <span class="process-math">\(f(x)=x^4-4x^3+4x^2\)</span></p></div>
+<div class="introduction" id="introduction-104"><p id="p-1089">Let <span class="process-math">\(f(x)=x^4-4x^3+4x^2\)</span></p></div>
 <article class="task exercise-like" id="task-287"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1084">Find all critical points of <span class="process-math">\(f(x)\text{.}\)</span> Draw them on the same number line.</p></article><article class="task exercise-like" id="task-288"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1085">What intervals have been created by subdividing the number line at the critical points?</p></article><article class="task exercise-like" id="task-289"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1086">Pick an <span class="process-math">\(x\)</span>-value that lies in each interval. Determine whether <span class="process-math">\(f'(x)\)</span> is positive or negative at each point.</p></article><article class="task exercise-like" id="task-290"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-1087">On which intervals is <span class="process-math">\(f(x)\)</span> increasing? On which intervals is <span class="process-math">\(f(x)\)</span> decreasing?</p></article><article class="task exercise-like" id="task-291"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-1088">List all relative maxima and relative minima.</p></article></article><article class="remark remark-like" id="remark-28"><h3 class="heading">
+<p id="p-1090">Find all critical points of <span class="process-math">\(f(x)\text{.}\)</span> Draw them on the same number line.</p></article><article class="task exercise-like" id="task-288"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1091">What intervals have been created by subdividing the number line at the critical points?</p></article><article class="task exercise-like" id="task-289"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1092">Pick an <span class="process-math">\(x\)</span>-value that lies in each interval. Determine whether <span class="process-math">\(f'(x)\)</span> is positive or negative at each point.</p></article><article class="task exercise-like" id="task-290"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1093">On which intervals is <span class="process-math">\(f(x)\)</span> increasing? On which intervals is <span class="process-math">\(f(x)\)</span> decreasing?</p></article><article class="task exercise-like" id="task-291"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-1094">List all relative maxima and relative minima.</p></article></article><article class="remark remark-like" id="remark-29"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.5.6</span><span class="period">.</span><span class="space"> </span><span class="title">Dealing with discontinuities.</span>
 </h3>
-<div class="introduction" id="introduction-105"><p id="p-1089">Our previous activity dealt with a function that was continuous for all real numbers. Because of that, we could trust our chart to point out relative extrema. Let's now consider what might happen if a function has any discontinuities.</p></div></article><article class="activity project-like" id="activity-derivative-derviativetest-disc"><h3 class="heading">
+<div class="introduction" id="introduction-105"><p id="p-1095">Our previous activity dealt with a function that was continuous for all real numbers. Because of that, we could trust our chart to point out relative extrema. Let's now consider what might happen if a function has any discontinuities.</p></div></article><article class="activity project-like" id="activity-derivative-derviativetest-disc"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.5.7</span><span class="period">.</span>
 </h3>
-<p id="p-1090">Draw a function that is increasing on the left of <span class="process-math">\(x=1\text{,}\)</span> discontinuous at <span class="process-math">\(x=1, \)</span><span class="process-math">\(f(1)=\lim_{x \to 1^+}f(x)\text{,}\)</span> and decreasing to the right of <span class="process-math">\(x=1\text{.}\)</span> Does the derivative of <span class="process-math">\(f(x)\)</span> exist at <span class="process-math">\(x=1\text{?}\)</span>  Does your graph have a local maximum or minimum at <span class="process-math">\(x=1\text{?}\)</span></p></article><article class="activity project-like" id="activity-derivative-derviativetest5"><h3 class="heading">
+<p id="p-1096">Draw a function that is increasing on the left of <span class="process-math">\(x=1\text{,}\)</span> discontinuous at <span class="process-math">\(x=1, \)</span><span class="process-math">\(f(1)=\lim_{x \to 1^+}f(x)\text{,}\)</span> and decreasing to the right of <span class="process-math">\(x=1\text{.}\)</span> Does the derivative of <span class="process-math">\(f(x)\)</span> exist at <span class="process-math">\(x=1\text{?}\)</span>  Does your graph have a local maximum or minimum at <span class="process-math">\(x=1\text{?}\)</span></p></article><article class="activity project-like" id="activity-derivative-derviativetest5"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.5.8</span><span class="period">.</span>
 </h3>
 <div class="introduction" id="introduction-106">
-<p id="p-1091">Let <span class="process-math">\(f(x)=\frac{x}{(x-2)^2}\text{.}\)</span></p>
-<p id="p-1092">Note that <span class="process-math">\(f(x)\)</span> is not defined for <span class="process-math">\(x=2\text{.}\)</span> So <span class="process-math">\(x=2\)</span> cannot be a critical point and thus cannot be the location of a relative extrema. However, the function may be increasing on one side of <span class="process-math">\(x=2\)</span> and decreasing on the other, so we must still include it on our number line.</p>
+<p id="p-1097">Let <span class="process-math">\(f(x)=\frac{x}{(x-2)^2}\text{.}\)</span></p>
+<p id="p-1098">Note that <span class="process-math">\(f(x)\)</span> is not defined for <span class="process-math">\(x=2\text{.}\)</span> So <span class="process-math">\(x=2\)</span> cannot be a critical point and thus cannot be the location of a relative extrema. However, the function may be increasing on one side of <span class="process-math">\(x=2\)</span> and decreasing on the other, so we must still include it on our number line.</p>
 </div>
 <article class="task exercise-like" id="task-292"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1093">Find all critical points of <span class="process-math">\(f(x)\text{.}\)</span> Plot them and any discontinuities for <span class="process-math">\(f(x)\)</span> on the same number line.</p></article><article class="task exercise-like" id="task-293"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1094">What intervals have been created by subdividing the number line at the critical points and discontinuities?</p></article><article class="task exercise-like" id="task-294"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1095">Pick an <span class="process-math">\(x\)</span>-value that lies in each interval. Determine whether <span class="process-math">\(f'(x)\)</span> is positive or negative each point.</p></article><article class="task exercise-like" id="task-295"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-1096">On which intervals is <span class="process-math">\(f(x)\)</span> increasing? On which intervals is <span class="process-math">\(f(x)\)</span> decreasing?</p></article><article class="task exercise-like" id="task-296"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-1097">List all relative maxima and relative minima.</p></article></article><article class="activity project-like" id="activity-derivative-derivativetest6"><h3 class="heading">
+<p id="p-1099">Find all critical points of <span class="process-math">\(f(x)\text{.}\)</span> Plot them and any discontinuities for <span class="process-math">\(f(x)\)</span> on the same number line.</p></article><article class="task exercise-like" id="task-293"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1100">What intervals have been created by subdividing the number line at the critical points and discontinuities?</p></article><article class="task exercise-like" id="task-294"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1101">Pick an <span class="process-math">\(x\)</span>-value that lies in each interval. Determine whether <span class="process-math">\(f'(x)\)</span> is positive or negative each point.</p></article><article class="task exercise-like" id="task-295"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1102">On which intervals is <span class="process-math">\(f(x)\)</span> increasing? On which intervals is <span class="process-math">\(f(x)\)</span> decreasing?</p></article><article class="task exercise-like" id="task-296"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-1103">List all relative maxima and relative minima.</p></article></article><article class="activity project-like" id="activity-derivative-derivativetest6"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.5.9</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-107"><p id="p-1098">For each of the following functions, find the intervals on which <span class="process-math">\(f(x)\)</span> is increasing or decreasing. Then identify any relative extrema.</p></div>
+<div class="introduction" id="introduction-107"><p id="p-1104">For each of the following functions, find the intervals on which <span class="process-math">\(f(x)\)</span> is increasing or decreasing. Then identify any relative extrema.</p></div>
 <article class="task exercise-like" id="task-297"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1099"><span class="process-math">\(f(x)=x^3+3x^2+3x+1\)</span></p></article><article class="task exercise-like" id="task-298"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1100"><span class="process-math">\(f(x)=\frac{1}{2}x+\cos x\)</span> on <span class="process-math">\((0,2\pi)\)</span></p></article><article class="task exercise-like" id="task-299"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1101"><span class="process-math">\(f(x)=(x^2-9)^{2/3}\)</span></p></article><article class="task exercise-like" id="task-300"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-1102"><span class="process-math">\(f(x)= \ln(2x-1)\text{.}\)</span> (Hint: think about the domain of this one before you get started!)</p></article><article class="task exercise-like" id="task-301"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-1103"><span class="process-math">\(f(x)=\frac{x^2}{x^2-4}\)</span></p></article></article><article class="theorem theorem-like" id="second-derivative-test"><h3 class="heading">
+<p id="p-1105"><span class="process-math">\(f(x)=x^3+3x^2+3x+1\)</span></p></article><article class="task exercise-like" id="task-298"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1106"><span class="process-math">\(f(x)=\frac{1}{2}x+\cos x\)</span> on <span class="process-math">\((0,2\pi)\)</span></p></article><article class="task exercise-like" id="task-299"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1107"><span class="process-math">\(f(x)=(x^2-9)^{2/3}\)</span></p></article><article class="task exercise-like" id="task-300"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1108"><span class="process-math">\(f(x)= \ln(2x-1)\text{.}\)</span> (Hint: think about the domain of this one before you get started!)</p></article><article class="task exercise-like" id="task-301"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-1109"><span class="process-math">\(f(x)=\frac{x^2}{x^2-4}\)</span></p></article></article><article class="theorem theorem-like" id="second-derivative-test"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.5.10</span><span class="period">.</span><span class="space"> </span><span class="title">The Second Derivative Test.</span>
 </h3>
-<div class="introduction" id="introduction-108"><p id="p-1104">Suppose that <span class="process-math">\(x=c\)</span> is a critical point of <span class="process-math">\(f(x)\)</span> and that <span class="process-math">\(f''(x)\)</span> is continuous at <span class="process-math">\(x=c\text{.}\)</span></p></div>
-<ol id="p-1105" class="decimal">
-<li id="li-742"><p id="p-derived-li-742">If <span class="process-math">\(f'(c) = 0\)</span> and <span class="process-math">\(f''(c) &lt; 0  \text{,}\)</span> then a relative maximum occurs when <span class="process-math">\(x=c\text{.}\)</span></p></li>
-<li id="li-743"><p id="p-derived-li-743">If <span class="process-math">\(f'(c) = 0\)</span> and <span class="process-math">\(f''(c) &gt; 0  \text{,}\)</span> then a relative minimum occurs when <span class="process-math">\(x=c\text{.}\)</span></p></li>
-<li id="li-744"><p id="p-derived-li-744">If <span class="process-math">\(f'(c) = 0\)</span> and <span class="process-math">\(f''(c) = 0  \text{,}\)</span> then this test is inconclusive.</p></li>
+<div class="introduction" id="introduction-108"><p id="p-1110">Suppose that <span class="process-math">\(x=c\)</span> is a critical point of <span class="process-math">\(f(x)\)</span> and that <span class="process-math">\(f''(x)\)</span> is continuous at <span class="process-math">\(x=c\text{.}\)</span></p></div>
+<ol id="p-1111" class="decimal">
+<li id="li-756"><p id="p-derived-li-756">If <span class="process-math">\(f'(c) = 0\)</span> and <span class="process-math">\(f''(c) &lt; 0  \text{,}\)</span> then a relative maximum occurs when <span class="process-math">\(x=c\text{.}\)</span></p></li>
+<li id="li-757"><p id="p-derived-li-757">If <span class="process-math">\(f'(c) = 0\)</span> and <span class="process-math">\(f''(c) &gt; 0  \text{,}\)</span> then a relative minimum occurs when <span class="process-math">\(x=c\text{.}\)</span></p></li>
+<li id="li-758"><p id="p-derived-li-758">If <span class="process-math">\(f'(c) = 0\)</span> and <span class="process-math">\(f''(c) = 0  \text{,}\)</span> then this test is inconclusive.</p></li>
 </ol>
-<p id="p-1106">In case of an inconclusive Seconf Derivative Test, we need to go back to the First Derivative Test to classify the critical point.</p></article><article class="activity project-like" id="activity-derivative-derivativetest-second"><h3 class="heading">
+<p id="p-1112">In case of an inconclusive Seconf Derivative Test, we need to go back to the First Derivative Test to classify the critical point.</p></article><article class="activity project-like" id="activity-derivative-derivativetest-second"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.5.11</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-109"><p id="p-1107">For each of the following functions, now identify any relative extrema using the Second Derivative Test, if possible.</p></div>
+<div class="introduction" id="introduction-109"><p id="p-1113">For each of the following functions, now identify any relative extrema using the Second Derivative Test, if possible.</p></div>
 <article class="task exercise-like" id="task-302"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1108"><span class="process-math">\(f(x)=x^3+3x^2+3x+1\)</span></p></article><article class="task exercise-like" id="task-303"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1109"><span class="process-math">\(f(x)=\frac{1}{2}x+\cos x\)</span> on <span class="process-math">\((0,2\pi)\)</span></p></article><article class="task exercise-like" id="task-304"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1110"><span class="process-math">\(f(x)=(x^2-9)^{2/3}\)</span></p></article><article class="task exercise-like" id="task-305"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-1111"><span class="process-math">\(f(x)= \ln(2x-1)\text{.}\)</span> (Hint: think about the domain of this one before you get started!)</p></article><article class="task exercise-like" id="task-306"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-1112"><span class="process-math">\(f(x)=\frac{x^2}{x^2-4}\)</span></p></article></article><article class="theorem theorem-like" id="theorem-20"><h3 class="heading">
+<p id="p-1114"><span class="process-math">\(f(x)=x^3+3x^2+3x+1\)</span></p></article><article class="task exercise-like" id="task-303"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1115"><span class="process-math">\(f(x)=\frac{1}{2}x+\cos x\)</span> on <span class="process-math">\((0,2\pi)\)</span></p></article><article class="task exercise-like" id="task-304"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1116"><span class="process-math">\(f(x)=(x^2-9)^{2/3}\)</span></p></article><article class="task exercise-like" id="task-305"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1117"><span class="process-math">\(f(x)= \ln(2x-1)\text{.}\)</span> (Hint: think about the domain of this one before you get started!)</p></article><article class="task exercise-like" id="task-306"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-1118"><span class="process-math">\(f(x)=\frac{x^2}{x^2-4}\)</span></p></article></article><article class="theorem theorem-like" id="theorem-20"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.5.12</span><span class="period">.</span><span class="space"> </span><span class="title">The Mean Value Theorem.</span>
 </h3>
-<p id="p-1113">If <span class="process-math">\(f\)</span> is continuous and differentiable on the closed interval <span class="process-math">\([a,b]\text{,}\)</span> then there is some point <span class="process-math">\(c\)</span> in the interval where <span class="process-math">\(f'(c)\)</span>  is equal to the slope of the secant line through the points <span class="process-math">\((a,f(a))\)</span> and <span class="process-math">\((b,f(b))\text{.}\)</span> In symbols, for some <span class="process-math">\(c\)</span> in <span class="process-math">\((a,b)\)</span> we have that</p>
+<p id="p-1119">If <span class="process-math">\(f\)</span> is continuous and differentiable on the closed interval <span class="process-math">\([a,b]\text{,}\)</span> then there is some point <span class="process-math">\(c\)</span> in the interval where <span class="process-math">\(f'(c)\)</span>  is equal to the slope of the secant line through the points <span class="process-math">\((a,f(a))\)</span> and <span class="process-math">\((b,f(b))\text{.}\)</span> In symbols, for some <span class="process-math">\(c\)</span> in <span class="process-math">\((a,b)\)</span> we have that</p>
 <div class="displaymath process-math">
 \begin{equation*}
 f'(c) = \frac{f(b)-f(a)}{b-a} 
@@ -242,8 +242,8 @@ f'(c) = \frac{f(b)-f(a)}{b-a}
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.5.13</span><span class="period">.</span>
 </h3>
 <article class="task exercise-like" id="task-307"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1114">Suppose <span class="process-math">\(f\)</span> is continuous and differentiable on <span class="process-math">\([a,b]\)</span> and also suppose that <span class="process-math">\(f(a)=f(b)\text{.}\)</span> What is the average rate of change of <span class="process-math">\(f(x)\)</span> on <span class="process-math">\([a,b]\text{?}\)</span> What does the MVT (Mean Value Theorem) tell you?</p></article><article class="task exercise-like" id="task-308"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1115">Use part (a) to show with the MWT that <span class="process-math">\(f(x) = (x-1)^2 + 3\)</span> has a critical point on <span class="process-math">\([0,2]\)</span> .</p></article></article></section></div></main>
+<p id="p-1120">Suppose <span class="process-math">\(f\)</span> is continuous and differentiable on <span class="process-math">\([a,b]\)</span> and also suppose that <span class="process-math">\(f(a)=f(b)\text{.}\)</span> What is the average rate of change of <span class="process-math">\(f(x)\)</span> on <span class="process-math">\([a,b]\text{?}\)</span> What does the MVT (Mean Value Theorem) tell you?</p></article><article class="task exercise-like" id="task-308"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1121">Use part (a) to show with the MWT that <span class="process-math">\(f(x) = (x-1)^2 + 3\)</span> has a critical point on <span class="process-math">\([0,2]\)</span> .</p></article></article></section></div></main>
 </div>
 </body>
 </html>
