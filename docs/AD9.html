@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-01-22T06:30:27Z       *-->
+<!--*       on 2022-01-30T18:25:12Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -138,38 +138,38 @@
 <span class="type">Section</span> <span class="codenumber">3.9</span> <span class="title">Limits and Derivatives (AD9)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-26"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-841"><p id="p-1272">Compute the values of indeterminate limits using L'Hopital's Rule.</p></li></ul></article><article class="remark remark-like" id="remark-35"><h3 class="heading">
+<ul class="disc"><li id="li-854"><p id="p-1286">Compute the values of indeterminate limits using L'Hopital's Rule.</p></li></ul></article><article class="remark remark-like" id="remark-35"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.9.1</span><span class="period">.</span>
 </h3>
-<p id="p-1273">When we compute a limit algebraically, we often encounter the indeterminate form</p>
+<p id="p-1287">When we compute a limit algebraically, we often encounter the indeterminate form</p>
 <div class="displaymath process-math">
 \begin{equation*}
 \frac{0}{0}
 \end{equation*}
 </div>
-<p id="p-1274">but this means that limit can equal any number, infinity, or might even not exist. When we encounter an indeterminate form, we just do not know (yet) what the value of the limit is.</p></article><article class="activity project-like" id="activity-178"><h3 class="heading">
+<p id="p-1288">but this means that limit can equal any number, infinity, or might even not exist. When we encounter an indeterminate form, we just do not know (yet) what the value of the limit is.</p></article><article class="activity project-like" id="activity-183"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.9.2</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-125">
-<p id="p-1275">We can compute limits that give indeterminate forms via algebraic manipulations. Consider</p>
+<div class="introduction" id="introduction-127">
+<p id="p-1289">We can compute limits that give indeterminate forms via algebraic manipulations. Consider</p>
 <div class="displaymath process-math">
 \begin{equation*}
 \lim_{x\to 1} \frac{2x - 2}{x^2 -1} .
 \end{equation*}
 </div>
 </div>
-<article class="task exercise-like" id="task-362"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1276">Verify that this limit gives an indeterminate form of the type <span class="process-math">\(\frac{0}{0}\text{.}\)</span></p></article><article class="task exercise-like" id="task-363"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1277">In the limit, you can cancel common factors. After you simplify the fraction, what is this limit equal to?</p>
+<article class="task exercise-like" id="task-364"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1290">Verify that this limit gives an indeterminate form of the type <span class="process-math">\(\frac{0}{0}\text{.}\)</span></p></article><article class="task exercise-like" id="task-365"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1291">In the limit, you can cancel common factors. After you simplify the fraction, what is this limit equal to?</p>
 <ol class="upper-alpha">
-<li id="li-842"><p id="p-1278">2</p></li>
-<li id="li-843"><p id="p-1279">1</p></li>
-<li id="li-844"><p id="p-1280"><span class="process-math">\(\displaystyle \frac{1}{2}\)</span></p></li>
-<li id="li-845"><p id="p-1281">The limit does not exist.</p></li>
+<li id="li-855"><p id="p-1292">2</p></li>
+<li id="li-856"><p id="p-1293">1</p></li>
+<li id="li-857"><p id="p-1294"><span class="process-math">\(\displaystyle \frac{1}{2}\)</span></p></li>
+<li id="li-858"><p id="p-1295">The limit does not exist.</p></li>
 </ol></article></article><article class="remark remark-like" id="remark-36"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.9.3</span><span class="period">.</span>
 </h3>
-<p id="p-1282">Consider the limits</p>
+<p id="p-1296">Consider the limits</p>
 <div class="displaymath process-math">
 \begin{equation*}
 \lim_{h \to 0} \frac{f(a+h)-f(a)}{h} = f'(a). 
@@ -180,82 +180,82 @@
 \lim_{x \to a} \frac{f(x)-f(a)}{x-a} = f'(a). 
 \end{equation*}
 </div>
-<p id="p-1283">Notice that these limits give indeterminate forms of the type <span class="process-math">\(\frac{0}{0}\text{.}\)</span> However, these limits are equal to the limit defintion of <span class="process-math">\(f'(a)\text{,}\)</span> the derivative of <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=a\text{.}\)</span> If you can compute <span class="process-math">\(f'(a)\text{,}\)</span> then you can compute the value of the limit.</p></article><article class="activity project-like" id="activity-179"><h3 class="heading">
+<p id="p-1297">Notice that these limits give indeterminate forms of the type <span class="process-math">\(\frac{0}{0}\text{.}\)</span> However, these limits are equal to the limit defintion of <span class="process-math">\(f'(a)\text{,}\)</span> the derivative of <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=a\text{.}\)</span> If you can compute <span class="process-math">\(f'(a)\text{,}\)</span> then you can compute the value of the limit.</p></article><article class="activity project-like" id="activity-184"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.9.4</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-126"><p id="p-1284">Use the limit definition of the derivative to compute the following limits. Each limit is <span class="process-math">\(f'(a)\text{,}\)</span> the derivative of some function <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=a\text{.}\)</span> You need to determine the function and the point to then find the value of the limit: <span class="process-math">\(f'(a)\text{.}\)</span></p></div>
-<article class="task exercise-like" id="task-364"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1285">Notice that <span class="process-math">\(\displaystyle \lim_{x\to 0} \frac{e^{2+x}-e^2}{x}\)</span> is the limit definition of the derivative of <span class="process-math">\(e^x\)</span> at <span class="process-math">\(x=2\)</span> (where <span class="process-math">\(x\)</span> was used for <span class="process-math">\(h\)</span>). Given these observations, what is this limit equal to?</p>
+<div class="introduction" id="introduction-128"><p id="p-1298">Use the limit definition of the derivative to compute the following limits. Each limit is <span class="process-math">\(f'(a)\text{,}\)</span> the derivative of some function <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=a\text{.}\)</span> You need to determine the function and the point to then find the value of the limit: <span class="process-math">\(f'(a)\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-366"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1299">Notice that <span class="process-math">\(\displaystyle \lim_{x\to 0} \frac{e^{2+x}-e^2}{x}\)</span> is the limit definition of the derivative of <span class="process-math">\(e^x\)</span> at <span class="process-math">\(x=2\)</span> (where <span class="process-math">\(x\)</span> was used for <span class="process-math">\(h\)</span>). Given these observations, what is this limit equal to?</p>
 <ol class="upper-alpha">
-<li id="li-846"><p id="p-1286">2</p></li>
-<li id="li-847"><p id="p-1287"><span class="process-math">\(\displaystyle e\)</span></p></li>
-<li id="li-848"><p id="p-1288"><span class="process-math">\(\displaystyle e^2\)</span></p></li>
-<li id="li-849"><p id="p-1289">The limit does not exist.</p></li>
-</ol></article><article class="task exercise-like" id="task-365"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1290">Consider <span class="process-math">\(\displaystyle \lim_{x\to 0}  \frac{\ln(1+x)}{x}\text{.}\)</span> This limit is also the limit definition of some derivative at a point. What is the value of this limit?</p>
+<li id="li-859"><p id="p-1300">2</p></li>
+<li id="li-860"><p id="p-1301"><span class="process-math">\(\displaystyle e\)</span></p></li>
+<li id="li-861"><p id="p-1302"><span class="process-math">\(\displaystyle e^2\)</span></p></li>
+<li id="li-862"><p id="p-1303">The limit does not exist.</p></li>
+</ol></article><article class="task exercise-like" id="task-367"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1304">Consider <span class="process-math">\(\displaystyle \lim_{x\to 0}  \frac{\ln(1+x)}{x}\text{.}\)</span> This limit is also the limit definition of some derivative at a point. What is the value of this limit?</p>
 <ol class="upper-alpha">
-<li id="li-850"><p id="p-1291">1</p></li>
-<li id="li-851"><p id="p-1292">0</p></li>
-<li id="li-852"><p id="p-1293"><span class="process-math">\(\displaystyle \ln(2)\)</span></p></li>
-<li id="li-853"><p id="p-1294">The limit does not exist.</p></li>
-</ol></article></article><article class="activity project-like" id="activity-180"><h3 class="heading">
+<li id="li-863"><p id="p-1305">1</p></li>
+<li id="li-864"><p id="p-1306">0</p></li>
+<li id="li-865"><p id="p-1307"><span class="process-math">\(\displaystyle \ln(2)\)</span></p></li>
+<li id="li-866"><p id="p-1308">The limit does not exist.</p></li>
+</ol></article></article><article class="activity project-like" id="activity-185"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.9.5</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-127"><p id="p-1295">Compute the following limits using the limit defintion of the derivative at a point.</p></div>
-<article class="task exercise-like" id="task-366"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1296"><span class="process-math">\(\displaystyle \lim_{x\to 0} \frac{\sin(x)}{x}\)</span></p></article><article class="task exercise-like" id="task-367"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1297"><span class="process-math">\(\displaystyle \lim_{x\to 0} \frac{\tan(x)}{x}\)</span></p></article><article class="task exercise-like" id="task-368"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1298"><span class="process-math">\(\displaystyle \lim_{x\to 0} \frac{\cos(\frac{\pi}{3}+x) - \frac{1}{2} }{x}\)</span></p></article></article><article class="remark remark-like" id="remark-37"><h3 class="heading">
+<div class="introduction" id="introduction-129"><p id="p-1309">Compute the following limits using the limit defintion of the derivative at a point.</p></div>
+<article class="task exercise-like" id="task-368"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1310"><span class="process-math">\(\displaystyle \lim_{x\to 0} \frac{\sin(x)}{x}\)</span></p></article><article class="task exercise-like" id="task-369"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1311"><span class="process-math">\(\displaystyle \lim_{x\to 0} \frac{\tan(x)}{x}\)</span></p></article><article class="task exercise-like" id="task-370"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1312"><span class="process-math">\(\displaystyle \lim_{x\to 0} \frac{\cos(\frac{\pi}{3}+x) - \frac{1}{2} }{x}\)</span></p></article></article><article class="remark remark-like" id="remark-37"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.9.6</span><span class="period">.</span>
 </h3>
-<p id="p-1299">When we compute a limit algebraically, we might encounter the indeterminate form</p>
+<p id="p-1313">When we compute a limit algebraically, we might encounter the indeterminate form</p>
 <div class="displaymath process-math">
 \begin{equation*}
 \frac{\infty}{\infty}
 \end{equation*}
 </div>
-<p id="p-1300">but this means that limit can equal any number, infinity, or might even not exist. When we encounter an indeterminate form, we just do not know (yet) what the value of the limit is.</p></article><article class="activity project-like" id="activity-181"><h3 class="heading">
+<p id="p-1314">but this means that limit can equal any number, infinity, or might even not exist. When we encounter an indeterminate form, we just do not know (yet) what the value of the limit is.</p></article><article class="activity project-like" id="activity-186"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.9.7</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-128">
-<p id="p-1301">We can compute limits that give indeterminate forms via algebraic manipulations. Consider</p>
+<div class="introduction" id="introduction-130">
+<p id="p-1315">We can compute limits that give indeterminate forms via algebraic manipulations. Consider</p>
 <div class="displaymath process-math">
 \begin{equation*}
 \lim_{x\to +\infty} \frac{2x^2 + 1}{x^2 -1} .
 \end{equation*}
 </div>
 </div>
-<article class="task exercise-like" id="task-369"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1302">Verify that this limit gives an indeterminate form of the type <span class="process-math">\(\frac{\infty}{\infty}\text{.}\)</span></p></article><article class="task exercise-like" id="task-370"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1303">You can manipulate this fraction algebraically by dividing numerator and denominator by <span class="process-math">\(x^2\text{.}\)</span> Notice that <span class="process-math">\(\pm \frac{1}{x^2} \to 0\)</span> as <span class="process-math">\(x \to \infty \text{.}\)</span> So after you manipulate and simplify the fraction, what is this limit equal to?</p>
+<article class="task exercise-like" id="task-371"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1316">Verify that this limit gives an indeterminate form of the type <span class="process-math">\(\frac{\infty}{\infty}\text{.}\)</span></p></article><article class="task exercise-like" id="task-372"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1317">You can manipulate this fraction algebraically by dividing numerator and denominator by <span class="process-math">\(x^2\text{.}\)</span> Notice that <span class="process-math">\(\pm \frac{1}{x^2} \to 0\)</span> as <span class="process-math">\(x \to \infty \text{.}\)</span> So after you manipulate and simplify the fraction, what is this limit equal to?</p>
 <ol class="upper-alpha">
-<li id="li-854"><p id="p-1304">2</p></li>
-<li id="li-855"><p id="p-1305">1</p></li>
-<li id="li-856"><p id="p-1306"><span class="process-math">\(\displaystyle \frac{1}{2}\)</span></p></li>
-<li id="li-857"><p id="p-1307">The limit does not exist.</p></li>
+<li id="li-867"><p id="p-1318">2</p></li>
+<li id="li-868"><p id="p-1319">1</p></li>
+<li id="li-869"><p id="p-1320"><span class="process-math">\(\displaystyle \frac{1}{2}\)</span></p></li>
+<li id="li-870"><p id="p-1321">The limit does not exist.</p></li>
 </ol></article></article><article class="theorem theorem-like" id="theorem-22"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.9.8</span><span class="period">.</span><span class="space"> </span><span class="title">L' Hospital's Rule.</span>
 </h3>
-<p id="p-1308">If for the limit of <span class="process-math">\(\frac{f(x)}{g(x)}\)</span> as <span class="process-math">\(x \to a\)</span> we have one of the indeterminate forms <span class="process-math">\(\frac{0}{0}\)</span> or <span class="process-math">\(\frac{\infty}{\infty}\)</span>  and <span class="process-math">\(f(x), g(x)\)</span> are both differentiable around <span class="process-math">\(x = a\text{,}\)</span> then</p>
+<p id="p-1322">If for the limit of <span class="process-math">\(\frac{f(x)}{g(x)}\)</span> as <span class="process-math">\(x \to a\)</span> we have one of the indeterminate forms <span class="process-math">\(\frac{0}{0}\)</span> or <span class="process-math">\(\frac{\infty}{\infty}\)</span>  and <span class="process-math">\(f(x), g(x)\)</span> are both differentiable around <span class="process-math">\(x = a\text{,}\)</span> then</p>
 <div class="displaymath process-math">
 \begin{equation*}
 \lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \frac{f'(x)}{g'(x)} 
 \end{equation*}
 </div>
-<p id="p-1309">provided that the limit exists!</p></article><article class="activity project-like" id="activity-182"><h3 class="heading">
+<p id="p-1323">provided that the limit exists!</p></article><article class="activity project-like" id="activity-187"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.9.9</span><span class="period">.</span>
 </h3>
-<p id="p-1310">Look back at some limits that gave you an indeterminate form. Can you use l'Hospital's Rule to find the limit? If using the L'Hospital's Rule is appropriate, then try to compute the limit this way. It should give you the same result.</p></article><article class="activity project-like" id="activity-183"><h3 class="heading">
+<p id="p-1324">Look back at some limits that gave you an indeterminate form. Can you use l'Hospital's Rule to find the limit? If using the L'Hospital's Rule is appropriate, then try to compute the limit this way. It should give you the same result.</p></article><article class="activity project-like" id="activity-188"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.9.10</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-129"><p id="p-1311">For the following limits, check if they give an indeterminate form. If they do, try to use l'Hospital's Rule. Does it help? It may or may not, or you may just need to use the rule repeatedly. Either way, try to compute the value of the following limits.</p></div>
-<article class="task exercise-like" id="task-371"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1312"><span class="process-math">\(\displaystyle \lim_{x\to 0} \frac{\sin(x)}{x}\)</span></p></article><article class="task exercise-like" id="task-372"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1313"><span class="process-math">\(\displaystyle \lim_{x\to 0} \frac{e^x-1}{x}\)</span></p></article><article class="task exercise-like" id="task-373"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1314"><span class="process-math">\(\displaystyle \lim_{x\to \infty} \frac{3x^2+3}{x^2+ 2x}\)</span></p></article><article class="task exercise-like" id="task-374"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-1315"><span class="process-math">\(\displaystyle \lim_{x\to 0^{+}} \frac{\ln(x)}{-x}\)</span></p></article><article class="task exercise-like" id="task-375"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-1316"><span class="process-math">\(\displaystyle \lim_{x\to 0^{+}} \frac{\ln(x)}{1/x}\)</span></p></article><article class="task exercise-like" id="task-376"><h4 class="heading"><span class="codenumber">(f)</span></h4>
-<p id="p-1317"><span class="process-math">\(\displaystyle \lim_{x\to 0} \frac{\sin^2(3x)}{5x^3 - 3x^2}\)</span></p></article></article></section></div></main>
+<div class="introduction" id="introduction-131"><p id="p-1325">For the following limits, check if they give an indeterminate form. If they do, try to use l'Hospital's Rule. Does it help? It may or may not, or you may just need to use the rule repeatedly. Either way, try to compute the value of the following limits.</p></div>
+<article class="task exercise-like" id="task-373"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1326"><span class="process-math">\(\displaystyle \lim_{x\to 0} \frac{\sin(x)}{x}\)</span></p></article><article class="task exercise-like" id="task-374"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1327"><span class="process-math">\(\displaystyle \lim_{x\to 0} \frac{e^x-1}{x}\)</span></p></article><article class="task exercise-like" id="task-375"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1328"><span class="process-math">\(\displaystyle \lim_{x\to \infty} \frac{3x^2+3}{x^2+ 2x}\)</span></p></article><article class="task exercise-like" id="task-376"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1329"><span class="process-math">\(\displaystyle \lim_{x\to 0^{+}} \frac{\ln(x)}{-x}\)</span></p></article><article class="task exercise-like" id="task-377"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-1330"><span class="process-math">\(\displaystyle \lim_{x\to 0^{+}} \frac{\ln(x)}{1/x}\)</span></p></article><article class="task exercise-like" id="task-378"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<p id="p-1331"><span class="process-math">\(\displaystyle \lim_{x\to 0} \frac{\sin^2(3x)}{5x^3 - 3x^2}\)</span></p></article></article></section></div></main>
 </div>
 </body>
 </html>

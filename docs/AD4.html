@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-01-22T06:30:25Z       *-->
+<!--*       on 2022-01-30T18:25:10Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -138,113 +138,113 @@
 <span class="type">Section</span> <span class="codenumber">3.4</span> <span class="title">Extreme values (AD4)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-21"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-709"><p id="p-1039">Use the Extreme Value Theorem to find the absolute maximum and minimum values of a continuous function on a closed interval.</p></li></ul></article><article class="remark remark-like" id="remark-27"><h3 class="heading">
+<ul class="disc"><li id="li-722"><p id="p-1053">Use the Extreme Value Theorem to find the absolute maximum and minimum values of a continuous function on a closed interval.</p></li></ul></article><article class="remark remark-like" id="remark-27"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.4.1</span><span class="period">.</span>
 </h3>
-<p id="p-1040">In many different settings, we are interested in knowing where a function achieves its least and greatest values. These can be important in applications—say to identify a point at which maximum profit or minimum cost occurs—or in theory to characterize the behavior of a function or a family of related functions.</p></article><article class="example example-like" id="example-4"><h3 class="heading">
+<p id="p-1054">In many different settings, we are interested in knowing where a function achieves its least and greatest values. These can be important in applications—say to identify a point at which maximum profit or minimum cost occurs—or in theory to characterize the behavior of a function or a family of related functions.</p></article><article class="example example-like" id="example-4"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.2</span><span class="period">.</span>
 </h3>
-<p id="p-1041">Consider the simple and familiar example of a parabolic function such as <span class="process-math">\(s(t) = -16t^2 + 32t + 48\)</span> that represents the height of an object tossed vertically: its maximum value occurs at the vertex of the parabola and represents the greatest height the object reaches.  This maximum value is an especially important point on the graph, the point at which the curve changes from increasing to decreasing.</p>
+<p id="p-1055">Consider the simple and familiar example of a parabolic function such as <span class="process-math">\(s(t) = -16t^2 + 32t + 48\)</span> that represents the height of an object tossed vertically: its maximum value occurs at the vertex of the parabola and represents the greatest height the object reaches.  This maximum value is an especially important point on the graph, the point at which the curve changes from increasing to decreasing.</p>
 <figure class="figure figure-like" id="height-function"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/image-40.svg" role="img" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">49<span class="period">.</span></span><span class="space"> </span>The graph of <span class="process-math">\(s(t) = -16t^2 + 32t + 48\)</span></figcaption></figure></article><article class="definition definition-like" id="defn-absolute-extrema"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.3</span><span class="period">.</span>
 </h3>
-<p id="p-1042">Given a function <span class="process-math">\(f\text{,}\)</span> we say that <span class="process-math">\(f(c)\)</span> is a <dfn class="terminology">global</dfn> or <dfn class="terminology">absolute maximum</dfn>  of <span class="process-math">\(f\)</span> provided that <span class="process-math">\(f(c) \ge f(x)\)</span> for all <span class="process-math">\(x\)</span> in the domain of <span class="process-math">\(f\text{,}\)</span> and similarly we call <span class="process-math">\(f(c)\)</span> a <dfn class="terminology">global</dfn>  or <dfn class="terminology">absolute minimum</dfn>  of <span class="process-math">\(f\)</span> whenever <span class="process-math">\(f(c) \le f(x)\)</span> for all <span class="process-math">\(x\)</span> in the domain of <span class="process-math">\(f\text{.}\)</span></p> The absolute maxima and minima are also called the absolute extrema or <dfn class="terminology">extreme values</dfn> of the function.</article><article class="activity project-like" id="activity-ad-extrema-1"><h3 class="heading">
+<p id="p-1056">Given a function <span class="process-math">\(f\text{,}\)</span> we say that <span class="process-math">\(f(c)\)</span> is a <dfn class="terminology">global</dfn> or <dfn class="terminology">absolute maximum</dfn>  of <span class="process-math">\(f\)</span> provided that <span class="process-math">\(f(c) \ge f(x)\)</span> for all <span class="process-math">\(x\)</span> in the domain of <span class="process-math">\(f\text{,}\)</span> and similarly we call <span class="process-math">\(f(c)\)</span> a <dfn class="terminology">global</dfn>  or <dfn class="terminology">absolute minimum</dfn>  of <span class="process-math">\(f\)</span> whenever <span class="process-math">\(f(c) \le f(x)\)</span> for all <span class="process-math">\(x\)</span> in the domain of <span class="process-math">\(f\text{.}\)</span></p> The absolute maxima and minima are also called the absolute extrema or <dfn class="terminology">extreme values</dfn> of the function.</article><article class="activity project-like" id="activity-ad-extrema-1"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.4.4</span><span class="period">.</span>
 </h3>According to <a href="" class="xref" data-knowl="./knowl/defn-absolute-extrema.html" title="Definition 3.4.3">Definition 3.4.3</a>, which of the following statements best describes the absolute extrema of the function in <a href="" class="xref" data-knowl="./knowl/height-function.html" title="Figure 49">Figure 49</a>?<ol class="upper-alpha">
-<li id="li-710"><p id="p-1043">The absolute maximum is <span class="process-math">\(t = 1\text{,}\)</span> because this is where the function goes from increasing to decreasing.</p></li>
-<li id="li-711"><p id="p-1044">The absolute maximum is <span class="process-math">\(s(1) = 64\text{,}\)</span> because <span class="process-math">\(s(t)\leq 64\)</span> for every other input <span class="process-math">\(t\text{.}\)</span></p></li>
-<li id="li-712"><p id="p-1045">The graph has two absolute minima at the endpoints because the endpoints must be absolute extrema.</p></li>
-<li id="li-713"><p id="p-1046">The graph has no absolute minimum.</p></li>
+<li id="li-723"><p id="p-1057">The absolute maximum is <span class="process-math">\(t = 1\text{,}\)</span> because this is where the function goes from increasing to decreasing.</p></li>
+<li id="li-724"><p id="p-1058">The absolute maximum is <span class="process-math">\(s(1) = 64\text{,}\)</span> because <span class="process-math">\(s(t)\leq 64\)</span> for every other input <span class="process-math">\(t\text{.}\)</span></p></li>
+<li id="li-725"><p id="p-1059">The graph has two absolute minima at the endpoints because the endpoints must be absolute extrema.</p></li>
+<li id="li-726"><p id="p-1060">The graph has no absolute minimum.</p></li>
 </ol></article><article class="observation remark-like" id="observation-19"><h3 class="heading">
 <span class="type">Observation</span><span class="space"> </span><span class="codenumber">3.4.5</span><span class="period">.</span>
 </h3>
-<p id="p-1047">From <a href="" class="xref" data-knowl="./knowl/activity-ad-extrema-1.html" title="Activity 3.4.4">Activity 3.4.4</a> we notice that there are some issues when determining the absolute mimimum and maximum values of a function from its graph alone.  The Extreme Value Theorem will guarantee the existence of extrema on a closed interval. Thne we will learn about critical points to be able to detect extrema algebraically.</p></article><article class="theorem theorem-like" id="thm-extreme-value-theorem"><h3 class="heading">
+<p id="p-1061">From <a href="" class="xref" data-knowl="./knowl/activity-ad-extrema-1.html" title="Activity 3.4.4">Activity 3.4.4</a> we notice that there are some issues when determining the absolute mimimum and maximum values of a function from its graph alone.  The Extreme Value Theorem will guarantee the existence of extrema on a closed interval. Thne we will learn about critical points to be able to detect extrema algebraically.</p></article><article class="theorem theorem-like" id="thm-extreme-value-theorem"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.4.6</span><span class="period">.</span>
 </h3>
-<p id="p-1048">If <span class="process-math">\(f\)</span> is continuous on a closed interval <span class="process-math">\([a,b]\text{,}\)</span> then <span class="process-math">\(f\)</span> has both an absolute maximum and an absolute minimum on the interval.</p></article><article class="activity project-like" id="activity-ad-extrema-2"><h3 class="heading">
+<p id="p-1062">If <span class="process-math">\(f\)</span> is continuous on a closed interval <span class="process-math">\([a,b]\text{,}\)</span> then <span class="process-math">\(f\)</span> has both an absolute maximum and an absolute minimum on the interval.</p></article><article class="activity project-like" id="activity-ad-extrema-2"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.4.7</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-99"><p id="p-1049">For each of the following figures, decide where the absolute extrema are located.</p></div>
-<article class="task exercise-like" id="task-279"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="introduction" id="introduction-101"><p id="p-1063">For each of the following figures, decide where the absolute extrema are located.</p></div>
+<article class="task exercise-like" id="task-281"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <figure class="figure figure-like" id="figure-evt-int"><div class="image-box" style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="external/evt_int.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">50<span class="period">.</span></span><span class="space"> </span></figcaption></figure></article><article class="task exercise-like" id="task-280"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">50<span class="period">.</span></span><span class="space"> </span></figcaption></figure></article><article class="task exercise-like" id="task-282"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <figure class="figure figure-like" id="figure-evt-endpoints"><div class="image-box" style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="external/evt_endpts.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">51<span class="period">.</span></span><span class="space"> </span></figcaption></figure></article><article class="task exercise-like" id="task-281"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">51<span class="period">.</span></span><span class="space"> </span></figcaption></figure></article><article class="task exercise-like" id="task-283"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <figure class="figure figure-like" id="figure-evt-mixed"><div class="image-box" style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="external/evt_mixed.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">52<span class="period">.</span></span><span class="space"> </span></figcaption></figure></article><article class="task exercise-like" id="task-282"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">52<span class="period">.</span></span><span class="space"> </span></figcaption></figure></article><article class="task exercise-like" id="task-284"><h4 class="heading"><span class="codenumber">(d)</span></h4>
 <figure class="figure figure-like" id="figure-evt-mixed2"><div class="image-box" style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="external/evt_mixed2.png" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">53<span class="period">.</span></span><span class="space"> </span></figcaption></figure></article></article><article class="activity project-like" id="activity-ad-extrema-3"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.4.8</span><span class="period">.</span>
 </h3>
-<p id="p-1050">The Extreme Value Theorem (EVT) guarantees an absolute maximum and absolute minumum for which of the following?</p>
+<p id="p-1064">The Extreme Value Theorem (EVT) guarantees an absolute maximum and absolute minumum for which of the following?</p>
 <ol class="upper-alpha">
-<li id="li-714"><p id="p-derived-li-714"><span class="process-math">\(f(x)=\dfrac{x^{2}}{x^{2}-4x-5}\)</span> on <span class="process-math">\([-5,0]\text{.}\)</span></p></li>
-<li id="li-715"><p id="p-derived-li-715"><span class="process-math">\(f(x)=\dfrac{x^{2}}{x^{2}-4x-5}\)</span> on <span class="process-math">\([0,4]\text{.}\)</span></p></li>
-<li id="li-716"><p id="p-derived-li-716"><span class="process-math">\(f(x)=\dfrac{x^{2}}{x^{2}-4x-5}\)</span> on <span class="process-math">\([4,6]\text{.}\)</span></p></li>
-<li id="li-717"><p id="p-derived-li-717"><span class="process-math">\(f(x)=\dfrac{x^{2}}{x^{2}-4x-5}\)</span> on <span class="process-math">\([6,10]\text{.}\)</span></p></li>
+<li id="li-727"><p id="p-derived-li-727"><span class="process-math">\(f(x)=\dfrac{x^{2}}{x^{2}-4x-5}\)</span> on <span class="process-math">\([-5,0]\text{.}\)</span></p></li>
+<li id="li-728"><p id="p-derived-li-728"><span class="process-math">\(f(x)=\dfrac{x^{2}}{x^{2}-4x-5}\)</span> on <span class="process-math">\([0,4]\text{.}\)</span></p></li>
+<li id="li-729"><p id="p-derived-li-729"><span class="process-math">\(f(x)=\dfrac{x^{2}}{x^{2}-4x-5}\)</span> on <span class="process-math">\([4,6]\text{.}\)</span></p></li>
+<li id="li-730"><p id="p-derived-li-730"><span class="process-math">\(f(x)=\dfrac{x^{2}}{x^{2}-4x-5}\)</span> on <span class="process-math">\([6,10]\text{.}\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-ad-extrema-4"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.4.9</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-100"><p id="p-1051">For the following activity, draw a sketch of a function that has the following properties.</p></div>
-<article class="task exercise-like" id="task-283"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1052">The function is continuous and has an absolute minimum but no absolute maximum.</p></article><article class="task exercise-like" id="task-284"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1053">The function is continuous and has an absolute maximum but no absolute minimum.</p></article></article><article class="definition definition-like" id="defn-relative-extrema"><h3 class="heading">
+<div class="introduction" id="introduction-102"><p id="p-1065">For the following activity, draw a sketch of a function that has the following properties.</p></div>
+<article class="task exercise-like" id="task-285"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1066">The function is continuous and has an absolute minimum but no absolute maximum.</p></article><article class="task exercise-like" id="task-286"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1067">The function is continuous and has an absolute maximum but no absolute minimum.</p></article></article><article class="definition definition-like" id="defn-relative-extrema"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.10</span><span class="period">.</span>
 </h3>
-<p id="p-1054">We say that <span class="process-math">\(f(c)\)</span> is a <dfn class="terminology">relative maximum</dfn> (or local maximum) of <span class="process-math">\(f\)</span> provided that <span class="process-math">\(f(c)\geq f(x)\)</span> for all <span class="process-math">\(x\)</span> near <span class="process-math">\(c\text{.}\)</span> We say that <span class="process-math">\(f(c)\)</span> is a <dfn class="terminology">relative minimum</dfn> (or local minimum) of <span class="process-math">\(f\)</span> provided that <span class="process-math">\(f(c)\leq f(x)\)</span> for all <span class="process-math">\(x\)</span> near <span class="process-math">\(c\text{.}\)</span></p></article><article class="observation remark-like" id="observation-20"><h3 class="heading">
+<p id="p-1068">We say that <span class="process-math">\(f(c)\)</span> is a <dfn class="terminology">relative maximum</dfn> (or local maximum) of <span class="process-math">\(f\)</span> provided that <span class="process-math">\(f(c)\geq f(x)\)</span> for all <span class="process-math">\(x\)</span> near <span class="process-math">\(c\text{.}\)</span> We say that <span class="process-math">\(f(c)\)</span> is a <dfn class="terminology">relative minimum</dfn> (or local minimum) of <span class="process-math">\(f\)</span> provided that <span class="process-math">\(f(c)\leq f(x)\)</span> for all <span class="process-math">\(x\)</span> near <span class="process-math">\(c\text{.}\)</span></p></article><article class="observation remark-like" id="observation-20"><h3 class="heading">
 <span class="type">Observation</span><span class="space"> </span><span class="codenumber">3.4.11</span><span class="period">.</span>
 </h3>
-<p id="p-1055">A strategy for finding the extreme values of a function will be to consider all the relative maxima and minima and compare them to decide ultimately which ones give the largest and smallest values. But now we have a new problem: how do you find the relative extrema?  We can detect relative extrema by computing the first derivative and finding the critical points (or critical numbers) of the function. By finding the critical points, we will produce a list of candidates for the extrema (local and global) of the function.</p></article><article class="definition definition-like" id="definition-22"><h3 class="heading">
+<p id="p-1069">A strategy for finding the extreme values of a function will be to consider all the relative maxima and minima and compare them to decide ultimately which ones give the largest and smallest values. But now we have a new problem: how do you find the relative extrema?  We can detect relative extrema by computing the first derivative and finding the critical points (or critical numbers) of the function. By finding the critical points, we will produce a list of candidates for the extrema (local and global) of the function.</p></article><article class="definition definition-like" id="definition-22"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.12</span><span class="period">.</span>
 </h3>
-<p id="p-1056">We say that <span class="process-math">\(x\)</span> is a <dfn class="terminology">critical point</dfn> (or critical number) of <span class="process-math">\(f(x)\)</span> if <span class="process-math">\(x\)</span> is in the domain of <span class="process-math">\(f(x)\)</span> and either <span class="process-math">\(f'(x) = 0\)</span> or <span class="process-math">\(f'(x)\)</span> does not exist.</p></article><article class="activity project-like" id="activity-ad-extrema-5"><h3 class="heading">
+<p id="p-1070">We say that <span class="process-math">\(x\)</span> is a <dfn class="terminology">critical point</dfn> (or critical number) of <span class="process-math">\(f(x)\)</span> if <span class="process-math">\(x\)</span> is in the domain of <span class="process-math">\(f(x)\)</span> and either <span class="process-math">\(f'(x) = 0\)</span> or <span class="process-math">\(f'(x)\)</span> does not exist.</p></article><article class="activity project-like" id="activity-ad-extrema-5"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.4.13</span><span class="period">.</span>
 </h3>
-<p id="p-1057">Which of the following are critical numbers for <span class="process-math">\(f(x) = \frac{1}{3}x^3 - 2x + 2\text{?}\)</span></p>
+<p id="p-1071">Which of the following are critical numbers for <span class="process-math">\(f(x) = \frac{1}{3}x^3 - 2x + 2\text{?}\)</span></p>
 <ol class="upper-alpha">
-<li id="li-718"><p id="p-derived-li-718"><span class="process-math">\(x = \sqrt{2}\)</span> and <span class="process-math">\(x = -\sqrt{2}\text{.}\)</span></p></li>
-<li id="li-719"><p id="p-derived-li-719"><span class="process-math">\(x = \sqrt{2}\text{.}\)</span></p></li>
-<li id="li-720"><p id="p-derived-li-720"><span class="process-math">\(x = 2\)</span> and <span class="process-math">\(x = 0\text{.}\)</span></p></li>
-<li id="li-721"><p id="p-derived-li-721"><span class="process-math">\(x = 2\text{.}\)</span></p></li>
-</ol></article><article class="activity project-like" id="activity-151"><h3 class="heading">
+<li id="li-731"><p id="p-derived-li-731"><span class="process-math">\(x = \sqrt{2}\)</span> and <span class="process-math">\(x = -\sqrt{2}\text{.}\)</span></p></li>
+<li id="li-732"><p id="p-derived-li-732"><span class="process-math">\(x = \sqrt{2}\text{.}\)</span></p></li>
+<li id="li-733"><p id="p-derived-li-733"><span class="process-math">\(x = 2\)</span> and <span class="process-math">\(x = 0\text{.}\)</span></p></li>
+<li id="li-734"><p id="p-derived-li-734"><span class="process-math">\(x = 2\text{.}\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-156"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.4.14</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-101"><p id="p-1058">We have encountered several terms in this section, so we should make sure that we understand how they are related. Which of the following statements are true?</p></div>
+<div class="introduction" id="introduction-103"><p id="p-1072">We have encountered several terms in this section, so we should make sure that we understand how they are related. Which of the following statements are true?</p></div>
 <ol class="upper-alpha">
-<li id="li-722"><p id="p-1059">In a closed interval an endpoint is always a local extrema but it might or might not be a global extrema.</p></li>
-<li id="li-723"><p id="p-1060">In a closed interval an endpoint is always a global extrema.</p></li>
-<li id="li-724"><p id="p-1061">A crtical point is always a local extrema but it might or might not be a global extrema.</p></li>
-<li id="li-725"><p id="p-1062">A local extrema only occurs where the first derivative is equal to zero.</p></li>
-<li id="li-726"><p id="p-1063">A local extrema always occurs at a critical point.</p></li>
-<li id="li-727"><p id="p-1064">A local extrema might occur at a critical point or at an endpoint of a closed interval.</p></li>
+<li id="li-735"><p id="p-1073">In a closed interval an endpoint is always a local extrema but it might or might not be a global extrema.</p></li>
+<li id="li-736"><p id="p-1074">In a closed interval an endpoint is always a global extrema.</p></li>
+<li id="li-737"><p id="p-1075">A crtical point is always a local extrema but it might or might not be a global extrema.</p></li>
+<li id="li-738"><p id="p-1076">A local extrema only occurs where the first derivative is equal to zero.</p></li>
+<li id="li-739"><p id="p-1077">A local extrema always occurs at a critical point.</p></li>
+<li id="li-740"><p id="p-1078">A local extrema might occur at a critical point or at an endpoint of a closed interval.</p></li>
 </ol></article><article class="remark remark-like" id="remark-28"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.4.15</span><span class="period">.</span><span class="space"> </span><span class="title">The Closed Interval Method.</span>
 </h3>
-<p id="p-1065">The following is a way of finding the absolute extrema of a continuous  <span class="process-math">\(f\)</span> on a closed interval.</p>
+<p id="p-1079">The following is a way of finding the absolute extrema of a continuous  <span class="process-math">\(f\)</span> on a closed interval.</p>
 <ol class="decimal">
-<li id="li-728"><p id="p-derived-li-728">Make a list of all critical points of <span class="process-math">\(f\)</span> in <span class="process-math">\((a,b)\text{.}\)</span> (Do not include any critical points outside of the interval).</p></li>
-<li id="li-729"><p id="p-derived-li-729">Add the endpoints <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> to the list.</p></li>
-<li id="li-730"><p id="p-derived-li-730">Evaluate <span class="process-math">\(f\)</span> at all points on your list.</p></li>
-<li id="li-731"><p id="p-derived-li-731">The smallest value is the absolute minimum. The largest is the absolute maximum.</p></li>
+<li id="li-741"><p id="p-derived-li-741">Make a list of all critical points of <span class="process-math">\(f\)</span> in <span class="process-math">\((a,b)\text{.}\)</span> (Do not include any critical points outside of the interval).</p></li>
+<li id="li-742"><p id="p-derived-li-742">Add the endpoints <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> to the list.</p></li>
+<li id="li-743"><p id="p-derived-li-743">Evaluate <span class="process-math">\(f\)</span> at all points on your list.</p></li>
+<li id="li-744"><p id="p-derived-li-744">The smallest value is the absolute minimum. The largest is the absolute maximum.</p></li>
 </ol></article><article class="activity project-like" id="activity-ad-extrema-6"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.4.16</span><span class="period">.</span>
 </h3>
-<p id="p-1066">What are the absolute extrema for <span class="process-math">\(f(x) = 3x^4 - 4x^3\)</span> on <span class="process-math">\([-1,2]\text{.}\)</span></p>
+<p id="p-1080">What are the absolute extrema for <span class="process-math">\(f(x) = 3x^4 - 4x^3\)</span> on <span class="process-math">\([-1,2]\text{.}\)</span></p>
 <ol class="upper-alpha">
-<li id="li-732"><p id="p-derived-li-732">Absolute maximum is when <span class="process-math">\(x = 0\)</span> and absolute minimum when <span class="process-math">\(x = 1\text{.}\)</span></p></li>
-<li id="li-733"><p id="p-derived-li-733">Absolute maximum is when <span class="process-math">\(x = 2\)</span> and absolute minimum when <span class="process-math">\(x = -1\text{.}\)</span></p></li>
-<li id="li-734"><p id="p-derived-li-734">Absolute maximum is when <span class="process-math">\(x = 2\)</span> and absolute minimum when <span class="process-math">\(x = 1\text{.}\)</span></p></li>
-<li id="li-735"><p id="p-derived-li-735">Absolute maximum is when <span class="process-math">\(x = 0\)</span> and absolute minimum when <span class="process-math">\(x = -1\text{.}\)</span></p></li>
+<li id="li-745"><p id="p-derived-li-745">Absolute maximum is when <span class="process-math">\(x = 0\)</span> and absolute minimum when <span class="process-math">\(x = 1\text{.}\)</span></p></li>
+<li id="li-746"><p id="p-derived-li-746">Absolute maximum is when <span class="process-math">\(x = 2\)</span> and absolute minimum when <span class="process-math">\(x = -1\text{.}\)</span></p></li>
+<li id="li-747"><p id="p-derived-li-747">Absolute maximum is when <span class="process-math">\(x = 2\)</span> and absolute minimum when <span class="process-math">\(x = 1\text{.}\)</span></p></li>
+<li id="li-748"><p id="p-derived-li-748">Absolute maximum is when <span class="process-math">\(x = 0\)</span> and absolute minimum when <span class="process-math">\(x = -1\text{.}\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-ad-extrema-7"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.4.17</span><span class="period">.</span>
 </h3>
-<p id="p-1067">What is the absolute extrema for <span class="process-math">\(f(x) = x\sqrt{4-x}\)</span> on <span class="process-math">\([-2,4]\text{.}\)</span></p>
+<p id="p-1081">What is the absolute extrema for <span class="process-math">\(f(x) = x\sqrt{4-x}\)</span> on <span class="process-math">\([-2,4]\text{.}\)</span></p>
 <ol class="upper-alpha">
-<li id="li-736"><p id="p-derived-li-736">Absolute maximum is when <span class="process-math">\(x = -2\)</span> and absolute minimum when <span class="process-math">\(x = \frac{8}{3}\text{.}\)</span></p></li>
-<li id="li-737"><p id="p-derived-li-737">Absolute maximum is when <span class="process-math">\(x = 4\)</span> and absolute minimum when <span class="process-math">\(x = \frac{8}{3}\text{.}\)</span></p></li>
-<li id="li-738"><p id="p-derived-li-738">Absolute maximum is when <span class="process-math">\(x = \frac{8}{3}\)</span> and absolute minimum when <span class="process-math">\(x = -2\text{.}\)</span></p></li>
-<li id="li-739"><p id="p-derived-li-739">Absolute maximum is when <span class="process-math">\(x = 4\)</span> and absolute minimum when <span class="process-math">\(x = -2\text{.}\)</span></p></li>
+<li id="li-749"><p id="p-derived-li-749">Absolute maximum is when <span class="process-math">\(x = -2\)</span> and absolute minimum when <span class="process-math">\(x = \frac{8}{3}\text{.}\)</span></p></li>
+<li id="li-750"><p id="p-derived-li-750">Absolute maximum is when <span class="process-math">\(x = 4\)</span> and absolute minimum when <span class="process-math">\(x = \frac{8}{3}\text{.}\)</span></p></li>
+<li id="li-751"><p id="p-derived-li-751">Absolute maximum is when <span class="process-math">\(x = \frac{8}{3}\)</span> and absolute minimum when <span class="process-math">\(x = -2\text{.}\)</span></p></li>
+<li id="li-752"><p id="p-derived-li-752">Absolute maximum is when <span class="process-math">\(x = 4\)</span> and absolute minimum when <span class="process-math">\(x = -2\text{.}\)</span></p></li>
 </ol></article></section></div></main>
 </div>
 </body>
