@@ -66,10 +66,11 @@
       </task>
   </activity>
 <theorem xml:id="def-powerlaw-derivative">
-       <title>The Power Rule</title><p>The derivative of the function<m>f(x) = x^n</m>, for any real number <m>n</m> is
+       <title>The Power Rule</title><p>The derivative of the power function<m>f(x) = x^n</m>, for any real number <m>n</m> is
 </p>
         <me>f'(x) = nx^{n-1}.</me>
     </theorem>
+    
     <observation>
     So far we have been using <m>f'(x)</m> or <m>f</m> prime to denote a derivative of the function <m>f(x)</m>.  However there are other ways to denote the derivative of a function.  Besides <m>f'(x)</m> there is also <m>\frac{df}{dx}</m>, pronounced "dee-f dee-x."  Both notations can be used interchangeably.  If you want to take the derivative of <m>f'(x)</m> or <m>\frac{df}{dx}</m>, the notation is <m>f''(x)</m> or <m>\frac{d^2f}{dx^2}</m>; this is known as second derivative of <m>f(x)</m>.
     </observation>
@@ -81,17 +82,17 @@
                 <li>The derivative of <m>y = x^{10}</m> is <m>y' = 10x^{11}.</m></li>
                 <li>The derivative of <m>y = x^{-8}</m> is <m>y' = -8x^{-9}.</m></li>
                 <li>The derivative of <m>y = x^{100}</m> is <m>y' = 100x^{99}.</m></li>
-                <li>The derivative of <m>y = x^{-17}</m> is <m>y' = -17x^{-16}.</m>.</li>
+                <li>The derivative of <m>y = x^{-17}</m> is <m>y' = -17x^{-16}.</m></li>
             </ol>
         </statement>
     </activity>
     <theorem  xml:id="def-constant-derivative">
-    <title>The Derivative of a Constant Function</title><p>The If <m>f(x) = c</m>, for some constant <m>c\in\mathbb{R}</m>, then <m>f'(x) = 0</m>.
+    <title>The Derivative of a Constant Function</title><p> If <m>f(x) = c</m>, for some constant <m>c\in\mathbb{R}</m>, then <m>f'(x) = 0</m>.
         </p>
     </theorem>
     <activity xml:id="activity-derivative-elementary3">
     <statement>
-        <p> Using <xref ref = "def-constant-derivative" />, which of the following statement(s) are true?  Note: Pay attention to the dependent variable of the function. </p>
+        <p> Using <xref ref = "def-constant-derivative" />, which of the following statement(s) are true?  Note: Pay attention to the independent variable (the input) of the function. </p>
         <ol label="A">
                 <li>The derivative of <m>y(x) = 10</m> is <m>y'(x) = 9.</m></li>
                 <li>The derivative of <m>y(t) = x</m> is <m>y'(t) = 0.</m></li>
@@ -101,7 +102,7 @@
         </statement>
     </activity>
     <theorem xml:id="def-constmult-derivative">
-   <title>The Constant Multiple Rule </title> <p>If <m>c</m> is a constant and <m>f(x)</m> is a differentiable function, then
+   <title>The Scalar Multiple Rule</title> <p>If <m>c</m> is a constant and <m>f(x)</m> is a differentiable function, then using the Scalar Multiple Law for limits, we have that
         <me>\frac{d}{dx}\left[cf(x)\right] = c\frac{d}{dx}\left[f(x)\right]</me>
         </p>
     </theorem>
@@ -117,27 +118,40 @@
         </statement>
     </activity>
     <theorem xml:id="def-sumdiff-derivative">
-    <title>The Sum and Difference Rule</title> <p>If <m>f(x)</m> and <m>g(x)</m> are both differentiable, then
+    <title>The Sum/Difference Rule</title> <p>If <m>f(x)</m> and <m>g(x)</m> are both differentiable, then using the Sum/Differences Law for limits, we have that
         <me>\frac{d}{dx}\left[f(x) \pm g(x)\right] = \frac{d}{dx}\left[f(x)\right]\pm\frac{d}{dx}\left[g(x)\right]</me>
         </p>
     </theorem>
     <activity xml:id="activity-derivative-elementary5">
     <statement>
-        <p> What is the derivative for the arbitrary parabola given by <m>f(x) = ax^2 + bx + c</m>, where <m>a,\,b,\,c</m> are any real numbers and <m>a \neq 0</m>? </p>
+        <p> What are the first and second derivatives for the arbitrary parabola given by <m>f(x) = ax^2 + bx + c</m>, where <m>a,\,b,\,c</m> are any real numbers and <m>a \neq 0</m>? </p>
         <ol label="A">
-                <li><m>f'(x) = 2ax + bx + c.</m></li>
-                <li><m>f'(x) = 2x + 1.</m></li>
-                <li><m>f'(x) = 2ax + b.</m></li>
-                <li><m>f'(x) = ax + b.</m></li>
+                <li><m>f'(x) = 2ax + bx + c, \, f''(x)=2a +b.</m></li>
+                <li><m>f'(x) = 2x + 1, \, f''(x)=2.</m></li>
+                <li><m>f'(x) = 2ax + b , \, f''(x)=2a.</m></li>
+                <li><m>f'(x) = ax + b, \, f''(x)=a.</m></li>
             </ol>
         </statement>
     </activity>
+    
+    <activity xml:id="neg-fract-powers"><introduction><p>We have power functions for every real value of <m>p</m>. In particular, we can look at power functions with fractional exponents like <m>f(x)= x^{\frac{1}{4}}=\sqrt[4]{x}</m> or  with negative exponents like <m>g(x)= x^{-4} = \frac{1}{x^4}</m></p>. What is the derivative of these two functions?</introduction>
+     <ol label="A">
+                <li><m>f'(x) = \frac{1}{4 \sqrt[4]{x^3}}, \, g'(x) = \frac{-4}{x^3}.</m></li>
+                 <li><m>f'(x) = \frac{1}{4} \sqrt[4]{x^3}, \, g'(x) = \frac{-4}{x^5}.</m></li>
+                <li><m>f'(x) = \frac{1}{4} \sqrt[4]{x^3}, \, g'(x) = \frac{-4}{x^3}.</m></li>
+                <li><m>f'(x) = \frac{1}{4 \sqrt[4]{x^3}}, \, g'(x) = \frac{-4}{x^5}.</m></li>
+            </ol>
+    
+    </activity>
     <theorem xml:id="def-expon-derivative">
-   <title>The Derivative of an Exponential Function</title><p>For any real number <m>a</m>, if <m>f(x) = a^x</m>, then <m>f'(x) = a^x\ln(a)</m>. </p>
+   <title>The Derivative of an Exponential Function</title><p>The derivative of the exponential function<m>f(x) = b^x</m>, for any positive number <m>b</m> is
+</p>
+        <me>f'(x) =\ln(b) \,  b^x.</me>
     </theorem>
    <observation>
-    <p>A special case of <xref ref = "def-expon-derivative" /> is when <m>a = e</m>, where <m>e</m> is the base of the natural logarithm function. In this case let <m>f(x) = e^x</m>. Then </p>
-       <me>f'(x) = e^{x}\ln(e) = e^{x}.</me>
+    <p>A special case of <xref ref = "def-expon-derivative" /> is when <m>b = e</m>, where <m>e</m> is the base of the natural logarithm function. In this case let <m>f(x) = e^x</m>. Then 
+       <me>f'(x) =\ln(e) \,  e^{x} = e^{x}.</me>
+        So <m>f(x)=e^x</m> is a special function for which <m>f'(x)=f(x)</m>.</p>
     </observation>
     <activity xml:id="activity-derivative-elementary6">
         <statement>
@@ -150,6 +164,7 @@
             </ol>
         </statement>
     </activity>
+    
     <theorem xml:id="def-trig-derivative">
     <title>The Derivative of the Sine and Cosine Functions</title><p>If <m>f(x) = \sin(x)</m>, then <m>f'(x) = \cos(x)</m>.  If <m>f(x) = \cos(x)</m>, then <m>f'(x) = -\sin(x)</m>.</p>
     </theorem>
@@ -165,8 +180,8 @@
             </ol>
             
         </statement>
-    
     </activity>
+    
     <theorem xml:id="def-log-derivative">
     <title>The Derivative of the Natural Log Function</title><p>If <m>f(x) = \ln(x)</m>, then <me>f'(x) = \frac{1}{x}</me>.</p>
     </theorem>
@@ -180,6 +195,79 @@
                 <li>The derivative of <m>y = \ln(x^{2})</m> is <m>y' = \frac{2}{x}</m>.</li>
         </ol>
         </statement>
-    
     </activity>
+    
+    <activity xml:id="checkit-DF3">
+    <statement>
+        <p>
+            Demonstrate and explain how to find the derivative of the following functions.
+            Be sure to explicitly denote which derivative rules (constant multiple, sum and difference, etc.) you are using in your work.
+        </p>
+        <ol>
+                <li>
+                    <p>
+<me>g(x) = 2 \, \cos\left(x\right) - 3 \, e^x</me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+<me>h(w) = \sqrt[5]{w^7} + \frac{6}{w^{5}}</me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+<me>f(t) = -4 \, t^{5} + 5 \, t^{3} + t - 8</me>
+                    </p>
+                </li>
+        </ol>
+    </statement>
+    <answer>
+        <ol>
+                <li>
+                    <p>
+<me>g'(x) = - 2 \, \sin\left(x\right) - 3 \, e^x</me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+<me>h'(w) = \frac{7}{5} \, w^{\frac{2}{5}} - \frac{30}{w^{6}}</me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+<me>f'(t) = -20 \, t^{4} + 15 \, t^{2} + 1</me>
+                    </p>
+                </li>
+        </ol>
+    </answer>
+</activity>
+    
+      <activity xml:id="der-exp-context">
+<p>
+  Suppose that the temperature (in degrees Fahrenheit) of a cup of coffee, <m>t</m> minutes after forgetting it on a bench outside, is given by the function
+    <me>f(t) = 40 \, (0.5)^t + 50</me>
+    Find <m>f(1)</m> and <m>f'(1)</m> and interpret your result in the context of this problem </p>
+</activity>
+    
+   
+    <activity xml:id="polynomials-tangent-slope"><introduction><p>In this activity you will use our first derivative rules to study the slope of tangent lines</p></introduction>
+        <task><p> The graph of <m>y=x^3-9x^2-16x+1</m> has a slope of 5 at two points.  Find the coordinates of these points. </p></task>
+<task><p>        
+Find the equations of the two lines tangent to the parabola <m>y=(x-2)^2</m> which pass through the origin. You will want to think about slope in two ways: as the derivative at <m>x=a</m> and the rise over the run in a linear function through the origin and the point <m>(a, f(a))</m>. Use a graph to check your work and sketch the tangent lines on your graph.
+    </p></task>
+    </activity>
+    
+   
+    <activity xml:id="approx-shape-der">
+<p>
+Find the values of the parameters <m>a,b,c</m> for the quadratic polynomial
+<m> q(x) = ax^2 +bx +c </m> that best approximates the graph of <m>f(x)=e^x</m> at <m>x=0</m>. This means choosing <m>a,b,c</m> such that </p>
+<ul>
+    <li><m>q(0) = f(0)</m></li>
+    <li><m>q'(0) = f'(0)</m></li>
+    <li><m>q''(0) = f''(0)</m></li>
+    </ul> 
+  <p>Hint: find the values of <m>f(0),f'(0),f''(0)</m>. The values of <m>q(0),q'(0),q''(0)</m> at zero will involve some parameters. You can solve for these parameters using the equations above.</p>
+      </activity>
+         
 </section>

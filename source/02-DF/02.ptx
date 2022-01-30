@@ -163,7 +163,7 @@ The second derivative is the derivative of the derivative. It encodes informatio
     <observation xml:id="two-ways-derivative-at-point"><p>We have two ways to compute analytically the derivative at a point. For example, to compute <m>f'(1)</m>, the derivative of <m>f(x)</m> at <m>x=1</m>, we have two methods</p>
         <ol>
         <li>We can directly compute <m>f'(1)</m> by finding the difference quotient on the interval <m>[1,1+h]</m> and then taking the limit as <m>h\to 0</m>. </li>
-             <li>We can first find the derivative function <m>f'(x)</m> by computing the difference quotient on the interval <m>[x,x+h]</m>, then taking the limit as <m>h\to 0</m>, and finally plugging in the expression for <m>f'(x)</m> the input <m>x=1</m>. </li>
+             <li>We can first find the derivative function <m>f'(x)</m> by computing the difference quotient on the interval <m>[x,x+h]</m>, then taking the limit as <m>h\to 0</m>, and finally evaluating the expression for <m>f'(x)</m> at the input <m>x=1</m>. </li>
         </ol>
         <p> The latter approach is more convenient when you want to consider the value of the derivative function at multiple points! </p></observation>
     
