@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-01-30T18:25:09Z       *-->
+<!--*       on 2022-02-06T17:14:07Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -9,11 +9,14 @@
 <!--*                                          *-->
 <!--********************************************-->
 <html lang="en-US">
-<head>
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>TBIL-Cal1 Tangents, motion, and marginals (AD1)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus 1 for Team-Based Inquiry Learning">
+<meta property="book:author" content="TBIL Institute Fellows">
 <script>window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
@@ -36,21 +39,21 @@
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg">miniversion=0.674</script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
-</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
-<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
-<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\R}{\mathbb R}
@@ -65,7 +68,7 @@
 <p class="byline">TBIL Institute Fellows</p>
 </div>
 </div></div>
-<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="AD.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="AD2.html" title="Next">Next</a></span></div>
 </div>
@@ -73,221 +76,221 @@
 <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="AD.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a class="next-button button toolbar-item" href="AD2.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
-<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
 <nav id="toc"><ul>
 <li class="link frontmatter">
-<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a><ul>
-<li><a href="colophon.html" data-scroll="colophon">Colophon</a></li>
-<li><a href="printable-pdf.html" data-scroll="printable-pdf">Printable PDF</a></li>
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li>
+<li><a href="printable-pdf.html" data-scroll="printable-pdf" class="internal">Printable PDF</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="LT.html" data-scroll="LT"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
-<li><a href="LT1.html" data-scroll="LT1">Limits graphically (LT1)</a></li>
-<li><a href="LT2.html" data-scroll="LT2">Limits numerically (LT2)</a></li>
-<li><a href="LT3.html" data-scroll="LT3">Limits analytically (LT3)</a></li>
-<li><a href="LT4.html" data-scroll="LT4">Continuity (LT4)</a></li>
-<li><a href="LT5.html" data-scroll="LT5">Limits with infinite inputs (LT5)</a></li>
-<li><a href="LT6.html" data-scroll="LT6">Limits with infinite outputs (LT6)</a></li>
+<a href="LT.html" data-scroll="LT" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1" class="internal">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2" class="internal">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3" class="internal">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4" class="internal">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5" class="internal">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6" class="internal">Limits with infinite outputs (LT6)</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="DF.html" data-scroll="DF"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
-<li><a href="DF2.html" data-scroll="DF2">Derivatives graphically and numerically (DF1)</a></li>
-<li><a href="DF1.html" data-scroll="DF1">Derivatives analytically (DF2)</a></li>
-<li><a href="DF3.html" data-scroll="DF3">Elementary derivative rules (DF3)</a></li>
-<li><a href="DF4.html" data-scroll="DF4">The product and quotient rules (DF4)</a></li>
-<li><a href="DF5.html" data-scroll="DF5">The chain rule (DF5)</a></li>
-<li><a href="DF6.html" data-scroll="DF6">Differentiation strategy (DF6)</a></li>
-<li><a href="DF7.html" data-scroll="DF7">Differentiating implicitly defined functions (DF7)</a></li>
-<li><a href="DF8.html" data-scroll="DF8">Differentiating inverse functions (DF8)</a></li>
+<a href="DF.html" data-scroll="DF" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2" class="internal">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1" class="internal">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3" class="internal">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4" class="internal">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5" class="internal">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6" class="internal">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7" class="internal">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8" class="internal">Differentiating inverse functions (DF8)</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="AD.html" data-scroll="AD"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<a href="AD.html" data-scroll="AD" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
 <li><a href="AD1.html" data-scroll="AD1" class="active">Tangents, motion, and marginals (AD1)</a></li>
-<li><a href="AD2.html" data-scroll="AD2">Linear approximation (AD2)</a></li>
-<li><a href="AD3.html" data-scroll="AD3">Related rates (AD3)</a></li>
-<li><a href="AD4.html" data-scroll="AD4">Extreme values (AD4)</a></li>
-<li><a href="AD5.html" data-scroll="AD5">Derivative tests (AD5)</a></li>
-<li><a href="AD6.html" data-scroll="AD6">Concavity and inflection (AD6)</a></li>
-<li><a href="AD7.html" data-scroll="AD7">Graphing with derivatives (AD7)</a></li>
-<li><a href="AD8.html" data-scroll="AD8">Applied optimization (AD8)</a></li>
-<li><a href="AD9.html" data-scroll="AD9">Limits and Derivatives (AD9)</a></li>
+<li><a href="AD2.html" data-scroll="AD2" class="internal">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3" class="internal">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4" class="internal">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5" class="internal">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6" class="internal">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7" class="internal">Graphing with derivatives (AD7)</a></li>
+<li><a href="AD8.html" data-scroll="AD8" class="internal">Applied optimization (AD8)</a></li>
+<li><a href="AD9.html" data-scroll="AD9" class="internal">Limits and Derivatives (AD9)</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="IN.html" data-scroll="IN"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul>
-<li><a href="IN1.html" data-scroll="IN1">Geometry of definite integrals (IN1)</a></li>
-<li><a href="IN2.html" data-scroll="IN2">Approximating definite integrals (IN2)</a></li>
-<li><a href="IN3.html" data-scroll="IN3">Elementary antiderivatives (IN3)</a></li>
-<li><a href="IN4.html" data-scroll="IN4">Initial Value Problems (IN4)</a></li>
-<li><a href="IN5.html" data-scroll="IN5">FTC for definite integrals (IN5)</a></li>
-<li><a href="IN6.html" data-scroll="IN6">FTC for derivatives of integrals (IN6)</a></li>
-<li><a href="IN7.html" data-scroll="IN7">Area under curves (IN7)</a></li>
-<li><a href="IN8.html" data-scroll="IN8">Area between curves (IN8)</a></li>
-<li><a href="IN9.html" data-scroll="IN9">Substitution method (IN9)</a></li>
+<a href="IN.html" data-scroll="IN" class="internal"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul>
+<li><a href="IN1.html" data-scroll="IN1" class="internal">Geometry of definite integrals (IN1)</a></li>
+<li><a href="IN2.html" data-scroll="IN2" class="internal">Approximating definite integrals (IN2)</a></li>
+<li><a href="IN3.html" data-scroll="IN3" class="internal">Elementary antiderivatives (IN3)</a></li>
+<li><a href="IN4.html" data-scroll="IN4" class="internal">Initial Value Problems (IN4)</a></li>
+<li><a href="IN5.html" data-scroll="IN5" class="internal">FTC for definite integrals (IN5)</a></li>
+<li><a href="IN6.html" data-scroll="IN6" class="internal">FTC for derivatives of integrals (IN6)</a></li>
+<li><a href="IN7.html" data-scroll="IN7" class="internal">Area under curves (IN7)</a></li>
+<li><a href="IN8.html" data-scroll="IN8" class="internal">Area between curves (IN8)</a></li>
+<li><a href="IN9.html" data-scroll="IN9" class="internal">Substitution method (IN9)</a></li>
 </ul>
 </li>
-<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter"><span class="title">Backmatter</span></a></li>
-<li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl"><span class="title">TBIL Resource Library</span></a></li>
-<li class="link"><a href="pretext.html" data-scroll="pretext"><span class="title">Authored with PreTeXt</span></a></li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl" class="internal"><span class="title">TBIL Resource Library</span></a></li>
+<li class="link"><a href="pretext.html" data-scroll="pretext" class="internal"><span class="title">Authored with PreTeXt</span></a></li>
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="AD1"><h2 class="heading hide-type">
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="AD1"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">3.1</span> <span class="title">Tangents, motion, and marginals (AD1)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-18"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-648"><p id="p-897">Use derivatives to answer questions about rates of change and equations of tangents.</p></li></ul></article><article class="definition definition-like" id="definition-14"><h3 class="heading">
+<ul class="disc"><li id="li-669"><p id="p-923">Use derivatives to answer questions about rates of change and equations of tangents.</p></li></ul></article><article class="definition definition-like" id="definition-14"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.1</span><span class="period">.</span>
 </h3>
-<p id="p-898">The tangent line of a function <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=a\)</span> is the linear function <span class="process-math">\(L(x)\)</span></p>
+<p id="p-924">The tangent line of a function <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=a\)</span> is the linear function <span class="process-math">\(L(x)\)</span></p>
 <div class="displaymath process-math">
 \begin{equation*}
 L(x) = f'(a)(x-a) + f(a). 
 \end{equation*}
 </div>
-<p class="continuation">Notice that this is the linear function with slope <span class="process-math">\(f'(a)\)</span> and passing through <span class="process-math">\((a,f(a))\)</span> in point-slope form.</p></article><article class="activity project-like" id="activity-129"><h3 class="heading">
+<p class="continuation">Notice that this is the linear function with slope <span class="process-math">\(f'(a)\)</span> and passing through <span class="process-math">\((a,f(a))\)</span> in point-slope form.</p></article><article class="activity project-like" id="activity-134"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.2</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-88"><p id="p-899">For the following functions, find the required tangent line.</p></div>
-<article class="task exercise-like" id="task-227"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-900">Find the tangent line to <span class="process-math">\(f(x) = \ln(x)\)</span> at <span class="process-math">\(x=1\)</span></p>
+<div class="introduction" id="introduction-90"><p id="p-925">For the following functions, find the required tangent line.</p></div>
+<article class="task exercise-like" id="task-237"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-926">Find the tangent line to <span class="process-math">\(f(x) = \ln(x)\)</span> at <span class="process-math">\(x=1\)</span></p>
 <ol class="upper-alpha">
-<li id="li-649"><p id="p-901"><span class="process-math">\(\displaystyle L(x) = x\)</span></p></li>
-<li id="li-650"><p id="p-902"><span class="process-math">\(\displaystyle L(x) = x+1\)</span></p></li>
-<li id="li-651"><p id="p-903"><span class="process-math">\(\displaystyle L(x)= x - 1\)</span></p></li>
-<li id="li-652"><p id="p-904"><span class="process-math">\(\displaystyle L(x)= -x + 1\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-228"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-905">Find the tangent line to <span class="process-math">\(f(x) = e^x\)</span> at <span class="process-math">\(x=0\)</span></p>
+<li id="li-670"><p id="p-927"><span class="process-math">\(\displaystyle L(x) = x\)</span></p></li>
+<li id="li-671"><p id="p-928"><span class="process-math">\(\displaystyle L(x) = x+1\)</span></p></li>
+<li id="li-672"><p id="p-929"><span class="process-math">\(\displaystyle L(x)= x - 1\)</span></p></li>
+<li id="li-673"><p id="p-930"><span class="process-math">\(\displaystyle L(x)= -x + 1\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-238"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-931">Find the tangent line to <span class="process-math">\(f(x) = e^x\)</span> at <span class="process-math">\(x=0\)</span></p>
 <ol class="upper-alpha">
-<li id="li-653"><p id="p-906"><span class="process-math">\(\displaystyle L(x) = x\)</span></p></li>
-<li id="li-654"><p id="p-907"><span class="process-math">\(\displaystyle L(x) = x+1\)</span></p></li>
-<li id="li-655"><p id="p-908"><span class="process-math">\(\displaystyle L(x)= x - 1\)</span></p></li>
-<li id="li-656"><p id="p-909"><span class="process-math">\(\displaystyle L(x)= -x + 1\)</span></p></li>
-</ol></article></article><article class="activity project-like" id="activity-130"><h3 class="heading">
+<li id="li-674"><p id="p-932"><span class="process-math">\(\displaystyle L(x) = x\)</span></p></li>
+<li id="li-675"><p id="p-933"><span class="process-math">\(\displaystyle L(x) = x+1\)</span></p></li>
+<li id="li-676"><p id="p-934"><span class="process-math">\(\displaystyle L(x)= x - 1\)</span></p></li>
+<li id="li-677"><p id="p-935"><span class="process-math">\(\displaystyle L(x)= -x + 1\)</span></p></li>
+</ol></article></article><article class="activity project-like" id="activity-135"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.3</span><span class="period">.</span>
 </h3>
-<p id="p-910">Let <span class="process-math">\(f(x) = -2 \, x^{4} + 4 \, x^{2} - x + 5\text{.}\)</span> Find an equation of the line tangent to the graph at the point <span class="process-math">\((-2, -9)\text{.}\)</span></p></article><article class="definition definition-like" id="definition-15"><h3 class="heading">
+<p id="p-936">Let <span class="process-math">\(f(x) = -2 \, x^{4} + 4 \, x^{2} - x + 5\text{.}\)</span> Find an equation of the line tangent to the graph at the point <span class="process-math">\((-2, -9)\text{.}\)</span></p></article><article class="definition definition-like" id="definition-15"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.4</span><span class="period">.</span>
 </h3>
-<p id="p-911">If a particle has position function <span class="process-math">\(s = f(t)\text{,}\)</span> where <span class="process-math">\(t\)</span> is measured in seconds and <span class="process-math">\(s\)</span> is measured in meters, then</p>
+<p id="p-937">If a particle has position function <span class="process-math">\(s = f(t)\text{,}\)</span> where <span class="process-math">\(t\)</span> is measured in seconds and <span class="process-math">\(s\)</span> is measured in meters, then</p>
 <ul class="disc">
-<li id="li-657"><p id="p-912"><span class="process-math">\(v(t) = f'(t)\)</span> is the velocity of the particle</p></li>
-<li id="li-658"><p id="p-913"><span class="process-math">\(a(t) = f''(t)\)</span> is the acceleration of the particle</p></li>
-</ul></article><article class="activity project-like" id="activity-131"><h3 class="heading">
+<li id="li-678"><p id="p-938"><span class="process-math">\(v(t) = f'(t)\)</span> is the velocity of the particle</p></li>
+<li id="li-679"><p id="p-939"><span class="process-math">\(a(t) = f''(t)\)</span> is the acceleration of the particle</p></li>
+</ul></article><article class="activity project-like" id="activity-136"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.5</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-89">
-<p id="p-914">A particle moves on a vertical line so that its <span class="process-math">\(y\)</span> coordinate at time <span class="process-math">\(t\)</span> is</p>
+<div class="introduction" id="introduction-91">
+<p id="p-940">A particle moves on a vertical line so that its <span class="process-math">\(y\)</span> coordinate at time <span class="process-math">\(t\)</span> is</p>
 <div class="displaymath process-math">
 \begin{equation*}
 y = t^{3}-9t^{2}+24t + 3 
 \end{equation*}
 </div>
-<p id="p-915">for <span class="process-math">\(t\geq 0\text{.}\)</span> Here <span class="process-math">\(t\)</span> is measured in seconds and <span class="process-math">\(y\)</span> is measured in feet.</p>
+<p id="p-941">for <span class="process-math">\(t\geq 0\text{.}\)</span> Here <span class="process-math">\(t\)</span> is measured in seconds and <span class="process-math">\(y\)</span> is measured in feet.</p>
 </div>
-<article class="task exercise-like" id="task-229"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-916">Find the velocity and acceleration functions.</p></article><article class="task exercise-like" id="task-230"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-917">Sketch graphs of the position, velocity and acceleration functions for <span class="process-math">\(0 \leq t \leq 5\text{.}\)</span></p></article><article class="task exercise-like" id="task-231"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-918">When is the particle moving upward and when is it moving downward?</p></article><article class="task exercise-like" id="task-232"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-919">When is the particle's velocity increasing?</p></article><article class="task exercise-like" id="task-233"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-920">Find the total distance that the particle travels in the time interval <span class="process-math">\(0 \leq t \leq 5\text{.}\)</span> Careful: the total distance is not the same as the displacement (the change in position)! Compute how much the particle moves up and add it to how much the particle moves down.</p></article></article><article class="observation remark-like" id="observation-17"><h3 class="heading">
+<article class="task exercise-like" id="task-239"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-942">Find the velocity and acceleration functions.</p></article><article class="task exercise-like" id="task-240"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-943">Sketch graphs of the position, velocity and acceleration functions for <span class="process-math">\(0 \leq t \leq 5\text{.}\)</span></p></article><article class="task exercise-like" id="task-241"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-944">When is the particle moving upward and when is it moving downward?</p></article><article class="task exercise-like" id="task-242"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-945">When is the particle's velocity increasing?</p></article><article class="task exercise-like" id="task-243"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-946">Find the total distance that the particle travels in the time interval <span class="process-math">\(0 \leq t \leq 5\text{.}\)</span> Careful: the total distance is not the same as the displacement (the change in position)! Compute how much the particle moves up and add it to how much the particle moves down.</p></article></article><article class="observation remark-like" id="observation-17"><h3 class="heading">
 <span class="type">Observation</span><span class="space"> </span><span class="codenumber">3.1.6</span><span class="period">.</span>
 </h3>
-<p id="p-921">In some cases, we want to also consider the speed of a particle, which is the absolute value of the velocity. In symbols <span class="process-math">\(|v(t)|= |f'(t)|\)</span> is the speed of the particle. A particle is speeding up when the speed is increasing.</p></article><article class="activity project-like" id="speed"><h3 class="heading">
+<p id="p-947">In some cases, we want to also consider the speed of a particle, which is the absolute value of the velocity. In symbols <span class="process-math">\(|v(t)|= |f'(t)|\)</span> is the speed of the particle. A particle is speeding up when the speed is increasing.</p></article><article class="activity project-like" id="speed"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.7</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-90"><p id="p-922">Consider the speed of a particle. What is the behavior of the speed in relation to velocity and acceleration?</p></div>
+<div class="introduction" id="introduction-92"><p id="p-948">Consider the speed of a particle. What is the behavior of the speed in relation to velocity and acceleration?</p></div>
 <ol class="upper-alpha">
-<li id="li-659"><p id="p-923">The speed is always positive and it is increasing when the velocity and the acceleration have the same sign.</p></li>
-<li id="li-660"><p id="p-924">The speed is positive when the velocity is positive and negative when the velocity is negative.</p></li>
-<li id="li-661"><p id="p-925">The speed is positive when the acceleration is positive and negative when the acceleration is negative.</p></li>
-<li id="li-662"><p id="p-926">The speed is always positive and it is increasing when the velocity and the acceleration have opposite signs.</p></li>
+<li id="li-680"><p id="p-949">The speed is always positive and it is increasing when the velocity and the acceleration have the same sign.</p></li>
+<li id="li-681"><p id="p-950">The speed is positive when the velocity is positive and negative when the velocity is negative.</p></li>
+<li id="li-682"><p id="p-951">The speed is positive when the acceleration is positive and negative when the acceleration is negative.</p></li>
+<li id="li-683"><p id="p-952">The speed is always positive and it is increasing when the velocity and the acceleration have opposite signs.</p></li>
 </ol></article><article class="definition definition-like" id="definition-16"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.8</span><span class="period">.</span>
 </h3>
-<p id="p-927">In a parametric motion on a curve <span class="process-math">\(C\)</span> given by <span class="process-math">\(x=f(t)\)</span> and <span class="process-math">\(y=g(t)\)</span> we have that</p>
+<p id="p-953">In a parametric motion on a curve <span class="process-math">\(C\)</span> given by <span class="process-math">\(x=f(t)\)</span> and <span class="process-math">\(y=g(t)\)</span> we have that</p>
 <ul class="disc">
-<li id="li-663"><p id="p-928"><span class="process-math">\(\frac{dx}{dt}=f'(t)\)</span> is the rate of change of <span class="process-math">\(f(t)\text{,}\)</span> one component of the slope (or velocity)</p></li>
-<li id="li-664"><p id="p-929"><span class="process-math">\(\frac{dy}{dt}=g'(t)\)</span> is the rate of change of <span class="process-math">\(g(t)\text{,}\)</span> one component of the slope (or velocity)</p></li>
-<li id="li-665"><p id="p-930"><span class="process-math">\(\frac{dy}{dx}\)</span> is the actual slope (or velocity) of the object and by the chain rule <span class="process-math">\(\frac{dy}{dx} = \frac{g'(t)}{f'(t)} \)</span></p></li>
-</ul></article><article class="activity project-like" id="activity-133"><h3 class="heading">
+<li id="li-684"><p id="p-954"><span class="process-math">\(\frac{dx}{dt}=f'(t)\)</span> is the rate of change of <span class="process-math">\(f(t)\text{,}\)</span> one component of the slope (or velocity)</p></li>
+<li id="li-685"><p id="p-955"><span class="process-math">\(\frac{dy}{dt}=g'(t)\)</span> is the rate of change of <span class="process-math">\(g(t)\text{,}\)</span> one component of the slope (or velocity)</p></li>
+<li id="li-686"><p id="p-956"><span class="process-math">\(\frac{dy}{dx}\)</span> is the actual slope (or velocity) of the object and by the chain rule <span class="process-math">\(\frac{dy}{dx} = \frac{g'(t)}{f'(t)} \)</span></p></li>
+</ul></article><article class="activity project-like" id="activity-138"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.9</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-91">
-<p id="p-931">An airplane is cruising at a fixed height and traveling in a pattern described by the parametric equations</p>
+<div class="introduction" id="introduction-93">
+<p id="p-957">An airplane is cruising at a fixed height and traveling in a pattern described by the parametric equations</p>
 <div class="displaymath process-math">
 \begin{equation*}
 x = 4 t , \quad  y = -t^4 + 4t - 1 , 
 \end{equation*}
 </div>
-<p id="p-932">where <span class="process-math">\(x, y\)</span> have units of miles, and <span class="process-math">\(t\)</span> is in hours.</p>
+<p id="p-958">where <span class="process-math">\(x, y\)</span> have units of miles, and <span class="process-math">\(t\)</span> is in hours.</p>
 </div>
-<article class="task exercise-like" id="task-234"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-933">Find the slope of the curve.</p></article><article class="task exercise-like" id="task-235"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-934">What is the slope of the curve at <span class="process-math">\((0,-1)\text{.}\)</span></p></article><article class="task exercise-like" id="task-236"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-935">Write the equation of the tangent line to the curve at  <span class="process-math">\((0,-1)\text{.}\)</span></p></article></article><article class="definition definition-like" id="definition-17"><h3 class="heading">
+<article class="task exercise-like" id="task-244"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-959">Find the slope of the curve.</p></article><article class="task exercise-like" id="task-245"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-960">What is the slope of the curve at <span class="process-math">\((0,-1)\text{.}\)</span></p></article><article class="task exercise-like" id="task-246"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-961">Write the equation of the tangent line to the curve at  <span class="process-math">\((0,-1)\text{.}\)</span></p></article></article><article class="definition definition-like" id="definition-17"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.10</span><span class="period">.</span>
 </h3>
-<p id="p-936">If <span class="process-math">\(C (x)\)</span> is the cost of producing <span class="process-math">\(x\)</span> items and <span class="process-math">\(R(x)\)</span> is the revenue from selling <span class="process-math">\(x\)</span> items, then <span class="process-math">\(P(x)= R(x) - C(x)\)</span> is the profit. We can study their derivatives, the marginals</p>
+<p id="p-962">If <span class="process-math">\(C (x)\)</span> is the cost of producing <span class="process-math">\(x\)</span> items and <span class="process-math">\(R(x)\)</span> is the revenue from selling <span class="process-math">\(x\)</span> items, then <span class="process-math">\(P(x)= R(x) - C(x)\)</span> is the profit. We can study their derivatives, the marginals</p>
 <ul class="disc">
-<li id="li-666"><p id="p-derived-li-666"><span class="process-math">\(C'(x)\)</span> is the marginal cost</p></li>
-<li id="li-667"><p id="p-derived-li-667"><span class="process-math">\(R'(x)\)</span> is the marginal revenue</p></li>
-<li id="li-668"><p id="p-derived-li-668"><span class="process-math">\(P'(x)= R'(x) - C'(x)\)</span> is the marginal profit</p></li>
-</ul></article><article class="activity project-like" id="activity-134"><h3 class="heading">
+<li id="li-687"><p id="p-derived-li-687"><span class="process-math">\(C'(x)\)</span> is the marginal cost</p></li>
+<li id="li-688"><p id="p-derived-li-688"><span class="process-math">\(R'(x)\)</span> is the marginal revenue</p></li>
+<li id="li-689"><p id="p-derived-li-689"><span class="process-math">\(P'(x)= R'(x) - C'(x)\)</span> is the marginal profit</p></li>
+</ul></article><article class="activity project-like" id="activity-139"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.11</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-92">
-<p id="p-937">The manager of a computer shop has to decide how many computers to store in the back of the shop. If she stores a large number, she has to pay extra in storage costs. If she stores only a small number, she will have to reorder more often, which will involve additional handling costs. She has found that if she stores <span class="process-math">\(x\)</span> computers, the storage and handling costs will be <span class="process-math">\(C\)</span> dollars, where</p>
+<div class="introduction" id="introduction-94">
+<p id="p-963">The manager of a computer shop has to decide how many computers to store in the back of the shop. If she stores a large number, she has to pay extra in storage costs. If she stores only a small number, she will have to reorder more often, which will involve additional handling costs. She has found that if she stores <span class="process-math">\(x\)</span> computers, the storage and handling costs will be <span class="process-math">\(C\)</span> dollars, where</p>
 <div class="displaymath process-math">
 \begin{equation*}
 C(x) = 10x^{3}-900x^{2}+16000x+210000 
 \end{equation*}
 </div>
 </div>
-<article class="task exercise-like" id="task-237"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-938">What is the fixed cost of the computer shop, the cost when no computers are in storage? In practical terms this may account for rent and utilities expenses.</p></article><article class="task exercise-like" id="task-238"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-939">Find the marginal cost</p></article><article class="task exercise-like" id="task-239"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-940">Now suppose that <span class="process-math">\(x\)</span> computers give revenue <span class="process-math">\(R(x) = 1000x\text{.}\)</span> What is the marginal revenue? What is the real world interpretation of your finding?</p></article><article class="task exercise-like" id="task-240"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-941">Find a formula for the profit function <span class="process-math">\(P(x)\)</span> and find the marginal profit using the marginal revenue and the marginal cost.</p></article></article><article class="activity project-like" id="activity-135"><h3 class="heading">
+<article class="task exercise-like" id="task-247"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-964">What is the fixed cost of the computer shop, the cost when no computers are in storage? In practical terms this may account for rent and utilities expenses.</p></article><article class="task exercise-like" id="task-248"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-965">Find the marginal cost</p></article><article class="task exercise-like" id="task-249"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-966">Now suppose that <span class="process-math">\(x\)</span> computers give revenue <span class="process-math">\(R(x) = 1000x\text{.}\)</span> What is the marginal revenue? What is the real world interpretation of your finding?</p></article><article class="task exercise-like" id="task-250"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-967">Find a formula for the profit function <span class="process-math">\(P(x)\)</span> and find the marginal profit using the marginal revenue and the marginal cost.</p></article></article><article class="activity project-like" id="activity-140"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.12</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-93">
-<p id="p-942">The quantity <span class="process-math">\(q\)</span> of skateboards sold depends on the selling price <span class="process-math">\(p\)</span> of a skateboard, so we write <span class="process-math">\(q=f(p)\text{.}\)</span> You are given that</p>
+<div class="introduction" id="introduction-95">
+<p id="p-968">The quantity <span class="process-math">\(q\)</span> of skateboards sold depends on the selling price <span class="process-math">\(p\)</span> of a skateboard, so we write <span class="process-math">\(q=f(p)\text{.}\)</span> You are given that</p>
 <div class="displaymath process-math">
 \begin{equation*}
 f(140) = 15000, \quad f'(140)= -100 
 \end{equation*}
 </div>
 </div>
-<article class="task exercise-like" id="task-241"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-943">What does the data above tell you about the change in demand for skateboards depending on the selling price?</p></article><article class="task exercise-like" id="task-242"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-944">The total revenue earned by the sale of skateboards <span class="process-math">\(R(p) \)</span> is given by , <span class="process-math">\(R(p) =q(p) \cdot p \text{.}\)</span> Explain why.</p></article><article class="task exercise-like" id="task-243"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-945">Find</p>
+<article class="task exercise-like" id="task-251"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-969">What does the data above tell you about the change in demand for skateboards depending on the selling price?</p></article><article class="task exercise-like" id="task-252"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-970">The total revenue earned by the sale of skateboards <span class="process-math">\(R(p) \)</span> is given by , <span class="process-math">\(R(p) =q(p) \cdot p \text{.}\)</span> Explain why.</p></article><article class="task exercise-like" id="task-253"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-971">Find</p>
 <div class="displaymath process-math">
 \begin{equation*}
 \frac{dR}{dp}\Big|_{p=140} 
 \end{equation*}
-</div></article><article class="task exercise-like" id="task-244"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-946">What is the sign of the quantity above? What do you think would happen to the revenue if the price was changed from $140 to $141?</p></article></article><article class="definition definition-like" id="definition-18"><h3 class="heading">
+</div></article><article class="task exercise-like" id="task-254"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-972">What is the sign of the quantity above? What do you think would happen to the revenue if the price was changed from $140 to $141?</p></article></article><article class="definition definition-like" id="definition-18"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.1.13</span><span class="period">.</span>
 </h3>
-<p id="p-947">A cooling object has temperature modelled by</p>
+<p id="p-973">A cooling object has temperature modelled by</p>
 <div class="displaymath process-math">
 \begin{equation*}
 y=  a e^{-kt} +c , 
 \end{equation*}
 </div>
-<p id="p-948">where <span class="process-math">\(a,c,k\)</span> are positive constants determined by the local conditions.</p></article><article class="activity project-like" id="activity-136"><h3 class="heading">
+<p id="p-974">where <span class="process-math">\(a,c,k\)</span> are positive constants determined by the local conditions.</p></article><article class="activity project-like" id="activity-141"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.1.14</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-94"><p id="p-949">Consider a cup of coffee initially at <span class="process-math">\(100^\circ\)</span>F. The said cup of coffee was forgotten this morning in my living room where the thermostat is set at <span class="process-math">\(72^\circ\)</span>F. I also observed that when I initially prepared the coffee, the temperature was decreasing at a rate of <span class="process-math">\(3.8\)</span> degrees per minute.</p></div>
-<article class="task exercise-like" id="task-245"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-950">In the long run, what temperature do you expect the coffee to tend to? Use this information in the model <span class="process-math">\(y=ae^{-kt}t+c\)</span> to determine the value of <span class="process-math">\(c\text{.}\)</span></p></article><article class="task exercise-like" id="task-246"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-951">Using the initial temperature of the coffee and your value of <span class="process-math">\(c\text{,}\)</span> find the value of <span class="process-math">\(a\)</span> in the model <span class="process-math">\(y=ae^{-kt}t+c\text{.}\)</span></p></article><article class="task exercise-like" id="task-247"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-952">The scenario also gives you information about the value of the rate of change at <span class="process-math">\(t=0\text{.}\)</span> Use this additional information to determine the model <span class="process-math">\(y=ae^{-kt}t+c\)</span> completely.</p></article><article class="task exercise-like" id="task-248"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-953">You should find that the temperature model for this coffee cup is <span class="process-math">\(y= 72 + 38 e^{-0.1t}\text{.}\)</span> Explain how the values of each parameter connects to the information given.</p></article></article></section></div></main>
+<div class="introduction" id="introduction-96"><p id="p-975">Consider a cup of coffee initially at <span class="process-math">\(100^\circ\)</span>F. The said cup of coffee was forgotten this morning in my living room where the thermostat is set at <span class="process-math">\(72^\circ\)</span>F. I also observed that when I initially prepared the coffee, the temperature was decreasing at a rate of <span class="process-math">\(3.8\)</span> degrees per minute.</p></div>
+<article class="task exercise-like" id="task-255"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-976">In the long run, what temperature do you expect the coffee to tend to? Use this information in the model <span class="process-math">\(y=ae^{-kt}t+c\)</span> to determine the value of <span class="process-math">\(c\text{.}\)</span></p></article><article class="task exercise-like" id="task-256"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-977">Using the initial temperature of the coffee and your value of <span class="process-math">\(c\text{,}\)</span> find the value of <span class="process-math">\(a\)</span> in the model <span class="process-math">\(y=ae^{-kt}t+c\text{.}\)</span></p></article><article class="task exercise-like" id="task-257"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-978">The scenario also gives you information about the value of the rate of change at <span class="process-math">\(t=0\text{.}\)</span> Use this additional information to determine the model <span class="process-math">\(y=ae^{-kt}t+c\)</span> completely.</p></article><article class="task exercise-like" id="task-258"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-979">You should find that the temperature model for this coffee cup is <span class="process-math">\(y= 72 + 38 e^{-0.1t}\text{.}\)</span> Explain how the values of each parameter connects to the information given.</p></article></article></section></div></main>
 </div>
 </body>
 </html>
