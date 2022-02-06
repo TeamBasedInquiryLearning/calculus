@@ -341,9 +341,9 @@ In answering the following questions, be sure to explicitly denote which derivat
       <activity xml:id="quotient-rule-graphs">
     <task><p> Differentiate <m>y = \displaystyle  \frac{e^x}{x}, y = \displaystyle \frac{e^x}{x^2}, y = \displaystyle \frac{e^x}{x^3}</m>. Simplify your answers as much as possible.
     </p></task>
-        <task><p> What do you expect the derivative of <m>y = \displaystyle \frac{e^x}{x^n}</m> to be? Prove your guess.
+        <task><p> What do you expect the derivative of <m>y = \displaystyle \frac{e^x}{x^n}</m> to be? Prove your guess!
     </p></task>
-        <task><p> What do your answers above tell you above the shape of the graph of <m>y = \displaystyle \frac{e^x}{x^n}</m>? Study how the sign of the numerator and the denominator change 
+        <task><p> What do your answers above tell you above the shape of the graph of <m>y = \displaystyle \frac{e^x}{x^n}</m>? Study how the sign of the numerator and the denominator change in the first derivative to determine when the behavior changes!
     </p></task>
     
     </activity>

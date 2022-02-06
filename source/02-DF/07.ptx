@@ -64,7 +64,7 @@
         <p>The curve given in <xref ref = "figure-derivative-implicit2"/> is an example of an astroid.  The equation of this astroid is <m>x^{2/3} + y^{2/3} = 3^{2/3}</m>.  What is the derivative with respect <m>x</m> for this astroid? (Solve for <m>\frac{dy}{dx}</m>).</p>
         </introduction>
          <figure xml:id="figure-derivative-implicit2">
-       <image width="50%" source="derivative_implicit2_graph.png" />
+       <image width="70%" source="derivative_implicit2_graph.png" />
                 <caption>Graph of <m>x^{2/3} + y^{2/3} = 3^{2/3}</m>.</caption>
         </figure>
          <ol label="A">
@@ -80,7 +80,7 @@
         <p>An example of a lemniscate is given in <xref ref = "figure-derivative-implicit3"/>.  The equation of this lemniscate is <m>(x^{2} + y^{2})^2 = x^2 - y^2</m>.  What is the derivative with respect <m>x</m> for this lemniscate? (Solve for <m>\frac{dy}{dx}</m>).</p>
         </introduction>
          <figure xml:id="figure-derivative-implicit3">
-       <image width="50%" source="derivative_implicit3_graph.png" />
+       <image width="70%" source="derivative_implicit3_graph.png" />
                 <caption>Graph of <m>(x^{2} + y^{2})^2 = x^2 - y^2</m>.</caption>
         </figure>
          <ol label="A">
@@ -90,9 +90,29 @@
                 <li><p><m>\frac{dy}{dx} = \frac{y+2(x^2+y^2)}{x(1-2(x^2+y^2))}</m></p></li>
             </ol>
     </activity>
+    
+    <activity xml:id="checkit-df5">
+    <statement>
+        <p>
+Explain how to use implicit differentiation to find
+<m>\frac{dy}{dx}</m> for each of the following equations.
+        </p>
+        <ol>
+                <li><p><me>-5 \, x^{5} - 5 \, \cos\left(y\right) = 3 \, y^{4} + 2</me></p></li>
+                <li><p><me>-5 \, y e^{x} + 5 \, \sin\left(x\right) = 0</me></p></li>
+        </ol>
+    </statement>
+    <answer>
+        <ol>
+                <li><p><me>\frac{dy}{dx}=-\frac{25 \, x^{4}}{12 \, y^{3} - 5 \, \sin\left(y\right)}</me></p></li>
+                <li><p><me>\frac{dy}{dx}=-{\left(y e^{x} - \cos\left(x\right)\right)} e^{\left(-x\right)}</me></p></li>
+        </ol>
+    </answer>
+        
+</activity>
     <activity xml:id="activity-derivative-implicit4">
     <introduction>
-        <p>To take the derivative of some explicit equations you might need to make it an implicit equation.  For this activity we will find the derivative of <m>y = x^x</m>.  Make the equation an implicit equation by taking natural logarithm of both sides, this gives <m>\ln(y) = x\ln(x)</m>. Knowing this, what is <m>\frac{dy}{dx}</m>?</p>
+        <p>To take the derivative of some explicit equations you might need to make it an implicit equation.  For this activity we will find the derivative of <m>y = x^x</m>.  Make the equation an implicit equation by taking natural logarithm of both sides, this gives <m>\ln(y) = x\ln(x)</m>. Knowing this, what is <m>\frac{dy}{dx}</m>? This process to find a derivative is known as logarithmic differentiation. </p>
         </introduction>
          <ol label="A">
                 <li><p><m>\frac{dy}{dx} = x^x(\ln(x) + 1)</m></p></li>
@@ -100,5 +120,26 @@
                 <li><p><m>\frac{dy}{dx} = x^x(\ln(x) + x)</m></p></li>
                 <li><p><m>\frac{dy}{dx} = \frac{(\ln(x)+x)}{x^x}</m></p></li>
             </ol>
-     </activity>   
+     </activity> 
+    
+ <activity xml:id="activity-derivative-implicit-in-context1">
+    <introduction>    
+    Valerie is building a square chicken coop with side length <m>x</m>.  Because she needs a separate place for the rooster, she needs to put fence around the square and also along the diagonal line shown.  The fence costs  $20 per linear meter, and she has a budget of  $900.  
+  <figure xml:id="figure-chicken-coop">
+       <image width="70%" source="coop.jpg" />
+                <caption> A diagram of the chicken coop.</caption>
+        </figure>
+        </introduction>
+<task><p> Which of the following equations gives the relationship between <m>x</m> and <m>y</m>? Make sure you can explain why!</p>
+     <ol label="A">
+                <li><p><m>20x + \frac{80x}{\cos(y)}=900</m></p></li>
+                <li><p><m>80x + \frac{20x}{\cos(y)}=900</m></p></li>
+                <li><p><m>80x + \frac{20x}{\sin(y)}=900</m></p></li>
+                <li><p><m>20x + \frac{80x}{\sin(y)}=900</m></p></li>
+            </ol>
+     </task>
+     <task><p>If Valerie builds the coop with <m>y=\pi/3</m> (and wants to use her whole budget), find what side length <m>x</m> she needs to use.</p></task>
+       <task><p>Find the slope of the curve at this point and interpret what this value tells Valerie.</p></task>
+   </activity> 
+    
 </section>

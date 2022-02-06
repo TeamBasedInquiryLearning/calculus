@@ -9,13 +9,7 @@
       </li>
     </ul>
   </objectives>
-<!--   <activity>
-    <introduction>
-      <p>
-        Lorem ipsum dolor sit amet.
-      </p>
-    </introduction>
-  </activity> -->
+
 
 
 <remark><p>Let <m>f^{-1}</m> be the inverse function of <m>f</m>. The relationship between a function and its inverse can be expressed with the equation 
@@ -203,8 +197,6 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
      <figure>
                     <image>
                     <latex-image>  
-\begin{minipage}{\textwidth}
-\begin{center}
 \begin{tikzpicture}
 \begin{axis}[
     axis lines=middle,
@@ -220,8 +212,6 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
     %  \addplot[domain=pi/2:3*pi/2,blue] {tan(deg(x))};
 \end{axis}
 \end{tikzpicture}
-\end{center}
-\begin{center}
 \begin{tikzpicture}[scale=1]
 \begin{axis}[
     axis lines=middle,
@@ -238,8 +228,6 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
      \addplot [only marks, blue] coordinates {(-1,-1.57)};
 \end{axis}
 \end{tikzpicture}
-\end{center}
-\end{minipage}
      </latex-image>
                     </image>
                     <caption>The graphs of <m> \sin(x)</m> and one point on <m> \sin^{-1}(x)</m>.</caption>
@@ -284,11 +272,7 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
     <me>\frac{d}{dx}\Big(\sin^{-1}(x)\Big)=\frac{1}{\sqrt{1-x^2}}, \quad \frac{d}{dx}\Big(\cos^{-1}(x)\Big)= - \frac{1}{\sqrt{1-x^2}}.</me>
     </remark>
 
-    <activity>
-        <task><p>Find the equation of the tangent line to <m>y=\tan^{-1}(x)</m> at <m>x=0</m>. Draw the function and the tangent on Desmos to check your work!</p></task>
-                    <task><p>Find the equation of the tangent line to <m>y=\sin^{-1}(x)</m> at <m>x=0.5</m>. Draw the function and the tangent on Desmos to check your work!</p></task>
-            <task><p>Find the equation of the tangent line to <m>y=\cos^{-1}(x)</m> at <m>x=-0.5</m>. Draw the function and the tangent on Desmos to check your work! </p></task>
-    </activity>
+
     
  <activity>
 <!-- <exercise checkit-seed="0012" checkit-slug="DF8" checkit-title="Derivatives of inverse functions"> -->
@@ -305,12 +289,80 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
             <li><me>n(x)= \ln\left(-\arcsin\left(x\right) + 4 \, \arctan\left(x\right)\right)</me></li>
         </ol>
     </statement>
-<!--     <answer>
+    <answer>
         <ol>
             <li><me>k' (t)= -\frac{\arctan\left(-4 \, t\right)}{t \log\left(-4 \, t\right)^{2}} - \frac{4}{{\left(16 \, t^{2} + 1\right)} \log\left(-4 \, t\right)}</me></li>
             <li><me>j' (u)= -\frac{30 \, u^{5} \arcsin\left(u\right)}{u^{6} + 2} - \frac{5 \, \log\left(u^{6} + 2\right)}{\sqrt{-u^{2} + 1}}</me></li>
             <li><me>n' (x)= \frac{\frac{1}{\sqrt{-x^{2} + 1}} - \frac{4}{x^{2} + 1}}{\arcsin\left(x\right) - 4 \, \arctan\left(x\right)}</me></li>
         </ol>
-    </answer> -->
+    </answer>
 </activity>   
+    
+        <activity xml:id="derivative-inverses-in-context1">
+        <task><p>Find the equation of the tangent line to <m>y=\tan^{-1}(x)</m> at <m>x=0</m>. Draw the function and the tangent on Desmos to check your work!</p></task>
+                    <task><p>Find the equation of the tangent line to <m>y=\sin^{-1}(x)</m> at <m>x=0.5</m>. Draw the function and the tangent on Desmos to check your work!</p></task>
+            <task><p>Find the equation of the tangent line to <m>y=\cos^{-1}(x)</m> at <m>x=-0.5</m>. Draw the function and the tangent on Desmos to check your work! </p></task>
+    </activity>
+    
+  <activity xml:id="derivative-inverses-in-context2">   
+      <introduction><p>Let <m>y=f(v)</m> be the gas consumption (in ml/km) of a car at velocity <m>v</m> (in km/hr). We use the notation: ml for milliliters, km for kilometers, and hr for hours. Also consider the function <m>g(y)</m>, where <m>v=g(y)</m> is the function that gives the velocity <m>v</m> (in km/hr) when the gas consumption is <m>y</m> (in ml/km).
+You are given the graphs of <m>f(v), f'(v)</m> below. </p>
+ <figure>
+                    <image>
+                    <latex-image>  
+      \begin{tikzpicture}[scale=0.8]
+\begin{axis}[
+	axis lines=middle,
+    grid=major,
+    xmin=0, xmax=80,
+    ymin=0, ymax=25,
+    xtick={0,10,...,80},
+    ytick={0,2,...,24},
+    % yticklabels={0, 0.01, 0.02, 0.03, 0.04, 0.05},
+%   	tick style={thick},
+% 	x label style={at={(axis description cs:1,0.7)}},
+% 	y label style={at={(axis description cs:0.4,1)}}, 
+    ylabel={},
+	xlabel=$v$,
+        ]
+    \addplot[domain=0:80, blue, ultra thick] {(0.6*(x)^3)/(3*(60^2))} node [pos=0.8,above left, ultra thick] {$\boldsymbol{f(v)}$};
+ \end{axis}
+\end{tikzpicture}
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[
+	axis lines=middle,
+    grid=major,
+    xmin=0, xmax=80,
+    ymin=0, ymax=1.2,
+    xtick={0,10,...,80},
+    ytick={0,0.2,...,1.2},
+    % yticklabels={0, 0.0002, 0.0004, 0.0006, 0.0008, 0.001},
+%   	tick style={thick},
+% 	x label style={at={(axis description cs:1,0.7)}},
+% 	y label style={at={(axis description cs:0.4,1)}}, 
+    ylabel={},
+	xlabel=$v$,
+        ]
+    \addplot[domain=0:80, blue, ultra thick] {0.6*(x)^2/((60^2))} node [pos=0.8,above left, ultra thick] {$\boldsymbol{f'(v)}$};
+ \end{axis}
+\end{tikzpicture}
+                        
+                         </latex-image>
+                    </image>
+                    <caption>The graphs of <m> f(v), f'(v)</m>.</caption>
+                </figure>                  
+      </introduction>
+<task><p>
+    Estimate <m>f^{-1}(6)</m>. What does this value mean in the context of the problem?
+    </p></task>
+      <task><p>
+   Using your answer from part (a), estimate the derivative of the inverse function of <m>f(x)</m> at <m>x=6</m> i.e., compute <m>(f^{-1})'(6)</m>.
+    </p></task>
+ <task><p>
+  What is the relationship between the functions <m>f</m> and <m>g</m>?
+    </p></task>
+      <task><p>
+ Use the relationship between the functions <m>f</m> and <m>g</m> to estimate <m>g(12)</m> and <m>g'(12)</m>. What do these values mean in the context of the problem?
+    </p></task>
+   </activity>
 </section>

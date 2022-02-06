@@ -10,9 +10,9 @@
     </ul>
   </objectives>
 
-    <note><p> When we consider the consider the composition <m>f \circ g</m> of the function <m>f</m> with the function <m>g</m>, we mean the composite function <m>f(g(x))</m>, where the function <m>g</m> is applied first  and then <m>f</m> is applied to the output of <m>g</m>. We also call <m>f</m> the outside function whilst <m>g</m> is the inside function. </p> </note>
+    <note xml:id="order-composition"><p> When we consider the consider the composition <m>f \circ g</m> of the function <m>f</m> with the function <m>g</m>, we mean the composite function <m>f(g(x))</m>, where the function <m>g</m> is applied first  and then <m>f</m> is applied to the output of <m>g</m>. We also call <m>f</m> the outside function whilst <m>g</m> is the inside function. </p> </note>
 
-       <activity>
+       <activity xml:id="chain-rule-intuition">
            <task>
         <p> Consider the function <m>f(x) = -x^2+5 </m> and <m>g(x)=2x-1</m>. Which of the following is a formula for <m>f(g(x))</m>? </p>
            <ol label="A">
@@ -26,7 +26,7 @@
                <p> One of the options above is a formula for <m>g(f(x))</m>. Which one? </p> </task>
                    </activity>
 
-  <activity>
+  <activity xml:id="decomposition">
            <task>
         <p> Consider the composite function <m> f(g(x))= \sqrt{e^x}</m>. Which function is the outside function <m>f(x)</m> and which one is the inside function <m>g(x)</m>? </p>
            <ol label="A">
@@ -41,7 +41,7 @@
         <task>
                <p> Consider the function <m>\displaystyle e^{\sqrt{x}}</m>. In this case, what are the inside and outside functions in this case? </p> </task>
                    </activity>
-  <activity>
+  <activity xml:id="chain-rule-in-context1">
       <introduction> <p>In this activity we will build the intuition for the chain rule using a real-world scenario and differential notation for derivatives. Consider the following scenario. </p>
       <p>  My neighborhood is being invaded! The squirrel population grows based on acorn availability, at a rate of 2 squirrels per bushel of acorns.  Acorn availability grows at a rate of 100 bushels of acorns per week. How fast is the squirrel population growing per week? </p>
       </introduction>
@@ -77,7 +77,7 @@
                </task>
                    </activity>
 
-   <definition>
+   <definition xml:id="chain-rule">
 <p> When looking at the composite function <m>f(g(x))</m>, we have that </p>
 <me>
        \frac{d}{dx}\Big(f( g(x) )\Big)= f'(g(x)) \cdot g'(x). </me>
@@ -86,9 +86,9 @@
        \frac{dv}{dx}= \frac{dv}{du} \cdot \frac{du}{dx} </me>
 </definition>
 
-    <warning> <p> It's important to consider the input of a function when taking the derivative! In fact, <m>f'(g(x))</m>  and <m>f'(x)</m> are different functions. Also computing <m>  \frac{dv}{dx} </m> gives a different result than computing <m>  \frac{dv}{du} </m>. </p></warning>
+    <warning xml:id="chain-rule-warning"> <p> It's important to consider the input of a function when taking the derivative! In fact, <m>f'(g(x))</m>  and <m>f'(x)</m> are different functions. Also computing <m>  \frac{dv}{dx} </m> gives a different result than computing <m>  \frac{dv}{du} </m>. </p></warning>
 
-    <activity>
+    <activity xml:id="activity-chain-rule-warning">
            <task>
         <p> Consider the function <m>f(x) = -x^2+5 </m> and <m>g(x)=2x-1</m>. Notice that <m>f(g(x))= -4x^2 +4x +4 </m>. Which of the following is the derivative function of the composite function <m>f(g(x))</m>? </p>
            <ol label="A">
@@ -102,7 +102,7 @@
                <p> One of the options above is a formula for <m>f'(x) \cdot g'(x) </m>. Which one? Notice that this is not the same as the derivative of <m>f(g(x))</m>! </p> </task>
                    </activity>
 
-    <activity>
+    <activity xml:id="chain-rule-practice1">
         <p> Consider the composite function <m> \displaystyle h(x) =\sqrt{e^x} = e^{\frac{x}{2}}</m>. For each of the two expressions, find the derivative using the chain rule. Which of the following expressions are equal to <m>h'(x)</m>? Select all!  </p>
            <ol label="A">
                 <li><p> <m>\displaystyle \frac{1}{2} \left( e^x \right)^{\frac{-1}{2}} \cdot e^x </m> </p></li>
@@ -114,10 +114,10 @@
               </ol>
                                  </activity>
 
-  <activity>
+  <activity xml:id="chain-rule-practice-graphs">
    <introduction>  <p>Below you are given the graphs of two functions: <m>a(x)</m> and <m>b(x)</m>. Use the graphs to compute the required vaules of the functions and of their derivatives, when possible (there are points where the derivative of these functions is not defined!). Notice that to compute the derivative at a point, you first want to find the general formula for the derivative as a function of <m>x</m> and then plug in the input you want to study.  </p>
          <figure>
-                    <image width="50%">
+                    <image>
                     <latex-image>
 \begin{tikzpicture}
 \begin{axis}[
@@ -191,7 +191,7 @@
                </task>
   </activity>
 
- <activity>
+ <activity xml:id="chain-and-power-rule">
      <introduction>
     <p>In this activity you will study the derivative of <m>\cos^n(x)</m> for different powers <m>n</m>.</p>
     </introduction>
@@ -208,7 +208,7 @@
     </activity>
 
 
- <activity>
+ <activity xml:id="chain-and-exp-rule">
      <introduction>
     <p>In this activity you will study the derivative of <m>b^{\cos(x)}</m> for different bases <m>b</m>.</p>
     </introduction>
@@ -224,13 +224,13 @@
           <task> <p>Consider the function <m>b^{\cos(x)}</m>, for <m>b</m> any positive number. Find the general formula for its derivative. </p></task>
     </activity>
 
-<remark> <p>Remember that exponential and power functions obey very different differentiation rules. This behavior continues when we consider composite function. The composite power function <m>f(x)^3</m> has derivative </p>
+<remark xml:id="chain-rule-power-vs-exp"> <p>Remember that exponential and power functions obey very different differentiation rules. This behavior continues when we consider composite function. The composite power function <m>f(x)^3</m> has derivative </p>
     <me> 3 [f(x)]^2  \cdot f'(x) </me>
     <p>but the composite exponential function <m>3^{f(x)}</m> has derivative</p>
     <me> \ln(3) \,  3^{f(x)} \cdot f'(x) </me>
     </remark>
 
-    <activity>
+    <activity xml:id="chain-rule-fluency">
         <introduction><p>Use the chain rule and all the rest of the rules you know to find the derivatives of the following functions.</p></introduction>
         <task><p><me>f(x)= -2 \, \sin\left(x^{\frac{7}{4}}\right)</me></p></task>
         <task><p><me>h(y)= 7 \, e^{\left( -4 \, y^{3} - 2 \, y - 2\right)}</me></p></task>
@@ -238,7 +238,15 @@
         <task><p><me>g(w)= -3 \, \sin\left(w\right)^{\frac{3}{11}}</me></p></task>
     </activity>
 
-<activity>
+ <activity xml:id="chain-for-quotient-rule"> 
+     <p> Notice that 
+<me> \displaystyle\left(\frac{f(x)}{g(x)}\right) = 
+\left( f(x)\cdot g(x)^{-1}\right) </me>        
+    Use this oberservation, the chain rule, the product rule, and the power rule (and some algebra) to find in a new way the quotient rule!
+</p>
+     </activity>
+    
+<activity xml:id="chain-rule-in-context2">
       <introduction> <p>Remember my neighborhood squirrel invasion? The squirrel population grows based on acorn availability, at a rate of 2 squirrels per bushel of acorns.  Acorn availability grows at a rate of 100 bushels of acorns per week. Considering this information as pertaining to the moment <m>t=0</m>, you are given the following possible model for the squirrel: </p>
           <me>s(a(t))= 2a(t)+10
 = 2\left[50\sin(2t)+60\right]+10. </me>
@@ -246,11 +254,8 @@
            <task>
         <p> Check that the model satisfies the data <m>\frac{ds}{da}=2</m> and <m>\frac{da}{dt}\big|_{t=0} = 100 </m></p>
 
-If we consider this moment to be $t=0$, explain why this model fits the data in the initial paragraph.
-\item How fast are the squirrels taking over my neighborhood at $t=0$ according the the new model $s(a(t))$?
-
                </task>
-        <task>
+           <task>
         <p> Find the derivative function <m>\frac{ds}{dt}</m> and check that <m>\frac{ds}{dt}|_{t=0} = 200</m>.  </p>
                </task>
        <task>
@@ -258,4 +263,17 @@ If we consider this moment to be $t=0$, explain why this model fits the data in 
                </task>
                    </activity>
 
+    <activity xml:id="chain-rule-in-context3">
+      <introduction> <p>Suppose that a fish population at <m>t</m> months is approximated by 
+<me> P(t) = 100 \cdot 4^{0.05 t} </me>
+</p>
+          </introduction>
+           <task>
+        <p>   Find <m>P(10)</m> and use units to explain what this value tells us about the population.
+    </p>
+               </task>
+        <task>
+            <p> Find <m>P'(10)</m> and use units to explain what this value tells us about the population. You can use the approximation <m>\ln(4) = 1.4</m>.  </p>  </task>
+                   </activity>
+     
 </section>
