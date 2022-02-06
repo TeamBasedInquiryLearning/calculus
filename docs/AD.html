@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-02-06T17:14:06Z       *-->
+<!--*       on 2022-02-06T23:32:26Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -142,30 +142,30 @@
 <span class="type">Chapter</span> <span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-17"><h2 class="heading"><span class="type">Learning Outcomes</span></h2>
-<div class="introduction" id="introduction-88">
-<p id="p-904">How can we use derivatives to solve application questions?</p>
-<p id="p-905">By the end of this chapter, you should be able to...</p>
+<div class="introduction" id="introduction-91">
+<p id="p-925">How can we use derivatives to solve application questions?</p>
+<p id="p-926">By the end of this chapter, you should be able to...</p>
 </div>
 <ol class="decimal">
-<li id="li-653"><p id="p-906">Use derivatives to answer questions about rates of change and equations of tangents.</p></li>
-<li id="li-654"><p id="p-907">Use tangent lines to approximate functions.</p></li>
-<li id="li-655"><p id="p-908">Model and analyze scenarios using related rates.</p></li>
-<li id="li-656"><p id="p-909">Use the Extreme Value Theorem to find the absolute maximum and minimum values of a continuous function on a closed interval.</p></li>
-<li id="li-657"><p id="p-910">Determine where a differentiable function is increasing and decreasing and classify the critical points as local extrema.</p></li>
-<li id="li-658"><p id="p-911">Determine the intervals of concavity of a twice differentiable function and find all of its points of inflection.</p></li>
-<li id="li-659"><p id="p-912">Sketch the graph of a differentiable function whose derivatives satisfy given criteria.</p></li>
-<li id="li-660"><p id="p-913">Apply optimization techniques to solve various problems.</p></li>
-<li id="li-661"><p id="p-914">Compute the values of indeterminate limits using L'Hopital's Rule.</p></li>
+<li id="li-664"><p id="p-927">Use derivatives to answer questions about rates of change and equations of tangents.</p></li>
+<li id="li-665"><p id="p-928">Use tangent lines to approximate functions.</p></li>
+<li id="li-666"><p id="p-929">Model and analyze scenarios using related rates.</p></li>
+<li id="li-667"><p id="p-930">Use the Extreme Value Theorem to find the absolute maximum and minimum values of a continuous function on a closed interval.</p></li>
+<li id="li-668"><p id="p-931">Determine where a differentiable function is increasing and decreasing and classify the critical points as local extrema.</p></li>
+<li id="li-669"><p id="p-932">Determine the intervals of concavity of a twice differentiable function and find all of its points of inflection.</p></li>
+<li id="li-670"><p id="p-933">Sketch the graph of a differentiable function whose derivatives satisfy given criteria.</p></li>
+<li id="li-671"><p id="p-934">Apply optimization techniques to solve various problems.</p></li>
+<li id="li-672"><p id="p-935">Compute the values of indeterminate limits using L'Hopital's Rule.</p></li>
 </ol></article><section class="introduction" id="AD-intro"><section class="paragraphs" id="AD-readiness"><h2 class="heading"><span class="title">Readiness Assurance.</span></h2>
-<p id="p-915">Before beginning this chapter, you should be able to...</p>
+<p id="p-936">Before beginning this chapter, you should be able to...</p>
 <ol class="lower-alpha">
-<li id="li-662"><p id="p-916">Find the derivative of a function using methods from <a href="DF3.html" class="internal" title="Section 2.3: Elementary derivative rules (DF3)">Section 2.3</a>, <a href="DF4.html" class="internal" title="Section 2.4: The product and quotient rules (DF4)">Section 2.4</a>, <a href="DF5.html" class="internal" title="Section 2.5: The chain rule (DF5)">Section 2.5</a>, and <a href="DF6.html" class="internal" title="Section 2.6: Differentiation strategy (DF6)">Section 2.6</a>.</p></li>
-<li id="li-663"><p id="p-917">Find the second derivative of a function.  (<a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-6/a/second-derivatives-review" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-28" id="fn-28"><sup> 1 </sup></a>)</p></li>
-<li id="li-664"><p id="p-918">Determine whether values are in the domain of a function (<a class="external" href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:determining-the-domain-of-a-function/v/determine-values-domain" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-29" id="fn-29"><sup> 2 </sup></a>)</p></li>
-<li id="li-665"><p id="p-919">Find relative and absolute extrema given the graph of a function (<a class="external" href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:maximum-and-minimum-points/v/identifying-relative-and-absolute-maxima-and-minima" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-30" id="fn-30"><sup> 3 </sup></a>)</p></li>
-<li id="li-666"><p id="p-920">Find the intervals where a graph is increasing or decreasing (<a class="external" href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:intervals-where-a-function-is-positive-negative-increasing-or-decreasing/v/increasing-decreasing-positive-and-negative-intervals" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-31" id="fn-31"><sup> 4 </sup></a>)</p></li>
-<li id="li-667"><p id="p-921">Determine the zeros of a polynomial (<a class="external" href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:poly-graphs/x2ec2f6f830c9fb89:poly-zeros/v/polynomial-zeros-introduction" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-32" id="fn-32"><sup> 5 </sup></a>)</p></li>
-<li id="li-668"><p id="p-922">Modeling with multiple variables (<a class="external" href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:modeling/x2ec2f6f830c9fb89:modeling-with-multiple-variables/v/modeling-with-multiple-variables-pancakes" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-33" id="fn-33"><sup> 6 </sup></a>)</p></li>
+<li id="li-673"><p id="p-937">Find the derivative of a function using methods from <a href="DF3.html" class="internal" title="Section 2.3: Elementary derivative rules (DF3)">Section 2.3</a>, <a href="DF4.html" class="internal" title="Section 2.4: The product and quotient rules (DF4)">Section 2.4</a>, <a href="DF5.html" class="internal" title="Section 2.5: The chain rule (DF5)">Section 2.5</a>, and <a href="DF6.html" class="internal" title="Section 2.6: Differentiation strategy (DF6)">Section 2.6</a>.</p></li>
+<li id="li-674"><p id="p-938">Find the second derivative of a function.  (<a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-6/a/second-derivatives-review" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-28" id="fn-28"><sup> 1 </sup></a>)</p></li>
+<li id="li-675"><p id="p-939">Determine whether values are in the domain of a function (<a class="external" href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:determining-the-domain-of-a-function/v/determine-values-domain" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-29" id="fn-29"><sup> 2 </sup></a>)</p></li>
+<li id="li-676"><p id="p-940">Find relative and absolute extrema given the graph of a function (<a class="external" href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:maximum-and-minimum-points/v/identifying-relative-and-absolute-maxima-and-minima" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-30" id="fn-30"><sup> 3 </sup></a>)</p></li>
+<li id="li-677"><p id="p-941">Find the intervals where a graph is increasing or decreasing (<a class="external" href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:intervals-where-a-function-is-positive-negative-increasing-or-decreasing/v/increasing-decreasing-positive-and-negative-intervals" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-31" id="fn-31"><sup> 4 </sup></a>)</p></li>
+<li id="li-678"><p id="p-942">Determine the zeros of a polynomial (<a class="external" href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:poly-graphs/x2ec2f6f830c9fb89:poly-zeros/v/polynomial-zeros-introduction" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-32" id="fn-32"><sup> 5 </sup></a>)</p></li>
+<li id="li-679"><p id="p-943">Modeling with multiple variables (<a class="external" href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:modeling/x2ec2f6f830c9fb89:modeling-with-multiple-variables/v/modeling-with-multiple-variables-pancakes" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-33" id="fn-33"><sup> 6 </sup></a>)</p></li>
 </ol></section></section><nav class="summary-links"><ul>
 <li><a href="AD1.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Tangents, motion, and marginals (AD1)</span></a></li>
 <li><a href="AD2.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Linear approximation (AD2)</span></a></li>

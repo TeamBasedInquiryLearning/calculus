@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-02-06T17:14:10Z       *-->
+<!--*       on 2022-02-06T23:32:29Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -141,22 +141,22 @@
 <span class="type">Section</span> <span class="codenumber">3.8</span> <span class="title">Applied optimization (AD8)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-25"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-846"><p id="p-1256">Apply optimization techniques to solve various problems.</p></li></ul></article><article class="activity project-like" id="activity-ad8-box"><h3 class="heading">
+<ul class="disc"><li id="li-857"><p id="p-1277">Apply optimization techniques to solve various problems.</p></li></ul></article><article class="activity project-like" id="activity-ad8-box"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.8.1</span><span class="period">.</span><span class="space"> </span><span class="title">The box.</span>
 </h3>
-<div class="introduction" id="introduction-125">
-<p id="p-1257">Help your company design a box with maximum volume given the following constraints:</p>
+<div class="introduction" id="introduction-128">
+<p id="p-1278">Help your company design a box with maximum volume given the following constraints:</p>
 <ul class="disc">
-<li id="li-847"><p id="p-derived-li-847">The box must be made from the following material: an 8 by 8 inches piece of cardboard.</p></li>
-<li id="li-848"><p id="p-derived-li-848">To create the box, you are asked to cut the same size square from each corner of the 8 by 8 inches piece of cardboard and to fold the remaining cardboard.</p></li>
+<li id="li-858"><p id="p-derived-li-858">The box must be made from the following material: an 8 by 8 inches piece of cardboard.</p></li>
+<li id="li-859"><p id="p-derived-li-859">To create the box, you are asked to cut the same size square from each corner of the 8 by 8 inches piece of cardboard and to fold the remaining cardboard.</p></li>
 </ul>
 </div>
-<article class="task exercise-like" id="task-351"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1258">Draw a diagram illustrating how the box is created.</p></article><article class="task exercise-like" id="task-352"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1259">Explain why the volume of the box is a <em class="emphasis">function</em> of the side length <span class="process-math">\(x\)</span> of the cutout squares.</p></article><article class="task exercise-like" id="task-353"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1260">Express the volume of the box <span class="process-math">\(V\)</span> as a function of the length of the cuts <span class="process-math">\(x\text{.}\)</span></p></article><article class="task exercise-like" id="task-354"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-1261">What is a realistic the domain of the function <span class="process-math">\(V(x)\text{?}\)</span></p></article><article class="task exercise-like" id="task-355"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-1262">What cut length <span class="process-math">\(x\)</span> maximizes the volume of the box?</p></article></article><article class="remark remark-like" id="AD8-remark1"><h3 class="heading">
+<article class="task exercise-like" id="task-360"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1279">Draw a diagram illustrating how the box is created.</p></article><article class="task exercise-like" id="task-361"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1280">Explain why the volume of the box is a <em class="emphasis">function</em> of the side length <span class="process-math">\(x\)</span> of the cutout squares.</p></article><article class="task exercise-like" id="task-362"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1281">Express the volume of the box <span class="process-math">\(V\)</span> as a function of the length of the cuts <span class="process-math">\(x\text{.}\)</span></p></article><article class="task exercise-like" id="task-363"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1282">What is a realistic the domain of the function <span class="process-math">\(V(x)\text{?}\)</span></p></article><article class="task exercise-like" id="task-364"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-1283">What cut length <span class="process-math">\(x\)</span> maximizes the volume of the box?</p></article></article><article class="remark remark-like" id="AD8-remark1"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.8.2</span><span class="period">.</span><span class="space"> </span><span class="title">Approaching optimization problems.</span>
 </h3>
 <ul id="xdy" class="disc">
@@ -169,72 +169,72 @@
 </ul></article><article class="activity project-like" id="activity-ad8-1"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.8.3</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-126"><p id="p-1270">According to U.S. postal regulations, the girth plus the length of a parcel sent by mail may not exceed 108 inches, where by “girth” we mean the perimeter of the smallest end. What is the largest possible volume of a rectangular parcel with a square end that can be sent by mail? What are the dimensions of the package of largest volume?</p></div>
-<article class="task exercise-like" id="task-356"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1271">Let <span class="process-math">\(x\)</span> represent the length of one side of the square end and <span class="process-math">\(y\)</span> the length of the longer side. Label these quantities appropriately on the image shown in <a href="" class="xref" data-knowl="./knowl/F-3-4-PA1.html" title="Figure 59">Figure 59</a>.</p>
+<div class="introduction" id="introduction-129"><p id="p-1291">According to U.S. postal regulations, the girth plus the length of a parcel sent by mail may not exceed 108 inches, where by “girth” we mean the perimeter of the smallest end. What is the largest possible volume of a rectangular parcel with a square end that can be sent by mail? What are the dimensions of the package of largest volume?</p></div>
+<article class="task exercise-like" id="task-365"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1292">Let <span class="process-math">\(x\)</span> represent the length of one side of the square end and <span class="process-math">\(y\)</span> the length of the longer side. Label these quantities appropriately on the image shown in <a href="" class="xref" data-knowl="./knowl/F-3-4-PA1.html" title="Figure 61">Figure 61</a>.</p>
 <figure class="figure figure-like" id="RHW"><div class="image-box" style="width: 47%; margin-left: 26.5%; margin-right: 26.5%;"><img src="external/3_4_PA1.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">59<span class="period">.</span></span><span class="space"> </span>A rectangular parcel with a square end.</figcaption></figure></article><article class="task exercise-like" id="task-357"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1272">What is the quantity to be optimized in this problem? </p>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">61<span class="period">.</span></span><span class="space"> </span>A rectangular parcel with a square end.</figcaption></figure></article><article class="task exercise-like" id="task-366"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1293">What is the quantity to be optimized in this problem? </p>
 <ol class="upper-alpha">
-<li id="li-855"><p id="p-1273">maximize volume (V)</p></li>
-<li id="li-856"><p id="p-1274">maximize the girth plus length (L)</p></li>
-<li id="li-857"><p id="p-1275">minimize volume (V)</p></li>
-<li id="li-858"><p id="p-1276">minimize the girth plus length (L)</p></li>
-</ol></article><article class="task exercise-like" id="task-358"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1277">Which formula below represents the quantity you want to optimize in terms of <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{?}\)</span></p>
+<li id="li-866"><p id="p-1294">maximize volume (V)</p></li>
+<li id="li-867"><p id="p-1295">maximize the girth plus length (L)</p></li>
+<li id="li-868"><p id="p-1296">minimize volume (V)</p></li>
+<li id="li-869"><p id="p-1297">minimize the girth plus length (L)</p></li>
+</ol></article><article class="task exercise-like" id="task-367"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1298">Which formula below represents the quantity you want to optimize in terms of <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{?}\)</span></p>
 <ol class="upper-alpha">
-<li id="li-859"><p id="p-1278"><span class="process-math">\(\displaystyle V=x^2y\)</span></p></li>
-<li id="li-860"><p id="p-1279"><span class="process-math">\(\displaystyle V=xy^2\)</span></p></li>
-<li id="li-861"><p id="p-1280"><span class="process-math">\(\displaystyle L=2x+y\)</span></p></li>
-<li id="li-862"><p id="p-1281"><span class="process-math">\(\displaystyle L=4x+y\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-359"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-1282">The problem statement tells us that the parcel's girth plus length (L) may not exceed 108 inches. In order to maximize volume, we assume that we will actually need the girth plus length (L) to equal 108 inches. What equation do we have involving <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{?}\)</span></p>
+<li id="li-870"><p id="p-1299"><span class="process-math">\(\displaystyle V=x^2y\)</span></p></li>
+<li id="li-871"><p id="p-1300"><span class="process-math">\(\displaystyle V=xy^2\)</span></p></li>
+<li id="li-872"><p id="p-1301"><span class="process-math">\(\displaystyle L=2x+y\)</span></p></li>
+<li id="li-873"><p id="p-1302"><span class="process-math">\(\displaystyle L=4x+y\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-368"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1303">The problem statement tells us that the parcel's girth plus length (L) may not exceed 108 inches. In order to maximize volume, we assume that we will actually need the girth plus length (L) to equal 108 inches. What equation do we have involving <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{?}\)</span></p>
 <ol class="upper-alpha">
-<li id="li-863"><p id="p-1283"><span class="process-math">\(\displaystyle 108=4x+y\)</span></p></li>
-<li id="li-864"><p id="p-1284"><span class="process-math">\(\displaystyle 108 = 2x +y\)</span></p></li>
-<li id="li-865"><p id="p-1285"><span class="process-math">\(\displaystyle 108 = x^2 +y\)</span></p></li>
-<li id="li-866"><p id="p-1286"><span class="process-math">\(\displaystyle 108 = xy^2\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-360"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-1287">The equation above gives the relationship between  <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span> For ease of notation, solve this equation for <span class="process-math">\(y\)</span> as a function on <span class="process-math">\(x\)</span> and then find a formula for the volume of the parcel as a function of a the single variable <span class="process-math">\(x\text{.}\)</span> What is the formula for <span class="process-math">\(V(x)\text{?}\)</span></p>
+<li id="li-874"><p id="p-1304"><span class="process-math">\(\displaystyle 108=4x+y\)</span></p></li>
+<li id="li-875"><p id="p-1305"><span class="process-math">\(\displaystyle 108 = 2x +y\)</span></p></li>
+<li id="li-876"><p id="p-1306"><span class="process-math">\(\displaystyle 108 = x^2 +y\)</span></p></li>
+<li id="li-877"><p id="p-1307"><span class="process-math">\(\displaystyle 108 = xy^2\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-369"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-1308">The equation above gives the relationship between  <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span> For ease of notation, solve this equation for <span class="process-math">\(y\)</span> as a function on <span class="process-math">\(x\)</span> and then find a formula for the volume of the parcel as a function of a the single variable <span class="process-math">\(x\text{.}\)</span> What is the formula for <span class="process-math">\(V(x)\text{?}\)</span></p>
 <ol class="upper-alpha">
-<li id="li-867"><p id="p-1288"><span class="process-math">\(\displaystyle V(x) = x^2 (108-4x)\)</span></p></li>
-<li id="li-868"><p id="p-1289"><span class="process-math">\(\displaystyle V(x) = x(108-4x)^2\)</span></p></li>
-<li id="li-869"><p id="p-1290"><span class="process-math">\(\displaystyle V(x) =x ^2 (108-2x)\)</span></p></li>
-<li id="li-870"><p id="p-1291"><span class="process-math">\(\displaystyle V(x) =x (108-2x)^2\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-361"><h4 class="heading"><span class="codenumber">(f)</span></h4>
-<p id="p-1292">Over what domain should we consider this function? To answer this question, notice that the constraints that girth plus length is 108 inches produces intervals of possible values for <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span></p>
+<li id="li-878"><p id="p-1309"><span class="process-math">\(\displaystyle V(x) = x^2 (108-4x)\)</span></p></li>
+<li id="li-879"><p id="p-1310"><span class="process-math">\(\displaystyle V(x) = x(108-4x)^2\)</span></p></li>
+<li id="li-880"><p id="p-1311"><span class="process-math">\(\displaystyle V(x) =x ^2 (108-2x)\)</span></p></li>
+<li id="li-881"><p id="p-1312"><span class="process-math">\(\displaystyle V(x) =x (108-2x)^2\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-370"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<p id="p-1313">Over what domain should we consider this function? To answer this question, notice that the constraints that girth plus length is 108 inches produces intervals of possible values for <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span></p>
 <ol class="upper-alpha">
-<li id="li-871"><p id="p-1293"><span class="process-math">\(\displaystyle 0 \leq x \leq 108 \)</span></p></li>
-<li id="li-872"><p id="p-1294"><span class="process-math">\(\displaystyle 0 \leq y \leq 108 \)</span></p></li>
-<li id="li-873"><p id="p-1295"><span class="process-math">\(\displaystyle 0 \leq x \leq 27 \)</span></p></li>
-<li id="li-874"><p id="p-1296"><span class="process-math">\(\displaystyle 0 \leq y \leq 27 \)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-362"><h4 class="heading"><span class="codenumber">(g)</span></h4>
-<p id="p-1297">Find the absolute maximum of the volume of the parcel on the domain you just established.  Make sure to justify that you have found the absolute maximum using calculus!</p></article></article><article class="remark remark-like" id="AD8-remark2"><h3 class="heading">
+<li id="li-882"><p id="p-1314"><span class="process-math">\(\displaystyle 0 \leq x \leq 108 \)</span></p></li>
+<li id="li-883"><p id="p-1315"><span class="process-math">\(\displaystyle 0 \leq y \leq 108 \)</span></p></li>
+<li id="li-884"><p id="p-1316"><span class="process-math">\(\displaystyle 0 \leq x \leq 27 \)</span></p></li>
+<li id="li-885"><p id="p-1317"><span class="process-math">\(\displaystyle 0 \leq y \leq 27 \)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-371"><h4 class="heading"><span class="codenumber">(g)</span></h4>
+<p id="p-1318">Find the absolute maximum of the volume of the parcel on the domain you just established.  Make sure to justify that you have found the absolute maximum using calculus!</p></article></article><article class="remark remark-like" id="AD8-remark2"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.8.4</span><span class="period">.</span>
 </h3>
-<p id="p-1298">Notice that a critical point might or might not be an absolute maximum or minimum, so finding the critical points is not enough to answer an optimization problem. Moreover, some of the critical points might be outside of the domain imposed by the context and thus they cannot be feasible optimal points.</p></article><article class="activity project-like" id="activity-ad8-2"><h3 class="heading">
+<p id="p-1319">Notice that a critical point might or might not be an absolute maximum or minimum, so finding the critical points is not enough to answer an optimization problem. Moreover, some of the critical points might be outside of the domain imposed by the context and thus they cannot be feasible optimal points.</p></article><article class="activity project-like" id="activity-ad8-2"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.8.5</span><span class="period">.</span><span class="space"> </span><span class="title">Revenue = Number of tickets <span class="process-math">\(\times\)</span> Price of ticket.</span>
 </h3>
-<div class="introduction" id="introduction-127"><p id="p-1299">Waterford movie theater currently charges \$8 for a ticket. At this price, the theater sells 200 tickets daily. The general manager wonders if they can generate more revenue by increasing the price of a tickets. A survey shows that they will lose 20 customers for every dollar increase in the ticket price.</p></div>
-<article class="task exercise-like" id="task-363"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1300">If the price of a movie ticket is increased by <span class="process-math">\(d\)</span> dollars, write a formula for the price <span class="process-math">\(P\)</span> in terms of <span class="process-math">\(d\text{.}\)</span></p></article><article class="task exercise-like" id="task-364"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1301">If the price of a ticket is increased by one dollar, how many many customers will the theater lose?</p></article><article class="task exercise-like" id="task-365"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1302">Write a formula for the number of tickets sold <span class="process-math">\(T\)</span> as a function of a ticket price increase of <span class="process-math">\(d\)</span> dollars.</p></article><article class="task exercise-like" id="task-366"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-1303">Consider the new price of a ticket <span class="process-math">\(P\)</span> and the new number of tickets sold <span class="process-math">\(T\text{.}\)</span> Write a formula for the revenue <span class="process-math">\(R\)</span> earned by ticket sales as a function of a price increase of <span class="process-math">\(d\)</span> dollars.</p></article><article class="task exercise-like" id="task-367"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-1304">What is a realistic domain for <span class="process-math">\(R(d)\text{?}\)</span></p></article><article class="task exercise-like" id="task-368"><h4 class="heading"><span class="codenumber">(f)</span></h4>
-<p id="p-1305">What increase in price <span class="process-math">\(d\)</span> should the general manager choose to maximize the revenue? What would the movie ticket cost and what would be the revenue at that price?</p></article><article class="task exercise-like" id="task-369"><h4 class="heading"><span class="codenumber">(g)</span></h4>
-<p id="p-1306">Now suppose that the cost of running the business if the price is increased by <span class="process-math">\(d\)</span> dollars is given by <span class="process-math">\(C(d) = 10d^3 −40d^2 +40d+600\text{.}\)</span> If the manager decides that they will definitely increase the price, what price increase <span class="process-math">\(d\)</span> maximizes the profit? (Recall that Profit = Revenue - Cost).</p></article></article><article class="activity project-like" id="activity-ad8-4"><h3 class="heading">
+<div class="introduction" id="introduction-130"><p id="p-1320">Waterford movie theater currently charges \$8 for a ticket. At this price, the theater sells 200 tickets daily. The general manager wonders if they can generate more revenue by increasing the price of a tickets. A survey shows that they will lose 20 customers for every dollar increase in the ticket price.</p></div>
+<article class="task exercise-like" id="task-372"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1321">If the price of a movie ticket is increased by <span class="process-math">\(d\)</span> dollars, write a formula for the price <span class="process-math">\(P\)</span> in terms of <span class="process-math">\(d\text{.}\)</span></p></article><article class="task exercise-like" id="task-373"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1322">If the price of a ticket is increased by one dollar, how many many customers will the theater lose?</p></article><article class="task exercise-like" id="task-374"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1323">Write a formula for the number of tickets sold <span class="process-math">\(T\)</span> as a function of a ticket price increase of <span class="process-math">\(d\)</span> dollars.</p></article><article class="task exercise-like" id="task-375"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1324">Consider the new price of a ticket <span class="process-math">\(P\)</span> and the new number of tickets sold <span class="process-math">\(T\text{.}\)</span> Write a formula for the revenue <span class="process-math">\(R\)</span> earned by ticket sales as a function of a price increase of <span class="process-math">\(d\)</span> dollars.</p></article><article class="task exercise-like" id="task-376"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-1325">What is a realistic domain for <span class="process-math">\(R(d)\text{?}\)</span></p></article><article class="task exercise-like" id="task-377"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<p id="p-1326">What increase in price <span class="process-math">\(d\)</span> should the general manager choose to maximize the revenue? What would the movie ticket cost and what would be the revenue at that price?</p></article><article class="task exercise-like" id="task-378"><h4 class="heading"><span class="codenumber">(g)</span></h4>
+<p id="p-1327">Now suppose that the cost of running the business if the price is increased by <span class="process-math">\(d\)</span> dollars is given by <span class="process-math">\(C(d) = 10d^3 −40d^2 +40d+600\text{.}\)</span> If the manager decides that they will definitely increase the price, what price increase <span class="process-math">\(d\)</span> maximizes the profit? (Recall that Profit = Revenue - Cost).</p></article></article><article class="activity project-like" id="activity-ad8-4"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.8.6</span><span class="period">.</span><span class="space"> </span><span class="title">Modeling given a geometric shape.</span>
 </h3>
-<div class="introduction" id="introduction-128"><p id="p-1307">The city council is planning to construct a new sports ground in the shape of a rectangle with semicircular ends. A running track 400 meters long is to go around the perimeter.</p></div>
-<article class="task exercise-like" id="task-370"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1308">What choice of dimensions will make the rectangular area in the center as large as possible?</p></article><article class="task exercise-like" id="task-371"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1309">What should the dimensions so the total area enclosed by the running track is maximized?</p></article></article><article class="activity project-like" id="activity-ad8-5"><h3 class="heading">
+<div class="introduction" id="introduction-131"><p id="p-1328">The city council is planning to construct a new sports ground in the shape of a rectangle with semicircular ends. A running track 400 meters long is to go around the perimeter.</p></div>
+<article class="task exercise-like" id="task-379"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1329">What choice of dimensions will make the rectangular area in the center as large as possible?</p></article><article class="task exercise-like" id="task-380"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1330">What should the dimensions so the total area enclosed by the running track is maximized?</p></article></article><article class="activity project-like" id="activity-ad8-5"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.8.7</span><span class="period">.</span><span class="space"> </span><span class="title">Modeling in algebraic situations.</span>
 </h3>
-<article class="task exercise-like" id="task-372"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1310">Find the coordinates of the point on the curve <span class="process-math">\(y=\sqrt{x}\)</span> closest to the point <span class="process-math">\((1,0)\)</span></p></article><article class="task exercise-like" id="task-373"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1311">The sum of two positive numbers is 48. What is the smallest possible value of the sum of their squares?</p></article></article></section></div></main>
+<article class="task exercise-like" id="task-381"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1331">Find the coordinates of the point on the curve <span class="process-math">\(y=\sqrt{x}\)</span> closest to the point <span class="process-math">\((1,0)\)</span></p></article><article class="task exercise-like" id="task-382"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1332">The sum of two positive numbers is 48. What is the smallest possible value of the sum of their squares?</p></article></article></section></div></main>
 </div>
 </body>
 </html>
