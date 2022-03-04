@@ -131,541 +131,99 @@
     </task>
     </activity>
 
+    <activity xml:id="checkit-ad9">
+    <statement>
+        <p>
+For each limit, explain if L'Hopital's Rule may be applied.
+If it can, explain how to use this rule to find the limit.
+        </p>
+        <ol>
+                <li>
+                    <p>
+                        <me>
+\lim_{x\to \infty } \frac{ -8 \, x + 3 \, e^{x} }{ 7 \, x - 3 \, e^{x} }
+                        </me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <me>
+\lim_{x\to 0 } \frac{ 6 \, \cos\left(8 \, x\right) }{ 4 \, x - 7 }
+                        </me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <me>
+\lim_{x\to 0 } \frac{ -9 \, \cos\left(3 \, x\right) + 9 }{ -3 \, x }
+                        </me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <me>
+\lim_{x\to 4 } \frac{ x^{2} - x - 12 }{ x^{2} - 13 \, x + 36 }
+                        </me>
+                    </p>
+                </li>
+        </ol>
+    </statement>
+    <answer>
+         <ol>
+                <li>
+                    <p>
+                        <me>
+\lim_{x\to \infty } \frac{ -8 \, x + 3 \, e^{x} }{ 7 \, x - 3 \, e^{x} } = -1
+                        </me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+L'H&#244;ptial's Rule does not apply.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <me>
+\lim_{x\to 0 } \frac{ -9 \, \cos\left(3 \, x\right) + 9 }{ -3 \, x } = 0
+                        </me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <me>
+\lim_{x\to 4 } \frac{ x^{2} - x - 12 }{ x^{2} - 13 \, x + 36 } = -\frac{7}{5}
+                        </me>
+                    </p>
+                </li>
+        </ol>
+    </answer>
+</activity>
+
+    
+    <activity xml:id="lhospital-fail">
+    <introduction><p>
+        There are situations in which using L'Hospital does not help the situation and you need some algebra skills! Consider the function <m>r(x)=\frac{x}{\sqrt{x^2 +2}}</m> and suppose that we want to find the limits as <m>x</m> tends to <m>\pm \infty</m>.</p>
+    </introduction>
+    <task>
+    <p>Check that the limit as <m>x \to + \infty</m> gives an indeterminate form <m>\frac{\infty}{\infty}</m>. Then try to use L'Hospital's Rule... what happens? What if you use it again? </p>
+    </task>
+    <task>
+    <p>We need to use algebra to handle this limit. Informally, we would like to cancel the highest powers at the numerator and denominator. Look at the denominator, <m>\sqrt{x^2 +2}</m>. We want to factor out an <m>x^2</m> under the square root. What do you get? </p>
+        <ol label="A">
+                <li><p>  <m>\sqrt{ x^2\left(1 +\frac{2}{x}\right) } </m>  </p></li>
+                 <li><p>  <m>\sqrt{ x^2\left(1 +\frac{2}{x^2}\right) } </m>  </p></li>
+                  <li><p>  <m>\sqrt{ x^2\left(1 + x \right)} </m>  </p></li> 
+                    <li><p>  <m>\sqrt{ x^2\left(1 + x^2 \right)} </m>  </p></li>          
+    </ol>       
+    </task>
+     <task>
+    <p>Now we need to be careful when computing <m>\sqrt{x^2}</m> as this is equal to <m>|x|</m> (so it is <m>+x</m> when we have a positive input and <m>-x</m> when we have a negative output. So we have the two limits.
+       <me> \lim_{x \to +\infty} \frac{x}{|x|\sqrt{(1 +\frac{2}{x^2}) }}</me> 
+        <me> \lim_{x \to -\infty} \frac{x}{|x|\sqrt{(1 +\frac{2}{x^2}) }}</me>  
+        Thinking about what happens to the absolute values as you go towards positive or negative infinity, find the values of these two limits... You will find different results! </p>
+    </task>
+    </activity>
 </section>
 
 
-
-<!-- <?xml version='1.0' encoding='utf-8'?>
-
-<section xml:id="AD9" xmlns:xi="http://www.w3.org/2001/XInclude">
-   <title>Concavity</title>
-    <p permid="Gpt">
-      In addition to asking <em>whether</em>
-      a function is increasing or decreasing,
-      it is also natural to inquire <em>how</em>
-      a function is increasing or decreasing.
-      There are three basic behaviors that an increasing function can demonstrate on an interval,
-      as pictured in <xref ref="F-1-6-3optsi">Figure</xref>:
-      the function can increase more and more rapidly,
-      it can increase at the same rate,
-      or it can increase in a way that is slowing down.
-      Fundamentally,
-      we are beginning to think about how a particular curve bends,
-      with the natural comparison being made to lines, which don't bend at all.
-      More than this,
-      we want to understand how the bend in a function's graph is tied to behavior characterized by the first derivative of the function.
-    </p>
-
-    <figure xml:id="F-1-6-3optsi" permid="jBW">
-      <caption>Three functions that are all increasing, but doing so at an increasing rate, at a constant rate, and at a decreasing rate, respectively.</caption>
-      <image width="100%" source="images/1_6_3optsi" />
-    </figure>
-
-    <p permid="mwC">
-      On the leftmost curve in <xref ref="F-1-6-3optsi">Figure</xref>,
-      draw a sequence of tangent lines to the curve.
-      As we move from left to right,
-      the slopes of those tangent lines will increase.
-      Therefore, the rate of change of the pictured function is increasing,
-      and this explains why we say this function is
-      <em>increasing at an increasing rate</em>.
-      For the rightmost graph in <xref ref="F-1-6-3optsi">Figure</xref>,
-      observe that as <m>x</m> increases,
-      the function increases, but the slopes of the tangent lines decrease.
-      This function is <em>increasing at a decreasing rate</em>.
-    </p>
-
-    <p permid="SDL">
-      Similar options hold for how a function can decrease.
-      Here we must be extra careful with our language,
-      because decreasing functions involve negative slopes.
-      Negative numbers present an interesting tension between common language and mathematical language.
-      For example, it can be tempting to say that
-      <q><m>-100</m> is bigger than <m>-2</m>.</q>
-      But we must remember that <q>greater than</q>
-      describes how numbers lie on a number line:
-      <m>x \gt y</m> provided that <m>x</m> lies to the right of <m>y</m>.
-      So of course, <m>-100</m> is less than <m>-2</m>.
-      Informally, it might be helpful to say that
-      <q><m>-100</m> is more negative than <m>-2</m>.</q>
-      When a function's values are negative,
-      and those values get more negative as the input increases,
-      the function must be decreasing.
-    </p>
-
-    <figure xml:id="F-1-6-3optsd" permid="PJf">
-      <caption>From left to right, three functions that are all decreasing, but doing so in different ways.</caption>
-      <image width="100%" source="images/1_6_3optsd" />
-    </figure>
-
-    <p permid="yKU">
-      Now consider the three graphs shown in <xref ref="F-1-6-3optsd">Figure</xref>.
-      Clearly the middle graph depicts a function decreasing at a constant rate.
-      Now, on the first curve, draw a sequence of tangent lines.
-      We see that the slopes of these lines get less and less negative as we move from left to right.
-      That means that the values of the first derivative,
-      while all negative, are increasing,
-      and thus we say that the leftmost curve is
-      <em>decreasing at an increasing rate</em>.
-    </p>
-
-    <p permid="eSd">
-      This leaves only the rightmost curve in <xref ref="F-1-6-3optsd">Figure</xref> to consider.
-      For that function,
-      the slopes of the tangent lines are negative throughout the pictured interval,
-      but as we move from left to right,
-      the slopes get more and more negative.
-      Hence the slope of the curve is decreasing,
-      and we say that the function is
-      <em>decreasing at a decreasing rate</em>.
-    </p>
-
-    <p permid="KZm">
-      We now introduce the notion of <em>concavity</em>
-          <idx><h>concavity</h></idx>
-      which provides simpler language to describe these behaviors.
-      When a curve opens upward on a given interval,
-      like the parabola <m>y = x^2</m> or the exponential growth function <m>y = e^x</m>,
-      we say that the curve is <em>concave up</em> on that interval.
-      Likewise, when a curve opens down,
-      like the parabola <m>y = -x^2</m> or the opposite of the exponential function <m>y = -e^{x}</m>,
-      we say that the function is <em>concave down</em>.
-      Concavity is linked to both the first and second derivatives of the function.
-    </p>
-
-    <p permid="rgv">
-      In <xref ref="F-1-6-concavity">Figure</xref>,
-      we see two functions and a sequence of tangent lines to each.
-      On the lefthand plot, where the function is concave up,
-      observe that the tangent lines always lie below the curve itself, and 
-      the slopes of the tangent lines are increasing as we move from left to right.
-      In other words,
-      the function <m>f</m> is concave up on the interval shown because its derivative,
-      <m>f'</m>, is increasing on that interval.
-      Similarly, on the righthand plot in <xref ref="F-1-6-concavity">Figure</xref>,
-      where the function shown is concave down,
-      we see that the tangent lines alway lie above the curve,
-      and the slopes of the tangent lines are decreasing as we move from left to right.
-      The fact that its derivative,
-      <m>f'</m>, is decreasing makes <m>f</m> concave down on the interval.
-    </p>
-
-    <figure xml:id="F-1-6-concavity" permid="vQo">
-      <caption>At left, a function that is concave up; at right, one that is concave down.</caption>
-      <image width="90%" source="images/1_6_concavity" />
-    </figure>
-
-    <p permid="XnE">
-      We state these most recent observations formally as the definitions of the terms
-      <em>concave up</em> and <em>concave down</em>.
-    </p>
-
-    <definition permid="hcP">
-      <statement>
-        <p permid="slO">
-          Let <m>f</m> be a differentiable function on an interval <m>(a,b)</m>.
-          Then <m>f</m> is <term>concave up</term>
-              <idx><h>concave up</h></idx>
-          on <m>(a,b)</m> if and only if <m>f'</m> is increasing on <m>(a,b)</m>;
-          <m>f</m> is <term>concave down</term>
-              <idx><h>concave down</h></idx>
-          on <m>(a,b)</m> if and only if <m>f'</m> is decreasing on <m>(a,b)</m>.
-        </p>
-      </statement>
-    </definition>
-    <activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-1-6-1" permid="qqg">
-  <statement>
-    <p permid="xUF">
-      The position of a car driving along a straight road at time <m>t</m> in minutes is given by the function
-      <m>y = s(t)</m> that is pictured in <xref ref="F-1-6-A1">Figure</xref>.
-      The car's position function has units measured in thousands of feet.
-      Remember that you worked with this function and sketched graphs of <m>y = v(t) = s'(t)</m> and
-      <m>y = v'(t)</m> in <xref ref="PA-1-6">Preview Activity</xref>.
-    </p>
-
-    <figure xml:id="F-1-6-A1" permid="KiX">
-      <caption>The graph of <m>y = s(t)</m>, the position of the car (measured in thousands of feet from its starting location) at time <m>t</m> in minutes.</caption>
-      <image width="40%" source="images/1_6_PA1" />
-    </figure>
-
-    <p permid="ebO">
-      <ol label="a." permid="omy">
-        <li permid="Efq">
-          <p permid="CZX">
-            On what intervals is the position function
-            <m>y = s(t)</m> increasing? decreasing?
-            Why?
-          </p>
-        </li>
-
-        <li permid="kmz">
-          <p permid="jhg">
-            On which intervals is the velocity function
-            <m>y = v(t) = s'(t)</m> increasing? decreasing? neither?
-            Why?
-          </p>
-        </li>
-
-        <li permid="QtI">
-          <p permid="Pop">
-            <em>Acceleration</em>
-              <idx><h>acceleration</h></idx>
-            is defined to be the instantaneous rate of change of velocity,
-            as the acceleration of an object measures the rate at which the velocity of the object is changing.
-            Say that the car's acceleration function is named <m>a(t)</m>.
-            How is <m>a(t)</m> computed from <m>v(t)</m>?
-            How is <m>a(t)</m> computed from <m>s(t)</m>?
-            Explain.
-          </p>
-        </li>
-
-        <li permid="wAR">
-          <p permid="vvy">
-            What can you say about <m>s''</m> whenever <m>s'</m> is increasing?
-            Why?
-          </p>
-        </li>
-
-        <li permid="IPj">
-          <p permid="bCH">
-            Using only the words <em>increasing</em>, <em>decreasing</em>,
-            <em>constant</em>, <em>concave up</em>, <em>concave down</em>,
-            and <em>linear</em>, complete the following sentences.
-            For the position function <m>s</m> with velocity <m>v</m> and acceleration <m>a</m>,
-
-            <ul permid="Ifp">
-              <li permid="UtH">
-                <p permid="NdD">
-                  on an interval where <m>v</m> is positive,
-                  <m>s</m> is <fillin />.
-                </p>
-              </li>
-
-              <li permid="AAQ">
-                <p permid="HJQ">
-                  on an interval where <m>v</m> is negative,
-                  <m>s</m> is <fillin />.
-                </p>
-              </li>
-
-              <li permid="gHZ">
-                <p permid="nQZ">
-                  on an interval where <m>v</m> is zero, <m>s</m> is <fillin />.
-                </p>
-              </li>
-
-              <li permid="MPi">
-                <p permid="TYi">
-                  on an interval where <m>a</m> is positive,
-                  <m>v</m> is <fillin />.
-                </p>
-              </li>
-
-              <li permid="sWr">
-                <p permid="Afr">
-                  on an interval where <m>a</m> is negative,
-                  <m>v</m> is <fillin />.
-                </p>
-              </li>
-
-              <li permid="ZdA">
-                <p permid="gmA">
-                  on an interval where <m>a</m> is zero, <m>v</m> is <fillin />.
-                </p>
-              </li>
-
-              <li permid="FkJ">
-                <p permid="MtJ">
-                  on an interval where <m>a</m> is positive,
-                  <m>s</m> is <fillin />.
-                </p>
-              </li>
-
-              <li permid="lrS">
-                <p permid="sAS">
-                  on an interval where <m>a</m> is negative,
-                  <m>s</m> is <fillin />.
-                </p>
-              </li>
-
-              <li permid="Rzb">
-                <p permid="YIb">
-                  on an interval where <m>a</m> is zero, <m>s</m> is <fillin />.
-                </p>
-              </li>
-            </ul>
-          </p>
-        </li>
-      </ol>
-    </p>
-  </statement>
-  <hint permid="Xon">
-    <p permid="RNw">
-      <ol label="a." permid="bYg">
-        <li permid="oWs">
-          <p permid="EPk">
-            Remember that a function is increasing on an interval if and only if its first derivative is positive on the interval.
-          </p>
-        </li>
-
-        <li permid="VdB">
-          <p permid="kWt">
-            See (a).
-          </p>
-        </li>
-
-        <li permid="BkK">
-          <p permid="RdC">
-            Remember that the first derivative of a function measures its instantaneous rate of change.
-          </p>
-        </li>
-
-        <li permid="hrT">
-          <p permid="xkL">
-            Think about how <m>s''(t) = [s'(t)]'</m>.
-          </p>
-        </li>
-
-        <li permid="Nzc">
-          <p permid="drU">
-            Be very careful with your letters:
-            <m>s</m>, <m>v</m>, and <m>a</m>.
-          </p>
-        </li>
-      </ol>
-    </p>
-  </hint>
-  <answer permid="rhe">
-    <p permid="lGn">
-      <ol label="a." permid="vQX">
-        <li permid="tGl">
-          <p permid="Jzd">
-            Increasing: <m>0\lt t\lt 2</m>,
-            <m>3\lt t\lt 5</m>,
-            <m>7\lt t\lt 9</m>, and <m>10\lt t\lt 12</m>.
-            Decreasing: never.
-          </p>
-        </li>
-
-        <li permid="ZNu">
-          <p permid="pGm">
-            Velocity is increasing on <m>0\lt t\lt 1</m>,
-            <m>3\lt t\lt 4</m>,
-            <m>7\lt t\lt 8</m>, and <m>10\lt t\lt 11</m>;
-            <m>y = v(t)</m> is decreasing on <m>1\lt t\lt 2</m>,
-            <m>4\lt t\lt 5</m>,
-            <m>8\lt t\lt 9</m>, and <m>11\lt t\lt 12</m>.
-            Velocity is constant on <m>2\lt t\lt 3</m>,
-            <m>5\lt t\lt 7</m>, and <m>9\lt t\lt 10</m>.
-          </p>
-        </li>
-
-        <li permid="FUD">
-          <p permid="VNv">
-            <m>a(t) = v'(t)</m> and <m>a(t) = s''(t)</m>.
-          </p>
-        </li>
-
-        <li permid="mbM">
-          <p permid="BUE">
-            <m>s''(t)</m> is positive since <m>s'(t)</m> is increasing.
-          </p>
-        </li>
-
-        <li permid="SiV">
-          <p permid="ibN">
-            <ul permid="PJO">
-              <li permid="xGk">
-                <p permid="tkM">
-                  <em>increasing</em>.
-                </p>
-              </li>
-
-              <li permid="dNt">
-                <p permid="OiW">
-                  <em>decreasing</em>.
-                </p>
-              </li>
-
-              <li permid="JUC">
-                <p permid="uqf">
-                  <em>constant</em>.
-                </p>
-              </li>
-
-              <li permid="qbL">
-                <p permid="axo">
-                  <em>increasing</em>.
-                </p>
-              </li>
-
-              <li permid="WiU">
-                <p permid="GEx">
-                  <em>decreasing</em>.
-                </p>
-              </li>
-
-              <li permid="Cqd">
-                <p permid="mLG">
-                  <em>constant</em>.
-                </p>
-              </li>
-
-              <li permid="ixm">
-                <p permid="SSP">
-                  <em>concave up</em>.
-                </p>
-              </li>
-
-              <li permid="OEv">
-                <p permid="yZY">
-                  <em>concave down</em>.
-                </p>
-              </li>
-
-              <li permid="uLE">
-                <p permid="fhh">
-                  <em>linear</em>.
-                </p>
-              </li>
-            </ul>
-          </p>
-        </li>
-      </ol>
-    </p>
-  </answer>
-  <solution permid="KZV">
-    <p permid="Fze">
-      <ol label="a." permid="jCF">
-        <li permid="yqe">
-          <p permid="Loq">
-            The position function
-            <m>y = s(t)</m> increasing on the intervals <m>0\lt t\lt 2</m>,
-            <m>3\lt t\lt 5</m>,
-            <m>7\lt t\lt 9</m>, and <m>10\lt t\lt 12</m>,
-            because at every point in such intervals, <m>s'(t)</m> is positive.
-            For the provided function,
-            <m>s(t)</m> is never decreasing because its derivative is never negative.
-          </p>
-        </li>
-
-        <li permid="exn">
-          <p permid="rvz">
-            The velocity function
-            <m>y = v(t)</m> appears to be increasing on the intervals <m>0\lt t\lt 1</m>,
-            <m>3\lt t\lt 4</m>, <m>7\lt t\lt 8</m>,
-            and <m>10\lt t\lt 11</m> because the curve
-            <m>y = s(t)</m> is concave up which corresponds to an increasing first derivative <m>y =s'(t)</m>.
-            Similarly,
-            <m>y = v(t)</m> appears to be decreasing on the intervals <m>1\lt t\lt 2</m>,
-            <m>4\lt t\lt 5</m>, <m>8\lt t\lt 9</m>,
-            and <m>11\lt t\lt 12</m> because the curve
-            <m>y = s(t)</m> is concave down which corresponds to a decreasing first derivative <m>y =s'(t)</m>.
-            On the intervals <m>2\lt t\lt 3</m>, <m>5\lt t\lt 7</m>,
-            and <m>9\lt t\lt 10</m>,
-            the position function <m>y = s(t)</m> is constant,
-            and thus linear, so neither concave up nor concave down.  This also corresponds to the velocity being constant (since <m>v(t) = s'(t) = 0</m>) on these intervals.
-          </p>
-        </li>
-
-        <li permid="KEw">
-          <p permid="XCI">
-            Since <m>a(t)</m> is the instantaneous rate of change of <m>v(t)</m>,
-            <m>a(t) = v'(t)</m>.
-            And because <m>v(t) = s'(t)</m>,
-            it follows that <m>a(t) = v'(t) = [s'(t)]' = s''(t)</m>,
-            so acceleration is the second derivative of position.
-          </p>
-        </li>
-
-        <li permid="qLF">
-          <p permid="DJR">
-            Because <m>s''(t)</m> is the first derivative of <m>s'(t)</m>,
-            when <m>s'(t)</m> is increasing,
-            <m>s''(t)</m> must be positive.
-          </p>
-        </li>
-
-        <li permid="WSO">
-          <p permid="jRa">
-            For the position function <m>s(t)</m> with velocity <m>v(t)</m> and acceleration <m>a(t)</m>,
-
-            <ul permid="Dvw">
-              <li permid="aSN">
-                <p permid="ZrV">
-                  on an interval where <m>v(t)</m> is positive,
-                  <m>s(t)</m> is <em>increasing</em>.
-                </p>
-              </li>
-
-              <li permid="GZW">
-                <p permid="PYj">
-                  on an interval where <m>v(t)</m> is negative,
-                  <m>s(t)</m> is <em>decreasing</em>.
-                </p>
-              </li>
-
-              <li permid="nhf">
-                <p permid="wfs">
-                  on an interval where <m>v(t)</m> is zero,
-                  <m>s(t)</m> is <em>constant</em>.
-                </p>
-              </li>
-
-              <li permid="Too">
-                <p permid="cmB">
-                  on an interval where <m>a(t)</m> is positive,
-                  <m>v(t)</m> is <em>increasing</em>.
-                </p>
-              </li>
-
-              <li permid="zvx">
-                <p permid="ItK">
-                  on an interval where <m>a(t)</m> is negative,
-                  <m>v(t)</m> is <em>decreasing</em>.
-                </p>
-              </li>
-
-              <li permid="fCG">
-                <p permid="oAT">
-                  on an interval where <m>a(t)</m> is zero,
-                  <m>v(t)</m> is <em>constant</em>.
-                </p>
-              </li>
-
-              <li permid="LJP">
-                <p permid="UIc">
-                  on an interval where <m>a(t)</m> is positive,
-                  <m>s(t)</m> is <em>concave up</em>.
-                </p>
-              </li>
-
-              <li permid="rQY">
-                <p permid="APl">
-                  on an interval where <m>a(t)</m> is negative,
-                  <m>s(t)</m> is <em>concave down</em>.
-                </p>
-              </li>
-
-              <li permid="XYh">
-                <p permid="gWu">
-                  on an interval where <m>a(t)</m> is zero,
-                  <m>s(t)</m> is <em>linear</em>.
-                </p>
-              </li>
-            </ul>
-          </p>
-        </li>
-      </ol>
-    </p>
-  </solution>
-</activity>
-    
-  <activity>
-    <introduction>
-      <p>
-        Lorem ipsum dolor sit amet.
-      </p>
-    </introduction>
-  </activity>
- -->
