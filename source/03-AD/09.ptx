@@ -107,7 +107,7 @@
 <activity><p>Look back at some limits that gave you an indeterminate form. Can you use l'Hospital's Rule to find the limit? If using the L'Hospital's Rule is appropriate, then try to compute the limit this way. It should give you the same result.  </p></activity>
 
 <activity xml:id="lhospital-instead-squeeze">
-        <introduction><p> Back when we started looking at limits, we encountered the Squeeze Theorem and computed the limit <m>\displaystyle \lim_{x\to 0} \frac{\sin(x)}{x}</m> <xref ref="squeeze-thm-ex"/>.</p>
+        <introduction><p> In <xref ref="squeeze-thm-ex"/>, when we started to study limits, we encountered the Squeeze Theorem and computed the limit <m>\displaystyle \lim_{x\to 0} \frac{\sin(x)}{x}</m> using this theorem. Let's find new ways to compute this limit. </p>
         </introduction>
     <task>
     <p>Thinking about <m>x</m> as the length of an interval <m>h</m>, this limit is actually equal to the value of some derivative, so <m>f'(a) = \displaystyle \lim_{h\to 0} \frac{\sin(h)}{h}</m>. What function <m>f(x)</m> and what point <m>x=a</m> would lead to this limit? Use these to find <m>f'(a)</m>, the value of this limit (in a new way!).</p>
