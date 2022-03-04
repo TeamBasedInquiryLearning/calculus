@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-02-06T23:32:30Z       *-->
+<!--*       on 2022-03-04T21:36:34Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -258,7 +258,76 @@
 <p id="p-1375"><span class="process-math">\(\displaystyle \lim_{x\to \infty} \frac{3x^2+3}{x^2+ 2x}\)</span></p></article><article class="task exercise-like" id="task-395"><h4 class="heading"><span class="codenumber">(d)</span></h4>
 <p id="p-1376"><span class="process-math">\(\displaystyle \lim_{x\to 0^{+}} \frac{\ln(x)}{-x}\)</span></p></article><article class="task exercise-like" id="task-396"><h4 class="heading"><span class="codenumber">(e)</span></h4>
 <p id="p-1377"><span class="process-math">\(\displaystyle \lim_{x\to 0^{+}} \frac{\ln(x)}{1/x}\)</span></p></article><article class="task exercise-like" id="task-397"><h4 class="heading"><span class="codenumber">(f)</span></h4>
-<p id="p-1378"><span class="process-math">\(\displaystyle \lim_{x\to 0} \frac{\sin^2(3x)}{5x^3 - 3x^2}\)</span></p></article></article></section></div></main>
+<p id="p-1378"><span class="process-math">\(\displaystyle \lim_{x\to 0} \frac{\sin^2(3x)}{5x^3 - 3x^2}\)</span></p></article></article><article class="activity project-like" id="checkit-ad9"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.9.11</span><span class="period">.</span>
+</h3>
+<p id="p-1379">For each limit, explain if L'Hopital's Rule may be applied. If it can, explain how to use this rule to find the limit.</p>
+<ol class="decimal">
+<li id="li-903"><div class="displaymath process-math" id="p-1380">
+\begin{equation*}
+\lim_{x\to \infty } \frac{ -8 \, x + 3 \, e^{x} }{ 7 \, x - 3 \, e^{x} }
+\end{equation*}
+</div></li>
+<li id="li-904"><div class="displaymath process-math" id="p-1381">
+\begin{equation*}
+\lim_{x\to 0 } \frac{ 6 \, \cos\left(8 \, x\right) }{ 4 \, x - 7 }
+\end{equation*}
+</div></li>
+<li id="li-905"><div class="displaymath process-math" id="p-1382">
+\begin{equation*}
+\lim_{x\to 0 } \frac{ -9 \, \cos\left(3 \, x\right) + 9 }{ -3 \, x }
+\end{equation*}
+</div></li>
+<li id="li-906"><div class="displaymath process-math" id="p-1383">
+\begin{equation*}
+\lim_{x\to 4 } \frac{ x^{2} - x - 12 }{ x^{2} - 13 \, x + 36 }
+\end{equation*}
+</div></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-10" id="answer-10"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-10"><div class="answer solution-like"><ol class="decimal">
+<li id="li-907"><div class="displaymath process-math" id="p-1384">
+\begin{equation*}
+\lim_{x\to \infty } \frac{ -8 \, x + 3 \, e^{x} }{ 7 \, x - 3 \, e^{x} } = -1
+\end{equation*}
+</div></li>
+<li id="li-908"><p id="p-1385">L'Hôptial's Rule does not apply.</p></li>
+<li id="li-909"><div class="displaymath process-math" id="p-1386">
+\begin{equation*}
+\lim_{x\to 0 } \frac{ -9 \, \cos\left(3 \, x\right) + 9 }{ -3 \, x } = 0
+\end{equation*}
+</div></li>
+<li id="li-910"><div class="displaymath process-math" id="p-1387">
+\begin{equation*}
+\lim_{x\to 4 } \frac{ x^{2} - x - 12 }{ x^{2} - 13 \, x + 36 } = -\frac{7}{5}
+\end{equation*}
+</div></li>
+</ol></div></div>
+</div></article><article class="activity project-like" id="lhospital-fail"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.9.12</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-137"><p id="p-1388">There are situations in which using L'Hospital does not help the situation and you need some algebra skills! Consider the function <span class="process-math">\(r(x)=\frac{x}{\sqrt{x^2 +2}}\)</span> and suppose that we want to find the limits as <span class="process-math">\(x\)</span> tends to <span class="process-math">\(\pm \infty\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-398"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1389">Check that the limit as <span class="process-math">\(x \to + \infty\)</span> gives an indeterminate form <span class="process-math">\(\frac{\infty}{\infty}\text{.}\)</span> Then try to use L'Hospital's Rule... what happens? What if you use it again?</p></article><article class="task exercise-like" id="task-399"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1390">We need to use algebra to handle this limit. Informally, we would like to cancel the highest powers at the numerator and denominator. Look at the denominator, <span class="process-math">\(\sqrt{x^2 +2}\text{.}\)</span> We want to factor out an <span class="process-math">\(x^2\)</span> under the square root. What do you get?</p>
+<ol class="upper-alpha">
+<li id="li-911"><p id="p-1391"><span class="process-math">\(\displaystyle \sqrt{ x^2\left(1 +\frac{2}{x}\right) } \)</span></p></li>
+<li id="li-912"><p id="p-1392"><span class="process-math">\(\displaystyle \sqrt{ x^2\left(1 +\frac{2}{x^2}\right) } \)</span></p></li>
+<li id="li-913"><p id="p-1393"><span class="process-math">\(\displaystyle \sqrt{ x^2\left(1 + x \right)} \)</span></p></li>
+<li id="li-914"><p id="p-1394"><span class="process-math">\(\displaystyle \sqrt{ x^2\left(1 + x^2 \right)} \)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-400"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1395">Now we need to be careful when computing <span class="process-math">\(\sqrt{x^2}\)</span> as this is equal to <span class="process-math">\(|x|\)</span> (so it is <span class="process-math">\(+x\)</span> when we have a positive input and <span class="process-math">\(-x\)</span> when we have a negative output. So we have the two limits.</p>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x \to +\infty} \frac{x}{|x|\sqrt{(1 +\frac{2}{x^2}) }}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x \to -\infty} \frac{x}{|x|\sqrt{(1 +\frac{2}{x^2}) }}
+\end{equation*}
+</div>
+<p class="continuation">Thinking about what happens to the absolute values as you go towards positive or negative infinity, find the values of these two limits... You will find different results!</p></article></article></section></div></main>
 </div>
 </body>
 </html>

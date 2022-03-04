@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-02-06T23:32:32Z       *-->
+<!--*       on 2022-03-04T21:36:36Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -141,53 +141,53 @@
 <span class="type">Section</span> <span class="codenumber">4.8</span> <span class="title">Area between curves (IN8)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-35"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-1008"><p id="p-1560">Use definite integral(s) to compute the area bounded by several curves.</p></li></ul></article><section class="introduction" id="introduction-156"><p id="p-1561">In <a href="IN7.html" class="internal" title="Section 4.7: Area under curves (IN7)">Section 4.7</a>, we learned how to find the area between a curve and the <span class="process-math">\(x\)</span>-axis (<span class="process-math">\(f(x)=0\)</span>) using a definite integral. What if we want the area between any two functions? What if the <span class="process-math">\(x\)</span>-axis is not one of the boundaries?</p>
-<p id="p-1562">In this section, we'll investigate how a definite integral may be used to represent the area between two curves.</p></section><article class="activity project-like" id="act-area-concept"><h3 class="heading">
+<ul class="disc"><li id="li-1020"><p id="p-1577">Use definite integral(s) to compute the area bounded by several curves.</p></li></ul></article><section class="introduction" id="introduction-157"><p id="p-1578">In <a href="IN7.html" class="internal" title="Section 4.7: Area under curves (IN7)">Section 4.7</a>, we learned how to find the area between a curve and the <span class="process-math">\(x\)</span>-axis (<span class="process-math">\(f(x)=0\)</span>) using a definite integral. What if we want the area between any two functions? What if the <span class="process-math">\(x\)</span>-axis is not one of the boundaries?</p>
+<p id="p-1579">In this section, we'll investigate how a definite integral may be used to represent the area between two curves.</p></section><article class="activity project-like" id="act-area-concept"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.8.1</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-157"><p id="p-1563">Consider the functions given by <span class="process-math">\(f(x) = 5-(x-1)^2\)</span> and <span class="process-math">\(g(x) = 4-x\text{.}\)</span></p></div>
-<article class="task exercise-like" id="task-417"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1564">Use algebra to find the points where the graphs of <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> intersect.</p></article><article class="task exercise-like" id="task-418"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1565">Sketch an accurate graph of <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> on the axes provided, labeling the curves by name and the intersection points with ordered pairs.</p>
+<div class="introduction" id="introduction-158"><p id="p-1580">Consider the functions given by <span class="process-math">\(f(x) = 5-(x-1)^2\)</span> and <span class="process-math">\(g(x) = 4-x\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-420"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1581">Use algebra to find the points where the graphs of <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> intersect.</p></article><article class="task exercise-like" id="task-421"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1582">Sketch an accurate graph of <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> on the axes provided, labeling the curves by name and the intersection points with ordered pairs.</p>
 <figure class="figure figure-like" id="act_concept_axes"><div class="image-box" style="width: 47%; margin-left: 26.5%; margin-right: 26.5%;"><img src="external/IN8_act_concept_axes.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">79<span class="period">.</span></span><span class="space"> </span>Axes for plotting <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> in <a href="" class="xref" data-knowl="./knowl/act-area-concept.html" title="Activity 4.8.1">Activity 4.8.1</a></figcaption></figure></article><article class="task exercise-like" id="task-419"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1566">Find and evaluate exactly an integral expression that represents the area between <span class="process-math">\(y = f(x)\)</span> and the <span class="process-math">\(x\)</span>-axis on the interval between the intersection points of <span class="process-math">\(f\)</span> and <span class="process-math">\(g\text{.}\)</span> Shade in this area on the axes provided in <a href="" class="xref" data-knowl="./knowl/act_concept_axes.html" title="Figure 79">Figure 79</a></p></article><article class="task exercise-like" id="task-420"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-1567">Find and evaluate exactly an integral expression that represents the area between <span class="process-math">\(y = g(x)\)</span> and the <span class="process-math">\(x\)</span>-axis on the interval between the intersection points of <span class="process-math">\(f\)</span> and <span class="process-math">\(g\text{.}\)</span> Shade in this area on the axes provided in <a href="" class="xref" data-knowl="./knowl/act_concept_axes.html" title="Figure 79">Figure 79</a> in a different color or pattern than you used for the area between <span class="process-math">\(y=f(x)\)</span> and the <span class="process-math">\(x\)</span>-axis.</p></article><article class="task exercise-like" id="task-421"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-1568">Let's denote the area between <span class="process-math">\(y = f(x)\)</span> and the <span class="process-math">\(x\)</span>-axis as <span class="process-math">\(A_f\)</span> and the area between <span class="process-math">\(y = g(x)\)</span> and the <span class="process-math">\(x\)</span>-axis as <span class="process-math">\(A_g\text{.}\)</span> How could we use <span class="process-math">\(A_f\)</span> and <span class="process-math">\(A_g\)</span> to find exact area between <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> between their intersection points?</p>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">79<span class="period">.</span></span><span class="space"> </span>Axes for plotting <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> in <a href="" class="xref" data-knowl="./knowl/act-area-concept.html" title="Activity 4.8.1">Activity 4.8.1</a></figcaption></figure></article><article class="task exercise-like" id="task-422"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1583">Find and evaluate exactly an integral expression that represents the area between <span class="process-math">\(y = f(x)\)</span> and the <span class="process-math">\(x\)</span>-axis on the interval between the intersection points of <span class="process-math">\(f\)</span> and <span class="process-math">\(g\text{.}\)</span> Shade in this area on the axes provided in <a href="" class="xref" data-knowl="./knowl/act_concept_axes.html" title="Figure 79">Figure 79</a></p></article><article class="task exercise-like" id="task-423"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1584">Find and evaluate exactly an integral expression that represents the area between <span class="process-math">\(y = g(x)\)</span> and the <span class="process-math">\(x\)</span>-axis on the interval between the intersection points of <span class="process-math">\(f\)</span> and <span class="process-math">\(g\text{.}\)</span> Shade in this area on the axes provided in <a href="" class="xref" data-knowl="./knowl/act_concept_axes.html" title="Figure 79">Figure 79</a> in a different color or pattern than you used for the area between <span class="process-math">\(y=f(x)\)</span> and the <span class="process-math">\(x\)</span>-axis.</p></article><article class="task exercise-like" id="task-424"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-1585">Let's denote the area between <span class="process-math">\(y = f(x)\)</span> and the <span class="process-math">\(x\)</span>-axis as <span class="process-math">\(A_f\)</span> and the area between <span class="process-math">\(y = g(x)\)</span> and the <span class="process-math">\(x\)</span>-axis as <span class="process-math">\(A_g\text{.}\)</span> How could we use <span class="process-math">\(A_f\)</span> and <span class="process-math">\(A_g\)</span> to find exact area between <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> between their intersection points?</p>
 <ol class="upper-alpha">
-<li id="li-1009"><p id="p-1569">We could find <span class="process-math">\(A_f + A_g\)</span> to find the area between the curves.</p></li>
-<li id="li-1010"><p id="p-1570">We could find <span class="process-math">\(A_f - A_g\)</span> to find the area between the curves.</p></li>
-<li id="li-1011"><p id="p-1571">We could find <span class="process-math">\(A_g - A_f\)</span> to find the area between the curves.</p></li>
-</ol></article></article><p id="p-1572">We've seen from <a href="" class="xref" data-knowl="./knowl/act-area-concept.html" title="Activity 4.8.1">Activity 4.8.1</a> that a natural way to think about the area between two curve is as the area beneath the upper curve minus the area beneath the lower curve.</p>
+<li id="li-1021"><p id="p-1586">We could find <span class="process-math">\(A_f + A_g\)</span> to find the area between the curves.</p></li>
+<li id="li-1022"><p id="p-1587">We could find <span class="process-math">\(A_f - A_g\)</span> to find the area between the curves.</p></li>
+<li id="li-1023"><p id="p-1588">We could find <span class="process-math">\(A_g - A_f\)</span> to find the area between the curves.</p></li>
+</ol></article></article><p id="p-1589">We've seen from <a href="" class="xref" data-knowl="./knowl/act-area-concept.html" title="Activity 4.8.1">Activity 4.8.1</a> that a natural way to think about the area between two curve is as the area beneath the upper curve minus the area beneath the lower curve.</p>
 <article class="activity project-like" id="act-area-concept2"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.8.2</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-158">
-<p id="p-1573">We now look for a general way of writing definite integrals for the area between two given curves, <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\text{.}\)</span> Consider this area, illustrated in <a href="" class="xref" data-knowl="./knowl/area_concept_general.html" title="Figure 80">Figure 80</a>.</p>
+<div class="introduction" id="introduction-159">
+<p id="p-1590">We now look for a general way of writing definite integrals for the area between two given curves, <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\text{.}\)</span> Consider this area, illustrated in <a href="" class="xref" data-knowl="./knowl/area_concept_general.html" title="Figure 80">Figure 80</a>.</p>
 <figure class="figure figure-like" id="area_concept_general"><div class="image-box" style="width: 55%; margin-left: 22.5%; margin-right: 22.5%;"><img src="external/area_between.png" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">80<span class="period">.</span></span><span class="space"> </span>Area between <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\text{.}\)</span></figcaption></figure>
 </div>
-<article class="task exercise-like" id="task-422"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1574">How could we represent the shaded area in <a href="" class="xref" data-knowl="./knowl/area_concept_general.html" title="Figure 80">Figure 80</a>?</p>
+<article class="task exercise-like" id="task-425"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1591">How could we represent the shaded area in <a href="" class="xref" data-knowl="./knowl/area_concept_general.html" title="Figure 80">Figure 80</a>?</p>
 <ol class="upper-alpha">
-<li id="li-1012"><p id="p-1575"><span class="process-math">\(\displaystyle \int_b^a f(x) \,dx - \int_b^a g(x) \,dx\)</span></p></li>
-<li id="li-1013"><p id="p-1576"><span class="process-math">\(\displaystyle \int_a^b f(x) \,dx - \int_a^b g(x) \,dx\)</span></p></li>
-<li id="li-1014"><p id="p-1577"><span class="process-math">\(\displaystyle \int_b^a g(x) \,dx - \int_b^a f(x) \,dx\)</span></p></li>
-<li id="li-1015"><p id="p-1578"><span class="process-math">\(\displaystyle \int_a^b g(x) \,dx - \int_a^b f(x) \,dx\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-423"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1579">The two definite integrals above can be rewritten as one definite integral using the sum and difference property of definite integrals:</p>
-<p id="p-1580">If <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are continuous functions, then</p>
+<li id="li-1024"><p id="p-1592"><span class="process-math">\(\displaystyle \int_b^a f(x) \,dx - \int_b^a g(x) \,dx\)</span></p></li>
+<li id="li-1025"><p id="p-1593"><span class="process-math">\(\displaystyle \int_a^b f(x) \,dx - \int_a^b g(x) \,dx\)</span></p></li>
+<li id="li-1026"><p id="p-1594"><span class="process-math">\(\displaystyle \int_b^a g(x) \,dx - \int_b^a f(x) \,dx\)</span></p></li>
+<li id="li-1027"><p id="p-1595"><span class="process-math">\(\displaystyle \int_a^b g(x) \,dx - \int_a^b f(x) \,dx\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-426"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1596">The two definite integrals above can be rewritten as one definite integral using the sum and difference property of definite integrals:</p>
+<p id="p-1597">If <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are continuous functions, then</p>
 <div class="displaymath process-math">
 \begin{equation*}
 \int_a^b ( f(x) \pm  g(x)) \,dx = \int_a^b f(x) \,dx \pm  \int_a^b g(x) \,dx
 \end{equation*}
 </div>
-<p id="p-1581">Use the property above to represent the shaded area in <a href="" class="xref" data-knowl="./knowl/area_concept_general.html" title="Figure 80">Figure 80</a> using one definite integral.</p>
+<p id="p-1598">Use the property above to represent the shaded area in <a href="" class="xref" data-knowl="./knowl/area_concept_general.html" title="Figure 80">Figure 80</a> using one definite integral.</p>
 <ol class="upper-alpha">
-<li id="li-1016"><p id="p-1582"><span class="process-math">\(\displaystyle \int_b^a (f(x) - g(x)) \,dx\)</span></p></li>
-<li id="li-1017"><p id="p-1583"><span class="process-math">\(\displaystyle \int_a^b (f(x) - g(x)) \,dx\)</span></p></li>
-<li id="li-1018"><p id="p-1584"><span class="process-math">\(\displaystyle \int_b^a (g(x) - f(x)) \,dx\)</span></p></li>
-<li id="li-1019"><p id="p-1585"><span class="process-math">\(\displaystyle \int_a^b (g(x) - f(x)) \,dx\)</span></p></li>
+<li id="li-1028"><p id="p-1599"><span class="process-math">\(\displaystyle \int_b^a (f(x) - g(x)) \,dx\)</span></p></li>
+<li id="li-1029"><p id="p-1600"><span class="process-math">\(\displaystyle \int_a^b (f(x) - g(x)) \,dx\)</span></p></li>
+<li id="li-1030"><p id="p-1601"><span class="process-math">\(\displaystyle \int_b^a (g(x) - f(x)) \,dx\)</span></p></li>
+<li id="li-1031"><p id="p-1602"><span class="process-math">\(\displaystyle \int_a^b (g(x) - f(x)) \,dx\)</span></p></li>
 </ol></article></article><p id="xlp">We can also think of the area this way: if we slice up the region between two curves into thin vertical rectangles, we see (as shown in <a href="" class="xref" data-knowl="./knowl/area-as-slices.html" title="Figure 81">Figure 81</a>) that the height of a typical rectangle is given by the difference between the two functions, <span class="process-math">\(f(x) - g(x)\text{,}\)</span> and its width is <span class="process-math">\(\Delta x\text{.}\)</span> Thus the area of the rectangle is</p>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -218,12 +218,12 @@ A = \int_a^b (f(x) - g(x)) \, dx\text{.}
 <article class="assemblage assemblage-like" id="LKt"><p id="BVi">If two curves <span class="process-math">\(y = f(x)\)</span> and <span class="process-math">\(y = g(x)\)</span> intersect at <span class="process-math">\((a,g(a))\)</span> and <span class="process-math">\((b,g(b))\text{,}\)</span> and for all <span class="process-math">\(x\)</span> such that <span class="process-math">\(a \le x \le b\text{,}\)</span> <span class="process-math">\(f(x) \ge g(x)\text{,}\)</span> then the area between the curves is <span class="process-math">\(A = \int_a^b (f(x) - g(x)) \, dx\text{.}\)</span></p></article><article class="activity project-like" id="IN8-fluency-vertical"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.8.3</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-159"><p id="p-1592">In each of the following problems, our goal is to determine the area of the region described. For each region, (i) determine the intersection points of the curves, (ii) sketch the region whose area is being found, (iii) draw and label a representative slice, and (iv) state the area of the representative slice. Then, state a definite integral whose value is the exact area of the region, and evaluate the integral to find the numeric value of the region's area.</p></div>
-<article class="task exercise-like" id="task-424"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1593">The finite region bounded by <span class="process-math">\(y = \sqrt{x}\)</span> and <span class="process-math">\(y = \frac{1}{4}x\text{.}\)</span></p></article><article class="task exercise-like" id="task-425"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1594">The finite region bounded by <span class="process-math">\(y = 12-2x^2\)</span> and <span class="process-math">\(y = x^2 - 8\text{.}\)</span></p></article><article class="task exercise-like" id="task-426"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1595">The area bounded by the <span class="process-math">\(y\)</span>-axis, <span class="process-math">\(f(x) = \cos(x)\text{,}\)</span> and <span class="process-math">\(g(x) = \sin(x)\text{,}\)</span> where we consider the region formed by the first positive value of <span class="process-math">\(x\)</span> for which <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> intersect.</p></article><article class="task exercise-like" id="task-427"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-1596">The finite regions between the curves <span class="process-math">\(y = x^3-x\)</span> and <span class="process-math">\(y = x^2\text{.}\)</span></p></article></article></section></div></main>
+<div class="introduction" id="introduction-160"><p id="p-1609">In each of the following problems, our goal is to determine the area of the region described. For each region, (i) determine the intersection points of the curves, (ii) sketch the region whose area is being found, (iii) draw and label a representative slice, and (iv) state the area of the representative slice. Then, state a definite integral whose value is the exact area of the region, and evaluate the integral to find the numeric value of the region's area.</p></div>
+<article class="task exercise-like" id="task-427"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1610">The finite region bounded by <span class="process-math">\(y = \sqrt{x}\)</span> and <span class="process-math">\(y = \frac{1}{4}x\text{.}\)</span></p></article><article class="task exercise-like" id="task-428"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1611">The finite region bounded by <span class="process-math">\(y = 12-2x^2\)</span> and <span class="process-math">\(y = x^2 - 8\text{.}\)</span></p></article><article class="task exercise-like" id="task-429"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1612">The area bounded by the <span class="process-math">\(y\)</span>-axis, <span class="process-math">\(f(x) = \cos(x)\text{,}\)</span> and <span class="process-math">\(g(x) = \sin(x)\text{,}\)</span> where we consider the region formed by the first positive value of <span class="process-math">\(x\)</span> for which <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> intersect.</p></article><article class="task exercise-like" id="task-430"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1613">The finite regions between the curves <span class="process-math">\(y = x^3-x\)</span> and <span class="process-math">\(y = x^2\text{.}\)</span></p></article></article></section></div></main>
 </div>
 </body>
 </html>
