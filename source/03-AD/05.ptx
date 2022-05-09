@@ -10,6 +10,32 @@
     </ul>
   </objectives>
 
+    <definition xml:id="defn-relative-extrema">
+      <statement>
+        <p>
+         We say that <m>f(c)</m> is a <term>relative maximum</term> (or local maximum) of <m>f</m> provided that <m>f(c)\geq f(x)</m> for all <m>x</m> near <m>c</m>. We say that <m>f(c)</m> is a <term>relative minimum</term> (or local minimum) of <m>f</m> provided that <m>f(c)\leq f(x)</m> for all <m>x</m> near <m>c</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <observation>
+<p> 
+A strategy for finding the extreme values of a function on open intervals will be to consider all the relative maxima and minima and compare them to find which one(s) give the largest and smallest values. But now we have a new problem: how do you find the relative extrema?  We can detect relative extrema by computing the first derivative and finding the critical points (or critical numbers) of the function. By finding the critical points, we will produce a list of candidates for the extrema (local and global) of the function.
+</p></observation>
+      
+           
+    <activity><introduction><p>We have encountered several terms recently, so we should make sure that we understand how they are related. Which of the following statements are true?</p></introduction>
+        <ol label="A">
+                <li><p>In a closed interval an endpoint is always a local extrema but it might or might not be a global extrema.</p></li>
+                <li><p>In a closed interval an endpoint is always a global extrema.</p></li>
+            <li><p>A crtical point is always a local extrema but it might or might not be a global extrema.</p></li>
+             <li><p>A local extrema only occurs where the first derivative is equal to zero.</p></li>
+                <li><p>A local extrema always occurs at a critical point. </p></li>
+                <li><p>A local extrema might occur at a critical point or at an endpoint of a closed interval. </p></li>
+            </ol>
+    
+    </activity>  
+<!--     
   <activity xml:id="activity-derivative-derivativetests1">
     <introduction>
       <p>
@@ -28,21 +54,21 @@
           </statement>
 
   </activity>
-
+ -->
       <activity xml:id="activity-derivative-derivativetests2">
     <task>
       <p>
-        Sketch a graph of a continuous function that is increasing on <m>(-\infty, -2)</m> and constant on <m>(3,5)</m> and decreasing on <m>(-2,1)</m>.  
+        Sketch the graph of a continuous function that is increasing on <m>(-\infty, -2)</m>, constant on the interval <m>(3,5)</m>, and decreasing on the interval <m>(-2,3)</m>.  
       </p>
         </task>
       <task>
       <statement>
           <p>How would you describe the derivative of the function on each interval?</p>
           <ol label="A">
-              <li><p><m>f'(x) &lt; 0</m> on <m>(-2,1)</m> and <m>(3,5)</m> and <m>f'(x) &gt; 0</m> on <m>(-2,1)</m>.</p></li>
-              <li><p> <m>f'(x) &gt; 0</m> on <m>(-2,1)</m>, <m>f'(x) &lt; 0</m> on <m>(-2,1)</m> and <m>f'(x)</m> is undefined on <m>(3,5)</m>.</p></li>
-              <li><p><m>f'(x) &gt; 0</m> on <m>(-2,1)</m>, <m>f'(x) &lt; 0</m> on <m>(-2,1)</m> and <m>f'(x) = 0</m> on <m>(3,5)</m>. </p></li>
-              <li><p><m>f'(x) &gt; 0</m> on <m>(-2,1)</m>, <m>f'(x) &lt; 0</m> on <m>(-2,1)</m> and <m>f'(x)</m> is constant on <m>(3,5)</m>.</p></li>
+              <li><p><m>f'(x) &lt; 0</m> on the interval <m>(-2,3)</m> and on the interval <m>(3,5)</m>, <m>f'(x) &gt; 0</m> for <m>x \lt -2</m>.</p></li>
+              <li><p> <m>f'(x) &gt; 0</m> on <m>(-2,3)</m>, <m>f'(x) &lt; 0</m> for <m>x \lt -2</m>, and <m>f'(x)</m> is undefined on the interval <m>(3,5)</m>.</p></li>
+              <li><p><m>f'(x) &gt; 0</m> on <m>(-2,3)</m>, <m>f'(x) &lt; 0</m> for <m>x \lt -2</m>,  and <m>f'(x) = 0</m> on the interval <m>(3,5)</m>. </p></li>
+              <li><p><m>f'(x) &gt; 0</m> on <m>(-2,3)</m>, <m>f'(x) &lt; 0</m> for <m>x \lt -2</m>,  and <m>f'(x)</m> is constant on the interval <m>(3,5)</m>.</p></li>
             </ol>
           </statement>
       </task>
@@ -53,7 +79,7 @@
       <p>
        Look back at the graph you made for <xref ref="activity-derivative-derivativetests2"/>.  
       </p>
-          <p>Which of the following best describes what is occurring when graph changes from increasing to decreasing or decreasing to increasing?</p>
+          <p>Which of the following best describes what is occurring when graph changes behavior?</p>
           <ol label="A">
               <li><p> There is a critical point.</p></li>
                 <li><p> There is a relative maximum or minimum. </p></li>
@@ -65,7 +91,7 @@
     <theorem xml:id="first-derivative-test"> <title>The First Derivative Test</title>  
       <introduction>
       <p>
-       Suppose <m>f(x)</m> is continuous at <m>x=c</m> and that <m>x=c</m> is a critical point of <m>f(x)</m>.   
+       Suppose <m>f(x)</m>  that <m>x=c</m> is a critical point of <m>f(x)</m> and <m>f(x)</m> is continuous at <m>x=c</m> and.   
       </p>
       </introduction>
     <p>
@@ -97,6 +123,36 @@
         </task>
     </activity>
     
+    
+    <theorem xml:id="second-derivative-test"> <title>The Second Derivative Test</title>  
+      <introduction>
+      <p>
+       Suppose that <m>x=c</m> is a critical point of <m>f(x)</m> and that <m>f''(x)</m> is continuous at <m>x=c</m>.   
+      </p>
+      </introduction>
+    <p>
+    <ol>   
+    <li>If <m>f'(c) = 0</m> and <m>f''(c) &lt; 0  </m>, then a <b>relative maximum</b> occurs when <m>x=c</m>. </li>
+         <li>If <m>f'(c) = 0</m> and <m>f''(c) &gt; 0  </m>, then a <b>relative minimum</b> occurs when <m>x=c</m>. </li>
+         <li>If <m>f'(c) = 0</m> and <m>f''(c) = 0  </m>, then this test is inconclusive. </li>
+     </ol> </p>
+     <p>In case of an inconclusive Second Derivative Test, we need to go back to the First Derivative Test to classify the critical point.</p>   
+    </theorem>
+    
+        <activity xml:id="activity-derivative-tests-checkit">
+    <statement>
+        <p> Consider the function <m>f(x)=-x^{3} + 3 \, x + 4</m>.</p>
+            <task> <p>Find the open intervals where <m>f(x)</m> is increasing or decreasing.
+            </p></task>
+    <task> <p>Find the local extrema of <m>f(x)</m>.
+        </p></task>
+        </statement>
+            <answer><p>The function decreases on <m>(-\infty,-1)</m>,
+increases on <m>(-1,1)</m>, and decreases on
+<m>.(1,\infty)</m>. The point <m>(x,y)=(-1,2)</m> is a relative minimum,
+and the point <m>(x,y)=(1,6)</m> is a relative maximum.</p></answer>
+     </activity>
+            
     <remark> <title>Dealing with discontinuities</title>
         <introduction>
             <p>Our previous activity dealt with a function that was continuous for all real numbers. Because of that, we could trust our chart to point out relative extrema. Let's now consider what might happen if a function has any discontinuities.</p>
@@ -131,7 +187,7 @@
     
     <activity xml:id="activity-derivative-derivativetest6">
         <introduction>
-            <p>For each of the following functions, find the intervals on which <m>f(x)</m> is increasing or decreasing. Then identify any relative extrema.</p>
+            <p>For each of the following functions, find the intervals on which <m>f(x)</m> is increasing or decreasing. Then identify any relative extrema using either the First or Second Derivative Test.</p>
         </introduction>
         <task>
             <p><m>f(x)=x^3+3x^2+3x+1</m></p>
@@ -150,42 +206,7 @@
         </task>
     </activity>
     
-    <theorem xml:id="second-derivative-test"> <title>The Second Derivative Test</title>  
-      <introduction>
-      <p>
-       Suppose that <m>x=c</m> is a critical point of <m>f(x)</m> and that <m>f''(x)</m> is continuous at <m>x=c</m>.   
-      </p>
-      </introduction>
-    <p>
-    <ol>   
-    <li>If <m>f'(c) = 0</m> and <m>f''(c) &lt; 0  </m>, then a <b>relative maximum</b> occurs when <m>x=c</m>. </li>
-         <li>If <m>f'(c) = 0</m> and <m>f''(c) &gt; 0  </m>, then a <b>relative minimum</b> occurs when <m>x=c</m>. </li>
-         <li>If <m>f'(c) = 0</m> and <m>f''(c) = 0  </m>, then this test is inconclusive. </li>
-     </ol> </p>
-     <p>In case of an inconclusive Seconf Derivative Test, we need to go back to the First Derivative Test to classify the critical point.</p>   
-    </theorem>
     
-    
-     <activity xml:id="activity-derivative-derivativetest-second">
-        <introduction>
-            <p>For each of the following functions, now identify any relative extrema using the Second Derivative Test, if possible.</p>
-        </introduction>
-        <task>
-            <p><m>f(x)=x^3+3x^2+3x+1</m></p>
-        </task>
-        <task>
-            <p><m>f(x)=\frac{1}{2}x+\cos x</m> on <m>(0,2\pi)</m></p>
-        </task>
-        <task>
-            <p><m>f(x)=(x^2-9)^{2/3}</m></p>
-        </task>
-        <task>
-            <p><m>f(x)= \ln(2x-1)</m>. (Hint: think about the domain of this one before you get started!)</p>
-        </task>
-        <task>
-            <p><m>f(x)=\frac{x^2}{x^2-4}</m></p>
-        </task>
-    </activity>
     
     <theorem><title>The Mean Value Theorem</title>  
     <p>If <m>f</m> is continuous and differentiable on the closed interval <m>[a,b]</m>, then there is some point <m>c</m> in the interval where <m>f'(c)</m>  is equal to the slope of the secant line through the points <m>(a,f(a))</m> and <m>(b,f(b))</m>. In symbols, for some <m>c</m> in <m>(a,b)</m> we have that </p>

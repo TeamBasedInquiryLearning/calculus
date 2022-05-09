@@ -147,19 +147,7 @@
     </task>
 </activity>
 
-<definition xml:id="defn-relative-extrema">
-      <statement>
-        <p>
-         We say that <m>f(c)</m> is a <term>relative maximum</term> (or local maximum) of <m>f</m> provided that <m>f(c)\geq f(x)</m> for all <m>x</m> near <m>c</m>. We say that <m>f(c)</m> is a <term>relative minimum</term> (or local minimum) of <m>f</m> provided that <m>f(c)\leq f(x)</m> for all <m>x</m> near <m>c</m>.
-        </p>
-      </statement>
-    </definition>
 
-    <observation>
-<p> 
-A strategy for finding the extreme values of a function will be to consider all the relative maxima and minima and compare them to decide ultimately which ones give the largest and smallest values. But now we have a new problem: how do you find the relative extrema?  We can detect relative extrema by computing the first derivative and finding the critical points (or critical numbers) of the function. By finding the critical points, we will produce a list of candidates for the extrema (local and global) of the function.
-</p></observation>
-    
     <definition><p>
      We say that <m>x</m> is a <term>critical point</term> (or critical number) of <m>f(x)</m> if <m>x</m> is in the domain of <m>f(x)</m> and either <m>f'(x) = 0</m> or <m>f'(x)</m> does not exist.
 </p></definition>
@@ -179,18 +167,7 @@ A strategy for finding the extreme values of a function will be to consider all 
     </statement>
 </activity>
     
-       
-    <activity><introduction><p>We have encountered several terms in this section, so we should make sure that we understand how they are related. Which of the following statements are true?</p></introduction>
-        <ol label="A">
-                <li><p>In a closed interval an endpoint is always a local extrema but it might or might not be a global extrema.</p></li>
-                <li><p>In a closed interval an endpoint is always a global extrema.</p></li>
-            <li><p>A crtical point is always a local extrema but it might or might not be a global extrema.</p></li>
-             <li><p>A local extrema only occurs where the first derivative is equal to zero.</p></li>
-                <li><p>A local extrema always occurs at a critical point. </p></li>
-                <li><p>A local extrema might occur at a critical point or at an endpoint of a closed interval. </p></li>
-            </ol>
-    
-    </activity>  
+
     
 
 <remark><title>The Closed Interval Method</title>
@@ -233,9 +210,62 @@ A strategy for finding the extreme values of a function will be to consider all 
     </statement>
     </activity>
     
-  
+<activity xml:id = "activity-ad-extrema-piecewise">
+   <introduction>
+<p>In this problem you will consider the function <m>g(x)</m>.
+<me> g(x) = \left\{ \begin{array}{ll}
+x^3-3x  &amp; x \lt 0\\
+x^2 -4x +2 &amp; x\geq 0
+\end{array}
+\right.
+               </me>
+</p> </introduction>
+<task><p>What can you say about the point <m>x=0</m>?</p></task>
+    
+<task><p>In addition to <m>x=0</m>, find the other two critical points. What are the critical points oh <m>g(x)</m>?
+    </p>
+    <ol label="A">
+    <li><m>x=0, \, x=1, \, x= 2</m></li>
+        
+    <li><m>x=0, \, x=-1, \, x= 2</m></li>
+        
+    <li><m>x=0, \, x=-1, \, x=-2</m></li>
+        
+    <li><m>x=0, \, x=1, \, x= -2</m></li>
+    </ol>
+    </task>
+    <task><p>Can you use the Closed Interval Method on <m>[-4,-1]</m>? If you can, find the absolute max and min. If you can't, explain why.</p></task>
+        <task><p>Can you use the Closed Interval Method on <m>[1,4]</m>? If you can, find the absolute max and min. If you can't, explain why.</p></task>
+        <task><p>Can you use the Closed Interval Method on <m>[-1,1]</m>? If you can, find the absolute max and min. If you can't, explain why.</p></task>
+    </activity>  
     
     
+<!-- <definition xml:id="defn-relative-extrema">
+      <statement>
+        <p>
+         We say that <m>f(c)</m> is a <term>relative maximum</term> (or local maximum) of <m>f</m> provided that <m>f(c)\geq f(x)</m> for all <m>x</m> near <m>c</m>. We say that <m>f(c)</m> is a <term>relative minimum</term> (or local minimum) of <m>f</m> provided that <m>f(c)\leq f(x)</m> for all <m>x</m> near <m>c</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <observation>
+<p> 
+A strategy for finding the extreme values of a function will be to consider all the relative maxima and minima and compare them to decide ultimately which ones give the largest and smallest values. But now we have a new problem: how do you find the relative extrema?  We can detect relative extrema by computing the first derivative and finding the critical points (or critical numbers) of the function. By finding the critical points, we will produce a list of candidates for the extrema (local and global) of the function.
+</p></observation>
+      
+           
+    <activity><introduction><p>We have encountered several terms in this section, so we should make sure that we understand how they are related. Which of the following statements are true?</p></introduction>
+        <ol label="A">
+                <li><p>In a closed interval an endpoint is always a local extrema but it might or might not be a global extrema.</p></li>
+                <li><p>In a closed interval an endpoint is always a global extrema.</p></li>
+            <li><p>A crtical point is always a local extrema but it might or might not be a global extrema.</p></li>
+             <li><p>A local extrema only occurs where the first derivative is equal to zero.</p></li>
+                <li><p>A local extrema always occurs at a critical point. </p></li>
+                <li><p>A local extrema might occur at a critical point or at an endpoint of a closed interval. </p></li>
+            </ol>
+    
+    </activity>  
+     -->
     
     
     
