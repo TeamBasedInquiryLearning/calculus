@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-03-04T23:01:44Z       *-->
+<!--*       on 2022-05-09T02:08:26Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -21,7 +21,6 @@
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
-    useLabelIds: true,
     tagSide: "right",
     tagIndent: ".8em",
     packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
@@ -142,7 +141,7 @@
 <span class="type">Section</span> <span class="codenumber">4.2</span> <span class="title">Approximating definite integrals (IN2)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-29"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-948"><p id="p-1445">Approximate definite integrals using Riemann sums.</p></li></ul></article><article class="activity project-like" id="KNr"><h3 class="heading">
+<ul class="disc"><li id="li-948"><p id="p-1443">Approximate definite integrals using Riemann sums.</p></li></ul></article><article class="activity project-like" id="KNr"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.2.1</span><span class="period">.</span>
 </h3>
 <p id="eGi">Suppose that a person is taking a walk along a long straight path and walks at a constant rate of 3 miles per hour.</p>
@@ -162,20 +161,20 @@
 <p id="hdC">In <a href="" class="xref" data-knowl="./knowl/integration-riemann-1.html" title="Activity 4.2.1">Activity 4.2.1</a>, we learned that when the velocity of a moving object's velocity is constant (and positive), the area under the velocity curve over an interval of time tells us the distance the object traveled.</p>
 <figure class="figure figure-like" id="ybN"><div class="image-box" style="width: 74%; margin-left: 13%; margin-right: 13%;"><img src="external/4_1_VelArea.svg" role="img" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">64<span class="period">.</span></span><span class="space"> </span>At left, a constant velocity function; at right, a non-constant velocity function.</figcaption></figure><p id="NkL">The left-hand graph of <a href="" class="xref" data-knowl="./knowl/F-4-1-VelArea.html" title="Figure 64">Figure 64</a> shows the velocity of an object moving at 2 miles per hour over the time interval <span class="process-math">\([1,1.5]\text{.}\)</span> The area <span class="process-math">\(A_1\)</span> of the shaded region under <span class="process-math">\(y = v(t)\)</span> on <span class="process-math">\([1,1.5]\)</span> is</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/F-4-1-VelArea.html">
 \begin{equation*}
 A_1= 2 \, \frac{\text{miles} }{\text{hour} } \cdot \frac{1}{2} \, \text{hours}  = 1 \, \text{mile}\text{.}
 \end{equation*}
 </div>
 <p id="trU">This result is simply the fact that distance equals rate times time, provided the rate is constant. Thus, if <span class="process-math">\(v(t)\)</span> is constant on the interval <span class="process-math">\([a,b]\text{,}\)</span> the distance traveled on <span class="process-math">\([a,b]\)</span> is equal to the area <span class="process-math">\(A\)</span> given by</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 A = v(a) (b-a) = v(a) \Delta t\text{,}
 \end{equation*}
 </div>
 <p class="continuation">where <span class="process-math">\(\Delta t\)</span> is the change in <span class="process-math">\(t\)</span> over the interval. (Since the velocity is constant, we can use any value of <span class="process-math">\(v(t)\)</span> on the interval <span class="process-math">\([a,b]\text{,}\)</span> we simply chose <span class="process-math">\(v(a)\text{,}\)</span> the value at the interval's left endpoint.) For several examples where the velocity function is piecewise constant, see <a class="external" href="http://gvsu.edu/s/9T" target="_blank">http://gvsu.edu/s/9T</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-41" id="fn-41"><sup> 1 </sup></a>.<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-42" id="fn-42"><sup> 2 </sup></a></p>
 <p id="Zzd">The situation is more complicated when the velocity function is not constant. But on relatively small intervals where <span class="process-math">\(v(t)\)</span> does not vary much, we can use the area principle to estimate the distance traveled. The graph at right in <a href="" class="xref" data-knowl="./knowl/F-4-1-VelArea.html" title="Figure 64">Figure 64</a> shows a non-constant velocity function. On the interval <span class="process-math">\([1,1.5]\text{,}\)</span> the velocity varies from <span class="process-math">\(v(1) = 2.5\)</span> down to <span class="process-math">\(v(1.5) \approx 2.1\text{.}\)</span> One estimate for the distance traveled is the area of the pictured rectangle,</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/F-4-1-VelArea.html">
 \begin{equation*}
 A_2 = v(1) \Delta t = 2.5 \, \frac{\text{miles} }{\text{hour} } \cdot \frac{1}{2} \, \text{hours}  = 1.25 \, \text{miles}\text{.}
 \end{equation*}
@@ -249,7 +248,7 @@ A_2 = v(1) \Delta t = 2.5 \, \frac{\text{miles} }{\text{hour} } \cdot \frac{1}{2
 <a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-Zfn" id="Zfn"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-Zfn"><div class="answer solution-like"><ol id="eza" class="lower-alpha">
 <li id="HbJ">
 <div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel top" style="width:100%;"><img src="external/4_1_Act1Soln.svg" role="img" class="contained"></div></div></div>
-<div class="displaymath process-math" id="Bmx">
+<div class="displaymath process-math" data-contains-math-knowls="" id="jiT">
 \begin{align*}
 A =\mathstrut \amp  v(0.0) \cdot 0.5 + v(0.5) \cdot 0.5 + v(1.0) \cdot 0.5 + v(1.5) \cdot 0.5\\
 =\mathstrut \amp  1.500 \cdot 0.5 + 1.9375 \cdot 0.5 +  2.000 \cdot 0.5 + 2.0625 \cdot 0.5\\
@@ -265,7 +264,7 @@ A =\mathstrut \amp  v(0.0) \cdot 0.5 + v(0.5) \cdot 0.5 + v(1.0) \cdot 0.5 + v(1
 <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-sYe" id="sYe"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-sYe"><div class="solution solution-like"><ol id="yrR" class="lower-alpha">
 <li id="fEt">
 <p id="ZPh">Using rectangles of width <span class="process-math">\(\Delta t = 0.5\)</span> and choosing to set the heights of the rectangles from the function value at the left end of the interval, we see the following graph and find the sum of the areas of the rectangles to be</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="" id="Pqc">
 \begin{align*}
 A =\mathstrut \amp  v(0.0) \cdot 0.5 + v(0.5) \cdot 0.5 + v(1.0) \cdot 0.5 + v(1.5) \cdot 0.5\\
 =\mathstrut \amp  1.500 \cdot 0.5 + 1.9375 \cdot 0.5 +  2.000 \cdot 0.5 + 2.0625 \cdot 0.5\\
@@ -278,7 +277,7 @@ A =\mathstrut \amp  v(0.0) \cdot 0.5 + v(0.5) \cdot 0.5 + v(1.0) \cdot 0.5 + v(1
 <li id="LLC"><p id="FWq">It appears that a better approximation could be found using narrower rectangles. If we move to 8 rectangles of width <span class="process-math">\(0.25\text{,}\)</span> similar computations show that <span class="process-math">\(D \approx 3.875\text{.}\)</span></p></li>
 <li id="rSL">
 <p id="mdz">By thinking about how the power rule for differentiation works, we can undo this rule and find a position function <span class="process-math">\(s\)</span> whose derivative is <span class="process-math">\(v\text{.}\)</span> For instance, since <span class="process-math">\(\frac{d}{dt}[t^4] = 4t^3\text{,}\)</span> we see that <span class="process-math">\(\frac{d}{dt}[\frac{1}{8}t^4] = \frac{1}{2}t^3\text{.}\)</span> Thus, if we let</p>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 s(t) = \frac{1}{8}t^4 - \frac{1}{2} t^3 + \frac{3}{4} t^2 + \frac{3}{2}t\text{,}
 \end{equation*}
