@@ -10,10 +10,9 @@
     </ul>
   </objectives>
 
-    <p>In <xref ref="AD5"/> and <xref ref="AD6"/> we learned how the first and second derivatives give us information about the graph of a function. Specifically, we can determine the intervals where a function is increasing, decreasing, concave up, or concave down as well as any relative extrema or inflection points. Now we will put that information together to draw a sketch of the graph.
-        </p>
-    
- <activity xml:id="activity-graphing-words">
+    <remark><statement><p>In <xref ref="AD5"/> and <xref ref="AD6"/> we learned how the first and second derivatives give us information about the graph of a function. Specifically, we can determine the intervals where a function is increasing, decreasing, concave up, or concave down as well as any relative extrema or inflection points. Now we will put that information together to draw a sketch of the graph.</p></statement></remark>
+   
+    <activity xml:id="activity-graphing-words">
       <introduction>
       <p>
        Which of the following best describes the curve graphed below?  </p>
@@ -77,7 +76,7 @@
         
           
            <p>
-              <m>y = f(x)</m> such that <m>f</m> is increasing on <m>-3 \lt x \lt 3</m>,
+              One function <m>f(x)</m> such that <m>f</m> is increasing on <m>-3 \lt x \lt 3</m>,
               concave up on <m>-3 \lt x \lt 0</m>,
               and concave down on <m>0 \lt x \lt 3</m>.
             </p>
@@ -85,24 +84,20 @@
 
           
            <task> <p>
-              <m>y = g(x)</m> such that <m>g</m> is increasing on <m>-3 \lt x \lt 3</m>,
+               One function <m>g(x)</m> such that <m>g</m> is increasing on <m>-3 \lt x \lt 3</m>,
               concave down on <m>-3 \lt x \lt 0</m>,
               and concave up on <m>0 \lt x \lt 3</m>.
             </p>
           </task>
-
-     
            <task> <p>
-              <m>y = h(x)</m> such that <m>h</m> is decreasing on <m>-3 \lt x \lt 3</m>,
+              One function <m>h(x)</m> such that <m>h</m> is decreasing on <m>-3 \lt x \lt 3</m>,
               concave up on <m>-3 \lt x \lt -1</m>,
               neither concave up nor concave down on <m>-1 \lt x \lt 1</m>,
               and concave down on <m>1 \lt x \lt 3</m>.
             </p>
-          </task>
-
-          
+        </task>
             <task><p>
-              <m>y = p(x)</m> such that <m>p</m> is decreasing and concave down on
+              One function <m>p(x)</m> such that <m>p</m> is decreasing and concave down on
               <m>-3 \lt x \lt 0</m> and is increasing and concave down on <m>0 \lt x \lt 3</m>.
                 </p></task>
           
@@ -110,8 +105,10 @@
      
     </activity>
     
-   <p>We must also be mindful of other characteristics of a function, such as the domain and the existence (or non-existence) of horizontal and vertical asymptotes. <xref ref="activity-graphing-checkit"/> includes those aspects in addition to increasing, decreasing, and concavity.
-    </p> 
+    <observation><statement>
+        <p>For an accurate sketch, we must keep in mind other characteristics of a function, such as the domain and  horizontal and vertical asymptotes (when they exist). The next problem <xref ref="activity-graphing-checkit"/> includes those aspects in addition to increasing, decreasing, and concavity.
+    </p></statement></observation>
+    
     
     <activity xml:id="activity-graphing-checkit">
     <introduction>
@@ -177,13 +174,14 @@ f''(x) &amp;
         <p>
 Assume that <m>f(x)</m> has vertical asymptotes at each
 <m>x</m>-value where <m>f(x)</m> does not exist, that
-<m>\lim_{x\to-\infty}f(x)= 1</m>, and that
-<m>\lim_{x\to\infty}f(x)= -1</m>.
+<m>\displaystyle \lim_{x\to-\infty}f(x)= 1</m>, and that
+<m>\displaystyle \lim_{x\to\infty}f(x)= -1</m>.
         </p></introduction>
         
         <task><p>
-Use this information to sketch a reasonable graph of <m>f(x)</m>.
+List all the asymptotes of <m>f(x)</m> and mark them on the graph.
         </p></task>
+ 
                 <task><p>
 Does <m>f(x)</m> have any relative maxima or relative minima? If so, at what point(s)?
         </p></task>
@@ -191,15 +189,19 @@ Does <m>f(x)</m> have any relative maxima or relative minima? If so, at what poi
 Does <m>f(x)</m> have any inflection points? If so, at what point(s)?
         </p></task>
  
+        
+        <task><p>
+Use the information provided to sketch a reasonable graph of <m>f(x)</m>. Watch changes in behavior due to changes in the sign of each derivative.
+     </p></task>       
 
 
     
     
     </activity>
     
-    
+<!--     
 <p>Now we will practice sketching the graph of a function from start to finish. We'll begin with an overview of the process.</p>
-    
+     -->
     <remark xml:id="guide-curve-sketching"> <title>A guide to curve sketching</title>  
     <p>
     <ol>   

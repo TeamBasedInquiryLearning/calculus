@@ -65,10 +65,10 @@ A strategy for finding the extreme values of a function on open intervals will b
       <statement>
           <p>How would you describe the derivative of the function on each interval?</p>
           <ol label="A">
-              <li><p><m>f'(x) &lt; 0</m> on the interval <m>(-2,3)</m> and on the interval <m>(3,5)</m>, <m>f'(x) &gt; 0</m> for <m>x \lt -2</m>.</p></li>
-              <li><p> <m>f'(x) &gt; 0</m> on <m>(-2,3)</m>, <m>f'(x) &lt; 0</m> for <m>x \lt -2</m>, and <m>f'(x)</m> is undefined on the interval <m>(3,5)</m>.</p></li>
-              <li><p><m>f'(x) &gt; 0</m> on <m>(-2,3)</m>, <m>f'(x) &lt; 0</m> for <m>x \lt -2</m>,  and <m>f'(x) = 0</m> on the interval <m>(3,5)</m>. </p></li>
-              <li><p><m>f'(x) &gt; 0</m> on <m>(-2,3)</m>, <m>f'(x) &lt; 0</m> for <m>x \lt -2</m>,  and <m>f'(x)</m> is constant on the interval <m>(3,5)</m>.</p></li>
+              <li><p>For <m>x &lt; -2</m> we have <m>f'(x) &lt; 0</m>, then <m>f'(x) &lt; 0</m> on the interval <m>(-2,3)</m>, and on the interval <m>(3,5)</m> we have <m>f'(x) &gt; 0</m>.</p></li>
+               <li><p>For <m>x &lt; -2</m> we have <m>f'(x) &gt; 0</m>, then <m>f'(x) &lt; 0</m> on the interval <m>(-2,3)</m>, and on the interval <m>(3,5)</m> we have <m>f'(x) </m> is undefined.</p></li>
+               <li><p>For <m>x &lt; -2</m> we have <m>f'(x) &gt; 0</m>, then <m>f'(x) &lt; 0</m> on the interval <m>(-2,3)</m>, and on the interval <m>(3,5)</m> we have <m>f'(x)=0 </m>.</p></li>
+               <li><p>For <m>x &lt; -2</m> we have <m>f'(x) &lt; 0</m>, then <m>f'(x) &lt; 0</m> on the interval <m>(-2,3)</m>, and on the interval <m>(3,5)</m> we have <m>f'(x) </m> is constant.</p></li>
             </ol>
           </statement>
       </task>
@@ -88,6 +88,10 @@ A strategy for finding the extreme values of a function on open intervals will b
             </ol>
   </activity>
     
+    
+    <observation xml:id="obs-breakpoints">
+<p> Critical points detect changes in the behavior of a function. We will use critical points as "break points" in studying the behavior of a function and its derivatives. We then need to understand what happens at these critical points. We do so using the Derivative Tests.</p></observation>
+      
     <theorem xml:id="first-derivative-test"> <title>The First Derivative Test</title>  
       <introduction>
       <p>
@@ -96,13 +100,14 @@ A strategy for finding the extreme values of a function on open intervals will b
       </introduction>
     <p>
     <ol>   
-    <li>If <m>f'(x) &gt; 0</m> to the left of <m>c</m> and <m>f'(x) &lt; 0</m> to the right of <m>c</m>, then a <b>relative maximum</b> occurs when <m>x=c</m>. </li>
-    <li>If <m>f'(x) &lt; 0</m> to the left of <m>c</m> and <m>f'(x) &gt; 0 </m> to the right of <m>c</m>, then a <b>relative minimum </b> occurs when <m>x=c</m>.</li>
-    <li>If <m>f'(x)</m> is the same sign on both sides of <m>x=c</m>, then neither a relative maximum nor a relative minimum occur when <m>x=c</m>.</li>
+    <li>If <m>f'(x) &gt; 0</m> before <m>x=c</m> and <m>f'(x) &lt; 0</m> after <m>x=c</m>, then a <b>local maximum</b> occurs at <m>x=c</m>. </li>
+        
+    <li>If <m>f'(x) &lt; 0</m> before <m>x=c</m> and <m>f'(x) &gt; 0</m> after <m>x=c</m>, then a <b>local minimum</b> occurs at <m>x=c</m>. </li>
+    <li>If <m>f'(x)</m> is the same sign on both sides of <m>x=c</m>, then neither a local maximum nor a local minimum occur when <m>x=c</m>.</li>
      </ol> </p>
     </theorem>
 
-    <activity xml:id="activity-derivitative-derivativetests4">
+    <activity xml:id="activity-using-FDT">
         <introduction>
             <p> Let <m>f(x)=x^4-4x^3+4x^2</m></p>
         </introduction>
@@ -142,11 +147,15 @@ A strategy for finding the extreme values of a function on open intervals will b
         <activity xml:id="activity-derivative-tests-checkit">
     <statement>
         <p> Consider the function <m>f(x)=-x^{3} + 3 \, x + 4</m>.</p>
+        
             <task> <p>Find the open intervals where <m>f(x)</m> is increasing or decreasing.
             </p></task>
+        
     <task> <p>Find the local extrema of <m>f(x)</m>.
         </p></task>
-        </statement>
+        
+            </statement>
+            
             <answer><p>The function decreases on <m>(-\infty,-1)</m>,
 increases on <m>(-1,1)</m>, and decreases on
 <m>.(1,\infty)</m>. The point <m>(x,y)=(-1,2)</m> is a relative minimum,
@@ -160,19 +169,20 @@ and the point <m>(x,y)=(1,6)</m> is a relative maximum.</p></answer>
         </introduction>
     </remark>
       <activity xml:id="activity-derivative-derviativetest-disc">
-     <p> Draw a function that is increasing on the left of <m>x=1</m>, discontinuous at <m>x=1, </m><m>f(1)=\lim_{x \to 1^+}f(x)</m>, and decreasing to the right of <m>x=1</m>. Does the derivative of <m>f(x)</m> exist at <m>x=1</m>?  Does your graph have a local maximum or minimum at <m>x=1</m>?</p>
+     <p> Draw a function that is increasing on the left of <m>x=1</m>, discontinuous at <m>x=1, </m><m>f(1)=\displaystyle \lim_{x \to 1^+}f(x)</m>, and decreasing to the right of <m>x=1</m>. Does the derivative of <m>f(x)</m> exist at <m>x=1</m>?  Does your graph have a local maximum or minimum at <m>x=1</m>?</p>
   </activity>
     
     <activity xml:id="activity-derivative-derviativetest5">
         <introduction>
             <p>Let <m>f(x)=\frac{x}{(x-2)^2}</m>.</p>
-            <p>Note that <m>f(x)</m> is not defined for <m>x=2</m>. So <m>x=2</m> cannot be a critical point and thus cannot be the location of a relative extrema. However, the function may be increasing on one side of <m>x=2</m> and decreasing on the other, so we must still include it on our number line.</p>
+    
         </introduction>
+    <task>        <p>Note that <m>f(x)</m> is not defined for <m>x=2</m>. But the function may be increasing on one side of <m>x=2</m> and decreasing on the other! So we include <m>x=2</m> on your number line.</p></task>
         <task>
             <p> Find all critical points of <m>f(x)</m>. Plot them and any discontinuities for <m>f(x)</m> on the same number line.</p>
         </task>
         <task>
-            <p> What intervals have been created by subdividing the number line at the critical points and discontinuities?</p>
+            <p> What intervals have been created by subdividing the number line at the critical points and at the discontinuities?</p>
         </task>
         <task>
             <p> Pick an <m>x</m>-value that lies in each interval. Determine whether <m>f'(x)</m> is positive or negative each point.</p>
