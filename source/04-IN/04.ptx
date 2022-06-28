@@ -73,7 +73,7 @@
 
 <activity xml:id="activity-in-ivp-4">
     <statement>
-    <p>One of the applications of initial value problems is calculating the distance traveled from a point based on the velocity of the object.  Given that the velocity of the of an object is approximated by <m>v(t) = \cos(t) + 1</m> km/hr, what is the approximate distance travelled by the object after 1 hour?</p>
+    <p>One of the applications of initial value problems is calculating the distance traveled from a point based on the velocity of the object.  Given that the velocity of the of an object in km/hr is approximated by <m>v(t) = \cos(t) + 1</m>, what is the approximate distance travelled by the object after 1 hour?</p>
         <ol label="A">
         <li><p>  <m>s(1) \approx 1</m> km </p></li>
         <li><p>  <m>s(1) \approx 0.1585</m> km </p></li> 
@@ -85,7 +85,7 @@
 
   <activity xml:id="activity-in-ivp-5">
     <statement>
-        <p>So far we have only been going from velocity to position of an object.  Recall that to find the acceleration of an object, you can take the derivative of the velocity of an object.  Let use say we have the acceleration of a falling object given by <m>a(t) = -9.8</m> m/s<m>^2</m>.</p>
+        <p>So far we have only been going from velocity to position of an object.  Recall that to find the acceleration of an object, you can take the derivative of the velocity of an object.  Let use say we have the acceleration of a falling object in m/s<m>^2</m> given by <m>a(t) = -9.8</m>.</p>
           <task>
           <p>What is the velocity of the falling object, if the initial velocity is given by <m>v(0) = 0</m> m/s.</p>
         <ol label="A">
@@ -96,7 +96,7 @@
     </ol>
           </task>
         <task>
-          <p>What is the function for the position of the object, if the initial position is given by <m>s(0) = 10</m> m.</p>
+          <p>What is the position of the object, if the initial position is given by <m>s(0) = 10</m> m.</p>
         <ol label="A">
         <li><p>  <m>s(t) = 4.9t + 10</m> m </p></li>
         <li><p>  <m>s(t) = -4.9t^2 + 14.9</m> m </p></li> 
@@ -108,5 +108,19 @@
       </statement>
     </activity>  
 
+<activity xml:id="ivp-fluency-checkit">
+       <statement>
+        <p>
+           Let <m> f'(x)=-12 \, x - 6 </m>. Find <m>f(x)</m> such that <m>f(5)=-179</m>. 
+        </p>
+    </statement>
+
+    <answer>
+        <p>
+            <me>-6 \, x^{2} - 6 \, x + 1</me>
+        </p>
+    </answer>
+    </activity>    
+    
 </section>
 

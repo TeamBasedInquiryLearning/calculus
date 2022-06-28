@@ -231,11 +231,26 @@
     </remark>
 
     <activity xml:id="chain-rule-fluency">
-        <introduction><p>Use the chain rule and all the rest of the rules you know to find the derivatives of the following functions.</p></introduction>
-        <task><p><me>f(x)= -2 \, \sin\left(x^{\frac{7}{4}}\right)</me></p></task>
-        <task><p><me>h(y)= 7 \, e^{\left( -4 \, y^{3} - 2 \, y - 2\right)}</me></p></task>
-        <task><p><me>k(t)= {\left(4 \, t - 6 \, 2^{t} - 2\right)}^{4}</me></p></task>
-        <task><p><me>g(w)= -3 \, \sin\left(w\right)^{\frac{3}{11}}</me></p></task>
+    <statement>
+        <p>
+            Demonstrate and explain how to find the derivative of the following functions.
+            Be sure to explicitly denote which derivative rules (product, quotient, sum and difference, etc.) you are using in your work.
+        </p>
+        <ol>
+            <li><me>f(x)= -{\left(4 \, x - 3 \, e^{x} + 4\right)}^{3}</me></li>
+            <li><me>k(w)= 9 \, \cos\left(w^{\frac{7}{5}}\right)</me></li>
+            <li><me>h(y)= -3 \, \sin\left(-5 \, y^{2} + 2 \, y - 5\right)</me></li>
+            <li><me>g(t)= 9 \, \cos\left(t\right)^{\frac{7}{5}}</me></li>
+        </ol>
+    </statement>
+    <answer>
+        <ol>
+            <li><me>f' (x)= 3 \, {\left(4 \, x - 3 \, e^{x} + 4\right)}^{2} {\left(3 \, e^{x} - 4\right)}</me></li>
+            <li><me>k' (w)= -\frac{63}{5} \, w^{\frac{2}{5}} \sin\left(w^{\frac{7}{5}}\right)</me></li>
+            <li><me>h' (y)= 6 \, {\left(5 \, y - 1\right)} \cos\left(-5 \, y^{2} + 2 \, y - 5\right)</me></li>
+            <li><me>g' (t)= -\frac{63}{5} \, \cos\left(t\right)^{\frac{2}{5}} \sin\left(t\right)</me></li>
+        </ol>
+    </answer>
     </activity>
 
  <activity xml:id="chain-for-quotient-rule"> 

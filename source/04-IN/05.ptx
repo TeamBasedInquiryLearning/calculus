@@ -22,7 +22,7 @@
     
 <activity xml:id="activity-in5-2">
     <introduction>
-        <p>Approximate the area under the curve  <m>f(x)=(x-1)^2+2</m>m> on the interval <m>[1,5]</m>m> using a <b>left</b> Riemann sum with four uniform subdivisions. Draw your rectangles on the graph.</p>
+        <p>Approximate the area under the curve  <m>f(x)=(x-1)^2+2</m> on the interval <m>[1,5]</m> using a <b>left</b> Riemann sum with four uniform subdivisions. Draw your rectangles on the graph.</p>
     </introduction>
     <figure xml:id="in5-figure-2">
           <image width="50%" source="riemann1.png" />
@@ -158,6 +158,51 @@
        </figure>
         </task>
     </activity>
+    
+<activity xml:id="def_int-fluency-checkit">
+     <statement>
+        <p>
+Explain how to compute the exact value of each of the following
+definite integrals using the Fundamental Theorem of Calculus.
+Leave all answers in exact form, with no decimal approximations.
+        </p>
+        <ol>
+                <li>
+                    <p>
+                        <me>
+\int_{ -3 }^{ -2 } \left( -9 \, x^{3} - 9 \, x^{2} + 1 \right) dx
+                        </me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <me>
+\int_{ \frac{7}{6} \, \pi }^{ \frac{5}{4} \, \pi } \left( -3 \, \sin\left(x\right) \right) dx
+                        </me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <me>
+\int_{ 2 }^{ 6 } \left( 3 \, e^{x} \right) dx
+                        </me>
+                    </p>
+                </li>
+        </ol>
+    </statement>
+    <answer>
+        <p>
+           <ol>
+                <li><p><me>\frac{361}{4}</me></p></li>
+                <li><p><me>\frac{3}{2} \, \sqrt{3} - \frac{3}{2} \, \sqrt{2}</me></p></li>
+                <li><p><me>3 \, e^{6} - 3 \, e^{2}</me></p></li>
+            </ol>
+        </p>
+    </answer>
+    </activity>    
+    
+    
+    
 </subsection>
 <!--  
 

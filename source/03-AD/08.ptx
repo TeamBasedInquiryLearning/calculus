@@ -251,6 +251,40 @@ profit? (Recall that Profit = Revenue - Cost).</p>
         </task>
 
     </activity>
+
+    <activity xml:id="optimization-fluency-checkit">
+    <statement>
+
+
+
+
+            <p>
+Suppose that if a widget is priced at <m>\$176</m>, then
+you are able to sell <m>672</m> units each day. According to
+a survey of customers, increasing this price by <m>\$1</m> will result
+in losing <m>4</m> daily sales, and vice versa.
+Your manager asks you how to adjust the price of a widget to
+maximize the revenue (widgets sold times price). Write an explanation
+of what this change in price should be and why.
+            </p>
+
+
+    </statement>
+    <answer>
+
+
+
+            <p>
+
+Decrease the cost by <m>\$4</m>.
+
+            </p>
+
+
+    </answer>
+
+
     
+    </activity>
 
 </section>

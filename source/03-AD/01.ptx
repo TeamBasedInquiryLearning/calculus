@@ -73,8 +73,59 @@ Notice that this is the linear function with slope <m>f'(a)</m> and passing thro
     <task><p>When is the particle's velocity increasing?</p></task>
     <task><p>Find the total distance that the particle travels in the time interval <m>0 \leq t \leq 5</m>. Careful: the total distance is not the same as the displacement (the change in position)! Compute how much the particle moves up and add it to how much the particle moves down. </p></task>
      </activity>   
-     
-     
+
+    <activity xml:id="motion-fluency-checkit">
+    <statement>
+       <p>
+Suppose the position of an object in miles
+is modeled by the following function:
+<me>s(t)=-t^{3} - 3 \, t^{2} - 5 \, t + 8.</me>
+        </p>
+        <p>
+Explain and demonstrate how to find the object's position,
+<!--             displacement, -->
+velocity, 
+<!--             speed,  -->
+            and acceleration at <m>2</m>
+seconds. Use appropriate units for each.
+                </p>
+            
+    </statement>
+    <answer>
+        <ol>
+           
+           
+            <li>
+                <p>
+Position: <m>-22</m> miles
+                </p>
+            </li>
+<!--             <li>
+                <p>
+Displacement: <m>-30</m> miles
+                </p>
+            </li> -->
+            <li>
+                <p>
+Velocity: <m>-29</m> miles per second
+                </p>
+            </li>
+<!--             <li>
+                <p>
+Speed: <m>29</m> miles per second
+                </p>
+            </li> -->
+            <li>
+                <p>
+Acceleration: <m>-18</m> miles per <m>s^2</m>
+                </p>
+            </li>
+        </ol>
+    </answer>
+
+    </activity>
+    
+    
     <observation><p>In some cases, we want to also consider the speed of a particle, which is the absolute value of the velocity. In symbols <m>|v(t)|= |f'(t)|</m> is the speed of the particle. A particle is speeding up when the speed is increasing. </p></observation>
     
       <activity xml:id = "speed">
@@ -161,6 +212,34 @@ be <m>C</m> dollars, where
     <task>  <p> What is the sign of the quantity above? What do you think would happen to the revenue if the price was changed from $140 to $141? 
             </p></task>
     </activity>
+
+<activity xml:id="cost-fluency-checkit">
+    <statement>
+                <p>
+A gizmo is sold for <m>\$63</m> per item. Suppose that the number of items produced is equal to the number of items sold and that
+the cost (in dollars) of producing <m>x</m> gizmos is given by the
+following function:
+<me>C(x)=4 \, x^{3} + 10 \, x^{2} + 7 \, x + 4.</me>
+                </p>
+                <p>
+ 
+Explain and demonstrate how to find the marginal revenue, the marginal cost, and the marginal profit
+in this situation.
+                </p>
+        
+    </statement>
+    <answer>
+       
+                <p>
+The marginal cost is <m>12 \, x^{2} + 20 \, x + 7</m>,
+the marginal revenue is <m>63</m>,
+and the marginal profit is <m>-12 \, x^{2} - 20 \, x + 56</m>.
+                </p>
+           
+    </answer>
+  
+</activity>    
+    
     
 <definition>
     <p> A cooling object has temperature modelled by </p>

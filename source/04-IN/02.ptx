@@ -393,6 +393,23 @@
     </p>
   </solution>
 </activity>
+    
+<activity xml:id="riemann-fluency-checkit">
+    <statement>
+        <p>
+Explain how to approximate the area under the curve
+<m>f(x)=-9 \, x^{3} + 3 \, x - 9</m> on the
+interval <m>[4,10]</m> using a right Riemann
+sum with 3 rectangles of uniform width.
+        </p>
+    </statement>
+    <answer>
+        <p>
+            <m>-31014</m> square units
+        </p>
+    </answer>
+
+    </activity>    
   </subsection>
     
         

@@ -119,6 +119,25 @@
             </task>
     </activity>  
 
+<activity xml:id="activity-df2-checkit">
+    <statement>
+        <p>
+            Find <m>f'(x)</m> using the limit definition of the derivative. Then evaluate at <m>x=8</m>.
+        </p>
+        <me>
+            f(x) = x^{2} - 5 \, x - 5
+        </me>
+    </statement>
+    <answer>
+        <me>
+           f'(x) = 2 \, x - 5
+        </me>
+        <me> 
+            f'(8) = 11
+        </me>
+    </answer>
+</activity>    
+    
     <definition xml:id="second-derivative"><p>Once we have computed the first derivative <m>f'(x)</m>, the <strong>second derivative</strong> of <m>f(x)</m> is the first derivative of <m>f'(x)</m> or 
         <me>f''(x) = \lim_{h\to 0} \frac{f'(x+h)-f'(x)}{h}.</me>
         </p> </definition>

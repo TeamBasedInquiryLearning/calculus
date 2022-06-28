@@ -282,5 +282,112 @@
         </introduction>
     </activity>
 
+<activity xml:id="concavity-fluency-checkit">
 
+    <statement>
+        <p>
+For each of the following functions, describe the open intervals
+where it is concave up or concave down, and any inflection points.      
+        </p>
+        <ol>
+                <li>
+                    <p><m>f(x)=-\frac{1}{4} \, x^{5} - \frac{5}{2} \, x^{4} - \frac{15}{2} \, x^{3}</m></p>
+                </li>
+                <li>
+                    <p><m>f(x)=\frac{3}{20} \, x^{5} + x^{4} - \frac{5}{2} \, x^{3}</m></p>
+                </li>
+        </ol>
+    </statement>
+    <answer>
+         <ol>
+                <li>
+                    <p><m>f''(x)=-5 \, {\left(x + 3\right)}^{2} x</m></p>
+                    <ul>
+                                <li>
+                                    <p>
+<m>(-\infty, -3 )</m> is concave <em>down</em>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+<m>-3</m>
+
+is <em>not</em>
+an inflection point
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+<m>( -3 , 0 )</m> is concave <em>down</em>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+<m>0</m>
+<em>is</em>
+
+an inflection point
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+<m>( 0, \infty )</m> is concave <em>up</em>
+                                    </p>
+                                </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><m>f''(x)=3 \, {\left(x + 5\right)} {\left(x - 1\right)} x</m></p>
+                    <ul>
+                                <li>
+                                    <p>
+<m>(-\infty, -5 )</m> is concave <em>down</em>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+<m>-5</m>
+<em>is</em>
+
+an inflection point
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+<m>( -5 , 0 )</m> is concave <em>up</em>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+<m>0</m>
+<em>is</em>
+
+an inflection point
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+<m>( 0 , 1 )</m> is concave <em>down</em>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+<m>1</m>
+<em>is</em>
+
+an inflection point
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+<m>( 1 , \infty )</m> is concave <em>up</em>
+                                    </p>
+                                </li>
+                    </ul>
+                </li>
+        </ol>
+    </answer>
+ </activity>
+    
+    
 </section>

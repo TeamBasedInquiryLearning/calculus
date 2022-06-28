@@ -177,7 +177,57 @@
     <task><p>The finite regions between the curves <m>y = x^3-x</m> and <m>y = x^2</m>.</p></task>
     </activity>
     
-<!--    Horizontal slices to be added later  -->
+<!--    Horizontal slices to be added later, checkit below mentions horizontal  -->
+
+<activity xml:id="area_between_curves-fluency-checkit">
+       <statement>
+        <p>
+Let <m>\mathbf{R}</m> be the finite region bounded by the graphs of
+<m>y={\left(x + 5\right)}^{2} - 1</m> and <m>y=7 \, x + 34</m>.
+        </p>
+
+        <p>
+Sketch an illustration of <m>\mathbf R</m>, and then
+explain how to express the area of <m>\mathbf R</m> in the
+following two ways:
+        </p>
+
+        <ol>
+            <li>
+                <p>
+As a definite integral with respect to <m>x</m>.
+                </p>
+            </li>
+            <li>
+                <p>
+As a definite integral with respect to <m>y</m>.
+                </p>
+            </li>
+        </ol>
+        <p>
+(Do not evaluate either definite integral.)
+        </p>
+    </statement>
+
+    <answer>
+        <ol>
+            <li>
+                <p>
+                    <me>
+\int_{ -5 }^{ 2 } \left(-{\left(x + 5\right)}^{2} + 7 \, x + 35\right)dx
+                    </me>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <me>
+\int_{ -1 }^{ 48 } \left(\frac{1}{7} \, y + \sqrt{y + 1} + \frac{1}{7}\right)dy
+                    </me>
+                </p>
+            </li>
+        </ol>
+    </answer>
+    </activity>    
     
 </section>
 

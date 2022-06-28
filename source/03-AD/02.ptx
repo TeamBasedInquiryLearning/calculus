@@ -206,5 +206,66 @@ graph of <m>y=p(x)</m> near <m>x=7</m>.
     
     <activity> <p>  Find the linear approximation <m>L(x)</m> of <m>\cos(x)</m> at <m>x=0</m>. Then find the quadratic approximation <m>Q(x)</m> of <m>\cos(x)</m> at <m>x=0</m>. Graph both and compare the two approximations! </p>
     </activity>
+    
+<activity xml:id="linear_approx-fluency-checkit">
+    <statement>
+        <p>
+Suppose the function <m>p(x)</m> satisfies
+<m>p(-2) = 5</m>, <m>p'(-2) = 1</m>,
+and <m>p''(x) &lt; 0</m> for <m>x</m>
+values nearby <m>-2</m>.
+            <ol>
+                <li>
+                    <p>
+Explain and demonstrate
+how to find the linearization <m>L(x)</m>
+of <m>p(x)</m> at <m>x =-2</m>.
+                    </p>
+                </li>
+                <li>
+                    <p>
+Explain and demonstrate
+how to estimate the value of <m>p(-2.03)</m> using
+this linearization.
+                    </p>
+                </li>
+                <li>
+                    <p>
+Explain why your estimate of
+<m>p(-2.03)</m>
+is greater than or less than the actual value.
+                    </p>
+                </li>
+                <li>
+                    <p>
+Sketch a possible graph of <m>p(x)</m> and its linearization <m>L(x)</m> nearby <m>x =-2</m>
+to illustrate your findings.
+                    </p>
+                </li>
+            </ol>
+        </p>
+    </statement>
+    <answer>
+        <ol>
+            <li>
+                <p>
+<m>L(x)=x + 7</m>
+                </p>
+            </li>
+            <li>
+                <p>
+<m>p(-2.03) \approx 4.97</m>
+                </p>
+            </li>
+            <li>
+                <p>
+The estimate is greater than the actual value.
+                </p>
+            </li>
+        </ol>
+    </answer>
+
+</activity>    
+    
   
 </section>

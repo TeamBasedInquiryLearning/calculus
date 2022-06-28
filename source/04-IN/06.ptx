@@ -28,8 +28,103 @@
     
     <activity xml:id="activity-in6-1">
         <introduction>
-        <p>For the following </p>
+        <p>For the following activity we will explore the Fundamental Theorem of Calculus Part II.</p>
         </introduction>
+        <task>
+        <p>Given that <m>A(x) = \int_a^xt^3\,dt</m>, then by the Fundamental Theorem of Calculus Part I,</p>
+        <ol label="A">
+              <li><p><m>A(x) = x^3-a^3</m></p></li>
+                <li><p><m>A(x) = a^4 - x^4</m></p></li>
+                <li><p><m>A(x) = \frac{1}{4}(x^4 - a^4)</m></p></li>
+                <li><p><m>A(x) = 3x^2</m></p></li>
+            </ol>
+        </task>
+        <task>
+        <p>Using what you found for <m>A(x)</m>, what is <m>A'(x)</m></p>
+        <ol label="A">
+              <li><p><m>A'(x) = 3x^2</m></p></li>
+                <li><p><m>A'(x) = 4a^3 - 4x^3</m></p></li>
+                <li><p><m>A'(x) = x^3</m></p></li>
+                <li><p><m>A'(x) = 6x</m></p></li>
+            </ol>
+        </task>
+        <task>
+        <p>Use the Fundamental Theorem of Calculus Part II to find <m>A'(x)</m>.  What do you notice between what you got above and using FTC Part II?  Which method do you prefer?</p>
+        <ol label="A">
+              <li><p><m>A'(x) = 3x^2</m></p></li>
+                <li><p><m>A(x) = 4a^3 - 4x^3</m></p></li>
+                <li><p><m>A(x) = x^3</m></p></li>
+                <li><p><m>A(x) = 6x</m></p></li>
+            </ol>
+        </task>
     </activity>
-
+    
+<activity xml:id="activity-in6-2">
+        <introduction>
+        <p>Next we want to extend the Fundamental Theorem of Calculus Part II.  What is the derivative of the following function? Explain the process you used.</p>
+        </introduction>
+        <task>
+            <p>Given <m>A(x) = \int_x^be^t\,dt</m>, what is <m>A'(x)</m>?</p>
+        <ol label="A">
+              <li><p><m>A'(x) = -e^x</m></p></li>
+                <li><p><m>A'(x) = e^x</m></p></li>
+                <li><p><m>A'(x) = e^b-e^x</m></p></li>
+                <li><p><m>A'(x) = e^x-e^b</m></p></li>
+            </ol>
+        </task>
+       
+    </activity>
+    <introduction>
+    <p>For the first two activities we have only explored when the function of the limits of the integrand are <m>x</m>.  Now we want to see what happens when the limits are more complicated.  To do this we will follow a similar procedure as that done in activity 1.</p>
+    </introduction>
+    <activity xml:id="activity-in6-3">
+        <introduction>
+        <p>Recall that by the Fundamental Theorem of Calculus Part I, <m>\int_a^bf(t)\,dt = F(b)-F(a)</m>.</p>
+        </introduction>
+        <task>
+            <p>Let <m>A(x) = \int_x^{x^2}f(t)\,dt</m> and re-write using FTC Part I.</p>
+        </task>
+        <task>
+            <p>Using what you got find <m>A'(x)</m>.  Explain what derivative rule(s) you used.</p>
+        </task>
+       <task>
+        <p>Using what you found what is the derivative of <m>A(x) = \int_x^{x^2}(t+2)\,dt</m>?</p>
+           <ol label="A">
+              <li><p><m>A'(x) = 2x(x+2)-(x+2)</m></p></li>
+                <li><p><m>A'(x) = (x+2)-2x(x^2+2)</m></p></li>
+                <li><p><m>A'(x) = (x^2+2)-(x+2)</m></p></li>
+                <li><p><m>A'(x) = 2x(x^2+2)-(x+2)</m></p></li>
+            </ol>
+        </task>
+    </activity>
+    <introduction>
+    <p>
+      Now we have some thoughts of how to generalize the FTC Part II when the limts are more complicated.
+    </p>
+    </introduction>
+  
+    <theorem xml:id="theorem-in6-2"><title>The Fundamental Theorem of Calculus (Part II): Modified </title>
+    <introduction>
+        <p>If
+        <me>A(x) = \int_{g(x)}^{h(x)} f(t)\,dt</me>
+            then 
+            <me>A'(x) = \frac{d}{dx}\int_{g(x)}^{h(x)} f(t)\,dt = f(h(x))h'(x) - f(g(x))g'(x),</me>
+            where <m>g(x)</m> and <m>h(x)</m> are continous differentiable functions.
+        </p>
+    </introduction>
+</theorem>
+    
+<activity xml:id="activity-in6-3">
+        
+        <task>
+            <p>Given <m>A(x) = \int_{x^3}^{x^5}(\sin(t) - 2)\,dt</m>, what is <m>A'(x)</m>?</p>
+        <ol label="A">
+              <li><p><m>A'(x) = -e^x</m></p></li>
+                <li><p><m>A'(x) = e^x</m></p></li>
+                <li><p><m>A'(x) = e^b-e^x</m></p></li>
+                <li><p><m>A'(x) = e^x-e^b</m></p></li>
+            </ol>
+        </task>
+       
+    </activity>
 </section>

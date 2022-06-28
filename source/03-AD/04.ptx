@@ -209,6 +209,35 @@
             </ol>
     </statement>
     </activity>
+
+<activity xml:id="absolute_extrema-fluency-checkit">
+    <statement>
+        <p> 
+Explain how to find the absolute minimum and absolute maximum values of the
+function <m>f(x)=-2 \, x^{3} + 18 \, x^{2} + 42 \, x + 33</m> on the interval <m>[-2,2]</m>.
+        </p>
+    </statement>
+    <answer>
+        <p>
+The absolute extrema may occur at these <m>x</m>-values:
+<m>-2, -1, 2</m>.
+        </p>
+        <ul>
+            <li><p><m>f(-2)=37</m></p></li>
+            <li><p><m>f(-1)=11</m></p></li>
+            <li><p><m>f(2)=173</m></p></li>
+        </ul>
+        <p>
+Thus the absolute minimum is <m>11</m> and the absolute
+maximum is <m>173</m>.
+        </p>
+        <p>
+(The value <m>f(7)=523</m>
+is ignored as <m>7</m> isn't in the given interval.)
+        </p>
+    </answer>
+    </activity>
+    
     
 <activity xml:id = "activity-ad-extrema-piecewise">
    <introduction>
