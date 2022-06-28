@@ -6,6 +6,12 @@
 -->
 <project>
   <targets>
+    <target name="all"><!-- temp hack to be able to deploy a bunch of targets -->
+      <format>html</format>
+      <source>source/DNE.ptx</source>
+      <publication>publication/publication.ptx</publication>
+      <output-dir>output/deploy</output-dir>
+    </target>
     <target name="html">
       <format>html</format>
       <source>source/main.ptx</source>
@@ -46,12 +52,6 @@
       <publication>publication/publication.ptx</publication>
       <output-dir>output/deploy/pdf</output-dir>
       <stringparam key="debug.project.number" value="the-way-it-should-be"/>
-    </target>
-    <target name="all"><!-- temp hack to be able to deploy a bunch of targets -->
-      <format>html</format>
-      <source>source/DNE.ptx</source>
-      <publication>publication/publication.ptx</publication>
-      <output-dir>output/deploy</output-dir>
     </target>
   </targets>
   <executables>
