@@ -18,7 +18,6 @@
       <publication>publication/publication.ptx</publication>
       <output-dir>output/deploy/html</output-dir>
       <stringparam key="debug.project.number" value="the-way-it-should-be"/>
-      <stringparam key="commentary" value="yes"/><!-- temporary -->
     </target>
     <target name="instructor">
       <format>html</format>
