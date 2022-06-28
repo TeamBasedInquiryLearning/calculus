@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-06-28T16:07:56Z       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Cal1 Elementary derivative rules (DF3)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus 1 for Team-Based Inquiry Learning">
+<meta property="book:author" content="TBIL Institute Fellows">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus 1 for Team-Based Inquiry Learning:</span> <span class="subtitle">Live Development Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="DF1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="DF4.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="DF1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a class="next-button button toolbar-item" href="DF4.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li>
+<li><a href="printable-pdf.html" data-scroll="printable-pdf" class="internal">Printable PDF</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="LT.html" data-scroll="LT" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1" class="internal">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2" class="internal">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3" class="internal">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4" class="internal">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5" class="internal">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6" class="internal">Limits with infinite outputs (LT6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="DF.html" data-scroll="DF" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2" class="internal">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1" class="internal">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3" class="active">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4" class="internal">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5" class="internal">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6" class="internal">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7" class="internal">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8" class="internal">Differentiating inverse functions (DF8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AD.html" data-scroll="AD" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1" class="internal">Tangents, motion, and marginals (AD1)</a></li>
+<li><a href="AD2.html" data-scroll="AD2" class="internal">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3" class="internal">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4" class="internal">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5" class="internal">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6" class="internal">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7" class="internal">Graphing with derivatives (AD7)</a></li>
+<li><a href="AD8.html" data-scroll="AD8" class="internal">Applied optimization (AD8)</a></li>
+<li><a href="AD9.html" data-scroll="AD9" class="internal">Limits and Derivatives (AD9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="IN.html" data-scroll="IN" class="internal"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul>
+<li><a href="IN1.html" data-scroll="IN1" class="internal">Geometry of definite integrals (IN1)</a></li>
+<li><a href="IN2.html" data-scroll="IN2" class="internal">Approximating definite integrals (IN2)</a></li>
+<li><a href="IN3.html" data-scroll="IN3" class="internal">Elementary antiderivatives (IN3)</a></li>
+<li><a href="IN4.html" data-scroll="IN4" class="internal">Initial Value Problems (IN4)</a></li>
+<li><a href="IN5.html" data-scroll="IN5" class="internal">FTC for definite integrals (IN5)</a></li>
+<li><a href="IN6.html" data-scroll="IN6" class="internal">FTC for derivatives of integrals (IN6)</a></li>
+<li><a href="IN7.html" data-scroll="IN7" class="internal">Area under curves (IN7)</a></li>
+<li><a href="IN8.html" data-scroll="IN8" class="internal">Area between curves (IN8)</a></li>
+<li><a href="IN9.html" data-scroll="IN9" class="internal">Substitution method (IN9)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl" class="internal"><span class="title">TBIL Resource Library</span></a></li>
+<li class="link"><a href="pretext.html" data-scroll="pretext" class="internal"><span class="title">Authored with PreTeXt</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="DF3"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.3</span> <span class="title">Elementary derivative rules (DF3)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-11"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="li-397"><p id="p-572">Compute basic derivatives using algebraic rules.</p></li></ul></article><article class="observation remark-like" id="observation-11"><h3 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.3.1</span><span class="period">.</span>
+</h3>If we recall from the previous section we learned about how to find the derivative of functions using the limit definition of a derivative.  From the activities we see that this gets cumbersome when the functions are more complicated.  In this section we will discuss a more convenient way to to calculate derivatives.</article><article class="activity project-like" id="activity-derivative-elementary1"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.2</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-51"><p id="p-573">In this activity we will try to deduce a rule for finding the derivative of a power function.  Note, a power function is one in which the function is of the form <span class="process-math">\(f(x) = x^{n}\)</span> where <span class="process-math">\(n\)</span> is any real number.</p></div>
+<article class="task exercise-like" id="task-121"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-574">Using the limit definition of the derivative, what is <span class="process-math">\(f'(x)\)</span> for the power function <span class="process-math">\(f(x) = x\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-398"><p id="p-575">-1</p></li>
+<li id="li-399"><p id="p-576">1</p></li>
+<li id="li-400"><p id="p-577">0</p></li>
+<li id="li-401"><p id="p-578">Does not exist</p></li>
+</ol></article><article class="task exercise-like" id="task-122"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-579">Using the limit definition of the derivative, what is <span class="process-math">\(f'(x)\)</span> for the power function <span class="process-math">\(f(x) = x^{2}\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-402"><p id="p-580">0</p></li>
+<li id="li-403"><p id="p-581"><span class="process-math">\(\displaystyle -2x\)</span></p></li>
+<li id="li-404"><p id="p-582"><span class="process-math">\(\displaystyle 2x\)</span></p></li>
+<li id="li-405"><p id="p-583"><span class="process-math">\(\displaystyle 2x+1\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-123"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-584">Using the limit definition of the derivative, what is <span class="process-math">\(f'(x)\)</span> for the power function <span class="process-math">\(f(x) = x^{3}\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-406"><p id="p-585"><span class="process-math">\(\displaystyle 3x^2\)</span></p></li>
+<li id="li-407"><p id="p-586"><span class="process-math">\(\displaystyle -3x^2\)</span></p></li>
+<li id="li-408"><p id="p-587"><span class="process-math">\(\displaystyle 3x^2-3x\)</span></p></li>
+<li id="li-409"><p id="p-588"><span class="process-math">\(\displaystyle -3x^2+3x\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-124"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-589">WITHOUT using the limit definition of the derivative, what is <span class="process-math">\(f'(x)\)</span> for the power function <span class="process-math">\(f(x) = x^{4}\text{?}\)</span> (See if you can find a pattern from the first three tasks of this activity.)</p>
+<ol class="upper-alpha">
+<li id="li-410"><p id="p-590"><span class="process-math">\(\displaystyle 3x^2\)</span></p></li>
+<li id="li-411"><p id="p-591"><span class="process-math">\(\displaystyle 3x^3\)</span></p></li>
+<li id="li-412"><p id="p-592"><span class="process-math">\(\displaystyle 4x^2\)</span></p></li>
+<li id="li-413"><p id="p-593"><span class="process-math">\(\displaystyle 4x^3\)</span></p></li>
+</ol></article></article><article class="theorem theorem-like" id="def-powerlaw-derivative"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">The Power Rule.</span>
+</h3>
+<p id="p-594">The derivative of the power function<span class="process-math">\(f(x) = x^n\text{,}\)</span> for any real number <span class="process-math">\(n\)</span> is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f'(x) = nx^{n-1}.
+\end{equation*}
+</div></article><article class="observation remark-like" id="observation-12"><h3 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.3.4</span><span class="period">.</span>
+</h3>So far we have been using <span class="process-math">\(f'(x)\)</span> or <span class="process-math">\(f\)</span> prime to denote a derivative of the function <span class="process-math">\(f(x)\text{.}\)</span>  However there are other ways to denote the derivative of a function.  Besides <span class="process-math">\(f'(x)\)</span> there is also <span class="process-math">\(\frac{df}{dx}\text{,}\)</span> pronounced "dee-f dee-x."  Both notations can be used interchangeably.  If you want to take the derivative of <span class="process-math">\(f'(x)\)</span> or <span class="process-math">\(\frac{df}{dx}\text{,}\)</span> the notation is <span class="process-math">\(f''(x)\)</span> or <span class="process-math">\(\frac{d^2f}{dx^2}\text{;}\)</span> this is known as second derivative of <span class="process-math">\(f(x)\text{.}\)</span></article><article class="activity project-like" id="activity-derivative-elementary2"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.5</span><span class="period">.</span>
+</h3>
+<p id="p-595">Using <a href="" class="xref" data-knowl="./knowl/def-powerlaw-derivative.html" title="Theorem 2.3.3: The Power Rule">Theorem 2.3.3</a>, which of the following statement(s) are true?  For those statements that are wrong, give the correct derivative.</p>
+<ol class="upper-alpha">
+<li id="li-414"><p id="p-derived-li-414">The derivative of <span class="process-math">\(y = x^{10}\)</span> is <span class="process-math">\(y' = 10x^{11}.\)</span></p></li>
+<li id="li-415"><p id="p-derived-li-415">The derivative of <span class="process-math">\(y = x^{-8}\)</span> is <span class="process-math">\(y' = -8x^{-9}.\)</span></p></li>
+<li id="li-416"><p id="p-derived-li-416">The derivative of <span class="process-math">\(y = x^{100}\)</span> is <span class="process-math">\(y' = 100x^{99}.\)</span></p></li>
+<li id="li-417"><p id="p-derived-li-417">The derivative of <span class="process-math">\(y = x^{-17}\)</span> is <span class="process-math">\(y' = -17x^{-16}.\)</span></p></li>
+</ol></article><article class="theorem theorem-like" id="def-constant-derivative"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.6</span><span class="period">.</span><span class="space"> </span><span class="title">The Derivative of a Constant Function.</span>
+</h3>
+<p id="p-596">If <span class="process-math">\(f(x) = c\text{,}\)</span> for some constant <span class="process-math">\(c\in\mathbb{R}\text{,}\)</span> then <span class="process-math">\(f'(x) = 0\text{.}\)</span></p></article><article class="activity project-like" id="activity-derivative-elementary3"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.7</span><span class="period">.</span>
+</h3>
+<p id="p-597">Using <a href="" class="xref" data-knowl="./knowl/def-constant-derivative.html" title="Theorem 2.3.6: The Derivative of a Constant Function">Theorem 2.3.6</a>, which of the following statement(s) are true?  Note: Pay attention to the independent variable (the input) of the function.</p>
+<ol class="upper-alpha">
+<li id="li-418"><p id="p-derived-li-418">The derivative of <span class="process-math">\(y(x) = 10\)</span> is <span class="process-math">\(y'(x) = 9.\)</span></p></li>
+<li id="li-419"><p id="p-derived-li-419">The derivative of <span class="process-math">\(y(t) = x\)</span> is <span class="process-math">\(y'(t) = 0.\)</span></p></li>
+<li id="li-420"><p id="p-derived-li-420">The derivative of <span class="process-math">\(y(a) = x^2\)</span> is <span class="process-math">\(y'(a) = 2x.\)</span></p></li>
+<li id="li-421"><p id="p-derived-li-421">The derivative of <span class="process-math">\(y(x) = -5\)</span> is <span class="process-math">\(y'(x) = -4.\text{.}\)</span></p></li>
+</ol></article><article class="theorem theorem-like" id="def-constmult-derivative"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.8</span><span class="period">.</span><span class="space"> </span><span class="title">The Scalar Multiple Rule.</span>
+</h3>
+<p id="p-598">If <span class="process-math">\(c\)</span> is a constant and <span class="process-math">\(f(x)\)</span> is a differentiable function, then using the Scalar Multiple Law for limits, we have that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{d}{dx}\left[cf(x)\right] = c\frac{d}{dx}\left[f(x)\right]
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-derivative-elementary4"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.9</span><span class="period">.</span>
+</h3>
+<p id="p-599">What is the derivative of the function <span class="process-math">\(y(x) = 12x^{2/3}\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-422"><p id="p-derived-li-422"><span class="process-math">\(\displaystyle y'(x) = 8x^{5/3}.\)</span></p></li>
+<li id="li-423"><p id="p-derived-li-423"><span class="process-math">\(\displaystyle y'(x) = 18x^{-1/3}.\)</span></p></li>
+<li id="li-424"><p id="p-derived-li-424"><span class="process-math">\(\displaystyle y'(x) = 8x^{-1/3}.\)</span></p></li>
+<li id="li-425"><p id="p-derived-li-425"><span class="process-math">\(\displaystyle y'(x) = 18x^{5/3}.\)</span></p></li>
+</ol></article><article class="theorem theorem-like" id="def-sumdiff-derivative"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.10</span><span class="period">.</span><span class="space"> </span><span class="title">The Sum/Difference Rule.</span>
+</h3>
+<p id="p-600">If <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> are both differentiable, then using the Sum/Differences Law for limits, we have that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{d}{dx}\left[f(x) \pm g(x)\right] = \frac{d}{dx}\left[f(x)\right]\pm\frac{d}{dx}\left[g(x)\right]
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-derivative-elementary5"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.11</span><span class="period">.</span>
+</h3>
+<p id="p-601">What are the first and second derivatives for the arbitrary parabola given by <span class="process-math">\(f(x) = ax^2 + bx + c\text{,}\)</span> where <span class="process-math">\(a,\,b,\,c\)</span> are any real numbers and <span class="process-math">\(a \neq 0\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-426"><p id="p-derived-li-426"><span class="process-math">\(\displaystyle f'(x) = 2ax + bx + c, \, f''(x)=2a +b.\)</span></p></li>
+<li id="li-427"><p id="p-derived-li-427"><span class="process-math">\(\displaystyle f'(x) = 2x + 1, \, f''(x)=2.\)</span></p></li>
+<li id="li-428"><p id="p-derived-li-428"><span class="process-math">\(\displaystyle f'(x) = 2ax + b , \, f''(x)=2a.\)</span></p></li>
+<li id="li-429"><p id="p-derived-li-429"><span class="process-math">\(\displaystyle f'(x) = ax + b, \, f''(x)=a.\)</span></p></li>
+</ol></article><article class="activity project-like" id="neg-fract-powers"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.12</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-52">
+<p id="p-602">We have power functions for every real value of <span class="process-math">\(p\text{.}\)</span> In particular, we can look at power functions with fractional exponents like <span class="process-math">\(f(x)= x^{\frac{1}{4}}=\sqrt[4]{x}\)</span> or  with negative exponents like <span class="process-math">\(g(x)= x^{-4} = \frac{1}{x^4}\)</span></p>. What is the derivative of these two functions?</div>
+<ol class="upper-alpha">
+<li id="li-430"><p id="p-derived-li-430"><span class="process-math">\(\displaystyle f'(x) = \frac{1}{4 \sqrt[4]{x^3}}, \, g'(x) = \frac{-4}{x^3}.\)</span></p></li>
+<li id="li-431"><p id="p-derived-li-431"><span class="process-math">\(\displaystyle f'(x) = \frac{1}{4} \sqrt[4]{x^3}, \, g'(x) = \frac{-4}{x^5}.\)</span></p></li>
+<li id="li-432"><p id="p-derived-li-432"><span class="process-math">\(\displaystyle f'(x) = \frac{1}{4} \sqrt[4]{x^3}, \, g'(x) = \frac{-4}{x^3}.\)</span></p></li>
+<li id="li-433"><p id="p-derived-li-433"><span class="process-math">\(\displaystyle f'(x) = \frac{1}{4 \sqrt[4]{x^3}}, \, g'(x) = \frac{-4}{x^5}.\)</span></p></li>
+</ol></article><article class="theorem theorem-like" id="def-expon-derivative"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.13</span><span class="period">.</span><span class="space"> </span><span class="title">The Derivative of an Exponential Function.</span>
+</h3>
+<p id="p-603">The derivative of the exponential function<span class="process-math">\(f(x) = b^x\text{,}\)</span> for any positive number <span class="process-math">\(b\)</span> is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f'(x) =\ln(b) \,  b^x.
+\end{equation*}
+</div></article><article class="observation remark-like" id="observation-13"><h3 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.3.14</span><span class="period">.</span>
+</h3>
+<p id="p-604">A special case of <a href="" class="xref" data-knowl="./knowl/def-expon-derivative.html" title="Theorem 2.3.13: The Derivative of an Exponential Function">Theorem 2.3.13</a> is when <span class="process-math">\(b = e\text{,}\)</span> where <span class="process-math">\(e\)</span> is the base of the natural logarithm function. In this case let <span class="process-math">\(f(x) = e^x\text{.}\)</span> Then</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/def-expon-derivative.html">
+\begin{equation*}
+f'(x) =\ln(e) \,  e^{x} = e^{x}.
+\end{equation*}
+</div>
+<p class="continuation">So <span class="process-math">\(f(x)=e^x\)</span> is a special function for which <span class="process-math">\(f'(x)=f(x)\text{.}\)</span></p></article><article class="activity project-like" id="activity-derivative-elementary6"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.15</span><span class="period">.</span>
+</h3>
+<p id="p-605">The first derivative of the function <span class="process-math">\(g(x) = x^e + e^{x}\)</span> is given by <span class="process-math">\(g'(x) = ex^{e-1} + e^{x}\text{.}\)</span>  What is the second derivative of <span class="process-math">\(g(x)\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-434"><p id="p-derived-li-434"><span class="process-math">\(\displaystyle g''(x) = x^{e} + e^{x}.\)</span></p></li>
+<li id="li-435"><p id="p-derived-li-435"><span class="process-math">\(\displaystyle g''(x) = e(e-1)x^{e-2} + e^x.\)</span></p></li>
+<li id="li-436"><p id="p-derived-li-436"><span class="process-math">\(\displaystyle g''(x) = ex^{e-1} + e^x.\)</span></p></li>
+<li id="li-437"><p id="p-derived-li-437"><span class="process-math">\(\displaystyle g''(x) = e^x.\)</span></p></li>
+</ol></article><article class="theorem theorem-like" id="def-trig-derivative"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.16</span><span class="period">.</span><span class="space"> </span><span class="title">The Derivative of the Sine and Cosine Functions.</span>
+</h3>
+<p id="p-606">If <span class="process-math">\(f(x) = \sin(x)\text{,}\)</span> then <span class="process-math">\(f'(x) = \cos(x)\text{.}\)</span>  If <span class="process-math">\(f(x) = \cos(x)\text{,}\)</span> then <span class="process-math">\(f'(x) = -\sin(x)\text{.}\)</span></p></article><article class="activity project-like" id="activity-derivative-elementary7"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.17</span><span class="period">.</span>
+</h3>
+<p id="p-607">The derivative of <span class="process-math">\(f(x) = 7\sin(x) + 2e^x + 3x^{1/3} - 2\)</span> is,</p>
+<ol class="upper-alpha">
+<li id="li-438"><p id="p-derived-li-438"><span class="process-math">\(\displaystyle f'(x) = 7\cos(x) + 2e^{x} + x^{-2/3} - 2x.\)</span></p></li>
+<li id="li-439"><p id="p-derived-li-439"><span class="process-math">\(\displaystyle f'(x) = 7\cos(x) + 2e^{x} + -2x^{-2/3} - 2.\)</span></p></li>
+<li id="li-440"><p id="p-derived-li-440"><span class="process-math">\(\displaystyle f'(x) = -7\sin(x) + e^{x} + x^{-2/3}.\)</span></p></li>
+<li id="li-441"><p id="p-derived-li-441"><span class="process-math">\(\displaystyle f'(x) = -7\cos(x) + 2e^{x}\ln(x) + x^{-2/3}.\)</span></p></li>
+<li id="li-442"><p id="p-derived-li-442"><span class="process-math">\(\displaystyle f'(x) = 7\cos(x) + 2e^x + x^{-2/3}.\)</span></p></li>
+</ol></article><article class="theorem theorem-like" id="def-log-derivative"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.18</span><span class="period">.</span><span class="space"> </span><span class="title">The Derivative of the Natural Log Function.</span>
+</h3>
+<p id="p-608">If <span class="process-math">\(f(x) = \ln(x)\text{,}\)</span> then</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f'(x) = \frac{1}{x}\text{.}
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-87"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.19</span><span class="period">.</span>
+</h3>
+<p id="p-609">Which of the following statements is NOT true?</p>
+<ol class="upper-alpha">
+<li id="li-443"><p id="p-derived-li-443">The derivative of <span class="process-math">\(y = 2\ln(x)\)</span> is <span class="process-math">\(y' = \frac{2}{x}.\)</span></p></li>
+<li id="li-444"><p id="p-derived-li-444">The derivative of <span class="process-math">\(y = \frac{\ln(x)}{2}\)</span> is <span class="process-math">\(y' = \frac{1}{2x}.\)</span></p></li>
+<li id="li-445"><p id="p-derived-li-445">The derivative of <span class="process-math">\(y = \frac{2}{3}\ln(x)\)</span> is <span class="process-math">\(y' = \frac{3}{2x}.\)</span></p></li>
+<li id="li-446"><p id="p-derived-li-446">The derivative of <span class="process-math">\(y = \ln(x^{2})\)</span> is <span class="process-math">\(y' = \frac{2}{x}\text{.}\)</span></p></li>
+</ol></article><article class="activity project-like" id="checkit-DF3"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.20</span><span class="period">.</span>
+</h3>
+<p id="p-610">Demonstrate and explain how to find the derivative of the following functions. Be sure to explicitly denote which derivative rules (constant multiple, sum and difference, etc.) you are using in your work.</p>
+<ol class="decimal">
+<li id="li-447"><div class="displaymath process-math" data-contains-math-knowls="" id="p-611">
+\begin{equation*}
+g(x) = 2 \, \cos\left(x\right) - 3 \, e^x
+\end{equation*}
+</div></li>
+<li id="li-448"><div class="displaymath process-math" data-contains-math-knowls="" id="p-612">
+\begin{equation*}
+h(w) = \sqrt[5]{w^7} + \frac{6}{w^{5}}
+\end{equation*}
+</div></li>
+<li id="li-449"><div class="displaymath process-math" data-contains-math-knowls="" id="p-613">
+\begin{equation*}
+f(t) = -4 \, t^{5} + 5 \, t^{3} + t - 8
+\end{equation*}
+</div></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-6" id="answer-6"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-6"><div class="answer solution-like"><ol class="decimal">
+<li id="li-450"><div class="displaymath process-math" data-contains-math-knowls="" id="p-614">
+\begin{equation*}
+g'(x) = - 2 \, \sin\left(x\right) - 3 \, e^x
+\end{equation*}
+</div></li>
+<li id="li-451"><div class="displaymath process-math" data-contains-math-knowls="" id="p-615">
+\begin{equation*}
+h'(w) = \frac{7}{5} \, w^{\frac{2}{5}} - \frac{30}{w^{6}}
+\end{equation*}
+</div></li>
+<li id="li-452"><div class="displaymath process-math" data-contains-math-knowls="" id="p-616">
+\begin{equation*}
+f'(t) = -20 \, t^{4} + 15 \, t^{2} + 1
+\end{equation*}
+</div></li>
+</ol></div></div>
+</div></article><article class="activity project-like" id="der-exp-context"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.21</span><span class="period">.</span>
+</h3>
+<p id="p-617">Suppose that the temperature (in degrees Fahrenheit) of a cup of coffee, <span class="process-math">\(t\)</span> minutes after forgetting it on a bench outside, is given by the function</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(t) = 40 \, (0.5)^t + 50
+\end{equation*}
+</div>
+<p class="continuation">Find <span class="process-math">\(f(1)\)</span> and <span class="process-math">\(f'(1)\)</span> and interpret your result in the context of this problem</p></article><article class="activity project-like" id="polynomials-tangent-slope"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.22</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-53"><p id="p-618">In this activity you will use our first derivative rules to study the slope of tangent lines</p></div>
+<article class="task exercise-like" id="task-125"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-619">The graph of <span class="process-math">\(y=x^3-9x^2-16x+1\)</span> has a slope of 5 at two points.  Find the coordinates of these points.</p></article><article class="task exercise-like" id="task-126"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-620">Find the equations of the two lines tangent to the parabola <span class="process-math">\(y=(x-2)^2\)</span> which pass through the origin. You will want to think about slope in two ways: as the derivative at <span class="process-math">\(x=a\)</span> and the rise over the run in a linear function through the origin and the point <span class="process-math">\((a, f(a))\text{.}\)</span> Use a graph to check your work and sketch the tangent lines on your graph.</p></article></article><article class="activity project-like" id="approx-shape-der"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.3.23</span><span class="period">.</span>
+</h3>
+<p id="p-621">Find the values of the parameters <span class="process-math">\(a,b,c\)</span> for the quadratic polynomial <span class="process-math">\(q(x) = ax^2 +bx +c \)</span> that best approximates the graph of <span class="process-math">\(f(x)=e^x\)</span> at <span class="process-math">\(x=0\text{.}\)</span> This means choosing <span class="process-math">\(a,b,c\)</span> such that</p>
+<ul class="disc">
+<li id="li-453"><p id="p-derived-li-453"><span class="process-math">\(\displaystyle q(0) = f(0)\)</span></p></li>
+<li id="li-454"><p id="p-derived-li-454"><span class="process-math">\(\displaystyle q'(0) = f'(0)\)</span></p></li>
+<li id="li-455"><p id="p-derived-li-455"><span class="process-math">\(\displaystyle q''(0) = f''(0)\)</span></p></li>
+</ul>
+<p id="p-622">Hint: find the values of <span class="process-math">\(f(0),f'(0),f''(0)\text{.}\)</span> The values of <span class="process-math">\(q(0),q'(0),q''(0)\)</span> at zero will involve some parameters. You can solve for these parameters using the equations above.</p></article></section></div></main>
+</div>
+</body>
+</html>

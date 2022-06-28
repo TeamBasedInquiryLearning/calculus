@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-06-28T16:07:55Z       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Cal1 Limits numerically (LT2)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus 1 for Team-Based Inquiry Learning">
+<meta property="book:author" content="TBIL Institute Fellows">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus 1 for Team-Based Inquiry Learning:</span> <span class="subtitle">Live Development Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="LT1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="LT.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="LT3.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="LT1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="LT.html" title="Up">Up</a><a class="next-button button toolbar-item" href="LT3.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li>
+<li><a href="printable-pdf.html" data-scroll="printable-pdf" class="internal">Printable PDF</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="LT.html" data-scroll="LT" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1" class="internal">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2" class="active">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3" class="internal">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4" class="internal">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5" class="internal">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6" class="internal">Limits with infinite outputs (LT6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="DF.html" data-scroll="DF" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2" class="internal">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1" class="internal">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3" class="internal">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4" class="internal">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5" class="internal">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6" class="internal">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7" class="internal">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8" class="internal">Differentiating inverse functions (DF8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AD.html" data-scroll="AD" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1" class="internal">Tangents, motion, and marginals (AD1)</a></li>
+<li><a href="AD2.html" data-scroll="AD2" class="internal">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3" class="internal">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4" class="internal">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5" class="internal">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6" class="internal">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7" class="internal">Graphing with derivatives (AD7)</a></li>
+<li><a href="AD8.html" data-scroll="AD8" class="internal">Applied optimization (AD8)</a></li>
+<li><a href="AD9.html" data-scroll="AD9" class="internal">Limits and Derivatives (AD9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="IN.html" data-scroll="IN" class="internal"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul>
+<li><a href="IN1.html" data-scroll="IN1" class="internal">Geometry of definite integrals (IN1)</a></li>
+<li><a href="IN2.html" data-scroll="IN2" class="internal">Approximating definite integrals (IN2)</a></li>
+<li><a href="IN3.html" data-scroll="IN3" class="internal">Elementary antiderivatives (IN3)</a></li>
+<li><a href="IN4.html" data-scroll="IN4" class="internal">Initial Value Problems (IN4)</a></li>
+<li><a href="IN5.html" data-scroll="IN5" class="internal">FTC for definite integrals (IN5)</a></li>
+<li><a href="IN6.html" data-scroll="IN6" class="internal">FTC for derivatives of integrals (IN6)</a></li>
+<li><a href="IN7.html" data-scroll="IN7" class="internal">Area under curves (IN7)</a></li>
+<li><a href="IN8.html" data-scroll="IN8" class="internal">Area between curves (IN8)</a></li>
+<li><a href="IN9.html" data-scroll="IN9" class="internal">Substitution method (IN9)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl" class="internal"><span class="title">TBIL Resource Library</span></a></li>
+<li class="link"><a href="pretext.html" data-scroll="pretext" class="internal"><span class="title">Authored with PreTeXt</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="LT2"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.2</span> <span class="title">Limits numerically (LT2)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-3"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="li-82"><p id="p-114">Infer the value of a limit based on nearby values of the function.</p></li></ul></article><article class="activity project-like" id="activity-limits-numerically1"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span>
+</h3>
+<figure class="table table-like" id="table-limit-numerical1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">6<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="l m b1 r0 l0 t0 lines">6.9</td>
+<td class="l m b1 r0 l0 t0 lines">6.99</td>
+<td class="l m b1 r0 l0 t0 lines">6.999</td>
+<td class="l m b1 r0 l0 t0 lines">7</td>
+<td class="l m b1 r0 l0 t0 lines">7.001</td>
+<td class="l m b1 r0 l0 t0 lines">7.01</td>
+<td class="l m b1 r0 l0 t0 lines">7.1</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(f(x)\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">0.1695</td>
+<td class="l m b0 r0 l0 t0 lines">0.1699</td>
+<td class="l m b0 r0 l0 t0 lines">0.1667</td>
+<td class="l m b0 r0 l0 t0 lines">?</td>
+<td class="l m b0 r0 l0 t0 lines">0.1667</td>
+<td class="l m b0 r0 l0 t0 lines">0.1664</td>
+<td class="l m b0 r0 l0 t0 lines">0.1639</td>
+</tr>
+</table></div></figure><p id="p-115">Based on the values of <a href="" class="xref" data-knowl="./knowl/table-limit-numerical1.html" title="Table 6">Table 6</a>, what is the best approximation for <span class="process-math">\(\lim_{x\to 7} f(x)\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-83"><p id="p-116">the limit is approximately 7</p></li>
+<li id="li-84"><p id="p-117">the limit is approximately 0.17</p></li>
+<li id="li-85"><p id="p-118">the limit is approximately 0.16</p></li>
+<li id="li-86"><p id="p-119">the limit is approximately 0.1667</p></li>
+<li id="li-87"><p id="p-120">the limit is approximately 6.9999</p></li>
+</ol></article><article class="remark remark-like" id="remark-2"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span>
+</h3>
+<p id="p-121">Notice that the value we obtained in <a href="" class="xref" data-knowl="./knowl/activity-limits-numerically1.html" title="Activity 1.2.1">Activity 1.2.1</a> is only an approximation, based on the trends that we have seen within the table.</p></article><article class="activity project-like" id="activity-limits-numerically2"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span>
+</h3>
+<figure class="table table-like" id="table-limit-numerical2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">7<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="l m b1 r0 l0 t0 lines">1.25</td>
+<td class="l m b1 r0 l0 t0 lines">1.5</td>
+<td class="l m b1 r0 l0 t0 lines">1.75</td>
+<td class="l m b1 r0 l0 t0 lines">2.25</td>
+<td class="l m b1 r0 l0 t0 lines">2.5</td>
+<td class="l m b1 r0 l0 t0 lines">2.75</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(f(x)\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">-0.7606</td>
+<td class="l m b0 r0 l0 t0 lines">-0.13</td>
+<td class="l m b0 r0 l0 t0 lines">0.4881</td>
+<td class="l m b0 r0 l0 t0 lines">1.3119</td>
+<td class="l m b0 r0 l0 t0 lines">1.33</td>
+<td class="l m b0 r0 l0 t0 lines">0.9606</td>
+</tr>
+</table></div></figure><p id="p-122">In <a href="" class="xref" data-knowl="./knowl/activity-limits-graphically1.html" title="Activity 1.1.1">Activity 1.1.1</a> we got an approximation to the limit of the function as <span class="process-math">\(x\)</span> tends to 2.  Now let us say you are given the same plot as in <a href="" class="xref" data-knowl="./knowl/activity-limits-graphically1.html" title="Activity 1.1.1">Activity 1.1.1</a>, but also given a table of numerical values (<a href="" class="xref" data-knowl="./knowl/table-limit-numerical2.html" title="Table 7">Table 7</a>) for the function. Given this new information which of the choices below best describes the limit of the function as <span class="process-math">\(x\)</span> tends to 2?</p>
+<ol class="upper-alpha">
+<li id="li-88"><p id="p-123">There is not enough information because we do not know the value of the function at <span class="process-math">\(x = 2\)</span></p></li>
+<li id="li-89"><p id="p-124">Can be approximated to be 1 because the data in the table and the graph show that from the left and the right the function approaches 1 as <span class="process-math">\(x\)</span> goes to 2</p></li>
+<li id="li-90"><p id="p-125">Can be approximated to be 1 because the values appear to approach 1 and the graph appears to approach 1, but we should zoom in on the graph to be sure</p></li>
+<li id="li-91"><p id="p-126">Cannot be approximated because the function might not exist at <span class="process-math">\(x = 2\text{.}\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-limits-numerically3"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span>
+</h3>
+<figure class="table table-like" id="table-limit-numerical3"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="l m b1 r0 l0 t0 lines">0.9</td>
+<td class="l m b1 r0 l0 t0 lines">0.99</td>
+<td class="l m b1 r0 l0 t0 lines">0.999</td>
+<td class="l m b1 r0 l0 t0 lines">1.001</td>
+<td class="l m b1 r0 l0 t0 lines">1.01</td>
+<td class="l m b1 r0 l0 t0 lines">1.1</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(f(x)\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">-0.4</td>
+<td class="l m b0 r0 l0 t0 lines">-0.49</td>
+<td class="l m b0 r0 l0 t0 lines">-0.499</td>
+<td class="l m b0 r0 l0 t0 lines">0.499</td>
+<td class="l m b0 r0 l0 t0 lines">0.49</td>
+<td class="l m b0 r0 l0 t0 lines">0.4</td>
+</tr>
+</table></div></figure><p id="p-127">Based on <a href="" class="xref" data-knowl="./knowl/table-limit-numerical3.html" title="Table 8">Table 8</a>, what information can be inferred about <span class="process-math">\(\displaystyle \lim_{x\to 1^-}f(x)\text{,}\)</span> <span class="process-math">\(\displaystyle \lim_{x\to 1^+}f(x)\text{,}\)</span> and <span class="process-math">\(\displaystyle \lim_{x\to 1}f(x)\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-92"><p id="p-128"><span class="process-math">\(\displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5\text{,}\)</span> and <span class="process-math">\(\lim_{x\rightarrow 1}f(x) = 0\)</span></p></li>
+<li id="li-93"><p id="p-129"><span class="process-math">\(\displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5\text{,}\)</span> and <span class="process-math">\(\lim_{x\rightarrow 1}f(x)\)</span> does not exist</p></li>
+<li id="li-94"><p id="p-130"><span class="process-math">\(\displaystyle \lim_{x\rightarrow 1^-}f(x) = 0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = -0.5\text{,}\)</span> and <span class="process-math">\(\lim_{x\rightarrow 1}f(x)\)</span> does not exist</p></li>
+<li id="li-95"><p id="p-131"><span class="process-math">\(\displaystyle \lim_{x\rightarrow 1^-}f(x) = 0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = -0.5\text{,}\)</span> and <span class="process-math">\(\lim_{x\rightarrow 1}f(x) = 0\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-limits-numerically4"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-10"><p id="p-132">Consider the following function <span class="process-math">\(f(x)= 3x^3 + 2x^2- 5x+20.\)</span></p></div>
+<article class="task exercise-like" id="task-18"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-133">Of the following options, at which values given would you evaluate <span class="process-math">\(f(x)\)</span> to best determine <span class="process-math">\(\displaystyle \lim_{x \to 2}f(x)\)</span> numerically?</p>
+<ol class="upper-alpha">
+<li id="li-96"><p id="p-134">1.9, 1.99, 2.0, 2.01, 2.1</p></li>
+<li id="li-97"><p id="p-135">1.98, 1.99, 2.0, 2.01, 2.02</p></li>
+<li id="li-98"><p id="p-136">1.8, 1.9, 2.0, 2.1, 2.2</p></li>
+<li id="li-99"><p id="p-137">1.0, 1.5, 2.0, 2.5, 3.0</p></li>
+</ol></article><article class="task exercise-like" id="task-19"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-138">Use the values that you chose in part A to calculate an approximation for <span class="process-math">\(\lim_{x \to 2}f(x)\text{.}\)</span></p></article><article class="task exercise-like" id="task-20"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-139">Which value best describes the limit that you obtained in part (b)?</p>
+<ol class="upper-alpha">
+<li id="li-100"><p id="p-140">the approximate value is 41.25</p></li>
+<li id="li-101"><p id="p-141">the approximate value is 41.5</p></li>
+<li id="li-102"><p id="p-142">approximate value is 41.75</p></li>
+<li id="li-103"><p id="p-143">approximate value is 42</p></li>
+</ol></article></article><article class="activity project-like" id="activity-limits-numerically5"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-11">
+<p id="p-144">In <a href="" class="xref" data-knowl="./knowl/figure-limit-numerical-5.html" title="Figure 9">Figure 9</a>is the graph for <span class="process-math">\(f(x) = \sin\left(\frac{1}{x}\right)\text{.}\)</span>  Several values for <span class="process-math">\(f(x)\)</span> in the neighborhood of <span class="process-math">\(x = 0\)</span> are approximated in  <a href="" class="xref" data-knowl="./knowl/table-limit-numerical5.html" title="Table 10">Table 10</a>.</p>
+<figure class="figure figure-like" id="figure-limit-numerical-5"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/limits_numerical5_graph.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9<span class="period">.</span></span><span class="space"> </span>Graph of <span class="process-math">\(f(x) = \sin(1/x)\text{.}\)</span></figcaption></figure><figure class="table table-like" id="table-limit-numerical5"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">10<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="l m b1 r0 l0 t0 lines">-0.1</td>
+<td class="l m b1 r0 l0 t0 lines">-0.01</td>
+<td class="l m b1 r0 l0 t0 lines">-0.001</td>
+<td class="l m b1 r0 l0 t0 lines">0.001</td>
+<td class="l m b1 r0 l0 t0 lines">0.01</td>
+<td class="l m b1 r0 l0 t0 lines">0.1</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(f(x)\)</span></td>
+<td class="l m b0 r0 l0 t0 lines">0.54402</td>
+<td class="l m b0 r0 l0 t0 lines">0.50637</td>
+<td class="l m b0 r0 l0 t0 lines">-0.82688</td>
+<td class="l m b0 r0 l0 t0 lines">0.82688</td>
+<td class="l m b0 r0 l0 t0 lines">-0.50637</td>
+<td class="l m b0 r0 l0 t0 lines">-0.54402</td>
+</tr>
+</table></div></figure>
+</div>
+<article class="task exercise-like" id="task-21"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-145">Based on the graph and table what is the best explanation for the limit as x tends to zero?</p>
+<ol class="upper-alpha">
+<li id="li-104"><p id="p-146">the limit does not exist because the left and right limits have opposite values.</p></li>
+<li id="li-105"><p id="p-147">the limit does not exist because we do not have enough information to answer the question.</p></li>
+<li id="li-106"><p id="p-148">the limit does not exist because the function is oscillating between -1 and 1.</p></li>
+<li id="li-107"><p id="p-149">the limit does not exist because you are dividing by zero when <span class="process-math">\(x = 0\)</span> for <span class="process-math">\(f(x).\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-22"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-150">Would your conclusion that resulted from <a href="" class="xref" data-knowl="./knowl/activity-limits-numerically5.html" title="Activity 1.2.6">Activity 1.2.6</a> change if the function was <span class="process-math">\(f(x) = \cos(1/x)\)</span> or <span class="process-math">\(f(x) = \tan(1/x)\text{?}\)</span></p></article></article><article class="activity project-like" id="activity-14"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="period">.</span>
+</h3>
+<p id="p-151">Use technology to complete the following table of values.</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x)=\frac{ x^{2} - x - 12 }{ x^{2} + 16 \, x + 39 }
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{array}{c|ccccccc}
+x &amp; -3.1&amp; -3.01&amp; -3.001&amp; -3&amp; -2.999&amp; -2.99&amp; -2.9 \\\hline
+f(x) &amp; &amp; &amp; &amp; &amp; &amp; &amp;  \\
+\end{array}
+\end{equation*}
+</div>
+<p id="p-152">Then explain how to use it to make an educated guess as to the value of the limit</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\displaystyle \lim_{ x\to -3 } \frac{ x^{2} - x - 12 }{ x^{2} + 16 \, x + 39 }
+\end{equation*}
+</div></article><article class="commentary" id="commentary-1"><p id="p-153"><a href="" class="xref" data-knowl="./knowl/activity-bolt1.html" title="Activity 1.2.8">Activity 1.2.8</a> was inspired by <a class="external" href="https://www.quantamagazine.org/infinite-powers-usain-bolt-and-the-art-of-calculus-20190403/" target="_blank"><code class="code-inline tex2jax_ignore">https://www.quantamagazine.org/infinite-powers-usain-bolt-and-the-art-of-calculus-20190403/</code></a></p>
+<p id="p-154">Its data was taken from <a class="external" href="https://speedendurance.com/2008/08/22/usain-bolt-100m-10-meter-splits-and-speed-endurance/" target="_blank"><code class="code-inline tex2jax_ignore">https://speedendurance.com/2008/08/22/usain-bolt-100m-10-meter-splits-and-speed-endurance/</code></a></p></article><article class="activity project-like" id="activity-bolt1"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.8</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-12">
+<p id="p-155">In this activity you will study the velocity of Usain Bolt in his Beijing 100 meters dash. He completed 100 meters in 9.69 seconds for an overall average speed of 100/9.69 = 10.32 meters per second (about 23 miles per hour). But this is the average velocity on the whole interval. How fast was he at different instances? What was his maximum velocity? Let's explore this. The table <a href="" class="xref" data-knowl="./knowl/table-bolt1.html" title="Table 11">Table 11</a> shows his split times recorded every 10 meters.</p>
+<figure class="table table-like" id="table-bolt1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">11<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(t\, \text{(seconds)} \)</span></td>
+<td class="l m b1 r0 l0 t0 lines">1.85</td>
+<td class="l m b1 r0 l0 t0 lines">2.87</td>
+<td class="l m b1 r0 l0 t0 lines">3.78</td>
+<td class="l m b1 r0 l0 t0 lines">4.65</td>
+<td class="l m b1 r0 l0 t0 lines">5.5</td>
+<td class="l m b1 r0 l0 t0 lines">6.32</td>
+<td class="l m b1 r0 l0 t0 lines">7.14</td>
+<td class="l m b1 r0 l0 t0 lines">7.96</td>
+<td class="l m b1 r0 l0 t0 lines">8.79</td>
+<td class="l m b1 r0 l0 t0 lines">9.69</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(d \, \text{(meters)} \)</span></td>
+<td class="l m b0 r0 l0 t0 lines">10</td>
+<td class="l m b0 r0 l0 t0 lines">20</td>
+<td class="l m b0 r0 l0 t0 lines">30</td>
+<td class="l m b0 r0 l0 t0 lines">40</td>
+<td class="l m b0 r0 l0 t0 lines">50</td>
+<td class="l m b0 r0 l0 t0 lines">60</td>
+<td class="l m b0 r0 l0 t0 lines">70</td>
+<td class="l m b0 r0 l0 t0 lines">80</td>
+<td class="l m b0 r0 l0 t0 lines">90</td>
+<td class="l m b0 r0 l0 t0 lines">100</td>
+</tr>
+</table></div></figure>
+</div>
+<article class="task exercise-like" id="task-23"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-156">What was the average velocity on the first 50 meters? On the second 50 meters?</p></article><article class="task exercise-like" id="task-24"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-157">What was the average velocity between 30 and 50 meters? Between 50 and 70 meters?</p></article><article class="task exercise-like" id="task-25"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-158">What was the average velocity between 40 and 50 meters? Between 50 and 60 meters?</p></article><article class="task exercise-like" id="task-26"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-159">What is your best estimate for the Usain's velocity at the instant when he passed the 50 meters mark? This is your estimate for the instantaneous velocity.</p></article><article class="task exercise-like" id="task-27"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-160">Using the table of values, explain why 50 meters is NOT the best guess for when the instantaneous velocity was the largest. What other point would be more reasonable?</p></article></article></section></div></main>
+</div>
+</body>
+</html>

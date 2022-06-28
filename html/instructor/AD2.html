@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-06-28T16:08:18Z       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Cal1 Linear approximation (AD2)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus 1 for Team-Based Inquiry Learning">
+<meta property="book:author" content="TBIL Institute Fellows">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus 1 for Team-Based Inquiry Learning:</span> <span class="subtitle">Live Development Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="AD1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="AD3.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="AD1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a class="next-button button toolbar-item" href="AD3.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li>
+<li><a href="printable-pdf.html" data-scroll="printable-pdf" class="internal">Printable PDF</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="LT.html" data-scroll="LT" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1" class="internal">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2" class="internal">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3" class="internal">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4" class="internal">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5" class="internal">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6" class="internal">Limits with infinite outputs (LT6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="DF.html" data-scroll="DF" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2" class="internal">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1" class="internal">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3" class="internal">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4" class="internal">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5" class="internal">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6" class="internal">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7" class="internal">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8" class="internal">Differentiating inverse functions (DF8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AD.html" data-scroll="AD" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1" class="internal">Tangents, motion, and marginals (AD1)</a></li>
+<li><a href="AD2.html" data-scroll="AD2" class="active">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3" class="internal">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4" class="internal">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5" class="internal">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6" class="internal">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7" class="internal">Graphing with derivatives (AD7)</a></li>
+<li><a href="AD8.html" data-scroll="AD8" class="internal">Applied optimization (AD8)</a></li>
+<li><a href="AD9.html" data-scroll="AD9" class="internal">Limits and Derivatives (AD9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="IN.html" data-scroll="IN" class="internal"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul>
+<li><a href="IN1.html" data-scroll="IN1" class="internal">Geometry of definite integrals (IN1)</a></li>
+<li><a href="IN2.html" data-scroll="IN2" class="internal">Approximating definite integrals (IN2)</a></li>
+<li><a href="IN3.html" data-scroll="IN3" class="internal">Elementary antiderivatives (IN3)</a></li>
+<li><a href="IN4.html" data-scroll="IN4" class="internal">Initial Value Problems (IN4)</a></li>
+<li><a href="IN5.html" data-scroll="IN5" class="internal">FTC for definite integrals (IN5)</a></li>
+<li><a href="IN6.html" data-scroll="IN6" class="internal">FTC for derivatives of integrals (IN6)</a></li>
+<li><a href="IN7.html" data-scroll="IN7" class="internal">Area under curves (IN7)</a></li>
+<li><a href="IN8.html" data-scroll="IN8" class="internal">Area between curves (IN8)</a></li>
+<li><a href="IN9.html" data-scroll="IN9" class="internal">Substitution method (IN9)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl" class="internal"><span class="title">TBIL Resource Library</span></a></li>
+<li class="link"><a href="pretext.html" data-scroll="pretext" class="internal"><span class="title">Authored with PreTeXt</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="AD2"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.2</span> <span class="title">Linear approximation (AD2)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-19"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="li-712"><p id="p-1006">Use tangent lines to approximate functions.</p></li></ul></article><article class="definition definition-like" id="definition-19"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.2.1</span><span class="period">.</span>
+</h3>
+<p id="p-1007">The tangent line approximation (or linear approximation, or linearization) of a function <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=a\)</span> is the tangent line <span class="process-math">\(L(x)\)</span> at <span class="process-math">\(x=a\text{.}\)</span> In formulas, <span class="process-math">\(L(x)\)</span> is the linear function</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+L(x) = f'(a)(x-a) + f(a). 
+\end{equation*}
+</div>
+<p class="continuation">Notice that this is obtained by writing the tangent line to <span class="process-math">\(f(x)\)</span> at <span class="process-math">\((a,f(a))\)</span> in point-slope form and calling the resulting linear function <span class="process-math">\(L(x)\text{.}\)</span></p></article><article class="activity project-like" id="activity-150"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.2</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-99"><p id="p-1008">Without using a calculator, we will use calculus to approximate <span class="process-math">\(\ln(1.1)\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-264"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1009">Find the equation of the tangent line to <span class="process-math">\(\ln(x)\)</span> at <span class="process-math">\(x=1\text{.}\)</span> This will be your linear approximation <span class="process-math">\(L(x)\text{.}\)</span> What do you get for <span class="process-math">\(L(x)\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-713"><p id="p-1010"><span class="process-math">\(\displaystyle L(x) = x\)</span></p></li>
+<li id="li-714"><p id="p-1011"><span class="process-math">\(\displaystyle L(x) = x+1\)</span></p></li>
+<li id="li-715"><p id="p-1012"><span class="process-math">\(\displaystyle L(x)= x - 1\)</span></p></li>
+<li id="li-716"><p id="p-1013"><span class="process-math">\(\displaystyle L(x)= -x + 1\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-265"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1014">As 1.1 is close to 1, we can use <span class="process-math">\(L(1.1)\)</span> to approximate <span class="process-math">\(\ln(1.1)\text{.}\)</span> What approximation do you get?</p>
+<ol class="upper-alpha">
+<li id="li-717"><p id="p-1015"><span class="process-math">\(\displaystyle \ln(1.1) \approx 1.1 \)</span></p></li>
+<li id="li-718"><p id="p-1016"><span class="process-math">\(\displaystyle \ln(1.1) \approx 2.1 \)</span></p></li>
+<li id="li-719"><p id="p-1017"><span class="process-math">\(\displaystyle \ln(1.1) \approx 0.1 \)</span></p></li>
+<li id="li-720"><p id="p-1018"><span class="process-math">\(\displaystyle \ln(1.1) \approx -0.1 \)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-266"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1019">Sketch the tangent line <span class="process-math">\(L(x)\)</span> on the same plane as the graph of <span class="process-math">\(\ln(x)\text{.}\)</span> What do you notice? What's the relationship between the two graphs?</p>
+<figure class="figure figure-like" id="figure-41"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/image-41.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">50<span class="period">.</span></span><span class="space"> </span>The graph of <span class="process-math">\(\ln(x)\)</span></figcaption></figure></article></article><article class="activity project-like" id="activity-151"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.3</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-100"><p id="p-1020">Using the equation of the tangent line to the graph of <span class="process-math">\(\ln(x)\)</span> at <span class="process-math">\(x=1\)</span> and the shape of this graph, you can show that for all values of <span class="process-math">\(x\text{,}\)</span> we have that <span class="process-math">\(\ln(x) \leq x-1\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-267"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1021">Compute the second derivative of <span class="process-math">\(\ln(x)\text{.}\)</span> What do you notice about the sign of the second derivative of <span class="process-math">\(\ln(x)\text{?}\)</span> What does this tell you about the shape of the graph?</p></article><article class="task exercise-like" id="task-268"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1022">Conclude that because the graph of <span class="process-math">\(\ln(x)\)</span> has a certain shape, the graph will bend below the tangent line and so the tangent line approximation <span class="process-math">\(L(x)= x -1 \)</span> is always greater than <span class="process-math">\(\ln(x)\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-152"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.4</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-101"><p id="p-1023">In this activity you will approximate power functions near <span class="process-math">\(x=1\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-269"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1024">Find the tangent line approximation to <span class="process-math">\(x^2\)</span> at  <span class="process-math">\(x=1\text{.}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-721"><p id="p-1025"><span class="process-math">\(\displaystyle L(x) = 2x\)</span></p></li>
+<li id="li-722"><p id="p-1026"><span class="process-math">\(\displaystyle L(x) = 2x+1\)</span></p></li>
+<li id="li-723"><p id="p-1027"><span class="process-math">\(\displaystyle L(x)= 2x - 1\)</span></p></li>
+<li id="li-724"><p id="p-1028"><span class="process-math">\(\displaystyle L(x)= -2x + 1\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-270"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1029">Show that for any constant <span class="process-math">\(k\text{,}\)</span> the tangent line approximation to <span class="process-math">\(x^k\)</span> at <span class="process-math">\(x=1\)</span> is <span class="process-math">\(L(x) = kx -k + 1\text{.}\)</span></p></article><article class="task exercise-like" id="task-271"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1030">Someone claims that the square root of 1.1 is about 1.05. Use the linear approximation to check this estimate. Do you think this estimate is about right? Why or why not?</p></article><article class="task exercise-like" id="task-272"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1031">Is the actual value <span class="process-math">\(\sqrt{1.1}\)</span> above or below 1.05? What feature of the graph of <span class="process-math">\(\sqrt{x}\)</span> makes this an over or under estimate?</p></article></article><article class="remark remark-like" id="remark-21"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.2.5</span><span class="period">.</span>
+</h3>
+<p id="p-1032">If a function <span class="process-math">\(f(x)\)</span> is <em class="emphasis">concave up</em> around <span class="process-math">\(x=a\text{,}\)</span> then the function is turning upwards from its tangent line. So when we use a linear approximation, the value of the approximation will be below the actual value of the function and the approximation is an underestimate. If a function <span class="process-math">\(f(x)\)</span> is <em class="emphasis">concave down</em> around <span class="process-math">\(x=a\text{,}\)</span> then the function is turning downwards from its tangent line. So when we use a linear approximation, the value of the approximation will be above the actual value of the function and the approximation is an overestimate.</p></article><article class="activity project-like" id="activity-153"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.6</span><span class="period">.</span>
+</h3>
+<p id="p-1033">Suppose <span class="process-math">\(f\)</span> has a continuous positive second derivative and <span class="process-math">\(\Delta x\)</span> is a small increment in <span class="process-math">\(x\)</span> (like <span class="process-math">\(h\)</span> in the limit definition of the derivative). Which one is larger...</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(1 + \Delta x ) \quad \text{or} \quad  f'(1) \Delta x + f(1) \quad? 
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-154"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.7</span><span class="period">.</span>
+</h3>
+<p id="p-1034">A certain function <span class="process-math">\(p(x)\)</span> satisfies <span class="process-math">\(p(7) = 49\)</span> and <span class="process-math">\(p'(7) = 8\text{.}\)</span></p>
+<ol class="decimal">
+<li id="li-725"><p id="p-1035">Explain how to find the local linearization <span class="process-math">\(L(x)\)</span> of <span class="process-math">\(p(x)\)</span> at <span class="process-math">\(7\text{.}\)</span></p></li>
+<li id="li-726"><p id="p-1036">Explain how to estimate the value of <span class="process-math">\(p(6.951)\text{.}\)</span></p></li>
+<li id="li-727"><p id="p-1037">Suppose that <span class="process-math">\(p'(7)=0\)</span> and you know that <span class="process-math">\(p''(x) &lt; 0\)</span> for <span class="process-math">\(x &lt; 7\text{.}\)</span> Explain how to determine if your estimate of <span class="process-math">\(p(6.951)\)</span> is too large or too small.</p></li>
+<li id="li-728"><p id="p-1038">Suppose that <span class="process-math">\(p''(x) &gt; 0\)</span> for <span class="process-math">\(x &gt; 7\text{.}\)</span> Use this fact and the additional information above to sketch an accurate graph of <span class="process-math">\(y=p(x)\)</span> near <span class="process-math">\(x=7\text{.}\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-155"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.8</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-102">
+<p id="p-1039">Let's find the quadratic polynomial</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+q(x) = ax^2 +bx +c 
+\end{equation*}
+</div>
+<p id="p-1040">where <span class="process-math">\(a,b,c\)</span> are parameters to be determined so that <span class="process-math">\(q(x)\)</span> best approximates the graph of <span class="process-math">\(f(x)=\ln(x)\)</span> at <span class="process-math">\(x=1\text{.}\)</span></p>
+</div>
+<article class="task exercise-like" id="task-273"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1041">We want to choose <span class="process-math">\(a,b,c\)</span> such that our quadratic polynomial resembles <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=1\text{.}\)</span> First thing, we want <span class="process-math">\(f(1)=q(1)\text{.}\)</span> What equation in <span class="process-math">\(a,b,c\)</span> does this condition give you?</p>
+<ol class="upper-alpha">
+<li id="li-729"><p id="p-1042"><span class="process-math">\(\displaystyle a+b+c = 1\)</span></p></li>
+<li id="li-730"><p id="p-1043"><span class="process-math">\(\displaystyle a+b+c = 0\)</span></p></li>
+<li id="li-731"><p id="p-1044"><span class="process-math">\(\displaystyle c = 0\)</span></p></li>
+<li id="li-732"><p id="p-1045"><span class="process-math">\(\displaystyle c = 1\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-274"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1046">We also want <span class="process-math">\(f'(1)=q'(1)\text{.}\)</span> What equation in <span class="process-math">\(a,b,c\)</span> does this condition give you?</p></article><article class="task exercise-like" id="task-275"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1047">Finally, we want <span class="process-math">\(f''(1)=q''(1)\text{.}\)</span> What equation in <span class="process-math">\(a,b,c\)</span> does this condition give you?</p></article><article class="task exercise-like" id="task-276"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1048">Find a solution to this system of linear equations! Your answer will give you values of <span class="process-math">\(a,b,c\)</span> that can be used to draw a quadratic approximating the natural logarithm. You can check your answer on Desmos <a class="external" href="https://www.desmos.com/calculator/bad2xrwmvl" target="_blank"><code class="code-inline tex2jax_ignore">https://www.desmos.com/calculator/bad2xrwmvl</code></a></p></article></article><article class="observation remark-like" id="observation-18"><h3 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">3.2.9</span><span class="period">.</span>
+</h3>
+<p id="p-1049">A linear approximation <span class="process-math">\(L(x)\)</span> to <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=a\)</span> is a linear function with</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+L(a) = f(a), \quad L'(a) = f'(a). 
+\end{equation*}
+</div>
+<p id="p-1050">A quadratic approximation <span class="process-math">\(Q(x)\)</span> to <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=a\)</span> is a quadratic function with</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+Q(a) = f(a), \quad Q'(a) = f'(a), \quad Q''(a) = f''(a) .
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-156"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.10</span><span class="period">.</span>
+</h3>
+<p id="p-1051">Find the linear approximation <span class="process-math">\(L(x)\)</span> of <span class="process-math">\(\cos(x)\)</span> at <span class="process-math">\(x=0\text{.}\)</span> Then find the quadratic approximation <span class="process-math">\(Q(x)\)</span> of <span class="process-math">\(\cos(x)\)</span> at <span class="process-math">\(x=0\text{.}\)</span> Graph both and compare the two approximations!</p></article><article class="activity project-like" id="linear_approx-fluency-checkit"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.2.11</span><span class="period">.</span>
+</h3>
+<p id="p-1052">Suppose the function <span class="process-math">\(p(x)\)</span> satisfies <span class="process-math">\(p(-2) = 5\text{,}\)</span> <span class="process-math">\(p'(-2) = 1\text{,}\)</span> and <span class="process-math">\(p''(x) &lt; 0\)</span> for <span class="process-math">\(x\)</span> values nearby <span class="process-math">\(-2\text{.}\)</span></p>
+<ol class="decimal">
+<li id="li-733"><p id="p-1053">Explain and demonstrate how to find the linearization <span class="process-math">\(L(x)\)</span> of <span class="process-math">\(p(x)\)</span> at <span class="process-math">\(x =-2\text{.}\)</span></p></li>
+<li id="li-734"><p id="p-1054">Explain and demonstrate how to estimate the value of <span class="process-math">\(p(-2.03)\)</span> using this linearization.</p></li>
+<li id="li-735"><p id="p-1055">Explain why your estimate of <span class="process-math">\(p(-2.03)\)</span> is greater than or less than the actual value.</p></li>
+<li id="li-736"><p id="p-1056">Sketch a possible graph of <span class="process-math">\(p(x)\)</span> and its linearization <span class="process-math">\(L(x)\)</span> nearby <span class="process-math">\(x =-2\)</span> to illustrate your findings.</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-14" id="answer-14"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-14"><div class="answer solution-like"><ol class="decimal">
+<li id="li-737"><p id="p-1057"><span class="process-math">\(\displaystyle L(x)=x + 7\)</span></p></li>
+<li id="li-738"><p id="p-1058"><span class="process-math">\(\displaystyle p(-2.03) \approx 4.97\)</span></p></li>
+<li id="li-739"><p id="p-1059">The estimate is greater than the actual value.</p></li>
+</ol></div></div>
+</div></article></section></div></main>
+</div>
+</body>
+</html>

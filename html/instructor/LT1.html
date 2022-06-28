@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-06-28T16:08:16Z       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Cal1 Limits graphically (LT1)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus 1 for Team-Based Inquiry Learning">
+<meta property="book:author" content="TBIL Institute Fellows">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus 1 for Team-Based Inquiry Learning:</span> <span class="subtitle">Live Development Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="LT.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="LT.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="LT2.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="LT.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="LT.html" title="Up">Up</a><a class="next-button button toolbar-item" href="LT2.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li>
+<li><a href="printable-pdf.html" data-scroll="printable-pdf" class="internal">Printable PDF</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="LT.html" data-scroll="LT" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1" class="active">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2" class="internal">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3" class="internal">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4" class="internal">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5" class="internal">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6" class="internal">Limits with infinite outputs (LT6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="DF.html" data-scroll="DF" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2" class="internal">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1" class="internal">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3" class="internal">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4" class="internal">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5" class="internal">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6" class="internal">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7" class="internal">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8" class="internal">Differentiating inverse functions (DF8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AD.html" data-scroll="AD" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1" class="internal">Tangents, motion, and marginals (AD1)</a></li>
+<li><a href="AD2.html" data-scroll="AD2" class="internal">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3" class="internal">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4" class="internal">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5" class="internal">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6" class="internal">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7" class="internal">Graphing with derivatives (AD7)</a></li>
+<li><a href="AD8.html" data-scroll="AD8" class="internal">Applied optimization (AD8)</a></li>
+<li><a href="AD9.html" data-scroll="AD9" class="internal">Limits and Derivatives (AD9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="IN.html" data-scroll="IN" class="internal"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul>
+<li><a href="IN1.html" data-scroll="IN1" class="internal">Geometry of definite integrals (IN1)</a></li>
+<li><a href="IN2.html" data-scroll="IN2" class="internal">Approximating definite integrals (IN2)</a></li>
+<li><a href="IN3.html" data-scroll="IN3" class="internal">Elementary antiderivatives (IN3)</a></li>
+<li><a href="IN4.html" data-scroll="IN4" class="internal">Initial Value Problems (IN4)</a></li>
+<li><a href="IN5.html" data-scroll="IN5" class="internal">FTC for definite integrals (IN5)</a></li>
+<li><a href="IN6.html" data-scroll="IN6" class="internal">FTC for derivatives of integrals (IN6)</a></li>
+<li><a href="IN7.html" data-scroll="IN7" class="internal">Area under curves (IN7)</a></li>
+<li><a href="IN8.html" data-scroll="IN8" class="internal">Area between curves (IN8)</a></li>
+<li><a href="IN9.html" data-scroll="IN9" class="internal">Substitution method (IN9)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl" class="internal"><span class="title">TBIL Resource Library</span></a></li>
+<li class="link"><a href="pretext.html" data-scroll="pretext" class="internal"><span class="title">Authored with PreTeXt</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="LT1"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.1</span> <span class="title">Limits graphically (LT1)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-2"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="li-39"><p id="p-44">Find limits from the graph of a function.</p></li></ul></article><article class="activity project-like" id="activity-limits-graphically1"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-3">
+<p id="p-45">In <a href="" class="xref" data-knowl="./knowl/limit_censored.html" title="Figure 1">Figure 1</a> the graph of a function is given, but something is wrong. The graphic card failed and one portion did not render properly. We can’t see what is happening in the neighborhood of <span class="process-math">\(x=2\text{.}\)</span></p>
+<figure class="figure figure-like" id="limit_censored"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/limit_censored.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1<span class="period">.</span></span><span class="space"> </span>A graph of a function that has not been rendered properly.</figcaption></figure>
+</div>
+<article class="task exercise-like" id="task-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-46">Imagine moving along the graph toward the missing portion from the left, so that you are climbing up and to the right toward the obscured area of the graph. What <span class="process-math">\(y\)</span>-value are you approaching?</p>
+<ol class="upper-alpha">
+<li id="li-40"><p id="p-47">0.5</p></li>
+<li id="li-41"><p id="p-48">1</p></li>
+<li id="li-42"><p id="p-49">1.5</p></li>
+<li id="li-43"><p id="p-50">2</p></li>
+<li id="li-44"><p id="p-51">2.5</p></li>
+</ol></article><article class="task exercise-like" id="task-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-52">Think of the same process, but this time from the right. You’re falling down and to the left this time as you come close to the missing portion. What <span class="process-math">\(y\)</span>-value are you approaching?</p>
+<ol class="upper-alpha">
+<li id="li-45"><p id="p-53">0.5</p></li>
+<li id="li-46"><p id="p-54">1</p></li>
+<li id="li-47"><p id="p-55">1.5</p></li>
+<li id="li-48"><p id="p-56">2</p></li>
+<li id="li-49"><p id="p-57">2.5</p></li>
+</ol></article></article><article class="activity project-like" id="activity-limits-graphically2"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.2</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-4">
+<p id="p-58">In <a href="" class="xref" data-knowl="./knowl/limit_uncensored.html" title="Figure 2">Figure 2</a> the graphic card is working again and we can see more clearly what is happening in the neighborhood of <span class="process-math">\(x=2\text{.}\)</span></p>
+<figure class="figure figure-like" id="limit_uncensored"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/limit_uncensored.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2<span class="period">.</span></span><span class="space"> </span>A graph of a function that has rendered properly</figcaption></figure>
+</div>
+<article class="task exercise-like" id="task-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-59">What is the value of <span class="process-math">\(f(2)\text{?}\)</span></p></article><article class="task exercise-like" id="task-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-60">What is the <span class="process-math">\(y\)</span>-value that is approached as we move toward <span class="process-math">\(x = 2\)</span> from the left?</p>
+<ol class="upper-alpha">
+<li id="li-50"><p id="p-61">0.5</p></li>
+<li id="li-51"><p id="p-62">1</p></li>
+<li id="li-52"><p id="p-63">1.5</p></li>
+<li id="li-53"><p id="p-64">2</p></li>
+<li id="li-54"><p id="p-65">2.5</p></li>
+</ol></article><article class="task exercise-like" id="task-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-66">What is the <span class="process-math">\(y\)</span>-value that is approached as we move toward <span class="process-math">\(x = 2\)</span> from the right?</p>
+<ol class="upper-alpha">
+<li id="li-55"><p id="p-67">0.5</p></li>
+<li id="li-56"><p id="p-68">1</p></li>
+<li id="li-57"><p id="p-69">1.5</p></li>
+<li id="li-58"><p id="p-70">2</p></li>
+<li id="li-59"><p id="p-71">2.5</p></li>
+</ol></article></article><article class="remark remark-like" id="remark-1"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.1.3</span><span class="period">.</span>
+</h3>
+<p id="p-72">When studying functions in algebra, we often focused on the <em class="emphasis">value</em> of a function given a specific <span class="process-math">\(x\)</span>-value. For instance, finding <span class="process-math">\(f(2)\)</span> for some function <span class="process-math">\(f(x)\text{.}\)</span> In calculus, and here in <a href="" class="xref" data-knowl="./knowl/activity-limits-graphically1.html" title="Activity 1.1.1">Activity 1.1.1</a> and <a href="" class="xref" data-knowl="./knowl/activity-limits-graphically2.html" title="Activity 1.1.2">Activity 1.1.2</a>, we have instead been exploring what is happening as we <em class="emphasis">approach</em> a certain value on a graph.  This concept in mathematics is known as finding a limit.</p></article><article class="activity project-like" id="activity-3"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.4</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-5"><p id="p-73">Based on <a href="" class="xref" data-knowl="./knowl/activity-limits-graphically1.html" title="Activity 1.1.1">Activity 1.1.1</a> and <a href="" class="xref" data-knowl="./knowl/activity-limits-graphically2.html" title="Activity 1.1.2">Activity 1.1.2</a>, write your first draft of the definition of a limit. What is important to include? (You can use concepts of limits from your daily life to motivate or define what a limit is.)</p></div></article><article class="definition definition-like" id="definition-1"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.5</span><span class="period">.</span>
+</h3>
+<p id="p-74">Given a function <span class="process-math">\(f\text{,}\)</span> a fixed input <span class="process-math">\(x = a\text{,}\)</span> and a real number <span class="process-math">\(L\text{,}\)</span> we say that <dfn class="terminology"><span class="process-math">\(f\)</span> has limit <span class="process-math">\(L\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\)</span></dfn>,  and write</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{x \to a} f(x) = L
+\end{equation*}
+</div>
+<p class="continuation">provided that we can make <span class="process-math">\(f(x)\)</span> as close to <span class="process-math">\(L\)</span> as we like by taking <span class="process-math">\(x\)</span> sufficiently close (but not equal) to <span class="process-math">\(a\text{.}\)</span> If we cannot make <span class="process-math">\(f(x)\)</span> as close to a single value as we would like as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\text{,}\)</span> then we say that <dfn class="terminology"><span class="process-math">\(f\)</span> does not have a limit as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\text{.}\)</span></dfn></p></article><article class="activity project-like" id="activity-limits-graphically-one-sided"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.6</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-6">
+<p id="p-75"></p>
+<figure class="figure figure-like" id="limit-left-and-right"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/limit-left-and-right.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3<span class="period">.</span></span><span class="space"> </span>A piecewise-defined function</figcaption></figure>
+</div>
+<p id="p-76">What is the limit as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(0\)</span> in <a href="" class="xref" data-knowl="./knowl/limit-left-and-right.html" title="Figure 3">Figure 3</a>?</p>
+<ol class="upper-alpha">
+<li id="li-60"><p id="p-77">The limit is 1</p></li>
+<li id="li-61"><p id="p-78">The limit is -1</p></li>
+<li id="li-62"><p id="p-79">The limit is 0</p></li>
+<li id="li-63"><p id="p-80">The limit is not defined</p></li>
+</ol></article><article class="definition definition-like" id="definition-2"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.7</span><span class="period">.</span>
+</h3>
+<p id="p-81">We say that <em class="emphasis"><span class="process-math">\(f\)</span> has limit <span class="process-math">\(L_1\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\)</span> from the left</em> and write</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{x \to a^-} f(x) = L_1
+\end{equation*}
+</div>
+<p class="continuation">provided that we can make the value of <span class="process-math">\(f(x)\)</span> as close to <span class="process-math">\(L_1\)</span> as we like by taking <span class="process-math">\(x\)</span> sufficiently close to <span class="process-math">\(a\)</span> while always having <span class="process-math">\(x \lt  a\text{.}\)</span> We call <span class="process-math">\(L_1\)</span> the left-hand limit of <span class="process-math">\(f\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\text{.}\)</span> Similarly, we say <em class="emphasis"><span class="process-math">\(L_2\)</span> is the right-hand limit of <span class="process-math">\(f\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\)</span></em> and write</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{x \to a^+} f(x) = L_2
+\end{equation*}
+</div>
+<p class="continuation">provided that we can make the value of <span class="process-math">\(f(x)\)</span> as close to <span class="process-math">\(L_2\)</span> as we like by taking <span class="process-math">\(x\)</span> sufficiently close to <span class="process-math">\(a\)</span> while always having <span class="process-math">\(x \gt a\text{.}\)</span></p></article><article class="activity project-like" id="activity-limits-graphically-one-sided2"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.8</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-7"><p id="p-82">Refer again to <a href="" class="xref" data-knowl="./knowl/limit-left-and-right.html" title="Figure 3">Figure 3</a> from <a href="" class="xref" data-knowl="./knowl/activity-limits-graphically-one-sided.html" title="Activity 1.1.6">Activity 1.1.6</a>.</p></div>
+<article class="task exercise-like" id="task-6"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-83">Which of the following best matches the definition of right and left limits? (Note that DNE is short for "does not exist.")</p>
+<ol class="upper-alpha">
+<li id="li-64"><p id="p-84">The left limit is -1. The right limit is 1.</p></li>
+<li id="li-65"><p id="p-85">The left limit is 1. The right limit is -1.</p></li>
+<li id="li-66"><p id="p-86">The left limit DNE. The right limit is 1.</p></li>
+<li id="li-67"><p id="p-87">The left limit is -1. The right limit DNE.</p></li>
+<li id="li-68"><p id="p-88">The left limit DNE. The right limit DNE.</p></li>
+</ol></article><article class="task exercise-like" id="task-7"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-89">What do you think the overall limit equals?</p>
+<ol class="upper-alpha">
+<li id="li-69"><p id="p-90">The limit is 1</p></li>
+<li id="li-70"><p id="p-91">The limit is -1</p></li>
+<li id="li-71"><p id="p-92">The limit is 0</p></li>
+<li id="li-72"><p id="p-93">The limit is not defined</p></li>
+</ol></article></article><article class="activity project-like" id="activity-limits-graphically-fluency1"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.9</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-8">
+<p id="p-94">Consider the following graph:</p>
+<figure class="figure figure-like" id="limits-one-sided-fluency"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/limits-one-sided-fluency.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4<span class="period">.</span></span><span class="space"> </span>Another piecewise-defined function</figcaption></figure>
+</div>
+<article class="task exercise-like" id="task-8"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-95">Find  <span class="process-math">\(\displaystyle \lim_{x \to -3^-} f(x)\)</span> and <span class="process-math">\(\displaystyle \lim_{x \to -3^+} f(x)\text{.}\)</span></p></article><article class="task exercise-like" id="task-9"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-96">Find  <span class="process-math">\(\displaystyle \lim_{x \to -1^-} f(x)\)</span> and <span class="process-math">\(\displaystyle \lim_{x \to -1^+} f(x)\text{.}\)</span></p></article><article class="task exercise-like" id="task-10"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-97">Find  <span class="process-math">\(\displaystyle \lim_{x \to 2^-} f(x)\)</span> and <span class="process-math">\(\displaystyle \lim_{x \to 2^+} f(x)\text{.}\)</span></p></article><article class="task exercise-like" id="task-11"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-98">Find  <span class="process-math">\(\displaystyle \lim_{x \to 4^-} f(x)\)</span> and <span class="process-math">\(\displaystyle \lim_{x \to 4^+} f(x)\text{.}\)</span></p></article><article class="task exercise-like" id="task-12"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-99">For which <span class="process-math">\(x\)</span>-values does the <em class="emphasis">overall</em> limit exist? Select all. If the limit exists, find it. If it does not, explain why.</p>
+<ol class="upper-alpha">
+<li id="li-73"><p id="p-derived-li-73"><span class="process-math">\(\displaystyle -3\)</span></p></li>
+<li id="li-74"><p id="p-derived-li-74"><span class="process-math">\(\displaystyle -1\)</span></p></li>
+<li id="li-75"><p id="p-derived-li-75"><span class="process-math">\(\displaystyle 2\)</span></p></li>
+<li id="li-76"><p id="p-derived-li-76"><span class="process-math">\(\displaystyle 4\)</span></p></li>
+</ol></article></article><article class="activity project-like" id="activity-7"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.10</span><span class="period">.</span>
+</h3>
+<p id="p-100">Sketch the graph of a function <span class="process-math">\(f(x)\)</span> that meets all of the following criteria. Be sure to scale your axes and label any important features of your graph.</p>
+<ol class="decimal">
+<li id="li-77"><p id="p-101"><span class="process-math">\(\displaystyle \lim_{x\to 5^-} f(x)\)</span> is finite, but <span class="process-math">\(\displaystyle \lim_{x\to 5^+} f(x)\)</span> is infinite.</p></li>
+<li id="li-78"><p id="p-102"><span class="process-math">\(\displaystyle \lim_{x\to -3} f(x)=-4\text{,}\)</span> but <span class="process-math">\(f(-3)=0\text{.}\)</span></p></li>
+<li id="li-79"><p id="p-103"><span class="process-math">\(\displaystyle \lim_{x\to -1^-} f(x)=-1\)</span> but <span class="process-math">\(\displaystyle \lim_{x\to -1^+} f(x)\neq-1\text{.}\)</span></p></li>
+</ol></article><article class="theorem theorem-like" id="squeeze-thm"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.1.11</span><span class="period">.</span>
+</h3>
+<p id="p-104">Suppose that:</p>
+<ul class="disc">
+<li id="li-80"><p id="p-105">for an interval around <span class="process-math">\(x=a\text{,}\)</span> we have that <span class="process-math">\(f(x) \leq g(x) \leq h(x) \)</span> ;</p></li>
+<li id="li-81"><p id="p-106">the limit as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\)</span> of <span class="process-math">\(f(x) \)</span> is equal to the same value <span class="process-math">\(L\)</span> as the limit of <span class="process-math">\(h(x)\text{,}\)</span> so <span class="process-math">\(\lim_{x\to a} f(x) = L =\lim_{x\to a} h(x) .\)</span></p></li>
+</ul>
+<p id="p-107">Then, the limit of <span class="process-math">\(g(x)\)</span> as <span class="process-math">\(x \to a\)</span> is also <span class="process-math">\(L\text{,}\)</span> so <span class="process-math">\(\lim_{x\to a} g(x) = L \)</span></p></article><article class="activity project-like" id="squeeze-thm-ex"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.12</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-9"><p id="p-108">In this activity we will explore a mathematical theorem, the Squeeze Theorem <a href="" class="xref" data-knowl="./knowl/squeeze-thm.html" title="Theorem 1.1.11">Theorem 1.1.11</a>.</p></div>
+<article class="task exercise-like" id="task-13"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-109">The part of the theorem that starts with “Suppose…” forms the assumptions of the theorem, whilst the part of the theorem that starts with “Then…” is the conclusion of the theorem. What are the assumptions of the Squeeze Theorem? What is the conclusion?</p></article><article class="task exercise-like" id="task-14"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-110">The assumptions of the Squeeze Theorem can be restated informally as “the function <span class="process-math">\(g\)</span> is squeezed between the functions <span class="process-math">\(f\)</span> and <span class="process-math">\(h\)</span> around <span class="process-math">\(a\)</span>”. Explain in your own words how the two assumptions result into a “squeezing effect”.</p></article><article class="task exercise-like" id="task-15"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-111">Let’s see an example of the application of this theorem. First examine the following picture. Explain why, from the picture, it seems that both assumptions of the theorem hold.</p>
+<figure class="figure figure-like" id="squeeze"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/squeeze.png" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5<span class="period">.</span></span><span class="space"> </span>A pictorial example of the Squeeze Theorem.</figcaption></figure></article><article class="task exercise-like" id="task-16"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-112">Match the functions <span class="process-math">\(f(x), g(x), h(x)\)</span> in the picture to the functions <span class="process-math">\(\cos(x), 1, \frac{\sin(x)}{x}\text{.}\)</span></p></article><article class="task exercise-like" id="task-17"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-113">Using trigonometry, one can show algebraically that <span class="process-math">\(\cos(x) \leq \frac{\sin(x)}{x} \leq 1 \)</span> for <span class="process-math">\(x\)</span> values close to zero. Moreover, <span class="process-math">\(\lim_{x \to 0} \cos(x) = \cos(0)=1\)</span> (we say that cosine is a continuous function). Use these facts and the Squeeze Theorem, to find the limit <span class="process-math">\(\lim_{x\to 0} \frac{\sin(x)}{x} \text{.}\)</span></p></article></article></section></div></main>
+</div>
+</body>
+</html>

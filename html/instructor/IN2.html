@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-06-28T16:08:20Z       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Cal1 Approximating definite integrals (IN2)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus 1 for Team-Based Inquiry Learning">
+<meta property="book:author" content="TBIL Institute Fellows">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus 1 for Team-Based Inquiry Learning:</span> <span class="subtitle">Live Development Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="IN1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="IN.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="IN3.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="IN1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="IN.html" title="Up">Up</a><a class="next-button button toolbar-item" href="IN3.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li>
+<li><a href="printable-pdf.html" data-scroll="printable-pdf" class="internal">Printable PDF</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="LT.html" data-scroll="LT" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1" class="internal">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2" class="internal">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3" class="internal">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4" class="internal">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5" class="internal">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6" class="internal">Limits with infinite outputs (LT6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="DF.html" data-scroll="DF" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2" class="internal">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1" class="internal">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3" class="internal">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4" class="internal">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5" class="internal">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6" class="internal">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7" class="internal">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8" class="internal">Differentiating inverse functions (DF8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AD.html" data-scroll="AD" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1" class="internal">Tangents, motion, and marginals (AD1)</a></li>
+<li><a href="AD2.html" data-scroll="AD2" class="internal">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3" class="internal">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4" class="internal">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5" class="internal">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6" class="internal">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7" class="internal">Graphing with derivatives (AD7)</a></li>
+<li><a href="AD8.html" data-scroll="AD8" class="internal">Applied optimization (AD8)</a></li>
+<li><a href="AD9.html" data-scroll="AD9" class="internal">Limits and Derivatives (AD9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="IN.html" data-scroll="IN" class="internal"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul>
+<li><a href="IN1.html" data-scroll="IN1" class="internal">Geometry of definite integrals (IN1)</a></li>
+<li><a href="IN2.html" data-scroll="IN2" class="active">Approximating definite integrals (IN2)</a></li>
+<li><a href="IN3.html" data-scroll="IN3" class="internal">Elementary antiderivatives (IN3)</a></li>
+<li><a href="IN4.html" data-scroll="IN4" class="internal">Initial Value Problems (IN4)</a></li>
+<li><a href="IN5.html" data-scroll="IN5" class="internal">FTC for definite integrals (IN5)</a></li>
+<li><a href="IN6.html" data-scroll="IN6" class="internal">FTC for derivatives of integrals (IN6)</a></li>
+<li><a href="IN7.html" data-scroll="IN7" class="internal">Area under curves (IN7)</a></li>
+<li><a href="IN8.html" data-scroll="IN8" class="internal">Area between curves (IN8)</a></li>
+<li><a href="IN9.html" data-scroll="IN9" class="internal">Substitution method (IN9)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl" class="internal"><span class="title">TBIL Resource Library</span></a></li>
+<li class="link"><a href="pretext.html" data-scroll="pretext" class="internal"><span class="title">Authored with PreTeXt</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content">
+<section class="section" id="IN2"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4.2</span> <span class="title">Approximating definite integrals (IN2)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-29"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="li-981"><p id="p-1483">Approximate definite integrals using Riemann sums.</p></li></ul></article><article class="activity project-like" id="KNr"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.2.1</span><span class="period">.</span>
+</h3>
+<p id="eGi">Suppose that a person is taking a walk along a long straight path and walks at a constant rate of 3 miles per hour.</p>
+<ol class="lower-alpha">
+<li id="IYe">
+<p id="NHX">On the left-hand axes provided in <a href="" class="xref" data-knowl="./knowl/F-4-2-IN1.html" title="Figure 63">Figure 63</a>, sketch a labeled graph of the velocity function <span class="process-math">\(v(t) = 3\text{.}\)</span></p>
+<figure class="figure figure-like" id="ZWp"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/4_1_PA1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">63<span class="period">.</span></span><span class="space"> </span>At left, axes for plotting <span class="process-math">\(y = v(t)\text{;}\)</span> at right, for plotting <span class="process-math">\(y = s(t)\text{.}\)</span></figcaption></figure><p id="tPg">Note that while the scale on the two sets of axes is the same, the units on the right-hand axes differ from those on the left. The right-hand axes will be used in question (d).</p>
+</li>
+<li id="pfn"><p id="Gdy">How far did the person travel during the two hours? How is this distance related to the area of a certain region under the graph of <span class="process-math">\(y = v(t)\text{?}\)</span></p></li>
+<li id="Vmw"><p id="mkH">Find an algebraic formula, <span class="process-math">\(s(t)\text{,}\)</span> for the position of the person at time <span class="process-math">\(t\text{,}\)</span> assuming that <span class="process-math">\(s(0) = 0\text{.}\)</span> Explain your thinking.</p></li>
+<li id="BtF"><p id="SrQ">On the right-hand axes provided in <a href="" class="xref" data-knowl="./knowl/F-4-2-IN1.html" title="Figure 63">Figure 63</a>, sketch a labeled graph of the position function <span class="process-math">\(y = s(t)\text{.}\)</span></p></li>
+<li id="hAO"><p id="yyZ">For what values of <span class="process-math">\(t\)</span> is the position function <span class="process-math">\(s\)</span> increasing? Explain why this is the case using relevant information about the velocity function <span class="process-math">\(v\text{.}\)</span></p></li>
+</ol></article><section class="subsection" id="EWs"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.2.1</span> <span class="title">Area under the graph of the velocity function</span>
+</h3>
+<p id="hdC">In <a href="" class="xref" data-knowl="./knowl/integration-riemann-1.html" title="Activity 4.2.1">Activity 4.2.1</a>, we learned that when the velocity of a moving object's velocity is constant (and positive), the area under the velocity curve over an interval of time tells us the distance the object traveled.</p>
+<figure class="figure figure-like" id="ybN"><div class="image-box" style="width: 74%; margin-left: 13%; margin-right: 13%;"><img src="external/4_1_VelArea.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">64<span class="period">.</span></span><span class="space"> </span>At left, a constant velocity function; at right, a non-constant velocity function.</figcaption></figure><p id="NkL">The left-hand graph of <a href="" class="xref" data-knowl="./knowl/F-4-1-VelArea.html" title="Figure 64">Figure 64</a> shows the velocity of an object moving at 2 miles per hour over the time interval <span class="process-math">\([1,1.5]\text{.}\)</span> The area <span class="process-math">\(A_1\)</span> of the shaded region under <span class="process-math">\(y = v(t)\)</span> on <span class="process-math">\([1,1.5]\)</span> is</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/F-4-1-VelArea.html">
+\begin{equation*}
+A_1= 2 \, \frac{\text{miles} }{\text{hour} } \cdot \frac{1}{2} \, \text{hours}  = 1 \, \text{mile}\text{.}
+\end{equation*}
+</div>
+<p id="trU">This result is simply the fact that distance equals rate times time, provided the rate is constant. Thus, if <span class="process-math">\(v(t)\)</span> is constant on the interval <span class="process-math">\([a,b]\text{,}\)</span> the distance traveled on <span class="process-math">\([a,b]\)</span> is equal to the area <span class="process-math">\(A\)</span> given by</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+A = v(a) (b-a) = v(a) \Delta t\text{,}
+\end{equation*}
+</div>
+<p class="continuation">where <span class="process-math">\(\Delta t\)</span> is the change in <span class="process-math">\(t\)</span> over the interval. (Since the velocity is constant, we can use any value of <span class="process-math">\(v(t)\)</span> on the interval <span class="process-math">\([a,b]\text{,}\)</span> we simply chose <span class="process-math">\(v(a)\text{,}\)</span> the value at the interval's left endpoint.) For several examples where the velocity function is piecewise constant, see <a class="external" href="http://gvsu.edu/s/9T" target="_blank">http://gvsu.edu/s/9T</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-41" id="fn-41"><sup> 1 </sup></a>.<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-42" id="fn-42"><sup> 2 </sup></a></p>
+<p id="Zzd">The situation is more complicated when the velocity function is not constant. But on relatively small intervals where <span class="process-math">\(v(t)\)</span> does not vary much, we can use the area principle to estimate the distance traveled. The graph at right in <a href="" class="xref" data-knowl="./knowl/F-4-1-VelArea.html" title="Figure 64">Figure 64</a> shows a non-constant velocity function. On the interval <span class="process-math">\([1,1.5]\text{,}\)</span> the velocity varies from <span class="process-math">\(v(1) = 2.5\)</span> down to <span class="process-math">\(v(1.5) \approx 2.1\text{.}\)</span> One estimate for the distance traveled is the area of the pictured rectangle,</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/F-4-1-VelArea.html">
+\begin{equation*}
+A_2 = v(1) \Delta t = 2.5 \, \frac{\text{miles} }{\text{hour} } \cdot \frac{1}{2} \, \text{hours}  = 1.25 \, \text{miles}\text{.}
+\end{equation*}
+</div>
+<p id="FGm">Note that because <span class="process-math">\(v\)</span> is decreasing on <span class="process-math">\([1,1.5]\text{,}\)</span> <span class="process-math">\(A_2 = 1.25\)</span> is an over-estimate of the actual distance traveled.</p>
+<p id="lNv">To estimate the area under this non-constant velocity function on a wider interval, say <span class="process-math">\([0,3]\text{,}\)</span> one rectangle will not give a good approximation. Instead, we could use the six rectangles pictured in <a href="" class="xref" data-knowl="./knowl/F-4-1-VelArea2.html" title="Figure 65">Figure 65</a>, find the area of each rectangle, and add up the total. Obviously there are choices to make and issues to understand: How many rectangles should we use? Where should we evaluate the function to decide the rectangle's height? What happens if the velocity is sometimes negative? Can we find the exact area under any non-constant curve?</p>
+<figure class="figure figure-like" id="eiW"><div class="image-box" style="width: 47%; margin-left: 26.5%; margin-right: 26.5%;"><img src="external/4_1_VelArea2.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">65<span class="period">.</span></span><span class="space"> </span>Using six rectangles to estimate the area under <span class="process-math">\(y = v(t)\)</span> on <span class="process-math">\([0,3]\text{.}\)</span></figcaption></figure><p id="RUE">We will study these questions and more in what follows; for now it suffices to observe that the simple idea of the area of a rectangle gives us a powerful tool for estimating distance traveled from a velocity function, as well as for estimating the area under an arbitrary curve. To explore the use of multiple rectangles to approximate area under a non-constant velocity function, see the applet found at <a class="external" href="http://gvsu.edu/s/9U" target="_blank">http://gvsu.edu/s/9U</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-43" id="fn-43"><sup> 3 </sup></a>.<a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-44" id="fn-44"><sup> 4 </sup></a></p>
+<article class="activity project-like" id="gon"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.2.2</span><span class="period">.</span>
+</h4>
+<p id="WUB">Suppose that a person is walking in such a way that her velocity varies slightly according to the information given in <a href="" class="xref" data-knowl="./knowl/T-4-1-Act1.html" title="Table 66: Velocity data for the person walking.">Table 66</a> and graph given in <a href="" class="xref" data-knowl="./knowl/F-4-1-Act1.html" title="Figure 67">Figure 67</a>.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1.5%;margin-right:1.5%;">
+<div class="sbspanel fixed-width middle" style="width:48.4536082474227%;"><figure class="table table-like" id="bEu"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">66<span class="period">.</span></span><span class="space"> </span>Velocity data for the person walking.</figcaption><table class="tabular" id="HLD">
+<tr>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(t\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(v(t)\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.00\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1.500\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.25\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1.789\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.50\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1.938\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.75\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1.992\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1.00\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2.000\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1.25\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2.008\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1.50\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2.063\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1.75\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2.211\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2.00\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2.500\)</span></td>
+</tr>
+</table></figure></div>
+<div class="sbspanel middle" style="width:48.4536082474227%;"><figure class="figure figure-like" id="qNs"><img src="external/4_1_Act1.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">67<span class="period">.</span></span><span class="space"> </span>The graph of <span class="process-math">\(y = v(t)\text{.}\)</span></figcaption></figure></div>
+</div></div>
+<ol id="DbK" class="lower-alpha">
+<li id="JWp"><p id="Ehd">Using the grid, graph, and given data appropriately, estimate the distance traveled by the walker during the two hour interval from <span class="process-math">\(t = 0\)</span> to <span class="process-math">\(t = 2\text{.}\)</span> You should use time intervals of width <span class="process-math">\(\Delta t = 0.5\text{,}\)</span> choosing a way to use the function consistently to determine the height of each rectangle in order to approximate distance traveled.</p></li>
+<li id="qdy"><p id="kom">How could you get a better approximation of the distance traveled on <span class="process-math">\([0,2]\text{?}\)</span> Explain, and then find this new estimate.</p></li>
+<li id="WkH"><p id="Qvv">Now suppose that you know that <span class="process-math">\(v\)</span> is given by <span class="process-math">\(v(t) = 0.5t^3-1.5t^2+1.5t+1.5\text{.}\)</span> Remember that <span class="process-math">\(v\)</span> is the derivative of the walker's position function, <span class="process-math">\(s\text{.}\)</span> Find a formula for <span class="process-math">\(s\)</span> so that <span class="process-math">\(s' = v\text{.}\)</span></p></li>
+<li id="CrQ"><p id="wCE">Based on your work in (c), what is the value of <span class="process-math">\(s(2) - s(0)\text{?}\)</span> What is the meaning of this quantity?</p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-Fmw" id="Fmw"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-Fmw"><div class="hint solution-like"><ol id="KGj" class="lower-alpha">
+<li id="iyZ"><p id="cJN">For instance, the approximate distance traveled on <span class="process-math">\([0,0.5]\)</span> can be computed by <span class="process-math">\(v(0) \cdot 0.5 = 1.5 \cdot 0.5 = 0.75\)</span> miles.</p></li>
+<li id="OGi"><p id="IQW">Think about the possibility of using a larger number of rectangles.</p></li>
+<li id="uNr"><p id="oYf">If <span class="process-math">\(v(t) = t^3\)</span> and we seek a function <span class="process-math">\(s\)</span> such that <span class="process-math">\(s' = v\text{,}\)</span> note that <span class="process-math">\(s\)</span> has to involve <span class="process-math">\(t^4\text{.}\)</span></p></li>
+<li id="aUA"><p id="Vfo">Observe that this quantity is measuring a change in position.</p></li>
+</ol></div></div>
+<a href="" data-knowl="" class="id-ref answer-knowl original has-image" data-refid="hk-Zfn" id="Zfn"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-Zfn"><div class="answer solution-like"><ol id="eza" class="lower-alpha">
+<li id="HbJ">
+<div class="sidebyside"><div class="sbsrow" style="margin-left:30%;margin-right:30%;"><div class="sbspanel top" style="width:100%;"><img src="external/4_1_Act1Soln.svg" role="img" class="contained"></div></div></div>
+<div class="displaymath process-math" data-contains-math-knowls="" id="jiT">
+\begin{align*}
+A =\mathstrut \amp  v(0.0) \cdot 0.5 + v(0.5) \cdot 0.5 + v(1.0) \cdot 0.5 + v(1.5) \cdot 0.5\\
+=\mathstrut \amp  1.500 \cdot 0.5 + 1.9375 \cdot 0.5 +  2.000 \cdot 0.5 + 2.0625 \cdot 0.5\\
+=\mathstrut \amp  3.75
+\end{align*}
+</div>
+<p class="continuation">Thus, <span class="process-math">\(D \approx 3.75\)</span> miles.</p>
+</li>
+<li id="niS"><p id="htG">Using 8 rectangles of width <span class="process-math">\(0.25\text{,}\)</span> <span class="process-math">\(D \approx 3.875\text{.}\)</span></p></li>
+<li id="Tqb"><p id="NAP"><span class="process-math">\(s(t) = \frac{1}{8}t^4 - \frac{1}{2} t^3 + \frac{3}{4} t^2 + \frac{3}{2}t\text{.}\)</span></p></li>
+<li id="zxk"><p id="tHY"><span class="process-math">\(s(2) - s(0) = \frac{1}{8}2^4 - \frac{1}{2}2^3 + \frac{3}{4}2^2 + \frac{3}{2} 2 = 4\text{.}\)</span></p></li>
+</ol></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-sYe" id="sYe"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-sYe"><div class="solution solution-like"><ol id="yrR" class="lower-alpha">
+<li id="fEt">
+<p id="ZPh">Using rectangles of width <span class="process-math">\(\Delta t = 0.5\)</span> and choosing to set the heights of the rectangles from the function value at the left end of the interval, we see the following graph and find the sum of the areas of the rectangles to be</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="Pqc">
+\begin{align*}
+A =\mathstrut \amp  v(0.0) \cdot 0.5 + v(0.5) \cdot 0.5 + v(1.0) \cdot 0.5 + v(1.5) \cdot 0.5\\
+=\mathstrut \amp  1.500 \cdot 0.5 + 1.9375 \cdot 0.5 +  2.000 \cdot 0.5 + 2.0625 \cdot 0.5\\
+=\mathstrut \amp  3.75
+\end{align*}
+</div>
+<p class="continuation">Thus, the distance traveled is approximately <span class="process-math">\(D \approx 3.75\)</span> miles.</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:35%;margin-right:35%;"><div class="sbspanel top" style="width:100%;"><img src="external/4_1_Act1Soln.svg" role="img" class="contained"></div></div></div>
+</li>
+<li id="LLC"><p id="FWq">It appears that a better approximation could be found using narrower rectangles. If we move to 8 rectangles of width <span class="process-math">\(0.25\text{,}\)</span> similar computations show that <span class="process-math">\(D \approx 3.875\text{.}\)</span></p></li>
+<li id="rSL">
+<p id="mdz">By thinking about how the power rule for differentiation works, we can undo this rule and find a position function <span class="process-math">\(s\)</span> whose derivative is <span class="process-math">\(v\text{.}\)</span> For instance, since <span class="process-math">\(\frac{d}{dt}[t^4] = 4t^3\text{,}\)</span> we see that <span class="process-math">\(\frac{d}{dt}[\frac{1}{8}t^4] = \frac{1}{2}t^3\text{.}\)</span> Thus, if we let</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+s(t) = \frac{1}{8}t^4 - \frac{1}{2} t^3 + \frac{3}{4} t^2 + \frac{3}{2}t\text{,}
+\end{equation*}
+</div>
+<p class="continuation">then it is straightforward to check that <span class="process-math">\(s'(t) = \frac{1}{2}t^3 - \frac{3}{2}t^2 + \frac{3}{2}t + \frac{3}{2}\text{,}\)</span> which is precisely the formula for <span class="process-math">\(v(t)\)</span> that we were given.</p>
+</li>
+<li id="XZU"><p id="SkI">By the rule found in (c) for <span class="process-math">\(s\text{,}\)</span> we have that <span class="process-math">\(s(2) - s(0) = \frac{1}{8}2^4 - \frac{1}{2}2^3 + \frac{3}{4}2^2 + \frac{3}{2} 2 = 2 - 4 + 3 + 3 = 4\text{.}\)</span> This is the change in the walker's position over the time interval <span class="process-math">\([0,2]\text{,}\)</span> and since the velocity is always positive, this is actually the exact distance traveled. We see how both earlier estimates (<span class="process-math">\(3.75\)</span> and <span class="process-math">\(3.785\)</span>) are good approximations to this value.</p></li>
+</ol></div></div>
+</div></article><article class="activity project-like" id="riemann-fluency-checkit"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.2.3</span><span class="period">.</span>
+</h4>
+<p id="p-1519">Explain how to approximate the area under the curve <span class="process-math">\(f(x)=-9 \, x^{3} + 3 \, x - 9\)</span> on the interval <span class="process-math">\([4,10]\)</span> using a right Riemann sum with 3 rectangles of uniform width.</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-22" id="answer-22"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-22"><div class="answer solution-like"><p id="p-1520"><span class="process-math">\(-31014\)</span> square units</p></div></div>
+</div></article></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-41"><div class="fn"><code class="code-inline tex2jax_ignore">http://gvsu.edu/s/9T</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-42"><div class="fn">Marc Renault, calculus applets.</div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-43"><div class="fn"><code class="code-inline tex2jax_ignore">http://gvsu.edu/s/9U</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-44"><div class="fn">Marc Renault, calculus applets.</div></div>
+</div></main>
+</div>
+</body>
+</html>

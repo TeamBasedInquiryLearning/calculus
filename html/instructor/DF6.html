@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-06-28T16:08:18Z       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Cal1 Differentiation strategy (DF6)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus 1 for Team-Based Inquiry Learning">
+<meta property="book:author" content="TBIL Institute Fellows">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus 1 for Team-Based Inquiry Learning:</span> <span class="subtitle">Live Development Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="DF5.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="DF7.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="DF5.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a class="next-button button toolbar-item" href="DF7.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li>
+<li><a href="printable-pdf.html" data-scroll="printable-pdf" class="internal">Printable PDF</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="LT.html" data-scroll="LT" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1" class="internal">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2" class="internal">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3" class="internal">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4" class="internal">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5" class="internal">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6" class="internal">Limits with infinite outputs (LT6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="DF.html" data-scroll="DF" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2" class="internal">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1" class="internal">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3" class="internal">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4" class="internal">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5" class="internal">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6" class="active">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7" class="internal">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8" class="internal">Differentiating inverse functions (DF8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AD.html" data-scroll="AD" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1" class="internal">Tangents, motion, and marginals (AD1)</a></li>
+<li><a href="AD2.html" data-scroll="AD2" class="internal">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3" class="internal">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4" class="internal">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5" class="internal">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6" class="internal">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7" class="internal">Graphing with derivatives (AD7)</a></li>
+<li><a href="AD8.html" data-scroll="AD8" class="internal">Applied optimization (AD8)</a></li>
+<li><a href="AD9.html" data-scroll="AD9" class="internal">Limits and Derivatives (AD9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="IN.html" data-scroll="IN" class="internal"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul>
+<li><a href="IN1.html" data-scroll="IN1" class="internal">Geometry of definite integrals (IN1)</a></li>
+<li><a href="IN2.html" data-scroll="IN2" class="internal">Approximating definite integrals (IN2)</a></li>
+<li><a href="IN3.html" data-scroll="IN3" class="internal">Elementary antiderivatives (IN3)</a></li>
+<li><a href="IN4.html" data-scroll="IN4" class="internal">Initial Value Problems (IN4)</a></li>
+<li><a href="IN5.html" data-scroll="IN5" class="internal">FTC for definite integrals (IN5)</a></li>
+<li><a href="IN6.html" data-scroll="IN6" class="internal">FTC for derivatives of integrals (IN6)</a></li>
+<li><a href="IN7.html" data-scroll="IN7" class="internal">Area under curves (IN7)</a></li>
+<li><a href="IN8.html" data-scroll="IN8" class="internal">Area between curves (IN8)</a></li>
+<li><a href="IN9.html" data-scroll="IN9" class="internal">Substitution method (IN9)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl" class="internal"><span class="title">TBIL Resource Library</span></a></li>
+<li class="link"><a href="pretext.html" data-scroll="pretext" class="internal"><span class="title">Authored with PreTeXt</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="DF6"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.6</span> <span class="title">Differentiation strategy (DF6)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-14"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="li-557"><p id="p-784">Compute derivatives using a combination of algebraic derivative rules.</p></li></ul></article><article class="activity project-like" id="activity-df-strat-intro"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.6.1</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-72">
+<p id="p-785">Consider the functions defined below:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x)=\sin((x^2+3x)\cos(2x))
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+g(x)=\sin(x^2+3x)\cos(2x)
+\end{equation*}
+</div>
+</div>
+<article class="task exercise-like" id="task-192"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-786">What do you notice that is similar about these two functions?</p></article><article class="task exercise-like" id="task-193"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-787">What do you notice that is different about these two functions?</p></article><article class="task exercise-like" id="task-194"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-788">Imagine that you are sorting functions into different categories based on how you would differentiate them. In what category (or categories) might these functions fall?</p></article></article><article class="remark remark-like" id="remark-18"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.6.2</span><span class="period">.</span>
+</h3>
+<p id="p-789">We've learned a lot of rules to help us take derivatives of functions, and these rules are applied based on the algebraic structure of the function. (Note that we often see that algebraic structure come up in the names of the rules. Sum/difference, power, product, and quotient rules for example!) To take a derivative, we need to examine how the function is built and then proceed accordingly. Up until now we have not seen many situations where these rules were mixed together too much. Now we turn our attention to those types of situations.</p>
+<p id="p-790">Below are some questions you might ask yourself as you take the derivative of a function, especially one where multiple rules might need to be used:</p>
+<ol class="decimal">
+<li id="li-558"><p id="p-derived-li-558">How is this function built algebraically? What kind of function is this? What is the big picture?</p></li>
+<li id="li-559"><p id="p-derived-li-559">Where do you start?</p></li>
+<li id="li-560"><p id="p-derived-li-560">Is there an easier or more convenient way to write the function?</p></li>
+<li id="li-561"><p id="p-derived-li-561">Are there products or quotients involved?</p></li>
+<li id="li-562"><p id="p-derived-li-562">Is it a composition of two (or more) functions? If so, what are the outside and inside functions?</p></li>
+<li id="li-563"><p id="p-derived-li-563">What derivatives rules will be needed along the way?</p></li>
+</ol></article><article class="activity project-like" id="activity-df-strat1"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.6.3</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-73"><p id="p-791">Consider the function <span class="process-math">\(f(x)=x^3\sqrt{3-8x^2}\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-195"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-792">You will need multiple derivative rules to find <span class="process-math">\(f'(x)\text{.}\)</span> Which rule would need to be applied first? In other words, what is the big picture here?</p>
+<ol class="upper-alpha">
+<li id="li-564"><p id="p-derived-li-564">Chain rule</p></li>
+<li id="li-565"><p id="p-derived-li-565">Power rule</p></li>
+<li id="li-566"><p id="p-derived-li-566">Product rule</p></li>
+<li id="li-567"><p id="p-derived-li-567">Quotient rule</p></li>
+<li id="li-568"><p id="p-derived-li-568">Sum and difference rule</p></li>
+</ol></article><article class="task exercise-like" id="task-196"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-793">What other rules would be needed along the way? Select all that apply.</p>
+<ol class="upper-alpha">
+<li id="li-569"><p id="p-derived-li-569">Chain rule</p></li>
+<li id="li-570"><p id="p-derived-li-570">Power rule</p></li>
+<li id="li-571"><p id="p-derived-li-571">Product rule</p></li>
+<li id="li-572"><p id="p-derived-li-572">Quotient rule</p></li>
+<li id="li-573"><p id="p-derived-li-573">Sum and difference rule</p></li>
+</ol></article><article class="task exercise-like" id="task-197"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-794">Write an outline of the steps needed if you were asked to take the derivative of <span class="process-math">\(f(x)\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-df-strat2"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.6.4</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-74"><p id="p-795">Consider the function <span class="process-math">\(f(x)= \left(\frac{\ln x}{(3x-4)^3} \right)^5\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-198"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-796">You will need multiple derivative rules to find <span class="process-math">\(f'(x)\text{.}\)</span> Which rule would need to be applied first? In other words, what is the big picture here?</p>
+<ol class="upper-alpha">
+<li id="li-574"><p id="p-derived-li-574">Chain rule</p></li>
+<li id="li-575"><p id="p-derived-li-575">Power rule</p></li>
+<li id="li-576"><p id="p-derived-li-576">Product rule</p></li>
+<li id="li-577"><p id="p-derived-li-577">Quotient rule</p></li>
+<li id="li-578"><p id="p-derived-li-578">Sum and difference rule</p></li>
+</ol></article><article class="task exercise-like" id="task-199"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-797">What other rules would be needed along the way? Select all that apply.</p>
+<ol class="upper-alpha">
+<li id="li-579"><p id="p-derived-li-579">Chain rule</p></li>
+<li id="li-580"><p id="p-derived-li-580">Power rule</p></li>
+<li id="li-581"><p id="p-derived-li-581">Product rule</p></li>
+<li id="li-582"><p id="p-derived-li-582">Quotient rule</p></li>
+<li id="li-583"><p id="p-derived-li-583">Sum and difference rule</p></li>
+</ol></article><article class="task exercise-like" id="task-200"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-798">Write an outline of the steps needed if you were asked to take the derivative of <span class="process-math">\(f(x)\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-df-strat3"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.6.5</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-75"><p id="p-799">Consider the function <span class="process-math">\(f(x)= \sin(\cos(\tan(2x^3-1)))\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-201"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-800">You will need multiple derivative rules to find <span class="process-math">\(f'(x)\text{.}\)</span> Which rule would need to be applied first? In other words, what is the big picture here?</p>
+<ol class="upper-alpha">
+<li id="li-584"><p id="p-derived-li-584">Chain rule</p></li>
+<li id="li-585"><p id="p-derived-li-585">Power rule</p></li>
+<li id="li-586"><p id="p-derived-li-586">Product rule</p></li>
+<li id="li-587"><p id="p-derived-li-587">Quotient rule</p></li>
+<li id="li-588"><p id="p-derived-li-588">Sum and difference rule</p></li>
+</ol></article><article class="task exercise-like" id="task-202"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-801">What other rules would be needed along the way? Select all that apply.</p>
+<ol class="upper-alpha">
+<li id="li-589"><p id="p-derived-li-589">Chain rule</p></li>
+<li id="li-590"><p id="p-derived-li-590">Power rule</p></li>
+<li id="li-591"><p id="p-derived-li-591">Product rule</p></li>
+<li id="li-592"><p id="p-derived-li-592">Quotient rule</p></li>
+<li id="li-593"><p id="p-derived-li-593">Sum and difference rule</p></li>
+</ol></article><article class="task exercise-like" id="task-203"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-802">Write an outline of the steps needed if you were asked to take the derivative of <span class="process-math">\(f(x)\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-df-strat4"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.6.6</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-76"><p id="p-803">Consider the function <span class="process-math">\(f(x)= \frac{x^2 e^x}{2x^3-5x+\sqrt{x}}\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-204"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-804">You will need multiple derivative rules to find <span class="process-math">\(f'(x)\text{.}\)</span> Which rule would need to be applied first? In other words, what is the big picture here?</p>
+<ol class="upper-alpha">
+<li id="li-594"><p id="p-derived-li-594">Chain rule</p></li>
+<li id="li-595"><p id="p-derived-li-595">Power rule</p></li>
+<li id="li-596"><p id="p-derived-li-596">Product rule</p></li>
+<li id="li-597"><p id="p-derived-li-597">Quotient rule</p></li>
+<li id="li-598"><p id="p-derived-li-598">Sum and difference rule</p></li>
+</ol></article><article class="task exercise-like" id="task-205"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-805">What other rules would be needed along the way? Select all that apply.</p>
+<ol class="upper-alpha">
+<li id="li-599"><p id="p-derived-li-599">Chain rule</p></li>
+<li id="li-600"><p id="p-derived-li-600">Power rule</p></li>
+<li id="li-601"><p id="p-derived-li-601">Product rule</p></li>
+<li id="li-602"><p id="p-derived-li-602">Quotient rule</p></li>
+<li id="li-603"><p id="p-derived-li-603">Sum and difference rule</p></li>
+</ol></article><article class="task exercise-like" id="task-206"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-806">Write an outline of the steps needed if you were asked to take the derivative of <span class="process-math">\(f(x)\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-df-strat-fluency"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.6.7</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-77"><p id="p-807">Find the derivative of the following functions. For each, include an explanation of the steps involved that references the algebraic structure of the function.</p></div>
+<article class="task exercise-like" id="task-207"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<span class="process-math">\(f(x) = e^{5x}(x^2+7^x)^3\)</span></article><article class="task exercise-like" id="task-208"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<span class="process-math">\(f(x) = \left( \frac{3x + 1}{2x^{6} - 1} \right)^{ 5 } \)</span></article><article class="task exercise-like" id="task-209"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<span class="process-math">\(f(x) = \sqrt{\cos\left(2 \, x^{2} + x\right)}\)</span></article><article class="task exercise-like" id="task-210"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<span class="process-math">\(f(x) = \tan(xe^x)\)</span></article></article></section></div></main>
+</div>
+</body>
+</html>

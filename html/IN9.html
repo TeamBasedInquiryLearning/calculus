@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-06-28T16:08:00Z       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Cal1 Substitution method (IN9)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus 1 for Team-Based Inquiry Learning">
+<meta property="book:author" content="TBIL Institute Fellows">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus 1 for Team-Based Inquiry Learning:</span> <span class="subtitle">Live Development Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="IN8.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="IN.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="IN8.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="IN.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li>
+<li><a href="printable-pdf.html" data-scroll="printable-pdf" class="internal">Printable PDF</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="LT.html" data-scroll="LT" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1" class="internal">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2" class="internal">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3" class="internal">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4" class="internal">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5" class="internal">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6" class="internal">Limits with infinite outputs (LT6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="DF.html" data-scroll="DF" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2" class="internal">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1" class="internal">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3" class="internal">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4" class="internal">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5" class="internal">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6" class="internal">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7" class="internal">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8" class="internal">Differentiating inverse functions (DF8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AD.html" data-scroll="AD" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1" class="internal">Tangents, motion, and marginals (AD1)</a></li>
+<li><a href="AD2.html" data-scroll="AD2" class="internal">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3" class="internal">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4" class="internal">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5" class="internal">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6" class="internal">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7" class="internal">Graphing with derivatives (AD7)</a></li>
+<li><a href="AD8.html" data-scroll="AD8" class="internal">Applied optimization (AD8)</a></li>
+<li><a href="AD9.html" data-scroll="AD9" class="internal">Limits and Derivatives (AD9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="IN.html" data-scroll="IN" class="internal"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul>
+<li><a href="IN1.html" data-scroll="IN1" class="internal">Geometry of definite integrals (IN1)</a></li>
+<li><a href="IN2.html" data-scroll="IN2" class="internal">Approximating definite integrals (IN2)</a></li>
+<li><a href="IN3.html" data-scroll="IN3" class="internal">Elementary antiderivatives (IN3)</a></li>
+<li><a href="IN4.html" data-scroll="IN4" class="internal">Initial Value Problems (IN4)</a></li>
+<li><a href="IN5.html" data-scroll="IN5" class="internal">FTC for definite integrals (IN5)</a></li>
+<li><a href="IN6.html" data-scroll="IN6" class="internal">FTC for derivatives of integrals (IN6)</a></li>
+<li><a href="IN7.html" data-scroll="IN7" class="internal">Area under curves (IN7)</a></li>
+<li><a href="IN8.html" data-scroll="IN8" class="internal">Area between curves (IN8)</a></li>
+<li><a href="IN9.html" data-scroll="IN9" class="active">Substitution method (IN9)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl" class="internal"><span class="title">TBIL Resource Library</span></a></li>
+<li class="link"><a href="pretext.html" data-scroll="pretext" class="internal"><span class="title">Authored with PreTeXt</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="IN9"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">4.9</span> <span class="title">Substitution method (IN9)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-36"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="li-1099"><p id="p-1711">Evaluate various integrals via the substitution method.</p></li></ul></article><article class="activity project-like" id="activity-249"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.9.1</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-163"><p id="p-1712">Answer the following.</p></div>
+<article class="task exercise-like" id="task-440"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1713">Using the chain rule, which of these is derivative of <span class="process-math">\(e^{x^3}\)</span> with respect to <span class="process-math">\(x\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1100"><p id="p-1714"><span class="process-math">\(\displaystyle e^{3x^2}\)</span></p></li>
+<li id="li-1101"><p id="p-1715"><span class="process-math">\(\displaystyle x^3e^{x^3-1}\)</span></p></li>
+<li id="li-1102"><p id="p-1716"><span class="process-math">\(\displaystyle 3x^2e^{x^3}\)</span></p></li>
+<li id="li-1103"><p id="p-1717"><span class="process-math">\(\displaystyle \frac{1}{4}e^{x^4}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-441"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1718">Based on this result, which of these would you suspect to equal <span class="process-math">\(\int x^2e^{x^3}\,dx\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1104"><p id="p-1719"><span class="process-math">\(\displaystyle e^{x^3+1}+C\)</span></p></li>
+<li id="li-1105"><p id="p-1720"><span class="process-math">\(\displaystyle \frac{1}{3x}e^{x^3+1}+C\)</span></p></li>
+<li id="li-1106"><p id="p-1721"><span class="process-math">\(\displaystyle 3e^{x^3}+C\)</span></p></li>
+<li id="li-1107"><p id="p-1722"><span class="process-math">\(\displaystyle \frac{1}{3}e^{x^3}+C\)</span></p></li>
+</ol></article></article><article class="activity project-like" id="activity-250"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.9.2</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-164">
+<p id="p-1723">Recall that if <span class="process-math">\(u\)</span> is a function of <span class="process-math">\(x\text{,}\)</span> then <span class="process-math">\(\frac{d}{dx}[u^7]=7u^6 u'\)</span> by the Chain Rule.</p>
+<p id="p-1724">For each question, choose from the following.</p>
+<ol class="upper-alpha cols4">
+<li id="li-1108"><p id="p-1725"><span class="process-math">\(\displaystyle \frac{1}{7}u^7+C\)</span></p></li>
+<li id="li-1109"><p id="p-1726"><span class="process-math">\(\displaystyle u^7+C\)</span></p></li>
+<li id="li-1110"><p id="p-1727"><span class="process-math">\(\displaystyle 7u^7+C\)</span></p></li>
+<li id="li-1111"><p id="p-1728"><span class="process-math">\(\displaystyle \frac{6}{7}u^7+C\)</span></p></li>
+</ol>
+</div>
+<article class="task exercise-like" id="task-442"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1729">What is <span class="process-math">\(\int 7u^6 u'\,dx\text{?}\)</span></p></article><article class="task exercise-like" id="task-443"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1730">What is <span class="process-math">\(\int u^6 u'\,dx\text{?}\)</span></p></article><article class="task exercise-like" id="task-444"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1731">What is <span class="process-math">\(\int 6u^6 u'\,dx\text{?}\)</span></p></article></article><article class="activity project-like" id="activity-251"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.9.3</span><span class="period">.</span>
+</h3>
+<p id="p-1732">Based on these activities, which of these choices seems to be a viable strategy for integration?</p>
+<ol class="upper-alpha">
+<li id="li-1112"><p id="p-1733">Memorize an integration formula for every possible function.</p></li>
+<li id="li-1113"><p id="p-1734">Attempt to rewrite the integral in the form <span class="process-math">\(\int g'(u)u'dx=g(u)+C\text{.}\)</span></p></li>
+<li id="li-1114"><p id="p-1735">Keep differentiating functions until you come across the function you want to integrate.</p></li>
+</ol></article><article class="fact theorem-like" id="fact-1"><h3 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">4.9.4</span><span class="period">.</span>
+</h3>
+<p id="p-1736">By the chain rule,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{d}{dx}[g(u)+C]=g'(u)u'\text{.}
+\end{equation*}
+</div>
+<p class="continuation">There is an dual integration technique reversing this process, known as the <dfn class="terminology">substitution method</dfn>.</p>
+<p id="p-1737">This technique involves choosing an appropriate function <span class="process-math">\(u\)</span> in terms of <span class="process-math">\(x\)</span> to rewrite the integral as follows:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int f(x)\,dx=\dots=\int g'(u)u' dx=g(u)+C\text{.}
+\end{equation*}
+</div></article><article class="observation remark-like" id="observation-26"><h3 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">4.9.5</span><span class="period">.</span>
+</h3>
+<p id="p-1738">Recall that <span class="process-math">\(u'=\frac{du}{dx}\text{.}\)</span> This allows for the following:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int g'(u)u' dx=\int g'(u)\frac{du}{dx}\,dx=\int g'(u)du=g(u)+C\text{.}
+\end{equation*}
+</div>
+<p id="p-1739">Therefore rather than dealing with equations like <span class="process-math">\(u'=\frac{du}{dx}=x^2\text{,}\)</span> we will prefer to write <span class="process-math">\(du=x^2\,dx\text{.}\)</span></p></article><article class="activity project-like" id="activity-252"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.9.6</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-165">
+<p id="p-1740">Consider <span class="process-math">\(\int x^2e^{x^3}\,dx\text{,}\)</span> which we conjectured earlier to be <span class="process-math">\(\frac{1}{3}e^{x^3}+C\text{.}\)</span></p>
+<p id="p-1741">Suppose we decided to let <span class="process-math">\(u=x^3\text{.}\)</span></p>
+</div>
+<article class="task exercise-like" id="task-445"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1742">Compute <span class="process-math">\(\frac{du}{dx}=\unknown\text{,}\)</span> and rewrite it as <span class="process-math">\(du=\unknown\,dx\text{.}\)</span></p></article><article class="task exercise-like" id="task-446"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1743">Multiply both sides of the equation <span class="process-math">\(du=\unknown\,dx\)</span> so that its right-hand side appears in <span class="process-math">\(\int x^2e^{x^3}\,dx\text{.}\)</span></p></article><article class="task exercise-like" id="task-447"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1744">Show why <span class="process-math">\(\int x^2e^{x^3}\,dx\)</span> may now be rewritten as <span class="process-math">\(\int \frac{1}{3}e^u\,du\text{.}\)</span></p></article><article class="task exercise-like" id="task-448"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1745">Solve <span class="process-math">\(\int \frac{1}{3}e^u\,du\)</span> in terms of <span class="process-math">\(u\text{,}\)</span> then replace <span class="process-math">\(u\)</span> with <span class="process-math">\(x^3\)</span> to confirm our original conjecture.</p></article></article><article class="example example-like" id="example-5"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.9.7</span><span class="period">.</span>
+</h3>
+<p id="p-1746">Here is how one might write out the explanation of how to find <span class="process-math">\(\int x^2e^{x^3}\,dx\)</span> from start to finish:</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-3">
+\begin{align*}
+\int x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3\\
+&amp;&amp;&amp; du = 3x^2\,dx\\
+&amp;&amp;&amp; \frac{1}{3}du = x^2\,dx\\
+\int x^2e^{x^3}\,dx &amp;= \int e^{(x^3)} (x^2\,dx)\\
+&amp;= \int e^{u} \frac{1}{3}du\\
+&amp;= \frac{1}{3}e^{u}+C\\
+&amp;= \frac{1}{3}e^{x^3}+C
+\end{align*}
+</div></article><article class="activity project-like" id="activity-253"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.9.8</span><span class="period">.</span>
+</h3>
+<p id="p-1747">Which step of the previous example do you think was the most important?</p>
+<ol class="upper-alpha">
+<li id="li-1115"><p id="p-1748">Choosing <span class="process-math">\(u=x^3\text{.}\)</span></p></li>
+<li id="li-1116"><p id="p-1749">Finding <span class="process-math">\(du=3x^2\,dx\)</span> and <span class="process-math">\(\frac{1}{3}du=x^2\,dx\text{.}\)</span></p></li>
+<li id="li-1117"><p id="p-1750">Substituting <span class="process-math">\(\int x^2e^{x^3}\,dx\)</span> with <span class="process-math">\(\int\frac{1}{3}e^u\,du\text{.}\)</span></p></li>
+<li id="li-1118"><p id="p-1751">Integrating <span class="process-math">\(\int\frac{1}{3}e^u\,du=\frac{1}{3}e^u+C\text{.}\)</span></p></li>
+<li id="li-1119"><p id="p-1752">Unsubstituting <span class="process-math">\(\frac{1}{3}e^u+C\)</span> to get <span class="process-math">\(\frac{1}{3}e^{x^3}+C\text{.}\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-254"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.9.9</span><span class="period">.</span>
+</h3>
+<p id="p-1753">Below are two correct solutions to the same integral, using two different choices for <span class="process-math">\(u\text{.}\)</span> Which method would you prefer to use yourself?</p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:1%;margin-right:1%;">
+<div class="sbspanel top" style="width:48.9795918367347%;"><div class="displaymath process-math" data-contains-math-knowls="" id="md-4">
+\begin{align*}
+\int x\sqrt{4x+4}\,dx &amp;\phantom{=}\text{Let }u=x+1\\
+&amp;\phantom{=} 4u=4x+4\\
+&amp;\phantom{=} x=u-1\\
+&amp;\phantom{=} du = dx\\
+\int x\sqrt{4x+4}\,dx &amp;= \int (u-1)\sqrt{4u}\,du\\
+&amp;= \int (2u^{3/2}-2u^{1/2})\,du\\
+&amp;= \frac{4}{5}u^{5/2}-\frac{4}{3}u^{3/2}+C\\
+&amp;= \frac{4}{5}(x+1)^{5/2}\\
+&amp;\phantom{=}-\frac{4}{3}(x+1)^{3/2}+C
+\end{align*}
+</div></div>
+<div class="sbspanel top" style="width:48.9795918367347%;"><div class="displaymath process-math" data-contains-math-knowls="" id="md-5">
+\begin{align*}
+\int x\sqrt{4x+4}\,dx &amp;\phantom{=}\text{Let }u=\sqrt{4x+4}\\
+&amp;\phantom{=} u^2=4x+4\\
+&amp;\phantom{=} x=\frac{1}{4}u^2-1\\
+&amp;\phantom{=} dx=\frac{1}{2}u\,du\\
+\int x\sqrt{4x+4}\,dx &amp;= \int \left(\frac{1}{4}u^2-1\right)(u)\left(\frac{1}{2}u\,du\right)\\
+&amp;= \int \left(\frac{1}{8}u^4-\frac{1}{2}u^2\right)\,du\\
+&amp;= \frac{1}{40}u^5-\frac{1}{3}u^3+C\\
+&amp;= \frac{1}{40}(4x+4)^{5/2}\\
+&amp;\phantom{=}-\frac{1}{3}(4x+4)^{3/2}+C
+\end{align*}
+</div></div>
+</div></div></article><article class="activity project-like" id="activity-255"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.9.10</span><span class="period">.</span>
+</h3>
+<p id="p-1756">Suppose we wanted to try substitution method to find <span class="process-math">\(\int e^x\cos(e^x+3)\,dx\text{.}\)</span> Which of these choices for <span class="process-math">\(u\)</span> appears to be most useful?</p>
+<ol class="upper-alpha">
+<li id="li-1120"><p id="p-1757"><span class="process-math">\(u=x\text{,}\)</span> so <span class="process-math">\(du=dx\)</span></p></li>
+<li id="li-1121"><p id="p-1758"><span class="process-math">\(u=e^x\text{,}\)</span> so <span class="process-math">\(du=e^x\,dx\)</span></p></li>
+<li id="li-1122"><p id="p-1759"><span class="process-math">\(u=e^x+3\text{,}\)</span> so <span class="process-math">\(du=e^x\,dx\)</span></p></li>
+<li id="li-1123"><p id="p-1760"><span class="process-math">\(u=\cos(x)\text{,}\)</span> so <span class="process-math">\(du=-\sin(x)\,dx\)</span></p></li>
+<li id="li-1124"><p id="p-1761"><span class="process-math">\(u=\cos(e^x+3)\text{,}\)</span> so <span class="process-math">\(du=e^x\sin(e^x+3)\,dx\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-256"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.9.11</span><span class="period">.</span>
+</h3>
+<p id="p-1762">Complete the following solution using your choice from the previous activity to find <span class="process-math">\(\int e^x\cos(e^x+3)\,dx\text{.}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-6">
+\begin{align*}
+\int e^x\cos(e^x+3)\,dx &amp;&amp;\text{Let }&amp;u=\unknown\\
+&amp;&amp;&amp; du = \unknown\,dx\\
+\int e^x\cos(e^x+3)\,dx &amp;= \int \unknown\, du\\
+&amp;= \cdots\\
+&amp;= \sin(e^x+3)+C
+\end{align*}
+</div></article><article class="activity project-like" id="activity-257"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.9.12</span><span class="period">.</span>
+</h3>
+<p id="p-1763">Complete the following integration by substitution to find <span class="process-math">\(\int \frac{x^3}{x^4+4}\,dx\text{.}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-7">
+\begin{align*}
+\int \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=\unknown\\
+&amp;&amp;&amp; du = \unknown\,dx\\
+&amp;&amp;&amp; \unknown du = \unknown\,dx\\
+\int \frac{x^3}{x^4+4}\,dx &amp;= \int \frac{\unknown}{\unknown}\, du\\
+&amp;= \cdots\\
+&amp;= \frac{1}{4}\ln|x^4+4|+C
+\end{align*}
+</div></article><article class="activity project-like" id="activity-258"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.9.13</span><span class="period">.</span>
+</h3>
+<p id="p-1764">Given that <span class="process-math">\(\int \frac{x^3}{x^4+4}\,dx
+= \frac{1}{4}\ln|x^4+4|+C
+\text{,}\)</span> what is the value of <span class="process-math">\(\int_0^2 \frac{x^3}{x^4+4}\,dx
+\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1125"><p id="p-1765"><span class="process-math">\(\displaystyle \frac{8}{20}\)</span></p></li>
+<li id="li-1126"><p id="p-1766"><span class="process-math">\(\displaystyle -\frac{8}{20}\)</span></p></li>
+<li id="li-1127"><p id="p-1767"><span class="process-math">\(\displaystyle \frac{1}{4}\ln(20)-\frac{1}{4}\ln(4)\)</span></p></li>
+<li id="li-1128"><p id="p-1768"><span class="process-math">\(\displaystyle \frac{1}{4}\ln(4)-\frac{1}{4}\ln(20)\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-259"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.9.14</span><span class="period">.</span>
+</h3>
+<p id="p-1769">What's wrong with the following computation?</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-8">
+\begin{align*}
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4+4\\
+&amp;&amp;&amp; du = 4x^3\,dx\\
+&amp;&amp;&amp; \frac{1}{4} du = x^3\,dx\\
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;= \int_0^2 \frac{1/4}{u}\, du\\
+&amp;= \left[\frac{1}{4}\ln|u|\right]_0^2\\
+&amp;= \frac{1}{4}\ln 2-\frac{1}{4}\ln 0
+\end{align*}
+</div>
+<ol class="upper-alpha">
+<li id="li-1129"><p id="p-1770">The wrong <span class="process-math">\(u\)</span> substitution was made.</p></li>
+<li id="li-1130"><p id="p-1771">The antiderivative of <span class="process-math">\(\frac{1/4}{u}\)</span> was wrong.</p></li>
+<li id="li-1131"><p id="p-1772">The <span class="process-math">\(x\)</span> values <span class="process-math">\(0,2\)</span> were plugged in for the variable <span class="process-math">\(u\text{.}\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-260"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.9.15</span><span class="period">.</span>
+</h3>
+<p id="p-1773">When <span class="process-math">\(x=2\text{,}\)</span> we know that <span class="process-math">\(u=2^4+4=20\text{.}\)</span> Likewise when <span class="process-math">\(x=0\text{,}\)</span> we know that <span class="process-math">\(u=0^4+4=4\text{.}\)</span> Use these facts to complete the below computation.</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-9">
+\begin{align*}
+\int_0^2 \frac{x^3}{x^4+4}\,dx &amp;&amp;\text{Let }&amp;u=x^4+4\\
+&amp;&amp;&amp; du = 4x^3\,dx\\
+&amp;&amp;&amp; \frac{1}{4} du = x^3\,dx\\
+\int_{x=0}^{x=2} \frac{x^3}{x^4+4}\,dx &amp;=
+\int_{u=\unknown}^{u=\unknown} \frac{1/4}{u}\, du\\
+&amp;= \dots\\
+&amp;= \frac{1}{4}\ln(20)-\frac{1}{4}\ln(4)
+\end{align*}
+</div></article><article class="example example-like" id="example-6"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.9.16</span><span class="period">.</span>
+</h3>
+<p id="p-1774">Here is how one might write out the explanation of how to find <span class="process-math">\(\int_1^3 x^2e^{x^3}\,dx\)</span> from start to finish by leaving bounds in terms of <span class="process-math">\(x\text{:}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-10">
+\begin{align*}
+\int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3\\
+&amp;&amp;&amp; du = 3x^2\,dx\\
+&amp;&amp;&amp; \frac{1}{3}du = x^2\,dx\\
+\int_1^3 x^2e^{x^3}\,dx &amp;= \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)\\
+&amp;= \int_{x=1}^{x=3} e^{u} \frac{1}{3}du\\
+&amp;= \left[\frac{1}{3}e^{u}\right]_{x=1}^{x=3}\\
+&amp;= \left[\frac{1}{3}e^{x^3}\right]_{x=1}^{x=3}\\
+&amp;= \frac{1}{3}e^{3^3} - \frac{1}{3}e^{1^3}\\
+&amp;= \frac{1}{3}e^{27} - \frac{1}{3}e
+\end{align*}
+</div></article><article class="example example-like" id="example-7"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.9.17</span><span class="period">.</span>
+</h3>
+<p id="p-1775">Here is how one might write out the explanation of how to find <span class="process-math">\(\int_1^3 x^2e^{x^3}\,dx\)</span> from start to finish by transforming bounds into terms of <span class="process-math">\(u\text{:}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-11">
+\begin{align*}
+\int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3\\
+&amp;&amp;&amp;du = 3x^2\,dx\\
+&amp;&amp;&amp;\frac{1}{3}du = x^2\,dx\\
+\int_1^3 x^2e^{x^3}\,dx &amp;= \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)\\
+&amp;= \int_{u=1^3}^{u=3^3} e^{u} \frac{1}{3}du\\
+&amp;= \left[\frac{1}{3}e^{u}\right]_{1}^{27}\\
+&amp;= \frac{1}{3}e^{27} - \frac{1}{3}e
+\end{align*}
+</div></article><article class="activity project-like" id="activity-261"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.9.18</span><span class="period">.</span>
+</h3>
+<p id="p-1776">Use substitution to show that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int_1^4 \frac{e^{\sqrt x}}{\sqrt x}\,dx=2e^2-2e\text{.}
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-262"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.9.19</span><span class="period">.</span>
+</h3>
+<p id="p-1777">Use substitution to show that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int_0^{\pi/4} \sin(2\theta)\,d\theta=\frac{1}{2}\text{.}
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-263"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.9.20</span><span class="period">.</span>
+</h3>
+<p id="p-1778">Use substitution to show that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int u^5(u^3+1)^{1/3}\,du=
+\frac{1}{7}(u^3+1)^{7/3}-
+\frac{1}{4}(u^3+1)^{4/3}+C
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-264"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.9.21</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-166"><p id="p-1779">Consider <span class="process-math">\(\int (3x-5)^2\,dx\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-449"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1780">Solve this integral using substitution.</p></article><article class="task exercise-like" id="task-450"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1781">Replace <span class="process-math">\((3x-5)^2\)</span> with <span class="process-math">\((9x^2-30x+25)\)</span> in the original integral, the solve using the reverse power rule.</p></article><article class="task exercise-like" id="task-451"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1782">Which method did you prefer?</p></article></article><article class="activity project-like" id="activity-265"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.9.22</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-167"><p id="p-1783">Consider <span class="process-math">\(\int \tan(x)\,dx\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-452"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1784">Replace <span class="process-math">\(\tan(x)\)</span> in the integral with a fraction involving sine and cosine.</p></article><article class="task exercise-like" id="task-453"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1785">Use substitution to solve the integral.</p></article></article></section></div></main>
+</div>
+</body>
+</html>

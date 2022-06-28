@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-06-28T16:08:18Z       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Cal1 The product and quotient rules (DF4)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus 1 for Team-Based Inquiry Learning">
+<meta property="book:author" content="TBIL Institute Fellows">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus 1 for Team-Based Inquiry Learning:</span> <span class="subtitle">Live Development Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="DF3.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="DF5.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="DF3.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="DF.html" title="Up">Up</a><a class="next-button button toolbar-item" href="DF5.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li>
+<li><a href="printable-pdf.html" data-scroll="printable-pdf" class="internal">Printable PDF</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="LT.html" data-scroll="LT" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1" class="internal">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2" class="internal">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3" class="internal">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4" class="internal">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5" class="internal">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6" class="internal">Limits with infinite outputs (LT6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="DF.html" data-scroll="DF" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2" class="internal">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1" class="internal">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3" class="internal">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4" class="active">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5" class="internal">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6" class="internal">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7" class="internal">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8" class="internal">Differentiating inverse functions (DF8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AD.html" data-scroll="AD" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1" class="internal">Tangents, motion, and marginals (AD1)</a></li>
+<li><a href="AD2.html" data-scroll="AD2" class="internal">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3" class="internal">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4" class="internal">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5" class="internal">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6" class="internal">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7" class="internal">Graphing with derivatives (AD7)</a></li>
+<li><a href="AD8.html" data-scroll="AD8" class="internal">Applied optimization (AD8)</a></li>
+<li><a href="AD9.html" data-scroll="AD9" class="internal">Limits and Derivatives (AD9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="IN.html" data-scroll="IN" class="internal"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul>
+<li><a href="IN1.html" data-scroll="IN1" class="internal">Geometry of definite integrals (IN1)</a></li>
+<li><a href="IN2.html" data-scroll="IN2" class="internal">Approximating definite integrals (IN2)</a></li>
+<li><a href="IN3.html" data-scroll="IN3" class="internal">Elementary antiderivatives (IN3)</a></li>
+<li><a href="IN4.html" data-scroll="IN4" class="internal">Initial Value Problems (IN4)</a></li>
+<li><a href="IN5.html" data-scroll="IN5" class="internal">FTC for definite integrals (IN5)</a></li>
+<li><a href="IN6.html" data-scroll="IN6" class="internal">FTC for derivatives of integrals (IN6)</a></li>
+<li><a href="IN7.html" data-scroll="IN7" class="internal">Area under curves (IN7)</a></li>
+<li><a href="IN8.html" data-scroll="IN8" class="internal">Area between curves (IN8)</a></li>
+<li><a href="IN9.html" data-scroll="IN9" class="internal">Substitution method (IN9)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="tbil-rl.html" data-scroll="tbil-rl" class="internal"><span class="title">TBIL Resource Library</span></a></li>
+<li class="link"><a href="pretext.html" data-scroll="pretext" class="internal"><span class="title">Authored with PreTeXt</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="DF4"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.4</span> <span class="title">The product and quotient rules (DF4)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-12"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="li-456"><p id="p-623">Compute derivatives using the Product and Quotient Rules.</p></li></ul></article><article class="activity project-like" id="activity-df-product-rule-intro"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.1</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-54"><p id="TEn">Let <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> be the functions defined by <span class="process-math">\(f(t) = 2t^2\)</span> and <span class="process-math">\(g(t) = t^3 + 4t\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-127"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-625">Determine <span class="process-math">\(f'(t)\)</span> and <span class="process-math">\(g'(t)\text{.}\)</span></p></article><article class="task exercise-like" id="task-128"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-626">Let <span class="process-math">\(p(t) = 2t^2 (t^3 + 4t)\)</span> and observe that <span class="process-math">\(p(t) = f(t) \cdot g(t)\text{.}\)</span> Rewrite the formula for <span class="process-math">\(p\)</span> by distributing the <span class="process-math">\(2t^2\)</span> term. Then, compute <span class="process-math">\(p'(t)\)</span> using the sum and constant multiple rules.</p></article><article class="task exercise-like" id="task-129"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-627">True or false: <span class="process-math">\(p'(t) = f'(t) \cdot g'(t)\text{.}\)</span></p></article></article><article class="theorem theorem-like" id="theorem-15"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Product Rule.</span>
+</h3>
+<p id="p-628">If <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are differentiable functions, then their product <span class="process-math">\(P(x) = f(x) \cdot g(x)\)</span> is also a differentiable function, and</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+P'(x) = f(x) g'(x) + g(x) f'(x)\text{.}
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-df-product-rule-simplify"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.3</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-55"><p id="p-629">The product rule is a powerful tool, but sometimes it isn’t necessary; a more elementary rule may suffice. Which of the following products could you find the derivative of without using the product rule? Select all that apply.</p></div>
+<ol class="upper-alpha">
+<li id="li-457"><p id="p-derived-li-457"><span class="process-math">\(\displaystyle f(x)=e^x \sin x\)</span></p></li>
+<li id="li-458"><p id="p-derived-li-458"><span class="process-math">\(\displaystyle f(x)=\sqrt{x}(x^3+3x-3)\)</span></p></li>
+<li id="li-459"><p id="p-derived-li-459"><span class="process-math">\(\displaystyle f(x)=(4)(x^5)\)</span></p></li>
+<li id="li-460"><p id="p-derived-li-460"><span class="process-math">\(\displaystyle f(x)=x \ln x\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-df-product-rule-fluency"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.4</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-56"><p id="p-630">Find the derivative of the following functions by using the product rule.</p></div>
+<article class="task exercise-like" id="task-130"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<span class="process-math">\(f(x)=(x^2+3x)\sin x\)</span></article><article class="task exercise-like" id="task-131"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<span class="process-math">\(f(x)=e^x \cos x\)</span></article><article class="task exercise-like" id="task-132"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<span class="process-math">\(f(x)=x^2\ln x\)</span></article></article><article class="activity project-like" id="activity-df-quotient-rule-intro"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.5</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-57"><p id="TEn">Let <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> be the functions defined by <span class="process-math">\(f(t) = 2t^2\)</span> and <span class="process-math">\(g(t) = t^3 + 4t\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-133"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-632">Determine <span class="process-math">\(f'(t)\)</span> and <span class="process-math">\(g'(t)\text{.}\)</span> (These were found previously in <a href="" class="xref" data-knowl="./knowl/activity-df-product-rule-intro.html" title="Activity 2.4.1">Activity 2.4.1</a>.)</p></article><article class="task exercise-like" id="task-134"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-633">Let <span class="process-math">\(q(t) = \frac{t^3 + 4t}{2t^2}\)</span> and observe that <span class="process-math">\(q(t) = \frac{g(t)}{f(t)}\text{.}\)</span> Rewrite the formula for <span class="process-math">\(q\)</span> by dividing each term in the numerator by the denominator and simplify to write <span class="process-math">\(q\)</span> as a sum of constant multiples of powers of <span class="process-math">\(t\text{.}\)</span> Then, compute <span class="process-math">\(q'(t)\)</span> using the sum and constant multiple rules.</p></article><article class="task exercise-like" id="task-135"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-634">True or false: <span class="process-math">\(q'(t) = \frac{g'(t)}{f'(t)}\text{.}\)</span></p></article></article><article class="theorem theorem-like" id="theorem-16"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.4.6</span><span class="period">.</span><span class="space"> </span><span class="title">Quotient Rule.</span>
+</h3>
+<p id="p-635">If <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are differentiable functions, then their quotient <span class="process-math">\(Q(x) = \frac{f(x)}{g(x)}\)</span> is also a differentiable function for all <span class="process-math">\(x\)</span> where <span class="process-math">\(g(x) \ne 0\)</span> and</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+Q'(x) = \frac{g(x) f'(x) -  f(x) g'(x)}{g(x)^2}\text{.}
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-df-quotient-rule-simplify"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.7</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-58"><p id="p-636">Just like with the product rule, there are times where we can find the derivative of a quotient using elementary rules rather than the quotient rule. Which of the following quotients could you find the derivative of without using the quotient rule? Select all that apply.</p></div>
+<ol class="upper-alpha">
+<li id="li-461"><p id="p-derived-li-461"><span class="process-math">\(\displaystyle f(x) = \frac{6}{x^3}\)</span></p></li>
+<li id="li-462"><p id="p-derived-li-462"><span class="process-math">\(\displaystyle f(x) = \frac{2}{\ln x}\)</span></p></li>
+<li id="li-463"><p id="p-derived-li-463"><span class="process-math">\(\displaystyle f(x) = \frac{e^x}{\sin x}\)</span></p></li>
+<li id="li-464"><p id="p-derived-li-464"><span class="process-math">\(\displaystyle f(x) = \frac{x^3+3x}{x}\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-df-quotient-rule-fluency"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.8</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-59"><p id="p-637">Find the derivative of the following functions using the quotient rule (or, if applicable, an elementary rule).</p></div>
+<article class="task exercise-like" id="task-136"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<span class="process-math">\(f(x) = \frac{6}{x^3}\)</span></article><article class="task exercise-like" id="task-137"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<span class="process-math">\(f(x) = \frac{2}{\ln x}\)</span></article><article class="task exercise-like" id="task-138"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<span class="process-math">\(f(x) = \frac{e^x}{\sin x}\)</span></article><article class="task exercise-like" id="task-139"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<span class="process-math">\(f(x) = \frac{x^3+3x}{x}\)</span></article></article><article class="activity project-like" id="checkit-df4"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.9</span><span class="period">.</span>
+</h3>
+<p id="p-638">Demonstrate and explain how to find the derivative of the following functions. Be sure to explicitly denote which derivative rules (product, quotient, sum and difference, etc.) you are using in your work.</p>
+<ol class="decimal">
+<li id="li-465"><p id="p-derived-li-465"><div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(w)= -\frac{3 \, w^{2} + 5 \, w - 2}{\sin\left(w\right)}
+\end{equation*}
+</div></p></li>
+<li id="li-466"><p id="p-derived-li-466"><div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+g(t)= \frac{t^{2} + 6 \, t + 1}{t^{2}}
+\end{equation*}
+</div></p></li>
+<li id="li-467"><p id="p-derived-li-467"><div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+h(t)= -2 \, {\left(t^{2} + 3 \, t + 3\right)} \cos\left(t\right)
+\end{equation*}
+</div></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-7" id="answer-7"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-7"><div class="answer solution-like"><ol class="decimal">
+<li id="li-468"><p id="p-derived-li-468"><div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f' (w)= \frac{{\left(3 \, w^{2} + 5 \, w - 2\right)} \cos\left(w\right)}{\sin\left(w\right)^{2}} - \frac{6 \, w + 5}{\sin\left(w\right)}
+\end{equation*}
+</div></p></li>
+<li id="li-469"><p id="p-derived-li-469"><div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+g' (t)= -\frac{2 \, {\left(3 \, t + 1\right)}}{t^{3}}
+\end{equation*}
+</div></p></li>
+<li id="li-470"><p id="p-derived-li-470"><div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+h' (t)= -2 \, {\left(2 \, t + 3\right)} \cos\left(t\right) + 2 \, {\left(t^{2} + 3 \, t + 3\right)} \sin\left(t\right)
+\end{equation*}
+</div></p></li>
+</ol></div></div>
+</div></article><article class="note remark-like" id="note-3"><h3 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">2.4.10</span><span class="period">.</span>
+</h3>
+<p id="p-639">We have found the derivatives of <span class="process-math">\(\sin x\)</span> and <span class="process-math">\(\cos x\text{,}\)</span> but what about the other trigonometric functions? It turns out that the quotient rule along with some trig identities can help us! (See <a class="external" href="https://www.khanacademy.org/math/trigonometry/trig-equations-and-identities/using-trig-identities/a/trig-identity-reference" target="_blank"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/trigonometry/trig-equations-and-identities/using-trig-identities/a/trig-identity-reference</code></a> for a reminder of the reciprocal and Pythagorean identities.)</p></article><article class="activity project-like" id="activity-df-quotient-rule-tanx"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.11</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-60"><p id="p-640">Consider the function <span class="process-math">\(f(x) = \tan x \text{,}\)</span> and remember that <span class="process-math">\(\tan x  = \frac{\sin x}{\cos x}\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-140"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-641">What is the domain of <span class="process-math">\(f\text{?}\)</span></p></article><article class="task exercise-like" id="task-141"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-642">Use the quotient rule to show that one expression for <span class="process-math">\(f'(x)\)</span> is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f'(x) = \frac{(\cos x)(\cos x) + (\sin x)(\sin x)}{(\cos x)^2}\text{.}
+\end{equation*}
+</div></article><article class="task exercise-like" id="task-142"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-643">Which Pythagorean identity might be useful here? How can this identity be used to find a simpler form for <span class="process-math">\(f'(x)\text{?}\)</span></p></article><article class="task exercise-like" id="task-143"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-644">Recall that <span class="process-math">\(\sec x = \frac{1}{\cos x}\text{.}\)</span> How can we express <span class="process-math">\(f'(x)\)</span> in terms of the secant function?</p></article><article class="task exercise-like" id="task-144"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-645">For what values of <span class="process-math">\(x\)</span> is <span class="process-math">\(f'(x)\)</span> defined? How does this set compare to the domain of <span class="process-math">\(f\text{?}\)</span></p></article></article><article class="activity project-like" id="activity-df-quotient-rule-cotx"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.12</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-61"><p id="p-646">Let <span class="process-math">\(g(x) = \cot x \text{,}\)</span> and recall that <span class="process-math">\(\cot  x  = \frac{\cos x }{\sin x }\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-145"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-647">What is the domain of <span class="process-math">\(g(x)\text{?}\)</span></p></article><article class="task exercise-like" id="task-146"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-648">Use the quotient rule to develop a formula for <span class="process-math">\(g'(x)\)</span> that is expressed completely in terms of <span class="process-math">\(\sin x\)</span> and <span class="process-math">\(\cos x\text{.}\)</span></p></article><article class="task exercise-like" id="task-147"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-649">Use other relationships among trigonometric functions to write <span class="process-math">\(g'(x)\)</span> only in terms of the cosecant function.</p></article><article class="task exercise-like" id="task-148"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-650">What is the domain of <span class="process-math">\(g'(x)\text{?}\)</span> How does this compare to the domain of <span class="process-math">\(g'(x)\text{?}\)</span></p></article></article><article class="activity project-like" id="activity-df-quotient-rule-secx"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.13</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-62"><p id="p-651">Let <span class="process-math">\(h(x) = \sec x \text{,}\)</span> and recall that <span class="process-math">\(\sec x  = \frac{1}{\cos x }\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-149"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-652">What is the domain of <span class="process-math">\(h(x)\text{?}\)</span></p></article><article class="task exercise-like" id="task-150"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-653">Use the quotient rule to develop a formula for <span class="process-math">\(h'(x)\)</span> that is expressed completely in terms of <span class="process-math">\(\sin x\)</span> and <span class="process-math">\(\cos x\text{.}\)</span></p></article><article class="task exercise-like" id="task-151"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-654">Use other relationships among trigonometric functions to write <span class="process-math">\(h'(x)\)</span> only in terms of the the tangent and secant functions.</p></article><article class="task exercise-like" id="task-152"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-655">What is the domain of <span class="process-math">\(h'(x)\text{?}\)</span> How does this compare to the domain of <span class="process-math">\(h'(x)\text{?}\)</span></p></article></article><article class="activity project-like" id="activity-df-quotient-rule-cscx"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.14</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-63"><p id="p-656">Let <span class="process-math">\(p(x) = \csc x \text{,}\)</span> and recall that <span class="process-math">\(\csc x  = \frac{1}{\sin x }\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-153"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-657">What is the domain of <span class="process-math">\(p(x)\text{?}\)</span></p></article><article class="task exercise-like" id="task-154"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-658">Use the quotient rule to develop a formula for <span class="process-math">\(p'(x)\)</span> that is expressed completely in terms of <span class="process-math">\(\sin x\)</span> and <span class="process-math">\(\cos x\text{.}\)</span></p></article><article class="task exercise-like" id="task-155"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-659">Use other relationships among trigonometric functions to write <span class="process-math">\(h'(x)\)</span> only in terms of the the cotangent and cosecant functions.</p></article><article class="task exercise-like" id="task-156"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-660">What is the domain of <span class="process-math">\(p'(x)\text{?}\)</span> How does this compare to the domain of <span class="process-math">\(p'(x)\text{?}\)</span></p></article></article><article class="remark remark-like" id="remark-16"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.4.15</span><span class="period">.</span>
+</h3>
+<p id="p-661">We can now summarize the derivatives for all six trigonometric functions.</p>
+<ul class="disc">
+<li id="li-471"><p id="p-derived-li-471"><span class="process-math">\(\displaystyle \frac{d}{dx} \sin x = \cos x\)</span></p></li>
+<li id="li-472"><p id="p-derived-li-472"><span class="process-math">\(\displaystyle \frac{d}{dx} \cos x = -\sin x\)</span></p></li>
+<li id="li-473"><p id="p-derived-li-473"><span class="process-math">\(\displaystyle \frac{d}{dx} \tan x = (\sec x)^2\)</span></p></li>
+<li id="li-474"><p id="p-derived-li-474"><span class="process-math">\(\displaystyle \frac{d}{dx} \cot x = -(\csc x)^2\)</span></p></li>
+<li id="li-475"><p id="p-derived-li-475"><span class="process-math">\(\displaystyle \frac{d}{dx} \sec x = \sec x \tan x \)</span></p></li>
+<li id="li-476"><p id="p-derived-li-476"><span class="process-math">\(\displaystyle \frac{d}{dx} \csc x = -\csc x \cot x \)</span></p></li>
+</ul></article><article class="activity project-like" id="checkit-df4v2"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.16</span><span class="period">.</span>
+</h3>
+<p id="p-662">Consider the functions</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(x)=3 \, \cos\left(x\right), \, \, g(x)=x^{2} + 3 \, e^{x}
+\end{equation*}
+</div>
+<p class="continuation">and the function <span class="process-math">\(h(x)\)</span> for which a table of values is given.</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{array}{c|c|c|c}
+x &amp; -1&amp; 0&amp; 2 \\\hline
+h(x) &amp; -4&amp; -1&amp; 3  \\\hline
+h'(x) &amp; 0&amp; -1&amp; 1  \\             
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">In answering the following questions, be sure to explicitly denote which derivative rules (product, quotient, sum and difference, etc.) you are using in your work.</p>
+<ol class="decimal">
+<li id="li-477"><p id="p-663">Find the derivative of <span class="process-math">\(f(x)\cdot g(x)\text{.}\)</span></p></li>
+<li id="li-478"><p id="p-664">Find the derivative of <span class="process-math">\(\displaystyle \frac{f(x)}{g(x)}\text{.}\)</span></p></li>
+<li id="li-479"><p id="p-665">Find the value of the derivative of <span class="process-math">\(f(x) \cdot h(x) \)</span> at <span class="process-math">\(x=-1\text{.}\)</span></p></li>
+<li id="li-480"><p id="p-666">Find the value of the derivative of <span class="process-math">\(\displaystyle \frac{g(x)}{h(x)}\)</span> at <span class="process-math">\(x=0\text{.}\)</span></p></li>
+<li id="li-481">
+<p id="p-667">Consider the function</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+r(x) = 3 \, \cos\left(x\right) \cdot x .
+\end{equation*}
+</div>
+<p class="continuation">Find <span class="process-math">\(r'(x)\text{,}\)</span> <span class="process-math">\(r''(x)\text{,}\)</span> <span class="process-math">\(r'''(x)\text{,}\)</span> and <span class="process-math">\(r^{(iv)}(x)\)</span> so the first, second, third, and fourth derivative of <span class="process-math">\(r(x)\text{.}\)</span> What pattern do you notice? What do you expect the twelfth derivative of <span class="process-math">\(r(x)\)</span> to be?</p>
+</li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-8" id="answer-8"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-8"><div class="answer solution-like">
+<ol class="decimal">
+<li id="li-482"><p id="p-668"><span class="process-math">\(\displaystyle (fg)'(x)=3 \, {\left(2 \, x + 3 \, e^{x}\right)} \cos\left(x\right) - 3 \, {\left(x^{2} + 3 \, e^{x}\right)} \sin\left(x\right)\)</span></p></li>
+<li id="li-483"><p id="p-669"><span class="process-math">\(\displaystyle (f/g)'(x)=-\frac{3 \, {\left({\left(2 \, x + 3 \, e^{x}\right)} \cos\left(x\right) + {\left(x^{2} + 3 \, e^{x}\right)} \sin\left(x\right)\right)}}{{\left(x^{2} + 3 \, e^{x}\right)}^{2}}\)</span></p></li>
+<li id="li-484"><p id="p-670"><span class="process-math">\(\displaystyle -12 \, \sin\left(1\right)\)</span></p></li>
+<li id="li-485"><p id="p-671"><span class="process-math">\(\displaystyle 0\)</span></p></li>
+<li id="li-486">
+<p id="p-672">We have</p>
+<ul class="disc">
+<li id="li-487"><p id="p-derived-li-487"><span class="process-math">\(\displaystyle r(x)=3 \, \cos\left(x\right) \cdot x\)</span></p></li>
+<li id="li-488"><p id="p-derived-li-488"><span class="process-math">\(\displaystyle r'(x)=-3 \, x \sin\left(x\right) + 3 \, \cos\left(x\right)\)</span></p></li>
+<li id="li-489"><p id="p-derived-li-489"><span class="process-math">\(\displaystyle r''(x)=-3 \, x \cos\left(x\right) - 6 \, \sin\left(x\right)\)</span></p></li>
+<li id="li-490"><p id="p-derived-li-490"><span class="process-math">\(\displaystyle r'''(x)=3 \, x \sin\left(x\right) - 9 \, \cos\left(x\right)\)</span></p></li>
+<li id="li-491"><p id="p-derived-li-491"><span class="process-math">\(\displaystyle r^{(iv)}=3 \, x \cos\left(x\right) + 12 \, \sin\left(x\right)\)</span></p></li>
+</ul>
+<p class="continuation">The functions involved repeat every four derivatives. So the twelth derivative should have the summand <span class="process-math">\(3 \, x \cos\left(x\right)\text{.}\)</span> The second summand has a coefficient that increases by 3 every time, so the twelth derivative should have coefficient 36. Putting this together <span class="process-math">\(r^{(xii)}=3 \, x \cos\left(x\right) + 36 \, \sin\left(x\right)\)</span></p>
+</li>
+</ol>
+<p id="p-673"></p>
+</div></div>
+</div></article><article class="activity project-like" id="quotient-rule-graphs"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.17</span><span class="period">.</span>
+</h3>
+<article class="task exercise-like" id="task-157"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-674">Differentiate <span class="process-math">\(y = \displaystyle  \frac{e^x}{x}, y = \displaystyle \frac{e^x}{x^2}, y = \displaystyle \frac{e^x}{x^3}\text{.}\)</span> Simplify your answers as much as possible.</p></article><article class="task exercise-like" id="task-158"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-675">What do you expect the derivative of <span class="process-math">\(y = \displaystyle \frac{e^x}{x^n}\)</span> to be? Prove your guess!</p></article><article class="task exercise-like" id="task-159"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-676">What do your answers above tell you above the shape of the graph of <span class="process-math">\(y = \displaystyle \frac{e^x}{x^n}\text{?}\)</span> Study how the sign of the numerator and the denominator change in the first derivative to determine when the behavior changes!</p></article></article><article class="activity project-like" id="product-rule-context"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.18</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-64">
+<p id="p-677">The quantity <span class="process-math">\(q\)</span> of skateboards sold depends on the selling price <span class="process-math">\(p\)</span> of a skateboard, so we write <span class="process-math">\(q=f(p)\text{.}\)</span> You are given that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(140) = 15000, \, \, \, f'(140)= -100 
+\end{equation*}
+</div>
+</div>
+<article class="task exercise-like" id="task-160"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-678">What does the data provided tell you about the sales of skateboards?</p></article><article class="task exercise-like" id="task-161"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-679">The total revenue, <span class="process-math">\(R\text{,}\)</span> earned by the sale of skateboards is given by <span class="process-math">\(R=q \cdot p = f(p) \cdot p\text{.}\)</span> Explain why.</p></article><article class="task exercise-like" id="task-162"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-680">Find</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{dR}{dp}\Big|_{p=140}. 
+\end{equation*}
+</div></article><article class="task exercise-like" id="task-163"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-681">What is the sign of the quantity above? What do you think would happen to the revenue if the price was changed from  $ 140 to  $ 141?</p></article></article><article class="activity project-like" id="prod-quot-rule-in-context"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.4.19</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-65">
+<p id="p-682">Let <span class="process-math">\(f(v)\)</span> be the gas consumption in liters per kilometer (l/km) of a car going at velocity <span class="process-math">\(v\)</span> kilometers per hour (km/hr). So if the car is going at velocity <span class="process-math">\(v\text{,}\)</span> then <span class="process-math">\(f(v)\)</span> tells you how many liters of gas the car uses to go one kilometer. You are given the following data</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f(50)=0.04, \, \, \, f'(50)=0.0004
+\end{equation*}
+</div>
+</div>
+<article class="task exercise-like" id="task-164"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-683">Let <span class="process-math">\(g(v)\)</span> be the distance (in kilometers) that the same car covers per liter of gas at velocity <span class="process-math">\(v\text{.}\)</span> What are the units of the output of <span class="process-math">\(g(v)\text{?}\)</span> How can you write <span class="process-math">\(g(v)\)</span> in terms of <span class="process-math">\(f(v)\text{?}\)</span> Find <span class="process-math">\(g(50)\)</span> and <span class="process-math">\(g'(50)\text{.}\)</span></p></article><article class="task exercise-like" id="task-165"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-684">Let <span class="process-math">\(h(v)\)</span> be the gas consumption over time, so the liters of gas consumed per hour by the same car going at velocity <span class="process-math">\(v\text{.}\)</span> What are the units of the output of <span class="process-math">\(h(v)\text{?}\)</span> How can you write <span class="process-math">\(h(v)\)</span> in terms of <span class="process-math">\(f(v)\text{?}\)</span> Find <span class="process-math">\(h(50)\)</span> and <span class="process-math">\(h'(50)\text{.}\)</span></p></article><article class="task exercise-like" id="task-166"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-685">How would you explain the practical meaning of your findings to a driver who knows no calculus?</p></article></article></section></div></main>
+</div>
+</body>
+</html>
