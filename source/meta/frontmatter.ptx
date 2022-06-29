@@ -65,14 +65,12 @@
   <colophon xml:id="colophon">
     <website>
         <name>
-            Transforming Lower Division Undergraduate Mathematics Through Team-Based Inquiry Learning
-            <c>https://sites.google.com/southalabama.edu/tbil/</c>
+            Calculus for Team-Based Inquiry Learning
+            <c>https://teambasedinquirylearning.github.io/calculus/</c>
         </name>
-        <address>https://sites.google.com/southalabama.edu/tbil/</address>
+        <address>https://teambasedinquirylearning.github.io/calculus/</address>
     </website>
-
     <xi:include href="./copyright.ptx" />
-
       <p>
 This work includes materials used under license from the following works:
       </p>
@@ -89,38 +87,15 @@ This work includes materials used under license from the following works:
               </ul>
           </li>
       </ul>
-
-
+  </colophon>
+  <colophon xml:id="tbil-rl">
+      <title>TBIL Resource Library</title>
+      <p>
+This work is made available as part of the
+<url href="https://sites.google.com/southalabama.edu/tbil/tbil-resource-library">TBIL Resource Library</url>,
+a product of <url href="https://nsf.gov/awardsearch/showAward?AWD_ID=2011807">NSF DUE Award #2011807</url>.
+      </p>
   </colophon>
 
-    <preface xml:id="printable-pdf">
-    <title>Printable PDF</title>
-    <p>
-A PDF with all activities may be printed by visiting <url href="pdf/main.pdf"/>.
-    </p>
-</preface>
-<!--  <dedication>
-    <p>
-      For ...
-    </p>
-  </dedication> -->
-
-<!--  <acknowledgement>
-    <p>
-      I would like to thank...
-    </p>
-
-  </acknowledgement> -->
-
-    <!-- You should be a little careful about what you put here -->
-    <!-- Avoid elements that should have a number, for example  -->
-<!--  <preface xml:id="preface">
-    <p>
-      About this book:
-    </p>
-
-  </preface> -->
-
-  <!-- You can have more than one preface. -->
 </frontmatter>
 

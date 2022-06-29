@@ -1,11 +1,7 @@
-# TBIL 2021 Calculus 1
+# Calculus for Team-Based Inquiry Learning
 
-Hosted at <https://stevenclontz.github.io/cal1-tbil-2021/>.
-
-- Google Drive: https://drive.google.com/drive/folders/1vY1qy1BeDYt9IxELNq4qNEJMZEjkKiNt?usp=sharing
-- Canvas: https://jagsonline.instructure.com/courses/221/
+Hosted at <https://teambasedinquirylearning.github.io/calculus/>.
 
 ## Copyright and Licensing
 
-See [source/meta/copyright.ptx](source/meta/copyright.ptx) and
-<https://stevenclontz.github.io/cal1-tbil-2021/colophon.html>.
+See [source/meta/copyright.ptx](source/meta/copyright.ptx).

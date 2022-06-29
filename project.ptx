@@ -6,26 +6,33 @@
 -->
 <project>
   <targets>
-    <target name="all"><!-- temp hack to be able to deploy a bunch of targets -->
+    <target name="full"><!-- temp hack to be able to deploy a bunch of targets -->
       <format>html</format>
       <source>source/DNE.ptx</source>
       <publication>publication/publication.ptx</publication>
       <output-dir>output/deploy</output-dir>
     </target>
-    <target name="html">
+    <target name="web">
       <format>html</format>
       <source>source/main.ptx</source>
       <publication>publication/publication.ptx</publication>
-      <output-dir>output/deploy/html</output-dir>
+      <output-dir>output/deploy/2022</output-dir>
       <stringparam key="debug.project.number" value="the-way-it-should-be"/>
     </target>
-    <target name="instructor">
+    <target name="web-instructor">
       <format>html</format>
       <source>source/main.ptx</source>
       <publication>publication/publication.ptx</publication>
-      <output-dir>output/deploy/html/instructor</output-dir>
+      <output-dir>output/deploy/2022/instructor</output-dir>
       <stringparam key="debug.project.number" value="the-way-it-should-be"/>
       <stringparam key="commentary" value="yes"/>
+    </target>
+    <target name="print">
+      <format>pdf</format>
+      <source>source/main.ptx</source>
+      <publication>publication/publication.ptx</publication>
+      <output-dir>output/deploy/2022/pdf</output-dir>
+      <stringparam key="debug.project.number" value="the-way-it-should-be"/>
     </target>
     <target name="subset">
       <format>html</format>
@@ -38,18 +45,11 @@
       <!-- edit this to change the section/chapter/etc. to build -->
       <xmlid-root>LT</xmlid-root>
     </target>
-    <target name="latex">
+    <target name="print-latex">
       <format>latex</format>
       <source>source/main.ptx</source>
       <publication>publication/publication.ptx</publication>
       <output-dir>output/latex</output-dir>
-      <stringparam key="debug.project.number" value="the-way-it-should-be"/>
-    </target>
-    <target name="pdf">
-      <format>pdf</format>
-      <source>source/main.ptx</source>
-      <publication>publication/publication.ptx</publication>
-      <output-dir>output/deploy/pdf</output-dir>
       <stringparam key="debug.project.number" value="the-way-it-should-be"/>
     </target>
   </targets>
