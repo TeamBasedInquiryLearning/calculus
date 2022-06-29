@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="SQ4" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
+  <title>Geometric Series (SQ4)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/04.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+    
+        <activity xml:id="activity-SQ4whengeoconverge">
+            <introduction>
+                <p>
+                    Recall from <xref ref="SQ3"/> that for any real numbers <m>a, r</m> and <m>\displaystyle S_n=\sum_{i=0}^n ar^i</m> that:
+                    <md>
+                        <mrow>S_n=\sum_{i=0}^n ar^i &amp;= a+ar+ar^2+\cdots ar^n</mrow>
+                        <mrow>(1-r)S_n=(1-r)\sum_{i=0}^n ar^i&amp;= (1-r)(a+ar+ar^2+\cdots ar^n)</mrow>
+                        <mrow>(1-r)S_n=(1-r)\sum_{i=0}^n ar^i&amp;= a-ar^{n+1}</mrow>
+                        <mrow>S_n&amp;=a\frac{1-r^{n+1}}{1-r}.</mrow>
+                    </md>
+                </p>
+            </introduction>
+            <task>
+                <p>
+                    Using <xref ref="definition-SQ3serieslimit"/>, given each restriction on <m>r</m>, determine if <m>\displaystyle \sum_{n=0}^\infty ar^n</m> converges.
+                    <ol label="A">
+                        <li><m>r>1</m>.</li>
+                        <li><m>r=1</m>.</li>
+                        <li><m>-1&lt;r&lt;1</m>.</li>
+                        <li><m>r=-1</m>.</li>
+                        <li><m>r&lt;-1</m>.</li>
+                    </ol>
+                </p>
+            </task>
+            
+            <task>
+                <p>
+                    Where possible, determine what value <m>\displaystyle \sum_{n=0}^\infty ar^n</m> converges to.
+                </p>
+            </task>
+            
+        </activity>
+    
+    <fact xml:id="geometricseriesconverge"> <p><em>Geometric series</em> are of the form <m>\displaystyle \sum_{n=0}^\infty ar^n</m>, where <m>a</m> and <m>r</m> are real numbers. A geometric series converges only when <m>|r|&lt;1</m>. In this case, <m>\displaystyle \sum_{n=0}^\infty ar^n=\frac{a}{1-r}</m>. Otherwise, the geometric series diverges.</p>
+    </fact>
+        
+        <activity xml:id="activity-SQ4modifiedgeom">
+            <introduction>
+                <p>
+                    Consider the infinite series <me>5+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots.</me>
+
+                </p>
+            </introduction>
+            <task>
+                <p>
+                    What of the following approaches will best help us determine the convergence of this series?
+                    <ol label="A">
+                        <li>This is a geometric series of the form <m>\displaystyle \sum_{n=0}^\infty 5\cdot \left(\frac{1}{2}\right)^n</m>.</li>
+                        <li>This is a geometric series of the form <m>\displaystyle \sum_{n=0}^\infty 1\cdot \left(\frac{1}{2}\right)^n</m>.</li>
+                        <li>We can rewrite <me>5+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots = 4+\left(1+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots \right).</me></li>
+                    </ol>
+                </p>
+            </task>
+            
+            <task>
+                <p>
+                    Using your chosen approach, determine if <m>5+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots</m> converges, and if so, to what it converges.
+                </p>
+            </task>
+            
+        </activity>
+        
+        
+        <activity xml:id="activity-SQ4truncatedgeom">
+            <introduction>
+                <p>
+                    Consider the infinite series <me>\displaystyle\sum_{n=3}^\infty 2(0.7)^n.</me>
+
+                </p>
+            </introduction>
+            <task>
+                <p>
+                    What of the following approaches will best help us determine the convergence of this series?
+                    <ol label="A">
+                        <li>Noticing that <m>\displaystyle 3\cdot\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n</m>.</li>
+                        <li>Noticing that <m>\displaystyle 2+\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n</m>.</li>
+                        <li>Noticing that <m>\displaystyle 2n+\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n</m>.</li>
+                        <li>Noticing that <m>\displaystyle 2(0.7)^0+2(0.7)^1+2(0.7)^2+\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n</m>.</li>
+                        <li>Noticing that <m>\displaystyle 0+1+2+\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n</m>.</li>
+                    </ol>
+                </p>
+            </task>
+            
+            <task>
+                <p>
+                    Using your chosen approach, determine if <m>\displaystyle\sum_{n=3}^\infty 2(0.7)^n</m> converges, and if so, to what it converges.
+                </p>
+            </task>
+            
+        </activity>
+        
+        
+        <example xml:id="example-SQ4modifiedgeometric">
+            <statement>
+                <p>
+                    Given a series that appears to be mostly geometric: <me>3+(1.1)^3+(1.1)^4+\cdots(1.1)^n+\cdots</me>  we can rewrite it as the sum of a standard geometric series with some modification: <m>\displaystyle ???+\sum_{n=0}^\infty a\cdot r^n</m>:
+                    <md>
+                        <mrow>&amp;3+(1.1)^3+(1.1)^4+\cdots(1.1)^n+\cdots </mrow>
+                            <mrow>&amp;=3-\textcolor{blue}{((1.1)^0+(1.1)^1+(1.1)^2)+((1.1)^0+(1.1)^1+(1.1)^2)}+(1.1)^3+\cdots</mrow>
+                        <mrow>&amp;=3-((1.1)^0+(1.1)^1+(1.1)^2)+(1.1)^0+(1.1)^1+(1.1)^2+(1.1)^3+\cdots</mrow>
+                        <mrow>&amp;=3-((1.1)^0+(1.1)^1+(1.1)^2)+\sum_{n=0}^\infty (1.1)^n</mrow>
+                        <mrow>&amp;=-0.31+\sum_{n=0}^\infty (1.1)^n</mrow>
+                    </md>
+                    which converges if and only if <m>\displaystyle \sum_{n=0}^\infty (1.1)^n</m> converges.  In this case, it does not.
+                </p>
+            </statement>
+        
+        </example>
+        
+        
+        <activity xml:id="activity-SQ4evaluatingmodifiedgeo">
+                <p>
+                    For each of the following modified geometric series, rewrite them in the form <m>???+\displaystyle\sum_{n=0}^\infty a\cdot r^n</m>.
+                    <ol>
+                        <li><m>\displaystyle -7+\left( -\frac{3}{7}\right)^2+\left( -\frac{3}{7}\right)^3+\cdots</m>.</li>
+                        <li><m>-6+\left(\frac{5}{4}\right)^3+\left(\frac{5}{4}\right)^4+\cdots</m>.</li>
+                        <li><m>\displaystyle 4+\sum_{n=4}^\infty \left(\frac{2}{3}\right)^n</m>.</li>
+                        <li><m>8-1+1-1+1-1+\cdots</m>.</li>
+                    </ol>
+                </p>
+        </activity>
+            
+        <activity>
+                <p>
+                    Use your rewritten forms from <xref ref="activity-SQ4evaluatingmodifiedgeo"/> to determine which of the modified geometric series converge. If the series converges, find to what value it converges.
+                    <ol label="A">
+                        <li><m>\displaystyle -7+\left( -\frac{3}{7}\right)^2+\left( -\frac{3}{7}\right)^3+\cdots</m>.</li>
+                        <li><m>-6+\left(\frac{5}{4}\right)^3+\left(\frac{5}{4}\right)^4+\cdots</m>.</li>
+                        <li><m>\displaystyle 4+\sum_{n=4}^\infty \left(\frac{2}{3}\right)^n</m>.</li>
+                        <li><m>8-1+1-1+1-1+\cdots</m>.</li>
+                    </ol>
+                </p>            
+        </activity>
+                
+<exercise checkit-seed="7450" checkit-slug="SQ4" checkit-title="Geometric summations">
+    <statement>
+        <p>
+            Find the limit of the following series.
+        </p>
+        <me>
+            -1 + \sum_{n = 1 }^\infty 2\cdot\left(\frac{1}{2}\right)^n.
+        </me>
+    </statement>
+    <answer>
+        <me>
+            -1 + \sum_{n = 1 }^\infty 2\cdot\left(\frac{1}{2}\right)^n=1.
+        </me>
+    </answer>
+</exercise>
+    
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="SQ4.slides.html"/>.</p>
+    </subsection>
+        
+        
+    
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-SQ4" youtube="e_ol6EmAO_I">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Determine if a geometric series converges, and if so, the value it converges to.
+
+
+
+</caption>
+    </figure>
+         
+        
+        
+    </subsection>
+    
+</section>

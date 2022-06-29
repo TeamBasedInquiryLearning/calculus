@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="TI4" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
+  <title>Trigonometric Substitution (TI4)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/04.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+        <activity xml:id="activity-TI4fakeusub">
+            <statement>
+                <p>
+                    Consider the integral <m>\displaystyle \int \frac{\sqrt{1-x^2}}{x} dx</m>.  If one were to use the method of substitution to evaluate this integral, what would be the best choice of <m>u</m>?
+                    <ol label="A">
+                        <li><m>u=1-x^2.</m></li>
+                        <li><m>u=\sqrt{1-x^2}.</m></li>
+                        <li><m>u=\frac{1}{x}.</m></li>
+                        <li>There is no u for which the method of substitution will work.</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4intropythagoras">
+            <statement>
+                <p>
+                    It would be good if <m>\sqrt{1-x^2}</m> were a term that can be written more simply.  Which of the following mathematical facts could help us simplify this integrand?
+                    <ol label="A">
+                        <li>For any real number, <m>x^2</m> must be positive (note: this isn’t even true).</li>
+                        <li><m>u=\sqrt{1-x^2}.</m></li>
+                        <li>The Pythagorean theorem allows us to write <m>(\cos(\theta))^2</m> as <m>1-(\sin(\theta))^2</m>.</li>
+                        <li>The ratio of an even function and an odd function is odd.</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4sinsub">
+            <statement>
+                <p>
+                    Suppose we let <m>x=\sin(\theta)</m>, then <m>\frac{dx}{d\theta}=\cos(\theta)</m> and <m>dx=\cos(\theta) d\theta</m>.  Which of the following best represents the integral <m>\displaystyle \int \sqrt{1-x^2}dx</m>?
+
+                    <ol label="A">
+                        <li><m>\displaystyle \int \sqrt{1-\sin^2(\theta)}dx</m>.</li>
+                        <li><m>\displaystyle \int \sqrt{ 1-\sin^2(\theta)\cos(\theta)}d\theta</m>.</li>
+                        <li><m>\displaystyle  \int \sqrt{ 1-\sin^2(\theta)}\cos(\theta)d\theta</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4sinsubrewrite">
+            <statement>
+                <p>
+                    Use the fact from <xref ref="activity-TI4intropythagoras"/> to rewrite your choice of integral from <xref ref="activity-TI4sinsub"/> to an integral without any <m>\sin(\theta)</m> terms.
+
+                    <ol label="A">
+                        <li><m>\displaystyle\int \cos(\theta) d\theta</m>.</li>
+                        <li><m>\displaystyle\int \cos^2(\theta) d\theta</m>.</li>
+                        <li><m>\displaystyle\int \sqrt{\cos(\theta)} d\theta</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4cosdoubleanglesub">
+            <statement>
+                <p>
+                    Use the fact that <m>\cos^2(\theta) =\frac{1+\cos(2\theta)}{2}</m> to rewrite the integral from <xref ref="activity-TI4sinsubrewrite"/>.
+
+                    <ol label="A">
+                        <li><m>\displaystyle\int \sqrt{\frac{1+\cos(2\theta)}{2}} d\theta</m>.</li>
+                        <li><m>\displaystyle\int \frac{1+\cos(2\theta)}{2} d\theta</m>.</li>
+                        <li><m>\displaystyle\int \left(\frac{1+\cos(2\theta)}{2} \right)^2d\theta</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4evaluatesinsub">
+            <statement>
+                <p>
+                    Evaluate the integral in terms of <m>\theta</m> that you found in <xref ref="activity-TI4cosdoubleanglesub"/>.
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4turnbacktox">
+            <statement>
+                <p>
+                    Consider the fact that <m>x=\sin(\theta)</m> and thus <m>\theta=\arcsin(x)</m>.  Use this to rewrite the solution you found in <xref ref="activity-TI4evaluatesinsub"/> in terms of <m>x</m>.
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4sinsubadjust">
+            <statement>
+                <p>
+                    Consider the integral <m>\displaystyle \int \sqrt{9-x^2} dx</m>; how can we best modify our approach in <xref ref="activity-TI4sinsub"/> and adapt it here?
+
+                    <ol label="A">
+                        <li>Let <m>x=\sin(\theta), dx=\cos(\theta)d\theta, \displaystyle \int \sqrt{9-x^2} dx= \int \sqrt{9-\sin^2(\theta)} \cos(\theta) d\theta.</m> </li>
+                        <li>Let <m>x=3\sin(\theta), dx=3\cos(\theta)d\theta, \displaystyle \int \sqrt{9-x^2} dx= \int \sqrt{9-(3\sin(\theta))^2} \cos(\theta) d\theta.</m> </li>
+                        <li>Let <m>x=\sin(3\theta), dx=3\cos(3\theta)d\theta, \displaystyle \int \sqrt{9-x^2} dx= \int \sqrt{9-\sin^2(3\theta)} 3\cos(3\theta) d\theta.</m> </li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4rewrite3sinsub">
+            <statement>
+                <p>
+                    Using your choice of substitution in <xref ref="activity-TI4sinsubadjust"/> and the fact that <m>\cos^2(\theta) =\frac{1+\cos(2\theta)}{2}</m> to rewrite the integral from <xref ref="activity-TI4sinsubadjust"/>
+
+
+                    <ol label="A">
+                        <li><m>\displaystyle \int \sqrt{\frac{9+9\cos(2\theta)}{2}} \cos(\theta) d\theta.</m> </li>
+                        <li><m>\displaystyle \int \frac{9+9\cos(2\theta)}{2} \cos(\theta) d\theta.</m> </li>
+                        <li><m>\displaystyle \int \left(\frac{9+9\cos(2\theta)}{2}\right)^2 \cos(\theta) d\theta.</m> </li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4evaluate3sinsub">
+            <statement>
+                <p>
+                    Evaluate the integral that you found in <xref ref="activity-TI4rewrite3sinsub"/>.  (Recall that since <m>x=3\sin(\theta), \theta=\arcsin\left(\frac{x}{3}\right)</m>.)
+                </p>
+            </statement>
+        </activity>
+        
+        
+        <activity xml:id="activity-TI4pythagorasagain">
+            <statement>
+                <p>
+                    Consider the integral <m>\displaystyle \int \frac{1}{1+x^2} dx</m>.  Which of the following facts would best simplify this expression?
+
+                    <ol label="A">
+                        <li><m>\cos^2(\theta) =\frac{1+\cos(2\theta)}{2}</m>.</li>
+                        <li><m>(\cos(\theta))^2=1-(\sin(\theta))^2</m></li>
+                        <li>Since <m>\sin^2(\theta) + \cos^2(\theta)=1, \tan^2(\theta)+1=\sec^2(\theta)</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        
+        <activity xml:id="activity-TI4tansub">
+            <statement>
+                <p>
+                    Suppose we let <m>x=\tan(\theta), dx =\sec^2(\theta)</m>.  Which of the following best represents the integral <m>\displaystyle \int \frac{1}{1+x^2} dx</m>?
+
+                    <ol label="A">
+                        <li><m>\displaystyle \int \frac{1}{1+\tan^2(\theta)} dx</m>.</li>
+                        <li><m>\displaystyle \int \frac{1}{1+\tan^2(\theta)\sec^2(\theta)} d\theta</m>.</li>
+                        <li><m>\displaystyle \int \frac{1}{1+\tan^2(\theta)} \sec^2(\theta)d\theta</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4tansubevaluate">
+            <statement>
+                <p>
+                    Using the fact from <xref ref="activity-TI4pythagorasagain"/>, simplify and evaluate your choice of integral from <xref ref="activity-TI4tansub"/>.  (Recall that since <m>x=\tan(\theta), \theta=\arctan(x)</m>.)
+
+                </p>
+            </statement>
+        </activity>
+        
+        
+        <activity xml:id="activity-TI4tansubadjust">
+            <statement>
+                <p>
+                    Consider the integral <m>\displaystyle \int \frac{1}{\frac{1}{4}+x^2} dx</m>; how can we best modify our approach in <xref ref="activity-TI4tansub"/> and adapt it here?
+
+                    <ol label="A">
+                        <li>Let <m>x=\frac{1}{2}\tan(\theta), dx=\frac{1}{2}\sec^2(\theta)d\theta, \displaystyle \int \frac{1}{\frac{1}{4}+x^2} dx = \int  \frac{1}{\frac{1}{4}+\left(\frac{1}{2}\tan(\theta) \right)^2} \frac{1}{2} \sec^2(\theta)d\theta.</m> </li>
+                        <li>Let <m>x=\frac{1}{4}\tan(\theta), dx=\frac{1}{4}\sec^2(\theta)d\theta, \displaystyle \int \frac{1}{\frac{1}{4}+x^2} dx = \int  \frac{1}{\frac{1}{4}+\left(\frac{1}{4}\tan(\theta) \right)^2}  \frac{1}{4}\sec^2(\theta) d\theta.</m> </li>
+                        <li>Let <m>x=\tan\left(\frac{1}{2}\theta\right), dx=\sec^2\left(\frac{1}{2}\theta\right)d\theta, \displaystyle \int \frac{1}{\frac{1}{4}+x^2} dx = \int  \frac{1}{\frac{1}{4}+\left(\tan\left(\frac{1}{2}\theta\right) \right)^2}  \frac{1}{2} \sec^2\left(\frac{1}{2}\theta\right)d\theta.</m> </li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-T4subhalftan">
+            <statement>
+                <p>
+                    Evaluate the choice of integral you found in <xref ref="activity-TI4sinsubadjust"/>, using the fact that if <m>x=\frac{1}{2}\tan(\theta), \theta=\arctan(2x)</m>.
+
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4lastpythagoras">
+            <statement>
+                <p>
+                    Consider the integral <m>\displaystyle \int \sqrt{x^2-1} dx</m>.   Which of the following facts <em>best</em> simplifies this integral?
+                    <ol label="A">
+                        <li><m>\cos^2(\theta) =\frac{1+\cos(2\theta)}{2}</m>.</li>
+                        <li><m>\tan^2(\theta)+1=\sec^2(\theta)</m>.</li>
+                        <li>Since <m>\sin^2(\theta) =1- \cos^2(\theta), \tan^2(\theta)=\sec^2(\theta)-1</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4secsub">
+            <statement>
+                <p>
+                    Using your choice in <xref ref="activity-TI4lastpythagoras"/>, pick an appropriate trignometric substitution for <m>x</m> and rewrite <m>\displaystyle \int \sqrt{x^2-1} dx</m> as an integral in terms of <m>\theta</m>.  (Remember to compute <m>dx</m> as well!) 
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-T4arcsec">
+            <statement>
+                <p>
+                    Evaluate the  integral you found in <xref ref="activity-TI4secsub"/>, using the fact that if <m>x=\sec(\theta), \theta=\arcsec(x)</m>.
+                    <hint>
+                        <p>
+                            To better understand the relationship between <m>x</m> and functions of <m>\theta</m>, consider this right triangle where <m>\sec(\theta)=x</m>.
+                            
+                            <figure>
+                <caption>A right triangle where <m>\sec(\theta)=x</m>.</caption>
+                    <image xml:id="secthetaisx" width="100%">
+                        <description>Right triangle with hypotenuse length x, adjacent length 1, and opposite length sqrt(x^2-1).</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                              \draw (0,0)--node[above left]{\tiny$x$} (1,1);
+                              \draw (0,0)--node[below]{\tiny$1$} (1,0);
+                              \draw (1,0)--node[right]{\tiny$\sqrt{x^2-1}$} (1,1);
+                              \node at (0.3, 0.1){\tiny $\theta$};
+  
+                              \draw (0.8, 0)--(0.8, 0.2)--(1, 0.2);
+
+  
+    
+                            \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>   
+                        </p>
+                    </hint>
+
+                </p>
+            </statement>
+        </activity>
+        
+        
+        <activity xml:id="activity-TI4whensinsub">
+            <statement>
+                <p>
+                    If we wish to simplify an expression that contained a <m>k^2-x^2</m> expression, which would be the best substitution?
+                    <ol label="A">
+                        <li><m>x=k\sin(\theta)</m></li>
+                        <li><m>x=k\tan(\theta)</m></li>
+                        <li><m>x=k\sec(\theta)</m></li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4whentansub">
+            <statement>
+                <p>
+                    If we wish to simplify an expression that contained a <m>k^2+x^2</m> expression, which would be the best substitution?
+                    <ol label="A">
+                        <li><m>x=k\sin(\theta)</m></li>
+                        <li><m>x=k\tan(\theta)</m></li>
+                        <li><m>x=k\sec(\theta)</m></li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4whensecsub">
+            <statement>
+                <p>
+                    If we wish to simplify an expression that contained a <m>x^2-k^2</m> expression, which would be the best substitution?
+                    <ol label="A">
+                        <li><m>x=k\sin(\theta)</m></li>
+                        <li><m>x=k\tan(\theta)</m></li>
+                        <li><m>x=k\sec(\theta)</m></li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4semicircle">
+            <statement>
+                <p>
+                    Consider the unit circle <m>x^2+y^2=1</m>.  Find a function <m>f(x)</m> so that <m>y=f(x)</m> is the graph of the upper-half semicircle of the unit circle.
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI4semicirclearea">
+            <task>
+                <p>
+                    Find the area under the curve <m>y=f(x)</m> from <xref ref="activity-TI4semicircle"/>.
+                </p>
+            </task>
+            
+            <task>
+                <p>
+                    How does this value compare to what we know about areas of circles?
+                </p>
+            </task>
+        </activity>
+    
+    
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-TI4" youtube="FTFtiiDARf0">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Use trigonometric substitution to compute indefinite integrals</caption>
+    </figure>
+    </subsection>
+        
+        
+        <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="TI4.slides.html"/>.</p>
+    </subsection>
+        
+        
+</section>

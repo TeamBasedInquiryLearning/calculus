@@ -4,7 +4,7 @@
   <xi:include href="meta/docinfo.ptx" />
 
   <book xml:id="cal1">
-    <title>Calculus 1 for Team-Based Inquiry Learning</title>
+    <title>Calculus for Team-Based Inquiry Learning</title>
     <subtitle component="main">2022 Edition</subtitle>
     <subtitle component="instructor">2022 Edition (Instructor Version)</subtitle>
 
@@ -18,6 +18,16 @@
 
     <xi:include href="04-IN/main.ptx" />
 
-    <!-- <xi:include href="meta/backmatter.ptx" /> -->
+    <xi:include href="05-TI/main.ptx" />
+
+    <xi:include href="06-AI/main.ptx" />
+
+    <xi:include href="07-CO/main.ptx" />
+
+    <xi:include href="08-SQ/main.ptx" />
+
+    <xi:include href="09-PS/main.ptx" />
+
+    <xi:include href="meta/backmatter.ptx" />
   </book>
 </pretext>

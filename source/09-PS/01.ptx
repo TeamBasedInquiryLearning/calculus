@@ -1,0 +1,534 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="PS1" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
+  <title>Power Series (PS1)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/01.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+    <activity xml:id="activity-PS1introexp">
+        <introduction>
+            <p>
+                Consider the series <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m> where <m>x</m> is a real number.
+            </p>
+        </introduction>
+        <task>
+            <p>
+                If <m>x=2</m>, then <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{2^n}{n!}</m>.  What can be said about this series?
+                <ol label="A">
+                    <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{2^n}{n!}</m> converges.</li>
+                    <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{2^n}{n!}</m> diverges.</li>
+                    <li>None of the  techniques we have learned so far allow us to conclude whether <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{2^n}{n!}</m> converges or diverges.</li>
+                </ol>
+            </p>
+        </task>
+        <task>
+            <p>
+                If <m>x=-100</m>, then <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{(-100)^n}{n!}</m>.  What can be said about this series?
+                <ol label="A">
+                    <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{(-100)^n}{n!}</m> converges.</li>
+                    <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{(-100)^n}{n!}</m> diverges.</li>
+                    <li>None of the  techniques we have learned so far allow us to conclude whether <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{(-100)^n}{n!}</m> converges or diverges.</li>
+                </ol>
+            </p>
+        </task>
+        
+        <task>
+            <p>
+                Suppose that <m>x</m> were some arbitrary real number.  What can be said about this series?
+                <ol label="A">
+                    <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m> converges.</li>
+                    <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m> diverges.</li>
+                    <li>None of the  techniques we have learned so far allow us to conclude whether <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m> converges or diverges.</li>
+                </ol>
+            </p>
+        </task>
+    </activity>
+        
+        
+        <activity xml:id="activity-PS1comparetoexp">
+            <introduction>
+                <p>
+                    Since <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m> converges for each real value <m>x</m>, we can define a function <m>f(x)=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m> which assigns to each input <m>x</m> the sum <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m>.
+                </p>
+            </introduction>
+            
+            <task>
+                <p>
+                    To estimate <m>f(2)</m>, we consider <m>f_{5}(x)=\displaystyle \sum_{n=0}^5 \frac{1}{n!}x^n=1+x+\frac{1}{2}x^2+\frac{1}{6}x^3+\frac{1}{24}x^4+\frac{1}{120}x^5.</m>  What is <m>f_5(2)</m>?
+                    <ol label="A">
+                        <li><m>f_5(2)=4\left(1+x+\frac{1}{2}x^2+\frac{1}{6}x^3+\frac{1}{24}x^4+\frac{1}{120}x^5\right)=4+4x+2x^2+\frac{2}{3}x^3+\frac{1}{6}x^4+\frac{1}{30}x^5</m>.</li>
+                        <li><m>f_5(2)=1+2+\frac{1}{2}2+\frac{1}{6}2+\frac{1}{24}2+\frac{1}{120}2=\frac{133}{30}\approx 4.4333</m>.</li>
+                        <li><m>f_5(2)=1+2+\frac{1}{2}2^2+\frac{1}{6}2^3+\frac{1}{24}2^4+\frac{1}{120}2^5=\frac{109}{15}\approx 7.2667</m>.</li>
+                    </ol>
+                </p>
+            </task>
+            <task>
+                <p>
+                    To which of these values is <m>f_5(2)</m> the closest?
+                    <ol label="A">
+                        <li><m>(2)^2</m>.</li>
+                        <li><m>\sqrt{2}</m>.</li>
+                        <li><m>e^2</m>.</li>
+                        <li><m>\ln(2)</m>.</li>
+                        <li><m>\sin(2)</m>.</li>
+                        <li><m>\cos(2)</m>.</li>
+                    </ol>
+                </p>
+            </task>
+            
+            <task>
+                <p>
+                Consider the plot of <m>y=f_5(x):</m>
+                
+                <figure>
+                <caption>Plot of <m>f_5(x)</m>.</caption>
+                    <image xml:id="plotf5" width="100%">
+                        <description>A plot of <m>y=f_5(x)</m>.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \begin{axis}[
+                              axis lines=middle,
+                              grid=major,
+                              xmin=-2,
+                              xmax=2,
+                              ymin=-1,
+                              ymax=8,
+                              xlabel=$x$,
+                              ylabel=$y$,
+                              xtick={-2,-1,...,2},
+                              ytick={0,1,...,7},
+                              tick style={very thick},
+                              legend style={
+                              at={(rel axis cs:0,1)},
+                              anchor=north west,draw=none,inner sep=0pt,fill=gray!10}
+                            ]
+
+                            \addplot[red, dashed,samples=100] {1+x+x^2/2+x^3/6+x^4/24+x^5/120};
+                            \addlegendentry{$y=f_5(x)$}
+                            \end{axis}
+                            \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure> 
+                
+            Which of the following plots does the plot <m>y=f_5(x)</m> most resemble?
+                
+                <ol label="A">
+                    <li>
+                        <m>y=x^2</m>.
+                        <figure>
+                <caption>Plots of <m>y=f_5(x), y=x^2</m>.</caption>
+                    <image xml:id="plotf5xsquare" width="100%">
+                        <description>Plots of <m>y=f_5(x), y=x^2</m>.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \begin{axis}[
+                              axis lines=middle,
+                              grid=major,
+                              xmin=-2,
+                              xmax=2,
+                              ymin=-1,
+                              ymax=8,
+                              xlabel=$x$,
+                              ylabel=$y$,
+                              xtick={-2,-1,...,2},
+                              ytick={0,1,...,7},
+                              tick style={very thick},
+                              legend style={
+                              at={(rel axis cs:0,1)},
+                              anchor=north west,draw=none,inner sep=0pt,fill=gray!10}
+                            ]
+                            
+                            \addplot[blue,samples=100] {x^2};
+                            \addlegendentry{$y=x^2$}
+
+                            \addplot[red, dashed,samples=100] {1+x+x^2/2+x^3/6+x^4/24+x^5/120};
+                            \addlegendentry{$y=f_5(x)$}
+                            \end{axis}
+                            \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure> 
+                    </li>
+                    
+                    <li>
+                        <m>y=\sqrt{x}</m>.
+                        <figure>
+                <caption>Plots of <m>y=f_5(x), y=\sqrt{x}</m>.</caption>
+                    <image xml:id="plotf5rootx" width="100%">
+                        <description>Plots of <m>y=f_5(x), y=\sqrt{x}</m>.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \begin{axis}[
+                              axis lines=middle,
+                              grid=major,
+                              xmin=-2,
+                              xmax=2,
+                              ymin=-1,
+                              ymax=8,
+                              xlabel=$x$,
+                              ylabel=$y$,
+                              xtick={-2,-1,...,2},
+                              ytick={0,1,...,7},
+                              tick style={very thick},
+                              legend style={
+                              at={(rel axis cs:0,1)},
+                              anchor=north west,draw=none,inner sep=0pt,fill=gray!10}
+                            ]
+                            
+                            \addplot[blue,samples=100] {x^(1/2)};
+                            \addlegendentry{$y=\sqrt{x}$}
+
+                            \addplot[red, dashed,samples=100] {1+x+x^2/2+x^3/6+x^4/24+x^5/120};
+                            \addlegendentry{$y=f_5(x)$}
+                            \end{axis}
+                            \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure> 
+                    </li>
+                    
+                    
+                    <li>
+                        <m>y=e^x</m>.
+                        <figure>
+                <caption>Plots of <m>y=f_5(x), y=e^x</m>.</caption>
+                    <image xml:id="plotf5exp" width="100%">
+                        <description>Plots of <m>y=f_5(x), y=e^x</m>.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \begin{axis}[
+                              axis lines=middle,
+                              grid=major,
+                              xmin=-2,
+                              xmax=2,
+                              ymin=-1,
+                              ymax=8,
+                              xlabel=$x$,
+                              ylabel=$y$,
+                              xtick={-2,-1,...,2},
+                              ytick={0,1,...,7},
+                              tick style={very thick},
+                              legend style={
+                              at={(rel axis cs:0,1)},
+                              anchor=north west,draw=none,inner sep=0pt,fill=gray!10}
+                            ]
+                            
+                            \addplot[blue,samples=100] {e^x};
+                            \addlegendentry{$y=e^x$}
+
+                            \addplot[red, dashed,samples=100] {1+x+x^2/2+x^3/6+x^4/24+x^5/120};
+                            \addlegendentry{$y=f_5(x)$}
+                            \end{axis}
+                            \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure> 
+                    </li>
+                    
+                    <li>
+                        <m>y=\ln{x}</m>.
+                        <figure>
+                <caption>Plots of <m>y=f_5(x), y=\ln{x}</m>.</caption>
+                    <image xml:id="plotf5lnx" width="100%">
+                        <description>Plots of <m>y=f_5(x), y=\ln{x}</m>.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \begin{axis}[
+                              axis lines=middle,
+                              grid=major,
+                              xmin=-2,
+                              xmax=2,
+                              ymin=-1,
+                              ymax=8,
+                              xlabel=$x$,
+                              ylabel=$y$,
+                              xtick={-2,-1,...,2},
+                              ytick={0,1,...,7},
+                              tick style={very thick},
+                              legend style={
+                              at={(rel axis cs:0,1)},
+                              anchor=north west,draw=none,inner sep=0pt,fill=gray!10}
+                            ]
+                            
+                            \addplot[blue,samples=100] {ln(x)};
+                            \addlegendentry{$y=\ln{x}$}
+
+                            \addplot[red, dashed,samples=100] {1+x+x^2/2+x^3/6+x^4/24+x^5/120};
+                            \addlegendentry{$y=f_5(x)$}
+                            \end{axis}
+                            \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure> 
+                    </li>
+                    
+                    <li>
+                        <m>y=\sin{x}</m>.
+                        <figure>
+                <caption>Plots of <m>y=f_5(x), y=\sin{x}</m>.</caption>
+                    <image xml:id="plotf5sinx" width="100%">
+                        <description>Plots of <m>y=f_5(x), y=\sin{x}</m>.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \begin{axis}[
+                              axis lines=middle,
+                              grid=major,
+                              xmin=-2,
+                              xmax=2,
+                              ymin=-1,
+                              ymax=8,
+                              xlabel=$x$,
+                              ylabel=$y$,
+                              xtick={-2,-1,...,2},
+                              ytick={0,1,...,7},
+                              tick style={very thick},
+                              legend style={
+                              at={(rel axis cs:0,1)},
+                              anchor=north west,draw=none,inner sep=0pt,fill=gray!10}
+                            ]
+                            
+                            \addplot[blue,samples=100] {sin(x*57.2958)};
+                            \addlegendentry{$y=\sin{x}$}
+
+                            \addplot[red, dashed,samples=100] {1+x+x^2/2+x^3/6+x^4/24+x^5/120};
+                            \addlegendentry{$y=f_5(x)$}
+                            \end{axis}
+                            \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure> 
+                    </li>
+                    
+                    <li>
+                        <m>y=\sin{x}</m>.
+                        <figure>
+                <caption>Plots of <m>y=f_5(x), y=\cos{x}</m>.</caption>
+                    <image xml:id="plotf5cosx" width="100%">
+                        <description>Plots of <m>y=f_5(x), y=\cos{x}</m>.</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                            \begin{axis}[
+                              axis lines=middle,
+                              grid=major,
+                              xmin=-2,
+                              xmax=2,
+                              ymin=-1,
+                              ymax=8,
+                              xlabel=$x$,
+                              ylabel=$y$,
+                              xtick={-2,-1,...,2},
+                              ytick={0,1,...,7},
+                              tick style={very thick},
+                              legend style={
+                              at={(rel axis cs:0,1)},
+                              anchor=north west,draw=none,inner sep=0pt,fill=gray!10}
+                            ]
+                            
+                            \addplot[blue,samples=100] {cos(x*57.2958)};
+                            \addlegendentry{$y=\cos{x}$}
+
+                            \addplot[red, dashed,samples=100] {1+x+x^2/2+x^3/6+x^4/24+x^5/120};
+                            \addlegendentry{$y=f_5(x)$}
+                            \end{axis}
+                            \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure> 
+                    </li>
+                
+                </ol>
+                    </p>
+            
+            </task>
+            
+        </activity>
+        
+        
+        
+        
+        
+        
+        <definition xml:id="definition-PS1PowerSeries">
+            <statement>
+                <p>
+                    For a real number <m>c</m> a <em>power series</em> centered at <m>c</m> is a series <m>\displaystyle\sum_{n=0}^\infty a_n (x-c)^n</m> where each coefficient <m>a_n</m> is a real number.
+                </p>
+                <p>
+                    For the values of <m>x</m> where <m>\displaystyle\sum_{n=0}^\infty a_n (x-c)^n</m> converges, we can define a function <m>p(x)=\displaystyle\sum_{n=0}^\infty a_n (x-c)^n</m>.  We can define <m>p_k(x)=\displaystyle\sum_{n=0}^k a_n (x-c)^n</m> to be the degree <m>k</m> polynomial approximation of <m>p(x)</m>.
+                </p>
+            </statement>
+        
+        </definition>
+        
+        
+        <example xml:id="example-PS1diffpowerseries">
+            <statement>
+                <p>
+                    Consider the power series <m>\displaystyle \sum_{n=0}^\infty a_nx^n</m>.  We could compute <m>\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]</m> by:
+                    <md>
+                        <mrow>\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]&amp;=\displaystyle \sum_{n=0}^\infty a_nnx^{n-1}</mrow>
+                        <mrow>(\text{Then since when }n=0, a_0(0)x^{-1}=0)&amp;</mrow>
+                        <mrow>&amp;=\displaystyle \sum_{n=1}^\infty a_nnx^{n-1}</mrow>
+                        <mrow>(\text{Then let }m=n-1, n=m+1)&amp;</mrow>
+                        <mrow>&amp;=\displaystyle \sum_{m=0}^\infty a_{m+1}(m+1)x^{m}</mrow>
+                        <mrow>(\text{Then renaming indices}.)&amp;</mrow>
+                        <mrow>&amp;=\displaystyle \sum_{n=0}^\infty a_{n+1}(n+1)x^{n}</mrow>
+                    </md>
+                </p>
+                
+                <p>
+                    We could also compute <m>\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]</m> by:
+                    <md>
+                        <mrow>\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]&amp;=\frac{d}{dx}\left[a_0+a_1x+a_2x^2+\cdots a_nx^n+\cdots\right]</mrow>
+                        <mrow>&amp;=a_1+a_22x+a_33x^2+\cdots a_nnx^{n-1}+a_{n+1}(n+1)x^n+\cdots</mrow>
+                        <mrow>&amp;=\displaystyle \sum_{n=0}^\infty a_{n+1}(n+1)x^{n}</mrow>
+                    </md>
+                </p>
+            </statement>
+        </example>
+        
+        
+        <activity xml:id="activity-PS1diffexp">
+            <task>
+                <p>
+                    Given <m>f(x)=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m>, which of the following best represents <m>f'(x)=\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n\right]</m>?
+                
+                
+                
+                
+                <ol label="A">
+                    <li><m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m>.</li>
+                    <li><m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^{n-1}</m>.</li>
+                    <li><m>\displaystyle n\sum_{n=0}^\infty \frac{1}{n!}x^{n-1}</m>.</li>
+                    <li><m>\displaystyle n\sum_{n=0}^\infty \frac{1}{(n-1)!}x^{n-1}</m>.</li>
+                    <li><m>\displaystyle n\sum_{n=1}^\infty \frac{1}{(n-1)!}x^{n-1}</m>.</li>
+                </ol>
+                    </p>
+            </task>
+            
+            <task>
+                <p>
+                    For which of the following is <m>y=\frac{dy}{dx}</m>?
+                <ol label="A">
+                        <li><m>y=x^2</m>.</li>
+                        <li><m>y=\sqrt{x}</m>.</li>
+                        <li><m>y=e^x</m>.</li>
+                        <li><m>y=\ln(x)</m>.</li>
+                        <li><m>y=\sin(x)</m>.</li>
+                        <li><m>y=\cos(x)</m>.</li>
+                    </ol>
+                </p>
+                
+            </task>
+        
+        </activity>
+        
+        
+        <fact xml:id="fact-PS1exp">
+            <statement>
+                <p>
+                    We have that <me>f(x)=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=e^x.</me>  What we mean by equality is that for any real number <m>x</m>, the series <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m> will converge to <m>e^x</m>.
+                </p>
+                
+            </statement>
+        </fact>
+        
+        
+        <activity xml:id="activity-PS1expneg3">
+            <statement>
+                <p>
+                    Estimate <m>e^{-3}</m> using <m>e^x\approx f_6(x)=\displaystyle \sum_{n=0}^6 \frac{1}{n!}x^n=1+x+\frac{1}{2}x^2+\frac{1}{6}x^3+\frac{1}{24}x^4+\frac{1}{120}x^5+\frac{1}{720}x^6</m> by evaluating <m>f_6(-3)</m>.
+                </p>
+                
+            </statement>
+        </activity>
+        
+        
+        <example xml:id="example-PS1intpowerseries">
+            <statement>
+                <p>
+                    Consider the power series <m>\displaystyle \sum_{n=0}^\infty a_nx^n</m>.  We could compute <m>\displaystyle\int \sum_{n=0}^\infty a_nx^ndx</m> by:
+                    <md>
+                        <mrow>\int\displaystyle \sum_{n=0}^\infty a_nx^ndx &amp;=C+\displaystyle \sum_{n=0}^\infty \frac{a_n}{n+1}x^{n+1}</mrow>
+                        <mrow>(\text{Letting }m=n+1, n=m-1)&amp;</mrow>
+                        <mrow>&amp;=C+\displaystyle \sum_{m=1}^\infty \frac{a_{m-1}}{m}x^{m}</mrow>
+                        <mrow>(\text{Then, renaming})&amp;</mrow>
+                        <mrow>&amp;=C+\displaystyle \sum_{n=1}^\infty \frac{a_{n-1}}{n}x^{n}</mrow>
+                    </md>
+                </p>
+                
+                <p>
+                    We could also compute <m>\displaystyle\int \sum_{n=0}^\infty a_nx^ndx</m> by:
+                    <md>
+                        <mrow>\int\displaystyle \sum_{n=0}^\infty a_nx^ndx &amp;=\int(a_0+a_1x+a_2x^2+\cdots a_nx^n+\cdots)dx</mrow>
+                        <mrow>&amp;=C+a_0x+\frac{a_1}{2}x^2+\frac{a_2}{3}x^3+\cdots+\frac{a_{n-1}}{n}x^n +\frac{a_n}{n+1}x^{n+1}+\cdots</mrow>
+                        <mrow>&amp;=C+\displaystyle \sum_{n=1}^\infty \frac{a_{n-1}}{n}x^{n}</mrow>
+                    </md>
+                </p>
+                
+                
+            </statement>
+        </example>
+        
+        
+        
+        
+        <activity xml:id="activity-PS1generic">
+            <introduction>
+                <p>
+                    Consider a function <m>p(x)</m> defined by <m>\displaystyle p(x)=\sum_{n=0}^\infty \frac{2^n}{(2n)!}x^n.</m>
+                </p>
+            </introduction>
+            <task>
+                <p>
+                    Find <m>p_4(x)</m>, the degree 4 polynomial approximation for <m>p(x)</m>, .
+                </p>
+            </task>
+            <task>
+                <p>
+                    Use <m>p_4(x)</m> to estimate <m>p(-1)</m> by computing <m>p_4(-1)</m>.
+                </p>
+            </task>
+            <task>
+                <p>
+                    Use <m>p_4(x)</m> to estimate <m>\displaystyle \int_3^6 p(x)\,dx</m> by computing <m>\displaystyle \int_3^6 p_4(x)\,dx</m>.
+                </p>
+            </task>            
+        </activity>
+    
+    
+        <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="PS1.slides.html"/>.</p>
+    </subsection>
+        
+        <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-PS1" youtube="MpJKiKSVIc0">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Approximate functions defined as power series
+
+
+
+</caption>
+    </figure>
+         
+        
+        
+    </subsection>
+    
+        
+        
+        
+        
+        
+        
+    
+</section>

@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="TI6" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
+  <title>Partial fractions (TI6)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/06.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+        <activity xml:id="activity-TI6oneoverlinear">
+            <statement>
+                <p>
+                    Using the method of substitution, which of these is the integral of <m>\displaystyle\int \frac{1}{(ax+b)} dx</m>?
+                    <ol label="A">
+                        <li><m>\frac{1}{a}\ln(ax+b) +C.</m></li>
+                        <li><m>\frac{1}{a}\ln|ax+b| +C.</m></li>
+                        <li><m>\frac{1}{x}(\ln(ax)+\ln(b))+C.</m></li>
+                        <li><m>\frac{1}{a}(\ln|ax|+\ln|b|)+C.</m></li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        <activity xml:id="activity-TI6RationalExpression">
+            <statement>
+                <p>
+                    Which of the following is equivalent to the rational expression <m>\displaystyle\frac{3x+3}{2x^2+3x}</m>?
+                    <ol label="A">
+                        <li><m>\frac{3}{2x}+\frac{1}{x}.</m></li>
+                        <li><m>\frac{3}{x}+\frac{3}{2x+3}.</m></li>
+                        <li><m>\frac{1}{x}+\frac{1}{2x+3}.</m></li>
+                        <li><m>\frac{3}{2x^2}+1.</m></li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        <activity xml:id="activity-TI6IntegrateRationalExpression">
+            <statement>
+                <p>
+                     Based on your choice in <xref ref="activity-TI6RationalExpression"/>, which of these is the integral for <m>\displaystyle\int \frac{3x+3}{2x^2+3x} dx</m>? 
+                    <ol label="A">
+                        <li><m>\frac{3}{2}\ln|x|+\ln|x|+C.</m></li>
+                        <li><m>3\ln|x|+\frac{3}{2}\ln|2x+3|+C.</m></li>
+                        <li><m>\ln|x|+\frac{1}{2}\ln|2x+3|+C.</m></li>
+                        <li><m>-\frac{3}{2}x^{-1}+x+C.</m></li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI6AntidiffArctan">
+            <statement>
+                <p>
+                     Which of the following is an antiderivative for <m>\displaystyle\frac{1}{(x+k)^2+h^2}</m>? 
+                    <ol label="A">
+                        <li><m>\arctan(x).</m></li>
+                        <li><m>\arctan(x+k).</m></li>
+                        <li><m>\frac{1}{h}\arctan\left(\frac{x+h}{h}\right).</m></li>
+                        <li><m>\frac{1}{h^2}\arctan\left(\frac{x+k}{h^2}\right).</m></li>
+                        <li><m>\frac{1}{h}\arctan\left(\frac{x+k}{h}\right).</m></li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        <activity xml:id="activity-TI6CompleteSquare">
+            <statement>
+                <p>
+                     Consider the irreducible quadratic <m>x^2-4x+80</m>.  Which of the following is the completed square form of this quadratic expression?
+                    <ol label="A">
+                        <li><m>(x-4)^2+80.</m></li>
+                        <li><m>(x-2)^2+80.</m></li>
+                        <li><m>(x-4)^2+64.</m></li>
+                        <li><m>(x-2)^2+76.</m></li>
+                        <li><m>(x-4)^2+76.</m></li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        <activity xml:id="activity-TI6EvalIrred">
+            <statement>
+                <p>
+                     Using the fact that <m>\displaystyle\int \frac{1}{x^2-8x+80} dx = \int \frac{1}{(x-4)^2+64} dx</m>, evaluate the integral <m>\displaystyle \int \frac{1}{x^2-8x+80} dx</m>.
+                </p>
+            </statement>
+        </activity>
+        
+        
+        <activity xml:id="activity-TI6FindCoeff">
+            <statement>
+                <p>
+                     Suppose that one could write <m>\displaystyle\frac{4x^2-5x-2}{x^2(x-2)} =\frac{A}{x}+\frac{B}{x^2}+\frac{C}{x-2}</m>.  
+                    
+                        <p>
+                            Recall that:  <md>
+                            <mrow>\displaystyle\frac{4x^2-5x-2}{x^2(x-2)}&amp;=\displaystyle \frac{A}{x}+\frac{B}{x^2}+\frac{C}{x-2} = \frac{Ax(x-2)+B(x-2)+Cx^2}{x^2(x-2)}</mrow>
+                            <mrow>\displaystyle\frac{4x^2-5x-2}{x^2(x-2)}&amp; = \frac{Ax(x-2)+B(x-2)+Cx^2}{x^2(x-2)}</mrow>
+                            <mrow>4x^2-5x-2&amp; = Ax(x-2)+B(x-2)+Cx^2.</mrow>
+                            </md>
+                            
+                            What are the values of <m>A, B</m> and <m>C</m>?  
+                        </p>
+                     
+                    <ol label="A">
+                        <li><m>A=4, B=-5, C=-2.</m></li>
+                        <li><m>A=3, B=1, C=1.</m></li>
+                        <li><m>A=1, B=1, C=1.</m></li>
+                        <li><m>A=1, B=3, C=-1.</m></li>
+                        <li><m>A=2, B=1, C=1.</m></li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <fact xml:id="fact-TI6PartialFractions">
+                <title>Partial Fraction Decomposition</title>
+                <p>
+                  Let <m>\displaystyle \frac{p(x)}{q(x)}</m> be a rational function,
+                  where the degree of <m>p</m> is less than the degree of <m>q</m>.
+                      <idx><h>integration</h><h>partial fraction decomp.</h></idx>
+
+                </p>
+
+                <p>
+                  <ol label="A">
+                    <li>
+                      <p>
+                        <em>Linear Terms:</em> Let <m>(x-a)</m> divide <m>q(x)</m>,
+                        where <m>(x-a)^n</m> is the highest power of <m>(x-a)</m> that divides <m>q(x)</m>.
+                        Then the decomposition of <m>\frac{p(x)}{q(x)}</m> will contain the sum
+                        <me>
+                          \frac{A_1}{(x-a)} + \frac{A_2}{(x-a)^2} + \cdots +\frac{A_n}{(x-a)^n}
+                        </me>.
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        <em>Quadratic Terms:</em> Let
+                        <m>x^2+bx+c</m>  be an irreducible quadratic that divides <m>q(x)</m>,
+                        where <m>(x^2+bx+c)^n</m> is the highest power of
+                        <m>x^2+bx+c</m> that divides <m>q(x)</m>.
+                        Then the decomposition of <m>\frac{p(x)}{q(x)}</m> will contain the sum
+                        <me>
+                          \frac{B_1x+C_1}{x^2+bx+c}+\frac{B_2x+C_2}{(x^2+bx+c)^2}+\cdots+\frac{B_nx+C_n}{(x^2+bx+c)^n}
+                        </me>.
+                      </p>
+                    </li>
+                  </ol>
+                </p>
+        </fact>
+        <activity xml:id="activity-TI6FirstDecomp">
+            <statement>
+                <p>
+                     Which of the following is the form of the partial fraction decomposition of <m>\displaystyle\frac{x^3-7x^2-7x+15}{x^3(x+5)}</m>?
+
+                    <ol label="A">
+                        <li><m>\frac{A}{x}+\frac{B}{x+5}.</m></li>
+                        <li><m>\frac{A}{x^3}+\frac{B}{x+5}.</m></li>
+                        <li><m>\frac{A}{x}+\frac{B}{x^2}+ \frac{C}{x^3}+\frac{D}{x+5}.</m></li>
+                        <li><m>\frac{A}{x}+\frac{B}{x^2}+ \frac{C}{x^3}+\frac{Dx+E}{x+5}.</m></li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        <activity xml:id="activity-TI6SecondDecomp">
+            <statement>
+                <p>
+                     Which of the following is the form of the partial fraction decomposition of <m>\displaystyle\frac{x^2+1}{(x-3)^2(x^2+4)^2}</m>?
+
+                    <ol label="A">
+                        <li><m>\frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{C}{x^2+4}+\frac{D}{(x^2+4)^2}.</m></li>
+                        <li><m>\frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{Cx+D}{(x^2+4)^2}.</m></li>                        
+                        <li><m>\frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{C}{x^2+4}+\frac{Dx+E}{(x^2+4)^2}.</m></li>
+                        <li><m>\frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{Cx+D}{x^2+4}+\frac{Ex+F}{(x^2+4)^2}.</m></li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+    
+    <activity xml:id="activity-TI6RationaltoPoly">
+            <statement>
+                <p>
+                    Consider that the partial decomposition of <m>\displaystyle \frac{x^2+5x+3}{(x+1)^2x}</m> is <me>\displaystyle \frac{x^2+5x+3}{(x+1)^2x}=\frac{A}{x+1}+\frac{B}{(x+1)^2}+\frac{C}{x}.</me>  What equality do we obtain if we multiply both sides of the above equation by <m>(x+1)^2x</m>?
+                    <ol label="A">
+                        <li><m>x^2+5x+3=Ax(x+1)+Bx+C(x+1)^2.</m></li>
+                        <li><m>x^2+5x+3=A(x+1)+B(x+1)^2+Cx.</m></li>
+                        <li><m>x^2+5x+3=Ax(x+1)+Bx+C(x+1).</m></li>
+                        <li><m>x^2+5x+3=A(x+1)+Bx+Cx^2.</m></li>
+                        <li><m>x^2+5x+3=Ax(x+1)+Bx^2+C(x+1)^2.</m></li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        <activity xml:id="activity-TI6SolveaCoeff">
+            <statement>
+                <p>
+                    Notice that <m>x^2+5x+3=Ax(x+1)+Bx+C(x+1)^2</m>.
+                    <task>
+                        <p>Which of the following values can we determine by setting <m>x=0</m>? Select all that apply.</p>
+                    <ol label="A">
+                        <li><m>A</m></li>
+                        <li><m>B</m></li>
+                        <li><m>C</m></li>
+                    </ol>
+                    </task>
+                    <task>
+                        <p>Which of the following values can we determine by setting <m>x=-1</m>? Select all that apply.</p>
+                    <ol label="A">
+                        <li><m>A</m></li>
+                        <li><m>B</m></li>
+                        <li><m>C</m></li>
+                    </ol>
+                    </task>
+                </p>
+            </statement>
+        </activity>
+        <activity xml:id="activity-TI6SolvelastCoeff">
+            <statement>
+                <p>
+                    Rewrite <m>Ax(x+1)+x+3(x+1)^2</m> so that <m>Ax(x+1)+x+3(x+1)^2=?x^2+?x+?</m>.  Knowing that <me>1x^2+5x+3=Ax(x+1)+x+3(x+1)^2=?x^2+?x+?,</me> can we solve for  <m>A</m>?
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI6PuttingitTogether">
+            <statement>
+                <p>
+                    By using the form of the decomposition <m>\displaystyle \frac{x^2+5x+3}{(x+1)^2x}=\frac{A}{x+1}+\frac{B}{(x+1)^2}+\frac{C}{x}</m>  and the coefficients found in <xref ref="activity-TI6SolveaCoeff"/> and <xref ref="activity-TI6SolvelastCoeff"/>, evaluate <m>\displaystyle \int \frac{x^2+5x+3}{(x+1)^2x} dx</m>.
+                </p>
+            </statement>
+        </activity>
+        
+    
+        <activity xml:id="activity-TI6FindCoefficients1">
+            <statement>
+                <p>
+                     Given that <m>\displaystyle\frac{x^3-7x^2-7x+15}{x^3(x+5)}=\frac{A}{x}+\frac{B}{x^2}+ \frac{C}{x^3}+\frac{D}{x+5}</m>, what are <m>A, B, C</m>, and <m>D</m>?
+
+                    <ol label="A">
+                        <li><m>A=1, B=-7 C=-7, D=15.</m></li>
+                        <li><m>A=-1, B=-2, C=3, D=2.</m></li>                        
+                        <li><m>A=1, B=-2, C=-3, D=2.</m></li>
+                        <li><m>A=-1, B=2, C=3, D=-2.</m></li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        <activity xml:id="activity-TI6Evaluate1">
+            <statement>
+                <p>
+                     Given your choice in <xref ref="activity-TI6FindCoefficients1"/> Find <m>\displaystyle\int \frac{x^3-7x^2-7x+15}{x^3(x+5)} dx.</m> 
+                </p>
+            </statement>
+        </activity>
+        <activity xml:id="activity-TI6FindCompleteDecomp">
+            <statement>
+                <p>
+                     Consider the rational expression <m>\displaystyle\frac{2x^3+2x+4}{x^4+2x^3+4x^2}.</m>  Which of the following is the partial fraction decomposition of this rational expression?
+
+                    <ol label="A">
+                        <li><m>\frac{1}{x}+\frac{1}{x^2}+\frac{2x-1}{x^2+2x+4}.</m></li>
+                        <li><m>\frac{2}{x}+\frac{0}{x^2}+\frac{-1}{x^2+2x+4}.</m></li>                        
+                        <li><m>\frac{0}{x}+\frac{1}{x^2}+\frac{-1}{x^2+2x+4}.</m></li>
+                        <li><m>\frac{0}{x}+\frac{1}{x^2}+\frac{2x-1}{x^2+2x+4}.</m></li>
+                    </ol>                </p>
+            </statement>
+        </activity>
+        <activity xml:id="activity-TI6Evaluate2">
+            <statement>
+                <p>
+                     Given your choice in <xref ref="activity-TI6FindCompleteDecomp"/> Find <m>\displaystyle\int \frac{2x^3+2x+4}{x^4+2x^3+4x^2} dx.</m> 
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-TI6Definite">
+            <statement>
+                <p>
+                     Given that <m>\displaystyle \frac{2x+5}{x^2+3x+2}=\frac{-1}{x+2}+\frac{3}{x+1}</m>, find <m>\displaystyle\int_0^3  \frac{2x+5}{x^2+3x+2} dx.</m> 
+                </p>
+            </statement>
+        </activity>
+        
+        <remark>
+            <statement>
+                <p>
+                    This is all well and good, but given a rational function, how might one actually find coefficients for the partial fractions if we weren't given them?
+                </p>
+            </statement>
+        </remark>
+        
+        
+        
+        <activity xml:id="activity-TI6HandsOff">
+            <statement>
+                <p>
+                    Evaluate <m>\displaystyle \int \frac{4x^2-3x+1}{(2x+1)(x+2)(x-3)}dx.</m>
+                </p>
+            </statement>
+        </activity>
+    
+    
+    
+    <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-TI6" youtube="3Bb2l-_LszM">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: I can integrate functions using the method of partial fractions</caption>
+    </figure>
+    </subsection>
+        
+    
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="TI6.slides.html"/>.</p>
+    </subsection>
+    
+</section>

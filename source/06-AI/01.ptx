@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="AI1" xmlns:xi="http://www.w3.org/2001/XInclude" tbil-slides="build">
+  <title>Average Value (AI1)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/01.ptx"/>
+            </li>
+        </ul>
+    </objectives>
+        <activity xml:id="activity-AI1averagespeed">
+            <introduction>
+                <p>
+                    Suppose a car drives due east at 70 mph for 2 hours, and then slows down to 40 mph for an additional hour.
+                </p>
+            </introduction>
+            <task>
+                <p>How far did the car travel in these 3 hours?</p>
+            </task>
+            <task>
+                <p>What was their average velocity over these 3 hours?</p>
+            </task>
+        </activity>
+        
+        <activity xml:id="activity-AI1averagespeed2">
+            <introduction>
+                <p>
+                    Suppose a car drives due east at a velocity of <m>v(t)=40+\sqrt{300t}</m> mph, where <m>t</m> is the number of hours after they start driving.
+                </p>
+            </introduction>
+            <task>
+                <p>Which of the following expressions measures how far the car travel travels in these 3 hours?</p>
+                <ol label='A'>
+                    <li><m>\displaystyle \int_0^2 70x \,dx + \int_2^3 40x \,dx</m>.</li>
+                    <li><m>\displaystyle \int_0^2 70 \,dx + \int_2^3 40 \,dx</m>.</li>
+                    <li><m>\displaystyle \int_0^2 70x \,dx + \int_0^1 40x \,dx</m>.</li>
+                    <li><m>\displaystyle \int_0^2 70 \,dx + \int_0^1 40 \,dx</m>.</li>
+                    <li><m>70(2)+40(1)</m>.</li>
+                </ol>
+            </task>
+            <task>
+                <p>What was their average velocity over these 3 hours?</p>
+                <ol label='A'>
+                    <li><m>180</m> mi.</li>
+                    <li><m>180</m> mph.</li>
+                    <li><m>60</m> mi.</li>
+                    <li><m>60</m> mph.</li>
+                </ol>                
+            </task>
+        </activity>
+        
+        
+        <activity xml:id="activity-AI1piecewise">
+            <statement>
+                <p>
+                    Which of the following is the average value of <m>f(x)</m> over the interval <m>[0,8]</m>?  Note <m>f(x)=\begin{cases} 1, &amp; 0\leq x\leq 3 \\ 4, &amp; 3 &lt; x \leq 6 \\ 2, &amp; 6 &lt; x \leq 8 \end{cases}</m>.
+                    
+                    <figure>
+                <caption>Plot of <m>f(x)</m>.</caption>
+                    <image xml:id="piecewiseaverage" width="100%">
+                        <description>A plot of f(x).</description>
+                        <latex-image>
+                          \begin{tikzpicture}
+                             %grid
+                              \draw[step=1cm,gray!50,very thin] (-1.5,-1.5) grid (8.5,4.5);
+                              %axes
+                              \draw[very thick,->] (-1,0) -- (8,0) node[anchor=north west] {\tiny$x$};
+                              \draw[very thick,->] (0,-1) -- (0,4) node[anchor=south east] {\tiny$y$};
+                              \foreach \x in {1,2,3,4,5,6, 7, 8}
+                                \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {\tiny $\mathbf{\x}$};
+                              \foreach \y in {1,2,3,4}
+                                \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {\tiny $\mathbf{\y}$};
+                               %function
+                               \draw[blue] (0,1) -- (3,1);
+                               \draw[blue] (3,4) -- (6,4);
+                               \draw[blue] (6,2) -- (8,2);
+                               \draw[blue] (8,2)--node[right]{\tiny$y=f(x)$} (8,2);
+   
+                             \end{tikzpicture}
+                        </latex-image>
+                    </image>
+            </figure>
+                    <ol label="A">
+                        <li><m>4</m>.</li>
+                        <li><m>2</m>.</li>
+                        <li><m>\frac{7}{3}</m>.</li>
+                        <li><m>2.375</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity xml:id="activity-AI1strat">
+            <statement>
+                <p>
+                    Consider a function <m>f(x)</m> which has average value <m>v</m> on the interval <m>[a,b]</m>.  Which of the following is most likely always true about <m>v</m>?
+                    <ol label="A">
+                        <li><m>v</m> is the average of <m>a</m> and <m>b</m>.</li>
+                        <li><m>v</m> is the average of <m>f(a)</m> and <m>f(b)</m>.</li>
+                        <li><m>v</m> is the average of <m>\min\{f(x)\}</m> and <m>\max\{f(x)\}</m> on the interval <m>[a,b]</m>.</li>
+                        <li><m>\displaystyle \int_a^b f(x)dx=\int_a^b vdx</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+        </activity>
+        
+        <definition xml:id="definition-AI8averagevalue">
+            <statement>
+            <p>
+                Given a function <m>f(x)</m> defined on <m>[a,b]</m>, it's average value <m>v</m> is: <me>v=\frac{1}{b-a}\int_a^b f(x) dx.</me>
+            </p>
+            </statement>    
+        </definition>
+        
+        
+        <activity xml:id="activity-AI1averageform">
+            <statement>
+                <p>
+                    Which of the following expressions represent the average value of <m>f(x)=x\cos(x^2)+x</m> on the interval <m>[\pi, 4\pi]</m>?
+                    
+                    <ol label="A">
+                        <li><m>\displaystyle \int_{0}^{4\pi}\Big(x\cos(x^2)+x\Big) dx</m>.</li>
+                        <li><m>\displaystyle \frac{1}{3\pi}\int_{0}^{4\pi}\Big(x\cos(x^2)+x\Big) dx</m>.</li>
+                        <li><m>\displaystyle \frac{1}{4\pi}\int_{0}^{4\pi}\Big(x\cos(x^2)+x\Big) dx</m>.</li>
+                        <li><m>\displaystyle \int_{\pi}^{4\pi}\Big(x\cos(x^2)+x\Big) dx</m>.</li>
+                        <li><m>\displaystyle \frac{1}{3\pi}\int_{\pi}^{4\pi}\Big(x\cos(x^2)+x\Big) dx</m>.</li>
+                        <li><m>\displaystyle \frac{1}{4\pi}\int_{\pi}^{4\pi}\Big(x\cos(x^2)+x\Big) dx</m>.</li>
+                    
+                    </ol>
+                </p>
+                </statement>
+        </activity>
+        
+        <activity xml:id="activity-AI1averageevaluate">
+            <statement>
+                <p>
+                    Find the average value of <m>f(x)=x\cos(x^2)+x</m> on the interval <m>[\pi, 4\pi]</m> using the chosen expression from <xref ref="activity-AI1averageform"/>.
+                </p>
+            </statement>    
+        </activity>
+        
+        <activity xml:id="activity-AI1averagehandsoff">
+            <statement>
+                <p>
+                    Find the average value of <m>g(t)=\frac{t}{t^2+1}</m> on the interval <m>[0, 4]</m>.
+                </p>
+            </statement>    
+        </activity>
+        
+        <activity xml:id="activity-AI1averageconcentration">
+            <statement>
+            <p>
+                A shot of a drug is administered to a patient and the quantity of the drug in the bloodstream over time is <m>q(t)=3te^{-0.25t}</m> where <m>t</m> is measured in hours and <m>q</m> is measured in mg.  What is the average quantity of this drug in the patient's bloodstream over the first 6 hours after injection?
+            
+            </p>
+            </statement>    
+        </activity>
+        
+    
+    <subsection>
+        <title>Slideshow</title>
+        <p>Slideshow of activities available at <url href="AI1.slides.html"/>.</p>
+    </subsection>
+        
+        <subsection>
+        <title>Videos</title>
+    <figure>
+		<video xml:id="video-AI1" youtube="rwAl4trDIac">
+			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
+		</video>
+        <caption>Video: Compute the average value of a function on an interval</caption>
+    </figure>
+    </subsection>
+    
+    
+</section>
+
