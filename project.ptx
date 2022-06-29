@@ -27,7 +27,7 @@
       <stringparam key="debug.project.number" value="the-way-it-should-be"/>
       <stringparam key="commentary" value="yes"/>
     </target>
-    <target name="print">
+    <target name="print" pdf-method="xelatex">
       <format>pdf</format>
       <source>source/main.ptx</source>
       <publication>publication/publication.ptx</publication>
