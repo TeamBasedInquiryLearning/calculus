@@ -12,42 +12,25 @@
 
 <!--   start of activities    -->
 
-   <activity xml:id="LT5-infinity-inutition1">
+   <activity xml:id="LT5-infinity-intuition1">
         <introduction>
             <p>
                     Consider the graph of the polynomial function <m>f(x) = x^3</m> . We want to think about what the long term behavior of this function might be. Which of the following best describes its behavior?
             </p>
             <figure>
-                <image width="50%">
-                          <latex-image>
-                \begin{tikzpicture}[scale=0.5]
-\begin{axis}[
-		 axis lines=middle,
-    % 	 grid=major,
-    % 	 xmin=-3.14,
-    % 	 xmax=9.42,
-    %	 ymin=-1.5,
-    %	 ymax=1.5,
-    % 	 xtick={-3.14,0,...,9.42},
-    % 	 ytick={-1,-0.75,...,1},
-        ]
-   \addplot[samples=500,domain=-4:4, blue, thick]{x^3};
-\end{axis}
-\end{tikzpicture}
-                        </latex-image>
-                    </image>
-                    <caption> The graph of <m>x^3</m>.</caption>
-                </figure>
+                <image width="50%" xml:id="LT5-infinity-intuition1-img">
+<latex-image><xi:include href="./tikz/LT5-infinity-intuition1.tex" parse="text"/></latex-image>
+                </image>
+                <caption> The graph of <m>x^3</m>.</caption>
+            </figure>
         </introduction>
 
-            <ol marker="A">
-                <li><p>As <m>x</m> gets larger, the function <m>x^3</m> gets smaller and smaller</p></li>
-                <li><p>As <m>x</m> gets more and more negative, the function <m>x^3</m> gets more and more negative
- </p></li>
-                <li><p>As <m>x</m> gets more and more positive, the function <m>x^3</m> gets more and more negative
- </p></li>
-                <li><p>As <m>x</m> gets smaller, the function <m>x^3</m> gets smaller and smaller</p></li>
-            </ol>
+        <ol marker="A">
+            <li><p>As <m>x</m> gets larger, the function <m>x^3</m> gets smaller and smaller</p></li>
+            <li><p>As <m>x</m> gets more and more negative, the function <m>x^3</m> gets more and more negative</p></li>
+            <li><p>As <m>x</m> gets more and more positive, the function <m>x^3</m> gets more and more negative</p></li>
+            <li><p>As <m>x</m> gets smaller, the function <m>x^3</m> gets smaller and smaller</p></li>
+        </ol>
 
     </activity>
 
@@ -62,38 +45,20 @@
                     Consider the graph of the rational function <m>f(x) = 1/ x^3</m> . We want to think about what the long term behavior of this function might be. Which of the following best describes its behavior?
             </p>
             <figure>
-                <image width="50%">
-                          <latex-image>
-                \begin{tikzpicture}[scale=0.5]
-\begin{axis}[
-		 axis lines=middle,
-    % 	 grid=major,
-    % 	 xmin=-3.14,
-    % 	 xmax=9.42,
-    %	 ymin=-1.5,
-    %	 ymax=1.5,
-    % 	 xtick={-3.14,0,...,9.42},
-    % 	 ytick={-1,-0.75,...,1},
-        ]
-   \addplot[samples=500,domain=-2:-0.1, blue, thick]{1/x^3};
-    \addplot[samples=500,domain=0.1:2, blue, thick]{1/x^3};
-\end{axis}
-\end{tikzpicture}
-                        </latex-image>
-                    </image>
-                    <caption> The graph of <m>1/x^3</m>.</caption>
-                </figure>
+                <image width="50%" xml:id="LT5-infinity-intuition2-img">
+<latex-image><xi:include href="./tikz/LT5-infinity-intuition2.tex" parse="text"/></latex-image>
+                </image>
+                <caption> The graph of <m>1/x^3</m>.</caption>
+            </figure>
 
         </introduction>
 
-            <ol marker="A">
-                <li><p> As <m>x</m> tends to positive infinity, the function <m>1/x^3</m> tends to positive infinity</p></li>
-                <li><p>As <m>x</m> tends to negative infinity, the function <m>1/x^3</m>  tends to 0
- </p></li>
-                <li><p>As <m>x</m> tends to positive infinity, the function <m>1/x^3</m>  tends to negative infinity
- </p></li>
-                <li><p>As <m>x</m> tends to 0, the function <m>1/x^3</m>  tends to 0</p></li>
-            </ol>
+        <ol marker="A">
+            <li><p> As <m>x</m> tends to positive infinity, the function <m>1/x^3</m> tends to positive infinity</p></li>
+            <li><p>As <m>x</m> tends to negative infinity, the function <m>1/x^3</m>  tends to 0</p></li>
+            <li><p>As <m>x</m> tends to positive infinity, the function <m>1/x^3</m>  tends to negative infinity</p></li>
+            <li><p>As <m>x</m> tends to 0, the function <m>1/x^3</m>  tends to 0</p></li>
+        </ol>
 
     </activity>
 
@@ -246,10 +211,6 @@
                     <caption>F</caption>
                 </figure>
             </sidebyside>
-<!--             <figure xml:id="figure-1-2">
-                <image width="50%" source="image-1.2.png" />
-                <caption>Six graphs that may or may not have horizontal asymptotes</caption>
-            </figure> -->
                    </introduction>
     </activity>
 
@@ -491,15 +452,15 @@ What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of t
     </activity>
 
 <!-- application activity  -->
+<note>
+    <statement>
+    <p> An exponential function <m>P(t) = a \, b^t</m> exhibiting exponential decay will have the long term behavior <m>P(t) \to 0</m> as <m> t \to \infty</m>. If we shift the graph up by <m>c</m> units, we obtain the new function <m>Q(t) = a \, b^t + c</m>, with the long term behavior <m>\lim_{t \to \infty} Q(t) = c</m>. A cooling object can be represented by the exponential decay model <m>Q(t) = a \, b^t + c</m>. </p>
+</statement> </note>
 
    <activity xml:id="app-cooling">
         <introduction>
             <p>    In this activity you will explore an exponential model for a cooling object.
   </p>
-         <note>
-             <statement>
-             <p> An exponential function <m>P(t) = a \, b^t</m> exhibiting exponential decay will have the long term behavior <m>P(t) \to 0</m> as <m> t \to \infty</m>. If we shift the graph up by <m>c</m> units, we obtain the new function <m>Q(t) = a \, b^t + c</m>, with the long term behavior <m>\lim_{t \to \infty} Q(t) = c</m>. A cooling object can be represented by the exponential decay model <m>Q(t) = a \, b^t + c</m>. </p>
-           </statement> </note>
     <p>Consider a cup of coffee initially at 100 degrees Fahrenheit. The said cup of coffee was forgotten this morning on the kitchen counter where the thermostat is set at 72 degrees Fahrenheit. From previous observations, we can assume that a cup of coffee looses 10 percent of its temperature each minute. </p>
        </introduction>
  <task>
