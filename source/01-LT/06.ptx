@@ -18,23 +18,7 @@
             </p>
             <figure xml:id="vert-asymp">
                 <image width="50%">
-                          <latex-image>
-                \begin{tikzpicture}[scale=0.5]
-\begin{axis}[
-		 axis lines=middle,
-    % 	 grid=major,
-    % 	 xmin=-3.14,
-    % 	 xmax=9.42,
-    %	 ymin=-1.5,
-    %	 ymax=1.5,
-    % 	 xtick={-3.14,0,...,9.42},
-    % 	 ytick={-1,-0.75,...,1},
-        ]
-   \addplot[samples=500,domain=-2:-0.1, blue, thick]{1/x^2};
-    \addplot[samples=500,domain=0.1:2, blue, thick]{1/x^2};
-\end{axis}
-\end{tikzpicture}
-                        </latex-image>
+                          <latex-image xml:id="vert-asymp-tikz"><xi:include href="./tikz/vert-asymp.tex" parse="text"/></latex-image>
                     </image>
                     <caption> The graph of <m>1/x^2</m>.</caption>
                 </figure>
@@ -83,132 +67,15 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
     <activity xml:id="asymptote-vert">
         <introduction>
             <p>
-                Which of the following functions have vertical asymptotes? Select all!
+                Select all of the following graphs which illustrate functions with vertical asymptotes.
 <!-- TO-DO make the graphs prettier-->
                      </p>
-            <sidebyside>
-                <figure>
-                    <image>
-                    <latex-image>
-
-                        \begin{tikzpicture}[scale=0.6]
-                        \begin{axis}[
-                                axis x line=middle,
-                                axis y line=middle,
-                                 x label style={at={(axis description cs:1,-0.2)}},
-                                 y label style={at={(axis description cs:0.3,1)}},
-                                 ylabel=$y$,
-                                 xlabel=$x$
-                                ]
-                            \addplot[samples=500, domain=-5:5, blue, ultra thick] {e^x};
-                        \end{axis}
-                        \end{tikzpicture}
-                        </latex-image>
-                    </image>
-                    <caption>A</caption>
-                </figure>
-                <figure>
-                    <image>
-                    <latex-image>
-                        \begin{tikzpicture}[scale=0.6]
-                        \begin{axis}[
-                                axis x line=middle,
-                                axis y line=middle,
-                                 x label style={at={(axis description cs:1,-0.2)}},
-                                 y label style={at={(axis description cs:0.3,1)}},
-                                 ylabel=$y$,
-                                 xlabel=$x$
-                                ]
-                            \addplot[samples=500, domain=0.01:5, blue, ultra thick] {ln(x)};
-                        \end{axis}
-                        \end{tikzpicture}
-                    </latex-image>
-                    </image>
-                    <caption>B</caption>
-                </figure>
-                <figure>
-                    <image>
-                    <latex-image>
-                  \begin{tikzpicture}[scale=0.6]
-                        \begin{axis}[
-                                axis x line=middle,
-                                axis y line=middle,
-                                 x label style={at={(axis description cs:1,-0.2)}},
-                                 y label style={at={(axis description cs:0.3,1)}},
-                                 ylabel=$y$,
-                                 xlabel=$x$
-                                ]
-                            \addplot[domain=-5:-0.1, blue, ultra thick] {-1/x};
-                           \addplot[domain=0.1:5, blue, ultra thick] {-1/x};
-                        \end{axis}
-                        \end{tikzpicture}
-                    </latex-image>
-                    </image>
-                    <caption>C</caption>
-                </figure>
-            </sidebyside>
-            <sidebyside>
-                <figure>
-                    <image>
-                    <latex-image>
-                \begin{tikzpicture}[scale=0.6]
-                        \begin{axis}[
-                                axis x line=middle,
-                                axis y line=middle,
-                                 x label style={at={(axis description cs:1,-0.2)}},
-                                 y label style={at={(axis description cs:0.3,1)}},
-                                 ylabel=$y$,
-                                 xlabel=$x$
-                                ]
-                            \addplot[domain=-5:0.9, blue, ultra thick] { (5*x+1)/(x-1)};
-                        \addplot[domain=1.1:5, blue, ultra thick] { (5*x+1)/(x-1)};
-                        \end{axis}
-                        \end{tikzpicture}
-                    </latex-image>
-                    </image>
-                    <caption>D</caption>
-                </figure>
-                <figure>
-                    <image>
-                    <latex-image>
-                       \begin{tikzpicture}[scale=0.6]
-                        \begin{axis}[
-                                axis x line=middle,
-                                axis y line=middle,
-                                 x label style={at={(axis description cs:1,-0.2)}},
-                                 y label style={at={(axis description cs:0.3,1)}},
-                                 ylabel=$y$,
-                                 xlabel=$x$
-                                ]
-                            \addplot[domain=-2:-0.1, blue, ultra thick] { (e^x+1)/(e^x-1)};
-                        \addplot[domain=0.1:2, blue, ultra thick] { (e^x+1)/(e^x-1)};
-                        \end{axis}
-                        \end{tikzpicture}
-                    </latex-image>
-                    </image>
-                    <caption>E</caption>
-                </figure>
-                <figure>
-                    <image>
-                    <latex-image>
-                     \begin{tikzpicture}[scale=0.6]
-                        \begin{axis}[
-                                axis x line=middle,
-                                axis y line=middle,
-                                 x label style={at={(axis description cs:1,-0.2)}},
-                                 y label style={at={(axis description cs:0.3,1)}},
-                                 ylabel=$y$,
-                                 xlabel=$x$
-                                ]
-                            \addplot[samples=500, domain=-5:0.9, blue, ultra thick] { (x^2+1)/(x-1)};
-                          \addplot[samples=500, domain=1.1:5, blue, ultra thick] { (x^2+1)/(x-1)};
-                        \end{axis}
-                        \end{tikzpicture}
-                    </latex-image>
-                    </image>
-                    <caption>F</caption>
-                </figure>
-            </sidebyside>
+            <figure xml:id="asymptote-vert-fig">
+                <image xml:id="asymptote-vert-img">
+                <latex-image><xi:include href="./tikz/asymptote-vert.tex" parse="text"/></latex-image>
+                </image>
+                <caption>Choices for vertical asymptotes</caption>
+            </figure>
         </introduction>             
     </activity>
 
@@ -361,36 +228,12 @@ Explain and demonstrate how to find the value of each limit.
             <p>   The graph below represents the function <m>f(x) =  \displaystyle\frac{(x+2)(x+4)}{x^2+3x-4}</m>.   </p>
              <figure>
                     <image width="50%">
-                    <latex-image>
-            \begin{tikzpicture}[scale=1]
-\begin{axis}[
-	axis lines=middle,
-    grid=major,
-    xmin=-6, xmax=8,
-    ymin=-5, ymax=8,
-    xtick={-6,-5,...,8},
-    ytick={-5,-4,...,8},
-  	tick style={thick},
-    ylabel=$y$,
-	xlabel=$x$,
-        ]
-    \addplot[domain=-6:-4.1, blue,  thick] {(x^2+6*x+8)/(x^2+3*x-4)};
-     \addplot[domain=-3.9:0.99, blue,  thick] {(x^2+6*x+8)/(x^2+3*x-4)};
-       \addplot[domain=1.1:8, blue,  thick] {(x^2+6*x+8)/(x^2+3*x-4)};
-    \addplot[mark=none, color=blue, nodes near coords={$f(x)$}] coordinates {(2,1)};
-      \draw[fill=white, draw=blue](axis cs:-4,0.4) circle(1mm);
-<!-- \addplot [only marks, blue, mark=o] table {
--4	0.4
-}; -->
-
-\end{axis}
-\end{tikzpicture}
-   </latex-image>
+                    <latex-image xml:id="rational-pratice2-tikz"><xi:include href="./tikz/rational-practice2.tex" parse="text"/></latex-image>
                     </image>
                     <caption>The graph of <m> f(x)</m></caption>
                 </figure>
         </introduction>
- <task>
+        <task>
             <statement>
                 <p>Explain the behavior of <m> f(x)</m> at <m>x=-4 </m>.</p>
             </statement>
@@ -419,9 +262,9 @@ Explain and demonstrate how to find the value of each limit.
       <me> r(x) =  \frac{ 5 \, {\left(x - 3\right)} {\left(x - 6\right)}^{3} }{ 6 \, {\left(x + 2\right)}^{3} {\left(x - 3\right)} }</me>
         </p>
             <ol> 
-                <li><p>Exlain how to find the horizontal asymptote(s) of <m>r(x)</m>, if there are any. Then express your findings using limit notation.</p></li>
-                 <li><p>Exlain how to find the hole(s) of <m>r(x)</m>, if there are any. Then express your findings using limit notation.</p></li>
-              <li><p>Exlain how to find the vertical asymptote(s) of <m>r(x)</m>, if there are any. Then express your findings using limit notation.</p></li>
+                <li><p>Explain how to find the horizontal asymptote(s) of <m>r(x)</m>, if there are any. Then express your findings using limit notation.</p></li>
+                 <li><p>Explain how to find the hole(s) of <m>r(x)</m>, if there are any. Then express your findings using limit notation.</p></li>
+              <li><p>Explain how to find the vertical asymptote(s) of <m>r(x)</m>, if there are any. Then express your findings using limit notation.</p></li>
                    <li><p>Draw a rough sketch of <m>r(x)</m> that showcases all the limits that you have found above. </p></li>
       </ol>
     </statement>
