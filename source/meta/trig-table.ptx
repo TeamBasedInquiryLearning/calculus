@@ -2,7 +2,7 @@
 
 <appendix xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="trig-table">
      <title>List of Trigonometric Identities</title>
-    <ul>
+    <ol marker="a.">
     <li><p><m>[\sin(\alpha)]^2+[\cos(\alpha)]^2=1</m></p></li>
     
     <li><p><m>\cos(\alpha+\beta)=\cos(\alpha)\cos(\beta)-\sin(\alpha)\sin(\beta)</m></p></li>
@@ -32,5 +32,5 @@
     <li><p><m>\cos(\alpha)+\cos(\beta)=2\cos\left(\displaystyle\frac{\alpha+\beta}{2}\right)\cos\left(\displaystyle\frac{\alpha-\beta}{2}\right)</m></p></li>
     
     <li><p><m>\cos(\alpha)-\cos(\beta)=-2\sin\left(\displaystyle\frac{\alpha+\beta}{2}\right)\sin\left(\displaystyle\frac{\alpha-\beta}{2}\right)</m></p></li>
-    </ul>
+    </ol>
 </appendix>

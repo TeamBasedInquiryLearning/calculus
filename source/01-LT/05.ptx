@@ -419,16 +419,13 @@ What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of t
         <introduction> <p>  Compute the following limits.</p>
               </introduction>
        
- <p>
-            <ol marker="a">
-                <li><p><m>\displaystyle  \lim_{x\to -\infty} \frac{x^3-x+83}{1} </m></p></li>
-                 <li><p><m>\displaystyle  \lim_{x\to -\infty} \frac{1}{x^3-x+83} </m></p></li>
-                <li><p><m>\displaystyle  \lim_{x\to +\infty} \frac{x+3}{2-x}</m></p></li>
-                 <li><p><m>\displaystyle  \lim_{x\to -\infty} \frac{\pi-3x}{\pi x-3}</m></p></li>
-                 <li><p>(Challenge) <m>\displaystyle  \lim_{x\to + \infty} \frac{3e^x+2}{2e^x+3}</m></p></li>
-                <li><p>(Challenge) <m>\displaystyle  \lim_{x\to - \infty} \frac{3e^x+2}{2e^x+3}</m></p></li>
-            </ol>
-  </p>
+    <task><p><m>\displaystyle  \lim_{x\to -\infty} \frac{x^3-x+83}{1} </m></p></task>
+    <task><p><m>\displaystyle  \lim_{x\to -\infty} \frac{1}{x^3-x+83} </m></p></task>
+    <task><p><m>\displaystyle  \lim_{x\to +\infty} \frac{x+3}{2-x}</m></p></task>
+    <task><p><m>\displaystyle  \lim_{x\to -\infty} \frac{\pi-3x}{\pi x-3}</m></p></task>
+    <task><p>(Challenge) <m>\displaystyle  \lim_{x\to + \infty} \frac{3e^x+2}{2e^x+3}</m></p></task>
+    <task><p>(Challenge) <m>\displaystyle  \lim_{x\to - \infty} \frac{3e^x+2}{2e^x+3}</m></p></task>
+        
     </activity>    
 
 
