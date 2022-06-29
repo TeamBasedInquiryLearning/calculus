@@ -108,7 +108,7 @@
                 
                 <p>
                     What is the volume of the cylinder with radius <m>f(0)=1</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\pi\cdot 0^2\cdot 3</m>.</li>
                         <li><m>\pi\cdot 1^2\cdot 3</m>.</li>
                         <li><m>\pi\cdot 3^2\cdot 3</m>.</li>
@@ -167,7 +167,7 @@
                 
                 <p>
                     What is the volume of the cylinder with radius <m>f(3)=4</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\pi\cdot 0^2\cdot 3</m>.</li>
                         <li><m>\pi\cdot 1^2\cdot 3</m>.</li>
                         <li><m>\pi\cdot 3^2\cdot 3</m>.</li>
@@ -251,7 +251,7 @@
             <task>
                 <p>
                     Which of the following Reimann sums best approximates the volume of our solid?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle \sum \pi x_i^2\Delta x</m></li>
                         <li><m>\displaystyle \sum \pi (x_i+1)^2\Delta x</m></li>
                         <li><m>\displaystyle \sum 2\pi x_i\Delta x</m></li>
@@ -263,7 +263,7 @@
             <task>
                 <p>
                     Which of the following integrals computes the volume of our solid?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle \int_0^6 \pi x^2dx</m></li>
                         <li><m>\displaystyle \int_0^6 \pi (x+1)^2dx</m></li>
                         <li><m>\displaystyle \int_0^6 2\pi xdx</m></li>
@@ -393,7 +393,7 @@
                 
                 
                 
-                <ol label='A'>
+                <ol marker='A'>
                     <li><m>r=4</m>.</li>
                     <li><m>r=2</m>.</li>
                     <li><m>r=\sqrt{x}</m>.</li>
@@ -429,7 +429,7 @@
         <task>
                 <p>
                     Which of the following Reimann sums best approximates the volume of our solid?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle \sum 2\pi y_i^2\Delta y</m></li>
                         <li><m>\displaystyle \sum \pi (y_i^2)^2\Delta y</m></li>
                         <li><m>\displaystyle \sum 2\pi \sqrt{y_i}\Delta y</m></li>
@@ -441,7 +441,7 @@
             <task>
                 <p>
                     Which of the following integrals computes the volume of our solid?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle \int_0^2 \pi y^4  dy</m></li>
                         <li><m>\displaystyle \int_0^4 \pi y^4 dy</m></li>
                         <li><m>\displaystyle \int_{-4}^4 \pi y^4 dy</m></li>
@@ -607,7 +607,7 @@
                     </image>
             </figure>
                 
-                <ol label='A'>
+                <ol marker='A'>
                     <li>A circle with radius <m>r=x_i</m>.</li>
                     <li>A circle with radius <m>r=2x_i+1</m>.</li>
                     <li>A circle with radius <m>r=2x_i+1-x_i=x_i+1</m>.</li>
@@ -653,7 +653,7 @@
         <task>
                 <p>
                     Which of the following Reimann sums best approximates the volume of our solid?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle \sum \pi x_i^2\Delta x</m></li>
                         <li><m>\displaystyle \sum \pi (2x_i+1)^2\Delta x</m></li>
                         <li><m>\displaystyle \sum \pi (2x_i+1-x_i)^2\Delta x</m></li>
@@ -665,7 +665,7 @@
             <task>
                 <p>
                     Which of the following integrals computes the volume of our solid?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle \int_0^4 \pi x^2 dx</m></li>
                         <li><m>\displaystyle \int_0^4 \pi (2x+1)^2 dx</m></li>
                         <li><m>\displaystyle \int_0^4 \pi (x+1)^2 dx</m></li>
@@ -685,7 +685,7 @@
             <p>
                 How else could we have computed the volume?
                 
-                <ol label='A'>
+                <ol marker='A'>
                     <li>Found the volume of the region bounded by <m>f(x)=2x+1</m> on <m>[0,4]</m> rotated about the <m>x</m>-axis, subtract the volume of the region bounded by <m>g(x)=x</m> on <m>[0,4]</m> rotated about the <m>x</m>-axis.</li>
                     <li>Found the volume of the region bounded by <m>f(x)=2x+1-x=x+1</m> on <m>[0,4]</m> rotated about the <m>x</m>-axis.</li>
                 </ol>
@@ -778,7 +778,7 @@
         <task>
             <p>
                 Suppose we wanted to estimate this volume with 3 concentric annular cylinders with heights <m>h_i=f(r_i)=\frac{4}{2^{r_i}}</m>, where <m>r_i</m> are the inner radii and <m>R_i</m> are the outer radii.  Over which values do the <m>r_i, R_i</m> range?
-                <ol label='A'>
+                <ol marker='A'>
                     <li><m>[-3,3]</m>.</li>
                     <li><m>[0,3]</m>.</li>
                     <li><m>[-4,4]</m>.</li>
@@ -934,7 +934,7 @@
             </figure>
                 
                 Which of the following represents the volume of this annular cylinder?
-                <ol label='A'>
+                <ol marker='A'>
                     <li><m>\pi r_i^2\cdot \frac{4}{2^{r_i}}</m>.</li>
                     <li><m>\pi (r_i+\Delta r)^2\cdot \frac{4}{2^{r_i+\Delta r}}</m>.</li>
                     <li><m>\pi ((r_i+\Delta r)^2-r_i^2)\cdot \frac{4}{2^{r_i}}</m>.</li>
@@ -950,7 +950,7 @@
         <task>
                 <p>
                     Recall that <m>\pi ((r_i+\Delta r)^2-r_i^2)=\pi(2(\Delta r) r_i+(\Delta r)^2)=\pi(2 r_i+(\Delta r))\Delta r</m>.  Which of the following Riemann sums best estimates the volume of our solid?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle \sum \pi(2 r_i+(\Delta r))\frac{4}{2^{r_i}}\Delta r</m></li>
                         <li><m>\displaystyle \sum \pi r_i^2\frac{4}{2^{r_i}}\Delta r</m></li>
                         <li><m>\displaystyle \sum \pi (r_i+\Delta r)^2\frac{4}{2^{r_i}}\Delta r</m></li>
@@ -961,7 +961,7 @@
             <task>
                 <p>
                     Which of the following integrals computes the volume of our solid?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle \int_{-3}^3 2\pi r \frac{4}{2^r}  dr</m></li>
                         <li><m>\displaystyle \int_{0}^3 2\pi r \frac{4}{2^r}  dr</m></li>
                        <li><m>\displaystyle \int_{0}^3 2\pi r \frac{4}{2^r}  dr</m></li>

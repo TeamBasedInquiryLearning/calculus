@@ -119,7 +119,7 @@
      <activity xml:id="elem-antider-intro">
         <statement>
     <p>Consider the function <m>f(x)=\cos x</m>. Which of the following could be <m>F(x)</m>, an antiderivative of <m>f(x)</m>? </p>
-    <ol label="A">
+    <ol marker="A">
                 <li><p> <m>\sin x</m> </p></li>
                 <li><p> <m>\cos x</m> </p></li>
                 <li><p> <m>\tan x</m> </p></li>
@@ -133,7 +133,7 @@
              <activity xml:id="elem-antider-intro2">
         <statement>
     <p>Consider the function <m>f(x)=x^2</m>. Which of the following could be <m>F(x)</m>, an antiderivative of <m>f(x)</m>? </p>
-    <ol label="A">
+    <ol marker="A">
                <li><p><m> 2x </m></p></li>
                <li><p><m> \frac{1}{3}x^3 </m></p></li>
                <li><p><m> x^3</m></p></li>
@@ -302,7 +302,7 @@
      
       <statement>
           <p>Using this information, which of the following is an antiderivative for <m>f(x) = 5\sin(x) - 4x^2</m>?</p>
-          <ol label="A">
+          <ol marker="A">
    
               <li><p><m>F(x) = -5\cos(x) +\frac{4}{3}x^3</m>.</p></li>
               <li><p><m>F(x) = 5\cos(x) + \frac{4}{3}x^3</m>.</p></li>

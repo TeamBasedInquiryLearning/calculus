@@ -11,7 +11,7 @@
     </objectives>
         <activity estimated-time="99" xml:id="activity-TI5BestSub">
         <introduction><p>Consider the integral <m>\int \sqrt{16-9x^2} \,dx</m>. Which of the following substitutions appears most promising to find an antiderivaitve for this integral?</p></introduction>
-            <ol label="A">
+            <ol marker="A">
                 <li><p><m>u=16-9x^2</m></p></li>
                 <li><p><m>u=9x^2</m></p></li>
                 <li><p><m>u=3x</m></p></li>
@@ -20,7 +20,7 @@
     </activity>
         <activity estimated-time="99" xml:id="activity-TI5BestMatch">
         <introduction><p>The form of which entry from <xref ref="integral-table"/> best matches the form of the integral <m>\int \sqrt{16-9x^2} \,dx</m>?</p></introduction>
-            <ol label="A">
+            <ol marker="A">
                 <li><p>b.</p></li>
                 <li><p>c.</p></li>
                 <li><p>g.</p></li>
@@ -90,7 +90,7 @@
     <activity estimated-time="99">
         <statement>
             <p>Which step of the previous example do you think was the most important?</p>
-            <ol label="A">
+            <ol marker="A">
                 <li>
                     <p>Choosing <m>u^2=49x^2</m> and <m>a^2=4</m>.</p>
                 </li>
@@ -134,7 +134,7 @@
     <activity estimated-time="99" xml:id="activity-TI5BetterSubChoice">
         <statement>
             <p>Consider the integral <m>\int \frac{1}{\sqrt{64-9x^2}} \,dx</m> once more. Suppose we still proceed using <xref ref="integral-table"/>. However, this time we choose <m>u^2=x^2</m> and <m>a^2=64</m>. Do you prefer this choice of substitution or the choice we made in <xref ref="activity-TI5BadSubChoice"/>?</p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p>We prefer the substitution choice of <m>u^2=x^2</m> and <m>a^2=64</m>.</p></li>
                 <li><p>We prefer the substitution choice of <m>u^2=9x^2</m> and <m>a^2=64</m>.</p></li>
                 <li><p>We do not have a strong preference, since these substitution choices are of the same difficulty.</p></li>

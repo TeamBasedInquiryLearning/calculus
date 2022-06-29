@@ -25,7 +25,7 @@ A strategy for finding the extreme values of a function on open intervals will b
       
            
     <activity><introduction><p>We have encountered several terms recently, so we should make sure that we understand how they are related. Which of the following statements are true?</p></introduction>
-        <ol label="A">
+        <ol marker="A">
                 <li><p>In a closed interval an endpoint is always a local extrema but it might or might not be a global extrema.</p></li>
                 <li><p>In a closed interval an endpoint is always a global extrema.</p></li>
             <li><p>A crtical point is always a local extrema but it might or might not be a global extrema.</p></li>
@@ -45,7 +45,7 @@ A strategy for finding the extreme values of a function on open intervals will b
 
       <statement>
           <p>What can we say about the graph of the function <m>f(x)</m> if <m>f(x_1)</m> is always less than <m>f(x_2)</m> on the interval <m>(a,b)</m> ?</p>
-          <ol label="A">
+          <ol marker="A">
               <li><p>The function is decreasing on <m>(a,b)</m>.</p></li>
                 <li><p>The function is increasing on <m>(a,b)</m>.</p></li>
                 <li><p>The function is constant on <m>(a,b)</m>.</p></li>
@@ -64,7 +64,7 @@ A strategy for finding the extreme values of a function on open intervals will b
       <task>
       <statement>
           <p>How would you describe the derivative of the function on each interval?</p>
-          <ol label="A">
+          <ol marker="A">
               <li><p>For <m>x &lt; -2</m> we have <m>f'(x) &lt; 0</m>, then <m>f'(x) &lt; 0</m> on the interval <m>(-2,3)</m>, and on the interval <m>(3,5)</m> we have <m>f'(x) &gt; 0</m>.</p></li>
                <li><p>For <m>x &lt; -2</m> we have <m>f'(x) &gt; 0</m>, then <m>f'(x) &lt; 0</m> on the interval <m>(-2,3)</m>, and on the interval <m>(3,5)</m> we have <m>f'(x) </m> is undefined.</p></li>
                <li><p>For <m>x &lt; -2</m> we have <m>f'(x) &gt; 0</m>, then <m>f'(x) &lt; 0</m> on the interval <m>(-2,3)</m>, and on the interval <m>(3,5)</m> we have <m>f'(x)=0 </m>.</p></li>
@@ -80,7 +80,7 @@ A strategy for finding the extreme values of a function on open intervals will b
        Look back at the graph you made for <xref ref="activity-derivative-derivativetests2"/>.  
       </p>
           <p>Which of the following best describes what is occurring when graph changes behavior?</p>
-          <ol label="A">
+          <ol marker="A">
               <li><p> There is a critical point.</p></li>
                 <li><p> There is a relative maximum or minimum. </p></li>
                 <li><p> The derivative is undefined. </p></li>

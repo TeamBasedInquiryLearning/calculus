@@ -25,7 +25,7 @@
             <task>
                 <p>
                     Using <xref ref="definition-SQ3serieslimit"/>, given each restriction on <m>r</m>, determine if <m>\displaystyle \sum_{n=0}^\infty ar^n</m> converges.
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>r>1</m>.</li>
                         <li><m>r=1</m>.</li>
                         <li><m>-1&lt;r&lt;1</m>.</li>
@@ -56,7 +56,7 @@
             <task>
                 <p>
                     What of the following approaches will best help us determine the convergence of this series?
-                    <ol label="A">
+                    <ol marker="A">
                         <li>This is a geometric series of the form <m>\displaystyle \sum_{n=0}^\infty 5\cdot \left(\frac{1}{2}\right)^n</m>.</li>
                         <li>This is a geometric series of the form <m>\displaystyle \sum_{n=0}^\infty 1\cdot \left(\frac{1}{2}\right)^n</m>.</li>
                         <li>We can rewrite <me>5+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots = 4+\left(1+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots \right).</me></li>
@@ -83,7 +83,7 @@
             <task>
                 <p>
                     What of the following approaches will best help us determine the convergence of this series?
-                    <ol label="A">
+                    <ol marker="A">
                         <li>Noticing that <m>\displaystyle 3\cdot\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n</m>.</li>
                         <li>Noticing that <m>\displaystyle 2+\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n</m>.</li>
                         <li>Noticing that <m>\displaystyle 2n+\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n</m>.</li>
@@ -135,7 +135,7 @@
         <activity>
                 <p>
                     Use your rewritten forms from <xref ref="activity-SQ4evaluatingmodifiedgeo"/> to determine which of the modified geometric series converge. If the series converges, find to what value it converges.
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle -7+\left( -\frac{3}{7}\right)^2+\left( -\frac{3}{7}\right)^3+\cdots</m>.</li>
                         <li><m>-6+\left(\frac{5}{4}\right)^3+\left(\frac{5}{4}\right)^4+\cdots</m>.</li>
                         <li><m>\displaystyle 4+\sum_{n=4}^\infty \left(\frac{2}{3}\right)^n</m>.</li>

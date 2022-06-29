@@ -52,7 +52,7 @@
         <task>
             <p>
                 For what values of <m>x</m> is <m>\displaystyle |x|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &lt; 1</m>?
-                <ol label="A">
+                <ol marker="A">
                     <li><m>x &lt; 1</m>.</li>
                     <li><m>0\leq x &lt; 1</m>.</li>
                     <li><m>-1 &lt; x &lt; 1</m>.</li>
@@ -76,7 +76,7 @@
          <task>
             <p>
                 Which of the following describe the values of <m>x</m> for which <m>\displaystyle\sum_{n=0}^\infty \frac{1}{n^2+1}x^n</m> converges?
-                <ol label="A">
+                <ol marker="A">
                     <li><m>(-1,1)</m>.</li>
                     <li><m>[-1,1)</m>.</li>
                     <li><m>(-1,1]</m>.</li>
@@ -104,7 +104,7 @@
         <task>
             <p>
                 For what values of <m>x</m> is <m>\displaystyle |x-2|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &lt; 1</m>?
-                <ol label="A">
+                <ol marker="A">
                     <li><m>-\frac{2}{5} &lt; x &lt; \frac{2}{5}</m>.</li>
                     <li><m>\frac{8}{5} &lt; x &lt; \frac{12}{5}</m>.</li>
                     <li><m>-\frac{5}{2} &lt; x &lt; \frac{5}{2}</m>.</li>
@@ -129,7 +129,7 @@
          <task>
             <p>
                 Which of the following describe the values of <m>x</m> for which <m>\displaystyle\sum_{n=0}^\infty \frac{2^n}{5^n}(x-2)^n</m> converges?
-                <ol label="A">
+                <ol marker="A">
                     <li><m>(-\frac{1}{2},\frac{9}{2})</m>.</li>
                     <li><m>[-\frac{1}{2},\frac{9}{2})</m>.</li>
                     <li><m>(-\frac{1}{2},\frac{9}{2}]</m>.</li>
@@ -158,7 +158,7 @@
         <task>
             <p>
                 For what values of <m>x</m> is <m>\displaystyle \left|x+\frac{1}{2}\right|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &lt; 1</m>?
-                <ol label="A">
+                <ol marker="A">
                     <li><m>0\leq x &lt; \infty</m>.</li>
                     <li>All real numbers.</li>
                 </ol>

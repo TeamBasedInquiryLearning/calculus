@@ -41,7 +41,7 @@
           <m>y = f(x)</m> and the <m>x</m>-axis as <m>A_f</m> and the area between
           <m>y = g(x)</m> and the <m>x</m>-axis as <m>A_g</m>. How could we use <m>A_f</m> and <m> A_g</m> to find exact area between <m>f</m> and <m>g</m> between their intersection points? </p>
     
-    <ol label="A">
+    <ol marker="A">
         <li><p> We could find <m>A_f + A_g</m> to find the area between the curves.  </p></li>
        <li><p> We could find <m>A_f - A_g</m> to find the area between the curves.  </p></li>
         <li><p> We could find <m>A_g - A_f</m> to find the area between the curves.  </p></li>
@@ -66,7 +66,7 @@
     </introduction>    
 
     <task> <p>How could we represent the shaded area in <xref ref="area_concept_general"/>?</p>
-    <ol label="A">
+    <ol marker="A">
         <li><p> <m>\int_b^a f(x) \,dx - \int_b^a g(x) \,dx</m> </p></li>
         <li><p> <m>\int_a^b f(x) \,dx - \int_a^b g(x) \,dx</m> </p></li>
         <li><p> <m>\int_b^a g(x) \,dx - \int_b^a f(x) \,dx</m> </p></li>
@@ -77,7 +77,7 @@
         <task> <p>The two definite integrals above can be rewritten as one definite integral using the sum and difference property of definite integrals: </p>
             <p>If <m>f</m> and <m>g</m> are continuous functions, then <me>\int_a^b ( f(x) \pm  g(x)) \,dx = \int_a^b f(x) \,dx \pm  \int_a^b g(x) \,dx</me></p>
             <p>Use the property above to represent the shaded area in <xref ref="area_concept_general"/> using one definite integral. </p>
-    <ol label="A">
+    <ol marker="A">
         <li><p> <m>\int_b^a (f(x) - g(x)) \,dx</m> </p></li>
         <li><p> <m>\int_a^b (f(x) - g(x)) \,dx</m> </p></li>
         <li><p> <m>\int_b^a (g(x) - f(x)) \,dx</m> </p></li>
@@ -234,7 +234,7 @@ As a definite integral with respect to <m>y</m>.
 
 
 
-<!-- <ol label="A">
+<!-- <ol marker="A">
         <li><p>  <m>y(x) = \frac{x^3}{3} + x^2 + 4</m> </p></li>
         <li><p>  <m>y(x) = 2x + 2</m> </p></li> 
         <li><p>  <m>y(x) = \frac{x^3}{3} + x^2 + 10</m> </p></li>     

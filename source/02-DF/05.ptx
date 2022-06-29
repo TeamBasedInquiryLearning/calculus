@@ -15,7 +15,7 @@
        <activity xml:id="chain-rule-intuition">
            <task>
         <p> Consider the function <m>f(x) = -x^2+5 </m> and <m>g(x)=2x-1</m>. Which of the following is a formula for <m>f(g(x))</m>? </p>
-           <ol label="A">
+           <ol marker="A">
                 <li><p> <m>-4x^2 +4x +4 </m> </p></li>
          <li><p> <m>4x^2 -4x +5 </m> </p></li>
            <li><p> <m>-2x^2 +9 </m> </p></li>
@@ -29,7 +29,7 @@
   <activity xml:id="decomposition">
            <task>
         <p> Consider the composite function <m> f(g(x))= \sqrt{e^x}</m>. Which function is the outside function <m>f(x)</m> and which one is the inside function <m>g(x)</m>? </p>
-           <ol label="A">
+           <ol marker="A">
                 <li><p> <m>f(x)=x^2 \, , \, g(x)=e^x </m> </p></li>
                  <li><p> <m>f(x)=\sqrt{x} \, , \, g(x)=e^x </m> </p></li>
                 <li><p> <m>f(x)=e^x \, , \, g(x)=\sqrt{x} </m> </p></li>
@@ -47,7 +47,7 @@
       </introduction>
            <task>
         <p> The scenario gives you information regarding the rate of growth of <m>s(a)</m>, the squirrel population as a function of acorn availability (measured in bushels). What is the current value of <m>\frac{ds}{da}</m>? </p>
-           <ol label="A">
+           <ol marker="A">
                 <li><p> 2 </p></li>
                  <li><p>100  </p></li>
                 <li><p> 200 </p></li>
@@ -56,7 +56,7 @@
                </task>
         <task>
         <p> The scenario gives you information regarding the rate of growth of <m>a(t)</m>, the acorn availability as a function of time (measured in weeks). What is the current value of <m>\frac{da}{dt}</m>? </p>
-           <ol label="A">
+           <ol marker="A">
                 <li><p> 2 </p></li>
                  <li><p>100  </p></li>
                 <li><p> 200 </p></li>
@@ -65,7 +65,7 @@
                </task>
        <task>
         <p> Given all the information provided, what is your best guess for the value of  <m>\frac{ds}{dt}</m>, the rate at which the squirrel population is growing per week? </p>
-           <ol label="A">
+           <ol marker="A">
                 <li><p> 2 </p></li>
                  <li><p>100  </p></li>
                 <li><p> 200 </p></li>
@@ -91,7 +91,7 @@
     <activity xml:id="activity-chain-rule-warning">
            <task>
         <p> Consider the function <m>f(x) = -x^2+5 </m> and <m>g(x)=2x-1</m>. Notice that <m>f(g(x))= -4x^2 +4x +4 </m>. Which of the following is the derivative function of the composite function <m>f(g(x))</m>? </p>
-           <ol label="A">
+           <ol marker="A">
                 <li><p> <m>-8x +4 </m> </p></li>
          <li><p> <m> -4x </m> </p></li>
            <li><p> <m>-2x </m> </p></li>
@@ -104,7 +104,7 @@
 
     <activity xml:id="chain-rule-practice1">
         <p> Consider the composite function <m> \displaystyle h(x) =\sqrt{e^x} = e^{\frac{x}{2}}</m>. For each of the two expressions, find the derivative using the chain rule. Which of the following expressions are equal to <m>h'(x)</m>? Select all!  </p>
-           <ol label="A">
+           <ol marker="A">
                 <li><p> <m>\displaystyle \frac{1}{2} \left( e^x \right)^{\frac{-1}{2}} \cdot e^x </m> </p></li>
                  <li><p> <m>\displaystyle \frac{1}{2} \left( e^x \right)^{\frac{3}{2}} \cdot e^x </m> </p></li>
           <li><p> <m>\displaystyle \frac{1}{2} e^{\frac{-x}{2}}  </m> </p></li>
@@ -158,7 +158,7 @@
   </introduction>
        <task>
         <p> Notice that the derivative of <m>a \circ b</m> is given by <m>a'(b(x)) \cdot b'(x)</m>, so the derivative of <m>a \circ b</m>  at <m> x= 4</m> is given by the quantity <m>a'(b(4)) \cdot b'(4) = a'(-2) \cdot b'(4)</m> because <m>b(4)=-2</m>. Using the graphs to find the slopes, what is the final value of the derivative of <m>a \circ b</m> at <m> x= 4</m>? </p>
-           <ol label="A">
+           <ol marker="A">
                 <li><p> <m> 0 </m> </p></li>
                    <li><p> <m> -1 </m> </p></li>
                  <li><p> <m> 1 </m> </p></li>
@@ -169,7 +169,7 @@
                </task>
       <task>
         <p> Which of the following values is equal to the derivative of <m>a \circ b</m> at <m> x=2 </m>? </p>
-           <ol label="A">
+           <ol marker="A">
                               <li><p> <m> 0 </m> </p></li>
                    <li><p> <m> -1 </m> </p></li>
                  <li><p> <m> 1 </m> </p></li>
@@ -180,7 +180,7 @@
                </task>
        <task>
         <p> Which of the following values is equal to the derivative of <m>b \circ a</m> (different order!) at <m>x=-2 </m>? </p>
-           <ol label="A">
+           <ol marker="A">
                                <li><p> <m> 0 </m> </p></li>
                    <li><p> <m> -1 </m> </p></li>
                  <li><p> <m> 1 </m> </p></li>
@@ -196,7 +196,7 @@
     <p>In this activity you will study the derivative of <m>\cos^n(x)</m> for different powers <m>n</m>.</p>
     </introduction>
     <task> <p>Consider the function <m>\cos^2(x) = \left( \cos(x) \right)^2</m>. Combining power and chain rule, what do you get if you differentiate <m>\cos^2(x)</m>? </p>
-        <ol label="A">
+        <ol marker="A">
                 <li><p> <m> -\cos^2(x)\sin(x) </m> </p></li>
          <li><p> <m> -\cos^2(x)\sin(x) </m> </p></li>
            <li><p> <m>2\cos(x)\sin(x) </m> </p></li>
@@ -213,7 +213,7 @@
     <p>In this activity you will study the derivative of <m>b^{\cos(x)}</m> for different bases <m>b</m>.</p>
     </introduction>
     <task> <p>Consider the function <m>e^{\cos(x)} </m>. Combining exponential and chain rule, what do you get if you differentiate <m>e^{\cos(x)}</m>? </p>
-        <ol label="A">
+        <ol marker="A">
                 <li><p> <m>e^{\cos(x)} </m> </p></li>
           <li><p> <m>- e^{\cos(x)} \sin(x)</m> </p></li>
              <li><p> <m>e^{-\sin(x)} </m> </p></li>

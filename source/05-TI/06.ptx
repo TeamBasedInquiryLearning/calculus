@@ -13,7 +13,7 @@
             <statement>
                 <p>
                     Using the method of substitution, which of these is the integral of <m>\displaystyle\int \frac{1}{(ax+b)} dx</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\frac{1}{a}\ln(ax+b) +C.</m></li>
                         <li><m>\frac{1}{a}\ln|ax+b| +C.</m></li>
                         <li><m>\frac{1}{x}(\ln(ax)+\ln(b))+C.</m></li>
@@ -26,7 +26,7 @@
             <statement>
                 <p>
                     Which of the following is equivalent to the rational expression <m>\displaystyle\frac{3x+3}{2x^2+3x}</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\frac{3}{2x}+\frac{1}{x}.</m></li>
                         <li><m>\frac{3}{x}+\frac{3}{2x+3}.</m></li>
                         <li><m>\frac{1}{x}+\frac{1}{2x+3}.</m></li>
@@ -39,7 +39,7 @@
             <statement>
                 <p>
                      Based on your choice in <xref ref="activity-TI6RationalExpression"/>, which of these is the integral for <m>\displaystyle\int \frac{3x+3}{2x^2+3x} dx</m>? 
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\frac{3}{2}\ln|x|+\ln|x|+C.</m></li>
                         <li><m>3\ln|x|+\frac{3}{2}\ln|2x+3|+C.</m></li>
                         <li><m>\ln|x|+\frac{1}{2}\ln|2x+3|+C.</m></li>
@@ -53,7 +53,7 @@
             <statement>
                 <p>
                      Which of the following is an antiderivative for <m>\displaystyle\frac{1}{(x+k)^2+h^2}</m>? 
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\arctan(x).</m></li>
                         <li><m>\arctan(x+k).</m></li>
                         <li><m>\frac{1}{h}\arctan\left(\frac{x+h}{h}\right).</m></li>
@@ -67,7 +67,7 @@
             <statement>
                 <p>
                      Consider the irreducible quadratic <m>x^2-4x+80</m>.  Which of the following is the completed square form of this quadratic expression?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>(x-4)^2+80.</m></li>
                         <li><m>(x-2)^2+80.</m></li>
                         <li><m>(x-4)^2+64.</m></li>
@@ -101,7 +101,7 @@
                             What are the values of <m>A, B</m> and <m>C</m>?  
                         </p>
                      
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>A=4, B=-5, C=-2.</m></li>
                         <li><m>A=3, B=1, C=1.</m></li>
                         <li><m>A=1, B=1, C=1.</m></li>
@@ -122,7 +122,7 @@
                 </p>
 
                 <p>
-                  <ol label="A">
+                  <ol marker="A">
                     <li>
                       <p>
                         <em>Linear Terms:</em> Let <m>(x-a)</m> divide <m>q(x)</m>,
@@ -154,7 +154,7 @@
                 <p>
                      Which of the following is the form of the partial fraction decomposition of <m>\displaystyle\frac{x^3-7x^2-7x+15}{x^3(x+5)}</m>?
 
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\frac{A}{x}+\frac{B}{x+5}.</m></li>
                         <li><m>\frac{A}{x^3}+\frac{B}{x+5}.</m></li>
                         <li><m>\frac{A}{x}+\frac{B}{x^2}+ \frac{C}{x^3}+\frac{D}{x+5}.</m></li>
@@ -168,7 +168,7 @@
                 <p>
                      Which of the following is the form of the partial fraction decomposition of <m>\displaystyle\frac{x^2+1}{(x-3)^2(x^2+4)^2}</m>?
 
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{C}{x^2+4}+\frac{D}{(x^2+4)^2}.</m></li>
                         <li><m>\frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{Cx+D}{(x^2+4)^2}.</m></li>                        
                         <li><m>\frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{C}{x^2+4}+\frac{Dx+E}{(x^2+4)^2}.</m></li>
@@ -182,7 +182,7 @@
             <statement>
                 <p>
                     Consider that the partial decomposition of <m>\displaystyle \frac{x^2+5x+3}{(x+1)^2x}</m> is <me>\displaystyle \frac{x^2+5x+3}{(x+1)^2x}=\frac{A}{x+1}+\frac{B}{(x+1)^2}+\frac{C}{x}.</me>  What equality do we obtain if we multiply both sides of the above equation by <m>(x+1)^2x</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>x^2+5x+3=Ax(x+1)+Bx+C(x+1)^2.</m></li>
                         <li><m>x^2+5x+3=A(x+1)+B(x+1)^2+Cx.</m></li>
                         <li><m>x^2+5x+3=Ax(x+1)+Bx+C(x+1).</m></li>
@@ -198,7 +198,7 @@
                     Notice that <m>x^2+5x+3=Ax(x+1)+Bx+C(x+1)^2</m>.
                     <task>
                         <p>Which of the following values can we determine by setting <m>x=0</m>? Select all that apply.</p>
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>A</m></li>
                         <li><m>B</m></li>
                         <li><m>C</m></li>
@@ -206,7 +206,7 @@
                     </task>
                     <task>
                         <p>Which of the following values can we determine by setting <m>x=-1</m>? Select all that apply.</p>
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>A</m></li>
                         <li><m>B</m></li>
                         <li><m>C</m></li>
@@ -237,7 +237,7 @@
                 <p>
                      Given that <m>\displaystyle\frac{x^3-7x^2-7x+15}{x^3(x+5)}=\frac{A}{x}+\frac{B}{x^2}+ \frac{C}{x^3}+\frac{D}{x+5}</m>, what are <m>A, B, C</m>, and <m>D</m>?
 
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>A=1, B=-7 C=-7, D=15.</m></li>
                         <li><m>A=-1, B=-2, C=3, D=2.</m></li>                        
                         <li><m>A=1, B=-2, C=-3, D=2.</m></li>
@@ -258,7 +258,7 @@
                 <p>
                      Consider the rational expression <m>\displaystyle\frac{2x^3+2x+4}{x^4+2x^3+4x^2}.</m>  Which of the following is the partial fraction decomposition of this rational expression?
 
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\frac{1}{x}+\frac{1}{x^2}+\frac{2x-1}{x^2+2x+4}.</m></li>
                         <li><m>\frac{2}{x}+\frac{0}{x^2}+\frac{-1}{x^2+2x+4}.</m></li>                        
                         <li><m>\frac{0}{x}+\frac{1}{x^2}+\frac{-1}{x^2+2x+4}.</m></li>

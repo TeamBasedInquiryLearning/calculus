@@ -186,7 +186,7 @@ steps to find out why.
             <p>
 Which of the following equations describes <m>t</m> in terms of <m>x</m>?
             </p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p><m>t=x-2</m></p></li>
                 <li><p><m>t=x+2</m></p></li>
                 <li><p><m>t=2x</m></p></li>
@@ -198,7 +198,7 @@ Which of the following equations describes <m>t</m> in terms of <m>x</m>?
 Which of these is the result of plugging this choice in for <m>t</m> in the
 parametric equation for <m>y</m>?
             </p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p><m>y=-x+2^2+4x+2-2</m></p></li>
                 <li><p><m>y=-(x+2)^2+4(x+2)-2</m></p></li>
                 <li><p><m>y=-x^2+2^2+4x+4\cdot2-2</m></p></li>
@@ -258,7 +258,7 @@ sketch of the graph.
             <p>
 What do you obtain by plugging the parametric equations into the expression <m>x^2+y^2</m>?
             </p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p><m>x^2+y^2=6\sin(\pi x)\cos(\pi x)</m></p></li>
                 <li><p><m>x^2+y^2=-6\sin(\pi x)\cos(\pi x)</m></p></li>
                 <li><p><m>x^2+y^2=9</m></p></li>
@@ -269,7 +269,7 @@ What do you obtain by plugging the parametric equations into the expression <m>x
             <p>
 Which of these describes the <m>xy</m> equation and graph given by these parametric equations?
             </p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p>a parabola</p></li>
                 <li><p>a line</p></li>
                 <li><p>a circle</p></li>
@@ -280,7 +280,7 @@ Which of these describes the <m>xy</m> equation and graph given by these paramet
             <p>
 The graph of these parametric equations cannot be described by a function. Why?
             </p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p>The graph fails the vertical line test.</p></li>
                 <li><p>The graph fails the horizontal line test.</p></li>
                 <li><p>The graph doesn't extend vertically to <m>+\infty</m>.</p></li>
@@ -310,7 +310,7 @@ Consider the vector equation <m>\vec r=\tuple{2t-3,-6t+13}</m>.
         </introduction>
         <task>
             <p>What are the corresponding parametric equations?</p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p><m>x=2t-3</m> and <m>y=-6t+13</m></p></li>
                 <li><p><m>y=2t-3</m> and <m>x=-6t+13</m></p></li>
                 <li><p><m>xy=2t-3-6t+13</m></p></li>

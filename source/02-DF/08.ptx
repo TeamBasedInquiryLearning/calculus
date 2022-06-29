@@ -22,7 +22,7 @@
     <task> <p>Suppose that <m>y=\ln(x)</m>. Then we have that</p>
     <me>e^y = x .</me>
     <p>Using implicit implicit differentiation, what do you get?</p>
-    <ol label="A">
+    <ol marker="A">
                 <li><p><m>\frac{dy}{dx} = \frac{x}{y}</m></p></li>
                 <li><p><m>\frac{dy}{dx} = \frac{1}{e^x}</m></p></li>
                 <li><p><m>\frac{dy}{dx} = \frac{x}{e^y}</m></p></li>
@@ -37,7 +37,7 @@
     <task><p>
         Looking at the equation <m>f(g(x))=x</m>, what is the derivative with respect to <m>x</m> of the right hand side of the equation?
         </p>
-    <ol label="A">
+    <ol marker="A">
                 <li><p><m>x</m></p></li>
                 <li><p><m>1</m></p></li>
                 <li><p><m>0</m></p></li>
@@ -47,7 +47,7 @@
     <task><p>
    Looking at the equation <m>f(g(x))=x</m>, what is the derivative with respect to <m>x</m> of the left hand side of the equation?
         </p>
-    <ol label="A">
+    <ol marker="A">
                 <li><p><m>f'(g(x))</m></p></li>
                 <li><p><m>f'(g'(x))</m></p></li>
                 <li><p><m>f(g(x))\, g'(x) </m></p></li>
@@ -57,7 +57,7 @@
  <task><p>
    Setting the two sides of the equation equal after differentiating, we can solve for <m>g'(x)</m>. What do you get?
         </p>
-    <ol label="A">
+    <ol marker="A">
                 <li><p><m>g'(x) = \frac{x}{f(g(x))}</m></p></li>
               <li><p><m>g'(x) = \frac{x}{f'(g(x))}</m></p></li>
          <li><p><m>g'(x) = \frac{1}{f(g(x))}</m></p></li>
@@ -123,7 +123,7 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
                 </figure>                  
        </introduction>
     <task><p>The derivative of the inverse function at <m>x=12</m> given by <m>(f^{-1})' (12) = \frac{1}{f'(f^{-1}(12))}</m>. Using the graphs, what is your best approximation for this quantity?</p>
-      <ol label="A">
+      <ol marker="A">
                 <li><p>  <m>(f^{-1})' (12)\approx \frac{1}{0.2} = 5 </m> </p></li>
                  <li><p>  <m>(f^{-1})' (12) \approx \frac{1}{0.6} \approx 1.67 </m> </p></li>
                  <li><p>  <m>(f^{-1})' (12) \approx \frac{1}{0.4} = 2.5 </m> </p></li>
@@ -131,7 +131,7 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
     </ol>      
     </task>
     <task><p>What is your best estimate for <m>(f^{-1})' (6) </m> ?</p> 
-      <ol label="A">
+      <ol marker="A">
                 <li><p>  <m>(f^{-1})' (6) \approx \frac{1}{0.2} = 5 </m> </p></li>
                  <li><p>  <m>(f^{-1})' (6) \approx \frac{1}{0.6} \approx 1.67 </m> </p></li>
                  <li><p>  <m>(f^{-1})' (6) \approx \frac{1}{0.4} = 2.5 </m> </p></li>
@@ -240,7 +240,7 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
 <activity>
     <introduction><p>In this activity you will find a formula for the derivative of arctangent.</p></introduction>
     <task><p>Differentiate the implicit equation <m> \tan(y) = x</m>, what do you get for <m>\frac{dy}{dx}</m>?</p>
-     <ol label="A">
+     <ol marker="A">
                 <li><p><m>\frac{dy}{dx} = \frac{x}{\tan(y)}</m></p></li>
                 <li><p><m>\frac{dy}{dx} = \frac{1}{\tan(y)}</m></p></li>
                 <li><p><m>\frac{dy}{dx} = \frac{x}{\sec^2(y)}</m></p></li>
@@ -253,7 +253,7 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
     <task><p>We want to rewrite <m>\frac{dy}{dx}</m> only in terms of <m>x</m>. Notice that </p>
     <me> \tan^2(y) = \frac{\sin^2(y)}{\cos^2(y)} = \frac{1 - \cos^2(y)}{\cos^2(y)}. </me>
       <p> Multiplying out by the denominator, isolating, and solving for <m>\cos^2(y)</m>, we get that </p>
-         <ol label="A">
+         <ol marker="A">
                 <li><p><m>\cos^2(y) = \frac{\tan^2(y)}{\cos^2(y)}</m></p></li>
                <li><p><m>\cos^2(y) = \frac{1}{\tan^2(y) + 1 }</m></p></li>
                <li><p><m>\cos^2(y) = \frac{1- \cos^2(y)}{\tan^2(y)}</m></p></li>
@@ -283,7 +283,7 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
             Demonstrate and explain how to find the derivative of the following functions.
             Be sure to explicitly denote which derivative rules (product, quotient, sum and difference, etc.) you are using in your work.
         </p>
-        <ol label="(a)">
+        <ol marker="(a)">
             <li><me>k(t)= \frac{\arctan\left(-4 \, t\right)}{\ln\left(-4 \, t\right)}</me></li>
             <li><me>j(u)= -5 \, \arcsin\left(u\right) \log\left(u^{6} + 2\right)</me></li>
             <li><me>n(x)= \ln\left(-\arcsin\left(x\right) + 4 \, \arctan\left(x\right)\right)</me></li>

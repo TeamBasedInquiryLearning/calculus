@@ -12,7 +12,7 @@
 
     <activity xml:id="activity-SQ9firstattemptDT">
     <statement><p>Which test for convergence is the best first test to apply to any series <m>\displaystyle \sum_{k=1}^\infty a_k</m>?</p>
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>Divergence Test</p></li>
                 <li><p>Geometric Series</p></li>
                 <li><p>Integral Test</p></li>
@@ -27,7 +27,7 @@
 
     <activity xml:id="activity-SQ9dctAPPLIES">
     <statement><p>In which of the following scenarios can we successfully apply the Direct Comparison Test to determine the convergence of the series <m>\displaystyle \sum a_k</m>?</p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p>When we find a convergent series <m>\displaystyle \sum b_k</m> where <m>0\leq a_k\leq b_k</m></p></li>
                 <li><p>When we find a divergent series <m>\displaystyle \sum b_k</m> where <m>0\leq a_k\leq b_k</m></p></li>
                 <li><p>When we find a convergent series <m>\displaystyle \sum b_k</m> where <m>0\leq b_k\leq a_k</m></p></li>
@@ -38,7 +38,7 @@
 
     <activity xml:id="activity-SQ9choiceforpowers">
     <statement><p>Which test(s) for convergence would we use for a series <m>\displaystyle \sum a_k</m> where <m>a_k</m> involves <m>k^{th}</m> powers?</p>
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>Divergence Test</p></li>
                 <li><p>Geometric Series</p></li>
                 <li><p>Integral Test</p></li>
@@ -53,7 +53,7 @@
 
     <activity xml:id="activity-SQ9geometricFORM">
     <statement><p>Which test(s) for convergence would we use for a series of the form <m>\displaystyle \sum ar^k</m>?</p>
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>Divergence Test</p></li>
                 <li><p>Geometric Series</p></li>
                 <li><p>Integral Test</p></li>
@@ -68,7 +68,7 @@
 
     <activity xml:id="activity-SQ9choiceforfactorialsANDpowers">
     <statement><p>Which test(s) for convergence would we use for a series <m>\displaystyle \sum a_k</m> where <m>a_k</m> involves factorials and powers?</p>
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>Divergence Test</p></li>
                 <li><p>Geometric Series</p></li>
                 <li><p>Integral Test</p></li>
@@ -83,7 +83,7 @@
 
     <activity xml:id="activity-SQ9choiceforrationals">
     <statement><p>Which test(s) for convergence would we use for a series <m>\displaystyle \sum a_k</m> where <m>a_k</m> is a rational function?</p>
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>Divergence Test</p></li>
                 <li><p>Geometric Series</p></li>
                 <li><p>Integral Test</p></li>
@@ -98,7 +98,7 @@
 
     <activity xml:id="activity-SQ9astFORM">
     <statement><p>Which test(s) for convergence would we use for a series of the form <m>\displaystyle \sum (-1)^ka_k</m>?</p>
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>Divergence Test</p></li>
                 <li><p>Geometric Series</p></li>
                 <li><p>Integral Test</p></li>
@@ -127,7 +127,7 @@
     <activity xml:id="activity-SQ9dctSmallerD">
         <introduction><p>Consider the series <m>\displaystyle \sum_{k=3}^\infty \frac{2}{\sqrt{k-2}}</m>.</p></introduction>
         <task><statement><p>Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>Divergence Test</p></li>
                 <li><p>Geometric Series</p></li>
                 <li><p>Integral Test</p></li>
@@ -139,7 +139,7 @@
             </ol>
             </p></statement></task>
         <task><statement><p>Apply an appropriate test to determine the convergence of this series.
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>This series is convergent.</p></li>
                 <li><p>This series is divergent.</p></li>
             </ol>            
@@ -149,7 +149,7 @@
     <activity xml:id="activity-SQ9dtD">
         <introduction><p>Consider the series <m>\displaystyle \sum_{k=1}^\infty \frac{k}{1+2k}</m>.</p></introduction>
         <task><statement><p>Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>Divergence Test</p></li>
                 <li><p>Geometric Series</p></li>
                 <li><p>Integral Test</p></li>
@@ -161,7 +161,7 @@
             </ol>
             </p></statement></task>
         <task><statement><p>Apply an appropriate test to determine the convergence of this series.
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>This series is convergent.</p></li>
                 <li><p>This series is divergent.</p></li>
             </ol>            
@@ -171,7 +171,7 @@
     <activity xml:id="activity-SQ9lctD">
         <introduction><p>Consider the series <m>\displaystyle \sum_{k=0}^\infty \frac{2k^2+1}{k^3+k+1}</m>.</p></introduction>
         <task><statement><p>Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>Divergence Test</p></li>
                 <li><p>Geometric Series</p></li>
                 <li><p>Integral Test</p></li>
@@ -183,7 +183,7 @@
             </ol>
             </p></statement></task>
         <task><statement><p>Apply an appropriate test to determine the convergence of this series.
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>This series is convergent.</p></li>
                 <li><p>This series is divergent.</p></li>
             </ol>            
@@ -193,7 +193,7 @@
     <activity xml:id="activity-SQ9ratioCA">
         <introduction><p>Consider the series <m>\displaystyle \sum_{k=0}^\infty \frac{100^k}{k!}</m>.</p></introduction>
         <task><statement><p>Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>Divergence Test</p></li>
                 <li><p>Geometric Series</p></li>
                 <li><p>Integral Test</p></li>
@@ -205,7 +205,7 @@
             </ol>
             </p></statement></task>
         <task><statement><p>Apply an appropriate test to determine the convergence of this series.
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>This series is convergent.</p></li>
                 <li><p>This series is divergent.</p></li>
             </ol>            
@@ -215,7 +215,7 @@
     <activity xml:id="activity-SQ9geometricCeasy">
         <introduction><p>Consider the series <m>\displaystyle \sum_{k=1}^\infty \frac{2^k}{5^k}</m>.</p></introduction>
         <task><statement><p>Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>Divergence Test</p></li>
                 <li><p>Geometric Series</p></li>
                 <li><p>Integral Test</p></li>
@@ -227,7 +227,7 @@
             </ol>
             </p></statement></task>
         <task><statement><p>Apply an appropriate test to determine the convergence of this series.
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>This series is convergent.</p></li>
                 <li><p>This series is divergent.</p></li>
             </ol>            
@@ -237,7 +237,7 @@
     <activity xml:id="activity-SQ9lctC">
         <introduction><p>Consider the series <m>\displaystyle \sum_{k=1}^\infty \frac{k^3-1}{k^5+1}</m>.</p></introduction>
         <task><statement><p>Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>Divergence Test</p></li>
                 <li><p>Geometric Series</p></li>
                 <li><p>Integral Test</p></li>
@@ -249,7 +249,7 @@
             </ol>
             </p></statement></task>
         <task><statement><p>Apply an appropriate test to determine the convergence of this series.
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>This series is convergent.</p></li>
                 <li><p>This series is divergent.</p></li>
             </ol>            
@@ -259,7 +259,7 @@
     <activity xml:id="activity-SQ9geometricCmed">
         <introduction><p>Consider the series <m>\displaystyle \sum_{k=2}^\infty \frac{3^{k-1}}{7^k}</m>.</p></introduction>
         <task><statement><p>Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>Divergence Test</p></li>
                 <li><p>Geometric Series</p></li>
                 <li><p>Integral Test</p></li>
@@ -271,7 +271,7 @@
             </ol>
             </p></statement></task>
         <task><statement><p>Apply an appropriate test to determine the convergence of this series.
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>This series is convergent.</p></li>
                 <li><p>This series is divergent.</p></li>
             </ol>            
@@ -281,7 +281,7 @@
     <activity xml:id="activity-SQ9rootCA">
         <introduction><p>Consider the series <m>\displaystyle \sum_{k=2}^\infty \frac{1}{k^k}</m>.</p></introduction>
         <task><statement><p>Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>Divergence Test</p></li>
                 <li><p>Geometric Series</p></li>
                 <li><p>Integral Test</p></li>
@@ -293,7 +293,7 @@
             </ol>
             </p></statement></task>
         <task><statement><p>Apply an appropriate test to determine the convergence of this series.
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>This series is convergent.</p></li>
                 <li><p>This series is divergent.</p></li>
             </ol>            
@@ -303,7 +303,7 @@
     <activity xml:id="activity-SQ9astC">
         <introduction><p>Consider the series <m>\displaystyle \sum_{k=1}^\infty \frac{(-1)^{k+1}}{\sqrt{k+1}}</m>.</p></introduction>
         <task><statement><p>Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>Divergence Test</p></li>
                 <li><p>Geometric Series</p></li>
                 <li><p>Integral Test</p></li>
@@ -315,7 +315,7 @@
             </ol>
             </p></statement></task>
         <task><statement><p>Apply an appropriate test to determine the convergence of this series.
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>This series is convergent.</p></li>
                 <li><p>This series is divergent.</p></li>
             </ol>            
@@ -325,7 +325,7 @@
     <activity xml:id="activity-SQ9integralD">
         <introduction><p>Consider the series <m>\displaystyle \sum_{k=2}^\infty \frac{1}{k\ln(k)}</m>.</p></introduction>
         <task><statement><p>Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>Divergence Test</p></li>
                 <li><p>Geometric Series</p></li>
                 <li><p>Integral Test</p></li>
@@ -337,7 +337,7 @@
             </ol>
             </p></statement></task>
         <task><statement><p>Apply an appropriate test to determine the convergence of this series.
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p>This series is convergent.</p></li>
                 <li><p>This series is divergent.</p></li>
             </ol>            

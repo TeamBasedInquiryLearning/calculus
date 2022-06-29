@@ -69,7 +69,7 @@
         </table>
         <p>
         Based on the values of <xref ref="table-limit-numerical1"/>, what is the best approximation for <m>\lim_{x\to 7} f(x)</m>?
-        <ol label="A">
+        <ol marker="A">
             <li><p> the limit is approximately 7</p></li>
             <li><p> the limit is approximately 0.17 </p></li>
             <li><p> the limit is approximately 0.16</p></li>
@@ -138,7 +138,7 @@
             </tabular>
         </table>
         <p>In <xref ref = "activity-limits-graphically1"/> we got an approximation to the limit of the function as <m>x</m> tends to 2.  Now let us say you are given the same plot as in <xref ref = "activity-limits-graphically1"/>, but also given a table of numerical values (<xref ref="table-limit-numerical2"/>) for the function. Given this new information which of the choices below best describes the limit of the function as <m>x</m> tends to 2?  </p>
-    <ol label="A">
+    <ol marker="A">
             <li><p> There is not enough information because we do not know the value of the function at <m>x = 2</m></p></li>
             <li><p> Can be approximated to be 1 because the data in the table and the graph show that from the left and the right the function approaches 1 as <m>x</m> goes to 2 </p></li>
             <li><p> Can be approximated to be 1 because the values appear to approach 1 and the graph appears to approach 1, but we should zoom in on the graph to be sure </p></li>
@@ -200,7 +200,7 @@
         </table>
     <p>Based on <xref ref = "table-limit-numerical3"/>, what information can be inferred about <m>\displaystyle \lim_{x\to 1^-}f(x)</m>, <m>\displaystyle \lim_{x\to 1^+}f(x)</m>, and <m>\displaystyle \lim_{x\to 1}f(x)</m>?
 </p>
-        <ol label="A">
+        <ol marker="A">
             <li><p> <m> \displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\lim_{x\rightarrow 1}f(x) = 0</m></p></li>
             <li><p> <m> \displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\lim_{x\rightarrow 1}f(x)</m> does not exist </p></li>
             <li><p> <m>\displaystyle \lim_{x\rightarrow 1^-}f(x) = 0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = -0.5</m>, and <m>\lim_{x\rightarrow 1}f(x)</m> does not exist</p></li>
@@ -216,7 +216,7 @@
        <task>
         <p> Of the following options, at which values given would you evaluate <m>f(x)</m> to best determine <m>\displaystyle \lim_{x \to 2}f(x)</m> numerically?</p>
         
-               <ol label="A">
+               <ol marker="A">
                     <li><p> 1.9, 1.99, 2.0, 2.01, 2.1</p></li>
                     <li><p> 1.98, 1.99, 2.0, 2.01, 2.02 </p></li>
                     <li><p> 1.8, 1.9, 2.0, 2.1, 2.2</p></li>
@@ -231,7 +231,7 @@
 <task>
         <p> Which value best describes the limit that you obtained in part (b)?</p>
         
-            <ol label="A">
+            <ol marker="A">
             <li><p> the approximate value is 41.25</p></li>
             <li><p> the approximate value is 41.5 </p></li>
             <li><p> approximate value is 41.75</p></li>
@@ -302,7 +302,7 @@
         </table>
 </introduction>
      <task> <statement> <p>Based on the graph and table what is the best explanation for the limit as x tends to zero?</p>
-        <ol label="A">
+        <ol marker="A">
             <li><p> the limit does not exist because the left and right limits have opposite values.</p></li>
             <li><p> the limit does not exist because we do not have enough information to answer the question. </p></li>
             <li><p> the limit does not exist because the function is oscillating between -1 and 1.</p></li>

@@ -129,7 +129,7 @@
         <statement>
             <p>
                 If you know a series <m>\displaystyle \sum a_n</m> is absolutely convergent, what can you conclude about whether or not <m>\displaystyle \sum a_n</m> is convergent?
-                <ol label="A">
+                <ol marker="A">
                     <li>We cannot determine if <m>\displaystyle \sum a_n</m> is convergent.</li>
                     <li><m>\displaystyle \sum a_n</m> is convergent since it <q>grows slower</q> than <m>\displaystyle \sum |a_n|</m> (and falls slower than <m>\displaystyle \sum -|a_n|</m>).</li>
                 </ol>

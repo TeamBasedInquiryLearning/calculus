@@ -15,7 +15,7 @@
             <p>
 Using the chain rule, which of these is derivative of <m>e^{x^3}</m> with respect to <m>x</m>?
             </p>
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p><m>e^{3x^2}</m></p></li>
                 <li><p><m>x^3e^{x^3-1}</m></p></li>
                 <li><p><m>3x^2e^{x^3}</m></p></li>
@@ -26,7 +26,7 @@ Using the chain rule, which of these is derivative of <m>e^{x^3}</m> with respec
             <p>
 Based on this result, which of these would you suspect to equal <m>\int x^2e^{x^3}\,dx</m>?
             </p>
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p><m>e^{x^3+1}+C</m></p></li>
                 <li><p><m>\frac{1}{3x}e^{x^3+1}+C</m></p></li>
                 <li><p><m>3e^{x^3}+C</m></p></li>
@@ -39,7 +39,7 @@ Based on this result, which of these would you suspect to equal <m>\int x^2e^{x^
             <p>Recall that if <m>u</m> is a function of <m>x</m>,
             then <m>\frac{d}{dx}[u^7]=7u^6 u'</m> by the Chain Rule.</p>
             <p>For each question, choose from the following.</p>
-            <ol label="A" cols="4">
+            <ol marker="A" cols="4">
                 <li><p><m>\frac{1}{7}u^7+C</m></p></li>
                 <li><p><m>u^7+C</m></p></li>
                 <li><p><m>7u^7+C</m></p></li>
@@ -65,7 +65,7 @@ Based on this result, which of these would you suspect to equal <m>\int x^2e^{x^
     <activity estimated-time="99">
         <statement>
             <p>Based on these activities, which of these choices seems to be a viable strategy for integration?</p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p>Memorize an integration formula for every possible function.</p></li>
                 <li><p>Attempt to rewrite the integral in the form <m>\int g'(u)u'dx=g(u)+C</m>.</p></li>
                 <li><p>Keep differentiating functions until you come across the function you want to integrate.</p></li>
@@ -172,7 +172,7 @@ of how to find
 Which step of the previous example do you think was
 the most important?
             </p>
-            <ol label="A">
+            <ol marker="A">
                 <li>
                     <p>
 Choosing <m>u=x^3</m>.
@@ -283,7 +283,7 @@ Suppose we wanted to try substitution method to find
 <m>\int e^x\cos(e^x+3)\,dx</m>. Which of these choices
 for <m>u</m> appears to be most useful?
             </p>
-            <ol label="A">
+            <ol marker="A">
                 <li>
                     <p>
 <m>u=x</m>, so <m>du=dx</m>
@@ -375,7 +375,7 @@ Given that <m>
 \int_0^2 \frac{x^3}{x^4+4}\,dx
 </m>?
             </p>
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p><m>\frac{8}{20}</m></p></li>
                 <li><p><m>-\frac{8}{20}</m></p></li>
                 <li><p><m>\frac{1}{4}\ln(20)-\frac{1}{4}\ln(4)</m></p></li>
@@ -408,7 +408,7 @@ What's wrong with the following computation?
 &amp;= \frac{1}{4}\ln 2-\frac{1}{4}\ln 0
                 </mrow>
             </md>
-            <ol label="A">
+            <ol marker="A">
                 <li>
                     <p>
 The wrong <m>u</m> substitution was made.

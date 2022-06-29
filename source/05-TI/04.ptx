@@ -13,7 +13,7 @@
             <statement>
                 <p>
                     Consider the integral <m>\displaystyle \int \frac{\sqrt{1-x^2}}{x} dx</m>.  If one were to use the method of substitution to evaluate this integral, what would be the best choice of <m>u</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>u=1-x^2.</m></li>
                         <li><m>u=\sqrt{1-x^2}.</m></li>
                         <li><m>u=\frac{1}{x}.</m></li>
@@ -27,7 +27,7 @@
             <statement>
                 <p>
                     It would be good if <m>\sqrt{1-x^2}</m> were a term that can be written more simply.  Which of the following mathematical facts could help us simplify this integrand?
-                    <ol label="A">
+                    <ol marker="A">
                         <li>For any real number, <m>x^2</m> must be positive (note: this isn’t even true).</li>
                         <li><m>u=\sqrt{1-x^2}.</m></li>
                         <li>The Pythagorean theorem allows us to write <m>(\cos(\theta))^2</m> as <m>1-(\sin(\theta))^2</m>.</li>
@@ -42,7 +42,7 @@
                 <p>
                     Suppose we let <m>x=\sin(\theta)</m>, then <m>\frac{dx}{d\theta}=\cos(\theta)</m> and <m>dx=\cos(\theta) d\theta</m>.  Which of the following best represents the integral <m>\displaystyle \int \sqrt{1-x^2}dx</m>?
 
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle \int \sqrt{1-\sin^2(\theta)}dx</m>.</li>
                         <li><m>\displaystyle \int \sqrt{ 1-\sin^2(\theta)\cos(\theta)}d\theta</m>.</li>
                         <li><m>\displaystyle  \int \sqrt{ 1-\sin^2(\theta)}\cos(\theta)d\theta</m>.</li>
@@ -56,7 +56,7 @@
                 <p>
                     Use the fact from <xref ref="activity-TI4intropythagoras"/> to rewrite your choice of integral from <xref ref="activity-TI4sinsub"/> to an integral without any <m>\sin(\theta)</m> terms.
 
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle\int \cos(\theta) d\theta</m>.</li>
                         <li><m>\displaystyle\int \cos^2(\theta) d\theta</m>.</li>
                         <li><m>\displaystyle\int \sqrt{\cos(\theta)} d\theta</m>.</li>
@@ -70,7 +70,7 @@
                 <p>
                     Use the fact that <m>\cos^2(\theta) =\frac{1+\cos(2\theta)}{2}</m> to rewrite the integral from <xref ref="activity-TI4sinsubrewrite"/>.
 
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle\int \sqrt{\frac{1+\cos(2\theta)}{2}} d\theta</m>.</li>
                         <li><m>\displaystyle\int \frac{1+\cos(2\theta)}{2} d\theta</m>.</li>
                         <li><m>\displaystyle\int \left(\frac{1+\cos(2\theta)}{2} \right)^2d\theta</m>.</li>
@@ -100,7 +100,7 @@
                 <p>
                     Consider the integral <m>\displaystyle \int \sqrt{9-x^2} dx</m>; how can we best modify our approach in <xref ref="activity-TI4sinsub"/> and adapt it here?
 
-                    <ol label="A">
+                    <ol marker="A">
                         <li>Let <m>x=\sin(\theta), dx=\cos(\theta)d\theta, \displaystyle \int \sqrt{9-x^2} dx= \int \sqrt{9-\sin^2(\theta)} \cos(\theta) d\theta.</m> </li>
                         <li>Let <m>x=3\sin(\theta), dx=3\cos(\theta)d\theta, \displaystyle \int \sqrt{9-x^2} dx= \int \sqrt{9-(3\sin(\theta))^2} \cos(\theta) d\theta.</m> </li>
                         <li>Let <m>x=\sin(3\theta), dx=3\cos(3\theta)d\theta, \displaystyle \int \sqrt{9-x^2} dx= \int \sqrt{9-\sin^2(3\theta)} 3\cos(3\theta) d\theta.</m> </li>
@@ -115,7 +115,7 @@
                     Using your choice of substitution in <xref ref="activity-TI4sinsubadjust"/> and the fact that <m>\cos^2(\theta) =\frac{1+\cos(2\theta)}{2}</m> to rewrite the integral from <xref ref="activity-TI4sinsubadjust"/>
 
 
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle \int \sqrt{\frac{9+9\cos(2\theta)}{2}} \cos(\theta) d\theta.</m> </li>
                         <li><m>\displaystyle \int \frac{9+9\cos(2\theta)}{2} \cos(\theta) d\theta.</m> </li>
                         <li><m>\displaystyle \int \left(\frac{9+9\cos(2\theta)}{2}\right)^2 \cos(\theta) d\theta.</m> </li>
@@ -138,7 +138,7 @@
                 <p>
                     Consider the integral <m>\displaystyle \int \frac{1}{1+x^2} dx</m>.  Which of the following facts would best simplify this expression?
 
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\cos^2(\theta) =\frac{1+\cos(2\theta)}{2}</m>.</li>
                         <li><m>(\cos(\theta))^2=1-(\sin(\theta))^2</m></li>
                         <li>Since <m>\sin^2(\theta) + \cos^2(\theta)=1, \tan^2(\theta)+1=\sec^2(\theta)</m>.</li>
@@ -153,7 +153,7 @@
                 <p>
                     Suppose we let <m>x=\tan(\theta), dx =\sec^2(\theta)</m>.  Which of the following best represents the integral <m>\displaystyle \int \frac{1}{1+x^2} dx</m>?
 
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle \int \frac{1}{1+\tan^2(\theta)} dx</m>.</li>
                         <li><m>\displaystyle \int \frac{1}{1+\tan^2(\theta)\sec^2(\theta)} d\theta</m>.</li>
                         <li><m>\displaystyle \int \frac{1}{1+\tan^2(\theta)} \sec^2(\theta)d\theta</m>.</li>
@@ -177,7 +177,7 @@
                 <p>
                     Consider the integral <m>\displaystyle \int \frac{1}{\frac{1}{4}+x^2} dx</m>; how can we best modify our approach in <xref ref="activity-TI4tansub"/> and adapt it here?
 
-                    <ol label="A">
+                    <ol marker="A">
                         <li>Let <m>x=\frac{1}{2}\tan(\theta), dx=\frac{1}{2}\sec^2(\theta)d\theta, \displaystyle \int \frac{1}{\frac{1}{4}+x^2} dx = \int  \frac{1}{\frac{1}{4}+\left(\frac{1}{2}\tan(\theta) \right)^2} \frac{1}{2} \sec^2(\theta)d\theta.</m> </li>
                         <li>Let <m>x=\frac{1}{4}\tan(\theta), dx=\frac{1}{4}\sec^2(\theta)d\theta, \displaystyle \int \frac{1}{\frac{1}{4}+x^2} dx = \int  \frac{1}{\frac{1}{4}+\left(\frac{1}{4}\tan(\theta) \right)^2}  \frac{1}{4}\sec^2(\theta) d\theta.</m> </li>
                         <li>Let <m>x=\tan\left(\frac{1}{2}\theta\right), dx=\sec^2\left(\frac{1}{2}\theta\right)d\theta, \displaystyle \int \frac{1}{\frac{1}{4}+x^2} dx = \int  \frac{1}{\frac{1}{4}+\left(\tan\left(\frac{1}{2}\theta\right) \right)^2}  \frac{1}{2} \sec^2\left(\frac{1}{2}\theta\right)d\theta.</m> </li>
@@ -199,7 +199,7 @@
             <statement>
                 <p>
                     Consider the integral <m>\displaystyle \int \sqrt{x^2-1} dx</m>.   Which of the following facts <em>best</em> simplifies this integral?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\cos^2(\theta) =\frac{1+\cos(2\theta)}{2}</m>.</li>
                         <li><m>\tan^2(\theta)+1=\sec^2(\theta)</m>.</li>
                         <li>Since <m>\sin^2(\theta) =1- \cos^2(\theta), \tan^2(\theta)=\sec^2(\theta)-1</m>.</li>
@@ -255,7 +255,7 @@
             <statement>
                 <p>
                     If we wish to simplify an expression that contained a <m>k^2-x^2</m> expression, which would be the best substitution?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>x=k\sin(\theta)</m></li>
                         <li><m>x=k\tan(\theta)</m></li>
                         <li><m>x=k\sec(\theta)</m></li>
@@ -268,7 +268,7 @@
             <statement>
                 <p>
                     If we wish to simplify an expression that contained a <m>k^2+x^2</m> expression, which would be the best substitution?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>x=k\sin(\theta)</m></li>
                         <li><m>x=k\tan(\theta)</m></li>
                         <li><m>x=k\sec(\theta)</m></li>
@@ -281,7 +281,7 @@
             <statement>
                 <p>
                     If we wish to simplify an expression that contained a <m>x^2-k^2</m> expression, which would be the best substitution?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>x=k\sin(\theta)</m></li>
                         <li><m>x=k\tan(\theta)</m></li>
                         <li><m>x=k\sec(\theta)</m></li>

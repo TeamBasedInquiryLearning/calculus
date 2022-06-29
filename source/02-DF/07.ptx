@@ -29,7 +29,7 @@
       <task>
       <statement>
           <p>The derivative with respect to <m>x</m> for the equation of the circle is given by which expression.</p>
-          <ol label="A">
+          <ol marker="A">
                 <li><p><m>2x + 2y\frac{dy}{dx} = 25</m></p></li>
                 <li><p><m>2x + y\frac{dy}{dx} = 0</m></p></li>
                 <li><p><m>2x + 2y\frac{dy}{dx} = 0</m></p></li>
@@ -40,7 +40,7 @@
       <task>
       <statement>
           <p>Solving for <m>\frac{dy}{dx}</m> gives?</p>
-          <ol label="A">
+          <ol marker="A">
                 <li><p><m>\frac{dy}{dx} = \frac{25-2x}{2y}</m></p></li>
                 <li><p><m>\frac{dy}{dx} = -\frac{2x}{y}</m></p></li>
                 <li><p><m>\frac{dy}{dx} = -\frac{x}{y}</m></p></li>
@@ -67,7 +67,7 @@
        <image width="70%" source="derivative_implicit2_graph.png" />
                 <caption>Graph of <m>x^{2/3} + y^{2/3} = 3^{2/3}</m>.</caption>
         </figure>
-         <ol label="A">
+         <ol marker="A">
                 <li><p><m>\frac{dy}{dx} = \frac{x^{-1/3}}{y^{-1/3}}</m></p></li>
                 <li><p><m>\frac{dy}{dx} = \frac{y^{-1/3}}{x^{-1/3}}</m></p></li>
                 <li><p><m>\frac{dy}{dx} = \frac{3^{-1/3}-x^{-1/3}}{y^{-1/3}}</m></p></li>
@@ -83,7 +83,7 @@
        <image width="70%" source="derivative_implicit3_graph.png" />
                 <caption>Graph of <m>(x^{2} + y^{2})^2 = x^2 - y^2</m>.</caption>
         </figure>
-         <ol label="A">
+         <ol marker="A">
                 <li><p><m>\frac{dy}{dx} = \frac{x(1-2(x^2+y^2))}{y+2(x^2+y^2)}</m></p></li>
                 <li><p><m>\frac{dy}{dx} = \frac{x(1-2(x^2+y^2))}{y(1+2(x^2+y^2))}</m></p></li>
                 <li><p><m>\frac{dy}{dx} = \frac{y(1+2(x^2+y^2))}{x(1-2(x^2+y^2))}</m></p></li>
@@ -114,7 +114,7 @@ Explain how to use implicit differentiation to find
     <introduction>
         <p>To take the derivative of some explicit equations you might need to make it an implicit equation.  For this activity we will find the derivative of <m>y = x^x</m>.  Make the equation an implicit equation by taking natural logarithm of both sides, this gives <m>\ln(y) = x\ln(x)</m>. Knowing this, what is <m>\frac{dy}{dx}</m>? This process to find a derivative is known as logarithmic differentiation. </p>
         </introduction>
-         <ol label="A">
+         <ol marker="A">
                 <li><p><m>\frac{dy}{dx} = x^x(\ln(x) + 1)</m></p></li>
                 <li><p><m>\frac{dy}{dx} = \frac{(\ln(x)+1)}{x^x}</m></p></li>
                 <li><p><m>\frac{dy}{dx} = x^x(\ln(x) + x)</m></p></li>
@@ -131,7 +131,7 @@ Explain how to use implicit differentiation to find
         </figure>
         </introduction>
 <task><p> Which of the following equations gives the relationship between <m>x</m> and <m>y</m>? Make sure you can explain why!</p>
-     <ol label="A">
+     <ol marker="A">
                 <li><p><m>20x + \frac{80x}{\cos(y)}=900</m></p></li>
                 <li><p><m>80x + \frac{20x}{\cos(y)}=900</m></p></li>
                 <li><p><m>80x + \frac{20x}{\sin(y)}=900</m></p></li>

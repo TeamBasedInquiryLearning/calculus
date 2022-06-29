@@ -12,7 +12,7 @@
         <activity estimated-time="99" xml:id="activity-TI7FirstStepTrig">
         <statement>
             <p>Consider the integral <m>\int e^t \tan(e^t) \sec^2(e^t)\,dt</m>. Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p>The method of substitution</p></li>
                 <li><p>The method of integration by parts</p></li>
                 <li><p>Trigonometric substitution</p></li>
@@ -24,7 +24,7 @@
         <activity estimated-time="99" xml:id="activity-TI7FirstStepRational">
         <statement>
             <p>Consider the integral <m>\int \frac{2x+3}{1+x^2}\,dx</m>. Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p>The method of substitution</p></li>
                 <li><p>The method of integration by parts</p></li>
                 <li><p>Trigonometric substitution</p></li>
@@ -36,7 +36,7 @@
     <activity estimated-time="99" xml:id="activity-TI7StrategyRoot">
         <statement>
             <p>Consider the integral <m>\int \frac{x}{\sqrt[3]{1-x^2}}\,dx</m>. Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p>The method of substitution</p></li>
                 <li><p>The method of integration by parts</p></li>
                 <li><p>Trigonometric substitution</p></li>
@@ -48,7 +48,7 @@
     <activity estimated-time="99" xml:id="activity-TI7StrategyTrigTable">
         <statement>
             <p>Consider the integral <m>\int \frac{1}{2x\sqrt{1-36x^2}}\,dx</m>. Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p>The method of substitution</p></li>
                 <li><p>The method of integration by parts</p></li>
                 <li><p>Trigonometric substitution</p></li>
@@ -60,7 +60,7 @@
     <activity estimated-time="99" xml:id="activity-TI7StrategySubAndTrig">
         <statement>
             <p>Consider the integral <m>\int t^5\cos(t^3)\,dt</m>. Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p>The method of substitution</p></li>
                 <li><p>The method of integration by parts</p></li>
                 <li><p>Trigonometric substitution</p></li>
@@ -72,7 +72,7 @@
     <activity estimated-time="99" xml:id="activity-TI7StrategyAddZero">
         <statement>
             <p>Consider the integral <m>\int \frac{1}{1+e^x}\,dx</m>. Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p>The method of substitution</p></li>
                 <li><p>The method of integration by parts</p></li>
                 <li><p>Trigonometric substitution</p></li>

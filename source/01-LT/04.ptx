@@ -19,7 +19,7 @@
           <p>
             Which of the following scenarios best describes a continuous function?
           </p>
-          <ol label="A">
+          <ol marker="A">
             <li>
               <p>
                 The age of a person reported in years
@@ -94,7 +94,7 @@
       <statement>
         <p>
           A function <m>f</m> is <term>continuous</term> at <m>x = a</m> provided that
-          <ol label="1">
+          <ol marker="1">
             <li>
               <p>
                 <m>f</m> has a limit as <m>x \to a</m>
@@ -120,7 +120,7 @@
         <p>
           Suppose that some function <m>h(x)</m> is continuous at <m>x = -3</m>. Use <xref ref="definition-continuity"/> to decide which of the following quantities are equal to each other.
         </p>
-        <ol label="A">
+        <ol marker="A">
           <li>
             <p>
               <m>\lim_{x \to -3^+} h(x)</m>
@@ -184,7 +184,7 @@
         <p>
           Which condition is <em>stronger</em>, meaning it implies the other?
         </p>
-        <ol label="A">
+        <ol marker="A">
           <li>
             <p>
               <m>f</m> has a limit at <m>x = a</m>, or
@@ -204,7 +204,7 @@
         <p>
           Previously, you have used graphs, tables, and formulas to answer questions about limits. Which of those are suitable for answering questions about continuity?
         </p>
-        <ol label="A">
+        <ol marker="A">
           <li>
             <p>
               Graphs only

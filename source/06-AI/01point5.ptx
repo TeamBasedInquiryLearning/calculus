@@ -80,7 +80,7 @@
                     </image>
             </figure>
                 Which of  the following expressions represents the sum of the lengths of the line segments with endpoints <m>(0,0)</m>, <m>(2,8)</m> and  <m>(4,8)</m>.
-                <ol label='A'>
+                <ol marker='A'>
                     <li><m>\sqrt{4+8}</m>.</li>
                     <li><m>\sqrt{4^2+8^2}</m>.</li>
                     <li><m>\sqrt{2^2+8^2}+\sqrt{4^2+8^2}</m>.</li>
@@ -128,7 +128,7 @@
                     </image>
             </figure>
                 Which of  the following expressions represents the sum of the lengths of the line segments with endpoints <m>(0,0)</m>, <m>(1,5)</m>, <m>(2,8)</m>, <m>(3,9)</m> and <m>(4,8)</m>.
-                <ol label='A'>
+                <ol marker='A'>
                     <li><m>\sqrt{4^2+8^2}</m>.</li>
                     <li><m>\sqrt{1^2+(5-0)^2}+\sqrt{1^2+(8-5)^2}+\sqrt{1^2+(9-8)^2}+\sqrt{1^2+(8-9)^2}</m>.</li>
                     <li><m>\sqrt{1^2+5^2}+\sqrt{2^2+8^2}+\sqrt{3^2+9^2}+\sqrt{4^2+8^2}</m>.</li>
@@ -177,7 +177,7 @@
                     </image>
             </figure>
                 Which of  the following expressions represents the length of the line segment from <m>(x_0, f(x_0))</m> to <m>(\Delta x, f(x_0+\Delta x))</m>?
-                <ol label='A'>
+                <ol marker='A'>
                     <li><m>\sqrt{x_0^2+f(x_0)^2}</m>.</li>
                     <li><m>\sqrt{(x_0+\Delta x)^2+f(x_0+\Delta x)^2}</m>.</li>
                     <li><m>\sqrt{(\Delta x)^2+(f(x_0+\Delta)-f(x_0))^2}</m>.</li>
@@ -190,7 +190,7 @@
         <task>
             <p>
                  Which of  the following Riemann sums best estimates the arclength of the parabola <m>y=-x^2+6x</m> over the interval <m>[0,4]</m>?  Let <m>f(x)=-x^2+6x</m>.
-                <ol label='A'>
+                <ol marker='A'>
                     <li><m>\displaystyle \sum \sqrt{x_i^2+f(x_i)^2}</m>.</li>
                     <li><m>\displaystyle \sum \sqrt{(x_i+\Delta x)^2+f(x_i+\Delta x)^2}</m>.</li>
                     <li><m>\displaystyle \sum \sqrt{(\Delta x)^2+(f(x_i+\Delta)-f(x_i))^2}</m>.</li>
@@ -210,7 +210,7 @@
                 </md>
                 
                  Which of the following best describes <m>\displaystyle\lim_{\Delta x\to 0} \frac{f(x_i+\Delta x)-f(x_i)}{\Delta x}</m>?
-                <ol label='a'>
+                <ol marker='a'>
                     <li><m>0</m>.</li>
                     <li><m>1</m>.</li>
                     <li><m>f'(x_i)</m>.</li>

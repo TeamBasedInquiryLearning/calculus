@@ -44,7 +44,7 @@
             <p>
 Which of the following best describes the limit as <m>x</m> approaches zero in the graph?
             </p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p>The limit is 0</p></li>
                 <li><p>The limit is positive infinity </p></li>
                 <li><p>The limit does not exist </p></li>
@@ -55,7 +55,7 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
             <p>
                 Which of the following best describes the relationship between the line <m>x=0 </m> and the graph of the function?
             </p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p>The line <m>x=0</m> is a horizontal asymptote for the function</p></li>
                 <li><p>The function is not continuous at the point <m>x=0</m> </p></li>
                 <li><p>The function is moving away from the line <m>x=0</m> </p></li>
@@ -224,7 +224,7 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
         Notice that as <m>x</m> goes to 0, the value of <m> x^2</m> goes to 0 but the value of <m>1/x^2</m>  goes to infinity. What is the best explanation for this behavior?
                  </p>
                 </introduction>
-            <ol label="A">
+            <ol marker="A">
                 <li><p>When dividing by an increasingly small number we get an increasing big number
 </p></li>
                 <li><p>When dividing by an increasingly large number we get an increasing small number
@@ -243,7 +243,7 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
             <p>
 Consider the rational function <m>f(x) = \frac{2}{x-3} </m>. Which of the following options best describes the limits as x approaches <m>3</m> from the right and from the left?
   </p> </introduction>
-            <ol label="A">
+            <ol marker="A">
                 <li><p>As <m>x \to 3^+</m>, the limit DNE, but as <m>x \to 3^-</m> the limit is <m>-\infty</m>
 </p></li>
                 <li><p>As <m>x \to 3^+</m>, the limit is <m>+\infty</m>, but as <m>x \to 3^-</m> the limit is <m>-\infty</m>
@@ -268,7 +268,7 @@ Consider the rational function <m>f(x) = \frac{2}{x-3} </m>. Which of the follow
             <p>
 Consider the function <m>f(x)=\frac{x^2-1}{x-1}</m>. The line <m>x=1</m> is NOT a vertical asymptote for <m> f(x)</m>. Why?
   </p> </introduction>
-            <ol label="A">
+            <ol marker="A">
                 <li> <p> When <m>x</m> is not equal to <m>1</m>, we can simplify the fraction to <m>x-1</m>, so the limit is <m>1</m>.
 </p></li>
                     <li><p>When <m>x</m> is not equal to <m>1</m>, we can simplify the fraction to <m>x+1</m>, so the limit is <m>2</m>.

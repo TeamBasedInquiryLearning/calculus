@@ -40,7 +40,7 @@
                 </figure>
         </introduction>
 
-            <ol label="A">
+            <ol marker="A">
                 <li><p>As <m>x</m> gets larger, the function <m>x^3</m> gets smaller and smaller</p></li>
                 <li><p>As <m>x</m> gets more and more negative, the function <m>x^3</m> gets more and more negative
  </p></li>
@@ -86,7 +86,7 @@
 
         </introduction>
 
-            <ol label="A">
+            <ol marker="A">
                 <li><p> As <m>x</m> tends to positive infinity, the function <m>1/x^3</m> tends to positive infinity</p></li>
                 <li><p>As <m>x</m> tends to negative infinity, the function <m>1/x^3</m>  tends to 0
  </p></li>
@@ -260,7 +260,7 @@
             </p>
         </introduction>
 
-            <ol label="A">
+            <ol marker="A">
                 <li><p>The only possible limit is <m>0</m></p></li>
                 <li><p>The only possible limits are <m>0</m> or <m>\pm \infty</m>
  </p></li>
@@ -279,7 +279,7 @@
             </p>
       
 
-            <ol label="A">
+            <ol marker="A">
                 <li><p><m>\displaystyle  f(x)= \frac{x^3-x+3}{2x^3-6x+1} </m></p></li>
                 <li><p><m>\displaystyle  f(x)= \frac{x^2-3}{5x^3-2x^2+5} </m></p></li>
                 <li><p><m>\displaystyle  f(x)= \frac{x^4-3x-2}{3x^3-5x+1} </m></p></li>
@@ -296,7 +296,7 @@
           <task> <p>
   Consider a rational function <m>r(x) = \frac{p(x)}{q(x)}</m>. Looking at the numerator <m>p(x)</m> and the denominator <m>q(x)</m>, when does the function <m>r(x) </m> have limit equal to 0 as <m>x \to \infty? </m>
             </p>
-     <ol label="A">
+     <ol marker="A">
                
          <li><p> When the ratio of the leading terms is a constant. </p></li>
                 <li><p>When the degree of the numerator is greater than the degree of the denominator.
@@ -310,7 +310,7 @@
           <task> <p>
   Consider a rational function <m>r(x) = \frac{p(x)}{q(x)}</m>. Looking at the numerator <m>p(x)</m> and the denominator <m>q(x)</m>, when does the function <m>r(x) </m> have limit approaching infinity as <m>x \to \infty? </m>
             </p>
-     <ol label="A">
+     <ol marker="A">
             
          <li><p> When the ratio of the leading terms is a constant. </p></li>
                 <li><p>When the degree of the numerator is greater than the degree of the denominator.
@@ -399,7 +399,7 @@ What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of t
                 </figure>
         </introduction>
 
-            <ol label="A">
+            <ol marker="A">
                 <li><p> The limit is <m>0</m></p></li>
                 <li><p>The limit is <m>1</m>
  </p></li>
@@ -420,7 +420,7 @@ What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of t
               </introduction>
        
  <p>
-            <ol label="a">
+            <ol marker="a">
                 <li><p><m>\displaystyle  \lim_{x\to -\infty} \frac{x^3-x+83}{1} </m></p></li>
                  <li><p><m>\displaystyle  \lim_{x\to -\infty} \frac{1}{x^3-x+83} </m></p></li>
                 <li><p><m>\displaystyle  \lim_{x\to +\infty} \frac{x+3}{2-x}</m></p></li>

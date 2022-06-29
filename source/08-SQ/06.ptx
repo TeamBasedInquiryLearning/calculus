@@ -19,7 +19,7 @@
             <task>
                 <p>
                 If <m>\displaystyle \sum_{n=1}^\infty a_n=5</m> what can be said about <m>\displaystyle\sum_{n=1}^\infty b_n</m>?
-                <ol label="A">
+                <ol marker="A">
                     <li><m>\displaystyle\sum_{n=1}^\infty b_n</m> converges but the value cannot be determined.</li>
                     <li><m>\displaystyle\sum_{n=1}^\infty b_n</m> converges to <m>3\cdot 5=15</m>.</li>
                     <li><m>\displaystyle\sum_{n=1}^\infty b_n</m> converges to some value other than 15.</li>
@@ -46,7 +46,7 @@
         <task>
                 <p>
                 If <m>\displaystyle \sum_{n=1}^\infty a_n</m> diverges, what can be said about <m>\displaystyle\sum_{n=1}^\infty b_n</m>?
-                <ol label="A">
+                <ol marker="A">
                     <li><m>\displaystyle\sum_{n=1}^\infty b_n</m> converges but the value cannot be determined.</li>
                     <li><m>\displaystyle\sum_{n=1}^\infty b_n</m> converges and the value can be determined.</li>
                     <li><m>\displaystyle\sum_{n=1}^\infty b_n</m> diverges.</li>
@@ -68,7 +68,7 @@
                 <p>
                     What can we say about the series <me>\displaystyle 3+\frac{3}{2}+\frac{3}{4}+\frac{3}{8}+\cdots+\frac{3}{2^n}+\cdots?</me>
                     
-                    <ol label="A">
+                    <ol marker="A">
                     <li><m>\displaystyle 3+\frac{3}{2}+\frac{3}{4}+\frac{3}{8}+\cdots+\frac{3}{2^n}+\cdots</m> converges to <m>3\cdot 2=6</m>.</li>
                     <li><m>\displaystyle 3+\frac{3}{2}+\frac{3}{4}+\frac{3}{8}+\cdots+\frac{3}{2^n}+\cdots</m> converges to some value other than 6.</li>    
                     <li><m>\displaystyle 3+\frac{3}{2}+\frac{3}{4}+\frac{3}{8}+\cdots+\frac{3}{2^n}+\cdots</m> diverges.</li>
@@ -81,7 +81,7 @@
                 <p>
                     What do you think we can say about the series <me>\displaystyle \frac{3.1}{2}+\frac{3.01}{4}+\frac{3.001}{8}+\cdots+\frac{3+(0.1)^n}{2^n}+\cdots?</me>
                     
-                    <ol label="A">
+                    <ol marker="A">
                     <li><m>\displaystyle 3+\frac{3.1}{2}+\frac{3.01}{4}+\frac{3.001}{8}+\cdots+\frac{3+(0.1)^n}{2^n}+\cdots</m> converges to <m>3\cdot 2=6</m>.</li>
                     <li><m>\displaystyle 3+\frac{3.1}{2}+\frac{3.01}{4}+\frac{3.001}{8}+\cdots+\frac{3+(0.1)^n}{2^n}+\cdots</m> converges to some value other than 6.</li>    
                     <li><m>\displaystyle 3+\frac{3.1}{2}+\frac{3.01}{4}+\frac{3.001}{8}+\cdots+\frac{3+(0.1)^n}{2^n}+\cdots</m> diverges.</li>
@@ -104,7 +104,7 @@
                 <p>
                     What can we say about the series <me>\displaystyle 5+\frac{5}{2}+\frac{5}{3}+\frac{5}{4}+\cdots+\frac{5}{n}+\cdots?</me>
                     
-                    <ol label="A">
+                    <ol marker="A">
                     <li><m>\displaystyle 5+\frac{5}{2}+\frac{5}{3}+\frac{5}{4}+\cdots+\frac{5}{n}+\cdots</m> converges to a known value we can compute.</li>
                     <li><m>\displaystyle 5+\frac{5}{2}+\frac{5}{3}+\frac{5}{4}+\cdots+\frac{5}{n}+\cdots</m> converges to some unknown value.</li>    
                     <li><m>\displaystyle 5+\frac{5}{2}+\frac{5}{3}+\frac{5}{4}+\cdots+\frac{5}{n}+\cdots</m> diverges.</li>
@@ -117,7 +117,7 @@
                 <p>
                     What do you think we can say about the series <me>\displaystyle 4.9+\frac{4.99}{2}+\frac{4.999}{3}+\frac{4.9999}{4}+\cdots+\frac{5-(0.1)^n}{n}+\cdots?</me>
                     
-                    <ol label="A">
+                    <ol marker="A">
                     <li><m>\displaystyle 4.9+\frac{4.99}{2}+\frac{4.999}{3}+\frac{4.9999}{4}+\cdots+\frac{5-(0.1)^n}{n}+\cdots</m> converges to a known value we can compute.</li>
                     <li><m>\displaystyle 4.9+\frac{4.99}{2}+\frac{4.999}{3}+\frac{4.9999}{4}+\cdots+\frac{5-(0.1)^n}{n}+\cdots</m> converges to some unknown value.</li>    
                     <li><m>\displaystyle 4.9+\frac{4.99}{2}+\frac{4.999}{3}+\frac{4.9999}{4}+\cdots+\frac{5-(0.1)^n}{n}+\cdots</m> diverges.</li>
@@ -153,7 +153,7 @@
                 <p>
                Let <m>b_n=\frac{1}{n}</m>. Compute <m>\displaystyle \lim_{n\to\infty}\frac{\frac{1}{n}}{\frac{1}{2^n}}</m>.
                 </p>
-                <ol label="A">
+                <ol marker="A">
                     <li><m>-\infty</m>.</li>
                     <li><m>0</m>.</li>
                     <li><m>\displaystyle \frac{1}{2}</m>.</li>
@@ -170,7 +170,7 @@
                 <p>
                     Let <m>\displaystyle b_n=\frac{1}{n^2}</m>.  Compute <m>\displaystyle \lim_{n\to\infty}\frac{\frac{1}{n^2}}{\frac{1}{2^n}}</m>.
                 </p>
-                <ol label="A">
+                <ol marker="A">
                     <li><m>\infty</m>.</li> 
                     <li><m>\ln(2)</m>.</li>
                     <li><m>1</m>.</li>                    
@@ -228,7 +228,7 @@
             <task>
                 <p>
                     To which of the following should we compare <m>\displaystyle \{a_n\}=\left\{\frac{2}{\sqrt{n+3}}\right\}</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle \left\{\frac{1}{n}\right\}</m>.</li>
                         <li><m>\displaystyle \left\{\frac{1}{\sqrt{n}}\right\}</m>.</li>
                         <li><m>\displaystyle \left\{\frac{1}{n^2}\right\}</m>.</li>
@@ -249,7 +249,7 @@
             <task>
                 <p>
                     What is true about <m>\displaystyle \lim_{n\to\infty} \frac{b_n}{a_n}</m> and <m>\displaystyle \lim_{n\to\infty} \frac{a_n}{b_n}</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li>Their values are reciprocals.</li>
                         <li>Their values negative reciprocals.</li>
                         <li>They are both positive finite constants.</li>
@@ -280,7 +280,7 @@
             <task>
                 <p>
                     To which of the following should we compare <m>\displaystyle \{x_n\}=\left\{\frac{3}{n^2+8n+5} \right\}</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle \left\{\frac{1}{n}\right\}</m>.</li>
                         <li><m>\displaystyle \left\{\frac{1}{\sqrt{n}}\right\}</m>.</li>
                         <li><m>\displaystyle \left\{\frac{1}{n^2}\right\}</m>.</li>
@@ -359,7 +359,7 @@
             <task>
                 <p>
                     Suppose that <m>\displaystyle \sum_{n=0}^\infty a_n</m> converges.  What could be said about <m>\{b_n\}</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle \sum_{n=0}^\infty b_n</m> converges.</li>
                         <li><m>\displaystyle \sum_{n=0}^\infty b_n</m> diverges.</li>
                         <li>Whether or not <m>\displaystyle \sum_{n=0}^\infty b_n</m> converges or diverges cannot be determined with this information.</li>
@@ -370,7 +370,7 @@
             <task>
                 <p>
                     Suppose that <m>\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{1}{n+1}</m> which diverges. Which of the following statements are true?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle 0\leq \frac{1}{2n^2} \leq \frac{1}{n+1}</m> for each <m>n \geq 1</m> and <m>\displaystyle \sum_{n=1}^\infty \frac{1}{2n^2}</m> is a convergent <m>p</m>-series where <m>p=2</m>.</li>
                         <li><m>\displaystyle 0\leq \frac{1}{2n}\leq \frac{1}{n+1}</m> for each <m>n \geq 1</m> and <m>\displaystyle \sum_{n=1}^\infty \frac{1}{2n}</m> is a divergent <m>p</m>-series where <m>p=1</m>.</li>
                     </ol>
@@ -380,7 +380,7 @@
             <task>
                 <p>
                     Suppose that <m>\displaystyle \sum_{n=0}^\infty a_n</m> was some series that diverges.  What could be said about <m>\{b_n\}</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle \sum_{n=0}^\infty b_n</m> converges.</li>
                         <li><m>\displaystyle \sum_{n=0}^\infty b_n</m> diverges.</li>
                         <li>Whether or not <m>\displaystyle \sum_{n=0}^\infty b_n</m> converges or diverges cannot be determined with this information.</li>
@@ -393,7 +393,7 @@
             <task>
                 <p>
                     Suppose that <m>\displaystyle \sum_{n=0}^\infty b_n</m> diverges.  What could be said about <m>\{a_n\}</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle \sum_{n=0}^\infty a_n</m> converges.</li>
                         <li><m>\displaystyle \sum_{n=0}^\infty a_n</m> diverges.</li>
                         <li>Whether or not <m>\displaystyle \sum_{n=0}^\infty a_n</m> converges or diverges cannot be determined with this information.</li>
@@ -404,7 +404,7 @@
             <task>
                 <p>
                     Suppose that <m>\displaystyle \sum_{n=0}^\infty b_n=\sum_{n=0}^\infty \frac{1}{3^n}</m> which converges. Which of the following statements are true?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle 0\leq \frac{1}{3^n} \leq \frac{1}{2^n}</m> for each <m>n</m> and <m>\displaystyle \sum_{n=0}^\infty \frac{1}{2^n}</m> is a convergent geometric series where <m>\displaystyle |r|=\frac{1}{2} \lt 1</m>.</li>
                         <li><m>\displaystyle 0\leq \frac{1}{3^n} \leq 1</m> for each <m>n</m> and <m>\displaystyle \sum_{n=0}^\infty 1</m> diverges by the Divergence Test.</li>
                     </ol>
@@ -414,7 +414,7 @@
             <task>
                 <p>
                     Suppose that <m>\displaystyle \sum_{n=0}^\infty b_n</m> was some series that converges.  What could be said about <m>\{a_n\}</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle \sum_{n=0}^\infty a_n</m> converges.</li>
                         <li><m>\displaystyle \sum_{n=0}^\infty a_n</m> diverges.</li>
                         <li>Whether or not <m>\displaystyle \sum_{n=0}^\infty a_n</m> converges or diverges cannot be determined with this information.</li>
@@ -515,7 +515,7 @@
             <task>
                 <p>
                     How might we best utilize <xref ref="fact-SQ6comparesequence"/> to determine the convergence of <m>\displaystyle \sum_{n=0}^\infty a_n</m> or <m>\displaystyle \sum_{n=0}^\infty b_n</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li>Since <m>a_n</m> is sometimes greater than, and sometimes less than <m>b_n</m>, there is no way to utilize <xref ref="fact-SQ6comparesequence"/>.</li>
                         <li>Since initially, we have <m>b_n\leq a_n</m>, we can utilize <xref ref="fact-SQ6comparesequence"/> by assuming <m>a_n\geq b_n</m>.</li>
                         <li>Since we can rewrite <m>\displaystyle \sum_{n=0}^\infty a_n=\sum_{n=0}^{99} a_n+\sum_{n=100}^\infty a_n</m> and <m>\displaystyle \sum_{n=0}^\infty b_n=\sum_{n=0}^{99} b_n+\sum_{n=100}^\infty b_n</m> and <m>\displaystyle \sum_{n=0}^{99} a_n, \sum_{n=0}^{99} b_n</m> are necessarily finite, we can compare <m>\displaystyle \sum_{n=100}^\infty a_n, \sum_{n=100}^\infty b_n</m> with <xref ref="fact-SQ6comparesequence"/>.</li>
@@ -558,7 +558,7 @@
             <task>
                 <p>
                     For which value <m>k</m> is <m>\displaystyle\frac{1}{3n}\leq \frac{1}{2n+3}</m> for each <m>n\geq k</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle\frac{1}{3n}\leq \frac{1}{2n+3}</m> for each <m>n\geq k=0</m>.</li>
                         <li><m>\displaystyle\frac{1}{3n}\leq \frac{1}{2n+3}</m> for each <m>n\geq k=1</m>.</li>
                         <li><m>\displaystyle\frac{1}{3n}\leq \frac{1}{2n+3}</m> for each <m>n\geq k=2</m>.</li>
@@ -587,7 +587,7 @@
             <task>
                 <p>
                     Which series should we compare <m>\displaystyle \sum_{n=1}^\infty \frac{1}{n^2+5}</m> to best utilize <xref ref="fact-SQ6directcomparisontest"/>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle\sum_{n=1}^\infty \frac{1}{n}</m>.</li>
                         <li><m>\displaystyle\sum_{n=1}^\infty \frac{1}{n^2}</m>.</li>
                         <li><m>\displaystyle\sum_{n=1}^\infty \frac{1}{2^n}</m>.</li>

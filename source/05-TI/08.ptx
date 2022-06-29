@@ -24,7 +24,7 @@
          <activity>
              <task>
                 <p>What do you notice about <m>\displaystyle \int_{a}^1 \frac{1}{x^2} dx</m> as <m>a</m> approached 0 in <xref ref="activity-T8Exploration1"/>?</p>
-            <ol label="A" cols="2">
+            <ol marker="A" cols="2">
                 <li><p><m>\displaystyle \int_{a}^1 \frac{1}{x^2} dx</m> approaches a finite, non-zero constant.</p></li>
                 <li><p><m>\displaystyle \int_{a}^1 \frac{1}{x^2} dx</m> approaches <m>0</m>.</p></li>
                 <li><p><m>\displaystyle \int_{a}^1 \frac{1}{x^2} dx</m> approaches <m>\infty</m>.</p></li>
@@ -50,7 +50,7 @@
     </activity>
     <activity>
         <p>What do you notice about <m>\displaystyle \int_{1}^a \frac{1}{x^2} dx</m> as <m>a</m> approached <m>\infty</m> in <xref ref="activity-T8Exploration2"/>?</p>
-        <ol label="A">
+        <ol marker="A">
                 <li><p><m>\displaystyle \int_{1}^a \frac{1}{x^2} dx</m> approaches a finite, non-zero constant.</p></li>
                 <li><p><m>\displaystyle \int_{1}^a \frac{1}{x^2} dx</m> approaches <m>0</m>.</p></li>
                 <li><p><m>\displaystyle \int_{1}^a \frac{1}{x^2} dx</m> approaches <m>\infty</m>.</p></li>
@@ -73,7 +73,7 @@
     <activity>
         <task>
             <p>What do you notice about the integral <m>\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx</m> as <m>a</m> approached 0 in <xref ref="activity-T8Exploration3"/>?</p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p><m>\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx</m> approaches a finite, non-zero constant.</p></li>
                 <li><p><m>\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx</m> approaches <m>0</m>.</p></li>
                 <li><p><m>\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx</m> approaches <m>\infty</m>.</p></li>
@@ -100,7 +100,7 @@
     <activity>
         <task>
             <p>What do you notice the integral <m>\displaystyle \int_{1}^a \frac{1}{\sqrt{x}} dx</m> as <m>a</m> approached <m>\infty</m> in <xref ref="activity-T8Exploration4"/>?</p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p><m>\displaystyle \int_{1}^a \frac{1}{\sqrt{x}} dx</m> approaches a finite, non-zero constant.</p></li>
                 <li><p><m>\displaystyle \int_{1}^a \frac{1}{\sqrt{x}} dx</m> approaches <m>0</m>.</p></li>
                 <li><p><m>\displaystyle \int_{1}^a \frac{1}{\sqrt{x}} dx</m> approaches <m>\infty</m>.</p></li>
@@ -118,7 +118,7 @@
     </definition>
     <activity xml:id="activity-T8Fabound">
         <p>Which of the following is <m>\displaystyle \int_1^a \frac{1}{x^2} dx</m>?</p>
-        <ol label="A">
+        <ol marker="A">
                     <li><m>-\frac{1}{x}+C</m></li>
                     <li><m>-\frac{1}{a}+C</m></li>
                     <li><m>-\frac{1}{x}+1</m></li>
@@ -128,7 +128,7 @@
     </activity>
     <activity xml:id="activity-T8Fevaluatexcube">
         <p>Using your choice in <xref ref="activity-T8Fabound"/>, what is <me>\lim_{a\to \infty} \int_1^a \frac{1}{x^2} dx?</me></p>
-        <ol label="A">
+        <ol marker="A">
             <li><m>0</m></li>
             <li><m>1</m></li>
             <li><m>2</m></li>
@@ -142,7 +142,7 @@
         </task>
         <task>
             <p>Which of the following is true about <m>\int_{\pi/2}^\infty \cos(x)dx</m>?</p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p><m>\displaystyle \int_{\pi/2}^\infty \cos(x)dx</m> is convergent.</p></li>
                 <li><p><m>\displaystyle \int_{\pi/2}^\infty \cos(x)dx</m> is divergent</p></li>
                 <li><p>More information is needed.</p></li>
@@ -177,7 +177,7 @@
     <activity xml:id="activity-TI8prule1">
         <task>
             <p>If <m>0&lt; p&lt; 1</m>, which of the following statements must be true? Select all that apply.</p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p><m>1-p&lt; 0</m>.</p></li>
                 <li><p><m>1-p&gt; 0</m>.</p></li>
                 <li><p><m>1-p&lt; 1</m>.</p></li>
@@ -187,7 +187,7 @@
         </task>
         <task>
             <p>If <m>p>1</m>, which of the following statements must be true? Select all that apply.</p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p><m>1-p&lt; 0</m>.</p></li>
                 <li><p><m>1-p&gt; 0</m>.</p></li>
                 <li><p><m>1-p&lt; 1</m>.</p></li>
@@ -199,14 +199,14 @@
     <activity xml:id="activity-TI8prule2">
         <task>
             <p>If <m>0&lt; p&lt; 1</m>, which of the following statements must be true?</p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p><m>\displaystyle \int_0^1 \frac{1}{x^p} dx</m> converges.</p></li>
                 <li><p><m>\displaystyle \int_0^1 \frac{1}{x^p} dx</m> diverges.</p></li>
             </ol>
         </task>
         <task>
             <p>If <m>p>1</m>, which of the following statements must be true?</p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p><m>\displaystyle \int_0^1 \frac{1}{x^p} dx</m> converges.</p></li>
                 <li><p><m>\displaystyle \int_0^1 \frac{1}{x^p} dx</m> diverges.</p></li>
             </ol>            
@@ -216,7 +216,7 @@
         <introduction><p>Consider when <m>p=1</m>. Then <m>\frac{1}{x^p}=\frac{1}{x}</m> and <m>\displaystyle \int \frac{1}{x^p}\ dx=\displaystyle \int \frac{1}{x}\ dx=\ln|x|+C</m>.</p></introduction>
         <task>
             <p>What can we conclude about <m>\displaystyle \int_1^\infty \frac{1}{x} dx</m>?</p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p><m>\displaystyle \int_1^\infty \frac{1}{x} dx</m> converges.</p></li>
                 <li><p><m>\displaystyle \int_1^\infty \frac{1}{x} dx</m> diverges.</p></li>
                 <li><p>There is not enough information to determine whether this integral converges or diverges.</p></li>
@@ -224,7 +224,7 @@
         </task>
         <task>
             <p>What can we conclude about <m>\displaystyle \int_0^1 \frac{1}{x} dx</m>?</p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p><m>\displaystyle \int_0^1 \frac{1}{x} dx</m> converges.</p></li>
                 <li><p><m>\displaystyle \int_0^1 \frac{1}{x} dx</m> diverges.</p></li>
                 <li><p>There is not enough information to determine whether this integral converges or diverges.</p></li>
@@ -289,7 +289,7 @@
             </figure>    
 	    <p>
                 If <m>\displaystyle \int_1^\infty f(x) dx</m> is convergent, what can we say about <m>g(x), h(x)</m>?
-                <ol label="A">
+                <ol marker="A">
                     <li><m>\displaystyle \int_1^\infty g(x) dx</m> and <m>\displaystyle \int_1^\infty h(x) dx</m> are both convergent.</li> 
                     <li><m>\displaystyle \int_1^\infty g(x) dx</m> and <m>\displaystyle \int_1^\infty h(x) dx</m> are both divergent.</li>
                     <li>Whether or not <m>\displaystyle \int_1^\infty g(x) dx</m> and <m>\displaystyle \int_1^\infty h(x) dx</m> are convergent or divergent cannot be determined.</li>
@@ -336,7 +336,7 @@
                     </image>
             </figure>    
                 If <m>\displaystyle \int_1^\infty f(x) dx</m> is divergent, what can we say about <m>g(x), h(x)</m>?
-                <ol label="A">
+                <ol marker="A">
                     <li><m>\displaystyle \int_1^\infty g(x) dx</m> and <m>\displaystyle \int_1^\infty h(x) dx</m> are both convergent.</li>
                     <li><m>\displaystyle \int_1^\infty g(x) dx</m> and <m>\displaystyle \int_1^\infty h(x) dx</m> are both divergent.</li>
                     <li>Whether or not <m>\displaystyle \int_1^\infty g(x) dx</m> and <m>\displaystyle \int_1^\infty h(x) dx</m> are convergent or divergent cannot be determined.</li>
@@ -386,7 +386,7 @@
                     </image>
             </figure>    
                 If <m>\displaystyle \int_0^1 f(x) dx</m> is convergent, what can we say about <m>g(x), h(x)</m>?
-                <ol label="A">
+                <ol marker="A">
                     <li><m>\displaystyle \int_0^1 g(x) dx</m> and <m>\displaystyle \int_0^1 h(x) dx</m> are both convergent.</li>
                     <li><m>\displaystyle \int_0^1 g(x) dx</m> and <m>\displaystyle \int_0^1 h(x) dx</m> are both divergent.</li>
                     <li>Whether or not <m>\displaystyle \int_0^1 g(x) dx</m>  and <m>\displaystyle \int_0^1 h(x) dx</m> are  convergent or divergent cannot be determined.</li>
@@ -435,7 +435,7 @@
                     </image>
             </figure>    
                 If <m>\displaystyle \int_0^1 f(x) dx</m> is dinvergent, what can we say about <m>g(x), h(x)</m>?
-                <ol label="A">
+                <ol marker="A">
                     <li><m>\displaystyle \int_0^1 g(x) dx</m> and <m>\displaystyle \int_0^1 h(x) dx</m> are both convergent.</li>
                     <li><m>\displaystyle \int_0^1 g(x) dx</m> and <m>\displaystyle \int_0^1 h(x) dx</m> are both divergent.</li>
                     <li>Whether or not <m>\displaystyle \int_0^1 g(x) dx</m>  and <m>\displaystyle \int_0^1 h(x) dx</m> are  convergent or divergent cannot be determined.</li>
@@ -463,7 +463,7 @@
             <introduction>
             <p>
                 Compare <m>\frac{1}{x^3+1}</m> to one of the following functions where <m>x>2</m> and use this to determine if <m>\displaystyle \int_2^\infty \frac{1}{x^3+1}dx</m> is convergent or divergent.
-                <ol label="A">
+                <ol marker="A">
                     <li><m>\displaystyle\frac{1}{x}</m>.</li>
                     <li><m>\displaystyle\frac{1}{\sqrt{x}}</m>.</li>
                     <li><m>\displaystyle\frac{1}{x^2}</m>.</li>

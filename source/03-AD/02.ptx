@@ -30,7 +30,7 @@ Notice that this is obtained by writing the tangent line to <m>f(x)</m> at <m>(a
 
 <task>    
    <p> Find the equation of the tangent line to <m>\ln(x)</m> at <m>x=1</m>. This will be your linear approximation <m>L(x)</m>. What do you get for <m>L(x)</m>? </p>
-  <ol label="A">
+  <ol marker="A">
                 <li><p>  <m>L(x) = x</m> </p></li>
                   <li><p>  <m>L(x) = x+1</m></p></li> 
                   <li><p>  <m>L(x)= x - 1</m> </p></li>     
@@ -38,7 +38,7 @@ Notice that this is obtained by writing the tangent line to <m>f(x)</m> at <m>(a
     </ol>      
     </task>
     <task><p>As 1.1 is close to 1, we can use <m>L(1.1)</m> to approximate <m>\ln(1.1)</m>. What approximation do you get? </p> 
-  <ol label="A">
+  <ol marker="A">
                 <li><p>  <m>\ln(1.1) \approx 1.1 </m> </p></li>
                  <li><p>  <m>\ln(1.1) \approx 2.1 </m> </p></li>
                  <li><p>  <m>\ln(1.1) \approx 0.1 </m> </p></li>
@@ -106,7 +106,7 @@ Conclude that because the graph of <m>\ln(x)</m> has a certain shape, the graph 
         <introduction><p>In this activity you will approximate power functions near <m>x=1</m>.</p></introduction>
 <task> <p>
 Find the tangent line approximation to <m>x^2</m> at  <m>x=1</m>.</p>
-    <ol label="A">
+    <ol marker="A">
                 <li><p>  <m>L(x) = 2x</m> </p></li>
                   <li><p>  <m>L(x) = 2x+1</m></p></li> 
                   <li><p>  <m>L(x)= 2x - 1</m> </p></li>     
@@ -184,7 +184,7 @@ graph of <m>y=p(x)</m> near <m>x=7</m>.
     </p>
     </introduction>
     <task><p>We want to choose <m>a,b,c</m> such that our quadratic polynomial resembles <m>f(x)</m> at <m>x=1</m>. First thing, we want <m>f(1)=q(1)</m>. What equation in <m>a,b,c</m> does this condition give you?</p> 
-      <ol label="A">
+      <ol marker="A">
                 <li><p>  <m>a+b+c = 1</m> </p></li>
                   <li><p>  <m>a+b+c = 0</m></p></li> 
                   <li><p>  <m>c = 0</m> </p></li>     

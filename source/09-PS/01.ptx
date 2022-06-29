@@ -18,7 +18,7 @@
         <task>
             <p>
                 If <m>x=2</m>, then <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{2^n}{n!}</m>.  What can be said about this series?
-                <ol label="A">
+                <ol marker="A">
                     <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{2^n}{n!}</m> converges.</li>
                     <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{2^n}{n!}</m> diverges.</li>
                     <li>None of the  techniques we have learned so far allow us to conclude whether <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{2^n}{n!}</m> converges or diverges.</li>
@@ -28,7 +28,7 @@
         <task>
             <p>
                 If <m>x=-100</m>, then <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{(-100)^n}{n!}</m>.  What can be said about this series?
-                <ol label="A">
+                <ol marker="A">
                     <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{(-100)^n}{n!}</m> converges.</li>
                     <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{(-100)^n}{n!}</m> diverges.</li>
                     <li>None of the  techniques we have learned so far allow us to conclude whether <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{(-100)^n}{n!}</m> converges or diverges.</li>
@@ -39,7 +39,7 @@
         <task>
             <p>
                 Suppose that <m>x</m> were some arbitrary real number.  What can be said about this series?
-                <ol label="A">
+                <ol marker="A">
                     <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m> converges.</li>
                     <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m> diverges.</li>
                     <li>None of the  techniques we have learned so far allow us to conclude whether <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m> converges or diverges.</li>
@@ -59,7 +59,7 @@
             <task>
                 <p>
                     To estimate <m>f(2)</m>, we consider <m>f_{5}(x)=\displaystyle \sum_{n=0}^5 \frac{1}{n!}x^n=1+x+\frac{1}{2}x^2+\frac{1}{6}x^3+\frac{1}{24}x^4+\frac{1}{120}x^5.</m>  What is <m>f_5(2)</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>f_5(2)=4\left(1+x+\frac{1}{2}x^2+\frac{1}{6}x^3+\frac{1}{24}x^4+\frac{1}{120}x^5\right)=4+4x+2x^2+\frac{2}{3}x^3+\frac{1}{6}x^4+\frac{1}{30}x^5</m>.</li>
                         <li><m>f_5(2)=1+2+\frac{1}{2}2+\frac{1}{6}2+\frac{1}{24}2+\frac{1}{120}2=\frac{133}{30}\approx 4.4333</m>.</li>
                         <li><m>f_5(2)=1+2+\frac{1}{2}2^2+\frac{1}{6}2^3+\frac{1}{24}2^4+\frac{1}{120}2^5=\frac{109}{15}\approx 7.2667</m>.</li>
@@ -69,7 +69,7 @@
             <task>
                 <p>
                     To which of these values is <m>f_5(2)</m> the closest?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>(2)^2</m>.</li>
                         <li><m>\sqrt{2}</m>.</li>
                         <li><m>e^2</m>.</li>
@@ -117,7 +117,7 @@
                 
             Which of the following plots does the plot <m>y=f_5(x)</m> most resemble?
                 
-                <ol label="A">
+                <ol marker="A">
                     <li>
                         <m>y=x^2</m>.
                         <figure>
@@ -401,7 +401,7 @@
                 
                 
                 
-                <ol label="A">
+                <ol marker="A">
                     <li><m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m>.</li>
                     <li><m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^{n-1}</m>.</li>
                     <li><m>\displaystyle n\sum_{n=0}^\infty \frac{1}{n!}x^{n-1}</m>.</li>
@@ -414,7 +414,7 @@
             <task>
                 <p>
                     For which of the following is <m>y=\frac{dy}{dx}</m>?
-                <ol label="A">
+                <ol marker="A">
                         <li><m>y=x^2</m>.</li>
                         <li><m>y=\sqrt{x}</m>.</li>
                         <li><m>y=e^x</m>.</li>

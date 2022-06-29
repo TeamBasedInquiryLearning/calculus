@@ -14,7 +14,7 @@
             <statement>
                 <p>
                     Consider <m>\displaystyle\int \sin(x)\cos(x) \, dx</m>.  Which strategy would you choose to evaluate this integral?
-                    <ol label="A">
+                    <ol marker="A">
                         <li>The method of substitution</li>
                         <li>Integration by parts</li>
                         <li>Other (specify your strategy)</li>
@@ -26,7 +26,7 @@
             <statement>
                 <p>
                     Consider <m>\displaystyle\int \sin^2(x)\cos(x) \, dx</m>.  Which strategy would you choose to evaluate this integral?
-                    <ol label="A">
+                    <ol marker="A">
                         <li>The method of substitution</li>
                         <li>Integration by parts</li>
                         <li>Other (specify your strategy)</li>
@@ -39,7 +39,7 @@
             <statement>
                 <p>
                     Consider <m>\displaystyle\int \sin^2(x)\cos^2(x) \, dx</m>.  Which strategy would you choose to evaluate this integral?
-                    <ol label="A">
+                    <ol marker="A">
                         <li>The method of substitution</li>
                         <li>Integration by parts</li>
                         <li>Other (specify your strategy)</li>
@@ -53,7 +53,7 @@
             <statement>
                 <p>
                     Let's consider <m>\displaystyle\int \sin^2(x)\cos^2(x) \, dx</m> again.
-                    <ol label="A">
+                    <ol marker="A">
                         <li>Use the fact that <m>\cos^2(\theta)=\displaystyle\frac{1+cos(2\theta)}{2}</m> and <m>\sin^2(\theta)=\displaystyle\frac{1-cos(2\theta)}{2}</m> to rewrite the integrand using the above identities to an integral involving <m>\cos^2(2x)</m>. </li>
                         <li>Use the above identities to rewrite this new integrand as one involving <m>\cos(4x)</m>. </li>
                         <li>Evaluate the integral.</li>
@@ -67,7 +67,7 @@
             <statement>
                 <p>
                     Consider <m>\displaystyle\int \sin^m(x)\cos^n(x) \, dx</m>, where <m>m</m> is even and <m>n</m> is odd.  Which strategy would you choose to evaluate this integral?
-                    <ol label="A">
+                    <ol marker="A">
                         <li>Rewrite sine in terms of cosine by using a double-angle/half-angle identity.</li>
                         <li>Rewrite cosine in terms of sine by using a double-angle/half-angle identity.</li>
                         <li>Rewrite cosine in terms of sine by using a pythagorean identity.</li>
@@ -81,7 +81,7 @@
             <statement>
                 <p>
                     Consider <m>\displaystyle\int \sin^m(x)\cos^n(x) \, dx</m>, where <m>m</m> and <m>n</m> are both odd and <m>m\geq n</m>.  Which strategy would you choose to evaluate this integral?
-                    <ol label="A">
+                    <ol marker="A">
                         <li>Rewrite sine in terms of cosine by using a pythagorean identity.</li>
                         <li>Rewrite cosine in terms of sine by using a double-angle/half-angle identity.</li>
                         <li>Rewrite cosine in terms of sine by using a pythagorean identity.</li>
@@ -99,7 +99,7 @@
             <statement>
                 <p>
                     Consider <m>\displaystyle\int \sin^m(x)\cos^n(x) \, dx</m>, where <m>m</m> and <m>n</m> are both even and <m>m\geq n</m>.  Which strategy would you choose to evaluate this integral?
-                    <ol label="A">
+                    <ol marker="A">
                         <li>Rewrite sine in terms of cosine by using a pythagorean identity.</li>
                         <li>Rewrite cosine in terms of sine by using a pythagorean identity.</li>
                         <li>Rewrite everything in terms of cosine by using a double-angle/half-angle identity.</li>                        
@@ -114,7 +114,7 @@
             <statement>
                 <p>
                     Consider <m>\displaystyle\int \sin^4(x)\cos^4(x) \, dx</m>.  Which would be the most useful way to rewrite the integral?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle\int (1-\cos^2(x))^2\cos^4(x) \, dx</m></li>
                         <li><m>\displaystyle\int \sin^4(x)(1-\sin^2(x))^2 \, dx</m></li>
                         <li><m>\displaystyle\int \left(\frac{1-\cos(2x)}{2}\right)^2\left(\frac{1+\cos(2x)}{2}\right)^2 \, dx</m></li>                        
@@ -128,7 +128,7 @@
             <statement>
                 <p>
                     Consider <m>\displaystyle\int \sin^3(x)\cos^5(x) \, dx</m>.  Which would be the most useful way to rewrite the integral?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle\int (1-\cos^2(x))\sin(x)\cos^5(x) \, dx</m></li>
                         <li><m>\displaystyle\int \sin^3(x)\left(\frac{1+\cos(2x)}{2}\right)^2\cos(x) \, dx</m></li>
                         <li><m>\displaystyle\int \sin^3(x)(1-\sin^2(x))^2\cos(x) \, dx</m></li>                        
@@ -155,7 +155,7 @@ We might also use some other trigonometric identities to manipulate our integran
             <statement>
                 <p>
                     Consider <m>\displaystyle\int \sin(\theta)\sin(3\theta) \, d\theta</m>.
-                    <ol label="A">
+                    <ol marker="A">
                         <li>Find an identity from the table above which could be used to transform our integrand.</li>
                         <li>Rewrite the integrand using the selected identity.</li>
                         <li>Evaluate the integral.</li>                        

@@ -53,7 +53,7 @@
             
             <task>
                 <p>What is the area of the circular <q>base</q> of the solid at <m>x=0</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\pi\cdot 0^2</m>.</li>
                         <li><m>\pi\cdot 1^2</m>.</li>
                         <li><m>\pi\cdot 6^2</m>.</li>
@@ -65,7 +65,7 @@
             </task>
             <task>
                 <p>What is the area of the circular <q>base</q> of the solid at <m>x=6</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\pi\cdot 0^2</m>.</li>
                         <li><m>\pi\cdot 1^2</m>.</li>
                         <li><m>\pi\cdot 6^2</m>.</li>
@@ -123,7 +123,7 @@
                 
                 <p>
                     What is the area of the <q>side</q> of the cylinder with radius <m>f(0)=1</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>2 \pi\cdot 0\cdot 3</m>.</li>
                         <li><m>2 \pi\cdot 1\cdot 3</m>.</li>
                         <li><m>2 \pi\cdot 3\cdot 3</m>.</li>
@@ -182,7 +182,7 @@
                 
                 <p>
                     What is the area of the <q>side</q> of the cylinder with radius <m>f(3)=4</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>2 \pi\cdot 0\cdot 3</m>.</li>
                         <li><m>2 \pi\cdot 1\cdot 3</m>.</li>
                         <li><m>2 \pi\cdot 3\cdot 3</m>.</li>
@@ -267,7 +267,7 @@
             <task>
                 <p>
                     Which of the following Reimann sums best approximates the <q>side</q> area of our solid?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle \sum \pi x_i^2\Delta x</m></li>
                         <li><m>\displaystyle \sum \pi (x_i+1)^2\Delta x</m></li>
                         <li><m>\displaystyle \sum 2\pi x_i\Delta x</m></li>
@@ -279,7 +279,7 @@
             <task>
                 <p>
                     Which of the following integrals computes the <q>side</q> area of our solid?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle \int_0^6 \pi x^2dx</m></li>
                         <li><m>\displaystyle \int_0^6 \pi (x+1)^2dx</m></li>
                         <li><m>\displaystyle \int_0^6 2\pi xdx</m></li>
@@ -354,7 +354,7 @@
             
             <task>
                 <p>What is the area of the circular <q>base</q> of the solid at <m>x=0</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\pi\cdot 0^2</m>.</li>
                         <li><m>\pi\cdot 2^2</m>.</li>
                         <li><m>\pi\cdot 4^2</m>.</li>
@@ -365,7 +365,7 @@
             </task>
             <task>
                 <p>What is the area of the circular <q>base</q> of the solid at <m>x=4</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\pi\cdot 0^2</m>.</li>
                         <li><m>\pi\cdot 2^2</m>.</li>
                         <li><m>\pi\cdot 4^2</m>.</li>
@@ -421,7 +421,7 @@
                 
                 <p>
                     What is the area of the <q>side</q> of the cylinder with radius <m>f(0)=0</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>2 \pi\cdot 0\cdot 2</m>.</li>
                         <li><m>2 \pi\cdot 2\cdot 2</m>.</li>
                         <li><m>2 \pi\cdot \sqrt{2}\cdot 2</m>.</li>
@@ -477,7 +477,7 @@
                 
                 <p>
                     What is the area of the <q>side</q> of the cylinder with radius <m>f(2)=\sqrt{2}</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>2 \pi\cdot 0\cdot 2</m>.</li>
                         <li><m>2 \pi\cdot 2\cdot 2</m>.</li>
                         <li><m>2 \pi\cdot \sqrt{2}\cdot 2</m>.</li>
@@ -564,7 +564,7 @@
             <task>
                 <p>
                     Which of the following Reimann sums best approximates the <q>side</q> area of our solid?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle \sum 2\pi x_i\Delta x</m></li>
                         <li><m>\displaystyle \sum 2\pi (\sqrt{x_i})\Delta x</m></li>
                         <li><m>\displaystyle \sum \pi x_i^2\Delta x</m></li>
@@ -577,7 +577,7 @@
             <task>
                 <p>
                     Which of the following integrals computes the <q>side</q> area of our solid?
-                    <ol label="A">
+                    <ol marker="A">
                         
                         <li><m>\displaystyle \int_0^4 2\pi xdx</m></li>
                         <li><m>\displaystyle \int_0^4 2\pi (\sqrt{x})dx</m></li>

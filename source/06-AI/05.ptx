@@ -20,7 +20,7 @@
             </task>
             <task>
                 <p>Consider the piece sitting on top the slice made at height <m>h=5</m>.  Using a density of <m>\delta(5)=15</m>  kg/m<m>^3</m>, and the volume you found, estimate the mass of this piece.</p>
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>500\cdot 5=2500</m> kg.</li>
                         <li><m>500\cdot 15=7500</m> kg.</li>
                         <li><m>500\cdot 15\cdot 5=37500</m> kg.</li>
@@ -165,7 +165,7 @@
             <statement>
                 <p>
                 Which of the estimates computed in <xref ref="activity-AI4rectangularprism4pieces"/> and <xref ref="activity-AI4rectangularprism5pieces"/> is a better estimate of the mass of the prism?
-                <ol label="A">
+                <ol marker="A">
                     <li><xref ref="activity-AI4rectangularprism4pieces"/>, 4 pieces is a better estimate.</li>
                     <li><xref ref="activity-AI4rectangularprism5pieces"/>, 5 pieces is a better estimate.</li>
                 </ol>
@@ -206,7 +206,7 @@
             <task>
                 <p>
                     Consider the piece sitting atop the slice made at height <m>h_i</m>.  Using <m>\delta(h_i)=10+h_i</m> as the estimate for the density of this piece, what is the mass of this piece?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>(10+h)100\cdot h_i</m>.</li>
                         <li><m>(10+\Delta h)100\cdot h_i</m>.</li>
                         <li><m>(10+h_i)100\cdot \Delta h</m>.</li>
@@ -264,7 +264,7 @@
             <task>
                 <p>
                     Let <m>r_2</m> be the radius of the circular cross section of the cone, made at height 30 inches.  Recall that <m>\Delta ABC, \Delta AB'C'</m> are similar triangles, what is <m>r_2</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li>15 inches.</li>
                         <li>7.5 inches.</li>
                         <li>30 inches.</li>
@@ -453,7 +453,7 @@
             <task>
                 <p>
                     Consider the piece sitting atop the slice made at height <m>h_i</m>.  Using <m>\delta(h_i)=15+\sqrt{h_i}</m> as the estimate for the density of this cylinder, what is the mass of this cylinder?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>(15+\sqrt{h})\pi r_i^2\cdot \Delta h</m>.</li>
                         <li><m>(15+\sqrt{h_i})\pi r_i^2\cdot \Delta h</m>.</li>
                         <li><m>(15+\Delta h)\pi r_i^2\cdot \Delta h_i</m>.</li>
@@ -502,7 +502,7 @@
             
             <task>
                  <p>If we used prisms of width <m>\Delta x</m> to approximate this solid, what is the mass of the slice associated with <m>x_i?</m>
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>A(x)\delta(x)\Delta x</m>.</li>
                         <li><m>\pi A(x)^2\delta(x_i)\Delta x</m>.</li>
                         <li><m>A(x_i)\delta(x_i)\Delta x</m>.</li>
@@ -739,7 +739,7 @@
                 </p>
                 <p>
                     Which of the following describes the <m>x</m>-value where the center of gravity of these blocks lie?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle\frac{1+6}{2}=3.5</m>.</li>
                         <li><m>\displaystyle\frac{1+2+6}{3}=3</m>.</li>
                         <li><m>\displaystyle\frac{2\cdot1+3\cdot2+1\cdot6}{6}\approx 2.3333</m>.</li>

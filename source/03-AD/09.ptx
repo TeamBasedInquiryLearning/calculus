@@ -24,7 +24,7 @@
     <task>
     <p> In the limit, you can cancel common factors. After you simplify the fraction, what is this limit equal to?
         </p>
-        <ol label="A">
+        <ol marker="A">
                 <li><p>  2 </p></li>
                   <li><p>  1 </p></li> 
                   <li><p>  <m>\frac{1}{2}</m> </p></li>     
@@ -46,7 +46,7 @@
     <task>
     <p>  Notice that <m>\displaystyle \lim_{x\to 0} \frac{e^{2+x}-e^2}{x}</m> is the limit definition of the derivative of <m>e^x</m> at <m>x=2</m> (where <m>x</m> was used for <m>h</m>). Given these observations, what is this limit equal to?
         </p>
-    <ol label="A">
+    <ol marker="A">
                 <li><p>  2 </p></li>
                   <li><p>  <m>e</m> </p></li> 
                   <li><p>  <m>e^2</m> </p></li>     
@@ -56,7 +56,7 @@
     <task>
     <p>  Consider <m>\displaystyle \lim_{x\to 0}  \frac{\ln(1+x)}{x}</m>. This limit is also the limit definition of some derivative at a point. What is the value of this limit?
         </p>
-    <ol label="A">
+    <ol marker="A">
                 <li><p>  1 </p></li>
                   <li><p> 0 </p></li> 
                   <li><p>  <m>\ln(2)</m> </p></li>     
@@ -85,7 +85,7 @@
     <task>
     <p> You can manipulate this fraction algebraically by dividing numerator and denominator by <m>x^2</m>. Notice that <m>\pm \frac{1}{x^2} \to 0</m> as <m>x \to \infty </m>. So after you manipulate and simplify the fraction, what is this limit equal to?
         </p>
-        <ol label="A">
+        <ol marker="A">
                 <li><p>  2 </p></li>
                   <li><p>  1 </p></li> 
                   <li><p>  <m>\frac{1}{2}</m> </p></li>     
@@ -220,7 +220,7 @@ L'H&#244;ptial's Rule does not apply.
     </task>
     <task>
     <p>We need to use algebra to handle this limit. Informally, we would like to cancel the highest powers at the numerator and denominator. Look at the denominator, <m>\sqrt{x^2 +2}</m>. We want to factor out an <m>x^2</m> under the square root. What do you get? </p>
-        <ol label="A">
+        <ol marker="A">
                 <li><p>  <m>\sqrt{ x^2\left(1 +\frac{2}{x}\right) } </m>  </p></li>
                  <li><p>  <m>\sqrt{ x^2\left(1 +\frac{2}{x^2}\right) } </m>  </p></li>
                   <li><p>  <m>\sqrt{ x^2\left(1 + x \right)} </m>  </p></li> 

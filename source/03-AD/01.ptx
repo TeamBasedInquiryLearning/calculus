@@ -28,7 +28,7 @@ Notice that this is the linear function with slope <m>f'(a)</m> and passing thro
       <p>For the following functions, find the required tangent line.</p>
     </introduction>
           <task> <p> Find the tangent line to <m>f(x) = \ln(x)</m> at <m>x=1</m></p>
-               <ol label="A">
+               <ol marker="A">
                 <li><p>  <m>L(x) = x</m> </p></li>
                   <li><p>  <m>L(x) = x+1</m></p></li> 
                   <li><p>  <m>L(x)= x - 1</m> </p></li>     
@@ -36,7 +36,7 @@ Notice that this is the linear function with slope <m>f'(a)</m> and passing thro
     </ol>      
           </task>
            <task> <p> Find the tangent line to <m>f(x) = e^x</m> at <m>x=0</m></p>
-               <ol label="A">
+               <ol marker="A">
                 <li><p>  <m>L(x) = x</m> </p></li>
                   <li><p>  <m>L(x) = x+1</m></p></li> 
                   <li><p>  <m>L(x)= x - 1</m> </p></li>     
@@ -133,7 +133,7 @@ Acceleration: <m>-18</m> miles per <m>s^2</m>
       <p>
           Consider the speed of a particle. What is the behavior of the speed in relation to velocity and acceleration? </p>
     </introduction>
-    <ol label="A">
+    <ol marker="A">
                 <li><p>  The speed is always positive and it is increasing when the velocity and the acceleration have the same sign. </p></li>
                 <li><p>  The speed is positive when the velocity is positive and negative when the velocity is negative. </p></li>
                 <li><p>  The speed is positive when the acceleration is positive and negative when the acceleration is negative. </p></li>

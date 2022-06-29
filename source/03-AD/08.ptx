@@ -132,7 +132,7 @@
           What is the quantity to be optimized in this problem?
 <!--           Find a formula for this quantity in terms of <m>x</m> and <m>y</m>. -->
         </p>
-<ol label="A">
+<ol marker="A">
                 <li><p>  maximize volume (V) </p></li>
 <li><p>  maximize the girth plus length (L) </p></li>
             <li><p>  minimize volume (V) </p></li>
@@ -140,7 +140,7 @@
     </ol>  
 </task>
  <task><p>  Which formula below represents the quantity you want to optimize in terms of <m>x</m> and <m>y</m>?</p>
-        <ol label="A">
+        <ol marker="A">
                 <li><p>  <m>V=x^2y</m> </p></li>
 <li><p> <m>V=xy^2</m> </p></li>
             <li><p>  <m>L=2x+y</m> </p></li>
@@ -155,7 +155,7 @@
           we assume that we will actually need the girth plus length (L) to equal 108 inches.
           What equation do we have involving <m>x</m> and <m>y</m>?
         </p>
-          <ol label="A">
+          <ol marker="A">
                 <li><p>  <m>108=4x+y</m> </p></li>
 <li><p> <m>108 = 2x +y</m> </p></li>
             <li><p>  <m>108 = x^2 +y</m> </p></li>
@@ -163,7 +163,7 @@
     </ol>  
 </task>
 <task><p>The equation above gives the relationship between  <m>x</m> and <m>y</m>. For ease of notation, solve this equation for <m>y</m> as a function on <m>x</m> and then find a formula for the volume of the parcel as a function of a the single variable <m>x</m>. What is the formula for <m>V(x)</m>? </p>
-       <ol label="A">
+       <ol marker="A">
                 <li><p>  <m>V(x) = x^2 (108-4x)</m> </p></li>
 <li><p> <m>V(x) = x(108-4x)^2</m> </p></li>
             <li><p> <m>V(x) =x ^2 (108-2x)</m> </p></li>
@@ -173,7 +173,7 @@
       </task>
   
    <task><p> Over what domain should we consider this function? To answer this question, notice that the constraints that girth plus length is 108 inches produces intervals of possible values for <m>x</m> and <m>y</m>.</p>
-  <ol label="A">
+  <ol marker="A">
                 <li><p>  <m>0 \leq x \leq 108 </m> </p></li>
    <li><p>  <m>0 \leq y \leq 108 </m> </p></li>
                 <li><p>  <m>0 \leq x \leq 27 </m> </p></li>

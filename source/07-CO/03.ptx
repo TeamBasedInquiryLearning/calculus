@@ -48,7 +48,7 @@ one leg parallel to the <m>x</m>-axis, and the other parallel to the <m>y</m>-ax
             <p>
 How long are these legs?
             </p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p><m>3</m> and <m>7</m>.</p></li><!--correct-->
                 <li><p><m>4</m> and <m>8</m>.</p></li>
                 <li><p><m>3</m> and <m>8</m>.</p></li>
@@ -60,7 +60,7 @@ How long are these legs?
 The Pythagorean theorem states that for a right triangle with leg lengths <m>a,b</m>
 and hypotenuse length <m>c</m>, we have...
             </p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p><m>a=b=c</m>.</p></li>
                 <li><p><m>a+b=c</m>.</p></li>
                 <li><p><m>a^2=b^2=c^2</m>.</p></li>
@@ -71,7 +71,7 @@ and hypotenuse length <m>c</m>, we have...
             <p>
 Using the leg lengths and Pythagorean theorem, how long must the red dashed hypotenuse be?
             </p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p><m>\sqrt{20}\approx 4.47</m>.</p></li>
                 <li><p><m>\sqrt{56}\approx 7.48</m>.</p></li><!--correct-->
                 <li><p><m>\sqrt{67}\approx 8.19</m>.</p></li>
@@ -83,7 +83,7 @@ Using the leg lengths and Pythagorean theorem, how long must the red dashed hypo
 Compared with the blue parametric curve connecting the same two points, is the red dashed line
 segement length an overestimate or underestimate?
             </p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p>Overestimate: the blue curve is shorter than the red line.</p></li>
                 <li><p>Underestimate: the blue curve is longer than the red line.</p></li>
                 <li><p>Exact: the blue curve is exactly as long as the red line.</p></li>
@@ -147,7 +147,7 @@ Let <m>\Delta L_1,\Delta L_2,\Delta L_3</m> describe the lengths of each
 of the three segements. Which expression describes the total length of these
 segments?
             </p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p><m>\Delta L_1\times \Delta L_2\times \Delta L_3</m></p></li>
                 <li><p><m>\Delta L_1+ 2\Delta L_2+ 3\Delta L_3</m></p></li>
                 <li><p><m>\sum_{i=1}^{3} \Delta L_i</m></p></li>
@@ -162,7 +162,7 @@ accurately, the change <m>\Delta t_i</m> of <m>t</m> between each point of the s
             <p>
 Which of these is algebraically the same as the above formula for <m>\Delta L_i</m>?
             </p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p><m>\sqrt{\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2}</m></p></li>
                 <li><p><m>\sqrt{\left[\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2\right]\Delta t_i}</m></p></li>
                 <li><p><m>\sqrt{\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2}\Delta t_i</m></p></li>
@@ -173,7 +173,7 @@ Which of these is algebraically the same as the above formula for <m>\Delta L_i<
 Finally, we'll want to increase <m>N</m> from <m>3</m> so that it limits to <m>\infty</m>.
 What can we conclude when that happens?
             </p>
-            <ol label="A">
+            <ol marker="A">
                 <li><p>Each segment is infintely small</p></li>
                 <li><p><m>\Delta x_i\to 0</m></p></li>
                 <li><p><m>\Delta t_i\to 0</m></p></li>

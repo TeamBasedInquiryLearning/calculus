@@ -31,7 +31,7 @@
             </introduction>
             <task>
                 <p>Which of the following expressions measures how far the car travel travels in these 3 hours?</p>
-                <ol label='A'>
+                <ol marker='A'>
                     <li><m>\displaystyle \int_0^2 70x \,dx + \int_2^3 40x \,dx</m>.</li>
                     <li><m>\displaystyle \int_0^2 70 \,dx + \int_2^3 40 \,dx</m>.</li>
                     <li><m>\displaystyle \int_0^2 70x \,dx + \int_0^1 40x \,dx</m>.</li>
@@ -41,7 +41,7 @@
             </task>
             <task>
                 <p>What was their average velocity over these 3 hours?</p>
-                <ol label='A'>
+                <ol marker='A'>
                     <li><m>180</m> mi.</li>
                     <li><m>180</m> mph.</li>
                     <li><m>60</m> mi.</li>
@@ -81,7 +81,7 @@
                         </latex-image>
                     </image>
             </figure>
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>4</m>.</li>
                         <li><m>2</m>.</li>
                         <li><m>\frac{7}{3}</m>.</li>
@@ -95,7 +95,7 @@
             <statement>
                 <p>
                     Consider a function <m>f(x)</m> which has average value <m>v</m> on the interval <m>[a,b]</m>.  Which of the following is most likely always true about <m>v</m>?
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>v</m> is the average of <m>a</m> and <m>b</m>.</li>
                         <li><m>v</m> is the average of <m>f(a)</m> and <m>f(b)</m>.</li>
                         <li><m>v</m> is the average of <m>\min\{f(x)\}</m> and <m>\max\{f(x)\}</m> on the interval <m>[a,b]</m>.</li>
@@ -119,7 +119,7 @@
                 <p>
                     Which of the following expressions represent the average value of <m>f(x)=x\cos(x^2)+x</m> on the interval <m>[\pi, 4\pi]</m>?
                     
-                    <ol label="A">
+                    <ol marker="A">
                         <li><m>\displaystyle \int_{0}^{4\pi}\Big(x\cos(x^2)+x\Big) dx</m>.</li>
                         <li><m>\displaystyle \frac{1}{3\pi}\int_{0}^{4\pi}\Big(x\cos(x^2)+x\Big) dx</m>.</li>
                         <li><m>\displaystyle \frac{1}{4\pi}\int_{0}^{4\pi}\Big(x\cos(x^2)+x\Big) dx</m>.</li>
