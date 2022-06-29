@@ -35,39 +35,7 @@
                 <caption>A point in the polar coordinate system.</caption>
                     <image xml:id="polarPoint" width="100%">
                         <description>A point in the polar coordinate system.</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                                %Coordinates
-        \coordinate (A) at (6,0);
-        \coordinate (B) at (0,0);
-        \coordinate (C) at (2.5,2.5);
-        \coordinate (B') at (2.5,3.5);
-        \coordinate (A') at (1.8,3.2);
-
-          %Axis
-
-        \draw[thick,-latex] (-1ex,0) -- (6,0) node [below] {$x$};
-        \draw[thick,-latex] (0,-1ex) -- (0,5) node [left] {$y$};
-
-        %Vectors
-        \draw[thick] (0,0) -- (2.5,2.5) node[pos=0.6, above left] {$r$};
-        %\draw[thick, red, -latex] (2.5,2.5) -- (3.2,3.2) node[pos=1.2] {$\vu*{\varpi}$};
-        %\draw[thick, red, -latex] (2.5,2.5) -- (1.8,3.2) node[pos=1.3] {$\vu*{\phi}$};
-
-        %Help Lines
-        \draw[dashed, red] (0,2.5) -- (2.5,2.5) -- (2.5,0);
-        %\draw[blue, thick] (2.5,3.5) -- (2.5,1.5);
-        \draw[dashed] (3.53,0) arc (0:90:3.53);
-        \draw[red] (2.5,0)--node[below]{$x$}(2.5,0);
-        \draw[red] (0,2.5)--node[left]{$y$}(0,2.5);
-        \draw (2.5, 2.5) --node[above right]{$(r,\theta)$} (2.5, 2.5);
-        
-        %Angle
-        \pic[draw, ->, thick, "$\theta$", angle eccentricity=1.7] {angle = A--B--C};
-        %\pic[draw, thick, angle radius=4mm, angle eccentricity=1.7] {angle = B'--C--A'};
-        
-                          \end{tikzpicture}
-                        </latex-image>
+                        <latex-image><xi:include href="./tikz/polarPoint.tex" parse="text"/></latex-image>
                     </image>
             </figure>
     
@@ -77,38 +45,8 @@
                 <caption>The polar grid.</caption>
                     <image xml:id="polarCoord" width="100%">
                         <description>The polar grid</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-    %Circles 
-    \foreach \r in {1, 2,...,7}
-      \draw[blue, thick] (0,0) circle (\r);    
-    \foreach \r in {0.5, 1.5,...,7}
-      \draw[blue, thin] (0,0) circle (\r);
-    %1° Rays
-    \foreach \a in {0, 1,...,359}
-      \draw[blue] (\a:7.7) -- (\a:8);
-    %5° Rays
-    \foreach \a in {0, 5,...,359}
-      \draw[blue] (\a:7.5) -- (\a:8);      
-    %15° Rays
-    \foreach \a in {0, 15,...,359}
-      \draw[thick,blue] (\a:1) -- (\a:8); 
-    %30° Rays
-    \foreach \a in {0, 30,...,359}
-      \draw[thick,blue] (0, 0) -- (\a:8);
-    %Radius labels (background filled white)
-    \foreach \r in {1, 2,...,7}
-      \draw (\r,0) node[inner sep=1pt,below=3pt,rectangle,fill=white] {$\r$};
-    %Main rays
-    \foreach \a in {0, 90,...,359}
-      \draw[very thick] (0, 0) -- (\a:8);
-    %Angle labels  
-    \foreach \a in {0, 1,...,23}
-      \draw (\a*15: 8.5) node {$\frac{\a \pi}{12}$};
-    %Central point
-    \draw[fill=red] (0,0) circle(0.7mm);
-  \end{tikzpicture}
-                        </latex-image>
+                        <latex-image><xi:include href="./tikz/polarCoord.tex" parse="text"/></latex-image>
+
                     </image>
             </figure>
     
