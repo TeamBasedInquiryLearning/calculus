@@ -9,82 +9,6 @@
       </li>
     </ul>
   </objectives>
-
-
-
-
-    <p permid="Kqf">
-      In <xref ref="integration-riemann-1"/>, we established that whenever <m>v</m> is constant on an interval,
-      the exact distance traveled is the area under the velocity curve.
-      When <m>v</m> is not constant,
-      we can estimate the total distance traveled by finding the areas of rectangles that approximate the area under the velocity curve.
-    </p>
-
-    <p permid="qxo">
-      Thus, we see that finding the area between a curve and the horizontal axis is an important exercise:
-      besides being an interesting geometric question,
-      if the curve gives the velocity of a moving object,
-      the area under the curve tells us the exact distance traveled on an interval.
-      We can estimate this area if we have a graph or a table of values for the velocity function.
-    </p>
-
-    <p permid="WEx">
-      In <xref ref="act-4-1-1"/>,
-      we encountered an alternate approach to finding the distance traveled.
-      If <m>y = v(t)</m> is a formula for the instantaneous velocity
-      of a moving object,
-      then <m>v</m> must be the derivative of the object's position function,
-      <m>s</m>.
-      If we can find a formula for <m>s(t)</m> from the formula for <m>v(t)</m>,
-      we will know the position of the object at time <m>t</m>,
-      and the change in position over a particular time interval tells us the distance traveled on that interval.
-    </p>
-
-    <p permid="CLG">
-      For example, let's 
-      consider the situation from <xref ref="integration-riemann-1"/>,
-      where a person is walking along a straight line with velocity function <m>v(t) = 3</m> mph.
-    </p>
-
-    <figure xml:id="F-4-1-PA1Soln" permid="Hvz">
-      <caption>The velocity function <m>v(t) = 3</m> and corresponding position function <m>s(t) = 3t</m>.</caption>
-      <image width="100%" source="4_1_PA1Soln" />
-    </figure>
-
-    <p permid="iSP">
-      On the left-hand graph of the velocity function in <xref ref="F-4-1-PA1Soln">Figure</xref>,
-      we see the relationship between area and distance traveled,
-      <me permid="aiX">
-        A= 3 \, \frac{\text{miles} }{\text{hour} } \cdot 1.25 \, \text{hours}  = 3.75 \, \text{miles}
-      </me>.
-      In addition, we observe<fn>
-      Here we are making the implicit assumption that <m>s(0) = 0</m>.
-      </fn> that if <m>s(t) = 3t</m>,
-      then <m>s'(t) = 3</m>, 
-      so <m>s(t) = 3t</m> is the position function whose derivative is the given velocity function,
-      <m>v(t) = 3</m>.
-      The respective locations of the person at times
-      <m>t = 0.25</m> and <m>t = 1.5</m> are
-      <m>s(1.5) = 4.5</m> and <m>s(0.25) = 0.75</m>, and therefore
-      <me permid="Gqg">
-        s(1.5) - s(0.25) = 4.5 - 0.75 = 3.75 \ \text{miles}
-      </me>.
-    </p>
-
-    <p permid="OZY">
-      This is the person's change in position on <m>[0.25,1.5]</m>,
-      which is precisely the distance traveled.
-      
-    </p>
-
-    <p permid="vhh">
-     Observe that if we know a formula for a velocity function <m>v</m>,
-      it can be very helpful to find a function <m>s</m> that satisfies <m>s' = v</m>.
-      We say that <m>s</m> is an
-      <em>antiderivative</em> of <m>v</m>.
-      More generally, we have the following formal definition.
-    </p>
-
           
     <!--DEFINITION OF ANTIDERIVATIVE from Active Calculus -->
     <definition xml:id="def-antiderivative">
@@ -98,24 +22,6 @@
       </statement>
     </definition>
 
-    <p permid="boq">
-      For example, if <m>g(x) = 3x^2 + 2x</m>,
-      <m>G(x) = x^3 + x^2</m> is an antiderivative of <m>g</m>,
-      because <m>G'(x) = g(x)</m>.
-      Note that we say <q>an</q>
-      antiderivative of <m>g</m> rather than <q>the</q>
-      antiderivative of <m>g</m>, because
-      <m>H(x) = x^3 + x^2 + 5</m> is also a function whose derivative is <m>g</m>,
-      and thus <m>H</m> is another antiderivative of <m>g</m>.
-    </p>
-
-<!-- FROM 4-4-2 IN ACTIVE CALCULUS -->
-
-    <p permid="PRj">
-      The general problem of finding an antiderivative is difficult.
-      In part, this is due to the fact that we are trying to undo the process of differentiating,
-      and the undoing is much more difficult than the doing. However, some antiderivatives can be fairly simple to find if we remember our elementary derivative rules. (See <xref ref="DF3"/>.)</p>
-      
      <activity xml:id="elem-antider-intro">
         <statement>
     <p>Consider the function <m>f(x)=\cos x</m>. Which of the following could be <m>F(x)</m>, an antiderivative of <m>f(x)</m>? </p>
@@ -141,32 +47,9 @@
 
             </ol>
     </statement>
-        </activity>   
-       
-<!--         
-        
-        For example,
-      while it is evident that an antiderivative of <m>f(x) = \sin(x)</m> is
-      <m>F(x) = -\cos(x)</m> and that an antiderivative of
-      <m>g(x) = x^2</m> is <m>G(x) = \frac{1}{3} x^3</m>,
-      combinations of <m>f</m> and <m>g</m> can be far more complicated.
-      Consider the functions
-      <me permid="rYt">
-        5\sin(x) - 4x^2, \ x^2 \sin(x), \ \frac{\sin(x)}{x^2}, \ \text{and}  \ \sin(x^2)
-      </me>.
-    </p>
-
-    <p permid="vYs">
-      What is involved in trying to find an antiderivative for each?
-      From our experience with derivative rules,
-      we know that derivatives of sums and constant multiples of basic functions are simple to execute, but
-      derivatives involving products, quotients,
-      and composites of familiar functions are more complicated.
-      Therefore, it stands to reason that antidifferentiating products,
-      quotients,
-      and composites of basic functions may be even more challenging.
-      We defer our study of all but the most elementary antiderivatives to later in the text.
-    </p> -->
+        </activity>  
+         
+       <remark>
 
     <p permid="cfB">
       We now note that whenever we know the derivative of a function,
@@ -187,6 +70,7 @@
       In the following activity,
       we work to build a list of basic functions whose antiderivatives we already know.
     </p>  
+    </remark>
     
 <activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-4-4-2" permid="ovP">
   <statement>
@@ -266,27 +150,6 @@
 </activity>
     
     
-    
-    <p permid="otT">
-      Notice that in <xref ref = "def-antiderivative"/> and <xref ref = "act-4-4-2"/> that we were asked to find <strong>an</strong> antiderivative, not <strong>the</strong> antiderivative.
-      Because the derivative of any constant is zero,
-      we may add a constant of our choice to 
-      any antiderivative.
-      For instance, we know that
-      <m>G(x) = \frac{1}{3}x^3</m> is an antiderivative of <m>g(x) = x^2</m>.
-      But we could also have chosen <m>G(x) = \frac{1}{3}x^3 + 7</m>,
-      since in this case as well, <m>G'(x) = x^2</m>.
-
-      If <m>g(x) = x^2</m>, we say that the
-      <em>general antiderivative</em>
-      of <m>g</m> is
-      <me permid="ktU">
-        G(x) = \frac{1}{3}x^3 + C
-      </me>,
-      where <m>C</m> represents an arbitrary real number constant.
-      Regardless of the formula for <m>g</m>,
-      including <m>+C</m> in the formula for its antiderivative <m>G</m> results in the most general possible antiderivative.
-    </p>
 
   
 
@@ -319,37 +182,6 @@
 
  
  
-<!-- indefinite integral notation         -->
-        
-     <p permid="Ojn">
-      It is useful to have shorthand notation that indicates the instruction to find an antiderivative.
-      Thus, in a similar way to how the notation
-      <me permid="RNN">
-        \frac{d}{dx} \left[ f(x) \right]
-      </me>
-      represents the derivative of <m>f(x)</m> with respect to <m>x</m>,
-      we use the notation of the <em>indefinite integral</em>,
-          <idx><h>indefinite integral</h></idx>
-      <me permid="xUW">
-        \int f(x) \, dx
-      </me>
-      to represent the general antiderivative of <m>f</m> with respect to <m>x</m>.
-      Returning to the earlier example with <m>f(x) = 5\sin(x) - 4x^2</m>,
-      we can rephrase the relationship between <m>f</m> and its antiderivative <m>F</m> through the notation
-      <me permid="ecf">
-        \int (5\sin(x) - 4x^2) \, dx = -5\cos(x) - \frac{4}{3}x^3 + C
-      </me>.
-    </p>
-
-    <p permid="uqw">
-      When we find an antiderivative,
-      we will often say that we <em>evaluate an indefinite integral</em>.
-          <idx><h>indefinite integral</h><h>evaluate</h></idx>
-      Just as the notation <m>\frac{d}{dx} [ \Box ]</m> means
-      <q>find the derivative with respect to <m>x</m> of <m>\Box</m>,</q>
-      the notation <m>\int \Box \, dx</m> means
-      <q>find a function of <m>x</m> whose derivative is <m>\Box</m>.</q>
-    </p> 
     
     <activity xml:id="act-antider-fluency">
     

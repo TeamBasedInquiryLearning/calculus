@@ -10,20 +10,21 @@
     </ul>
   </objectives>
 
-      <introduction>
+      <note>
     <p>
       In this section we extend the Fundamental Theorem of Calculus discussed in <xref ref="IN5"/> to include taking the derivatives of integrals.  We will call this addition to the Fundamental Theorem of Calculus (FTC) part II.  First we will introduce part II and then discuss the implications of this addition.
     </p>
-    </introduction>
+    </note>
+
   <theorem xml:id="theorem-in6-1"><title>The Fundamental Theorem of Calculus (Part II) </title>
-    <introduction>
+    <statement>
         <p>If a function <m>f</m> is continuous on the closed interval <m>[a,b]</m>, then the area function 
         <me>A(x) = \int_a^x f(t)\,dt \,\,\,\,\, \mathrm{for}\,\,\, a\leq x\leq b,</me>
             is continuous on <m>[a,b]</m> and differentiable on <m>(a,b)</m>.  The area function satisfies <m>A'(x) = f(x)</m>.  Equivalently,
             <me>A'(x) = \frac{d}{dx}\int_0^x f(t)\,dt = f(x),</me>
             which means that the area function of <m>f</m> is an antiderivative of f on <m>[a,b]</m>.
         </p>
-    </introduction>
+    </statement>
 </theorem>
     
     <activity xml:id="activity-in6-1">
@@ -60,10 +61,7 @@
     </activity>
     
 <activity xml:id="activity-in6-2">
-        <introduction>
-        <p>Next we want to extend the Fundamental Theorem of Calculus Part II.  What is the derivative of the following function? Explain the process you used.</p>
-        </introduction>
-        <task>
+        <statement>
             <p>Given <m>A(x) = \int_x^be^t\,dt</m>, what is <m>A'(x)</m>?</p>
         <ol marker="A">
               <li><p><m>A'(x) = -e^x</m></p></li>
@@ -71,12 +69,14 @@
                 <li><p><m>A'(x) = e^b-e^x</m></p></li>
                 <li><p><m>A'(x) = e^x-e^b</m></p></li>
             </ol>
-        </task>
+        </statement>
        
     </activity>
-    <introduction>
+
+    <observation>
     <p>For the first two activities we have only explored when the function of the limits of the integrand are <m>x</m>.  Now we want to see what happens when the limits are more complicated.  To do this we will follow a similar procedure as that done in activity 1.</p>
-    </introduction>
+    </observation>
+
     <activity xml:id="activity-in6-3">
         <introduction>
         <p>Recall that by the Fundamental Theorem of Calculus Part I, <m>\int_a^bf(t)\,dt = F(b)-F(a)</m>.</p>
@@ -97,11 +97,12 @@
             </ol>
         </task>
     </activity>
-    <introduction>
+
+    <remark>
     <p>
       Now we have some thoughts of how to generalize the FTC Part II when the limts are more complicated.
     </p>
-    </introduction>
+    </remark>
   
     <theorem xml:id="theorem-in6-2"><title>The Fundamental Theorem of Calculus (Part II): Modified </title>
     <introduction>

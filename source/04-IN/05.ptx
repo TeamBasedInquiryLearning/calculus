@@ -29,8 +29,6 @@
     </figure>
 </activity>
     
-<subsection><title>Definite Integrals</title>
-    
     <definition xml:id="definition-in5-2">
         <statement>
             <p>Let <m>f(x)</m> be a continuous function on the interval <m>[a,b]</m>. Divide the interval into <m>n</m> subdivisions of equal width, <m>\Delta x</m>, and choose a point <m>x_i</m> in each interval. Then, the <b>definite integral of <m>f(x)</m> from <m>a</m> to <m>b</m></b> is</p>
@@ -76,10 +74,10 @@
     </task>
 </activity>
     
-</subsection>
     
-<subsection><title>Fundamental Theorem of Calculus</title> 
+    <observation><statement>
 <p>We've been looking at two big things in this chapter: antiderivatives and the area under a curve. In the early days of the development of calculus, they were not known to be connected to one another. The integral sign wasn't originally used in both instances. (Gottfried Leibniz introduced it as an elongated S to represent the sum when finding the area.) Connecting these two seemingly separate problems is done by the <b>Fundamental Theorem of Calculus</b> </p>    
+    </statement></observation>
 
 <theorem xml:id="theorem-in5-2"><title>The Fundamental Theorem of Calculus </title>
     <introduction>
@@ -114,9 +112,7 @@
        </figure>
     </task>
 </activity>
-</subsection>
     
-<subsection><title>Area</title>
    <activity>
        <introduction>
            <p>Find the area between <m>f(x)=2x-6 </m> on the interval <m>[0,8]</m> using 
@@ -202,22 +198,6 @@ Leave all answers in exact form, with no decimal approximations.
     </activity>    
     
     
-    
-</subsection>
-<!--  
-
-<theorem xml:id="theorem-in5-2"><title>Properties of Definite Integrals</title>
-</theorem>
-    
-<activity xml:id="activity-in5-n">
-    <introduction>
-    </introduction>
-</activity>
-<subsection><title>Fundamental Theorem of Calculus</title>
-    
-    
-</subsection
--->
 </section>
 
 

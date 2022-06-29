@@ -10,13 +10,13 @@
     </ul>
   </objectives>
 
-  <introduction>
+  <note>
     <p>
       In this section we will discuss the relationship between antiderivatives and solving simple differential equations.  A differential equation is an equation that has a derivative.  For this section we will focus on differential equations of the form 
         <me>\frac{dy}{dx} = f(x).</me>
         Our goal is to find a relationship of <m>y(x)</m> that satisfies the differential equation.  We can solve for <m>y(x)</m> by finding the antiderivative of <m>f(x)</m>.
     </p>
-    </introduction>
+    </note>
 
 <activity xml:id="activity-in-ivp-1">
 <statement>
@@ -32,6 +32,7 @@
     </statement>
     </activity>
 
+  <remark>
     <statement>
     <p> In <xref ref = "activity-in-ivp-1"/> there are more than one solution that satisfies the differential equation.  In fact their is a family of functions that satisfies the differential equation, that is
         <me>f(x) = \frac{x^3}{3} + x^2 + c_1,</me>
@@ -39,6 +40,7 @@
         <me>\frac{dy}{dx} = f(x), \;\;\; y(x_0) = y_0.</me>
         </p>
     </statement>
+  </remark>
     
     <activity xml:id="activity-in-ivp-2">
 <statement>

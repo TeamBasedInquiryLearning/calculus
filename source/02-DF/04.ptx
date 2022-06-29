@@ -184,8 +184,15 @@
     
 
     <note><p>
-         We have found the derivatives of <m>\sin x</m> and <m>\cos x</m>, but what about the other trigonometric functions? It turns out that the quotient rule along with some trig identities can help us! (See <url href="https://www.khanacademy.org/math/trigonometry/trig-equations-and-identities/using-trig-identities/a/trig-identity-reference"/> for a reminder of the reciprocal and Pythagorean identities.)
-        </p></note>
+        We have found the derivatives of <m>\sin x</m> and <m>\cos x</m>, 
+        but what about the other trigonometric functions? It turns out that the quotient rule along 
+        with some trig identities can help us! (See 
+        <url
+          href="https://www.khanacademy.org/math/trigonometry/trig-equations-and-identities/using-trig-identities/a/trig-identity-reference"
+          visual="KhanAcademy.org">Khan Academy</url>
+        for a reminder of the reciprocal and Pythagorean identities.)
+      </p></note>
+
  <activity xml:id="activity-df-quotient-rule-tanx">
         <introduction>
             <p>
@@ -280,7 +287,7 @@
             <me>f(x)=3 \, \cos\left(x\right), \, \, g(x)=x^{2} + 3 \, e^{x}</me>
             and the function <m>h(x)</m> for which a table of values is given.
              <me>
-\begin{array}{c|c|c|c}
+\begin{array}{c|ccc}
 x &amp; -1&amp; 0&amp; 2 \\\hline
 h(x) &amp; -4&amp; -1&amp; 3  \\\hline
 h'(x) &amp; 0&amp; -1&amp; 1  \\             
@@ -313,7 +320,7 @@ In answering the following questions, be sure to explicitly denote which derivat
                     <p>
      Consider the function  
                         <me>r(x) = 3 \, \cos\left(x\right) \cdot x .</me>
-    Find <m>r'(x)</m>, <m>r''(x)</m>, <m>r'''(x)</m>, and <m>r^{(iv)}(x)</m> so the first, second, third, and fourth derivative of <m>r(x)</m>. What pattern do you notice? What do you expect the twelfth derivative of <m>r(x)</m> to be? 
+    Find <m>r'(x)</m>, <m>r''(x)</m>, <m>r'''(x)</m>, and <m>r^{(4)}(x)</m> so the first, second, third, and fourth derivative of <m>r(x)</m>. What pattern do you notice? What do you expect the twelfth derivative of <m>r(x)</m> to be? 
         </p>
                 </li>
         </ol>

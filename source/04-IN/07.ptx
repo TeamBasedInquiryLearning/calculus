@@ -9,4 +9,54 @@
       </li>
     </ul>
   </objectives>
+  <remark>
+  <statement>
+  <p>According to <xref ref="definition-in5-2"/>: <me>\lim_{n \to \infty} \sum_{i=1}^{n} f(x_i) \Delta x = \int_a^bf(x)dx</me></p>
+  <!-- <figure><image><sageplot><xi:include href="./sage/integral-as-area.sage" parse="text"/></sageplot></image></figure> -->
+  </statement>
+  </remark>
+  <activity checkit-seed="0019" checkit-slug="IN7" checkit-title="Area under curves">
+    <statement>
+        <p>
+            Answer the following questions concerning
+            <m>f(x)=6 \, x^{2} - 96</m>.
+        </p>
+        <ol>
+            <li>
+                <p>
+What is the total area between <m>f(x)=6 \, x^{2} - 96</m> and the <m>x</m>-axis
+from <m>x=-1</m> to <m>x=9</m>?
+                </p>
+            </li>
+            <li>
+                <p>
+What is the net area between <m>f(x)=6 \, x^{2} - 96</m> and the <m>x</m>-axis
+from <m>x=-1</m> to <m>x=9</m>?
+                </p>
+            </li>
+        </ol>
+    </statement>
+    <answer>
+         <ol>
+            <li>
+                <p>
+                    <me>
+\left| \int_{ -1 }^{ 4 } 
+\left( 6 \, x^{2} - 96 \right) dx \right| +
+\left| \int_{ 4 }^{ 9 } 
+\left( 6 \, x^{2} - 96 \right) dx \right| = 1200
+                    </me>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <me>
+\int_{ -1 }^{ 9 } 
+\left( 6 \, x^{2} - 96 \right) dx = 500
+                    </me>
+                </p>
+            </li>
+        </ol>
+    </answer>
+</activity>
 </section>
