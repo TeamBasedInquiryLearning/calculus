@@ -43,7 +43,7 @@
       <stringparam key="commentary" value="yes"/>
       <stringparam key="debug.skip-knowls" value="yes"/>
       <!-- edit this to change the section/chapter/etc. to build -->
-      <xmlid-root>LT</xmlid-root>
+      <xmlid-root>LT2</xmlid-root>
     </target>
     <target name="print-latex">
       <format>latex</format>
