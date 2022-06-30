@@ -353,7 +353,7 @@
             
         </activity>
             
-<exercise checkit-seed="9613" checkit-slug="PS3" checkit-title="Manipulation of power series">
+<activity checkit-seed="9613" checkit-slug="PS3" checkit-title="Manipulation of power series">
     <statement>
         <p>
             Recall that the power series for <m>f(x)=\sin\left(x\right)</m> is: <me>\sin\left(x\right)=\sum_{n=0}^{\infty} \frac{\left(-1\right)^{n} x^{2 \, n + 1}}{\left(2 \, n + 1\right)!}.</me>
@@ -373,9 +373,9 @@
                 <li><m>\displaystyle F(x)=4+\sum_{n=1 }^{\infty}\frac{\left(-1\right)^{n + 1} x^{2 \, n}}{\left(2 \, n\right)!}</m>.</li>
             </ol>
     </answer>
-</exercise>
+</activity>
             
-<exercise checkit-seed="9587" checkit-slug="PS3" checkit-title="Manipulation of power series">
+<activity checkit-seed="9587" checkit-slug="PS3" checkit-title="Manipulation of power series">
     <statement>
         <p>
             Recall that the power series for <m>f(x)=-\frac{1}{x - 1}</m> is: <me>-\frac{1}{x - 1}=\sum_{n=0}^{\infty} x^{n}.</me>
@@ -395,7 +395,7 @@
                 <li><m>\displaystyle f'(x)=\sum_{n=0}^{\infty}{\left(n + 1\right)} x^{n}</m>.</li>
             </ol>
     </answer>
-</exercise>            
+</activity>            
 
         <activity xml:id="activity-PS3arctan">
             <introduction>

@@ -199,7 +199,7 @@ Note that polynomials of degree less than <m>k</m> are their own Taylor polynomi
             </statement>
         </definition>
     
-<exercise checkit-seed="2301" checkit-slug="PS4" checkit-title="Taylor series">
+<activity checkit-seed="2301" checkit-slug="PS4" checkit-title="Taylor series">
     <statement>
         <p>
             Let <m>f(x)</m> be a function such that:
@@ -227,9 +227,9 @@ Note that polynomials of degree less than <m>k</m> are their own Taylor polynomi
                 <li><m>\displaystyle f(x)=\sum_{n=0}^\infty \frac{ n }{n!} (x-4)^n</m>.</li>
             </ol>
     </answer>
-</exercise>    
+</activity>    
 
-<exercise checkit-seed="2486" checkit-slug="PS4" checkit-title="Taylor series">
+<activity checkit-seed="2486" checkit-slug="PS4" checkit-title="Taylor series">
     <statement>
         <p>
             Let <m>f(x)</m> be a function such that:
@@ -257,7 +257,7 @@ Note that polynomials of degree less than <m>k</m> are their own Taylor polynomi
                 <li><m>\displaystyle f(x)=\sum_{n=0}^\infty \frac{ -2 \, \left(-1\right)^{n} n^{3} }{n!} (x--2)^n</m>.</li>
             </ol>
     </answer>
-</exercise>    
+</activity>    
     
     <activity xml:id="activity-PS4sineCosineExponential">
         

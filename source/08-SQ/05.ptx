@@ -282,7 +282,7 @@ The series <m>\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^p}</m> con
         </p>
     </activity>
     
-<exercise checkit-seed="9464" checkit-slug="SQ5" checkit-title="Basic convergence tests">
+<activity checkit-seed="9464" checkit-slug="SQ5" checkit-title="Basic convergence tests">
     <statement>
         <p>
             For each of the following series, use the <em>Divergence</em>, <em>Alternating Summation</em> or <em>Integral</em> test to determine if the series converges.
@@ -321,7 +321,7 @@ The series <m>\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^p}</m> con
             </li>            
         </ol>
     </answer>
-</exercise>
+</activity>
     
      <fact xml:id="fact-SQ8alternatingSeriesEstimation">
                       <title>The Alternating Series Estimation Theorem</title> 

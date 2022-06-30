@@ -195,7 +195,7 @@
             </statement>
     </fact>
     
-<exercise checkit-seed="7542" checkit-slug="PS2" checkit-title="Domain of power series">
+<activity checkit-seed="7542" checkit-slug="PS2" checkit-title="Domain of power series">
     <statement>
         <p>
             Find the center of convergence, radius of convergence, and interval of convergence for the series: <me>\sum_{n=0}^\infty \frac{3^{n} \left(-1\right)^{n} {\left(x - 1\right)}^{n}}{n!}.</me>
@@ -209,9 +209,9 @@
                 <li>The interval of convergence is <m>( -\infty, +\infty )</m>.</li>
             </ul>
     </answer>
-</exercise>
+</activity>
     
-<exercise checkit-seed="4283" checkit-slug="PS2" checkit-title="Domain of power series">
+<activity checkit-seed="4283" checkit-slug="PS2" checkit-title="Domain of power series">
     <statement>
         <p>
             Find the center of convergence, radius of convergence, and interval of convergence for the series: <me>\sum_{n=0}^\infty \frac{3^{n} {\left(x + 2\right)}^{n}}{n}.</me>
@@ -225,7 +225,7 @@
                 <li>The interval of convergence is <m>[ -\frac{7}{3}, -\frac{5}{3} )</m>.</li>
             </ul>
     </answer>
-</exercise>    
+</activity>    
     
     <activity>
         <introduction>

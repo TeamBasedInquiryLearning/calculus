@@ -144,7 +144,7 @@
                 </p>            
         </activity>
                 
-<exercise checkit-seed="7450" checkit-slug="SQ4" checkit-title="Geometric summations">
+<activity checkit-seed="7450" checkit-slug="SQ4" checkit-title="Geometric summations">
     <statement>
         <p>
             Find the limit of the following series.
@@ -158,7 +158,7 @@
             -1 + \sum_{n = 1 }^\infty 2\cdot\left(\frac{1}{2}\right)^n=1.
         </me>
     </answer>
-</exercise>
+</activity>
     
     <!-- <subsection>
         <title>Slideshow</title>
