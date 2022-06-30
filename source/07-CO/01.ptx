@@ -35,34 +35,6 @@ into the equation to produce its <m>y</m> value.
         </task>
         <task>
             <p>Plot each point <m>(x,y)</m> in your chart in the <m>xy</m> plane.</p>
-            <figure>
-                <caption>Plot of <m>y=2-x^2</m>.</caption>
-                <image width="100%">
-                    <description>Plot of <m>y=2-x^2</m>.</description>
-                    <latex-image>
-                        \begin{tikzpicture}
-                        \begin{axis}[
-                            axis lines=middle,
-                            grid=major,
-                            xmin=-3,
-                            xmax=3,
-                            ymin=-3,
-                            ymax=3,
-                            xlabel=$x$,
-                            ylabel=$y$,
-                            xtick={-2,-1,...,2},
-                            ytick={-2,-1,...,2},
-                            tick style={very thick},
-                            legend style={
-                            at={(rel axis cs:0,1)},
-                            anchor=north west,draw=none,inner sep=0pt,fill=gray!10}
-                        ]
-                        \node[label={180:{(-1,1)}},circle,fill,inner sep=2pt] at (axis cs:-1,1) {};
-                        \end{axis}
-                        \end{tikzpicture}
-                    </latex-image>
-                </image>
-            </figure> 
         </task>
         <task>
             <p>Connect the dots to obtain a reasonable sketch of the equation's graph.</p>
@@ -96,34 +68,6 @@ into the equations to produce its <m>x</m> and <m>y</m> values.
         </task>
         <task>
             <p>Plot each point <m>(x,y)</m> in your chart in the <m>xy</m> plane, labeling it with its <m>t</m> value.</p>
-            <figure>
-                <caption>Plot of <m>x=t-2</m>, <m>y=-t^2+4t-2</m>.</caption>
-                <image width="100%">
-                    <description>Plot of <m>y=2-x^2</m>.</description>
-                    <latex-image>
-                        \begin{tikzpicture}
-                        \begin{axis}[
-                            axis lines=middle,
-                            grid=major,
-                            xmin=-3,
-                            xmax=3,
-                            ymin=-3,
-                            ymax=3,
-                            xlabel=$x$,
-                            ylabel=$y$,
-                            xtick={-2,-1,...,2},
-                            ytick={-2,-1,...,2},
-                            tick style={very thick},
-                            legend style={
-                            at={(rel axis cs:0,1)},
-                            anchor=north west,draw=none,inner sep=0pt,fill=gray!10}
-                        ]
-                        \node[label={180:{t=1}},circle,fill,inner sep=2pt] at (axis cs:-1,1) {};
-                        \end{axis}
-                        \end{tikzpicture}
-                    </latex-image>
-                </image>
-            </figure> 
         </task>
         <task>
             <p>Connect the dots to obtain a reasonable sketch of the equation's graph.</p>

@@ -259,9 +259,39 @@ The portion of <m>x=t+1, y=t^2</m> between the points <m>(3,4)</m> and <m>(5,16)
     <activity>
         <introduction>
             <p>
-TODO function formula
+Let's see how to modify
+<m>\int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt</m>
+to produce the arclength of the graph of a function <m>y=f(x)</m>.
             </p>
         </introduction>
+        <task>
+            <p>
+Let <m>x=t</m>. How can <m>\frac{dx}{dt}</m> be simplified?
+            </p>
+            <ol marker="A">
+                <li><p><m>dx</m></p></li>
+                <li><p><m>dt</m></p></li>
+                <li><p><m>1</m></p></li><!--correct-->
+                <li><p><m>0</m></p></li>
+            </ol>
+        </task>
+        <task>
+            <p>
+Given <m>x=t</m>, how should <m>\frac{dy}{dt}</m> and <m>dt</m> be rewritten?
+            </p>
+            <ol marker="A">
+                <li><p><m>\frac{dy}{dt}=\frac{dy}{dx}</m> and <m>dt=dx</m></p></li>
+                <li><p><m>\frac{dy}{dt}=\frac{dx}{dt}</m> and <m>dt=dx</m></p></li>
+                <li><p><m>\frac{dy}{dt}=\frac{dy}{dx}</m> and <m>dt=1</m></p></li>
+                <li><p><m>\frac{dy}{dt}=\frac{dy}{dt}</m> and <m>dt=1</m></p></li>
+            </ol>
+        </task>
+        <task>
+            <p>
+Write a modified, simplified formula for
+<m>\int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt</m>
+with <m>t</m> replaced with <m>x</m>.
+        </task>
     </activity>
     
 </section>
