@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-30T01:55:47Z       *-->
+<!--*       on 2022-06-30T19:06:08Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -49,38 +49,6 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
-<!--** Runestone components to run locally in reader's browser **-->
-<!--** No external communication:                              **-->
-<!--**     log level is 0, Runestone Services are disabled     **-->
-<script type="text/javascript">
-eBookConfig = {};
-eBookConfig.useRunestoneServices = false;
-eBookConfig.host = 'http://127.0.0.1:8000';
-eBookConfig.course = 'PTX Course: Title Here';
-eBookConfig.basecourse = 'PTX Base Course';
-eBookConfig.isLoggedIn = false;
-eBookConfig.email = '';
-eBookConfig.isInstructor = false;
-eBookConfig.logLevel = 0;
-eBookConfig.username = '';
-eBookConfig.readings = null;
-eBookConfig.activities = null;
-eBookConfig.downloadsEnabled = false;
-eBookConfig.allow_pairs = false;
-eBookConfig.enableScratchAC = false;
-eBookConfig.build_info = "";
-eBookConfig.python3 = null;
-eBookConfig.acDefaultLanguage = 'python';
-eBookConfig.runestone_version = '5.0.1';
-eBookConfig.jobehost = '';
-eBookConfig.proxyuri_runs = '';
-eBookConfig.proxyuri_files = '';
-eBookConfig.enable_chatcodes =  false;
-</script>
-<!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -229,20 +197,20 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Section</span> <span class="codenumber">8.2</span> <span class="title">Sequence Properties and Limits (SQ2)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-61"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-1819"><p id="p-2576">Determine if a sequence is convergent, divergent, monotonic, or bounded, and compute limits of convergent sequences.</p></li></ul></article><article class="activity project-like" id="activity-463"><h3 class="heading">
+<ul class="disc"><li id="li-1819"><p id="p-2561">Determine if a sequence is convergent, divergent, monotonic, or bounded, and compute limits of convergent sequences.</p></li></ul></article><article class="activity project-like" id="activity-465"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.2.1</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-235"><p id="p-2577">We will consider the function <span class="process-math">\(f(x) = \displaystyle \frac{4x+8}{x}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-235"><p id="p-2562">We will consider the function <span class="process-math">\(f(x) = \displaystyle \frac{4x+8}{x}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-697"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2578">Compute the limit <span class="process-math">\(\displaystyle  \lim_{x\to \infty} \frac{4x+8}{x}\text{.}\)</span></p>
+<p id="p-2563">Compute the limit <span class="process-math">\(\displaystyle  \lim_{x\to \infty} \frac{4x+8}{x}\text{.}\)</span></p>
 <ol class="upper-alpha">
 <li id="li-1820"><p id="p-derived-li-1820"><span class="process-math">\(\displaystyle 0\)</span></p></li>
 <li id="li-1821"><p id="p-derived-li-1821"><span class="process-math">\(\displaystyle 8\)</span></p></li>
 <li id="li-1822"><p id="p-derived-li-1822"><span class="process-math">\(\displaystyle 1\)</span></p></li>
 <li id="li-1823"><p id="p-derived-li-1823"><span class="process-math">\(\displaystyle 4\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-698"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2579">Determine on which intervals <span class="process-math">\(f(x)\)</span> is increasing and/or decreasing. (Hint: compute <span class="process-math">\(f'(x)\)</span> first.)</p></article><article class="task exercise-like" id="task-699"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2580">Which statement best describes <span class="process-math">\(f(x)\)</span> for <span class="process-math">\(x&gt;0\text{?}\)</span></p>
+<p id="p-2564">Determine on which intervals <span class="process-math">\(f(x)\)</span> is increasing and/or decreasing. (Hint: compute <span class="process-math">\(f'(x)\)</span> first.)</p></article><article class="task exercise-like" id="task-699"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2565">Which statement best describes <span class="process-math">\(f(x)\)</span> for <span class="process-math">\(x&gt;0\text{?}\)</span></p>
 <ol class="upper-alpha">
 <li id="li-1824"><p id="p-derived-li-1824"><span class="process-math">\(f(x)\)</span> is bounded above by 4</p></li>
 <li id="li-1825"><p id="p-derived-li-1825"><span class="process-math">\(f(x)\)</span> is bounded below by 4</p></li>
@@ -252,7 +220,7 @@ eBookConfig.enable_chatcodes =  false;
 </ol></article></article><article class="definition definition-like" id="definitionmonotonicsequence"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.2.2</span><span class="period">.</span>
 </h3>
-<p id="p-2581">Given a sequence <span class="process-math">\(\{x_n\}\text{:}\)</span></p>
+<p id="p-2566">Given a sequence <span class="process-math">\(\{x_n\}\text{:}\)</span></p>
 <ul class="disc">
 <li id="li-1829"><p id="p-derived-li-1829"><span class="process-math">\(\{x_n\}\)</span> is <em class="emphasis">monotonically increasing</em> if <span class="process-math">\(x_{n+1}&gt;x_n\)</span> for <em class="emphasis">every</em> choice of <span class="process-math">\(n\text{.}\)</span></p></li>
 <li id="li-1830"><p id="p-derived-li-1830"><span class="process-math">\(\{x_n\}\)</span> is <em class="emphasis">monotonically non-decreasing</em> if <span class="process-math">\(x_{n+1}\geq x_n\)</span> for <em class="emphasis">every</em> choice of <span class="process-math">\(n\text{.}\)</span></p></li>
@@ -262,17 +230,17 @@ eBookConfig.enable_chatcodes =  false;
 <p class="continuation">All of these sequences would be <em class="emphasis">monotonic</em>.</p></article><article class="activity project-like" id="sq2alternatingharmonic"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.2.3</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-236"><p id="p-2582">Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty.\)</span></p></div>
+<div class="introduction" id="introduction-236"><p id="p-2567">Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty.\)</span></p></div>
 <article class="task exercise-like" id="task-700"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2583">Compute <span class="process-math">\(x_{n+1}-x_n\text{.}\)</span></p></article><article class="task exercise-like" id="task-701"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2584">Which of the following is true about <span class="process-math">\(x_{n+1}-x_n\text{?}\)</span>  There can be more or less than one answer.</p>
+<p id="p-2568">Compute <span class="process-math">\(x_{n+1}-x_n\text{.}\)</span></p></article><article class="task exercise-like" id="task-701"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2569">Which of the following is true about <span class="process-math">\(x_{n+1}-x_n\text{?}\)</span>  There can be more or less than one answer.</p>
 <ol class="upper-alpha">
 <li id="li-1833"><p id="p-derived-li-1833"><span class="process-math">\(x_{n+1}-x_n&gt; 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></p></li>
 <li id="li-1834"><p id="p-derived-li-1834"><span class="process-math">\(x_{n+1}-x_n\geq 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></p></li>
 <li id="li-1835"><p id="p-derived-li-1835"><span class="process-math">\(x_{n+1}-x_n &lt; 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></p></li>
 <li id="li-1836"><p id="p-derived-li-1836"><span class="process-math">\(x_{n+1}-x_n\leq 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-702"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2585">Which of the following (if any) describe <span class="process-math">\(\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty?\)</span></p>
+<p id="p-2570">Which of the following (if any) describe <span class="process-math">\(\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty?\)</span></p>
 <ol class="upper-alpha">
 <li id="li-1837"><p id="p-derived-li-1837">Monotonically increasing.</p></li>
 <li id="li-1838"><p id="p-derived-li-1838">Monotonically non-decreasing.</p></li>
@@ -281,17 +249,17 @@ eBookConfig.enable_chatcodes =  false;
 </ol></article></article><article class="activity project-like" id="sq2quadraticrational"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.2.4</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-237"><p id="p-2586">Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty.\)</span></p></div>
+<div class="introduction" id="introduction-237"><p id="p-2571">Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty.\)</span></p></div>
 <article class="task exercise-like" id="task-703"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2587">Compute <span class="process-math">\(x_{n+1}-x_n\text{.}\)</span></p></article><article class="task exercise-like" id="task-704"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2588">Which of the following is true about <span class="process-math">\(x_{n+1}-x_n\text{?}\)</span>  There can be more or less than one answer.</p>
+<p id="p-2572">Compute <span class="process-math">\(x_{n+1}-x_n\text{.}\)</span></p></article><article class="task exercise-like" id="task-704"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2573">Which of the following is true about <span class="process-math">\(x_{n+1}-x_n\text{?}\)</span>  There can be more or less than one answer.</p>
 <ol class="upper-alpha">
 <li id="li-1841"><p id="p-derived-li-1841"><span class="process-math">\(x_{n+1}-x_n&gt; 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></p></li>
 <li id="li-1842"><p id="p-derived-li-1842"><span class="process-math">\(x_{n+1}-x_n\geq 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></p></li>
 <li id="li-1843"><p id="p-derived-li-1843"><span class="process-math">\(x_{n+1}-x_n &lt; 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></p></li>
 <li id="li-1844"><p id="p-derived-li-1844"><span class="process-math">\(x_{n+1}-x_n\leq 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-705"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2589">Which of the following (if any) describe <span class="process-math">\(\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty?\)</span></p>
+<p id="p-2574">Which of the following (if any) describe <span class="process-math">\(\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty?\)</span></p>
 <ol class="upper-alpha">
 <li id="li-1845"><p id="p-derived-li-1845">Monotonically increasing.</p></li>
 <li id="li-1846"><p id="p-derived-li-1846">Monotonically non-decreasing.</p></li>
@@ -300,17 +268,17 @@ eBookConfig.enable_chatcodes =  false;
 </ol></article></article><article class="activity project-like" id="sq2linearrational"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.2.5</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-238"><p id="p-2590">Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty.\)</span></p></div>
+<div class="introduction" id="introduction-238"><p id="p-2575">Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty.\)</span></p></div>
 <article class="task exercise-like" id="task-706"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2591">Compute <span class="process-math">\(x_{n+1}-x_n\text{.}\)</span></p></article><article class="task exercise-like" id="task-707"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2592">Which of the following is true about <span class="process-math">\(x_{n+1}-x_n\text{?}\)</span>  There can be more or less than one answer.</p>
+<p id="p-2576">Compute <span class="process-math">\(x_{n+1}-x_n\text{.}\)</span></p></article><article class="task exercise-like" id="task-707"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2577">Which of the following is true about <span class="process-math">\(x_{n+1}-x_n\text{?}\)</span>  There can be more or less than one answer.</p>
 <ol class="upper-alpha">
 <li id="li-1849"><p id="p-derived-li-1849"><span class="process-math">\(x_{n+1}-x_n&gt; 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></p></li>
 <li id="li-1850"><p id="p-derived-li-1850"><span class="process-math">\(x_{n+1}-x_n\geq 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></p></li>
 <li id="li-1851"><p id="p-derived-li-1851"><span class="process-math">\(x_{n+1}-x_n &lt; 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></p></li>
 <li id="li-1852"><p id="p-derived-li-1852"><span class="process-math">\(x_{n+1}-x_n\leq 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-708"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2593">Which of the following (if any) describe <span class="process-math">\(\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty?\)</span></p>
+<p id="p-2578">Which of the following (if any) describe <span class="process-math">\(\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty?\)</span></p>
 <ol class="upper-alpha">
 <li id="li-1853"><p id="p-derived-li-1853">Monotonically increasing.</p></li>
 <li id="li-1854"><p id="p-derived-li-1854">Monotonically non-decreasing.</p></li>
@@ -319,17 +287,17 @@ eBookConfig.enable_chatcodes =  false;
 </ol></article></article><article class="activity project-like" id="sq2geometric"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.2.6</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-239"><p id="p-2594">Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{2}{3^n}\right\}_{n=0}^\infty.\)</span></p></div>
+<div class="introduction" id="introduction-239"><p id="p-2579">Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{2}{3^n}\right\}_{n=0}^\infty.\)</span></p></div>
 <article class="task exercise-like" id="task-709"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2595">Compute <span class="process-math">\(x_{n+1}-x_n\text{.}\)</span></p></article><article class="task exercise-like" id="task-710"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2596">Which of the following is true about <span class="process-math">\(x_{n+1}-x_n\text{?}\)</span>  There can be more or less than one answer.</p>
+<p id="p-2580">Compute <span class="process-math">\(x_{n+1}-x_n\text{.}\)</span></p></article><article class="task exercise-like" id="task-710"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2581">Which of the following is true about <span class="process-math">\(x_{n+1}-x_n\text{?}\)</span>  There can be more or less than one answer.</p>
 <ol class="upper-alpha">
 <li id="li-1857"><p id="p-derived-li-1857"><span class="process-math">\(x_{n+1}-x_n&gt; 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></p></li>
 <li id="li-1858"><p id="p-derived-li-1858"><span class="process-math">\(x_{n+1}-x_n\geq 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></p></li>
 <li id="li-1859"><p id="p-derived-li-1859"><span class="process-math">\(x_{n+1}-x_n &lt; 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></p></li>
 <li id="li-1860"><p id="p-derived-li-1860"><span class="process-math">\(x_{n+1}-x_n\leq 0\)</span> for every choice of <span class="process-math">\(n\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-711"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2597">Which of the following (if any) describe <span class="process-math">\(\left\{\displaystyle \frac{2}{3^n}\right\}_{n=0}^\infty?\)</span></p>
+<p id="p-2582">Which of the following (if any) describe <span class="process-math">\(\left\{\displaystyle \frac{2}{3^n}\right\}_{n=0}^\infty?\)</span></p>
 <ol class="upper-alpha">
 <li id="li-1861"><p id="p-derived-li-1861">Monotonically increasing.</p></li>
 <li id="li-1862"><p id="p-derived-li-1862">Monotonically non-decreasing.</p></li>
@@ -338,86 +306,83 @@ eBookConfig.enable_chatcodes =  false;
 </ol></article></article><article class="definition definition-like" id="definitionboundedsequence"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.2.7</span><span class="period">.</span>
 </h3>
-<p id="p-2598">A sequence <span class="process-math">\(\{x_n\}\)</span> is <em class="emphasis">bounded</em> if there are real numbers <span class="process-math">\(b_u, b_{\ell}\)</span> such that</p>
+<p id="p-2583">A sequence <span class="process-math">\(\{x_n\}\)</span> is <em class="emphasis">bounded</em> if there are real numbers <span class="process-math">\(b_u, b_{\ell}\)</span> such that</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 b_{\ell}\leq x_n \leq b_u
 \end{equation*}
 </div>
-<p class="continuation">for every <span class="process-math">\(n\text{?}\)</span></p></article><article class="activity project-like" id="activity-468"><h3 class="heading">
+<p class="continuation">for every <span class="process-math">\(n\text{?}\)</span></p></article><article class="activity project-like" id="activity-470"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.2.8</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-240"><p id="p-2599">Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty\)</span> from <a href="" class="xref" data-knowl="./knowl/sq2alternatingharmonic.html" title="Activity 8.2.3">Activity 8.2.3</a>.</p></div>
+<div class="introduction" id="introduction-240"><p id="p-2584">Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty\)</span> from <a href="" class="xref" data-knowl="./knowl/sq2alternatingharmonic.html" title="Activity 8.2.3">Activity 8.2.3</a>.</p></div>
 <article class="task exercise-like" id="task-712"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2600">Is there a <span class="process-math">\(b_u\)</span> such that <span class="process-math">\(x_n\leq b_u\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_u\text{?}\)</span></p></article><article class="task exercise-like" id="task-713"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2601">Is there a <span class="process-math">\(b_\ell\)</span> such that <span class="process-math">\(b_\ell \leq x_n\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_\ell\text{?}\)</span></p></article><article class="task exercise-like" id="task-714"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2602">Is <span class="process-math">\(\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty\)</span> bounded?</p></article></article><article class="activity project-like" id="activity-469"><h3 class="heading">
+<p id="p-2585">Is there a <span class="process-math">\(b_u\)</span> such that <span class="process-math">\(x_n\leq b_u\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_u\text{?}\)</span></p></article><article class="task exercise-like" id="task-713"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2586">Is there a <span class="process-math">\(b_\ell\)</span> such that <span class="process-math">\(b_\ell \leq x_n\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_\ell\text{?}\)</span></p></article><article class="task exercise-like" id="task-714"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2587">Is <span class="process-math">\(\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty\)</span> bounded?</p></article></article><article class="activity project-like" id="activity-471"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.2.9</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-241"><p id="p-2603">Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty\)</span> from <a href="" class="xref" data-knowl="./knowl/sq2quadraticrational.html" title="Activity 8.2.4">Activity 8.2.4</a>.</p></div>
+<div class="introduction" id="introduction-241"><p id="p-2588">Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty\)</span> from <a href="" class="xref" data-knowl="./knowl/sq2quadraticrational.html" title="Activity 8.2.4">Activity 8.2.4</a>.</p></div>
 <article class="task exercise-like" id="task-715"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2604">Is there a <span class="process-math">\(b_u\)</span> such that <span class="process-math">\(x_n\leq b_u\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_u\text{?}\)</span></p></article><article class="task exercise-like" id="task-716"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2605">Is there a <span class="process-math">\(b_\ell\)</span> such that <span class="process-math">\(b_\ell \leq x_n\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_\ell\text{?}\)</span></p></article><article class="task exercise-like" id="task-717"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2606">Is <span class="process-math">\(\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty\)</span> bounded?</p></article></article><article class="activity project-like" id="activity-470"><h3 class="heading">
+<p id="p-2589">Is there a <span class="process-math">\(b_u\)</span> such that <span class="process-math">\(x_n\leq b_u\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_u\text{?}\)</span></p></article><article class="task exercise-like" id="task-716"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2590">Is there a <span class="process-math">\(b_\ell\)</span> such that <span class="process-math">\(b_\ell \leq x_n\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_\ell\text{?}\)</span></p></article><article class="task exercise-like" id="task-717"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2591">Is <span class="process-math">\(\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty\)</span> bounded?</p></article></article><article class="activity project-like" id="activity-472"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.2.10</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-242"><p id="p-2607">Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty\)</span> from <a href="" class="xref" data-knowl="./knowl/sq2linearrational.html" title="Activity 8.2.5">Activity 8.2.5</a>.</p></div>
+<div class="introduction" id="introduction-242"><p id="p-2592">Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty\)</span> from <a href="" class="xref" data-knowl="./knowl/sq2linearrational.html" title="Activity 8.2.5">Activity 8.2.5</a>.</p></div>
 <article class="task exercise-like" id="task-718"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2608">Is there a <span class="process-math">\(b_u\)</span> such that <span class="process-math">\(x_n\leq b_u\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_u\text{?}\)</span></p></article><article class="task exercise-like" id="task-719"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2609">Is there a <span class="process-math">\(b_\ell\)</span> such that <span class="process-math">\(b_\ell \leq x_n\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_\ell\text{?}\)</span></p></article><article class="task exercise-like" id="task-720"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2610">Is <span class="process-math">\(\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty\)</span> bounded?</p></article></article><article class="activity project-like" id="activity-471"><h3 class="heading">
+<p id="p-2593">Is there a <span class="process-math">\(b_u\)</span> such that <span class="process-math">\(x_n\leq b_u\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_u\text{?}\)</span></p></article><article class="task exercise-like" id="task-719"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2594">Is there a <span class="process-math">\(b_\ell\)</span> such that <span class="process-math">\(b_\ell \leq x_n\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_\ell\text{?}\)</span></p></article><article class="task exercise-like" id="task-720"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2595">Is <span class="process-math">\(\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty\)</span> bounded?</p></article></article><article class="activity project-like" id="activity-473"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.2.11</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-243"><p id="p-2611">Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{2}{3^n}\right\}_{n=1}^\infty\)</span> from <a href="" class="xref" data-knowl="./knowl/sq2geometric.html" title="Activity 8.2.6">Activity 8.2.6</a>.</p></div>
+<div class="introduction" id="introduction-243"><p id="p-2596">Consider the sequence <span class="process-math">\(\left\{\displaystyle \frac{2}{3^n}\right\}_{n=1}^\infty\)</span> from <a href="" class="xref" data-knowl="./knowl/sq2geometric.html" title="Activity 8.2.6">Activity 8.2.6</a>.</p></div>
 <article class="task exercise-like" id="task-721"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2612">Is there a <span class="process-math">\(b_u\)</span> such that <span class="process-math">\(x_n\leq b_u\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_u\text{?}\)</span></p></article><article class="task exercise-like" id="task-722"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2613">Is there a <span class="process-math">\(b_\ell\)</span> such that <span class="process-math">\(b_\ell \leq x_n\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_\ell\text{?}\)</span></p></article><article class="task exercise-like" id="task-723"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2614">Is <span class="process-math">\(\left\{\displaystyle \frac{2}{3^n}\right\}_{n=1}^\infty\)</span> bounded?</p></article></article><article class="definition definition-like" id="definitionlimitsequence"><h3 class="heading">
+<p id="p-2597">Is there a <span class="process-math">\(b_u\)</span> such that <span class="process-math">\(x_n\leq b_u\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_u\text{?}\)</span></p></article><article class="task exercise-like" id="task-722"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2598">Is there a <span class="process-math">\(b_\ell\)</span> such that <span class="process-math">\(b_\ell \leq x_n\)</span> for every <span class="process-math">\(n\text{?}\)</span>  If so, what would be one such <span class="process-math">\(b_\ell\text{?}\)</span></p></article><article class="task exercise-like" id="task-723"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2599">Is <span class="process-math">\(\left\{\displaystyle \frac{2}{3^n}\right\}_{n=1}^\infty\)</span> bounded?</p></article></article><article class="definition definition-like" id="definitionlimitsequence"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.2.12</span><span class="period">.</span>
 </h3>
-<p id="p-2615">Given a sequence <span class="process-math">\(\{x_n\}\text{,}\)</span> we say <span class="process-math">\(x_n\)</span> has <em class="emphasis">limit</em> <span class="process-math">\(L\text{,}\)</span> denoted</p>
+<p id="p-2600">Given a sequence <span class="process-math">\(\{x_n\}\text{,}\)</span> we say <span class="process-math">\(x_n\)</span> has <em class="emphasis">limit</em> <span class="process-math">\(L\text{,}\)</span> denoted</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \lim_{n\to\infty} x_n=L
 \end{equation*}
 </div>
-<p class="continuation">if we can make <span class="process-math">\(x_n\)</span> as close to <span class="process-math">\(L\)</span> as we like by making <span class="process-math">\(n\)</span> sufficiently large.  If such an <span class="process-math">\(L\)</span> exists, we say <em class="emphasis"><span class="process-math">\(\{x_n\}\)</span> converges to <span class="process-math">\(L\text{.}\)</span></em>  If no such <span class="process-math">\(L\)</span> exists, we say <em class="emphasis"><span class="process-math">\(\{x_n\}\)</span> does not converge.</em></p></article><article class="activity project-like" id="activity-472"><h3 class="heading">
+<p class="continuation">if we can make <span class="process-math">\(x_n\)</span> as close to <span class="process-math">\(L\)</span> as we like by making <span class="process-math">\(n\)</span> sufficiently large.  If such an <span class="process-math">\(L\)</span> exists, we say <em class="emphasis"><span class="process-math">\(\{x_n\}\)</span> converges to <span class="process-math">\(L\text{.}\)</span></em>  If no such <span class="process-math">\(L\)</span> exists, we say <em class="emphasis"><span class="process-math">\(\{x_n\}\)</span> does not converge.</em></p></article><article class="activity project-like" id="activity-474"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.2.13</span><span class="period">.</span>
 </h3>
 <article class="task exercise-like" id="task-724"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2616">For each of the following, determine if the sequence converges.</p>
+<p id="p-2601">For each of the following, determine if the sequence converges.</p>
 <ol class="upper-alpha">
 <li id="li-1865"><p id="p-derived-li-1865"><span class="process-math">\(\displaystyle \left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty.\)</span></p></li>
 <li id="li-1866"><p id="p-derived-li-1866"><span class="process-math">\(\displaystyle \left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty.\)</span></p></li>
 <li id="li-1867"><p id="p-derived-li-1867"><span class="process-math">\(\displaystyle \left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty.\)</span></p></li>
 <li id="li-1868"><p id="p-derived-li-1868"><span class="process-math">\(\displaystyle \left\{\displaystyle \frac{2}{3^n}\right\}_{n=0}^\infty.\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-725"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2617">Where possible, find the limit of the sequence.</p></article></article><article class="activity project-like" id="activity-473"><h3 class="heading">
+<p id="p-2602">Where possible, find the limit of the sequence.</p></article></article><article class="activity project-like" id="activity-475"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.2.14</span><span class="period">.</span>
 </h3>
 <article class="task exercise-like" id="task-726"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2618">Determine to what value <span class="process-math">\(\left\{\displaystyle \frac{4n}{n+1}\right\}_{n=0}^\infty\)</span> converges.</p></article><article class="task exercise-like" id="task-727"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2619">Which of the following ia most likely true about <span class="process-math">\(\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty\text{?}\)</span></p>
+<p id="p-2603">Determine to what value <span class="process-math">\(\left\{\displaystyle \frac{4n}{n+1}\right\}_{n=0}^\infty\)</span> converges.</p></article><article class="task exercise-like" id="task-727"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2604">Which of the following ia most likely true about <span class="process-math">\(\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty\text{?}\)</span></p>
 <ol class="upper-alpha">
 <li id="li-1869"><p id="p-derived-li-1869"><span class="process-math">\(\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty\)</span> converges to 4.</p></li>
 <li id="li-1870"><p id="p-derived-li-1870"><span class="process-math">\(\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty\)</span> converges to 0.</p></li>
 <li id="li-1871"><p id="p-derived-li-1871"><span class="process-math">\(\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty\)</span> converges to -4.</p></li>
 <li id="li-1872"><p id="p-derived-li-1872"><span class="process-math">\(\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty\)</span> does not converge.</p></li>
-</ol></article></article><article class="activity project-like" id="activity-474"><h3 class="heading">
+</ol></article></article><article class="activity project-like" id="activity-476"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.2.15</span><span class="period">.</span>
 </h3>
-<p id="p-2620">For each of the following sequences, determine which of the properties: <em class="emphasis">monotonic</em>, <em class="emphasis">bounded</em> and <em class="emphasis">convergent</em>, the sequence satisfies. If a sequence is convergent, determine to what it converges. <article class="task exercise-like" id="task-728"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2605">For each of the following sequences, determine which of the properties: <em class="emphasis">monotonic</em>, <em class="emphasis">bounded</em> and <em class="emphasis">convergent</em>, the sequence satisfies. If a sequence is convergent, determine to what it converges. <article class="task exercise-like" id="task-728"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <span class="process-math">\(\left\{\displaystyle 3n\right\}_{n=0}^\infty.\)</span></article> <article class="task exercise-like" id="task-729"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <span class="process-math">\(\left\{\displaystyle \frac{n^3}{3^n}\right\}_{n=0}^\infty.\)</span></article> <article class="task exercise-like" id="task-730"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <span class="process-math">\(\left\{\displaystyle \frac{n}{n+3}\right\}_{n=1}^\infty.\)</span></article> <article class="task exercise-like" id="task-731"><h4 class="heading"><span class="codenumber">(d)</span></h4>
 <span class="process-math">\(\left\{\displaystyle \frac{(-1)^n}{n+3}\right\}_{n=1}^\infty.\)</span></article></p></article><article class="fact theorem-like" id="boundedmonotonicsequence"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">8.2.16</span><span class="period">.</span>
 </h3>
-<p id="p-2621">If a sequence is monotonic and bounded, then it is convergent.</p></article><section class="subsection" id="subsection-31"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">8.2.1</span> <span class="title">Slideshow</span>
-</h3>
-<p id="p-2622">Slideshow of activities available at <a class="external" href="SQ2.slides.html" target="_blank"><code class="code-inline tex2jax_ignore">SQ2.slides.html</code></a>.</p></section><section class="subsection" id="subsection-32"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">8.2.2</span> <span class="title">Videos</span>
+<p id="p-2606">If a sequence is monotonic and bounded, then it is convergent.</p></article><section class="subsection" id="subsection-16"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">8.2.1</span> <span class="title">Videos</span>
 </h3>
 <figure class="figure figure-like" id="figure-136"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-SQ2" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/Bt2sx5amiVo?&amp;modestbranding=1&amp;rel=0"></iframe></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">150<span class="period">.</span></span><span class="space"> </span>Video: Determine if a sequence is convergent, divergent, monotonic, or bounded, and compute limits of convergent sequences</figcaption></figure></section></section></div></main>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-30T01:56:59Z       *-->
+<!--*       on 2022-06-30T19:07:44Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -49,38 +49,6 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
-<!--** Runestone components to run locally in reader's browser **-->
-<!--** No external communication:                              **-->
-<!--**     log level is 0, Runestone Services are disabled     **-->
-<script type="text/javascript">
-eBookConfig = {};
-eBookConfig.useRunestoneServices = false;
-eBookConfig.host = 'http://127.0.0.1:8000';
-eBookConfig.course = 'PTX Course: Title Here';
-eBookConfig.basecourse = 'PTX Base Course';
-eBookConfig.isLoggedIn = false;
-eBookConfig.email = '';
-eBookConfig.isInstructor = false;
-eBookConfig.logLevel = 0;
-eBookConfig.username = '';
-eBookConfig.readings = null;
-eBookConfig.activities = null;
-eBookConfig.downloadsEnabled = false;
-eBookConfig.allow_pairs = false;
-eBookConfig.enableScratchAC = false;
-eBookConfig.build_info = "";
-eBookConfig.python3 = null;
-eBookConfig.acDefaultLanguage = 'python';
-eBookConfig.runestone_version = '5.0.1';
-eBookConfig.jobehost = '';
-eBookConfig.proxyuri_runs = '';
-eBookConfig.proxyuri_files = '';
-eBookConfig.enable_chatcodes =  false;
-</script>
-<!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -231,37 +199,37 @@ eBookConfig.enable_chatcodes =  false;
 </h2>
 <article class="objectives goal-like" id="objectives-45"><h2 class="heading"><span class="type">Learning Outcomes</span></h2>
 <div class="introduction" id="introduction-182">
-<p id="p-2120">How do we use various techniques to integrate less simple functions?</p>
-<p id="p-2121">By the end of this chapter, you should be able to...</p>
+<p id="p-2112">How do we use various techniques to integrate less simple functions?</p>
+<p id="p-2113">By the end of this chapter, you should be able to...</p>
 </div>
 <ol class="decimal">
-<li id="li-1450"><p id="p-2122">Compute the average value of a function on an interval.</p></li>
-<li id="li-1451"><p id="p-2123">Estimate the arclength of a curve with Riemann sums and find an integral which computes the arclength.</p></li>
-<li id="li-1452"><p id="p-2124">Compute volumes of solids of revolution.</p></li>
-<li id="li-1453"><p id="p-2125">Compute surface areas of surfaces of revolution.</p></li>
-<li id="li-1454"><p id="p-2126">Set up integrals to solve problems involving density, mass, and center of mass.</p></li>
+<li id="li-1450"><p id="p-2114">Compute the average value of a function on an interval.</p></li>
+<li id="li-1451"><p id="p-2115">Estimate the arclength of a curve with Riemann sums and find an integral which computes the arclength.</p></li>
+<li id="li-1452"><p id="p-2116">Compute volumes of solids of revolution.</p></li>
+<li id="li-1453"><p id="p-2117">Compute surface areas of surfaces of revolution.</p></li>
+<li id="li-1454"><p id="p-2118">Set up integrals to solve problems involving density, mass, and center of mass.</p></li>
 </ol></article><section class="introduction" id="AI-intro"><section class="paragraphs" id="AI-readiness"><h2 class="heading"><span class="title">Readiness Assurance.</span></h2>
-<p id="p-2127">Before beginning this chapter, you should be able to...</p>
+<p id="p-2119">Before beginning this chapter, you should be able to...</p>
 <ol class="lower-alpha">
 <li id="li-1455">
-<p id="p-2128">Estimate a definite integral with a Riemann sum.</p>
-<ul class="disc"><li id="li-1456"><p id="p-2129">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/generalizing-a-left-riemann-sum-with-equally-spaced-rectangles?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-53" id="fn-53"><sup> 1 </sup></a></p></li></ul>
+<p id="p-2120">Estimate a definite integral with a Riemann sum.</p>
+<ul class="disc"><li id="li-1456"><p id="p-2121">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/generalizing-a-left-riemann-sum-with-equally-spaced-rectangles?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-53" id="fn-53"><sup> 1 </sup></a></p></li></ul>
 </li>
 <li id="li-1457">
-<p id="p-2130">Evaluate the limit of a Riemann sum to find an integral.</p>
-<ul class="disc"><li id="li-1458"><p id="p-2131">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/riemann-sums-and-integrals?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-54" id="fn-54"><sup> 2 </sup></a></p></li></ul>
+<p id="p-2122">Evaluate the limit of a Riemann sum to find an integral.</p>
+<ul class="disc"><li id="li-1458"><p id="p-2123">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/riemann-sums-and-integrals?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-54" id="fn-54"><sup> 2 </sup></a></p></li></ul>
 </li>
 <li id="li-1459">
-<p id="p-2132">Solve accumulation problems with definite integrals.</p>
-<ul class="disc"><li id="li-1460"><p id="p-2133">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-4/v/functions-defined-by-definite-integrals?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-55" id="fn-55"><sup> 3 </sup></a></p></li></ul>
+<p id="p-2124">Solve accumulation problems with definite integrals.</p>
+<ul class="disc"><li id="li-1460"><p id="p-2125">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-4/v/functions-defined-by-definite-integrals?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-55" id="fn-55"><sup> 3 </sup></a></p></li></ul>
 </li>
 <li id="li-1461">
-<p id="p-2134">Find the distance between points on a curve.</p>
-<ul class="disc"><li id="li-1462"><p id="p-2135">Review: <a class="external" href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-distance-and-midpoints/v/distance-formula" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-56" id="fn-56"><sup> 4 </sup></a></p></li></ul>
+<p id="p-2126">Find the distance between points on a curve.</p>
+<ul class="disc"><li id="li-1462"><p id="p-2127">Review: <a class="external" href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-distance-and-midpoints/v/distance-formula" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-56" id="fn-56"><sup> 4 </sup></a></p></li></ul>
 </li>
 <li id="li-1463">
-<p id="p-2136">Express the sum of indexed values using summation notation.</p>
-<ul class="disc"><li id="li-1464"><p id="p-2137">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/sigma-notation-sum" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-57" id="fn-57"><sup> 5 </sup></a></p></li></ul>
+<p id="p-2128">Express the sum of indexed values using summation notation.</p>
+<ul class="disc"><li id="li-1464"><p id="p-2129">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/sigma-notation-sum" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-57" id="fn-57"><sup> 5 </sup></a></p></li></ul>
 </li>
 </ol></section></section><nav class="summary-links"><ul>
 <li><a href="AI1.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Average Value (AI1)</span></a></li>

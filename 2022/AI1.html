@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-30T01:55:43Z       *-->
+<!--*       on 2022-06-30T19:06:05Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -49,38 +49,6 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
-<!--** Runestone components to run locally in reader's browser **-->
-<!--** No external communication:                              **-->
-<!--**     log level is 0, Runestone Services are disabled     **-->
-<script type="text/javascript">
-eBookConfig = {};
-eBookConfig.useRunestoneServices = false;
-eBookConfig.host = 'http://127.0.0.1:8000';
-eBookConfig.course = 'PTX Course: Title Here';
-eBookConfig.basecourse = 'PTX Base Course';
-eBookConfig.isLoggedIn = false;
-eBookConfig.email = '';
-eBookConfig.isInstructor = false;
-eBookConfig.logLevel = 0;
-eBookConfig.username = '';
-eBookConfig.readings = null;
-eBookConfig.activities = null;
-eBookConfig.downloadsEnabled = false;
-eBookConfig.allow_pairs = false;
-eBookConfig.enableScratchAC = false;
-eBookConfig.build_info = "";
-eBookConfig.python3 = null;
-eBookConfig.acDefaultLanguage = 'python';
-eBookConfig.runestone_version = '5.0.1';
-eBookConfig.jobehost = '';
-eBookConfig.proxyuri_runs = '';
-eBookConfig.proxyuri_files = '';
-eBookConfig.enable_chatcodes =  false;
-</script>
-<!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -229,18 +197,18 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Section</span> <span class="codenumber">6.1</span> <span class="title">Average Value (AI1)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-46"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-1465"><p id="p-2138">Compute the average value of a function on an interval.</p></li></ul></article><article class="activity project-like" id="activity-AI1averagespeed"><h3 class="heading">
+<ul class="disc"><li id="li-1465"><p id="p-2130">Compute the average value of a function on an interval.</p></li></ul></article><article class="activity project-like" id="activity-AI1averagespeed"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.1</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-184"><p id="p-2139">Suppose a car drives due east at 70 mph for 2 hours, and then slows down to 40 mph for an additional hour.</p></div>
+<div class="introduction" id="introduction-184"><p id="p-2131">Suppose a car drives due east at 70 mph for 2 hours, and then slows down to 40 mph for an additional hour.</p></div>
 <article class="task exercise-like" id="task-537"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2140">How far did the car travel in these 3 hours?</p></article><article class="task exercise-like" id="task-538"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2141">What was their average velocity over these 3 hours?</p></article></article><article class="activity project-like" id="activity-AI1averagespeed2"><h3 class="heading">
+<p id="p-2132">How far did the car travel in these 3 hours?</p></article><article class="task exercise-like" id="task-538"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2133">What was their average velocity over these 3 hours?</p></article></article><article class="activity project-like" id="activity-AI1averagespeed2"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.2</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-185"><p id="p-2142">Suppose a car drives due east at a velocity of <span class="process-math">\(v(t)=40+\sqrt{300t}\)</span> mph, where <span class="process-math">\(t\)</span> is the number of hours after they start driving.</p></div>
+<div class="introduction" id="introduction-185"><p id="p-2134">Suppose a car drives due east at a velocity of <span class="process-math">\(v(t)=40+\sqrt{300t}\)</span> mph, where <span class="process-math">\(t\)</span> is the number of hours after they start driving.</p></div>
 <article class="task exercise-like" id="task-539"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2143">Which of the following expressions measures how far the car travel travels in these 3 hours?</p>
+<p id="p-2135">Which of the following expressions measures how far the car travel travels in these 3 hours?</p>
 <ol class="upper-alpha">
 <li id="li-1466"><p id="p-derived-li-1466"><span class="process-math">\(\displaystyle \int_0^2 70x \,dx + \int_2^3 40x \,dx\text{.}\)</span></p></li>
 <li id="li-1467"><p id="p-derived-li-1467"><span class="process-math">\(\displaystyle \int_0^2 70 \,dx + \int_2^3 40 \,dx\text{.}\)</span></p></li>
@@ -248,7 +216,7 @@ eBookConfig.enable_chatcodes =  false;
 <li id="li-1469"><p id="p-derived-li-1469"><span class="process-math">\(\displaystyle \int_0^2 70 \,dx + \int_0^1 40 \,dx\text{.}\)</span></p></li>
 <li id="li-1470"><p id="p-derived-li-1470"><span class="process-math">\(70(2)+40(1)\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-540"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2144">What was their average velocity over these 3 hours?</p>
+<p id="p-2136">What was their average velocity over these 3 hours?</p>
 <ol class="upper-alpha">
 <li id="li-1471"><p id="p-derived-li-1471"><span class="process-math">\(180\)</span> mi.</p></li>
 <li id="li-1472"><p id="p-derived-li-1472"><span class="process-math">\(180\)</span> mph.</p></li>
@@ -257,7 +225,7 @@ eBookConfig.enable_chatcodes =  false;
 </ol></article></article><article class="activity project-like" id="activity-AI1piecewise"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.3</span><span class="period">.</span>
 </h3>
-<p id="p-2145">Which of the following is the average value of <span class="process-math">\(f(x)\)</span> over the interval <span class="process-math">\([0,8]\text{?}\)</span>  Note <span class="process-math">\(f(x)=\begin{cases} 1, &amp; 0\leq x\leq 3 \\ 4, &amp; 3 &lt; x \leq 6 \\ 2, &amp; 6 &lt; x \leq 8 \end{cases}\text{.}\)</span> <figure class="figure figure-like" id="figure-77"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/piecewiseaverage.svg" role="img" class="contained" alt="A plot of f(x)."></div>
+<p id="p-2137">Which of the following is the average value of <span class="process-math">\(f(x)\)</span> over the interval <span class="process-math">\([0,8]\text{?}\)</span>  Note <span class="process-math">\(f(x)=\begin{cases} 1, &amp; 0\leq x\leq 3 \\ 4, &amp; 3 &lt; x \leq 6 \\ 2, &amp; 6 &lt; x \leq 8 \end{cases}\text{.}\)</span> <figure class="figure figure-like" id="figure-77"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/piecewiseaverage.svg" role="img" class="contained" alt="A plot of f(x)."></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">88<span class="period">.</span></span><span class="space"> </span>Plot of <span class="process-math">\(f(x)\text{.}\)</span></figcaption></figure></p>
 <ol class="upper-alpha">
 <li id="li-1475"><p id="p-derived-li-1475"><span class="process-math">\(4\text{.}\)</span></p></li>
@@ -267,7 +235,7 @@ eBookConfig.enable_chatcodes =  false;
 </ol></article><article class="activity project-like" id="activity-AI1strat"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.4</span><span class="period">.</span>
 </h3>
-<p id="p-2146">Consider a function <span class="process-math">\(f(x)\)</span> which has average value <span class="process-math">\(v\)</span> on the interval <span class="process-math">\([a,b]\text{.}\)</span>  Which of the following is most likely always true about <span class="process-math">\(v\text{?}\)</span></p>
+<p id="p-2138">Consider a function <span class="process-math">\(f(x)\)</span> which has average value <span class="process-math">\(v\)</span> on the interval <span class="process-math">\([a,b]\text{.}\)</span>  Which of the following is most likely always true about <span class="process-math">\(v\text{?}\)</span></p>
 <ol class="upper-alpha">
 <li id="li-1479"><p id="p-derived-li-1479"><span class="process-math">\(v\)</span> is the average of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span></p></li>
 <li id="li-1480"><p id="p-derived-li-1480"><span class="process-math">\(v\)</span> is the average of <span class="process-math">\(f(a)\)</span> and <span class="process-math">\(f(b)\text{.}\)</span></p></li>
@@ -276,7 +244,7 @@ eBookConfig.enable_chatcodes =  false;
 </ol></article><article class="definition definition-like" id="definition-AI8averagevalue"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.1.5</span><span class="period">.</span>
 </h3>
-<p id="p-2147">Given a function <span class="process-math">\(f(x)\)</span> defined on <span class="process-math">\([a,b]\text{,}\)</span> it's average value <span class="process-math">\(v\)</span> is:</p>
+<p id="p-2139">Given a function <span class="process-math">\(f(x)\)</span> defined on <span class="process-math">\([a,b]\text{,}\)</span> it's average value <span class="process-math">\(v\)</span> is:</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 v=\frac{1}{b-a}\int_a^b f(x) dx.
@@ -284,7 +252,7 @@ v=\frac{1}{b-a}\int_a^b f(x) dx.
 </div></article><article class="activity project-like" id="activity-AI1averageform"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.6</span><span class="period">.</span>
 </h3>
-<p id="p-2148">Which of the following expressions represent the average value of <span class="process-math">\(f(x)=x\cos(x^2)+x\)</span> on the interval <span class="process-math">\([\pi, 4\pi]\text{?}\)</span></p>
+<p id="p-2140">Which of the following expressions represent the average value of <span class="process-math">\(f(x)=x\cos(x^2)+x\)</span> on the interval <span class="process-math">\([\pi, 4\pi]\text{?}\)</span></p>
 <ol class="upper-alpha">
 <li id="li-1483"><p id="p-derived-li-1483"><span class="process-math">\(\displaystyle \int_{0}^{4\pi}\Big(x\cos(x^2)+x\Big) dx\text{.}\)</span></p></li>
 <li id="li-1484"><p id="p-derived-li-1484"><span class="process-math">\(\displaystyle \frac{1}{3\pi}\int_{0}^{4\pi}\Big(x\cos(x^2)+x\Big) dx\text{.}\)</span></p></li>
@@ -295,17 +263,14 @@ v=\frac{1}{b-a}\int_a^b f(x) dx.
 </ol></article><article class="activity project-like" id="activity-AI1averageevaluate"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.7</span><span class="period">.</span>
 </h3>
-<p id="p-2149">Find the average value of <span class="process-math">\(f(x)=x\cos(x^2)+x\)</span> on the interval <span class="process-math">\([\pi, 4\pi]\)</span> using the chosen expression from <a href="" class="xref" data-knowl="./knowl/activity-AI1averageform.html" title="Activity 6.1.6">Activity 6.1.6</a>.</p></article><article class="activity project-like" id="activity-AI1averagehandsoff"><h3 class="heading">
+<p id="p-2141">Find the average value of <span class="process-math">\(f(x)=x\cos(x^2)+x\)</span> on the interval <span class="process-math">\([\pi, 4\pi]\)</span> using the chosen expression from <a href="" class="xref" data-knowl="./knowl/activity-AI1averageform.html" title="Activity 6.1.6">Activity 6.1.6</a>.</p></article><article class="activity project-like" id="activity-AI1averagehandsoff"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.8</span><span class="period">.</span>
 </h3>
-<p id="p-2150">Find the average value of <span class="process-math">\(g(t)=\frac{t}{t^2+1}\)</span> on the interval <span class="process-math">\([0, 4]\text{.}\)</span></p></article><article class="activity project-like" id="activity-AI1averageconcentration"><h3 class="heading">
+<p id="p-2142">Find the average value of <span class="process-math">\(g(t)=\frac{t}{t^2+1}\)</span> on the interval <span class="process-math">\([0, 4]\text{.}\)</span></p></article><article class="activity project-like" id="activity-AI1averageconcentration"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.9</span><span class="period">.</span>
 </h3>
-<p id="p-2151">A shot of a drug is administered to a patient and the quantity of the drug in the bloodstream over time is <span class="process-math">\(q(t)=3te^{-0.25t}\)</span> where <span class="process-math">\(t\)</span> is measured in hours and <span class="process-math">\(q\)</span> is measured in mg.  What is the average quantity of this drug in the patient's bloodstream over the first 6 hours after injection?</p></article><section class="subsection" id="subsection-17"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">6.1.1</span> <span class="title">Slideshow</span>
-</h3>
-<p id="p-2152">Slideshow of activities available at <a class="external" href="AI1.slides.html" target="_blank"><code class="code-inline tex2jax_ignore">AI1.slides.html</code></a>.</p></section><section class="subsection" id="subsection-18"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">6.1.2</span> <span class="title">Videos</span>
+<p id="p-2143">A shot of a drug is administered to a patient and the quantity of the drug in the bloodstream over time is <span class="process-math">\(q(t)=3te^{-0.25t}\)</span> where <span class="process-math">\(t\)</span> is measured in hours and <span class="process-math">\(q\)</span> is measured in mg.  What is the average quantity of this drug in the patient's bloodstream over the first 6 hours after injection?</p></article><section class="subsection" id="subsection-9"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">6.1.1</span> <span class="title">Videos</span>
 </h3>
 <figure class="figure figure-like" id="figure-78"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-AI1" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/rwAl4trDIac?&amp;modestbranding=1&amp;rel=0"></iframe></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">89<span class="period">.</span></span><span class="space"> </span>Video: Compute the average value of a function on an interval</figcaption></figure></section></section></div></main>

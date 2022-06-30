@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-30T01:55:49Z       *-->
+<!--*       on 2022-06-30T19:06:10Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -49,38 +49,6 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
-<!--** Runestone components to run locally in reader's browser **-->
-<!--** No external communication:                              **-->
-<!--**     log level is 0, Runestone Services are disabled     **-->
-<script type="text/javascript">
-eBookConfig = {};
-eBookConfig.useRunestoneServices = false;
-eBookConfig.host = 'http://127.0.0.1:8000';
-eBookConfig.course = 'PTX Course: Title Here';
-eBookConfig.basecourse = 'PTX Base Course';
-eBookConfig.isLoggedIn = false;
-eBookConfig.email = '';
-eBookConfig.isInstructor = false;
-eBookConfig.logLevel = 0;
-eBookConfig.username = '';
-eBookConfig.readings = null;
-eBookConfig.activities = null;
-eBookConfig.downloadsEnabled = false;
-eBookConfig.allow_pairs = false;
-eBookConfig.enableScratchAC = false;
-eBookConfig.build_info = "";
-eBookConfig.python3 = null;
-eBookConfig.acDefaultLanguage = 'python';
-eBookConfig.runestone_version = '5.0.1';
-eBookConfig.jobehost = '';
-eBookConfig.proxyuri_runs = '';
-eBookConfig.proxyuri_files = '';
-eBookConfig.enable_chatcodes =  false;
-</script>
-<!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -229,10 +197,10 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Section</span> <span class="codenumber">8.5</span> <span class="title">Basic Convergence Tests (SQ5)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-64"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-1997"><p id="p-2682">Use the divergence, alternating series, and integral tests to determine if a series converges or diverges.</p></li></ul></article><article class="activity project-like" id="activity-SQ5investigateDivergentSeries"><h3 class="heading">
+<ul class="disc"><li id="li-1997"><p id="p-2664">Use the divergence, alternating series, and integral tests to determine if a series converges or diverges.</p></li></ul></article><article class="activity project-like" id="activity-SQ5investigateDivergentSeries"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.5.1</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-252"><p id="p-2683">Which of the following series seem(s) to diverge? It might be helpful to write out the first several terms.</p></div>
+<div class="introduction" id="introduction-252"><p id="p-2665">Which of the following series seem(s) to diverge? It might be helpful to write out the first several terms.</p></div>
 <ol class="upper-alpha">
 <li id="li-1998"><p id="p-derived-li-1998"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty n^2\text{.}\)</span></p></li>
 <li id="li-1999"><p id="p-derived-li-1999"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{n+1}{n}\text{.}\)</span></p></li>
@@ -248,15 +216,15 @@ eBookConfig.enable_chatcodes =  false;
 <p id="QCd">If the  <span class="process-math">\(\displaystyle\lim_{n\rightarrow\infty} a_n\neq 0\text{,}\)</span> then <span class="process-math">\(\displaystyle\sum a_n\)</span> diverges.</p></article><article class="activity project-like" id="applyDTtoinvestigate"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.5.4</span><span class="period">.</span>
 </h3>
-<p id="p-2686">Which of the series from <a href="" class="xref" data-knowl="./knowl/activity-SQ5investigateDivergentSeries.html" title="Activity 8.5.1">Activity 8.5.1</a> diverge by <a href="" class="xref" data-knowl="./knowl/fact-SQ5divergenceTest.html" title="Fact 8.5.3: The Divergence (n^{th} term) Test">Fact 8.5.3</a>?</p></article><article class="fact theorem-like" id="fact-SQ5boundedPartialSums"><h3 class="heading">
+<p id="p-2668">Which of the series from <a href="" class="xref" data-knowl="./knowl/activity-SQ5investigateDivergentSeries.html" title="Activity 8.5.1">Activity 8.5.1</a> diverge by <a href="" class="xref" data-knowl="./knowl/fact-SQ5divergenceTest.html" title="Fact 8.5.3: The Divergence (n^{th} term) Test">Fact 8.5.3</a>?</p></article><article class="fact theorem-like" id="fact-SQ5boundedPartialSums"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">8.5.5</span><span class="period">.</span>
 </h3>
 <p id="QCd">If <span class="process-math">\(a_n&gt;0\)</span> for all <span class="process-math">\(n\text{,}\)</span> then <span class="process-math">\(\displaystyle\sum a_n\)</span> is convergent if and only if the sequence of partial sums is bounded from above.</p></article><article class="activity project-like" id="activity-SQ5harmonicSeries"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.5.6</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-253"><p id="p-2688">Consider the so-called <em class="emphasis">harmonic series</em>, <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n}\text{,}\)</span> and let <span class="process-math">\(S_n\)</span> be its <span class="process-math">\(n^{th}\)</span> partial sum.</p></div>
+<div class="introduction" id="introduction-253"><p id="p-2670">Consider the so-called <em class="emphasis">harmonic series</em>, <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n}\text{,}\)</span> and let <span class="process-math">\(S_n\)</span> be its <span class="process-math">\(n^{th}\)</span> partial sum.</p></div>
 <article class="task exercise-like" id="task-749"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2689">Determine which of the following inequalities hold(s).</p>
+<p id="p-2671">Determine which of the following inequalities hold(s).</p>
 <ol class="upper-alpha">
 <li id="li-2003"><p id="p-derived-li-2003"><span class="process-math">\(\displaystyle\frac{1}{3}+\frac{1}{4}\lt \frac{1}{2}\text{.}\)</span></p></li>
 <li id="li-2004"><p id="p-derived-li-2004"><span class="process-math">\(\displaystyle\frac{1}{3}+\frac{1}{4}\gt \frac{1}{2}\text{.}\)</span></p></li>
@@ -264,26 +232,26 @@ eBookConfig.enable_chatcodes =  false;
 <li id="li-2006"><p id="p-derived-li-2006"><span class="process-math">\(S_4\leq S_2+\displaystyle\frac{1}{2}\text{.}\)</span></p></li>
 <li id="li-2007"><p id="p-derived-li-2007"><span class="process-math">\(S_4= S_2+\displaystyle\frac{1}{2}\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-750"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2690">Determine which of the following inequalities hold(s).</p>
+<p id="p-2672">Determine which of the following inequalities hold(s).</p>
 <ol class="upper-alpha">
 <li id="li-2008"><p id="p-derived-li-2008"><span class="process-math">\(\displaystyle\frac{1}{2}\lt \frac{1}{5}+\frac{1}{6}+\frac{1}{7}+\frac{1}{8}\text{.}\)</span></p></li>
 <li id="li-2009"><p id="p-derived-li-2009"><span class="process-math">\(\displaystyle\frac{1}{2}\gt \frac{1}{5}+\frac{1}{6}+\frac{1}{7}+\frac{1}{8}\text{.}\)</span></p></li>
 <li id="li-2010"><p id="p-derived-li-2010"><span class="process-math">\(S_8=S_4+\displaystyle\frac{1}{2}\text{.}\)</span></p></li>
 <li id="li-2011"><p id="p-derived-li-2011"><span class="process-math">\(S_8\geq S_4+\displaystyle\frac{1}{2}\text{.}\)</span></p></li>
 <li id="li-2012"><p id="p-derived-li-2012"><span class="process-math">\(S_8\leq S_4+\displaystyle\frac{1}{2}\text{.}\)</span></p></li>
-</ol></article></article><article class="activity project-like" id="activity-500"><h3 class="heading">
+</ol></article></article><article class="activity project-like" id="activity-504"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.5.7</span><span class="period">.</span>
 </h3>
-<p id="p-2691">In <a href="" class="xref" data-knowl="./knowl/activity-SQ5harmonicSeries.html" title="Activity 8.5.6">Activity 8.5.6</a>, we found that <span class="process-math">\(S_4\geq S_2+\displaystyle\frac{1}{2}\)</span> and <span class="process-math">\(S_8\geq S_4+\displaystyle\frac{1}{2}\text{.}\)</span> Based on these inequalities, which statement seems most likely to hold?</p>
+<p id="p-2673">In <a href="" class="xref" data-knowl="./knowl/activity-SQ5harmonicSeries.html" title="Activity 8.5.6">Activity 8.5.6</a>, we found that <span class="process-math">\(S_4\geq S_2+\displaystyle\frac{1}{2}\)</span> and <span class="process-math">\(S_8\geq S_4+\displaystyle\frac{1}{2}\text{.}\)</span> Based on these inequalities, which statement seems most likely to hold?</p>
 <ol class="upper-alpha">
-<li id="li-2013"><p id="p-2692">The harmonic series converges.</p></li>
-<li id="li-2014"><p id="p-2693">The harmonic series diverges.</p></li>
+<li id="li-2013"><p id="p-2674">The harmonic series converges.</p></li>
+<li id="li-2014"><p id="p-2675">The harmonic series diverges.</p></li>
 </ol></article><article class="activity project-like" id="activity-SQ5pEquals2Series"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.5.8</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-254"><p id="p-2694">Consider the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^2}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-254"><p id="p-2676">Consider the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^2}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-751"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2695">We want to compare this series to an improper integral. Which of the following is the best candidate?</p>
+<p id="p-2677">We want to compare this series to an improper integral. Which of the following is the best candidate?</p>
 <ol class="upper-alpha">
 <li id="li-2015"><p id="p-derived-li-2015"><span class="process-math">\(\displaystyle\int_1^\infty x^2 \, dx\text{.}\)</span></p></li>
 <li id="li-2016"><p id="p-derived-li-2016"><span class="process-math">\(\displaystyle\int_1^\infty \displaystyle\frac{1}{x^3} \, dx\text{.}\)</span></p></li>
@@ -291,26 +259,26 @@ eBookConfig.enable_chatcodes =  false;
 <li id="li-2018"><p id="p-derived-li-2018"><span class="process-math">\(\displaystyle\int_1^\infty \displaystyle\frac{1}{x} \, dx\text{.}\)</span></p></li>
 <li id="li-2019"><p id="p-derived-li-2019"><span class="process-math">\(\displaystyle\int_1^\infty x \, dx\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-752"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2696">Select the true statements below.</p>
+<p id="p-2678">Select the true statements below.</p>
 <ol class="upper-alpha">
 <li id="li-2020"><p id="p-derived-li-2020">The sum <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^2}\)</span> corresponds to approximating the integral chosen above using left Riemann sums where <span class="process-math">\(\Delta x=1\text{.}\)</span></p></li>
 <li id="li-2021"><p id="p-derived-li-2021">The sum <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^2}\)</span> corresponds to approximating the integral chosen above using right Riemann sums where <span class="process-math">\(\Delta x=1\text{.}\)</span></p></li>
 <li id="li-2022"><p id="p-derived-li-2022">The sum <span class="process-math">\(\displaystyle \sum_{n=2}^\infty \frac{1}{n^2}\)</span> corresponds to approximating the integral chosen above using left Riemann sums where <span class="process-math">\(\Delta x=1\text{.}\)</span></p></li>
 <li id="li-2023"><p id="p-derived-li-2023">The sum <span class="process-math">\(\displaystyle \sum_{n=2}^\infty \frac{1}{n^2}\)</span> corresponds to approximating the integral chosen above using right Riemann sums where <span class="process-math">\(\Delta x=1\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-753"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2697">Using the Riemann sum interpretation of the series, identify which of the following inequalities holds.</p>
+<p id="p-2679">Using the Riemann sum interpretation of the series, identify which of the following inequalities holds.</p>
 <ol class="upper-alpha">
 <li id="li-2024"><p id="p-derived-li-2024"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^2} \leq \displaystyle\int_1^\infty \displaystyle\frac{1}{x^2} \, dx\text{.}\)</span></p></li>
 <li id="li-2025"><p id="p-derived-li-2025"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^2} \geq \displaystyle\int_1^\infty \displaystyle\frac{1}{x^2} \, dx\text{.}\)</span></p></li>
 <li id="li-2026"><p id="p-derived-li-2026"><span class="process-math">\(\displaystyle \sum_{n=2}^\infty \frac{1}{n^2} \geq \displaystyle\int_1^\infty \displaystyle\frac{1}{x^2} \, dx\text{.}\)</span></p></li>
 <li id="li-2027"><p id="p-derived-li-2027"><span class="process-math">\(\displaystyle \sum_{n=2}^\infty \frac{1}{n^2} \leq \displaystyle\int_1^\infty \displaystyle\frac{1}{x^2} \, dx\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-754"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-2698">What can we say about the iproper integral <span class="process-math">\(\displaystyle\int_1^\infty \displaystyle\frac{1}{x^2} \, dx\text{?}\)</span></p>
+<p id="p-2680">What can we say about the iproper integral <span class="process-math">\(\displaystyle\int_1^\infty \displaystyle\frac{1}{x^2} \, dx\text{?}\)</span></p>
 <ol class="upper-alpha">
 <li id="li-2028"><p id="p-derived-li-2028">This improper integral converges.</p></li>
 <li id="li-2029"><p id="p-derived-li-2029">This improper integral diverges.</p></li>
 </ol></article><article class="task exercise-like" id="task-755"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-2699">What do you think is true about the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^2}\text{?}\)</span></p>
+<p id="p-2681">What do you think is true about the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^2}\text{?}\)</span></p>
 <ol class="upper-alpha">
 <li id="li-2030"><p id="p-derived-li-2030">The series converges.</p></li>
 <li id="li-2031"><p id="p-derived-li-2031">The series diverges.</p></li>
@@ -320,9 +288,9 @@ eBookConfig.enable_chatcodes =  false;
 <p id="QCd">Let <span class="process-math">\(\{a_n\}\)</span> be a sequence of positive numbers. If <span class="process-math">\(f(x)\)</span> is continuous, positive, and decreasing, and there is some positive integer <span class="process-math">\(N\)</span> such that <span class="process-math">\(f(n)=a_n\)</span> for all <span class="process-math">\(n\geq N\text{,}\)</span> then <span class="process-math">\(\displaystyle \sum_{n=N}^\infty a_n\)</span> and <span class="process-math">\(\displaystyle\int_N^\infty \displaystyle f(x) \, dx\)</span> both converge or both diverge.</p></article><article class="activity project-like" id="activity-SQ5pSeries"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.5.10</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-255"><p id="p-2701">Consider the <span class="process-math">\(p\)</span>-series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^p}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-255"><p id="p-2683">Consider the <span class="process-math">\(p\)</span>-series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^p}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-756"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2702">Recall that the harmonic series diverges. What value of <span class="process-math">\(p\)</span> corresponds to the harmonic series?</p>
+<p id="p-2684">Recall that the harmonic series diverges. What value of <span class="process-math">\(p\)</span> corresponds to the harmonic series?</p>
 <ol class="upper-alpha">
 <li id="li-2032"><p id="p-derived-li-2032"><span class="process-math">\(p=-1\text{.}\)</span></p></li>
 <li id="li-2033"><p id="p-derived-li-2033"><span class="process-math">\(p=1\text{.}\)</span></p></li>
@@ -330,7 +298,7 @@ eBookConfig.enable_chatcodes =  false;
 <li id="li-2035"><p id="p-derived-li-2035"><span class="process-math">\(p=2\text{.}\)</span></p></li>
 <li id="li-2036"><p id="p-derived-li-2036"><span class="process-math">\(p=0\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-757"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2703">From <a href="" class="xref" data-knowl="./knowl/fact-SQ5integralTest.html" title="Fact 8.5.9: The Integral Test">Fact 8.5.9</a>, what can we conclude about the <span class="process-math">\(p\)</span>-series with <span class="process-math">\(p=2\text{?}\)</span></p>
+<p id="p-2685">From <a href="" class="xref" data-knowl="./knowl/fact-SQ5integralTest.html" title="Fact 8.5.9: The Integral Test">Fact 8.5.9</a>, what can we conclude about the <span class="process-math">\(p\)</span>-series with <span class="process-math">\(p=2\text{?}\)</span></p>
 <ol class="upper-alpha">
 <li id="li-2037"><p id="p-derived-li-2037">There is not enough information to draw a conclusion.</p></li>
 <li id="li-2038"><p id="p-derived-li-2038">This series converges.</p></li>
@@ -341,9 +309,9 @@ eBookConfig.enable_chatcodes =  false;
 <p id="QCd">The series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^p}\)</span> converges for <span class="process-math">\(p\gt 1\text{,}\)</span> and diverges otherwise.</p></article><article class="activity project-like" id="activity-SQ5pSeriesAlmost"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.5.12</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-256"><p id="p-2705">Consider the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^2+1}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-256"><p id="p-2687">Consider the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{1}{n^2+1}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-758"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2706">If we aim to use the integral test, what is an appropriate choice for <span class="process-math">\(f(x)\text{?}\)</span></p>
+<p id="p-2688">If we aim to use the integral test, what is an appropriate choice for <span class="process-math">\(f(x)\text{?}\)</span></p>
 <ol class="upper-alpha">
 <li id="li-2040"><p id="p-derived-li-2040"><span class="process-math">\(\displaystyle \frac{1}{x^2}\text{.}\)</span></p></li>
 <li id="li-2041"><p id="p-derived-li-2041"><span class="process-math">\(x^2+1\text{.}\)</span></p></li>
@@ -351,13 +319,13 @@ eBookConfig.enable_chatcodes =  false;
 <li id="li-2043"><p id="p-derived-li-2043"><span class="process-math">\(x^2\text{.}\)</span></p></li>
 <li id="li-2044"><p id="p-derived-li-2044"><span class="process-math">\(\displaystyle \frac{1}{x}\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-759"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2707">Does the series converge or diverge by <a href="" class="xref" data-knowl="./knowl/fact-SQ5integralTest.html" title="Fact 8.5.9: The Integral Test">Fact 8.5.9</a>?</p></article></article><article class="activity project-like" id="activity-504"><h3 class="heading">
+<p id="p-2689">Does the series converge or diverge by <a href="" class="xref" data-knowl="./knowl/fact-SQ5integralTest.html" title="Fact 8.5.9: The Integral Test">Fact 8.5.9</a>?</p></article></article><article class="activity project-like" id="activity-508"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.5.13</span><span class="period">.</span>
 </h3>
-<p id="p-2708">Prove <a href="" class="xref" data-knowl="./knowl/fact-SQ5pTest.html" title="Fact 8.5.11: The p-Test">Fact 8.5.11</a>.</p></article><article class="activity project-like" id="activity-505"><h3 class="heading">
+<p id="p-2690">Prove <a href="" class="xref" data-knowl="./knowl/fact-SQ5pTest.html" title="Fact 8.5.11: The p-Test">Fact 8.5.11</a>.</p></article><article class="activity project-like" id="activity-509"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.5.14</span><span class="period">.</span>
 </h3>
-<p id="p-2709">Which of the following statements seem(s) most likely to be true?</p>
+<p id="p-2691">Which of the following statements seem(s) most likely to be true?</p>
 <ol class="upper-alpha">
 <li id="li-2045"><p id="p-derived-li-2045"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty (-1)^n \frac{1}{n}\)</span> diverges.</p></li>
 <li id="li-2046"><p id="p-derived-li-2046"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty (-1)^n \frac{1}{n}\)</span> converges.</p></li>
@@ -371,18 +339,19 @@ eBookConfig.enable_chatcodes =  false;
 <li id="li-2049"><p id="p-derived-li-2049"><span class="process-math">\(u_n\)</span> is always positive,</p></li>
 <li id="li-2050"><p id="p-derived-li-2050">there is an integer <span class="process-math">\(N\)</span> such that <span class="process-math">\(u_n\geq u_{n+1}\)</span> for all <span class="process-math">\(n\geq N\text{,}\)</span> and</p></li>
 <li id="li-2051"><p id="p-derived-li-2051"><span class="process-math">\(\displaystyle\lim_{n\rightarrow\infty}u_n=0\text{.}\)</span></p></li>
-</ol></article><article class="activity project-like" id="activity-506"><h3 class="heading">
+</ol></article><article class="activity project-like" id="activity-510"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.5.16</span><span class="period">.</span>
 </h3>
-<p id="p-2711">What conclusions can you now make?</p>
+<p id="p-2693">What conclusions can you now make?</p>
 <ol class="upper-alpha">
 <li id="li-2052"><p id="p-derived-li-2052"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty (-1)^n \frac{1}{n}\)</span> diverges.</p></li>
 <li id="li-2053"><p id="p-derived-li-2053"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty (-1)^n \frac{1}{n}\)</span> converges.</p></li>
 <li id="li-2054"><p id="p-derived-li-2054"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty (-1)^n \frac{1}{n^2}\)</span> converges.</p></li>
 <li id="li-2055"><p id="p-derived-li-2055"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty (-1)^n \frac{1}{n^2}\)</span> diverges.</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-5"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-5"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">8.5.17</span><span class="period">.</span>
-</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-5"><article class="exercise exercise-like"><p id="p-2712">For each of the following series, use the <em class="emphasis">Divergence</em>, <em class="emphasis">Alternating Summation</em> or <em class="emphasis">Integral</em> test to determine if the series converges.</p>
+</ol></article><article class="activity project-like" id="activity-511"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.5.17</span><span class="period">.</span>
+</h3>
+<p id="p-2694">For each of the following series, use the <em class="emphasis">Divergence</em>, <em class="emphasis">Alternating Summation</em> or <em class="emphasis">Integral</em> test to determine if the series converges.</p>
 <ol class="decimal">
 <li id="li-2056"><p id="p-derived-li-2056"><span class="process-math">\(\displaystyle \displaystyle \sum_{n=1}^\infty \frac{2 \, {\left(n^{2} + 2\right)}}{n^{2}}.\)</span></p></li>
 <li id="li-2057"><p id="p-derived-li-2057"><span class="process-math">\(\displaystyle \displaystyle \sum_{n=1}^\infty \frac{1}{n^{4}}.\)</span></p></li>
@@ -394,8 +363,7 @@ eBookConfig.enable_chatcodes =  false;
 <li id="li-2060"><p id="p-derived-li-2060"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^{4}}\)</span> converges by the <em class="emphasis">Integral</em> test.</p></li>
 <li id="li-2061"><p id="p-derived-li-2061"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{3 \, \left(-1\right)^{n}}{4 \, n}\)</span> converges by the <em class="emphasis">Alternating Summation</em> test.</p></li>
 </ol></div></div>
-</div></article></div>
-<article class="fact theorem-like" id="fact-SQ8alternatingSeriesEstimation"><h3 class="heading">
+</div></article><article class="fact theorem-like" id="fact-SQ8alternatingSeriesEstimation"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">8.5.18</span><span class="period">.</span><span class="space"> </span><span class="title">The Alternating Series Estimation Theorem.</span>
 </h3>
 <p id="QCd">If the alternating series <span class="process-math">\(\displaystyle\sum a_n=\displaystyle\sum (-1)^{n+1}u_n\)</span> converges to <span class="process-math">\(L\)</span> and has <span class="process-math">\(n^{th}\)</span> partial sum <span class="process-math">\(S_n\text{,}\)</span> then for <span class="process-math">\(n\geq N\)</span> (as in the alternating series test):</p>
@@ -405,14 +373,11 @@ eBookConfig.enable_chatcodes =  false;
 </ol></article><article class="activity project-like" id="activity-SQ5alternatingHarmonicSeries"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.5.19</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-257"><p id="p-2714">Consider the so-called <em class="emphasis">alternating harmonic series</em>, <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{(-1)^{n+1}}{n}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-257"><p id="p-2696">Consider the so-called <em class="emphasis">alternating harmonic series</em>, <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{(-1)^{n+1}}{n}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-760"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2715">Use the alternating series test to determine if the series converges.</p></article><article class="task exercise-like" id="task-761"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2716">If so, estimate the series using the first 3 terms.</p></article></article><section class="subsection" id="subsection-37"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">8.5.1</span> <span class="title">Slideshow</span>
-</h3>
-<p id="p-2717">Slideshow of activities available at <a class="external" href="SQ5.slides.html" target="_blank"><code class="code-inline tex2jax_ignore">SQ5.slides.html</code></a>.</p></section><section class="subsection" id="subsection-38"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">8.5.2</span> <span class="title">Videos</span>
+<p id="p-2697">Use the alternating series test to determine if the series converges.</p></article><article class="task exercise-like" id="task-761"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2698">If so, estimate the series using the first 3 terms.</p></article></article><section class="subsection" id="subsection-19"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">8.5.1</span> <span class="title">Videos</span>
 </h3>
 <figure class="figure figure-like" id="figure-139"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-SQ5" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/XPGsG1Usjxg?&amp;modestbranding=1&amp;rel=0"></iframe></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">153<span class="period">.</span></span><span class="space"> </span>Video: Use the divergence, alternating series, and integral tests to determine if a series converges or diverges</figcaption></figure></section></section></div></main>

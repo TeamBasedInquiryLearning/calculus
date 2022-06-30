@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-30T01:55:51Z       *-->
+<!--*       on 2022-06-30T19:06:12Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -49,38 +49,6 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
-<!--** Runestone components to run locally in reader's browser **-->
-<!--** No external communication:                              **-->
-<!--**     log level is 0, Runestone Services are disabled     **-->
-<script type="text/javascript">
-eBookConfig = {};
-eBookConfig.useRunestoneServices = false;
-eBookConfig.host = 'http://127.0.0.1:8000';
-eBookConfig.course = 'PTX Course: Title Here';
-eBookConfig.basecourse = 'PTX Base Course';
-eBookConfig.isLoggedIn = false;
-eBookConfig.email = '';
-eBookConfig.isInstructor = false;
-eBookConfig.logLevel = 0;
-eBookConfig.username = '';
-eBookConfig.readings = null;
-eBookConfig.activities = null;
-eBookConfig.downloadsEnabled = false;
-eBookConfig.allow_pairs = false;
-eBookConfig.enableScratchAC = false;
-eBookConfig.build_info = "";
-eBookConfig.python3 = null;
-eBookConfig.acDefaultLanguage = 'python';
-eBookConfig.runestone_version = '5.0.1';
-eBookConfig.jobehost = '';
-eBookConfig.proxyuri_runs = '';
-eBookConfig.proxyuri_files = '';
-eBookConfig.enable_chatcodes =  false;
-</script>
-<!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -229,69 +197,66 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Section</span> <span class="codenumber">8.8</span> <span class="title">Absolute Convergence (SQ8)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-67"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-2201"><p id="p-2826">Determine if a series converges absolutely or conditionally.</p></li></ul></article><article class="activity project-like" id="activity-531"><h3 class="heading">
+<ul class="disc"><li id="li-2201"><p id="p-2805">Determine if a series converges absolutely or conditionally.</p></li></ul></article><article class="activity project-like" id="activity-537"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.8.1</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-279"><p id="p-2827">Recall the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{(-1)^n}{n}\)</span> from <a href="" class="xref" data-knowl="./knowl/activity-SQ7alternatingharmonic.html" title="Activity 8.7.5">Activity 8.7.5</a>.</p></div>
+<div class="introduction" id="introduction-279"><p id="p-2806">Recall the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{(-1)^n}{n}\)</span> from <a href="" class="xref" data-knowl="./knowl/activity-SQ7alternatingharmonic.html" title="Activity 8.7.5">Activity 8.7.5</a>.</p></div>
 <article class="task exercise-like" id="task-836"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2828">Does the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{(-1)^n}{n}\)</span> converge or diverge?</p></article><article class="task exercise-like" id="task-837"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2829">Does the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \left|\frac{(-1)^n}{n}\right|\)</span> converge or diverge?</p></article></article><article class="activity project-like" id="activity-532"><h3 class="heading">
+<p id="p-2807">Does the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{(-1)^n}{n}\)</span> converge or diverge?</p></article><article class="task exercise-like" id="task-837"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2808">Does the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \left|\frac{(-1)^n}{n}\right|\)</span> converge or diverge?</p></article></article><article class="activity project-like" id="activity-538"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.8.2</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-280"><p id="p-2830">Consider the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{(-1)^n}{n^2}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-280"><p id="p-2809">Consider the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{(-1)^n}{n^2}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-838"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2831">Does the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{(-1)^n}{n^2}\)</span> converge or diverge?</p></article><article class="task exercise-like" id="task-839"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2832">Does the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \left|\frac{(-1)^n}{n^2}\right|\)</span> converge or diverge?</p></article></article><article class="definition definition-like" id="definition-absoluteconvergence"><h3 class="heading">
+<p id="p-2810">Does the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{(-1)^n}{n^2}\)</span> converge or diverge?</p></article><article class="task exercise-like" id="task-839"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2811">Does the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \left|\frac{(-1)^n}{n^2}\right|\)</span> converge or diverge?</p></article></article><article class="definition definition-like" id="definition-absoluteconvergence"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.8.3</span><span class="period">.</span>
 </h3>
-<p id="p-2833">Given a series</p>
+<p id="p-2812">Given a series</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \sum a_n
 \end{equation*}
 </div>
-<p class="continuation">we say that <span class="process-math">\(\displaystyle \sum a_n\)</span> is <em class="emphasis">absolutely convergent</em> if <span class="process-math">\(\displaystyle \sum |a_n|\)</span> converges.</p></article><article class="activity project-like" id="activity-533"><h3 class="heading">
+<p class="continuation">we say that <span class="process-math">\(\displaystyle \sum a_n\)</span> is <em class="emphasis">absolutely convergent</em> if <span class="process-math">\(\displaystyle \sum |a_n|\)</span> converges.</p></article><article class="activity project-like" id="activity-539"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.8.4</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-281"><p id="p-2834">Consider the series: <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{(-1)^nn!}{(2n)!}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-281"><p id="p-2813">Consider the series: <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{(-1)^nn!}{(2n)!}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-840"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2835">Does the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{(-1)^nn!}{(2n)!}\)</span> converge or diverge?  (Recall <a href="" class="xref" data-knowl="./knowl/fact-SQ7ratioTest.html" title="Fact 8.7.6: The Ratio Test">Fact 8.7.6</a>.)</p></article><article class="task exercise-like" id="task-841"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2836">Compute <span class="process-math">\(|a_n|\text{.}\)</span></p></article><article class="task exercise-like" id="task-842"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2837">Does the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{(-1)^nn!}{(2n)!}\)</span> converge absolutely?</p></article></article><article class="fact theorem-like" id="fact-42"><h3 class="heading">
+<p id="p-2814">Does the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{(-1)^nn!}{(2n)!}\)</span> converge or diverge?  (Recall <a href="" class="xref" data-knowl="./knowl/fact-SQ7ratioTest.html" title="Fact 8.7.6: The Ratio Test">Fact 8.7.6</a>.)</p></article><article class="task exercise-like" id="task-841"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2815">Compute <span class="process-math">\(|a_n|\text{.}\)</span></p></article><article class="task exercise-like" id="task-842"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2816">Does the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{(-1)^nn!}{(2n)!}\)</span> converge absolutely?</p></article></article><article class="fact theorem-like" id="fact-42"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">8.8.5</span><span class="period">.</span>
 </h3>
-<p id="p-2838">Notice that <a href="" class="xref" data-knowl="./knowl/fact-SQ7ratioTest.html" title="Fact 8.7.6: The Ratio Test">Fact 8.7.6</a> and <a href="" class="xref" data-knowl="./knowl/fact-SQ7rootTest.html" title="Fact 8.7.7: The Root Test">Fact 8.7.7</a> both involve taking absolute values to determine convergence. As such, series that are convergent by either the Ratio Test or the Root Test are also absolutely convergent (by applying the same test after taking the absolute value).</p></article><article class="activity project-like" id="activity-534"><h3 class="heading">
+<p id="p-2817">Notice that <a href="" class="xref" data-knowl="./knowl/fact-SQ7ratioTest.html" title="Fact 8.7.6: The Ratio Test">Fact 8.7.6</a> and <a href="" class="xref" data-knowl="./knowl/fact-SQ7rootTest.html" title="Fact 8.7.7: The Root Test">Fact 8.7.7</a> both involve taking absolute values to determine convergence. As such, series that are convergent by either the Ratio Test or the Root Test are also absolutely convergent (by applying the same test after taking the absolute value).</p></article><article class="activity project-like" id="activity-540"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.8.6</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-282"><p id="p-2839">Consider the series: <span class="process-math">\(\displaystyle \sum_{n=1}^\infty -n\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-282"><p id="p-2818">Consider the series: <span class="process-math">\(\displaystyle \sum_{n=1}^\infty -n\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-843"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2840">Does the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty -n\)</span> converge or diverge?</p></article><article class="task exercise-like" id="task-844"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2841">Compute <span class="process-math">\(|a_n|\text{.}\)</span></p></article><article class="task exercise-like" id="task-845"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2842">Does the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty -n\)</span> converge absolutely?</p></article></article><article class="activity project-like" id="activity-535"><h3 class="heading">
+<p id="p-2819">Does the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty -n\)</span> converge or diverge?</p></article><article class="task exercise-like" id="task-844"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2820">Compute <span class="process-math">\(|a_n|\text{.}\)</span></p></article><article class="task exercise-like" id="task-845"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2821">Does the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty -n\)</span> converge absolutely?</p></article></article><article class="activity project-like" id="activity-541"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.8.7</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-283"><p id="p-2843">For each of the following series, determine if the series is <em class="emphasis">convergent</em>, and if the series is <em class="emphasis">absolutely convergent</em>.</p></div>
+<div class="introduction" id="introduction-283"><p id="p-2822">For each of the following series, determine if the series is <em class="emphasis">convergent</em>, and if the series is <em class="emphasis">absolutely convergent</em>.</p></div>
 <article class="task exercise-like" id="task-846"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{n^2(-1)^n}{n^3+1}\)</span></article><article class="task exercise-like" id="task-847"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^2}\)</span></article><article class="task exercise-like" id="task-848"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<span class="process-math">\(\displaystyle \sum_{n=1}^\infty (-1)^n \left(\frac{2}{3}\right)^n\)</span></article></article><article class="activity project-like" id="activity-536"><h3 class="heading">
+<span class="process-math">\(\displaystyle \sum_{n=1}^\infty (-1)^n \left(\frac{2}{3}\right)^n\)</span></article></article><article class="activity project-like" id="activity-542"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.8.8</span><span class="period">.</span>
 </h3>
-<p id="p-2844">If you know a series <span class="process-math">\(\displaystyle \sum a_n\)</span> is absolutely convergent, what can you conclude about whether or not <span class="process-math">\(\displaystyle \sum a_n\)</span> is convergent?</p>
+<p id="p-2823">If you know a series <span class="process-math">\(\displaystyle \sum a_n\)</span> is absolutely convergent, what can you conclude about whether or not <span class="process-math">\(\displaystyle \sum a_n\)</span> is convergent?</p>
 <ol class="upper-alpha">
 <li id="li-2202"><p id="p-derived-li-2202">We cannot determine if <span class="process-math">\(\displaystyle \sum a_n\)</span> is convergent.</p></li>
 <li id="li-2203"><p id="p-derived-li-2203"><span class="process-math">\(\displaystyle \sum a_n\)</span> is convergent since it “grows slower” than <span class="process-math">\(\displaystyle \sum |a_n|\)</span> (and falls slower than <span class="process-math">\(\displaystyle \sum -|a_n|\)</span>).</p></li>
 </ol></article><article class="fact theorem-like" id="fact-43"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">8.8.9</span><span class="period">.</span>
 </h3>
-<p id="p-2845">If <span class="process-math">\(\displaystyle \sum a_n\)</span> is absolutely convergent, then it must be convergent.</p></article><article class="activity project-like" id="activity-537"><h3 class="heading">
+<p id="p-2824">If <span class="process-math">\(\displaystyle \sum a_n\)</span> is absolutely convergent, then it must be convergent.</p></article><article class="activity project-like" id="activity-543"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.8.10</span><span class="period">.</span>
 </h3>
-<p id="p-2846">Find 3 series that are convergent but not absolutely convergent (recall <a href="" class="xref" data-knowl="./knowl/fact-SQ8alternatingSeriesTest.html" title="Fact 8.5.15: The Alternating Series Test (Leibniz's Theorem)">Fact 8.5.15</a>, <a href="SQ6.html" class="internal" title="Section 8.6: Comparison Tests (SQ6)">Section 8.6</a>).</p></article><section class="subsection" id="subsection-43"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">8.8.1</span> <span class="title">Slideshow</span>
-</h3>
-<p id="p-2847">Slideshow of activities available at <a class="external" href="SQ8.slides.html" target="_blank"><code class="code-inline tex2jax_ignore">SQ8.slides.html</code></a>.</p></section><section class="subsection" id="subsection-44"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">8.8.2</span> <span class="title">Videos</span>
+<p id="p-2825">Find 3 series that are convergent but not absolutely convergent (recall <a href="" class="xref" data-knowl="./knowl/fact-SQ8alternatingSeriesTest.html" title="Fact 8.5.15: The Alternating Series Test (Leibniz's Theorem)">Fact 8.5.15</a>, <a href="SQ6.html" class="internal" title="Section 8.6: Comparison Tests (SQ6)">Section 8.6</a>).</p></article><section class="subsection" id="subsection-22"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">8.8.1</span> <span class="title">Videos</span>
 </h3>
 <figure class="figure figure-like" id="figure-144"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-SQ8" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/snRKVwCkymQ?&amp;modestbranding=1&amp;rel=0"></iframe></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">158<span class="period">.</span></span><span class="space"> </span>Video: Determine if a series converges absolutely or conditionally</figcaption></figure></section></section></div></main>

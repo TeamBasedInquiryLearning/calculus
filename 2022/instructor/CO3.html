@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-30T01:57:03Z       *-->
+<!--*       on 2022-06-30T19:07:48Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -49,38 +49,6 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
-<!--** Runestone components to run locally in reader's browser **-->
-<!--** No external communication:                              **-->
-<!--**     log level is 0, Runestone Services are disabled     **-->
-<script type="text/javascript">
-eBookConfig = {};
-eBookConfig.useRunestoneServices = false;
-eBookConfig.host = 'http://127.0.0.1:8000';
-eBookConfig.course = 'PTX Course: Title Here';
-eBookConfig.basecourse = 'PTX Base Course';
-eBookConfig.isLoggedIn = false;
-eBookConfig.email = '';
-eBookConfig.isInstructor = false;
-eBookConfig.logLevel = 0;
-eBookConfig.username = '';
-eBookConfig.readings = null;
-eBookConfig.activities = null;
-eBookConfig.downloadsEnabled = false;
-eBookConfig.allow_pairs = false;
-eBookConfig.enableScratchAC = false;
-eBookConfig.build_info = "";
-eBookConfig.python3 = null;
-eBookConfig.acDefaultLanguage = 'python';
-eBookConfig.runestone_version = '5.0.1';
-eBookConfig.jobehost = '';
-eBookConfig.proxyuri_runs = '';
-eBookConfig.proxyuri_files = '';
-eBookConfig.enable_chatcodes =  false;
-</script>
-<!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -229,47 +197,47 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Section</span> <span class="codenumber">7.3</span> <span class="title">Parametric/vector arclength (CO3)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-55"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-1708"><p id="p-2432">Compute arclengths related to two-dimensional parametric/vector equations.</p></li></ul></article><article class="example example-like" id="example-10"><h3 class="heading">
+<ul class="disc"><li id="li-1708"><p id="p-2418">Compute arclengths related to two-dimensional parametric/vector equations.</p></li></ul></article><article class="example example-like" id="example-10"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">7.3.1</span><span class="period">.</span>
 </h3>
-<p id="p-2433">In <a href="" class="xref" data-knowl="./knowl/CO3-parametric-curve.html" title="Figure 144">Figure 144</a>, the blue curve is the graph of the parametric equations <span class="process-math">\(x=t^2\)</span> and <span class="process-math">\(y=t^3\)</span> for <span class="process-math">\(1\leq t\leq 2\text{.}\)</span> This curve connects the point <span class="process-math">\((1,1)\)</span> to the point <span class="process-math">\((4,8)\text{.}\)</span> The red dashed line is the straight line segment connecting these points.</p>
+<p id="p-2419">In <a href="" class="xref" data-knowl="./knowl/CO3-parametric-curve.html" title="Figure 144">Figure 144</a>, the blue curve is the graph of the parametric equations <span class="process-math">\(x=t^2\)</span> and <span class="process-math">\(y=t^3\)</span> for <span class="process-math">\(1\leq t\leq 2\text{.}\)</span> This curve connects the point <span class="process-math">\((1,1)\)</span> to the point <span class="process-math">\((4,8)\text{.}\)</span> The red dashed line is the straight line segment connecting these points.</p>
 <figure class="figure figure-like" id="CO3-parametric-curve"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/sageplot/CO3-parametric-curve-image.svg" role="img" class="contained" alt="A parametric curve and segment from (1,1) to (4,8)."></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">144<span class="period">.</span></span><span class="space"> </span>A parametric curve and segment from <span class="process-math">\((1,1)\)</span> to <span class="process-math">\((4,8)\)</span></figcaption></figure></article><article class="activity project-like" id="activity-439"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.3.2</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-224"><p id="p-2434">Let's first investigate the length of the dashed red line segment in <a href="" class="xref" data-knowl="./knowl/CO3-parametric-curve.html" title="Figure 144">Figure 144</a>.</p></div>
+<div class="introduction" id="introduction-224"><p id="p-2420">Let's first investigate the length of the dashed red line segment in <a href="" class="xref" data-knowl="./knowl/CO3-parametric-curve.html" title="Figure 144">Figure 144</a>.</p></div>
 <article class="task exercise-like" id="task-656"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2435">Draw a right triangle with the red dashed line segment as its hypotenuse, one leg parallel to the <span class="process-math">\(x\)</span>-axis, and the other parallel to the <span class="process-math">\(y\)</span>-axis.</p>
-<p id="p-2436">How long are these legs?</p>
+<p id="p-2421">Draw a right triangle with the red dashed line segment as its hypotenuse, one leg parallel to the <span class="process-math">\(x\)</span>-axis, and the other parallel to the <span class="process-math">\(y\)</span>-axis.</p>
+<p id="p-2422">How long are these legs?</p>
 <ol class="upper-alpha">
-<li id="li-1709"><p id="p-2437"><span class="process-math">\(3\)</span> and <span class="process-math">\(7\text{.}\)</span></p></li>
-<li id="li-1710"><p id="p-2438"><span class="process-math">\(4\)</span> and <span class="process-math">\(8\text{.}\)</span></p></li>
-<li id="li-1711"><p id="p-2439"><span class="process-math">\(3\)</span> and <span class="process-math">\(8\text{.}\)</span></p></li>
-<li id="li-1712"><p id="p-2440"><span class="process-math">\(4\)</span> and <span class="process-math">\(7\text{.}\)</span></p></li>
+<li id="li-1709"><p id="p-2423"><span class="process-math">\(3\)</span> and <span class="process-math">\(7\text{.}\)</span></p></li>
+<li id="li-1710"><p id="p-2424"><span class="process-math">\(4\)</span> and <span class="process-math">\(8\text{.}\)</span></p></li>
+<li id="li-1711"><p id="p-2425"><span class="process-math">\(3\)</span> and <span class="process-math">\(8\text{.}\)</span></p></li>
+<li id="li-1712"><p id="p-2426"><span class="process-math">\(4\)</span> and <span class="process-math">\(7\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-657"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2441">The Pythagorean theorem states that for a right triangle with leg lengths <span class="process-math">\(a,b\)</span> and hypotenuse length <span class="process-math">\(c\text{,}\)</span> we have...</p>
+<p id="p-2427">The Pythagorean theorem states that for a right triangle with leg lengths <span class="process-math">\(a,b\)</span> and hypotenuse length <span class="process-math">\(c\text{,}\)</span> we have...</p>
 <ol class="upper-alpha">
-<li id="li-1713"><p id="p-2442"><span class="process-math">\(a=b=c\text{.}\)</span></p></li>
-<li id="li-1714"><p id="p-2443"><span class="process-math">\(a+b=c\text{.}\)</span></p></li>
-<li id="li-1715"><p id="p-2444"><span class="process-math">\(a^2=b^2=c^2\text{.}\)</span></p></li>
-<li id="li-1716"><p id="p-2445"><span class="process-math">\(a^2+b^2=c^2\text{.}\)</span></p></li>
+<li id="li-1713"><p id="p-2428"><span class="process-math">\(a=b=c\text{.}\)</span></p></li>
+<li id="li-1714"><p id="p-2429"><span class="process-math">\(a+b=c\text{.}\)</span></p></li>
+<li id="li-1715"><p id="p-2430"><span class="process-math">\(a^2=b^2=c^2\text{.}\)</span></p></li>
+<li id="li-1716"><p id="p-2431"><span class="process-math">\(a^2+b^2=c^2\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-658"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2446">Using the leg lengths and Pythagorean theorem, how long must the red dashed hypotenuse be?</p>
+<p id="p-2432">Using the leg lengths and Pythagorean theorem, how long must the red dashed hypotenuse be?</p>
 <ol class="upper-alpha">
-<li id="li-1717"><p id="p-2447"><span class="process-math">\(\sqrt{20}\approx 4.47\text{.}\)</span></p></li>
-<li id="li-1718"><p id="p-2448"><span class="process-math">\(\sqrt{56}\approx 7.48\text{.}\)</span></p></li>
-<li id="li-1719"><p id="p-2449"><span class="process-math">\(\sqrt{67}\approx 8.19\text{.}\)</span></p></li>
-<li id="li-1720"><p id="p-2450"><span class="process-math">\(\sqrt{100}=10\text{.}\)</span></p></li>
+<li id="li-1717"><p id="p-2433"><span class="process-math">\(\sqrt{20}\approx 4.47\text{.}\)</span></p></li>
+<li id="li-1718"><p id="p-2434"><span class="process-math">\(\sqrt{56}\approx 7.48\text{.}\)</span></p></li>
+<li id="li-1719"><p id="p-2435"><span class="process-math">\(\sqrt{67}\approx 8.19\text{.}\)</span></p></li>
+<li id="li-1720"><p id="p-2436"><span class="process-math">\(\sqrt{100}=10\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-659"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-2451">Compared with the blue parametric curve connecting the same two points, is the red dashed line segement length an overestimate or underestimate?</p>
+<p id="p-2437">Compared with the blue parametric curve connecting the same two points, is the red dashed line segement length an overestimate or underestimate?</p>
 <ol class="upper-alpha">
-<li id="li-1721"><p id="p-2452">Overestimate: the blue curve is shorter than the red line.</p></li>
-<li id="li-1722"><p id="p-2453">Underestimate: the blue curve is longer than the red line.</p></li>
-<li id="li-1723"><p id="p-2454">Exact: the blue curve is exactly as long as the red line.</p></li>
+<li id="li-1721"><p id="p-2438">Overestimate: the blue curve is shorter than the red line.</p></li>
+<li id="li-1722"><p id="p-2439">Underestimate: the blue curve is longer than the red line.</p></li>
+<li id="li-1723"><p id="p-2440">Exact: the blue curve is exactly as long as the red line.</p></li>
 </ol></article></article><article class="fact theorem-like" id="fact-20"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">7.3.3</span><span class="period">.</span>
 </h3>
-<p id="p-2455">Recall that the linear distance between two points <span class="process-math">\((x_1,y_1)\)</span> and <span class="process-math">\((x_2,y_2)\)</span> may be computed by the distance formula</p>
+<p id="p-2441">Recall that the linear distance between two points <span class="process-math">\((x_1,y_1)\)</span> and <span class="process-math">\((x_2,y_2)\)</span> may be computed by the distance formula</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \sqrt{(x_2-x_1)^2+(y_2-y_1)^2}\text{.}
@@ -281,46 +249,46 @@ eBookConfig.enable_chatcodes =  false;
 \sqrt{(\Delta x)^2+(\Delta y)^2}\text{.}
 \end{equation*}
 </div>
-<p id="p-2456">This formula will need to be modified to measure a curved path between two points.</p></article><article class="observation remark-like" id="observation-31"><h3 class="heading">
+<p id="p-2442">This formula will need to be modified to measure a curved path between two points.</p></article><article class="observation remark-like" id="observation-31"><h3 class="heading">
 <span class="type">Observation</span><span class="space"> </span><span class="codenumber">7.3.4</span><span class="period">.</span>
 </h3>
-<p id="p-2457">By approximating the curve by several, say <span class="process-math">\(N\)</span>-many, segements connecting points along the curve, we obtain a better approximation than a single line segment, as shown in <a href="" class="xref" data-knowl="./knowl/CO3-parametric-subdivide.html" title="Figure 145">Figure 145</a>.</p>
+<p id="p-2443">By approximating the curve by several, say <span class="process-math">\(N\)</span>-many, segements connecting points along the curve, we obtain a better approximation than a single line segment, as shown in <a href="" class="xref" data-knowl="./knowl/CO3-parametric-subdivide.html" title="Figure 145">Figure 145</a>.</p>
 <figure class="figure figure-like" id="CO3-parametric-subdivide"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/sageplot/CO3-parametric-subdivide-sageplot.svg" role="img" class="contained" alt="Subdividing a parametric curve with three segments"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">145<span class="period">.</span></span><span class="space"> </span>Subdividing a parametric curve where <span class="process-math">\(N=3\)</span></figcaption></figure></article><article class="activity project-like" id="activity-440"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.3.5</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-225"><p id="p-2458">How should we modify the distance formula <span class="process-math">\(\sqrt{(\Delta x)^2+(\Delta y)^2}\)</span> to measure arclength as illustrated in <a href="" class="xref" data-knowl="./knowl/CO3-parametric-subdivide.html" title="Figure 145">Figure 145</a>?</p></div>
+<div class="introduction" id="introduction-225"><p id="p-2444">How should we modify the distance formula <span class="process-math">\(\sqrt{(\Delta x)^2+(\Delta y)^2}\)</span> to measure arclength as illustrated in <a href="" class="xref" data-knowl="./knowl/CO3-parametric-subdivide.html" title="Figure 145">Figure 145</a>?</p></div>
 <article class="task exercise-like" id="task-660"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2459">Let <span class="process-math">\(\Delta L_1,\Delta L_2,\Delta L_3\)</span> describe the lengths of each of the three segements. Which expression describes the total length of these segments?</p>
+<p id="p-2445">Let <span class="process-math">\(\Delta L_1,\Delta L_2,\Delta L_3\)</span> describe the lengths of each of the three segements. Which expression describes the total length of these segments?</p>
 <ol class="upper-alpha">
-<li id="li-1724"><p id="p-2460"><span class="process-math">\(\displaystyle \Delta L_1\times \Delta L_2\times \Delta L_3\)</span></p></li>
-<li id="li-1725"><p id="p-2461"><span class="process-math">\(\displaystyle \Delta L_1+ 2\Delta L_2+ 3\Delta L_3\)</span></p></li>
-<li id="li-1726"><p id="p-2462"><span class="process-math">\(\displaystyle \sum_{i=1}^{3} \Delta L_i\)</span></p></li>
+<li id="li-1724"><p id="p-2446"><span class="process-math">\(\displaystyle \Delta L_1\times \Delta L_2\times \Delta L_3\)</span></p></li>
+<li id="li-1725"><p id="p-2447"><span class="process-math">\(\displaystyle \Delta L_1+ 2\Delta L_2+ 3\Delta L_3\)</span></p></li>
+<li id="li-1726"><p id="p-2448"><span class="process-math">\(\displaystyle \sum_{i=1}^{3} \Delta L_i\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-661"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2463">We can let each <span class="process-math">\(\Delta L_i=\sqrt{(\Delta x_i)^2+(\Delta y_i)^2}\text{.}\)</span> But we will find it useful to involve the parameter <span class="process-math">\(t\)</span> as well, or more accurately, the change <span class="process-math">\(\Delta t_i\)</span> of <span class="process-math">\(t\)</span> between each point of the subdivision.</p>
-<p id="p-2464">Which of these is algebraically the same as the above formula for <span class="process-math">\(\Delta L_i\text{?}\)</span></p>
+<p id="p-2449">We can let each <span class="process-math">\(\Delta L_i=\sqrt{(\Delta x_i)^2+(\Delta y_i)^2}\text{.}\)</span> But we will find it useful to involve the parameter <span class="process-math">\(t\)</span> as well, or more accurately, the change <span class="process-math">\(\Delta t_i\)</span> of <span class="process-math">\(t\)</span> between each point of the subdivision.</p>
+<p id="p-2450">Which of these is algebraically the same as the above formula for <span class="process-math">\(\Delta L_i\text{?}\)</span></p>
 <ol class="upper-alpha">
-<li id="li-1727"><p id="p-2465"><span class="process-math">\(\displaystyle \sqrt{\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2}\)</span></p></li>
-<li id="li-1728"><p id="p-2466"><span class="process-math">\(\displaystyle \sqrt{\left[\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2\right]\Delta t_i}\)</span></p></li>
-<li id="li-1729"><p id="p-2467"><span class="process-math">\(\displaystyle \sqrt{\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2}\Delta t_i\)</span></p></li>
+<li id="li-1727"><p id="p-2451"><span class="process-math">\(\displaystyle \sqrt{\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2}\)</span></p></li>
+<li id="li-1728"><p id="p-2452"><span class="process-math">\(\displaystyle \sqrt{\left[\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2\right]\Delta t_i}\)</span></p></li>
+<li id="li-1729"><p id="p-2453"><span class="process-math">\(\displaystyle \sqrt{\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2}\Delta t_i\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-662"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2468">Finally, we'll want to increase <span class="process-math">\(N\)</span> from <span class="process-math">\(3\)</span> so that it limits to <span class="process-math">\(\infty\text{.}\)</span> What can we conclude when that happens?</p>
+<p id="p-2454">Finally, we'll want to increase <span class="process-math">\(N\)</span> from <span class="process-math">\(3\)</span> so that it limits to <span class="process-math">\(\infty\text{.}\)</span> What can we conclude when that happens?</p>
 <ol class="upper-alpha">
-<li id="li-1730"><p id="p-2469">Each segment is infintely small</p></li>
-<li id="li-1731"><p id="p-2470"><span class="process-math">\(\displaystyle \Delta x_i\to 0\)</span></p></li>
-<li id="li-1732"><p id="p-2471"><span class="process-math">\(\displaystyle \Delta t_i\to 0\)</span></p></li>
-<li id="li-1733"><p id="p-2472"><span class="process-math">\(\displaystyle \frac{\Delta x_i}{\Delta t_i}\to\frac{dx}{dt}\)</span></p></li>
-<li id="li-1734"><p id="p-2473">All of the above.</p></li>
+<li id="li-1730"><p id="p-2455">Each segment is infintely small</p></li>
+<li id="li-1731"><p id="p-2456"><span class="process-math">\(\displaystyle \Delta x_i\to 0\)</span></p></li>
+<li id="li-1732"><p id="p-2457"><span class="process-math">\(\displaystyle \Delta t_i\to 0\)</span></p></li>
+<li id="li-1733"><p id="p-2458"><span class="process-math">\(\displaystyle \frac{\Delta x_i}{\Delta t_i}\to\frac{dx}{dt}\)</span></p></li>
+<li id="li-1734"><p id="p-2459">All of the above.</p></li>
 </ol></article></article><article class="observation remark-like" id="observation-32"><h3 class="heading">
 <span class="type">Observation</span><span class="space"> </span><span class="codenumber">7.3.6</span><span class="period">.</span>
 </h3>
-<p id="p-2474">Put together, and limiting the subdivisions of the curve <span class="process-math">\(N\to \infty\text{,}\)</span> we obtain the Riemann sum</p>
+<p id="p-2460">Put together, and limiting the subdivisions of the curve <span class="process-math">\(N\to \infty\text{,}\)</span> we obtain the Riemann sum</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \sum_{i=1}^\infty \sqrt{\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2}\Delta t_i\text{.}
 \end{equation*}
 </div>
-<p id="p-2475">Thus arclength along a parametric curve from <span class="process-math">\(a\leq t\leq b\)</span> may be calculated by using the corresponding definite integral</p>
+<p id="p-2461">Thus arclength along a parametric curve from <span class="process-math">\(a\leq t\leq b\)</span> may be calculated by using the corresponding definite integral</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt\text{.}
@@ -329,23 +297,23 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.3.7</span><span class="period">.</span>
 </h3>
 <div class="introduction" id="introduction-226">
-<p id="p-2476">Let's gain confidence in the arclength formula</p>
+<p id="p-2462">Let's gain confidence in the arclength formula</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt
 \end{equation*}
 </div>
 <p class="continuation">by checking to make sure it matches the distance formula for line segments.</p>
-<p id="p-2477">The parametric equations <span class="process-math">\(x=3t-1\)</span> and <span class="process-math">\(y=2-4t\)</span> for <span class="process-math">\(1\leq t\leq 3\)</span> represent the segment of the line <span class="process-math">\(y=-\frac{4}{3}x-\frac{2}{3}\)</span> connecting <span class="process-math">\((2,-2)\)</span> to <span class="process-math">\((8,-10)\text{.}\)</span></p>
+<p id="p-2463">The parametric equations <span class="process-math">\(x=3t-1\)</span> and <span class="process-math">\(y=2-4t\)</span> for <span class="process-math">\(1\leq t\leq 3\)</span> represent the segment of the line <span class="process-math">\(y=-\frac{4}{3}x-\frac{2}{3}\)</span> connecting <span class="process-math">\((2,-2)\)</span> to <span class="process-math">\((8,-10)\text{.}\)</span></p>
 </div>
 <article class="task exercise-like" id="task-663"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2478">Find <span class="process-math">\(dx/dt\)</span> and <span class="process-math">\(dy/dt\text{,}\)</span> and substitute them into the formula above along with <span class="process-math">\(a=1\)</span> and <span class="process-math">\(b=3\text{.}\)</span></p></article><article class="task exercise-like" id="task-664"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2479">Show that the value of this formula is <span class="process-math">\(10\text{.}\)</span></p></article><article class="task exercise-like" id="task-665"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2480">Show that the length of the line segment connecting <span class="process-math">\((2,-2)\)</span> to <span class="process-math">\((8,-10)\)</span> is <span class="process-math">\(10\)</span> by applying the distance formula directly instead.</p></article></article><article class="activity project-like" id="activity-442"><h3 class="heading">
+<p id="p-2464">Find <span class="process-math">\(dx/dt\)</span> and <span class="process-math">\(dy/dt\text{,}\)</span> and substitute them into the formula above along with <span class="process-math">\(a=1\)</span> and <span class="process-math">\(b=3\text{.}\)</span></p></article><article class="task exercise-like" id="task-664"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2465">Show that the value of this formula is <span class="process-math">\(10\text{.}\)</span></p></article><article class="task exercise-like" id="task-665"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2466">Show that the length of the line segment connecting <span class="process-math">\((2,-2)\)</span> to <span class="process-math">\((8,-10)\)</span> is <span class="process-math">\(10\)</span> by applying the distance formula directly instead.</p></article></article><article class="activity project-like" id="activity-442"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.3.8</span><span class="period">.</span>
 </h3>
 <div class="introduction" id="introduction-227">
-<p id="p-2481">For each of these parametric equations, use</p>
+<p id="p-2467">For each of these parametric equations, use</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt
@@ -354,28 +322,28 @@ eBookConfig.enable_chatcodes =  false;
 <p class="continuation">to write a definite integral that computes the given length. (Do not evaluate the integral.)</p>
 </div>
 <article class="task exercise-like" id="task-666"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2482">The portion of <span class="process-math">\(x=\sin 3t, y=\cos 3t\)</span> where <span class="process-math">\(0\leq t\leq \pi/6\text{.}\)</span></p></article><article class="task exercise-like" id="task-667"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2483">The portion of <span class="process-math">\(x=e^t, y=\ln t\)</span> where <span class="process-math">\(1\leq t\leq e\text{.}\)</span></p></article><article class="task exercise-like" id="task-668"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2484">The portion of <span class="process-math">\(x=t+1, y=t^2\)</span> between the points <span class="process-math">\((3,4)\)</span> and <span class="process-math">\((5,16)\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-443"><h3 class="heading">
+<p id="p-2468">The portion of <span class="process-math">\(x=\sin 3t, y=\cos 3t\)</span> where <span class="process-math">\(0\leq t\leq \pi/6\text{.}\)</span></p></article><article class="task exercise-like" id="task-667"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2469">The portion of <span class="process-math">\(x=e^t, y=\ln t\)</span> where <span class="process-math">\(1\leq t\leq e\text{.}\)</span></p></article><article class="task exercise-like" id="task-668"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2470">The portion of <span class="process-math">\(x=t+1, y=t^2\)</span> between the points <span class="process-math">\((3,4)\)</span> and <span class="process-math">\((5,16)\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-443"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.3.9</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-228"><p id="p-2485">Let's see how to modify <span class="process-math">\(\int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt\)</span> to produce the arclength of the graph of a function <span class="process-math">\(y=f(x)\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-228"><p id="p-2471">Let's see how to modify <span class="process-math">\(\int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt\)</span> to produce the arclength of the graph of a function <span class="process-math">\(y=f(x)\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-669"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2486">Let <span class="process-math">\(x=t\text{.}\)</span> How can <span class="process-math">\(\frac{dx}{dt}\)</span> be simplified?</p>
+<p id="p-2472">Let <span class="process-math">\(x=t\text{.}\)</span> How can <span class="process-math">\(\frac{dx}{dt}\)</span> be simplified?</p>
 <ol class="upper-alpha">
-<li id="li-1735"><p id="p-2487"><span class="process-math">\(\displaystyle dx\)</span></p></li>
-<li id="li-1736"><p id="p-2488"><span class="process-math">\(\displaystyle dt\)</span></p></li>
-<li id="li-1737"><p id="p-2489"><span class="process-math">\(\displaystyle 1\)</span></p></li>
-<li id="li-1738"><p id="p-2490"><span class="process-math">\(\displaystyle 0\)</span></p></li>
+<li id="li-1735"><p id="p-2473"><span class="process-math">\(\displaystyle dx\)</span></p></li>
+<li id="li-1736"><p id="p-2474"><span class="process-math">\(\displaystyle dt\)</span></p></li>
+<li id="li-1737"><p id="p-2475"><span class="process-math">\(\displaystyle 1\)</span></p></li>
+<li id="li-1738"><p id="p-2476"><span class="process-math">\(\displaystyle 0\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-670"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2491">Given <span class="process-math">\(x=t\text{,}\)</span> how should <span class="process-math">\(\frac{dy}{dt}\)</span> and <span class="process-math">\(dt\)</span> be rewritten?</p>
+<p id="p-2477">Given <span class="process-math">\(x=t\text{,}\)</span> how should <span class="process-math">\(\frac{dy}{dt}\)</span> and <span class="process-math">\(dt\)</span> be rewritten?</p>
 <ol class="upper-alpha">
-<li id="li-1739"><p id="p-2492"><span class="process-math">\(\frac{dy}{dt}=\frac{dy}{dx}\)</span> and <span class="process-math">\(dt=dx\)</span></p></li>
-<li id="li-1740"><p id="p-2493"><span class="process-math">\(\frac{dy}{dt}=\frac{dx}{dt}\)</span> and <span class="process-math">\(dt=dx\)</span></p></li>
-<li id="li-1741"><p id="p-2494"><span class="process-math">\(\frac{dy}{dt}=\frac{dy}{dx}\)</span> and <span class="process-math">\(dt=1\)</span></p></li>
-<li id="li-1742"><p id="p-2495"><span class="process-math">\(\frac{dy}{dt}=\frac{dy}{dt}\)</span> and <span class="process-math">\(dt=1\)</span></p></li>
+<li id="li-1739"><p id="p-2478"><span class="process-math">\(\frac{dy}{dt}=\frac{dy}{dx}\)</span> and <span class="process-math">\(dt=dx\)</span></p></li>
+<li id="li-1740"><p id="p-2479"><span class="process-math">\(\frac{dy}{dt}=\frac{dx}{dt}\)</span> and <span class="process-math">\(dt=dx\)</span></p></li>
+<li id="li-1741"><p id="p-2480"><span class="process-math">\(\frac{dy}{dt}=\frac{dy}{dx}\)</span> and <span class="process-math">\(dt=1\)</span></p></li>
+<li id="li-1742"><p id="p-2481"><span class="process-math">\(\frac{dy}{dt}=\frac{dy}{dt}\)</span> and <span class="process-math">\(dt=1\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-671"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2496">Write a modified, simplified formula for <span class="process-math">\(\int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt\)</span> with <span class="process-math">\(t\)</span> replaced with <span class="process-math">\(x\text{.}\)</span></p></article></article></section></div></main>
+<p id="p-2482">Write a modified, simplified formula for <span class="process-math">\(\int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt\)</span> with <span class="process-math">\(t\)</span> replaced with <span class="process-math">\(x\text{.}\)</span></p></article></article></section></div></main>
 </div>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-30T01:55:48Z       *-->
+<!--*       on 2022-06-30T19:06:09Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -49,38 +49,6 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
-<!--** Runestone components to run locally in reader's browser **-->
-<!--** No external communication:                              **-->
-<!--**     log level is 0, Runestone Services are disabled     **-->
-<script type="text/javascript">
-eBookConfig = {};
-eBookConfig.useRunestoneServices = false;
-eBookConfig.host = 'http://127.0.0.1:8000';
-eBookConfig.course = 'PTX Course: Title Here';
-eBookConfig.basecourse = 'PTX Base Course';
-eBookConfig.isLoggedIn = false;
-eBookConfig.email = '';
-eBookConfig.isInstructor = false;
-eBookConfig.logLevel = 0;
-eBookConfig.username = '';
-eBookConfig.readings = null;
-eBookConfig.activities = null;
-eBookConfig.downloadsEnabled = false;
-eBookConfig.allow_pairs = false;
-eBookConfig.enableScratchAC = false;
-eBookConfig.build_info = "";
-eBookConfig.python3 = null;
-eBookConfig.acDefaultLanguage = 'python';
-eBookConfig.runestone_version = '5.0.1';
-eBookConfig.jobehost = '';
-eBookConfig.proxyuri_runs = '';
-eBookConfig.proxyuri_files = '';
-eBookConfig.enable_chatcodes =  false;
-</script>
-<!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -229,13 +197,13 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Section</span> <span class="codenumber">8.3</span> <span class="title">Partial Sum Sequence (SQ3)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-62"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-1873"><p id="p-2623">Compute the first few terms of a telescoping or geometric partial sum sequence, and find a closed form for this sequence, and compute its limit.</p></li></ul></article><article class="activity project-like" id="activity-SQ3intropartialsumsgeometric"><h3 class="heading">
+<ul class="disc"><li id="li-1873"><p id="p-2607">Compute the first few terms of a telescoping or geometric partial sum sequence, and find a closed form for this sequence, and compute its limit.</p></li></ul></article><article class="activity project-like" id="activity-SQ3intropartialsumsgeometric"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.3.1</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-244"><p id="p-2624">Consider the sequence <span class="process-math">\(\displaystyle \{a_n\}_{n=0}^\infty=\left\{\frac{1}{2^n}\right\}_{n=0}^\infty\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-244"><p id="p-2608">Consider the sequence <span class="process-math">\(\displaystyle \{a_n\}_{n=0}^\infty=\left\{\frac{1}{2^n}\right\}_{n=0}^\infty\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-732"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2625">Find the first 5 terms of this sequence.</p></article><article class="task exercise-like" id="task-733"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2626">Compute the following:</p>
+<p id="p-2609">Find the first 5 terms of this sequence.</p></article><article class="task exercise-like" id="task-733"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2610">Compute the following:</p>
 <ol class="decimal">
 <li id="li-1874"><p id="p-derived-li-1874"><span class="process-math">\(\displaystyle a_0.\)</span></p></li>
 <li id="li-1875"><p id="p-derived-li-1875"><span class="process-math">\(\displaystyle a_0+a_1.\)</span></p></li>
@@ -245,10 +213,10 @@ eBookConfig.enable_chatcodes =  false;
 </ol></article></article><article class="activity project-like" id="activity-SQ3intropartialsumsharmonic"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.3.2</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-245"><p id="p-2627">Consider the sequence <span class="process-math">\(\displaystyle \{a_n\}_{n=1}^\infty=\left\{\frac{1}{n}\right\}_{n=1}^\infty\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-245"><p id="p-2611">Consider the sequence <span class="process-math">\(\displaystyle \{a_n\}_{n=1}^\infty=\left\{\frac{1}{n}\right\}_{n=1}^\infty\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-734"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2628">Find the first 5 terms of this sequence.</p></article><article class="task exercise-like" id="task-735"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2629">Compute the following:</p>
+<p id="p-2612">Find the first 5 terms of this sequence.</p></article><article class="task exercise-like" id="task-735"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2613">Compute the following:</p>
 <ol class="decimal">
 <li id="li-1879"><p id="p-derived-li-1879"><span class="process-math">\(\displaystyle a_1.\)</span></p></li>
 <li id="li-1880"><p id="p-derived-li-1880"><span class="process-math">\(\displaystyle a_1+a_2.\)</span></p></li>
@@ -258,7 +226,7 @@ eBookConfig.enable_chatcodes =  false;
 </ol></article></article><article class="definition definition-like" id="definition-SQ3partialsumsequence"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.3.3</span><span class="period">.</span>
 </h3>
-<p id="p-2630">Given a sequence <span class="process-math">\(\{a_n\}_{n=0}^\infty\)</span> define the <em class="emphasis"><span class="process-math">\(k^{\text{th}}\)</span> partial sum</em> of <span class="process-math">\(\{a_n\}\)</span> to be</p>
+<p id="p-2614">Given a sequence <span class="process-math">\(\{a_n\}_{n=0}^\infty\)</span> define the <em class="emphasis"><span class="process-math">\(k^{\text{th}}\)</span> partial sum</em> of <span class="process-math">\(\{a_n\}\)</span> to be</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 A_k=\sum_{i=0}^k a_i=a_1+a_2+\cdots+a_k.
@@ -267,7 +235,7 @@ A_k=\sum_{i=0}^k a_i=a_1+a_2+\cdots+a_k.
 <p class="continuation">Note that <span class="process-math">\(\{A_n\}=A_0, A_1, A_2, \ldots\)</span> is itself a sequence called the <em class="emphasis">partial sum sequence</em>.</p></article><article class="activity project-like" id="activity-SQ3geompartialsum"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.3.4</span><span class="period">.</span>
 </h3>
-<p id="p-2631">Let <span class="process-math">\(a_n=\frac{2}{3^n}.\)</span> Find the following partial sums:</p>
+<p id="p-2615">Let <span class="process-math">\(a_n=\frac{2}{3^n}.\)</span> Find the following partial sums:</p>
 <ol class="decimal">
 <li id="li-1884"><p id="p-derived-li-1884"><span class="process-math">\(A_0\text{.}\)</span></p></li>
 <li id="li-1885"><p id="p-derived-li-1885"><span class="process-math">\(A_1\text{.}\)</span></p></li>
@@ -277,14 +245,14 @@ A_k=\sum_{i=0}^k a_i=a_1+a_2+\cdots+a_k.
 </ol></article><article class="activity project-like" id="activity-SQ3closedformmotivation"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.3.5</span><span class="period">.</span>
 </h3>
-<p id="p-2632">Consider the sequence <span class="process-math">\(a_n=\frac{2}{3^n}.\)</span> What is the best way to find the 100th partial sum <span class="process-math">\(A_{100}\text{?}\)</span></p>
+<p id="p-2616">Consider the sequence <span class="process-math">\(a_n=\frac{2}{3^n}.\)</span> What is the best way to find the 100th partial sum <span class="process-math">\(A_{100}\text{?}\)</span></p>
 <ol class="upper-alpha">
 <li id="li-1889"><p id="p-derived-li-1889">Sum the first 101 terms of the sequence <span class="process-math">\(\{a_n\}\text{.}\)</span></p></li>
 <li id="li-1890"><p id="p-derived-li-1890">Find a closed form for the partial sum sequence <span class="process-math">\(\{A_n\}\text{.}\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-SQ3polyproducts"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.3.6</span><span class="period">.</span>
 </h3>
-<p id="p-2633">Expand the following polynomial products, and then reduce to as few summands as possible.</p>
+<p id="p-2617">Expand the following polynomial products, and then reduce to as few summands as possible.</p>
 <ol class="decimal">
 <li id="li-1891"><p id="p-derived-li-1891"><span class="process-math">\((1-x)(1+x+x^2)\text{.}\)</span></p></li>
 <li id="li-1892"><p id="p-derived-li-1892"><span class="process-math">\((1-x)(1+x+x^2+x^3)\text{.}\)</span></p></li>
@@ -293,7 +261,7 @@ A_k=\sum_{i=0}^k a_i=a_1+a_2+\cdots+a_k.
 </ol></article><article class="activity project-like" id="activity-SQ3simplifyingsum"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.3.7</span><span class="period">.</span>
 </h3>
-<p id="p-2634">Suppose <span class="process-math">\(\displaystyle S_5=1+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{16}+\frac{1}{32}.\)</span>  Without actually computing this sum, which of the following is equal to <span class="process-math">\(\left(1-\frac{1}{2}\right)S_5\text{?}\)</span></p>
+<p id="p-2618">Suppose <span class="process-math">\(\displaystyle S_5=1+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{16}+\frac{1}{32}.\)</span>  Without actually computing this sum, which of the following is equal to <span class="process-math">\(\left(1-\frac{1}{2}\right)S_5\text{?}\)</span></p>
 <ol class="upper-alpha">
 <li id="li-1895"><p id="p-derived-li-1895"><span class="process-math">\(\displaystyle\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{16}+\frac{1}{32}-\frac{1}{64}\text{.}\)</span></p></li>
 <li id="li-1896"><p id="p-derived-li-1896"><span class="process-math">\(\displaystyle1-\frac{1}{64}\text{.}\)</span></p></li>
@@ -301,26 +269,26 @@ A_k=\sum_{i=0}^k a_i=a_1+a_2+\cdots+a_k.
 </ol></article><article class="activity project-like" id="activity-SQ3particularclosedform"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.3.8</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-246"><p id="p-2635">Recall from <a href="" class="xref" data-knowl="./knowl/activity-SQ3geompartialsum.html" title="Activity 8.3.4">Activity 8.3.4</a> that <span class="process-math">\(\displaystyle A_{100}=2+\frac{2}{3}+\frac{2}{3^2}+\frac{2}{3^3}+\frac{2}{3^4}+\cdots+\frac{2}{3^{100}}=2\left(1+\frac{1}{3}+\frac{1}{3^2}+\frac{1}{3^3}+\frac{1}{3^4}+\cdots+\frac{1}{3^{100}}\right).\)</span></p></div>
+<div class="introduction" id="introduction-246"><p id="p-2619">Recall from <a href="" class="xref" data-knowl="./knowl/activity-SQ3geompartialsum.html" title="Activity 8.3.4">Activity 8.3.4</a> that <span class="process-math">\(\displaystyle A_{100}=2+\frac{2}{3}+\frac{2}{3^2}+\frac{2}{3^3}+\frac{2}{3^4}+\cdots+\frac{2}{3^{100}}=2\left(1+\frac{1}{3}+\frac{1}{3^2}+\frac{1}{3^3}+\frac{1}{3^4}+\cdots+\frac{1}{3^{100}}\right).\)</span></p></div>
 <article class="task exercise-like" id="task-736"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2636">Which of the following is equal to <span class="process-math">\(\displaystyle\left(1-\frac{1}{3}\right)A_{100}\text{?}\)</span></p>
+<p id="p-2620">Which of the following is equal to <span class="process-math">\(\displaystyle\left(1-\frac{1}{3}\right)A_{100}\text{?}\)</span></p>
 <ol class="upper-alpha">
 <li id="li-1898"><p id="p-derived-li-1898"><span class="process-math">\(\displaystyle1-\frac{1}{3^{101}}\text{.}\)</span></p></li>
 <li id="li-1899"><p id="p-derived-li-1899"><span class="process-math">\(\displaystyle1-\frac{1}{3^{100}}\text{.}\)</span></p></li>
 <li id="li-1900"><p id="p-derived-li-1900"><span class="process-math">\(\displaystyle2\left(1-\frac{1}{3^{101}}\right)\text{.}\)</span></p></li>
 <li id="li-1901"><p id="p-derived-li-1901"><span class="process-math">\(\displaystyle2\left(1-\frac{1}{3^{100}}\right)\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-737"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2637">Based on your previous choice, write out an expression for <span class="process-math">\(A_{100}\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-SQ3nthclosedform"><h3 class="heading">
+<p id="p-2621">Based on your previous choice, write out an expression for <span class="process-math">\(A_{100}\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-SQ3nthclosedform"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.3.9</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-247"><p id="p-2638">Suppose that <span class="process-math">\(\displaystyle \{b_n\}_{n=0}^\infty=\{(-2)^n\}_{n=0}^\infty=\{1,-2,4,-8,\ldots\}\text{.}\)</span>  Let <span class="process-math">\(B_n=\displaystyle\sum_{i=0}^n b_i\)</span> be the <span class="process-math">\(n\)</span>th partial sum of <span class="process-math">\(\{b_n\}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-247"><p id="p-2622">Suppose that <span class="process-math">\(\displaystyle \{b_n\}_{n=0}^\infty=\{(-2)^n\}_{n=0}^\infty=\{1,-2,4,-8,\ldots\}\text{.}\)</span>  Let <span class="process-math">\(B_n=\displaystyle\sum_{i=0}^n b_i\)</span> be the <span class="process-math">\(n\)</span>th partial sum of <span class="process-math">\(\{b_n\}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-738"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2639">Find simple expressions for the following:</p>
+<p id="p-2623">Find simple expressions for the following:</p>
 <ol class="decimal">
 <li id="li-1902"><p id="p-derived-li-1902"><span class="process-math">\((1-(-2))B_{10}\text{.}\)</span></p></li>
 <li id="li-1903"><p id="p-derived-li-1903"><span class="process-math">\((1-(-2))B_{30}\text{.}\)</span></p></li>
 <li id="li-1904">
-<p id="p-2640"><span class="process-math">\((1-(-2))B_{n}\text{.}\)</span> Choose from the following:</p>
+<p id="p-2624"><span class="process-math">\((1-(-2))B_{n}\text{.}\)</span> Choose from the following:</p>
 <ol class="upper-alpha">
 <li id="li-1905"><p id="p-derived-li-1905"><span class="process-math">\(1+(-2)^n\text{.}\)</span></p></li>
 <li id="li-1906"><p id="p-derived-li-1906"><span class="process-math">\(1-(-2)^n\text{.}\)</span></p></li>
@@ -330,12 +298,12 @@ A_k=\sum_{i=0}^k a_i=a_1+a_2+\cdots+a_k.
 </ol>
 </li>
 </ol></article><article class="task exercise-like" id="task-739"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2641">Based on your previous answers, solve for the following:</p>
+<p id="p-2625">Based on your previous answers, solve for the following:</p>
 <ol class="decimal">
 <li id="li-1910"><p id="p-derived-li-1910"><span class="process-math">\(B_{10}\text{.}\)</span></p></li>
 <li id="li-1911"><p id="p-derived-li-1911"><span class="process-math">\(B_{30}\text{.}\)</span></p></li>
 <li id="li-1912">
-<p id="p-2642"><span class="process-math">\(B_{n}\text{.}\)</span> Choose from the following:</p>
+<p id="p-2626"><span class="process-math">\(B_{n}\text{.}\)</span> Choose from the following:</p>
 <ol class="upper-alpha">
 <li id="li-1913"><p id="p-derived-li-1913"><span class="process-math">\(\displaystyle \displaystyle \frac{1-(-2)^{n+1}}{1-(-2)}\)</span></p></li>
 <li id="li-1914"><p id="p-derived-li-1914"><span class="process-math">\(\displaystyle \displaystyle \frac{1-(-2)^{n+1}}{1-2}\)</span></p></li>
@@ -348,7 +316,7 @@ A_k=\sum_{i=0}^k a_i=a_1+a_2+\cdots+a_k.
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.3.10</span><span class="period">.</span>
 </h3>
 <div class="introduction" id="introduction-248">
-<p id="p-2643">Consider the following sequences:</p>
+<p id="p-2627">Consider the following sequences:</p>
 <ol class="decimal">
 <li id="li-1918"><p id="p-derived-li-1918"><span class="process-math">\(\displaystyle\{a_n\}_{n=0}^\infty=\left\{\left(-\frac{2}{3}\right)^n\right\}_{n=0}^\infty\text{.}\)</span></p></li>
 <li id="li-1919"><p id="p-derived-li-1919"><span class="process-math">\(\displaystyle\{b_n\}_{n=0}^\infty=\left\{2\cdot\left(-1\right)^n\right\}_{n=0}^\infty\text{.}\)</span></p></li>
@@ -356,7 +324,7 @@ A_k=\sum_{i=0}^k a_i=a_1+a_2+\cdots+a_k.
 </ol>
 </div>
 <article class="task exercise-like" id="task-740"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2644">Find the closed form for the <span class="process-math">\(n\)</span>th partial sum for the geometric sequence <span class="process-math">\(A_n=\displaystyle\sum_{i=0}^n a_i=\displaystyle\sum_{i=0}^n \left(-\frac{2}{3}\right)^n\text{.}\)</span></p>
+<p id="p-2628">Find the closed form for the <span class="process-math">\(n\)</span>th partial sum for the geometric sequence <span class="process-math">\(A_n=\displaystyle\sum_{i=0}^n a_i=\displaystyle\sum_{i=0}^n \left(-\frac{2}{3}\right)^n\text{.}\)</span></p>
 <ol class="upper-alpha">
 <li id="li-1921"><p id="p-derived-li-1921"><span class="process-math">\(\displaystyle \frac{3}{5}\left(1-\left(-\frac{2}{3}\right)^{n+1}\right)\text{.}\)</span></p></li>
 <li id="li-1922"><p id="p-derived-li-1922"><span class="process-math">\(\displaystyle \frac{5}{3}\left(1-\left(-\frac{2}{3}\right)^{n+1}\right)\text{.}\)</span></p></li>
@@ -364,7 +332,7 @@ A_k=\sum_{i=0}^k a_i=a_1+a_2+\cdots+a_k.
 <li id="li-1924"><p id="p-derived-li-1924"><span class="process-math">\(\displaystyle \frac{3}{5}\left(1+\frac{2}{3}\left(\frac{2}{3}\right)^{n}\right)\text{.}\)</span></p></li>
 <li id="li-1925"><p id="p-derived-li-1925"><span class="process-math">\(\displaystyle 1-\left(-\frac{2}{3}\right)^{n+1}\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-741"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2645">Find the closed form for the <span class="process-math">\(n\)</span>th partial sum for the geometric sequence <span class="process-math">\(B_n=\displaystyle\sum_{i=0}^n b_i=\displaystyle\sum_{i=0}^n 2\cdot\left(-1\right)^n\text{.}\)</span></p>
+<p id="p-2629">Find the closed form for the <span class="process-math">\(n\)</span>th partial sum for the geometric sequence <span class="process-math">\(B_n=\displaystyle\sum_{i=0}^n b_i=\displaystyle\sum_{i=0}^n 2\cdot\left(-1\right)^n\text{.}\)</span></p>
 <ol class="upper-alpha">
 <li id="li-1926"><p id="p-derived-li-1926"><span class="process-math">\(\displaystyle 2^{n+1}\text{.}\)</span></p></li>
 <li id="li-1927"><p id="p-derived-li-1927"><span class="process-math">\(\displaystyle 1-(-1)^{n+1}\text{.}\)</span></p></li>
@@ -372,10 +340,10 @@ A_k=\sum_{i=0}^k a_i=a_1+a_2+\cdots+a_k.
 <li id="li-1929"><p id="p-derived-li-1929"><span class="process-math">\(\displaystyle 2(1+(-1)^{n})\text{.}\)</span></p></li>
 <li id="li-1930"><p id="p-derived-li-1930"><span class="process-math">\(\displaystyle 2(1-(-1)^{n+1})\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-742"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2646">Find the closed form for the <span class="process-math">\(n\)</span>th partial sum for the geometric sequence <span class="process-math">\(C_n=\displaystyle\sum_{i=0}^n c_i=\displaystyle\sum_{i=0}^n -3\cdot \left(1.2\right)^n\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-484"><h3 class="heading">
+<p id="p-2630">Find the closed form for the <span class="process-math">\(n\)</span>th partial sum for the geometric sequence <span class="process-math">\(C_n=\displaystyle\sum_{i=0}^n c_i=\displaystyle\sum_{i=0}^n -3\cdot \left(1.2\right)^n\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-486"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.3.11</span><span class="period">.</span>
 </h3>
-<p id="p-2647">Given the closed forms you found in <a href="" class="xref" data-knowl="./knowl/activity-SQ3closedformgeomhandsoff.html" title="Activity 8.3.10">Activity 8.3.10</a>, which of the following limits are defined?  If defined, what is the limit?</p>
+<p id="p-2631">Given the closed forms you found in <a href="" class="xref" data-knowl="./knowl/activity-SQ3closedformgeomhandsoff.html" title="Activity 8.3.10">Activity 8.3.10</a>, which of the following limits are defined?  If defined, what is the limit?</p>
 <ol class="upper-alpha">
 <li id="li-1931"><p id="p-derived-li-1931"><span class="process-math">\(\displaystyle\lim_{n\to\infty}A_n\text{.}\)</span></p></li>
 <li id="li-1932"><p id="p-derived-li-1932"><span class="process-math">\(\displaystyle\lim_{n\to\infty}B_n\text{.}\)</span></p></li>
@@ -383,7 +351,7 @@ A_k=\sum_{i=0}^k a_i=a_1+a_2+\cdots+a_k.
 </ol></article><article class="definition definition-like" id="definition-SQ3serieslimit"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.3.12</span><span class="period">.</span>
 </h3>
-<p id="p-2648">Given a sequence <span class="process-math">\(a_n\text{,}\)</span> we define the limit of the series</p>
+<p id="p-2632">Given a sequence <span class="process-math">\(a_n\text{,}\)</span> we define the limit of the series</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \displaystyle\sum_{n=k}^\infty a_n:=\lim_{n\to \infty} A_n
@@ -392,7 +360,7 @@ A_k=\sum_{i=0}^k a_i=a_1+a_2+\cdots+a_k.
 <p class="continuation">where <span class="process-math">\(A_n=\displaystyle \sum_{i=k}^n a_i\text{.}\)</span>  We call <span class="process-math">\(\displaystyle\sum_{n=k}^\infty a_n\)</span> an <em class="emphasis">infinite series</em>.</p></article><article class="activity project-like" id="activity-SQ3geomserieslimit"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.3.13</span><span class="period">.</span>
 </h3>
-<p id="p-2649">Which of the following series are infinite?</p>
+<p id="p-2633">Which of the following series are infinite?</p>
 <ol class="upper-alpha">
 <li id="li-1934"><p id="p-derived-li-1934"><span class="process-math">\(\displaystyle\sum_{n=0}^\infty 3(0.8)^n\text{.}\)</span></p></li>
 <li id="li-1935"><p id="p-derived-li-1935"><span class="process-math">\(\displaystyle\sum_{n=0}^\infty 2\left(\frac{5}{4}\right)^n\text{.}\)</span></p></li>
@@ -402,16 +370,16 @@ A_k=\sum_{i=0}^k a_i=a_1+a_2+\cdots+a_k.
 </ol></article><article class="activity project-like" id="activity-SQ3telescopingpartialsums"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.3.14</span><span class="period">.</span>
 </h3>
-<p id="p-2650">Let <span class="process-math">\(\displaystyle\{a_n\}_{n=1}^\infty=\left\{\frac{1}{n}-\frac{1}{n+1}\right\}=1-\frac{1}{2}, \frac{1}{2}-\frac{1}{3}, \frac{1}{3}-\frac{1}{4},\ldots\text{.}\)</span>  Let <span class="process-math">\(\displaystyle A_n=\sum_{i=1}^na_i=\sum_{i=1}^n \left(\frac{1}{i}-\frac{1}{i+1} \right)\text{.}\)</span></p>
-<p id="p-2651">Which of the following is the best strategy for evaluating <span class="process-math">\(\displaystyle A_{4}=\left(1-\frac{1}{2} \right)+\left(\frac{1}{2}-\frac{1}{3} \right)+\left(\frac{1}{3}-\frac{1}{4} \right)+\left(\frac{1}{4}-\frac{1}{5} \right)\text{?}\)</span></p>
+<p id="p-2634">Let <span class="process-math">\(\displaystyle\{a_n\}_{n=1}^\infty=\left\{\frac{1}{n}-\frac{1}{n+1}\right\}=1-\frac{1}{2}, \frac{1}{2}-\frac{1}{3}, \frac{1}{3}-\frac{1}{4},\ldots\text{.}\)</span>  Let <span class="process-math">\(\displaystyle A_n=\sum_{i=1}^na_i=\sum_{i=1}^n \left(\frac{1}{i}-\frac{1}{i+1} \right)\text{.}\)</span></p>
+<p id="p-2635">Which of the following is the best strategy for evaluating <span class="process-math">\(\displaystyle A_{4}=\left(1-\frac{1}{2} \right)+\left(\frac{1}{2}-\frac{1}{3} \right)+\left(\frac{1}{3}-\frac{1}{4} \right)+\left(\frac{1}{4}-\frac{1}{5} \right)\text{?}\)</span></p>
 <ol class="upper-alpha">
 <li id="li-1939"><p id="p-derived-li-1939">Compute <span class="process-math">\(\displaystyle A_{4}=\left(1-\frac{1}{2} \right)+\left(\frac{1}{2}-\frac{1}{3} \right)+\left(\frac{1}{3}-\frac{1}{4} \right)+\left(\frac{1}{4}-\frac{1}{5} \right)=\frac{1}{2}+\frac{1}{6}+\frac{1}{12}+\frac{1}{20}\text{,}\)</span> then evaluate the sum.</p></li>
 <li id="li-1940"><p id="p-derived-li-1940">Rewrite <span class="process-math">\(\displaystyle A_{4}=\left(1-\frac{1}{2} \right)+\left(\frac{1}{2}-\frac{1}{3} \right)+\left(\frac{1}{3}-\frac{1}{4} \right)+\left(\frac{1}{4}-\frac{1}{5} \right)=1+\left(-\frac{1}{2}+\frac{1}{2}\right)+\left(-\frac{1}{3}+\frac{1}{3}\right)+\left(-\frac{1}{4}+\frac{1}{4}\right)-\frac{1}{5}\text{,}\)</span> then simplify.</p></li>
 </ol></article><article class="activity project-like" id="activity-SQ3telescopingpartialsumsclosed"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.3.15</span><span class="period">.</span>
 </h3>
-<p id="p-2652">Recall from <a href="" class="xref" data-knowl="./knowl/activity-SQ3telescopingpartialsums.html" title="Activity 8.3.14">Activity 8.3.14</a> that <span class="process-math">\(\displaystyle\{a_n\}_{n=1}^\infty=\left\{\frac{1}{n}-\frac{1}{n+1}\right\}\)</span> and <span class="process-math">\(\displaystyle A_n=\sum_{i=1}^na_i=\sum_{i=1}^n \left(\frac{1}{i}-\frac{1}{i+1} \right)\text{.}\)</span></p>
-<p id="p-2653">Compute the following partial sums:</p>
+<p id="p-2636">Recall from <a href="" class="xref" data-knowl="./knowl/activity-SQ3telescopingpartialsums.html" title="Activity 8.3.14">Activity 8.3.14</a> that <span class="process-math">\(\displaystyle\{a_n\}_{n=1}^\infty=\left\{\frac{1}{n}-\frac{1}{n+1}\right\}\)</span> and <span class="process-math">\(\displaystyle A_n=\sum_{i=1}^na_i=\sum_{i=1}^n \left(\frac{1}{i}-\frac{1}{i+1} \right)\text{.}\)</span></p>
+<p id="p-2637">Compute the following partial sums:</p>
 <ol class="decimal">
 <li id="li-1941"><p id="p-derived-li-1941"><span class="process-math">\(A_3\text{.}\)</span></p></li>
 <li id="li-1942"><p id="p-derived-li-1942"><span class="process-math">\(A_{10}\text{.}\)</span></p></li>
@@ -419,8 +387,8 @@ A_k=\sum_{i=0}^k a_i=a_1+a_2+\cdots+a_k.
 </ol></article><article class="activity project-like" id="activity-SQ3telescopingclosedform"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.3.16</span><span class="period">.</span>
 </h3>
-<p id="p-2654">Recall from <a href="" class="xref" data-knowl="./knowl/activity-SQ3telescopingpartialsums.html" title="Activity 8.3.14">Activity 8.3.14</a> that <span class="process-math">\(\displaystyle\{a_n\}_{n=1}^\infty=\left\{\frac{1}{n}-\frac{1}{n+1}\right\}\)</span> and <span class="process-math">\(\displaystyle A_n=\sum_{i=1}^na_i=\sum_{i=1}^n \left(\frac{1}{i}-\frac{1}{i+1} \right)\text{.}\)</span></p>
-<p id="p-2655">Which of the following is equal to <span class="process-math">\(A_n\text{?}\)</span></p>
+<p id="p-2638">Recall from <a href="" class="xref" data-knowl="./knowl/activity-SQ3telescopingpartialsums.html" title="Activity 8.3.14">Activity 8.3.14</a> that <span class="process-math">\(\displaystyle\{a_n\}_{n=1}^\infty=\left\{\frac{1}{n}-\frac{1}{n+1}\right\}\)</span> and <span class="process-math">\(\displaystyle A_n=\sum_{i=1}^na_i=\sum_{i=1}^n \left(\frac{1}{i}-\frac{1}{i+1} \right)\text{.}\)</span></p>
+<p id="p-2639">Which of the following is equal to <span class="process-math">\(A_n\text{?}\)</span></p>
 <ol class="upper-alpha">
 <li id="li-1944"><p id="p-derived-li-1944"><span class="process-math">\(n-\frac{1}{n+1}\text{.}\)</span></p></li>
 <li id="li-1945"><p id="p-derived-li-1945"><span class="process-math">\(1-\frac{1}{n}\text{.}\)</span></p></li>
@@ -430,15 +398,15 @@ A_k=\sum_{i=0}^k a_i=a_1+a_2+\cdots+a_k.
 </ol></article><article class="definition definition-like" id="definition-SQ3telescoping"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.3.17</span><span class="period">.</span>
 </h3>
-<p id="p-2656">Given a sequence <span class="process-math">\(\{x_n\}_1^\infty\)</span> and a sequence of the form <span class="process-math">\(\{s_n\}_1^\infty:=\{x_n-x_{n+1}\}_1^\infty\)</span>  we call the series <span class="process-math">\(S_n=\displaystyle\sum_{i=1}^n s_i=\sum_{i=1}^n(x_i-x_{i+1})\)</span> to be a <em class="emphasis">telescoping series</em>.</p></article><article class="activity project-like" id="activity-SQ3generaltelescoping"><h3 class="heading">
+<p id="p-2640">Given a sequence <span class="process-math">\(\{x_n\}_1^\infty\)</span> and a sequence of the form <span class="process-math">\(\{s_n\}_1^\infty:=\{x_n-x_{n+1}\}_1^\infty\)</span>  we call the series <span class="process-math">\(S_n=\displaystyle\sum_{i=1}^n s_i=\sum_{i=1}^n(x_i-x_{i+1})\)</span> to be a <em class="emphasis">telescoping series</em>.</p></article><article class="activity project-like" id="activity-SQ3generaltelescoping"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.3.18</span><span class="period">.</span>
 </h3>
-<p id="p-2657">Given a telescoping series <span class="process-math">\(S_n=\displaystyle\sum_{i=1}^n s_i=\sum_{i=1}^n(x_i-x_{i+1})\text{,}\)</span> find:</p>
+<p id="p-2641">Given a telescoping series <span class="process-math">\(S_n=\displaystyle\sum_{i=1}^n s_i=\sum_{i=1}^n(x_i-x_{i+1})\text{,}\)</span> find:</p>
 <ol class="decimal">
 <li id="li-1949"><p id="p-derived-li-1949"><span class="process-math">\(S_2\text{.}\)</span></p></li>
 <li id="li-1950"><p id="p-derived-li-1950"><span class="process-math">\(S_{10}\text{.}\)</span></p></li>
 <li id="li-1951">
-<p id="p-2658"><span class="process-math">\(S_{n}\text{.}\)</span> Choose from the following:</p>
+<p id="p-2642"><span class="process-math">\(S_{n}\text{.}\)</span> Choose from the following:</p>
 <ol class="upper-alpha">
 <li id="li-1952"><p id="p-derived-li-1952"><span class="process-math">\(\displaystyle x_1-x_n\)</span></p></li>
 <li id="li-1953"><p id="p-derived-li-1953"><span class="process-math">\(\displaystyle x_1-x_{n+1}\)</span></p></li>
@@ -450,31 +418,32 @@ A_k=\sum_{i=0}^k a_i=a_1+a_2+\cdots+a_k.
 </ol></article><article class="activity project-like" id="activity-SQ3telescopinghandsoff"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.3.19</span><span class="period">.</span>
 </h3>
-<p id="p-2659">For each of the following telescoping series, find the closed form for the <span class="process-math">\(n\)</span>th partial sum.</p>
+<p id="p-2643">For each of the following telescoping series, find the closed form for the <span class="process-math">\(n\)</span>th partial sum.</p>
 <ol class="decimal">
 <li id="li-1957"><p id="p-derived-li-1957"><span class="process-math">\(S_n=\displaystyle\sum_{i=1}^n (2^{-i}-(2^{-i-1}))\text{.}\)</span></p></li>
 <li id="li-1958"><p id="p-derived-li-1958"><span class="process-math">\(S_n=\displaystyle\sum_{i=1}^n (i^2-(i+1)^2)\text{.}\)</span></p></li>
 <li id="li-1959"><p id="p-derived-li-1959"><span class="process-math">\(S_n=\displaystyle\sum_{i=1}^n \left( \frac{1}{2i+1}-\frac{1}{2i+3}\right)\text{.}\)</span></p></li>
-</ol></article><article class="activity project-like" id="activity-491"><h3 class="heading">
+</ol></article><article class="activity project-like" id="activity-493"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.3.20</span><span class="period">.</span>
 </h3>
-<p id="p-2660">Given the closed forms you found in <a href="" class="xref" data-knowl="./knowl/activity-SQ3telescopinghandsoff.html" title="Activity 8.3.19">Activity 8.3.19</a>, determine which of the following telescoping series converge. If so, to what value does it converge?</p>
+<p id="p-2644">Given the closed forms you found in <a href="" class="xref" data-knowl="./knowl/activity-SQ3telescopinghandsoff.html" title="Activity 8.3.19">Activity 8.3.19</a>, determine which of the following telescoping series converge. If so, to what value does it converge?</p>
 <ol class="upper-alpha">
 <li id="li-1960"><p id="p-derived-li-1960"><span class="process-math">\(\displaystyle\sum_{i=1}^\infty (2^{-i}-(2^{-i-1}))\text{.}\)</span></p></li>
 <li id="li-1961"><p id="p-derived-li-1961"><span class="process-math">\(\displaystyle\sum_{i=1}^\infty (i^2-(i+1)^2)\text{.}\)</span></p></li>
 <li id="li-1962"><p id="p-derived-li-1962"><span class="process-math">\(\displaystyle\sum_{i=1}^\infty \left( \frac{1}{2i+1}-\frac{1}{2i+3}\right)\text{.}\)</span></p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-3"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-3"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">8.3.21</span><span class="period">.</span>
-</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-3"><article class="exercise exercise-like"><ol id="p-2661" class="decimal">
+</ol></article><article class="activity project-like" id="activity-494"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.3.21</span><span class="period">.</span>
+</h3>
+<ol id="p-2645" class="decimal">
 <li id="li-1963">
-<p id="p-2662">Consider the partial sum sequence <span class="process-math">\(\displaystyle A_n=\left(-2\right)+\left(\frac{2}{3}\right)+\left(-\frac{2}{9}\right)+\cdots+\left(-2\cdot \left( -\frac{1}{3}\right)^n \right).\)</span></p>
+<p id="p-2646">Consider the partial sum sequence <span class="process-math">\(\displaystyle A_n=\left(-2\right)+\left(\frac{2}{3}\right)+\left(-\frac{2}{9}\right)+\cdots+\left(-2\cdot \left( -\frac{1}{3}\right)^n \right).\)</span></p>
 <ol class="lower-alpha">
 <li id="li-1964"><p id="p-derived-li-1964">Find a closed form for <span class="process-math">\(A_n\text{.}\)</span></p></li>
 <li id="li-1965"><p id="p-derived-li-1965">Does <span class="process-math">\(\{A_n\}\)</span> converge?  If so, to what value?</p></li>
 </ol>
 </li>
 <li id="li-1966">
-<p id="p-2663">Consider the partial sum sequence <span class="process-math">\(\displaystyle B_n=\sum_{i=1}^n \left( \frac{1}{5 \, i + 2}-\frac{1}{5 \, i + 7} \right).\)</span></p>
+<p id="p-2647">Consider the partial sum sequence <span class="process-math">\(\displaystyle B_n=\sum_{i=1}^n \left( \frac{1}{5 \, i + 2}-\frac{1}{5 \, i + 7} \right).\)</span></p>
 <ol class="lower-alpha">
 <li id="li-1967"><p id="p-derived-li-1967">Find a closed form for <span class="process-math">\(B_n\text{.}\)</span></p></li>
 <li id="li-1968"><p id="p-derived-li-1968">Does <span class="process-math">\(\{B_n\}\)</span> converge?  If so, to what value?</p></li>
@@ -482,7 +451,7 @@ A_k=\sum_{i=0}^k a_i=a_1+a_2+\cdots+a_k.
 </li>
 </ol>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-28" id="answer-28"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-28"><div class="answer solution-like"><ol id="p-2664" class="decimal">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-28" id="answer-28"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-28"><div class="answer solution-like"><ol id="p-2648" class="decimal">
 <li id="li-1969"><p id="p-derived-li-1969"><ol class="lower-alpha">
 <li id="li-1970"><p id="p-derived-li-1970"><span class="process-math">\(\displaystyle A_n=-2\cdot\frac{1-\left(-\frac{1}{3}\right)^{n+1} }{1- \left(-\frac{1}{3}\right) }\text{.}\)</span></p></li>
 <li id="li-1971"><p id="p-derived-li-1971"><span class="process-math">\(\displaystyle\lim_{n\to\infty} -2\cdot\frac{1-\left(-\frac{1}{3}\right)^{n+1} }{1- \left(-\frac{1}{3}\right) } \)</span> converges to <span class="process-math">\(-\frac{3}{2}\text{.}\)</span></p></li>
@@ -492,12 +461,8 @@ A_k=\sum_{i=0}^k a_i=a_1+a_2+\cdots+a_k.
 <li id="li-1974"><p id="p-derived-li-1974"><span class="process-math">\(\displaystyle\lim_{n\to\infty} \frac{1}{7}-\frac{1}{5 \, n + 7} \)</span> converges to <span class="process-math">\(\frac{1}{7}\text{.}\)</span></p></li>
 </ol></p></li>
 </ol></div></div>
-</div></article></div>
-<section class="subsection" id="subsection-33"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">8.3.1</span> <span class="title">Slideshow</span>
-</h3>
-<p id="p-2665">Slideshow of activities available at <a class="external" href="SQ3.slides.html" target="_blank"><code class="code-inline tex2jax_ignore">SQ3.slides.html</code></a>.</p></section><section class="subsection" id="subsection-34"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">8.3.2</span> <span class="title">Videos</span>
+</div></article><section class="subsection" id="subsection-17"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">8.3.1</span> <span class="title">Videos</span>
 </h3>
 <figure class="figure figure-like" id="figure-137"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-SQ3" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/egshCNxf5FE?&amp;modestbranding=1&amp;rel=0"></iframe></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">151<span class="period">.</span></span><span class="space"> </span>Video: Compute the first few terms of a telescoping or geometric partial sum sequence, and find a closed form for this sequence, and compute its limit.</figcaption></figure></section></section></div></main>

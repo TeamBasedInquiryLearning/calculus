@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-30T01:55:46Z       *-->
+<!--*       on 2022-06-30T19:06:07Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -49,38 +49,6 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
-<!--** Runestone components to run locally in reader's browser **-->
-<!--** No external communication:                              **-->
-<!--**     log level is 0, Runestone Services are disabled     **-->
-<script type="text/javascript">
-eBookConfig = {};
-eBookConfig.useRunestoneServices = false;
-eBookConfig.host = 'http://127.0.0.1:8000';
-eBookConfig.course = 'PTX Course: Title Here';
-eBookConfig.basecourse = 'PTX Base Course';
-eBookConfig.isLoggedIn = false;
-eBookConfig.email = '';
-eBookConfig.isInstructor = false;
-eBookConfig.logLevel = 0;
-eBookConfig.username = '';
-eBookConfig.readings = null;
-eBookConfig.activities = null;
-eBookConfig.downloadsEnabled = false;
-eBookConfig.allow_pairs = false;
-eBookConfig.enableScratchAC = false;
-eBookConfig.build_info = "";
-eBookConfig.python3 = null;
-eBookConfig.acDefaultLanguage = 'python';
-eBookConfig.runestone_version = '5.0.1';
-eBookConfig.jobehost = '';
-eBookConfig.proxyuri_runs = '';
-eBookConfig.proxyuri_files = '';
-eBookConfig.enable_chatcodes =  false;
-</script>
-<!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -229,7 +197,7 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Section</span> <span class="codenumber">7.4</span> <span class="title">Polar coordinates (CO4)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-56"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-1743"><p id="p-2497">Convert points and equations between polar and Cartesian coordinates and equations.</p></li></ul></article><article class="fact theorem-like" id="fact-CO4polar"><h3 class="heading">
+<ul class="disc"><li id="li-1743"><p id="p-2483">Convert points and equations between polar and Cartesian coordinates and equations.</p></li></ul></article><article class="fact theorem-like" id="fact-CO4polar"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">7.4.1</span><span class="period">.</span>
 </h3>
 <p id="QCd">``As the crow flies'' is an idiom used to describe the most direct path between two points. The <em class="emphasis">polar coordinate system</em> is a useful parametrization of the plane that, rather than describing horizontal and vertical position relative to the origin in the usual way, describes a point in terms of distance from the origin and direction. The origin is also known as the <em class="emphasis">pole</em> (hence polar coordinates). Let <span class="process-math">\(\overline{OP}\)</span> be a line segment from the origin to a given point <span class="process-math">\(P\)</span> in the plane. The length of <span class="process-math">\(\overline{OP}\)</span> is the distance (or <em class="emphasis">radius</em>) <span class="process-math">\(r\)</span> from the origin to <span class="process-math">\(P\text{.}\)</span> The <em class="emphasis">polar axis</em> is a ray starting at the origin. To define the "direction" of <span class="process-math">\(P\text{,}\)</span> we form an angle <span class="process-math">\(\theta\)</span> by letting the polar axis serve as the initial ray and <span class="process-math">\(\overrightarrow{OP}\)</span> as the terminal ray. We will set the positive <span class="process-math">\(x\)</span>-axis as the polar axis and assume the movement in the positive direction is counter-clockwise (as in trigonometry). Notice that, unlike in the rectangular (or <em class="emphasis">Cartesian</em>) coordinate system, the polar coordinates <span class="process-math">\((r,\theta)\)</span> for a point are not unique, as we could turn either way to face a given point (or even spin around a number of times before facing that direction). Furthermore, by allowing <span class="process-math">\(r\)</span> to be negative, we can also "walk backwards" to get to a point by facing in the opposite direction. Rather than the grid lines defined by specific values for <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> in the rectangular coordinate system, specific values of <span class="process-math">\(r\)</span> correspond to circles of radius <span class="process-math">\(r\)</span> centered about the origin, and specific values of <span class="process-math">\(\theta\)</span> correspond to lines going through the pole (called <em class="emphasis">radial lines</em>).</p></article><figure class="figure figure-like" id="figure-132"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/polarPoint.svg" role="img" class="contained" alt="A point in the polar coordinate system."></div>
@@ -238,24 +206,24 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.4.2</span><span class="period">.</span>
 </h3>
 <article class="task exercise-like" id="task-672"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2499">Plot the Cartesian point <span class="process-math">\(P=(x,y)=(\sqrt{3},-1)\)</span> and draw line segments connecting the origin to <span class="process-math">\(P\text{,}\)</span> the origin to <span class="process-math">\((x,y)=(\sqrt{3},0)\text{,}\)</span> and <span class="process-math">\(P\)</span> to <span class="process-math">\((x,y)=(\sqrt{3},0)\text{.}\)</span></p></article><article class="task exercise-like" id="task-673"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2500">Solve the triangle formed by the line segments you just drew (i.e. find the lengths of all sides and the measures of each angle).</p></article><article class="task exercise-like" id="task-674"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2501">Find all polar coordinates for the Cartesian point <span class="process-math">\((x,y)=(\sqrt{3},-1)\text{.}\)</span></p></article><article class="task exercise-like" id="task-675"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-2502">Find Cartesian coordinates for the polar point <span class="process-math">\((r,\theta)=\left(-\sqrt{2},\displaystyle\frac{3\pi}{4}\right)\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-CO4polarGraphs"><h3 class="heading">
+<p id="p-2485">Plot the Cartesian point <span class="process-math">\(P=(x,y)=(\sqrt{3},-1)\)</span> and draw line segments connecting the origin to <span class="process-math">\(P\text{,}\)</span> the origin to <span class="process-math">\((x,y)=(\sqrt{3},0)\text{,}\)</span> and <span class="process-math">\(P\)</span> to <span class="process-math">\((x,y)=(\sqrt{3},0)\text{.}\)</span></p></article><article class="task exercise-like" id="task-673"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2486">Solve the triangle formed by the line segments you just drew (i.e. find the lengths of all sides and the measures of each angle).</p></article><article class="task exercise-like" id="task-674"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2487">Find all polar coordinates for the Cartesian point <span class="process-math">\((x,y)=(\sqrt{3},-1)\text{.}\)</span></p></article><article class="task exercise-like" id="task-675"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-2488">Find Cartesian coordinates for the polar point <span class="process-math">\((r,\theta)=\left(-\sqrt{2},\displaystyle\frac{3\pi}{4}\right)\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-CO4polarGraphs"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.4.3</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-229"><p id="p-2503">Graph each of the following.</p></div>
+<div class="introduction" id="introduction-229"><p id="p-2489">Graph each of the following.</p></div>
 <article class="task exercise-like" id="task-676"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2504"><span class="process-math">\(r=1\)</span></p></article><article class="task exercise-like" id="task-677"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2505"><span class="process-math">\(r=-1\)</span></p></article><article class="task exercise-like" id="task-678"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2506"><span class="process-math">\(\theta=\displaystyle\frac{\pi}{6}\)</span></p></article><article class="task exercise-like" id="task-679"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-2507"><span class="process-math">\(\theta=\displaystyle\frac{7\pi}{6}\)</span></p></article><article class="task exercise-like" id="task-680"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-2508"><span class="process-math">\(\theta=\displaystyle\frac{-5\pi}{6}\)</span></p></article><article class="task exercise-like" id="task-681"><h4 class="heading"><span class="codenumber">(f)</span></h4>
-<p id="p-2509"><span class="process-math">\(1\leq r &lt; -1\text{,}\)</span> <span class="process-math">\(0\leq\theta\leq\displaystyle\frac{\pi}{2}\)</span></p></article><article class="task exercise-like" id="task-682"><h4 class="heading"><span class="codenumber">(g)</span></h4>
-<p id="p-2510"><span class="process-math">\(-3\leq r \leq 2\text{,}\)</span> <span class="process-math">\(\theta=\displaystyle\frac{\pi}{4}\)</span></p></article><article class="task exercise-like" id="task-683"><h4 class="heading"><span class="codenumber">(h)</span></h4>
-<p id="p-2511"><span class="process-math">\(r \leq 0\text{,}\)</span> <span class="process-math">\(\theta=\displaystyle\frac{-\pi}{2}\)</span></p></article><article class="task exercise-like" id="task-684"><h4 class="heading"><span class="codenumber">(i)</span></h4>
-<p id="p-2512"><span class="process-math">\(\displaystyle\frac{2\pi}{3}\leq\theta\leq\displaystyle\frac{5\pi}{6}\)</span></p></article><article class="task exercise-like" id="task-685"><h4 class="heading"><span class="codenumber">(j)</span></h4>
-<p id="p-2513"><span class="process-math">\(r=3\sec(\theta))\)</span></p></article></article><article class="fact theorem-like" id="fact-CO4symmetryTestX"><h3 class="heading">
+<p id="p-2490"><span class="process-math">\(r=1\)</span></p></article><article class="task exercise-like" id="task-677"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2491"><span class="process-math">\(r=-1\)</span></p></article><article class="task exercise-like" id="task-678"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2492"><span class="process-math">\(\theta=\displaystyle\frac{\pi}{6}\)</span></p></article><article class="task exercise-like" id="task-679"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-2493"><span class="process-math">\(\theta=\displaystyle\frac{7\pi}{6}\)</span></p></article><article class="task exercise-like" id="task-680"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-2494"><span class="process-math">\(\theta=\displaystyle\frac{-5\pi}{6}\)</span></p></article><article class="task exercise-like" id="task-681"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<p id="p-2495"><span class="process-math">\(1\leq r &lt; -1\text{,}\)</span> <span class="process-math">\(0\leq\theta\leq\displaystyle\frac{\pi}{2}\)</span></p></article><article class="task exercise-like" id="task-682"><h4 class="heading"><span class="codenumber">(g)</span></h4>
+<p id="p-2496"><span class="process-math">\(-3\leq r \leq 2\text{,}\)</span> <span class="process-math">\(\theta=\displaystyle\frac{\pi}{4}\)</span></p></article><article class="task exercise-like" id="task-683"><h4 class="heading"><span class="codenumber">(h)</span></h4>
+<p id="p-2497"><span class="process-math">\(r \leq 0\text{,}\)</span> <span class="process-math">\(\theta=\displaystyle\frac{-\pi}{2}\)</span></p></article><article class="task exercise-like" id="task-684"><h4 class="heading"><span class="codenumber">(i)</span></h4>
+<p id="p-2498"><span class="process-math">\(\displaystyle\frac{2\pi}{3}\leq\theta\leq\displaystyle\frac{5\pi}{6}\)</span></p></article><article class="task exercise-like" id="task-685"><h4 class="heading"><span class="codenumber">(j)</span></h4>
+<p id="p-2499"><span class="process-math">\(r=3\sec(\theta))\)</span></p></article></article><article class="fact theorem-like" id="fact-CO4symmetryTestX"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">7.4.4</span><span class="period">.</span>
 </h3>
 <p id="QCd">If a polar graph is symmetric about the <span class="process-math">\(x\)</span>-axis, then if the point <span class="process-math">\((r,\theta)\)</span> lies on the graph, then the point <span class="process-math">\((r,-\theta)\)</span> or <span class="process-math">\((-r, \pi-\theta)\)</span> also lies on the graph.</p></article><article class="fact theorem-like" id="fact-CO4symmetryTestY"><h3 class="heading">
@@ -268,13 +236,13 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.4.7</span><span class="period">.</span>
 </h3>
 <article class="task exercise-like" id="task-686"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2517">Find a polar form of the the Cartesian equation <span class="process-math">\(x^2+(y-3)^=9\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-CO4cartesianEquation"><h3 class="heading">
+<p id="p-2503">Find a polar form of the the Cartesian equation <span class="process-math">\(x^2+(y-3)^=9\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-CO4cartesianEquation"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.4.8</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-230"><p id="p-2518">Find a Cartesian form of each of the given polar equations.</p></div>
+<div class="introduction" id="introduction-230"><p id="p-2504">Find a Cartesian form of each of the given polar equations.</p></div>
 <article class="task exercise-like" id="task-687"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2519"><span class="process-math">\(r^2=4r\cos(\theta)\)</span></p></article><article class="task exercise-like" id="task-688"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2520"><span class="process-math">\(r=\displaystyle\frac{4}{2\cos(\theta)-\sin(\theta)}\)</span></p></article></article></section></div></main>
+<p id="p-2505"><span class="process-math">\(r^2=4r\cos(\theta)\)</span></p></article><article class="task exercise-like" id="task-688"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2506"><span class="process-math">\(r=\displaystyle\frac{4}{2\cos(\theta)-\sin(\theta)}\)</span></p></article></article></section></div></main>
 </div>
 </body>
 </html>

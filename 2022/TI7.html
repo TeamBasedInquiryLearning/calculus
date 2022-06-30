@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-30T01:55:42Z       *-->
+<!--*       on 2022-06-30T19:06:04Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -49,38 +49,6 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
-<!--** Runestone components to run locally in reader's browser **-->
-<!--** No external communication:                              **-->
-<!--**     log level is 0, Runestone Services are disabled     **-->
-<script type="text/javascript">
-eBookConfig = {};
-eBookConfig.useRunestoneServices = false;
-eBookConfig.host = 'http://127.0.0.1:8000';
-eBookConfig.course = 'PTX Course: Title Here';
-eBookConfig.basecourse = 'PTX Base Course';
-eBookConfig.isLoggedIn = false;
-eBookConfig.email = '';
-eBookConfig.isInstructor = false;
-eBookConfig.logLevel = 0;
-eBookConfig.username = '';
-eBookConfig.readings = null;
-eBookConfig.activities = null;
-eBookConfig.downloadsEnabled = false;
-eBookConfig.allow_pairs = false;
-eBookConfig.enableScratchAC = false;
-eBookConfig.build_info = "";
-eBookConfig.python3 = null;
-eBookConfig.acDefaultLanguage = 'python';
-eBookConfig.runestone_version = '5.0.1';
-eBookConfig.jobehost = '';
-eBookConfig.proxyuri_runs = '';
-eBookConfig.proxyuri_files = '';
-eBookConfig.enable_chatcodes =  false;
-</script>
-<!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -229,74 +197,71 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Section</span> <span class="codenumber">5.7</span> <span class="title">Integration strategy (TI7)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-43"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-1337"><p id="p-1986">I can select appropriate strategies for integration.</p></li></ul></article><article class="activity project-like" id="activity-TI7FirstStepTrig"><h3 class="heading">
+<ul class="disc"><li id="li-1337"><p id="p-1980">I can select appropriate strategies for integration.</p></li></ul></article><article class="activity project-like" id="activity-TI7FirstStepTrig"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.7.1</span><span class="period">.</span>
 </h3>
-<p id="p-1987">Consider the integral <span class="process-math">\(\int e^t \tan(e^t) \sec^2(e^t)\,dt\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
+<p id="p-1981">Consider the integral <span class="process-math">\(\int e^t \tan(e^t) \sec^2(e^t)\,dt\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
 <ol class="upper-alpha">
-<li id="li-1338"><p id="p-1988">The method of substitution</p></li>
-<li id="li-1339"><p id="p-1989">The method of integration by parts</p></li>
-<li id="li-1340"><p id="p-1990">Trigonometric substitution</p></li>
-<li id="li-1341"><p id="p-1991">Using a table of integrals</p></li>
-<li id="li-1342"><p id="p-1992">The method of partial fractions</p></li>
+<li id="li-1338"><p id="p-1982">The method of substitution</p></li>
+<li id="li-1339"><p id="p-1983">The method of integration by parts</p></li>
+<li id="li-1340"><p id="p-1984">Trigonometric substitution</p></li>
+<li id="li-1341"><p id="p-1985">Using a table of integrals</p></li>
+<li id="li-1342"><p id="p-1986">The method of partial fractions</p></li>
 </ol></article><article class="activity project-like" id="activity-TI7FirstStepRational"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.7.2</span><span class="period">.</span>
 </h3>
-<p id="p-1993">Consider the integral <span class="process-math">\(\int \frac{2x+3}{1+x^2}\,dx\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
+<p id="p-1987">Consider the integral <span class="process-math">\(\int \frac{2x+3}{1+x^2}\,dx\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
 <ol class="upper-alpha">
-<li id="li-1343"><p id="p-1994">The method of substitution</p></li>
-<li id="li-1344"><p id="p-1995">The method of integration by parts</p></li>
-<li id="li-1345"><p id="p-1996">Trigonometric substitution</p></li>
-<li id="li-1346"><p id="p-1997">Using a table of integrals</p></li>
-<li id="li-1347"><p id="p-1998">The method of partial fractions</p></li>
+<li id="li-1343"><p id="p-1988">The method of substitution</p></li>
+<li id="li-1344"><p id="p-1989">The method of integration by parts</p></li>
+<li id="li-1345"><p id="p-1990">Trigonometric substitution</p></li>
+<li id="li-1346"><p id="p-1991">Using a table of integrals</p></li>
+<li id="li-1347"><p id="p-1992">The method of partial fractions</p></li>
 </ol></article><article class="activity project-like" id="activity-TI7StrategyRoot"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.7.3</span><span class="period">.</span>
 </h3>
-<p id="p-1999">Consider the integral <span class="process-math">\(\int \frac{x}{\sqrt[3]{1-x^2}}\,dx\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
+<p id="p-1993">Consider the integral <span class="process-math">\(\int \frac{x}{\sqrt[3]{1-x^2}}\,dx\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
 <ol class="upper-alpha">
-<li id="li-1348"><p id="p-2000">The method of substitution</p></li>
-<li id="li-1349"><p id="p-2001">The method of integration by parts</p></li>
-<li id="li-1350"><p id="p-2002">Trigonometric substitution</p></li>
-<li id="li-1351"><p id="p-2003">Using a table of integrals</p></li>
-<li id="li-1352"><p id="p-2004">The method of partial fractions</p></li>
+<li id="li-1348"><p id="p-1994">The method of substitution</p></li>
+<li id="li-1349"><p id="p-1995">The method of integration by parts</p></li>
+<li id="li-1350"><p id="p-1996">Trigonometric substitution</p></li>
+<li id="li-1351"><p id="p-1997">Using a table of integrals</p></li>
+<li id="li-1352"><p id="p-1998">The method of partial fractions</p></li>
 </ol></article><article class="activity project-like" id="activity-TI7StrategyTrigTable"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.7.4</span><span class="period">.</span>
 </h3>
-<p id="p-2005">Consider the integral <span class="process-math">\(\int \frac{1}{2x\sqrt{1-36x^2}}\,dx\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
+<p id="p-1999">Consider the integral <span class="process-math">\(\int \frac{1}{2x\sqrt{1-36x^2}}\,dx\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
 <ol class="upper-alpha">
-<li id="li-1353"><p id="p-2006">The method of substitution</p></li>
-<li id="li-1354"><p id="p-2007">The method of integration by parts</p></li>
-<li id="li-1355"><p id="p-2008">Trigonometric substitution</p></li>
-<li id="li-1356"><p id="p-2009">Using a table of integrals</p></li>
-<li id="li-1357"><p id="p-2010">The method of partial fractions</p></li>
+<li id="li-1353"><p id="p-2000">The method of substitution</p></li>
+<li id="li-1354"><p id="p-2001">The method of integration by parts</p></li>
+<li id="li-1355"><p id="p-2002">Trigonometric substitution</p></li>
+<li id="li-1356"><p id="p-2003">Using a table of integrals</p></li>
+<li id="li-1357"><p id="p-2004">The method of partial fractions</p></li>
 </ol></article><article class="activity project-like" id="activity-TI7StrategySubAndTrig"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.7.5</span><span class="period">.</span>
 </h3>
-<p id="p-2011">Consider the integral <span class="process-math">\(\int t^5\cos(t^3)\,dt\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
+<p id="p-2005">Consider the integral <span class="process-math">\(\int t^5\cos(t^3)\,dt\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
 <ol class="upper-alpha">
-<li id="li-1358"><p id="p-2012">The method of substitution</p></li>
-<li id="li-1359"><p id="p-2013">The method of integration by parts</p></li>
-<li id="li-1360"><p id="p-2014">Trigonometric substitution</p></li>
-<li id="li-1361"><p id="p-2015">Using a table of integrals</p></li>
-<li id="li-1362"><p id="p-2016">The method of partial fractions</p></li>
+<li id="li-1358"><p id="p-2006">The method of substitution</p></li>
+<li id="li-1359"><p id="p-2007">The method of integration by parts</p></li>
+<li id="li-1360"><p id="p-2008">Trigonometric substitution</p></li>
+<li id="li-1361"><p id="p-2009">Using a table of integrals</p></li>
+<li id="li-1362"><p id="p-2010">The method of partial fractions</p></li>
 </ol></article><article class="activity project-like" id="activity-TI7StrategyAddZero"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.7.6</span><span class="period">.</span>
 </h3>
-<p id="p-2017">Consider the integral <span class="process-math">\(\int \frac{1}{1+e^x}\,dx\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
+<p id="p-2011">Consider the integral <span class="process-math">\(\int \frac{1}{1+e^x}\,dx\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
 <ol class="upper-alpha">
-<li id="li-1363"><p id="p-2018">The method of substitution</p></li>
-<li id="li-1364"><p id="p-2019">The method of integration by parts</p></li>
-<li id="li-1365"><p id="p-2020">Trigonometric substitution</p></li>
-<li id="li-1366"><p id="p-2021">Using a table of integrals</p></li>
-<li id="li-1367"><p id="p-2022">The method of partial fractions</p></li>
-</ol></article><section class="subsection" id="subsection-13"><h3 class="heading hide-type">
+<li id="li-1363"><p id="p-2012">The method of substitution</p></li>
+<li id="li-1364"><p id="p-2013">The method of integration by parts</p></li>
+<li id="li-1365"><p id="p-2014">Trigonometric substitution</p></li>
+<li id="li-1366"><p id="p-2015">Using a table of integrals</p></li>
+<li id="li-1367"><p id="p-2016">The method of partial fractions</p></li>
+</ol></article><section class="subsection" id="subsection-7"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.7.1</span> <span class="title">Videos</span>
 </h3>
 <figure class="figure figure-like" id="figure-70"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-TI7" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/DIAMb55ZGQ8?&amp;modestbranding=1&amp;rel=0"></iframe></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">81<span class="period">.</span></span><span class="space"> </span>Video: I can select appropriate strategies for integration</figcaption></figure></section><section class="subsection" id="subsection-14"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">5.7.2</span> <span class="title">Slideshow</span>
-</h3>
-<p id="p-2023">Slideshow of activities available at <a class="external" href="TI7.slides.html" target="_blank"><code class="code-inline tex2jax_ignore">TI7.slides.html</code></a>.</p></section></section></div></main>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">81<span class="period">.</span></span><span class="space"> </span>Video: I can select appropriate strategies for integration</figcaption></figure></section></section></div></main>
 </div>
 </body>
 </html>

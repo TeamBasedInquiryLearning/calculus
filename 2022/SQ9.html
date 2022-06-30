@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-06-30T01:55:52Z       *-->
+<!--*       on 2022-06-30T19:06:13Z       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -49,38 +49,6 @@
 <link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
-<!--** Runestone components to run locally in reader's browser **-->
-<!--** No external communication:                              **-->
-<!--**     log level is 0, Runestone Services are disabled     **-->
-<script type="text/javascript">
-eBookConfig = {};
-eBookConfig.useRunestoneServices = false;
-eBookConfig.host = 'http://127.0.0.1:8000';
-eBookConfig.course = 'PTX Course: Title Here';
-eBookConfig.basecourse = 'PTX Base Course';
-eBookConfig.isLoggedIn = false;
-eBookConfig.email = '';
-eBookConfig.isInstructor = false;
-eBookConfig.logLevel = 0;
-eBookConfig.username = '';
-eBookConfig.readings = null;
-eBookConfig.activities = null;
-eBookConfig.downloadsEnabled = false;
-eBookConfig.allow_pairs = false;
-eBookConfig.enableScratchAC = false;
-eBookConfig.build_info = "";
-eBookConfig.python3 = null;
-eBookConfig.acDefaultLanguage = 'python';
-eBookConfig.runestone_version = '5.0.1';
-eBookConfig.jobehost = '';
-eBookConfig.proxyuri_runs = '';
-eBookConfig.proxyuri_files = '';
-eBookConfig.enable_chatcodes =  false;
-</script>
-<!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
 </head>
 <body class="pretext-book ignore-math has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
@@ -229,308 +197,309 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Section</span> <span class="codenumber">8.9</span> <span class="title">Series Convergence Strategy (SQ9)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-68"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-2204"><p id="p-2848">Identify appropriate convergence tests for various series.</p></li></ul></article><article class="activity project-like" id="activity-SQ9firstattemptDT"><h3 class="heading">
+<ul class="disc"><li id="li-2204"><p id="p-2826">Identify appropriate convergence tests for various series.</p></li></ul></article><article class="activity project-like" id="activity-SQ9firstattemptDT"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.1</span><span class="period">.</span>
 </h3>
-<p id="p-2849">Which test for convergence is the best first test to apply to any series <span class="process-math">\(\displaystyle \sum_{k=1}^\infty a_k\text{?}\)</span></p>
+<p id="p-2827">Which test for convergence is the best first test to apply to any series <span class="process-math">\(\displaystyle \sum_{k=1}^\infty a_k\text{?}\)</span></p>
 <ol class="upper-alpha cols2">
-<li id="li-2205"><p id="p-2850">Divergence Test</p></li>
-<li id="li-2206"><p id="p-2851">Geometric Series</p></li>
-<li id="li-2207"><p id="p-2852">Integral Test</p></li>
-<li id="li-2208"><p id="p-2853">Direct Comparison Test</p></li>
-<li id="li-2209"><p id="p-2854">Limit Comparison Test</p></li>
-<li id="li-2210"><p id="p-2855">Ratio Test</p></li>
-<li id="li-2211"><p id="p-2856">Root Test</p></li>
-<li id="li-2212"><p id="p-2857">Alternating Series Test</p></li>
+<li id="li-2205"><p id="p-2828">Divergence Test</p></li>
+<li id="li-2206"><p id="p-2829">Geometric Series</p></li>
+<li id="li-2207"><p id="p-2830">Integral Test</p></li>
+<li id="li-2208"><p id="p-2831">Direct Comparison Test</p></li>
+<li id="li-2209"><p id="p-2832">Limit Comparison Test</p></li>
+<li id="li-2210"><p id="p-2833">Ratio Test</p></li>
+<li id="li-2211"><p id="p-2834">Root Test</p></li>
+<li id="li-2212"><p id="p-2835">Alternating Series Test</p></li>
 </ol></article><article class="activity project-like" id="activity-SQ9dctAPPLIES"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.2</span><span class="period">.</span>
 </h3>
-<p id="p-2858">In which of the following scenarios can we successfully apply the Direct Comparison Test to determine the convergence of the series <span class="process-math">\(\displaystyle \sum a_k\text{?}\)</span></p>
+<p id="p-2836">In which of the following scenarios can we successfully apply the Direct Comparison Test to determine the convergence of the series <span class="process-math">\(\displaystyle \sum a_k\text{?}\)</span></p>
 <ol class="upper-alpha">
-<li id="li-2213"><p id="p-2859">When we find a convergent series <span class="process-math">\(\displaystyle \sum b_k\)</span> where <span class="process-math">\(0\leq a_k\leq b_k\)</span></p></li>
-<li id="li-2214"><p id="p-2860">When we find a divergent series <span class="process-math">\(\displaystyle \sum b_k\)</span> where <span class="process-math">\(0\leq a_k\leq b_k\)</span></p></li>
-<li id="li-2215"><p id="p-2861">When we find a convergent series <span class="process-math">\(\displaystyle \sum b_k\)</span> where <span class="process-math">\(0\leq b_k\leq a_k\)</span></p></li>
-<li id="li-2216"><p id="p-2862">When we find a divergent series <span class="process-math">\(\displaystyle \sum b_k\)</span> where <span class="process-math">\(0\leq b_k\leq a_k\)</span></p></li>
+<li id="li-2213"><p id="p-2837">When we find a convergent series <span class="process-math">\(\displaystyle \sum b_k\)</span> where <span class="process-math">\(0\leq a_k\leq b_k\)</span></p></li>
+<li id="li-2214"><p id="p-2838">When we find a divergent series <span class="process-math">\(\displaystyle \sum b_k\)</span> where <span class="process-math">\(0\leq a_k\leq b_k\)</span></p></li>
+<li id="li-2215"><p id="p-2839">When we find a convergent series <span class="process-math">\(\displaystyle \sum b_k\)</span> where <span class="process-math">\(0\leq b_k\leq a_k\)</span></p></li>
+<li id="li-2216"><p id="p-2840">When we find a divergent series <span class="process-math">\(\displaystyle \sum b_k\)</span> where <span class="process-math">\(0\leq b_k\leq a_k\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-SQ9choiceforpowers"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.3</span><span class="period">.</span>
 </h3>
-<p id="p-2863">Which test(s) for convergence would we use for a series <span class="process-math">\(\displaystyle \sum a_k\)</span> where <span class="process-math">\(a_k\)</span> involves <span class="process-math">\(k^{th}\)</span> powers?</p>
+<p id="p-2841">Which test(s) for convergence would we use for a series <span class="process-math">\(\displaystyle \sum a_k\)</span> where <span class="process-math">\(a_k\)</span> involves <span class="process-math">\(k^{th}\)</span> powers?</p>
 <ol class="upper-alpha cols2">
-<li id="li-2217"><p id="p-2864">Divergence Test</p></li>
-<li id="li-2218"><p id="p-2865">Geometric Series</p></li>
-<li id="li-2219"><p id="p-2866">Integral Test</p></li>
-<li id="li-2220"><p id="p-2867">Direct Comparison Test</p></li>
-<li id="li-2221"><p id="p-2868">Limit Comparison Test</p></li>
-<li id="li-2222"><p id="p-2869">Ratio Test</p></li>
-<li id="li-2223"><p id="p-2870">Root Test</p></li>
-<li id="li-2224"><p id="p-2871">Alternating Series Test</p></li>
+<li id="li-2217"><p id="p-2842">Divergence Test</p></li>
+<li id="li-2218"><p id="p-2843">Geometric Series</p></li>
+<li id="li-2219"><p id="p-2844">Integral Test</p></li>
+<li id="li-2220"><p id="p-2845">Direct Comparison Test</p></li>
+<li id="li-2221"><p id="p-2846">Limit Comparison Test</p></li>
+<li id="li-2222"><p id="p-2847">Ratio Test</p></li>
+<li id="li-2223"><p id="p-2848">Root Test</p></li>
+<li id="li-2224"><p id="p-2849">Alternating Series Test</p></li>
 </ol></article><article class="activity project-like" id="activity-SQ9geometricFORM"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.4</span><span class="period">.</span>
 </h3>
-<p id="p-2872">Which test(s) for convergence would we use for a series of the form <span class="process-math">\(\displaystyle \sum ar^k\text{?}\)</span></p>
+<p id="p-2850">Which test(s) for convergence would we use for a series of the form <span class="process-math">\(\displaystyle \sum ar^k\text{?}\)</span></p>
 <ol class="upper-alpha cols2">
-<li id="li-2225"><p id="p-2873">Divergence Test</p></li>
-<li id="li-2226"><p id="p-2874">Geometric Series</p></li>
-<li id="li-2227"><p id="p-2875">Integral Test</p></li>
-<li id="li-2228"><p id="p-2876">Direct Comparison Test</p></li>
-<li id="li-2229"><p id="p-2877">Limit Comparison Test</p></li>
-<li id="li-2230"><p id="p-2878">Ratio Test</p></li>
-<li id="li-2231"><p id="p-2879">Root Test</p></li>
-<li id="li-2232"><p id="p-2880">Alternating Series Test</p></li>
+<li id="li-2225"><p id="p-2851">Divergence Test</p></li>
+<li id="li-2226"><p id="p-2852">Geometric Series</p></li>
+<li id="li-2227"><p id="p-2853">Integral Test</p></li>
+<li id="li-2228"><p id="p-2854">Direct Comparison Test</p></li>
+<li id="li-2229"><p id="p-2855">Limit Comparison Test</p></li>
+<li id="li-2230"><p id="p-2856">Ratio Test</p></li>
+<li id="li-2231"><p id="p-2857">Root Test</p></li>
+<li id="li-2232"><p id="p-2858">Alternating Series Test</p></li>
 </ol></article><article class="activity project-like" id="activity-SQ9choiceforfactorialsANDpowers"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.5</span><span class="period">.</span>
 </h3>
-<p id="p-2881">Which test(s) for convergence would we use for a series <span class="process-math">\(\displaystyle \sum a_k\)</span> where <span class="process-math">\(a_k\)</span> involves factorials and powers?</p>
+<p id="p-2859">Which test(s) for convergence would we use for a series <span class="process-math">\(\displaystyle \sum a_k\)</span> where <span class="process-math">\(a_k\)</span> involves factorials and powers?</p>
 <ol class="upper-alpha cols2">
-<li id="li-2233"><p id="p-2882">Divergence Test</p></li>
-<li id="li-2234"><p id="p-2883">Geometric Series</p></li>
-<li id="li-2235"><p id="p-2884">Integral Test</p></li>
-<li id="li-2236"><p id="p-2885">Direct Comparison Test</p></li>
-<li id="li-2237"><p id="p-2886">Limit Comparison Test</p></li>
-<li id="li-2238"><p id="p-2887">Ratio Test</p></li>
-<li id="li-2239"><p id="p-2888">Root Test</p></li>
-<li id="li-2240"><p id="p-2889">Alternating Series Test</p></li>
+<li id="li-2233"><p id="p-2860">Divergence Test</p></li>
+<li id="li-2234"><p id="p-2861">Geometric Series</p></li>
+<li id="li-2235"><p id="p-2862">Integral Test</p></li>
+<li id="li-2236"><p id="p-2863">Direct Comparison Test</p></li>
+<li id="li-2237"><p id="p-2864">Limit Comparison Test</p></li>
+<li id="li-2238"><p id="p-2865">Ratio Test</p></li>
+<li id="li-2239"><p id="p-2866">Root Test</p></li>
+<li id="li-2240"><p id="p-2867">Alternating Series Test</p></li>
 </ol></article><article class="activity project-like" id="activity-SQ9choiceforrationals"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.6</span><span class="period">.</span>
 </h3>
-<p id="p-2890">Which test(s) for convergence would we use for a series <span class="process-math">\(\displaystyle \sum a_k\)</span> where <span class="process-math">\(a_k\)</span> is a rational function?</p>
+<p id="p-2868">Which test(s) for convergence would we use for a series <span class="process-math">\(\displaystyle \sum a_k\)</span> where <span class="process-math">\(a_k\)</span> is a rational function?</p>
 <ol class="upper-alpha cols2">
-<li id="li-2241"><p id="p-2891">Divergence Test</p></li>
-<li id="li-2242"><p id="p-2892">Geometric Series</p></li>
-<li id="li-2243"><p id="p-2893">Integral Test</p></li>
-<li id="li-2244"><p id="p-2894">Direct Comparison Test</p></li>
-<li id="li-2245"><p id="p-2895">Limit Comparison Test</p></li>
-<li id="li-2246"><p id="p-2896">Ratio Test</p></li>
-<li id="li-2247"><p id="p-2897">Root Test</p></li>
-<li id="li-2248"><p id="p-2898">Alternating Series Test</p></li>
+<li id="li-2241"><p id="p-2869">Divergence Test</p></li>
+<li id="li-2242"><p id="p-2870">Geometric Series</p></li>
+<li id="li-2243"><p id="p-2871">Integral Test</p></li>
+<li id="li-2244"><p id="p-2872">Direct Comparison Test</p></li>
+<li id="li-2245"><p id="p-2873">Limit Comparison Test</p></li>
+<li id="li-2246"><p id="p-2874">Ratio Test</p></li>
+<li id="li-2247"><p id="p-2875">Root Test</p></li>
+<li id="li-2248"><p id="p-2876">Alternating Series Test</p></li>
 </ol></article><article class="activity project-like" id="activity-SQ9astFORM"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.7</span><span class="period">.</span>
 </h3>
-<p id="p-2899">Which test(s) for convergence would we use for a series of the form <span class="process-math">\(\displaystyle \sum (-1)^ka_k\text{?}\)</span></p>
+<p id="p-2877">Which test(s) for convergence would we use for a series of the form <span class="process-math">\(\displaystyle \sum (-1)^ka_k\text{?}\)</span></p>
 <ol class="upper-alpha cols2">
-<li id="li-2249"><p id="p-2900">Divergence Test</p></li>
-<li id="li-2250"><p id="p-2901">Geometric Series</p></li>
-<li id="li-2251"><p id="p-2902">Integral Test</p></li>
-<li id="li-2252"><p id="p-2903">Direct Comparison Test</p></li>
-<li id="li-2253"><p id="p-2904">Limit Comparison Test</p></li>
-<li id="li-2254"><p id="p-2905">Ratio Test</p></li>
-<li id="li-2255"><p id="p-2906">Root Test</p></li>
-<li id="li-2256"><p id="p-2907">Alternating Series Test</p></li>
+<li id="li-2249"><p id="p-2878">Divergence Test</p></li>
+<li id="li-2250"><p id="p-2879">Geometric Series</p></li>
+<li id="li-2251"><p id="p-2880">Integral Test</p></li>
+<li id="li-2252"><p id="p-2881">Direct Comparison Test</p></li>
+<li id="li-2253"><p id="p-2882">Limit Comparison Test</p></li>
+<li id="li-2254"><p id="p-2883">Ratio Test</p></li>
+<li id="li-2255"><p id="p-2884">Root Test</p></li>
+<li id="li-2256"><p id="p-2885">Alternating Series Test</p></li>
 </ol></article><article class="fact theorem-like" id="fact-SQ9strategy"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">8.9.8</span><span class="period">.</span>
 </h3>
-<p id="p-2908">Here is a strategy checklist when dealing with series:</p>
+<p id="p-2886">Here is a strategy checklist when dealing with series:</p>
 <ol class="decimal">
-<li id="li-2257"><p id="p-2909">The divergence test: unless <span class="process-math">\(a_n\rightarrow 0\text{,}\)</span> <span class="process-math">\(\displaystyle \sum a_n\)</span> diverges</p></li>
-<li id="li-2258"><p id="p-2910">Geometric Series: <span class="process-math">\(\displaystyle \sum ar^k\)</span> converges if <span class="process-math">\(-1&lt;r&lt;1\)</span> and diverges otherwise</p></li>
-<li id="li-2259"><p id="p-2911"><span class="process-math">\(p\)</span>-series: <span class="process-math">\(\displaystyle \sum \frac{1}{n^p}\)</span> converges if <span class="process-math">\(p&gt;1\)</span> and diverges otherwise</p></li>
-<li id="li-2260"><p id="p-2912">Series with no negative terms: try the ratio test, root test, integral test, or try to compare to a known series with the comparison test or limit comparison test</p></li>
-<li id="li-2261"><p id="p-2913">Series with some negative terms: check for absolute convergence</p></li>
-<li id="li-2262"><p id="p-2914">Alternating series: use the alternating series test (Leibniz's Theorem)</p></li>
-<li id="li-2263"><p id="p-2915">Anything else: consider the sequence of partial sums, possibly rewriting the series in a different form, hope for the best</p></li>
+<li id="li-2257"><p id="p-2887">The divergence test: unless <span class="process-math">\(a_n\rightarrow 0\text{,}\)</span> <span class="process-math">\(\displaystyle \sum a_n\)</span> diverges</p></li>
+<li id="li-2258"><p id="p-2888">Geometric Series: <span class="process-math">\(\displaystyle \sum ar^k\)</span> converges if <span class="process-math">\(-1&lt;r&lt;1\)</span> and diverges otherwise</p></li>
+<li id="li-2259"><p id="p-2889"><span class="process-math">\(p\)</span>-series: <span class="process-math">\(\displaystyle \sum \frac{1}{n^p}\)</span> converges if <span class="process-math">\(p&gt;1\)</span> and diverges otherwise</p></li>
+<li id="li-2260"><p id="p-2890">Series with no negative terms: try the ratio test, root test, integral test, or try to compare to a known series with the comparison test or limit comparison test</p></li>
+<li id="li-2261"><p id="p-2891">Series with some negative terms: check for absolute convergence</p></li>
+<li id="li-2262"><p id="p-2892">Alternating series: use the alternating series test (Leibniz's Theorem)</p></li>
+<li id="li-2263"><p id="p-2893">Anything else: consider the sequence of partial sums, possibly rewriting the series in a different form, hope for the best</p></li>
 </ol></article><article class="activity project-like" id="activity-SQ9dctSmallerD"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.9</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-284"><p id="p-2916">Consider the series <span class="process-math">\(\displaystyle \sum_{k=3}^\infty \frac{2}{\sqrt{k-2}}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-284"><p id="p-2894">Consider the series <span class="process-math">\(\displaystyle \sum_{k=3}^\infty \frac{2}{\sqrt{k-2}}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-849"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2917">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
+<p id="p-2895">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
 <ol class="upper-alpha cols2">
-<li id="li-2264"><p id="p-2918">Divergence Test</p></li>
-<li id="li-2265"><p id="p-2919">Geometric Series</p></li>
-<li id="li-2266"><p id="p-2920">Integral Test</p></li>
-<li id="li-2267"><p id="p-2921">Direct Comparison Test</p></li>
-<li id="li-2268"><p id="p-2922">Limit Comparison Test</p></li>
-<li id="li-2269"><p id="p-2923">Ratio Test</p></li>
-<li id="li-2270"><p id="p-2924">Root Test</p></li>
-<li id="li-2271"><p id="p-2925">Alternating Series Test</p></li>
+<li id="li-2264"><p id="p-2896">Divergence Test</p></li>
+<li id="li-2265"><p id="p-2897">Geometric Series</p></li>
+<li id="li-2266"><p id="p-2898">Integral Test</p></li>
+<li id="li-2267"><p id="p-2899">Direct Comparison Test</p></li>
+<li id="li-2268"><p id="p-2900">Limit Comparison Test</p></li>
+<li id="li-2269"><p id="p-2901">Ratio Test</p></li>
+<li id="li-2270"><p id="p-2902">Root Test</p></li>
+<li id="li-2271"><p id="p-2903">Alternating Series Test</p></li>
 </ol></article><article class="task exercise-like" id="task-850"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2926">Apply an appropriate test to determine the convergence of this series.</p>
+<p id="p-2904">Apply an appropriate test to determine the convergence of this series.</p>
 <ol class="upper-alpha cols2">
-<li id="li-2272"><p id="p-2927">This series is convergent.</p></li>
-<li id="li-2273"><p id="p-2928">This series is divergent.</p></li>
+<li id="li-2272"><p id="p-2905">This series is convergent.</p></li>
+<li id="li-2273"><p id="p-2906">This series is divergent.</p></li>
 </ol></article></article><article class="activity project-like" id="activity-SQ9dtD"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.10</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-285"><p id="p-2929">Consider the series <span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{k}{1+2k}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-285"><p id="p-2907">Consider the series <span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{k}{1+2k}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-851"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2930">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
+<p id="p-2908">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
 <ol class="upper-alpha cols2">
-<li id="li-2274"><p id="p-2931">Divergence Test</p></li>
-<li id="li-2275"><p id="p-2932">Geometric Series</p></li>
-<li id="li-2276"><p id="p-2933">Integral Test</p></li>
-<li id="li-2277"><p id="p-2934">Direct Comparison Test</p></li>
-<li id="li-2278"><p id="p-2935">Limit Comparison Test</p></li>
-<li id="li-2279"><p id="p-2936">Ratio Test</p></li>
-<li id="li-2280"><p id="p-2937">Root Test</p></li>
-<li id="li-2281"><p id="p-2938">Alternating Series Test</p></li>
+<li id="li-2274"><p id="p-2909">Divergence Test</p></li>
+<li id="li-2275"><p id="p-2910">Geometric Series</p></li>
+<li id="li-2276"><p id="p-2911">Integral Test</p></li>
+<li id="li-2277"><p id="p-2912">Direct Comparison Test</p></li>
+<li id="li-2278"><p id="p-2913">Limit Comparison Test</p></li>
+<li id="li-2279"><p id="p-2914">Ratio Test</p></li>
+<li id="li-2280"><p id="p-2915">Root Test</p></li>
+<li id="li-2281"><p id="p-2916">Alternating Series Test</p></li>
 </ol></article><article class="task exercise-like" id="task-852"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2939">Apply an appropriate test to determine the convergence of this series.</p>
+<p id="p-2917">Apply an appropriate test to determine the convergence of this series.</p>
 <ol class="upper-alpha cols2">
-<li id="li-2282"><p id="p-2940">This series is convergent.</p></li>
-<li id="li-2283"><p id="p-2941">This series is divergent.</p></li>
+<li id="li-2282"><p id="p-2918">This series is convergent.</p></li>
+<li id="li-2283"><p id="p-2919">This series is divergent.</p></li>
 </ol></article></article><article class="activity project-like" id="activity-SQ9lctD"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.11</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-286"><p id="p-2942">Consider the series <span class="process-math">\(\displaystyle \sum_{k=0}^\infty \frac{2k^2+1}{k^3+k+1}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-286"><p id="p-2920">Consider the series <span class="process-math">\(\displaystyle \sum_{k=0}^\infty \frac{2k^2+1}{k^3+k+1}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-853"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2943">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
+<p id="p-2921">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
 <ol class="upper-alpha cols2">
-<li id="li-2284"><p id="p-2944">Divergence Test</p></li>
-<li id="li-2285"><p id="p-2945">Geometric Series</p></li>
-<li id="li-2286"><p id="p-2946">Integral Test</p></li>
-<li id="li-2287"><p id="p-2947">Direct Comparison Test</p></li>
-<li id="li-2288"><p id="p-2948">Limit Comparison Test</p></li>
-<li id="li-2289"><p id="p-2949">Ratio Test</p></li>
-<li id="li-2290"><p id="p-2950">Root Test</p></li>
-<li id="li-2291"><p id="p-2951">Alternating Series Test</p></li>
+<li id="li-2284"><p id="p-2922">Divergence Test</p></li>
+<li id="li-2285"><p id="p-2923">Geometric Series</p></li>
+<li id="li-2286"><p id="p-2924">Integral Test</p></li>
+<li id="li-2287"><p id="p-2925">Direct Comparison Test</p></li>
+<li id="li-2288"><p id="p-2926">Limit Comparison Test</p></li>
+<li id="li-2289"><p id="p-2927">Ratio Test</p></li>
+<li id="li-2290"><p id="p-2928">Root Test</p></li>
+<li id="li-2291"><p id="p-2929">Alternating Series Test</p></li>
 </ol></article><article class="task exercise-like" id="task-854"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2952">Apply an appropriate test to determine the convergence of this series.</p>
+<p id="p-2930">Apply an appropriate test to determine the convergence of this series.</p>
 <ol class="upper-alpha cols2">
-<li id="li-2292"><p id="p-2953">This series is convergent.</p></li>
-<li id="li-2293"><p id="p-2954">This series is divergent.</p></li>
+<li id="li-2292"><p id="p-2931">This series is convergent.</p></li>
+<li id="li-2293"><p id="p-2932">This series is divergent.</p></li>
 </ol></article></article><article class="activity project-like" id="activity-SQ9ratioCA"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.12</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-287"><p id="p-2955">Consider the series <span class="process-math">\(\displaystyle \sum_{k=0}^\infty \frac{100^k}{k!}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-287"><p id="p-2933">Consider the series <span class="process-math">\(\displaystyle \sum_{k=0}^\infty \frac{100^k}{k!}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-855"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2956">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
+<p id="p-2934">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
 <ol class="upper-alpha cols2">
-<li id="li-2294"><p id="p-2957">Divergence Test</p></li>
-<li id="li-2295"><p id="p-2958">Geometric Series</p></li>
-<li id="li-2296"><p id="p-2959">Integral Test</p></li>
-<li id="li-2297"><p id="p-2960">Direct Comparison Test</p></li>
-<li id="li-2298"><p id="p-2961">Limit Comparison Test</p></li>
-<li id="li-2299"><p id="p-2962">Ratio Test</p></li>
-<li id="li-2300"><p id="p-2963">Root Test</p></li>
-<li id="li-2301"><p id="p-2964">Alternating Series Test</p></li>
+<li id="li-2294"><p id="p-2935">Divergence Test</p></li>
+<li id="li-2295"><p id="p-2936">Geometric Series</p></li>
+<li id="li-2296"><p id="p-2937">Integral Test</p></li>
+<li id="li-2297"><p id="p-2938">Direct Comparison Test</p></li>
+<li id="li-2298"><p id="p-2939">Limit Comparison Test</p></li>
+<li id="li-2299"><p id="p-2940">Ratio Test</p></li>
+<li id="li-2300"><p id="p-2941">Root Test</p></li>
+<li id="li-2301"><p id="p-2942">Alternating Series Test</p></li>
 </ol></article><article class="task exercise-like" id="task-856"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2965">Apply an appropriate test to determine the convergence of this series.</p>
+<p id="p-2943">Apply an appropriate test to determine the convergence of this series.</p>
 <ol class="upper-alpha cols2">
-<li id="li-2302"><p id="p-2966">This series is convergent.</p></li>
-<li id="li-2303"><p id="p-2967">This series is divergent.</p></li>
+<li id="li-2302"><p id="p-2944">This series is convergent.</p></li>
+<li id="li-2303"><p id="p-2945">This series is divergent.</p></li>
 </ol></article></article><article class="activity project-like" id="activity-SQ9geometricCeasy"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.13</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-288"><p id="p-2968">Consider the series <span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{2^k}{5^k}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-288"><p id="p-2946">Consider the series <span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{2^k}{5^k}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-857"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2969">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
+<p id="p-2947">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
 <ol class="upper-alpha cols2">
-<li id="li-2304"><p id="p-2970">Divergence Test</p></li>
-<li id="li-2305"><p id="p-2971">Geometric Series</p></li>
-<li id="li-2306"><p id="p-2972">Integral Test</p></li>
-<li id="li-2307"><p id="p-2973">Direct Comparison Test</p></li>
-<li id="li-2308"><p id="p-2974">Limit Comparison Test</p></li>
-<li id="li-2309"><p id="p-2975">Ratio Test</p></li>
-<li id="li-2310"><p id="p-2976">Root Test</p></li>
-<li id="li-2311"><p id="p-2977">Alternating Series Test</p></li>
+<li id="li-2304"><p id="p-2948">Divergence Test</p></li>
+<li id="li-2305"><p id="p-2949">Geometric Series</p></li>
+<li id="li-2306"><p id="p-2950">Integral Test</p></li>
+<li id="li-2307"><p id="p-2951">Direct Comparison Test</p></li>
+<li id="li-2308"><p id="p-2952">Limit Comparison Test</p></li>
+<li id="li-2309"><p id="p-2953">Ratio Test</p></li>
+<li id="li-2310"><p id="p-2954">Root Test</p></li>
+<li id="li-2311"><p id="p-2955">Alternating Series Test</p></li>
 </ol></article><article class="task exercise-like" id="task-858"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2978">Apply an appropriate test to determine the convergence of this series.</p>
+<p id="p-2956">Apply an appropriate test to determine the convergence of this series.</p>
 <ol class="upper-alpha cols2">
-<li id="li-2312"><p id="p-2979">This series is convergent.</p></li>
-<li id="li-2313"><p id="p-2980">This series is divergent.</p></li>
+<li id="li-2312"><p id="p-2957">This series is convergent.</p></li>
+<li id="li-2313"><p id="p-2958">This series is divergent.</p></li>
 </ol></article></article><article class="activity project-like" id="activity-SQ9lctC"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.14</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-289"><p id="p-2981">Consider the series <span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{k^3-1}{k^5+1}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-289"><p id="p-2959">Consider the series <span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{k^3-1}{k^5+1}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-859"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2982">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
+<p id="p-2960">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
 <ol class="upper-alpha cols2">
-<li id="li-2314"><p id="p-2983">Divergence Test</p></li>
-<li id="li-2315"><p id="p-2984">Geometric Series</p></li>
-<li id="li-2316"><p id="p-2985">Integral Test</p></li>
-<li id="li-2317"><p id="p-2986">Direct Comparison Test</p></li>
-<li id="li-2318"><p id="p-2987">Limit Comparison Test</p></li>
-<li id="li-2319"><p id="p-2988">Ratio Test</p></li>
-<li id="li-2320"><p id="p-2989">Root Test</p></li>
-<li id="li-2321"><p id="p-2990">Alternating Series Test</p></li>
+<li id="li-2314"><p id="p-2961">Divergence Test</p></li>
+<li id="li-2315"><p id="p-2962">Geometric Series</p></li>
+<li id="li-2316"><p id="p-2963">Integral Test</p></li>
+<li id="li-2317"><p id="p-2964">Direct Comparison Test</p></li>
+<li id="li-2318"><p id="p-2965">Limit Comparison Test</p></li>
+<li id="li-2319"><p id="p-2966">Ratio Test</p></li>
+<li id="li-2320"><p id="p-2967">Root Test</p></li>
+<li id="li-2321"><p id="p-2968">Alternating Series Test</p></li>
 </ol></article><article class="task exercise-like" id="task-860"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2991">Apply an appropriate test to determine the convergence of this series.</p>
+<p id="p-2969">Apply an appropriate test to determine the convergence of this series.</p>
 <ol class="upper-alpha cols2">
-<li id="li-2322"><p id="p-2992">This series is convergent.</p></li>
-<li id="li-2323"><p id="p-2993">This series is divergent.</p></li>
+<li id="li-2322"><p id="p-2970">This series is convergent.</p></li>
+<li id="li-2323"><p id="p-2971">This series is divergent.</p></li>
 </ol></article></article><article class="activity project-like" id="activity-SQ9geometricCmed"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.15</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-290"><p id="p-2994">Consider the series <span class="process-math">\(\displaystyle \sum_{k=2}^\infty \frac{3^{k-1}}{7^k}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-290"><p id="p-2972">Consider the series <span class="process-math">\(\displaystyle \sum_{k=2}^\infty \frac{3^{k-1}}{7^k}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-861"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2995">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
+<p id="p-2973">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
 <ol class="upper-alpha cols2">
-<li id="li-2324"><p id="p-2996">Divergence Test</p></li>
-<li id="li-2325"><p id="p-2997">Geometric Series</p></li>
-<li id="li-2326"><p id="p-2998">Integral Test</p></li>
-<li id="li-2327"><p id="p-2999">Direct Comparison Test</p></li>
-<li id="li-2328"><p id="p-3000">Limit Comparison Test</p></li>
-<li id="li-2329"><p id="p-3001">Ratio Test</p></li>
-<li id="li-2330"><p id="p-3002">Root Test</p></li>
-<li id="li-2331"><p id="p-3003">Alternating Series Test</p></li>
+<li id="li-2324"><p id="p-2974">Divergence Test</p></li>
+<li id="li-2325"><p id="p-2975">Geometric Series</p></li>
+<li id="li-2326"><p id="p-2976">Integral Test</p></li>
+<li id="li-2327"><p id="p-2977">Direct Comparison Test</p></li>
+<li id="li-2328"><p id="p-2978">Limit Comparison Test</p></li>
+<li id="li-2329"><p id="p-2979">Ratio Test</p></li>
+<li id="li-2330"><p id="p-2980">Root Test</p></li>
+<li id="li-2331"><p id="p-2981">Alternating Series Test</p></li>
 </ol></article><article class="task exercise-like" id="task-862"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-3004">Apply an appropriate test to determine the convergence of this series.</p>
+<p id="p-2982">Apply an appropriate test to determine the convergence of this series.</p>
 <ol class="upper-alpha cols2">
-<li id="li-2332"><p id="p-3005">This series is convergent.</p></li>
-<li id="li-2333"><p id="p-3006">This series is divergent.</p></li>
+<li id="li-2332"><p id="p-2983">This series is convergent.</p></li>
+<li id="li-2333"><p id="p-2984">This series is divergent.</p></li>
 </ol></article></article><article class="activity project-like" id="activity-SQ9rootCA"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.16</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-291"><p id="p-3007">Consider the series <span class="process-math">\(\displaystyle \sum_{k=2}^\infty \frac{1}{k^k}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-291"><p id="p-2985">Consider the series <span class="process-math">\(\displaystyle \sum_{k=2}^\infty \frac{1}{k^k}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-863"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-3008">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
+<p id="p-2986">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
 <ol class="upper-alpha cols2">
-<li id="li-2334"><p id="p-3009">Divergence Test</p></li>
-<li id="li-2335"><p id="p-3010">Geometric Series</p></li>
-<li id="li-2336"><p id="p-3011">Integral Test</p></li>
-<li id="li-2337"><p id="p-3012">Direct Comparison Test</p></li>
-<li id="li-2338"><p id="p-3013">Limit Comparison Test</p></li>
-<li id="li-2339"><p id="p-3014">Ratio Test</p></li>
-<li id="li-2340"><p id="p-3015">Root Test</p></li>
-<li id="li-2341"><p id="p-3016">Alternating Series Test</p></li>
+<li id="li-2334"><p id="p-2987">Divergence Test</p></li>
+<li id="li-2335"><p id="p-2988">Geometric Series</p></li>
+<li id="li-2336"><p id="p-2989">Integral Test</p></li>
+<li id="li-2337"><p id="p-2990">Direct Comparison Test</p></li>
+<li id="li-2338"><p id="p-2991">Limit Comparison Test</p></li>
+<li id="li-2339"><p id="p-2992">Ratio Test</p></li>
+<li id="li-2340"><p id="p-2993">Root Test</p></li>
+<li id="li-2341"><p id="p-2994">Alternating Series Test</p></li>
 </ol></article><article class="task exercise-like" id="task-864"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-3017">Apply an appropriate test to determine the convergence of this series.</p>
+<p id="p-2995">Apply an appropriate test to determine the convergence of this series.</p>
 <ol class="upper-alpha cols2">
-<li id="li-2342"><p id="p-3018">This series is convergent.</p></li>
-<li id="li-2343"><p id="p-3019">This series is divergent.</p></li>
+<li id="li-2342"><p id="p-2996">This series is convergent.</p></li>
+<li id="li-2343"><p id="p-2997">This series is divergent.</p></li>
 </ol></article></article><article class="activity project-like" id="activity-SQ9astC"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.17</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-292"><p id="p-3020">Consider the series <span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{(-1)^{k+1}}{\sqrt{k+1}}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-292"><p id="p-2998">Consider the series <span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{(-1)^{k+1}}{\sqrt{k+1}}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-865"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-3021">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
+<p id="p-2999">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
 <ol class="upper-alpha cols2">
-<li id="li-2344"><p id="p-3022">Divergence Test</p></li>
-<li id="li-2345"><p id="p-3023">Geometric Series</p></li>
-<li id="li-2346"><p id="p-3024">Integral Test</p></li>
-<li id="li-2347"><p id="p-3025">Direct Comparison Test</p></li>
-<li id="li-2348"><p id="p-3026">Limit Comparison Test</p></li>
-<li id="li-2349"><p id="p-3027">Ratio Test</p></li>
-<li id="li-2350"><p id="p-3028">Root Test</p></li>
-<li id="li-2351"><p id="p-3029">Alternating Series Test</p></li>
+<li id="li-2344"><p id="p-3000">Divergence Test</p></li>
+<li id="li-2345"><p id="p-3001">Geometric Series</p></li>
+<li id="li-2346"><p id="p-3002">Integral Test</p></li>
+<li id="li-2347"><p id="p-3003">Direct Comparison Test</p></li>
+<li id="li-2348"><p id="p-3004">Limit Comparison Test</p></li>
+<li id="li-2349"><p id="p-3005">Ratio Test</p></li>
+<li id="li-2350"><p id="p-3006">Root Test</p></li>
+<li id="li-2351"><p id="p-3007">Alternating Series Test</p></li>
 </ol></article><article class="task exercise-like" id="task-866"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-3030">Apply an appropriate test to determine the convergence of this series.</p>
+<p id="p-3008">Apply an appropriate test to determine the convergence of this series.</p>
 <ol class="upper-alpha cols2">
-<li id="li-2352"><p id="p-3031">This series is convergent.</p></li>
-<li id="li-2353"><p id="p-3032">This series is divergent.</p></li>
+<li id="li-2352"><p id="p-3009">This series is convergent.</p></li>
+<li id="li-2353"><p id="p-3010">This series is divergent.</p></li>
 </ol></article></article><article class="activity project-like" id="activity-SQ9integralD"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.18</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-293"><p id="p-3033">Consider the series <span class="process-math">\(\displaystyle \sum_{k=2}^\infty \frac{1}{k\ln(k)}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-293"><p id="p-3011">Consider the series <span class="process-math">\(\displaystyle \sum_{k=2}^\infty \frac{1}{k\ln(k)}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-867"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-3034">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
+<p id="p-3012">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
 <ol class="upper-alpha cols2">
-<li id="li-2354"><p id="p-3035">Divergence Test</p></li>
-<li id="li-2355"><p id="p-3036">Geometric Series</p></li>
-<li id="li-2356"><p id="p-3037">Integral Test</p></li>
-<li id="li-2357"><p id="p-3038">Direct Comparison Test</p></li>
-<li id="li-2358"><p id="p-3039">Limit Comparison Test</p></li>
-<li id="li-2359"><p id="p-3040">Ratio Test</p></li>
-<li id="li-2360"><p id="p-3041">Root Test</p></li>
-<li id="li-2361"><p id="p-3042">Alternating Series Test</p></li>
+<li id="li-2354"><p id="p-3013">Divergence Test</p></li>
+<li id="li-2355"><p id="p-3014">Geometric Series</p></li>
+<li id="li-2356"><p id="p-3015">Integral Test</p></li>
+<li id="li-2357"><p id="p-3016">Direct Comparison Test</p></li>
+<li id="li-2358"><p id="p-3017">Limit Comparison Test</p></li>
+<li id="li-2359"><p id="p-3018">Ratio Test</p></li>
+<li id="li-2360"><p id="p-3019">Root Test</p></li>
+<li id="li-2361"><p id="p-3020">Alternating Series Test</p></li>
 </ol></article><article class="task exercise-like" id="task-868"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-3043">Apply an appropriate test to determine the convergence of this series.</p>
+<p id="p-3021">Apply an appropriate test to determine the convergence of this series.</p>
 <ol class="upper-alpha cols2">
-<li id="li-2362"><p id="p-3044">This series is convergent.</p></li>
-<li id="li-2363"><p id="p-3045">This series is divergent.</p></li>
-</ol></article></article><article class="exercise exercise-like" id="exercise-7"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-7"><h3 class="heading">
-<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">8.9.19</span><span class="period">.</span>
-</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-7"><article class="exercise exercise-like"><p id="p-3046">Determine which of the following series is <em class="emphasis">convergent</em> and which is <em class="emphasis">divergent</em>.  Justify both choices with an appropriate test.</p>
+<li id="li-2362"><p id="p-3022">This series is convergent.</p></li>
+<li id="li-2363"><p id="p-3023">This series is divergent.</p></li>
+</ol></article></article><article class="activity project-like" id="activity-561"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.19</span><span class="period">.</span>
+</h3>
+<p id="p-3024">Determine which of the following series is <em class="emphasis">convergent</em> and which is <em class="emphasis">divergent</em>.  Justify both choices with an appropriate test.</p>
 <ol class="decimal">
 <li id="li-2364"><p id="p-derived-li-2364"><span class="process-math">\(\displaystyle \displaystyle \sum_{n=1}^\infty \frac{4 \, \left(-1\right)^{n + 1} n^{2}}{2 \, n^{3} + 4 \, n^{2} + 5}.\)</span></p></li>
 <li id="li-2365"><p id="p-derived-li-2365"><span class="process-math">\(\displaystyle \displaystyle \sum_{n=1}^\infty \frac{n!}{3 \cdot 3^{n} n^{4}}.\)</span></p></li>
@@ -540,12 +509,8 @@ eBookConfig.enable_chatcodes =  false;
 <li id="li-2366"><p id="p-derived-li-2366"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{4 \, \left(-1\right)^{n + 1} n^{2}}{2 \, n^{3} + 4 \, n^{2} + 5}\)</span> is convergent.</p></li>
 <li id="li-2367"><p id="p-derived-li-2367"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{n!}{3 \cdot 3^{n} n^{4}}\)</span> is divergent.</p></li>
 </ol></div></div>
-</div></article></div>
-<section class="subsection" id="subsection-45"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">8.9.1</span> <span class="title">Slideshow</span>
-</h3>
-<p id="p-3047">Slideshow of activities available at <a class="external" href="SQ9.slides.html" target="_blank"><code class="code-inline tex2jax_ignore">SQ9.slides.html</code></a>.</p></section><section class="subsection" id="subsection-46"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">8.9.2</span> <span class="title">Videos</span>
+</div></article><section class="subsection" id="subsection-23"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">8.9.1</span> <span class="title">Videos</span>
 </h3>
 <figure class="figure figure-like" id="figure-145"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-SQ9" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/YGzIOqR5GVE?&amp;modestbranding=1&amp;rel=0"></iframe></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">159<span class="period">.</span></span><span class="space"> </span>Video: Identify appropriate convergence tests for various series</figcaption></figure></section></section></div></main>
