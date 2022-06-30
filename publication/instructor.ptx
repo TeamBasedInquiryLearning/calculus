@@ -14,7 +14,7 @@
     <!-- stored or created.  Directories are relative to the main -->
     <!-- source PreTeXt file                                      -->
     <directories external="../assets" generated="../generated-assets"/>
-    <version include="main"/>
+    <version include="instructor"/>
   </source>
 
   <numbering>
