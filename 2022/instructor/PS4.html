@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-06-30T01:57:11Z       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Cal1 Taylor Series (PS4)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
+<meta property="book:author" content="TBIL Institute Fellows">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX Course: Title Here';
+eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.acDefaultLanguage = 'python';
+eBookConfig.runestone_version = '5.0.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\newcommand{\tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus for Team-Based Inquiry Learning:</span> <span class="subtitle">2022 Edition (Instructor Version)</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="PS3.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="PS.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="PS3.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="PS.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li>
+<li><a href="tbil-rl.html" data-scroll="tbil-rl" class="internal">TBIL Resource Library</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="LT.html" data-scroll="LT" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1" class="internal">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2" class="internal">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3" class="internal">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4" class="internal">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5" class="internal">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6" class="internal">Limits with infinite outputs (LT6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="DF.html" data-scroll="DF" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2" class="internal">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1" class="internal">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3" class="internal">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4" class="internal">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5" class="internal">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6" class="internal">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7" class="internal">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8" class="internal">Differentiating inverse functions (DF8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AD.html" data-scroll="AD" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1" class="internal">Tangents, motion, and marginals (AD1)</a></li>
+<li><a href="AD2.html" data-scroll="AD2" class="internal">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3" class="internal">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4" class="internal">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5" class="internal">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6" class="internal">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7" class="internal">Graphing with derivatives (AD7)</a></li>
+<li><a href="AD8.html" data-scroll="AD8" class="internal">Applied optimization (AD8)</a></li>
+<li><a href="AD9.html" data-scroll="AD9" class="internal">Limits and Derivatives (AD9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="IN.html" data-scroll="IN" class="internal"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul>
+<li><a href="IN1.html" data-scroll="IN1" class="internal">Geometry of definite integrals (IN1)</a></li>
+<li><a href="IN2.html" data-scroll="IN2" class="internal">Approximating definite integrals (IN2)</a></li>
+<li><a href="IN3.html" data-scroll="IN3" class="internal">Elementary antiderivatives (IN3)</a></li>
+<li><a href="IN4.html" data-scroll="IN4" class="internal">Initial Value Problems (IN4)</a></li>
+<li><a href="IN5.html" data-scroll="IN5" class="internal">FTC for definite integrals (IN5)</a></li>
+<li><a href="IN6.html" data-scroll="IN6" class="internal">FTC for derivatives of integrals (IN6)</a></li>
+<li><a href="IN7.html" data-scroll="IN7" class="internal">Area under curves (IN7)</a></li>
+<li><a href="IN8.html" data-scroll="IN8" class="internal">Area between curves (IN8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="TI.html" data-scroll="TI" class="internal"><span class="codenumber">5</span> <span class="title">Techniques of Integration (TI)</span></a><ul>
+<li><a href="TI1.html" data-scroll="TI1" class="internal">Substitution method (TI1)</a></li>
+<li><a href="TI2.html" data-scroll="TI2" class="internal">Integration by Parts (TI2)</a></li>
+<li><a href="TI3.html" data-scroll="TI3" class="internal">Integration of trigonometry (TI3)</a></li>
+<li><a href="TI4.html" data-scroll="TI4" class="internal">Trigonometric Substitution (TI4)</a></li>
+<li><a href="TI5.html" data-scroll="TI5" class="internal">Tables of Integrals (TI5)</a></li>
+<li><a href="TI6.html" data-scroll="TI6" class="internal">Partial fractions (TI6)</a></li>
+<li><a href="TI7.html" data-scroll="TI7" class="internal">Integration strategy (TI7)</a></li>
+<li><a href="TI8.html" data-scroll="TI8" class="internal">Improper integrals (TI8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AI.html" data-scroll="AI" class="internal"><span class="codenumber">6</span> <span class="title">Applications of Integration (AI)</span></a><ul>
+<li><a href="AI1.html" data-scroll="AI1" class="internal">Average Value (AI1)</a></li>
+<li><a href="AI2.html" data-scroll="AI2" class="internal">Arclength (AI2)</a></li>
+<li><a href="AI3.html" data-scroll="AI3" class="internal">Volumes of Revolution (AI3)</a></li>
+<li><a href="AI4.html" data-scroll="AI4" class="internal">Surface Areas of Revolution (AI4)</a></li>
+<li><a href="AI5.html" data-scroll="AI5" class="internal">Density, Mass, and Center of Mass (AI5)</a></li>
+<li><a href="AI6.html" data-scroll="AI6" class="internal">Physics Applications (AI6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="CO.html" data-scroll="CO" class="internal"><span class="codenumber">7</span> <span class="title">Coordinates and Vectors (CO)</span></a><ul>
+<li><a href="CO1.html" data-scroll="CO1" class="internal">Parametric/vector equations (CO1)</a></li>
+<li><a href="CO2.html" data-scroll="CO2" class="internal">Parametric/vector derivatives (CO2)</a></li>
+<li><a href="CO3.html" data-scroll="CO3" class="internal">Parametric/vector arclength (CO3)</a></li>
+<li><a href="CO4.html" data-scroll="CO4" class="internal">Polar coordinates (CO4)</a></li>
+<li><a href="CO5.html" data-scroll="CO5" class="internal">Polar Arclength (CO5)</a></li>
+<li><a href="CO6.html" data-scroll="CO6" class="internal">Polar area (CO6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="SQ.html" data-scroll="SQ" class="internal"><span class="codenumber">8</span> <span class="title">Sequences and Series (SQ)</span></a><ul>
+<li><a href="SQ1.html" data-scroll="SQ1" class="internal">Sequence Formulas (SQ1)</a></li>
+<li><a href="SQ2.html" data-scroll="SQ2" class="internal">Sequence Properties and Limits (SQ2)</a></li>
+<li><a href="SQ3.html" data-scroll="SQ3" class="internal">Partial Sum Sequence (SQ3)</a></li>
+<li><a href="SQ4.html" data-scroll="SQ4" class="internal">Geometric Series (SQ4)</a></li>
+<li><a href="SQ5.html" data-scroll="SQ5" class="internal">Basic Convergence Tests (SQ5)</a></li>
+<li><a href="SQ6.html" data-scroll="SQ6" class="internal">Comparison Tests (SQ6)</a></li>
+<li><a href="SQ7.html" data-scroll="SQ7" class="internal">Ratio and Root Tests (SQ7)</a></li>
+<li><a href="SQ8.html" data-scroll="SQ8" class="internal">Absolute Convergence (SQ8)</a></li>
+<li><a href="SQ9.html" data-scroll="SQ9" class="internal">Series Convergence Strategy (SQ9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="PS.html" data-scroll="PS" class="internal"><span class="codenumber">9</span> <span class="title">Power Series (PS)</span></a><ul>
+<li><a href="PS1.html" data-scroll="PS1" class="internal">Power Series (PS1)</a></li>
+<li><a href="PS2.html" data-scroll="PS2" class="internal">Convergence of Power Series (PS2)</a></li>
+<li><a href="PS3.html" data-scroll="PS3" class="internal">Manipulation of Power Series (PS3)</a></li>
+<li><a href="PS4.html" data-scroll="PS4" class="active">Taylor Series (PS4)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="integral-table.html" data-scroll="integral-table" class="internal"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></li>
+<li class="link"><a href="trig-table.html" data-scroll="trig-table" class="internal"><span class="codenumber">B</span> <span class="title">List of Trigonometric Identities</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="PS4"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">9.4</span> <span class="title">Taylor Series (PS4)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-73"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="li-2561"><p id="p-3158">Determine  a Taylor or Maclaurin series for a function.</p></li></ul></article><article class="activity project-like" id="activity-576"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.4.1</span><span class="period">.</span>
+</h3>
+<article class="task exercise-like" id="task-922"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-3159">Find the 2nd derivative of <span class="process-math">\(f(x)=x^2\text{.}\)</span></p></article><article class="task exercise-like" id="task-923"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-3160">Find the 4th derivative of <span class="process-math">\(f(x)=x^4\text{.}\)</span></p></article><article class="task exercise-like" id="task-924"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-3161">Find the 9th derivative of <span class="process-math">\(f(x)=x^9\text{.}\)</span></p></article><article class="task exercise-like" id="task-925"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-3162">Which of the following represent the <span class="process-math">\(n\)</span>th and  derivative of <span class="process-math">\(f(x)=x^n\text{?}\)</span>  (Make sure it is consistent with <span class="process-math">\(n=2, 4, 9\)</span> that you found above.)</p>
+<ol class="upper-alpha">
+<li id="li-2562"><p id="p-derived-li-2562"><span class="process-math">\(\displaystyle n.\)</span></p></li>
+<li id="li-2563"><p id="p-derived-li-2563"><span class="process-math">\(\displaystyle n!.\)</span></p></li>
+<li id="li-2564"><p id="p-derived-li-2564"><span class="process-math">\(\displaystyle x.\)</span></p></li>
+<li id="li-2565"><p id="p-derived-li-2565"><span class="process-math">\(\displaystyle nx.\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-926"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-3163">What then is the <span class="process-math">\(n+1\)</span>st derivative of <span class="process-math">\(f(x)=x^n\text{?}\)</span>   (We are differentiating with respect to <span class="process-math">\(x\text{.}\)</span>)</p></article></article><article class="activity project-like" id="activity-577"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.4.2</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-310"><p id="p-3164">Suppose <span class="process-math">\(p(x)=a_0+a_1x+a_2x^2+a_3x^3\)</span> where <span class="process-math">\(p(0)=2, p'(0)=1, p''(0)=-2, p'''(0)=4\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-927"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-3165">What must <span class="process-math">\(a_0\)</span> be for <span class="process-math">\(p(0)=2\text{?}\)</span></p></article><article class="task exercise-like" id="task-928"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-3166">Using your choice of <span class="process-math">\(a_0\text{,}\)</span> what must <span class="process-math">\(a_1\)</span> be for <span class="process-math">\(p'(0)=1\text{?}\)</span></p></article><article class="task exercise-like" id="task-929"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-3167">Using your choice of <span class="process-math">\(a_0, a_1\text{,}\)</span> what must <span class="process-math">\(a_2\)</span> be for <span class="process-math">\(p''(0)=-2\text{?}\)</span></p></article><article class="task exercise-like" id="task-930"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-3168">Using your choice of <span class="process-math">\(a_0, a_1, a_2\text{,}\)</span> what must <span class="process-math">\(a_3\)</span> be for <span class="process-math">\(p'''(0)=4\text{?}\)</span></p></article><article class="task exercise-like" id="task-931"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-3169">What is <span class="process-math">\(p(x)\text{?}\)</span></p></article></article><article class="activity project-like" id="activity-PS4taylorSeriesExist"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.4.3</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-311"><p id="p-3170">Suppose <span class="process-math">\(f\)</span> is a function. Then if <span class="process-math">\(f(x)\)</span> can be represented as a power series, there is a real number <span class="process-math">\(c\)</span> and an interval, <span class="process-math">\(I\text{,}\)</span> centered at <span class="process-math">\(x=c\)</span> such that <span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty a_n(x-c)^n=a_0+a_1(x-c)+a_2(x-c)^2+a_3(x-c)^3+\ldots\)</span> on <span class="process-math">\(I\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-932"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-3171">Use term-by-term differentiation to find a power series for <span class="process-math">\(f^\prime(x)\text{.}\)</span></p></article><article class="task exercise-like" id="task-933"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-3172">Use this power series to find <span class="process-math">\(f'(c)\text{.}\)</span></p></article><article class="task exercise-like" id="task-934"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-3173">Use term-by-term differentiation to find a power series for <span class="process-math">\(f^{\prime\prime}(x)\text{.}\)</span></p></article><article class="task exercise-like" id="task-935"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-3174">Use this power series to find <span class="process-math">\(f''(c)\text{.}\)</span></p></article><article class="task exercise-like" id="task-936"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-3175">Use term-by-term differentiation to find a power series for <span class="process-math">\(f^{\prime\prime\prime}(x)\text{.}\)</span></p></article><article class="task exercise-like" id="task-937"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<p id="p-3176">Use this power series to find <span class="process-math">\(f'''(c)\text{.}\)</span></p></article><article class="task exercise-like" id="task-938"><h4 class="heading"><span class="codenumber">(g)</span></h4>
+<p id="p-3177">Deduce that <span class="process-math">\(f^{(n)}(c)=n!a_n\)</span> and hence <span class="process-math">\(a_n=\displaystyle\frac{f^{(n)}(c)}{n!}\text{.}\)</span></p></article></article><article class="fact theorem-like" id="fact-PS4taylorSeriesForm"><h3 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">9.4.4</span><span class="period">.</span>
+</h3>
+<p id="QCd">If <span class="process-math">\(f(x)\)</span> can be written as a power series, then there is a real number <span class="process-math">\(c\)</span> such that <span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty \frac{f^{(n)}(c)}{n!}(x-c)^n=f(c)+f^\prime(c)(x-c)+\frac{f^{\prime\prime}(c)}{2!}(x-c)^2+\frac{f^{(3)}(c)}{3!}(x-c)^3+\ldots\)</span> on some interval centered at <span class="process-math">\(x=c\text{.}\)</span></p></article><article class="fact theorem-like" id="fact-PS4taylorSeriesExistence"><h3 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">9.4.5</span><span class="period">.</span>
+</h3>
+<p id="QCd">A function can be represented as a power series if and only if it is infinitely differentiable on some open interval.</p></article><article class="definition definition-like" id="definition-PS4taylorSeries"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.4.6</span><span class="period">.</span>
+</h3>
+<p id="p-3180">The <em class="emphasis">Taylor series</em> generated by <span class="process-math">\(f(x)\)</span> and <em class="emphasis">centered</em> at <span class="process-math">\(x=c\)</span> is given by <span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty \frac{f^{(n)}(c)}{n!}(x-c)^n
+=f(c)+f^\prime(c)(x-c)+\frac{f^{\prime\prime}(c)}{2!}(x-c)^2+\frac{f^{(3)}(c)}{3!}(x-c)^3+\ldots\text{,}\)</span> along with its interval of convergence (or <em class="emphasis">interval of validity</em>).</p>
+<p id="p-3181">When <span class="process-math">\(c=0\text{,}\)</span> <span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty \frac{f^{(n)}(0)}{n!}(x^n)
+=f(0)+f^\prime(0)(x)+\frac{f^{\prime\prime}(0)}{2!}(x^2)+\frac{f^{(3)}(0)}{3!}(x^3)+\ldots\)</span> is called the <em class="emphasis">Maclaurin series</em> generated by <span class="process-math">\(f\text{.}\)</span></p></article><article class="definition definition-like" id="definition-PS4taylorPolynomial"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.4.7</span><span class="period">.</span>
+</h3>
+<p id="p-3182"><span class="process-math">\(f(x) \approx T_k(x) = \displaystyle\sum_{n=0}^k \frac{f^{(n)}(c)}{n!}(x-c)^n = 
+f(c)+f^\prime(c)(x-c)+\displaystyle\frac{f^{\prime\prime}(c)}{2!}(x-c)^2+\displaystyle\frac{f^{(3)}(c)}{3!}(x-c)^3+\ldots+\displaystyle\frac{f^{(k)}(c)}{k!}(x-c)^k\text{,}\)</span> where <span class="process-math">\(T_k(x)\)</span> is called the <span class="process-math">\(k^{th}\)</span> degree <em class="emphasis">Taylor polynomial</em> generated by <span class="process-math">\(f\)</span> and centered at <span class="process-math">\(x=c\text{.}\)</span></p>
+<p id="p-3183">The <span class="process-math">\(k^{th}\)</span> degree Taylor polynomial can be seen as the “best” polynomial of degree <span class="process-math">\(k\)</span> or less for approximating <span class="process-math">\(f(x)\)</span> for values close to <span class="process-math">\(x=c\text{.}\)</span> Note that polynomials of degree less than <span class="process-math">\(k\)</span> are their own Taylor polynomials, and the <span class="process-math">\(1^{st}\)</span> degree Taylor polynomial is also known as the <em class="emphasis">linearization</em> of <span class="process-math">\(f\text{.}\)</span></p></article><article class="exercise exercise-like" id="exercise-12"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-12"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">9.4.8</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-12"><article class="exercise exercise-like"><p id="p-3184">Let <span class="process-math">\(f(x)\)</span> be a function such that:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{array}{|c|c|c|c|c|c|c|}
+f(4) &amp; f'(4) &amp; f''(4) &amp; f'''(4) &amp; f^{(4)}(4) &amp; f^{(5)}(4) &amp; f^{(6)}(4) \\
+\hline
+0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 6 
+\end{array}
+\end{equation*}
+</div>
+<ol class="decimal">
+<li id="li-2566"><p id="p-derived-li-2566">Find a Taylor polynomial for <span class="process-math">\(f(x)\)</span> centered at <span class="process-math">\(x=4\)</span> of degree <span class="process-math">\(3\text{.}\)</span></p></li>
+<li id="li-2567"><p id="p-derived-li-2567">Using the table above, find a general closed form for <span class="process-math">\(f^{(n)}(4)\text{.}\)</span></p></li>
+<li id="li-2568"><p id="p-derived-li-2568">Use (b) to find a Taylor series for <span class="process-math">\(f(x)\)</span> centered at <span class="process-math">\(x=4\text{.}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-37" id="answer-37"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-37"><div class="answer solution-like"><ol class="decimal">
+<li id="li-2569"><p id="p-derived-li-2569"><span class="process-math">\(f_{ 3 }(x)=\frac{1}{2} \, {\left(x - 4\right)}^{3} + {\left(x - 4\right)}^{2} + x - 4\text{.}\)</span></p></li>
+<li id="li-2570"><p id="p-derived-li-2570"><span class="process-math">\(f^{(n)}(4)=n\text{.}\)</span></p></li>
+<li id="li-2571"><p id="p-derived-li-2571"><span class="process-math">\(\displaystyle f(x)=\sum_{n=0}^\infty \frac{ n }{n!} (x-4)^n\text{.}\)</span></p></li>
+</ol></div></div>
+</div></article></div>
+<article class="exercise exercise-like" id="exercise-13"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-13"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">9.4.9</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-13"><article class="exercise exercise-like"><p id="p-3185">Let <span class="process-math">\(f(x)\)</span> be a function such that:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{array}{|c|c|c|c|c|c|c|}
+f(-2) &amp; f'(-2) &amp; f''(-2) &amp; f'''(-2) &amp; f^{(4)}(-2) &amp; f^{(5)}(-2) &amp; f^{(6)}(-2) \\
+\hline
+0 &amp; 2 &amp; -16 &amp; 54 &amp; -128 &amp; 250 &amp; -432 
+\end{array}
+\end{equation*}
+</div>
+<ol class="decimal">
+<li id="li-2572"><p id="p-derived-li-2572">Find a Taylor polynomial for <span class="process-math">\(f(x)\)</span> centered at <span class="process-math">\(x=-2\)</span> of degree <span class="process-math">\(3\text{.}\)</span></p></li>
+<li id="li-2573"><p id="p-derived-li-2573">Using the table above, find a general closed form for <span class="process-math">\(f^{(n)}(-2)\text{.}\)</span></p></li>
+<li id="li-2574"><p id="p-derived-li-2574">Use (b) to find a Taylor series for <span class="process-math">\(f(x)\)</span> centered at <span class="process-math">\(x=-2\text{.}\)</span></p></li>
+</ol>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-38" id="answer-38"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-38"><div class="answer solution-like"><ol class="decimal">
+<li id="li-2575"><p id="p-derived-li-2575"><span class="process-math">\(f_{ 3 }(x)=9 \, {\left(x + 2\right)}^{3} - 8 \, {\left(x + 2\right)}^{2} + 2 \, x + 4\text{.}\)</span></p></li>
+<li id="li-2576"><p id="p-derived-li-2576"><span class="process-math">\(f^{(n)}(-2)=-2 \, \left(-1\right)^{n} n^{3}\text{.}\)</span></p></li>
+<li id="li-2577"><p id="p-derived-li-2577"><span class="process-math">\(\displaystyle f(x)=\sum_{n=0}^\infty \frac{ -2 \, \left(-1\right)^{n} n^{3} }{n!} (x--2)^n\text{.}\)</span></p></li>
+</ol></div></div>
+</div></article></div>
+<article class="activity project-like" id="activity-PS4sineCosineExponential"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.4.10</span><span class="period">.</span>
+</h3>
+<article class="task exercise-like" id="task-939"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-3186">Find the Maclaurin series for <span class="process-math">\(f(x)=\sin(x)\)</span> about <span class="process-math">\(x=0\text{,}\)</span> along with the interval of validity.</p></article><article class="task exercise-like" id="task-940"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-3187">Find the Taylor series generated by <span class="process-math">\(f(x)=\cos(x)\)</span> about <span class="process-math">\(x=0\text{.}\)</span></p></article><article class="task exercise-like" id="task-941"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-3188">Find the Maclaurin series for <span class="process-math">\(f(x)=e^x\)</span> about <span class="process-math">\(x=0\text{,}\)</span> along with the interval of validity.</p></article></article><article class="remark remark-like" id="remark-50"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">9.4.11</span><span class="period">.</span>
+</h3>
+<p id="p-3189">You might have seen <span class="process-math">\(\sqrt{-1}\)</span> written as <span class="process-math">\(i\text{,}\)</span> and know that <span class="process-math">\(z\)</span> is a complex number if <span class="process-math">\(z=a+bi\)</span> for some real numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span> Note that <span class="process-math">\(i^2=-1\text{,}\)</span> <span class="process-math">\(i^3=(i^2)i=-i\text{,}\)</span> <span class="process-math">\(i^4=(i^2)^2=1\text{,}\)</span> <span class="process-math">\(i^5=(i^4)i=i\text{,}\)</span> and so on. This gives rise to the following notion.</p></article><article class="definition definition-like" id="definition-PS4eulerIdentity"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.4.12</span><span class="period">.</span><span class="space"> </span><span class="title">Euler's Identity.</span>
+</h3>
+<p id="p-3190">For any real number <span class="process-math">\(\theta\text{,}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-26">
+\begin{align*}
+e^{i\theta}  &amp; =  1+\displaystyle\frac{i\theta}{1!}+\displaystyle\frac{(i\theta)^2}{2!}+\displaystyle\frac{(i\theta)^3}{3!}+\displaystyle\frac{(i\theta)^4}{4!}+\displaystyle\frac{(i\theta)^5}{5!}+\displaystyle\frac{(i\theta)^6}{6!}+\displaystyle\frac{(i\theta)^7}{7!}+\displaystyle\frac{(i\theta)^8}{8!}+\ldots\\
+&amp; =  1+i\theta-\displaystyle\frac{\theta^2}{2!}-\displaystyle\frac{i\theta^3}{3!}+\displaystyle\frac{\theta^4}{4!}+\displaystyle\frac{i\theta^5}{5!}-\displaystyle\frac{\theta^6}{6!}-\displaystyle\frac{i\theta^7}{7!}+\displaystyle\frac{\theta^8}{8!}+\ldots\\
+&amp; =  \left(1-\displaystyle\frac{\theta^2}{2!}+\displaystyle\frac{\theta^4}{4!}-\displaystyle\frac{\theta^6}{6!}+\ldots\right)+i\left(\theta-\displaystyle\frac{\theta^3}{3!}+\displaystyle\frac{\theta^5}{5!}-\displaystyle\frac{\theta^7}{7!}+\ldots\right)\\
+&amp; =  \cos(\theta)+i\sin(\theta).
+\end{align*}
+</div></article><article class="activity project-like" id="activity-PS4eulerIdentityExample"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.4.13</span><span class="period">.</span>
+</h3>
+<p id="p-3191">Use Euler's identity to evaluate <span class="process-math">\(e^{i\pi}\text{.}\)</span></p></article><section class="subsection" id="subsection-53"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">9.4.1</span> <span class="title">Slideshow</span>
+</h3>
+<p id="p-3192">Slideshow of activities available at <a class="external" href="PS4.slides.html" target="_blank"><code class="code-inline tex2jax_ignore">PS4.slides.html</code></a>.</p></section><section class="subsection" id="subsection-54"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">9.4.2</span> <span class="title">Videos</span>
+</h3>
+<figure class="figure figure-like" id="figure-156"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-PS4" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/bjktfFCafGs?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">170<span class="period">.</span></span><span class="space"> </span>Video: Determine a Taylor or Maclaurin series for a function</figcaption></figure></section></section></div></main>
+</div>
+</body>
+</html>

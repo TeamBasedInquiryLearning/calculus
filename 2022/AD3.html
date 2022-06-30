@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-06-30T01:55:36Z       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Cal1 Related rates (AD3)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
+<meta property="book:author" content="TBIL Institute Fellows">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+<!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX Course: Title Here';
+eBookConfig.basecourse = 'PTX Base Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.acDefaultLanguage = 'python';
+eBookConfig.runestone_version = '5.0.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runtime.b0f8547c48f16a9f.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/637.d54be67956c5c660.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/6.2.1/runestone.0e9550fe42760516.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/637.fafafbd97df8a0d1.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/6.2.1/runestone.e4d5592da655219f.css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\newcommand{\tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus for Team-Based Inquiry Learning:</span> <span class="subtitle">2022 Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="AD2.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="AD4.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="AD2.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a class="next-button button toolbar-item" href="AD4.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li>
+<li><a href="tbil-rl.html" data-scroll="tbil-rl" class="internal">TBIL Resource Library</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="LT.html" data-scroll="LT" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1" class="internal">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2" class="internal">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3" class="internal">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4" class="internal">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5" class="internal">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6" class="internal">Limits with infinite outputs (LT6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="DF.html" data-scroll="DF" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2" class="internal">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1" class="internal">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3" class="internal">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4" class="internal">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5" class="internal">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6" class="internal">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7" class="internal">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8" class="internal">Differentiating inverse functions (DF8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AD.html" data-scroll="AD" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1" class="internal">Tangents, motion, and marginals (AD1)</a></li>
+<li><a href="AD2.html" data-scroll="AD2" class="internal">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3" class="active">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4" class="internal">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5" class="internal">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6" class="internal">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7" class="internal">Graphing with derivatives (AD7)</a></li>
+<li><a href="AD8.html" data-scroll="AD8" class="internal">Applied optimization (AD8)</a></li>
+<li><a href="AD9.html" data-scroll="AD9" class="internal">Limits and Derivatives (AD9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="IN.html" data-scroll="IN" class="internal"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul>
+<li><a href="IN1.html" data-scroll="IN1" class="internal">Geometry of definite integrals (IN1)</a></li>
+<li><a href="IN2.html" data-scroll="IN2" class="internal">Approximating definite integrals (IN2)</a></li>
+<li><a href="IN3.html" data-scroll="IN3" class="internal">Elementary antiderivatives (IN3)</a></li>
+<li><a href="IN4.html" data-scroll="IN4" class="internal">Initial Value Problems (IN4)</a></li>
+<li><a href="IN5.html" data-scroll="IN5" class="internal">FTC for definite integrals (IN5)</a></li>
+<li><a href="IN6.html" data-scroll="IN6" class="internal">FTC for derivatives of integrals (IN6)</a></li>
+<li><a href="IN7.html" data-scroll="IN7" class="internal">Area under curves (IN7)</a></li>
+<li><a href="IN8.html" data-scroll="IN8" class="internal">Area between curves (IN8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="TI.html" data-scroll="TI" class="internal"><span class="codenumber">5</span> <span class="title">Techniques of Integration (TI)</span></a><ul>
+<li><a href="TI1.html" data-scroll="TI1" class="internal">Substitution method (TI1)</a></li>
+<li><a href="TI2.html" data-scroll="TI2" class="internal">Integration by Parts (TI2)</a></li>
+<li><a href="TI3.html" data-scroll="TI3" class="internal">Integration of trigonometry (TI3)</a></li>
+<li><a href="TI4.html" data-scroll="TI4" class="internal">Trigonometric Substitution (TI4)</a></li>
+<li><a href="TI5.html" data-scroll="TI5" class="internal">Tables of Integrals (TI5)</a></li>
+<li><a href="TI6.html" data-scroll="TI6" class="internal">Partial fractions (TI6)</a></li>
+<li><a href="TI7.html" data-scroll="TI7" class="internal">Integration strategy (TI7)</a></li>
+<li><a href="TI8.html" data-scroll="TI8" class="internal">Improper integrals (TI8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AI.html" data-scroll="AI" class="internal"><span class="codenumber">6</span> <span class="title">Applications of Integration (AI)</span></a><ul>
+<li><a href="AI1.html" data-scroll="AI1" class="internal">Average Value (AI1)</a></li>
+<li><a href="AI2.html" data-scroll="AI2" class="internal">Arclength (AI2)</a></li>
+<li><a href="AI3.html" data-scroll="AI3" class="internal">Volumes of Revolution (AI3)</a></li>
+<li><a href="AI4.html" data-scroll="AI4" class="internal">Surface Areas of Revolution (AI4)</a></li>
+<li><a href="AI5.html" data-scroll="AI5" class="internal">Density, Mass, and Center of Mass (AI5)</a></li>
+<li><a href="AI6.html" data-scroll="AI6" class="internal">Physics Applications (AI6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="CO.html" data-scroll="CO" class="internal"><span class="codenumber">7</span> <span class="title">Coordinates and Vectors (CO)</span></a><ul>
+<li><a href="CO1.html" data-scroll="CO1" class="internal">Parametric/vector equations (CO1)</a></li>
+<li><a href="CO2.html" data-scroll="CO2" class="internal">Parametric/vector derivatives (CO2)</a></li>
+<li><a href="CO3.html" data-scroll="CO3" class="internal">Parametric/vector arclength (CO3)</a></li>
+<li><a href="CO4.html" data-scroll="CO4" class="internal">Polar coordinates (CO4)</a></li>
+<li><a href="CO5.html" data-scroll="CO5" class="internal">Polar Arclength (CO5)</a></li>
+<li><a href="CO6.html" data-scroll="CO6" class="internal">Polar area (CO6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="SQ.html" data-scroll="SQ" class="internal"><span class="codenumber">8</span> <span class="title">Sequences and Series (SQ)</span></a><ul>
+<li><a href="SQ1.html" data-scroll="SQ1" class="internal">Sequence Formulas (SQ1)</a></li>
+<li><a href="SQ2.html" data-scroll="SQ2" class="internal">Sequence Properties and Limits (SQ2)</a></li>
+<li><a href="SQ3.html" data-scroll="SQ3" class="internal">Partial Sum Sequence (SQ3)</a></li>
+<li><a href="SQ4.html" data-scroll="SQ4" class="internal">Geometric Series (SQ4)</a></li>
+<li><a href="SQ5.html" data-scroll="SQ5" class="internal">Basic Convergence Tests (SQ5)</a></li>
+<li><a href="SQ6.html" data-scroll="SQ6" class="internal">Comparison Tests (SQ6)</a></li>
+<li><a href="SQ7.html" data-scroll="SQ7" class="internal">Ratio and Root Tests (SQ7)</a></li>
+<li><a href="SQ8.html" data-scroll="SQ8" class="internal">Absolute Convergence (SQ8)</a></li>
+<li><a href="SQ9.html" data-scroll="SQ9" class="internal">Series Convergence Strategy (SQ9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="PS.html" data-scroll="PS" class="internal"><span class="codenumber">9</span> <span class="title">Power Series (PS)</span></a><ul>
+<li><a href="PS1.html" data-scroll="PS1" class="internal">Power Series (PS1)</a></li>
+<li><a href="PS2.html" data-scroll="PS2" class="internal">Convergence of Power Series (PS2)</a></li>
+<li><a href="PS3.html" data-scroll="PS3" class="internal">Manipulation of Power Series (PS3)</a></li>
+<li><a href="PS4.html" data-scroll="PS4" class="internal">Taylor Series (PS4)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="integral-table.html" data-scroll="integral-table" class="internal"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></li>
+<li class="link"><a href="trig-table.html" data-scroll="trig-table" class="internal"><span class="codenumber">B</span> <span class="title">List of Trigonometric Identities</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="AD3"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.3</span> <span class="title">Related rates (AD3)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-20"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="li-734"><p id="p-1058">Model and analyze scenarios using related rates.</p></li></ul></article><article class="remark remark-like" id="remark-22"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.3.1</span><span class="period">.</span>
+</h3>
+<p id="p-1059">In most of our applications of the derivative so far, we have been interested in the instantaneous rate at which one variable, say <span class="process-math">\(y\text{,}\)</span> changes with respect to another, say <span class="process-math">\(x\text{,}\)</span> leading us to compute and interpret <span class="process-math">\(\frac{dy}{dx}\text{.}\)</span> We next consider situations where several variable quantities are related, but where each quantity is implicitly a function of time, which will be represented by the variable <span class="process-math">\(t\text{.}\)</span> Through knowing how the quantities are related, we will be interested in determining how their respective rates of change with respect to time are related.</p></article><article class="example example-like" id="example-2"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.2</span><span class="period">.</span>
+</h3>
+<p id="p-1060">In a sense, the chain rule is our first example of related rates: recall that when <span class="process-math">\(y\)</span> is a function of <span class="process-math">\(x\text{,}\)</span> which in turn is a function of <span class="process-math">\(t\text{,}\)</span> we are considering the composite function <span class="process-math">\(y(x(t))\text{,}\)</span> and we learned that by the chain rule</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{d y}{d t} = \frac{d y}{d x} \cdot \frac{d x}{d t} 
+\end{equation*}
+</div>
+<p id="p-1061">Notice that the chain rule gives a relationship between three rates: <span class="process-math">\(\frac{d y}{d t} , \frac{d y}{d x},  \frac{d x}{d t}\text{.}\)</span></p></article><article class="activity project-like" id="activity-158"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.3.3</span><span class="period">.</span>
+</h3>
+<p id="p-1062">Remember the squirrels taking over my neighborhood?  The population <span class="process-math">\(s\)</span> grows based on acorn availability <span class="process-math">\(a\text{,}\)</span> at a rate of 2 squirrels per bushel. The acorn availability <span class="process-math">\(a\)</span> is currently growing at a rate of 100 bushels per week. What is <span class="process-math">\(\frac{ds}{dt}\)</span> in this situation?</p>
+<ol class="upper-alpha">
+<li id="li-735"><p id="p-1063">2</p></li>
+<li id="li-736"><p id="p-1064">100</p></li>
+<li id="li-737"><p id="p-1065">200</p></li>
+<li id="li-738"><p id="p-1066">Not enough information</p></li>
+</ol></article><article class="example example-like" id="example-3"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">3.3.4</span><span class="period">.</span>
+</h3>
+<p id="p-1067">In a more serious example, suppose that air is being pumped into a spherical balloon so that its volume increases at a constant rate of 20 cubic inches per second. Since the balloon's volume and radius are related, by knowing how fast the volume is changing, we ought to be able to discover how fast the radius is changing. We are interested in questions such as: can we determine how fast the radius of the balloon is increasing at the moment the balloon's diameter is 12 inches?</p></article><article class="activity project-like" id="rel-rates-spherical-balloon"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.3.5</span><span class="period">.</span>
+</h3>
+<p id="p-1068">A spherical balloon is being inflated at a constant rate of 20 cubic inches per second. How fast is the radius of the balloon changing at the instant the balloon's diameter is 12 inches? Is the radius changing more rapidly when <span class="process-math">\(d = 12\)</span> or when <span class="process-math">\(d = 16\text{?}\)</span> Why? <article class="task exercise-like" id="task-283"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1069">Draw several spheres with different radii, and observe that as volume changes, the radius, diameter, and surface area of the balloon also change.</p></article> <article class="task exercise-like" id="task-284"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1070">Recall that the volume of a sphere of radius <span class="process-math">\(r\)</span> is <span class="process-math">\(V = \frac{4}{3} \pi r^3\text{.}\)</span> Note as well that in the setting of this problem, <em class="emphasis">both</em> <span class="process-math">\(V\)</span> and <span class="process-math">\(r\)</span> are changing as time <span class="process-math">\(t\)</span> changes, and thus both <span class="process-math">\(V\)</span> and <span class="process-math">\(r\)</span> may be viewed as <em class="emphasis">implicit</em> functions of <span class="process-math">\(t\text{,}\)</span> with respective derivatives <span class="process-math">\(\frac{dV}{dt}\)</span> and <span class="process-math">\(\frac{dr}{dt}\text{.}\)</span> Differentiate both sides of the equation <span class="process-math">\(V = \frac{4}{3} \pi r^3\)</span> with respect to <span class="process-math">\(t\)</span> (using the chain rule on the right) to find a formula for <span class="process-math">\(\frac{dV}{dt}\)</span> that depends on both <span class="process-math">\(r\)</span> and <span class="process-math">\(\frac{dr}{dt}\text{.}\)</span></p></article> <article class="task exercise-like" id="task-285"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1071">At this point in the problem, by differentiating we have “related the rates” of change of <span class="process-math">\(V\)</span> and <span class="process-math">\(r\text{.}\)</span> Recall that we are given in the problem that the balloon is being inflated at a constant <em class="emphasis">rate</em> of 20 cubic inches per second. Is this rate the value of <span class="process-math">\(\frac{dr}{dt}\)</span> or <span class="process-math">\(\frac{dV}{dt}\text{?}\)</span> Why?</p></article> <article class="task exercise-like" id="task-286"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1072">From part (c), we know the value of <span class="process-math">\(\frac{dV}{dt}\)</span> at every value of <span class="process-math">\(t\text{.}\)</span> Next, observe that when the diameter of the balloon is 12, we know the value of the radius. In the equation <span class="process-math">\(\frac{dV}{dt} = 4\pi r^2 \frac{dr}{dt}\text{,}\)</span> substitute these values for the relevant quantities and solve for the remaining unknown quantity, which is <span class="process-math">\(\frac{dr}{dt}\text{.}\)</span> How fast is the radius changing at the instant <span class="process-math">\(d = 12\text{?}\)</span></p></article> <article class="task exercise-like" id="task-287"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-1073">How is the situation different when <span class="process-math">\(d = 16\text{?}\)</span> When is the radius changing more rapidly, when <span class="process-math">\(d = 12\)</span> or when <span class="process-math">\(d = 16\text{?}\)</span></p></article></p></article><article class="remark remark-like" id="remark-23"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.3.6</span><span class="period">.</span>
+</h3>
+<p id="p-1074">In problems where two or more quantities can be related to one another, and all of the variables involved are implicitly functions of time, <span class="process-math">\(t\text{,}\)</span> we are often interested in how their rates are related; we call these <em class="emphasis">related rates</em> problems.  Once we have an equation establishing the relationship among the variables, we differentiate implicitly with respect to time to find connections among the rates of change.</p></article><article class="remark remark-like" id="remark-24"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.3.7</span><span class="period">.</span><span class="space"> </span><span class="title">A guide to solving related rated problems.</span>
+</h3>
+<ol id="p-1075" class="decimal">
+<li id="li-739"><p id="p-derived-li-739"><em class="emphasis">Picture it!</em> Draw a diagram to represent the situation.</p></li>
+<li id="li-740"><p id="p-derived-li-740"><em class="emphasis">What do we know?</em> Make a list of all quantities you are given in the problem, choosing clearly defined variable names for them. If a quantity is changing (a rate), then it should be labeled as a derivative.</p></li>
+<li id="li-741"><p id="p-derived-li-741"><em class="emphasis">What do we want to know?</em> Make a list of all quantities to be determined. Again, choose clearly defined variable names.</p></li>
+<li id="li-742"><p id="p-derived-li-742"><em class="emphasis">How are the variables related to each other?</em> Find an equation that relates the variables whose rates of change are known to those variables whose rates of change are to be found.</p></li>
+<li id="li-743"><p id="p-derived-li-743"><em class="emphasis">How are the rates related?</em> Differentiate implicitly with respect to time. This will give an equation that relates the rates together.</p></li>
+<li id="li-744"><p id="p-derived-li-744"><em class="emphasis">Time to evaluate!</em> Evaluate the derivatives and variables at the information relevant to the instant at which a certain rate of change is sought.</p></li>
+</ol></article><article class="remark remark-like" id="remark-25"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.3.8</span><span class="period">.</span><span class="space"> </span><span class="title">Volume formulas.</span>
+</h3>
+<ul id="p-1076" class="disc">
+<li id="li-745"><p id="p-derived-li-745">A sphere of radius <span class="process-math">\(r\)</span> has volume <span class="process-math">\(V= \frac{4}{3} \pi r^3 \)</span></p></li>
+<li id="li-746"><p id="p-derived-li-746">A vertical cylinder of radius <span class="process-math">\(r\)</span> and height <span class="process-math">\(h\)</span> has volume <span class="process-math">\(V=  \pi r^2 h\)</span></p></li>
+<li id="li-747"><p id="p-derived-li-747">A cone of radius <span class="process-math">\(r\)</span> and height <span class="process-math">\(h\)</span> has volume <span class="process-math">\(V= \frac{\pi}{3} r^2 h \)</span></p></li>
+</ul></article><article class="activity project-like" id="rel-rates-cyl-tank"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.3.9</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-103"><p id="p-1077">A vertical cylindrical water tank has a radius of 1 meter. If water is pumped out at a rate of 3 cubic meters per minute, at what rate will the water level drop?</p></div>
+<article class="task exercise-like" id="task-288"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1078">Draw a figure to represent the situation. Introduce variables that measure the radius of the water's surface, the water's depth in the tank, and the volume of the water. Label your diagram.</p></article><article class="task exercise-like" id="task-289"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1079">What information about rates of changes does the problem give you?</p></article><article class="task exercise-like" id="task-290"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1080">Recall that the volume of a cylinder of radius <span class="process-math">\(r\)</span> and height <span class="process-math">\(h\)</span> is <span class="process-math">\(V = \pi r^2 h\text{.}\)</span> What is the related rates equation in the context of the vertical cylindrical tank? What derivative rules did you use to find this equation?</p>
+<ol class="upper-alpha">
+<li id="li-748"><p id="p-derived-li-748"><span class="process-math">\(\displaystyle \frac{dV}{dt}= \pi 2 r \frac{dh}{dt}\)</span></p></li>
+<li id="li-749"><p id="p-derived-li-749"><span class="process-math">\(\displaystyle \frac{dV}{dt}= \pi r^2 \frac{dh}{dt}\)</span></p></li>
+<li id="li-750"><p id="p-derived-li-750"><span class="process-math">\(\displaystyle \frac{dV}{dt}= \pi \frac{dr}{dt} h\)</span></p></li>
+<li id="li-751"><p id="p-derived-li-751"><span class="process-math">\(\displaystyle \frac{dV}{dt}= \pi 2r \frac{dr}{dt} h + \pi r^2 \frac{dh}{dt}\)</span></p></li>
+<li id="li-752"><p id="p-derived-li-752"><span class="process-math">\(\displaystyle \frac{dV}{dt}= \pi 2r h + \pi r^2 \)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-291"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1081">Which variable(s) have a constant value in this situation? Why?</p>
+<ol class="upper-alpha">
+<li id="li-753"><p id="p-1082">The variable measuring the radius of the water's surface</p></li>
+<li id="li-754"><p id="p-1083">The variable measuring the depth of the water</p></li>
+<li id="li-755"><p id="p-1084">The variable measuring the volume of the water</p></li>
+</ol></article><article class="task exercise-like" id="task-292"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-1085">Which variable(s) have a constant rate of change in this situation? Why?</p>
+<ol class="upper-alpha">
+<li id="li-756"><p id="p-1086">The variable measuring the radius of the water's surface</p></li>
+<li id="li-757"><p id="p-1087">The variable measuring the depth of the water</p></li>
+<li id="li-758"><p id="p-1088">The variable measuring the volume of the water</p></li>
+</ol></article><article class="task exercise-like" id="task-293"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<p id="p-1089">Using your finding above, find at what rate the water level is dropping.</p></article><article class="task exercise-like" id="task-294"><h4 class="heading"><span class="codenumber">(g)</span></h4>
+<p id="p-1090">If the full tank contains 12 cubic centimeters of water, how long does it take to empty the tank?</p></article><article class="task exercise-like" id="task-295"><h4 class="heading"><span class="codenumber">(h)</span></h4>
+<p id="p-1091">Confirm your finding in the previous part by finding the initial water level for 12 cubic centimeters of water and determine how long it takes for the water level to reach 0.</p></article></article><article class="activity project-like" id="DEn"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.3.10</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-104"><p id="p-1092">A water tank has the shape of an inverted circular cone (the cone points downwards) with a base of radius 6 feet and a depth of 8 feet. Suppose that water is being pumped into the tank at a constant instantaneous rate of 4 cubic feet per minute.</p></div>
+<article class="task exercise-like" id="task-296"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1093">Draw a picture of the conical tank, including a sketch of the water level at a point in time when the tank is not yet full. Introduce variables that measure the radius of the water's surface and the water's depth in the tank, and label them on your figure.</p></article><article class="task exercise-like" id="task-297"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1094">Say that <span class="process-math">\(r\)</span> is the radius and <span class="process-math">\(h\)</span> the depth of the water at a given time, <span class="process-math">\(t\text{.}\)</span> What proportional equation relates the radius and height of the water, and why?</p></article><article class="task exercise-like" id="task-298"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1095">Determine an equation that relates the volume of water in the tank at time <span class="process-math">\(t\)</span> to the depth <span class="process-math">\(h\)</span> of the water at that time.</p></article><article class="task exercise-like" id="task-299"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1096">Through differentiation, find an equation that relates the instantaneous rate of change of water volume with respect to time to the instantaneous rate of change of water depth at time <span class="process-math">\(t\text{.}\)</span></p></article><article class="task exercise-like" id="task-300"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-1097">Find the instantaneous rate at which the water level is rising when the water in the tank is 3 feet deep.</p></article><article class="task exercise-like" id="task-301"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<p id="p-1098">When is the water rising most rapidly?</p>
+<ol class="upper-alpha">
+<li id="li-759"><p id="p-1099"><span class="process-math">\(\displaystyle h = 3\)</span></p></li>
+<li id="li-760"><p id="p-1100"><span class="process-math">\(\displaystyle h = 4\)</span></p></li>
+<li id="li-761"><p id="p-1101"><span class="process-math">\(\displaystyle h = 5\)</span></p></li>
+<li id="li-762"><p id="p-1102">The water level rises at a constant rate</p></li>
+</ol></article></article><article class="remark remark-like" id="right-triangles-sides-theorem"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.3.11</span><span class="period">.</span>
+</h3>
+<p id="p-1103">Recall that in a right triangle with sides <span class="process-math">\(a,b\)</span> and hypotenuse <span class="process-math">\(c\)</span> we have the relationship</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+a^2 + b^2 = c^2,
+\end{equation*}
+</div>
+<p id="p-1104">also known in the western world as the Pythagorean theorem (even though this result was well know well before his time by other civilizations).</p></article><article class="activity project-like" id="activity-162"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.3.12</span><span class="period">.</span>
+</h3>
+<p id="p-1105">Notice that by differentiating each variable in the equation above with respect to <span class="process-math">\(t\text{,}\)</span> we get a relationship between <span class="process-math">\(\frac{da}{dt}, \frac{db}{dt}, \frac{dc}{dt}\text{.}\)</span> Find this related rates equation!</p></article><article class="activity project-like" id="activity-163"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.3.13</span><span class="period">.</span>
+</h3>
+<p id="p-1106">A rectangle has one side of 8 cm. How fast is the diagonal of the rectangle changing at the instant when the other side is 6 cm and increasing at a rate of 3 cm per minute?</p></article><article class="activity project-like" id="activity-164"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.3.14</span><span class="period">.</span>
+</h3>
+<p id="p-1107">A 10 m ladder leans against a vertical wall and the bottom of the ladder slides away at a rate of 0.5 m/sec. When is the top of the ladder sliding the fastest down the wall?</p>
+<ol class="upper-alpha">
+<li id="li-763"><p id="p-1108">When the bottom of the ladder is 4 meters from the wall.</p></li>
+<li id="li-764"><p id="p-1109">When the bottom of the ladder is 8 meters from the wall.</p></li>
+<li id="li-765"><p id="p-1110">The top of the ladder is sliding down at a constant rate.</p></li>
+</ol></article><article class="activity project-like" id="related-rates_fluency-checkit"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.3.15</span><span class="period">.</span>
+</h3>
+<p id="p-1111">Suppose a car was <span class="process-math">\(75\)</span> miles east of a town, traveling west at <span class="process-math">\(75\)</span> mph.  A second car was <span class="process-math">\(120\)</span> miles north of the same town, traveling south at <span class="process-math">\(70\)</span> mph.  At this exact moment, how fast is the distance between the cars changing?</p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-15" id="answer-15"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-15"><div class="answer solution-like"><p id="p-1112"><span class="process-math">\(\frac{ -14025 }{ 15 \, \sqrt{89} }\approx -99.11\)</span> mph.</p></div></div>
+</div></article></section></div></main>
+</div>
+</body>
+</html>
