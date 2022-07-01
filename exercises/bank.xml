@@ -40,49 +40,57 @@
             <path>outcomes/LT/LT6</path>
             <description>Determine limits of functions approaching vertical asymptotes.</description>
         </outcome>
+        <outcome>
+            <title>Derivatives graphically and numerically</title>
+            <slug>DF1</slug>
+            <path>outcomes/DF/DF1</path>
+            <description>Estimate the value of a derivative using difference quotients,
+            and draw corresponding secant and tangent lines on the graph of a function.</description>
+        </outcome>
+        <outcome>
+            <title>Derivatives analytically</title>
+            <slug>DF2</slug>
+            <path>outcomes/DF/DF2</path>
+            <description>Find derivatives using the definition of derivative as a limit.</description>
+        </outcome>
+        <outcome>
+            <title>Elementary derivative rules</title>
+            <slug>DF3</slug>
+            <path>outcomes/DF/DF3</path>
+            <description>Compute basic derivatives using algebraic rules.</description>
+        </outcome>
+        <outcome>
+            <title>The product and quotient rules </title>
+            <slug>DF4</slug>
+            <path>outcomes/DF/DF4</path>
+            <description>Compute derivatives using the Product and Quotient Rules.</description>
+        </outcome>
+        <outcome>
+            <title>The chain rule</title>
+            <slug>DF5</slug>
+            <path>outcomes/DF/DF5</path>
+            <description>Compute derivatives using the Chain Rule.</description>
+        </outcome>
+        <outcome>
+            <title>Differentiation strategy</title>
+            <slug>DF6</slug>
+            <path>outcomes/DF/DF6</path>
+            <description>Compute derivatives using a combination of algebraic derivative rules.</description>
+        </outcome>
+        <outcome>
+            <title>Implicit differentiation</title>
+            <slug>DF7</slug>
+            <path>outcomes/DF/DF7</path>
+            <description>Compute derivatives of implicitly-defined functions.</description>
+        </outcome>
+        <outcome>
+            <title>Derivatives of inverse functions</title>
+            <slug>DF8</slug>
+            <path>outcomes/DF/DF8</path>
+            <description>Compute derivatives of inverse functions.</description>
+        </outcome> 
     </outcomes>
-<!--     <outcome>
-      <title>Derivatives graphically and numerically</title>
-      <slug>DF1</slug>
-      <description>Estimate the value of a derivative using difference quotients,
-          and draw corresponding secant and tangent lines on the graph of a function.</description>
-    </outcome>
-    <outcome>
-      <title>Derivatives analytically</title>
-      <slug>DF2</slug>
-      <description>Find derivatives using the definition of derivative as a limit.</description>
-    </outcome>
-    <outcome>
-      <title>Elementary derivative rules</title>
-      <slug>DF3</slug>
-      <description>Compute basic derivatives using algebraic rules.</description>
-    </outcome>
-    <outcome>
-      <title>The product and quotient rules </title>
-      <slug>DF4</slug>
-      <description>Compute derivatives using the Product and Quotient Rules.</description>
-    </outcome>
-    <outcome>
-      <title>The chain rule</title>
-      <slug>DF5</slug>
-      <description>Compute derivatives using the Chain Rule.</description>
-    </outcome>
-    <outcome>
-      <title>Differentiation strategy</title>
-      <slug>DF6</slug>
-      <description>Compute derivatives using a combination of algebraic derivative rules.</description>
-    </outcome>
-    <outcome>
-      <title>Implicit differentiation</title>
-      <slug>DF7</slug>
-      <description>Compute derivatives of implicitly-defined functions.</description>
-    </outcome>
-    <outcome>
-      <title>Derivatives of inverse functions</title>
-      <slug>DF8</slug>
-      <description>Compute derivatives of inverse functions.</description>
-    </outcome> 
-    <outcome>
+    <!-- <outcome>
       <title>Tangents, Motion, and Marginals</title>
       <slug>AD1</slug>
       <description>Use derivatives to answer questions about tangents, motion, and marginals.</description>
@@ -179,7 +187,7 @@
       <slug>IN8</slug>
       <description>Use definite integrals to find areas between two
       curves.</description>
-    </outcome>-->
+    </outcome> -->
 <!--     <outcome>
       <title>Substitution method</title>
       <slug>TI1</slug>
