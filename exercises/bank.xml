@@ -89,60 +89,69 @@
             <path>outcomes/DF/DF8</path>
             <description>Compute derivatives of inverse functions.</description>
         </outcome> 
+        <outcome>
+            <title>Tangents, Motion, and Marginals</title>
+            <slug>AD1</slug>
+            <path>outcomes/AD/AD1</path>
+            <description>Use derivatives to answer questions about tangents, motion, and marginals.</description>
+        </outcome>
+        <outcome>
+            <title>Linear Approximation</title>
+            <slug>AD2</slug>
+            <path>outcomes/AD/AD2</path>
+            <description>Approximate a function with a tangent line.</description>
+        </outcome>
+        <outcome>
+            <title>Related rates</title>
+            <slug>AD3</slug>
+            <path>outcomes/AD/AD3</path>
+            <description>Model and analyze scenarios using related
+            rates.</description>
+        </outcome>
+        <outcome>
+            <title>Extreme Value Theorem</title>
+            <slug>AD4</slug>
+            <path>outcomes/AD/AD4</path>
+            <description>Use the Extreme Value Theorem to find the absolute maximum
+            and minimum values of a continuous function on a closed
+            interval.</description>
+        </outcome>
+        <outcome>
+            <title>Derivative tests</title>
+            <slug>AD5</slug>
+            <path>outcomes/AD/AD5</path>
+            <description>Apply Derivative Tests to classify the
+            critical points as local extrema.</description>
+        </outcome>
+        <outcome>
+            <title>Concavity and inflection</title>
+            <slug>AD6</slug>
+            <path>outcomes/AD/AD6</path>
+            <description>Determine the intervals of concavity of a function and find
+            all of its points of inflection.</description>
+        </outcome>
+        <outcome>
+            <title>Graphing with derivatives</title>
+            <slug>AD7</slug>
+            <path>outcomes/AD/AD7</path>
+            <description>I can sketch the graph of a differentiable
+            function whose derivatives satisfy given criteria.</description>
+        </outcome>
+        <outcome>
+            <title>Applied optimization</title>
+            <slug>AD8</slug>
+            <path>outcomes/AD/AD8</path>
+            <description>Model and analyze scenarios using applied
+            optimization.</description>
+        </outcome>
+        <outcome>
+            <title>L'Hôpital's Rule</title>
+            <slug>AD9</slug>
+            <path>outcomes/AD/AD9</path>
+            <description>Use L'Hôpital's Rule to find limits.</description>
+        </outcome>
     </outcomes>
     <!-- <outcome>
-      <title>Tangents, Motion, and Marginals</title>
-      <slug>AD1</slug>
-      <description>Use derivatives to answer questions about tangents, motion, and marginals.</description>
-    </outcome>
-    <outcome>
-      <title>Linear Approximation</title>
-      <slug>AD2</slug>
-      <description>Approximate a function with a tangent line.</description>
-    </outcome>
-    <outcome>
-      <title>Related rates</title>
-      <slug>AD3</slug>
-      <description>Model and analyze scenarios using related
-      rates.</description>
-    </outcome>
-    <outcome>
-      <title>Extreme Value Theorem</title>
-      <slug>AD4</slug>
-      <description>Use the Extreme Value Theorem to find the absolute maximum
-      and minimum values of a continuous function on a closed
-      interval.</description>
-    </outcome>
-    <outcome>
-      <title>Derivative tests</title>
-      <slug>AD5</slug>
-      <description>Apply Derivative Tests to classify the
-      critical points as local extrema.</description>
-    </outcome>
-    <outcome>
-      <title>Concavity and inflection</title>
-      <slug>AD6</slug>
-      <description>Determine the intervals of concavity of a function and find
-      all of its points of inflection.</description>
-    </outcome>
-    <outcome>
-      <title>Graphing with derivatives</title>
-      <slug>AD7</slug>
-      <description>I can sketch the graph of a differentiable
-      function whose derivatives satisfy given criteria.</description>
-    </outcome>
-    <outcome>
-      <title>Applied optimization</title>
-      <slug>AD8</slug>
-      <description>Model and analyze scenarios using applied
-      optimization.</description>
-    </outcome>
-    <outcome>
-      <title>L'Hôpital's Rule</title>
-      <slug>AD9</slug>
-      <description>Use L'Hôpital's Rule to find limits.</description>
-    </outcome>
-    <outcome>
       <title>Geometry of definite integrals</title>
       <slug>IN1</slug>
       <description>Use geometric formulas to find definite
