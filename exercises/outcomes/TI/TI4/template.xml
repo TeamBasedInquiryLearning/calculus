@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+Find the appropriate trignometric substitution for <m>x</m> and rewrite <me>\int {{f}} dx</me> as an integral in terms of <m>\theta</m>.
+        </p>
+    </content>
+    <outtro>
+        <p>
+We substitute <m>x={{trigsub}}.</m>  Then <m>dx={{dxsub}}d\theta</m> and:
+            <me>
+\int {{f}} dx = \int {{fsub}} d\theta = \int {{fsubsimp}} d\theta.
+            </me>
+        </p>
+    </outtro>
+</knowl>

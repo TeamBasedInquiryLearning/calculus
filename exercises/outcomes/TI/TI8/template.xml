@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+Determine which of the following integrals coverges and which diverges.
+If an integral diverges, explain why.  If it converges, explain to which value it converges.
+        </p>
+    </intro>
+    <knowl>
+        <content><m>\displaystyle\int_{ {{c}} }^{ {{a}} } {{f}} dx.</m></content>
+        <!-- {{#Problem1}} -->
+            <outtro>
+                <!-- {{#Converge}} -->
+                <p><m>\displaystyle\int_{ {{c}} }^{ {{a}} } {{f}} dx</m> converges to <m>{{Limit}}</m>.</p>
+                <!-- {{/Converge}} -->
+                <!-- {{^Converge}} -->
+                <p><m>\displaystyle\int_{ {{c}} }^{ {{a}} } {{f}} dx</m> diverges.</p>
+                <!-- {{/Converge}} -->
+            </outtro>
+        <!-- {{/Problem1}} -->
+    </knowl>
+    <knowl>
+        <content><m>\displaystyle\int_{ {{a}} }^{ \infty } {{f}} dx.</m></content>
+        <!-- {{#Problem2}} -->
+            <outtro>
+                <!-- {{#Converge}} -->
+                <p><m>\displaystyle\int_{ {{a}} }^{ \infty } {{f}} dx</m> converges to <m>{{Limit}}</m>.</p>
+                <!-- {{/Converge}} -->
+                <!-- {{^Converge}} -->
+                <p><m>\displaystyle\int_{ {{a}} }^{ \infty } {{f}} dx</m> diverges.</p>
+                <!-- {{/Converge}} -->
+            </outtro>
+        <!-- {{/Problem2}} -->
+    </knowl>
+</knowl>

@@ -150,106 +150,113 @@
             <path>outcomes/AD/AD9</path>
             <description>Use L'Hôpital's Rule to find limits.</description>
         </outcome>
+        <outcome>
+            <title>Geometry of definite integrals</title>
+            <slug>IN1</slug>
+            <path>outcomes/IN/IN1</path>
+            <description>Use geometric formulas to find definite
+            integrals.</description>
+        </outcome>
+        <outcome>
+            <title>Approximating definite integrals</title>
+            <slug>IN2</slug>
+            <path>outcomes/IN/IN2</path>
+            <description>Approximate definite integrals using variations of Riemann
+            sums.</description>
+        </outcome>
+        <outcome>
+            <title>Basic antiderivatives</title>
+            <slug>IN3</slug>
+            <path>outcomes/IN/IN3</path>
+            <description>Find basic antiderivatives.</description>
+        </outcome>
+        <outcome>
+            <title>Initial Value Problems</title>
+            <slug>IN4</slug>
+            <path>outcomes/IN/IN4</path>
+            <description>Solve basic initial value
+            problems.</description>
+        </outcome>
+        <outcome>
+            <title>FTC for Definite Integrals</title>
+            <slug>IN5</slug>
+            <path>outcomes/IN/IN5</path>
+            <description>Evaluate a definite integral using the Fundamental Theorem
+            of Calculus.</description>
+        </outcome>
+        <outcome>
+            <title>FTC for Derivatives</title>
+            <slug>IN6</slug>
+            <path>outcomes/IN/IN6</path>
+            <description>Evaluate the derivative of a definite integral using the Fundamental Theorem
+            of Calculus.</description>
+        </outcome>
+        <outcome>
+            <title>Area under curves</title>
+            <slug>IN7</slug>
+            <path>outcomes/IN/IN7</path>
+            <description>Use definite integrals to find areas under curves.</description>
+        </outcome>
+        <outcome>
+            <title>Area between curves</title>
+            <slug>IN8</slug>
+            <path>outcomes/IN/IN8</path>
+            <description>Use definite integrals to find areas between two
+            curves.</description>
+        </outcome>
+        <outcome>
+            <title>Substitution method</title>
+            <slug>TI1</slug>
+            <path>outcomes/TI/TI1</path>
+            <description>Evaluate various integrals via the substitution
+            method.</description>
+        </outcome>
+        <outcome>
+            <title>Integration by parts</title>
+            <slug>TI2</slug>
+            <path>outcomes/TI/TI2</path>
+            <description>Compute integrals using integration by parts.</description>
+        </outcome>
+        <outcome>
+            <title>Integration of Trignometry</title>
+            <slug>TI3</slug>
+            <path>outcomes/TI/TI3</path>
+            <description>Compute integrals involving products of trigonometric
+            functions.</description>
+        </outcome>
+        <outcome>
+            <title>Trigonometric Substitution</title>
+            <slug>TI4</slug>
+            <path>outcomes/TI/TI4</path>
+            <description>Use trigonometric substitution to compute indefinite integrals.</description>
+        </outcome>
+        <outcome>
+            <title>Table of Integrals</title>
+            <slug>TI5</slug>
+            <path>outcomes/TI/TI5</path>
+            <description> Integrate functions using a table of integrals.</description>
+        </outcome>  
+        <outcome>
+            <title>Partial fractions</title>
+            <slug>TI6</slug>
+            <path>outcomes/TI/TI6</path>
+            <description>Integrate using the method of partial
+            fractions.</description>
+        </outcome>  
+        <outcome>
+            <title>Integration strategy</title>
+            <slug>TI7</slug>
+            <path>outcomes/TI/TI7</path>
+            <description>Select appropriate strategies for integration.</description>
+        </outcome>
+        <outcome>
+            <title>Improper integrals</title>
+            <slug>TI8</slug>
+            <path>outcomes/TI/TI8</path>
+            <description>Identify and compute improper integrals.</description>
+        </outcome>
     </outcomes>
     <!-- <outcome>
-      <title>Geometry of definite integrals</title>
-      <slug>IN1</slug>
-      <description>Use geometric formulas to find definite
-      integrals.</description>
-    </outcome>
-    <outcome>
-      <title>Approximating definite integrals</title>
-      <slug>IN2</slug>
-      <description>Approximate definite integrals using variations of Riemann
-      sums.</description>
-    </outcome>
-    <outcome>
-      <title>Basic antiderivatives</title>
-      <slug>IN3</slug>
-      <description>Find basic antiderivatives.</description>
-    </outcome>
-    <outcome>
-      <title>Initial Value Problems</title>
-      <slug>IN4</slug>
-      <description>Solve basic initial value
-      problems.</description>
-    </outcome>
-    <outcome>
-      <title>FTC for Definite Integrals</title>
-      <slug>IN5</slug>
-      <description>Evaluate a definite integral using the Fundamental Theorem
-      of Calculus.</description>
-    </outcome>
-    <outcome>
-      <title>FTC for Derivatives</title>
-      <slug>IN6</slug>
-      <description>Evaluate the derivative of a definite integral using the Fundamental Theorem
-      of Calculus.</description>
-    </outcome>
-    <outcome>
-      <title>Area under curves</title>
-      <slug>IN7</slug>
-      <description>Use definite integrals to find areas under curves.</description>
-    </outcome>
-    <outcome>
-      <title>Area between curves</title>
-      <slug>IN8</slug>
-      <description>Use definite integrals to find areas between two
-      curves.</description>
-    </outcome> -->
-<!--     <outcome>
-      <title>Substitution method</title>
-      <slug>TI1</slug>
-      <description>Evaluate various integrals via the substitution
-      method.</description>
-      <alignment></alignment>
-    </outcome>
-    <outcome>
-      <title>Integration by parts</title>
-      <slug>TI2</slug>
-      <description>Compute integrals using integration by parts.</description>
-      <alignment></alignment>
-    </outcome>
-    <outcome>
-      <title>Integration of Trignometry</title>
-      <slug>TI3</slug>
-      <description>Compute integrals involving products of trigonometric
-      functions.</description>
-      <alignment></alignment>
-    </outcome>
-    <outcome>
-      <title>Trigonometric Substitution</title>
-      <slug>TI4</slug>
-      <description>Use trigonometric substitution to compute indefinite integrals.</description>
-      <alignment></alignment>
-    </outcome>  
-    
-    <outcome>
-      <title>Table of Integrals</title>
-      <slug>TI5</slug>
-      <description> Integrate functions using a table of integrals..</description>
-      <alignment></alignment>
-    </outcome>  
-    <outcome>
-      <title>Partial fractions</title>
-      <slug>TI6</slug>
-      <description>Integrate using the method of partial
-      fractions.</description>
-      <alignment></alignment>
-    </outcome>  
-    <outcome>
-      <title>Integration strategy</title>
-      <slug>TI7</slug>
-      <description>Select appropriate strategies for integration.</description>
-      <alignment></alignment>
-    </outcome>
-    <outcome>
-      <title>Improper integrals</title>
-      <slug>TI8</slug>
-      <description>Identify and compute improper integrals.</description>
-      <alignment></alignment>
-    </outcome>
-    <outcome>
       <title>Average Values</title>
       <slug>AI1</slug>
       <description>Compute the average value of a function on an interval.</description>
