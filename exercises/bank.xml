@@ -255,125 +255,167 @@
             <path>outcomes/TI/TI8</path>
             <description>Identify and compute improper integrals.</description>
         </outcome>
+        <outcome>
+            <title>Average Values</title>
+            <slug>AI1</slug>
+            <path>outcomes/AI/AI1</path>
+            <description>Compute the average value of a function on an interval.</description>
+        </outcome>
+        <outcome>
+            <title>Arc Length</title>
+            <slug>AI2</slug>
+            <path>outcomes/AI/AI2</path>
+            <description>Estimate the arclength of a curve with Riemann sums and find an integral which computes the arclength.</description>
+        </outcome>  
+        <outcome>
+            <title>Volumes of Revolution</title>
+            <slug>AI3</slug>
+            <path>outcomes/AI/AI3</path>
+            <description>Compute volumes of solids of revolution.</description>
+        </outcome>
+        <outcome>
+            <title>Areas of Revolution</title>
+            <slug>AI4</slug>
+            <path>outcomes/AI/AI4</path>
+            <description>Compute surface areas of surfaces of revolution.</description>
+        </outcome>
+        <outcome>
+            <title>Density, Mass, Centers of Mass</title>
+            <slug>AI5</slug>
+            <path>outcomes/AI/AI5</path>
+            <description>Set up integrals to solve problems involving density, mass, and center of mass.</description>
+        </outcome>
+        <outcome>
+            <title>Physics Applications</title>
+            <slug>AI6</slug>
+            <path>outcomes/AI/AI6</path>
+            <description>Set up integrals to solve problems involving work, force, and/or pressure.</description>
+        </outcome>
+        <outcome>
+            <title>Parametric/vector equations</title>
+            <slug>CO1</slug>
+            <path>outcomes/CO/CO1</path>
+            <description>Sketch the graph of a two-dimensional parametric/vector equation, and convert such equations into equations of only <m>x</m> and <m>y</m>.</description>
+        </outcome>
+        <outcome>
+            <title>Parametric/vector derivatives</title>
+            <slug>CO2</slug>
+            <path>outcomes/CO/CO2</path>
+            <description>Compute derivatives and tangents related to two-dimensional parametric/vector equations.</description>
+        </outcome>
+        <outcome>
+            <title>Parametric/vector arclength</title>
+            <slug>CO3</slug>
+            <path>outcomes/CO/CO3</path>
+            <description>Compute arclengths related to two-dimensional parametric/vector equations.</description>
+        </outcome>
+        <outcome>
+            <title>Polar coordinates</title>
+            <slug>CO4</slug>
+            <path>outcomes/CO/CO4</path>
+            <description>Convert points and equations between polar and Cartesian coordinates and equations.</description>
+        </outcome>
+        <outcome>
+            <title>Polar arclength</title>
+            <slug>CO5</slug>
+            <path>outcomes/CO/CO5</path>
+            <description>Compute arclengths of curves given in polar coordinates.</description>
+        </outcome>
+        <outcome>
+            <title>Polar area</title>
+            <slug>CO6</slug>
+            <path>outcomes/CO/CO6</path>
+            <description>Compute areas bounded by curves given in polar coordinates.</description>
+        </outcome>  
+        <outcome>
+            <title>Sequence formulas</title>
+            <slug>SQ1</slug>
+            <path>outcomes/SQ/SQ1</path>
+            <description>Define and use explicit and recursive formulas for
+            sequences.</description>
+        </outcome>
+        <outcome>
+            <title>Sequence properties and limits</title>
+            <slug>SQ2</slug>
+            <path>outcomes/SQ/SQ2</path>
+            <description>Determine if a sequence is convergent, divergent, monotonic,
+            or bounded, and compute limits of convergent sequences.</description>
+        </outcome>
+        <outcome>
+            <title>Partial sum sequence</title>
+            <slug>SQ3</slug>
+            <path>outcomes/SQ/SQ3</path>
+            <description>Convert a (telescoping) sequence into its partial sum
+            sequence, and find its limit.</description>
+        </outcome>
+        <outcome>
+            <title>Geometric summations</title>
+            <slug>SQ4</slug>
+            <path>outcomes/SQ/SQ4</path>
+            <description>Determine convergence and values of geometric
+            summations.</description>
+        </outcome>
+        <outcome>
+            <title>Basic convergence tests</title>
+            <slug>SQ5</slug>
+            <path>outcomes/SQ/SQ5</path>
+            <description>Use Divergence, Alternating Summation, and Integral Tests to
+            determine convergence of summations.</description>
+        </outcome>
+        <outcome>
+            <title>Comparison tests</title>
+            <slug>SQ6</slug>
+            <path>outcomes/SQ/SQ6</path>
+            <description>Use Direct and Limit Comparison Tests to determine
+            convergence of summations.</description>
+        </outcome>
+        <outcome>
+            <title>Ratio and Root tests</title>
+            <slug>SQ7</slug>
+            <path>outcomes/SQ/SQ7</path>
+            <description>Use Ratio and Root Tests to determine convergence of
+            summations.</description>
+        </outcome>
+        <outcome>
+            <title>Absolute convergence</title>
+            <slug>SQ8</slug>
+            <path>outcomes/SQ/SQ8</path>
+            <description>Determine absolute and conditional convergence of
+            summations.</description>
+        </outcome>
+        <outcome>
+            <title>Summation convergence strategy</title>
+            <slug>SQ9</slug>
+            <path>outcomes/SQ/SQ9</path>
+            <description>Identify appropriate convergence tests for various
+            summations.</description>
+        </outcome>
+        <outcome>
+            <title>Power series</title>
+            <slug>PS1</slug>
+            <path>outcomes/PS/PS1</path>
+            <description>Approximate functions defined as power series.</description>
+        </outcome>
+        <outcome>
+            <title>Domain of power series</title>
+            <slug>PS2</slug>
+            <path>outcomes/PS/PS2</path>
+            <description>Describe the domain of convergence for a given power
+            series.</description>
+        </outcome>
+        <outcome>
+            <title>Manipulation of power series</title>
+            <slug>PS3</slug>
+            <path>outcomes/PS/PS3</path>
+            <description>Compute power series by manipulating known
+            exponential/trigonometric/binomial power series.</description>
+        </outcome>
+        <outcome>
+            <title>Taylor series</title>
+            <slug>PS4</slug>
+            <path>outcomes/PS/PS4</path>
+            <description>Compute a Taylor or Maclaurin series for a
+            function.</description>
+        </outcome>   
     </outcomes>
-    <!-- <outcome>
-      <title>Average Values</title>
-      <slug>AI1</slug>
-      <description>Compute the average value of a function on an interval.</description>
-      <alignment></alignment>
-    </outcome>
-    <outcome>
-      <title>Volumes of Revolution</title>
-      <slug>AI2</slug>
-      <description>Compute volumes of solids of revolution.</description>
-      <alignment></alignment>
-    </outcome>
-    <outcome>
-      <title>Areas of Revolution</title>
-      <slug>AI3</slug>
-      <description>Compute surface areas of surfaces of revolution.</description>
-      <alignment></alignment>
-    </outcome>
-    <outcome>
-      <title>Density, Mass, Centers of Mass</title>
-      <slug>AI4</slug>
-      <description>Set up integrals to solve problems involving density, mass, and center of mass.</description>
-      <alignment></alignment>
-    </outcome>
-    <outcome>
-      <title>Physics Applications</title>
-      <slug>AI5</slug>
-      <description>Set up integrals to solve problems involving work, force, and/or pressure.</description>
-      <alignment></alignment>
-    </outcome>
-    <outcome>
-      <title>Sequence formulas</title>
-      <slug>SQ1</slug>
-      <description>Define and use explicit and recursive formulas for
-      sequences.</description>
-      <alignment></alignment>
-    </outcome>
-    <outcome>
-      <title>Sequence properties and limits</title>
-      <slug>SQ2</slug>
-      <description>Determine if a sequence is convergent, divergent, monotonic,
-      or bounded, and compute limits of convergent sequences.</description>
-      <alignment></alignment>
-    </outcome>
-    <outcome>
-      <title>Partial sum sequence</title>
-      <slug>SQ3</slug>
-      <description>Convert a (telescoping) sequence into its partial sum
-      sequence, and find its limit.</description>
-      <alignment></alignment>
-    </outcome>
-    <outcome>
-      <title>Geometric summations</title>
-      <slug>SQ4</slug>
-      <description>Determine convergence and values of geometric
-      summations.</description>
-      <alignment></alignment>
-    </outcome>
-    <outcome>
-      <title>Basic convergence tests</title>
-      <slug>SQ5</slug>
-      <description>Use Divergence, Alternating Summation, and Integral Tests to
-      determine convergence of summations.</description>
-      <alignment></alignment>
-    </outcome>
-    <outcome>
-      <title>Comparison tests</title>
-      <slug>SQ6</slug>
-      <description>Use Direct and Limit Comparison Tests to determine
-      convergence of summations.</description>
-      <alignment></alignment>
-    </outcome>
-    <outcome>
-      <title>Ratio and Root tests</title>
-      <slug>SQ7</slug>
-      <description>Use Ratio and Root Tests to determine convergence of
-      summations.</description>
-      <alignment></alignment>
-    </outcome>
-    <outcome>
-      <title>Absolute convergence</title>
-      <slug>SQ8</slug>
-      <description>Determine absolute and conditional convergence of
-      summations.</description>
-      <alignment></alignment>
-    </outcome>
-    <outcome>
-      <title>Summation convergence stratgy</title>
-      <slug>SQ9</slug>
-      <description>Identify appropriate convergence tests for various
-      summations.</description>
-      <alignment></alignment>
-    </outcome>
-    <outcome>
-      <title>Power series</title>
-      <slug>PS1</slug>
-      <description>Approximate functions defined as power series.</description>
-      <alignment></alignment>
-    </outcome>
-    <outcome>
-      <title>Domain of power series</title>
-      <slug>PS2</slug>
-      <description>Describe the domain of convergence for a given power
-      series.</description>
-      <alignment></alignment>
-    </outcome>
-    <outcome>
-      <title>Manipulation of power series</title>
-      <slug>PS3</slug>
-      <description>Compute power series by manipulating known
-      exponential/trigonometric/binomial power series.</description>
-      <alignment></alignment>
-    </outcome>
-    <outcome>
-      <title>Taylor series</title>
-      <slug>PS4</slug>
-      <description>Compute a Taylor or Maclaurin series for a
-      function.</description>
-      <alignment></alignment>
-    </outcome>   -->
 </bank>
