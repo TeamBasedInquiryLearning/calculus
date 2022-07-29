@@ -1,4 +1,4 @@
-import logging, subprocess, shutil, pathlib, os
+import subprocess, shutil, os
 from checkit.bank import Bank
 
 print('generating assets')
