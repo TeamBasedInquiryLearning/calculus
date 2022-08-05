@@ -13,7 +13,7 @@
     
 <remark><p>When we compute a limit algebraically, we often encounter the indeterminate form </p>
 <me>\frac{0}{0}</me>
-    <p> but this means that limit can equal any number, infinity, or might even not exist. When we encounter an indeterminate form, we just do not know (yet) what the value of the limit is. </p></remark>
+    <p> but this means that limit can equal any number, infinity, or it might not exist. When we encounter an indeterminate form, we just do not know (yet) what the value of the limit is. </p></remark>
 
 <activity>
     <introduction> <p>We can compute limits that give indeterminate forms via algebraic manipulations. Consider </p>
@@ -22,9 +22,9 @@
     <p>  Verify that this limit gives an indeterminate form of the type <m>\frac{0}{0}</m>.
         </p></task>
     <task>
-    <p> In the limit, you can cancel common factors. After you simplify the fraction, what is this limit equal to?
+    <p> As you are computing a limit, you can cancel common factors. After you simplify the fraction, what is the limit?
         </p>
-        <ol marker="A">
+        <ol marker="A." cols="2">
                 <li><p>  2 </p></li>
                   <li><p>  1 </p></li> 
                   <li><p>  <m>\frac{1}{2}</m> </p></li>     
@@ -38,15 +38,15 @@
 <remark><p> Consider the limits </p>
 <me> \lim_{h \to 0} \frac{f(a+h)-f(a)}{h} = f'(a). </me>
 <me>  \lim_{x \to a} \frac{f(x)-f(a)}{x-a} = f'(a). </me>
-    <p>Notice that these limits give indeterminate forms of the type <m>\frac{0}{0}</m>. However, these limits are equal to the limit defintion of <m>f'(a)</m>, the derivative of <m>f(x)</m> at <m>x=a</m>. If you can compute <m>f'(a)</m>, then you can compute the value of the limit. </p> </remark>
+    <p>Notice that these limits give indeterminate forms of the type <m>\frac{0}{0}</m>. However, these limits are equal to <m>f'(a)</m>, the derivative of <m>f(x)</m> at <m>x=a</m>. If you can compute <m>f'(a)</m>, then you have computed the value of the limit! </p> </remark>
 
 <activity>
-    <introduction> <p> Use the limit definition of the derivative to compute the following limits. Each limit is <m>f'(a)</m>, the derivative of some function <m>f(x)</m> at <m>x=a</m>. You need to determine the function and the point to then find the value of the limit: <m>f'(a)</m>.</p>
+    <introduction> <p> Use the limit definition of the derivative to compute the following limits. Each limit is <m>f'(a)</m>, the derivative of some function <m>f(x)</m> at some point <m>x=a</m>. You need to determine the function and the point to find the value of the limit: <m>f'(a)</m>.</p>
  </introduction>
     <task>
-    <p>  Notice that <m>\displaystyle \lim_{x\to 0} \frac{e^{2+x}-e^2}{x}</m> is the limit definition of the derivative of <m>e^x</m> at <m>x=2</m> (where <m>x</m> was used for <m>h</m>). Given these observations, what is this limit equal to?
+    <p>  Notice that <m>\displaystyle \lim_{x\to 0} \frac{e^{2+x}-e^2}{x}</m> is the derivative of <m>e^x</m> at <m>x=2</m> (where <m>x</m> was used for <m>h</m>). Given this observation, what is this limit equal to?
         </p>
-    <ol marker="A">
+    <ol marker="A." cols="2">
                 <li><p>  2 </p></li>
                   <li><p>  <m>e</m> </p></li> 
                   <li><p>  <m>e^2</m> </p></li>     
@@ -54,9 +54,9 @@
     </ol>      
     </task>
     <task>
-    <p>  Consider <m>\displaystyle \lim_{x\to 0}  \frac{\ln(1+x)}{x}</m>. This limit is also the limit definition of some derivative at a point. What is the value of this limit?
+    <p>  Consider <m>\displaystyle \lim_{x\to 0}  \frac{\ln(1+x)}{x}</m>. This limit is also the limit definition of some derivative at some point. What is the value of this limit?
         </p>
-    <ol marker="A">
+    <ol marker="A." cols="2">
                 <li><p>  1 </p></li>
                   <li><p> 0 </p></li> 
                   <li><p>  <m>\ln(2)</m> </p></li>     
@@ -74,7 +74,7 @@
 
     <remark><p>When we compute a limit algebraically, we might encounter the indeterminate form </p>
 <me>\frac{\infty}{\infty}</me>
-    <p> but this means that limit can equal any number, infinity, or might even not exist. When we encounter an indeterminate form, we just do not know (yet) what the value of the limit is. </p></remark>
+    <p> but this means that limit can equal any number, infinity, or it might not exist. When we encounter an indeterminate form, we just do not know (yet) what the value of the limit is. </p></remark>
 
 <activity>
     <introduction> <p>We can compute limits that give indeterminate forms via algebraic manipulations. Consider </p>
@@ -83,9 +83,9 @@
     <p>  Verify that this limit gives an indeterminate form of the type <m>\frac{\infty}{\infty}</m>.
         </p></task>
     <task>
-    <p> You can manipulate this fraction algebraically by dividing numerator and denominator by <m>x^2</m>. Notice that <m>\pm \frac{1}{x^2} \to 0</m> as <m>x \to \infty </m>. So after you manipulate and simplify the fraction, what is this limit equal to?
+    <p> You can manipulate this fraction algebraically by dividing numerator and denominator by <m>x^2</m>. Then, notice that <m>\pm \frac{1}{x^2} \to 0</m> as <m>x \to \infty </m>. Given these observations, what is the given limit equal to?
         </p>
-        <ol marker="A">
+        <ol marker="A." cols="2">
                 <li><p>  2 </p></li>
                   <li><p>  1 </p></li> 
                   <li><p>  <m>\frac{1}{2}</m> </p></li>     
@@ -96,7 +96,7 @@
     </activity>
 
 
-<theorem> <title>L' Hospital's Rule</title> <statement> <p> If for the limit of <m>\frac{f(x)}{g(x)}</m> as <m>x \to a</m> we have one of the indeterminate forms <m>\frac{0}{0}</m> or <m>\frac{\infty}{\infty}</m>  and <m>f(x), g(x)</m> are both differentiable around <m>x = a</m>, then </p>
+<theorem> <title>L' Hospital's Rule</title> <statement> <p> If the functions <m>f(x), g(x)</m> are both differentiable around <m>x = a</m> and for the limit of <m>\frac{f(x)}{g(x)}</m> as <m>x \to a</m> (or <m>x \to \pm \infty</m>) we have one of the indeterminate forms <m>\frac{0}{0}</m> or <m>\frac{\infty}{\infty}</m>, then </p>
 <me> \lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \frac{f'(x)}{g'(x)} </me> 
 <p>provided that the limit exists! </p> 
     </statement>
@@ -142,43 +142,42 @@
     </activity>
 
     <activity xml:id="checkit-ad9">
-    <statement>
+    <introduction>
         <p>
 For each limit, explain if L'Hopital's Rule may be applied.
 If it can, explain how to use this rule to find the limit.
-        </p>
-        <ol>
-                <li>
+        </p></introduction>
+        
+                <task>
                     <p>
                         <me>
 \lim_{x\to \infty } \frac{ -8 \, x + 3 \, e^{x} }{ 7 \, x - 3 \, e^{x} }
                         </me>
                     </p>
-                </li>
-                <li>
+                </task>
+                <task>
                     <p>
                         <me>
 \lim_{x\to 0 } \frac{ 6 \, \cos\left(8 \, x\right) }{ 4 \, x - 7 }
                         </me>
                     </p>
-                </li>
-                <li>
+                </task>
+                <task>
                     <p>
                         <me>
 \lim_{x\to 0 } \frac{ -9 \, \cos\left(3 \, x\right) + 9 }{ -3 \, x }
                         </me>
                     </p>
-                </li>
-                <li>
+                </task>
+                <task>
                     <p>
                         <me>
 \lim_{x\to 4 } \frac{ x^{2} - x - 12 }{ x^{2} - 13 \, x + 36 }
                         </me>
                     </p>
-                </li>
-        </ol>
-    </statement>
-    <answer>
+                </task>
+      
+ <!--   <answer>
          <ol>
                 <li>
                     <p>
@@ -207,20 +206,20 @@ L'H&#244;ptial's Rule does not apply.
                     </p>
                 </li>
         </ol>
-    </answer>
+    </answer>-->
 </activity>
 
     
     <activity xml:id="lhospital-fail">
     <introduction><p>
-        There are situations in which using L'Hospital does not help the situation and you need some algebra skills! Consider the function <m>r(x)=\frac{x}{\sqrt{x^2 +2}}</m> and suppose that we want to find the limits as <m>x</m> tends to <m>\pm \infty</m>.</p>
+        There are situations in which using L'Hospital's Rule does not help and you do need some algebra skills! Consider the function <m>r(x)=\frac{x}{\sqrt{x^2 +2}}</m> and suppose that we want to find the limits as <m>x</m> tends to <m>\pm \infty</m>.</p>
     </introduction>
     <task>
     <p>Check that the limit as <m>x \to + \infty</m> gives an indeterminate form <m>\frac{\infty}{\infty}</m>. Then try to use L'Hospital's Rule... what happens? What if you use it again? </p>
     </task>
     <task>
     <p>We need to use algebra to handle this limit. Informally, we would like to cancel the highest powers at the numerator and denominator. Look at the denominator, <m>\sqrt{x^2 +2}</m>. We want to factor out an <m>x^2</m> under the square root. What do you get? </p>
-        <ol marker="A">
+        <ol marker="A." cols="2">
                 <li><p>  <m>\sqrt{ x^2\left(1 +\frac{2}{x}\right) } </m>  </p></li>
                  <li><p>  <m>\sqrt{ x^2\left(1 +\frac{2}{x^2}\right) } </m>  </p></li>
                   <li><p>  <m>\sqrt{ x^2\left(1 + x \right)} </m>  </p></li> 
@@ -228,10 +227,10 @@ L'H&#244;ptial's Rule does not apply.
     </ol>       
     </task>
      <task>
-    <p>Now we need to be careful when computing <m>\sqrt{x^2}</m> as this is equal to <m>|x|</m> (so it is <m>+x</m> when we have a positive input and <m>-x</m> when we have a negative output. So we have the two limits.
+    <p>Now we need to be careful when computing <m>\sqrt{x^2}</m> as <m>\sqrt{x^2}=|x|</m>. The absolute value function <m>|x|</m> equals <m>+x</m> when we have a positive input and <m>-x</m> when we have a negative output. So we have the two limits.
        <me> \lim_{x \to +\infty} \frac{x}{|x|\sqrt{(1 +\frac{2}{x^2}) }}</me> 
         <me> \lim_{x \to -\infty} \frac{x}{|x|\sqrt{(1 +\frac{2}{x^2}) }}</me>  
-        Thinking about what happens to the absolute values as you go towards positive or negative infinity, find the values of these two limits... You will find different results! </p>
+        Thinking about what happens to the absolute values as you go towards positive or negative infinity, find the values of these two limits... The two limits have different values! </p>
     </task>
     </activity>
 </section>

@@ -12,18 +12,18 @@
         <activity xml:id="activity-AI4rectangularprism">
             <introduction>
                 <p>
-                    Consider a rectangular prism with a 10 m <m>\times</m> 10 m square base and height 20 m.  Suppose the density of the material in the prism increases with height, following the function <m>\delta(h)=10+h</m> kg/m<m>^3</m>, where <m>h</m> is the height in meters.
+                    Consider a rectangular prism with a 10 meters <m>\times</m> 10 meters square base and height 20 meters.  Suppose the density of the material in the prism increases with height, following the function <m>\delta(h)=10+h</m> kg/m<m>^3</m>, where <m>h</m> is the height in meters.
                 </p>
             </introduction>
             <task>
-                <p>If one were to cut this prism, parallel to the base, into 4 pieces with height 5 m, what would the volume of each piece be?</p>
+                <p>If one were to cut this prism, parallel to the base, into 4 pieces with height 5 meters, what would the volume of each piece be?</p>
             </task>
             <task>
-                <p>Consider the piece sitting on top the slice made at height <m>h=5</m>.  Using a density of <m>\delta(5)=15</m>  kg/m<m>^3</m>, and the volume you found, estimate the mass of this piece.</p>
-                    <ol marker="A">
-                        <li><m>500\cdot 5=2500</m> kg.</li>
-                        <li><m>500\cdot 15=7500</m> kg.</li>
-                        <li><m>500\cdot 15\cdot 5=37500</m> kg.</li>
+                <p>Consider the piece sitting on top of the slice made at height <m>h=5</m>.  Using a density of <m>\delta(5)=15</m>  kg/m<m>^3</m>, and the volume you found in (a), estimate the mass of this piece.</p>
+                    <ol marker="A." cols="2">
+                        <li><m>500\cdot 5=2500</m> kg</li>
+                        <li><m>500\cdot 15=7500</m> kg</li>
+                        <li><m>500\cdot 15\cdot 5=37500</m> kg</li>
                     </ol>
             </task>
             <task>
@@ -39,7 +39,7 @@
                     Consider all 4 slices from <xref ref="activity-AI4rectangularprism"/>.
                     <figure>
                 <caption><m>10\times 10\times 20</m> prism sliced into 4 pieces.</caption>
-                    <image xml:id="prism4pieces" width="100%">
+                    <image xml:id="prism4pieces" width="50%">
                         <description><m>10\times 10\times 20</m> prism sliced into 4 pieces.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -67,7 +67,7 @@
                 </p>
             </introduction>
             <task>
-                <p>Fill out the following table:
+                <p>Fill out the following table.
                     <me>
                         \begin{array}{|c|c|c|c|}
                         \hline
@@ -83,8 +83,6 @@
                         \hline
                         \end{array}
                     </me>
-                
-                
                 </p>
             </task>
             <task>
@@ -98,10 +96,10 @@
         <activity xml:id="activity-AI4rectangularprism5pieces">
             <introduction>
                 <p>
-                    Suppose instead that we sliced the prism from <xref ref="activity-AI4rectangularprism"/> into 5 pices of height 4 m.
+                    Suppose instead that we sliced the prism from <xref ref="activity-AI4rectangularprism"/> into 5 pices of height 4 meters.
                     <figure>
                 <caption><m>10\times 10\times 20</m> prism sliced into 5 pieces.</caption>
-                    <image xml:id="prism5pieces" width="100%">
+                    <image xml:id="prism5pieces" width="50%">
                         <description><m>10\times 10\times 20</m> prism sliced into 5 pieces.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -131,7 +129,7 @@
                 </p>
             </introduction>
             <task>
-                <p>Fill out the following table:
+                <p>Fill out the following table.
                     <me>
                         \begin{array}{|c|c|c|c|}
                         \hline
@@ -165,7 +163,7 @@
             <statement>
                 <p>
                 Which of the estimates computed in <xref ref="activity-AI4rectangularprism4pieces"/> and <xref ref="activity-AI4rectangularprism5pieces"/> is a better estimate of the mass of the prism?
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><xref ref="activity-AI4rectangularprism4pieces"/>, 4 pieces is a better estimate.</li>
                     <li><xref ref="activity-AI4rectangularprism5pieces"/>, 5 pieces is a better estimate.</li>
                 </ol>
@@ -176,11 +174,11 @@
         <activity xml:id="activity-AI4rectangularprismmanypieces">
             <introduction>
                 <p>
-                    Suppose now that we slice the prism from <xref ref="activity-AI4rectangularprism"/> into slices of height <m>\Delta h</m> m.
+                    Suppose now that we slice the prism from <xref ref="activity-AI4rectangularprism"/> into slices of height <m>\Delta h</m> meters.
                     
                     <figure>
                 <caption><m>10\times 10\times 20</m> prism sliced into many pieces.</caption>
-                    <image xml:id="prismmanypieces" width="100%">
+                    <image xml:id="prismmanypieces" width="50%">
                         <description><m>10\times 10\times 20</m> prism sliced into many pieces.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -206,11 +204,11 @@
             <task>
                 <p>
                     Consider the piece sitting atop the slice made at height <m>h_i</m>.  Using <m>\delta(h_i)=10+h_i</m> as the estimate for the density of this piece, what is the mass of this piece?
-                    <ol marker="A">
-                        <li><m>(10+h)100\cdot h_i</m>.</li>
-                        <li><m>(10+\Delta h)100\cdot h_i</m>.</li>
-                        <li><m>(10+h_i)100\cdot \Delta h</m>.</li>
-                        <li><m>(10+h_i)100\cdot h</m>.</li>
+                    <ol marker="A." cols="2">
+                        <li><m>(10+h)100\cdot h_i</m></li>
+                        <li><m>(10+\Delta h)100\cdot h_i</m></li>
+                        <li><m>(10+h_i)100\cdot \Delta h</m></li>
+                        <li><m>(10+h_i)100\cdot h</m></li>
                     </ol>
                 </p>
             </task>
@@ -223,7 +221,7 @@
                     Consider a cylindrical cone with a base radius of 15 inches and a height of 60 inches.  Suppose the density of the cone is <m>\delta(h)= 15+\sqrt{h}</m> oz/in<m>^3</m>.
                     <figure>
                 <caption>15<m>\times</m> 60 cylindrical cone sliced into two pieces.</caption>
-                    <image xml:id="conesliced" width="100%">
+                    <image xml:id="conesliced" width="50%">
                         <description>15<m>\times</m> 60 cylindrical cone sliced into two pieces.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -264,7 +262,7 @@
             <task>
                 <p>
                     Let <m>r_2</m> be the radius of the circular cross section of the cone, made at height 30 inches.  Recall that <m>\Delta ABC, \Delta AB'C'</m> are similar triangles, what is <m>r_2</m>?
-                    <ol marker="A">
+                    <ol marker="A." cols="2">
                         <li>15 inches.</li>
                         <li>7.5 inches.</li>
                         <li>30 inches.</li>
@@ -275,13 +273,13 @@
             
             <task>
                 <p>
-                    What is the volume of a cylinder with radius <m>r_1=15</m> in and height <m>30</m> in?
+                    What is the volume of a cylinder with radius <m>r_1=15</m> inches and height <m>30</m> inches?
                 </p>
             </task>
             
             <task>
                 <p>
-                    What is the volume of a cylinder with radius <m>r_2</m> and height <m>30</m> in?
+                    What is the volume of a cylinder with radius <m>r_2</m> inches and height <m>30</m> inches?
                 </p>
             </task>
             
@@ -290,10 +288,10 @@
         <activity xml:id="activity-AI4cone2pieces">
             <introduction>
                 <p>
-                    Suppose that we estimate the mass of the cone from  <xref ref="activity-AI4cone"/> with 2 cylinders of height 30 in.
+                    Suppose that we estimate the mass of the cone from  <xref ref="activity-AI4cone"/> with 2 cylinders of height 30 inches.
                     <figure>
                 <caption>15<m>\times</m> 60 cylindrical cone sliced into two pieces.</caption>
-                    <image xml:id="conesliced2pieces" width="100%">
+                    <image xml:id="conesliced2pieces" width="50%">
                         <description>15<m>\times</m> 60 cylindrical cone sliced into two pieces.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -323,7 +321,7 @@
                 </p>
             </introduction>
             <task>
-                <p>Fill out the following table:
+                <p>Fill out the following table.
                     <me>
                         \begin{array}{|c|c|c|c|}
                         \hline
@@ -350,10 +348,10 @@
         <activity xml:id="activity-AI4cone3pieces">
             <introduction>
                 <p>
-                    Suppose that we estimate the mass of the cone from  <xref ref="activity-AI4cone"/> with 3 cylinders of height 20 in.
+                    Suppose that we estimate the mass of the cone from  <xref ref="activity-AI4cone"/> with 3 cylinders of height 20 inches.
                     <figure>
                 <caption>15<m>\times</m> 60 cylindrical cone sliced into three pieces.</caption>
-                    <image xml:id="conesliced3pieces" width="100%">
+                    <image xml:id="conesliced3pieces" width="50%">
                         <description>15<m>\times</m> 60 cylindrical cone sliced into three pieces.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -390,7 +388,7 @@
                 </p>
             </introduction>
             <task>
-                <p>Fill out the following table:
+                <p>Fill out the following table.
                     <me>
                         \begin{array}{|c|c|c|c|}
                         \hline
@@ -404,8 +402,6 @@
                         \hline
                         \end{array}
                     </me>
-                
-                
                 </p>
             </task>
             <task>
@@ -413,7 +409,6 @@
                     What is the estimated mass of the cone?
                 </p>
             </task>
-            
         </activity>
         
         
@@ -423,7 +418,7 @@
                     Suppose that we estimate the mass of the cone from  <xref ref="activity-AI4cone"/> with cylinders of height <m>\Delta h</m>.
                     <figure>
                 <caption>15<m>\times</m> 60 cylindrical cone sliced into many pieces.</caption>
-                    <image xml:id="coneslicedmanypieces" width="100%">
+                    <image xml:id="coneslicedmanypieces" width="50%">
                         <description>15<m>\times</m> 60 cylindrical cone sliced into many pieces.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -446,18 +441,17 @@
                         </latex-image>
                     </image>
             </figure>
-                    
                 </p>
                  </introduction>
             
             <task>
                 <p>
                     Consider the piece sitting atop the slice made at height <m>h_i</m>.  Using <m>\delta(h_i)=15+\sqrt{h_i}</m> as the estimate for the density of this cylinder, what is the mass of this cylinder?
-                    <ol marker="A">
-                        <li><m>(15+\sqrt{h})\pi r_i^2\cdot \Delta h</m>.</li>
-                        <li><m>(15+\sqrt{h_i})\pi r_i^2\cdot \Delta h</m>.</li>
-                        <li><m>(15+\Delta h)\pi r_i^2\cdot \Delta h_i</m>.</li>
-                        <li><m>(15+\sqrt{h_i})\pi r^2\cdot \Delta h</m>.</li>
+                    <ol marker="A." cols="2">
+                        <li><m>(15+\sqrt{h})\pi r_i^2\cdot \Delta h</m></li>
+                        <li><m>(15+\sqrt{h_i})\pi r_i^2\cdot \Delta h</m></li>
+                        <li><m>(15+\Delta h)\pi r_i^2\cdot \Delta h_i</m></li>
+                        <li><m>(15+\sqrt{h_i})\pi r^2\cdot \Delta h</m></li>
                     </ol>
                 </p>
            </task>
@@ -469,7 +463,7 @@
                     Consider a solid where the cross section of the solid at <m>x=x_i</m> has area <m>A(x_i)</m>, and the density when <m>x=x_i</m> is <m>\delta(x_i)</m>.
                     <figure>
                 <caption>Solid approximated with prisms of width <m>\Delta x</m>.</caption>
-                    <image xml:id="Generalsolidsliced" width="100%">
+                    <image xml:id="Generalsolidsliced" width="50%">
                         <description>Solid approximated with prisms of width <m>\Delta x</m>.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -496,17 +490,15 @@
                     </image>
             </figure>
                 </p>
-               
-                
             </introduction>
             
             <task>
                  <p>If we used prisms of width <m>\Delta x</m> to approximate this solid, what is the mass of the slice associated with <m>x_i?</m>
-                    <ol marker="A">
-                        <li><m>A(x)\delta(x)\Delta x</m>.</li>
-                        <li><m>\pi A(x)^2\delta(x_i)\Delta x</m>.</li>
-                        <li><m>A(x_i)\delta(x_i)\Delta x</m>.</li>
-                        <li><m>A(x_i)\delta(x_i)\Delta x_i</m>.</li>
+                    <ol marker="A." cols="2">
+                        <li><m>A(x)\delta(x)\Delta x</m></li>
+                        <li><m>\pi A(x)^2\delta(x_i)\Delta x</m></li>
+                        <li><m>A(x_i)\delta(x_i)\Delta x</m></li>
+                        <li><m>A(x_i)\delta(x_i)\Delta x_i</m></li>
                     </ol>
                 </p>
             </task>
@@ -515,10 +507,10 @@
         <fact xml:id="fact-AI4masscomputation">
             <statement>
                 <p>
-                    Consider a solid where the cross section of the solid at <m>x=x_i</m> has area <m>A(x_i)</m>, and the density when <m>x=x_i</m> is <m>\delta(x_i)</m>.  Suppose the interval <m>[a,b]</m> represented the <m>x</m> values of this solid.  If one sliced the solid into <m>n</m> pieces of width <m>\Delta x=\frac{b-a}{n}</m>, then one can approximate the mass of the solid by <me>\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x.</me>
+                    Consider a solid where the cross section of the solid at <m>x=x_i</m> has area <m>A(x_i)</m>, and the density when <m>x=x_i</m> is <m>\delta(x_i)</m>.  Suppose the interval <m>[a,b]</m> represents the <m>x</m> values of this solid.  If one slices the solid into <m>n</m> pieces of width <m>\Delta x=\frac{b-a}{n}</m>, then one can approximate the mass of the solid by <me>\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x.</me>
                     <figure>
                 <caption>Solid approximated with prisms of width <m>\Delta x</m>.</caption>
-                    <image xml:id="Solidmassapproximation" width="100%">
+                    <image xml:id="Solidmassapproximation" width="50%">
                         <description>Solid approximated with prisms of width <m>\Delta x</m>.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -550,7 +542,7 @@
                     We can then find actual mass by taking the limit as <m>n\to\infty</m>:  <me>\lim_{n\to\infty} \left(\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x\right)=\int_a^b \delta(x)A(x) dx.</me>
                     <figure>
                 <caption>Solid mass.</caption>
-                    <image xml:id="Solidmass2" width="100%">
+                    <image xml:id="Solidmass2" width="50%">
                         <description>Solid mass.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -600,14 +592,14 @@
             </introduction>
             <task>
                 <p>
-                    When the height is <m>h</m> in, what is <m>r</m>?
+                    When the height is <m>h</m> inches, what is <m>r</m>?
                 </p>
                 <hint>
                     <p>
                         Use similar triangles:
                         <figure>
                 <caption>The right triangles in this figure are similar.</caption>
-                    <image xml:id="similartrianglecone" width="100%">
+                    <image xml:id="similartrianglecone" width="50%">
                         <description>a 15 by 60 triangle, with a similar r by 60-h triangle.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -651,20 +643,20 @@
         
         <activity xml:id="activity-A4pyramidmass">
             <introduction>
-                Consider a pyramid with a <m>8\times8</m> ft square base and a height of 16 ft.  Suppose the density of the pyramid is <m>\delta(h)=10+\cos(\pi h)</m> lb/ft<m>^3</m> where <m>h</m> is the height in feet.
+                Consider a pyramid with a <m>8\times 8</m> ft square base and a height of 16 feet.  Suppose the density of the pyramid is <m>\delta(h)=10+\cos(\pi h)</m> lb/ft<m>^3</m> where <m>h</m> is the height in feet.
             
             </introduction>
             
             <task>
                 <p>
-                    When the height is <m>h</m> ft, what is the area of the square cross section at that height, <m>A(h)</m>?
+                    When the height is <m>h</m> feet, what is the area of the square cross section at that height, <m>A(h)</m>?
                 </p>
                 <hint>
                     <p>
                         Use similar triangles:
                         <figure>
                 <caption>The  triangles in this figure are similar.</caption>
-                    <image xml:id="similartrianglepyramid" width="100%">
+                    <image xml:id="similartrianglepyramid" width="50%">
                         <description>a 8 by 60 triangle, with a similar r by 16-h triangle.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -705,11 +697,11 @@
         <activity xml:id="activity-AI4balance">
             <statement>
                 <p>
-                    Consider a board sitting atop the <m>x</m>-axis with six <m>1\times 1</m> blocks each weighing 1 kg are placed upon it.  Two blocks atop the 1, three blocks atop the 2, and one block atop the 6.
+                    Consider a board sitting atop the <m>x</m>-axis with six <m>1\times 1</m> blocks each weighing 1 kg placed upon it in the following way:  two blocks are atop the 1, three blocks are atop the 2, and one block is atop the 6.
                     
                     <figure>
                 <caption>Six 1 kg blocks atop the <m>x</m>-axis.</caption>
-                    <image xml:id="blocksonaxis1" width="100%">
+                    <image xml:id="blocksonaxis1" width="50%">
                         <description>Six 1 by 1 blocks on the x-axis, each weighing a kilogram.  Two blocks atop the 1, three blocks atop the 2, and one block atop the 6.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -738,8 +730,8 @@
                     
                 </p>
                 <p>
-                    Which of the following describes the <m>x</m>-value where the center of gravity of these blocks lie?
-                    <ol marker="A">
+                    Which of the following describes the <m>x</m>-value of the center of gravity of the board with the blocks?
+                    <ol marker="A." cols="2">
                         <li><m>\displaystyle\frac{1+6}{2}=3.5</m>.</li>
                         <li><m>\displaystyle\frac{1+2+6}{3}=3</m>.</li>
                         <li><m>\displaystyle\frac{2\cdot1+3\cdot2+1\cdot6}{6}\approx 2.3333</m>.</li>
@@ -751,11 +743,11 @@
         <activity xml:id="activity-AI4balance2">
             <statement>
                 <p>
-                    Consider a board sitting atop the <m>x</m>-axis with six <m>1\times 1</m> blocks each weighing 1 kg are placed upon it.  Two blocks atop the 1, three blocks atop the 2, and one block atop the 8.
+                    Consider a board sitting atop the <m>x</m>-axis with six <m>1\times 1</m> blocks each weighing 1 kg placed upon it in the following way: two blocks are atop the 1, three blocks are atop the 2, and one block is atop the 8.
                     
                     <figure>
                 <caption>Six 1 kg blocks atop the <m>x</m>-axis.</caption>
-                    <image xml:id="blocksonaxis2" width="100%">
+                    <image xml:id="blocksonaxis2" width="50%">
                         <description>Six 1 by 1 blocks on the x-axis, each weighing a kilogram.  Two blocks atop the 1, three blocks atop the 2, and one block atop the 8.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -784,7 +776,7 @@
                     
                 </p>
                 <p>
-                    Find the <m>x</m>-value where the center of gravity of these blocks lie.
+                    Find the <m>x</m>-value of the center of gravity of the board with the blocks.
                 </p>
             </statement>
         </activity>
@@ -794,10 +786,10 @@
         <fact xml:id="fact-AI4centerofmass">
             <statement>
                 <p>
-                    Consider a solid where the cross section of the solid at <m>x=x_i</m> has area <m>A(x_i)</m>, and the density when <m>x=x_i</m> is <m>\delta(x_i)</m>.  Suppose the interval <m>[a,b]</m> represented the <m>x</m> values of this solid.  Since each slice has approximated mass <m>\delta(x_i)A(x_i)\delta(x_i)</m>, we can approximate the center of mass by taking the weighted <q>average</q> of the <m>x_i</m>-values weighted by the associated mass: <me>\frac{\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x}{\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x}.</me>
+                    Consider a solid where the cross section of the solid at <m>x=x_i</m> has area <m>A(x_i)</m>, and the density when <m>x=x_i</m> is <m>\delta(x_i)</m>.  Suppose the interval <m>[a,b]</m> represents the <m>x</m> values of this solid.  Since each slice has approximate mass <m>\delta(x_i)A(x_i)\delta(x_i)</m>, we can approximate the center of mass by taking the weighted <q>average</q> of the <m>x_i</m>-values weighted by the associated mass: <me>\frac{\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x}{\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x}.</me>
                     <figure>
                 <caption>Solid approximated with prisms of width <m>\Delta x</m>.</caption>
-                    <image xml:id="Solidmassapproximation2" width="100%">
+                    <image xml:id="Solidmassapproximation2" width="50%">
                         <description>Solid approximated with prisms of width <m>\Delta x</m>.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -829,7 +821,7 @@
                     We can then find actual center of mass by taking the limit as <m>n\to\infty</m>:  <me>\lim_{n\to\infty} \left(\frac{\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x}{\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x}\right)=\frac{\int_a^b x\delta(x)A(x)dx}{\int_a^b \delta(x)A(x)dx}=\frac{\int_a^b x\delta(x)A(x)dx}{\text{The Total Mass}}.</me>
                     <figure>
                 <caption>Solid mass.</caption>
-                    <image xml:id="Solidmass" width="100%">
+                    <image xml:id="Solidmass" width="50%">
                         <description>Solid mass.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -887,7 +879,7 @@
         <activity xml:id="activity-TI4pyramidcentermass">
             <statement>
                 <p>
-                    Consider that for the pyramid from <xref ref="activity-A4pyramidmass"/>, a cross section of height <m>h</m> is <m>A(h)=\pi\cdot \left( \frac{16-h}{2}\right)^2</m> ft<m>^2</m>.  Also recall that the density of the pyramid is <m>\delta(h)=10+\cos{\pi h}</m> lb/feet<m>^3</m>, where <m>h</m> is the height in feet, and that we found the total mass to be about 3414.14.6  lb's.
+                    Consider that for the pyramid from <xref ref="activity-A4pyramidmass"/>, a cross section of height <m>h</m> is <m>A(h)=\pi\cdot \left( \frac{16-h}{2}\right)^2</m> ft<m>^2</m>.  Also recall that the density of the pyramid is <m>\delta(h)=10+\cos{\pi h}</m> lb/feet<m>^3</m>, where <m>h</m> is the height in feet, and that we found the total mass to be about 3414.14.6  lbs.
                 </p>
                 <p>
                     Use <xref ref="fact-AI4centerofmass"/> to find the height where the center of mass occurs.

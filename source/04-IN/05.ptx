@@ -156,37 +156,36 @@
     </activity>
     
 <activity xml:id="def_int-fluency-checkit">
-     <statement>
+     <introduction>
         <p>
 Explain how to compute the exact value of each of the following
 definite integrals using the Fundamental Theorem of Calculus.
 Leave all answers in exact form, with no decimal approximations.
-        </p>
-        <ol>
-                <li>
+         </p></introduction>
+        
+                <task>
                     <p>
                         <me>
 \int_{ -3 }^{ -2 } \left( -9 \, x^{3} - 9 \, x^{2} + 1 \right) dx
                         </me>
                     </p>
-                </li>
-                <li>
+                </task>
+                <task>
                     <p>
                         <me>
 \int_{ \frac{7}{6} \, \pi }^{ \frac{5}{4} \, \pi } \left( -3 \, \sin\left(x\right) \right) dx
                         </me>
                     </p>
-                </li>
-                <li>
+                </task>
+                <task>
                     <p>
                         <me>
 \int_{ 2 }^{ 6 } \left( 3 \, e^{x} \right) dx
                         </me>
                     </p>
-                </li>
-        </ol>
-    </statement>
-    <answer>
+                </task>
+        
+   <!-- <answer>
         <p>
            <ol>
                 <li><p><me>\frac{361}{4}</me></p></li>
@@ -194,7 +193,7 @@ Leave all answers in exact form, with no decimal approximations.
                 <li><p><me>3 \, e^{6} - 3 \, e^{2}</me></p></li>
             </ol>
         </p>
-    </answer>
+    </answer>-->
     </activity>    
     
     

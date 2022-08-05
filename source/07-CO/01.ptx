@@ -21,9 +21,10 @@ Consider how we might graph the equation <m>y=2-x^2</m> in the <m>xy</m>-plane.
 Complete the following chart of <m>xy</m> values by plugging each <m>x</m> value
 into the equation to produce its <m>y</m> value.
             </p>
+            <!-- TODO - Make this an <me> -->
             <table>
                 <title>Chart of <m>x</m> and <m>y</m> values to graph</title>
-                <tabular>
+                <tabular halign="center">
                     <row bottom="minor"><cell><m>x</m></cell><cell><m>y</m></cell></row>
                     <row><cell><m>-2</m></cell><cell></cell></row>
                     <row><cell><m>-1</m></cell><cell><m>1</m></cell></row>
@@ -56,7 +57,7 @@ into the equations to produce its <m>x</m> and <m>y</m> values.
             </p>
             <table>
                 <title>Chart of <m>x</m> and <m>y</m> values for each <m>t</m></title>
-                <tabular>
+                <tabular halign="center">
                     <row bottom="minor"><cell><m>t</m></cell><cell><m>x</m></cell><cell><m>y</m></cell></row>
                     <row><cell><m>0</m></cell><cell></cell><cell></cell></row>
                     <row><cell><m>1</m></cell><cell><m>-1</m></cell><cell><m>1</m></cell></row>
@@ -77,7 +78,7 @@ into the equations to produce its <m>x</m> and <m>y</m> values.
     <definition xml:id="co1-definition-parametric">
         <statement>
             <p>
-Graphs in the <m>xy</m> plane can be described by <term>parametric equations</term>
+Graphs in the <m>xy</m> plane can be described by <term>parametric equations</term><idx>parametric equations</idx>
 <m>x=f(t)</m> and <m>y=g(t)</m>, where plugging in different values of <m>t</m> into the functions
 <m>f</m> and <m>g</m> produces different points of the graph.
             </p>
@@ -101,7 +102,7 @@ steps to find out why.
             <p>
 Which of the following equations describes <m>t</m> in terms of <m>x</m>?
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><p><m>t=x-2</m></p></li>
                 <li><p><m>t=x+2</m></p></li>
                 <li><p><m>t=2x</m></p></li>
@@ -113,7 +114,7 @@ Which of the following equations describes <m>t</m> in terms of <m>x</m>?
 Which of these is the result of plugging this choice in for <m>t</m> in the
 parametric equation for <m>y</m>?
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><p><m>y=-x+2^2+4x+2-2</m></p></li>
                 <li><p><m>y=-(x+2)^2+4(x+2)-2</m></p></li>
                 <li><p><m>y=-x^2+2^2+4x+4\cdot2-2</m></p></li>
@@ -173,7 +174,7 @@ sketch of the graph.
             <p>
 What do you obtain by plugging the parametric equations into the expression <m>x^2+y^2</m>?
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><p><m>x^2+y^2=6\sin(\pi x)\cos(\pi x)</m></p></li>
                 <li><p><m>x^2+y^2=-6\sin(\pi x)\cos(\pi x)</m></p></li>
                 <li><p><m>x^2+y^2=9</m></p></li>
@@ -184,7 +185,7 @@ What do you obtain by plugging the parametric equations into the expression <m>x
             <p>
 Which of these describes the <m>xy</m> equation and graph given by these parametric equations?
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><p>a parabola</p></li>
                 <li><p>a line</p></li>
                 <li><p>a circle</p></li>
@@ -195,7 +196,7 @@ Which of these describes the <m>xy</m> equation and graph given by these paramet
             <p>
 The graph of these parametric equations cannot be described by a function. Why?
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><p>The graph fails the vertical line test.</p></li>
                 <li><p>The graph fails the horizontal line test.</p></li>
                 <li><p>The graph doesn't extend vertically to <m>+\infty</m>.</p></li>
@@ -208,7 +209,7 @@ The graph of these parametric equations cannot be described by a function. Why?
         <statement>
             <p>
 The parametric equations <m>x=f(t)</m> and <m>y=g(t)</m> are sometimes written in the form of
-the <term>vector equation</term> <m>\vec r=\tuple{f(t),g(t)}</m>.
+the <term>vector equation</term><idx>vector equation</idx> <m>\vec r=\tuple{f(t),g(t)}</m>.
             </p>
             <p>
 For example, the parametric equations <m>x=3\sin(\pi t)</m> and <m>y=-3\cos(\pi t)</m>
@@ -225,7 +226,7 @@ Consider the vector equation <m>\vec r=\tuple{2t-3,-6t+13}</m>.
         </introduction>
         <task>
             <p>What are the corresponding parametric equations?</p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><p><m>x=2t-3</m> and <m>y=-6t+13</m></p></li>
                 <li><p><m>y=2t-3</m> and <m>x=-6t+13</m></p></li>
                 <li><p><m>xy=2t-3-6t+13</m></p></li>
@@ -233,7 +234,7 @@ Consider the vector equation <m>\vec r=\tuple{2t-3,-6t+13}</m>.
             </ol>
         </task>
         <task>
-            <p>Draw a table of <m>txy</m> values with <m>t=0,1,2,3,4</m>.</p>
+            <p>Draw a table of <m>t</m>, <m>x</m>, and <m>y</m> values with <m>t=0,1,2,3,4</m>.</p>
         </task>
         <task>
             <p>

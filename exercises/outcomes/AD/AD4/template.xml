@@ -2,13 +2,13 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <content>
         <p> 
-Explain how to find the absolute minimum and absolute maximum values of the
+Explain how to find the global minimum and global maximum values of the
 function <m>f(x)={{fx}}</m> on the interval <m>[{{a}},{{b}}]</m>.
         </p>
     </content>
     <outtro>
         <p>
-The absolute extrema may occur at these <m>x</m>-values:
+The global extrema may occur at these <m>x</m>-values:
 <m>{{a}}, {{z}}, {{b}}</m>.
         </p>
         <ul>
@@ -17,7 +17,7 @@ The absolute extrema may occur at these <m>x</m>-values:
             <content><p><m>f({{b}})={{fb}}</m></p></content>
         </ul>
         <p>
-Thus the absolute minimum is <m>{{min}}</m> and the absolute
+Thus the global minimum is <m>{{min}}</m> and the global
 maximum is <m>{{max}}</m>.
         </p>
         <p>

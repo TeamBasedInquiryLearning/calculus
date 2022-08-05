@@ -13,9 +13,9 @@
         <introduction><p>Answer the following.</p></introduction>
         <task>
             <p>
-Using the chain rule, which of these is derivative of <m>e^{x^3}</m> with respect to <m>x</m>?
+Using the chain rule, which of these is the derivative of <m>e^{x^3}</m> with respect to <m>x</m>?
             </p>
-            <ol marker="A" cols="2">
+            <ol marker="A." cols="2">
                 <li><p><m>e^{3x^2}</m></p></li>
                 <li><p><m>x^3e^{x^3-1}</m></p></li>
                 <li><p><m>3x^2e^{x^3}</m></p></li>
@@ -26,7 +26,7 @@ Using the chain rule, which of these is derivative of <m>e^{x^3}</m> with respec
             <p>
 Based on this result, which of these would you suspect to equal <m>\int x^2e^{x^3}\,dx</m>?
             </p>
-            <ol marker="A" cols="2">
+            <ol marker="A." cols="2">
                 <li><p><m>e^{x^3+1}+C</m></p></li>
                 <li><p><m>\frac{1}{3x}e^{x^3+1}+C</m></p></li>
                 <li><p><m>3e^{x^3}+C</m></p></li>
@@ -39,7 +39,7 @@ Based on this result, which of these would you suspect to equal <m>\int x^2e^{x^
             <p>Recall that if <m>u</m> is a function of <m>x</m>,
             then <m>\frac{d}{dx}[u^7]=7u^6 u'</m> by the Chain Rule.</p>
             <p>For each question, choose from the following.</p>
-            <ol marker="A" cols="4">
+            <ol marker="A." cols="4">
                 <li><p><m>\frac{1}{7}u^7+C</m></p></li>
                 <li><p><m>u^7+C</m></p></li>
                 <li><p><m>7u^7+C</m></p></li>
@@ -65,7 +65,7 @@ Based on this result, which of these would you suspect to equal <m>\int x^2e^{x^
     <activity estimated-time="99">
         <statement>
             <p>Based on these activities, which of these choices seems to be a viable strategy for integration?</p>
-            <ol marker="A">
+            <ol marker="A.">
                 <li><p>Memorize an integration formula for every possible function.</p></li>
                 <li><p>Attempt to rewrite the integral in the form <m>\int g'(u)u'dx=g(u)+C</m>.</p></li>
                 <li><p>Keep differentiating functions until you come across the function you want to integrate.</p></li>
@@ -75,8 +75,7 @@ Based on this result, which of these would you suspect to equal <m>\int x^2e^{x^
     <fact>
         <statement>
             <p>
-By the chain rule, <me>\frac{d}{dx}[g(u)+C]=g'(u)u'</me>. There is an
-dual integration technique reversing this process, known as the <term>substitution method</term>.
+By the chain rule, <me>\frac{d}{dx}[g(u)+C]=g'(u)u'</me>. There is a dual integration technique reversing this process, known as the <term>substitution method</term>.
             </p>
             <p>
 This technique involves choosing an appropriate function <m>u</m> in terms of <m>x</m>
@@ -92,7 +91,7 @@ Recall that <m>u'=\frac{du}{dx}</m>. This allows for the following:
                 <me>\int g'(u)u' dx=\int g'(u)\frac{du}{dx}\,dx=\int g'(u)du=g(u)+C</me>.
             </p>
             <p>
-Therefore rather than dealing with equations like <m>u'=\frac{du}{dx}=x^2</m>, we will prefer to write
+Therefore, rather than dealing with equations like <m>u'=\frac{du}{dx}=x^2</m>, we will prefer to write
 <m>du=x^2\,dx</m>.
             </p>
         </statement>
@@ -172,7 +171,7 @@ of how to find
 Which step of the previous example do you think was
 the most important?
             </p>
-            <ol marker="A">
+            <ol marker="A.">
                 <li>
                     <p>
 Choosing <m>u=x^3</m>.
@@ -279,11 +278,9 @@ to use yourself?
     <activity estimated-time="99">
         <statement>
             <p>
-Suppose we wanted to try substitution method to find
-<m>\int e^x\cos(e^x+3)\,dx</m>. Which of these choices
-for <m>u</m> appears to be most useful?
+Suppose we wanted to try the substitution method to find <m>\int e^x\cos(e^x+3)\,dx</m>. Which of these choices for <m>u</m> appears to be most useful?
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li>
                     <p>
 <m>u=x</m>, so <m>du=dx</m>
@@ -375,7 +372,7 @@ Given that <m>
 \int_0^2 \frac{x^3}{x^4+4}\,dx
 </m>?
             </p>
-            <ol marker="A" cols="2">
+            <ol marker="A." cols="2">
                 <li><p><m>\frac{8}{20}</m></p></li>
                 <li><p><m>-\frac{8}{20}</m></p></li>
                 <li><p><m>\frac{1}{4}\ln(20)-\frac{1}{4}\ln(4)</m></p></li>
@@ -408,7 +405,7 @@ What's wrong with the following computation?
 &amp;= \frac{1}{4}\ln 2-\frac{1}{4}\ln 0
                 </mrow>
             </md>
-            <ol marker="A">
+            <ol marker="A.">
                 <li>
                     <p>
 The wrong <m>u</m> substitution was made.
@@ -431,7 +428,7 @@ The <m>x</m> values <m>0,2</m> were plugged in for the variable <m>u</m>.
         <statement>
             <p>
 When <m>x=2</m>, we know that <m>u=2^4+4=20</m>.
-Likewise when <m>x=0</m>, we know that <m>u=0^4+4=4</m>.
+Likewise, when <m>x=0</m>, we know that <m>u=0^4+4=4</m>.
 Use these facts to complete the below computation.
             </p>
             <md>
@@ -570,7 +567,7 @@ Use substitution to show that
 \int u^5(u^3+1)^{1/3}\,du=
 \frac{1}{7}(u^3+1)^{7/3}-
 \frac{1}{4}(u^3+1)^{4/3}+C
-                </me>
+                </me>.
             </p>
         </statement>
     </activity>

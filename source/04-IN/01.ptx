@@ -28,7 +28,7 @@
 <activity>
     <p>
     Consider the linear function <m>f(x)=2x</m>. Sketch a graph of this function. Consider the area between the <m>x</m>-axis and the function on the interval <m>[0,1]</m>. What is <m>\int_0^1 f(x) \, dx</m>?  </p>
-     <ol marker="A">
+     <ol marker="A." cols="2">
               <li><p>1</p></li>
                 <li><p>2</p></li>
                 <li><p>3</p></li>
@@ -40,7 +40,7 @@
 <activity>
     <p>
     Consider the linear function <m>f(x)=4x</m>. What is <m>\int_0^1 f(x) \, dx</m>?  </p>
-     <ol marker="A">
+     <ol marker="A." cols="2">
               <li><p>1</p></li>
                 <li><p>2</p></li>
                 <li><p>3</p></li>
@@ -51,7 +51,7 @@
 <activity>
     <p>
     Consider the linear function <m>f(x)=2x +2</m>. Notice that on the interval <m>[0,1]</m>, the shape formed between the graph and the <m>x</m>-axis is a trapezoid. What is <m>\int_0^1 f(x) \, dx</m>?</p>
-     <ol marker="A">
+     <ol marker="A." cols="2">
               <li><p>1</p></li>
                 <li><p>2</p></li>
                 <li><p>3</p></li>
@@ -63,7 +63,7 @@
  <activity>
     <p>
     Consider the function <m>f(x)=\sqrt{4-x^2}</m>. Notice that on the domain <m>[-2,2]</m>, the shape formed between the graph and the <m>x</m>-axis is a semicircle. What is <m>\int_{-2}^2 f(x) \, dx</m>?</p>
-     <ol marker="A">
+     <ol marker="A." cols="2">
               <li><p><m>\pi</m></p></li>
                   <li><p><m>2\pi</m></p></li>
                   <li><p><m>3\pi</m></p></li>

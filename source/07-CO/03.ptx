@@ -48,7 +48,7 @@ one leg parallel to the <m>x</m>-axis, and the other parallel to the <m>y</m>-ax
             <p>
 How long are these legs?
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><p><m>3</m> and <m>7</m>.</p></li><!--correct-->
                 <li><p><m>4</m> and <m>8</m>.</p></li>
                 <li><p><m>3</m> and <m>8</m>.</p></li>
@@ -60,7 +60,7 @@ How long are these legs?
 The Pythagorean theorem states that for a right triangle with leg lengths <m>a,b</m>
 and hypotenuse length <m>c</m>, we have...
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><p><m>a=b=c</m>.</p></li>
                 <li><p><m>a+b=c</m>.</p></li>
                 <li><p><m>a^2=b^2=c^2</m>.</p></li>
@@ -71,7 +71,7 @@ and hypotenuse length <m>c</m>, we have...
             <p>
 Using the leg lengths and Pythagorean theorem, how long must the red dashed hypotenuse be?
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><p><m>\sqrt{20}\approx 4.47</m>.</p></li>
                 <li><p><m>\sqrt{56}\approx 7.48</m>.</p></li><!--correct-->
                 <li><p><m>\sqrt{67}\approx 8.19</m>.</p></li>
@@ -83,7 +83,7 @@ Using the leg lengths and Pythagorean theorem, how long must the red dashed hypo
 Compared with the blue parametric curve connecting the same two points, is the red dashed line
 segement length an overestimate or underestimate?
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><p>Overestimate: the blue curve is shorter than the red line.</p></li>
                 <li><p>Underestimate: the blue curve is longer than the red line.</p></li>
                 <li><p>Exact: the blue curve is exactly as long as the red line.</p></li>
@@ -110,7 +110,7 @@ This formula will need to be modified to measure a curved path between two point
     <observation>
         <statement>
             <p>
-By approximating the curve by several, say <m>N</m>-many, segements connecting
+By approximating the curve by several (say <m>N</m>) segements connecting
 points along the curve, we obtain a better approximation than a single line segment,
 as shown in <xref ref="CO3-parametric-subdivide"/>.
             </p>
@@ -147,7 +147,7 @@ Let <m>\Delta L_1,\Delta L_2,\Delta L_3</m> describe the lengths of each
 of the three segements. Which expression describes the total length of these
 segments?
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><p><m>\Delta L_1\times \Delta L_2\times \Delta L_3</m></p></li>
                 <li><p><m>\Delta L_1+ 2\Delta L_2+ 3\Delta L_3</m></p></li>
                 <li><p><m>\sum_{i=1}^{3} \Delta L_i</m></p></li>
@@ -162,7 +162,7 @@ accurately, the change <m>\Delta t_i</m> of <m>t</m> between each point of the s
             <p>
 Which of these is algebraically the same as the above formula for <m>\Delta L_i</m>?
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><p><m>\sqrt{\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2}</m></p></li>
                 <li><p><m>\sqrt{\left[\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2\right]\Delta t_i}</m></p></li>
                 <li><p><m>\sqrt{\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2}\Delta t_i</m></p></li>
@@ -173,8 +173,8 @@ Which of these is algebraically the same as the above formula for <m>\Delta L_i<
 Finally, we'll want to increase <m>N</m> from <m>3</m> so that it limits to <m>\infty</m>.
 What can we conclude when that happens?
             </p>
-            <ol marker="A">
-                <li><p>Each segment is infintely small</p></li>
+            <ol marker="A." cols="2">
+                <li><p>Each segment is infintely small.</p></li>
                 <li><p><m>\Delta x_i\to 0</m></p></li>
                 <li><p><m>\Delta t_i\to 0</m></p></li>
                 <li><p><m>\frac{\Delta x_i}{\Delta t_i}\to\frac{dx}{dt}</m></p></li>
@@ -191,7 +191,7 @@ the Riemann sum
 <me>\sum_{i=1}^\infty \sqrt{\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2}\Delta t_i</me>.
             </p>
             <p>
-Thus arclength along a parametric curve from <m>a\leq t\leq b</m> may be calculated by using the corresponding
+Thus arclength<idx>arclength formula</idx> along a parametric curve from <m>a\leq t\leq b</m> may be calculated by using the corresponding
 definite integral
 <me>\int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt</me>.
             </p>
@@ -268,7 +268,7 @@ to produce the arclength of the graph of a function <m>y=f(x)</m>.
             <p>
 Let <m>x=t</m>. How can <m>\frac{dx}{dt}</m> be simplified?
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><p><m>dx</m></p></li>
                 <li><p><m>dt</m></p></li>
                 <li><p><m>1</m></p></li><!--correct-->
@@ -279,11 +279,11 @@ Let <m>x=t</m>. How can <m>\frac{dx}{dt}</m> be simplified?
             <p>
 Given <m>x=t</m>, how should <m>\frac{dy}{dt}</m> and <m>dt</m> be rewritten?
             </p>
-            <ol marker="A">
-                <li><p><m>\frac{dy}{dt}=\frac{dy}{dx}</m> and <m>dt=dx</m></p></li>
-                <li><p><m>\frac{dy}{dt}=\frac{dx}{dt}</m> and <m>dt=dx</m></p></li>
-                <li><p><m>\frac{dy}{dt}=\frac{dy}{dx}</m> and <m>dt=1</m></p></li>
-                <li><p><m>\frac{dy}{dt}=\frac{dy}{dt}</m> and <m>dt=1</m></p></li>
+            <ol marker="A." cols="2">
+                <li><p><m>\frac{dy}{dt}=\frac{dy}{dx}</m> and <m>dt=dx</m>.</p></li>
+                <li><p><m>\frac{dy}{dt}=\frac{dx}{dt}</m> and <m>dt=dx</m>.</p></li>
+                <li><p><m>\frac{dy}{dt}=\frac{dy}{dx}</m> and <m>dt=1</m>.</p></li>
+                <li><p><m>\frac{dy}{dt}=\frac{dy}{dt}</m> and <m>dt=1</m>.</p></li>
             </ol>
         </task>
         <task>

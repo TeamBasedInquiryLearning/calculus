@@ -69,7 +69,7 @@
         </table>
         <p>
         Based on the values of <xref ref="table-limit-numerical1"/>, what is the best approximation for <m>\lim_{x\to 7} f(x)</m>?
-        <ol marker="A">
+        <ol marker="A." cols="2">
             <li><p> the limit is approximately 7</p></li>
             <li><p> the limit is approximately 0.17 </p></li>
             <li><p> the limit is approximately 0.16</p></li>
@@ -148,11 +148,11 @@ Now let us say you are also given a table of numerical values
 (<xref ref="table-limit-numerical2"/>) for the function. Given this new information which of the choices below best describes the limit of 
 the function as <m>x</m> tends to 2?  
     </p>
-    <ol marker="A">
-            <li><p> There is not enough information because we do not know the value of the function at <m>x = 2</m></p></li>
-            <li><p> Can be approximated to be 1 because the data in the table and the graph show that from the left and the right the function approaches 1 as <m>x</m> goes to 2 </p></li>
-            <li><p> Can be approximated to be 1 because the values appear to approach 1 and the graph appears to approach 1, but we should zoom in on the graph to be sure </p></li>
-            <li><p> Cannot be approximated because the function might not exist at <m>x = 2</m>.</p></li>
+    <ol marker="A.">
+            <li><p> There is not enough information because we do not know the value of the function at <m>x = 2</m>.</p></li>
+            <li><p> The limit can be approximated to be 1 because the data in the table and the graph show that from the left and the right the function approaches 1 as <m>x</m> goes to 2. </p></li>
+            <li><p> The limit can be approximated to be 1 because the values appear to approach 1 and the graph appears to approach 1, but we should zoom in on the graph to be sure. </p></li>
+            <li><p> The limit cannot be approximated because the function might not exist at <m>x = 2</m>.</p></li>
         </ol>
     </activity>
 
@@ -215,7 +215,7 @@ the function as <m>x</m> tends to 2?
         </table>
     <p>Based on <xref ref = "table-limit-numerical3"/>, what information can be inferred about <m>\displaystyle \lim_{x\to 1^-}f(x)</m>, <m>\displaystyle \lim_{x\to 1^+}f(x)</m>, and <m>\displaystyle \lim_{x\to 1}f(x)</m>?
 </p>
-        <ol marker="A">
+        <ol marker="A.">
             <li><p> <m> \displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\lim_{x\rightarrow 1}f(x) = 0</m></p></li>
             <li><p> <m> \displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\lim_{x\rightarrow 1}f(x)</m> does not exist </p></li>
             <li><p> <m>\displaystyle \lim_{x\rightarrow 1^-}f(x) = 0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = -0.5</m>, and <m>\lim_{x\rightarrow 1}f(x)</m> does not exist</p></li>
@@ -231,7 +231,7 @@ the function as <m>x</m> tends to 2?
        <task>
         <p> Of the following options, at which values given would you evaluate <m>f(x)</m> to best determine <m>\displaystyle \lim_{x \to 2}f(x)</m> numerically?</p>
         
-               <ol marker="A">
+               <ol marker="A." cols="2">
                     <li><p> 1.9, 1.99, 2.0, 2.01, 2.1</p></li>
                     <li><p> 1.98, 1.99, 2.0, 2.01, 2.02 </p></li>
                     <li><p> 1.8, 1.9, 2.0, 2.1, 2.2</p></li>
@@ -241,16 +241,16 @@ the function as <m>x</m> tends to 2?
         </task>
 
 <task>  
-        <p> Use the values that you chose in part A to calculate an approximation for <m>\lim_{x \to 2}f(x)</m>. </p>
+        <p> Use the values that you chose in part (a) to calculate an approximation for <m>\lim_{x \to 2}f(x)</m>. </p>
         </task>
 <task>
         <p> Which value best describes the limit that you obtained in part (b)?</p>
         
-            <ol marker="A">
-            <li><p> the approximate value is 41.25</p></li>
-            <li><p> the approximate value is 41.5 </p></li>
-            <li><p> approximate value is 41.75</p></li>
-            <li><p> approximate value is 42</p></li>
+            <ol marker="A.">
+            <li><p> The approximate value is 41.25</p></li>
+            <li><p> The approximate value is 41.5 </p></li>
+            <li><p> The approximate value is 41.75</p></li>
+            <li><p> The approximate value is 42</p></li>
         </ol>
         
 </task>
@@ -259,13 +259,13 @@ the function as <m>x</m> tends to 2?
 
     <activity xml:id = "activity-limits-numerically5">
               <introduction> 
-                <p> In <xref ref="figure-limit-numerical-5" />is the graph for <m>f(x) = \sin\left(\frac{1}{x}\right)</m>.  Several values for <m>f(x)</m> in the neighborhood of <m>x = 0</m> are approximated in  <xref ref = "table-limit-numerical5"/>.  </p>
+                <p> In <xref ref="figure-limit-numerical-5" /> is the graph for <m>f(x) = \sin\left(\frac{1}{x}\right)</m>.  Several values for <m>f(x)</m> in the neighborhood of <m>x = 0</m> are approximated in  <xref ref = "table-limit-numerical5"/>.  </p>
         <figure xml:id="figure-limit-numerical-5">
        <image width="50%" source="limits_numerical5_graph.png" />
                 <caption>Graph of <m>f(x) = \sin(1/x)</m>.</caption>
         </figure>
         <table xml:id="table-limit-numerical5">
-        <tabular>
+        <tabular halign="center">
                 <row bottom="minor">
                   <cell>
                       <m>x</m>
@@ -321,12 +321,12 @@ the function as <m>x</m> tends to 2?
             </tabular>
         </table>
 </introduction>
-     <task> <statement> <p>Based on the graph and table what is the best explanation for the limit as x tends to zero?</p>
-        <ol marker="A">
-            <li><p> the limit does not exist because the left and right limits have opposite values.</p></li>
-            <li><p> the limit does not exist because we do not have enough information to answer the question. </p></li>
-            <li><p> the limit does not exist because the function is oscillating between -1 and 1.</p></li>
-            <li><p> the limit does not exist because you are dividing by zero when <m>x = 0</m> for <m>f(x).</m></p></li>
+        <task> <statement> <p>Based on the graph and table what is the best explanation for the limit as <m>x</m> tends to zero?</p>
+        <ol marker="A.">
+            <li><p> The limit does not exist because the left and right limits have opposite values.</p></li>
+            <li><p> The limit does not exist because we do not have enough information to answer the question. </p></li>
+            <li><p> The limit does not exist because the function is oscillating between -1 and 1.</p></li>
+            <li><p> The limit does not exist because you are dividing by zero when <m>x = 0</m> for <m>f(x).</m></p></li>
 
         </ol>
          </statement> </task>   

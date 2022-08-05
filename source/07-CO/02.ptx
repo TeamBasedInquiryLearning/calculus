@@ -22,7 +22,7 @@ The coordinate on this graph at <m>t=2</m> is <m>(3,-3)</m>.
 Which of the following equations of <m>x,y</m> describes the graph of
 these paramteric equations?
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><p><m>y=2x(x+2)=2x^2+2x</m></p></li>
                 <li><p><m>y=2x(x-2)=2x^2-2x</m></p></li>
                 <li><p><m>y=x(x+4)=x^2+4x</m></p></li>
@@ -31,10 +31,10 @@ these paramteric equations?
         </task>
         <task>
             <p>
-Which of the following describes the slope tangent to the
+Which of the following describes the slope of the line tangent to the
 graph at the point <m>(3,-3)</m>?
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><p><m>\frac{dy}{dx}=2x+4</m>, which is <m>10</m> when <m>x=3</m>.</p></li>
                 <li><p><m>\frac{dy}{dx}=2x+4</m>, which is <m>8</m> when <m>t=2</m>.</p></li>
                 <li><p><m>\frac{dy}{dx}=2x-4</m>, which is <m>2</m> when <m>x=3</m>.</p></li><!--correct-->
@@ -47,7 +47,7 @@ Note that the parametric equation for <m>y</m> simplifies to <m>y=4t^2-12t+5</m>
 What do we get for the derivatives <m>\frac{dx}{dt}</m> of <m>x=2t-1</m> and <m>\frac{dy}{dt}</m>
 for <m>y=4t^2-12t+5</m>?
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><p><m>\frac{dx}{dt}=2</m> and <m>\frac{dy}{dt}=8t-12</m>.</p></li><!--correct-->
                 <li><p><m>\frac{dx}{dt}=-1</m> and <m>\frac{dy}{dt}=8t-12</m>.</p></li>
                 <li><p><m>\frac{dx}{dt}=2</m> and <m>\frac{dy}{dt}=6t+5</m>.</p></li>
@@ -59,25 +59,25 @@ for <m>y=4t^2-12t+5</m>?
 It follows that when <m>t=2</m>, <m>\frac{dx}{dt}=2</m> and <m>\frac{dy}{dt}=4</m>.
 Which of the following conjectures seems most likely?
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li>
                     <p>
-The slope <m>\frac{dy}{dx}=2</m> could also be found by computing <m>\frac{dx}{dt}+\frac{dy}{dt}</m>.
+The slope <m>\frac{dy}{dx}</m> could also be found by computing <m>\frac{dx}{dt}+\frac{dy}{dt}</m>.
                     </p>
                 </li>
                 <li><!--correct-->
                     <p>
-The slope <m>\frac{dy}{dx}=2</m> could also be found by computing <m>\frac{dy/dt}{dx/dt}</m>.
+The slope <m>\frac{dy}{dx}</m> could also be found by computing <m>\frac{dy/dt}{dx/dt}</m>.
                     </p>
                 </li>
                 <li>
                     <p>
-The slope <m>\frac{dy}{dx}=2</m> is always equal to <m>\frac{dx}{dt}</m>.
+The slope <m>\frac{dy}{dx}</m> is always equal to <m>\frac{dx}{dt}</m>.
                     </p>
                 </li>
                 <li>
                     <p>
-The slope <m>\frac{dy}{dx}=2</m> is always equal to <m>\frac{dy}{dt}</m>.
+The slope <m>\frac{dy}{dx}</m> is always equal to <m>\frac{dy}{dt}</m>.
                     </p>
                 </li>
             </ol>
@@ -112,7 +112,7 @@ when <m>t=2</m>.
         </task>
         <task>
             <p>
-Earlier we determined that the tangent slope was <m>2</m>. Draw a line
+Earlier we determined that the slope of the tangent line was <m>2</m>. Draw a line
 with slope <m>2</m> passing through <m>(3,-3)</m> and confirm that it
 appears to be tangent.
             </p>
@@ -123,7 +123,7 @@ Use the point-slope
 formula <m>y-y_0=m(x-x_0)</m> along with the slope <m>2</m> and point
 <m>(3,-3)</m> to find the exact equation for this tangent line.
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><p><m>y=2x-10</m></p></li>
                 <li><p><m>y=2x-9</m></p></li>
                 <li><p><m>y=2x-8</m></p></li>
@@ -142,7 +142,7 @@ Consider the vector equation <m>\vec{r}(t)=\tuple{3t^2-9,t^3-3t}</m>.
             <p>
 What are the corresponding parametric equations and their derivatives?
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li>
                     <p>
 <m>y=3t^2-9</m> and <m>x=t^3-3t</m>; <m>\frac{dy}{dt}=9t</m> and <m>\frac{dx}{dt}=3t-6</m>
@@ -170,7 +170,7 @@ What are the corresponding parametric equations and their derivatives?
 The formula <m>\frac{dy}{dx}=\frac{dy/dt}{dx/dt}</m> allows us to compute slopes
 as which of the following functions of <m>t</m>?
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><p><m>\frac{6t}{t^2+3}</m></p></li>
                 <li><p><m>\frac{6t}{t^2+1}</m></p></li>
                 <li><p><m>\frac{t^2-1}{2t}</m></p></li><!--correct-->
@@ -182,7 +182,7 @@ as which of the following functions of <m>t</m>?
 Find the point, tangent slope, and tangent line equation (recall <m>y-y_0=m(x-x_0)</m>)
 corresponding to the parameter <m>t=-2</m>.
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><p>Point <m>(-3,-4)</m>, slope <m>\frac{3}{4}</m>, EQ <m>y=\frac{3}{4}x+7</m></p></li>
                 <li><p>Point <m>(3,-14)</m>, slope <m>-\frac{4}{3}</m>, EQ <m>y=-\frac{4}{3}x-10</m></p></li><!--correct-->
                 <li><p>Point <m>(1,-11)</m>, slope <m>\frac{2}{3}</m>, EQ <m>y=\frac{2}{3}x-11</m></p></li>

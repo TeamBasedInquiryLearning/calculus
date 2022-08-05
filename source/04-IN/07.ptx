@@ -103,27 +103,26 @@ then verify that its value is <m>279</m> square units.
 </activity>
 
   <activity checkit-seed="0019" checkit-slug="IN7" checkit-title="Area under curves">
-    <statement>
+   <introduction>
         <p>
             Answer the following questions concerning
             <m>f(x)=6 \, x^{2} - 96</m>.
-        </p>
-        <ol>
-            <li>
+       </p></introduction>
+        
+            <task>
                 <p>
 What is the total area between <m>f(x)=6 \, x^{2} - 96</m> and the <m>x</m>-axis
 from <m>x=-1</m> to <m>x=9</m>?
                 </p>
-            </li>
-            <li>
+            </task>
+            <task>
                 <p>
 What is the net area between <m>f(x)=6 \, x^{2} - 96</m> and the <m>x</m>-axis
 from <m>x=-1</m> to <m>x=9</m>?
                 </p>
-            </li>
-        </ol>
-    </statement>
-    <answer>
+            </task>
+        
+  <!--  <answer>
          <ol>
             <li>
                 <p>
@@ -144,6 +143,6 @@ from <m>x=-1</m> to <m>x=9</m>?
                 </p>
             </li>
         </ol>
-    </answer>
+    </answer>-->
 </activity>
 </section>

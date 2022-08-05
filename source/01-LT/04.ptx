@@ -19,7 +19,7 @@
           <p>
             Which of the following scenarios best describes a continuous function?
           </p>
-          <ol marker="A">
+          <ol marker="A.">
             <li>
               <p>
                 The age of a person reported in years
@@ -93,7 +93,7 @@
     <definition xml:id="definition-continuity">
       <statement>
         <p>
-          A function <m>f</m> is <term>continuous</term> at <m>x = a</m> provided that
+          A function <m>f</m> is <term>continuous</term><idx>continuous function</idx> at <m>x = a</m> provided that
           <ol marker="1">
             <li>
               <p>
@@ -120,7 +120,7 @@
         <p>
           Suppose that some function <m>h(x)</m> is continuous at <m>x = -3</m>. Use <xref ref="definition-continuity"/> to decide which of the following quantities are equal to each other.
         </p>
-        <ol marker="A">
+        <ol marker="A." cols="2">
           <li>
             <p>
               <m>\lim_{x \to -3^+} h(x)</m>
@@ -184,15 +184,15 @@
         <p>
           Which condition is <em>stronger</em>, meaning it implies the other?
         </p>
-        <ol marker="A">
+        <ol marker="A." cols="2">
           <li>
             <p>
-              <m>f</m> has a limit at <m>x = a</m>, or
+                <m>f</m> has a limit at <m>x = a</m>
             </p>
           </li>
           <li>
             <p>
-              <m>f</m> is continuous at <m>x = a</m>?
+              <m>f</m> is continuous at <m>x = a</m>
             </p>
           </li>
         </ol>
@@ -204,7 +204,7 @@
         <p>
           Previously, you have used graphs, tables, and formulas to answer questions about limits. Which of those are suitable for answering questions about continuity?
         </p>
-        <ol marker="A">
+        <ol marker="A." cols="2">
           <li>
             <p>
               Graphs only
@@ -283,10 +283,10 @@
     <remark>
       <statement>
         <p>
-          When <m>\lim_{x \to a} f(x)</m> exists but is not equal to <m>f(a)</m>, we say that <m>f</m> has a <term>removable discontinuity</term> at <m>x = a</m>. This is because if <m>f(a)</m> were redefined to be equal to <m>\lim_{x \to a} f(x)</m>, the redefined function would be continuous at <m>x = a</m>, thus <q>removing</q> the discontinuity.
+          When <m>\lim_{x \to a} f(x)</m> exists but is not equal to <m>f(a)</m>, we say that <m>f</m> has a <term>removable discontinuity</term><idx>removable discontinuity</idx> at <m>x = a</m>. This is because if <m>f(a)</m> were redefined to be equal to <m>\lim_{x \to a} f(x)</m>, the redefined function would be continuous at <m>x = a</m>, thus <q>removing</q> the discontinuity.
         </p>
         <p>
-          When the left and right limit exist separately, but are not equal, the discontinuity is not removable and is called a <term>jump discontinuity</term>.
+          When the left and right limit exist separately, but are not equal, the discontinuity is not removable and is called a <term>jump discontinuity</term><idx>jump discontinuity</idx>.
         </p>
       </statement>
     </remark>
@@ -294,9 +294,8 @@
     
    
     <activity xml:id="continuity-checkit">
-    <statement>
-        <ol>
-            <li>
+    
+            <task>
                 <p>Determine the value of <m>b</m> to make <m>h(x)</m> continuous at <m>x=5</m>.</p>
                 <p>
                     <me>
@@ -306,8 +305,8 @@
                         \end{cases}
                     </me>
                 </p>
-            </li>
-            <li>
+            </task>
+            <task>
                 <p>
 Classify the type of discontinuity present at <m>x=-6</m> for 
 the function <m>f(x)</m>.</p>
@@ -320,10 +319,9 @@ the function <m>f(x)</m>.</p>
                         \end{cases}
                     </me>
                 </p>
-            </li>
-        </ol>
-    </statement>
-    <answer>
+            </task>
+       
+  <!--  <answer>
         <ol>
             <li>To make <m>h(x)</m> continuous at <m>x=5</m>, let <m>b=4</m>.</li>
                 <li>
@@ -331,7 +329,7 @@ The function <m>f(x)</m> has a
 jump discontinuity.
                 </li>
         </ol>
-    </answer>
+    </answer>-->
 </activity>
     
     
@@ -383,7 +381,7 @@ jump discontinuity.
         </activity>
 
   
-<theorem xml:id="IVT">
+<theorem xml:id="IVT"><title>Intermediate Value Theorem</title><idx>Intermediate Value Theorem</idx>
              <statement>
              <p> Suppose that: </p>
              <ul>
@@ -395,7 +393,7 @@ jump discontinuity.
     
     <activity xml:id="IVT-ex">
         <introduction>
-            <p>    In this activity we will explore a mathematical theorem, the Intermediate Value Theorem. Here is the statement of the theorem.</p> 
+            <p>    In this activity we will explore a mathematical theorem, the Intermediate Value Theorem.</p> 
        </introduction>
  <task>
             <statement>
@@ -411,7 +409,7 @@ jump discontinuity.
         </task>
          <task>
             <statement>
-                <p> The part of the theorem that starts with “Suppose…” forms the assumptions of the theorem, whilst the part of the theorem that starts with “Then…” is the conclusion of the theorem. What are the assumptions of the Intermediate Value Theorem? What is the conclusion?
+                <p> The part of the theorem that starts with “Suppose…” forms the assumptions of the theorem, while the part of the theorem that starts with “Then…” is the conclusion of the theorem. What are the assumptions of the Intermediate Value Theorem? What is the conclusion?
 </p> </statement> </task>
         <task>
             <statement>

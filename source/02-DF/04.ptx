@@ -13,40 +13,37 @@
  <activity xml:id="activity-df-product-rule-intro">
  <introduction>
      <p permid="TEn">
-    Let <m>f</m> and <m>g</m> be the functions defined by
-    <m>f(t) = 2t^2</m> and <m>g(t) = t^3 + 4t</m>.
+   Let <m>f</m> and <m>g</m> be the functions defined by
+    <me>f(t) = 2t^2 \, , \, g(t) = t^3 + 4t. </me>
      </p>
 </introduction> 
    <task><p>
-          Determine <m>f'(t)</m> and <m>g'(t)</m>.
+          Find <m>f'(t)</m> and <m>g'(t)</m>.
         </p></task>
-        
-      
-
       <task>
         <p>
-          Let <m>p(t) = 2t^2 (t^3 + 4t)</m> and observe that <m>p(t) = f(t) \cdot g(t)</m>.
-          Rewrite the formula for <m>p</m> by distributing the <m>2t^2</m> term.
+          Let <m>P(t) = 2t^2 \, (t^3 + 4t)</m> and observe that <m>P(t) = f(t) \cdot g(t)</m>.
+          Rewrite the formula for <m>P</m> by distributing the <m>2t^2</m> term.
           Then,
-          compute <m>p'(t)</m> using the sum and constant multiple rules.
+          compute <m>P'(t)</m> using the power, sum, and scalar multiple rules.
         </p>
       </task>
 
       <task>
         <p>
-          True or false: <m>p'(t) = f'(t) \cdot g'(t)</m>.
+          True or false: <m>P'(t) = f'(t) \cdot g'(t)</m>.
         </p>
       </task>
 </activity>
     
-<theorem>
+<theorem xml:id="thm-df-product-rule">
  <title>Product Rule</title>
       <p>
            
         If <m>f</m> and <m>g</m> are differentiable functions,
         then their product <m>P(x) = f(x) \cdot g(x)</m> is also a differentiable function, and
         <me>
-          P'(x) = f(x) g'(x) + g(x) f'(x)
+          P'(x) = f'(x) \cdot g(x) + f(x) \cdot g'(x)
         </me>.
       </p>
     
@@ -58,7 +55,7 @@
        <activity xml:id="activity-df-product-rule-simplify">
         <introduction>
             <p>
-              The product rule is a powerful tool, but sometimes it isn’t necessary; a more elementary rule may suffice. Which of the following products could you find the derivative of without using the product rule? Select all that apply.
+              The product rule is a powerful tool, but sometimes it isn’t necessary; a more elementary rule may suffice. For which of the following functions can you find the derivative without using the product rule? Select all that apply.
   
             </p>
            
@@ -66,7 +63,7 @@
         </introduction>
         
            
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><m>f(x)=e^x \sin x</m></li>
                 <li><m>f(x)=\sqrt{x}(x^3+3x-3)</m></li>
                 <li><m>f(x)=(4)(x^5)</m></li>
@@ -78,7 +75,7 @@
  <activity xml:id="activity-df-product-rule-fluency">
         <introduction>
             <p>
-              Find the derivative of the following functions by using the product rule.
+              Find the derivative of the following functions using the product rule.
             </p>
         </introduction>
        <task><m>f(x)=(x^2+3x)\sin x</m></task>
@@ -90,39 +87,39 @@
  <introduction>
      <p permid="TEn">
     Let <m>f</m> and <m>g</m> be the functions defined by
-    <m>f(t) = 2t^2</m> and <m>g(t) = t^3 + 4t</m>.
+           <me>f(t) = 2t^2 \, , \, g(t) = t^3 + 4t.</me>
      </p>
 </introduction> 
    <task><p>
-       Determine <m>f'(t)</m> and <m>g'(t)</m>. (These were found previously in <xref ref="activity-df-product-rule-intro" />.) 
+       Determine <m>f'(t)</m> and <m>g'(t)</m>. (You found these previously in <xref ref="activity-df-product-rule-intro" />.) 
         </p></task>
         
       
 
       <task>
         <p>
-           Let <m>q(t) = \frac{t^3 + 4t}{2t^2}</m> and observe that <m>q(t) = \frac{g(t)}{f(t)}</m>.
-          Rewrite the formula for <m>q</m> by dividing each term in the numerator by the denominator and simplify to write <m>q</m> as a sum of constant multiples of powers of <m>t</m>.
+           Let <m>Q(t) = \frac{t^3 + 4t}{2t^2}</m> and observe that <m>Q(t) = \frac{g(t)}{f(t)}</m>.
+          Rewrite the formula for <m>Q</m> by dividing each term in the numerator by the denominator and use rules of exponents to write <m>Q</m> as a sum of scalar multiples of power functions.
           Then,
-          compute <m>q'(t)</m> using the sum and constant multiple rules.
+          compute <m>Q'(t)</m> using the sum and scalar multiple rules.
         </p>
       </task>
 
       <task>
         <p>
-          True or false: <m>q'(t) = \frac{g'(t)}{f'(t)}</m>.
+          True or false: <m>Q'(t) = \frac{g'(t)}{f'(t)}</m>.
         </p>
       </task>
 </activity>
     
-<theorem>
+<theorem xml:id="thm-df-quotient-rule">
  <title>Quotient Rule</title>
       <p>
            
        If <m>f</m> and <m>g</m> are differentiable functions,
         then their quotient <m>Q(x) = \frac{f(x)}{g(x)}</m> is also a differentiable function for all <m>x</m> where <m>g(x) \ne 0</m> and
         <me>
-          Q'(x) = \frac{g(x) f'(x) -  f(x) g'(x)}{g(x)^2}
+          Q'(x) = \frac{ f'(x) \cdot g(x) -  f(x) \cdot g'(x)}{g(x)^2}
         </me>.
       </p>
     
@@ -131,7 +128,7 @@
  <activity xml:id="activity-df-quotient-rule-simplify">
         <introduction>
             <p>
-              Just like with the product rule, there are times where we can find the derivative of a quotient using elementary rules rather than the quotient rule. Which of the following quotients could you find the derivative of without using the quotient rule? Select all that apply.
+              Just like with the product rule, there are times when we can find the derivative of a quotient using elementary rules rather than the quotient rule. For which of the following functions can you find the derivative without using the quotient rule? Select all that apply.
   
             </p>
            
@@ -139,7 +136,7 @@
         </introduction>
         
            
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><m>f(x) = \frac{6}{x^3}</m></li>
                 <li><m>f(x) = \frac{2}{\ln x}</m></li>
                 <li><m>f(x) = \frac{e^x}{\sin x}</m></li>
@@ -162,35 +159,34 @@
      
     </activity>
     
-    <activity xml:id="checkit-df4"><statement>
-        <p>
+    <activity xml:id="checkit-df4">
+        <introduction><p>
             Demonstrate and explain how to find the derivative of the following functions.
             Be sure to explicitly denote which derivative rules (product, quotient, sum and difference, etc.) you are using in your work.
-        </p>
-        <ol>
-            <li><me>f(w)= -\frac{3 \, w^{2} + 5 \, w - 2}{\sin\left(w\right)}</me></li>
-            <li><me>g(t)= \frac{t^{2} + 6 \, t + 1}{t^{2}}</me></li>
-            <li><me>h(t)= -2 \, {\left(t^{2} + 3 \, t + 3\right)} \cos\left(t\right)</me></li>
-        </ol>
-    </statement>
-    <answer>
+            </p></introduction>
+        
+            <task><me>f(w)= -\frac{3 \, w^{2} + 5 \, w - 2}{\sin\left(w\right)}</me></task>
+            <task><me>g(t)= \frac{t^{2} + 6 \, t + 1}{t^{2}}</me></task>
+            <task><me>h(t)= -2 \, {\left(t^{2} + 3 \, t + 3\right)} \cos\left(t\right)</me></task>
+        
+ <!--   <answer>
         <ol>
             <li><me>f' (w)= \frac{{\left(3 \, w^{2} + 5 \, w - 2\right)} \cos\left(w\right)}{\sin\left(w\right)^{2}} - \frac{6 \, w + 5}{\sin\left(w\right)}</me></li>
             <li><me>g' (t)= -\frac{2 \, {\left(3 \, t + 1\right)}}{t^{3}}</me></li>
             <li><me>h' (t)= -2 \, {\left(2 \, t + 3\right)} \cos\left(t\right) + 2 \, {\left(t^{2} + 3 \, t + 3\right)} \sin\left(t\right)</me></li>
         </ol>
-    </answer>
+    </answer>-->
 </activity>
     
 
-    <note><p>
+    <note xml:id="note-other-trigs"><p>
         We have found the derivatives of <m>\sin x</m> and <m>\cos x</m>, 
         but what about the other trigonometric functions? It turns out that the quotient rule along 
         with some trig identities can help us! (See 
         <url
           href="https://www.khanacademy.org/math/trigonometry/trig-equations-and-identities/using-trig-identities/a/trig-identity-reference"
           visual="KhanAcademy.org">Khan Academy</url>
-        for a reminder of the reciprocal and Pythagorean identities.)
+        for a reminder of trig identities.)
       </p></note>
 
  <activity xml:id="activity-df-quotient-rule-tanx">
@@ -207,12 +203,12 @@
           <me>
             f'(x) = \frac{(\cos x)(\cos x) + (\sin x)(\sin x)}{(\cos x)^2}
           </me>.</p> </task>
-     <task><p>Which Pythagorean identity might be useful here?
+     <task><p>Which trig identity might be useful here to simplify this expression?
           How can this identity be used to find a simpler form for <m>f'(x)</m>?</p></task>
      <task><p> Recall that <m>\sec x = \frac{1}{\cos x}</m>.
           How can we express <m>f'(x)</m> in terms of the secant function?</p></task>
      <task><p>  For what values of <m>x</m> is <m>f'(x)</m> defined?
-          How does this set compare to the domain of <m>f</m>?</p></task>
+          How does this domain compare to the domain of <m>f</m>?</p></task>
      
     </activity>
 
@@ -229,7 +225,7 @@
 </p> </task>
      <task><p>Use other relationships among trigonometric functions to write <m> g'(x)</m> only in terms of the cosecant function.</p></task>
      <task><p>  What is the domain of <m>g'(x)</m>?
-          How does this compare to the domain of <m>g'(x)</m>?</p></task>
+          How does this domain compare to the domain of <m>g'(x)</m>?</p></task>
      
     </activity>
 
@@ -246,7 +242,7 @@
 </p> </task>
      <task><p>Use other relationships among trigonometric functions to write <m> h'(x)</m> only in terms of the the tangent and secant functions.</p></task>
      <task><p>  What is the domain of <m>h'(x)</m>?
-          How does this compare to the domain of <m>h'(x)</m>?</p></task>
+          How does this domain compare to the domain of <m>h'(x)</m>?</p></task>
      
     </activity>
 
@@ -263,11 +259,11 @@
 </p> </task>
      <task><p>Use other relationships among trigonometric functions to write <m> h'(x)</m> only in terms of the the cotangent and cosecant functions.</p></task>
      <task><p>  What is the domain of <m>p'(x)</m>?
-          How does this compare to the domain of <m>p'(x)</m>?</p></task>
+          How does this domain compare to the domain of <m>p'(x)</m>?</p></task>
      
-    </activity> 
+    </activity>
     
-<remark> <p> We can now summarize the derivatives for all six trigonometric functions.</p>
+<theorem xml:id="thm-df-other-trig-rules"> <p> We can now summarize the derivatives of all six trigonometric functions.</p>
     <ul>
         <li><m>\frac{d}{dx} \sin x = \cos x</m></li>
         <li><m>\frac{d}{dx} \cos x = -\sin x</m></li>
@@ -276,12 +272,12 @@
         <li><m>\frac{d}{dx} \sec x = \sec x \tan x </m></li>
         <li><m>\frac{d}{dx} \csc x = -\csc x \cot x </m></li>
     </ul>
-    </remark>
+    </theorem>
     
 <!-- Extension Activities and alternative CheckIt     -->
     
     <activity xml:id="checkit-df4v2">
-    <statement>
+    <introduction>
         <p>
         Consider the functions 
             <me>f(x)=3 \, \cos\left(x\right), \, \, g(x)=x^{2} + 3 \, e^{x}</me>
@@ -293,39 +289,38 @@ h(x) &amp; -4&amp; -1&amp; 3  \\\hline
 h'(x) &amp; 0&amp; -1&amp; 1  \\             
 \end{array}
             </me>
-In answering the following questions, be sure to explicitly denote which derivative rules (product, quotient, sum and difference, etc.) you are using in your work.            
-  </p>
- <ol> 
-      <li>
+In answering the following questions, be sure to explicitly denote which derivative rules (product, quotient, sum/difference, etc.) you are using in your work.            
+        </p></introduction>
+ 
+      <task>
                     <p>
      Find the derivative of <m>f(x)\cdot g(x)</m>. 
         </p>
-                </li>
-      <li>
+                </task>
+      <task>
                     <p>
      Find the derivative of <m>\displaystyle \frac{f(x)}{g(x)}</m>. 
         </p>
-                </li>
-      <li>
+                </task>
+      <task>
                     <p>
      Find the value of the derivative of <m>f(x) \cdot h(x) </m> at <m>x=-1</m>. 
         </p>
-                </li>
-     <li>
+                </task>
+     <task>
                     <p>
      Find the value of the derivative of <m> \displaystyle \frac{g(x)}{h(x)}</m> at <m>x=0</m>. 
         </p>
-                </li>
-         <li>
+                </task>
+         <task>
                     <p>
      Consider the function  
                         <me>r(x) = 3 \, \cos\left(x\right) \cdot x .</me>
     Find <m>r'(x)</m>, <m>r''(x)</m>, <m>r'''(x)</m>, and <m>r^{(4)}(x)</m> so the first, second, third, and fourth derivative of <m>r(x)</m>. What pattern do you notice? What do you expect the twelfth derivative of <m>r(x)</m> to be? 
         </p>
-                </li>
-        </ol>
-    </statement>
-    <answer>
+                </task>
+        
+  <!--  <answer>
         <ol>
         <li><p><m>(fg)'(x)=3 \, {\left(2 \, x + 3 \, e^{x}\right)} \cos\left(x\right) - 3 \, {\left(x^{2} + 3 \, e^{x}\right)} \sin\left(x\right)</m></p> </li> 
             <li><p><m>(f/g)'(x)=-\frac{3 \, {\left({\left(2 \, x + 3 \, e^{x}\right)} \cos\left(x\right) + {\left(x^{2} + 3 \, e^{x}\right)} \sin\left(x\right)\right)}}{{\left(x^{2} + 3 \, e^{x}\right)}^{2}}</m></p> </li>   
@@ -342,7 +337,7 @@ In answering the following questions, be sure to explicitly denote which derivat
             The functions involved repeat every four derivatives. So the twelth derivative should have the summand <m>3 \, x \cos\left(x\right)</m>. The second summand has a coefficient that increases by 3 every time, so the twelth derivative should have coefficient 36. Putting this together <m>r^{(xii)}=3 \, x \cos\left(x\right) + 36 \, \sin\left(x\right)</m>  </p> </li>
         </ol>
        <p/>
-    </answer>
+    </answer>-->
 </activity>
     
       <activity xml:id="quotient-rule-graphs">
@@ -370,11 +365,11 @@ In answering the following questions, be sure to explicitly denote which derivat
             </p>
         </task>
             <task> <p>
-      Find 
+      Find the derivative of the revenue when <m>p=140</m>, so find the value of
             <me> \frac{dR}{dp}\Big|_{p=140}. </me> </p>
         </task>
             <task> <p>
-      What is the sign of the quantity above? What do you think would happen to the revenue if the price was changed from  $ 140 to  $ 141? </p>
+      What is the sign of the quantity above? What do you think would happen to the revenue if the price was changed from  $140 to  $141? </p>
         </task>
     </activity>
  
@@ -383,9 +378,9 @@ In answering the following questions, be sure to explicitly denote which derivat
     Let <m>f(v)</m> be the gas consumption in liters per kilometer (l/km) of a car going at velocity <m>v</m> kilometers per hour (km/hr). So if the car is going at velocity <m>v</m>, then <m>f(v)</m> tells you how many liters of gas the car uses to go one kilometer. You are given the following data
     <me>f(50)=0.04, \, \, \, f'(50)=0.0004</me>
     </p></introduction>
-        <task><p> Let <m>g(v)</m> be the distance (in kilometers) that the same car covers per liter of gas at velocity <m>v</m>. What are the units of the output of <m>g(v)</m>? How can you write <m>g(v)</m> in terms of <m>f(v)</m>? Find <m>g(50)</m> and <m>g'(50)</m>.
+        <task><p> Let <m>g(v)</m> be the distance (in kilometers) that the same car covers per liter of gas at velocity <m>v</m>. What are the units of the output of <m>g(v)</m>? Use these units to infer how to write <m>g(v)</m> in terms of <m>f(v)</m>, then find <m>g(50)</m> and <m>g'(50)</m>.
             </p></task>
-        <task><p> Let <m>h(v)</m> be the gas consumption over time, so the liters of gas consumed per hour by the same car going at velocity <m>v</m>. What are the units of the output of <m>h(v)</m>? How can you write <m>h(v)</m> in terms of <m>f(v)</m>? Find <m>h(50)</m> and <m>h'(50)</m>.
+        <task><p> Let <m>h(v)</m> be the gas consumption over time, so the liters of gas consumed per hour by the same car going at velocity <m>v</m>. What are the units of the output of <m>h(v)</m>? Use these units to infer how to write <m>h(v)</m> in terms of <m>f(v)</m>, then find <m>h(50)</m> and <m>h'(50)</m>.
             </p></task>
            <task><p> How would you explain the practical meaning of your findings to a driver who knows no calculus?
             </p></task> 

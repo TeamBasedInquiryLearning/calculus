@@ -33,7 +33,7 @@
         </introduction>
         <task>
         <p>Given that <m>A(x) = \int_a^xt^3\,dt</m>, then by the Fundamental Theorem of Calculus Part I,</p>
-        <ol marker="A">
+        <ol marker="A." cols="2">
               <li><p><m>A(x) = x^3-a^3</m></p></li>
                 <li><p><m>A(x) = a^4 - x^4</m></p></li>
                 <li><p><m>A(x) = \frac{1}{4}(x^4 - a^4)</m></p></li>
@@ -42,7 +42,7 @@
         </task>
         <task>
         <p>Using what you found for <m>A(x)</m>, what is <m>A'(x)</m></p>
-        <ol marker="A">
+        <ol marker="A." cols="2">
               <li><p><m>A'(x) = 3x^2</m></p></li>
                 <li><p><m>A'(x) = 4a^3 - 4x^3</m></p></li>
                 <li><p><m>A'(x) = x^3</m></p></li>
@@ -51,7 +51,7 @@
         </task>
         <task>
         <p>Use the Fundamental Theorem of Calculus Part II to find <m>A'(x)</m>.  What do you notice between what you got above and using FTC Part II?  Which method do you prefer?</p>
-        <ol marker="A">
+        <ol marker="A." cols="2">
               <li><p><m>A'(x) = 3x^2</m></p></li>
                 <li><p><m>A(x) = 4a^3 - 4x^3</m></p></li>
                 <li><p><m>A(x) = x^3</m></p></li>
@@ -63,7 +63,7 @@
 <activity xml:id="activity-in6-2">
         <statement>
             <p>Given <m>A(x) = \int_x^be^t\,dt</m>, what is <m>A'(x)</m>?</p>
-        <ol marker="A">
+        <ol marker="A." cols="2">
               <li><p><m>A'(x) = -e^x</m></p></li>
                 <li><p><m>A'(x) = e^x</m></p></li>
                 <li><p><m>A'(x) = e^b-e^x</m></p></li>
@@ -89,7 +89,7 @@
         </task>
        <task>
         <p>Using what you found what is the derivative of <m>A(x) = \int_x^{x^2}(t+2)\,dt</m>?</p>
-           <ol marker="A">
+           <ol marker="A." cols="2">
               <li><p><m>A'(x) = 2x(x+2)-(x+2)</m></p></li>
                 <li><p><m>A'(x) = (x+2)-2x(x^2+2)</m></p></li>
                 <li><p><m>A'(x) = (x^2+2)-(x+2)</m></p></li>
@@ -119,7 +119,7 @@
         
         <statement>
             <p>Given <m>A(x) = \int_{x^3}^{x^5}(\sin(t) - 2)\,dt</m>, what is <m>A'(x)</m>?</p>
-        <ol marker="A">
+        <ol marker="A." cols="2">
               <li><p><m>A'(x) = -e^x</m></p></li>
                 <li><p><m>A'(x) = e^x</m></p></li>
                 <li><p><m>A'(x) = e^b-e^x</m></p></li>

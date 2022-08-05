@@ -21,7 +21,7 @@
         <task>
             <p>
                 Which of these series most closely resembles <m>\displaystyle \sum_{n=0}^\infty \frac{2^n}{3^n-2}</m>?
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>\displaystyle \sum_{n=0}^\infty \frac{2}{3}</m>.</li>
                     <li><m>\displaystyle \sum_{n=0}^\infty \frac{2}{3}n</m>.</li>
                     <li><m>\displaystyle \sum_{n=0}^\infty \left(\frac{2}{3}\right)^n</m>.</li>
@@ -36,7 +36,7 @@
         <task>
             <p>
                 Find <m>\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=\lim_{n\to\infty}\frac{2^{n+1}(3^n-2)}{(3^{n+1}-2)2^n}=\lim_{n\to\infty}\frac{2\cdot 2^{n}(3^n-2)}{3(3^{n}-\frac{2}{3})2^n}.</m>
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=0</m>.</li>
                     <li><m>\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=\frac{2}{3}</m>.</li>
                     <li><m>\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=1</m>.</li>
@@ -61,7 +61,7 @@
         <task>
             <p>
                 Find <m>\displaystyle\frac{a_{n+1}}{a_n}</m>.
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>2</m>.</li>
                     <li><m>\displaystyle \frac{1}{2}</m>.</li>
                     <li><m>\displaystyle \frac{2^n}{2^n+1}</m>.</li>
@@ -73,7 +73,7 @@
         <task>
             <p>
                 Find <m>\displaystyle \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.</m>
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>-\infty</m>.</li>
                     <li><m>0</m>.</li>
                     <li><m>\displaystyle \frac{1}{2}</m>.</li>
@@ -100,7 +100,7 @@
         <task>
             <p>
                 Find <m>\displaystyle\frac{a_{n+1}}{a_n}</m>.
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>\displaystyle \frac{n+1}{2}</m>.</li>                    
                     <li><m>\displaystyle \frac{(n^2+1)(n+1)}{(n+2)n^2}</m>.</li>
                     <li><m>\displaystyle \frac{(n+1)^2}{n+2}</m>.</li>
@@ -112,7 +112,7 @@
         <task>
             <p>
                 Find <m>\displaystyle \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.</m>
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>-\infty</m>.</li>
                     <li><m>0</m>.</li>
                     <li><m>\displaystyle \frac{1}{2}</m>.</li>
@@ -222,7 +222,7 @@
         <task>
             <p>
                 Which of the following is <m>a_n</m>?
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>n^2</m>.</li>
                     <li><m>n!</m>.</li>
                     <li><m>\displaystyle\frac{n^2}{n!}</m>.</li>
@@ -232,7 +232,7 @@
         <task>
             <p>
                 Which of the following is <m>a_{n+1}</m>?
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>\displaystyle\frac{n^2}{n!}</m>.</li>
                     <li><m>\displaystyle(n+1)^2</m>.</li>
                     <li><m>\displaystyle(n+1)!</m>.</li>
@@ -244,7 +244,7 @@
         <task>
             <p>
                 Which of the following is <m>\displaystyle\left|\frac{a_{n+1}}{a_n}\right|</m>?
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>\displaystyle\frac{(n+1)^2n^2}{(n+1)!n!}</m>.</li>
                     <li><m>\displaystyle\frac{(n+1)^2n!}{(n+1)!n^2}</m>.</li>
                     <li><m>\displaystyle\frac{(n+1)!n!}{(n+1)^2n^2}</m>.</li>
@@ -277,7 +277,7 @@
             <task>
                 <p>
                     Which of the following is <m>\displaystyle\sqrt[n]{|a_n|}</m>?
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>\displaystyle \frac{n+1}{9}</m>.</li>
                     <li><m>\displaystyle \frac{n}{9}</m>.</li>
                     <li><m>n</m>.</li>

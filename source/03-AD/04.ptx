@@ -19,9 +19,8 @@
     
 <example>    
     <p>
-      Consider the simple and familiar example of a parabolic function such as <m>s(t) = -16t^2 + 32t + 48</m>
-      that represents the height of an object tossed vertically: its maximum value occurs at the vertex of the parabola and represents the greatest height the object reaches.  This maximum value is an especially important point on the graph,
-      the point at which the curve changes from increasing to decreasing.
+      Consider the familiar example of a parabolic function such as <m>s(t) = -16t^2 + 32t + 48</m>. This function
+      represents the height of an object tossed  vertically straight up: its maximum value occurs at the vertex of the parabola and represents the greatest height the object reaches.  This maximum value is an especially important point on the graph and we can notice that the function changes from increasing to decreasing at this point.
     </p>
 
  <figure xml:id="height-function">
@@ -52,56 +51,45 @@
   </figure>
     </example>
     
-    <definition xml:id="defn-absolute-extrema">
+     <definition xml:id="defn-global-extrema">
       <statement>
         <p>
-          Given a function <m>f</m>,
-          we say that <m>f(c)</m> is a <term>global</term> or
-          <term>absolute maximum</term>
-              <idx><h>maximum</h><h>global</h></idx>
-              <idx><h>maximum</h><h>absolute</h></idx>
-          of <m>f</m> provided that
-          <m>f(c) \ge f(x)</m> for all <m>x</m> in the domain of <m>f</m>,
-          and similarly we call <m>f(c)</m> a <term>global</term>
-              <idx><h>minimum</h><h>global</h></idx>
-          or
-          <term>absolute minimum</term>
-              <idx><h>minimum</h><h>absolute</h></idx>
-          of <m>f</m> whenever <m>f(c) \le f(x)</m> for all <m>x</m> in the domain of <m>f</m>.
+         We say that <m>f(x)</m> has a <term>global maximum</term> at <m>x=c</m> provided that <m>f(c)\geq f(x)</m> for all <m>x</m>. We also say that <m>f(c)</m> is a global maximum value for the function. On the other hand, we say that <m>f(x)</m> has a <term>global minimum</term> at <m>x=c</m> provided that <m>f(c)\leq f(x)</m> for all <m>x</m> near <m>c</m>.  We also say that <m>f(c)</m> is a global minimum value for the function. The global maxima and minima are also known as the <em>global extrema</em> (or extreme values or absolute extrema) of the function. 
         </p>
-          The absolute maxima and minima are also called the absolute extrema or <term>extreme values</term> of the function.
       </statement>
     </definition>
+    
+   
 
 
     <activity xml:id="activity-ad-extrema-1">
 <statement>
-    <P>According to <xref ref="defn-absolute-extrema"/>, which of the following statements best describes the absolute extrema of the function in <xref ref="height-function"/>?</P>
-    <ol marker="A">
-                <li><p> The absolute maximum is <m>t = 1</m>, because this is where the function goes from increasing to decreasing. </p></li>
-                <li><p> The absolute maximum is <m>s(1) = 64</m>, because <m>s(t)\leq 64</m> for every other input <m>t</m>.</p></li>
-                <li><p> The graph has two absolute minima at the endpoints because the endpoints must be absolute extrema.</p></li>
-                <li><p> The graph has no absolute minimum. </p></li>
+    <P>According to <xref ref="defn-global-extrema"/>, which of the following statements best describes the global extrema of the function in <xref ref="height-function"/>?</P>
+    <ol marker="A." cols="2">
+                <li><p> The global maximum is <m>t = 1</m>, because this is where the function goes from increasing to decreasing. </p></li>
+                <li><p> The global maximum is <m>s(1) = 64</m>, because <m>s(t)\leq 64</m> for every other input <m>t</m>.</p></li>
+                <li><p> The graph has two global minima at the endpoints because the endpoints must be global extrema.</p></li>
+                <li><p> The graph has no global minimum. </p></li>
             </ol>
     </statement>
 </activity>
 
 <observation>
     <p>
-    From <xref ref="activity-ad-extrema-1"/> we notice that there are some issues when determining the absolute mimimum and maximum values of a function from its graph alone.  The Extreme Value Theorem will guarantee the existence of extrema on a closed interval. Thne we will learn about critical points to be able to detect extrema algebraically.
+    There can be some issues when trying to determine the global mimimum and maximum values of a function only using its graph. The Extreme Value Theorem will guarantee the existence of global extrema on a closed interval. Then we will see how to use derivatives to find algebraically the extrema of a function.
     </p>
 </observation>
     
     <theorem xml:id = "thm-extreme-value-theorem">
         <statement>
-            <p>If <m>f</m> is continuous on a closed interval <m>[a,b]</m>, then <m>f</m> has both an absolute maximum and an absolute minimum on the interval.</p>
+            <p>If <m>f</m> is continuous on a closed interval <m>[a,b]</m>, then <m>f</m> has both a global maximum and a global minimum on the interval.</p>
         </statement>
     </theorem>
 
 
 <activity xml:id = "activity-ad-extrema-2">
 <introduction>
-    <p>For each of the following figures, decide where the absolute extrema are located.</p>
+    <p>For each of the following figures, decide where the global extrema are located.</p>
 </introduction>
     <task>
     <figure xml:id="figure-evt-int">
@@ -127,8 +115,8 @@
 
 <activity xml:id = "activity-ad-extrema-3">
     <statement>
-            <p>The Extreme Value Theorem (EVT) guarantees an absolute maximum and absolute minumum for which of the following? </p>
-            <ol marker="A">
+            <p>The Extreme Value Theorem (EVT) guarantees a global maximum and a global minumum for which of the following? </p>
+            <ol marker="A." cols="2">
                 <li><m>f(x)=\dfrac{x^{2}}{x^{2}-4x-5}</m> on <m>[-5,0]</m>. </li>
                 <li><m>f(x)=\dfrac{x^{2}}{x^{2}-4x-5}</m> on <m>[0,4]</m>. </li>
                 <li><m>f(x)=\dfrac{x^{2}}{x^{2}-4x-5}</m> on <m>[4,6]</m>.</li>
@@ -140,16 +128,16 @@
 <activity xml:id = "activity-ad-extrema-4">
 <introduction><p>For the following activity, draw a sketch of a function that has the following properties.</p></introduction>
     <task>
-    <p>The function is continuous and has an absolute minimum but no absolute maximum.</p>
+    <p>The function is continuous and has an global minimum but no gloabl maximum.</p>
     </task>
     <task>
-    <p>The function is continuous and has an absolute maximum but no absolute minimum.</p>
+    <p>The function is continuous and has an global maximum but no global minimum.</p>
     </task>
 </activity>
 
 
-    <definition><p>
-     We say that <m>x</m> is a <term>critical point</term> (or critical number) of <m>f(x)</m> if <m>x</m> is in the domain of <m>f(x)</m> and either <m>f'(x) = 0</m> or <m>f'(x)</m> does not exist.
+    <definition xml:id = "defn-critical-points"> <p>
+     We say that <m>x=c</m> is a <term>critical point</term> (or critical number) of <m>f(x)</m> if <m>x=c</m> is in the domain of <m>f(x)</m> and either <m>f'(c) = 0</m> or <m>f'(c)</m> does not exist.
 </p></definition>
 
     
@@ -158,7 +146,7 @@
 <activity xml:id = "activity-ad-extrema-5">
 <statement>
     <p>Which of the following are critical numbers for <m>f(x) = \frac{1}{3}x^3 - 2x + 2</m>?</p>
-    <ol marker="A">
+    <ol marker="A." cols="2">
                 <li><m>x = \sqrt{2}</m> and <m>x = -\sqrt{2}</m>. </li>
                 <li><m>x = \sqrt{2}</m>. </li>
                 <li><m>x = 2</m> and <m>x = 0</m>. </li>
@@ -170,13 +158,13 @@
 
     
 
-<remark><title>The Closed Interval Method</title>
-    <p>The following is a way of finding the absolute extrema of a continuous  <m>f</m> on a closed interval.</p>
+<remark xml:id = "CIM"><title>The Closed Interval Method</title>
+    <p>The following is a way of finding the global extrema of a continuous  function <m>f</m> on a closed interval <m>[a,b]</m>.</p>
     <ol marker="1">
         <li>Make a list of all critical points of <m>f</m> in <m>(a,b)</m>. (Do not include any critical points outside of the interval). </li>
         <li>Add the endpoints <m>a</m> and <m>b</m> to the list. </li>
         <li>Evaluate <m>f</m> at all points on your list. </li>
-                <li>The smallest value is the absolute minimum. The largest is the absolute maximum. </li>
+                <li>The smallest output occurs at the global minimum. The largest output occurs at the global maximum. </li>
             </ol>
     </remark>
 
@@ -186,40 +174,40 @@
     
 <activity xml:id = "activity-ad-extrema-6">
     <statement>
-    <p>What are the absolute extrema for <m>f(x) = 3x^4 - 4x^3</m> on <m>[-1,2]</m>.
+    <p>What are the global extrema for <m>f(x) = 3x^4 - 4x^3</m> on <m>[-1,2]</m>.
         </p>
-        <ol marker="A">
-                <li>Absolute maximum is when <m>x = 0</m> and absolute minimum when <m>x = 1</m>. </li>
-                <li>Absolute maximum is when <m>x = 2</m> and absolute minimum when <m>x = -1</m>. </li>
-                <li>Absolute maximum is when <m>x = 2</m> and absolute minimum when <m>x = 1</m>. </li>
-                <li>Absolute maximum is when <m>x = 0</m> and absolute minimum when <m>x = -1</m>. </li>
+        <ol marker="A." cols="2">
+                <li>Global maximum is when <m>x = 0</m> and global minimum when <m>x = 1</m>. </li>
+                <li>Global maximum is when <m>x = 2</m> and global minimum when <m>x = -1</m>. </li>
+                <li>Global maximum is when <m>x = 2</m> and global minimum when <m>x = 1</m>. </li>
+                <li>Global maximum is when <m>x = 0</m> and global minimum when <m>x = -1</m>. </li>
             </ol>
     </statement>
     </activity>
 
     <activity xml:id = "activity-ad-extrema-7">
     <statement>
-    <p>What is the absolute extrema for <m>f(x) = x\sqrt{4-x}</m> on <m>[-2,4]</m>.
+    <p>What is the global extrema for <m>f(x) = x\sqrt{4-x}</m> on <m>[-2,4]</m>.
         </p>
-        <ol marker="A">
-                <li>Absolute maximum is when <m>x = -2</m> and absolute minimum when <m>x = \frac{8}{3}</m>. </li>
-                <li>Absolute maximum is when <m>x = 4</m> and absolute minimum when <m>x = \frac{8}{3}</m>. </li>
-                <li>Absolute maximum is when <m>x = \frac{8}{3}</m> and absolute minimum when <m>x = -2</m>. </li>
-                <li>Absolute maximum is when <m>x = 4</m> and absolute minimum when <m>x = -2</m>. </li>
+        <ol marker="A." cols="2">
+                <li>Global maximum is when <m>x = -2</m> and global minimum when <m>x = \frac{8}{3}</m>. </li>
+                <li>Global maximum is when <m>x = 4</m> and global minimum when <m>x = \frac{8}{3}</m>. </li>
+                <li>Global maximum is when <m>x = \frac{8}{3}</m> and global minimum when <m>x = -2</m>. </li>
+                <li>Global maximum is when <m>x = 4</m> and global minimum when <m>x = -2</m>. </li>
             </ol>
     </statement>
     </activity>
 
-<activity xml:id="absolute_extrema-fluency-checkit">
+<activity xml:id="global-extrema-fluency-checkit">
     <statement>
         <p> 
-Explain how to find the absolute minimum and absolute maximum values of the
+Explain how to find the globalminimum and global maximum values of the
 function <m>f(x)=-2 \, x^{3} + 18 \, x^{2} + 42 \, x + 33</m> on the interval <m>[-2,2]</m>.
         </p>
     </statement>
-    <answer>
+ <!--   <answer>
         <p>
-The absolute extrema may occur at these <m>x</m>-values:
+The global extrema may occur at these <m>x</m>-values:
 <m>-2, -1, 2</m>.
         </p>
         <ul>
@@ -228,14 +216,14 @@ The absolute extrema may occur at these <m>x</m>-values:
             <li><p><m>f(2)=173</m></p></li>
         </ul>
         <p>
-Thus the absolute minimum is <m>11</m> and the absolute
+Thus the global minimum is <m>11</m> and the global
 maximum is <m>173</m>.
         </p>
         <p>
 (The value <m>f(7)=523</m>
 is ignored as <m>7</m> isn't in the given interval.)
         </p>
-    </answer>
+    </answer>-->
     </activity>
     
     
@@ -251,9 +239,9 @@ x^2 -4x +2 &amp; x\geq 0
 </p> </introduction>
 <task><p>What can you say about the point <m>x=0</m>?</p></task>
     
-<task><p>In addition to <m>x=0</m>, find the other two critical points. What are the critical points oh <m>g(x)</m>?
+<task><p>In addition to <m>x=0</m>, find the other two critical points. What are the critical points of <m>g(x)</m>?
     </p>
-    <ol marker="A">
+    <ol marker="A." cols="2">
     <li><m>x=0, \, x=1, \, x= 2</m></li>
         
     <li><m>x=0, \, x=-1, \, x= 2</m></li>
@@ -263,39 +251,12 @@ x^2 -4x +2 &amp; x\geq 0
     <li><m>x=0, \, x=1, \, x= -2</m></li>
     </ol>
     </task>
-    <task><p>Can you use the Closed Interval Method on <m>[-4,-1]</m>? If you can, find the absolute max and min. If you can't, explain why.</p></task>
-        <task><p>Can you use the Closed Interval Method on <m>[1,4]</m>? If you can, find the absolute max and min. If you can't, explain why.</p></task>
-        <task><p>Can you use the Closed Interval Method on <m>[-1,1]</m>? If you can, find the absolute max and min. If you can't, explain why.</p></task>
+    <task><p>Can you use the Closed Interval Method on <m>[-4,-1]</m>? If you can, find the global max and min. If you can't, explain why.</p></task>
+        <task><p>Can you use the Closed Interval Method on <m>[1,4]</m>? If you can, find the global max and min. If you can't, explain why.</p></task>
+        <task><p>Can you use the Closed Interval Method on <m>[-1,1]</m>? If you can, find the global max and min. If you can't, explain why.</p></task>
     </activity>  
     
-    
-<!-- <definition xml:id="defn-relative-extrema">
-      <statement>
-        <p>
-         We say that <m>f(c)</m> is a <term>relative maximum</term> (or local maximum) of <m>f</m> provided that <m>f(c)\geq f(x)</m> for all <m>x</m> near <m>c</m>. We say that <m>f(c)</m> is a <term>relative minimum</term> (or local minimum) of <m>f</m> provided that <m>f(c)\leq f(x)</m> for all <m>x</m> near <m>c</m>.
-        </p>
-      </statement>
-    </definition>
 
-    <observation>
-<p> 
-A strategy for finding the extreme values of a function will be to consider all the relative maxima and minima and compare them to decide ultimately which ones give the largest and smallest values. But now we have a new problem: how do you find the relative extrema?  We can detect relative extrema by computing the first derivative and finding the critical points (or critical numbers) of the function. By finding the critical points, we will produce a list of candidates for the extrema (local and global) of the function.
-</p></observation>
-      
-           
-    <activity><introduction><p>We have encountered several terms in this section, so we should make sure that we understand how they are related. Which of the following statements are true?</p></introduction>
-        <ol marker="A">
-                <li><p>In a closed interval an endpoint is always a local extrema but it might or might not be a global extrema.</p></li>
-                <li><p>In a closed interval an endpoint is always a global extrema.</p></li>
-            <li><p>A crtical point is always a local extrema but it might or might not be a global extrema.</p></li>
-             <li><p>A local extrema only occurs where the first derivative is equal to zero.</p></li>
-                <li><p>A local extrema always occurs at a critical point. </p></li>
-                <li><p>A local extrema might occur at a critical point or at an endpoint of a closed interval. </p></li>
-            </ol>
-    
-    </activity>  
-     -->
-    
     
     
 </section>

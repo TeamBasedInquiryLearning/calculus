@@ -48,7 +48,8 @@ How large should you cut these squares so that the resulting box has maximum vol
 Suppose that if a {{widget}} is priced at <m>\${{base_cost}}</m>, then
 you are able to sell <m>{{base_sales}}</m> units each day. According to
 a survey of customers, increasing this price by <m>\$1</m> will result
-in losing <m>{{change_in_sales}}</m> daily sales, and vice versa.
+in losing <m>{{change_in_sales}}</m> daily sales; decreasing by <m>\$1</m>
+will gain <m>{{change_in_sales}}</m> daily sales.
 Your {{person}} asks you how to adjust the price of a {{widget}} to
 maximize the revenue ({{widget}}s sold times price). Write an explanation
 of what this change in price should be and why.
@@ -60,7 +61,8 @@ Suppose that
 you are able to sell <m>{{base_sales}}</m> {{widget}}s each week when
 priced at <m>\${{base_cost}}</m> per {{widget}}. According to
 a survey of customers, decreasing this price by <m>\$1</m> will result
-in adding <m>{{change_in_sales}}</m> weekly sales, and vice versa.
+in adding <m>{{change_in_sales}}</m> weekly sales; increasing by <m>\$1</m>
+will lose <m>{{change_in_sales}}</m> daily sales.
 Your {{person}} is considering changing the price per {{widget}} to
 maximize revenue (units sold times price). Explain what this change
 in price should be, and why.

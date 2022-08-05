@@ -16,13 +16,13 @@
     <activity xml:id="activity-PS3seriesexp2x">
         <introduction>
             <p>
-                Suppose we wished to find the power series for the function <m>f(x)=e^{2x}</m>.  Recall that <m>\exp(x)=e^x=\displaystyle\sum_{n=0}^\infty \frac{x^n}{n!}.</m>
+                Suppose we wish to find the power series for the function <m>f(x)=e^{2x}</m>.  Recall that <m>\exp(x)=e^x=\displaystyle\sum_{n=0}^\infty \frac{x^n}{n!}.</m>
             </p>
         </introduction>
         <task>
             <p>
                 Which of the following represents the power series for <m>\exp(a)=e^a</m>?
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>\exp(a)=\displaystyle\sum_{n=0}^\infty a\frac{x^n}{n!}</m>.</li>
                     <li><m>\exp(a)=\displaystyle\sum_{n=0}^\infty \frac{a^n}{n!}</m>.</li>
                     <li><m>\exp(a)=\displaystyle\sum_{n=0}^\infty \frac{x^n}{a!}</m>.</li>
@@ -34,7 +34,7 @@
             <p>
                 What is the interval of convergence for <m>a</m> in the series you found in part (a)?
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><m>\left(0,1\right)</m>.</li>
                 <li><m>\left(-1,1\right)</m>.</li>
                 <li><m>\left[-1,1\right]</m>.</li>
@@ -45,7 +45,7 @@
         <task>
             <p>
                 Evaluating <m>a=2x</m>, what is the power series for <m>\exp(a)=\exp(2x)=f(x)</m>?
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>\exp(2x)=\displaystyle\sum_{n=0}^\infty \frac{2x^n}{n!}</m>.</li>
                     <li><m>\exp(2x)=\displaystyle\sum_{2x=0}^\infty \frac{x^n}{n!}</m>.</li>                    
                     <li><m>\exp(2x)=\displaystyle\sum_{n=0}^\infty 2x\frac{x^n}{n!}</m>.</li>
@@ -59,7 +59,7 @@
             <p>
                 What is the interval of convergence for <m>x</m> in the series you found in part (c)?
             </p>
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><m>\left(-\infty,\infty\right)</m>.</li>
                 <li><m>\displaystyle \left(-\frac{1}{2},\frac{1}{2}\right)</m>.</li>
                 <li><m>\displaystyle \left(0,\frac{1}{2}\right)</m>.</li>
@@ -73,13 +73,13 @@
     <activity xml:id="activity-PS3series1overx">
         <introduction>
             <p>
-                Suppose we wished to find the power series for the function <m>f(x)=\frac{1}{x}</m>.  Recall that <m>g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.</m>
+                Suppose we wish to find the power series for the function <m>f(x)=\frac{1}{x}</m>.  Recall that <m>g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.</m>
             </p>
         </introduction>
         <task>
             <p>
                 Which of the following represents the power series for <m>\frac{1}{1-a}</m>?
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>g(a)=\displaystyle\sum_{n=0}^\infty ax^n</m>.</li>
                     <li><m>g(a)=\displaystyle\sum_{n=0}^\infty (ax)^n</m>.</li>
                     <li><m>g(a)=\displaystyle\sum_{n=0}^\infty a^n</m>.</li>
@@ -90,7 +90,7 @@
         <task>
             <p>
                 What is the radius of convergence for <m>a</m> in the series you found in part (a)?
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><m>\left(0,1\right)</m>.</li>
                 <li><m>\left(-1,1\right)</m>.</li>
                 <li><m>\left[-1,1\right]</m>.</li>
@@ -102,7 +102,7 @@
         <task>
             <p>
                 For what value of <m>a</m> is <m>\frac{1}{1-a}=\frac{1}{x}</m>?
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>a=x-1</m>.</li>
                     <li><m>a=1-x</m>.</li>
                     <li><m>a=x+1</m>.</li>
@@ -114,7 +114,7 @@
         <task>
             <p>
                 Evaluating <m>a</m> at the previously found value, which of the following is the power series of <m>f(x)=\frac{1}{x}</m>?
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>f(x)=\displaystyle\sum_{n=0}^\infty x^n</m>.</li>
                     <li><m>f(x)=\displaystyle\sum_{n=0}^\infty (-x)^n</m>.</li>
                     <li><m>f(x)=\displaystyle\sum_{n=0}^\infty (1-x)^n</m>.</li>
@@ -127,7 +127,7 @@
         <task>
             <p>
                 Given that the interval of convergence for <m>a</m> is <m>-1 &lt; a &lt; 1</m>, what is the interval of convergence for <m>x</m>?
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>-1 &lt; x &lt; 1</m>.</li>
                     <li><m>-2 &lt; x &lt; 0</m>.</li>
                     <li><m>-2 &lt; x &lt; 2</m>.</li>
@@ -141,14 +141,14 @@
     <activity xml:id="activity-PS3series1overoneminus2x">
         <introduction>
             <p>
-                Suppose we wished to find the power series for the function <m>f(x)=\frac{1}{3-2x}</m>.  Recall that <m>g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.</m>
+                Suppose we wish to find the power series for the function <m>f(x)=\frac{1}{3-2x}</m>.  Recall that <m>g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.</m>
             </p>
         </introduction>
         
         <task>
             <p>
                 For what value of <m>a</m> is <m>\frac{1}{1-a}=\frac{1}{3-2x}</m>?
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>a=2x-2</m>.</li>
                     <li><m>a=2-2x</m>.</li>
                     <li><m>a=2x-3</m>.</li>
@@ -160,7 +160,7 @@
         <task>
             <p>
                 Evaluating <m>a</m> at the previously found value, which of the following is the power series of <m>f(x)=\frac{1}{3-2x}</m>?
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>f(x)=\displaystyle\sum_{n=0}^\infty (3-2x)^n</m>.</li>
                     <li><m>f(x)=\displaystyle\sum_{n=0}^\infty (2x-3)^n</m>.</li>
                     <li><m>f(x)=\displaystyle\sum_{n=0}^\infty (2-2x)^n</m>.</li>
@@ -173,7 +173,7 @@
         <task>
             <p>
                 Given that the interval of convergence for <m>a</m> is <m>-1 &lt; a &lt; 1</m>, what is the interval of convergence for <m>x</m>?
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>-1 &lt; x &lt; 1</m>.</li>
                     <li><m>-1 &lt; x &lt; \frac{3}{2}</m>.</li>
                     <li><m>-\frac{1}{2} &lt; x &lt; 1</m>.</li>
@@ -189,14 +189,14 @@
     <activity xml:id="activity-PS3series1overoneplusxsquared">
         <introduction>
             <p>
-                Suppose we wished to find the power series for the function <m>f(x)=\frac{1}{1+x^2}</m>.  Recall that <m>g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.</m>
+                Suppose we wish to find the power series for the function <m>f(x)=\frac{1}{1+x^2}</m>.  Recall that <m>g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.</m>
             </p>
         </introduction>
         
         <task>
             <p>
                 For what value of <m>a</m> is <m>\frac{1}{1-a}=\frac{1}{1+x^2}</m>?
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>a=x^2</m>.</li>
                     <li><m>a=-x^2</m>.</li>
                     <li><m>a=1+x^2</m>.</li>
@@ -208,7 +208,7 @@
         <task>
             <p>
                 Evaluating <m>a</m> at the previously found value, which of the following is the power series of <m>f(x)=\frac{1}{1+x^2}</m>?
-                <ol marker="A">
+                <ol marker="A.">
                     <li><m>f(x)=\displaystyle\sum_{n=0}^\infty (-x^2)^{n}=\sum_{n=0}^\infty (-1)^nx^{2n}</m>.</li>
                     <li><m>f(x)=\displaystyle\sum_{n=0}^\infty (1+x^2)^n</m>.</li>
                     <li><m>f(x)=\displaystyle\sum_{n=0}^\infty (1-x^2)^n</m>.</li>
@@ -220,7 +220,7 @@
         <task>
             <p>
                 Given that the interval of convergence for <m>a</m> is <m>-1 &lt; a &lt; 1</m>, what is the interval of convergence for <m>x</m>?
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>-1 &lt; x &lt; 1</m>.</li>
                     <li><m>-1 &lt; x &lt; 0</m>.</li>
                     <li><m>0 &lt; x &lt; 1</m>.</li>
@@ -237,7 +237,7 @@
         <statement>
             <p>
                 What function <m>f(x)</m> has power series <m>f(x)=\displaystyle \sum_{n=0}^\infty \frac{(-1)^nx^n}{n!}=1-x+\frac{x^2}{2}-\frac{x^3}{6}+\cdots</m>?
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>f(x)=(-1)^ne^x</m>.</li>
                     <li><m>f(x)=e^{-1}</m>.</li>
                     <li><m>f(x)=-e^x</m>.</li>
@@ -253,7 +253,7 @@
         <statement>
             <p>
                 What function <m>f(x)</m> has power series <m>f(x)=\displaystyle \sum_{n=0}^\infty \frac{x^{n+3}}{n!}=x^3+x^4+\frac{x^5}{2}+\frac{x^6}{6}+\cdots</m>?
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>f(x)=e^{x+3}</m>.</li>
                     <li><m>f(x)=e^{x^3}</m>.</li>
                     <li><m>f(x)=e^{3x}</m>.</li>
@@ -268,7 +268,7 @@
         <statement>
             <p>
                 What function <m>f(x)</m> has power series <m>f(x)=\displaystyle \sum_{n=3}^\infty x^n=x^3+x^4+\cdots</m>?
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>f(x)=\frac{1}{1-3x}</m>.</li>
                     <li><m>f(x)=\frac{3}{1-x}</m>.</li>
                     <li><m>f(x)=\frac{1}{1-x}-x^2-x-1</m>.</li>
@@ -287,7 +287,7 @@
             <task>
                 <p>
                     Which of the following best represents the power series for <m>n(x)=e^{-x^2}</m>?
-                    <ol marker="A">
+                    <ol marker="A.">
                         <li><m>n(x)=\displaystyle -x^2\sum_{n=0}^\infty \frac{1}{n!}x^n=\displaystyle \sum_{n=0}^\infty -\frac{1}{n!}x^{n+2}</m>.</li>
                         <li><m>n(x)=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}(-x^2)^n=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}(-1)^{n}x^{2n}</m>.</li>
                         <li><m>n(x)=\displaystyle x^{-2}\sum_{n=0}^\infty \frac{1}{n!}(-x)^n=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}(-1)^{n+2}x^{n+2}</m>.</li>
@@ -297,7 +297,7 @@
             <task>
                 <p>
                     Which of the following best represents a degree 10 polynomial that approximates <m>n(x)</m>?
-                <ol marker="A">
+                <ol marker="A.">
                         <li><m>n_{10}(x)=\displaystyle -x^2-x^3-\frac{1}{2}x^4-\frac{1}{6}x^5-\frac{1}{24}x^6-\frac{1}{120}x^7-\frac{1}{720}x^8-\frac{1}{5040}x^9-\frac{1}{40320}x^{10}</m>.</li>
                         <li><m>n_{10}(x)=\displaystyle x^2-x^3+\frac{1}{2}x^4-\frac{1}{6}x^5+\frac{1}{24}x^6-\frac{1}{120}x^7+\frac{1}{720}x^8-\frac{1}{5040}x^9+\frac{1}{40320}x^{10}</m>.</li>
                         <li><m>n_{10}(x)=1-x^2+\frac{1}{2}x^4-\frac{1}{6}x^6+\frac{1}{24}x^8-\frac{1}{120}x^{10}</m>.</li>
@@ -326,7 +326,7 @@
             <task>
                 <p>
                     Which of the following represents an antiderivative of <m>g(x)=\displaystyle \frac{1}{1-x}</m>?
-                    <ol marker="A">
+                    <ol marker="A." cols="2">
                         <li><m>G(x)=C+\displaystyle\sum_{n=0}^\infty x^{n+1}</m>.</li>
                         <li><m>G(x)=C+\displaystyle\sum_{n=1}^\infty \frac{1}{n}x^{n+1}</m>.</li>
                         <li><m>G(x)=C+\displaystyle\sum_{n=0}^\infty \frac{1}{n+1}x^{n+1}</m>.</li>
@@ -354,47 +354,41 @@
         </activity>
             
 <activity checkit-seed="9613" checkit-slug="PS3" checkit-title="Manipulation of power series">
-    <statement>
+    <introduction>
         <p>
-            Recall that the power series for <m>f(x)=\sin\left(x\right)</m> is: <me>\sin\left(x\right)=\sum_{n=0}^{\infty} \frac{\left(-1\right)^{n} x^{2 \, n + 1}}{\left(2 \, n + 1\right)!}.</me>
+            Recall that the power series for <m>f(x)=\sin\left(x\right)</m> is: <me>\sin\left(x\right)=\sum_{n=0}^{\infty} \frac{\left(-1\right)^{n} x^{2 \, n + 1}}{\left(2 \, n + 1\right)!}.</me></p></introduction>
             
-            <ol>
-                <li>Find a power series for <m>\sin\left(-5 \, x^{2}\right)</m>.</li>
-                <li>Find a power series for <m>x^{4} \sin\left(x\right)</m>.</li>
-                <li>Find a power series for <m>F(x)</m>, an antiderivative of <m>f(x)</m> such that <m>F(0)=4</m>.</li>
-            </ol>
-        </p>
-        
-    </statement>
-    <answer>
+           
+                <task><p>Find a power series for <m>\sin\left(-5 \, x^{2}\right)</m>.</p></task>
+    <task><p>Find a power series for <m>x^{4} \sin\left(x\right)</m>.</p></task>
+    <task><p>Find a power series for <m>F(x)</m>, an antiderivative of <m>f(x)</m> such that <m>F(0)=4</m>.</p></task>
+            
+  <!--  <answer>
             <ol>
                 <li><m>\displaystyle \sin\left(-5 \, x^{2}\right) = \sum_{n=0}^{\infty}\frac{\left(-1\right)^{n} \left(-5 \, x^{2}\right)^{2 \, n + 1}}{\left(2 \, n + 1\right)!}</m>.</li>
                 <li><m>\displaystyle x^{4} \sin\left(x\right) = \sum_{n= 0 }^{\infty}\frac{\left(-1\right)^{n} x^{2 \, n + 5}}{\left(2 \, n + 1\right)!}</m>.</li>
                 <li><m>\displaystyle F(x)=4+\sum_{n=1 }^{\infty}\frac{\left(-1\right)^{n + 1} x^{2 \, n}}{\left(2 \, n\right)!}</m>.</li>
             </ol>
-    </answer>
+    </answer>-->
 </activity>
             
 <activity checkit-seed="9587" checkit-slug="PS3" checkit-title="Manipulation of power series">
-    <statement>
+    <introduction>
         <p>
-            Recall that the power series for <m>f(x)=-\frac{1}{x - 1}</m> is: <me>-\frac{1}{x - 1}=\sum_{n=0}^{\infty} x^{n}.</me>
+            Recall that the power series for <m>f(x)=-\frac{1}{x - 1}</m> is: <me>-\frac{1}{x - 1}=\sum_{n=0}^{\infty} x^{n}.</me></p></introduction>
             
-            <ol>
-                <li>Find a power series for <m>\frac{1}{x^{4} + 1}</m>.</li>
-                <li>Find a power series for <m>-\frac{x^{5}}{x - 1}</m>.</li>
-                <li>Find a power series for <m>f'(x)</m>.</li>
-            </ol>
-        </p>
-        
-    </statement>
-    <answer>
+            
+    <task><p>Find a power series for <m>\frac{1}{x^{4} + 1}</m>.</p></task>
+    <task><p>Find a power series for <m>-\frac{x^{5}}{x - 1}</m>.</p></task>
+    <task><p>Find a power series for <m>f'(x)</m>.</p></task>
+            
+  <!--  <answer>
             <ol>
                 <li><m>\displaystyle \frac{1}{x^{4} + 1} = \sum_{n=0}^{\infty}\left(-x^{4}\right)^{n}</m>.</li>
                 <li><m>\displaystyle -\frac{x^{5}}{x - 1} = \sum_{n= 0 }^{\infty}x^{n + 5}</m>.</li>
                 <li><m>\displaystyle f'(x)=\sum_{n=0}^{\infty}{\left(n + 1\right)} x^{n}</m>.</li>
             </ol>
-    </answer>
+    </answer>-->
 </activity>            
 
         <activity xml:id="activity-PS3arctan">
@@ -425,25 +419,18 @@
     
     
     <activity>
-        <statement>
-            <p>
-                <ol>
-                    <li>Find the power series for <m>\alpha(x)=\ln|x|</m>.</li>
-                    <li>Find the interval of convergence for this series.</li>
-                </ol>
-            </p>
-        </statement>
+        
+        <task><p>Find the power series for <m>\alpha(x)=\ln|x|</m>.</p></task>
+        <task><p>Find the interval of convergence for this series.</p></task>
+               
     </activity>
     
     <activity>
-        <statement>
-            <p>
-                <ol>
-                    <li>Find the power series for <m>\beta(x)=\arctan(-3x^2)</m>.</li>
-                    <li>Find the interval of convergence for this series.</li>
-                </ol>
-            </p>
-        </statement>
+       
+            
+            <task><p>Find the power series for <m>\beta(x)=\arctan(-3x^2)</m>.</p></task>
+            <task><p>Find the interval of convergence for this series.</p></task>
+                
     </activity>
     
     <!-- <subsection>

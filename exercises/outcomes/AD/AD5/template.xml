@@ -33,22 +33,22 @@ increases on <m>({{a}},{{b}})</m>, and decreases on
     <knowl>
         <content>
             <p>
-The relative extrema of <m>f(x)</m>.
+The local extrema of <m>f(x)</m>.
             </p>
         </content>
     <!-- {{#increasing}} -->
         <outtro>
             <p>
-The point <m>(x,y)=({{a}},{{fa}})</m> is a relative maximum,
-and the point <m>(x,y)=({{b}},{{fb}})</m> is a relative minimum.
+The point <m>(x,y)=({{a}},{{fa}})</m> is a local maximum,
+and the point <m>(x,y)=({{b}},{{fb}})</m> is a local minimum.
             </p>
         </outtro>
     <!-- {{/increasing}} -->
     <!-- {{#decreasing}} -->
         <outtro>
             <p>
-The point <m>(x,y)=({{a}},{{fa}})</m> is a relative minimum,
-and the point <m>(x,y)=({{b}},{{fb}})</m> is a relative maximum.
+The point <m>(x,y)=({{a}},{{fa}})</m> is a local minimum,
+and the point <m>(x,y)=({{b}},{{fb}})</m> is a local maximum.
             </p>
         </outtro>
     <!-- {{/decreasing}} -->

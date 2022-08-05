@@ -25,16 +25,16 @@
             </figure>
         </introduction>
 
-        <ol marker="A">
-            <li><p>As <m>x</m> gets larger, the function <m>x^3</m> gets smaller and smaller</p></li>
-            <li><p>As <m>x</m> gets more and more negative, the function <m>x^3</m> gets more and more negative</p></li>
-            <li><p>As <m>x</m> gets more and more positive, the function <m>x^3</m> gets more and more negative</p></li>
-            <li><p>As <m>x</m> gets smaller, the function <m>x^3</m> gets smaller and smaller</p></li>
+        <ol marker="A.">
+            <li><p>As <m>x</m> gets larger, the function <m>x^3</m> gets smaller and smaller.</p></li>
+            <li><p>As <m>x</m> gets more and more negative, the function <m>x^3</m> gets more and more negative.</p></li>
+            <li><p>As <m>x</m> gets more and more positive, the function <m>x^3</m> gets more and more negative.</p></li>
+            <li><p>As <m>x</m> gets smaller, the function <m>x^3</m> gets smaller and smaller.</p></li>
         </ol>
 
     </activity>
 
-<remark> <p>We say that <q>the limit as <m>x</m> tends to negative infinity of <m>x^3</m> is negative infinity</q> and that <q>the limit as <m>x</m> tends to positive infinity of <m>x^3</m> is positive infinity</q>. In symbols, we write </p>
+<remark> <p>We say that <q>the limit as <m>x</m> tends to negative infinity of <m>x^3</m> is negative infinity</q> and that <q>the limit as <m>x</m> tends to positive infinity of <m>x^3</m> is positive infinity.</q> In symbols, we write </p>
     <me>
     \lim_{x \to + \infty} x^3 = + \infty \, ,  \, \lim_{x \to - \infty} x^3 = - \infty. </me>
     </remark>
@@ -53,7 +53,7 @@
 
         </introduction>
 
-        <ol marker="A">
+        <ol marker="A.">
             <li><p> As <m>x</m> tends to positive infinity, the function <m>1/x^3</m> tends to positive infinity</p></li>
             <li><p>As <m>x</m> tends to negative infinity, the function <m>1/x^3</m>  tends to 0</p></li>
             <li><p>As <m>x</m> tends to positive infinity, the function <m>1/x^3</m>  tends to negative infinity</p></li>
@@ -64,7 +64,7 @@
 
     <definition>
         <statement>
-      <p> A function has a <term>horizontal asymptote</term> at <m>y=b</m> when </p>
+      <p> A function has a <term>horizontal asymptote</term><idx>horizontal asymptote</idx> at <m>y=b</m> when </p>
             <me>
     \lim_{x\to +\infty} f(x) = b
             </me>
@@ -221,7 +221,7 @@
             </p>
         </introduction>
 
-            <ol marker="A">
+            <ol marker="A.">
                 <li><p>The only possible limit is <m>0</m></p></li>
                 <li><p>The only possible limits are <m>0</m> or <m>\pm \infty</m>
  </p></li>
@@ -240,7 +240,7 @@
             </p>
       
 
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><p><m>\displaystyle  f(x)= \frac{x^3-x+3}{2x^3-6x+1} </m></p></li>
                 <li><p><m>\displaystyle  f(x)= \frac{x^2-3}{5x^3-2x^2+5} </m></p></li>
                 <li><p><m>\displaystyle  f(x)= \frac{x^4-3x-2}{3x^3-5x+1} </m></p></li>
@@ -257,7 +257,7 @@
           <task> <p>
   Consider a rational function <m>r(x) = \frac{p(x)}{q(x)}</m>. Looking at the numerator <m>p(x)</m> and the denominator <m>q(x)</m>, when does the function <m>r(x) </m> have limit equal to 0 as <m>x \to \infty? </m>
             </p>
-     <ol marker="A">
+     <ol marker="A.">
                
          <li><p> When the ratio of the leading terms is a constant. </p></li>
                 <li><p>When the degree of the numerator is greater than the degree of the denominator.
@@ -271,7 +271,7 @@
           <task> <p>
   Consider a rational function <m>r(x) = \frac{p(x)}{q(x)}</m>. Looking at the numerator <m>p(x)</m> and the denominator <m>q(x)</m>, when does the function <m>r(x) </m> have limit approaching infinity as <m>x \to \infty? </m>
             </p>
-     <ol marker="A">
+     <ol marker="A.">
             
          <li><p> When the ratio of the leading terms is a constant. </p></li>
                 <li><p>When the degree of the numerator is greater than the degree of the denominator.
@@ -287,30 +287,29 @@
   
     
 <activity xml:id="infinity-checkit">
-    <statement>
+    <introduction>
         <p>
 Explain how to find
 the value of each limit.
-        </p>
-        <ol>
-                <li><p><me>
+        </p></introduction>
+        
+                <task><p><me>
 \lim_{x\to-\infty } -\frac{6 \, {x^4} + 7 \, {x^3} - 7}{6 \, x - {x^4} + 9}
 \,\text{ and }\,
 \lim_{x\to+\infty } -\frac{6 \, {x^4} + 7 \, {x^3} - 7}{6 \, x - {x^4} + 9}
-                </me></p></li>
-                <li><p><me>
+                </me></p></task>
+                <task><p><me>
 \lim_{x\to-\infty } -\frac{7 \, {x^4} - 5 \, {x^3} + 8}{3 \, {\left(2 \, {x^5} + 3 \, {x^2} - 3\right)}}
 \,\text{ and }\,
 \lim_{x\to+\infty } -\frac{7 \, {x^4} - 5 \, {x^3} + 8}{3 \, {\left(2 \, {x^5} + 3 \, {x^2} - 3\right)}}
-                </me></p></li>
-                <li><p><me>
+                </me></p></task>
+                <task><p><me>
 \lim_{x\to-\infty } \frac{3 \, {x^6} + {x^3} - 8}{7 \, x - 6 \, {x^5} + 7}
 \,\text{ and }\,
 \lim_{x\to+\infty } \frac{3 \, {x^6} + {x^3} - 8}{7 \, x - 6 \, {x^5} + 7}
-                </me></p></li>
-        </ol>
-    </statement>
-    <answer>
+                </me></p></task>
+       
+ <!--   <answer>
         <ol>
                 <li><p><me>
 \lim_{x\to-\infty } -\frac{6 \, {x^4} + 7 \, {x^3} - 7}{6 \, x - {x^4} + 9} = 6
@@ -328,7 +327,7 @@ the value of each limit.
 \lim_{x\to+\infty } \frac{3 \, {x^6} + {x^3} - 8}{7 \, x - 6 \, {x^5} + 7} = -\infty
                 </me></p></li>
         </ol>
-    </answer>
+    </answer>-->
 </activity>
     
     
@@ -360,7 +359,7 @@ What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of t
                 </figure>
         </introduction>
 
-            <ol marker="A">
+            <ol marker="A." cols="2">
                 <li><p> The limit is <m>0</m></p></li>
                 <li><p>The limit is <m>1</m>
  </p></li>
@@ -477,12 +476,12 @@ What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of t
         </task>
        <task>
             <statement>
-                <p> From the information given, we notice that the cup of coffee has decay rate of 10 % or <m>r = -0.1</m>. When an exponential model has decay rate <m>r</m>, its exponential base <m>b</m> has value <m>b=1+r</m>. Use this to find the value of <m>b</m> for the exponential model described in this scenario. </p>
+                <p> From the information given, we notice that the cup of coffee has decay rate of 10% or <m>r = -0.1</m>. When an exponential model has decay rate <m>r</m>, its exponential base <m>b</m> has value <m>b=1+r</m>. Use this to find the value of <m>b</m> for the exponential model described in this scenario. </p>
             </statement>
         </task>
         <task>
             <statement>
-                <p> Assume that the initial temperature corresponds to input <m>t=0</m>. Use the data about the initial temperature to find the value of the parameter <m>a</m> in the model <m> Q(t) = a \, b^t + c</m>  </p>
+                <p> Assume that the initial temperature corresponds to input <m>t=0</m>. Use the data about the initial temperature to find the value of the parameter <m>a</m> in the model <m> Q(t) = a \, b^t + c</m>.  </p>
             </statement>
         </task>
         <task>

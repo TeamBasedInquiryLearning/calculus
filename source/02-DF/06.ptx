@@ -28,17 +28,18 @@
         </p></task>     
 </activity>   
     
-    <remark>
-  <p> We've learned a lot of rules to help us take derivatives of functions, and these rules are applied based on the algebraic structure of the function. (Note that we often see that algebraic structure come up in the names of the rules. Sum/difference, power, product, and quotient rules for example!) To take a derivative, we need to examine how the function is built and then proceed accordingly. Up until now we have not seen many situations where these rules were mixed together too much. Now we turn our attention to those types of situations. </p>
-
-<p> Below are some questions you might ask yourself as you take the derivative of a function, especially one where multiple rules might need to be used:
+    <remark  xml:id="rmk-df-combining-rules">
+    <!-- 
+        <p> We have learned a lot of rules to help us take derivatives of functions. These rules depend on the algebraic structure of the function and often we see that algebraic structures come up in the names of the rules (e.g., sum/difference, power, product, quotient, ...). To take a derivative, we need to examine how the function is built and then proceed accordingly. Up until now we have not seen many situations where these rules were mixed together. Now we turn our attention to those types of situations. </p>
+-->
+<p> To take a derivative, we need to examine how the function is built and then proceed accordingly. Below are some questions you might ask yourself as you take the derivative of a function, especially one where multiple rules might need to be used:
    <ol>
         <li> How is this function built algebraically? What kind of function is this? What is the big picture?</li>
         <li> Where do you start?  </li>
         <li> Is there an easier or more convenient way to write the function?  </li>
         <li> Are there products or quotients involved? </li>
-        <li> Is it a composition of two (or more) functions? If so, what are the outside and inside functions? </li>
-        <li> What derivatives rules will be needed along the way? </li>
+        <li> Is this function a composition of two (or more) elementary functions? If so, what are the outside and inside functions? </li>
+        <li> What derivative rules will be needed along the way? </li>
     </ol>
      </p>   
         
@@ -53,23 +54,23 @@
 </introduction> 
    <task><p>
        You will need multiple derivative rules to find <m>f'(x)</m>. Which rule would need to be applied first? In other words, what is the big picture here? 
-       <ol marker="A">
+       <ol marker="A." cols="2">
            <li>Chain rule</li>
            <li>Power rule</li>
            <li>Product rule</li>
            <li>Quotient rule</li>
-           <li>Sum and difference rule</li>
+           <li>Sum/difference rule</li>
             </ol>
         </p></task>
  
         <task><p>
          What other rules would be needed along the way? Select all that apply.
-       <ol marker="A">
+       <ol marker="A." cols="2">
            <li>Chain rule</li>
            <li>Power rule</li>
            <li>Product rule</li>
            <li>Quotient rule</li>
-           <li>Sum and difference rule</li>
+           <li>Sum/difference rule</li>
             </ol>
         </p></task>
      
@@ -85,23 +86,23 @@
 </introduction> 
    <task><p>
        You will need multiple derivative rules to find <m>f'(x)</m>. Which rule would need to be applied first? In other words, what is the big picture here? 
-       <ol marker="A">
+       <ol marker="A." cols="2">
            <li>Chain rule</li>
            <li>Power rule</li>
            <li>Product rule</li>
            <li>Quotient rule</li>
-           <li>Sum and difference rule</li>
+           <li>Sum/difference rule</li>
             </ol>
         </p></task>
  
         <task><p>
          What other rules would be needed along the way? Select all that apply.
-       <ol marker="A">
+       <ol marker="A." cols="2">
            <li>Chain rule</li>
            <li>Power rule</li>
            <li>Product rule</li>
            <li>Quotient rule</li>
-           <li>Sum and difference rule</li>
+           <li>Sum/difference rule</li>
             </ol>
         </p></task>
      
@@ -117,29 +118,28 @@
 </introduction> 
    <task><p>
        You will need multiple derivative rules to find <m>f'(x)</m>. Which rule would need to be applied first? In other words, what is the big picture here? 
-       <ol marker="A">
+       <ol marker="A." cols="2">
            <li>Chain rule</li>
            <li>Power rule</li>
            <li>Product rule</li>
            <li>Quotient rule</li>
-           <li>Sum and difference rule</li>
+           <li>Sum/difference rule</li>
             </ol>
         </p></task>
  
         <task><p>
          What other rules would be needed along the way? Select all that apply.
-       <ol marker="A">
+       <ol marker="A." cols="2">
            <li>Chain rule</li>
            <li>Power rule</li>
            <li>Product rule</li>
            <li>Quotient rule</li>
-           <li>Sum and difference rule</li>
+           <li>Sum/difference rule</li>
             </ol>
         </p></task>
      
      <task><p>Write an outline of the steps needed if you were asked to take the derivative of <m>f(x)</m>. </p></task>
 
-    
 </activity>    
     
  <activity xml:id="activity-df-strat4">
@@ -149,23 +149,23 @@
 </introduction> 
    <task><p>
        You will need multiple derivative rules to find <m>f'(x)</m>. Which rule would need to be applied first? In other words, what is the big picture here? 
-       <ol marker="A">
+       <ol marker="A." cols="2">
            <li>Chain rule</li>
            <li>Power rule</li>
            <li>Product rule</li>
            <li>Quotient rule</li>
-           <li>Sum and difference rule</li>
+           <li>Sum/difference rule</li>
             </ol>
         </p></task>
  
         <task><p>
          What other rules would be needed along the way? Select all that apply.
-       <ol marker="A">
+       <ol marker="A." cols="2">
            <li>Chain rule</li>
            <li>Power rule</li>
            <li>Product rule</li>
            <li>Quotient rule</li>
-           <li>Sum and difference rule</li>
+           <li>Sum/difference rule</li>
             </ol>
         </p></task>
      
@@ -186,5 +186,51 @@
 
     
 </activity>
+
+<activity xml:id="activity-df-strat-checkit">
+    <introduction>
+      <p>
+Demonstrate and explain how to find the derivative of the following functions.
+Be sure to explicitly denote which derivative rules (constant multiple, sum/difference, etc.) 
+you are using in your work.
+      </p>
+    </introduction>
+      <task>
+        <statement>
+          <p>
+            <me>f(y) = \sqrt{\cos\left(6 \, y^{4} - 6 \, y\right)}</me>
+          </p>
+        </statement>
+<!--       <answer>
+          <p>
+            <me>f ' (y) = -\frac{3 \, {\left(4 \, y^{3} - 1\right)} \sin\left(6 \, y^{4} - 6 \, y\right)}{\sqrt{\cos\left(6 \, y^{4} - 6 \, y\right)}}</me>
+          </p>
+        </answer> -->
+      </task>
+      <task>
+        <statement>
+          <p>
+            <me>g(t) = \left( \frac{5 \, t^{3} + 2}{4 \, t^{4} - 3} \right)^{ 4 }</me>
+          </p>
+        </statement>
+  <!--    <answer>
+          <p>
+            <me>g ' (t) = 4 \left( \frac{5 \, t^{3} + 2}{4 \, t^{4} - 3} \right)^{ 3 } \left( -\frac{16 \, {\left(5 \, t^{3} + 2\right)} t^{3}}{{\left(4 \, t^{4} - 3\right)}^{2}} + \frac{15 \, t^{2}}{4 \, t^{4} - 3} \right)</me>
+          </p>
+        </answer>--> 
+      </task>
+      <task>
+        <statement>
+          <p>
+            <me>h(x) = -{\left(5 \, x^{4} - 7 \, x^{3}\right)}^{5} x^{\frac{1}{4}}</me>
+          </p>
+        </statement>
+  <!--   <answer>
+          <p>
+            <me>h ' (x) = -5 \, {\left(5 \, x^{4} - 7 \, x^{3}\right)}^{4} {\left(20 \, x^{3} - 21 \, x^{2}\right)} x^{\frac{1}{4}} - \frac{{\left(5 \, x^{4} - 7 \, x^{3}\right)}^{5}}{4 \, x^{\frac{3}{4}}}</me>
+          </p>
+        </answer> -->
+      </task>
+  </activity>
 
 </section>

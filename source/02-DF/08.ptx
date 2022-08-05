@@ -12,17 +12,18 @@
 
 
 
-<remark><p>Let <m>f^{-1}</m> be the inverse function of <m>f</m>. The relationship between a function and its inverse can be expressed with the equation 
+<remark xml:id="rmk-inverse-function-identity">
+    <p>Let <m>f^{-1}</m> be the inverse function of <m>f</m>. The relationship between a function and its inverse can be expressed with the identity 
 </p>
 <me>f(f^{-1}(x))=x.</me>    
     </remark>
     
-<activity>
-    <introduction><p>In this activity you will use implicit differentiation and the inverse function identity above to find the derivative of <m>y = \ln(x)</m>.</p></introduction>
+<activity xml:id="activity-df-inv-ln">
+    <introduction><p>In this activity you will use implicit differentiation and the inverse function identity in  <xref ref = "rmk-inverse-function-identity"/> to find the derivative of <m>y = \ln(x)</m>.</p></introduction>
     <task> <p>Suppose that <m>y=\ln(x)</m>. Then we have that</p>
     <me>e^y = x .</me>
     <p>Using implicit implicit differentiation, what do you get?</p>
-    <ol marker="A">
+    <ol marker="A." cols="2">
                 <li><p><m>\frac{dy}{dx} = \frac{x}{y}</m></p></li>
                 <li><p><m>\frac{dy}{dx} = \frac{1}{e^x}</m></p></li>
                 <li><p><m>\frac{dy}{dx} = \frac{x}{e^y}</m></p></li>
@@ -32,12 +33,13 @@
     <task><p>Notice that we started with the relationship <m>e^y=x</m>. Use this to simplify <m>\frac{dy}{dx}</m>. You should get that when <m>y=\ln(x)</m> we have that <m>\frac{dy}{dx} = \frac{1}{x}</m>... as expected!</p></task>
     </activity>
 
-<activity><introduction><p>In this activity we will try to find a general formula for the derivative of the inverse function.  Let <m>g</m> be the inverse function of <m>f</m>. We have also used the notation <m>f^{-1}</m> before, but for the purpose of this problem, let's use <m>g</m> to avoid too many exponents. We can express the relationship "<m>g</m> is the inverse of <m>f</m>" with the equation </p> 
+<activity xml:id="activity-df-inv-general">
+    <introduction><p>In this activity we will try to find a general formula for the derivative of the inverse function.  Let <m>g</m> be the inverse function of <m>f</m>. We have also used the notation <m>f^{-1}</m> before, but for the purpose of this problem, let us use <m>g</m> to avoid too many exponents. We can express the relationship <q><m>g</m> is the inverse of <m>f</m></q> with the equation from <xref ref = "rmk-inverse-function-identity"/> </p> 
 <me>f(g(x))=x.</me></introduction>
     <task><p>
         Looking at the equation <m>f(g(x))=x</m>, what is the derivative with respect to <m>x</m> of the right hand side of the equation?
         </p>
-    <ol marker="A">
+    <ol marker="A." cols="2">
                 <li><p><m>x</m></p></li>
                 <li><p><m>1</m></p></li>
                 <li><p><m>0</m></p></li>
@@ -47,7 +49,7 @@
     <task><p>
    Looking at the equation <m>f(g(x))=x</m>, what is the derivative with respect to <m>x</m> of the left hand side of the equation?
         </p>
-    <ol marker="A">
+    <ol marker="A." cols="2">
                 <li><p><m>f'(g(x))</m></p></li>
                 <li><p><m>f'(g'(x))</m></p></li>
                 <li><p><m>f(g(x))\, g'(x) </m></p></li>
@@ -57,27 +59,24 @@
  <task><p>
    Setting the two sides of the equation equal after differentiating, we can solve for <m>g'(x)</m>. What do you get?
         </p>
-    <ol marker="A">
+    <ol marker="A." cols="2">
                 <li><p><m>g'(x) = \frac{x}{f(g(x))}</m></p></li>
               <li><p><m>g'(x) = \frac{x}{f'(g(x))}</m></p></li>
          <li><p><m>g'(x) = \frac{1}{f(g(x))}</m></p></li>
          <li><p><m>g'(x) = \frac{1}{f'(g(x))}</m></p></li>
             </ol>
     </task>
-
-   
-    
     </activity>    
 
-    <observation><p>In the above activity you should have found that
+    <remark xml:id="rmk-df-inv-general"> <p>In the above activity you should have found that
 the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given by 
  </p>
 <me>(f^{-1})'(x) = \frac{1}{f'(f^{-1}(x))}. </me>
 <p>Notice that because of the chain rule, the derivative of <m>f</m> has to be evaluated at <m>\boldsymbol{f^{-1}(x)}</m></p>
-    </observation>
+    </remark>
 
     
-<activity><introduction><p>In this problem you will apply the general formula for the derivative of the inverse function to find the values of some derivatives graphically.</p> 
+<activity xml:id="activity-df-inv-graph"> <introduction><p>In this problem you will apply the general formula for the derivative of the inverse function to find the values of some derivatives graphically.</p> 
     <figure>
                     <image>
                     <latex-image>  
@@ -123,7 +122,7 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
                 </figure>                  
        </introduction>
     <task><p>The derivative of the inverse function at <m>x=12</m> given by <m>(f^{-1})' (12) = \frac{1}{f'(f^{-1}(12))}</m>. Using the graphs, what is your best approximation for this quantity?</p>
-      <ol marker="A">
+      <ol marker="A." cols="2">
                 <li><p>  <m>(f^{-1})' (12)\approx \frac{1}{0.2} = 5 </m> </p></li>
                  <li><p>  <m>(f^{-1})' (12) \approx \frac{1}{0.6} \approx 1.67 </m> </p></li>
                  <li><p>  <m>(f^{-1})' (12) \approx \frac{1}{0.4} = 2.5 </m> </p></li>
@@ -131,7 +130,7 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
     </ol>      
     </task>
     <task><p>What is your best estimate for <m>(f^{-1})' (6) </m> ?</p> 
-      <ol marker="A">
+      <ol marker="A." cols="2">
                 <li><p>  <m>(f^{-1})' (6) \approx \frac{1}{0.2} = 5 </m> </p></li>
                  <li><p>  <m>(f^{-1})' (6) \approx \frac{1}{0.6} \approx 1.67 </m> </p></li>
                  <li><p>  <m>(f^{-1})' (6) \approx \frac{1}{0.4} = 2.5 </m> </p></li>
@@ -141,19 +140,19 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
     </activity>    
 
 
-<activity><introduction><p>Use the general formula for the derivative of the inverse function to find...</p></introduction>
-    <task><p>The derivative of the inverse function of <m>f(x) = e^x</m>... This should match what you found before!</p></task>
-      <task><p>The derivative of the inverse function of <m>f(x) = \frac{1}{x}</m>... This should match something you have seen before! See if you can explain why this holds.</p></task>
+<activity xml:id="activity-df-inv2"> <introduction><p>Use the general formula for the derivative of the inverse function from <xref ref ="rmk-df-inv-general"/>  to find...</p></introduction>
+    <task><p>The derivative of the inverse function of <m>f(x) = e^x</m>... This should match the result of <xref ref ="activity-df-inv-ln"/>!</p></task>
+      <task><p>The derivative of the inverse function of <m>f(x) = \frac{1}{x}</m>... This should match a derative that you have seen before! See if you can explain why.</p></task>
     </activity>
 
 
-<definition><p> We can only invert the function <m>y=\sin(x)</m> on the restricted domain <m>[-\pi/2,\pi/2]</m> (Why?). On this domain we define arcsine by the condition </p>
+<definition xml:id="defn-arcfns"> <p> We can only invert the function <m>y=\sin(x)</m> on the restricted domain <m>[-\pi/2,\pi/2]</m> (Why?). On this domain we define arcsine by the condition </p>
 <me> x = \sin^{-1}(y) \quad \text{ when } \quad y=\sin(x). </me></definition>   
     
     
-<activity>
+<activity xml:id="activity-df-inv3"> 
     <introduction><p>In this activity you will study the arcsine function.</p></introduction>
-    <task> <p> Consider the values of <m>y=\sin(x)</m> given in the table below for an angle <m>x</m> between <m>-\pi/2</m> and <m>\pi/2</m>. Fill in the corresponding values for the inverse function arcsine <m>x = \sin^{-1}(y)</m>. In other words, you need to provide the angle whose sine is given. You can use the unit circle to help you remember which angles yield the given values of sine. The first entry is provided: a sine value of <m>-1</m> corresponds to the angle <m>-\pi/2</m>.
+    <task> <p> Consider the values of <m>y=\sin(x)</m> given in the table below for an angle <m>x</m> between <m>-\pi/2</m> and <m>\pi/2</m>. Fill in the corresponding values for the inverse function arcsine <m>x = \sin^{-1}(y)</m>. In other words, you need to provide the angle in <m>[-\pi/2, \pi/2]</m> whose sine value is given. You can use the unit circle to help you remember which angles yield the given values of sine. The first entry is provided: a sine value of <m>-1</m> corresponds to the angle <m>-\pi/2</m>.
     <table xml:id="table-sine">
         <tabular>
              <row bottom="minor">
@@ -240,7 +239,7 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
 <activity>
     <introduction><p>In this activity you will find a formula for the derivative of arctangent.</p></introduction>
     <task><p>Differentiate the implicit equation <m> \tan(y) = x</m>, what do you get for <m>\frac{dy}{dx}</m>?</p>
-     <ol marker="A">
+     <ol marker="A." cols="2">
                 <li><p><m>\frac{dy}{dx} = \frac{x}{\tan(y)}</m></p></li>
                 <li><p><m>\frac{dy}{dx} = \frac{1}{\tan(y)}</m></p></li>
                 <li><p><m>\frac{dy}{dx} = \frac{x}{\sec^2(y)}</m></p></li>
@@ -253,7 +252,7 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
     <task><p>We want to rewrite <m>\frac{dy}{dx}</m> only in terms of <m>x</m>. Notice that </p>
     <me> \tan^2(y) = \frac{\sin^2(y)}{\cos^2(y)} = \frac{1 - \cos^2(y)}{\cos^2(y)}. </me>
       <p> Multiplying out by the denominator, isolating, and solving for <m>\cos^2(y)</m>, we get that </p>
-         <ol marker="A">
+         <ol marker="A." cols="2">
                 <li><p><m>\cos^2(y) = \frac{\tan^2(y)}{\cos^2(y)}</m></p></li>
                <li><p><m>\cos^2(y) = \frac{1}{\tan^2(y) + 1 }</m></p></li>
                <li><p><m>\cos^2(y) = \frac{1- \cos^2(y)}{\tan^2(y)}</m></p></li>
@@ -296,9 +295,9 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
 </activity>   
     
         <activity xml:id="derivative-inverses-in-context1">
-        <task><p>Find the equation of the tangent line to <m>y=\tan^{-1}(x)</m> at <m>x=0</m>. Draw the function and the tangent on Desmos to check your work!</p></task>
-                    <task><p>Find the equation of the tangent line to <m>y=\sin^{-1}(x)</m> at <m>x=0.5</m>. Draw the function and the tangent on Desmos to check your work!</p></task>
-            <task><p>Find the equation of the tangent line to <m>y=\cos^{-1}(x)</m> at <m>x=-0.5</m>. Draw the function and the tangent on Desmos to check your work! </p></task>
+        <task><p>Find the equation of the tangent line to <m>y=\tan^{-1}(x)</m> at <m>x=0</m>. Draw the function and the tangent on a graphing calculator to check your work!</p></task>
+                    <task><p>Find the equation of the tangent line to <m>y=\sin^{-1}(x)</m> at <m>x=0.5</m>. Draw the function and the tangent on a graphing calculator to check your work!</p></task>
+            <task><p>Find the equation of the tangent line to <m>y=\cos^{-1}(x)</m> at <m>x=-0.5</m>. Draw the function and the tangent on a graphing calculator to check your work! </p></task>
     </activity>
     
   <activity xml:id="derivative-inverses-in-context2">   

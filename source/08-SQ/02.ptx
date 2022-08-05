@@ -14,7 +14,7 @@
         <introduction><p>We will consider the function <m>f(x) = \displaystyle \frac{4x+8}{x}</m>.</p></introduction>
         <task>
             <p>Compute the limit <m>\displaystyle  \lim_{x\to \infty} \frac{4x+8}{x}</m>.</p>
-        <ol marker="A">
+        <ol marker="A." cols="2">
             <li><m>0</m></li>
             <li><m>8</m></li>
             <li><m>1</m></li>
@@ -27,7 +27,7 @@
         </task>
         <task>
             <p>Which statement best describes <m>f(x)</m> for <m>x>0</m>?</p>
-          <ol marker="A">
+          <ol marker="A." cols="2">
             <li><m>f(x)</m> is bounded above by 4</li>
             <li><m>f(x)</m> is bounded below by 4</li>
             <li><m>f(x)</m> is bounded above and below by 4</li>
@@ -70,7 +70,7 @@
         <task>
             <p>
                 Which of the following is true about <m>x_{n+1}-x_n</m>?  There can be more or less than one answer.
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>x_{n+1}-x_n> 0</m> for every choice of <m>n</m>.</li>
                     <li><m>x_{n+1}-x_n\geq 0</m> for every choice of <m>n</m>.</li>
                     <li><m>x_{n+1}-x_n &lt; 0</m> for every choice of <m>n</m>.</li>
@@ -81,7 +81,7 @@
         <task>
             <p>
                 Which of the following (if any) describe <m>\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty?</m>
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li>Monotonically increasing.</li>
                     <li>Monotonically non-decreasing.</li>
                     <li>Monotonically decreasing.</li>
@@ -106,7 +106,7 @@
         <task>
             <p>
                 Which of the following is true about <m>x_{n+1}-x_n</m>?  There can be more or less than one answer.
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>x_{n+1}-x_n> 0</m> for every choice of <m>n</m>.</li>
                     <li><m>x_{n+1}-x_n\geq 0</m> for every choice of <m>n</m>.</li>
                     <li><m>x_{n+1}-x_n &lt; 0</m> for every choice of <m>n</m>.</li>
@@ -117,7 +117,7 @@
         <task>
             <p>
                 Which of the following (if any) describe <m>\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty?</m>
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li>Monotonically increasing.</li>
                     <li>Monotonically non-decreasing.</li>
                     <li>Monotonically decreasing.</li>
@@ -142,7 +142,7 @@
         <task>
             <p>
                 Which of the following is true about <m>x_{n+1}-x_n</m>?  There can be more or less than one answer.
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>x_{n+1}-x_n> 0</m> for every choice of <m>n</m>.</li>
                     <li><m>x_{n+1}-x_n\geq 0</m> for every choice of <m>n</m>.</li>
                     <li><m>x_{n+1}-x_n &lt; 0</m> for every choice of <m>n</m>.</li>
@@ -153,7 +153,7 @@
         <task>
             <p>
                 Which of the following (if any) describe <m>\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty?</m>
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li>Monotonically increasing.</li>
                     <li>Monotonically non-decreasing.</li>
                     <li>Monotonically decreasing.</li>
@@ -178,7 +178,7 @@
         <task>
             <p>
                 Which of the following is true about <m>x_{n+1}-x_n</m>?  There can be more or less than one answer.
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>x_{n+1}-x_n> 0</m> for every choice of <m>n</m>.</li>
                     <li><m>x_{n+1}-x_n\geq 0</m> for every choice of <m>n</m>.</li>
                     <li><m>x_{n+1}-x_n &lt; 0</m> for every choice of <m>n</m>.</li>
@@ -189,7 +189,7 @@
         <task>
             <p>
                 Which of the following (if any) describe <m>\left\{\displaystyle \frac{2}{3^n}\right\}_{n=0}^\infty?</m>
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li>Monotonically increasing.</li>
                     <li>Monotonically non-decreasing.</li>
                     <li>Monotonically decreasing.</li>
@@ -203,7 +203,7 @@
     <definition xml:id="definitionboundedsequence">
         <statement>
         <p>
-            A sequence <m>\{x_n\}</m> is <em>bounded</em> if there are real numbers <m>b_u, b_{\ell}</m> such that <me>b_{\ell}\leq x_n \leq b_u</me> for every <m>n</m>?
+            A sequence <m>\{x_n\}</m> is <em>bounded</em> if there are real numbers <m>b_u, b_{\ell}</m> such that <me>b_{\ell}\leq x_n \leq b_u</me> for every <m>n</m>.
         </p>
             </statement>
     </definition>
@@ -325,7 +325,7 @@
         <task>
             <p>
                 For each of the following, determine if the sequence converges.
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>\left\{\displaystyle \frac{(-1)^n}{n}\right\}_{n=1}^\infty.</m></li>
                     <li><m>\left\{\displaystyle \frac{n^2+1}{n}\right\}_{n=1}^\infty.</m></li>
                     <li><m>\left\{\displaystyle \frac{n+1}{n}\right\}_{n=1}^\infty.</m></li>
@@ -349,7 +349,7 @@
         <task>
             <p>
                 Which of the following ia most likely true about <m>\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty</m>?
-                <ol marker="A">
+                <ol marker="A." cols="2">
                     <li><m>\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty</m> converges to 4.</li>
                     <li><m>\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty</m> converges to 0.</li>
                     <li><m>\left\{\displaystyle \frac{4n(-1)^n}{n+1}\right\}_{n=0}^\infty</m> converges to -4.</li>

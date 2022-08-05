@@ -16,7 +16,7 @@
                 Suppose we wanted to find the arclength of the parabola <m>y=-x^2+6x</m> over the interval <m>[0,4]</m>.
                 <figure>
                 <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</caption>
-                    <image xml:id="parabolaarclength" width="100%">
+                    <image xml:id="parabolaarclength" width="50%">
                         <description>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -34,9 +34,6 @@
                                 samples=100,
                                 domain=0:4,
                                 ] (\x,{-1*\x^2+6*\x });
-                            
-                           
-   
                              \end{tikzpicture}
                         </latex-image>
                     </image>
@@ -46,10 +43,10 @@
         
         <task>
             <p>
-                Suppose we wished to estimate this length with two line segments, where <m>\Delta x=2</m>.
+                Suppose we wished to estimate this length with two line segments where <m>\Delta x=2</m>.
                 <figure>
-                <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</caption>
-                    <image xml:id="parabolaarclengthtwopieces" width="100%">
+                <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m> with two line segments where <m>\Delta x=2</m>.</caption>
+                    <image xml:id="parabolaarclengthtwopieces" width="50%">
                         <description>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -80,22 +77,23 @@
                         </latex-image>
                     </image>
             </figure>
-                Which of  the following expressions represents the sum of the lengths of the line segments with endpoints <m>(0,0)</m>, <m>(2,8)</m> and  <m>(4,8)</m>.
-                <ol marker='A'>
-                    <li><m>\sqrt{4+8}</m>.</li>
-                    <li><m>\sqrt{4^2+8^2}</m>.</li>
-                    <li><m>\sqrt{2^2+8^2}+\sqrt{4^2+8^2}</m>.</li>
-                    <li><m>\sqrt{2^2+8^2}+\sqrt{(4-2)^2+(8-8)^2}</m>.</li>
+                    </p>
+            <p>Which of  the following expressions represents the sum of the lengths of the line segments with endpoints <m>(0,0)</m>, <m>(2,8)</m> and  <m>(4,8)</m>?</p>
+                
+                <ol marker="A." cols="2">
+                    <li><m>\sqrt{4+8}</m></li>
+                    <li><m>\sqrt{2^2+8^2}+\sqrt{(4-2)^2+(8-8)^2}</m></li>
+                    <li><m>\sqrt{4^2+8^2}</m></li>
+                    <li><m>\sqrt{2^2+8^2}+\sqrt{4^2+8^2}</m></li>
                 </ol>
-            </p>
         </task>
         
         <task>
             <p>
-                Suppose we wished to estimate this length with four line segments, where <m>\Delta x=1</m>.
+                Suppose we wished to estimate this length with four line segments where <m>\Delta x=1</m>.
                 <figure>
-                <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</caption>
-                    <image xml:id="parabolaarclengthfourpieces" width="100%">
+                <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m> with four line segments where <m>\Delta x=1</m>.</caption>
+                    <image xml:id="parabolaarclengthfourpieces" width="50%">
                         <description>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -128,22 +126,21 @@
                         </latex-image>
                     </image>
             </figure>
-                Which of  the following expressions represents the sum of the lengths of the line segments with endpoints <m>(0,0)</m>, <m>(1,5)</m>, <m>(2,8)</m>, <m>(3,9)</m> and <m>(4,8)</m>.
-                <ol marker='A'>
-                    <li><m>\sqrt{4^2+8^2}</m>.</li>
-                    <li><m>\sqrt{1^2+(5-0)^2}+\sqrt{1^2+(8-5)^2}+\sqrt{1^2+(9-8)^2}+\sqrt{1^2+(8-9)^2}</m>.</li>
-                    <li><m>\sqrt{1^2+5^2}+\sqrt{2^2+8^2}+\sqrt{3^2+9^2}+\sqrt{4^2+8^2}</m>.</li>
-                    
-                </ol>
             </p>
+            <p>Which of  the following expressions represents the sum of the lengths of the line segments with endpoints <m>(0,0)</m>, <m>(1,5)</m>, <m>(2,8)</m>, <m>(3,9)</m> and <m>(4,8)</m>?</p>
+                <ol marker='A'>
+                    <li><m>\sqrt{4^2+8^2}</m></li>
+                    <li><m>\sqrt{1^2+(5-0)^2}+\sqrt{1^2+(8-5)^2}+\sqrt{1^2+(9-8)^2}+\sqrt{1^2+(8-9)^2}</m></li>
+                    <li><m>\sqrt{1^2+5^2}+\sqrt{2^2+8^2}+\sqrt{3^2+9^2}+\sqrt{4^2+8^2}</m></li>
+                </ol>
         </task>
         
         <task>
             <p>
-                Suppose we wished to estimate this length with <m>n</m> line segments  <m>\Delta x=4/n</m>.  Let <m>f(x)=-x^2+6x</m>.
+                Suppose we wished to estimate this length with <m>n</m> line segments where <m>\displaystyle \Delta x=\frac{4}{n}</m>.  Let <m>f(x)=-x^2+6x</m>.
                 <figure>
-                <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</caption>
-                    <image xml:id="parabolaarclengthnpieces" width="100%">
+                <caption>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m> with <m>n</m> line segments where <m>\displaystyle \Delta x=\frac{4}{n}</m>.</caption>
+                    <image xml:id="parabolaarclengthnpieces" width="50%">
                         <description>Plot of <m>y=-x^2+6x</m> over <m>[0,4]</m>.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -170,70 +167,59 @@
                                \draw[fill, red] (2.65,8.8775) circle (2pt);
                             
                                \draw [decorate, decoration={brace,amplitude=10pt,mirror},yshift=-0.4pt, red](2.1,8.19)--(2.65,8.19) node[red,midway,yshift=-0.5cm] {\footnotesize $\Delta x$};
-                            
-                           
-   
+
                              \end{tikzpicture}
                         </latex-image>
                     </image>
             </figure>
-                Which of  the following expressions represents the length of the line segment from <m>(x_0, f(x_0))</m> to <m>(x_0+\Delta x, f(x_0+\Delta x))</m>?
-                <ol marker='A'>
-                    <li><m>\sqrt{x_0^2+f(x_0)^2}</m>.</li>
-                    <li><m>\sqrt{(x_0+\Delta x)^2+f(x_0+\Delta x)^2}</m>.</li>
-                    <li><m>\sqrt{(\Delta x)^2+(f(x_0+\Delta x)-f(x_0))^2}</m>.</li>
-                    <li><m>\sqrt{(\Delta x)^2+f(\Delta x)^2}</m>.</li>
-                    
-                </ol>
             </p>
+            <p>Which of  the following expressions represents the length of the line segment from <m>(x_0, f(x_0))</m> to <m>(x_0+\Delta x, f(x_0+\Delta x))</m>?</p>
+                <ol marker="A." cols="2">
+                    <li><m>\sqrt{x_0^2+f(x_0)^2}</m></li>
+                    <li><m>\sqrt{(x_0+\Delta x)^2+f(x_0+\Delta x)^2}</m></li>
+                    <li><m>\sqrt{(\Delta x)^2+f(\Delta x)^2}</m></li>
+                    <li><m>\sqrt{(\Delta x)^2+(f(x_0+\Delta x)-f(x_0))^2}</m></li>
+                </ol>
+        </task>
+        
+        <task>
+            <p>Which of  the following Riemann sums best estimates the arclength of the parabola <m>y=-x^2+6x</m> over the interval <m>[0,4]</m>?  Let <m>f(x)=-x^2+6x</m>.</p>
+                <ol marker="A." cols="2">
+                    <li><m>\displaystyle \sum \sqrt{(\Delta x)^2+f(\Delta x)^2}</m></li>
+                    <li><m>\displaystyle \sum \sqrt{(x_i+\Delta x)^2+f(x_i+\Delta x)^2}</m></li>
+                    <li><m>\displaystyle \sum \sqrt{x_i^2+f(x_i)^2}</m></li>
+                    <li><m>\displaystyle \sum \sqrt{(\Delta x)^2+(f(x_i+\Delta x)-f(x_i))^2}</m></li>
+                </ol>
         </task>
         
         <task>
             <p>
-                 Which of  the following Riemann sums best estimates the arclength of the parabola <m>y=-x^2+6x</m> over the interval <m>[0,4]</m>?  Let <m>f(x)=-x^2+6x</m>.
-                <ol marker='A'>
-                    <li><m>\displaystyle \sum \sqrt{x_i^2+f(x_i)^2}</m>.</li>
-                    <li><m>\displaystyle \sum \sqrt{(x_i+\Delta x)^2+f(x_i+\Delta x)^2}</m>.</li>
-                    <li><m>\displaystyle \sum \sqrt{(\Delta x)^2+(f(x_i+\Delta x)-f(x_i))^2}</m>.</li>
-                    <li><m>\displaystyle \sum \sqrt{(\Delta x)^2+f(\Delta x)^2}</m>.</li>
-                    
-                </ol>
-            </p>
-        </task>
-        
-        <task>
-            <p>
-                Note that 
-                
+                Note that
                 <md>
                     <mrow>\sqrt{(\Delta x)^2+(f(x_i+\Delta x)-f(x_i))^2} &amp; = \sqrt{(\Delta x)^2\left(1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2\right)}</mrow>
                     <mrow>&amp;=\sqrt{1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2}\Delta x</mrow>
-                </md>
+                </md>.
               </p>
             <p>
                  Which of the following best describes <m>\displaystyle\lim_{\Delta x\to 0} \frac{f(x_i+\Delta x)-f(x_i)}{\Delta x}</m>?
-                <ol marker='A'>
-                    <li><m>0</m>.</li>
-                    <li><m>1</m>.</li>
-                    <li><m>f'(x_i)</m>.</li>
+                <ol marker="A." cols="4">
+                    <li><m>0</m></li>
+                    <li><m>1</m></li>
+                    <li><m>f'(x_i)</m></li>
                     <li>This limit is undefined.</li>
                 </ol>
             </p>
         </task>
-        
-        
-        
     </activity>
     
     <fact xml:id="fact-arclength">
         <statement>        <p>
-            Given a differentiable function <m>f(x)</m>, the arclength of <m>y=f(x)</m> defined on <m>[a,b]</m> is computed by the integral: 
+            Given a differentiable function <m>f(x)</m>, the <term>arclength</term><idx>arclength</idx> of <m>y=f(x)</m> defined on <m>[a,b]</m> is computed by the integral
             
             <md>
                 <mrow>\lim_{n\to \infty}\sum \sqrt{(\Delta x)^2+(f(x_i+\Delta)-f(x_i))^2} &amp; =\lim_{n\to \infty}\sum \sqrt{1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2}\Delta x</mrow>
-                <mrow>&amp; = \int_a^b \sqrt{1+(f'(x))^2}dx.</mrow>
-            </md>
-            
+                <mrow>&amp; = \int_a^b \sqrt{1+(f'(x))^2}dx</mrow>
+            </md>.
         </p>
             </statement>
 
@@ -256,7 +242,7 @@
         
         <task>
             <p>
-                Estimate the arclength of this curve with two line segments with <m>\Delta x=2</m>.
+                Estimate the arclength of this curve with two line segments where <m>\Delta x=2</m>.
                 <me>
                     \begin{array}{|c|c|c|c|}
                     \hline
@@ -274,7 +260,7 @@
         
         <task>
             <p>
-                Estimate the arclength of this curve with four line segments with <m>\Delta x=1</m>.
+                Estimate the arclength of this curve with four line segments where <m>\Delta x=1</m>.
                 <me>
                     \begin{array}{|c|c|c|c|}
                     \hline
@@ -302,12 +288,12 @@
     <activity>
         <introduction>
             <p>
-                Consider the curve <m>y=5e^{-x^2}</m>  over the interval <m>[-1,4]</m>
+                Consider the curve <m>y=5e^{-x^2}</m> over the interval <m>[-1,4]</m>.
             </p>
         </introduction>
         <task>
             <p>
-                Estimate this arclength with 5 line segments with <m>\Delta x=1</m>.
+                Estimate this arclength with 5 line segments where <m>\Delta x=1</m>.
             </p>
         </task>
         <task>
