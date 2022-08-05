@@ -2,9 +2,6 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-05T13:02:23Z       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -16,12 +13,8 @@
 <body class="ignore-math">
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{align*}
-\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]&amp;=\displaystyle \sum_{n=0}^\infty a_nnx^{n-1}\\
-(\text{Then since when }n=0, a_0(0)x^{-1}=0)&amp;\\
-&amp;=\displaystyle \sum_{n=1}^\infty a_nnx^{n-1}\\
-(\text{Then let }m=n-1, n=m+1)&amp;\\
-&amp;=\displaystyle \sum_{m=0}^\infty a_{m+1}(m+1)x^{m}\\
-(\text{Then renaming indices}.)&amp;\\
+\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]&amp;=\frac{d}{dx}\left[a_0+a_1x+a_2x^2+\cdots a_nx^n+\cdots\right]\\
+&amp;=a_1+a_22x+a_33x^2+\cdots a_nnx^{n-1}+a_{n+1}(n+1)x^n+\cdots\\
 &amp;=\displaystyle \sum_{n=0}^\infty a_{n+1}(n+1)x^{n}
 \end{align*}
 </div>

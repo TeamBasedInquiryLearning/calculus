@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-05T13:01:37Z       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -11,7 +8,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal1 Derivatives analytically (DF2)</title>
+<title>TBIL-Calc Derivatives analytically (DF2)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -37,6 +34,14 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
@@ -197,221 +202,218 @@
 <span class="type">Section</span> <span class="codenumber">2.2</span> <span class="title">Derivatives analytically (DF2)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-10"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-323"><p id="p-514">Find derivatives using the definition of derivative as a limit.</p></li></ul></article><article class="observation remark-like" id="derivative-on-interval"><h3 class="heading">
+<ul class="disc"><li id="li-300"><p id="p-509">Find derivatives using the definition of derivative as a limit.</p></li></ul></article><article class="observation remark-like" id="derivative-on-interval"><h3 class="heading">
 <span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span>
 </h3>
-<p id="p-515">Recall that <span class="process-math">\(f'(a)\text{,}\)</span> the derivative of <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=a\text{,}\)</span> was defined as the limit as <span class="process-math">\(h \to 0\)</span> of the difference quotient on the interval <span class="process-math">\([a,a+h]\)</span> as in <a href="" class="xref" data-knowl="./knowl/def-derivative-point.html" title="Definition 2.1.9">Definition 2.1.9</a>. If <span class="process-math">\(f'(a)\)</span>exists, then say that <span class="process-math">\(f(x)\)</span> is differentiable at <span class="process-math">\(a\text{.}\)</span></p>
-<p id="p-516">If for some interval <span class="process-math">\(I\text{,}\)</span> <span class="process-math">\(f'(x)\)</span> exists for every point <span class="process-math">\(x\)</span> in <span class="process-math">\(I\text{,}\)</span> then we say that <span class="process-math">\(f(x)\)</span> is differentiable on <span class="process-math">\(I\text{.}\)</span></p></article><article class="activity project-like" id="activity-derivative-analytically-point"><h3 class="heading">
+<p id="p-510">Recall that <span class="process-math">\(f'(a)\text{,}\)</span> the derivative of <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=a\text{,}\)</span> was defined as the limit as <span class="process-math">\(h \to 0\)</span> of the difference quotient on the interval <span class="process-math">\([a,a+h]\)</span> as in <a href="" class="xref" data-knowl="./knowl/def-derivative-point.html" title="Definition 2.1.9">Definition 2.1.9</a>. If <span class="process-math">\(f'(a)\)</span> exists, then say that <span class="process-math">\(f(x)\)</span> is differentiable at <span class="process-math">\(a\text{.}\)</span> If for some open interval <span class="process-math">\((a,b)\text{,}\)</span> we have that <span class="process-math">\(f'(x)\)</span> exists for every point <span class="process-math">\(x\)</span> in <span class="process-math">\((a,b)\text{,}\)</span> then we say that <span class="process-math">\(f(x)\)</span> is differentiable on <span class="process-math">\((a,b)\text{.}\)</span></p></article><article class="activity project-like" id="activity-derivative-analytically-point"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="period">.</span>
 </h3>
-<p id="p-517">For the function <span class="process-math">\(f(x)=x-x^2\)</span> use the limit definition of the derivative at a point to compute <span class="process-math">\(f'(2)\text{.}\)</span></p>
+<p id="p-511">For the function <span class="process-math">\(f(x)=x-x^2\)</span> use the limit definition of the derivative at a point to compute <span class="process-math">\(f'(2)\text{.}\)</span></p>
 <ol class="upper-alpha">
-<li id="li-324"><p id="p-derived-li-324"><span class="process-math">\(\displaystyle f'(2)= \displaystyle \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2+4}{h}=-3\)</span></p></li>
-<li id="li-325"><p id="p-derived-li-325">The limit <span class="process-math">\(f'(2)=  \displaystyle \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2}{h}\)</span> simplifies algebraically to <span class="process-math">\(\displaystyle \lim_{h\to 0} \frac{-3h - h^2}{h}\)</span> which does not exist, thus <span class="process-math">\(f'(2)\)</span> is not defined.</p></li>
-<li id="li-326"><p id="p-derived-li-326">The limit <span class="process-math">\(f'(2)=  \displaystyle \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2}{h}\)</span> simplifies algebraically to <span class="process-math">\(\displaystyle \lim_{h\to 0} \frac{h -h^2}{h}\)</span> which does not exist, thus <span class="process-math">\(f'(2)\)</span> is not defined.</p></li>
-<li id="li-327"><p id="p-derived-li-327"><span class="process-math">\(\displaystyle f'(2) =  \displaystyle \lim_{h\to 0} \frac{(2+h)-(2^2+h^2)-2+4}{h}= 1\)</span></p></li>
+<li id="li-301"><p id="p-derived-li-301"><span class="process-math">\(\displaystyle f'(2)= \displaystyle \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2+4}{h}=-3\)</span></p></li>
+<li id="li-302"><p id="p-derived-li-302">The limit <span class="process-math">\(f'(2)=  \displaystyle \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2}{h}\)</span> simplifies algebraically to <span class="process-math">\(\displaystyle \lim_{h\to 0} \frac{-3h - h^2}{h}\)</span> which does not exist, thus <span class="process-math">\(f'(2)\)</span> is not defined.</p></li>
+<li id="li-303"><p id="p-derived-li-303">The limit <span class="process-math">\(f'(2)=  \displaystyle \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2}{h}\)</span> simplifies algebraically to <span class="process-math">\(\displaystyle \lim_{h\to 0} \frac{h -h^2}{h}\)</span> which does not exist, thus <span class="process-math">\(f'(2)\)</span> is not defined.</p></li>
+<li id="li-304"><p id="p-derived-li-304"><span class="process-math">\(\displaystyle f'(2) =  \displaystyle \lim_{h\to 0} \frac{(2+h)-(2^2+h^2)-2+4}{h}= 1\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-derivative-analytically-linear1"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="period">.</span>
 </h3>
-<p id="p-518">Consider the function <span class="process-math">\(f(x)=3-2x\text{.}\)</span> Which of the following best summarizes the average rates of changes of  on <span class="process-math">\(f\)</span> on the intervals <span class="process-math">\([1,4]\text{,}\)</span> <span class="process-math">\([3,7]\text{,}\)</span> and <span class="process-math">\([5, 5+h]\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-328"><p id="p-derived-li-328">The average rate of change on the intervals <span class="process-math">\([1,4]\)</span> and <span class="process-math">\([3,7]\)</span> are equal to the slope of <span class="process-math">\(f(x)\text{,}\)</span> but the average rate of change of <span class="process-math">\(f\)</span> cannot be determined on <span class="process-math">\([5,5+h]\)</span> without a specific value of <span class="process-math">\(h\text{.}\)</span></p></li>
-<li id="li-329"><p id="p-derived-li-329">The average rate of change on the intervals <span class="process-math">\([1,4]\text{,}\)</span> <span class="process-math">\([3,7]\text{,}\)</span> and <span class="process-math">\([5, 5+h]\)</span> are all different values.</p></li>
-<li id="li-330"><p id="p-derived-li-330">The average rate of change on the intervals <span class="process-math">\([1,4]\text{,}\)</span>  <span class="process-math">\([3,7]\text{,}\)</span> and <span class="process-math">\([5,5+h]\)</span> are all equal to <span class="process-math">\(-2\text{.}\)</span></p></li>
+<p id="p-512">Consider the function <span class="process-math">\(f(x)=3-2x\text{.}\)</span> Which of the following best summarizes the average rates of changes of  on <span class="process-math">\(f\)</span> on the intervals <span class="process-math">\([1,4]\text{,}\)</span> <span class="process-math">\([3,7]\text{,}\)</span> and <span class="process-math">\([5, 5+h]\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-305"><p id="p-derived-li-305">The average rate of change on the intervals <span class="process-math">\([1,4]\)</span> and <span class="process-math">\([3,7]\)</span> are equal to the slope of <span class="process-math">\(f(x)\text{,}\)</span> but the average rate of change of <span class="process-math">\(f\)</span> cannot be determined on <span class="process-math">\([5,5+h]\)</span> without a specific value of <span class="process-math">\(h\text{.}\)</span></p></li>
+<li id="li-306"><p id="p-derived-li-306">The average rate of change on the intervals <span class="process-math">\([1,4]\text{,}\)</span> <span class="process-math">\([3,7]\text{,}\)</span> and <span class="process-math">\([5, 5+h]\)</span> are all different values.</p></li>
+<li id="li-307"><p id="p-derived-li-307">The average rate of change on the intervals <span class="process-math">\([1,4]\text{,}\)</span>  <span class="process-math">\([3,7]\text{,}\)</span> and <span class="process-math">\([5,5+h]\)</span> are all equal to <span class="process-math">\(-2\text{.}\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-derivative-analytically-linear2"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="period">.</span>
 </h3>
-<p id="p-519">Can you find <span class="process-math">\(f'(\pi)\)</span> when <span class="process-math">\(f(x)=3-2x\)</span> without computing?</p>
+<p id="p-513">Can you find <span class="process-math">\(f'(\pi)\)</span> when <span class="process-math">\(f(x)=3-2x\)</span> without doing any computations?</p>
 <ol class="upper-alpha">
-<li id="li-331"><p id="p-derived-li-331">No, because we cannot compute the value <span class="process-math">\(f(\pi)\text{.}\)</span></p></li>
-<li id="li-332"><p id="p-derived-li-332">No, because we cannot compute the average rate of change on the interval <span class="process-math">\([\pi, \pi+h]\text{.}\)</span></p></li>
-<li id="li-333"><p id="p-derived-li-333">Yes, <span class="process-math">\(f'(\pi)=3\)</span> because the intercept of the tangent line at any point is equal to the constant intercept of <span class="process-math">\(f(x)\text{.}\)</span></p></li>
-<li id="li-334"><p id="p-derived-li-334">Yes, <span class="process-math">\(f'(\pi)=-2\)</span> because the slope of the tangent line at any point is equal to the constant slope of <span class="process-math">\(f(x)\text{.}\)</span></p></li>
+<li id="li-308"><p id="p-derived-li-308">No, because we cannot compute the value <span class="process-math">\(f(\pi)\text{.}\)</span></p></li>
+<li id="li-309"><p id="p-derived-li-309">No, because we cannot compute the average rate of change on the interval <span class="process-math">\([\pi, \pi+h]\text{.}\)</span></p></li>
+<li id="li-310"><p id="p-derived-li-310">Yes, <span class="process-math">\(f'(\pi)=3\)</span> because the intercept of the tangent line at any point is equal to the constant intercept of <span class="process-math">\(f(x)\text{.}\)</span></p></li>
+<li id="li-311"><p id="p-derived-li-311">Yes, <span class="process-math">\(f'(\pi)=-2\)</span> because the slope of the tangent line at any point is equal to the constant slope of <span class="process-math">\(f(x)\text{.}\)</span></p></li>
 </ol></article><article class="definition definition-like" id="def-derivative-function"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.5</span><span class="period">.</span>
 </h3>
-<p id="p-520">Let <span class="process-math">\(f(x)\)</span> be function that is differentiable on an open interval <span class="process-math">\(I\text{.}\)</span> The derivative function of <span class="process-math">\(f(x)\text{,}\)</span> denoted <span class="process-math">\(f'(x)\text{,}\)</span> is given by the limit</p>
+<p id="p-514">Let <span class="process-math">\(f(x)\)</span> be function that is differentiable on an open interval <span class="process-math">\((a,b)\text{.}\)</span> The derivative function of <span class="process-math">\(f(x)\text{,}\)</span> denoted <span class="process-math">\(f'(x)\text{,}\)</span> is given by the limit</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 f'(x) = \lim_{h\to 0} \frac{f(x+h)-f(x)}{h}.
 \end{equation*}
 </div>
-<p id="p-521">At any particular input <span class="process-math">\(x=a\text{,}\)</span> the derivative function outputs <span class="process-math">\(f'(a)\text{,}\)</span> the value of derivative at the point <span class="process-math">\(x=a\text{.}\)</span></p></article><article class="activity project-like" id="activity-derivative-analytically-algebraic1"><h3 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.6</span><span class="period">.</span>
+<p id="p-515">At any particular input <span class="process-math">\(x=a\text{,}\)</span> the derivative function outputs <span class="process-math">\(f'(a)\text{,}\)</span> the value of derivative at the point <span class="process-math">\(x=a\text{.}\)</span></p></article><article class="remark remark-like" id="derivative-notation1"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.2.6</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-46"><p id="p-525">In this activity you will consider  <span class="process-math">\(f(x)=-x^2+4\)</span> and compute its derivative function <span class="process-math">\(f'(x)\)</span> using the limit definition of the derivative function  <a href="" class="xref" data-knowl="./knowl/def-derivative-function.html" title="Definition 2.2.5">Definition 2.2.5</a>.</p></div>
-<article class="task exercise-like" id="task-114"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-526">What expression do you get when you simplify the difference quotient</p>
+<p id="p-516">To specify the indendent variable of our function, we say that <span class="process-math">\(f'(x)\)</span> is the derivative of <span class="process-math">\(f(x)\)</span> with respect to <span class="process-math">\(x\text{.}\)</span> For the derivative function of <span class="process-math">\(y=f(x)\)</span> we also use the notation:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f'(x)=y'(x)=\frac{dy}{dx}=\frac{df}{dx}.
+\end{equation*}
+</div>
+<p id="p-517">The last type of notation is known as <em class="emphasis">differential</em> (or Leibniz) notation for the derivative.</p></article><article class="remark remark-like" id="derivative-notation2"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.2.7</span><span class="period">.</span>
+</h3>
+<p id="p-518">Notice that our notation for the derivative function is based on the name that we assign to the function along with our choice of notation for indendent and dependent variables.  For example, if we have a differentiable function <span class="process-math">\(y=v(t)\text{,}\)</span> the derivative function of <span class="process-math">\(v(t)\)</span> with respect to <span class="process-math">\(t\)</span> can be written as <span class="process-math">\(v'(t)=y'(t)=\frac{dy}{dt}=\frac{dv}{dt}\text{.}\)</span></p></article><article class="activity project-like" id="activity-derivative-analytically-algebraic1"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.8</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-49"><p id="p-519">In this activity you will consider  <span class="process-math">\(f(x)=-x^2+4\)</span> and compute its derivative function <span class="process-math">\(f'(x)\)</span> using the limit definition of the derivative function  <a href="" class="xref" data-knowl="./knowl/def-derivative-function.html" title="Definition 2.2.5">Definition 2.2.5</a>.</p></div>
+<article class="task exercise-like" id="task-126"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-520">What expression do you get when you simplify the difference quotient</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \frac{f(x+h)-f(x)}{h}= \frac{(-(x+h)^2+4)-(-x^2+4)}{h}?
 \end{equation*}
 </div>
 <ol class="upper-alpha">
-<li id="li-335"><p id="p-derived-li-335"><span class="process-math">\(\displaystyle \frac{x^2 + h^2 +4 -x^2 -4}{h} = \frac{h^2}{h}\)</span></p></li>
-<li id="li-336"><p id="p-derived-li-336"><span class="process-math">\(\displaystyle \frac{-x^2 - h^2 +4 +x^2 -4}{h} = \frac{-h^2}{h}\)</span></p></li>
-<li id="li-337"><p id="p-derived-li-337"><span class="process-math">\(\displaystyle \frac{-x^2 -2xh - h^2 +4 +x^2 -4}{h} = \frac{-2xh - h^2}{h}\)</span></p></li>
-<li id="li-338"><p id="p-derived-li-338"><span class="process-math">\(\displaystyle \frac{x^2 + 2xh + h^2 +4 - x^2 -4}{h} = \frac{2xh + h^2}{h}\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-115"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-527">After taking the limit as <span class="process-math">\(h \to 0\text{,}\)</span> which of the following is your result for the derivative function <span class="process-math">\(f'(x)\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-339"><p id="p-derived-li-339"><span class="process-math">\(\displaystyle f'(x)=x \)</span></p></li>
-<li id="li-340"><p id="p-derived-li-340"><span class="process-math">\(\displaystyle f'(x)=-x \)</span></p></li>
-<li id="li-341"><p id="p-derived-li-341"><span class="process-math">\(\displaystyle f'(x)=2x \)</span></p></li>
-<li id="li-342"><p id="p-derived-li-342"><span class="process-math">\(\displaystyle f'(x)=-2x \)</span></p></li>
+<li id="li-312"><p id="p-derived-li-312"><span class="process-math">\(\displaystyle \frac{x^2 + h^2 +4 -x^2 -4}{h} = \frac{h^2}{h}\)</span></p></li>
+<li id="li-313"><p id="p-derived-li-313"><span class="process-math">\(\displaystyle \frac{-x^2 - h^2 +4 +x^2 -4}{h} = \frac{-h^2}{h}\)</span></p></li>
+<li id="li-314"><p id="p-derived-li-314"><span class="process-math">\(\displaystyle \frac{-x^2 -2xh - h^2 +4 +x^2 -4}{h} = \frac{-2xh - h^2}{h}\)</span></p></li>
+<li id="li-315"><p id="p-derived-li-315"><span class="process-math">\(\displaystyle \frac{x^2 + 2xh + h^2 +4 - x^2 -4}{h} = \frac{2xh + h^2}{h}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-127"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-521">After taking the limit as <span class="process-math">\(h \to 0\text{,}\)</span> which of the following is your result for the derivative function <span class="process-math">\(f'(x)\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-316"><p id="p-derived-li-316"><span class="process-math">\(\displaystyle f'(x)=x \)</span></p></li>
+<li id="li-317"><p id="p-derived-li-317"><span class="process-math">\(\displaystyle f'(x)=-x \)</span></p></li>
+<li id="li-318"><p id="p-derived-li-318"><span class="process-math">\(\displaystyle f'(x)=2x \)</span></p></li>
+<li id="li-319"><p id="p-derived-li-319"><span class="process-math">\(\displaystyle f'(x)=-2x \)</span></p></li>
 </ol></article></article><article class="activity project-like" id="activity-derivative-analytically-algebraic2"><h3 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.7</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.9</span><span class="period">.</span>
 </h3>
-<p id="p-528">Using the limit definition of the derivative, find <span class="process-math">\(f'(x)\)</span> for <span class="process-math">\(f(x)=-x^2+2x-4\text{.}\)</span> Which of the following is an accurate expression for <span class="process-math">\(f'(x)\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-343"><p id="p-derived-li-343"><span class="process-math">\(\displaystyle f'(x)=2x +2\)</span></p></li>
-<li id="li-344"><p id="p-derived-li-344"><span class="process-math">\(\displaystyle f'(x)=-2x \)</span></p></li>
-<li id="li-345"><p id="p-derived-li-345"><span class="process-math">\(\displaystyle f'(x)=-2x+2 \)</span></p></li>
-<li id="li-346"><p id="p-derived-li-346"><span class="process-math">\(\displaystyle f'(x)=-2x -2 \)</span></p></li>
+<p id="p-522">Using the limit definition of the derivative, find <span class="process-math">\(f'(x)\)</span> for <span class="process-math">\(f(x)=-x^2+2x-4\text{.}\)</span> Which of the following is an accurate expression for <span class="process-math">\(f'(x)\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-320"><p id="p-derived-li-320"><span class="process-math">\(\displaystyle f'(x)=2x +2\)</span></p></li>
+<li id="li-321"><p id="p-derived-li-321"><span class="process-math">\(\displaystyle f'(x)=-2x \)</span></p></li>
+<li id="li-322"><p id="p-derived-li-322"><span class="process-math">\(\displaystyle f'(x)=-2x+2 \)</span></p></li>
+<li id="li-323"><p id="p-derived-li-323"><span class="process-math">\(\displaystyle f'(x)=-2x -2 \)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-derivative-analytically-algebraic3"><h3 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.8</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.10</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-47"><p id="p-529">Using the limit definition of the derivative, you want to find <span class="process-math">\(f'(x)\)</span> for <span class="process-math">\(f(x)=\frac{1}{x}\text{.}\)</span> We will do this by first simplifying the difference quotient and then taking the limit as <span class="process-math">\(h\to 0\text{.}\)</span></p></div>
-<article class="task exercise-like" id="task-116"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-530">What expression do you get when you simplify the difference quotient</p>
+<div class="introduction" id="introduction-50"><p id="p-523">Using the limit definition of the derivative, you want to find <span class="process-math">\(f'(x)\)</span> for <span class="process-math">\(f(x)=\frac{1}{x}\text{.}\)</span> We will do this by first simplifying the difference quotient and then taking the limit as <span class="process-math">\(h\to 0\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-128"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-524">What expression do you get when you simplify the difference quotient</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \frac{f(x+h)-f(x)}{h}= \frac{\frac{1}{x+h}-\frac{1}{x}}{h}?
 \end{equation*}
 </div>
 <ol class="upper-alpha">
-<li id="li-347"><p id="p-derived-li-347"><span class="process-math">\(\displaystyle \frac{\frac{1}{x+h}}{h} = \frac{1}{(x+h)h}\)</span></p></li>
-<li id="li-348"><p id="p-derived-li-348"><span class="process-math">\(\displaystyle \frac{\frac{h}{x+h}}{h} = \frac{h}{h(x+h)}\)</span></p></li>
-<li id="li-349"><p id="p-derived-li-349"><span class="process-math">\(\displaystyle \frac{\frac{x-(x+h)}{(x+h)x}}{h} = \frac{-h}{h(x+h)x}\)</span></p></li>
-<li id="li-350"><p id="p-derived-li-350"><span class="process-math">\(\displaystyle \frac{\frac{x-(x+h)}{(x+h)x}}{h} = \frac{-h^2}{(x+h)x}\)</span></p></li>
-<li id="li-351"><p id="p-derived-li-351"><span class="process-math">\(\displaystyle \frac{\frac{h}{(x+h)x}}{h} = \frac{h}{h(x+h)x}\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-117"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-531">After taking the limit as <span class="process-math">\(h \to 0\text{,}\)</span> which of the following is your result for the derivative function <span class="process-math">\(f'(x)\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-352"><p id="p-derived-li-352"><span class="process-math">\(\displaystyle f'(x)=0 \)</span></p></li>
-<li id="li-353"><p id="p-derived-li-353"><span class="process-math">\(\displaystyle f'(x)=1/x \)</span></p></li>
-<li id="li-354"><p id="p-derived-li-354"><span class="process-math">\(\displaystyle f'(x)=-1/x \)</span></p></li>
-<li id="li-355"><p id="p-derived-li-355"><span class="process-math">\(\displaystyle f'(x)=1/x^2 \)</span></p></li>
-<li id="li-356"><p id="p-derived-li-356"><span class="process-math">\(\displaystyle f'(x)=-1/x^2 \)</span></p></li>
+<li id="li-324"><p id="p-derived-li-324"><span class="process-math">\(\displaystyle \frac{\frac{1}{x+h}}{h} = \frac{1}{(x+h)h}\)</span></p></li>
+<li id="li-325"><p id="p-derived-li-325"><span class="process-math">\(\displaystyle \frac{\frac{h}{x+h}}{h} = \frac{h}{h(x+h)}\)</span></p></li>
+<li id="li-326"><p id="p-derived-li-326"><span class="process-math">\(\displaystyle \frac{\frac{x-(x+h)}{(x+h)x}}{h} = \frac{-h}{h(x+h)x}\)</span></p></li>
+<li id="li-327"><p id="p-derived-li-327"><span class="process-math">\(\displaystyle \frac{\frac{x-(x+h)}{(x+h)x}}{h} = \frac{-h^2}{(x+h)x}\)</span></p></li>
+<li id="li-328"><p id="p-derived-li-328"><span class="process-math">\(\displaystyle \frac{\frac{h}{(x+h)x}}{h} = \frac{h}{h(x+h)x}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-129"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-525">After taking the limit as <span class="process-math">\(h \to 0\text{,}\)</span> which of the following is your result for the derivative function <span class="process-math">\(f'(x)\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-329"><p id="p-derived-li-329"><span class="process-math">\(\displaystyle f'(x)=0 \)</span></p></li>
+<li id="li-330"><p id="p-derived-li-330"><span class="process-math">\(\displaystyle f'(x)=1/x \)</span></p></li>
+<li id="li-331"><p id="p-derived-li-331"><span class="process-math">\(\displaystyle f'(x)=-1/x \)</span></p></li>
+<li id="li-332"><p id="p-derived-li-332"><span class="process-math">\(\displaystyle f'(x)=1/x^2 \)</span></p></li>
+<li id="li-333"><p id="p-derived-li-333"><span class="process-math">\(\displaystyle f'(x)=-1/x^2 \)</span></p></li>
 </ol></article></article><article class="activity project-like" id="activity-df2-checkit"><h3 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.9</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.11</span><span class="period">.</span>
 </h3>
-<p id="p-532">Find <span class="process-math">\(f'(x)\)</span> using the limit definition of the derivative. Then evaluate at <span class="process-math">\(x=8\text{.}\)</span></p>
+<p id="p-526">Find <span class="process-math">\(f'(x)\)</span> using the limit definition of the derivative. Then evaluate at <span class="process-math">\(x=8\text{.}\)</span></p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 f(x) = x^{2} - 5 \, x - 5
 \end{equation*}
-</div>
-<div class="solutions">
-<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-5" id="answer-5"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-5"><div class="answer solution-like">
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-f'(x) = 2 \, x - 5
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-f'(8) = 11
-\end{equation*}
-</div>
-</div></div>
 </div></article><article class="definition definition-like" id="second-derivative"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.10</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.12</span><span class="period">.</span>
 </h3>
-<p id="p-533">Once we have computed the first derivative <span class="process-math">\(f'(x)\text{,}\)</span> the second derivative of <span class="process-math">\(f(x)\)</span> is the first derivative of <span class="process-math">\(f'(x)\)</span> or</p>
+<p id="p-527">Once we have computed the first derivative <span class="process-math">\(f'(x)\text{,}\)</span> the <dfn class="terminology">second derivative</dfn> of <span class="process-math">\(f(x)\)</span> is the first derivative of <span class="process-math">\(f'(x)\)</span> or</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 f''(x) = \lim_{h\to 0} \frac{f'(x+h)-f'(x)}{h}.
 \end{equation*}
 </div></article><article class="activity project-like" id="second-der-easy"><h3 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.11</span><span class="period">.</span>
-</h3>
-<p id="p-534">Consider the function <span class="process-math">\(f(x)=-x^2+2x-4\text{.}\)</span> Earlier you saw that <span class="process-math">\(f'(x)=-2x+2\text{.}\)</span> What is the second derivative of <span class="process-math">\(f(x)\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-357"><p id="p-derived-li-357"><span class="process-math">\(\displaystyle f''(x)=2 \)</span></p></li>
-<li id="li-358"><p id="p-derived-li-358"><span class="process-math">\(\displaystyle f'(x)=-2 \)</span></p></li>
-<li id="li-359"><p id="p-derived-li-359"><span class="process-math">\(\displaystyle f'(x)=2x \)</span></p></li>
-<li id="li-360"><p id="p-derived-li-360"><span class="process-math">\(\displaystyle f'(x)=-2x \)</span></p></li>
-</ol></article><article class="remark remark-like" id="remark-15"><h3 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.2.12</span><span class="period">.</span>
-</h3>
-<p id="p-535">The first derivative encodes information about the rate of change of the original function. In particular,</p>
-<ul class="disc">
-<li id="li-361"><p id="p-derived-li-361">If <span class="process-math">\(f'\gt 0 \text{,}\)</span> then <span class="process-math">\(f\)</span> is increasing;</p></li>
-<li id="li-362"><p id="p-derived-li-362">If <span class="process-math">\(f'\lt 0 \text{,}\)</span> then <span class="process-math">\(f\)</span> is decreasing;</p></li>
-<li id="li-363"><p id="p-derived-li-363">If <span class="process-math">\(f' = 0 \text{,}\)</span> then <span class="process-math">\(f\)</span> has a horizontal tangent line (and it might have a max or min or it might just be changing pace);</p></li>
-</ul>
-<p id="p-536">The second derivative is the derivative of the derivative. It encodes information about the rate of change of the rate of change of the original function. In particular,</p>
-<ul class="disc">
-<li id="li-364"><p id="p-derived-li-364">If <span class="process-math">\(f'' \gt 0 \text{,}\)</span> then <span class="process-math">\(f\)</span> is concave up;</p></li>
-<li id="li-365"><p id="p-derived-li-365">If <span class="process-math">\(f'' \lt 0 \text{,}\)</span> then <span class="process-math">\(f\)</span> is concave down;</p></li>
-<li id="li-366"><p id="p-derived-li-366">If <span class="process-math">\(f'' = 0 \text{,}\)</span> then <span class="process-math">\(f\)</span> might have an inflection point (or it might just be changing pace);</p></li>
-</ul></article><article class="activity project-like" id="second-first-der-graph"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.13</span><span class="period">.</span>
 </h3>
-<p id="p-537">Consider the function <span class="process-math">\(f(x)=-x^2+2x-4\text{.}\)</span> Earlier you saw that <span class="process-math">\(f'(x)=-2x+2\)</span> and <span class="process-math">\(f''(x)=-2\text{.}\)</span> What does this tell you about the graph of <span class="process-math">\(f(x)\)</span> for <span class="process-math">\(x \gt 1\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-367"><p id="p-derived-li-367">The graph is increasing and concave up</p></li>
-<li id="li-368"><p id="p-derived-li-368">The graph is increasing and concave down</p></li>
-<li id="li-369"><p id="p-derived-li-369">The graph is decreasing and concave up</p></li>
-<li id="li-370"><p id="p-derived-li-370">The graph is decreasing and concave down</p></li>
-</ol></article><article class="observation remark-like" id="two-ways-derivative-at-point"><h3 class="heading">
-<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.2.14</span><span class="period">.</span>
+<p id="p-528">Consider the function <span class="process-math">\(f(x)=-x^2+2x-4\text{.}\)</span> Earlier you saw that <span class="process-math">\(f'(x)=-2x+2\text{.}\)</span> What is the second derivative of <span class="process-math">\(f(x)\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-334"><p id="p-derived-li-334"><span class="process-math">\(\displaystyle f''(x)=2 \)</span></p></li>
+<li id="li-335"><p id="p-derived-li-335"><span class="process-math">\(\displaystyle f'(x)=-2 \)</span></p></li>
+<li id="li-336"><p id="p-derived-li-336"><span class="process-math">\(\displaystyle f'(x)=2x \)</span></p></li>
+<li id="li-337"><p id="p-derived-li-337"><span class="process-math">\(\displaystyle f'(x)=-2x \)</span></p></li>
+</ol></article><article class="remark remark-like" id="remark-17"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.2.14</span><span class="period">.</span>
 </h3>
-<p id="p-538">We have two ways to compute analytically the derivative at a point. For example, to compute <span class="process-math">\(f'(1)\text{,}\)</span> the derivative of <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=1\text{,}\)</span> we have two methods</p>
-<ol class="decimal">
-<li id="li-371"><p id="p-derived-li-371">We can directly compute <span class="process-math">\(f'(1)\)</span> by finding the difference quotient on the interval <span class="process-math">\([1,1+h]\)</span> and then taking the limit as <span class="process-math">\(h\to 0\text{.}\)</span></p></li>
-<li id="li-372"><p id="p-derived-li-372">We can first find the derivative function <span class="process-math">\(f'(x)\)</span> by computing the difference quotient on the interval <span class="process-math">\([x,x+h]\text{,}\)</span> then taking the limit as <span class="process-math">\(h\to 0\text{,}\)</span> and finally evaluating the expression for <span class="process-math">\(f'(x)\)</span> at the input <span class="process-math">\(x=1\text{.}\)</span></p></li>
-</ol>
-<p id="p-539">The latter approach is more convenient when you want to consider the value of the derivative function at multiple points!</p></article><article class="activity project-like" id="activity-derivative-analytically-algebraic4"><h3 class="heading">
+<p id="p-529">The first derivative encodes information about the rate of change of the original function. In particular,</p>
+<ul class="disc">
+<li id="li-338"><p id="p-derived-li-338">If <span class="process-math">\(f'\gt 0 \text{,}\)</span> then <span class="process-math">\(f\)</span> is increasing;</p></li>
+<li id="li-339"><p id="p-derived-li-339">If <span class="process-math">\(f'\lt 0 \text{,}\)</span> then <span class="process-math">\(f\)</span> is decreasing;</p></li>
+<li id="li-340"><p id="p-derived-li-340">If <span class="process-math">\(f' = 0 \text{,}\)</span> then <span class="process-math">\(f\)</span> has a horizontal tangent line (and it might have a max or min or it might just be changing pace).</p></li>
+</ul>
+<p id="p-530">The second derivative is the derivative of the derivative. It encodes information about the rate of change of the rate of change of the original function. In particular,</p>
+<ul class="disc">
+<li id="li-341"><p id="p-derived-li-341">If <span class="process-math">\(f'' \gt 0 \text{,}\)</span> then <span class="process-math">\(f'\)</span> is increasing;</p></li>
+<li id="li-342"><p id="p-derived-li-342">If <span class="process-math">\(f'' \lt 0 \text{,}\)</span> then <span class="process-math">\(f'\)</span> is decreasing;</p></li>
+<li id="li-343"><p id="p-derived-li-343">If <span class="process-math">\(f'' = 0 \text{,}\)</span> then <span class="process-math">\(f'\)</span> has a horizontal tangent line (and it might have a max or min or it might just be changing pace).</p></li>
+</ul></article><article class="activity project-like" id="second-first-der-graph"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.15</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-48"><p id="p-540">Consider the function <span class="process-math">\(f(x) = \frac{1}{x^2}\text{.}\)</span> You will find <span class="process-math">\(f'(1)\)</span> in two ways!</p></div>
-<article class="task exercise-like" id="task-118"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-541">Using the limit definition of the derivative at a point, compute the difference quotient on the interval <span class="process-math">\([1,1+h]\)</span> and then take the limit as <span class="process-math">\(h\to 0\text{.}\)</span> What do you get?</p>
-<ol class="upper-alpha">
-<li id="li-373"><p id="p-542">-1</p></li>
-<li id="li-374"><p id="p-543">1</p></li>
-<li id="li-375"><p id="p-544">2</p></li>
-<li id="li-376"><p id="p-545">-2</p></li>
-</ol></article><article class="task exercise-like" id="task-119"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-546">Now, using the limit definition of the derivative function, find <span class="process-math">\(f'(x)\text{.}\)</span> Which of the following is your result for the derivative function <span class="process-math">\(f'(x)\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-377"><p id="p-derived-li-377"><span class="process-math">\(\displaystyle f'(x)=-1/x^3 \)</span></p></li>
-<li id="li-378"><p id="p-derived-li-378"><span class="process-math">\(\displaystyle f'(x)=1/x^3 \)</span></p></li>
-<li id="li-379"><p id="p-derived-li-379"><span class="process-math">\(\displaystyle f'(x)=-2/x^3 \)</span></p></li>
-<li id="li-380"><p id="p-derived-li-380"><span class="process-math">\(\displaystyle f'(x)=2/x^3 \)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-120"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-547">Make sure that your answers match! So if you plug in <span class="process-math">\(x=1\)</span> in <span class="process-math">\(f'(x)\text{,}\)</span> you should get the same number you got when you computed <span class="process-math">\(f'(1)\text{.}\)</span></p></article></article><article class="activity project-like" id="DF2-activity-ball2"><h3 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.16</span><span class="period">.</span>
+<p id="p-531">Consider the function <span class="process-math">\(f(x)=-x^2+2x-4\text{.}\)</span> Earlier you saw that <span class="process-math">\(f'(x)=-2x+2\)</span> and <span class="process-math">\(f''(x)=-2\text{.}\)</span> What does this tell you about the graph of <span class="process-math">\(f(x)\)</span> for <span class="process-math">\(x \gt 1\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-344"><p id="p-derived-li-344">The graph is increasing and concave up</p></li>
+<li id="li-345"><p id="p-derived-li-345">The graph is increasing and concave down</p></li>
+<li id="li-346"><p id="p-derived-li-346">The graph is decreasing and concave up</p></li>
+<li id="li-347"><p id="p-derived-li-347">The graph is decreasing and concave down</p></li>
+</ol></article><article class="observation remark-like" id="two-ways-derivative-at-point"><h3 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.2.16</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-49"><p id="p-548">In this activity you will study (again!) the velocity of a ball falling under gravity. A ball is tossed vertically in the air from a window. The height of the ball (in feet) is given by the formula <span class="process-math">\(f(t) = 64-16(t-1)^2\text{,}\)</span> where <span class="process-math">\(t\)</span> is the seconds after the ball is launched. Recall that in <a href="" class="xref" data-knowl="./knowl/activity-ball1.html" title="Activity 2.1.1">Activity 2.1.1</a>, you used numerical methods to approxmiate the instantaneous velocity of <span class="process-math">\(f(t)\)</span> to calculate <span class="process-math">\(v(2)\text{!.}\)</span></p></div>
-<article class="task exercise-like" id="task-121"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-549">Using the limit definition of the derivative function, find the velocity function of the ball <span class="process-math">\(v(t)=f'(t)\text{.}\)</span></p></article><article class="task exercise-like" id="task-122"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-550">Using the velocity function <span class="process-math">\(v(t)\text{,}\)</span> what is <span class="process-math">\(v'(1)\text{,}\)</span> the instantaneous velocity at <span class="process-math">\(t=1\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-381"><p id="p-551">-32 feet per second</p></li>
-<li id="li-382"><p id="p-552">32 feet per second</p></li>
-<li id="li-383"><p id="p-553">0 feet per second</p></li>
-<li id="li-384"><p id="p-554">-16 feet per second</p></li>
-<li id="li-385"><p id="p-555">16 feet per second</p></li>
-</ol></article><article class="task exercise-like" id="task-123"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-556">What behavior would explain your finding?</p>
-<ol class="upper-alpha">
-<li id="li-386"><p id="p-557">After 1 second the ball is falling at a speed of 32 meters per second.</p></li>
-<li id="li-387"><p id="p-558">After 1 second the ball is moving upwards at a speed of 32 meters per second.</p></li>
-<li id="li-388"><p id="p-559">After 1 second the ball reaches its highest point and it stops for an instant.</p></li>
-<li id="li-389"><p id="p-560">After 1 second the ball is falling at a speed of 16 meters per second.</p></li>
-<li id="li-390"><p id="p-561">After 1 second the ball is moving upwards at a speed of 16 meters per second.</p></li>
-</ol></article></article><article class="observation remark-like" id="continuity-differentiability"><h3 class="heading">
-<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.2.17</span><span class="period">.</span>
+<p id="p-532">We have two ways to compute analytically the derivative at a point. For example, to compute <span class="process-math">\(f'(1)\text{,}\)</span> the derivative of <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=1\text{,}\)</span> we have two methods</p>
+<ol class="decimal">
+<li id="li-348"><p id="p-derived-li-348">We can directly compute <span class="process-math">\(f'(1)\)</span> by finding the difference quotient on the interval <span class="process-math">\([1,1+h]\)</span> and then taking the limit as <span class="process-math">\(h\to 0\text{.}\)</span></p></li>
+<li id="li-349"><p id="p-derived-li-349">We can first find the derivative function <span class="process-math">\(f'(x)\)</span> by computing the difference quotient on the interval <span class="process-math">\([x,x+h]\text{,}\)</span> then taking the limit as <span class="process-math">\(h\to 0\text{,}\)</span> and finally evaluating the expression for <span class="process-math">\(f'(x)\)</span> at the input <span class="process-math">\(x=1\text{.}\)</span></p></li>
+</ol>
+<p id="p-533">The latter approach is more convenient when you want to consider the value of the derivative function at multiple points!</p></article><article class="activity project-like" id="activity-derivative-analytically-algebraic4"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.17</span><span class="period">.</span>
 </h3>
-<p id="p-562">A function can only be differentiable at <span class="process-math">\(x=a\)</span> if it is also continuous at <span class="process-math">\(x=a\text{.}\)</span> But not all continuous functions are differentiable: when we have a corner in the graph of a the function, the function is continuous at the corner point, but it is not differentiable at that point!</p></article><article class="activity project-like" id="activity-differentiability-piecewise"><h3 class="heading">
+<div class="introduction" id="introduction-51"><p id="p-534">Consider the function <span class="process-math">\(f(x) = \frac{1}{x^2}\text{.}\)</span> You will find <span class="process-math">\(f'(1)\)</span> in two ways!</p></div>
+<article class="task exercise-like" id="task-130"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-535">Using the limit definition of the derivative at a point, compute the difference quotient on the interval <span class="process-math">\([1,1+h]\)</span> and then take the limit as <span class="process-math">\(h\to 0\text{.}\)</span> What do you get?</p>
+<ol class="upper-alpha cols2">
+<li id="li-350"><p id="p-536">-1</p></li>
+<li id="li-351"><p id="p-537">1</p></li>
+<li id="li-352"><p id="p-538">2</p></li>
+<li id="li-353"><p id="p-539">-2</p></li>
+</ol></article><article class="task exercise-like" id="task-131"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-540">Now, using the limit definition of the derivative function, find <span class="process-math">\(f'(x)\text{.}\)</span> Which of the following is your result for the derivative function <span class="process-math">\(f'(x)\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-354"><p id="p-derived-li-354"><span class="process-math">\(\displaystyle f'(x)=-1/x^3 \)</span></p></li>
+<li id="li-355"><p id="p-derived-li-355"><span class="process-math">\(\displaystyle f'(x)=1/x^3 \)</span></p></li>
+<li id="li-356"><p id="p-derived-li-356"><span class="process-math">\(\displaystyle f'(x)=-2/x^3 \)</span></p></li>
+<li id="li-357"><p id="p-derived-li-357"><span class="process-math">\(\displaystyle f'(x)=2/x^3 \)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-132"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-541">Make sure that your answers match! So if you plug in <span class="process-math">\(x=1\)</span> in <span class="process-math">\(f'(x)\text{,}\)</span> you should get the same number you got when you computed <span class="process-math">\(f'(1)\text{.}\)</span></p></article></article><article class="activity project-like" id="DF2-activity-ball2"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.18</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-50"><p id="p-563">In  <a href="" class="xref" data-knowl="./knowl/differentiability.html" title="Observation 2.1.17">Observation 2.1.17</a>, we said that a function is not differentiable when the limit that defines it does not exist. In this activity we will study differentiability analytically.</p></div>
-<article class="task exercise-like" id="task-124"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-564">Consider the following continuous function</p>
+<div class="introduction" id="introduction-52"><p id="p-542">In this activity you will study (again!) the velocity of a ball falling under gravity. A ball is tossed vertically in the air from a window. The height of the ball (in feet) is given by the formula <span class="process-math">\(f(t) = 64-16(t-1)^2\text{,}\)</span> where <span class="process-math">\(t\)</span> is the seconds after the ball is launched. Recall that in <a href="" class="xref" data-knowl="./knowl/activity-ball1.html" title="Activity 2.1.1">Activity 2.1.1</a>, you used numerical methods to approxmiate the instantaneous velocity of <span class="process-math">\(f(t)\)</span> to calculate <span class="process-math">\(v(2)\text{!}\)</span></p></div>
+<article class="task exercise-like" id="task-133"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-543">Using the limit definition of the derivative function, find the velocity function <span class="process-math">\(v(t)=f'(t)\text{.}\)</span></p></article><article class="task exercise-like" id="task-134"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-544">Using the velocity function <span class="process-math">\(v(t)\text{,}\)</span> what is <span class="process-math">\(v'(1)\text{,}\)</span> the instantaneous velocity at <span class="process-math">\(t=1\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-358"><p id="p-545">-32 feet per second</p></li>
+<li id="li-359"><p id="p-546">32 feet per second</p></li>
+<li id="li-360"><p id="p-547">0 feet per second</p></li>
+<li id="li-361"><p id="p-548">-16 feet per second</p></li>
+<li id="li-362"><p id="p-549">16 feet per second</p></li>
+</ol></article><article class="task exercise-like" id="task-135"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-550">What behavior would explain your finding?</p>
+<ol class="upper-alpha cols2">
+<li id="li-363"><p id="p-551">After 1 second the ball is falling at a speed of 32 meters per second.</p></li>
+<li id="li-364"><p id="p-552">After 1 second the ball is moving upwards at a speed of 32 meters per second.</p></li>
+<li id="li-365"><p id="p-553">After 1 second the ball reaches its highest point and it stops for an instant.</p></li>
+<li id="li-366"><p id="p-554">After 1 second the ball is falling at a speed of 16 meters per second.</p></li>
+<li id="li-367"><p id="p-555">After 1 second the ball is moving upwards at a speed of 16 meters per second.</p></li>
+</ol></article></article><article class="observation remark-like" id="continuity-differentiability"><h3 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.2.19</span><span class="period">.</span>
+</h3>
+<p id="p-556">A function can only be differentiable at <span class="process-math">\(x=a\)</span> if it is also continuous at <span class="process-math">\(x=a\text{.}\)</span> But not all continuous functions are differentiable: when we have a corner in the graph of a the function, the function is continuous at the corner point, but it is not differentiable at that point!</p></article><article class="activity project-like" id="activity-differentiability-piecewise"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.20</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-53"><p id="p-557">In  <a href="" class="xref" data-knowl="./knowl/differentiability.html" title="Observation 2.1.17">Observation 2.1.17</a>, we said that a function is not differentiable when the limit that defines it does not exist. In this activity we will study differentiability analytically.</p></div>
+<article class="task exercise-like" id="task-136"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-558">Consider the following continuous function</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 g(x) = \begin{cases}
@@ -420,8 +422,8 @@ x^2   \amp x \gt  2
 \end{cases}
 \end{equation*}
 </div>
-<p id="p-565">Consider the interval <span class="process-math">\([2,2+h]\text{.}\)</span> When <span class="process-math">\(h \lt 0 \text{,}\)</span> the interval falls under the first definition of <span class="process-math">\(g(x)\)</span> and the derivative is always equal to 1. What is the derivative function for <span class="process-math">\(x\)</span> values greater than 2? Show that at <span class="process-math">\(x=2\)</span> the value of this derivative is not equal to 1 and so <span class="process-math">\(g(x) \)</span> is not differentiable at <span class="process-math">\(x=2\text{.}\)</span></p></article><article class="task exercise-like" id="task-125"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-566">Consider the following discontinuous function</p>
+<p id="p-559">Consider the interval <span class="process-math">\([2,2+h]\text{.}\)</span> When <span class="process-math">\(h \lt 0 \text{,}\)</span> the interval falls under the first definition of <span class="process-math">\(g(x)\)</span> and the derivative is always equal to 1. What is the derivative function for <span class="process-math">\(x\)</span> values greater than 2? Show that at <span class="process-math">\(x=2\)</span> the value of this derivative is not equal to 1 and so <span class="process-math">\(g(x) \)</span> is not differentiable at <span class="process-math">\(x=2\text{.}\)</span></p></article><article class="task exercise-like" id="task-137"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-560">Consider the following discontinuous function</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 g(x) = \begin{cases}
@@ -430,8 +432,8 @@ x   \amp x \gt  2
 \end{cases}
 \end{equation*}
 </div>
-<p id="p-567">On both sides of <span class="process-math">\(x=2\)</span> it seems that the slope is the same, but this function is still not differentiable at <span class="process-math">\(x=2\text{.}\)</span> Notice that <span class="process-math">\(g(2)=4\text{.}\)</span> When <span class="process-math">\(h \gt 0 \text{,}\)</span> the interval <span class="process-math">\([2,2+h]\)</span>falls under the second definition of <span class="process-math">\(g(x)\text{,}\)</span> but <span class="process-math">\(g(2)\)</span> is always fixed at 4. Compute the difference quotient <span class="process-math">\(\frac{g(2+h)-g(2)}{h}\)</span> assuming that <span class="process-math">\(h \gt 0 \)</span> and notice that this does not simplify as expected! Moreover, if you take the limit as <span class="process-math">\(h\to 0\text{,}\)</span> you will get infinity and not the expected slope of 1!</p></article><article class="task exercise-like" id="task-126"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-568">Consider the following function</p>
+<p id="p-561">On both sides of <span class="process-math">\(x=2\)</span> it seems that the slope is the same, but this function is still not differentiable at <span class="process-math">\(x=2\text{.}\)</span> Notice that <span class="process-math">\(g(2)=4\text{.}\)</span> When <span class="process-math">\(h \gt 0 \text{,}\)</span> the interval <span class="process-math">\([2,2+h]\)</span>falls under the second definition of <span class="process-math">\(g(x)\text{,}\)</span> but <span class="process-math">\(g(2)\)</span> is always fixed at 4. Compute the difference quotient <span class="process-math">\(\frac{g(2+h)-g(2)}{h}\)</span> assuming that <span class="process-math">\(h \gt 0 \)</span> and notice that this does not simplify as expected! Moreover, if you take the limit as <span class="process-math">\(h\to 0\text{,}\)</span> you will get infinity and not the expected slope of 1!</p></article><article class="task exercise-like" id="task-138"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-562">Consider the following function</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 g(x) = \begin{cases}
@@ -440,7 +442,7 @@ bx^2   \amp x \gt  2
 \end{cases}
 \end{equation*}
 </div>
-<p id="p-569">where <span class="process-math">\(a,b\)</span> are some nonzero parameters you will find. Find an equation in <span class="process-math">\(a,b\)</span> that needs to be true if we want the function to be continuous at <span class="process-math">\(x=2\text{.}\)</span> Also, find an equation in <span class="process-math">\(a,b\)</span> that needs to be true if we want the function to be differentiable at <span class="process-math">\(x=2\text{.}\)</span> Solve the system of two linear equations... you should find that <span class="process-math">\(a=-2\)</span> and <span class="process-math">\(b=-1/2\)</span> are the only values that make the function differentiable (and continuous!).</p></article></article></section></div></main>
+<p id="p-563">where <span class="process-math">\(a,b\)</span> are some nonzero parameters you will find. Find an equation in <span class="process-math">\(a,b\)</span> that needs to be true if we want the function to be continuous at <span class="process-math">\(x=2\text{.}\)</span> Also, find an equation in <span class="process-math">\(a,b\)</span> that needs to be true if we want the function to be differentiable at <span class="process-math">\(x=2\text{.}\)</span> Solve the system of two linear equations... you should find that <span class="process-math">\(a=-2\)</span> and <span class="process-math">\(b=-1/2\)</span> are the only values that make the function differentiable (and continuous!).</p></article></article></section></div></main>
 </div>
 </body>
 </html>

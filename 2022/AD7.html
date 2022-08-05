@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-05T13:01:39Z       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -11,7 +8,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal1 Graphing with derivatives (AD7)</title>
+<title>TBIL-Calc Graphing with derivatives (AD7)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -37,6 +34,14 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
@@ -197,51 +202,51 @@
 <span class="type">Section</span> <span class="codenumber">3.7</span> <span class="title">Graphing with derivatives (AD7)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-24"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-870"><p id="p-1283">Sketch the graph of a differentiable function whose derivatives satisfy given criteria.</p></li></ul></article><article class="remark remark-like" id="remark-32"><h3 class="heading">
+<ul class="disc"><li id="li-790"><p id="p-1254">Sketch the graph of a differentiable function whose derivatives satisfy given criteria.</p></li></ul></article><article class="remark remark-like" id="remark-34"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.7.1</span><span class="period">.</span>
 </h3>
-<p id="p-1284">In <a href="AD5.html" class="internal" title="Section 3.5: Derivative tests (AD5)">Section 3.5</a> and <a href="AD6.html" class="internal" title="Section 3.6: Concavity and inflection (AD6)">Section 3.6</a> we learned how the first and second derivatives give us information about the graph of a function. Specifically, we can determine the intervals where a function is increasing, decreasing, concave up, or concave down as well as any relative extrema or inflection points. Now we will put that information together to draw a sketch of the graph.</p></article><article class="activity project-like" id="activity-graphing-words"><h3 class="heading">
+<p id="p-1255">In <a href="AD5.html" class="internal" title="Section 3.5: Derivative tests (AD5)">Section 3.5</a> and <a href="AD6.html" class="internal" title="Section 3.6: Concavity and inflection (AD6)">Section 3.6</a> we learned how the first and second derivatives give us information about the graph of a function. Specifically, we can determine the intervals where a function is increasing, decreasing, concave up, or concave down as well as any local extrema or inflection points. Now we will put that information together to sketch the graph of a function.</p></article><article class="activity project-like" id="activity-graphing-words"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.7.2</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-120">
-<p id="p-1285">Which of the following best describes the curve graphed below?</p>
+<div class="introduction" id="introduction-131">
+<p id="p-1256">Which of the following features best describe the curve graphed below?</p>
 <figure class="figure figure-like" id="dec-cdown"><div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/dec-cdown.png" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">54<span class="period">.</span></span><span class="space"> </span></figcaption></figure>
 </div>
-<ol class="upper-alpha">
-<li id="li-871"><p id="p-1286">Increasing and concave up</p></li>
-<li id="li-872"><p id="p-1287">Increasing and concave down</p></li>
-<li id="li-873"><p id="p-1288">Decreasing and concave up</p></li>
-<li id="li-874"><p id="p-1289">Decreasing and concave down</p></li>
+<ol class="upper-alpha cols2">
+<li id="li-791"><p id="p-1257">Increasing and concave up</p></li>
+<li id="li-792"><p id="p-1258">Increasing and concave down</p></li>
+<li id="li-793"><p id="p-1259">Decreasing and concave up</p></li>
+<li id="li-794"><p id="p-1260">Decreasing and concave down</p></li>
 </ol></article><article class="activity project-like" id="activity-graphing-der-signs"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.7.3</span><span class="period">.</span>
 </h3>
-<article class="task exercise-like" id="task-350"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1290">Which of the following best describes the curve graphed below?</p>
+<article class="task exercise-like" id="task-391"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1261">Which of the following features best describe the curve graphed below?</p>
 <figure class="figure figure-like" id="inc-cdown"><div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/inc-cdown.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">55<span class="period">.</span></span><span class="space"> </span></figcaption></figure><ol class="upper-alpha">
-<li id="li-875"><p id="p-1291"><span class="process-math">\(f'&gt;0\)</span> and <span class="process-math">\(f''&gt;0\)</span></p></li>
-<li id="li-876"><p id="p-1292"><span class="process-math">\(f'&gt;0\)</span> and <span class="process-math">\(f''&lt;0 \)</span></p></li>
-<li id="li-877"><p id="p-1293"><span class="process-math">\(f'&lt;0\)</span> and <span class="process-math">\(f''&gt;0\)</span></p></li>
-<li id="li-878"><p id="p-1294"><span class="process-math">\(f'&lt;0\)</span> and <span class="process-math">\(f''&lt;0 \)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-351"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1295">For the other three answer choices above that you did not select, sketch a portion of a curve that matches each description.</p></article></article><article class="activity project-like" id="activity-graphing-ac"><h3 class="heading">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">55<span class="period">.</span></span><span class="space"> </span></figcaption></figure><ol class="upper-alpha cols2">
+<li id="li-795"><p id="p-1262"><span class="process-math">\(f'&gt;0\)</span> and <span class="process-math">\(f''&gt;0\)</span></p></li>
+<li id="li-796"><p id="p-1263"><span class="process-math">\(f'&gt;0\)</span> and <span class="process-math">\(f''&lt;0 \)</span></p></li>
+<li id="li-797"><p id="p-1264"><span class="process-math">\(f'&lt;0\)</span> and <span class="process-math">\(f''&gt;0\)</span></p></li>
+<li id="li-798"><p id="p-1265"><span class="process-math">\(f'&lt;0\)</span> and <span class="process-math">\(f''&lt;0 \)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-392"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1266">For each of the <em class="emphasis">other</em> three answer choices, sketch a curve that matches that description.</p></article></article><article class="activity project-like" id="activity-graphing-ac"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.7.4</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-121"><p id="p-1296">For each prompt that follows, sketch a possible graph of a function on the interval <span class="process-math">\(-3 \lt x \lt 3\)</span> that satisfies the stated properties.</p></div>
-<article class="task exercise-like" id="task-352"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1297">One function <span class="process-math">\(f(x)\)</span> such that <span class="process-math">\(f\)</span> is increasing on <span class="process-math">\(-3 \lt x \lt 3\text{,}\)</span> concave up on <span class="process-math">\(-3 \lt x \lt 0\text{,}\)</span> and concave down on <span class="process-math">\(0 \lt x \lt 3\text{.}\)</span></p></article><article class="task exercise-like" id="task-353"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1298">One function <span class="process-math">\(g(x)\)</span> such that <span class="process-math">\(g\)</span> is increasing on <span class="process-math">\(-3 \lt x \lt 3\text{,}\)</span> concave down on <span class="process-math">\(-3 \lt x \lt 0\text{,}\)</span> and concave up on <span class="process-math">\(0 \lt x \lt 3\text{.}\)</span></p></article><article class="task exercise-like" id="task-354"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1299">One function <span class="process-math">\(h(x)\)</span> such that <span class="process-math">\(h\)</span> is decreasing on <span class="process-math">\(-3 \lt x \lt 3\text{,}\)</span> concave up on <span class="process-math">\(-3 \lt x \lt -1\text{,}\)</span> neither concave up nor concave down on <span class="process-math">\(-1 \lt x \lt 1\text{,}\)</span> and concave down on <span class="process-math">\(1 \lt x \lt 3\text{.}\)</span></p></article><article class="task exercise-like" id="task-355"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-1300">One function <span class="process-math">\(p(x)\)</span> such that <span class="process-math">\(p\)</span> is decreasing and concave down on <span class="process-math">\(-3 \lt x \lt 0\)</span> and is increasing and concave down on <span class="process-math">\(0 \lt x \lt 3\text{.}\)</span></p></article></article><article class="observation remark-like" id="observation-25"><h3 class="heading">
+<div class="introduction" id="introduction-132"><p id="p-1267">For each prompt that follows, sketch a possible graph of a function on the interval <span class="process-math">\(-3 \lt x \lt 3\)</span> that satisfies the stated properties.</p></div>
+<article class="task exercise-like" id="task-393"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1268">A function <span class="process-math">\(f(x)\)</span> that is increasing on <span class="process-math">\(-3 \lt x \lt 3\text{,}\)</span> concave up on <span class="process-math">\(-3 \lt x \lt 0\text{,}\)</span> and concave down on <span class="process-math">\(0 \lt x \lt 3\text{.}\)</span></p></article><article class="task exercise-like" id="task-394"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1269">A function <span class="process-math">\(g(x)\)</span> that is increasing on <span class="process-math">\(-3 \lt x \lt 3\text{,}\)</span> concave down on <span class="process-math">\(-3 \lt x \lt 0\text{,}\)</span> and concave up on <span class="process-math">\(0 \lt x \lt 3\text{.}\)</span></p></article><article class="task exercise-like" id="task-395"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1270">A function <span class="process-math">\(h(x)\)</span> thatis decreasing on <span class="process-math">\(-3 \lt x \lt 3\text{,}\)</span> concave up on <span class="process-math">\(-3 \lt x \lt -1\text{,}\)</span> neither concave up nor concave down on <span class="process-math">\(-1 \lt x \lt 1\text{,}\)</span> and concave down on <span class="process-math">\(1 \lt x \lt 3\text{.}\)</span></p></article><article class="task exercise-like" id="task-396"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1271">A function <span class="process-math">\(p(x)\)</span> that is decreasing and concave down on <span class="process-math">\(-3 \lt x \lt 0\)</span> and is increasing and concave down on <span class="process-math">\(0 \lt x \lt 3\text{.}\)</span></p></article></article><article class="observation remark-like" id="obs-sketch-additional-info"><h3 class="heading">
 <span class="type">Observation</span><span class="space"> </span><span class="codenumber">3.7.5</span><span class="period">.</span>
 </h3>
-<p id="p-1301">For an accurate sketch, we must keep in mind other characteristics of a function, such as the domain and  horizontal and vertical asymptotes (when they exist). The next problem <a href="" class="xref" data-knowl="./knowl/activity-graphing-checkit.html" title="Activity 3.7.6">Activity 3.7.6</a> includes those aspects in addition to increasing, decreasing, and concavity.</p></article><article class="activity project-like" id="activity-graphing-checkit"><h3 class="heading">
+<p id="p-1272">To draw an accurate sketch, we must keep in mind additional characteristics of a function, such as the domain and the  horizontal and vertical asymptotes (when they exist). The next problem <a href="" class="xref" data-knowl="./knowl/activity-graphing-checkit.html" title="Activity 3.7.6">Activity 3.7.6</a> includes those aspects in addition to increasing, decreasing, and concavity features.</p></article><article class="activity project-like" id="activity-graphing-checkit"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.7.6</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-122">
-<p id="p-1302">The following chart describes the values of <span class="process-math">\(f(x)\)</span> and its first and second derivatives at or between a few given values of <span class="process-math">\(x\text{,}\)</span> where <span class="process-math">\(\nexists\)</span> denotes that <span class="process-math">\(f(x)\)</span> does not exist at that value of <span class="process-math">\(x\text{.}\)</span></p>
-<div class="displaymath process-math" data-contains-math-knowls="" id="p-1303">
+<div class="introduction" id="introduction-133">
+<p id="p-1273">The following chart describes the values of <span class="process-math">\(f(x)\)</span> and its first and second derivatives at or between a few given values of <span class="process-math">\(x\text{,}\)</span> where <span class="process-math">\(\nexists\)</span> denotes that <span class="process-math">\(f(x)\)</span> does not exist at that value of <span class="process-math">\(x\text{.}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-1274">
 \begin{equation*}
 \begin{array}{c|cccccccccccccccccccc}
 x
@@ -293,32 +298,32 @@ f''(x) &amp;
 \end{array}
 \end{equation*}
 </div>
-<p id="p-1304">Assume that <span class="process-math">\(f(x)\)</span> has vertical asymptotes at each <span class="process-math">\(x\)</span>-value where <span class="process-math">\(f(x)\)</span> does not exist, that <span class="process-math">\(\displaystyle \lim_{x\to-\infty}f(x)= 1\text{,}\)</span> and that <span class="process-math">\(\displaystyle \lim_{x\to\infty}f(x)= -1\text{.}\)</span></p>
+<p id="p-1275">Assume that <span class="process-math">\(f(x)\)</span> has vertical asymptotes at each <span class="process-math">\(x\)</span>-value where <span class="process-math">\(f(x)\)</span> does not exist, that <span class="process-math">\(\displaystyle \lim_{x\to-\infty}f(x)= 1\text{,}\)</span> and that <span class="process-math">\(\displaystyle \lim_{x\to\infty}f(x)= -1\text{.}\)</span></p>
 </div>
-<article class="task exercise-like" id="task-356"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1305">List all the asymptotes of <span class="process-math">\(f(x)\)</span> and mark them on the graph.</p></article><article class="task exercise-like" id="task-357"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1306">Does <span class="process-math">\(f(x)\)</span> have any relative maxima or relative minima? If so, at what point(s)?</p></article><article class="task exercise-like" id="task-358"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1307">Does <span class="process-math">\(f(x)\)</span> have any inflection points? If so, at what point(s)?</p></article><article class="task exercise-like" id="task-359"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-1308">Use the information provided to sketch a reasonable graph of <span class="process-math">\(f(x)\text{.}\)</span> Watch changes in behavior due to changes in the sign of each derivative.</p></article></article><article class="remark remark-like" id="guide-curve-sketching"><h3 class="heading">
+<article class="task exercise-like" id="task-397"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1276">List all the asymptotes of <span class="process-math">\(f(x)\)</span> and mark them on the graph.</p></article><article class="task exercise-like" id="task-398"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1277">Does <span class="process-math">\(f(x)\)</span> have any local maxima or local minima? If so, at what point(s)?</p></article><article class="task exercise-like" id="task-399"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1278">Does <span class="process-math">\(f(x)\)</span> have any inflection points? If so, at what point(s)?</p></article><article class="task exercise-like" id="task-400"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1279">Use the information provided to sketch a reasonable graph of <span class="process-math">\(f(x)\text{.}\)</span> Watch changes in behavior due to changes in the sign of each derivative.</p></article></article><article class="remark remark-like" id="guide-curve-sketching"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.7.7</span><span class="period">.</span><span class="space"> </span><span class="title">A guide to curve sketching.</span>
 </h3>
-<ol id="p-1309" class="decimal">
-<li id="li-879"><p id="p-derived-li-879">Identify the domain of the function.</p></li>
-<li id="li-880"><p id="p-derived-li-880">Identify any vertical or horizontal asymptotes, if they exist.</p></li>
-<li id="li-881"><p id="p-derived-li-881">Find <span class="process-math">\(f'(x)\text{.}\)</span> Then use it to determine the intervals where the function is increasing and the intervals where the function is decreasing. State any relative extrema.</p></li>
-<li id="li-882"><p id="p-derived-li-882">Find <span class="process-math">\(f''(x)\text{.}\)</span> Then use it to determine the intervals where the function is concave up and the intervals where the function is concave down. State any inflection points.</p></li>
-<li id="li-883"><p id="p-derived-li-883">Put everything together and draw sketch.</p></li>
+<ol id="p-1280" class="decimal">
+<li id="li-799"><p id="p-derived-li-799">Identify the domain of the function.</p></li>
+<li id="li-800"><p id="p-derived-li-800">Identify any vertical or horizontal asymptotes, if they exist.</p></li>
+<li id="li-801"><p id="p-derived-li-801">Find <span class="process-math">\(f'(x)\text{.}\)</span> Then use it to determine the intervals where the function is increasing and the intervals where the function is decreasing. State any local extrema.</p></li>
+<li id="li-802"><p id="p-derived-li-802">Find <span class="process-math">\(f''(x)\text{.}\)</span> Then use it to determine the intervals where the function is concave up and the intervals where the function is concave down. State any inflection points.</p></li>
+<li id="li-803"><p id="p-derived-li-803">Put everything together and draw sketch.</p></li>
 </ol></article><article class="activity project-like" id="activity-graphing-full"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.7.8</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-123">Sketch the graph of each of the following functions using the guide to curve sketching found in <a href="" class="xref" data-knowl="./knowl/guide-curve-sketching.html" title="Remark 3.7.7: A guide to curve sketching">Remark 3.7.7</a>
+<div class="introduction" id="introduction-134">Sketch the graph of each of the following functions using the guide to curve sketching found in <a href="" class="xref" data-knowl="./knowl/guide-curve-sketching.html" title="Remark 3.7.7: A guide to curve sketching">Remark 3.7.7</a>
 </div>
-<article class="task exercise-like" id="task-360"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<span class="process-math">\(f(x)=x^4-4x^3+10\)</span></article><article class="task exercise-like" id="task-361"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<span class="process-math">\(f(x)=\frac{x^2-4}{x^2-9}\)</span></article><article class="task exercise-like" id="task-362"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-1310"><span class="process-math">\(f(x)=x+2\cos x\)</span> on the interval <span class="process-math">\([0,2\pi]\)</span></p></article><article class="task exercise-like" id="task-363"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<span class="process-math">\(f(x)=\frac{x^2+x-2}{x+3}\)</span></article><article class="task exercise-like" id="task-364"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<span class="process-math">\(f(x)=\frac{x}{\sqrt{x^2+2}}\)</span></article><article class="task exercise-like" id="task-365"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<article class="task exercise-like" id="task-401"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<span class="process-math">\(f(x)=x^4-4x^3+10\)</span></article><article class="task exercise-like" id="task-402"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<span class="process-math">\(f(x)=\frac{x^2-4}{x^2-9}\)</span></article><article class="task exercise-like" id="task-403"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1281"><span class="process-math">\(f(x)=x+2\cos x\)</span> on the interval <span class="process-math">\([0,2\pi]\)</span></p></article><article class="task exercise-like" id="task-404"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<span class="process-math">\(f(x)=\frac{x^2+x-2}{x+3}\)</span></article><article class="task exercise-like" id="task-405"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<span class="process-math">\(f(x)=\frac{x}{\sqrt{x^2+2}}\)</span></article><article class="task exercise-like" id="task-406"><h4 class="heading"><span class="codenumber">(f)</span></h4>
 <span class="process-math">\(f(x)=x^6+\frac{12}{5}x^5-12x^4+10\)</span></article></article></section></div></main>
 </div>
 </body>

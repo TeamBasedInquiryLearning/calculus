@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-05T13:01:46Z       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -11,7 +8,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal1 Parametric/vector derivatives (CO2)</title>
+<title>TBIL-Calc Parametric/vector derivatives (CO2)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -37,6 +34,14 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
@@ -197,42 +202,42 @@
 <span class="type">Section</span> <span class="codenumber">7.2</span> <span class="title">Parametric/vector derivatives (CO2)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-54"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-1675"><p id="p-2371">Compute derivatives and tangents related to two-dimensional parametric/vector equations.</p></li></ul></article><article class="activity project-like" id="activity-436"><h3 class="heading">
+<ul class="disc"><li id="li-1572"><p id="p-2333">Compute derivatives and tangents related to two-dimensional parametric/vector equations.</p></li></ul></article><article class="activity project-like" id="activity-438"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.2.1</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-221"><p id="p-2372">Consider the parametric equations <span class="process-math">\(x=2t-1\)</span> and <span class="process-math">\(y=(2t-1)(2t-5)\text{.}\)</span> The coordinate on this graph at <span class="process-math">\(t=2\)</span> is <span class="process-math">\((3,-3)\text{.}\)</span></p></div>
-<article class="task exercise-like" id="task-646"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2373">Which of the following equations of <span class="process-math">\(x,y\)</span> describes the graph of these paramteric equations?</p>
-<ol class="upper-alpha">
-<li id="li-1676"><p id="p-2374"><span class="process-math">\(\displaystyle y=2x(x+2)=2x^2+2x\)</span></p></li>
-<li id="li-1677"><p id="p-2375"><span class="process-math">\(\displaystyle y=2x(x-2)=2x^2-2x\)</span></p></li>
-<li id="li-1678"><p id="p-2376"><span class="process-math">\(\displaystyle y=x(x+4)=x^2+4x\)</span></p></li>
-<li id="li-1679"><p id="p-2377"><span class="process-math">\(\displaystyle y=x(x-4)=x^2-4x\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-647"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2378">Which of the following describes the slope tangent to the graph at the point <span class="process-math">\((3,-3)\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-1680"><p id="p-2379"><span class="process-math">\(\frac{dy}{dx}=2x+4\text{,}\)</span> which is <span class="process-math">\(10\)</span> when <span class="process-math">\(x=3\text{.}\)</span></p></li>
-<li id="li-1681"><p id="p-2380"><span class="process-math">\(\frac{dy}{dx}=2x+4\text{,}\)</span> which is <span class="process-math">\(8\)</span> when <span class="process-math">\(t=2\text{.}\)</span></p></li>
-<li id="li-1682"><p id="p-2381"><span class="process-math">\(\frac{dy}{dx}=2x-4\text{,}\)</span> which is <span class="process-math">\(2\)</span> when <span class="process-math">\(x=3\text{.}\)</span></p></li>
-<li id="li-1683"><p id="p-2382"><span class="process-math">\(\frac{dy}{dx}=2x-4\text{,}\)</span> which is <span class="process-math">\(0\)</span> when <span class="process-math">\(t=2\text{.}\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-648"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2383">Note that the parametric equation for <span class="process-math">\(y\)</span> simplifies to <span class="process-math">\(y=4t^2-12t+5\text{.}\)</span> What do we get for the derivatives <span class="process-math">\(\frac{dx}{dt}\)</span> of <span class="process-math">\(x=2t-1\)</span> and <span class="process-math">\(\frac{dy}{dt}\)</span> for <span class="process-math">\(y=4t^2-12t+5\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-1684"><p id="p-2384"><span class="process-math">\(\frac{dx}{dt}=2\)</span> and <span class="process-math">\(\frac{dy}{dt}=8t-12\text{.}\)</span></p></li>
-<li id="li-1685"><p id="p-2385"><span class="process-math">\(\frac{dx}{dt}=-1\)</span> and <span class="process-math">\(\frac{dy}{dt}=8t-12\text{.}\)</span></p></li>
-<li id="li-1686"><p id="p-2386"><span class="process-math">\(\frac{dx}{dt}=2\)</span> and <span class="process-math">\(\frac{dy}{dt}=6t+5\text{.}\)</span></p></li>
-<li id="li-1687"><p id="p-2387"><span class="process-math">\(\frac{dx}{dt}=-1\)</span> and <span class="process-math">\(\frac{dy}{dt}=6t+5\text{.}\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-649"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-2388">It follows that when <span class="process-math">\(t=2\text{,}\)</span> <span class="process-math">\(\frac{dx}{dt}=2\)</span> and <span class="process-math">\(\frac{dy}{dt}=4\text{.}\)</span> Which of the following conjectures seems most likely?</p>
-<ol class="upper-alpha">
-<li id="li-1688"><p id="p-2389">The slope <span class="process-math">\(\frac{dy}{dx}=2\)</span> could also be found by computing <span class="process-math">\(\frac{dx}{dt}+\frac{dy}{dt}\text{.}\)</span></p></li>
-<li id="li-1689"><p id="p-2390">The slope <span class="process-math">\(\frac{dy}{dx}=2\)</span> could also be found by computing <span class="process-math">\(\frac{dy/dt}{dx/dt}\text{.}\)</span></p></li>
-<li id="li-1690"><p id="p-2391">The slope <span class="process-math">\(\frac{dy}{dx}=2\)</span> is always equal to <span class="process-math">\(\frac{dx}{dt}\text{.}\)</span></p></li>
-<li id="li-1691"><p id="p-2392">The slope <span class="process-math">\(\frac{dy}{dx}=2\)</span> is always equal to <span class="process-math">\(\frac{dy}{dt}\text{.}\)</span></p></li>
+<div class="introduction" id="introduction-236"><p id="p-2334">Consider the parametric equations <span class="process-math">\(x=2t-1\)</span> and <span class="process-math">\(y=(2t-1)(2t-5)\text{.}\)</span> The coordinate on this graph at <span class="process-math">\(t=2\)</span> is <span class="process-math">\((3,-3)\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-699"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2335">Which of the following equations of <span class="process-math">\(x,y\)</span> describes the graph of these paramteric equations?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1573"><p id="p-2336"><span class="process-math">\(\displaystyle y=2x(x+2)=2x^2+2x\)</span></p></li>
+<li id="li-1574"><p id="p-2337"><span class="process-math">\(\displaystyle y=2x(x-2)=2x^2-2x\)</span></p></li>
+<li id="li-1575"><p id="p-2338"><span class="process-math">\(\displaystyle y=x(x+4)=x^2+4x\)</span></p></li>
+<li id="li-1576"><p id="p-2339"><span class="process-math">\(\displaystyle y=x(x-4)=x^2-4x\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-700"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2340">Which of the following describes the slope of the line tangent to the graph at the point <span class="process-math">\((3,-3)\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1577"><p id="p-2341"><span class="process-math">\(\frac{dy}{dx}=2x+4\text{,}\)</span> which is <span class="process-math">\(10\)</span> when <span class="process-math">\(x=3\text{.}\)</span></p></li>
+<li id="li-1578"><p id="p-2342"><span class="process-math">\(\frac{dy}{dx}=2x+4\text{,}\)</span> which is <span class="process-math">\(8\)</span> when <span class="process-math">\(t=2\text{.}\)</span></p></li>
+<li id="li-1579"><p id="p-2343"><span class="process-math">\(\frac{dy}{dx}=2x-4\text{,}\)</span> which is <span class="process-math">\(2\)</span> when <span class="process-math">\(x=3\text{.}\)</span></p></li>
+<li id="li-1580"><p id="p-2344"><span class="process-math">\(\frac{dy}{dx}=2x-4\text{,}\)</span> which is <span class="process-math">\(0\)</span> when <span class="process-math">\(t=2\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-701"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2345">Note that the parametric equation for <span class="process-math">\(y\)</span> simplifies to <span class="process-math">\(y=4t^2-12t+5\text{.}\)</span> What do we get for the derivatives <span class="process-math">\(\frac{dx}{dt}\)</span> of <span class="process-math">\(x=2t-1\)</span> and <span class="process-math">\(\frac{dy}{dt}\)</span> for <span class="process-math">\(y=4t^2-12t+5\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1581"><p id="p-2346"><span class="process-math">\(\frac{dx}{dt}=2\)</span> and <span class="process-math">\(\frac{dy}{dt}=8t-12\text{.}\)</span></p></li>
+<li id="li-1582"><p id="p-2347"><span class="process-math">\(\frac{dx}{dt}=-1\)</span> and <span class="process-math">\(\frac{dy}{dt}=8t-12\text{.}\)</span></p></li>
+<li id="li-1583"><p id="p-2348"><span class="process-math">\(\frac{dx}{dt}=2\)</span> and <span class="process-math">\(\frac{dy}{dt}=6t+5\text{.}\)</span></p></li>
+<li id="li-1584"><p id="p-2349"><span class="process-math">\(\frac{dx}{dt}=-1\)</span> and <span class="process-math">\(\frac{dy}{dt}=6t+5\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-702"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-2350">It follows that when <span class="process-math">\(t=2\text{,}\)</span> <span class="process-math">\(\frac{dx}{dt}=2\)</span> and <span class="process-math">\(\frac{dy}{dt}=4\text{.}\)</span> Which of the following conjectures seems most likely?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1585"><p id="p-2351">The slope <span class="process-math">\(\frac{dy}{dx}\)</span> could also be found by computing <span class="process-math">\(\frac{dx}{dt}+\frac{dy}{dt}\text{.}\)</span></p></li>
+<li id="li-1586"><p id="p-2352">The slope <span class="process-math">\(\frac{dy}{dx}\)</span> could also be found by computing <span class="process-math">\(\frac{dy/dt}{dx/dt}\text{.}\)</span></p></li>
+<li id="li-1587"><p id="p-2353">The slope <span class="process-math">\(\frac{dy}{dx}\)</span> is always equal to <span class="process-math">\(\frac{dx}{dt}\text{.}\)</span></p></li>
+<li id="li-1588"><p id="p-2354">The slope <span class="process-math">\(\frac{dy}{dx}\)</span> is always equal to <span class="process-math">\(\frac{dy}{dt}\text{.}\)</span></p></li>
 </ol></article></article><article class="fact theorem-like" id="fact-19"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">7.2.2</span><span class="period">.</span>
 </h3>
-<p id="p-2393">Suppose <span class="process-math">\(x\)</span> is a function of <span class="process-math">\(t\text{,}\)</span> and <span class="process-math">\(y\)</span> may be thought of as a function of either <span class="process-math">\(x\)</span> or <span class="process-math">\(t\text{.}\)</span> Then the Chain Rule requires that</p>
+<p id="p-2355">Suppose <span class="process-math">\(x\)</span> is a function of <span class="process-math">\(t\text{,}\)</span> and <span class="process-math">\(y\)</span> may be thought of as a function of either <span class="process-math">\(x\)</span> or <span class="process-math">\(t\text{.}\)</span> Then the Chain Rule requires that</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \frac{dy}{dt}=\frac{dy}{dx}\frac{dx}{dt}\text{.}
@@ -243,44 +248,44 @@
 \begin{equation*}
 \frac{dy}{dx}=\frac{dy/dt}{dx/dt}\text{.}
 \end{equation*}
-</div></article><article class="activity project-like" id="activity-437"><h3 class="heading">
+</div></article><article class="activity project-like" id="activity-439"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.2.3</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-222"><p id="p-2394">Let's draw the picture of the line tangent to the parametric equations <span class="process-math">\(x=2t-1\)</span> and <span class="process-math">\(y=(2t-1)(2t-5)\)</span> when <span class="process-math">\(t=2\text{.}\)</span></p></div>
-<article class="task exercise-like" id="task-650"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2395">Use a <span class="process-math">\(t,x,y\)</span> chart to sketch the parabola given by these parametric equations for <span class="process-math">\(-3\leq t\leq 3\text{,}\)</span> including the point <span class="process-math">\((3,-3)\)</span> when <span class="process-math">\(t=2\text{.}\)</span></p></article><article class="task exercise-like" id="task-651"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2396">Earlier we determined that the tangent slope was <span class="process-math">\(2\text{.}\)</span> Draw a line with slope <span class="process-math">\(2\)</span> passing through <span class="process-math">\((3,-3)\)</span> and confirm that it appears to be tangent.</p></article><article class="task exercise-like" id="task-652"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2397">Use the point-slope formula <span class="process-math">\(y-y_0=m(x-x_0)\)</span> along with the slope <span class="process-math">\(2\)</span> and point <span class="process-math">\((3,-3)\)</span> to find the exact equation for this tangent line.</p>
-<ol class="upper-alpha">
-<li id="li-1692"><p id="p-2398"><span class="process-math">\(\displaystyle y=2x-10\)</span></p></li>
-<li id="li-1693"><p id="p-2399"><span class="process-math">\(\displaystyle y=2x-9\)</span></p></li>
-<li id="li-1694"><p id="p-2400"><span class="process-math">\(\displaystyle y=2x-8\)</span></p></li>
-<li id="li-1695"><p id="p-2401"><span class="process-math">\(\displaystyle y=2x-7\)</span></p></li>
-</ol></article></article><article class="activity project-like" id="activity-438"><h3 class="heading">
+<div class="introduction" id="introduction-237"><p id="p-2356">Let's draw the picture of the line tangent to the parametric equations <span class="process-math">\(x=2t-1\)</span> and <span class="process-math">\(y=(2t-1)(2t-5)\)</span> when <span class="process-math">\(t=2\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-703"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2357">Use a <span class="process-math">\(t,x,y\)</span> chart to sketch the parabola given by these parametric equations for <span class="process-math">\(-3\leq t\leq 3\text{,}\)</span> including the point <span class="process-math">\((3,-3)\)</span> when <span class="process-math">\(t=2\text{.}\)</span></p></article><article class="task exercise-like" id="task-704"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2358">Earlier we determined that the slope of the tangent line was <span class="process-math">\(2\text{.}\)</span> Draw a line with slope <span class="process-math">\(2\)</span> passing through <span class="process-math">\((3,-3)\)</span> and confirm that it appears to be tangent.</p></article><article class="task exercise-like" id="task-705"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2359">Use the point-slope formula <span class="process-math">\(y-y_0=m(x-x_0)\)</span> along with the slope <span class="process-math">\(2\)</span> and point <span class="process-math">\((3,-3)\)</span> to find the exact equation for this tangent line.</p>
+<ol class="upper-alpha cols2">
+<li id="li-1589"><p id="p-2360"><span class="process-math">\(\displaystyle y=2x-10\)</span></p></li>
+<li id="li-1590"><p id="p-2361"><span class="process-math">\(\displaystyle y=2x-9\)</span></p></li>
+<li id="li-1591"><p id="p-2362"><span class="process-math">\(\displaystyle y=2x-8\)</span></p></li>
+<li id="li-1592"><p id="p-2363"><span class="process-math">\(\displaystyle y=2x-7\)</span></p></li>
+</ol></article></article><article class="activity project-like" id="activity-440"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.2.4</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-223"><p id="p-2402">Consider the vector equation <span class="process-math">\(\vec{r}(t)=\tuple{3t^2-9,t^3-3t}\text{.}\)</span></p></div>
-<article class="task exercise-like" id="task-653"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2403">What are the corresponding parametric equations and their derivatives?</p>
-<ol class="upper-alpha">
-<li id="li-1696"><p id="p-2404"><span class="process-math">\(y=3t^2-9\)</span> and <span class="process-math">\(x=t^3-3t\text{;}\)</span> <span class="process-math">\(\frac{dy}{dt}=9t\)</span> and <span class="process-math">\(\frac{dx}{dt}=3t-6\)</span></p></li>
-<li id="li-1697"><p id="p-2405"><span class="process-math">\(x=3t^2-9\)</span> and <span class="process-math">\(y=t^3-3t\text{;}\)</span> <span class="process-math">\(\frac{dx}{dt}=9t\)</span> and <span class="process-math">\(\frac{dy}{dt}=3t-6\)</span></p></li>
-<li id="li-1698"><p id="p-2406"><span class="process-math">\(y=3t^2-9\)</span> and <span class="process-math">\(x=t^3-3t\text{;}\)</span> <span class="process-math">\(\frac{dy}{dt}=6t\)</span> and <span class="process-math">\(\frac{dx}{dt}=3t^2-3\)</span></p></li>
-<li id="li-1699"><p id="p-2407"><span class="process-math">\(x=3t^2-9\)</span> and <span class="process-math">\(y=t^3-3t\text{;}\)</span> <span class="process-math">\(\frac{dx}{dt}=6t\)</span> and <span class="process-math">\(\frac{dy}{dt}=3t^2-3\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-654"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2408">The formula <span class="process-math">\(\frac{dy}{dx}=\frac{dy/dt}{dx/dt}\)</span> allows us to compute slopes as which of the following functions of <span class="process-math">\(t\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-1700"><p id="p-2409"><span class="process-math">\(\displaystyle \frac{6t}{t^2+3}\)</span></p></li>
-<li id="li-1701"><p id="p-2410"><span class="process-math">\(\displaystyle \frac{6t}{t^2+1}\)</span></p></li>
-<li id="li-1702"><p id="p-2411"><span class="process-math">\(\displaystyle \frac{t^2-1}{2t}\)</span></p></li>
-<li id="li-1703"><p id="p-2412"><span class="process-math">\(\displaystyle \frac{2t}{3t^2-1}\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-655"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2413">Find the point, tangent slope, and tangent line equation (recall <span class="process-math">\(y-y_0=m(x-x_0)\)</span>) corresponding to the parameter <span class="process-math">\(t=-2\text{.}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-1704"><p id="p-2414">Point <span class="process-math">\((-3,-4)\text{,}\)</span> slope <span class="process-math">\(\frac{3}{4}\text{,}\)</span> EQ <span class="process-math">\(y=\frac{3}{4}x+7\)</span></p></li>
-<li id="li-1705"><p id="p-2415">Point <span class="process-math">\((3,-14)\text{,}\)</span> slope <span class="process-math">\(-\frac{4}{3}\text{,}\)</span> EQ <span class="process-math">\(y=-\frac{4}{3}x-10\)</span></p></li>
-<li id="li-1706"><p id="p-2416">Point <span class="process-math">\((1,-11)\text{,}\)</span> slope <span class="process-math">\(\frac{2}{3}\text{,}\)</span> EQ <span class="process-math">\(y=\frac{2}{3}x-11\)</span></p></li>
-<li id="li-1707"><p id="p-2417">Point <span class="process-math">\((-1,-9)\text{,}\)</span> slope <span class="process-math">\(-\frac{1}{6}\text{,}\)</span> EQ <span class="process-math">\(y=-\frac{1}{6}x+2\)</span></p></li>
+<div class="introduction" id="introduction-238"><p id="p-2364">Consider the vector equation <span class="process-math">\(\vec{r}(t)=\tuple{3t^2-9,t^3-3t}\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-706"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2365">What are the corresponding parametric equations and their derivatives?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1593"><p id="p-2366"><span class="process-math">\(y=3t^2-9\)</span> and <span class="process-math">\(x=t^3-3t\text{;}\)</span> <span class="process-math">\(\frac{dy}{dt}=9t\)</span> and <span class="process-math">\(\frac{dx}{dt}=3t-6\)</span></p></li>
+<li id="li-1594"><p id="p-2367"><span class="process-math">\(x=3t^2-9\)</span> and <span class="process-math">\(y=t^3-3t\text{;}\)</span> <span class="process-math">\(\frac{dx}{dt}=9t\)</span> and <span class="process-math">\(\frac{dy}{dt}=3t-6\)</span></p></li>
+<li id="li-1595"><p id="p-2368"><span class="process-math">\(y=3t^2-9\)</span> and <span class="process-math">\(x=t^3-3t\text{;}\)</span> <span class="process-math">\(\frac{dy}{dt}=6t\)</span> and <span class="process-math">\(\frac{dx}{dt}=3t^2-3\)</span></p></li>
+<li id="li-1596"><p id="p-2369"><span class="process-math">\(x=3t^2-9\)</span> and <span class="process-math">\(y=t^3-3t\text{;}\)</span> <span class="process-math">\(\frac{dx}{dt}=6t\)</span> and <span class="process-math">\(\frac{dy}{dt}=3t^2-3\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-707"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2370">The formula <span class="process-math">\(\frac{dy}{dx}=\frac{dy/dt}{dx/dt}\)</span> allows us to compute slopes as which of the following functions of <span class="process-math">\(t\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1597"><p id="p-2371"><span class="process-math">\(\displaystyle \frac{6t}{t^2+3}\)</span></p></li>
+<li id="li-1598"><p id="p-2372"><span class="process-math">\(\displaystyle \frac{6t}{t^2+1}\)</span></p></li>
+<li id="li-1599"><p id="p-2373"><span class="process-math">\(\displaystyle \frac{t^2-1}{2t}\)</span></p></li>
+<li id="li-1600"><p id="p-2374"><span class="process-math">\(\displaystyle \frac{2t}{3t^2-1}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-708"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2375">Find the point, tangent slope, and tangent line equation (recall <span class="process-math">\(y-y_0=m(x-x_0)\)</span>) corresponding to the parameter <span class="process-math">\(t=-2\text{.}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1601"><p id="p-2376">Point <span class="process-math">\((-3,-4)\text{,}\)</span> slope <span class="process-math">\(\frac{3}{4}\text{,}\)</span> EQ <span class="process-math">\(y=\frac{3}{4}x+7\)</span></p></li>
+<li id="li-1602"><p id="p-2377">Point <span class="process-math">\((3,-14)\text{,}\)</span> slope <span class="process-math">\(-\frac{4}{3}\text{,}\)</span> EQ <span class="process-math">\(y=-\frac{4}{3}x-10\)</span></p></li>
+<li id="li-1603"><p id="p-2378">Point <span class="process-math">\((1,-11)\text{,}\)</span> slope <span class="process-math">\(\frac{2}{3}\text{,}\)</span> EQ <span class="process-math">\(y=\frac{2}{3}x-11\)</span></p></li>
+<li id="li-1604"><p id="p-2379">Point <span class="process-math">\((-1,-9)\text{,}\)</span> slope <span class="process-math">\(-\frac{1}{6}\text{,}\)</span> EQ <span class="process-math">\(y=-\frac{1}{6}x+2\)</span></p></li>
 </ol></article></article></section></div></main>
 </div>
 </body>

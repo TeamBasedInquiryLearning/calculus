@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-05T13:01:44Z       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -11,7 +8,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal1 Arclength (AI2)</title>
+<title>TBIL-Calc Arclength (AI2)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -37,6 +34,14 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
@@ -197,73 +202,76 @@
 <span class="type">Section</span> <span class="codenumber">6.2</span> <span class="title">Arclength (AI2)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-47"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-1489"><p id="p-2144">Estimate the arclength of a curve with Riemann sums and find an integral which computes the arclength.</p></li></ul></article><article class="activity project-like" id="activity-384"><h3 class="heading">
+<ul class="disc"><li id="li-1386"><p id="p-2098">Estimate the arclength of a curve with Riemann sums and find an integral which computes the arclength.</p></li></ul></article><article class="activity project-like" id="activity-386"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.2.1</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-186"><p id="p-2145">Suppose we wanted to find the arclength of the parabola <span class="process-math">\(y=-x^2+6x\)</span> over the interval <span class="process-math">\([0,4]\text{.}\)</span> <figure class="figure figure-like" id="figure-79"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/parabolaarclength.svg" role="img" class="contained" alt="Plot of \(y=-x^2+6x\) over \([0,4]\text{.}\)"></div>
+<div class="introduction" id="introduction-201"><p id="p-2099">Suppose we wanted to find the arclength of the parabola <span class="process-math">\(y=-x^2+6x\)</span> over the interval <span class="process-math">\([0,4]\text{.}\)</span> <figure class="figure figure-like" id="figure-79"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/parabolaarclength.svg" role="img" class="contained" alt="Plot of \(y=-x^2+6x\) over \([0,4]\text{.}\)"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">90<span class="period">.</span></span><span class="space"> </span>Plot of <span class="process-math">\(y=-x^2+6x\)</span> over <span class="process-math">\([0,4]\text{.}\)</span></figcaption></figure></p></div>
-<article class="task exercise-like" id="task-541"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2146">Suppose we wished to estimate this length with two line segments, where <span class="process-math">\(\Delta x=2\text{.}\)</span> <figure class="figure figure-like" id="figure-80"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/parabolaarclengthtwopieces.svg" role="img" class="contained" alt="Plot of \(y=-x^2+6x\) over \([0,4]\text{.}\)"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">91<span class="period">.</span></span><span class="space"> </span>Plot of <span class="process-math">\(y=-x^2+6x\)</span> over <span class="process-math">\([0,4]\text{.}\)</span></figcaption></figure> Which of  the following expressions represents the sum of the lengths of the line segments with endpoints <span class="process-math">\((0,0)\text{,}\)</span> <span class="process-math">\((2,8)\)</span> and  <span class="process-math">\((4,8)\text{.}\)</span></p>
+<article class="task exercise-like" id="task-594"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2100">Suppose we wished to estimate this length with two line segments where <span class="process-math">\(\Delta x=2\text{.}\)</span> <figure class="figure figure-like" id="figure-80"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/parabolaarclengthtwopieces.svg" role="img" class="contained" alt="Plot of \(y=-x^2+6x\) over \([0,4]\text{.}\)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">91<span class="period">.</span></span><span class="space"> </span>Plot of <span class="process-math">\(y=-x^2+6x\)</span> over <span class="process-math">\([0,4]\)</span> with two line segments where <span class="process-math">\(\Delta x=2\text{.}\)</span></figcaption></figure></p>
+<p id="p-2101">Which of  the following expressions represents the sum of the lengths of the line segments with endpoints <span class="process-math">\((0,0)\text{,}\)</span> <span class="process-math">\((2,8)\)</span> and  <span class="process-math">\((4,8)\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1387"><p id="p-derived-li-1387"><span class="process-math">\(\displaystyle \sqrt{4+8}\)</span></p></li>
+<li id="li-1388"><p id="p-derived-li-1388"><span class="process-math">\(\displaystyle \sqrt{2^2+8^2}+\sqrt{(4-2)^2+(8-8)^2}\)</span></p></li>
+<li id="li-1389"><p id="p-derived-li-1389"><span class="process-math">\(\displaystyle \sqrt{4^2+8^2}\)</span></p></li>
+<li id="li-1390"><p id="p-derived-li-1390"><span class="process-math">\(\displaystyle \sqrt{2^2+8^2}+\sqrt{4^2+8^2}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-595"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2102">Suppose we wished to estimate this length with four line segments where <span class="process-math">\(\Delta x=1\text{.}\)</span> <figure class="figure figure-like" id="figure-81"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/parabolaarclengthfourpieces.svg" role="img" class="contained" alt="Plot of \(y=-x^2+6x\) over \([0,4]\text{.}\)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">92<span class="period">.</span></span><span class="space"> </span>Plot of <span class="process-math">\(y=-x^2+6x\)</span> over <span class="process-math">\([0,4]\)</span> with four line segments where <span class="process-math">\(\Delta x=1\text{.}\)</span></figcaption></figure></p>
+<p id="p-2103">Which of  the following expressions represents the sum of the lengths of the line segments with endpoints <span class="process-math">\((0,0)\text{,}\)</span> <span class="process-math">\((1,5)\text{,}\)</span> <span class="process-math">\((2,8)\text{,}\)</span> <span class="process-math">\((3,9)\)</span> and <span class="process-math">\((4,8)\text{?}\)</span></p>
 <ol class="upper-alpha">
-<li id="li-1490"><p id="p-derived-li-1490"><span class="process-math">\(\sqrt{4+8}\text{.}\)</span></p></li>
-<li id="li-1491"><p id="p-derived-li-1491"><span class="process-math">\(\sqrt{4^2+8^2}\text{.}\)</span></p></li>
-<li id="li-1492"><p id="p-derived-li-1492"><span class="process-math">\(\sqrt{2^2+8^2}+\sqrt{4^2+8^2}\text{.}\)</span></p></li>
-<li id="li-1493"><p id="p-derived-li-1493"><span class="process-math">\(\sqrt{2^2+8^2}+\sqrt{(4-2)^2+(8-8)^2}\text{.}\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-542"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2147">Suppose we wished to estimate this length with four line segments, where <span class="process-math">\(\Delta x=1\text{.}\)</span> <figure class="figure figure-like" id="figure-81"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/parabolaarclengthfourpieces.svg" role="img" class="contained" alt="Plot of \(y=-x^2+6x\) over \([0,4]\text{.}\)"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">92<span class="period">.</span></span><span class="space"> </span>Plot of <span class="process-math">\(y=-x^2+6x\)</span> over <span class="process-math">\([0,4]\text{.}\)</span></figcaption></figure> Which of  the following expressions represents the sum of the lengths of the line segments with endpoints <span class="process-math">\((0,0)\text{,}\)</span> <span class="process-math">\((1,5)\text{,}\)</span> <span class="process-math">\((2,8)\text{,}\)</span> <span class="process-math">\((3,9)\)</span> and <span class="process-math">\((4,8)\text{.}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-1494"><p id="p-derived-li-1494"><span class="process-math">\(\sqrt{4^2+8^2}\text{.}\)</span></p></li>
-<li id="li-1495"><p id="p-derived-li-1495"><span class="process-math">\(\sqrt{1^2+(5-0)^2}+\sqrt{1^2+(8-5)^2}+\sqrt{1^2+(9-8)^2}+\sqrt{1^2+(8-9)^2}\text{.}\)</span></p></li>
-<li id="li-1496"><p id="p-derived-li-1496"><span class="process-math">\(\sqrt{1^2+5^2}+\sqrt{2^2+8^2}+\sqrt{3^2+9^2}+\sqrt{4^2+8^2}\text{.}\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-543"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2148">Suppose we wished to estimate this length with <span class="process-math">\(n\)</span> line segments  <span class="process-math">\(\Delta x=4/n\text{.}\)</span>  Let <span class="process-math">\(f(x)=-x^2+6x\text{.}\)</span> <figure class="figure figure-like" id="figure-82"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/parabolaarclengthnpieces.svg" role="img" class="contained" alt="Plot of \(y=-x^2+6x\) over \([0,4]\text{.}\)"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">93<span class="period">.</span></span><span class="space"> </span>Plot of <span class="process-math">\(y=-x^2+6x\)</span> over <span class="process-math">\([0,4]\text{.}\)</span></figcaption></figure> Which of  the following expressions represents the length of the line segment from <span class="process-math">\((x_0, f(x_0))\)</span> to <span class="process-math">\((x_0+\Delta x, f(x_0+\Delta x))\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-1497"><p id="p-derived-li-1497"><span class="process-math">\(\sqrt{x_0^2+f(x_0)^2}\text{.}\)</span></p></li>
-<li id="li-1498"><p id="p-derived-li-1498"><span class="process-math">\(\sqrt{(x_0+\Delta x)^2+f(x_0+\Delta x)^2}\text{.}\)</span></p></li>
-<li id="li-1499"><p id="p-derived-li-1499"><span class="process-math">\(\sqrt{(\Delta x)^2+(f(x_0+\Delta x)-f(x_0))^2}\text{.}\)</span></p></li>
-<li id="li-1500"><p id="p-derived-li-1500"><span class="process-math">\(\sqrt{(\Delta x)^2+f(\Delta x)^2}\text{.}\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-544"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-2149">Which of  the following Riemann sums best estimates the arclength of the parabola <span class="process-math">\(y=-x^2+6x\)</span> over the interval <span class="process-math">\([0,4]\text{?}\)</span>  Let <span class="process-math">\(f(x)=-x^2+6x\text{.}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-1501"><p id="p-derived-li-1501"><span class="process-math">\(\displaystyle \sum \sqrt{x_i^2+f(x_i)^2}\text{.}\)</span></p></li>
-<li id="li-1502"><p id="p-derived-li-1502"><span class="process-math">\(\displaystyle \sum \sqrt{(x_i+\Delta x)^2+f(x_i+\Delta x)^2}\text{.}\)</span></p></li>
-<li id="li-1503"><p id="p-derived-li-1503"><span class="process-math">\(\displaystyle \sum \sqrt{(\Delta x)^2+(f(x_i+\Delta x)-f(x_i))^2}\text{.}\)</span></p></li>
-<li id="li-1504"><p id="p-derived-li-1504"><span class="process-math">\(\displaystyle \sum \sqrt{(\Delta x)^2+f(\Delta x)^2}\text{.}\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-545"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-2150">Note that</p>
+<li id="li-1391"><p id="p-derived-li-1391"><span class="process-math">\(\displaystyle \sqrt{4^2+8^2}\)</span></p></li>
+<li id="li-1392"><p id="p-derived-li-1392"><span class="process-math">\(\displaystyle \sqrt{1^2+(5-0)^2}+\sqrt{1^2+(8-5)^2}+\sqrt{1^2+(9-8)^2}+\sqrt{1^2+(8-9)^2}\)</span></p></li>
+<li id="li-1393"><p id="p-derived-li-1393"><span class="process-math">\(\displaystyle \sqrt{1^2+5^2}+\sqrt{2^2+8^2}+\sqrt{3^2+9^2}+\sqrt{4^2+8^2}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-596"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2104">Suppose we wished to estimate this length with <span class="process-math">\(n\)</span> line segments where <span class="process-math">\(\displaystyle \Delta x=\frac{4}{n}\text{.}\)</span>  Let <span class="process-math">\(f(x)=-x^2+6x\text{.}\)</span> <figure class="figure figure-like" id="figure-82"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/parabolaarclengthnpieces.svg" role="img" class="contained" alt="Plot of \(y=-x^2+6x\) over \([0,4]\text{.}\)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">93<span class="period">.</span></span><span class="space"> </span>Plot of <span class="process-math">\(y=-x^2+6x\)</span> over <span class="process-math">\([0,4]\)</span> with <span class="process-math">\(n\)</span> line segments where <span class="process-math">\(\displaystyle \Delta x=\frac{4}{n}\text{.}\)</span></figcaption></figure></p>
+<p id="p-2105">Which of  the following expressions represents the length of the line segment from <span class="process-math">\((x_0, f(x_0))\)</span> to <span class="process-math">\((x_0+\Delta x, f(x_0+\Delta x))\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1394"><p id="p-derived-li-1394"><span class="process-math">\(\displaystyle \sqrt{x_0^2+f(x_0)^2}\)</span></p></li>
+<li id="li-1395"><p id="p-derived-li-1395"><span class="process-math">\(\displaystyle \sqrt{(x_0+\Delta x)^2+f(x_0+\Delta x)^2}\)</span></p></li>
+<li id="li-1396"><p id="p-derived-li-1396"><span class="process-math">\(\displaystyle \sqrt{(\Delta x)^2+f(\Delta x)^2}\)</span></p></li>
+<li id="li-1397"><p id="p-derived-li-1397"><span class="process-math">\(\displaystyle \sqrt{(\Delta x)^2+(f(x_0+\Delta x)-f(x_0))^2}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-597"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-2106">Which of  the following Riemann sums best estimates the arclength of the parabola <span class="process-math">\(y=-x^2+6x\)</span> over the interval <span class="process-math">\([0,4]\text{?}\)</span>  Let <span class="process-math">\(f(x)=-x^2+6x\text{.}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1398"><p id="p-derived-li-1398"><span class="process-math">\(\displaystyle \displaystyle \sum \sqrt{(\Delta x)^2+f(\Delta x)^2}\)</span></p></li>
+<li id="li-1399"><p id="p-derived-li-1399"><span class="process-math">\(\displaystyle \displaystyle \sum \sqrt{(x_i+\Delta x)^2+f(x_i+\Delta x)^2}\)</span></p></li>
+<li id="li-1400"><p id="p-derived-li-1400"><span class="process-math">\(\displaystyle \displaystyle \sum \sqrt{x_i^2+f(x_i)^2}\)</span></p></li>
+<li id="li-1401"><p id="p-derived-li-1401"><span class="process-math">\(\displaystyle \displaystyle \sum \sqrt{(\Delta x)^2+(f(x_i+\Delta x)-f(x_i))^2}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-598"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-2107">Note that</p>
 <div class="displaymath process-math" data-contains-math-knowls="" id="md-14">
 \begin{align*}
 \sqrt{(\Delta x)^2+(f(x_i+\Delta x)-f(x_i))^2} &amp; = \sqrt{(\Delta x)^2\left(1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2\right)}\\
-&amp;=\sqrt{1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2}\Delta x
+&amp;=\sqrt{1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2}\Delta x\text{.}
 \end{align*}
 </div>
-<p id="p-2151">Which of the following best describes <span class="process-math">\(\displaystyle\lim_{\Delta x\to 0} \frac{f(x_i+\Delta x)-f(x_i)}{\Delta x}\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-1505"><p id="p-derived-li-1505"><span class="process-math">\(0\text{.}\)</span></p></li>
-<li id="li-1506"><p id="p-derived-li-1506"><span class="process-math">\(1\text{.}\)</span></p></li>
-<li id="li-1507"><p id="p-derived-li-1507"><span class="process-math">\(f'(x_i)\text{.}\)</span></p></li>
-<li id="li-1508"><p id="p-derived-li-1508">This limit is undefined.</p></li>
+<p id="p-2108">Which of the following best describes <span class="process-math">\(\displaystyle\lim_{\Delta x\to 0} \frac{f(x_i+\Delta x)-f(x_i)}{\Delta x}\text{?}\)</span></p>
+<ol class="upper-alpha cols4">
+<li id="li-1402"><p id="p-derived-li-1402"><span class="process-math">\(\displaystyle 0\)</span></p></li>
+<li id="li-1403"><p id="p-derived-li-1403"><span class="process-math">\(\displaystyle 1\)</span></p></li>
+<li id="li-1404"><p id="p-derived-li-1404"><span class="process-math">\(\displaystyle f'(x_i)\)</span></p></li>
+<li id="li-1405"><p id="p-derived-li-1405">This limit is undefined.</p></li>
 </ol></article></article><article class="fact theorem-like" id="fact-arclength"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">6.2.2</span><span class="period">.</span>
 </h3>
-<p id="p-2152">Given a differentiable function <span class="process-math">\(f(x)\text{,}\)</span> the arclength of <span class="process-math">\(y=f(x)\)</span> defined on <span class="process-math">\([a,b]\)</span> is computed by the integral:</p>
+<p id="p-2109">Given a differentiable function <span class="process-math">\(f(x)\text{,}\)</span> the <dfn class="terminology">arclength</dfn> of <span class="process-math">\(y=f(x)\)</span> defined on <span class="process-math">\([a,b]\)</span> is computed by the integral</p>
 <div class="displaymath process-math" data-contains-math-knowls="" id="md-15">
 \begin{align*}
 \lim_{n\to \infty}\sum \sqrt{(\Delta x)^2+(f(x_i+\Delta)-f(x_i))^2} &amp; =\lim_{n\to \infty}\sum \sqrt{1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2}\Delta x\\
-&amp; = \int_a^b \sqrt{1+(f'(x))^2}dx.
+&amp; = \int_a^b \sqrt{1+(f'(x))^2}dx\text{.}
 \end{align*}
-</div></article><article class="activity project-like" id="activity-385"><h3 class="heading">
+</div></article><article class="activity project-like" id="activity-387"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.2.3</span><span class="period">.</span>
 </h3>
-<p id="p-2153">Use <a href="" class="xref" data-knowl="./knowl/fact-arclength.html" title="Fact 6.2.2">Fact 6.2.2</a> to find an integral which measures the arclength of the parabola <span class="process-math">\(y=-x^2+6x\)</span> over the interval <span class="process-math">\([0,4]\text{.}\)</span></p></article><article class="activity project-like" id="activity-386"><h3 class="heading">
+<p id="p-2110">Use <a href="" class="xref" data-knowl="./knowl/fact-arclength.html" title="Fact 6.2.2">Fact 6.2.2</a> to find an integral which measures the arclength of the parabola <span class="process-math">\(y=-x^2+6x\)</span> over the interval <span class="process-math">\([0,4]\text{.}\)</span></p></article><article class="activity project-like" id="activity-388"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.2.4</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-187"><p id="p-2154">Consider the curve <span class="process-math">\(y=2^x-1\)</span> defined on <span class="process-math">\([1,5]\text{.}\)</span></p></div>
-<article class="task exercise-like" id="task-546"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2155">Estimate the arclength of this curve with two line segments with <span class="process-math">\(\Delta x=2\text{.}\)</span></p>
+<div class="introduction" id="introduction-202"><p id="p-2111">Consider the curve <span class="process-math">\(y=2^x-1\)</span> defined on <span class="process-math">\([1,5]\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-599"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2112">Estimate the arclength of this curve with two line segments where <span class="process-math">\(\Delta x=2\text{.}\)</span></p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \begin{array}{|c|c|c|c|}
@@ -276,8 +284,8 @@ x_i &amp; (x_i, f(x_i)) &amp; (x_i+\Delta x, f(x_i+\Delta x)) &amp; \text{Length
 \hline
 \end{array}
 \end{equation*}
-</div></article><article class="task exercise-like" id="task-547"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2156">Estimate the arclength of this curve with four line segments with <span class="process-math">\(\Delta x=1\text{.}\)</span></p>
+</div></article><article class="task exercise-like" id="task-600"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2113">Estimate the arclength of this curve with four line segments where <span class="process-math">\(\Delta x=1\text{.}\)</span></p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \begin{array}{|c|c|c|c|}
@@ -292,14 +300,14 @@ x_i &amp; (x_i, f(x_i)) &amp; (x_i+\Delta x, f(x_i+\Delta x)) &amp; \text{Length
 \hline
 \end{array}
 \end{equation*}
-</div></article><article class="task exercise-like" id="task-548"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2157">Find an integral which computes the arclength of the curve <span class="process-math">\(y=2^x-1\)</span> defined on <span class="process-math">\([1,5]\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-387"><h3 class="heading">
+</div></article><article class="task exercise-like" id="task-601"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2114">Find an integral which computes the arclength of the curve <span class="process-math">\(y=2^x-1\)</span> defined on <span class="process-math">\([1,5]\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-389"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.2.5</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-188"><p id="p-2158">Consider the curve <span class="process-math">\(y=5e^{-x^2}\)</span>  over the interval <span class="process-math">\([-1,4]\)</span></p></div>
-<article class="task exercise-like" id="task-549"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2159">Estimate this arclength with 5 line segments with <span class="process-math">\(\Delta x=1\text{.}\)</span></p></article><article class="task exercise-like" id="task-550"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2160">Find an integral which computes this arclength.</p></article></article><section class="subsection" id="subsection-10"><h3 class="heading hide-type">
+<div class="introduction" id="introduction-203"><p id="p-2115">Consider the curve <span class="process-math">\(y=5e^{-x^2}\)</span> over the interval <span class="process-math">\([-1,4]\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-602"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2116">Estimate this arclength with 5 line segments where <span class="process-math">\(\Delta x=1\text{.}\)</span></p></article><article class="task exercise-like" id="task-603"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2117">Find an integral which computes this arclength.</p></article></article><section class="subsection" id="subsection-10"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.2.1</span> <span class="title">Videos</span>
 </h3>
 <figure class="figure figure-like" id="figure-83"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-AI2" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/SFflh9YOhK8?&amp;modestbranding=1&amp;rel=0"></iframe></div>

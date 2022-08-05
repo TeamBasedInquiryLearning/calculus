@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-05T13:01:38Z       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -11,7 +8,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal1 Differentiating implicitly defined functions (DF7)</title>
+<title>TBIL-Calc Differentiating implicitly defined functions (DF7)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -37,6 +34,14 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
@@ -197,112 +202,97 @@
 <span class="type">Section</span> <span class="codenumber">2.7</span> <span class="title">Differentiating implicitly defined functions (DF7)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-15"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-598"><p id="p-806">Compute derivatives of implicitly-defined functions.</p></li></ul></article><article class="observation remark-like" id="observation-14"><h3 class="heading">
+<ul class="disc"><li id="li-548"><p id="p-796">Compute derivatives of implicitly-defined functions.</p></li></ul></article><article class="observation remark-like" id="obs-df-implicit1"><h3 class="heading">
 <span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.7.1</span><span class="period">.</span>
-</h3>Many of the equations that has been discussed so far fall under the category of an explicit equation.  An explicit equation is one in which the relationship between <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> is given explicitly, such as <span class="process-math">\(y = f(x)\text{.}\)</span>  In this section we will examine when the relationship between <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> is given implicity. An implicity expression is when the relationship has some equation like <span class="process-math">\(f(x,y) = g(x,y)\)</span> where both sides may depend on both <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span></article><article class="observation remark-like" id="observation-15"><h3 class="heading">
+</h3>Many of the equations that has been discussed so far fall under the category of an explicit equation.  An explicit equation is one in which the relationship between <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> is given explicitly, such as <span class="process-math">\(y = f(x)\text{.}\)</span>  In this section we will examine when the relationship between <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> is given implicity. An implicit equation looks like <span class="process-math">\(f(x,y) = g(x,y)\)</span> where both sides of the equation may depend on both <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span></article><article class="observation remark-like" id="obs-df-implicit2"><h3 class="heading">
 <span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.7.2</span><span class="period">.</span>
-</h3>Note that if we are taking the derivative with respect to <span class="process-math">\(x\text{,}\)</span> then<div class="displaymath process-math" data-contains-math-knowls="">
+</h3>Note that if we are taking the derivative of <span class="process-math">\(f(x)\)</span> with respect to <span class="process-math">\(x\text{,}\)</span> then<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \frac{d}{dx}(f(x)) = f'(x).
 \end{equation*}
-</div>However,<div class="displaymath process-math" data-contains-math-knowls="">
+</div>However, if we are taking the derivative of <span class="process-math">\(g(y(x))\)</span> with respect to <span class="process-math">\(x\text{,}\)</span> then<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\frac{d}{dx}(g(y)) = g'(y)\frac{dy}{dx}.
+\frac{d}{dx}(g(y)) = g'(y) \cdot \frac{dy}{dx}.
 \end{equation*}
 </div></article><article class="activity project-like" id="activity-derivative-implicit1"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.3</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-78"><p id="p-807">For this activity we want to find the equation of a tangent line for a circle with radius 5 centered at the origin, <span class="process-math">\(x^2+y^2 = 25,\)</span> at the point <span class="process-math">\((-3,-4).\)</span></p></div>
-<article class="task exercise-like" id="task-217"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-808">The derivative with respect to <span class="process-math">\(x\)</span> for the equation of the circle is given by which expression.</p>
-<ol class="upper-alpha">
-<li id="li-599"><p id="p-809"><span class="process-math">\(\displaystyle 2x + 2y\frac{dy}{dx} = 25\)</span></p></li>
-<li id="li-600"><p id="p-810"><span class="process-math">\(\displaystyle 2x + y\frac{dy}{dx} = 0\)</span></p></li>
-<li id="li-601"><p id="p-811"><span class="process-math">\(\displaystyle 2x + 2y\frac{dy}{dx} = 0\)</span></p></li>
-<li id="li-602"><p id="p-812"><span class="process-math">\(\displaystyle 2x + 2\frac{dy}{dx} = 25\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-218"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-813">Solving for <span class="process-math">\(\frac{dy}{dx}\)</span> gives?</p>
-<ol class="upper-alpha">
-<li id="li-603"><p id="p-814"><span class="process-math">\(\displaystyle \frac{dy}{dx} = \frac{25-2x}{2y}\)</span></p></li>
-<li id="li-604"><p id="p-815"><span class="process-math">\(\displaystyle \frac{dy}{dx} = -\frac{2x}{y}\)</span></p></li>
-<li id="li-605"><p id="p-816"><span class="process-math">\(\displaystyle \frac{dy}{dx} = -\frac{x}{y}\)</span></p></li>
-<li id="li-606"><p id="p-817"><span class="process-math">\(\displaystyle \frac{dy}{dx} = \frac{25-2x}{2}\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-219"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-818">Plug the point <span class="process-math">\((-3,-4)\)</span> into the expression found above for the derivative to get the slope of the tangent line.</p></article><article class="task exercise-like" id="task-220"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-819">Use the value for the slope of the tangent line to obtain the equation of the tangent line.</p></article></article><article class="activity project-like" id="activity-derivative-implicit2"><h3 class="heading">
+<div class="introduction" id="introduction-85"><p id="p-797">For this activity we want to find the equation of a tangent line for a circle with radius 5 centered at the origin, <span class="process-math">\(x^2+y^2 = 25,\)</span> at the point <span class="process-math">\((-3,-4).\)</span></p></div>
+<article class="task exercise-like" id="task-243"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-798">The derivative with respect to <span class="process-math">\(x\)</span> for the equation of the circle is given by which expression.</p>
+<ol class="upper-alpha cols2">
+<li id="li-549"><p id="p-799"><span class="process-math">\(\displaystyle 2x + 2y\frac{dy}{dx} = 25\)</span></p></li>
+<li id="li-550"><p id="p-800"><span class="process-math">\(\displaystyle 2x + y\frac{dy}{dx} = 0\)</span></p></li>
+<li id="li-551"><p id="p-801"><span class="process-math">\(\displaystyle 2x + 2y\frac{dy}{dx} = 0\)</span></p></li>
+<li id="li-552"><p id="p-802"><span class="process-math">\(\displaystyle 2x + 2\frac{dy}{dx} = 25\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-244"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-803">Solving for <span class="process-math">\(\frac{dy}{dx}\)</span> gives?</p>
+<ol class="upper-alpha cols2">
+<li id="li-553"><p id="p-804"><span class="process-math">\(\displaystyle \frac{dy}{dx} = \frac{25-2x}{2y}\)</span></p></li>
+<li id="li-554"><p id="p-805"><span class="process-math">\(\displaystyle \frac{dy}{dx} = -\frac{2x}{y}\)</span></p></li>
+<li id="li-555"><p id="p-806"><span class="process-math">\(\displaystyle \frac{dy}{dx} = -\frac{x}{y}\)</span></p></li>
+<li id="li-556"><p id="p-807"><span class="process-math">\(\displaystyle \frac{dy}{dx} = \frac{25-2x}{2}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-245"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-808">Plug the point <span class="process-math">\((-3,-4)\)</span> into the expression found above for the derivative to get the slope of the tangent line.</p></article><article class="task exercise-like" id="task-246"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-809">Use the value for the slope of the tangent line to obtain the equation of the tangent line.</p></article></article><article class="activity project-like" id="activity-derivative-implicit2"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.4</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-79"><p id="p-820">The curve given in <a href="" class="xref" data-knowl="./knowl/figure-derivative-implicit2.html" title="Figure 38">Figure 38</a> is an example of an astroid.  The equation of this astroid is <span class="process-math">\(x^{2/3} + y^{2/3} = 3^{2/3}\text{.}\)</span>  What is the derivative with respect <span class="process-math">\(x\)</span> for this astroid? (Solve for <span class="process-math">\(\frac{dy}{dx}\)</span>).</p></div>
+<div class="introduction" id="introduction-86"><p id="p-810">The curve given in <a href="" class="xref" data-knowl="./knowl/figure-derivative-implicit2.html" title="Figure 38">Figure 38</a> is an example of an astroid.  The equation of this astroid is <span class="process-math">\(x^{2/3} + y^{2/3} = 3^{2/3}\text{.}\)</span>  What is the derivative with respect <span class="process-math">\(x\)</span> for this astroid? (Solve for <span class="process-math">\(\frac{dy}{dx}\)</span>).</p></div>
 <figure class="figure figure-like" id="figure-derivative-implicit2"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/derivative_implicit2_graph.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">38<span class="period">.</span></span><span class="space"> </span>Graph of <span class="process-math">\(x^{2/3} + y^{2/3} = 3^{2/3}\text{.}\)</span></figcaption></figure><ol class="upper-alpha">
-<li id="li-607"><p id="p-821"><span class="process-math">\(\displaystyle \frac{dy}{dx} = \frac{x^{-1/3}}{y^{-1/3}}\)</span></p></li>
-<li id="li-608"><p id="p-822"><span class="process-math">\(\displaystyle \frac{dy}{dx} = \frac{y^{-1/3}}{x^{-1/3}}\)</span></p></li>
-<li id="li-609"><p id="p-823"><span class="process-math">\(\displaystyle \frac{dy}{dx} = \frac{3^{-1/3}-x^{-1/3}}{y^{-1/3}}\)</span></p></li>
-<li id="li-610"><p id="p-824"><span class="process-math">\(\displaystyle \frac{dy}{dx} = -\frac{x^{-1/3}}{y^{-1/3}}\)</span></p></li>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">38<span class="period">.</span></span><span class="space"> </span>Graph of <span class="process-math">\(x^{2/3} + y^{2/3} = 3^{2/3}\text{.}\)</span></figcaption></figure><ol class="upper-alpha cols2">
+<li id="li-557"><p id="p-811"><span class="process-math">\(\displaystyle \frac{dy}{dx} = \frac{x^{-1/3}}{y^{-1/3}}\)</span></p></li>
+<li id="li-558"><p id="p-812"><span class="process-math">\(\displaystyle \frac{dy}{dx} = \frac{y^{-1/3}}{x^{-1/3}}\)</span></p></li>
+<li id="li-559"><p id="p-813"><span class="process-math">\(\displaystyle \frac{dy}{dx} = \frac{3^{-1/3}-x^{-1/3}}{y^{-1/3}}\)</span></p></li>
+<li id="li-560"><p id="p-814"><span class="process-math">\(\displaystyle \frac{dy}{dx} = -\frac{x^{-1/3}}{y^{-1/3}}\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-derivative-implicit3"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.5</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-80"><p id="p-825">An example of a lemniscate is given in <a href="" class="xref" data-knowl="./knowl/figure-derivative-implicit3.html" title="Figure 39">Figure 39</a>.  The equation of this lemniscate is <span class="process-math">\((x^{2} + y^{2})^2 = x^2 - y^2\text{.}\)</span>  What is the derivative with respect <span class="process-math">\(x\)</span> for this lemniscate? (Solve for <span class="process-math">\(\frac{dy}{dx}\)</span>).</p></div>
+<div class="introduction" id="introduction-87"><p id="p-815">An example of a lemniscate is given in <a href="" class="xref" data-knowl="./knowl/figure-derivative-implicit3.html" title="Figure 39">Figure 39</a>.  The equation of this lemniscate is <span class="process-math">\((x^{2} + y^{2})^2 = x^2 - y^2\text{.}\)</span>  What is the derivative with respect <span class="process-math">\(x\)</span> for this lemniscate? (Solve for <span class="process-math">\(\frac{dy}{dx}\)</span>).</p></div>
 <figure class="figure figure-like" id="figure-derivative-implicit3"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/derivative_implicit3_graph.png" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">39<span class="period">.</span></span><span class="space"> </span>Graph of <span class="process-math">\((x^{2} + y^{2})^2 = x^2 - y^2\text{.}\)</span></figcaption></figure><ol class="upper-alpha">
-<li id="li-611"><p id="p-826"><span class="process-math">\(\displaystyle \frac{dy}{dx} = \frac{x(1-2(x^2+y^2))}{y+2(x^2+y^2)}\)</span></p></li>
-<li id="li-612"><p id="p-827"><span class="process-math">\(\displaystyle \frac{dy}{dx} = \frac{x(1-2(x^2+y^2))}{y(1+2(x^2+y^2))}\)</span></p></li>
-<li id="li-613"><p id="p-828"><span class="process-math">\(\displaystyle \frac{dy}{dx} = \frac{y(1+2(x^2+y^2))}{x(1-2(x^2+y^2))}\)</span></p></li>
-<li id="li-614"><p id="p-829"><span class="process-math">\(\displaystyle \frac{dy}{dx} = \frac{y+2(x^2+y^2)}{x(1-2(x^2+y^2))}\)</span></p></li>
-</ol></article><article class="activity project-like" id="checkit-df5"><h3 class="heading">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">39<span class="period">.</span></span><span class="space"> </span>Graph of <span class="process-math">\((x^{2} + y^{2})^2 = x^2 - y^2\text{.}\)</span></figcaption></figure><ol class="upper-alpha cols2">
+<li id="li-561"><p id="p-816"><span class="process-math">\(\displaystyle \frac{dy}{dx} = \frac{x(1-2(x^2+y^2))}{y+2(x^2+y^2)}\)</span></p></li>
+<li id="li-562"><p id="p-817"><span class="process-math">\(\displaystyle \frac{dy}{dx} = \frac{x(1-2(x^2+y^2))}{y(1+2(x^2+y^2))}\)</span></p></li>
+<li id="li-563"><p id="p-818"><span class="process-math">\(\displaystyle \frac{dy}{dx} = \frac{y(1+2(x^2+y^2))}{x(1-2(x^2+y^2))}\)</span></p></li>
+<li id="li-564"><p id="p-819"><span class="process-math">\(\displaystyle \frac{dy}{dx} = \frac{y+2(x^2+y^2)}{x(1-2(x^2+y^2))}\)</span></p></li>
+</ol></article><article class="activity project-like" id="checkit-df7"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.6</span><span class="period">.</span>
 </h3>
-<p id="p-830">Explain how to use implicit differentiation to find <span class="process-math">\(\frac{dy}{dx}\)</span> for each of the following equations.</p>
-<ol class="decimal">
-<li id="li-615"><div class="displaymath process-math" data-contains-math-knowls="" id="p-831">
+<div class="introduction" id="introduction-88"><p id="p-820">Explain how to use implicit differentiation to find <span class="process-math">\(\frac{dy}{dx}\)</span> for each of the following equations.</p></div>
+<article class="task exercise-like" id="task-247"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-821">
 \begin{equation*}
 -5 \, x^{5} - 5 \, \cos\left(y\right) = 3 \, y^{4} + 2
 \end{equation*}
-</div></li>
-<li id="li-616"><div class="displaymath process-math" data-contains-math-knowls="" id="p-832">
+</div></article><article class="task exercise-like" id="task-248"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-822">
 \begin{equation*}
 -5 \, y e^{x} + 5 \, \sin\left(x\right) = 0
 \end{equation*}
-</div></li>
-</ol>
-<div class="solutions">
-<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-10" id="answer-10"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-10"><div class="answer solution-like"><ol class="decimal">
-<li id="li-617"><div class="displaymath process-math" data-contains-math-knowls="" id="p-833">
-\begin{equation*}
-\frac{dy}{dx}=-\frac{25 \, x^{4}}{12 \, y^{3} - 5 \, \sin\left(y\right)}
-\end{equation*}
-</div></li>
-<li id="li-618"><div class="displaymath process-math" data-contains-math-knowls="" id="p-834">
-\begin{equation*}
-\frac{dy}{dx}=-{\left(y e^{x} - \cos\left(x\right)\right)} e^{\left(-x\right)}
-\end{equation*}
-</div></li>
-</ol></div></div>
-</div></article><article class="activity project-like" id="activity-derivative-implicit4"><h3 class="heading">
+</div></article></article><article class="activity project-like" id="activity-derivative-implicit4"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.7</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-81"><p id="p-835">To take the derivative of some explicit equations you might need to make it an implicit equation.  For this activity we will find the derivative of <span class="process-math">\(y = x^x\text{.}\)</span>  Make the equation an implicit equation by taking natural logarithm of both sides, this gives <span class="process-math">\(\ln(y) = x\ln(x)\text{.}\)</span> Knowing this, what is <span class="process-math">\(\frac{dy}{dx}\text{?}\)</span> This process to find a derivative is known as logarithmic differentiation.</p></div>
-<ol class="upper-alpha">
-<li id="li-619"><p id="p-836"><span class="process-math">\(\displaystyle \frac{dy}{dx} = x^x(\ln(x) + 1)\)</span></p></li>
-<li id="li-620"><p id="p-837"><span class="process-math">\(\displaystyle \frac{dy}{dx} = \frac{(\ln(x)+1)}{x^x}\)</span></p></li>
-<li id="li-621"><p id="p-838"><span class="process-math">\(\displaystyle \frac{dy}{dx} = x^x(\ln(x) + x)\)</span></p></li>
-<li id="li-622"><p id="p-839"><span class="process-math">\(\displaystyle \frac{dy}{dx} = \frac{(\ln(x)+x)}{x^x}\)</span></p></li>
+<div class="introduction" id="introduction-89"><p id="p-823">To take the derivative of some explicit equations you might need to make it an implicit equation.  For this activity we will find the derivative of <span class="process-math">\(y = x^x\text{.}\)</span>  Make the equation an implicit equation by taking natural logarithm of both sides, this gives <span class="process-math">\(\ln(y) = x\ln(x)\text{.}\)</span> Knowing this, what is <span class="process-math">\(\frac{dy}{dx}\text{?}\)</span> This process to find a derivative is known as logarithmic differentiation.</p></div>
+<ol class="upper-alpha cols2">
+<li id="li-565"><p id="p-824"><span class="process-math">\(\displaystyle \frac{dy}{dx} = x^x(\ln(x) + 1)\)</span></p></li>
+<li id="li-566"><p id="p-825"><span class="process-math">\(\displaystyle \frac{dy}{dx} = \frac{(\ln(x)+1)}{x^x}\)</span></p></li>
+<li id="li-567"><p id="p-826"><span class="process-math">\(\displaystyle \frac{dy}{dx} = x^x(\ln(x) + x)\)</span></p></li>
+<li id="li-568"><p id="p-827"><span class="process-math">\(\displaystyle \frac{dy}{dx} = \frac{(\ln(x)+x)}{x^x}\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-derivative-implicit-in-context1"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.7.8</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-82">Valerie is building a square chicken coop with side length <span class="process-math">\(x\text{.}\)</span>  Because she needs a separate place for the rooster, she needs to put fence around the square and also along the diagonal line shown.  The fence costs  $20 per linear meter, and she has a budget of  $900. <figure class="figure figure-like" id="figure-chicken-coop"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/coop.jpg" class="contained"></div>
+<div class="introduction" id="introduction-90">Valerie is building a square chicken coop with side length <span class="process-math">\(x\text{.}\)</span>  Because she needs a separate place for the rooster, she needs to put fence around the square and also along the diagonal line shown.  The fence costs  $20 per linear meter, and she has a budget of  $900. <figure class="figure figure-like" id="figure-chicken-coop"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/coop.jpg" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">40<span class="period">.</span></span><span class="space"> </span>A diagram of the chicken coop.</figcaption></figure>
 </div>
-<article class="task exercise-like" id="task-221"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-840">Which of the following equations gives the relationship between <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{?}\)</span> Make sure you can explain why!</p>
-<ol class="upper-alpha">
-<li id="li-623"><p id="p-841"><span class="process-math">\(\displaystyle 20x + \frac{80x}{\cos(y)}=900\)</span></p></li>
-<li id="li-624"><p id="p-842"><span class="process-math">\(\displaystyle 80x + \frac{20x}{\cos(y)}=900\)</span></p></li>
-<li id="li-625"><p id="p-843"><span class="process-math">\(\displaystyle 80x + \frac{20x}{\sin(y)}=900\)</span></p></li>
-<li id="li-626"><p id="p-844"><span class="process-math">\(\displaystyle 20x + \frac{80x}{\sin(y)}=900\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-222"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-845">If Valerie builds the coop with <span class="process-math">\(y=\pi/3\)</span> (and wants to use her whole budget), find what side length <span class="process-math">\(x\)</span> she needs to use.</p></article><article class="task exercise-like" id="task-223"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-846">Find the slope of the curve at this point and interpret what this value tells Valerie.</p></article></article></section></div></main>
+<article class="task exercise-like" id="task-249"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-828">Which of the following equations gives the relationship between <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{?}\)</span> Make sure you can explain why!</p>
+<ol class="upper-alpha cols2">
+<li id="li-569"><p id="p-829"><span class="process-math">\(\displaystyle 20x + \frac{80x}{\cos(y)}=900\)</span></p></li>
+<li id="li-570"><p id="p-830"><span class="process-math">\(\displaystyle 80x + \frac{20x}{\cos(y)}=900\)</span></p></li>
+<li id="li-571"><p id="p-831"><span class="process-math">\(\displaystyle 80x + \frac{20x}{\sin(y)}=900\)</span></p></li>
+<li id="li-572"><p id="p-832"><span class="process-math">\(\displaystyle 20x + \frac{80x}{\sin(y)}=900\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-250"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-833">If Valerie builds the coop with <span class="process-math">\(y=\pi/3\)</span> (and wants to use her whole budget), find what side length <span class="process-math">\(x\)</span> she needs to use.</p></article><article class="task exercise-like" id="task-251"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-834">Find the slope of the curve at this point and interpret what this value tells Valerie.</p></article></article></section></div></main>
 </div>
 </body>
 </html>

@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-05T13:01:46Z       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -11,7 +8,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal1 Parametric/vector equations (CO1)</title>
+<title>TBIL-Calc Parametric/vector equations (CO1)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -37,6 +34,14 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
@@ -197,109 +202,109 @@
 <span class="type">Section</span> <span class="codenumber">7.1</span> <span class="title">Parametric/vector equations (CO1)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-53"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-1651"><p id="p-2319">Sketch the graph of a two-dimensional parametric/vector equation, and convert such equations into equations of only <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span></p></li></ul></article><article class="activity project-like" id="co1-activity-xy-chart"><h3 class="heading">
+<ul class="disc"><li id="li-1548"><p id="p-2281">Sketch the graph of a two-dimensional parametric/vector equation, and convert such equations into equations of only <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span></p></li></ul></article><article class="activity project-like" id="co1-activity-xy-chart"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.1.1</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-216"><p id="p-2320">Consider how we might graph the equation <span class="process-math">\(y=2-x^2\)</span> in the <span class="process-math">\(xy\)</span>-plane.</p></div>
-<article class="task exercise-like" id="task-628"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2321">Complete the following chart of <span class="process-math">\(xy\)</span> values by plugging each <span class="process-math">\(x\)</span> value into the equation to produce its <span class="process-math">\(y\)</span> value.</p>
+<div class="introduction" id="introduction-231"><p id="p-2282">Consider how we might graph the equation <span class="process-math">\(y=2-x^2\)</span> in the <span class="process-math">\(xy\)</span>-plane.</p></div>
+<article class="task exercise-like" id="task-681"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2283">Complete the following chart of <span class="process-math">\(xy\)</span> values by plugging each <span class="process-math">\(x\)</span> value into the equation to produce its <span class="process-math">\(y\)</span> value.</p>
 <figure class="table table-like" id="table-12"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">141<span class="period">.</span></span><span class="space"> </span>Chart of <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> values to graph</figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
-<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
-<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(y\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(y\)</span></td>
 </tr>
 <tr>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(-2\)</span></td>
-<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-2\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
 </tr>
 <tr>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(-1\)</span></td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
 </tr>
 <tr>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
-<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
 </tr>
 <tr>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
-<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
 </tr>
 <tr>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
-<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
 </tr>
-</table></div></figure></article><article class="task exercise-like" id="task-629"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2322">Plot each point <span class="process-math">\((x,y)\)</span> in your chart in the <span class="process-math">\(xy\)</span> plane.</p></article><article class="task exercise-like" id="task-630"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2323">Connect the dots to obtain a reasonable sketch of the equation's graph.</p></article></article><article class="activity project-like" id="co1-activity-txy-chart"><h3 class="heading">
+</table></div></figure></article><article class="task exercise-like" id="task-682"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2284">Plot each point <span class="process-math">\((x,y)\)</span> in your chart in the <span class="process-math">\(xy\)</span> plane.</p></article><article class="task exercise-like" id="task-683"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2285">Connect the dots to obtain a reasonable sketch of the equation's graph.</p></article></article><article class="activity project-like" id="co1-activity-txy-chart"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.1.2</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-217"><p id="p-2324">Suppose that we are told that at after <span class="process-math">\(t\)</span> seconds, an object is located at the <span class="process-math">\(x\)</span>-coordinate given by <span class="process-math">\(x=t-2\)</span> and the <span class="process-math">\(y\)</span>-coordinate given by <span class="process-math">\(y=-t^2+4t-2\text{.}\)</span></p></div>
-<article class="task exercise-like" id="task-631"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2325">Complete the following chart of <span class="process-math">\(txy\)</span> values by plugging each <span class="process-math">\(t\)</span> value into the equations to produce its <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> values.</p>
+<div class="introduction" id="introduction-232"><p id="p-2286">Suppose that we are told that at after <span class="process-math">\(t\)</span> seconds, an object is located at the <span class="process-math">\(x\)</span>-coordinate given by <span class="process-math">\(x=t-2\)</span> and the <span class="process-math">\(y\)</span>-coordinate given by <span class="process-math">\(y=-t^2+4t-2\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-684"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2287">Complete the following chart of <span class="process-math">\(txy\)</span> values by plugging each <span class="process-math">\(t\)</span> value into the equations to produce its <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> values.</p>
 <figure class="table table-like" id="table-13"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">142<span class="period">.</span></span><span class="space"> </span>Chart of <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> values for each <span class="process-math">\(t\)</span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
-<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(t\)</span></td>
-<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
-<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(y\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(t\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(y\)</span></td>
 </tr>
 <tr>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
-<td class="l m b0 r0 l0 t0 lines"></td>
-<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
 </tr>
 <tr>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(-1\)</span></td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-1\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
 </tr>
 <tr>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
-<td class="l m b0 r0 l0 t0 lines"></td>
-<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
 </tr>
 <tr>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(3\)</span></td>
-<td class="l m b0 r0 l0 t0 lines"></td>
-<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(3\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
 </tr>
 <tr>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(4\)</span></td>
-<td class="l m b0 r0 l0 t0 lines"></td>
-<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(4\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"></td>
 </tr>
-</table></div></figure></article><article class="task exercise-like" id="task-632"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2326">Plot each point <span class="process-math">\((x,y)\)</span> in your chart in the <span class="process-math">\(xy\)</span> plane, labeling it with its <span class="process-math">\(t\)</span> value.</p></article><article class="task exercise-like" id="task-633"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2327">Connect the dots to obtain a reasonable sketch of the equation's graph.</p></article></article><article class="definition definition-like" id="co1-definition-parametric"><h3 class="heading">
+</table></div></figure></article><article class="task exercise-like" id="task-685"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2288">Plot each point <span class="process-math">\((x,y)\)</span> in your chart in the <span class="process-math">\(xy\)</span> plane, labeling it with its <span class="process-math">\(t\)</span> value.</p></article><article class="task exercise-like" id="task-686"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2289">Connect the dots to obtain a reasonable sketch of the equation's graph.</p></article></article><article class="definition definition-like" id="co1-definition-parametric"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.1.3</span><span class="period">.</span>
 </h3>
-<p id="p-2328">Graphs in the <span class="process-math">\(xy\)</span> plane can be described by <dfn class="terminology">parametric equations</dfn> <span class="process-math">\(x=f(t)\)</span> and <span class="process-math">\(y=g(t)\text{,}\)</span> where plugging in different values of <span class="process-math">\(t\)</span> into the functions <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> produces different points of the graph.</p>
-<p id="p-2329">The <span class="process-math">\(t\)</span>-values may be thought of representing the moment of <em class="emphasis">time</em> when an object is located at a particular position, and the graph may be thought of as the path the object travels throughout time.</p></article><article class="activity project-like" id="co1-activity-txy-to-xy"><h3 class="heading">
+<p id="p-2290">Graphs in the <span class="process-math">\(xy\)</span> plane can be described by <dfn class="terminology">parametric equations</dfn> <span class="process-math">\(x=f(t)\)</span> and <span class="process-math">\(y=g(t)\text{,}\)</span> where plugging in different values of <span class="process-math">\(t\)</span> into the functions <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> produces different points of the graph.</p>
+<p id="p-2291">The <span class="process-math">\(t\)</span>-values may be thought of representing the moment of <em class="emphasis">time</em> when an object is located at a particular position, and the graph may be thought of as the path the object travels throughout time.</p></article><article class="activity project-like" id="co1-activity-txy-to-xy"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.1.4</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-218"><p id="p-2330">Earlier we obtained the same graphs for the <span class="process-math">\(xy\)</span> equation <span class="process-math">\(y=2-x^2\)</span> and the parametric equations <span class="process-math">\(x=t-2\)</span> and <span class="process-math">\(y=-t^2+4t-2\text{.}\)</span> Do the following steps to find out why.</p></div>
-<article class="task exercise-like" id="task-634"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2331">Which of the following equations describes <span class="process-math">\(t\)</span> in terms of <span class="process-math">\(x\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-1652"><p id="p-2332"><span class="process-math">\(\displaystyle t=x-2\)</span></p></li>
-<li id="li-1653"><p id="p-2333"><span class="process-math">\(\displaystyle t=x+2\)</span></p></li>
-<li id="li-1654"><p id="p-2334"><span class="process-math">\(\displaystyle t=2x\)</span></p></li>
-<li id="li-1655"><p id="p-2335"><span class="process-math">\(\displaystyle t=-2x\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-635"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2336">Which of these is the result of plugging this choice in for <span class="process-math">\(t\)</span> in the parametric equation for <span class="process-math">\(y\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-1656"><p id="p-2337"><span class="process-math">\(\displaystyle y=-x+2^2+4x+2-2\)</span></p></li>
-<li id="li-1657"><p id="p-2338"><span class="process-math">\(\displaystyle y=-(x+2)^2+4(x+2)-2\)</span></p></li>
-<li id="li-1658"><p id="p-2339"><span class="process-math">\(\displaystyle y=-x^2+2^2+4x+4\cdot2-2\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-636"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2340">Show how to simplify this choice to obtain the equation <span class="process-math">\(y=2-x^2\text{.}\)</span></p></article></article><article class="fact theorem-like" id="fact-18"><h3 class="heading">
+<div class="introduction" id="introduction-233"><p id="p-2292">Earlier we obtained the same graphs for the <span class="process-math">\(xy\)</span> equation <span class="process-math">\(y=2-x^2\)</span> and the parametric equations <span class="process-math">\(x=t-2\)</span> and <span class="process-math">\(y=-t^2+4t-2\text{.}\)</span> Do the following steps to find out why.</p></div>
+<article class="task exercise-like" id="task-687"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2293">Which of the following equations describes <span class="process-math">\(t\)</span> in terms of <span class="process-math">\(x\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1549"><p id="p-2294"><span class="process-math">\(\displaystyle t=x-2\)</span></p></li>
+<li id="li-1550"><p id="p-2295"><span class="process-math">\(\displaystyle t=x+2\)</span></p></li>
+<li id="li-1551"><p id="p-2296"><span class="process-math">\(\displaystyle t=2x\)</span></p></li>
+<li id="li-1552"><p id="p-2297"><span class="process-math">\(\displaystyle t=-2x\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-688"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2298">Which of these is the result of plugging this choice in for <span class="process-math">\(t\)</span> in the parametric equation for <span class="process-math">\(y\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1553"><p id="p-2299"><span class="process-math">\(\displaystyle y=-x+2^2+4x+2-2\)</span></p></li>
+<li id="li-1554"><p id="p-2300"><span class="process-math">\(\displaystyle y=-(x+2)^2+4(x+2)-2\)</span></p></li>
+<li id="li-1555"><p id="p-2301"><span class="process-math">\(\displaystyle y=-x^2+2^2+4x+4\cdot2-2\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-689"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2302">Show how to simplify this choice to obtain the equation <span class="process-math">\(y=2-x^2\text{.}\)</span></p></article></article><article class="fact theorem-like" id="fact-18"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">7.1.5</span><span class="period">.</span>
 </h3>
-<p id="p-2341">One method of graphing parametric equations <span class="process-math">\(x=f(t)\)</span> and <span class="process-math">\(y=g(t)\)</span> is to combine them into a single equation only involving <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{,}\)</span> and using your usual graphing techniques.</p></article><article class="activity project-like" id="co1-activity-parametric-circle"><h3 class="heading">
+<p id="p-2303">One method of graphing parametric equations <span class="process-math">\(x=f(t)\)</span> and <span class="process-math">\(y=g(t)\)</span> is to combine them into a single equation only involving <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{,}\)</span> and using your usual graphing techniques.</p></article><article class="activity project-like" id="co1-activity-parametric-circle"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.1.6</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-219"><p id="p-2342">Parametric equations have the advantage of describing paths that cannot be described by a function <span class="process-math">\(y=h(x)\text{.}\)</span> One such example is the graph of <span class="process-math">\(x=3\sin(\pi t)\)</span> and <span class="process-math">\(y=-3\cos(\pi t)\text{.}\)</span> (Use technology or the approximation <span class="process-math">\(\sqrt 2\approx 0.707\)</span> to approximate coordinates as needed.)</p></div>
-<article class="task exercise-like" id="task-637"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2343">Complete the folowing table.</p>
+<div class="introduction" id="introduction-234"><p id="p-2304">Parametric equations have the advantage of describing paths that cannot be described by a function <span class="process-math">\(y=h(x)\text{.}\)</span> One such example is the graph of <span class="process-math">\(x=3\sin(\pi t)\)</span> and <span class="process-math">\(y=-3\cos(\pi t)\text{.}\)</span> (Use technology or the approximation <span class="process-math">\(\sqrt 2\approx 0.707\)</span> to approximate coordinates as needed.)</p></div>
+<article class="task exercise-like" id="task-690"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2305">Complete the folowing table.</p>
 <figure class="table table-like" id="table-14"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">143<span class="period">.</span></span><span class="space"> </span>Chart of approximate <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> values</figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(t\)</span></td>
@@ -351,47 +356,47 @@
 <td class="l m b0 r0 l0 t0 lines"></td>
 <td class="l m b0 r0 l0 t0 lines"></td>
 </tr>
-</table></div></figure></article><article class="task exercise-like" id="task-638"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2344">Plot these <span class="process-math">\((x,y)\)</span> points in the <span class="process-math">\(xy\)</span> plane and connect the dots to draw a sketch of the graph.</p></article><article class="task exercise-like" id="task-639"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2345">What do you obtain by plugging the parametric equations into the expression <span class="process-math">\(x^2+y^2\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-1659"><p id="p-2346"><span class="process-math">\(\displaystyle x^2+y^2=6\sin(\pi x)\cos(\pi x)\)</span></p></li>
-<li id="li-1660"><p id="p-2347"><span class="process-math">\(\displaystyle x^2+y^2=-6\sin(\pi x)\cos(\pi x)\)</span></p></li>
-<li id="li-1661"><p id="p-2348"><span class="process-math">\(\displaystyle x^2+y^2=9\)</span></p></li>
-<li id="li-1662"><p id="p-2349"><span class="process-math">\(\displaystyle x^2+y^2=0\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-640"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-2350">Which of these describes the <span class="process-math">\(xy\)</span> equation and graph given by these parametric equations?</p>
-<ol class="upper-alpha">
-<li id="li-1663"><p id="p-2351">a parabola</p></li>
-<li id="li-1664"><p id="p-2352">a line</p></li>
-<li id="li-1665"><p id="p-2353">a circle</p></li>
-<li id="li-1666"><p id="p-2354">a square</p></li>
-</ol></article><article class="task exercise-like" id="task-641"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-2355">The graph of these parametric equations cannot be described by a function. Why?</p>
-<ol class="upper-alpha">
-<li id="li-1667"><p id="p-2356">The graph fails the vertical line test.</p></li>
-<li id="li-1668"><p id="p-2357">The graph fails the horizontal line test.</p></li>
-<li id="li-1669"><p id="p-2358">The graph doesn't extend vertically to <span class="process-math">\(+\infty\text{.}\)</span></p></li>
-<li id="li-1670"><p id="p-2359">The graph doesn't extend horizontally to <span class="process-math">\(-\infty\text{.}\)</span></p></li>
+</table></div></figure></article><article class="task exercise-like" id="task-691"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2306">Plot these <span class="process-math">\((x,y)\)</span> points in the <span class="process-math">\(xy\)</span> plane and connect the dots to draw a sketch of the graph.</p></article><article class="task exercise-like" id="task-692"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2307">What do you obtain by plugging the parametric equations into the expression <span class="process-math">\(x^2+y^2\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1556"><p id="p-2308"><span class="process-math">\(\displaystyle x^2+y^2=6\sin(\pi x)\cos(\pi x)\)</span></p></li>
+<li id="li-1557"><p id="p-2309"><span class="process-math">\(\displaystyle x^2+y^2=-6\sin(\pi x)\cos(\pi x)\)</span></p></li>
+<li id="li-1558"><p id="p-2310"><span class="process-math">\(\displaystyle x^2+y^2=9\)</span></p></li>
+<li id="li-1559"><p id="p-2311"><span class="process-math">\(\displaystyle x^2+y^2=0\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-693"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-2312">Which of these describes the <span class="process-math">\(xy\)</span> equation and graph given by these parametric equations?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1560"><p id="p-2313">a parabola</p></li>
+<li id="li-1561"><p id="p-2314">a line</p></li>
+<li id="li-1562"><p id="p-2315">a circle</p></li>
+<li id="li-1563"><p id="p-2316">a square</p></li>
+</ol></article><article class="task exercise-like" id="task-694"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-2317">The graph of these parametric equations cannot be described by a function. Why?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1564"><p id="p-2318">The graph fails the vertical line test.</p></li>
+<li id="li-1565"><p id="p-2319">The graph fails the horizontal line test.</p></li>
+<li id="li-1566"><p id="p-2320">The graph doesn't extend vertically to <span class="process-math">\(+\infty\text{.}\)</span></p></li>
+<li id="li-1567"><p id="p-2321">The graph doesn't extend horizontally to <span class="process-math">\(-\infty\text{.}\)</span></p></li>
 </ol></article></article><article class="definition definition-like" id="definition-33"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.1.7</span><span class="period">.</span>
 </h3>
-<p id="p-2360">The parametric equations <span class="process-math">\(x=f(t)\)</span> and <span class="process-math">\(y=g(t)\)</span> are sometimes written in the form of the <dfn class="terminology">vector equation</dfn> <span class="process-math">\(\vec r=\tuple{f(t),g(t)}\text{.}\)</span></p>
-<p id="p-2361">For example, the parametric equations <span class="process-math">\(x=3\sin(\pi t)\)</span> and <span class="process-math">\(y=-3\cos(\pi t)\)</span> may be combined into the single vector equation <span class="process-math">\(\vec r=\tuple{3\sin(\pi t),-3\cos(\pi t)}\text{.}\)</span></p></article><article class="activity project-like" id="co1-activity-vector"><h3 class="heading">
+<p id="p-2322">The parametric equations <span class="process-math">\(x=f(t)\)</span> and <span class="process-math">\(y=g(t)\)</span> are sometimes written in the form of the <dfn class="terminology">vector equation</dfn> <span class="process-math">\(\vec r=\tuple{f(t),g(t)}\text{.}\)</span></p>
+<p id="p-2323">For example, the parametric equations <span class="process-math">\(x=3\sin(\pi t)\)</span> and <span class="process-math">\(y=-3\cos(\pi t)\)</span> may be combined into the single vector equation <span class="process-math">\(\vec r=\tuple{3\sin(\pi t),-3\cos(\pi t)}\text{.}\)</span></p></article><article class="activity project-like" id="co1-activity-vector"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.1.8</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-220"><p id="p-2362">Consider the vector equation <span class="process-math">\(\vec r=\tuple{2t-3,-6t+13}\text{.}\)</span></p></div>
-<article class="task exercise-like" id="task-642"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2363">What are the corresponding parametric equations?</p>
-<ol class="upper-alpha">
-<li id="li-1671"><p id="p-2364"><span class="process-math">\(x=2t-3\)</span> and <span class="process-math">\(y=-6t+13\)</span></p></li>
-<li id="li-1672"><p id="p-2365"><span class="process-math">\(y=2t-3\)</span> and <span class="process-math">\(x=-6t+13\)</span></p></li>
-<li id="li-1673"><p id="p-2366"><span class="process-math">\(\displaystyle xy=2t-3-6t+13\)</span></p></li>
-<li id="li-1674"><p id="p-2367">Vector equations cannot be converted into parametric equations.</p></li>
-</ol></article><article class="task exercise-like" id="task-643"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2368">Draw a table of <span class="process-math">\(txy\)</span> values with <span class="process-math">\(t=0,1,2,3,4\text{.}\)</span></p></article><article class="task exercise-like" id="task-644"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2369">Plot these <span class="process-math">\((x,y)\)</span> points in the plane and connect the dots to sketch the graph of this vector equation.</p></article><article class="task exercise-like" id="task-645"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-2370">Solve for <span class="process-math">\(t\)</span> in terms of <span class="process-math">\(x\)</span> and plug into the <span class="process-math">\(y\)</span> parametric equation to show that this is the vector equation for the line <span class="process-math">\(y=-3x+4\text{.}\)</span></p></article></article></section></div></main>
+<div class="introduction" id="introduction-235"><p id="p-2324">Consider the vector equation <span class="process-math">\(\vec r=\tuple{2t-3,-6t+13}\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-695"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2325">What are the corresponding parametric equations?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1568"><p id="p-2326"><span class="process-math">\(x=2t-3\)</span> and <span class="process-math">\(y=-6t+13\)</span></p></li>
+<li id="li-1569"><p id="p-2327"><span class="process-math">\(y=2t-3\)</span> and <span class="process-math">\(x=-6t+13\)</span></p></li>
+<li id="li-1570"><p id="p-2328"><span class="process-math">\(\displaystyle xy=2t-3-6t+13\)</span></p></li>
+<li id="li-1571"><p id="p-2329">Vector equations cannot be converted into parametric equations.</p></li>
+</ol></article><article class="task exercise-like" id="task-696"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2330">Draw a table of <span class="process-math">\(t\text{,}\)</span> <span class="process-math">\(x\text{,}\)</span> and <span class="process-math">\(y\)</span> values with <span class="process-math">\(t=0,1,2,3,4\text{.}\)</span></p></article><article class="task exercise-like" id="task-697"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2331">Plot these <span class="process-math">\((x,y)\)</span> points in the plane and connect the dots to sketch the graph of this vector equation.</p></article><article class="task exercise-like" id="task-698"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-2332">Solve for <span class="process-math">\(t\)</span> in terms of <span class="process-math">\(x\)</span> and plug into the <span class="process-math">\(y\)</span> parametric equation to show that this is the vector equation for the line <span class="process-math">\(y=-3x+4\text{.}\)</span></p></article></article></section></div></main>
 </div>
 </body>
 </html>

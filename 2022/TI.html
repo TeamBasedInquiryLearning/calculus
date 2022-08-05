@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-05T13:01:41Z       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -11,7 +8,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal1 Techniques of Integration (TI)</title>
+<title>TBIL-Calc Techniques of Integration (TI)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -37,6 +34,14 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
@@ -198,52 +203,52 @@
 <span class="type">Chapter</span> <span class="codenumber">5</span> <span class="title">Techniques of Integration (TI)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-36"><h2 class="heading"><span class="type">Learning Outcomes</span></h2>
-<div class="introduction" id="introduction-159">
-<p id="p-1681">How do we use various techniques to integrate less simple functions?</p>
-<p id="p-1682">By the end of this chapter, you should be able to...</p>
+<div class="introduction" id="introduction-173">
+<p id="p-1631">How do we use various techniques to integrate less simple functions?</p>
+<p id="p-1632">By the end of this chapter, you should be able to...</p>
 </div>
 <ol class="decimal">
-<li id="li-1076"><p id="p-1683">Evaluate various integrals via the substitution method.</p></li>
-<li id="li-1077"><p id="p-1684">Compute integrals using integration by parts.</p></li>
-<li id="li-1078"><p id="p-1685">Compute integrals involving products of trigonometric functions.</p></li>
-<li id="li-1079"><p id="p-1686">Use trigonometric substitution to compute indefinite integrals.</p></li>
-<li id="li-1080"><p id="p-1687">I can integrate functions using a table of integrals.</p></li>
-<li id="li-1081"><p id="p-1688">I can integrate functions using the method of partial fractions.</p></li>
-<li id="li-1082"><p id="p-1689">I can select appropriate strategies for integration.</p></li>
-<li id="li-1083"><p id="p-1690">I can compute improper integrals.</p></li>
+<li id="li-975"><p id="p-1633">Evaluate various integrals via the substitution method.</p></li>
+<li id="li-976"><p id="p-1634">Compute integrals using integration by parts.</p></li>
+<li id="li-977"><p id="p-1635">Compute integrals involving products of trigonometric functions.</p></li>
+<li id="li-978"><p id="p-1636">Use trigonometric substitution to compute indefinite integrals.</p></li>
+<li id="li-979"><p id="p-1637">I can integrate functions using a table of integrals.</p></li>
+<li id="li-980"><p id="p-1638">I can integrate functions using the method of partial fractions.</p></li>
+<li id="li-981"><p id="p-1639">I can select appropriate strategies for integration.</p></li>
+<li id="li-982"><p id="p-1640">I can compute improper integrals.</p></li>
 </ol></article><section class="introduction" id="TI-intro"><section class="paragraphs" id="TI-readiness"><h2 class="heading"><span class="title">Readiness Assurance.</span></h2>
-<p id="p-1691">Before beginning this chapter, you should be able to...</p>
+<p id="p-1641">Before beginning this chapter, you should be able to...</p>
 <ol class="lower-alpha">
-<li id="li-1084">
-<p id="p-1692">Recognize when to apply the chain rule, and use it successfully.</p>
-<ul class="disc"><li id="li-1085"><p id="p-1693">Review: <a class="external" href="https://www.khanacademy.org/math/differential-calculus/dc-chain/dc-chain-rule/v/chain-rule-introduction?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-45" id="fn-45"><sup> 1 </sup></a></p></li></ul>
+<li id="li-983">
+<p id="p-1642">Recognize when to apply the chain rule, and use it successfully.</p>
+<ul class="disc"><li id="li-984"><p id="p-1643">Review: <a class="external" href="https://www.khanacademy.org/math/differential-calculus/dc-chain/dc-chain-rule/v/chain-rule-introduction?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-45" id="fn-45"><sup> 1 </sup></a></p></li></ul>
 </li>
-<li id="li-1086">
-<p id="p-1694">Recognize when to apply the product rule, and use it successfully.</p>
-<ul class="disc"><li id="li-1087"><p id="p-1695">Review: <a class="external" href="https://www.khanacademy.org/math/differential-calculus/dc-diff-intro/dc-product-rule/v/applying-the-product-rule-for-derivatives?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-46" id="fn-46"><sup> 2 </sup></a></p></li></ul>
+<li id="li-985">
+<p id="p-1644">Recognize when to apply the product rule, and use it successfully.</p>
+<ul class="disc"><li id="li-986"><p id="p-1645">Review: <a class="external" href="https://www.khanacademy.org/math/differential-calculus/dc-diff-intro/dc-product-rule/v/applying-the-product-rule-for-derivatives?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-46" id="fn-46"><sup> 2 </sup></a></p></li></ul>
 </li>
-<li id="li-1088">
-<p id="p-1696">Perform basic definite integrals.</p>
-<ul class="disc"><li id="li-1089"><p id="p-1697">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-7/v/connecting-the-first-and-second-fundamental-theorems-of-calculus?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-47" id="fn-47"><sup> 3 </sup></a></p></li></ul>
+<li id="li-987">
+<p id="p-1646">Perform basic definite integrals.</p>
+<ul class="disc"><li id="li-988"><p id="p-1647">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-7/v/connecting-the-first-and-second-fundamental-theorems-of-calculus?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-47" id="fn-47"><sup> 3 </sup></a></p></li></ul>
 </li>
-<li id="li-1090">
-<p id="p-1698">Compute basic antiderivatives.</p>
-<ul class="disc"><li id="li-1091"><p id="p-1699">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-7/v/antiderivatives-and-indefinite-integrals?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-48" id="fn-48"><sup> 4 </sup></a></p></li></ul>
+<li id="li-989">
+<p id="p-1648">Compute basic antiderivatives.</p>
+<ul class="disc"><li id="li-990"><p id="p-1649">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-7/v/antiderivatives-and-indefinite-integrals?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-48" id="fn-48"><sup> 4 </sup></a></p></li></ul>
 </li>
-<li id="li-1092">
-<p id="p-1700">Differentiate trigonometric functions.</p>
-<ul class="disc"><li id="li-1093"><p id="p-1701">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-10/v/derivatives-of-tanx-and-cotx?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-49" id="fn-49"><sup> 5 </sup></a></p></li></ul>
+<li id="li-991">
+<p id="p-1650">Differentiate trigonometric functions.</p>
+<ul class="disc"><li id="li-992"><p id="p-1651">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-10/v/derivatives-of-tanx-and-cotx?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-49" id="fn-49"><sup> 5 </sup></a></p></li></ul>
 </li>
-<li id="li-1094">
-<p id="p-1702">Compute limits.</p>
+<li id="li-993">
+<p id="p-1652">Compute limits.</p>
 <ul class="disc">
-<li id="li-1095"><p id="p-1703">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-bc/bc-limits-new/bc-1-2/v/introduction-to-limits-hd?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-50" id="fn-50"><sup> 6 </sup></a></p></li>
-<li id="li-1096"><p id="p-1704">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-bc/bc-diff-contextual-applications-new/bc-4-7/v/introduction-to-l-hopital-s-rule?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-51" id="fn-51"><sup> 7 </sup></a></p></li>
+<li id="li-994"><p id="p-1653">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-bc/bc-limits-new/bc-1-2/v/introduction-to-limits-hd?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-50" id="fn-50"><sup> 6 </sup></a></p></li>
+<li id="li-995"><p id="p-1654">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-bc/bc-diff-contextual-applications-new/bc-4-7/v/introduction-to-l-hopital-s-rule?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-51" id="fn-51"><sup> 7 </sup></a></p></li>
 </ul>
 </li>
-<li id="li-1097">
-<p id="p-1705">Apply the pythagorean identity.</p>
-<ul class="disc"><li id="li-1098"><p id="p-1706">Review: <a class="external" href="https://www.khanacademy.org/math/trigonometry/unit-circle-trig-func/pythagorean-identity/v/using-the-pythagorean-trig-identity?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-52" id="fn-52"><sup> 8 </sup></a></p></li></ul>
+<li id="li-996">
+<p id="p-1655">Apply the pythagorean identity.</p>
+<ul class="disc"><li id="li-997"><p id="p-1656">Review: <a class="external" href="https://www.khanacademy.org/math/trigonometry/unit-circle-trig-func/pythagorean-identity/v/using-the-pythagorean-trig-identity?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-52" id="fn-52"><sup> 8 </sup></a></p></li></ul>
 </li>
 </ol></section></section><nav class="summary-links"><ul>
 <li><a href="TI1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Substitution method (TI1)</span></a></li>

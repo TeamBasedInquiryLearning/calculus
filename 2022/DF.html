@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-05T13:01:36Z       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -11,7 +8,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal1 Derivatives (DF)</title>
+<title>TBIL-Calc Derivatives (DF)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -37,6 +34,14 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
@@ -198,28 +203,28 @@
 <span class="type">Chapter</span> <span class="codenumber">2</span> <span class="title">Derivatives (DF)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-8"><h2 class="heading"><span class="type">Learning Outcomes</span></h2>
-<div class="introduction" id="introduction-38">
-<p id="p-395">Need a question for this chapter</p>
-<p id="p-396">By the end of this chapter, you should be able to...</p>
+<div class="introduction" id="introduction-41">
+<p id="p-389">Need a question for this chapter</p>
+<p id="p-390">By the end of this chapter, you should be able to...</p>
 </div>
 <ol class="decimal">
-<li id="li-249"><p id="p-397">Estimate the value of a derivative using difference quotients, and draw corresponding secant and tangent lines on the graph of a function.</p></li>
-<li id="li-250"><p id="p-398">Find derivatives using the definition of derivative as a limit.</p></li>
-<li id="li-251"><p id="p-399">Compute basic derivatives using algebraic rules.</p></li>
-<li id="li-252"><p id="p-400">Compute derivatives using the Product and Quotient Rules.</p></li>
-<li id="li-253"><p id="p-401">Compute derivatives using the Chain Rule.</p></li>
-<li id="li-254"><p id="p-402">Compute derivatives using a combination of algebraic derivative rules.</p></li>
-<li id="li-255"><p id="p-403">Compute derivatives of implicitly-defined functions.</p></li>
-<li id="li-256"><p id="p-404">Compute derivatives of inverse functions.</p></li>
+<li id="li-226"><p id="p-391">Estimate the value of a derivative using difference quotients, and draw corresponding secant and tangent lines on the graph of a function.</p></li>
+<li id="li-227"><p id="p-392">Find derivatives using the definition of derivative as a limit.</p></li>
+<li id="li-228"><p id="p-393">Compute basic derivatives using algebraic rules.</p></li>
+<li id="li-229"><p id="p-394">Compute derivatives using the Product and Quotient Rules.</p></li>
+<li id="li-230"><p id="p-395">Compute derivatives using the Chain Rule.</p></li>
+<li id="li-231"><p id="p-396">Compute derivatives using a combination of algebraic derivative rules.</p></li>
+<li id="li-232"><p id="p-397">Compute derivatives of implicitly-defined functions.</p></li>
+<li id="li-233"><p id="p-398">Compute derivatives of inverse functions.</p></li>
 </ol></article><section class="introduction" id="DF-intro"><section class="paragraphs" id="DF-readiness"><h2 class="heading"><span class="title">Readiness Assurance.</span></h2>
-<p id="p-405">Before beginning this chapter, you should be able to...</p>
+<p id="p-399">Before beginning this chapter, you should be able to...</p>
 <ol class="lower-alpha">
-<li id="li-257"><p id="p-406">Write equations of lines using slope-intercept and/or point-slope form (<a class="external" href="https://www.mathsisfun.com/algebra/line-equation-point-slope.html" target="_blank">Math is Fun</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-23" id="fn-23"><sup> 1 </sup></a>)</p></li>
-<li id="li-258"><p id="p-407">Find the average rate of change of a function over some interval (<a class="external" href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:average-rate-of-change/v/average-rate-of-change-example-3" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-24" id="fn-24"><sup> 2 </sup></a>)</p></li>
-<li id="li-259"><p id="p-408">Evaluate functions at variable expressions (<a class="external" href="https://www.purplemath.com/modules/fcnnot2.htm" target="_blank">Purple Math</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-25" id="fn-25"><sup> 3 </sup></a>)</p></li>
-<li id="li-260"><p id="p-409">Use the laws of exponents to rewrite a given expression (<a class="external" href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-differentiation-1/xa350bf684c056c5c:rational-exponents/v/basic-fractional-exponents" target="_blank">Khan Academy (1)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-26" id="fn-26"><sup> 4 </sup></a> and <a class="external" href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-differentiation-1/xa350bf684c056c5c:properties-of-exponents/v/simplifying-exponent-expression-with-division" target="_blank">Khan Academy (2)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-27" id="fn-27"><sup> 5 </sup></a>)</p></li>
-<li id="li-261"><p id="p-410">Compose and decompose functions (<a class="external" href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-differentiation-2/xa350bf684c056c5c:composing-functions/v/function-composition" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-28" id="fn-28"><sup> 6 </sup></a>)</p></li>
-<li id="li-262"><p id="p-411">Recall special trig values on the unit circle (<a class="external" href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-limits-and-continuity/xa350bf684c056c5c:special-trig-values-in-q1/v/solving-triangle-unit-circle" target="_blank">Khan Academy (1)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-29" id="fn-29"><sup> 7 </sup></a> and <a class="external" href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-limits-and-continuity/xa350bf684c056c5c:unit-circle-introduction/v/unit-circle-definition-of-trig-functions-1" target="_blank">Khan Academy (2)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-30" id="fn-30"><sup> 8 </sup></a>)</p></li>
+<li id="li-234"><p id="p-400">Write equations of lines using slope-intercept and/or point-slope form (<a class="external" href="https://www.mathsisfun.com/algebra/line-equation-point-slope.html" target="_blank">Math is Fun</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-23" id="fn-23"><sup> 1 </sup></a>)</p></li>
+<li id="li-235"><p id="p-401">Find the average rate of change of a function over some interval (<a class="external" href="https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:average-rate-of-change/v/average-rate-of-change-example-3" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-24" id="fn-24"><sup> 2 </sup></a>)</p></li>
+<li id="li-236"><p id="p-402">Evaluate functions at variable expressions (<a class="external" href="https://www.purplemath.com/modules/fcnnot2.htm" target="_blank">Purple Math</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-25" id="fn-25"><sup> 3 </sup></a>)</p></li>
+<li id="li-237"><p id="p-403">Use the laws of exponents to rewrite a given expression (<a class="external" href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-differentiation-1/xa350bf684c056c5c:rational-exponents/v/basic-fractional-exponents" target="_blank">Khan Academy (1)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-26" id="fn-26"><sup> 4 </sup></a> and <a class="external" href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-differentiation-1/xa350bf684c056c5c:properties-of-exponents/v/simplifying-exponent-expression-with-division" target="_blank">Khan Academy (2)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-27" id="fn-27"><sup> 5 </sup></a>)</p></li>
+<li id="li-238"><p id="p-404">Compose and decompose functions (<a class="external" href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-differentiation-2/xa350bf684c056c5c:composing-functions/v/function-composition" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-28" id="fn-28"><sup> 6 </sup></a>)</p></li>
+<li id="li-239"><p id="p-405">Recall special trig values on the unit circle (<a class="external" href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-limits-and-continuity/xa350bf684c056c5c:special-trig-values-in-q1/v/solving-triangle-unit-circle" target="_blank">Khan Academy (1)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-29" id="fn-29"><sup> 7 </sup></a> and <a class="external" href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-limits-and-continuity/xa350bf684c056c5c:unit-circle-introduction/v/unit-circle-definition-of-trig-functions-1" target="_blank">Khan Academy (2)</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-30" id="fn-30"><sup> 8 </sup></a>)</p></li>
 </ol></section></section><nav class="summary-links"><ul>
 <li><a href="DF2.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Derivatives graphically and numerically (DF1)</span></a></li>
 <li><a href="DF1.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Derivatives analytically (DF2)</span></a></li>
@@ -229,14 +234,14 @@
 <li><a href="DF6.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Differentiation strategy (DF6)</span></a></li>
 <li><a href="DF7.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Differentiating implicitly defined functions (DF7)</span></a></li>
 <li><a href="DF8.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Differentiating inverse functions (DF8)</span></a></li>
-</ul></nav></section><div class="hidden-content tex2jax_ignore" id="hk-fn-23"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.mathsisfun.com/algebra/line-equation-point-slope.html</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-24"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:average-rate-of-change/v/average-rate-of-change-example-3</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-25"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.purplemath.com/modules/fcnnot2.htm</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-26"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-differentiation-1/xa350bf684c056c5c:rational-exponents/v/basic-fractional-exponents</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-27"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-differentiation-1/xa350bf684c056c5c:properties-of-exponents/v/simplifying-exponent-expression-with-division</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-28"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-differentiation-2/xa350bf684c056c5c:composing-functions/v/function-composition</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-29"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-limits-and-continuity/xa350bf684c056c5c:special-trig-values-in-q1/v/solving-triangle-unit-circle</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-30"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-limits-and-continuity/xa350bf684c056c5c:unit-circle-introduction/v/unit-circle-definition-of-trig-functions-1</code></div></div>
+</ul></nav></section><div class="hidden-content tex2jax_ignore" id="hk-fn-23"><div class="fn"><code class="code-inline tex2jax_ignore">www.mathsisfun.com/algebra/line-equation-point-slope.html</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-24"><div class="fn"><code class="code-inline tex2jax_ignore">www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:average-rate-of-change/v/average-rate-of-change-example-3</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-25"><div class="fn"><code class="code-inline tex2jax_ignore">www.purplemath.com/modules/fcnnot2.htm</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-26"><div class="fn"><code class="code-inline tex2jax_ignore">www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-differentiation-1/xa350bf684c056c5c:rational-exponents/v/basic-fractional-exponents</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-27"><div class="fn"><code class="code-inline tex2jax_ignore">www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-differentiation-1/xa350bf684c056c5c:properties-of-exponents/v/simplifying-exponent-expression-with-division</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-28"><div class="fn"><code class="code-inline tex2jax_ignore">www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-differentiation-2/xa350bf684c056c5c:composing-functions/v/function-composition</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-29"><div class="fn"><code class="code-inline tex2jax_ignore">www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-limits-and-continuity/xa350bf684c056c5c:special-trig-values-in-q1/v/solving-triangle-unit-circle</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-30"><div class="fn"><code class="code-inline tex2jax_ignore">www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-limits-and-continuity/xa350bf684c056c5c:unit-circle-introduction/v/unit-circle-definition-of-trig-functions-1</code></div></div>
 </div></main>
 </div>
 </body>

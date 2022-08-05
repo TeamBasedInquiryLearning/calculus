@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-05T13:01:47Z       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -11,7 +8,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal1 Sequence Formulas (SQ1)</title>
+<title>TBIL-Calc Sequence Formulas (SQ1)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -37,6 +34,14 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
@@ -197,151 +202,123 @@
 <span class="type">Section</span> <span class="codenumber">8.1</span> <span class="title">Sequence Formulas (SQ1)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-60"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-1761"><p id="p-2536">Define and use explicit and recursive formulas for sequences.</p></li></ul></article><article class="activity project-like" id="activity-SQ1sequenceORnot"><h3 class="heading">
+<ul class="disc"><li id="li-1658"><p id="p-2500">Define and use explicit and recursive formulas for sequences.</p></li></ul></article><article class="activity project-like" id="activity-SQ1sequenceORnot"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.1.1</span><span class="period">.</span>
 </h3>
-<p id="p-2537">Which of the following are sequences?</p>
-<ol class="upper-alpha">
-<li id="li-1762"><p id="p-derived-li-1762">monthly gas bill</p></li>
-<li id="li-1763"><p id="p-derived-li-1763">days in the year</p></li>
-<li id="li-1764"><p id="p-derived-li-1764">how long you wash dishes</p></li>
-<li id="li-1765"><p id="p-derived-li-1765"><span class="process-math">\(\displaystyle 1, 1, 2, 3, 5, 8, \ldots\)</span></p></li>
-<li id="li-1766"><p id="p-derived-li-1766">how much you spend on groceries</p></li>
+<p id="p-2501">Which of the following are sequences?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1659"><p id="p-derived-li-1659">monthly gas bill</p></li>
+<li id="li-1660"><p id="p-derived-li-1660">days in the year</p></li>
+<li id="li-1661"><p id="p-derived-li-1661">how long you wash dishes</p></li>
+<li id="li-1662"><p id="p-derived-li-1662"><span class="process-math">\(\displaystyle 1, 1, 2, 3, 5, 8, \ldots\)</span></p></li>
+<li id="li-1663"><p id="p-derived-li-1663">how much you spend on groceries</p></li>
 </ol></article><article class="activity project-like" id="activity-SQ1NotUnique"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.1.2</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-234"><p id="p-2538">Consider the sequence <span class="process-math">\(1, 2, 4, \ldots\text{.}\)</span></p></div>
-<article class="task exercise-like" id="task-695"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2539">Which of the choices below reasonably continues this sequence of numbers?</p>
-<ol class="upper-alpha">
-<li id="li-1767"><p id="p-derived-li-1767"><span class="process-math">\(\displaystyle 7, 12, 24, \ldots\)</span></p></li>
-<li id="li-1768"><p id="p-derived-li-1768"><span class="process-math">\(\displaystyle 7, 11, 16, \ldots\)</span></p></li>
-<li id="li-1769"><p id="p-derived-li-1769"><span class="process-math">\(\displaystyle 8, 16, 32, \ldots\)</span></p></li>
-<li id="li-1770"><p id="p-derived-li-1770"><span class="process-math">\(\displaystyle 1, 2, 4, \ldots\)</span></p></li>
-<li id="li-1771"><p id="p-derived-li-1771"><span class="process-math">\(\displaystyle 7, 12, 20, \ldots\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-696"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2540">Where possible, find a formula that allows us to move from one term to the next one.</p></article></article><article class="remark remark-like" id="remark-48"><h3 class="heading">
+<div class="introduction" id="introduction-249"><p id="p-2502">Consider the sequence <span class="process-math">\(1, 2, 4, \ldots\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-748"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2503">Which of the choices below reasonably continues this sequence of numbers?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1664"><p id="p-derived-li-1664"><span class="process-math">\(\displaystyle 7, 12, 24, \ldots\)</span></p></li>
+<li id="li-1665"><p id="p-derived-li-1665"><span class="process-math">\(\displaystyle 7, 11, 16, \ldots\)</span></p></li>
+<li id="li-1666"><p id="p-derived-li-1666"><span class="process-math">\(\displaystyle 8, 16, 32, \ldots\)</span></p></li>
+<li id="li-1667"><p id="p-derived-li-1667"><span class="process-math">\(\displaystyle 1, 2, 4, \ldots\)</span></p></li>
+<li id="li-1668"><p id="p-derived-li-1668"><span class="process-math">\(\displaystyle 7, 12, 20, \ldots\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-749"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2504">Where possible, find a formula that allows us to move from one term to the next one.</p></article></article><article class="remark remark-like" id="remark-50"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">8.1.3</span><span class="period">.</span>
 </h3>
-<p id="p-2541">As seen in the previous activity, having too few terms may prevent us from finding a unique way to continue creating a sequence of numbers. In fact, we need sufficiently many terms to uniquely continue a sequence of numbers (and how many terms is sufficient depends on which sequence of numbers you are trying to generate). Sometimes, we do not want to write out all of the terms needed to allow for this. Therefore, we will want to find short-hand notation that allows us to do so.</p></article><article class="definition definition-like" id="definition-34"><h3 class="heading">
+<p id="p-2505">As seen in the previous activity, having too few terms may prevent us from finding a unique way to continue creating a sequence of numbers. In fact, we need sufficiently many terms to uniquely continue a sequence of numbers (and how many terms is sufficient depends on which sequence of numbers you are trying to generate). Sometimes, we do not want to write out all of the terms needed to allow for this. Therefore, we will want to find short-hand notation that allows us to do so.</p></article><article class="definition definition-like" id="definition-34"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.1.4</span><span class="period">.</span>
 </h3>
-<p id="p-2542">Let <span class="process-math">\(a_n\)</span> denote the <span class="process-math">\(n\)</span>th term in a sequence. Then <span class="process-math">\(\displaystyle \{a_n\}_{n=1}^\infty=a_1, a_2, \ldots, a_n, \ldots\text{.}\)</span></p></article><article class="activity project-like" id="activity-SQ1WhereToStart"><h3 class="heading">
+<p id="p-2506">A <dfn class="terminology">sequence</dfn> is a list of real numbers. Let <span class="process-math">\(a_n\)</span> denote the <span class="process-math">\(n\)</span>th term in a sequence. We will use the notation <span class="process-math">\(\displaystyle \{a_n\}_{n=1}^\infty=a_1, a_2, \ldots, a_n, \ldots\text{.}\)</span> A general formula that indicates how to explicitly find the <span class="process-math">\(n\)</span>-th term of a sequence is the <dfn class="terminology">closed form</dfn> of the sequence.</p></article><article class="activity project-like" id="activity-SQ1WhereToStart"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.1.5</span><span class="period">.</span>
 </h3>
-<p id="p-2543">Consider the sequence <span class="process-math">\(\displaystyle 1, \frac{1}{3}, \frac{1}{9}, \frac{1}{27}, \ldots\text{.}\)</span> Which of the following choices gives a closed formula for this sequence? Select all that apply.</p>
-<ol class="upper-alpha">
-<li id="li-1772"><p id="p-derived-li-1772"><span class="process-math">\(\displaystyle \displaystyle \left\{\left(\frac{1}{3}\right)^{n-1}\right\}_{n=1}^\infty\)</span></p></li>
-<li id="li-1773"><p id="p-derived-li-1773"><span class="process-math">\(\displaystyle \displaystyle \left\{\left(\frac{1}{3}\right)^{n}\right\}_{n=1}^\infty\)</span></p></li>
-<li id="li-1774"><p id="p-derived-li-1774"><span class="process-math">\(\displaystyle \displaystyle \left\{\left(\frac{1}{3}\right)^{n-1}\right\}_{n=2}^\infty\)</span></p></li>
-<li id="li-1775"><p id="p-derived-li-1775"><span class="process-math">\(\displaystyle \displaystyle \left\{\left(\frac{1}{3}\right)^{n+1}\right\}_{n=0}^\infty\)</span></p></li>
-<li id="li-1776"><p id="p-derived-li-1776"><span class="process-math">\(\displaystyle \displaystyle \left\{\left(\frac{1}{3}\right)^{n}\right\}_{n=0}^\infty\)</span></p></li>
+<p id="p-2507">Consider the sequence <span class="process-math">\(\displaystyle 1, \frac{1}{3}, \frac{1}{9}, \frac{1}{27}, \ldots\text{.}\)</span> Which of the following choices gives a closed formula for this sequence? Select all that apply.</p>
+<ol class="upper-alpha cols2">
+<li id="li-1669"><p id="p-derived-li-1669"><span class="process-math">\(\displaystyle \displaystyle \left\{\left(\frac{1}{3}\right)^{n-1}\right\}_{n=1}^\infty\)</span></p></li>
+<li id="li-1670"><p id="p-derived-li-1670"><span class="process-math">\(\displaystyle \displaystyle \left\{\left(\frac{1}{3}\right)^{n}\right\}_{n=1}^\infty\)</span></p></li>
+<li id="li-1671"><p id="p-derived-li-1671"><span class="process-math">\(\displaystyle \displaystyle \left\{\left(\frac{1}{3}\right)^{n-1}\right\}_{n=2}^\infty\)</span></p></li>
+<li id="li-1672"><p id="p-derived-li-1672"><span class="process-math">\(\displaystyle \displaystyle \left\{\left(\frac{1}{3}\right)^{n+1}\right\}_{n=0}^\infty\)</span></p></li>
+<li id="li-1673"><p id="p-derived-li-1673"><span class="process-math">\(\displaystyle \displaystyle \left\{\left(\frac{1}{3}\right)^{n}\right\}_{n=0}^\infty\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-SQ1findtermfromformula"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.1.6</span><span class="period">.</span>
 </h3>
-<p id="p-2544">Let <span class="process-math">\(a_n\)</span> be the <span class="process-math">\(n\)</span>th term in the sequence <span class="process-math">\(\displaystyle \left\{\frac{n+1}{n}\right\}_{n=1}^\infty\text{.}\)</span> Which of the following terms corresponds to the <span class="process-math">\(27^{th}\)</span> term of this sequence?</p>
-<ol class="upper-alpha">
-<li id="li-1777"><p id="p-derived-li-1777"><span class="process-math">\(\displaystyle \frac{27}{26}\)</span></p></li>
-<li id="li-1778"><p id="p-derived-li-1778"><span class="process-math">\(\displaystyle \frac{26}{27}\)</span></p></li>
-<li id="li-1779"><p id="p-derived-li-1779"><span class="process-math">\(\displaystyle \frac{27}{28}\)</span></p></li>
-<li id="li-1780"><p id="p-derived-li-1780"><span class="process-math">\(\displaystyle \frac{28}{27}\)</span></p></li>
-<li id="li-1781"><p id="p-derived-li-1781"><span class="process-math">\(\displaystyle \frac{29}{28}\)</span></p></li>
+<p id="p-2508">Let <span class="process-math">\(a_n\)</span> be the <span class="process-math">\(n\)</span>th term in the sequence <span class="process-math">\(\displaystyle \left\{\frac{n+1}{n}\right\}_{n=1}^\infty\text{.}\)</span> Which of the following terms corresponds to the <span class="process-math">\(27^{th}\)</span> term of this sequence?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1674"><p id="p-derived-li-1674"><span class="process-math">\(\displaystyle \frac{27}{26}\)</span></p></li>
+<li id="li-1675"><p id="p-derived-li-1675"><span class="process-math">\(\displaystyle \frac{26}{27}\)</span></p></li>
+<li id="li-1676"><p id="p-derived-li-1676"><span class="process-math">\(\displaystyle \frac{27}{28}\)</span></p></li>
+<li id="li-1677"><p id="p-derived-li-1677"><span class="process-math">\(\displaystyle \frac{28}{27}\)</span></p></li>
+<li id="li-1678"><p id="p-derived-li-1678"><span class="process-math">\(\displaystyle \frac{29}{28}\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-SQ1findtermfromlistshift"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.1.7</span><span class="period">.</span>
 </h3>
-<p id="p-2545">Let <span class="process-math">\(a_n\)</span> be the <span class="process-math">\(n\)</span>th term in the sequence <span class="process-math">\(\displaystyle \left\{\frac{n+1}{n}\right\}_{n=2}^\infty\text{.}\)</span> Which of the following terms corresponds to the <span class="process-math">\(27^{th}\)</span> term of this sequence?</p>
-<ol class="upper-alpha">
-<li id="li-1782"><p id="p-derived-li-1782"><span class="process-math">\(\displaystyle \frac{27}{26}\)</span></p></li>
-<li id="li-1783"><p id="p-derived-li-1783"><span class="process-math">\(\displaystyle \frac{26}{27}\)</span></p></li>
-<li id="li-1784"><p id="p-derived-li-1784"><span class="process-math">\(\displaystyle \frac{27}{28}\)</span></p></li>
-<li id="li-1785"><p id="p-derived-li-1785"><span class="process-math">\(\displaystyle \frac{28}{27}\)</span></p></li>
-<li id="li-1786"><p id="p-derived-li-1786"><span class="process-math">\(\displaystyle \frac{29}{28}\)</span></p></li>
+<p id="p-2509">Let <span class="process-math">\(a_n\)</span> be the <span class="process-math">\(n\)</span>th term in the sequence <span class="process-math">\(\displaystyle \left\{\frac{n+1}{n}\right\}_{n=2}^\infty\text{.}\)</span> Which of the following terms corresponds to the <span class="process-math">\(27^{th}\)</span> term of this sequence?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1679"><p id="p-derived-li-1679"><span class="process-math">\(\displaystyle \frac{27}{26}\)</span></p></li>
+<li id="li-1680"><p id="p-derived-li-1680"><span class="process-math">\(\displaystyle \frac{26}{27}\)</span></p></li>
+<li id="li-1681"><p id="p-derived-li-1681"><span class="process-math">\(\displaystyle \frac{27}{28}\)</span></p></li>
+<li id="li-1682"><p id="p-derived-li-1682"><span class="process-math">\(\displaystyle \frac{28}{27}\)</span></p></li>
+<li id="li-1683"><p id="p-derived-li-1683"><span class="process-math">\(\displaystyle \frac{29}{28}\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-SQ1findtermfromlist"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.1.8</span><span class="period">.</span>
 </h3>
-<p id="p-2546">Let <span class="process-math">\(a_n\)</span> be the <span class="process-math">\(n\)</span>th term in the sequence <span class="process-math">\(\displaystyle 1, \frac{1}{2}, \frac{1}{3}, \frac{1}{4}, \ldots\text{.}\)</span> Identify the <span class="process-math">\(81\)</span>st term of this sequence.</p>
-<ol class="upper-alpha">
-<li id="li-1787"><p id="p-derived-li-1787"><span class="process-math">\(\displaystyle \frac{1}{79}\)</span></p></li>
-<li id="li-1788"><p id="p-derived-li-1788"><span class="process-math">\(\displaystyle \frac{1}{80}\)</span></p></li>
-<li id="li-1789"><p id="p-derived-li-1789"><span class="process-math">\(\displaystyle \frac{1}{81}\)</span></p></li>
-<li id="li-1790"><p id="p-derived-li-1790"><span class="process-math">\(\displaystyle \frac{1}{82}\)</span></p></li>
-<li id="li-1791"><p id="p-derived-li-1791"><span class="process-math">\(\displaystyle \frac{1}{83}\)</span></p></li>
+<p id="p-2510">Let <span class="process-math">\(a_n\)</span> be the <span class="process-math">\(n\)</span>th term in the sequence <span class="process-math">\(\displaystyle 1, \frac{1}{2}, \frac{1}{3}, \frac{1}{4}, \ldots\text{.}\)</span> Identify the <span class="process-math">\(81\)</span>st term of this sequence.</p>
+<ol class="upper-alpha cols2">
+<li id="li-1684"><p id="p-derived-li-1684"><span class="process-math">\(\displaystyle \frac{1}{79}\)</span></p></li>
+<li id="li-1685"><p id="p-derived-li-1685"><span class="process-math">\(\displaystyle \frac{1}{80}\)</span></p></li>
+<li id="li-1686"><p id="p-derived-li-1686"><span class="process-math">\(\displaystyle \frac{1}{81}\)</span></p></li>
+<li id="li-1687"><p id="p-derived-li-1687"><span class="process-math">\(\displaystyle \frac{1}{82}\)</span></p></li>
+<li id="li-1688"><p id="p-derived-li-1688"><span class="process-math">\(\displaystyle \frac{1}{83}\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-SQ1findclosedformuladiverge"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.1.9</span><span class="period">.</span>
 </h3>
-<p id="p-2547">Find a closed form for the sequence <span class="process-math">\(0, 3, 8, 15, 24, \ldots\text{.}\)</span></p></article><article class="activity project-like" id="activity-SQ1findclosedformulaconverge"><h3 class="heading">
+<p id="p-2511">Find a closed form for the sequence <span class="process-math">\(0, 3, 8, 15, 24, \ldots\text{.}\)</span></p></article><article class="activity project-like" id="activity-SQ1findclosedformulaconverge"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.1.10</span><span class="period">.</span>
 </h3>
-<p id="p-2548">Find a closed form for the sequence <span class="process-math">\(\displaystyle \frac{12}{1}, \frac{16}{2}, \frac{20}{3}, \frac{24}{4}, \frac{28}{5}, \ldots\text{.}\)</span></p></article><article class="activity project-like" id="activity-SQ1findclosedformulaRECURSIVE"><h3 class="heading">
+<p id="p-2512">Find a closed form for the sequence <span class="process-math">\(\displaystyle \frac{12}{1}, \frac{16}{2}, \frac{20}{3}, \frac{24}{4}, \frac{28}{5}, \ldots\text{.}\)</span></p></article><article class="activity project-like" id="activity-SQ1findclosedformulaRECURSIVE"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.1.11</span><span class="period">.</span>
 </h3>
-<p id="p-2549">Let <span class="process-math">\(a_n\)</span> be the <span class="process-math">\(n\)</span>th term in the sequence <span class="process-math">\(1, 1, 2, 3, 5, 8, \ldots\text{.}\)</span> Find a formula for <span class="process-math">\(a_n\text{.}\)</span></p></article><article class="definition definition-like" id="definition-35"><h3 class="heading">
+<p id="p-2513">Let <span class="process-math">\(a_n\)</span> be the <span class="process-math">\(n\)</span>th term in the sequence <span class="process-math">\(1, 1, 2, 3, 5, 8, \ldots\text{.}\)</span> Find a formula for <span class="process-math">\(a_n\text{.}\)</span></p></article><article class="definition definition-like" id="definition-35"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.1.12</span><span class="period">.</span>
 </h3>
-<p id="p-2550">A sequence is recursive if the terms are defined as a function of previous terms (with the necessary initial terms provided).</p></article><article class="activity project-like" id="activity-459"><h3 class="heading">
+<p id="p-2514">A sequence is <dfn class="terminology">recursive</dfn> if the terms are defined as a function of previous terms (with the necessary initial terms provided).</p></article><article class="activity project-like" id="activity-461"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.1.13</span><span class="period">.</span>
 </h3>
-<p id="p-2551">Consider the sequence defined by <span class="process-math">\(a_1=6\)</span> and <span class="process-math">\(a_{k+1}=4a_k-7\)</span> for <span class="process-math">\(k\geq 1\text{.}\)</span> What are the first four terms?</p></article><article class="activity project-like" id="activity-460"><h3 class="heading">
+<p id="p-2515">Consider the sequence defined by <span class="process-math">\(a_1=6\)</span> and <span class="process-math">\(a_{k+1}=4a_k-7\)</span> for <span class="process-math">\(k\geq 1\text{.}\)</span> What are the first four terms?</p></article><article class="activity project-like" id="activity-462"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.1.14</span><span class="period">.</span>
 </h3>
-<p id="p-2552">Consider the sequence <span class="process-math">\(2, 7, 22, 67, 202, \ldots\text{.}\)</span> Which of the following offers the best recursive formula for this sequence?</p>
-<ol class="upper-alpha">
-<li id="li-1792"><p id="p-derived-li-1792"><span class="process-math">\(\displaystyle 3a_n+1\)</span></p></li>
-<li id="li-1793"><p id="p-derived-li-1793"><span class="process-math">\(a_1=2, a_k=3a_{k-1}+1\)</span> for <span class="process-math">\(k&gt;1\)</span></p></li>
-<li id="li-1794"><p id="p-derived-li-1794"><span class="process-math">\(a_1=2, a_2=7, a_k=3a_{k-1}+1\)</span> for <span class="process-math">\(k&gt;2\)</span></p></li>
-</ol></article><article class="activity project-like" id="activity-461"><h3 class="heading">
+<p id="p-2516">Consider the sequence <span class="process-math">\(2, 7, 22, 67, 202, \ldots\text{.}\)</span> Which of the following offers the best recursive formula for this sequence?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1689"><p id="p-derived-li-1689"><span class="process-math">\(\displaystyle a_{n+1} = 3a_n+1\)</span></p></li>
+<li id="li-1690"><p id="p-derived-li-1690"><span class="process-math">\(a_1=2, a_k=3a_{k-1}+1\)</span> for <span class="process-math">\(k&gt;1\)</span></p></li>
+<li id="li-1691"><p id="p-derived-li-1691"><span class="process-math">\(a_1=2, a_2=7, a_k=3a_{k-1}+1\)</span> for <span class="process-math">\(k&gt;2\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-463"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.1.15</span><span class="period">.</span>
 </h3>
-<p id="p-2553">Once more, consider the sequence <span class="process-math">\(1, 1, 2, 3, 5, 8, \ldots\)</span> from <a href="" class="xref" data-knowl="./knowl/activity-SQ1findclosedformulaRECURSIVE.html" title="Activity 8.1.11">Activity 8.1.11</a>. Suppose <span class="process-math">\(a_1=1\)</span> and <span class="process-math">\(a_2=1\text{.}\)</span> Give a recursive formula for <span class="process-math">\(a_n\)</span> for all <span class="process-math">\(n\geq 3\text{.}\)</span></p></article><article class="activity project-like" id="activity-462"><h3 class="heading">
+<p id="p-2517">Once more, consider the sequence <span class="process-math">\(1, 1, 2, 3, 5, 8, \ldots\)</span> from <a href="" class="xref" data-knowl="./knowl/activity-SQ1findclosedformulaRECURSIVE.html" title="Activity 8.1.11">Activity 8.1.11</a>. Suppose <span class="process-math">\(a_1=1\)</span> and <span class="process-math">\(a_2=1\text{.}\)</span> Give a recursive formula for <span class="process-math">\(a_n\)</span> for all <span class="process-math">\(n\geq 3\text{.}\)</span></p></article><article class="activity project-like" id="activity-464"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.1.16</span><span class="period">.</span>
 </h3>
-<p id="p-2554">Give a recursive formula that generates the sequence <span class="process-math">\(1, 2, 4, 8, 16, 32, \ldots\text{.}\)</span></p></article><article class="activity project-like" id="activity-463"><h3 class="heading">
+<p id="p-2518">Give a recursive formula that generates the sequence <span class="process-math">\(1, 2, 4, 8, 16, 32, \ldots\text{.}\)</span></p></article><article class="activity project-like" id="activity-465"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.1.17</span><span class="period">.</span>
 </h3>
-<ol class="decimal">
-<li id="li-1795">
-<p id="p-2555">Find the first 5 terms of the following sequence:</p>
-<ul class="disc"><li id="li-1796"><p id="p-derived-li-1796"><span class="process-math">\(\displaystyle a_n=3 \cdot 2^{n}.\)</span></p></li></ul>
-</li>
-<li id="li-1797">
-<p id="p-2556">Find a closed form for the following sequence:</p>
-<ul class="disc"><li id="li-1798"><p id="p-derived-li-1798"><span class="process-math">\(\displaystyle 4, 5, 8, 13, 20,\ldots\)</span></p></li></ul>
-</li>
-<li id="li-1799">
-<p id="p-2557">Find a recursive form for the following sequence:</p>
-<ul class="disc"><li id="li-1800"><p id="p-derived-li-1800"><span class="process-math">\(\displaystyle -3, 2, 7, 12, 17,\ldots\)</span></p></li></ul>
-</li>
-</ol>
-<div class="solutions">
-<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-26" id="answer-26"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-26"><div class="answer solution-like"><ol class="decimal">
-<li id="li-1801"><p id="p-derived-li-1801"><ul class="disc"><li id="li-1802"><p id="p-derived-li-1802"><span class="process-math">\(6, 12, 24, 48, 96\)</span> if you start with <span class="process-math">\(n=1\text{,}\)</span> or <span class="process-math">\(3, 6, 12, 24, 48\)</span> if you start with <span class="process-math">\(n=0\text{.}\)</span></p></li></ul></p></li>
-<li id="li-1803"><p id="p-derived-li-1803"><ul class="disc"><li id="li-1804"><p id="p-derived-li-1804">Answers can vary depending on your choice of starting index.  For example, <span class="process-math">\(n^{2} + 4\)</span> if <span class="process-math">\(n=0,1,...\text{.}\)</span></p></li></ul></p></li>
-<li id="li-1805"><p id="p-derived-li-1805"><ul class="disc"><li id="li-1806"><p id="p-derived-li-1806">Answers can vary depending on your choice of starting index.  For example, if <span class="process-math">\(a_0=-3\)</span> then <span class="process-math">\(a_n=1a_{n-1}+5\text{.}\)</span></p></li></ul></p></li>
-</ol></div></div>
-</div></article><article class="activity project-like" id="activity-464"><h3 class="heading">
+<article class="task exercise-like" id="task-750"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2519">Find the first 5 terms of the following sequence:</p>
+<ul class="disc"><li id="li-1692"><p id="p-derived-li-1692"><span class="process-math">\(\displaystyle a_n=3 \cdot 2^{n}.\)</span></p></li></ul></article><article class="task exercise-like" id="task-751"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2520">Find a closed form for the following sequence:</p>
+<ul class="disc"><li id="li-1693"><p id="p-derived-li-1693"><span class="process-math">\(\displaystyle 4, 5, 8, 13, 20,\ldots\)</span></p></li></ul></article><article class="task exercise-like" id="task-752"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2521">Find a recursive form for the following sequence:</p>
+<ul class="disc"><li id="li-1694"><p id="p-derived-li-1694"><span class="process-math">\(\displaystyle -3, 2, 7, 12, 17,\ldots\)</span></p></li></ul></article></article><article class="activity project-like" id="activity-466"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.1.18</span><span class="period">.</span>
 </h3>
-<ol class="decimal">
-<li id="li-1807">
-<p id="p-2558">Find the first 5 terms of the following sequence:</p>
-<ul class="disc"><li id="li-1808"><p id="p-derived-li-1808"><span class="process-math">\(\displaystyle a_n=5 \, n + 4.\)</span></p></li></ul>
-</li>
-<li id="li-1809">
-<p id="p-2559">Find a closed form for the following sequence:</p>
-<ul class="disc"><li id="li-1810"><p id="p-derived-li-1810"><span class="process-math">\(\displaystyle 0, 1, 4, 9, 16,\ldots\)</span></p></li></ul>
-</li>
-<li id="li-1811">
-<p id="p-2560">Find a recursive form for the following sequence:</p>
-<ul class="disc"><li id="li-1812"><p id="p-derived-li-1812"><span class="process-math">\(\displaystyle 2, -1, \frac{1}{2}, -\frac{1}{4}, \frac{1}{8},\ldots\)</span></p></li></ul>
-</li>
-</ol>
-<div class="solutions">
-<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-27" id="answer-27"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-27"><div class="answer solution-like"><ol class="decimal">
-<li id="li-1813"><p id="p-derived-li-1813"><ul class="disc"><li id="li-1814"><p id="p-derived-li-1814"><span class="process-math">\(9, 14, 19, 24, 29\)</span> if you start with <span class="process-math">\(n=1\text{,}\)</span> or <span class="process-math">\(4, 9, 14, 19, 24\)</span> if you start with <span class="process-math">\(n=0\text{.}\)</span></p></li></ul></p></li>
-<li id="li-1815"><p id="p-derived-li-1815"><ul class="disc"><li id="li-1816"><p id="p-derived-li-1816">Answers can vary depending on your choice of starting index.  For example, <span class="process-math">\(n^{2}\)</span> if <span class="process-math">\(n=0,1,...\text{.}\)</span></p></li></ul></p></li>
-<li id="li-1817"><p id="p-derived-li-1817"><ul class="disc"><li id="li-1818"><p id="p-derived-li-1818">Answers can vary depending on your choice of starting index.  For example, if <span class="process-math">\(a_0=2\)</span> then <span class="process-math">\(a_n=-\frac{1}{2}a_{n-1}+0\text{.}\)</span></p></li></ul></p></li>
-</ol></div></div>
-</div></article><section class="subsection" id="subsection-15"><h3 class="heading hide-type">
+<article class="task exercise-like" id="task-753"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2522">Find the first 5 terms of the following sequence:</p>
+<ul class="disc"><li id="li-1695"><p id="p-derived-li-1695"><span class="process-math">\(\displaystyle a_n=5 \, n + 4.\)</span></p></li></ul></article><article class="task exercise-like" id="task-754"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2523">Find a closed form for the following sequence:</p>
+<ul class="disc"><li id="li-1696"><p id="p-derived-li-1696"><span class="process-math">\(\displaystyle 0, 1, 4, 9, 16,\ldots\)</span></p></li></ul></article><article class="task exercise-like" id="task-755"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2524">Find a recursive form for the following sequence:</p>
+<ul class="disc"><li id="li-1697"><p id="p-derived-li-1697"><span class="process-math">\(\displaystyle 2, -1, \frac{1}{2}, -\frac{1}{4}, \frac{1}{8},\ldots\)</span></p></li></ul></article></article><section class="subsection" id="subsection-15"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">8.1.1</span> <span class="title">Videos</span>
 </h3>
 <figure class="figure figure-like" id="figure-135"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-SQ1" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/JmCWeEXQAJw?&amp;modestbranding=1&amp;rel=0"></iframe></div>

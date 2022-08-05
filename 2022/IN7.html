@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-05T13:01:40Z       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -11,7 +8,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal1 Area under curves (IN7)</title>
+<title>TBIL-Calc Area under curves (IN7)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -37,6 +34,14 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
@@ -197,10 +202,10 @@
 <span class="type">Section</span> <span class="codenumber">4.7</span> <span class="title">Area under curves (IN7)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-34"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-1055"><p id="p-1628">Use definite integrals to find area under a curve.</p></li></ul></article><article class="remark remark-like" id="remark-44"><h3 class="heading">
+<ul class="disc"><li id="li-960"><p id="p-1582">Use definite integrals to find area under a curve.</p></li></ul></article><article class="remark remark-like" id="remark-46"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">4.7.1</span><span class="period">.</span>
 </h3>
-<p id="p-1629">A geometrical interpretation of</p>
+<p id="p-1583">A geometrical interpretation of</p>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/definition-in5-2.html">
 \begin{equation*}
 \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i) \Delta x = \int_a^bf(x)dx
@@ -208,29 +213,29 @@
 </div>
 <p class="continuation">(<a href="" class="xref" data-knowl="./knowl/definition-in5-2.html" title="Definition 4.5.3">Definition 4.5.3</a>) defines <span class="process-math">\(\int_a^bf(x)dx\)</span> as the <dfn class="terminology">net area</dfn> between the graph of <span class="process-math">\(y=f(x)\)</span> and the <span class="process-math">\(x\)</span>-axis. By net area, we mean the area above the <span class="process-math">\(x\)</span>-axis (when <span class="process-math">\(f(x)\)</span> is positive) minus the area below the <span class="process-math">\(x\)</span>-axis (when <span class="process-math">\(f(x)\)</span> is negative).</p>
 <figure class="figure figure-like" id="figure-60"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/sageplot/IN7-image-integral-as-net-area.svg" role="img" class="contained" alt="As the number of subdivisions increases, the Riemann sum more closely appears to measure the net area between a curve and the x-axis."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">71<span class="period">.</span></span><span class="space"> </span>Improving approximations of <span class="process-math">\(\int_0^5(x-2)(x-4)dx\)</span></figcaption></figure></article><article class="activity project-like" id="activity-245"><h3 class="heading">
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">71<span class="period">.</span></span><span class="space"> </span>Improving approximations of <span class="process-math">\(\int_0^5(x-2)(x-4)dx\)</span></figcaption></figure></article><article class="activity project-like" id="activity-247"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.7.2</span><span class="period">.</span>
 </h3>
-<article class="task exercise-like" id="task-443"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1630">Write the net area between <span class="process-math">\(f(x)=6 \, x^{2} - 18 \, x\)</span> and the <span class="process-math">\(x\)</span>-axis from <span class="process-math">\(x=2\)</span> to <span class="process-math">\(x=7\)</span> as a definite integral.</p></article><article class="task exercise-like" id="task-444"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1631">Evaluate this definite integral to verify the net area is equal to <span class="process-math">\(265\)</span> square units.</p></article></article><article class="observation remark-like" id="observation-28"><h3 class="heading">
+<article class="task exercise-like" id="task-491"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1584">Write the net area between <span class="process-math">\(f(x)=6 \, x^{2} - 18 \, x\)</span> and the <span class="process-math">\(x\)</span>-axis from <span class="process-math">\(x=2\)</span> to <span class="process-math">\(x=7\)</span> as a definite integral.</p></article><article class="task exercise-like" id="task-492"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1585">Evaluate this definite integral to verify the net area is equal to <span class="process-math">\(265\)</span> square units.</p></article></article><article class="observation remark-like" id="observation-27"><h3 class="heading">
 <span class="type">Observation</span><span class="space"> </span><span class="codenumber">4.7.3</span><span class="period">.</span>
 </h3>
-<p id="p-1632">In order to find the total area between a curve and the <span class="process-math">\(x\)</span>-axis, one must break up the definite integral at points where <span class="process-math">\(f(x)=0\text{,}\)</span> that is, wherever <span class="process-math">\(f(x)\)</span> may change from positive to negative, or vice versa.</p>
+<p id="p-1586">In order to find the total area between a curve and the <span class="process-math">\(x\)</span>-axis, one must break up the definite integral at points where <span class="process-math">\(f(x)=0\text{,}\)</span> that is, wherever <span class="process-math">\(f(x)\)</span> may change from positive to negative, or vice versa.</p>
 <figure class="figure figure-like" id="figure-61"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/sageplot/IN7-image-integral-as-total-area.svg" role="img" class="contained" alt="The total area is illustrated by breaking up the integral from 0 to 5 at 2 and 4 where (x-2) and (x-4) are equal to 0."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">72<span class="period">.</span></span><span class="space"> </span>Partitioning <span class="process-math">\(\int_0^5(x-2)(x-4)dx\)</span> at <span class="process-math">\(x=2\)</span> and <span class="process-math">\(x=4\text{.}\)</span></figcaption></figure><p id="p-1633">Since <span class="process-math">\(f(x)=(x-2)(x-4)\)</span> is zero when <span class="process-math">\(x=2\)</span> and <span class="process-math">\(x=4\text{,}\)</span> we may compute the total area between <span class="process-math">\(y=(x-2)(x-4)\)</span> and the <span class="process-math">\(x\)</span>-axis using absolute values as follows:</p>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">72<span class="period">.</span></span><span class="space"> </span>Partitioning <span class="process-math">\(\int_0^5(x-2)(x-4)dx\)</span> at <span class="process-math">\(x=2\)</span> and <span class="process-math">\(x=4\text{.}\)</span></figcaption></figure><p id="p-1587">Since <span class="process-math">\(f(x)=(x-2)(x-4)\)</span> is zero when <span class="process-math">\(x=2\)</span> and <span class="process-math">\(x=4\text{,}\)</span> we may compute the total area between <span class="process-math">\(y=(x-2)(x-4)\)</span> and the <span class="process-math">\(x\)</span>-axis using absolute values as follows:</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \text{Area} = {\color{blue} \left|\int_0^2(x-2)(x-4)dx\right|}+
 {\color{red} \left|\int_2^4(x-2)(x-4)dx\right|}+{\color{blue}\left|\int_4^5(x-2)(x-4)dx\right|}
 \end{equation*}
-</div></article><article class="activity project-like" id="activity-246"><h3 class="heading">
+</div></article><article class="activity project-like" id="activity-248"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.7.4</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-155"><p id="p-1634">Follow these steps to find the total area between <span class="process-math">\(f(x)=6 \, x^{2} - 18 \, x\)</span> and the <span class="process-math">\(x\)</span>-axis from <span class="process-math">\(x=2\)</span> to <span class="process-math">\(x=7\text{.}\)</span></p></div>
-<article class="task exercise-like" id="task-445"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1635">Find all values for <span class="process-math">\(x\)</span> where <span class="process-math">\(f(x)=6 \, x^{2} - 18 \, x\)</span> is equal to <span class="process-math">\(0\text{.}\)</span></p></article><article class="task exercise-like" id="task-446"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1636">Only one such value is between <span class="process-math">\(x=2\)</span> and <span class="process-math">\(x=7\text{.}\)</span> Use this value to fill in the <span class="process-math">\(\unknown\)</span> below, then verify that its value is <span class="process-math">\(279\)</span> square units.</p>
+<div class="introduction" id="introduction-168"><p id="p-1588">Follow these steps to find the total area between <span class="process-math">\(f(x)=6 \, x^{2} - 18 \, x\)</span> and the <span class="process-math">\(x\)</span>-axis from <span class="process-math">\(x=2\)</span> to <span class="process-math">\(x=7\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-493"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1589">Find all values for <span class="process-math">\(x\)</span> where <span class="process-math">\(f(x)=6 \, x^{2} - 18 \, x\)</span> is equal to <span class="process-math">\(0\text{.}\)</span></p></article><article class="task exercise-like" id="task-494"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1590">Only one such value is between <span class="process-math">\(x=2\)</span> and <span class="process-math">\(x=7\text{.}\)</span> Use this value to fill in the <span class="process-math">\(\unknown\)</span> below, then verify that its value is <span class="process-math">\(279\)</span> square units.</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \text{Area} =
@@ -239,32 +244,13 @@
 \left| \int_{ \unknown }^{ 7 } 
 \left( 6 \, x^{2} - 18 \, x \right) dx \right|
 \end{equation*}
-</div></article></article><article class="activity project-like" id="activity-247"><h3 class="heading">
+</div></article></article><article class="activity project-like" id="activity-249"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.7.5</span><span class="period">.</span>
 </h3>
-<p id="p-1637">Answer the following questions concerning <span class="process-math">\(f(x)=6 \, x^{2} - 96\text{.}\)</span></p>
-<ol class="decimal">
-<li id="li-1056"><p id="p-1638">What is the total area between <span class="process-math">\(f(x)=6 \, x^{2} - 96\)</span> and the <span class="process-math">\(x\)</span>-axis from <span class="process-math">\(x=-1\)</span> to <span class="process-math">\(x=9\text{?}\)</span></p></li>
-<li id="li-1057"><p id="p-1639">What is the net area between <span class="process-math">\(f(x)=6 \, x^{2} - 96\)</span> and the <span class="process-math">\(x\)</span>-axis from <span class="process-math">\(x=-1\)</span> to <span class="process-math">\(x=9\text{?}\)</span></p></li>
-</ol>
-<div class="solutions">
-<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-24" id="answer-24"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-24"><div class="answer solution-like"><ol class="decimal">
-<li id="li-1058"><div class="displaymath process-math" data-contains-math-knowls="" id="p-1640">
-\begin{equation*}
-\left| \int_{ -1 }^{ 4 } 
-\left( 6 \, x^{2} - 96 \right) dx \right| +
-\left| \int_{ 4 }^{ 9 } 
-\left( 6 \, x^{2} - 96 \right) dx \right| = 1200
-\end{equation*}
-</div></li>
-<li id="li-1059"><div class="displaymath process-math" data-contains-math-knowls="" id="p-1641">
-\begin{equation*}
-\int_{ -1 }^{ 9 } 
-\left( 6 \, x^{2} - 96 \right) dx = 500
-\end{equation*}
-</div></li>
-</ol></div></div>
-</div></article></section></div></main>
+<div class="introduction" id="introduction-169"><p id="p-1591">Answer the following questions concerning <span class="process-math">\(f(x)=6 \, x^{2} - 96\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-495"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1592">What is the total area between <span class="process-math">\(f(x)=6 \, x^{2} - 96\)</span> and the <span class="process-math">\(x\)</span>-axis from <span class="process-math">\(x=-1\)</span> to <span class="process-math">\(x=9\text{?}\)</span></p></article><article class="task exercise-like" id="task-496"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1593">What is the net area between <span class="process-math">\(f(x)=6 \, x^{2} - 96\)</span> and the <span class="process-math">\(x\)</span>-axis from <span class="process-math">\(x=-1\)</span> to <span class="process-math">\(x=9\text{?}\)</span></p></article></article></section></div></main>
 </div>
 </body>
 </html>

@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-05T13:01:36Z       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -11,7 +8,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal1 Limits numerically (LT2)</title>
+<title>TBIL-Calc Limits numerically (LT2)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -37,6 +34,14 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
@@ -222,7 +227,7 @@
 <td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.1639\)</span></td>
 </tr>
 </table></div></figure><p id="p-115">Based on the values of <a href="" class="xref" data-knowl="./knowl/table-limit-numerical1.html" title="Table 6">Table 6</a>, what is the best approximation for <span class="process-math">\(\lim_{x\to 7} f(x)\text{?}\)</span></p>
-<ol class="upper-alpha">
+<ol class="upper-alpha cols2">
 <li id="li-83"><p id="p-116">the limit is approximately 7</p></li>
 <li id="li-84"><p id="p-117">the limit is approximately 0.17</p></li>
 <li id="li-85"><p id="p-118">the limit is approximately 0.16</p></li>
@@ -257,10 +262,10 @@
 </tr>
 </table></div></figure><p id="p-122">In <a href="" class="xref" data-knowl="./knowl/activity-limits-graphically1.html" title="Activity 1.1.1">Activity 1.1.1</a>'s <a href="" class="xref" data-knowl="./knowl/limit_censored.html" title="Figure 1">Figure 1</a> we found an approximation to the limit of the function as <span class="process-math">\(x\)</span> tends to 2. Now let us say you are also given a table of numerical values (<a href="" class="xref" data-knowl="./knowl/table-limit-numerical2.html" title="Table 7">Table 7</a>) for the function. Given this new information which of the choices below best describes the limit of the function as <span class="process-math">\(x\)</span> tends to 2?</p>
 <ol class="upper-alpha">
-<li id="li-88"><p id="p-123">There is not enough information because we do not know the value of the function at <span class="process-math">\(x = 2\)</span></p></li>
-<li id="li-89"><p id="p-124">Can be approximated to be 1 because the data in the table and the graph show that from the left and the right the function approaches 1 as <span class="process-math">\(x\)</span> goes to 2</p></li>
-<li id="li-90"><p id="p-125">Can be approximated to be 1 because the values appear to approach 1 and the graph appears to approach 1, but we should zoom in on the graph to be sure</p></li>
-<li id="li-91"><p id="p-126">Cannot be approximated because the function might not exist at <span class="process-math">\(x = 2\text{.}\)</span></p></li>
+<li id="li-88"><p id="p-123">There is not enough information because we do not know the value of the function at <span class="process-math">\(x = 2\text{.}\)</span></p></li>
+<li id="li-89"><p id="p-124">The limit can be approximated to be 1 because the data in the table and the graph show that from the left and the right the function approaches 1 as <span class="process-math">\(x\)</span> goes to 2.</p></li>
+<li id="li-90"><p id="p-125">The limit can be approximated to be 1 because the values appear to approach 1 and the graph appears to approach 1, but we should zoom in on the graph to be sure.</p></li>
+<li id="li-91"><p id="p-126">The limit cannot be approximated because the function might not exist at <span class="process-math">\(x = 2\text{.}\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-limits-numerically3"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span>
 </h3>
@@ -297,55 +302,55 @@
 <div class="introduction" id="introduction-10"><p id="p-132">Consider the following function <span class="process-math">\(f(x)= 3x^3 + 2x^2- 5x+20.\)</span></p></div>
 <article class="task exercise-like" id="task-18"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <p id="p-133">Of the following options, at which values given would you evaluate <span class="process-math">\(f(x)\)</span> to best determine <span class="process-math">\(\displaystyle \lim_{x \to 2}f(x)\)</span> numerically?</p>
-<ol class="upper-alpha">
+<ol class="upper-alpha cols2">
 <li id="li-96"><p id="p-134">1.9, 1.99, 2.0, 2.01, 2.1</p></li>
 <li id="li-97"><p id="p-135">1.98, 1.99, 2.0, 2.01, 2.02</p></li>
 <li id="li-98"><p id="p-136">1.8, 1.9, 2.0, 2.1, 2.2</p></li>
 <li id="li-99"><p id="p-137">1.0, 1.5, 2.0, 2.5, 3.0</p></li>
 </ol></article><article class="task exercise-like" id="task-19"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-138">Use the values that you chose in part A to calculate an approximation for <span class="process-math">\(\lim_{x \to 2}f(x)\text{.}\)</span></p></article><article class="task exercise-like" id="task-20"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-138">Use the values that you chose in part (a) to calculate an approximation for <span class="process-math">\(\lim_{x \to 2}f(x)\text{.}\)</span></p></article><article class="task exercise-like" id="task-20"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <p id="p-139">Which value best describes the limit that you obtained in part (b)?</p>
 <ol class="upper-alpha">
-<li id="li-100"><p id="p-140">the approximate value is 41.25</p></li>
-<li id="li-101"><p id="p-141">the approximate value is 41.5</p></li>
-<li id="li-102"><p id="p-142">approximate value is 41.75</p></li>
-<li id="li-103"><p id="p-143">approximate value is 42</p></li>
+<li id="li-100"><p id="p-140">The approximate value is 41.25</p></li>
+<li id="li-101"><p id="p-141">The approximate value is 41.5</p></li>
+<li id="li-102"><p id="p-142">The approximate value is 41.75</p></li>
+<li id="li-103"><p id="p-143">The approximate value is 42</p></li>
 </ol></article></article><article class="activity project-like" id="activity-limits-numerically5"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.6</span><span class="period">.</span>
 </h3>
 <div class="introduction" id="introduction-11">
-<p id="p-144">In <a href="" class="xref" data-knowl="./knowl/figure-limit-numerical-5.html" title="Figure 9">Figure 9</a>is the graph for <span class="process-math">\(f(x) = \sin\left(\frac{1}{x}\right)\text{.}\)</span>  Several values for <span class="process-math">\(f(x)\)</span> in the neighborhood of <span class="process-math">\(x = 0\)</span> are approximated in  <a href="" class="xref" data-knowl="./knowl/table-limit-numerical5.html" title="Table 10">Table 10</a>.</p>
+<p id="p-144">In <a href="" class="xref" data-knowl="./knowl/figure-limit-numerical-5.html" title="Figure 9">Figure 9</a> is the graph for <span class="process-math">\(f(x) = \sin\left(\frac{1}{x}\right)\text{.}\)</span>  Several values for <span class="process-math">\(f(x)\)</span> in the neighborhood of <span class="process-math">\(x = 0\)</span> are approximated in  <a href="" class="xref" data-knowl="./knowl/table-limit-numerical5.html" title="Table 10">Table 10</a>.</p>
 <figure class="figure figure-like" id="figure-limit-numerical-5"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/limits_numerical5_graph.png" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9<span class="period">.</span></span><span class="space"> </span>Graph of <span class="process-math">\(f(x) = \sin(1/x)\text{.}\)</span></figcaption></figure><figure class="table table-like" id="table-limit-numerical5"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">10<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
-<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
-<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(-0.1\)</span></td>
-<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(-0.01\)</span></td>
-<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(-0.001\)</span></td>
-<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
-<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(0.001\)</span></td>
-<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(0.01\)</span></td>
-<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(0.1\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(-0.1\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(-0.01\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(-0.001\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(0.001\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(0.01\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(0.1\)</span></td>
 </tr>
 <tr>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(f(x)\)</span></td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.54402\)</span></td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.50637\)</span></td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(-0.82688\)</span></td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\unknown\)</span></td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0.82688\)</span></td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(-0.50637\)</span></td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(-0.54402\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(f(x)\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0.54402\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0.50637\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-0.82688\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\unknown\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(0.82688\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-0.50637\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(-0.54402\)</span></td>
 </tr>
 </table></div></figure>
 </div>
 <article class="task exercise-like" id="task-21"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-145">Based on the graph and table what is the best explanation for the limit as x tends to zero?</p>
+<p id="p-145">Based on the graph and table what is the best explanation for the limit as <span class="process-math">\(x\)</span> tends to zero?</p>
 <ol class="upper-alpha">
-<li id="li-104"><p id="p-146">the limit does not exist because the left and right limits have opposite values.</p></li>
-<li id="li-105"><p id="p-147">the limit does not exist because we do not have enough information to answer the question.</p></li>
-<li id="li-106"><p id="p-148">the limit does not exist because the function is oscillating between -1 and 1.</p></li>
-<li id="li-107"><p id="p-149">the limit does not exist because you are dividing by zero when <span class="process-math">\(x = 0\)</span> for <span class="process-math">\(f(x).\)</span></p></li>
+<li id="li-104"><p id="p-146">The limit does not exist because the left and right limits have opposite values.</p></li>
+<li id="li-105"><p id="p-147">The limit does not exist because we do not have enough information to answer the question.</p></li>
+<li id="li-106"><p id="p-148">The limit does not exist because the function is oscillating between -1 and 1.</p></li>
+<li id="li-107"><p id="p-149">The limit does not exist because you are dividing by zero when <span class="process-math">\(x = 0\)</span> for <span class="process-math">\(f(x).\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-22"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <p id="p-150">Would your conclusion that resulted from <a href="" class="xref" data-knowl="./knowl/activity-limits-numerically5.html" title="Activity 1.2.6">Activity 1.2.6</a> change if the function was <span class="process-math">\(f(x) = \cos(1/x)\)</span> or <span class="process-math">\(f(x) = \tan(1/x)\text{?}\)</span></p></article></article><article class="activity project-like" id="activity-14"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.2.7</span><span class="period">.</span>

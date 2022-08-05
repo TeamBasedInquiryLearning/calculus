@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-05T13:01:42Z       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -11,7 +8,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal1 Integration strategy (TI7)</title>
+<title>TBIL-Calc Integration strategy (TI7)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -37,6 +34,14 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
@@ -197,66 +202,66 @@
 <span class="type">Section</span> <span class="codenumber">5.7</span> <span class="title">Integration strategy (TI7)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-43"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-1337"><p id="p-1980">I can select appropriate strategies for integration.</p></li></ul></article><article class="activity project-like" id="activity-TI7FirstStepTrig"><h3 class="heading">
+<ul class="disc"><li id="li-1233"><p id="p-1933">I can select appropriate strategies for integration.</p></li></ul></article><article class="activity project-like" id="activity-TI7FirstStepTrig"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.7.1</span><span class="period">.</span>
 </h3>
-<p id="p-1981">Consider the integral <span class="process-math">\(\int e^t \tan(e^t) \sec^2(e^t)\,dt\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
-<ol class="upper-alpha">
-<li id="li-1338"><p id="p-1982">The method of substitution</p></li>
-<li id="li-1339"><p id="p-1983">The method of integration by parts</p></li>
-<li id="li-1340"><p id="p-1984">Trigonometric substitution</p></li>
-<li id="li-1341"><p id="p-1985">Using a table of integrals</p></li>
-<li id="li-1342"><p id="p-1986">The method of partial fractions</p></li>
+<p id="p-1934">Consider the integral <span class="process-math">\(\displaystyle\int e^t \tan(e^t) \sec^2(e^t)\,dt\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1234"><p id="p-1935">The method of substitution</p></li>
+<li id="li-1235"><p id="p-1936">The method of integration by parts</p></li>
+<li id="li-1236"><p id="p-1937">Trigonometric substitution</p></li>
+<li id="li-1237"><p id="p-1938">Using a table of integrals</p></li>
+<li id="li-1238"><p id="p-1939">The method of partial fractions</p></li>
 </ol></article><article class="activity project-like" id="activity-TI7FirstStepRational"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.7.2</span><span class="period">.</span>
 </h3>
-<p id="p-1987">Consider the integral <span class="process-math">\(\int \frac{2x+3}{1+x^2}\,dx\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
-<ol class="upper-alpha">
-<li id="li-1343"><p id="p-1988">The method of substitution</p></li>
-<li id="li-1344"><p id="p-1989">The method of integration by parts</p></li>
-<li id="li-1345"><p id="p-1990">Trigonometric substitution</p></li>
-<li id="li-1346"><p id="p-1991">Using a table of integrals</p></li>
-<li id="li-1347"><p id="p-1992">The method of partial fractions</p></li>
+<p id="p-1940">Consider the integral <span class="process-math">\(\displaystyle\int \frac{2x+3}{1+x^2}\,dx\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1239"><p id="p-1941">The method of substitution</p></li>
+<li id="li-1240"><p id="p-1942">The method of integration by parts</p></li>
+<li id="li-1241"><p id="p-1943">Trigonometric substitution</p></li>
+<li id="li-1242"><p id="p-1944">Using a table of integrals</p></li>
+<li id="li-1243"><p id="p-1945">The method of partial fractions</p></li>
 </ol></article><article class="activity project-like" id="activity-TI7StrategyRoot"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.7.3</span><span class="period">.</span>
 </h3>
-<p id="p-1993">Consider the integral <span class="process-math">\(\int \frac{x}{\sqrt[3]{1-x^2}}\,dx\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
-<ol class="upper-alpha">
-<li id="li-1348"><p id="p-1994">The method of substitution</p></li>
-<li id="li-1349"><p id="p-1995">The method of integration by parts</p></li>
-<li id="li-1350"><p id="p-1996">Trigonometric substitution</p></li>
-<li id="li-1351"><p id="p-1997">Using a table of integrals</p></li>
-<li id="li-1352"><p id="p-1998">The method of partial fractions</p></li>
+<p id="p-1946">Consider the integral <span class="process-math">\(\displaystyle\int \frac{x}{\sqrt[3]{1-x^2}}\,dx\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1244"><p id="p-1947">The method of substitution</p></li>
+<li id="li-1245"><p id="p-1948">The method of integration by parts</p></li>
+<li id="li-1246"><p id="p-1949">Trigonometric substitution</p></li>
+<li id="li-1247"><p id="p-1950">Using a table of integrals</p></li>
+<li id="li-1248"><p id="p-1951">The method of partial fractions</p></li>
 </ol></article><article class="activity project-like" id="activity-TI7StrategyTrigTable"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.7.4</span><span class="period">.</span>
 </h3>
-<p id="p-1999">Consider the integral <span class="process-math">\(\int \frac{1}{2x\sqrt{1-36x^2}}\,dx\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
-<ol class="upper-alpha">
-<li id="li-1353"><p id="p-2000">The method of substitution</p></li>
-<li id="li-1354"><p id="p-2001">The method of integration by parts</p></li>
-<li id="li-1355"><p id="p-2002">Trigonometric substitution</p></li>
-<li id="li-1356"><p id="p-2003">Using a table of integrals</p></li>
-<li id="li-1357"><p id="p-2004">The method of partial fractions</p></li>
+<p id="p-1952">Consider the integral <span class="process-math">\(\displaystyle\int \frac{1}{2x\sqrt{1-36x^2}}\,dx\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1249"><p id="p-1953">The method of substitution</p></li>
+<li id="li-1250"><p id="p-1954">The method of integration by parts</p></li>
+<li id="li-1251"><p id="p-1955">Trigonometric substitution</p></li>
+<li id="li-1252"><p id="p-1956">Using a table of integrals</p></li>
+<li id="li-1253"><p id="p-1957">The method of partial fractions</p></li>
 </ol></article><article class="activity project-like" id="activity-TI7StrategySubAndTrig"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.7.5</span><span class="period">.</span>
 </h3>
-<p id="p-2005">Consider the integral <span class="process-math">\(\int t^5\cos(t^3)\,dt\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
-<ol class="upper-alpha">
-<li id="li-1358"><p id="p-2006">The method of substitution</p></li>
-<li id="li-1359"><p id="p-2007">The method of integration by parts</p></li>
-<li id="li-1360"><p id="p-2008">Trigonometric substitution</p></li>
-<li id="li-1361"><p id="p-2009">Using a table of integrals</p></li>
-<li id="li-1362"><p id="p-2010">The method of partial fractions</p></li>
+<p id="p-1958">Consider the integral <span class="process-math">\(\displaystyle\int t^5\cos(t^3)\,dt\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1254"><p id="p-1959">The method of substitution</p></li>
+<li id="li-1255"><p id="p-1960">The method of integration by parts</p></li>
+<li id="li-1256"><p id="p-1961">Trigonometric substitution</p></li>
+<li id="li-1257"><p id="p-1962">Using a table of integrals</p></li>
+<li id="li-1258"><p id="p-1963">The method of partial fractions</p></li>
 </ol></article><article class="activity project-like" id="activity-TI7StrategyAddZero"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.7.6</span><span class="period">.</span>
 </h3>
-<p id="p-2011">Consider the integral <span class="process-math">\(\int \frac{1}{1+e^x}\,dx\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
-<ol class="upper-alpha">
-<li id="li-1363"><p id="p-2012">The method of substitution</p></li>
-<li id="li-1364"><p id="p-2013">The method of integration by parts</p></li>
-<li id="li-1365"><p id="p-2014">Trigonometric substitution</p></li>
-<li id="li-1366"><p id="p-2015">Using a table of integrals</p></li>
-<li id="li-1367"><p id="p-2016">The method of partial fractions</p></li>
+<p id="p-1964">Consider the integral <span class="process-math">\(\displaystyle\int \frac{1}{1+e^x}\,dx\text{.}\)</span> Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1259"><p id="p-1965">The method of substitution</p></li>
+<li id="li-1260"><p id="p-1966">The method of integration by parts</p></li>
+<li id="li-1261"><p id="p-1967">Trigonometric substitution</p></li>
+<li id="li-1262"><p id="p-1968">Using a table of integrals</p></li>
+<li id="li-1263"><p id="p-1969">The method of partial fractions</p></li>
 </ol></article><section class="subsection" id="subsection-7"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.7.1</span> <span class="title">Videos</span>
 </h3>

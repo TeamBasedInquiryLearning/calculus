@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-05T13:01:40Z       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -11,7 +8,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal1 Approximating definite integrals (IN2)</title>
+<title>TBIL-Calc Approximating definite integrals (IN2)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -37,6 +34,14 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
@@ -197,10 +202,10 @@
 <span class="type">Section</span> <span class="codenumber">4.2</span> <span class="title">Approximating definite integrals (IN2)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-29"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-975"><p id="p-1481">Approximate definite integrals using Riemann sums.</p></li></ul></article><article class="activity project-like" id="KNr"><h3 class="heading">
+<ul class="disc"><li id="li-886"><p id="p-1441">Approximate definite integrals using Riemann sums.</p></li></ul></article><article class="activity project-like" id="KNr"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.2.1</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-138"><p id="eGi">Suppose that a person is taking a walk along a long straight path and walks at a constant rate of 3 miles per hour.</p></div>
+<div class="introduction" id="introduction-150"><p id="eGi">Suppose that a person is taking a walk along a long straight path and walks at a constant rate of 3 miles per hour.</p></div>
 <article class="task exercise-like" id="IYe"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <p id="NHX">On the left-hand axes provided in <a href="" class="xref" data-knowl="./knowl/F-4-2-IN1.html" title="Figure 58">Figure 58</a>, sketch a labeled graph of the velocity function <span class="process-math">\(v(t) = 3\text{.}\)</span></p>
 <figure class="figure figure-like" id="ZWp"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/4_1_PA1.svg" role="img" class="contained"></div>
@@ -211,7 +216,7 @@
 <p id="yyZ">For what values of <span class="process-math">\(t\)</span> is the position function <span class="process-math">\(s\)</span> increasing? Explain why this is the case using relevant information about the velocity function <span class="process-math">\(v\text{.}\)</span></p></article></article><article class="activity project-like" id="gon"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.2.2</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-139">
+<div class="introduction" id="introduction-151">
 <p id="WUB">Suppose that a person is walking in such a way that her velocity varies slightly according to the information given in <a href="" class="xref" data-knowl="./knowl/T-4-1-Act1.html" title="Table 59: Velocity data for the person walking.">Table 59</a> and graph given in <a href="" class="xref" data-knowl="./knowl/F-4-1-Act1.html" title="Figure 60">Figure 60</a>.</p>
 <div class="sidebyside"><div class="sbsrow" style="margin-left:1.5%;margin-right:1.5%;">
 <div class="sbspanel fixed-width middle" style="width:48.4536082474227%;"><figure class="table table-like" id="bEu"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">59<span class="period">.</span></span><span class="space"> </span>Velocity data for the person walking.</figcaption><table class="tabular" id="HLD">
@@ -266,10 +271,7 @@
 <p id="wCE">Based on your work in (c), what is the value of <span class="process-math">\(s(2) - s(0)\text{?}\)</span> What is the meaning of this quantity?</p></article></article><article class="activity project-like" id="riemann-fluency-checkit"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">4.2.3</span><span class="period">.</span>
 </h3>
-<p id="p-1494">Explain how to approximate the area under the curve <span class="process-math">\(f(x)=-9 \, x^{3} + 3 \, x - 9\)</span> on the interval <span class="process-math">\([4,10]\)</span> using a right Riemann sum with 3 rectangles of uniform width.</p>
-<div class="solutions">
-<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-21" id="answer-21"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-21"><div class="answer solution-like"><p id="p-1495"><span class="process-math">\(-31014\)</span> square units</p></div></div>
-</div></article></section></div></main>
+<p id="p-1454">Explain how to approximate the area under the curve <span class="process-math">\(f(x)=-9 \, x^{3} + 3 \, x - 9\)</span> on the interval <span class="process-math">\([4,10]\)</span> using a right Riemann sum with 3 rectangles of uniform width.</p></article></section></div></main>
 </div>
 </body>
 </html>

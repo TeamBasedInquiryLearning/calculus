@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-05T13:01:55Z       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -11,7 +8,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal1 List of Trigonometric Identities</title>
+<title>TBIL-Calc List of Trigonometric Identities</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -37,6 +34,14 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
@@ -197,21 +202,21 @@
 <span class="type">Appendix</span> <span class="codenumber">B</span> <span class="title">List of Trigonometric Identities</span>
 </h2>
 <ol class="lower-alpha">
-<li id="li-2589"><p id="p-3178"><span class="process-math">\(\displaystyle [\sin(\alpha)]^2+[\cos(\alpha)]^2=1\)</span></p></li>
-<li id="li-2590"><p id="p-3179"><span class="process-math">\(\displaystyle \cos(\alpha+\beta)=\cos(\alpha)\cos(\beta)-\sin(\alpha)\sin(\beta)\)</span></p></li>
-<li id="li-2591"><p id="p-3180"><span class="process-math">\(\displaystyle \sin(\alpha+\beta)=\sin(\alpha)\cos(\beta)+\cos(\alpha)\sin(\beta)\)</span></p></li>
-<li id="li-2592"><p id="p-3181"><span class="process-math">\(\displaystyle \cos(2\alpha) = [\cos(\alpha)]^2-[\sin(\alpha)]^2 = 2[\cos(\alpha)]^2-1 = 1-2[\sin(\alpha)]^2\)</span></p></li>
-<li id="li-2593"><p id="p-3182"><span class="process-math">\(\displaystyle \sin(2\alpha)=2\sin(\alpha)\cos(\alpha)\)</span></p></li>
-<li id="li-2594"><p id="p-3183"><span class="process-math">\(\displaystyle [\cos(\alpha)]^2=\displaystyle\frac{1+\cos(2\alpha)}{2}\)</span></p></li>
-<li id="li-2595"><p id="p-3184"><span class="process-math">\(\displaystyle [\sin(\alpha)]^2=\displaystyle\frac{1-\cos(2\alpha)}{2}\)</span></p></li>
-<li id="li-2596"><p id="p-3185"><span class="process-math">\(\displaystyle \sin(\alpha)\cos(\beta)=\displaystyle\frac{\sin(\alpha+\beta)+\sin(\alpha-\beta)}{2}\)</span></p></li>
-<li id="li-2597"><p id="p-3186"><span class="process-math">\(\displaystyle \sin(\alpha)\sin(\beta)=\displaystyle\frac{\cos(\alpha-\beta)-\cos(\alpha+\beta)}{2}\)</span></p></li>
-<li id="li-2598"><p id="p-3187"><span class="process-math">\(\displaystyle \cos(\alpha)\sin(\beta)=\displaystyle\frac{\sin(\alpha+\beta)-\sin(\alpha-\beta)}{2}\)</span></p></li>
-<li id="li-2599"><p id="p-3188"><span class="process-math">\(\displaystyle \cos(\alpha)\cos(\beta)=\displaystyle\frac{\cos(\alpha-\beta)+\cos(\alpha+\beta)}{2}\)</span></p></li>
-<li id="li-2600"><p id="p-3189"><span class="process-math">\(\displaystyle \sin(\alpha)+\sin(\beta)=2\sin\left(\displaystyle\frac{\alpha+\beta}{2}\right)\cos\left(\displaystyle\frac{\alpha-\beta}{2}\right)\)</span></p></li>
-<li id="li-2601"><p id="p-3190"><span class="process-math">\(\displaystyle \sin(\alpha)-\sin(\beta)=2\cos\left(\displaystyle\frac{\alpha+\beta}{2}\right)\sin\left(\displaystyle\frac{\alpha-\beta}{2}\right)\)</span></p></li>
-<li id="li-2602"><p id="p-3191"><span class="process-math">\(\displaystyle \cos(\alpha)+\cos(\beta)=2\cos\left(\displaystyle\frac{\alpha+\beta}{2}\right)\cos\left(\displaystyle\frac{\alpha-\beta}{2}\right)\)</span></p></li>
-<li id="li-2603"><p id="p-3192"><span class="process-math">\(\displaystyle \cos(\alpha)-\cos(\beta)=-2\sin\left(\displaystyle\frac{\alpha+\beta}{2}\right)\sin\left(\displaystyle\frac{\alpha-\beta}{2}\right)\)</span></p></li>
+<li id="li-2408"><p id="p-3156"><span class="process-math">\(\displaystyle [\sin(\alpha)]^2+[\cos(\alpha)]^2=1\)</span></p></li>
+<li id="li-2409"><p id="p-3157"><span class="process-math">\(\displaystyle \cos(\alpha+\beta)=\cos(\alpha)\cos(\beta)-\sin(\alpha)\sin(\beta)\)</span></p></li>
+<li id="li-2410"><p id="p-3158"><span class="process-math">\(\displaystyle \sin(\alpha+\beta)=\sin(\alpha)\cos(\beta)+\cos(\alpha)\sin(\beta)\)</span></p></li>
+<li id="li-2411"><p id="p-3159"><span class="process-math">\(\displaystyle \cos(2\alpha) = [\cos(\alpha)]^2-[\sin(\alpha)]^2 = 2[\cos(\alpha)]^2-1 = 1-2[\sin(\alpha)]^2\)</span></p></li>
+<li id="li-2412"><p id="p-3160"><span class="process-math">\(\displaystyle \sin(2\alpha)=2\sin(\alpha)\cos(\alpha)\)</span></p></li>
+<li id="li-2413"><p id="p-3161"><span class="process-math">\(\displaystyle [\cos(\alpha)]^2=\displaystyle\frac{1+\cos(2\alpha)}{2}\)</span></p></li>
+<li id="li-2414"><p id="p-3162"><span class="process-math">\(\displaystyle [\sin(\alpha)]^2=\displaystyle\frac{1-\cos(2\alpha)}{2}\)</span></p></li>
+<li id="li-2415"><p id="p-3163"><span class="process-math">\(\displaystyle \sin(\alpha)\cos(\beta)=\displaystyle\frac{\sin(\alpha+\beta)+\sin(\alpha-\beta)}{2}\)</span></p></li>
+<li id="li-2416"><p id="p-3164"><span class="process-math">\(\displaystyle \sin(\alpha)\sin(\beta)=\displaystyle\frac{\cos(\alpha-\beta)-\cos(\alpha+\beta)}{2}\)</span></p></li>
+<li id="li-2417"><p id="p-3165"><span class="process-math">\(\displaystyle \cos(\alpha)\sin(\beta)=\displaystyle\frac{\sin(\alpha+\beta)-\sin(\alpha-\beta)}{2}\)</span></p></li>
+<li id="li-2418"><p id="p-3166"><span class="process-math">\(\displaystyle \cos(\alpha)\cos(\beta)=\displaystyle\frac{\cos(\alpha-\beta)+\cos(\alpha+\beta)}{2}\)</span></p></li>
+<li id="li-2419"><p id="p-3167"><span class="process-math">\(\displaystyle \sin(\alpha)+\sin(\beta)=2\sin\left(\displaystyle\frac{\alpha+\beta}{2}\right)\cos\left(\displaystyle\frac{\alpha-\beta}{2}\right)\)</span></p></li>
+<li id="li-2420"><p id="p-3168"><span class="process-math">\(\displaystyle \sin(\alpha)-\sin(\beta)=2\cos\left(\displaystyle\frac{\alpha+\beta}{2}\right)\sin\left(\displaystyle\frac{\alpha-\beta}{2}\right)\)</span></p></li>
+<li id="li-2421"><p id="p-3169"><span class="process-math">\(\displaystyle \cos(\alpha)+\cos(\beta)=2\cos\left(\displaystyle\frac{\alpha+\beta}{2}\right)\cos\left(\displaystyle\frac{\alpha-\beta}{2}\right)\)</span></p></li>
+<li id="li-2422"><p id="p-3170"><span class="process-math">\(\displaystyle \cos(\alpha)-\cos(\beta)=-2\sin\left(\displaystyle\frac{\alpha+\beta}{2}\right)\sin\left(\displaystyle\frac{\alpha-\beta}{2}\right)\)</span></p></li>
 </ol></section></div></main>
 </div>
 </body>

@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-05T13:01:42Z       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -11,7 +8,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal1 Partial fractions (TI6)</title>
+<title>TBIL-Calc Partial fractions (TI6)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -37,6 +34,14 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
@@ -197,87 +202,87 @@
 <span class="type">Section</span> <span class="codenumber">5.6</span> <span class="title">Partial fractions (TI6)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-42"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-1280"><p id="p-1952">I can integrate functions using the method of partial fractions.</p></li></ul></article><article class="activity project-like" id="activity-TI6oneoverlinear"><h3 class="heading">
+<ul class="disc"><li id="li-1176"><p id="p-1905">I can integrate functions using the method of partial fractions.</p></li></ul></article><article class="activity project-like" id="activity-TI6oneoverlinear"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.1</span><span class="period">.</span>
 </h3>
-<p id="p-1953">Using the method of substitution, which of these is the integral of <span class="process-math">\(\displaystyle\int \frac{1}{(ax+b)} dx\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-1281"><p id="p-derived-li-1281"><span class="process-math">\(\displaystyle \frac{1}{a}\ln(ax+b) +C.\)</span></p></li>
-<li id="li-1282"><p id="p-derived-li-1282"><span class="process-math">\(\displaystyle \frac{1}{a}\ln|ax+b| +C.\)</span></p></li>
-<li id="li-1283"><p id="p-derived-li-1283"><span class="process-math">\(\displaystyle \frac{1}{x}(\ln(ax)+\ln(b))+C.\)</span></p></li>
-<li id="li-1284"><p id="p-derived-li-1284"><span class="process-math">\(\displaystyle \frac{1}{a}(\ln|ax|+\ln|b|)+C.\)</span></p></li>
+<p id="p-1906">Using the method of substitution, which of these is the integral of <span class="process-math">\(\displaystyle\int \frac{1}{(ax+b)} dx\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1177"><p id="p-derived-li-1177"><span class="process-math">\(\displaystyle \frac{1}{a}\ln(ax+b) +C\)</span></p></li>
+<li id="li-1178"><p id="p-derived-li-1178"><span class="process-math">\(\displaystyle \frac{1}{a}\ln|ax+b| +C\)</span></p></li>
+<li id="li-1179"><p id="p-derived-li-1179"><span class="process-math">\(\displaystyle \frac{1}{x}(\ln(ax)+\ln(b))+C\)</span></p></li>
+<li id="li-1180"><p id="p-derived-li-1180"><span class="process-math">\(\displaystyle \frac{1}{a}(\ln|ax|+\ln|b|)+C\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-TI6RationalExpression"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.2</span><span class="period">.</span>
 </h3>
-<p id="p-1954">Which of the following is equivalent to the rational expression <span class="process-math">\(\displaystyle\frac{3x+3}{2x^2+3x}\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-1285"><p id="p-derived-li-1285"><span class="process-math">\(\displaystyle \frac{3}{2x}+\frac{1}{x}.\)</span></p></li>
-<li id="li-1286"><p id="p-derived-li-1286"><span class="process-math">\(\displaystyle \frac{3}{x}+\frac{3}{2x+3}.\)</span></p></li>
-<li id="li-1287"><p id="p-derived-li-1287"><span class="process-math">\(\displaystyle \frac{1}{x}+\frac{1}{2x+3}.\)</span></p></li>
-<li id="li-1288"><p id="p-derived-li-1288"><span class="process-math">\(\displaystyle \frac{3}{2x^2}+1.\)</span></p></li>
+<p id="p-1907">Which of the following is equivalent to the rational expression <span class="process-math">\(\displaystyle\frac{3x+3}{2x^2+3x}\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1181"><p id="p-derived-li-1181"><span class="process-math">\(\displaystyle \frac{3}{2x}+\frac{1}{x}\)</span></p></li>
+<li id="li-1182"><p id="p-derived-li-1182"><span class="process-math">\(\displaystyle \frac{3}{x}+\frac{3}{2x+3}\)</span></p></li>
+<li id="li-1183"><p id="p-derived-li-1183"><span class="process-math">\(\displaystyle \frac{1}{x}+\frac{1}{2x+3}\)</span></p></li>
+<li id="li-1184"><p id="p-derived-li-1184"><span class="process-math">\(\displaystyle \frac{3}{2x^2}+1\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-TI6IntegrateRationalExpression"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.3</span><span class="period">.</span>
 </h3>
-<p id="p-1955">Based on your choice in <a href="" class="xref" data-knowl="./knowl/activity-TI6RationalExpression.html" title="Activity 5.6.2">Activity 5.6.2</a>, which of these is the integral for <span class="process-math">\(\displaystyle\int \frac{3x+3}{2x^2+3x} dx\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-1289"><p id="p-derived-li-1289"><span class="process-math">\(\displaystyle \frac{3}{2}\ln|x|+\ln|x|+C.\)</span></p></li>
-<li id="li-1290"><p id="p-derived-li-1290"><span class="process-math">\(\displaystyle 3\ln|x|+\frac{3}{2}\ln|2x+3|+C.\)</span></p></li>
-<li id="li-1291"><p id="p-derived-li-1291"><span class="process-math">\(\displaystyle \ln|x|+\frac{1}{2}\ln|2x+3|+C.\)</span></p></li>
-<li id="li-1292"><p id="p-derived-li-1292"><span class="process-math">\(\displaystyle -\frac{3}{2}x^{-1}+x+C.\)</span></p></li>
+<p id="p-1908">Based on your choice in <a href="" class="xref" data-knowl="./knowl/activity-TI6RationalExpression.html" title="Activity 5.6.2">Activity 5.6.2</a>, which of these is the integral for <span class="process-math">\(\displaystyle\int \frac{3x+3}{2x^2+3x} dx\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1185"><p id="p-derived-li-1185"><span class="process-math">\(\displaystyle \frac{3}{2}\ln|x|+\ln|x|+C\)</span></p></li>
+<li id="li-1186"><p id="p-derived-li-1186"><span class="process-math">\(\displaystyle \ln|x|+\frac{1}{2}\ln|2x+3|+C\)</span></p></li>
+<li id="li-1187"><p id="p-derived-li-1187"><span class="process-math">\(\displaystyle -\frac{3}{2}x^{-1}+x+C\)</span></p></li>
+<li id="li-1188"><p id="p-derived-li-1188"><span class="process-math">\(\displaystyle 3\ln|x|+\frac{3}{2}\ln|2x+3|+C\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-TI6AntidiffArctan"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.4</span><span class="period">.</span>
 </h3>
-<p id="p-1956">Which of the following is an antiderivative for <span class="process-math">\(\displaystyle\frac{1}{(x+k)^2+h^2}\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-1293"><p id="p-derived-li-1293"><span class="process-math">\(\displaystyle \arctan(x).\)</span></p></li>
-<li id="li-1294"><p id="p-derived-li-1294"><span class="process-math">\(\displaystyle \arctan(x+k).\)</span></p></li>
-<li id="li-1295"><p id="p-derived-li-1295"><span class="process-math">\(\displaystyle \frac{1}{h}\arctan\left(\frac{x+h}{h}\right).\)</span></p></li>
-<li id="li-1296"><p id="p-derived-li-1296"><span class="process-math">\(\displaystyle \frac{1}{h^2}\arctan\left(\frac{x+k}{h^2}\right).\)</span></p></li>
-<li id="li-1297"><p id="p-derived-li-1297"><span class="process-math">\(\displaystyle \frac{1}{h}\arctan\left(\frac{x+k}{h}\right).\)</span></p></li>
+<p id="p-1909">Which of the following is an antiderivative for <span class="process-math">\(\displaystyle\frac{1}{(x+k)^2+h^2}\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1189"><p id="p-derived-li-1189"><span class="process-math">\(\displaystyle \arctan(x)\)</span></p></li>
+<li id="li-1190"><p id="p-derived-li-1190"><span class="process-math">\(\displaystyle \arctan(x+k)\)</span></p></li>
+<li id="li-1191"><p id="p-derived-li-1191"><span class="process-math">\(\displaystyle \frac{1}{h}\arctan\left(\frac{x+h}{h}\right)\)</span></p></li>
+<li id="li-1192"><p id="p-derived-li-1192"><span class="process-math">\(\displaystyle \frac{1}{h^2}\arctan\left(\frac{x+k}{h^2}\right)\)</span></p></li>
+<li id="li-1193"><p id="p-derived-li-1193"><span class="process-math">\(\displaystyle \frac{1}{h}\arctan\left(\frac{x+k}{h}\right)\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-TI6CompleteSquare"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.5</span><span class="period">.</span>
 </h3>
-<p id="p-1957">Consider the irreducible quadratic <span class="process-math">\(x^2-4x+80\text{.}\)</span>  Which of the following is the completed square form of this quadratic expression?</p>
-<ol class="upper-alpha">
-<li id="li-1298"><p id="p-derived-li-1298"><span class="process-math">\(\displaystyle (x-4)^2+80.\)</span></p></li>
-<li id="li-1299"><p id="p-derived-li-1299"><span class="process-math">\(\displaystyle (x-2)^2+80.\)</span></p></li>
-<li id="li-1300"><p id="p-derived-li-1300"><span class="process-math">\(\displaystyle (x-4)^2+64.\)</span></p></li>
-<li id="li-1301"><p id="p-derived-li-1301"><span class="process-math">\(\displaystyle (x-2)^2+76.\)</span></p></li>
-<li id="li-1302"><p id="p-derived-li-1302"><span class="process-math">\(\displaystyle (x-4)^2+76.\)</span></p></li>
+<p id="p-1910">Consider the irreducible quadratic <span class="process-math">\(x^2-4x+80\text{.}\)</span>  Which of the following is the completed square form of this quadratic expression?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1194"><p id="p-derived-li-1194"><span class="process-math">\(\displaystyle (x-4)^2+80\)</span></p></li>
+<li id="li-1195"><p id="p-derived-li-1195"><span class="process-math">\(\displaystyle (x-2)^2+80\)</span></p></li>
+<li id="li-1196"><p id="p-derived-li-1196"><span class="process-math">\(\displaystyle (x-4)^2+64\)</span></p></li>
+<li id="li-1197"><p id="p-derived-li-1197"><span class="process-math">\(\displaystyle (x-2)^2+76\)</span></p></li>
+<li id="li-1198"><p id="p-derived-li-1198"><span class="process-math">\(\displaystyle (x-4)^2+76\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-TI6EvalIrred"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.6</span><span class="period">.</span>
 </h3>
-<p id="p-1958">Using the fact that <span class="process-math">\(\displaystyle\int \frac{1}{x^2-8x+80} dx = \int \frac{1}{(x-4)^2+64} dx\text{,}\)</span> evaluate the integral <span class="process-math">\(\displaystyle \int \frac{1}{x^2-8x+80} dx\text{.}\)</span></p></article><article class="activity project-like" id="activity-TI6FindCoeff"><h3 class="heading">
+<p id="p-1911">Using the fact that <span class="process-math">\(\displaystyle\int \frac{1}{x^2-8x+80} dx = \int \frac{1}{(x-4)^2+64} dx\text{,}\)</span> evaluate the integral <span class="process-math">\(\displaystyle \int \frac{1}{x^2-8x+80} dx\text{.}\)</span></p></article><article class="activity project-like" id="activity-TI6FindCoeff"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.7</span><span class="period">.</span>
 </h3>
-<p id="p-1959">Suppose that one could write <span class="process-math">\(\displaystyle\frac{4x^2-5x-2}{x^2(x-2)} =\frac{A}{x}+\frac{B}{x^2}+\frac{C}{x-2}\text{.}\)</span> <p id="p-1960">Recall that:</p><div class="displaymath process-math" data-contains-math-knowls="" id="md-13">
+<p id="p-1912">Suppose that one could write <span class="process-math">\(\displaystyle\frac{4x^2-5x-2}{x^2(x-2)} =\frac{A}{x}+\frac{B}{x^2}+\frac{C}{x-2}\text{.}\)</span> <p id="p-1913">Recall that:</p><div class="displaymath process-math" data-contains-math-knowls="" id="md-13">
 \begin{align*}
 \displaystyle\frac{4x^2-5x-2}{x^2(x-2)}&amp;=\displaystyle \frac{A}{x}+\frac{B}{x^2}+\frac{C}{x-2} = \frac{Ax(x-2)+B(x-2)+Cx^2}{x^2(x-2)}\\
 \displaystyle\frac{4x^2-5x-2}{x^2(x-2)}&amp; = \frac{Ax(x-2)+B(x-2)+Cx^2}{x^2(x-2)}\\
 4x^2-5x-2&amp; = Ax(x-2)+B(x-2)+Cx^2.
 \end{align*}
 </div><p class="continuation">What are the values of <span class="process-math">\(A, B\)</span> and <span class="process-math">\(C\text{?}\)</span></p></p>
-<ol class="upper-alpha">
-<li id="li-1303"><p id="p-derived-li-1303"><span class="process-math">\(\displaystyle A=4, B=-5, C=-2.\)</span></p></li>
-<li id="li-1304"><p id="p-derived-li-1304"><span class="process-math">\(\displaystyle A=3, B=1, C=1.\)</span></p></li>
-<li id="li-1305"><p id="p-derived-li-1305"><span class="process-math">\(\displaystyle A=1, B=1, C=1.\)</span></p></li>
-<li id="li-1306"><p id="p-derived-li-1306"><span class="process-math">\(\displaystyle A=1, B=3, C=-1.\)</span></p></li>
-<li id="li-1307"><p id="p-derived-li-1307"><span class="process-math">\(\displaystyle A=2, B=1, C=1.\)</span></p></li>
+<ol class="upper-alpha cols2">
+<li id="li-1199"><p id="p-derived-li-1199"><span class="process-math">\(\displaystyle A=4, B=-5, C=-2\)</span></p></li>
+<li id="li-1200"><p id="p-derived-li-1200"><span class="process-math">\(\displaystyle A=3, B=1, C=1\)</span></p></li>
+<li id="li-1201"><p id="p-derived-li-1201"><span class="process-math">\(\displaystyle A=1, B=1, C=1\)</span></p></li>
+<li id="li-1202"><p id="p-derived-li-1202"><span class="process-math">\(\displaystyle A=1, B=3, C=-1\)</span></p></li>
+<li id="li-1203"><p id="p-derived-li-1203"><span class="process-math">\(\displaystyle A=2, B=1, C=1\)</span></p></li>
 </ol></article><article class="fact theorem-like" id="fact-TI6PartialFractions"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">5.6.8</span><span class="period">.</span><span class="space"> </span><span class="title">Partial Fraction Decomposition.</span>
 </h3>
-<p id="p-1961">Let <span class="process-math">\(\displaystyle \frac{p(x)}{q(x)}\)</span> be a rational function, where the degree of <span class="process-math">\(p\)</span> is less than the degree of <span class="process-math">\(q\text{.}\)</span> </p>
-<ol id="p-1962" class="upper-alpha">
-<li id="li-1308">
-<p id="p-1963"><em class="emphasis">Linear Terms:</em> Let <span class="process-math">\((x-a)\)</span> divide <span class="process-math">\(q(x)\text{,}\)</span> where <span class="process-math">\((x-a)^n\)</span> is the highest power of <span class="process-math">\((x-a)\)</span> that divides <span class="process-math">\(q(x)\text{.}\)</span> Then the decomposition of <span class="process-math">\(\frac{p(x)}{q(x)}\)</span> will contain the sum</p>
+<p id="p-1914">Let <span class="process-math">\(\displaystyle \frac{p(x)}{q(x)}\)</span> be a rational function, where the degree of <span class="process-math">\(p\)</span> is less than the degree of <span class="process-math">\(q\text{.}\)</span> </p>
+<ol id="p-1915" class="decimal">
+<li id="li-1204">
+<p id="p-1916"><em class="emphasis">Linear Terms:</em> Let <span class="process-math">\((x-a)\)</span> divide <span class="process-math">\(q(x)\text{,}\)</span> where <span class="process-math">\((x-a)^n\)</span> is the highest power of <span class="process-math">\((x-a)\)</span> that divides <span class="process-math">\(q(x)\text{.}\)</span> Then the decomposition of <span class="process-math">\(\frac{p(x)}{q(x)}\)</span> will contain the sum</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \frac{A_1}{(x-a)} + \frac{A_2}{(x-a)^2} + \cdots +\frac{A_n}{(x-a)^n}\text{.}
 \end{equation*}
 </div>
 </li>
-<li id="li-1309">
-<p id="p-1964"><em class="emphasis">Quadratic Terms:</em> Let <span class="process-math">\(x^2+bx+c\)</span>  be an irreducible quadratic that divides <span class="process-math">\(q(x)\text{,}\)</span> where <span class="process-math">\((x^2+bx+c)^n\)</span> is the highest power of <span class="process-math">\(x^2+bx+c\)</span> that divides <span class="process-math">\(q(x)\text{.}\)</span> Then the decomposition of <span class="process-math">\(\frac{p(x)}{q(x)}\)</span> will contain the sum</p>
+<li id="li-1205">
+<p id="p-1917"><em class="emphasis">Quadratic Terms:</em> Let <span class="process-math">\(x^2+bx+c\)</span>  be an irreducible quadratic that divides <span class="process-math">\(q(x)\text{,}\)</span> where <span class="process-math">\((x^2+bx+c)^n\)</span> is the highest power of <span class="process-math">\(x^2+bx+c\)</span> that divides <span class="process-math">\(q(x)\text{.}\)</span> Then the decomposition of <span class="process-math">\(\frac{p(x)}{q(x)}\)</span> will contain the sum</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \frac{B_1x+C_1}{x^2+bx+c}+\frac{B_2x+C_2}{(x^2+bx+c)^2}+\cdots+\frac{B_nx+C_n}{(x^2+bx+c)^n}\text{.}
@@ -287,25 +292,25 @@
 </ol></article><article class="activity project-like" id="activity-TI6FirstDecomp"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.9</span><span class="period">.</span>
 </h3>
-<p id="p-1965">Which of the following is the form of the partial fraction decomposition of <span class="process-math">\(\displaystyle\frac{x^3-7x^2-7x+15}{x^3(x+5)}\text{?}\)</span></p>
-<ol class="upper-alpha">
-<li id="li-1310"><p id="p-derived-li-1310"><span class="process-math">\(\displaystyle \frac{A}{x}+\frac{B}{x+5}.\)</span></p></li>
-<li id="li-1311"><p id="p-derived-li-1311"><span class="process-math">\(\displaystyle \frac{A}{x^3}+\frac{B}{x+5}.\)</span></p></li>
-<li id="li-1312"><p id="p-derived-li-1312"><span class="process-math">\(\displaystyle \frac{A}{x}+\frac{B}{x^2}+ \frac{C}{x^3}+\frac{D}{x+5}.\)</span></p></li>
-<li id="li-1313"><p id="p-derived-li-1313"><span class="process-math">\(\displaystyle \frac{A}{x}+\frac{B}{x^2}+ \frac{C}{x^3}+\frac{Dx+E}{x+5}.\)</span></p></li>
+<p id="p-1918">Which of the following is the form of the partial fraction decomposition of <span class="process-math">\(\displaystyle\frac{x^3-7x^2-7x+15}{x^3(x+5)}\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1206"><p id="p-derived-li-1206"><span class="process-math">\(\displaystyle \frac{A}{x}+\frac{B}{x+5}\)</span></p></li>
+<li id="li-1207"><p id="p-derived-li-1207"><span class="process-math">\(\displaystyle \frac{A}{x^3}+\frac{B}{x+5}\)</span></p></li>
+<li id="li-1208"><p id="p-derived-li-1208"><span class="process-math">\(\displaystyle \frac{A}{x}+\frac{B}{x^2}+ \frac{C}{x^3}+\frac{D}{x+5}\)</span></p></li>
+<li id="li-1209"><p id="p-derived-li-1209"><span class="process-math">\(\displaystyle \frac{A}{x}+\frac{B}{x^2}+ \frac{C}{x^3}+\frac{Dx+E}{x+5}\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-TI6SecondDecomp"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.10</span><span class="period">.</span>
 </h3>
-<p id="p-1966">Which of the following is the form of the partial fraction decomposition of <span class="process-math">\(\displaystyle\frac{x^2+1}{(x-3)^2(x^2+4)^2}\text{?}\)</span></p>
+<p id="p-1919">Which of the following is the form of the partial fraction decomposition of <span class="process-math">\(\displaystyle\frac{x^2+1}{(x-3)^2(x^2+4)^2}\text{?}\)</span></p>
 <ol class="upper-alpha">
-<li id="li-1314"><p id="p-derived-li-1314"><span class="process-math">\(\displaystyle \frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{C}{x^2+4}+\frac{D}{(x^2+4)^2}.\)</span></p></li>
-<li id="li-1315"><p id="p-derived-li-1315"><span class="process-math">\(\displaystyle \frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{Cx+D}{(x^2+4)^2}.\)</span></p></li>
-<li id="li-1316"><p id="p-derived-li-1316"><span class="process-math">\(\displaystyle \frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{C}{x^2+4}+\frac{Dx+E}{(x^2+4)^2}.\)</span></p></li>
-<li id="li-1317"><p id="p-derived-li-1317"><span class="process-math">\(\displaystyle \frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{Cx+D}{x^2+4}+\frac{Ex+F}{(x^2+4)^2}.\)</span></p></li>
+<li id="li-1210"><p id="p-derived-li-1210"><span class="process-math">\(\displaystyle \frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{C}{x^2+4}+\frac{D}{(x^2+4)^2}\)</span></p></li>
+<li id="li-1211"><p id="p-derived-li-1211"><span class="process-math">\(\displaystyle \frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{Cx+D}{(x^2+4)^2}\)</span></p></li>
+<li id="li-1212"><p id="p-derived-li-1212"><span class="process-math">\(\displaystyle \frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{C}{x^2+4}+\frac{Dx+E}{(x^2+4)^2}\)</span></p></li>
+<li id="li-1213"><p id="p-derived-li-1213"><span class="process-math">\(\displaystyle \frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{Cx+D}{x^2+4}+\frac{Ex+F}{(x^2+4)^2}\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-TI6RationaltoPoly"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.11</span><span class="period">.</span>
 </h3>
-<p id="p-1967">Consider that the partial decomposition of <span class="process-math">\(\displaystyle \frac{x^2+5x+3}{(x+1)^2x}\)</span> is</p>
+<p id="p-1920">Consider that the partial decomposition of <span class="process-math">\(\displaystyle \frac{x^2+5x+3}{(x+1)^2x}\)</span> is</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \displaystyle \frac{x^2+5x+3}{(x+1)^2x}=\frac{A}{x+1}+\frac{B}{(x+1)^2}+\frac{C}{x}.
@@ -313,30 +318,30 @@
 </div>
 <p class="continuation">What equality do we obtain if we multiply both sides of the above equation by <span class="process-math">\((x+1)^2x\text{?}\)</span></p>
 <ol class="upper-alpha">
-<li id="li-1318"><p id="p-derived-li-1318"><span class="process-math">\(\displaystyle x^2+5x+3=Ax(x+1)+Bx+C(x+1)^2.\)</span></p></li>
-<li id="li-1319"><p id="p-derived-li-1319"><span class="process-math">\(\displaystyle x^2+5x+3=A(x+1)+B(x+1)^2+Cx.\)</span></p></li>
-<li id="li-1320"><p id="p-derived-li-1320"><span class="process-math">\(\displaystyle x^2+5x+3=Ax(x+1)+Bx+C(x+1).\)</span></p></li>
-<li id="li-1321"><p id="p-derived-li-1321"><span class="process-math">\(\displaystyle x^2+5x+3=A(x+1)+Bx+Cx^2.\)</span></p></li>
-<li id="li-1322"><p id="p-derived-li-1322"><span class="process-math">\(\displaystyle x^2+5x+3=Ax(x+1)+Bx^2+C(x+1)^2.\)</span></p></li>
+<li id="li-1214"><p id="p-derived-li-1214"><span class="process-math">\(\displaystyle x^2+5x+3=Ax(x+1)+Bx+C(x+1)^2\)</span></p></li>
+<li id="li-1215"><p id="p-derived-li-1215"><span class="process-math">\(\displaystyle x^2+5x+3=A(x+1)+B(x+1)^2+Cx\)</span></p></li>
+<li id="li-1216"><p id="p-derived-li-1216"><span class="process-math">\(\displaystyle x^2+5x+3=Ax(x+1)+Bx+C(x+1)\)</span></p></li>
+<li id="li-1217"><p id="p-derived-li-1217"><span class="process-math">\(\displaystyle x^2+5x+3=A(x+1)+Bx+Cx^2\)</span></p></li>
+<li id="li-1218"><p id="p-derived-li-1218"><span class="process-math">\(\displaystyle x^2+5x+3=Ax(x+1)+Bx^2+C(x+1)^2\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-TI6SolveaCoeff"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.12</span><span class="period">.</span>
 </h3>
-<p id="p-1968">Notice that <span class="process-math">\(x^2+5x+3=Ax(x+1)+Bx+C(x+1)^2\text{.}\)</span> <article class="task exercise-like" id="task-505"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-1969">Which of the following values can we determine by setting <span class="process-math">\(x=0\text{?}\)</span> Select all that apply.</p>
-<ol class="upper-alpha">
-<li id="li-1323"><p id="p-derived-li-1323"><span class="process-math">\(\displaystyle A\)</span></p></li>
-<li id="li-1324"><p id="p-derived-li-1324"><span class="process-math">\(\displaystyle B\)</span></p></li>
-<li id="li-1325"><p id="p-derived-li-1325"><span class="process-math">\(\displaystyle C\)</span></p></li>
-</ol></article> <article class="task exercise-like" id="task-506"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-1970">Which of the following values can we determine by setting <span class="process-math">\(x=-1\text{?}\)</span> Select all that apply.</p>
-<ol class="upper-alpha">
-<li id="li-1326"><p id="p-derived-li-1326"><span class="process-math">\(\displaystyle A\)</span></p></li>
-<li id="li-1327"><p id="p-derived-li-1327"><span class="process-math">\(\displaystyle B\)</span></p></li>
-<li id="li-1328"><p id="p-derived-li-1328"><span class="process-math">\(\displaystyle C\)</span></p></li>
+<p id="p-1921">Notice that <span class="process-math">\(x^2+5x+3=Ax(x+1)+Bx+C(x+1)^2\text{.}\)</span> <article class="task exercise-like" id="task-558"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1922">Which of the following values can we determine by setting <span class="process-math">\(x=0\text{?}\)</span> Select all that apply.</p>
+<ol class="upper-alpha cols3">
+<li id="li-1219"><p id="p-derived-li-1219"><span class="process-math">\(\displaystyle A\)</span></p></li>
+<li id="li-1220"><p id="p-derived-li-1220"><span class="process-math">\(\displaystyle B\)</span></p></li>
+<li id="li-1221"><p id="p-derived-li-1221"><span class="process-math">\(\displaystyle C\)</span></p></li>
+</ol></article> <article class="task exercise-like" id="task-559"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1923">Which of the following values can we determine by setting <span class="process-math">\(x=-1\text{?}\)</span> Select all that apply.</p>
+<ol class="upper-alpha cols3">
+<li id="li-1222"><p id="p-derived-li-1222"><span class="process-math">\(\displaystyle A\)</span></p></li>
+<li id="li-1223"><p id="p-derived-li-1223"><span class="process-math">\(\displaystyle B\)</span></p></li>
+<li id="li-1224"><p id="p-derived-li-1224"><span class="process-math">\(\displaystyle C\)</span></p></li>
 </ol></article></p></article><article class="activity project-like" id="activity-TI6SolvelastCoeff"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.13</span><span class="period">.</span>
 </h3>
-<p id="p-1971">Rewrite <span class="process-math">\(Ax(x+1)+x+3(x+1)^2\)</span> so that <span class="process-math">\(Ax(x+1)+x+3(x+1)^2=?x^2+?x+?\text{.}\)</span>  Knowing that</p>
+<p id="p-1924">Rewrite <span class="process-math">\(Ax(x+1)+x+3(x+1)^2\)</span> so that <span class="process-math">\(Ax(x+1)+x+3(x+1)^2=?x^2+?x+?\text{.}\)</span>  Knowing that</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 1x^2+5x+3=Ax(x+1)+x+3(x+1)^2=?x^2+?x+?,
@@ -345,40 +350,40 @@
 <p class="continuation">can we solve for  <span class="process-math">\(A\text{?}\)</span></p></article><article class="activity project-like" id="activity-TI6PuttingitTogether"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.14</span><span class="period">.</span>
 </h3>
-<p id="p-1972">By using the form of the decomposition <span class="process-math">\(\displaystyle \frac{x^2+5x+3}{(x+1)^2x}=\frac{A}{x+1}+\frac{B}{(x+1)^2}+\frac{C}{x}\)</span>  and the coefficients found in <a href="" class="xref" data-knowl="./knowl/activity-TI6SolveaCoeff.html" title="Activity 5.6.12">Activity 5.6.12</a> and <a href="" class="xref" data-knowl="./knowl/activity-TI6SolvelastCoeff.html" title="Activity 5.6.13">Activity 5.6.13</a>, evaluate <span class="process-math">\(\displaystyle \int \frac{x^2+5x+3}{(x+1)^2x} dx\text{.}\)</span></p></article><article class="activity project-like" id="activity-TI6FindCoefficients1"><h3 class="heading">
+<p id="p-1925">By using the form of the decomposition <span class="process-math">\(\displaystyle \frac{x^2+5x+3}{(x+1)^2x}=\frac{A}{x+1}+\frac{B}{(x+1)^2}+\frac{C}{x}\)</span>  and the coefficients found in <a href="" class="xref" data-knowl="./knowl/activity-TI6SolveaCoeff.html" title="Activity 5.6.12">Activity 5.6.12</a> and <a href="" class="xref" data-knowl="./knowl/activity-TI6SolvelastCoeff.html" title="Activity 5.6.13">Activity 5.6.13</a>, evaluate <span class="process-math">\(\displaystyle \int \frac{x^2+5x+3}{(x+1)^2x} dx\text{.}\)</span></p></article><article class="activity project-like" id="activity-TI6FindCoefficients1"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.15</span><span class="period">.</span>
 </h3>
-<p id="p-1973">Given that <span class="process-math">\(\displaystyle\frac{x^3-7x^2-7x+15}{x^3(x+5)}=\frac{A}{x}+\frac{B}{x^2}+ \frac{C}{x^3}+\frac{D}{x+5}\text{,}\)</span> what are <span class="process-math">\(A, B, C\text{,}\)</span> and <span class="process-math">\(D\text{?}\)</span></p>
+<p id="p-1926">Given that <span class="process-math">\(\displaystyle\frac{x^3-7x^2-7x+15}{x^3(x+5)}=\frac{A}{x}+\frac{B}{x^2}+ \frac{C}{x^3}+\frac{D}{x+5}\text{,}\)</span> what are <span class="process-math">\(A, B, C\text{,}\)</span> and <span class="process-math">\(D\text{?}\)</span></p>
 <ol class="upper-alpha">
-<li id="li-1329"><p id="p-derived-li-1329"><span class="process-math">\(\displaystyle A=1, B=-7 C=-7, D=15.\)</span></p></li>
-<li id="li-1330"><p id="p-derived-li-1330"><span class="process-math">\(\displaystyle A=-1, B=-2, C=3, D=2.\)</span></p></li>
-<li id="li-1331"><p id="p-derived-li-1331"><span class="process-math">\(\displaystyle A=1, B=-2, C=-3, D=2.\)</span></p></li>
-<li id="li-1332"><p id="p-derived-li-1332"><span class="process-math">\(\displaystyle A=-1, B=2, C=3, D=-2.\)</span></p></li>
+<li id="li-1225"><p id="p-derived-li-1225"><span class="process-math">\(\displaystyle A=1, B=-7 C=-7, D=15\)</span></p></li>
+<li id="li-1226"><p id="p-derived-li-1226"><span class="process-math">\(\displaystyle A=-1, B=-2, C=3, D=2\)</span></p></li>
+<li id="li-1227"><p id="p-derived-li-1227"><span class="process-math">\(\displaystyle A=1, B=-2, C=-3, D=2\)</span></p></li>
+<li id="li-1228"><p id="p-derived-li-1228"><span class="process-math">\(\displaystyle A=-1, B=2, C=3, D=-2\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-TI6Evaluate1"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.16</span><span class="period">.</span>
 </h3>
-<p id="p-1974">Given your choice in <a href="" class="xref" data-knowl="./knowl/activity-TI6FindCoefficients1.html" title="Activity 5.6.15">Activity 5.6.15</a> Find <span class="process-math">\(\displaystyle\int \frac{x^3-7x^2-7x+15}{x^3(x+5)} dx.\)</span></p></article><article class="activity project-like" id="activity-TI6FindCompleteDecomp"><h3 class="heading">
+<p id="p-1927">Given your choice in <a href="" class="xref" data-knowl="./knowl/activity-TI6FindCoefficients1.html" title="Activity 5.6.15">Activity 5.6.15</a> Find <span class="process-math">\(\displaystyle\int \frac{x^3-7x^2-7x+15}{x^3(x+5)} dx.\)</span></p></article><article class="activity project-like" id="activity-TI6FindCompleteDecomp"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.17</span><span class="period">.</span>
 </h3>
-<p id="p-1975">Consider the rational expression <span class="process-math">\(\displaystyle\frac{2x^3+2x+4}{x^4+2x^3+4x^2}.\)</span>  Which of the following is the partial fraction decomposition of this rational expression?</p>
-<ol class="upper-alpha">
-<li id="li-1333"><p id="p-derived-li-1333"><span class="process-math">\(\displaystyle \frac{1}{x}+\frac{1}{x^2}+\frac{2x-1}{x^2+2x+4}.\)</span></p></li>
-<li id="li-1334"><p id="p-derived-li-1334"><span class="process-math">\(\displaystyle \frac{2}{x}+\frac{0}{x^2}+\frac{-1}{x^2+2x+4}.\)</span></p></li>
-<li id="li-1335"><p id="p-derived-li-1335"><span class="process-math">\(\displaystyle \frac{0}{x}+\frac{1}{x^2}+\frac{-1}{x^2+2x+4}.\)</span></p></li>
-<li id="li-1336"><p id="p-derived-li-1336"><span class="process-math">\(\displaystyle \frac{0}{x}+\frac{1}{x^2}+\frac{2x-1}{x^2+2x+4}.\)</span></p></li>
+<p id="p-1928">Consider the rational expression <span class="process-math">\(\displaystyle\frac{2x^3+2x+4}{x^4+2x^3+4x^2}.\)</span>  Which of the following is the partial fraction decomposition of this rational expression?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1229"><p id="p-derived-li-1229"><span class="process-math">\(\displaystyle \frac{1}{x}+\frac{1}{x^2}+\frac{2x-1}{x^2+2x+4}\)</span></p></li>
+<li id="li-1230"><p id="p-derived-li-1230"><span class="process-math">\(\displaystyle \frac{2}{x}+\frac{0}{x^2}+\frac{-1}{x^2+2x+4}\)</span></p></li>
+<li id="li-1231"><p id="p-derived-li-1231"><span class="process-math">\(\displaystyle \frac{0}{x}+\frac{1}{x^2}+\frac{-1}{x^2+2x+4}\)</span></p></li>
+<li id="li-1232"><p id="p-derived-li-1232"><span class="process-math">\(\displaystyle \frac{0}{x}+\frac{1}{x^2}+\frac{2x-1}{x^2+2x+4}\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-TI6Evaluate2"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.18</span><span class="period">.</span>
 </h3>
-<p id="p-1976">Given your choice in <a href="" class="xref" data-knowl="./knowl/activity-TI6FindCompleteDecomp.html" title="Activity 5.6.17">Activity 5.6.17</a> Find <span class="process-math">\(\displaystyle\int \frac{2x^3+2x+4}{x^4+2x^3+4x^2} dx.\)</span></p></article><article class="activity project-like" id="activity-TI6Definite"><h3 class="heading">
+<p id="p-1929">Given your choice in <a href="" class="xref" data-knowl="./knowl/activity-TI6FindCompleteDecomp.html" title="Activity 5.6.17">Activity 5.6.17</a> Find <span class="process-math">\(\displaystyle\int \frac{2x^3+2x+4}{x^4+2x^3+4x^2} dx\text{.}\)</span></p></article><article class="activity project-like" id="activity-TI6Definite"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.19</span><span class="period">.</span>
 </h3>
-<p id="p-1977">Given that <span class="process-math">\(\displaystyle \frac{2x+5}{x^2+3x+2}=\frac{-1}{x+2}+\frac{3}{x+1}\text{,}\)</span> find <span class="process-math">\(\displaystyle\int_0^3  \frac{2x+5}{x^2+3x+2} dx.\)</span></p></article><article class="remark remark-like" id="remark-47"><h3 class="heading">
+<p id="p-1930">Given that <span class="process-math">\(\displaystyle \frac{2x+5}{x^2+3x+2}=\frac{-1}{x+2}+\frac{3}{x+1}\text{,}\)</span> find <span class="process-math">\(\displaystyle\int_0^3  \frac{2x+5}{x^2+3x+2} dx\text{.}\)</span></p></article><article class="remark remark-like" id="remark-49"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">5.6.20</span><span class="period">.</span>
 </h3>
-<p id="p-1978">This is all well and good, but given a rational function, how might one actually find coefficients for the partial fractions if we weren't given them?</p></article><article class="activity project-like" id="activity-TI6HandsOff"><h3 class="heading">
+<p id="p-1931">This is all well and good, but given a rational function, how might one actually find coefficients for the partial fractions if we weren't given them?</p></article><article class="activity project-like" id="activity-TI6HandsOff"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.21</span><span class="period">.</span>
 </h3>
-<p id="p-1979">Evaluate <span class="process-math">\(\displaystyle \int \frac{4x^2-3x+1}{(2x+1)(x+2)(x-3)}dx.\)</span></p></article><section class="subsection" id="subsection-6"><h3 class="heading hide-type">
+<p id="p-1932">Evaluate <span class="process-math">\(\displaystyle \int \frac{4x^2-3x+1}{(2x+1)(x+2)(x-3)}dx\text{.}\)</span></p></article><section class="subsection" id="subsection-6"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.6.1</span> <span class="title">Videos</span>
 </h3>
 <figure class="figure figure-like" id="figure-69"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-TI6" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/3Bb2l-_LszM?&amp;modestbranding=1&amp;rel=0"></iframe></div>

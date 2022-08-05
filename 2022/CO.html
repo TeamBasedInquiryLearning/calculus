@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-05T13:01:45Z       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -11,7 +8,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal1 Coordinates and Vectors (CO)</title>
+<title>TBIL-Calc Coordinates and Vectors (CO)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -37,6 +34,14 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
@@ -197,17 +202,17 @@
 <span class="type">Chapter</span> <span class="codenumber">7</span> <span class="title">Coordinates and Vectors (CO)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-52"><h2 class="heading"><span class="type">Learning Outcomes</span></h2>
-<div class="introduction" id="introduction-215">
-<p id="p-2311">How do we use alternative coordinates and vectors to describe points in the plane?</p>
-<p id="p-2312">By the end of this chapter, you should be able to...</p>
+<div class="introduction" id="introduction-230">
+<p id="p-2273">How do we use alternative coordinates and vectors to describe points in the plane?</p>
+<p id="p-2274">By the end of this chapter, you should be able to...</p>
 </div>
 <ol class="decimal">
-<li id="li-1645"><p id="p-2313">Sketch the graph of a two-dimensional parametric/vector equation, and convert such equations into equations of only <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span></p></li>
-<li id="li-1646"><p id="p-2314">Compute derivatives and tangents related to two-dimensional parametric/vector equations.</p></li>
-<li id="li-1647"><p id="p-2315">Compute arclengths related to two-dimensional parametric/vector equations.</p></li>
-<li id="li-1648"><p id="p-2316">Convert points and equations between polar and Cartesian coordinates and equations.</p></li>
-<li id="li-1649"><p id="p-2317">Compute arclengths of curves given in polar coordinates.</p></li>
-<li id="li-1650"><p id="p-2318">Compute areas bounded by curves given in polar coordinates.</p></li>
+<li id="li-1542"><p id="p-2275">Sketch the graph of a two-dimensional parametric/vector equation, and convert such equations into equations of only <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span></p></li>
+<li id="li-1543"><p id="p-2276">Compute derivatives and tangents related to two-dimensional parametric/vector equations.</p></li>
+<li id="li-1544"><p id="p-2277">Compute arclengths related to two-dimensional parametric/vector equations.</p></li>
+<li id="li-1545"><p id="p-2278">Convert points and equations between polar and Cartesian coordinates and equations.</p></li>
+<li id="li-1546"><p id="p-2279">Compute arclengths of curves given in polar coordinates.</p></li>
+<li id="li-1547"><p id="p-2280">Compute areas bounded by curves given in polar coordinates.</p></li>
 </ol></article><nav class="summary-links"><ul>
 <li><a href="CO1.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Parametric/vector equations (CO1)</span></a></li>
 <li><a href="CO2.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Parametric/vector derivatives (CO2)</span></a></li>

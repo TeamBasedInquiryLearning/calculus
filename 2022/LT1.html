@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2022-07-05T13:01:36Z       *-->
-<!--*   A recent stable commit (2020-08-09):   *-->
-<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
@@ -11,7 +8,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Cal1 Limits graphically (LT1)</title>
+<title>TBIL-Calc Limits graphically (LT1)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -37,6 +34,14 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
@@ -207,7 +212,7 @@
 </div>
 <article class="task exercise-like" id="task-1"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <p id="p-46">Imagine moving along the graph toward the missing portion from the left, so that you are climbing up and to the right toward the obscured area of the graph. What <span class="process-math">\(y\)</span>-value are you approaching?</p>
-<ol class="upper-alpha">
+<ol class="upper-alpha cols3">
 <li id="li-40"><p id="p-47">0.5</p></li>
 <li id="li-41"><p id="p-48">1</p></li>
 <li id="li-42"><p id="p-49">1.5</p></li>
@@ -215,7 +220,7 @@
 <li id="li-44"><p id="p-51">2.5</p></li>
 </ol></article><article class="task exercise-like" id="task-2"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <p id="p-52">Think of the same process, but this time from the right. You're falling down and to the left this time as you come close to the missing portion. What <span class="process-math">\(y\)</span>-value are you approaching?</p>
-<ol class="upper-alpha">
+<ol class="upper-alpha cols3">
 <li id="li-45"><p id="p-53">0.5</p></li>
 <li id="li-46"><p id="p-54">1</p></li>
 <li id="li-47"><p id="p-55">1.5</p></li>
@@ -232,7 +237,7 @@
 <article class="task exercise-like" id="task-3"><h4 class="heading"><span class="codenumber">(a)</span></h4>
 <p id="p-59">What is the value of <span class="process-math">\(f(2)\text{?}\)</span></p></article><article class="task exercise-like" id="task-4"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <p id="p-60">What is the <span class="process-math">\(y\)</span>-value that is approached as we move toward <span class="process-math">\(x = 2\)</span> from the left?</p>
-<ol class="upper-alpha">
+<ol class="upper-alpha cols3">
 <li id="li-50"><p id="p-61">0.5</p></li>
 <li id="li-51"><p id="p-62">1</p></li>
 <li id="li-52"><p id="p-63">1.5</p></li>
@@ -240,7 +245,7 @@
 <li id="li-54"><p id="p-65">2.5</p></li>
 </ol></article><article class="task exercise-like" id="task-5"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <p id="p-66">What is the <span class="process-math">\(y\)</span>-value that is approached as we move toward <span class="process-math">\(x = 2\)</span> from the right?</p>
-<ol class="upper-alpha">
+<ol class="upper-alpha cols3">
 <li id="li-55"><p id="p-67">0.5</p></li>
 <li id="li-56"><p id="p-68">1</p></li>
 <li id="li-57"><p id="p-69">1.5</p></li>
@@ -270,7 +275,7 @@
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">3<span class="period">.</span></span><span class="space"> </span>A piecewise-defined function</figcaption></figure>
 </div>
 <p id="p-76">What is the limit as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(0\)</span> in <a href="" class="xref" data-knowl="./knowl/limit-left-and-right.html" title="Figure 3">Figure 3</a>?</p>
-<ol class="upper-alpha">
+<ol class="upper-alpha cols2">
 <li id="li-60"><p id="p-77">The limit is 1</p></li>
 <li id="li-61"><p id="p-78">The limit is -1</p></li>
 <li id="li-62"><p id="p-79">The limit is 0</p></li>
@@ -304,7 +309,7 @@
 <li id="li-68"><p id="p-88">The left limit DNE. The right limit DNE.</p></li>
 </ol></article><article class="task exercise-like" id="task-7"><h4 class="heading"><span class="codenumber">(b)</span></h4>
 <p id="p-89">What do you think the overall limit equals?</p>
-<ol class="upper-alpha">
+<ol class="upper-alpha cols2">
 <li id="li-69"><p id="p-90">The limit is 1</p></li>
 <li id="li-70"><p id="p-91">The limit is -1</p></li>
 <li id="li-71"><p id="p-92">The limit is 0</p></li>
@@ -323,7 +328,7 @@
 <p id="p-97">Find  <span class="process-math">\(\displaystyle \lim_{x \to 2^-} f(x)\)</span> and <span class="process-math">\(\displaystyle \lim_{x \to 2^+} f(x)\text{.}\)</span></p></article><article class="task exercise-like" id="task-11"><h4 class="heading"><span class="codenumber">(d)</span></h4>
 <p id="p-98">Find  <span class="process-math">\(\displaystyle \lim_{x \to 4^-} f(x)\)</span> and <span class="process-math">\(\displaystyle \lim_{x \to 4^+} f(x)\text{.}\)</span></p></article><article class="task exercise-like" id="task-12"><h4 class="heading"><span class="codenumber">(e)</span></h4>
 <p id="p-99">For which <span class="process-math">\(x\)</span>-values does the <em class="emphasis">overall</em> limit exist? Select all. If the limit exists, find it. If it does not, explain why.</p>
-<ol class="upper-alpha">
+<ol class="upper-alpha cols2">
 <li id="li-73"><p id="p-derived-li-73"><span class="process-math">\(\displaystyle -3\)</span></p></li>
 <li id="li-74"><p id="p-derived-li-74"><span class="process-math">\(\displaystyle -1\)</span></p></li>
 <li id="li-75"><p id="p-derived-li-75"><span class="process-math">\(\displaystyle 2\)</span></p></li>
@@ -344,13 +349,13 @@
 <li id="li-80"><p id="p-105">for an interval around <span class="process-math">\(x=a\text{,}\)</span> we have that <span class="process-math">\(f(x) \leq g(x) \leq h(x) \)</span> ;</p></li>
 <li id="li-81"><p id="p-106">the limit as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\)</span> of <span class="process-math">\(f(x) \)</span> is equal to the same value <span class="process-math">\(L\)</span> as the limit of <span class="process-math">\(h(x)\text{,}\)</span> so <span class="process-math">\(\lim_{x\to a} f(x) = L =\lim_{x\to a} h(x) .\)</span></p></li>
 </ul>
-<p id="p-107">Then, the limit of <span class="process-math">\(g(x)\)</span> as <span class="process-math">\(x \to a\)</span> is also <span class="process-math">\(L\text{,}\)</span> so <span class="process-math">\(\lim_{x\to a} g(x) = L \)</span></p></article><article class="activity project-like" id="squeeze-thm-ex"><h3 class="heading">
+<p id="p-107">Then, the limit of <span class="process-math">\(g(x)\)</span> as <span class="process-math">\(x \to a\)</span> is also <span class="process-math">\(L\text{,}\)</span> so <span class="process-math">\(\lim_{x\to a} g(x) = L \text{.}\)</span></p></article><article class="activity project-like" id="squeeze-thm-ex"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.1.12</span><span class="period">.</span>
 </h3>
 <div class="introduction" id="introduction-9"><p id="p-108">In this activity we will explore a mathematical theorem, the Squeeze Theorem <a href="" class="xref" data-knowl="./knowl/squeeze-thm.html" title="Theorem 1.1.11">Theorem 1.1.11</a>.</p></div>
 <article class="task exercise-like" id="task-13"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-109">The part of the theorem that starts with “Suppose…” forms the assumptions of the theorem, whilst the part of the theorem that starts with “Then…” is the conclusion of the theorem. What are the assumptions of the Squeeze Theorem? What is the conclusion?</p></article><article class="task exercise-like" id="task-14"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-110">The assumptions of the Squeeze Theorem can be restated informally as “the function <span class="process-math">\(g\)</span> is squeezed between the functions <span class="process-math">\(f\)</span> and <span class="process-math">\(h\)</span> around <span class="process-math">\(a\)</span>”. Explain in your own words how the two assumptions result into a “squeezing effect”.</p></article><article class="task exercise-like" id="task-15"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-109">The part of the theorem that starts with “Suppose…” forms the assumptions of the theorem, while the part of the theorem that starts with “Then…” is the conclusion of the theorem. What are the assumptions of the Squeeze Theorem? What is the conclusion?</p></article><article class="task exercise-like" id="task-14"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-110">The assumptions of the Squeeze Theorem can be restated informally as “the function <span class="process-math">\(g\)</span> is squeezed between the functions <span class="process-math">\(f\)</span> and <span class="process-math">\(h\)</span> around <span class="process-math">\(a\text{.}\)</span>” Explain in your own words how the two assumptions result into a “squeezing effect.”</p></article><article class="task exercise-like" id="task-15"><h4 class="heading"><span class="codenumber">(c)</span></h4>
 <p id="p-111">Let’s see an example of the application of this theorem. First examine the following picture. Explain why, from the picture, it seems that both assumptions of the theorem hold.</p>
 <figure class="figure figure-like" id="squeeze"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/squeeze.png" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5<span class="period">.</span></span><span class="space"> </span>A pictorial example of the Squeeze Theorem.</figcaption></figure></article><article class="task exercise-like" id="task-16"><h4 class="heading"><span class="codenumber">(d)</span></h4>
