@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Calc Series Convergence Strategy (SQ9)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
+<meta property="book:author" content="TBIL Institute Fellows">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\newcommand{\tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus for Team-Based Inquiry Learning:</span> <span class="subtitle">2022 Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="SQ8.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="SQ.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="PS.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="SQ8.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="SQ.html" title="Up">Up</a><a class="next-button button toolbar-item" href="PS.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li>
+<li><a href="tbil-rl.html" data-scroll="tbil-rl" class="internal">TBIL Resource Library</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="LT.html" data-scroll="LT" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1" class="internal">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2" class="internal">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3" class="internal">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4" class="internal">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5" class="internal">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6" class="internal">Limits with infinite outputs (LT6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="DF.html" data-scroll="DF" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2" class="internal">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1" class="internal">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3" class="internal">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4" class="internal">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5" class="internal">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6" class="internal">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7" class="internal">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8" class="internal">Differentiating inverse functions (DF8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AD.html" data-scroll="AD" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1" class="internal">Tangents, motion, and marginals (AD1)</a></li>
+<li><a href="AD2.html" data-scroll="AD2" class="internal">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3" class="internal">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4" class="internal">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5" class="internal">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6" class="internal">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7" class="internal">Graphing with derivatives (AD7)</a></li>
+<li><a href="AD8.html" data-scroll="AD8" class="internal">Applied optimization (AD8)</a></li>
+<li><a href="AD9.html" data-scroll="AD9" class="internal">Limits and Derivatives (AD9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="IN.html" data-scroll="IN" class="internal"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul>
+<li><a href="IN1.html" data-scroll="IN1" class="internal">Geometry of definite integrals (IN1)</a></li>
+<li><a href="IN2.html" data-scroll="IN2" class="internal">Approximating definite integrals (IN2)</a></li>
+<li><a href="IN3.html" data-scroll="IN3" class="internal">Elementary antiderivatives (IN3)</a></li>
+<li><a href="IN4.html" data-scroll="IN4" class="internal">Initial Value Problems (IN4)</a></li>
+<li><a href="IN5.html" data-scroll="IN5" class="internal">FTC for definite integrals (IN5)</a></li>
+<li><a href="IN6.html" data-scroll="IN6" class="internal">FTC for derivatives of integrals (IN6)</a></li>
+<li><a href="IN7.html" data-scroll="IN7" class="internal">Area under curves (IN7)</a></li>
+<li><a href="IN8.html" data-scroll="IN8" class="internal">Area between curves (IN8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="TI.html" data-scroll="TI" class="internal"><span class="codenumber">5</span> <span class="title">Techniques of Integration (TI)</span></a><ul>
+<li><a href="TI1.html" data-scroll="TI1" class="internal">Substitution method (TI1)</a></li>
+<li><a href="TI2.html" data-scroll="TI2" class="internal">Integration by Parts (TI2)</a></li>
+<li><a href="TI3.html" data-scroll="TI3" class="internal">Integration of trigonometry (TI3)</a></li>
+<li><a href="TI4.html" data-scroll="TI4" class="internal">Trigonometric Substitution (TI4)</a></li>
+<li><a href="TI5.html" data-scroll="TI5" class="internal">Tables of Integrals (TI5)</a></li>
+<li><a href="TI6.html" data-scroll="TI6" class="internal">Partial fractions (TI6)</a></li>
+<li><a href="TI7.html" data-scroll="TI7" class="internal">Integration strategy (TI7)</a></li>
+<li><a href="TI8.html" data-scroll="TI8" class="internal">Improper integrals (TI8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AI.html" data-scroll="AI" class="internal"><span class="codenumber">6</span> <span class="title">Applications of Integration (AI)</span></a><ul>
+<li><a href="AI1.html" data-scroll="AI1" class="internal">Average Value (AI1)</a></li>
+<li><a href="AI2.html" data-scroll="AI2" class="internal">Arclength (AI2)</a></li>
+<li><a href="AI3.html" data-scroll="AI3" class="internal">Volumes of Revolution (AI3)</a></li>
+<li><a href="AI4.html" data-scroll="AI4" class="internal">Surface Areas of Revolution (AI4)</a></li>
+<li><a href="AI5.html" data-scroll="AI5" class="internal">Density, Mass, and Center of Mass (AI5)</a></li>
+<li><a href="AI6.html" data-scroll="AI6" class="internal">Physics Applications (AI6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="CO.html" data-scroll="CO" class="internal"><span class="codenumber">7</span> <span class="title">Coordinates and Vectors (CO)</span></a><ul>
+<li><a href="CO1.html" data-scroll="CO1" class="internal">Parametric/vector equations (CO1)</a></li>
+<li><a href="CO2.html" data-scroll="CO2" class="internal">Parametric/vector derivatives (CO2)</a></li>
+<li><a href="CO3.html" data-scroll="CO3" class="internal">Parametric/vector arclength (CO3)</a></li>
+<li><a href="CO4.html" data-scroll="CO4" class="internal">Polar coordinates (CO4)</a></li>
+<li><a href="CO5.html" data-scroll="CO5" class="internal">Polar Arclength (CO5)</a></li>
+<li><a href="CO6.html" data-scroll="CO6" class="internal">Polar area (CO6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="SQ.html" data-scroll="SQ" class="internal"><span class="codenumber">8</span> <span class="title">Sequences and Series (SQ)</span></a><ul>
+<li><a href="SQ1.html" data-scroll="SQ1" class="internal">Sequence Formulas (SQ1)</a></li>
+<li><a href="SQ2.html" data-scroll="SQ2" class="internal">Sequence Properties and Limits (SQ2)</a></li>
+<li><a href="SQ3.html" data-scroll="SQ3" class="internal">Partial Sum Sequence (SQ3)</a></li>
+<li><a href="SQ4.html" data-scroll="SQ4" class="internal">Geometric Series (SQ4)</a></li>
+<li><a href="SQ5.html" data-scroll="SQ5" class="internal">Basic Convergence Tests (SQ5)</a></li>
+<li><a href="SQ6.html" data-scroll="SQ6" class="internal">Comparison Tests (SQ6)</a></li>
+<li><a href="SQ7.html" data-scroll="SQ7" class="internal">Ratio and Root Tests (SQ7)</a></li>
+<li><a href="SQ8.html" data-scroll="SQ8" class="internal">Absolute Convergence (SQ8)</a></li>
+<li><a href="SQ9.html" data-scroll="SQ9" class="active">Series Convergence Strategy (SQ9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="PS.html" data-scroll="PS" class="internal"><span class="codenumber">9</span> <span class="title">Power Series (PS)</span></a><ul>
+<li><a href="PS1.html" data-scroll="PS1" class="internal">Power Series (PS1)</a></li>
+<li><a href="PS2.html" data-scroll="PS2" class="internal">Convergence of Power Series (PS2)</a></li>
+<li><a href="PS3.html" data-scroll="PS3" class="internal">Manipulation of Power Series (PS3)</a></li>
+<li><a href="PS4.html" data-scroll="PS4" class="internal">Taylor Series (PS4)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="integral-table.html" data-scroll="integral-table" class="internal"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></li>
+<li class="link"><a href="trig-table.html" data-scroll="trig-table" class="internal"><span class="codenumber">B</span> <span class="title">List of Trigonometric Identities</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="SQ9"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">8.9</span> <span class="title">Series Convergence Strategy (SQ9)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-68"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="li-2061"><p id="p-2788">Identify appropriate convergence tests for various series.</p></li></ul></article><article class="activity project-like" id="activity-SQ9firstattemptDT"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.1</span><span class="period">.</span>
+</h3>
+<p id="p-2789">Which test for convergence is the best first test to apply to any series <span class="process-math">\(\displaystyle \sum_{k=1}^\infty a_k\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-2062"><p id="p-2790">Divergence Test</p></li>
+<li id="li-2063"><p id="p-2791">Geometric Series</p></li>
+<li id="li-2064"><p id="p-2792">Integral Test</p></li>
+<li id="li-2065"><p id="p-2793">Direct Comparison Test</p></li>
+<li id="li-2066"><p id="p-2794">Limit Comparison Test</p></li>
+<li id="li-2067"><p id="p-2795">Ratio Test</p></li>
+<li id="li-2068"><p id="p-2796">Root Test</p></li>
+<li id="li-2069"><p id="p-2797">Alternating Series Test</p></li>
+</ol></article><article class="activity project-like" id="activity-SQ9dctAPPLIES"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.2</span><span class="period">.</span>
+</h3>
+<p id="p-2798">In which of the following scenarios can we successfully apply the Direct Comparison Test to determine the convergence of the series <span class="process-math">\(\displaystyle \sum a_k\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-2070"><p id="p-2799">When we find a convergent series <span class="process-math">\(\displaystyle \sum b_k\)</span> where <span class="process-math">\(0\leq a_k\leq b_k\)</span></p></li>
+<li id="li-2071"><p id="p-2800">When we find a divergent series <span class="process-math">\(\displaystyle \sum b_k\)</span> where <span class="process-math">\(0\leq a_k\leq b_k\)</span></p></li>
+<li id="li-2072"><p id="p-2801">When we find a convergent series <span class="process-math">\(\displaystyle \sum b_k\)</span> where <span class="process-math">\(0\leq b_k\leq a_k\)</span></p></li>
+<li id="li-2073"><p id="p-2802">When we find a divergent series <span class="process-math">\(\displaystyle \sum b_k\)</span> where <span class="process-math">\(0\leq b_k\leq a_k\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-SQ9choiceforpowers"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.3</span><span class="period">.</span>
+</h3>
+<p id="p-2803">Which test(s) for convergence would we use for a series <span class="process-math">\(\displaystyle \sum a_k\)</span> where <span class="process-math">\(a_k\)</span> involves <span class="process-math">\(k^{th}\)</span> powers?</p>
+<ol class="upper-alpha cols2">
+<li id="li-2074"><p id="p-2804">Divergence Test</p></li>
+<li id="li-2075"><p id="p-2805">Geometric Series</p></li>
+<li id="li-2076"><p id="p-2806">Integral Test</p></li>
+<li id="li-2077"><p id="p-2807">Direct Comparison Test</p></li>
+<li id="li-2078"><p id="p-2808">Limit Comparison Test</p></li>
+<li id="li-2079"><p id="p-2809">Ratio Test</p></li>
+<li id="li-2080"><p id="p-2810">Root Test</p></li>
+<li id="li-2081"><p id="p-2811">Alternating Series Test</p></li>
+</ol></article><article class="activity project-like" id="activity-SQ9geometricFORM"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.4</span><span class="period">.</span>
+</h3>
+<p id="p-2812">Which test(s) for convergence would we use for a series of the form <span class="process-math">\(\displaystyle \sum ar^k\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-2082"><p id="p-2813">Divergence Test</p></li>
+<li id="li-2083"><p id="p-2814">Geometric Series</p></li>
+<li id="li-2084"><p id="p-2815">Integral Test</p></li>
+<li id="li-2085"><p id="p-2816">Direct Comparison Test</p></li>
+<li id="li-2086"><p id="p-2817">Limit Comparison Test</p></li>
+<li id="li-2087"><p id="p-2818">Ratio Test</p></li>
+<li id="li-2088"><p id="p-2819">Root Test</p></li>
+<li id="li-2089"><p id="p-2820">Alternating Series Test</p></li>
+</ol></article><article class="activity project-like" id="activity-SQ9choiceforfactorialsANDpowers"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.5</span><span class="period">.</span>
+</h3>
+<p id="p-2821">Which test(s) for convergence would we use for a series <span class="process-math">\(\displaystyle \sum a_k\)</span> where <span class="process-math">\(a_k\)</span> involves factorials and powers?</p>
+<ol class="upper-alpha cols2">
+<li id="li-2090"><p id="p-2822">Divergence Test</p></li>
+<li id="li-2091"><p id="p-2823">Geometric Series</p></li>
+<li id="li-2092"><p id="p-2824">Integral Test</p></li>
+<li id="li-2093"><p id="p-2825">Direct Comparison Test</p></li>
+<li id="li-2094"><p id="p-2826">Limit Comparison Test</p></li>
+<li id="li-2095"><p id="p-2827">Ratio Test</p></li>
+<li id="li-2096"><p id="p-2828">Root Test</p></li>
+<li id="li-2097"><p id="p-2829">Alternating Series Test</p></li>
+</ol></article><article class="activity project-like" id="activity-SQ9choiceforrationals"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.6</span><span class="period">.</span>
+</h3>
+<p id="p-2830">Which test(s) for convergence would we use for a series <span class="process-math">\(\displaystyle \sum a_k\)</span> where <span class="process-math">\(a_k\)</span> is a rational function?</p>
+<ol class="upper-alpha cols2">
+<li id="li-2098"><p id="p-2831">Divergence Test</p></li>
+<li id="li-2099"><p id="p-2832">Geometric Series</p></li>
+<li id="li-2100"><p id="p-2833">Integral Test</p></li>
+<li id="li-2101"><p id="p-2834">Direct Comparison Test</p></li>
+<li id="li-2102"><p id="p-2835">Limit Comparison Test</p></li>
+<li id="li-2103"><p id="p-2836">Ratio Test</p></li>
+<li id="li-2104"><p id="p-2837">Root Test</p></li>
+<li id="li-2105"><p id="p-2838">Alternating Series Test</p></li>
+</ol></article><article class="activity project-like" id="activity-SQ9astFORM"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.7</span><span class="period">.</span>
+</h3>
+<p id="p-2839">Which test(s) for convergence would we use for a series of the form <span class="process-math">\(\displaystyle \sum (-1)^ka_k\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-2106"><p id="p-2840">Divergence Test</p></li>
+<li id="li-2107"><p id="p-2841">Geometric Series</p></li>
+<li id="li-2108"><p id="p-2842">Integral Test</p></li>
+<li id="li-2109"><p id="p-2843">Direct Comparison Test</p></li>
+<li id="li-2110"><p id="p-2844">Limit Comparison Test</p></li>
+<li id="li-2111"><p id="p-2845">Ratio Test</p></li>
+<li id="li-2112"><p id="p-2846">Root Test</p></li>
+<li id="li-2113"><p id="p-2847">Alternating Series Test</p></li>
+</ol></article><article class="fact theorem-like" id="fact-SQ9strategy"><h3 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">8.9.8</span><span class="period">.</span>
+</h3>
+<p id="p-2848">Here is a strategy checklist when dealing with series:</p>
+<ol class="decimal">
+<li id="li-2114"><p id="p-2849">The divergence test: unless <span class="process-math">\(a_n\rightarrow 0\text{,}\)</span> <span class="process-math">\(\displaystyle \sum a_n\)</span> diverges</p></li>
+<li id="li-2115"><p id="p-2850">Geometric Series: <span class="process-math">\(\displaystyle \sum ar^k\)</span> converges if <span class="process-math">\(-1&lt;r&lt;1\)</span> and diverges otherwise</p></li>
+<li id="li-2116"><p id="p-2851"><span class="process-math">\(p\)</span>-series: <span class="process-math">\(\displaystyle \sum \frac{1}{n^p}\)</span> converges if <span class="process-math">\(p&gt;1\)</span> and diverges otherwise</p></li>
+<li id="li-2117"><p id="p-2852">Series with no negative terms: try the ratio test, root test, integral test, or try to compare to a known series with the comparison test or limit comparison test</p></li>
+<li id="li-2118"><p id="p-2853">Series with some negative terms: check for absolute convergence</p></li>
+<li id="li-2119"><p id="p-2854">Alternating series: use the alternating series test (Leibniz's Theorem)</p></li>
+<li id="li-2120"><p id="p-2855">Anything else: consider the sequence of partial sums, possibly rewriting the series in a different form, hope for the best</p></li>
+</ol></article><article class="activity project-like" id="activity-SQ9dctSmallerD"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.9</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-303"><p id="p-2856">Consider the series <span class="process-math">\(\displaystyle \sum_{k=3}^\infty \frac{2}{\sqrt{k-2}}\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-917"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2857">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
+<ol class="upper-alpha cols2">
+<li id="li-2121"><p id="p-2858">Divergence Test</p></li>
+<li id="li-2122"><p id="p-2859">Geometric Series</p></li>
+<li id="li-2123"><p id="p-2860">Integral Test</p></li>
+<li id="li-2124"><p id="p-2861">Direct Comparison Test</p></li>
+<li id="li-2125"><p id="p-2862">Limit Comparison Test</p></li>
+<li id="li-2126"><p id="p-2863">Ratio Test</p></li>
+<li id="li-2127"><p id="p-2864">Root Test</p></li>
+<li id="li-2128"><p id="p-2865">Alternating Series Test</p></li>
+</ol></article><article class="task exercise-like" id="task-918"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2866">Apply an appropriate test to determine the convergence of this series.</p>
+<ol class="upper-alpha cols2">
+<li id="li-2129"><p id="p-2867">This series is convergent.</p></li>
+<li id="li-2130"><p id="p-2868">This series is divergent.</p></li>
+</ol></article></article><article class="activity project-like" id="activity-SQ9dtD"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.10</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-304"><p id="p-2869">Consider the series <span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{k}{1+2k}\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-919"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2870">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
+<ol class="upper-alpha cols2">
+<li id="li-2131"><p id="p-2871">Divergence Test</p></li>
+<li id="li-2132"><p id="p-2872">Geometric Series</p></li>
+<li id="li-2133"><p id="p-2873">Integral Test</p></li>
+<li id="li-2134"><p id="p-2874">Direct Comparison Test</p></li>
+<li id="li-2135"><p id="p-2875">Limit Comparison Test</p></li>
+<li id="li-2136"><p id="p-2876">Ratio Test</p></li>
+<li id="li-2137"><p id="p-2877">Root Test</p></li>
+<li id="li-2138"><p id="p-2878">Alternating Series Test</p></li>
+</ol></article><article class="task exercise-like" id="task-920"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2879">Apply an appropriate test to determine the convergence of this series.</p>
+<ol class="upper-alpha cols2">
+<li id="li-2139"><p id="p-2880">This series is convergent.</p></li>
+<li id="li-2140"><p id="p-2881">This series is divergent.</p></li>
+</ol></article></article><article class="activity project-like" id="activity-SQ9lctD"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.11</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-305"><p id="p-2882">Consider the series <span class="process-math">\(\displaystyle \sum_{k=0}^\infty \frac{2k^2+1}{k^3+k+1}\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-921"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2883">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
+<ol class="upper-alpha cols2">
+<li id="li-2141"><p id="p-2884">Divergence Test</p></li>
+<li id="li-2142"><p id="p-2885">Geometric Series</p></li>
+<li id="li-2143"><p id="p-2886">Integral Test</p></li>
+<li id="li-2144"><p id="p-2887">Direct Comparison Test</p></li>
+<li id="li-2145"><p id="p-2888">Limit Comparison Test</p></li>
+<li id="li-2146"><p id="p-2889">Ratio Test</p></li>
+<li id="li-2147"><p id="p-2890">Root Test</p></li>
+<li id="li-2148"><p id="p-2891">Alternating Series Test</p></li>
+</ol></article><article class="task exercise-like" id="task-922"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2892">Apply an appropriate test to determine the convergence of this series.</p>
+<ol class="upper-alpha cols2">
+<li id="li-2149"><p id="p-2893">This series is convergent.</p></li>
+<li id="li-2150"><p id="p-2894">This series is divergent.</p></li>
+</ol></article></article><article class="activity project-like" id="activity-SQ9ratioCA"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.12</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-306"><p id="p-2895">Consider the series <span class="process-math">\(\displaystyle \sum_{k=0}^\infty \frac{100^k}{k!}\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-923"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2896">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
+<ol class="upper-alpha cols2">
+<li id="li-2151"><p id="p-2897">Divergence Test</p></li>
+<li id="li-2152"><p id="p-2898">Geometric Series</p></li>
+<li id="li-2153"><p id="p-2899">Integral Test</p></li>
+<li id="li-2154"><p id="p-2900">Direct Comparison Test</p></li>
+<li id="li-2155"><p id="p-2901">Limit Comparison Test</p></li>
+<li id="li-2156"><p id="p-2902">Ratio Test</p></li>
+<li id="li-2157"><p id="p-2903">Root Test</p></li>
+<li id="li-2158"><p id="p-2904">Alternating Series Test</p></li>
+</ol></article><article class="task exercise-like" id="task-924"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2905">Apply an appropriate test to determine the convergence of this series.</p>
+<ol class="upper-alpha cols2">
+<li id="li-2159"><p id="p-2906">This series is convergent.</p></li>
+<li id="li-2160"><p id="p-2907">This series is divergent.</p></li>
+</ol></article></article><article class="activity project-like" id="activity-SQ9geometricCeasy"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.13</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-307"><p id="p-2908">Consider the series <span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{2^k}{5^k}\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-925"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2909">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
+<ol class="upper-alpha cols2">
+<li id="li-2161"><p id="p-2910">Divergence Test</p></li>
+<li id="li-2162"><p id="p-2911">Geometric Series</p></li>
+<li id="li-2163"><p id="p-2912">Integral Test</p></li>
+<li id="li-2164"><p id="p-2913">Direct Comparison Test</p></li>
+<li id="li-2165"><p id="p-2914">Limit Comparison Test</p></li>
+<li id="li-2166"><p id="p-2915">Ratio Test</p></li>
+<li id="li-2167"><p id="p-2916">Root Test</p></li>
+<li id="li-2168"><p id="p-2917">Alternating Series Test</p></li>
+</ol></article><article class="task exercise-like" id="task-926"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2918">Apply an appropriate test to determine the convergence of this series.</p>
+<ol class="upper-alpha cols2">
+<li id="li-2169"><p id="p-2919">This series is convergent.</p></li>
+<li id="li-2170"><p id="p-2920">This series is divergent.</p></li>
+</ol></article></article><article class="activity project-like" id="activity-SQ9lctC"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.14</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-308"><p id="p-2921">Consider the series <span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{k^3-1}{k^5+1}\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-927"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2922">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
+<ol class="upper-alpha cols2">
+<li id="li-2171"><p id="p-2923">Divergence Test</p></li>
+<li id="li-2172"><p id="p-2924">Geometric Series</p></li>
+<li id="li-2173"><p id="p-2925">Integral Test</p></li>
+<li id="li-2174"><p id="p-2926">Direct Comparison Test</p></li>
+<li id="li-2175"><p id="p-2927">Limit Comparison Test</p></li>
+<li id="li-2176"><p id="p-2928">Ratio Test</p></li>
+<li id="li-2177"><p id="p-2929">Root Test</p></li>
+<li id="li-2178"><p id="p-2930">Alternating Series Test</p></li>
+</ol></article><article class="task exercise-like" id="task-928"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2931">Apply an appropriate test to determine the convergence of this series.</p>
+<ol class="upper-alpha cols2">
+<li id="li-2179"><p id="p-2932">This series is convergent.</p></li>
+<li id="li-2180"><p id="p-2933">This series is divergent.</p></li>
+</ol></article></article><article class="activity project-like" id="activity-SQ9geometricCmed"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.15</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-309"><p id="p-2934">Consider the series <span class="process-math">\(\displaystyle \sum_{k=2}^\infty \frac{3^{k-1}}{7^k}\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-929"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2935">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
+<ol class="upper-alpha cols2">
+<li id="li-2181"><p id="p-2936">Divergence Test</p></li>
+<li id="li-2182"><p id="p-2937">Geometric Series</p></li>
+<li id="li-2183"><p id="p-2938">Integral Test</p></li>
+<li id="li-2184"><p id="p-2939">Direct Comparison Test</p></li>
+<li id="li-2185"><p id="p-2940">Limit Comparison Test</p></li>
+<li id="li-2186"><p id="p-2941">Ratio Test</p></li>
+<li id="li-2187"><p id="p-2942">Root Test</p></li>
+<li id="li-2188"><p id="p-2943">Alternating Series Test</p></li>
+</ol></article><article class="task exercise-like" id="task-930"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2944">Apply an appropriate test to determine the convergence of this series.</p>
+<ol class="upper-alpha cols2">
+<li id="li-2189"><p id="p-2945">This series is convergent.</p></li>
+<li id="li-2190"><p id="p-2946">This series is divergent.</p></li>
+</ol></article></article><article class="activity project-like" id="activity-SQ9rootCA"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.16</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-310"><p id="p-2947">Consider the series <span class="process-math">\(\displaystyle \sum_{k=2}^\infty \frac{1}{k^k}\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-931"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2948">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
+<ol class="upper-alpha cols2">
+<li id="li-2191"><p id="p-2949">Divergence Test</p></li>
+<li id="li-2192"><p id="p-2950">Geometric Series</p></li>
+<li id="li-2193"><p id="p-2951">Integral Test</p></li>
+<li id="li-2194"><p id="p-2952">Direct Comparison Test</p></li>
+<li id="li-2195"><p id="p-2953">Limit Comparison Test</p></li>
+<li id="li-2196"><p id="p-2954">Ratio Test</p></li>
+<li id="li-2197"><p id="p-2955">Root Test</p></li>
+<li id="li-2198"><p id="p-2956">Alternating Series Test</p></li>
+</ol></article><article class="task exercise-like" id="task-932"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2957">Apply an appropriate test to determine the convergence of this series.</p>
+<ol class="upper-alpha cols2">
+<li id="li-2199"><p id="p-2958">This series is convergent.</p></li>
+<li id="li-2200"><p id="p-2959">This series is divergent.</p></li>
+</ol></article></article><article class="activity project-like" id="activity-SQ9astC"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.17</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-311"><p id="p-2960">Consider the series <span class="process-math">\(\displaystyle \sum_{k=1}^\infty \frac{(-1)^{k+1}}{\sqrt{k+1}}\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-933"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2961">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
+<ol class="upper-alpha cols2">
+<li id="li-2201"><p id="p-2962">Divergence Test</p></li>
+<li id="li-2202"><p id="p-2963">Geometric Series</p></li>
+<li id="li-2203"><p id="p-2964">Integral Test</p></li>
+<li id="li-2204"><p id="p-2965">Direct Comparison Test</p></li>
+<li id="li-2205"><p id="p-2966">Limit Comparison Test</p></li>
+<li id="li-2206"><p id="p-2967">Ratio Test</p></li>
+<li id="li-2207"><p id="p-2968">Root Test</p></li>
+<li id="li-2208"><p id="p-2969">Alternating Series Test</p></li>
+</ol></article><article class="task exercise-like" id="task-934"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2970">Apply an appropriate test to determine the convergence of this series.</p>
+<ol class="upper-alpha cols2">
+<li id="li-2209"><p id="p-2971">This series is convergent.</p></li>
+<li id="li-2210"><p id="p-2972">This series is divergent.</p></li>
+</ol></article></article><article class="activity project-like" id="activity-SQ9integralD"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.18</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-312"><p id="p-2973">Consider the series <span class="process-math">\(\displaystyle \sum_{k=2}^\infty \frac{1}{k\ln(k)}\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-935"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2974">Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?</p>
+<ol class="upper-alpha cols2">
+<li id="li-2211"><p id="p-2975">Divergence Test</p></li>
+<li id="li-2212"><p id="p-2976">Geometric Series</p></li>
+<li id="li-2213"><p id="p-2977">Integral Test</p></li>
+<li id="li-2214"><p id="p-2978">Direct Comparison Test</p></li>
+<li id="li-2215"><p id="p-2979">Limit Comparison Test</p></li>
+<li id="li-2216"><p id="p-2980">Ratio Test</p></li>
+<li id="li-2217"><p id="p-2981">Root Test</p></li>
+<li id="li-2218"><p id="p-2982">Alternating Series Test</p></li>
+</ol></article><article class="task exercise-like" id="task-936"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2983">Apply an appropriate test to determine the convergence of this series.</p>
+<ol class="upper-alpha cols2">
+<li id="li-2219"><p id="p-2984">This series is convergent.</p></li>
+<li id="li-2220"><p id="p-2985">This series is divergent.</p></li>
+</ol></article></article><article class="activity project-like" id="activity-564"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.9.19</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-313"><p id="p-2986">Determine which of the following series is <em class="emphasis">convergent</em> and which is <em class="emphasis">divergent</em>.  Justify both choices with an appropriate test.</p></div>
+<article class="task exercise-like" id="task-937"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{4 \, \left(-1\right)^{n + 1} n^{2}}{2 \, n^{3} + 4 \, n^{2} + 5}.\)</span></article><article class="task exercise-like" id="task-938"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{n!}{3 \cdot 3^{n} n^{4}}.\)</span></article></article><section class="subsection" id="subsection-23"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">8.9.1</span> <span class="title">Videos</span>
+</h3>
+<figure class="figure figure-like" id="figure-145"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-SQ9" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/YGzIOqR5GVE?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">159<span class="period">.</span></span><span class="space"> </span>Video: Identify appropriate convergence tests for various series</figcaption></figure></section></section></div></main>
+</div>
+</body>
+</html>

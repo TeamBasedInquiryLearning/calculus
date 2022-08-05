@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Calc Partial fractions (TI6)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
+<meta property="book:author" content="TBIL Institute Fellows">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\newcommand{\tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus for Team-Based Inquiry Learning:</span> <span class="subtitle">2022 Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="TI5.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="TI.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="TI7.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="TI5.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="TI.html" title="Up">Up</a><a class="next-button button toolbar-item" href="TI7.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li>
+<li><a href="tbil-rl.html" data-scroll="tbil-rl" class="internal">TBIL Resource Library</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="LT.html" data-scroll="LT" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1" class="internal">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2" class="internal">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3" class="internal">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4" class="internal">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5" class="internal">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6" class="internal">Limits with infinite outputs (LT6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="DF.html" data-scroll="DF" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2" class="internal">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1" class="internal">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3" class="internal">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4" class="internal">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5" class="internal">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6" class="internal">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7" class="internal">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8" class="internal">Differentiating inverse functions (DF8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AD.html" data-scroll="AD" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1" class="internal">Tangents, motion, and marginals (AD1)</a></li>
+<li><a href="AD2.html" data-scroll="AD2" class="internal">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3" class="internal">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4" class="internal">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5" class="internal">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6" class="internal">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7" class="internal">Graphing with derivatives (AD7)</a></li>
+<li><a href="AD8.html" data-scroll="AD8" class="internal">Applied optimization (AD8)</a></li>
+<li><a href="AD9.html" data-scroll="AD9" class="internal">Limits and Derivatives (AD9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="IN.html" data-scroll="IN" class="internal"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul>
+<li><a href="IN1.html" data-scroll="IN1" class="internal">Geometry of definite integrals (IN1)</a></li>
+<li><a href="IN2.html" data-scroll="IN2" class="internal">Approximating definite integrals (IN2)</a></li>
+<li><a href="IN3.html" data-scroll="IN3" class="internal">Elementary antiderivatives (IN3)</a></li>
+<li><a href="IN4.html" data-scroll="IN4" class="internal">Initial Value Problems (IN4)</a></li>
+<li><a href="IN5.html" data-scroll="IN5" class="internal">FTC for definite integrals (IN5)</a></li>
+<li><a href="IN6.html" data-scroll="IN6" class="internal">FTC for derivatives of integrals (IN6)</a></li>
+<li><a href="IN7.html" data-scroll="IN7" class="internal">Area under curves (IN7)</a></li>
+<li><a href="IN8.html" data-scroll="IN8" class="internal">Area between curves (IN8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="TI.html" data-scroll="TI" class="internal"><span class="codenumber">5</span> <span class="title">Techniques of Integration (TI)</span></a><ul>
+<li><a href="TI1.html" data-scroll="TI1" class="internal">Substitution method (TI1)</a></li>
+<li><a href="TI2.html" data-scroll="TI2" class="internal">Integration by Parts (TI2)</a></li>
+<li><a href="TI3.html" data-scroll="TI3" class="internal">Integration of trigonometry (TI3)</a></li>
+<li><a href="TI4.html" data-scroll="TI4" class="internal">Trigonometric Substitution (TI4)</a></li>
+<li><a href="TI5.html" data-scroll="TI5" class="internal">Tables of Integrals (TI5)</a></li>
+<li><a href="TI6.html" data-scroll="TI6" class="active">Partial fractions (TI6)</a></li>
+<li><a href="TI7.html" data-scroll="TI7" class="internal">Integration strategy (TI7)</a></li>
+<li><a href="TI8.html" data-scroll="TI8" class="internal">Improper integrals (TI8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AI.html" data-scroll="AI" class="internal"><span class="codenumber">6</span> <span class="title">Applications of Integration (AI)</span></a><ul>
+<li><a href="AI1.html" data-scroll="AI1" class="internal">Average Value (AI1)</a></li>
+<li><a href="AI2.html" data-scroll="AI2" class="internal">Arclength (AI2)</a></li>
+<li><a href="AI3.html" data-scroll="AI3" class="internal">Volumes of Revolution (AI3)</a></li>
+<li><a href="AI4.html" data-scroll="AI4" class="internal">Surface Areas of Revolution (AI4)</a></li>
+<li><a href="AI5.html" data-scroll="AI5" class="internal">Density, Mass, and Center of Mass (AI5)</a></li>
+<li><a href="AI6.html" data-scroll="AI6" class="internal">Physics Applications (AI6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="CO.html" data-scroll="CO" class="internal"><span class="codenumber">7</span> <span class="title">Coordinates and Vectors (CO)</span></a><ul>
+<li><a href="CO1.html" data-scroll="CO1" class="internal">Parametric/vector equations (CO1)</a></li>
+<li><a href="CO2.html" data-scroll="CO2" class="internal">Parametric/vector derivatives (CO2)</a></li>
+<li><a href="CO3.html" data-scroll="CO3" class="internal">Parametric/vector arclength (CO3)</a></li>
+<li><a href="CO4.html" data-scroll="CO4" class="internal">Polar coordinates (CO4)</a></li>
+<li><a href="CO5.html" data-scroll="CO5" class="internal">Polar Arclength (CO5)</a></li>
+<li><a href="CO6.html" data-scroll="CO6" class="internal">Polar area (CO6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="SQ.html" data-scroll="SQ" class="internal"><span class="codenumber">8</span> <span class="title">Sequences and Series (SQ)</span></a><ul>
+<li><a href="SQ1.html" data-scroll="SQ1" class="internal">Sequence Formulas (SQ1)</a></li>
+<li><a href="SQ2.html" data-scroll="SQ2" class="internal">Sequence Properties and Limits (SQ2)</a></li>
+<li><a href="SQ3.html" data-scroll="SQ3" class="internal">Partial Sum Sequence (SQ3)</a></li>
+<li><a href="SQ4.html" data-scroll="SQ4" class="internal">Geometric Series (SQ4)</a></li>
+<li><a href="SQ5.html" data-scroll="SQ5" class="internal">Basic Convergence Tests (SQ5)</a></li>
+<li><a href="SQ6.html" data-scroll="SQ6" class="internal">Comparison Tests (SQ6)</a></li>
+<li><a href="SQ7.html" data-scroll="SQ7" class="internal">Ratio and Root Tests (SQ7)</a></li>
+<li><a href="SQ8.html" data-scroll="SQ8" class="internal">Absolute Convergence (SQ8)</a></li>
+<li><a href="SQ9.html" data-scroll="SQ9" class="internal">Series Convergence Strategy (SQ9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="PS.html" data-scroll="PS" class="internal"><span class="codenumber">9</span> <span class="title">Power Series (PS)</span></a><ul>
+<li><a href="PS1.html" data-scroll="PS1" class="internal">Power Series (PS1)</a></li>
+<li><a href="PS2.html" data-scroll="PS2" class="internal">Convergence of Power Series (PS2)</a></li>
+<li><a href="PS3.html" data-scroll="PS3" class="internal">Manipulation of Power Series (PS3)</a></li>
+<li><a href="PS4.html" data-scroll="PS4" class="internal">Taylor Series (PS4)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="integral-table.html" data-scroll="integral-table" class="internal"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></li>
+<li class="link"><a href="trig-table.html" data-scroll="trig-table" class="internal"><span class="codenumber">B</span> <span class="title">List of Trigonometric Identities</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="TI6"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5.6</span> <span class="title">Partial fractions (TI6)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-42"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="li-1176"><p id="p-1905">I can integrate functions using the method of partial fractions.</p></li></ul></article><article class="activity project-like" id="activity-TI6oneoverlinear"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.1</span><span class="period">.</span>
+</h3>
+<p id="p-1906">Using the method of substitution, which of these is the integral of <span class="process-math">\(\displaystyle\int \frac{1}{(ax+b)} dx\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1177"><p id="p-derived-li-1177"><span class="process-math">\(\displaystyle \frac{1}{a}\ln(ax+b) +C\)</span></p></li>
+<li id="li-1178"><p id="p-derived-li-1178"><span class="process-math">\(\displaystyle \frac{1}{a}\ln|ax+b| +C\)</span></p></li>
+<li id="li-1179"><p id="p-derived-li-1179"><span class="process-math">\(\displaystyle \frac{1}{x}(\ln(ax)+\ln(b))+C\)</span></p></li>
+<li id="li-1180"><p id="p-derived-li-1180"><span class="process-math">\(\displaystyle \frac{1}{a}(\ln|ax|+\ln|b|)+C\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-TI6RationalExpression"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.2</span><span class="period">.</span>
+</h3>
+<p id="p-1907">Which of the following is equivalent to the rational expression <span class="process-math">\(\displaystyle\frac{3x+3}{2x^2+3x}\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1181"><p id="p-derived-li-1181"><span class="process-math">\(\displaystyle \frac{3}{2x}+\frac{1}{x}\)</span></p></li>
+<li id="li-1182"><p id="p-derived-li-1182"><span class="process-math">\(\displaystyle \frac{3}{x}+\frac{3}{2x+3}\)</span></p></li>
+<li id="li-1183"><p id="p-derived-li-1183"><span class="process-math">\(\displaystyle \frac{1}{x}+\frac{1}{2x+3}\)</span></p></li>
+<li id="li-1184"><p id="p-derived-li-1184"><span class="process-math">\(\displaystyle \frac{3}{2x^2}+1\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-TI6IntegrateRationalExpression"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.3</span><span class="period">.</span>
+</h3>
+<p id="p-1908">Based on your choice in <a href="" class="xref" data-knowl="./knowl/activity-TI6RationalExpression.html" title="Activity 5.6.2">Activity 5.6.2</a>, which of these is the integral for <span class="process-math">\(\displaystyle\int \frac{3x+3}{2x^2+3x} dx\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1185"><p id="p-derived-li-1185"><span class="process-math">\(\displaystyle \frac{3}{2}\ln|x|+\ln|x|+C\)</span></p></li>
+<li id="li-1186"><p id="p-derived-li-1186"><span class="process-math">\(\displaystyle \ln|x|+\frac{1}{2}\ln|2x+3|+C\)</span></p></li>
+<li id="li-1187"><p id="p-derived-li-1187"><span class="process-math">\(\displaystyle -\frac{3}{2}x^{-1}+x+C\)</span></p></li>
+<li id="li-1188"><p id="p-derived-li-1188"><span class="process-math">\(\displaystyle 3\ln|x|+\frac{3}{2}\ln|2x+3|+C\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-TI6AntidiffArctan"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.4</span><span class="period">.</span>
+</h3>
+<p id="p-1909">Which of the following is an antiderivative for <span class="process-math">\(\displaystyle\frac{1}{(x+k)^2+h^2}\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1189"><p id="p-derived-li-1189"><span class="process-math">\(\displaystyle \arctan(x)\)</span></p></li>
+<li id="li-1190"><p id="p-derived-li-1190"><span class="process-math">\(\displaystyle \arctan(x+k)\)</span></p></li>
+<li id="li-1191"><p id="p-derived-li-1191"><span class="process-math">\(\displaystyle \frac{1}{h}\arctan\left(\frac{x+h}{h}\right)\)</span></p></li>
+<li id="li-1192"><p id="p-derived-li-1192"><span class="process-math">\(\displaystyle \frac{1}{h^2}\arctan\left(\frac{x+k}{h^2}\right)\)</span></p></li>
+<li id="li-1193"><p id="p-derived-li-1193"><span class="process-math">\(\displaystyle \frac{1}{h}\arctan\left(\frac{x+k}{h}\right)\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-TI6CompleteSquare"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.5</span><span class="period">.</span>
+</h3>
+<p id="p-1910">Consider the irreducible quadratic <span class="process-math">\(x^2-4x+80\text{.}\)</span>  Which of the following is the completed square form of this quadratic expression?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1194"><p id="p-derived-li-1194"><span class="process-math">\(\displaystyle (x-4)^2+80\)</span></p></li>
+<li id="li-1195"><p id="p-derived-li-1195"><span class="process-math">\(\displaystyle (x-2)^2+80\)</span></p></li>
+<li id="li-1196"><p id="p-derived-li-1196"><span class="process-math">\(\displaystyle (x-4)^2+64\)</span></p></li>
+<li id="li-1197"><p id="p-derived-li-1197"><span class="process-math">\(\displaystyle (x-2)^2+76\)</span></p></li>
+<li id="li-1198"><p id="p-derived-li-1198"><span class="process-math">\(\displaystyle (x-4)^2+76\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-TI6EvalIrred"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.6</span><span class="period">.</span>
+</h3>
+<p id="p-1911">Using the fact that <span class="process-math">\(\displaystyle\int \frac{1}{x^2-8x+80} dx = \int \frac{1}{(x-4)^2+64} dx\text{,}\)</span> evaluate the integral <span class="process-math">\(\displaystyle \int \frac{1}{x^2-8x+80} dx\text{.}\)</span></p></article><article class="activity project-like" id="activity-TI6FindCoeff"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.7</span><span class="period">.</span>
+</h3>
+<p id="p-1912">Suppose that one could write <span class="process-math">\(\displaystyle\frac{4x^2-5x-2}{x^2(x-2)} =\frac{A}{x}+\frac{B}{x^2}+\frac{C}{x-2}\text{.}\)</span> <p id="p-1913">Recall that:</p><div class="displaymath process-math" data-contains-math-knowls="" id="md-13">
+\begin{align*}
+\displaystyle\frac{4x^2-5x-2}{x^2(x-2)}&amp;=\displaystyle \frac{A}{x}+\frac{B}{x^2}+\frac{C}{x-2} = \frac{Ax(x-2)+B(x-2)+Cx^2}{x^2(x-2)}\\
+\displaystyle\frac{4x^2-5x-2}{x^2(x-2)}&amp; = \frac{Ax(x-2)+B(x-2)+Cx^2}{x^2(x-2)}\\
+4x^2-5x-2&amp; = Ax(x-2)+B(x-2)+Cx^2.
+\end{align*}
+</div><p class="continuation">What are the values of <span class="process-math">\(A, B\)</span> and <span class="process-math">\(C\text{?}\)</span></p></p>
+<ol class="upper-alpha cols2">
+<li id="li-1199"><p id="p-derived-li-1199"><span class="process-math">\(\displaystyle A=4, B=-5, C=-2\)</span></p></li>
+<li id="li-1200"><p id="p-derived-li-1200"><span class="process-math">\(\displaystyle A=3, B=1, C=1\)</span></p></li>
+<li id="li-1201"><p id="p-derived-li-1201"><span class="process-math">\(\displaystyle A=1, B=1, C=1\)</span></p></li>
+<li id="li-1202"><p id="p-derived-li-1202"><span class="process-math">\(\displaystyle A=1, B=3, C=-1\)</span></p></li>
+<li id="li-1203"><p id="p-derived-li-1203"><span class="process-math">\(\displaystyle A=2, B=1, C=1\)</span></p></li>
+</ol></article><article class="fact theorem-like" id="fact-TI6PartialFractions"><h3 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">5.6.8</span><span class="period">.</span><span class="space"> </span><span class="title">Partial Fraction Decomposition.</span>
+</h3>
+<p id="p-1914">Let <span class="process-math">\(\displaystyle \frac{p(x)}{q(x)}\)</span> be a rational function, where the degree of <span class="process-math">\(p\)</span> is less than the degree of <span class="process-math">\(q\text{.}\)</span> </p>
+<ol id="p-1915" class="decimal">
+<li id="li-1204">
+<p id="p-1916"><em class="emphasis">Linear Terms:</em> Let <span class="process-math">\((x-a)\)</span> divide <span class="process-math">\(q(x)\text{,}\)</span> where <span class="process-math">\((x-a)^n\)</span> is the highest power of <span class="process-math">\((x-a)\)</span> that divides <span class="process-math">\(q(x)\text{.}\)</span> Then the decomposition of <span class="process-math">\(\frac{p(x)}{q(x)}\)</span> will contain the sum</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{A_1}{(x-a)} + \frac{A_2}{(x-a)^2} + \cdots +\frac{A_n}{(x-a)^n}\text{.}
+\end{equation*}
+</div>
+</li>
+<li id="li-1205">
+<p id="p-1917"><em class="emphasis">Quadratic Terms:</em> Let <span class="process-math">\(x^2+bx+c\)</span>  be an irreducible quadratic that divides <span class="process-math">\(q(x)\text{,}\)</span> where <span class="process-math">\((x^2+bx+c)^n\)</span> is the highest power of <span class="process-math">\(x^2+bx+c\)</span> that divides <span class="process-math">\(q(x)\text{.}\)</span> Then the decomposition of <span class="process-math">\(\frac{p(x)}{q(x)}\)</span> will contain the sum</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{B_1x+C_1}{x^2+bx+c}+\frac{B_2x+C_2}{(x^2+bx+c)^2}+\cdots+\frac{B_nx+C_n}{(x^2+bx+c)^n}\text{.}
+\end{equation*}
+</div>
+</li>
+</ol></article><article class="activity project-like" id="activity-TI6FirstDecomp"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.9</span><span class="period">.</span>
+</h3>
+<p id="p-1918">Which of the following is the form of the partial fraction decomposition of <span class="process-math">\(\displaystyle\frac{x^3-7x^2-7x+15}{x^3(x+5)}\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1206"><p id="p-derived-li-1206"><span class="process-math">\(\displaystyle \frac{A}{x}+\frac{B}{x+5}\)</span></p></li>
+<li id="li-1207"><p id="p-derived-li-1207"><span class="process-math">\(\displaystyle \frac{A}{x^3}+\frac{B}{x+5}\)</span></p></li>
+<li id="li-1208"><p id="p-derived-li-1208"><span class="process-math">\(\displaystyle \frac{A}{x}+\frac{B}{x^2}+ \frac{C}{x^3}+\frac{D}{x+5}\)</span></p></li>
+<li id="li-1209"><p id="p-derived-li-1209"><span class="process-math">\(\displaystyle \frac{A}{x}+\frac{B}{x^2}+ \frac{C}{x^3}+\frac{Dx+E}{x+5}\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-TI6SecondDecomp"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.10</span><span class="period">.</span>
+</h3>
+<p id="p-1919">Which of the following is the form of the partial fraction decomposition of <span class="process-math">\(\displaystyle\frac{x^2+1}{(x-3)^2(x^2+4)^2}\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-1210"><p id="p-derived-li-1210"><span class="process-math">\(\displaystyle \frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{C}{x^2+4}+\frac{D}{(x^2+4)^2}\)</span></p></li>
+<li id="li-1211"><p id="p-derived-li-1211"><span class="process-math">\(\displaystyle \frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{Cx+D}{(x^2+4)^2}\)</span></p></li>
+<li id="li-1212"><p id="p-derived-li-1212"><span class="process-math">\(\displaystyle \frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{C}{x^2+4}+\frac{Dx+E}{(x^2+4)^2}\)</span></p></li>
+<li id="li-1213"><p id="p-derived-li-1213"><span class="process-math">\(\displaystyle \frac{A}{x-3}+\frac{B}{(x-3)^2}+\frac{Cx+D}{x^2+4}+\frac{Ex+F}{(x^2+4)^2}\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-TI6RationaltoPoly"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.11</span><span class="period">.</span>
+</h3>
+<p id="p-1920">Consider that the partial decomposition of <span class="process-math">\(\displaystyle \frac{x^2+5x+3}{(x+1)^2x}\)</span> is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\displaystyle \frac{x^2+5x+3}{(x+1)^2x}=\frac{A}{x+1}+\frac{B}{(x+1)^2}+\frac{C}{x}.
+\end{equation*}
+</div>
+<p class="continuation">What equality do we obtain if we multiply both sides of the above equation by <span class="process-math">\((x+1)^2x\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-1214"><p id="p-derived-li-1214"><span class="process-math">\(\displaystyle x^2+5x+3=Ax(x+1)+Bx+C(x+1)^2\)</span></p></li>
+<li id="li-1215"><p id="p-derived-li-1215"><span class="process-math">\(\displaystyle x^2+5x+3=A(x+1)+B(x+1)^2+Cx\)</span></p></li>
+<li id="li-1216"><p id="p-derived-li-1216"><span class="process-math">\(\displaystyle x^2+5x+3=Ax(x+1)+Bx+C(x+1)\)</span></p></li>
+<li id="li-1217"><p id="p-derived-li-1217"><span class="process-math">\(\displaystyle x^2+5x+3=A(x+1)+Bx+Cx^2\)</span></p></li>
+<li id="li-1218"><p id="p-derived-li-1218"><span class="process-math">\(\displaystyle x^2+5x+3=Ax(x+1)+Bx^2+C(x+1)^2\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-TI6SolveaCoeff"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.12</span><span class="period">.</span>
+</h3>
+<p id="p-1921">Notice that <span class="process-math">\(x^2+5x+3=Ax(x+1)+Bx+C(x+1)^2\text{.}\)</span> <article class="task exercise-like" id="task-558"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1922">Which of the following values can we determine by setting <span class="process-math">\(x=0\text{?}\)</span> Select all that apply.</p>
+<ol class="upper-alpha cols3">
+<li id="li-1219"><p id="p-derived-li-1219"><span class="process-math">\(\displaystyle A\)</span></p></li>
+<li id="li-1220"><p id="p-derived-li-1220"><span class="process-math">\(\displaystyle B\)</span></p></li>
+<li id="li-1221"><p id="p-derived-li-1221"><span class="process-math">\(\displaystyle C\)</span></p></li>
+</ol></article> <article class="task exercise-like" id="task-559"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1923">Which of the following values can we determine by setting <span class="process-math">\(x=-1\text{?}\)</span> Select all that apply.</p>
+<ol class="upper-alpha cols3">
+<li id="li-1222"><p id="p-derived-li-1222"><span class="process-math">\(\displaystyle A\)</span></p></li>
+<li id="li-1223"><p id="p-derived-li-1223"><span class="process-math">\(\displaystyle B\)</span></p></li>
+<li id="li-1224"><p id="p-derived-li-1224"><span class="process-math">\(\displaystyle C\)</span></p></li>
+</ol></article></p></article><article class="activity project-like" id="activity-TI6SolvelastCoeff"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.13</span><span class="period">.</span>
+</h3>
+<p id="p-1924">Rewrite <span class="process-math">\(Ax(x+1)+x+3(x+1)^2\)</span> so that <span class="process-math">\(Ax(x+1)+x+3(x+1)^2=?x^2+?x+?\text{.}\)</span>  Knowing that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+1x^2+5x+3=Ax(x+1)+x+3(x+1)^2=?x^2+?x+?,
+\end{equation*}
+</div>
+<p class="continuation">can we solve for  <span class="process-math">\(A\text{?}\)</span></p></article><article class="activity project-like" id="activity-TI6PuttingitTogether"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.14</span><span class="period">.</span>
+</h3>
+<p id="p-1925">By using the form of the decomposition <span class="process-math">\(\displaystyle \frac{x^2+5x+3}{(x+1)^2x}=\frac{A}{x+1}+\frac{B}{(x+1)^2}+\frac{C}{x}\)</span>  and the coefficients found in <a href="" class="xref" data-knowl="./knowl/activity-TI6SolveaCoeff.html" title="Activity 5.6.12">Activity 5.6.12</a> and <a href="" class="xref" data-knowl="./knowl/activity-TI6SolvelastCoeff.html" title="Activity 5.6.13">Activity 5.6.13</a>, evaluate <span class="process-math">\(\displaystyle \int \frac{x^2+5x+3}{(x+1)^2x} dx\text{.}\)</span></p></article><article class="activity project-like" id="activity-TI6FindCoefficients1"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.15</span><span class="period">.</span>
+</h3>
+<p id="p-1926">Given that <span class="process-math">\(\displaystyle\frac{x^3-7x^2-7x+15}{x^3(x+5)}=\frac{A}{x}+\frac{B}{x^2}+ \frac{C}{x^3}+\frac{D}{x+5}\text{,}\)</span> what are <span class="process-math">\(A, B, C\text{,}\)</span> and <span class="process-math">\(D\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-1225"><p id="p-derived-li-1225"><span class="process-math">\(\displaystyle A=1, B=-7 C=-7, D=15\)</span></p></li>
+<li id="li-1226"><p id="p-derived-li-1226"><span class="process-math">\(\displaystyle A=-1, B=-2, C=3, D=2\)</span></p></li>
+<li id="li-1227"><p id="p-derived-li-1227"><span class="process-math">\(\displaystyle A=1, B=-2, C=-3, D=2\)</span></p></li>
+<li id="li-1228"><p id="p-derived-li-1228"><span class="process-math">\(\displaystyle A=-1, B=2, C=3, D=-2\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-TI6Evaluate1"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.16</span><span class="period">.</span>
+</h3>
+<p id="p-1927">Given your choice in <a href="" class="xref" data-knowl="./knowl/activity-TI6FindCoefficients1.html" title="Activity 5.6.15">Activity 5.6.15</a> Find <span class="process-math">\(\displaystyle\int \frac{x^3-7x^2-7x+15}{x^3(x+5)} dx.\)</span></p></article><article class="activity project-like" id="activity-TI6FindCompleteDecomp"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.17</span><span class="period">.</span>
+</h3>
+<p id="p-1928">Consider the rational expression <span class="process-math">\(\displaystyle\frac{2x^3+2x+4}{x^4+2x^3+4x^2}.\)</span>  Which of the following is the partial fraction decomposition of this rational expression?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1229"><p id="p-derived-li-1229"><span class="process-math">\(\displaystyle \frac{1}{x}+\frac{1}{x^2}+\frac{2x-1}{x^2+2x+4}\)</span></p></li>
+<li id="li-1230"><p id="p-derived-li-1230"><span class="process-math">\(\displaystyle \frac{2}{x}+\frac{0}{x^2}+\frac{-1}{x^2+2x+4}\)</span></p></li>
+<li id="li-1231"><p id="p-derived-li-1231"><span class="process-math">\(\displaystyle \frac{0}{x}+\frac{1}{x^2}+\frac{-1}{x^2+2x+4}\)</span></p></li>
+<li id="li-1232"><p id="p-derived-li-1232"><span class="process-math">\(\displaystyle \frac{0}{x}+\frac{1}{x^2}+\frac{2x-1}{x^2+2x+4}\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-TI6Evaluate2"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.18</span><span class="period">.</span>
+</h3>
+<p id="p-1929">Given your choice in <a href="" class="xref" data-knowl="./knowl/activity-TI6FindCompleteDecomp.html" title="Activity 5.6.17">Activity 5.6.17</a> Find <span class="process-math">\(\displaystyle\int \frac{2x^3+2x+4}{x^4+2x^3+4x^2} dx\text{.}\)</span></p></article><article class="activity project-like" id="activity-TI6Definite"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.19</span><span class="period">.</span>
+</h3>
+<p id="p-1930">Given that <span class="process-math">\(\displaystyle \frac{2x+5}{x^2+3x+2}=\frac{-1}{x+2}+\frac{3}{x+1}\text{,}\)</span> find <span class="process-math">\(\displaystyle\int_0^3  \frac{2x+5}{x^2+3x+2} dx\text{.}\)</span></p></article><article class="remark remark-like" id="remark-49"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">5.6.20</span><span class="period">.</span>
+</h3>
+<p id="p-1931">This is all well and good, but given a rational function, how might one actually find coefficients for the partial fractions if we weren't given them?</p></article><article class="activity project-like" id="activity-TI6HandsOff"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.6.21</span><span class="period">.</span>
+</h3>
+<p id="p-1932">Evaluate <span class="process-math">\(\displaystyle \int \frac{4x^2-3x+1}{(2x+1)(x+2)(x-3)}dx\text{.}\)</span></p></article><section class="subsection" id="subsection-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.6.1</span> <span class="title">Videos</span>
+</h3>
+<figure class="figure figure-like" id="figure-69"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-TI6" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/3Bb2l-_LszM?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">80<span class="period">.</span></span><span class="space"> </span>Video: I can integrate functions using the method of partial fractions</figcaption></figure></section></section></div></main>
+</div>
+</body>
+</html>

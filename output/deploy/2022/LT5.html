@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Calc Limits with infinite inputs (LT5)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
+<meta property="book:author" content="TBIL Institute Fellows">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\newcommand{\tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus for Team-Based Inquiry Learning:</span> <span class="subtitle">2022 Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="LT4.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="LT.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="LT6.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="LT4.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="LT.html" title="Up">Up</a><a class="next-button button toolbar-item" href="LT6.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li>
+<li><a href="tbil-rl.html" data-scroll="tbil-rl" class="internal">TBIL Resource Library</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="LT.html" data-scroll="LT" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1" class="internal">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2" class="internal">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3" class="internal">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4" class="internal">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5" class="active">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6" class="internal">Limits with infinite outputs (LT6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="DF.html" data-scroll="DF" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2" class="internal">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1" class="internal">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3" class="internal">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4" class="internal">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5" class="internal">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6" class="internal">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7" class="internal">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8" class="internal">Differentiating inverse functions (DF8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AD.html" data-scroll="AD" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1" class="internal">Tangents, motion, and marginals (AD1)</a></li>
+<li><a href="AD2.html" data-scroll="AD2" class="internal">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3" class="internal">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4" class="internal">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5" class="internal">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6" class="internal">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7" class="internal">Graphing with derivatives (AD7)</a></li>
+<li><a href="AD8.html" data-scroll="AD8" class="internal">Applied optimization (AD8)</a></li>
+<li><a href="AD9.html" data-scroll="AD9" class="internal">Limits and Derivatives (AD9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="IN.html" data-scroll="IN" class="internal"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul>
+<li><a href="IN1.html" data-scroll="IN1" class="internal">Geometry of definite integrals (IN1)</a></li>
+<li><a href="IN2.html" data-scroll="IN2" class="internal">Approximating definite integrals (IN2)</a></li>
+<li><a href="IN3.html" data-scroll="IN3" class="internal">Elementary antiderivatives (IN3)</a></li>
+<li><a href="IN4.html" data-scroll="IN4" class="internal">Initial Value Problems (IN4)</a></li>
+<li><a href="IN5.html" data-scroll="IN5" class="internal">FTC for definite integrals (IN5)</a></li>
+<li><a href="IN6.html" data-scroll="IN6" class="internal">FTC for derivatives of integrals (IN6)</a></li>
+<li><a href="IN7.html" data-scroll="IN7" class="internal">Area under curves (IN7)</a></li>
+<li><a href="IN8.html" data-scroll="IN8" class="internal">Area between curves (IN8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="TI.html" data-scroll="TI" class="internal"><span class="codenumber">5</span> <span class="title">Techniques of Integration (TI)</span></a><ul>
+<li><a href="TI1.html" data-scroll="TI1" class="internal">Substitution method (TI1)</a></li>
+<li><a href="TI2.html" data-scroll="TI2" class="internal">Integration by Parts (TI2)</a></li>
+<li><a href="TI3.html" data-scroll="TI3" class="internal">Integration of trigonometry (TI3)</a></li>
+<li><a href="TI4.html" data-scroll="TI4" class="internal">Trigonometric Substitution (TI4)</a></li>
+<li><a href="TI5.html" data-scroll="TI5" class="internal">Tables of Integrals (TI5)</a></li>
+<li><a href="TI6.html" data-scroll="TI6" class="internal">Partial fractions (TI6)</a></li>
+<li><a href="TI7.html" data-scroll="TI7" class="internal">Integration strategy (TI7)</a></li>
+<li><a href="TI8.html" data-scroll="TI8" class="internal">Improper integrals (TI8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AI.html" data-scroll="AI" class="internal"><span class="codenumber">6</span> <span class="title">Applications of Integration (AI)</span></a><ul>
+<li><a href="AI1.html" data-scroll="AI1" class="internal">Average Value (AI1)</a></li>
+<li><a href="AI2.html" data-scroll="AI2" class="internal">Arclength (AI2)</a></li>
+<li><a href="AI3.html" data-scroll="AI3" class="internal">Volumes of Revolution (AI3)</a></li>
+<li><a href="AI4.html" data-scroll="AI4" class="internal">Surface Areas of Revolution (AI4)</a></li>
+<li><a href="AI5.html" data-scroll="AI5" class="internal">Density, Mass, and Center of Mass (AI5)</a></li>
+<li><a href="AI6.html" data-scroll="AI6" class="internal">Physics Applications (AI6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="CO.html" data-scroll="CO" class="internal"><span class="codenumber">7</span> <span class="title">Coordinates and Vectors (CO)</span></a><ul>
+<li><a href="CO1.html" data-scroll="CO1" class="internal">Parametric/vector equations (CO1)</a></li>
+<li><a href="CO2.html" data-scroll="CO2" class="internal">Parametric/vector derivatives (CO2)</a></li>
+<li><a href="CO3.html" data-scroll="CO3" class="internal">Parametric/vector arclength (CO3)</a></li>
+<li><a href="CO4.html" data-scroll="CO4" class="internal">Polar coordinates (CO4)</a></li>
+<li><a href="CO5.html" data-scroll="CO5" class="internal">Polar Arclength (CO5)</a></li>
+<li><a href="CO6.html" data-scroll="CO6" class="internal">Polar area (CO6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="SQ.html" data-scroll="SQ" class="internal"><span class="codenumber">8</span> <span class="title">Sequences and Series (SQ)</span></a><ul>
+<li><a href="SQ1.html" data-scroll="SQ1" class="internal">Sequence Formulas (SQ1)</a></li>
+<li><a href="SQ2.html" data-scroll="SQ2" class="internal">Sequence Properties and Limits (SQ2)</a></li>
+<li><a href="SQ3.html" data-scroll="SQ3" class="internal">Partial Sum Sequence (SQ3)</a></li>
+<li><a href="SQ4.html" data-scroll="SQ4" class="internal">Geometric Series (SQ4)</a></li>
+<li><a href="SQ5.html" data-scroll="SQ5" class="internal">Basic Convergence Tests (SQ5)</a></li>
+<li><a href="SQ6.html" data-scroll="SQ6" class="internal">Comparison Tests (SQ6)</a></li>
+<li><a href="SQ7.html" data-scroll="SQ7" class="internal">Ratio and Root Tests (SQ7)</a></li>
+<li><a href="SQ8.html" data-scroll="SQ8" class="internal">Absolute Convergence (SQ8)</a></li>
+<li><a href="SQ9.html" data-scroll="SQ9" class="internal">Series Convergence Strategy (SQ9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="PS.html" data-scroll="PS" class="internal"><span class="codenumber">9</span> <span class="title">Power Series (PS)</span></a><ul>
+<li><a href="PS1.html" data-scroll="PS1" class="internal">Power Series (PS1)</a></li>
+<li><a href="PS2.html" data-scroll="PS2" class="internal">Convergence of Power Series (PS2)</a></li>
+<li><a href="PS3.html" data-scroll="PS3" class="internal">Manipulation of Power Series (PS3)</a></li>
+<li><a href="PS4.html" data-scroll="PS4" class="internal">Taylor Series (PS4)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="integral-table.html" data-scroll="integral-table" class="internal"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></li>
+<li class="link"><a href="trig-table.html" data-scroll="trig-table" class="internal"><span class="codenumber">B</span> <span class="title">List of Trigonometric Identities</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="LT5"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.5</span> <span class="title">Limits with infinite inputs (LT5)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-6"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="li-167"><p id="p-252">Determine limits of functions at infinity.</p></li></ul></article><article class="activity project-like" id="LT5-infinity-intuition1"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-20">
+<p id="p-253">Consider the graph of the polynomial function <span class="process-math">\(f(x) = x^3\)</span> . We want to think about what the long term behavior of this function might be. Which of the following best describes its behavior?</p>
+<figure class="figure figure-like" id="figure-12"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/LT5-infinity-intuition1-img.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">18<span class="period">.</span></span><span class="space"> </span>The graph of <span class="process-math">\(x^3\text{.}\)</span></figcaption></figure>
+</div>
+<ol class="upper-alpha">
+<li id="li-168"><p id="p-254">As <span class="process-math">\(x\)</span> gets larger, the function <span class="process-math">\(x^3\)</span> gets smaller and smaller.</p></li>
+<li id="li-169"><p id="p-255">As <span class="process-math">\(x\)</span> gets more and more negative, the function <span class="process-math">\(x^3\)</span> gets more and more negative.</p></li>
+<li id="li-170"><p id="p-256">As <span class="process-math">\(x\)</span> gets more and more positive, the function <span class="process-math">\(x^3\)</span> gets more and more negative.</p></li>
+<li id="li-171"><p id="p-257">As <span class="process-math">\(x\)</span> gets smaller, the function <span class="process-math">\(x^3\)</span> gets smaller and smaller.</p></li>
+</ol></article><article class="remark remark-like" id="remark-9"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.5.2</span><span class="period">.</span>
+</h3>
+<p id="p-258">We say that “the limit as <span class="process-math">\(x\)</span> tends to negative infinity of <span class="process-math">\(x^3\)</span> is negative infinity” and that “the limit as <span class="process-math">\(x\)</span> tends to positive infinity of <span class="process-math">\(x^3\)</span> is positive infinity.” In symbols, we write</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{x \to + \infty} x^3 = + \infty \, ,  \, \lim_{x \to - \infty} x^3 = - \infty. 
+\end{equation*}
+</div></article><article class="activity project-like" id="LT5-infinity-inutition2"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.3</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-21">
+<p id="p-259">Consider the graph of the rational function <span class="process-math">\(f(x) = 1/ x^3\)</span> . We want to think about what the long term behavior of this function might be. Which of the following best describes its behavior?</p>
+<figure class="figure figure-like" id="figure-13"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/LT5-infinity-intuition2-img.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">19<span class="period">.</span></span><span class="space"> </span>The graph of <span class="process-math">\(1/x^3\text{.}\)</span></figcaption></figure>
+</div>
+<ol class="upper-alpha">
+<li id="li-172"><p id="p-260">As <span class="process-math">\(x\)</span> tends to positive infinity, the function <span class="process-math">\(1/x^3\)</span> tends to positive infinity</p></li>
+<li id="li-173"><p id="p-261">As <span class="process-math">\(x\)</span> tends to negative infinity, the function <span class="process-math">\(1/x^3\)</span>  tends to 0</p></li>
+<li id="li-174"><p id="p-262">As <span class="process-math">\(x\)</span> tends to positive infinity, the function <span class="process-math">\(1/x^3\)</span>  tends to negative infinity</p></li>
+<li id="li-175"><p id="p-263">As <span class="process-math">\(x\)</span> tends to 0, the function <span class="process-math">\(1/x^3\)</span>  tends to 0</p></li>
+</ol></article><article class="definition definition-like" id="definition-5"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.5.4</span><span class="period">.</span>
+</h3>
+<p id="p-264">A function has a <dfn class="terminology">horizontal asymptote</dfn> at <span class="process-math">\(y=b\)</span> when</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{x\to +\infty} f(x) = b
+\end{equation*}
+</div>
+<p id="p-265">or</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\lim_{x\to -\infty} f(x) = b
+\end{equation*}
+</div>
+<p id="p-266">This means that we can make the output of <span class="process-math">\(f(x)\)</span> as close as we want to <span class="process-math">\(b\text{,}\)</span> as long as we take <span class="process-math">\(x\)</span> a large enough positive number (<span class="process-math">\(x \to \infty\)</span>) or a large enough negative number (<span class="process-math">\(x \to -\infty\)</span>).</p></article><article class="remark remark-like" id="remark-10"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.5.5</span><span class="period">.</span>
+</h3>
+<p id="p-267">We say that the function <span class="process-math">\(1/x^3\)</span> has horizontal asymptote y=0 because the limit as <span class="process-math">\(x\)</span> tends to positive infinity of <span class="process-math">\(1/x^3\)</span> is 0. Alternatively, we could also justify it by saying that the limit as <span class="process-math">\(x\)</span> goes to negative infinity is 0.</p></article><article class="activity project-like" id="asymptotes-hor"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.6</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-22">
+<p id="p-268">Which of the following functions have horizontal asymptotes? Select all! </p>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-14"><img src="generated/latex-image/image-14.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">20<span class="period">.</span></span><span class="space"> </span>A</figcaption></figure></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-15"><img src="generated/latex-image/image-15.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">21<span class="period">.</span></span><span class="space"> </span>B</figcaption></figure></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-16"><img src="generated/latex-image/image-16.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">22<span class="period">.</span></span><span class="space"> </span>C</figcaption></figure></div>
+</div></div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-17"><img src="generated/latex-image/image-17.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">23<span class="period">.</span></span><span class="space"> </span>D</figcaption></figure></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-18"><img src="generated/latex-image/image-18.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">24<span class="period">.</span></span><span class="space"> </span>E</figcaption></figure></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-19"><img src="generated/latex-image/image-19.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">25<span class="period">.</span></span><span class="space"> </span>F</figcaption></figure></div>
+</div></div>
+</div></article><article class="activity project-like" id="infinity-rational1"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.7</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-23"><p id="p-269">Recall that a rational function is a ratio of two polynomials. For any given rational function, what are all the possible behaviors as <span class="process-math">\(x\)</span> tends to + or - infinity?</p></div>
+<ol class="upper-alpha">
+<li id="li-176"><p id="p-270">The only possible limit is <span class="process-math">\(0\)</span></p></li>
+<li id="li-177"><p id="p-271">The only possible limits are <span class="process-math">\(0\)</span> or <span class="process-math">\(\pm \infty\)</span></p></li>
+<li id="li-178"><p id="p-272">The only possible limits are <span class="process-math">\(0\text{,}\)</span> <span class="process-math">\(1\)</span> or <span class="process-math">\(\pm \infty\)</span></p></li>
+<li id="li-179"><p id="p-273">The only possible limits are any constant number or <span class="process-math">\(\pm \infty\)</span></p></li>
+</ol></article><article class="activity project-like" id="infinity-rational2"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.8</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-24">In this activity we will examine functions whose limit as <span class="process-math">\(x\)</span> approaches positive and negative infinity is a nonzero constant.</div>
+<article class="task exercise-like" id="task-60"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-274">Graph the following functions and consider their limits as <span class="process-math">\(x\)</span> approaches positive and negative infinity. Which function(s) have a limit that is nonzero and constant? Find each of these limits.</p>
+<ol class="upper-alpha cols2">
+<li id="li-180"><p id="p-275"><span class="process-math">\(\displaystyle \displaystyle  f(x)= \frac{x^3-x+3}{2x^3-6x+1} \)</span></p></li>
+<li id="li-181"><p id="p-276"><span class="process-math">\(\displaystyle \displaystyle  f(x)= \frac{x^2-3}{5x^3-2x^2+5} \)</span></p></li>
+<li id="li-182"><p id="p-277"><span class="process-math">\(\displaystyle \displaystyle  f(x)= \frac{x^4-3x-2}{3x^3-5x+1} \)</span></p></li>
+<li id="li-183"><p id="p-278"><span class="process-math">\(\displaystyle \displaystyle  f(x)= \frac{10x^5-3x+2}{5x^5-3x^2+1} \)</span></p></li>
+<li id="li-184"><p id="p-279"><span class="process-math">\(\displaystyle \displaystyle  f(x)= \frac{-8x^2-5x+1}{2x^2-2x+3} \)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-61"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-280">Conjecture a rule for how to determine that a rational function has a nonzero constant limit as <span class="process-math">\(x\)</span> approaches positive and negative infinity. Test your rule by creating a rational function whose limit as <span class="process-math">\(x \to \infty\)</span> equals 3 and then check it graphically.</p></article></article><article class="activity project-like" id="infinity-rational3"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.9</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-25"><p id="p-281">What about when the limit is not a nonzero constant? How do we recognize those? In this activity you will first conjecture the general behavior of rational functions and then test your conjectures.</p></div>
+<article class="task exercise-like" id="task-62"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-282">Consider a rational function <span class="process-math">\(r(x) = \frac{p(x)}{q(x)}\text{.}\)</span> Looking at the numerator <span class="process-math">\(p(x)\)</span> and the denominator <span class="process-math">\(q(x)\text{,}\)</span> when does the function <span class="process-math">\(r(x) \)</span> have limit equal to 0 as <span class="process-math">\(x \to \infty? \)</span></p>
+<ol class="upper-alpha">
+<li id="li-185"><p id="p-283">When the ratio of the leading terms is a constant.</p></li>
+<li id="li-186"><p id="p-284">When the degree of the numerator is greater than the degree of the denominator.</p></li>
+<li id="li-187"><p id="p-285">When the degree of the numerator is less than the degree of the denominator.</p></li>
+<li id="li-188"><p id="p-286">When the degree of the numerator is equal to the degree of the denominator.</p></li>
+</ol></article><article class="task exercise-like" id="task-63"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-287">Consider a rational function <span class="process-math">\(r(x) = \frac{p(x)}{q(x)}\text{.}\)</span> Looking at the numerator <span class="process-math">\(p(x)\)</span> and the denominator <span class="process-math">\(q(x)\text{,}\)</span> when does the function <span class="process-math">\(r(x) \)</span> have limit approaching infinity as <span class="process-math">\(x \to \infty? \)</span></p>
+<ol class="upper-alpha">
+<li id="li-189"><p id="p-288">When the ratio of the leading terms is a constant.</p></li>
+<li id="li-190"><p id="p-289">When the degree of the numerator is greater than the degree of the denominator.</p></li>
+<li id="li-191"><p id="p-290">When the degree of the numerator is less than the degree of the denominator.</p></li>
+<li id="li-192"><p id="p-291">When the degree of the numerator is equal to the degree of the denominator.</p></li>
+</ol></article><article class="task exercise-like" id="task-64"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-292">Conjecture a rule for the each of the previous two parts of the activity. Test your rules by creating a rational function whose limit as <span class="process-math">\(x \to \infty\)</span> equals 0 and another whose limit as <span class="process-math">\(x \to \infty\)</span> is infinite. Then check them graphically.</p></article></article><article class="activity project-like" id="infinity-checkit"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.10</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-26"><p id="p-293">Explain how to find the value of each limit.</p></div>
+<article class="task exercise-like" id="task-65"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-294">
+\begin{equation*}
+\lim_{x\to-\infty } -\frac{6 \, {x^4} + 7 \, {x^3} - 7}{6 \, x - {x^4} + 9}
+\,\text{ and }\,
+\lim_{x\to+\infty } -\frac{6 \, {x^4} + 7 \, {x^3} - 7}{6 \, x - {x^4} + 9}
+\end{equation*}
+</div></article><article class="task exercise-like" id="task-66"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-295">
+\begin{equation*}
+\lim_{x\to-\infty } -\frac{7 \, {x^4} - 5 \, {x^3} + 8}{3 \, {\left(2 \, {x^5} + 3 \, {x^2} - 3\right)}}
+\,\text{ and }\,
+\lim_{x\to+\infty } -\frac{7 \, {x^4} - 5 \, {x^3} + 8}{3 \, {\left(2 \, {x^5} + 3 \, {x^2} - 3\right)}}
+\end{equation*}
+</div></article><article class="task exercise-like" id="task-67"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="displaymath process-math" data-contains-math-knowls="" id="p-296">
+\begin{equation*}
+\lim_{x\to-\infty } \frac{3 \, {x^6} + {x^3} - 8}{7 \, x - 6 \, {x^5} + 7}
+\,\text{ and }\,
+\lim_{x\to+\infty } \frac{3 \, {x^6} + {x^3} - 8}{7 \, x - 6 \, {x^5} + 7}
+\end{equation*}
+</div></article></article><article class="activity project-like" id="infinity-dne"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.11</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-27">
+<p id="p-297">What is your best guess for the limit as <span class="process-math">\(x\)</span> goes to <span class="process-math">\(+ \infty \)</span> of the function graphed below?</p>
+<figure class="figure figure-like" id="figure-20"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/image-20.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">26<span class="period">.</span></span><span class="space"> </span>A mysterious periodic function.</figcaption></figure>
+</div>
+<ol class="upper-alpha cols2">
+<li id="li-193"><p id="p-298">The limit is <span class="process-math">\(0\)</span></p></li>
+<li id="li-194"><p id="p-299">The limit is <span class="process-math">\(1\)</span></p></li>
+<li id="li-195"><p id="p-300">The limit is <span class="process-math">\(-1\)</span></p></li>
+<li id="li-196"><p id="p-301">The limit is <span class="process-math">\(+\infty\)</span></p></li>
+<li id="li-197"><p id="p-302">The limit DNE</p></li>
+</ol></article><article class="warning remark-like" id="warning-1"><h3 class="heading">
+<span class="type">Warning</span><span class="space"> </span><span class="codenumber">1.5.12</span><span class="period">.</span>
+</h3>For a periodic function, a function whose outputs repeat periodically, there is not one distinguished long term behavior, so the limit DNE. Notice that this is different from the limit being +infinity in which case the outputs have a clear behavior: they are getting larger and larger. Unfortunately, you will find in many cases that the notation DNE is used both for a limit equal to infinity and a limit that does not tend to one distinguished value. Beware!</article><article class="activity project-like" id="infinity-ext1"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.13</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-28"><p id="p-303">Compute the following limits.</p></div>
+<article class="task exercise-like" id="task-68"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-304"><span class="process-math">\(\displaystyle  \lim_{x\to -\infty} \frac{x^3-x+83}{1} \)</span></p></article><article class="task exercise-like" id="task-69"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-305"><span class="process-math">\(\displaystyle  \lim_{x\to -\infty} \frac{1}{x^3-x+83} \)</span></p></article><article class="task exercise-like" id="task-70"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-306"><span class="process-math">\(\displaystyle  \lim_{x\to +\infty} \frac{x+3}{2-x}\)</span></p></article><article class="task exercise-like" id="task-71"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-307"><span class="process-math">\(\displaystyle  \lim_{x\to -\infty} \frac{\pi-3x}{\pi x-3}\)</span></p></article><article class="task exercise-like" id="task-72"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-308">(Challenge) <span class="process-math">\(\displaystyle  \lim_{x\to + \infty} \frac{3e^x+2}{2e^x+3}\)</span></p></article><article class="task exercise-like" id="task-73"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<p id="p-309">(Challenge) <span class="process-math">\(\displaystyle  \lim_{x\to - \infty} \frac{3e^x+2}{2e^x+3}\)</span></p></article></article><article class="activity project-like" id="study-rational1"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.14</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-29">
+<p id="p-310">The graph below represents the function <span class="process-math">\(f(x) =  \displaystyle\frac{2(x+3)(x+1)}{x^2-2x-3}\text{.}\)</span></p>
+<figure class="figure figure-like" id="figure-21"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/image-21.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">27<span class="period">.</span></span><span class="space"> </span>The graph of <span class="process-math">\(f(x)\)</span></figcaption></figure>
+</div>
+<article class="task exercise-like" id="task-74"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-311">Find the horizontal asymptote of <span class="process-math">\(f(x) \text{.}\)</span> First, guess it from the graph. Then, prove that your guess is right using algebra.</p></article><article class="task exercise-like" id="task-75"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-312">Use limit notation to describe the behavior of  <span class="process-math">\(f(x)\)</span> at its horizontal asymptotes.</p></article><article class="task exercise-like" id="task-76"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-313">Come up with the formula of a rational function that has horizontal asymptote <span class="process-math">\(y=3 \text{.}\)</span></p></article><article class="task exercise-like" id="task-77"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-314">What do you think is happening at <span class="process-math">\(x=-1\text{?}\)</span> We will come back to this in the next section!</p></article></article><article class="note remark-like" id="note-2"><h3 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.5.15</span><span class="period">.</span>
+</h3>
+<p id="p-315">An exponential function <span class="process-math">\(P(t) = a \, b^t\)</span> exhibiting exponential decay will have the long term behavior <span class="process-math">\(P(t) \to 0\)</span> as <span class="process-math">\(t \to \infty\text{.}\)</span> If we shift the graph up by <span class="process-math">\(c\)</span> units, we obtain the new function <span class="process-math">\(Q(t) = a \, b^t + c\text{,}\)</span> with the long term behavior <span class="process-math">\(\lim_{t \to \infty} Q(t) = c\text{.}\)</span> A cooling object can be represented by the exponential decay model <span class="process-math">\(Q(t) = a \, b^t + c\text{.}\)</span></p></article><article class="activity project-like" id="app-cooling"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.16</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-30">
+<p id="p-316">In this activity you will explore an exponential model for a cooling object.</p>
+<p id="p-317">Consider a cup of coffee initially at 100 degrees Fahrenheit. The said cup of coffee was forgotten this morning on the kitchen counter where the thermostat is set at 72 degrees Fahrenheit. From previous observations, we can assume that a cup of coffee looses 10 percent of its temperature each minute.</p>
+</div>
+<article class="task exercise-like" id="task-78"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-318">In the long run, what temperature do you expect the coffee to tend to? Write your observation with limit notation.</p></article><article class="task exercise-like" id="task-79"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-319">In the model <span class="process-math">\(Q(t) = a \, b^t +c\text{,}\)</span> your previous answer gives you the value of one of the parameters in this model. Which one?</p></article><article class="task exercise-like" id="task-80"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-320">From the information given, we notice that the cup of coffee has decay rate of 10% or <span class="process-math">\(r = -0.1\text{.}\)</span> When an exponential model has decay rate <span class="process-math">\(r\text{,}\)</span> its exponential base <span class="process-math">\(b\)</span> has value <span class="process-math">\(b=1+r\text{.}\)</span> Use this to find the value of <span class="process-math">\(b\)</span> for the exponential model described in this scenario.</p></article><article class="task exercise-like" id="task-81"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-321">Assume that the initial temperature corresponds to input <span class="process-math">\(t=0\text{.}\)</span> Use the data about the initial temperature to find the value of the parameter <span class="process-math">\(a\)</span> in the model <span class="process-math">\(Q(t) = a \, b^t + c\text{.}\)</span></p></article><article class="task exercise-like" id="task-82"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-322">You should have found that this scenario has exponential model <span class="process-math">\(Q(t) = 28 \, (0.9)^t + 72\text{.}\)</span> If you go back to drink the cup of coffee 30 minutes after it was left on the counter, what temperature will the coffee have reached?</p></article></article></section></div></main>
+</div>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Calc Applied optimization (AD8)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
+<meta property="book:author" content="TBIL Institute Fellows">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\newcommand{\tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus for Team-Based Inquiry Learning:</span> <span class="subtitle">2022 Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="AD7.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="AD9.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="AD7.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="AD.html" title="Up">Up</a><a class="next-button button toolbar-item" href="AD9.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li>
+<li><a href="tbil-rl.html" data-scroll="tbil-rl" class="internal">TBIL Resource Library</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="LT.html" data-scroll="LT" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1" class="internal">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2" class="internal">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3" class="internal">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4" class="internal">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5" class="internal">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6" class="internal">Limits with infinite outputs (LT6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="DF.html" data-scroll="DF" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2" class="internal">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1" class="internal">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3" class="internal">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4" class="internal">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5" class="internal">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6" class="internal">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7" class="internal">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8" class="internal">Differentiating inverse functions (DF8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AD.html" data-scroll="AD" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1" class="internal">Tangents, motion, and marginals (AD1)</a></li>
+<li><a href="AD2.html" data-scroll="AD2" class="internal">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3" class="internal">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4" class="internal">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5" class="internal">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6" class="internal">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7" class="internal">Graphing with derivatives (AD7)</a></li>
+<li><a href="AD8.html" data-scroll="AD8" class="active">Applied optimization (AD8)</a></li>
+<li><a href="AD9.html" data-scroll="AD9" class="internal">Limits and Derivatives (AD9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="IN.html" data-scroll="IN" class="internal"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul>
+<li><a href="IN1.html" data-scroll="IN1" class="internal">Geometry of definite integrals (IN1)</a></li>
+<li><a href="IN2.html" data-scroll="IN2" class="internal">Approximating definite integrals (IN2)</a></li>
+<li><a href="IN3.html" data-scroll="IN3" class="internal">Elementary antiderivatives (IN3)</a></li>
+<li><a href="IN4.html" data-scroll="IN4" class="internal">Initial Value Problems (IN4)</a></li>
+<li><a href="IN5.html" data-scroll="IN5" class="internal">FTC for definite integrals (IN5)</a></li>
+<li><a href="IN6.html" data-scroll="IN6" class="internal">FTC for derivatives of integrals (IN6)</a></li>
+<li><a href="IN7.html" data-scroll="IN7" class="internal">Area under curves (IN7)</a></li>
+<li><a href="IN8.html" data-scroll="IN8" class="internal">Area between curves (IN8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="TI.html" data-scroll="TI" class="internal"><span class="codenumber">5</span> <span class="title">Techniques of Integration (TI)</span></a><ul>
+<li><a href="TI1.html" data-scroll="TI1" class="internal">Substitution method (TI1)</a></li>
+<li><a href="TI2.html" data-scroll="TI2" class="internal">Integration by Parts (TI2)</a></li>
+<li><a href="TI3.html" data-scroll="TI3" class="internal">Integration of trigonometry (TI3)</a></li>
+<li><a href="TI4.html" data-scroll="TI4" class="internal">Trigonometric Substitution (TI4)</a></li>
+<li><a href="TI5.html" data-scroll="TI5" class="internal">Tables of Integrals (TI5)</a></li>
+<li><a href="TI6.html" data-scroll="TI6" class="internal">Partial fractions (TI6)</a></li>
+<li><a href="TI7.html" data-scroll="TI7" class="internal">Integration strategy (TI7)</a></li>
+<li><a href="TI8.html" data-scroll="TI8" class="internal">Improper integrals (TI8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AI.html" data-scroll="AI" class="internal"><span class="codenumber">6</span> <span class="title">Applications of Integration (AI)</span></a><ul>
+<li><a href="AI1.html" data-scroll="AI1" class="internal">Average Value (AI1)</a></li>
+<li><a href="AI2.html" data-scroll="AI2" class="internal">Arclength (AI2)</a></li>
+<li><a href="AI3.html" data-scroll="AI3" class="internal">Volumes of Revolution (AI3)</a></li>
+<li><a href="AI4.html" data-scroll="AI4" class="internal">Surface Areas of Revolution (AI4)</a></li>
+<li><a href="AI5.html" data-scroll="AI5" class="internal">Density, Mass, and Center of Mass (AI5)</a></li>
+<li><a href="AI6.html" data-scroll="AI6" class="internal">Physics Applications (AI6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="CO.html" data-scroll="CO" class="internal"><span class="codenumber">7</span> <span class="title">Coordinates and Vectors (CO)</span></a><ul>
+<li><a href="CO1.html" data-scroll="CO1" class="internal">Parametric/vector equations (CO1)</a></li>
+<li><a href="CO2.html" data-scroll="CO2" class="internal">Parametric/vector derivatives (CO2)</a></li>
+<li><a href="CO3.html" data-scroll="CO3" class="internal">Parametric/vector arclength (CO3)</a></li>
+<li><a href="CO4.html" data-scroll="CO4" class="internal">Polar coordinates (CO4)</a></li>
+<li><a href="CO5.html" data-scroll="CO5" class="internal">Polar Arclength (CO5)</a></li>
+<li><a href="CO6.html" data-scroll="CO6" class="internal">Polar area (CO6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="SQ.html" data-scroll="SQ" class="internal"><span class="codenumber">8</span> <span class="title">Sequences and Series (SQ)</span></a><ul>
+<li><a href="SQ1.html" data-scroll="SQ1" class="internal">Sequence Formulas (SQ1)</a></li>
+<li><a href="SQ2.html" data-scroll="SQ2" class="internal">Sequence Properties and Limits (SQ2)</a></li>
+<li><a href="SQ3.html" data-scroll="SQ3" class="internal">Partial Sum Sequence (SQ3)</a></li>
+<li><a href="SQ4.html" data-scroll="SQ4" class="internal">Geometric Series (SQ4)</a></li>
+<li><a href="SQ5.html" data-scroll="SQ5" class="internal">Basic Convergence Tests (SQ5)</a></li>
+<li><a href="SQ6.html" data-scroll="SQ6" class="internal">Comparison Tests (SQ6)</a></li>
+<li><a href="SQ7.html" data-scroll="SQ7" class="internal">Ratio and Root Tests (SQ7)</a></li>
+<li><a href="SQ8.html" data-scroll="SQ8" class="internal">Absolute Convergence (SQ8)</a></li>
+<li><a href="SQ9.html" data-scroll="SQ9" class="internal">Series Convergence Strategy (SQ9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="PS.html" data-scroll="PS" class="internal"><span class="codenumber">9</span> <span class="title">Power Series (PS)</span></a><ul>
+<li><a href="PS1.html" data-scroll="PS1" class="internal">Power Series (PS1)</a></li>
+<li><a href="PS2.html" data-scroll="PS2" class="internal">Convergence of Power Series (PS2)</a></li>
+<li><a href="PS3.html" data-scroll="PS3" class="internal">Manipulation of Power Series (PS3)</a></li>
+<li><a href="PS4.html" data-scroll="PS4" class="internal">Taylor Series (PS4)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="integral-table.html" data-scroll="integral-table" class="internal"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></li>
+<li class="link"><a href="trig-table.html" data-scroll="trig-table" class="internal"><span class="codenumber">B</span> <span class="title">List of Trigonometric Identities</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="AD8"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.8</span> <span class="title">Applied optimization (AD8)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-25"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="li-804"><p id="p-1282">Apply optimization techniques to solve various problems.</p></li></ul></article><article class="activity project-like" id="activity-ad8-box"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.8.1</span><span class="period">.</span><span class="space"> </span><span class="title">The box.</span>
+</h3>
+<div class="introduction" id="introduction-135">
+<p id="p-1283">Help your company design an open box (no lid) with maximum volume given the following constraints:</p>
+<ul class="disc">
+<li id="li-805"><p id="p-derived-li-805">The box must be made from the following material: an 8 by 8 inches piece of cardboard.</p></li>
+<li id="li-806"><p id="p-derived-li-806">To create the box, you are asked to cut out a square from each corner of the 8 by 8 inches piece of cardboard and to fold up the flaps to create the sides.</p></li>
+</ul>
+</div>
+<article class="task exercise-like" id="task-407"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1284">Draw a diagram illustrating how the box is created.</p></article><article class="task exercise-like" id="task-408"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1285">Explain why the volume of the box is a function of the side length <span class="process-math">\(x\)</span> of the cutout squares.</p></article><article class="task exercise-like" id="task-409"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1286">Express the volume of the box <span class="process-math">\(V\)</span> as a function of the length of the cuts <span class="process-math">\(x\text{.}\)</span></p></article><article class="task exercise-like" id="task-410"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1287">What is a realistic domain of the function <span class="process-math">\(V(x)\text{?}\)</span></p></article><article class="task exercise-like" id="task-411"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-1288">What cut length <span class="process-math">\(x\)</span> maximizes the volume of the box?</p></article></article><article class="remark remark-like" id="guide-optimization"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.8.2</span><span class="period">.</span><span class="space"> </span><span class="title">A guide for optimization problems.</span>
+</h3>
+<ol id="p-1289" class="decimal">
+<li id="li-807"><p id="p-derived-li-807">Draw a diagram and introduce variables.</p></li>
+<li id="li-808"><p id="p-derived-li-808">Determine a function of a single variable that models the quantity to be optimized.</p></li>
+<li id="li-809"><p id="p-derived-li-809">Decide the domain on which to consider the function being optimized.</p></li>
+<li id="li-810"><p id="p-derived-li-810">Use calculus to identify the global maximum and/or minimum of the quantity being optimized.</p></li>
+<li id="li-811"><p id="p-derived-li-811">Conclusion: what are the optimal points and what optimal values do we obtain at these points?</p></li>
+</ol></article><article class="activity project-like" id="activity-ad8-1"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.8.3</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-136"><p id="p-1290">According to U.S. postal regulations, the girth plus the length of a parcel sent by mail may not exceed 108 inches, where the “girth” is the perimeter of the smallest end. What is the largest possible volume of a rectangular parcel with a square end that can be sent by mail? What are the dimensions of the package of largest volume?</p></div>
+<article class="task exercise-like" id="task-412"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1291">Let <span class="process-math">\(x\)</span> represent the length of one side of the square end and <span class="process-math">\(y\)</span> the length of the longer side. Label these quantities appropriately on the image shown in <a href="" class="xref" data-knowl="./knowl/F-3-4-PA1.html" title="Figure 56">Figure 56</a>.</p>
+<figure class="figure figure-like" id="RHW"><div class="image-box" style="width: 47%; margin-left: 26.5%; margin-right: 26.5%;"><img src="external/3_4_PA1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">56<span class="period">.</span></span><span class="space"> </span>A rectangular parcel with a square end.</figcaption></figure></article><article class="task exercise-like" id="task-413"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1292">What is the quantity to be optimized in this problem? </p>
+<ol class="upper-alpha">
+<li id="li-812"><p id="p-1293">maximize volume (call this <span class="process-math">\(V\)</span>)</p></li>
+<li id="li-813"><p id="p-1294">maximize the girth plus length (call this <span class="process-math">\(P\)</span>)</p></li>
+<li id="li-814"><p id="p-1295">minimize volume (call this <span class="process-math">\(V\)</span>)</p></li>
+<li id="li-815"><p id="p-1296">minimize the girth plus length (call this <span class="process-math">\(P\)</span>)</p></li>
+</ol></article><article class="task exercise-like" id="task-414"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1297">Which formula below represents the quantity you want to optimize in terms of <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-816"><p id="p-1298"><span class="process-math">\(\displaystyle V=x^2y\)</span></p></li>
+<li id="li-817"><p id="p-1299"><span class="process-math">\(\displaystyle V=xy^2\)</span></p></li>
+<li id="li-818"><p id="p-1300"><span class="process-math">\(\displaystyle P=2x+y\)</span></p></li>
+<li id="li-819"><p id="p-1301"><span class="process-math">\(\displaystyle P=4x+y\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-415"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1302">The problem statement tells us that the parcel's girth plus length (<span class="process-math">\(P\)</span>) may not exceed 108 inches. In order to maximize volume, we assume that we will actually need the girth plus length <span class="process-math">\(P\)</span> to equal 108 inches. What equation does this constraint give us involving <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-820"><p id="p-1303"><span class="process-math">\(\displaystyle 108=4x+y\)</span></p></li>
+<li id="li-821"><p id="p-1304"><span class="process-math">\(\displaystyle 108 = 2x +y\)</span></p></li>
+<li id="li-822"><p id="p-1305"><span class="process-math">\(\displaystyle 108 = x^2 +y\)</span></p></li>
+<li id="li-823"><p id="p-1306"><span class="process-math">\(\displaystyle 108 = xy^2\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-416"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-1307">The equation above gives the relationship between  <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span> For ease of notation, solve this equation for <span class="process-math">\(y\)</span> as a function on <span class="process-math">\(x\)</span> and then find a formula for the volume of the parcel as a function of the single variable <span class="process-math">\(x\text{.}\)</span> What is the formula for <span class="process-math">\(V(x)\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-824"><p id="p-1308"><span class="process-math">\(\displaystyle V(x) = x^2 (108-4x)\)</span></p></li>
+<li id="li-825"><p id="p-1309"><span class="process-math">\(\displaystyle V(x) = x(108-4x)^2\)</span></p></li>
+<li id="li-826"><p id="p-1310"><span class="process-math">\(\displaystyle V(x) =x ^2 (108-2x)\)</span></p></li>
+<li id="li-827"><p id="p-1311"><span class="process-math">\(\displaystyle V(x) =x (108-2x)^2\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-417"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<p id="p-1312">Over what domain should we consider this function? To answer this question, notice that the problem gives us the constraint that <span class="process-math">\(P\)</span> (girth plus length) is 108 inches. This constraint produces intervals of possible values for <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-828"><p id="p-1313"><span class="process-math">\(\displaystyle 0 \leq x \leq 108 \)</span></p></li>
+<li id="li-829"><p id="p-1314"><span class="process-math">\(\displaystyle 0 \leq y \leq 108 \)</span></p></li>
+<li id="li-830"><p id="p-1315"><span class="process-math">\(\displaystyle 0 \leq x \leq 27 \)</span></p></li>
+<li id="li-831"><p id="p-1316"><span class="process-math">\(\displaystyle 0 \leq y \leq 27 \)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-418"><h4 class="heading"><span class="codenumber">(g)</span></h4>
+<p id="p-1317">Use <em class="emphasis">calculus</em> to find the global maximum of the volume of the parcel on the domain you just determined. Justify that you have found the global maximum using either the Closed Interval Method, the First Derivative Test, or the Second Derivative Test!</p></article></article><article class="remark remark-like" id="AD8-remark2"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.8.4</span><span class="period">.</span>
+</h3>
+<p id="p-1318">Notice that a critical point might or might not be an global maximum or minimum, so just finding the critical points is not enough to answer an optimization problem. Moreover, some of the critical points might be outside of the domain imposed by the context and thus they cannot be feasible optimal points.</p></article><article class="activity project-like" id="activity-ad8-2"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.8.5</span><span class="period">.</span><span class="space"> </span><span class="title">Revenue = Number of tickets <span class="process-math">\(\times\)</span> Price of ticket.</span>
+</h3>
+<div class="introduction" id="introduction-137"><p id="p-1319">Waterford movie theater currently charges $8 for a ticket. At this price, the theater sells 200 tickets daily. The general manager wonders if they can generate more revenue by increasing the price of a tickets. A survey shows that they will lose 20 customers for every dollar increase in the ticket price.</p></div>
+<article class="task exercise-like" id="task-419"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1320">If the price of a movie ticket is increased by <span class="process-math">\(d\)</span> dollars, write a formula for the price <span class="process-math">\(P\)</span> in terms of <span class="process-math">\(d\text{.}\)</span></p></article><article class="task exercise-like" id="task-420"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1321">If the price of a ticket is increased by one dollar, how many many customers will the theater lose?</p></article><article class="task exercise-like" id="task-421"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1322">Write a formula for the number of tickets sold <span class="process-math">\(T\)</span> as a function of a price increase of <span class="process-math">\(d\)</span> dollars.</p></article><article class="task exercise-like" id="task-422"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-1323">Consider the new price of a ticket <span class="process-math">\(P(d)\)</span> and the new number of tickets sold <span class="process-math">\(T(d)\text{.}\)</span> Write a formula for the revenue earned by ticket sales <span class="process-math">\(R(d)\)</span> as a function of a price increase of <span class="process-math">\(d\)</span> dollars.</p></article><article class="task exercise-like" id="task-423"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-1324">What is a realistic domain for the function <span class="process-math">\(R(d)\text{?}\)</span></p></article><article class="task exercise-like" id="task-424"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<p id="p-1325">What increase in price <span class="process-math">\(d\)</span> should the general manager choose to maximize the revenue? What price would a movie ticket cost then and what would the revenue be at that price?</p></article><article class="task exercise-like" id="task-425"><h4 class="heading"><span class="codenumber">(g)</span></h4>
+<p id="p-1326">Suppose now that the cost of running the business when the price is increased by <span class="process-math">\(d\)</span> dollars is given by <span class="process-math">\(C(d) = 10d^3 −40d^2 +40d+600\text{.}\)</span> If the manager decides that they will definitely increase the price, what price increase <span class="process-math">\(d\)</span> maximizes the profit? (Recall that Profit = Revenue - Cost).</p></article></article><article class="activity project-like" id="activity-ad8-4"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.8.6</span><span class="period">.</span><span class="space"> </span><span class="title">Modeling given a geometric shape.</span>
+</h3>
+<div class="introduction" id="introduction-138"><p id="p-1327">The city council is planning to construct a new sports ground in the shape of a rectangle with semicircular ends. A running track 400 meters long is to go around the perimeter.</p></div>
+<article class="task exercise-like" id="task-426"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1328">What choice of dimensions will make the rectangular area in the center as large as possible?</p></article><article class="task exercise-like" id="task-427"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1329">What should the dimensions so the total area enclosed by the running track is maximized?</p></article></article><article class="activity project-like" id="activity-ad8-5"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.8.7</span><span class="period">.</span><span class="space"> </span><span class="title">Modeling in algebraic situations.</span>
+</h3>
+<article class="task exercise-like" id="task-428"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1330">Find the coordinates of the point on the curve <span class="process-math">\(y=\sqrt{x}\)</span> closest to the point <span class="process-math">\((1,0)\text{.}\)</span></p></article><article class="task exercise-like" id="task-429"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1331">The sum of two positive numbers is 48. What is the smallest possible value of the sum of their squares?</p></article></article><article class="activity project-like" id="optimization-fluency-checkit"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">3.8.8</span><span class="period">.</span>
+</h3>
+<p id="p-1332">Suppose that if a widget is priced at <span class="process-math">\(\$176\text{,}\)</span> then you are able to sell <span class="process-math">\(672\)</span> units each day. According to a survey of customers, increasing this price by <span class="process-math">\(\$1\)</span> will result in losing <span class="process-math">\(4\)</span> daily sales; decreasing by <span class="process-math">\(\$1\)</span> will gain <span class="process-math">\(4\)</span> daily sales. Your manager asks you how to adjust the price of a widget to maximize the revenue (widgets sold times price). Write an explanation of what this change in price should be and why.</p></article></section></div></main>
+</div>
+</body>
+</html>
