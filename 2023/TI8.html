@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Calc Improper integrals (TI8)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
+<meta property="book:author" content="TBIL Institute Fellows">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\newcommand{\tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus for Team-Based Inquiry Learning:</span> <span class="subtitle">2023 Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="TI7.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="TI.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="AI.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="TI7.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="TI.html" title="Up">Up</a><a class="next-button button toolbar-item" href="AI.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li>
+<li><a href="tbil-rl.html" data-scroll="tbil-rl" class="internal">TBIL Resource Library</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="LT.html" data-scroll="LT" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1" class="internal">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2" class="internal">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3" class="internal">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4" class="internal">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5" class="internal">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6" class="internal">Limits with infinite outputs (LT6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="DF.html" data-scroll="DF" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2" class="internal">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1" class="internal">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3" class="internal">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4" class="internal">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5" class="internal">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6" class="internal">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7" class="internal">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8" class="internal">Differentiating inverse functions (DF8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AD.html" data-scroll="AD" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1" class="internal">Tangents, motion, and marginals (AD1)</a></li>
+<li><a href="AD2.html" data-scroll="AD2" class="internal">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3" class="internal">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4" class="internal">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5" class="internal">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6" class="internal">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7" class="internal">Graphing with derivatives (AD7)</a></li>
+<li><a href="AD8.html" data-scroll="AD8" class="internal">Applied optimization (AD8)</a></li>
+<li><a href="AD9.html" data-scroll="AD9" class="internal">Limits and Derivatives (AD9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="IN.html" data-scroll="IN" class="internal"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul>
+<li><a href="IN1.html" data-scroll="IN1" class="internal">Geometry of definite integrals (IN1)</a></li>
+<li><a href="IN2.html" data-scroll="IN2" class="internal">Approximating definite integrals (IN2)</a></li>
+<li><a href="IN3.html" data-scroll="IN3" class="internal">Elementary antiderivatives (IN3)</a></li>
+<li><a href="IN4.html" data-scroll="IN4" class="internal">Initial Value Problems (IN4)</a></li>
+<li><a href="IN5.html" data-scroll="IN5" class="internal">FTC for definite integrals (IN5)</a></li>
+<li><a href="IN6.html" data-scroll="IN6" class="internal">FTC for derivatives of integrals (IN6)</a></li>
+<li><a href="IN7.html" data-scroll="IN7" class="internal">Area under curves (IN7)</a></li>
+<li><a href="IN8.html" data-scroll="IN8" class="internal">Area between curves (IN8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="TI.html" data-scroll="TI" class="internal"><span class="codenumber">5</span> <span class="title">Techniques of Integration (TI)</span></a><ul>
+<li><a href="TI1.html" data-scroll="TI1" class="internal">Substitution method (TI1)</a></li>
+<li><a href="TI2.html" data-scroll="TI2" class="internal">Integration by Parts (TI2)</a></li>
+<li><a href="TI3.html" data-scroll="TI3" class="internal">Integration of trigonometry (TI3)</a></li>
+<li><a href="TI4.html" data-scroll="TI4" class="internal">Trigonometric Substitution (TI4)</a></li>
+<li><a href="TI5.html" data-scroll="TI5" class="internal">Tables of Integrals (TI5)</a></li>
+<li><a href="TI6.html" data-scroll="TI6" class="internal">Partial fractions (TI6)</a></li>
+<li><a href="TI7.html" data-scroll="TI7" class="internal">Integration strategy (TI7)</a></li>
+<li><a href="TI8.html" data-scroll="TI8" class="active">Improper integrals (TI8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AI.html" data-scroll="AI" class="internal"><span class="codenumber">6</span> <span class="title">Applications of Integration (AI)</span></a><ul>
+<li><a href="AI1.html" data-scroll="AI1" class="internal">Average Value (AI1)</a></li>
+<li><a href="AI2.html" data-scroll="AI2" class="internal">Arclength (AI2)</a></li>
+<li><a href="AI3.html" data-scroll="AI3" class="internal">Volumes of Revolution (AI3)</a></li>
+<li><a href="AI4.html" data-scroll="AI4" class="internal">Surface Areas of Revolution (AI4)</a></li>
+<li><a href="AI5.html" data-scroll="AI5" class="internal">Density, Mass, and Center of Mass (AI5)</a></li>
+<li><a href="AI6.html" data-scroll="AI6" class="internal">Physics Applications (AI6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="CO.html" data-scroll="CO" class="internal"><span class="codenumber">7</span> <span class="title">Coordinates and Vectors (CO)</span></a><ul>
+<li><a href="CO1.html" data-scroll="CO1" class="internal">Parametric/vector equations (CO1)</a></li>
+<li><a href="CO2.html" data-scroll="CO2" class="internal">Parametric/vector derivatives (CO2)</a></li>
+<li><a href="CO3.html" data-scroll="CO3" class="internal">Parametric/vector arclength (CO3)</a></li>
+<li><a href="CO4.html" data-scroll="CO4" class="internal">Polar coordinates (CO4)</a></li>
+<li><a href="CO5.html" data-scroll="CO5" class="internal">Polar Arclength (CO5)</a></li>
+<li><a href="CO6.html" data-scroll="CO6" class="internal">Polar area (CO6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="SQ.html" data-scroll="SQ" class="internal"><span class="codenumber">8</span> <span class="title">Sequences and Series (SQ)</span></a><ul>
+<li><a href="SQ1.html" data-scroll="SQ1" class="internal">Sequence Formulas (SQ1)</a></li>
+<li><a href="SQ2.html" data-scroll="SQ2" class="internal">Sequence Properties and Limits (SQ2)</a></li>
+<li><a href="SQ3.html" data-scroll="SQ3" class="internal">Partial Sum Sequence (SQ3)</a></li>
+<li><a href="SQ4.html" data-scroll="SQ4" class="internal">Geometric Series (SQ4)</a></li>
+<li><a href="SQ5.html" data-scroll="SQ5" class="internal">Basic Convergence Tests (SQ5)</a></li>
+<li><a href="SQ6.html" data-scroll="SQ6" class="internal">Comparison Tests (SQ6)</a></li>
+<li><a href="SQ7.html" data-scroll="SQ7" class="internal">Ratio and Root Tests (SQ7)</a></li>
+<li><a href="SQ8.html" data-scroll="SQ8" class="internal">Absolute Convergence (SQ8)</a></li>
+<li><a href="SQ9.html" data-scroll="SQ9" class="internal">Series Convergence Strategy (SQ9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="PS.html" data-scroll="PS" class="internal"><span class="codenumber">9</span> <span class="title">Power Series (PS)</span></a><ul>
+<li><a href="PS1.html" data-scroll="PS1" class="internal">Power Series (PS1)</a></li>
+<li><a href="PS2.html" data-scroll="PS2" class="internal">Convergence of Power Series (PS2)</a></li>
+<li><a href="PS3.html" data-scroll="PS3" class="internal">Manipulation of Power Series (PS3)</a></li>
+<li><a href="PS4.html" data-scroll="PS4" class="internal">Taylor Series (PS4)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="integral-table.html" data-scroll="integral-table" class="internal"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></li>
+<li class="link"><a href="trig-table.html" data-scroll="trig-table" class="internal"><span class="codenumber">B</span> <span class="title">List of Trigonometric Identities</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="TI8"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5.8</span> <span class="title">Improper integrals (TI8)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-44"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="li-1264"><p id="p-1970">I can compute improper integrals.</p></li></ul></article><article class="activity project-like" id="activity-T8Exploration1"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.1</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-191"><p id="p-1971">Consider <span class="process-math">\(\displaystyle f(x)=\frac{1}{x^2}\text{.}\)</span> Compute the following definite integrals.</p></div>
+<article class="task exercise-like" id="task-560"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1972"><span class="process-math">\(\displaystyle \int_{0.1}^1 \frac{1}{x^2} dx\)</span></p></article><article class="task exercise-like" id="task-561"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1973"><span class="process-math">\(\displaystyle \int_{0.01}^1 \frac{1}{x^2} dx\)</span></p></article><article class="task exercise-like" id="task-562"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1974"><span class="process-math">\(\displaystyle \int_{0.001}^1 \frac{1}{x^2} dx\)</span></p></article></article><article class="activity project-like" id="activity-358"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.2</span><span class="period">.</span>
+</h3>
+<article class="task exercise-like" id="task-563"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1975">What do you notice about <span class="process-math">\(\displaystyle \int_{a}^1 \frac{1}{x^2} dx\)</span> as <span class="process-math">\(a\)</span> approached 0 in <a href="" class="xref" data-knowl="./knowl/activity-T8Exploration1.html" title="Activity 5.8.1">Activity 5.8.1</a>?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1265"><p id="p-1976"><span class="process-math">\(\displaystyle \int_{a}^1 \frac{1}{x^2} dx\)</span> approaches a finite, non-zero constant.</p></li>
+<li id="li-1266"><p id="p-1977"><span class="process-math">\(\displaystyle \int_{a}^1 \frac{1}{x^2} dx\)</span> approaches <span class="process-math">\(0\text{.}\)</span></p></li>
+<li id="li-1267"><p id="p-1978"><span class="process-math">\(\displaystyle \int_{a}^1 \frac{1}{x^2} dx\)</span> approaches <span class="process-math">\(\infty\text{.}\)</span></p></li>
+<li id="li-1268"><p id="p-1979"><span class="process-math">\(\displaystyle \int_{a}^1 \frac{1}{x^2} dx\)</span> approaches <span class="process-math">\(-\infty\text{.}\)</span></p></li>
+<li id="li-1269"><p id="p-1980">There is not enough information.</p></li>
+</ol></article><article class="task exercise-like" id="task-564"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1981">Why can't <span class="process-math">\(a=0\text{?}\)</span></p></article></article><article class="activity project-like" id="activity-T8Exploration2"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.3</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-192"><p id="p-1982">We still are considering <span class="process-math">\(f(x)=\frac{1}{x^2}\text{.}\)</span> Compute the following definite integrals.</p></div>
+<article class="task exercise-like" id="task-565"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1983"><span class="process-math">\(\displaystyle \int_{1}^{10} \frac{1}{x^2} dx\)</span></p></article><article class="task exercise-like" id="task-566"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1984"><span class="process-math">\(\displaystyle \int_{1}^{100} \frac{1}{x^2} dx\)</span></p></article><article class="task exercise-like" id="task-567"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1985"><span class="process-math">\(\displaystyle \int_{1}^{1000} \frac{1}{x^2} dx\)</span></p></article></article><article class="activity project-like" id="activity-360"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.4</span><span class="period">.</span>
+</h3>
+<p id="p-1986">What do you notice about <span class="process-math">\(\displaystyle \int_{1}^a \frac{1}{x^2} dx\)</span> as <span class="process-math">\(a\)</span> approached <span class="process-math">\(\infty\)</span> in <a href="" class="xref" data-knowl="./knowl/activity-T8Exploration2.html" title="Activity 5.8.3">Activity 5.8.3</a>?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1270"><p id="p-1987"><span class="process-math">\(\displaystyle \int_{1}^a \frac{1}{x^2} dx\)</span> approaches a finite, non-zero constant.</p></li>
+<li id="li-1271"><p id="p-1988"><span class="process-math">\(\displaystyle \int_{1}^a \frac{1}{x^2} dx\)</span> approaches <span class="process-math">\(0\text{.}\)</span></p></li>
+<li id="li-1272"><p id="p-1989"><span class="process-math">\(\displaystyle \int_{1}^a \frac{1}{x^2} dx\)</span> approaches <span class="process-math">\(\infty\text{.}\)</span></p></li>
+<li id="li-1273"><p id="p-1990"><span class="process-math">\(\displaystyle \int_{1}^a \frac{1}{x^2} dx\)</span> approaches <span class="process-math">\(-\infty\text{.}\)</span></p></li>
+<li id="li-1274"><p id="p-1991">There is not enough information.</p></li>
+</ol></article><article class="activity project-like" id="activity-T8Exploration3"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.5</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-193"><p id="p-1992">Compute the following definite integrals.</p></div>
+<article class="task exercise-like" id="task-568"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1993"><span class="process-math">\(\displaystyle \int_{0.1}^1 \frac{1}{\sqrt{x}} dx\)</span></p></article><article class="task exercise-like" id="task-569"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-1994"><span class="process-math">\(\displaystyle \int_{0.01}^1 \frac{1}{\sqrt{x}} dx\)</span></p></article><article class="task exercise-like" id="task-570"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-1995"><span class="process-math">\(\displaystyle \int_{0.001}^1 \frac{1}{\sqrt{x}} dx\)</span></p></article></article><article class="activity project-like" id="activity-362"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.6</span><span class="period">.</span>
+</h3>
+<article class="task exercise-like" id="task-571"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-1996">What do you notice about the integral <span class="process-math">\(\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx\)</span> as <span class="process-math">\(a\)</span> approached 0 in <a href="" class="xref" data-knowl="./knowl/activity-T8Exploration3.html" title="Activity 5.8.5">Activity 5.8.5</a>?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1275"><p id="p-1997"><span class="process-math">\(\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx\)</span> approaches a finite, non-zero constant.</p></li>
+<li id="li-1276"><p id="p-1998"><span class="process-math">\(\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx\)</span> approaches <span class="process-math">\(0\text{.}\)</span></p></li>
+<li id="li-1277"><p id="p-1999"><span class="process-math">\(\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx\)</span> approaches <span class="process-math">\(\infty\text{.}\)</span></p></li>
+<li id="li-1278"><p id="p-2000"><span class="process-math">\(\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx\)</span> approaches <span class="process-math">\(-\infty\text{.}\)</span></p></li>
+<li id="li-1279"><p id="p-2001">There is not enough information.</p></li>
+</ol></article><article class="task exercise-like" id="task-572"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2002">How does this compare to what you found in <a href="" class="xref" data-knowl="./knowl/activity-T8Exploration1.html" title="Activity 5.8.1">Activity 5.8.1</a>?</p></article></article><article class="activity project-like" id="activity-T8Exploration4"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.7</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-194"><p id="p-2003">Compute the following definite integrals.</p></div>
+<article class="task exercise-like" id="task-573"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2004"><span class="process-math">\(\displaystyle \int_{1}^{10} \frac{1}{\sqrt{x}} dx\)</span></p></article><article class="task exercise-like" id="task-574"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2005"><span class="process-math">\(\displaystyle \int_{1}^{100} \frac{1}{\sqrt{x}} dx\)</span></p></article><article class="task exercise-like" id="task-575"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2006"><span class="process-math">\(\displaystyle \int_{1}^{1000} \frac{1}{\sqrt{x}} dx\)</span></p></article></article><article class="activity project-like" id="activity-364"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.8</span><span class="period">.</span>
+</h3>
+<article class="task exercise-like" id="task-576"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2007">What do you notice the integral <span class="process-math">\(\displaystyle \int_{1}^a \frac{1}{\sqrt{x}} dx\)</span> as <span class="process-math">\(a\)</span> approached <span class="process-math">\(\infty\)</span> in <a href="" class="xref" data-knowl="./knowl/activity-T8Exploration4.html" title="Activity 5.8.7">Activity 5.8.7</a>?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1280"><p id="p-2008"><span class="process-math">\(\displaystyle \int_{1}^a \frac{1}{\sqrt{x}} dx\)</span> approaches a finite, non-zero constant.</p></li>
+<li id="li-1281"><p id="p-2009"><span class="process-math">\(\displaystyle \int_{1}^a \frac{1}{\sqrt{x}} dx\)</span> approaches <span class="process-math">\(0\text{.}\)</span></p></li>
+<li id="li-1282"><p id="p-2010"><span class="process-math">\(\displaystyle \int_{1}^a \frac{1}{\sqrt{x}} dx\)</span> approaches <span class="process-math">\(\infty\text{.}\)</span></p></li>
+<li id="li-1283"><p id="p-2011"><span class="process-math">\(\displaystyle \int_{1}^a \frac{1}{\sqrt{x}} dx\)</span> approaches <span class="process-math">\(-\infty\text{.}\)</span></p></li>
+<li id="li-1284"><p id="p-2012">There is not enough information.</p></li>
+</ol></article><article class="task exercise-like" id="task-577"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2013">How does this compare to what you found in <a href="" class="xref" data-knowl="./knowl/activity-T8Exploration2.html" title="Activity 5.8.3">Activity 5.8.3</a>?</p></article></article><article class="definition definition-like" id="definition-TI8infinityint"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.8.9</span><span class="period">.</span>
+</h3>
+<p id="p-2014">For a function <span class="process-math">\(f(x)\)</span> and a constant <span class="process-math">\(c\text{,}\)</span> we let <span class="process-math">\(\displaystyle \int_c^\infty f(x) dx\)</span> denote</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int_c^\infty f(x) dx=\lim_{a\to\infty}\left( \int_c^a f(x) dx\right)\text{.}
+\end{equation*}
+</div>
+<p class="continuation">If this limit is a defined real number, then we say <span class="process-math">\(\displaystyle \int_c^\infty f(x) dx\)</span> is <em class="emphasis">convergent</em>. Otherwise, it is <em class="emphasis">divergent</em>.</p>
+<p id="p-2015">Similarly,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int_{-\infty}^c f(x) dx=\lim_{a\to-\infty}\left( \int_a^c f(x) dx\right).
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-T8Fabound"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.10</span><span class="period">.</span>
+</h3>
+<p id="p-2016">Which of the following is <span class="process-math">\(\displaystyle \int_1^a \frac{1}{x^2} dx\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1285"><p id="p-derived-li-1285"><span class="process-math">\(\displaystyle -\frac{1}{x}+C\)</span></p></li>
+<li id="li-1286"><p id="p-derived-li-1286"><span class="process-math">\(\displaystyle -\frac{1}{a}+C\)</span></p></li>
+<li id="li-1287"><p id="p-derived-li-1287"><span class="process-math">\(\displaystyle -\frac{1}{x}+1\)</span></p></li>
+<li id="li-1288"><p id="p-derived-li-1288"><span class="process-math">\(\displaystyle -\frac{1}{a}\)</span></p></li>
+<li id="li-1289"><p id="p-derived-li-1289"><span class="process-math">\(\displaystyle -\frac{1}{a}+1\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-T8Fevaluatexcube"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.11</span><span class="period">.</span>
+</h3>
+<p id="p-2017">Using your choice in <a href="" class="xref" data-knowl="./knowl/activity-T8Fabound.html" title="Activity 5.8.10">Activity 5.8.10</a>, what is <span class="process-math">\(\lim_{a\to \infty} \int_1^a \frac{1}{x^2} dx\text{?}\)</span></p>
+<ol class="upper-alpha cols3">
+<li id="li-1290"><p id="p-derived-li-1290"><span class="process-math">\(\displaystyle 0\)</span></p></li>
+<li id="li-1291"><p id="p-derived-li-1291"><span class="process-math">\(\displaystyle 1\)</span></p></li>
+<li id="li-1292"><p id="p-derived-li-1292"><span class="process-math">\(\displaystyle 2\)</span></p></li>
+<li id="li-1293"><p id="p-derived-li-1293"><span class="process-math">\(\displaystyle \infty\)</span></p></li>
+<li id="li-1294"><p id="p-derived-li-1294"><span class="process-math">\(\displaystyle -\infty\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-T8Fcos"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.12</span><span class="period">.</span>
+</h3>
+<article class="task exercise-like" id="task-578"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2018">Find <span class="process-math">\(\displaystyle \int_{\pi/2}^a \cos(x)dx\text{.}\)</span></p></article><article class="task exercise-like" id="task-579"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2019">Which of the following is true about <span class="process-math">\(\int_{\pi/2}^\infty \cos(x)dx\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1295"><p id="p-2020"><span class="process-math">\(\displaystyle \int_{\pi/2}^\infty \cos(x)dx\)</span> is convergent.</p></li>
+<li id="li-1296"><p id="p-2021"><span class="process-math">\(\displaystyle \int_{\pi/2}^\infty \cos(x)dx\)</span> is divergent.</p></li>
+<li id="li-1297"><p id="p-2022">More information is needed.</p></li>
+</ol></article></article><article class="definition definition-like" id="definition-TI8assympint"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.8.13</span><span class="period">.</span>
+</h3>
+<p id="p-2023">For a function <span class="process-math">\(f(x)\)</span> with a vertical asymptote at <span class="process-math">\(x=b\)</span> and a constant <span class="process-math">\(c\text{,}\)</span> we let <span class="process-math">\(\displaystyle \int_c^b f(x) dx\)</span> denote</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int_c^b f(x) dx=\lim_{a\to b^{-}}\left( \int_c^a f(x) dx\right)\text{.}
+\end{equation*}
+</div>
+<p id="p-2024">Similarly,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int_{b}^c f(x) dx=\lim_{a\to b^{+}}\left( \int_a^c f(x) dx\right)\text{.}
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-TI8oneoverrootx"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.14</span><span class="period">.</span>
+</h3>
+<article class="task exercise-like" id="task-580"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2025">Find <span class="process-math">\(\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx\text{.}\)</span></p></article><article class="task exercise-like" id="task-581"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2026">Using the above result and an appropriate limit, find <span class="process-math">\(\displaystyle \int_{0}^1 \frac{1}{\sqrt{x}} dx\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-TI8xsquare"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.15</span><span class="period">.</span>
+</h3>
+<article class="task exercise-like" id="task-582"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2027">Find <span class="process-math">\(\displaystyle \int_{a}^1 \frac{1}{x^2} dx\text{.}\)</span></p></article><article class="task exercise-like" id="task-583"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2028">Using the above result and an appropriate limit, find <span class="process-math">\(\displaystyle \int_{0}^1 \frac{1}{x^2} dx\text{.}\)</span></p></article></article><article class="fact theorem-like" id="fact-5"><h3 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">5.8.16</span><span class="period">.</span>
+</h3>
+<p id="p-2029">Suppose that <span class="process-math">\(0&lt; p\)</span> and <span class="process-math">\(p\neq 1\text{.}\)</span> Applying the integration power rule gives us the indefinite integral <span class="process-math">\(\displaystyle \int \frac{1}{x^p} dx=\frac{1}{(1-p)}x^{1-p}+C\text{.}\)</span></p></article><article class="activity project-like" id="activity-TI8prule1"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.17</span><span class="period">.</span>
+</h3>
+<article class="task exercise-like" id="task-584"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2030">If <span class="process-math">\(0&lt; p&lt; 1\text{,}\)</span> which of the following statements must be true? Select all that apply.</p>
+<ol class="upper-alpha cols2">
+<li id="li-1298"><p id="p-2031"><span class="process-math">\(\displaystyle 1-p&lt; 0\)</span></p></li>
+<li id="li-1299"><p id="p-2032"><span class="process-math">\(\displaystyle 1-p&gt; 0\)</span></p></li>
+<li id="li-1300"><p id="p-2033"><span class="process-math">\(\displaystyle 1-p&lt; 1\)</span></p></li>
+<li id="li-1301"><p id="p-2034"><span class="process-math">\(\displaystyle \int_1^\infty \frac{1}{x^p} dx\)</span> converges.</p></li>
+<li id="li-1302"><p id="p-2035"><span class="process-math">\(\displaystyle \int_1^\infty \frac{1}{x^p} dx\)</span> diverges.</p></li>
+</ol></article><article class="task exercise-like" id="task-585"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2036">If <span class="process-math">\(p&gt;1\text{,}\)</span> which of the following statements must be true? Select all that apply.</p>
+<ol class="upper-alpha cols2">
+<li id="li-1303"><p id="p-2037"><span class="process-math">\(\displaystyle 1-p&lt; 0\)</span></p></li>
+<li id="li-1304"><p id="p-2038"><span class="process-math">\(\displaystyle 1-p&gt; 0\)</span></p></li>
+<li id="li-1305"><p id="p-2039"><span class="process-math">\(\displaystyle 1-p&lt; 1\)</span></p></li>
+<li id="li-1306"><p id="p-2040"><span class="process-math">\(\displaystyle \int_1^\infty \frac{1}{x^p} dx\)</span> converges.</p></li>
+<li id="li-1307"><p id="p-2041"><span class="process-math">\(\displaystyle \int_1^\infty \frac{1}{x^p} dx\)</span> diverges.</p></li>
+</ol></article></article><article class="activity project-like" id="activity-TI8prule2"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.18</span><span class="period">.</span>
+</h3>
+<article class="task exercise-like" id="task-586"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2042">If <span class="process-math">\(0&lt; p&lt; 1\text{,}\)</span> which of the following statements must be true?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1308"><p id="p-2043"><span class="process-math">\(\displaystyle \int_0^1 \frac{1}{x^p} dx\)</span> converges.</p></li>
+<li id="li-1309"><p id="p-2044"><span class="process-math">\(\displaystyle \int_0^1 \frac{1}{x^p} dx\)</span> diverges.</p></li>
+</ol></article><article class="task exercise-like" id="task-587"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2045">If <span class="process-math">\(p&gt;1\text{,}\)</span> which of the following statements must be true?</p>
+<ol class="upper-alpha cols2">
+<li id="li-1310"><p id="p-2046"><span class="process-math">\(\displaystyle \int_0^1 \frac{1}{x^p} dx\)</span> converges.</p></li>
+<li id="li-1311"><p id="p-2047"><span class="process-math">\(\displaystyle \int_0^1 \frac{1}{x^p} dx\)</span> diverges.</p></li>
+</ol></article></article><article class="activity project-like" id="activity-TI8prule3"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.19</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-195"><p id="p-2048">Consider when <span class="process-math">\(p=1\text{.}\)</span> Then <span class="process-math">\(\frac{1}{x^p}=\frac{1}{x}\)</span> and <span class="process-math">\(\displaystyle \int \frac{1}{x^p}\ dx=\displaystyle \int \frac{1}{x}\ dx=\ln|x|+C\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-588"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2049">What can we conclude about <span class="process-math">\(\displaystyle \int_1^\infty \frac{1}{x} dx\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1312"><p id="p-2050"><span class="process-math">\(\displaystyle \int_1^\infty \frac{1}{x} dx\)</span> converges.</p></li>
+<li id="li-1313"><p id="p-2051"><span class="process-math">\(\displaystyle \int_1^\infty \frac{1}{x} dx\)</span> diverges.</p></li>
+<li id="li-1314"><p id="p-2052">There is not enough information to determine whether this integral converges or diverges.</p></li>
+</ol></article><article class="task exercise-like" id="task-589"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2053">What can we conclude about <span class="process-math">\(\displaystyle \int_0^1 \frac{1}{x} dx\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1315"><p id="p-2054"><span class="process-math">\(\displaystyle \int_0^1 \frac{1}{x} dx\)</span> converges.</p></li>
+<li id="li-1316"><p id="p-2055"><span class="process-math">\(\displaystyle \int_0^1 \frac{1}{x} dx\)</span> diverges.</p></li>
+<li id="li-1317"><p id="p-2056">There is not enough information to determine whether this integral converges or diverges.</p></li>
+</ol></article></article><article class="fact theorem-like" id="fact-TI8prule"><h3 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">5.8.20</span><span class="period">.</span>
+</h3>
+<p id="p-2057">Let <span class="process-math">\(c, p&gt;0\text{.}\)</span></p>
+<ul class="disc"><li id="li-1318"><p id="p-derived-li-1318"><span class="process-math">\(\displaystyle \int_0^c \frac{1}{x^p} dx\)</span> is defined if and only if <span class="process-math">\(p&lt; 1\text{.}\)</span></p></li></ul>
+<ul class="disc"><li id="li-1319"><p id="p-derived-li-1319"><span class="process-math">\(\displaystyle \int_c^\infty \frac{1}{x^p} dx\)</span> is defined if and only if <span class="process-math">\(p&gt; 1\text{.}\)</span></p></li></ul></article><article class="activity project-like" id="activity-TI8finfinitybounded"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.21</span><span class="period">.</span>
+</h3>
+<p id="p-2058">Consider the plots of <span class="process-math">\(f(x), g(x), h(x) \)</span> where <span class="process-math">\(0 &lt; g(x) &lt; f(x) &lt; h(x)\text{.}\)</span></p>
+<figure class="figure figure-like" id="figure-71"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/finfinity.svg" role="img" class="contained" alt="Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">82<span class="period">.</span></span><span class="space"> </span>Plots of <span class="process-math">\(f(x), g(x), h(x)\)</span></figcaption></figure><p id="p-2059">If <span class="process-math">\(\displaystyle \int_1^\infty f(x) dx\)</span> is convergent, what can we say about <span class="process-math">\(g(x), h(x)\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-1320"><p id="p-derived-li-1320"><span class="process-math">\(\displaystyle \int_1^\infty g(x) dx\)</span> and <span class="process-math">\(\displaystyle \int_1^\infty h(x) dx\)</span> are both convergent.</p></li>
+<li id="li-1321"><p id="p-derived-li-1321"><span class="process-math">\(\displaystyle \int_1^\infty g(x) dx\)</span> and <span class="process-math">\(\displaystyle \int_1^\infty h(x) dx\)</span> are both divergent.</p></li>
+<li id="li-1322"><p id="p-derived-li-1322">Whether or not <span class="process-math">\(\displaystyle \int_1^\infty g(x) dx\)</span> and <span class="process-math">\(\displaystyle \int_1^\infty h(x) dx\)</span> are convergent or divergent cannot be determined.</p></li>
+<li id="li-1323"><p id="p-derived-li-1323"><span class="process-math">\(\displaystyle \int_1^\infty g(x) dx\)</span> is convergent and  <span class="process-math">\(\displaystyle \int_1^\infty h(x) dx\)</span> is divergent.</p></li>
+<li id="li-1324"><p id="p-derived-li-1324"><span class="process-math">\(\displaystyle \int_1^\infty g(x) dx\)</span> is convergent and <span class="process-math">\(\displaystyle \int_1^\infty h(x) dx\)</span> could be either convergent or divergent.</p></li>
+</ol></article><article class="activity project-like" id="activity-TI8finfinityunbounded"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.22</span><span class="period">.</span>
+</h3>
+<p id="p-2060">Consider the plots of <span class="process-math">\(f(x), g(x), h(x) \)</span> where <span class="process-math">\(0 &lt; g(x) &lt; f(x) &lt; h(x)\text{.}\)</span> <figure class="figure figure-like" id="figure-72"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/finfinity2.svg" role="img" class="contained" alt="Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">83<span class="period">.</span></span><span class="space"> </span>Plots of <span class="process-math">\(f(x), g(x), h(x)\)</span></figcaption></figure> If <span class="process-math">\(\displaystyle \int_1^\infty f(x) dx\)</span> is divergent, what can we say about <span class="process-math">\(g(x), h(x)\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-1325"><p id="p-derived-li-1325"><span class="process-math">\(\displaystyle \int_1^\infty g(x) dx\)</span> and <span class="process-math">\(\displaystyle \int_1^\infty h(x) dx\)</span> are both convergent.</p></li>
+<li id="li-1326"><p id="p-derived-li-1326"><span class="process-math">\(\displaystyle \int_1^\infty g(x) dx\)</span> and <span class="process-math">\(\displaystyle \int_1^\infty h(x) dx\)</span> are both divergent.</p></li>
+<li id="li-1327"><p id="p-derived-li-1327">Whether or not <span class="process-math">\(\displaystyle \int_1^\infty g(x) dx\)</span> and <span class="process-math">\(\displaystyle \int_1^\infty h(x) dx\)</span> are convergent or divergent cannot be determined.</p></li>
+<li id="li-1328"><p id="p-derived-li-1328"><span class="process-math">\(\displaystyle \int_1^\infty g(x) dx\)</span> could be either convergent or dicergent and  <span class="process-math">\(\displaystyle \int_1^\infty h(x) dx\)</span> is divergent.</p></li>
+<li id="li-1329"><p id="p-derived-li-1329"><span class="process-math">\(\displaystyle \int_1^\infty g(x) dx\)</span> is convergent and  <span class="process-math">\(\displaystyle \int_1^\infty h(x) dx\)</span> is divergent.</p></li>
+</ol></article><article class="activity project-like" id="activity-TI8zerobounded"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.23</span><span class="period">.</span>
+</h3>
+<p id="p-2061">Consider the plots of <span class="process-math">\(f(x), g(x), h(x) \)</span> where <span class="process-math">\(0 &lt; g(x) &lt; f(x) &lt; h(x)\text{.}\)</span> <figure class="figure figure-like" id="figure-73"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/fzero.svg" role="img" class="contained" alt="Plots of positive functions f(x), g(x) and h(x)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">84<span class="period">.</span></span><span class="space"> </span>Plots of <span class="process-math">\(f(x), g(x), h(x)\)</span></figcaption></figure> If <span class="process-math">\(\displaystyle \int_0^1 f(x) dx\)</span> is convergent, what can we say about <span class="process-math">\(g(x)\)</span> and <span class="process-math">\(h(x)\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-1330"><p id="p-derived-li-1330"><span class="process-math">\(\displaystyle \int_0^1 g(x) dx\)</span> and <span class="process-math">\(\displaystyle \int_0^1 h(x) dx\)</span> are both convergent.</p></li>
+<li id="li-1331"><p id="p-derived-li-1331"><span class="process-math">\(\displaystyle \int_0^1 g(x) dx\)</span> and <span class="process-math">\(\displaystyle \int_0^1 h(x) dx\)</span> are both divergent.</p></li>
+<li id="li-1332"><p id="p-derived-li-1332">Whether or not <span class="process-math">\(\displaystyle \int_0^1 g(x) dx\)</span>  and <span class="process-math">\(\displaystyle \int_0^1 h(x) dx\)</span> are  convergent or divergent cannot be determined.</p></li>
+<li id="li-1333"><p id="p-derived-li-1333"><span class="process-math">\(\displaystyle \int_0^1 g(x) dx\)</span> is convergent and  <span class="process-math">\(\displaystyle \int_0^1 h(x) dx\)</span> is divergent.</p></li>
+<li id="li-1334"><p id="p-derived-li-1334"><span class="process-math">\(\displaystyle \int_0^1 g(x) dx\)</span> is convergent and <span class="process-math">\(\displaystyle \int_0^1 h(x) dx\)</span> can either be convergent or divergent.</p></li>
+</ol></article><article class="activity project-like" id="activity-TI8zerounbounded"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.24</span><span class="period">.</span>
+</h3>
+<p id="p-2062">Consider the plots of <span class="process-math">\(f(x), g(x), h(x) \)</span> where <span class="process-math">\(0 &lt; g(x) &lt; f(x) &lt; h(x)\text{.}\)</span> <figure class="figure figure-like" id="figure-74"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/fzero2.svg" role="img" class="contained" alt="Plots of positive functions f(x), g(x) and h(x)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">85<span class="period">.</span></span><span class="space"> </span>Plots of <span class="process-math">\(f(x), g(x), h(x)\)</span></figcaption></figure> If <span class="process-math">\(\displaystyle \int_0^1 f(x) dx\)</span> is dinvergent, what can we say about <span class="process-math">\(g(x)\)</span> and <span class="process-math">\(h(x)\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-1335"><p id="p-derived-li-1335"><span class="process-math">\(\displaystyle \int_0^1 g(x) dx\)</span> and <span class="process-math">\(\displaystyle \int_0^1 h(x) dx\)</span> are both convergent.</p></li>
+<li id="li-1336"><p id="p-derived-li-1336"><span class="process-math">\(\displaystyle \int_0^1 g(x) dx\)</span> and <span class="process-math">\(\displaystyle \int_0^1 h(x) dx\)</span> are both divergent.</p></li>
+<li id="li-1337"><p id="p-derived-li-1337">Whether or not <span class="process-math">\(\displaystyle \int_0^1 g(x) dx\)</span>  and <span class="process-math">\(\displaystyle \int_0^1 h(x) dx\)</span> are  convergent or divergent cannot be determined.</p></li>
+<li id="li-1338"><p id="p-derived-li-1338"><span class="process-math">\(\displaystyle \int_0^1 g(x) dx\)</span> can be either convergent or divergent and <span class="process-math">\(\displaystyle \int_0^1 h(x) dx\)</span> is divergent.</p></li>
+<li id="li-1339"><p id="p-derived-li-1339"><span class="process-math">\(\displaystyle \int_0^1 g(x) dx\)</span> is convergent and  <span class="process-math">\(\displaystyle \int_0^1 h(x) dx\)</span> is divergent.</p></li>
+</ol></article><article class="fact theorem-like" id="fact-TI8Comparison"><h3 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">5.8.25</span><span class="period">.</span>
+</h3>
+<p id="p-2063">Let <span class="process-math">\(f(x), g(x), h(x)\)</span> be functions such that over a region <span class="process-math">\(I\text{,}\)</span> <span class="process-math">\(g(x) &lt; f(x) &lt; h(x)\text{.}\)</span>  Then for the integrals <span class="process-math">\(\displaystyle \int_I f(x) dx, \int_I g(x) dx, \int_I h(x) dx\text{:}\)</span></p>
+<ul class="disc">
+<li id="li-1340"><p id="p-derived-li-1340">If <span class="process-math">\(f(x)\)</span> converges, so does <span class="process-math">\(g(x)\text{.}\)</span>  We need more information to conclude anything about <span class="process-math">\(h(x)\text{.}\)</span></p></li>
+<li id="li-1341"><p id="p-derived-li-1341">If <span class="process-math">\(f(x)\)</span> diverges, so does <span class="process-math">\(h(x)\text{.}\)</span>  We need more information to conclude anything about <span class="process-math">\(g(x)\text{.}\)</span></p></li>
+</ul></article><article class="activity project-like" id="activity-TI8comparison"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.26</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-196">
+<p id="p-2064">Compare <span class="process-math">\(\frac{1}{x^3+1}\)</span> to one of the following functions where <span class="process-math">\(x&gt;2\)</span> and use this to determine if <span class="process-math">\(\displaystyle \int_2^\infty \frac{1}{x^3+1}dx\)</span> is convergent or divergent.</p>
+<ol class="upper-alpha cols2">
+<li id="li-1342"><p id="p-derived-li-1342"><span class="process-math">\(\displaystyle \displaystyle\frac{1}{x}\)</span></p></li>
+<li id="li-1343"><p id="p-derived-li-1343"><span class="process-math">\(\displaystyle \displaystyle\frac{1}{\sqrt{x}}\)</span></p></li>
+<li id="li-1344"><p id="p-derived-li-1344"><span class="process-math">\(\displaystyle \displaystyle\frac{1}{x^2}\)</span></p></li>
+<li id="li-1345"><p id="p-derived-li-1345"><span class="process-math">\(\displaystyle \displaystyle\frac{1}{x^3}\)</span></p></li>
+</ol>
+</div></article><section class="subsection" id="subsection-8"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.8.1</span> <span class="title">Videos</span>
+</h3>
+<figure class="figure figure-like" id="figure-75"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-TI81" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/BPKawAzqoas?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">86<span class="period">.</span></span><span class="space"> </span>Video: I can compute improper integrals, <span class="process-math">\(p&gt;1\)</span></figcaption></figure><figure class="figure figure-like" id="figure-76"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-TI82" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/kYIv3E9Jio4?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">87<span class="period">.</span></span><span class="space"> </span>Video: I can compute improper integrals, <span class="process-math">\(p &lt; 1\)</span></figcaption></figure></section></section></div></main>
+</div>
+</body>
+</html>

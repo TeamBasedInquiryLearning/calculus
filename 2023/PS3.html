@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Calc Manipulation of Power Series (PS3)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
+<meta property="book:author" content="TBIL Institute Fellows">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      $(document).trigger("runestone:mathjax-ready");
+      }
+    )}
+},
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\newcommand{\tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus for Team-Based Inquiry Learning:</span> <span class="subtitle">2023 Edition</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="PS2.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="PS.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="PS4.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="PS2.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="PS.html" title="Up">Up</a><a class="next-button button toolbar-item" href="PS4.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li>
+<li><a href="tbil-rl.html" data-scroll="tbil-rl" class="internal">TBIL Resource Library</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="LT.html" data-scroll="LT" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1" class="internal">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2" class="internal">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3" class="internal">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4" class="internal">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5" class="internal">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6" class="internal">Limits with infinite outputs (LT6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="DF.html" data-scroll="DF" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2" class="internal">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1" class="internal">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3" class="internal">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4" class="internal">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5" class="internal">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6" class="internal">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7" class="internal">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8" class="internal">Differentiating inverse functions (DF8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AD.html" data-scroll="AD" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1" class="internal">Tangents, motion, and marginals (AD1)</a></li>
+<li><a href="AD2.html" data-scroll="AD2" class="internal">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3" class="internal">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4" class="internal">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5" class="internal">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6" class="internal">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7" class="internal">Graphing with derivatives (AD7)</a></li>
+<li><a href="AD8.html" data-scroll="AD8" class="internal">Applied optimization (AD8)</a></li>
+<li><a href="AD9.html" data-scroll="AD9" class="internal">Limits and Derivatives (AD9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="IN.html" data-scroll="IN" class="internal"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul>
+<li><a href="IN1.html" data-scroll="IN1" class="internal">Geometry of definite integrals (IN1)</a></li>
+<li><a href="IN2.html" data-scroll="IN2" class="internal">Approximating definite integrals (IN2)</a></li>
+<li><a href="IN3.html" data-scroll="IN3" class="internal">Elementary antiderivatives (IN3)</a></li>
+<li><a href="IN4.html" data-scroll="IN4" class="internal">Initial Value Problems (IN4)</a></li>
+<li><a href="IN5.html" data-scroll="IN5" class="internal">FTC for definite integrals (IN5)</a></li>
+<li><a href="IN6.html" data-scroll="IN6" class="internal">FTC for derivatives of integrals (IN6)</a></li>
+<li><a href="IN7.html" data-scroll="IN7" class="internal">Area under curves (IN7)</a></li>
+<li><a href="IN8.html" data-scroll="IN8" class="internal">Area between curves (IN8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="TI.html" data-scroll="TI" class="internal"><span class="codenumber">5</span> <span class="title">Techniques of Integration (TI)</span></a><ul>
+<li><a href="TI1.html" data-scroll="TI1" class="internal">Substitution method (TI1)</a></li>
+<li><a href="TI2.html" data-scroll="TI2" class="internal">Integration by Parts (TI2)</a></li>
+<li><a href="TI3.html" data-scroll="TI3" class="internal">Integration of trigonometry (TI3)</a></li>
+<li><a href="TI4.html" data-scroll="TI4" class="internal">Trigonometric Substitution (TI4)</a></li>
+<li><a href="TI5.html" data-scroll="TI5" class="internal">Tables of Integrals (TI5)</a></li>
+<li><a href="TI6.html" data-scroll="TI6" class="internal">Partial fractions (TI6)</a></li>
+<li><a href="TI7.html" data-scroll="TI7" class="internal">Integration strategy (TI7)</a></li>
+<li><a href="TI8.html" data-scroll="TI8" class="internal">Improper integrals (TI8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AI.html" data-scroll="AI" class="internal"><span class="codenumber">6</span> <span class="title">Applications of Integration (AI)</span></a><ul>
+<li><a href="AI1.html" data-scroll="AI1" class="internal">Average Value (AI1)</a></li>
+<li><a href="AI2.html" data-scroll="AI2" class="internal">Arclength (AI2)</a></li>
+<li><a href="AI3.html" data-scroll="AI3" class="internal">Volumes of Revolution (AI3)</a></li>
+<li><a href="AI4.html" data-scroll="AI4" class="internal">Surface Areas of Revolution (AI4)</a></li>
+<li><a href="AI5.html" data-scroll="AI5" class="internal">Density, Mass, and Center of Mass (AI5)</a></li>
+<li><a href="AI6.html" data-scroll="AI6" class="internal">Physics Applications (AI6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="CO.html" data-scroll="CO" class="internal"><span class="codenumber">7</span> <span class="title">Coordinates and Vectors (CO)</span></a><ul>
+<li><a href="CO1.html" data-scroll="CO1" class="internal">Parametric/vector equations (CO1)</a></li>
+<li><a href="CO2.html" data-scroll="CO2" class="internal">Parametric/vector derivatives (CO2)</a></li>
+<li><a href="CO3.html" data-scroll="CO3" class="internal">Parametric/vector arclength (CO3)</a></li>
+<li><a href="CO4.html" data-scroll="CO4" class="internal">Polar coordinates (CO4)</a></li>
+<li><a href="CO5.html" data-scroll="CO5" class="internal">Polar Arclength (CO5)</a></li>
+<li><a href="CO6.html" data-scroll="CO6" class="internal">Polar area (CO6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="SQ.html" data-scroll="SQ" class="internal"><span class="codenumber">8</span> <span class="title">Sequences and Series (SQ)</span></a><ul>
+<li><a href="SQ1.html" data-scroll="SQ1" class="internal">Sequence Formulas (SQ1)</a></li>
+<li><a href="SQ2.html" data-scroll="SQ2" class="internal">Sequence Properties and Limits (SQ2)</a></li>
+<li><a href="SQ3.html" data-scroll="SQ3" class="internal">Partial Sum Sequence (SQ3)</a></li>
+<li><a href="SQ4.html" data-scroll="SQ4" class="internal">Geometric Series (SQ4)</a></li>
+<li><a href="SQ5.html" data-scroll="SQ5" class="internal">Basic Convergence Tests (SQ5)</a></li>
+<li><a href="SQ6.html" data-scroll="SQ6" class="internal">Comparison Tests (SQ6)</a></li>
+<li><a href="SQ7.html" data-scroll="SQ7" class="internal">Ratio and Root Tests (SQ7)</a></li>
+<li><a href="SQ8.html" data-scroll="SQ8" class="internal">Absolute Convergence (SQ8)</a></li>
+<li><a href="SQ9.html" data-scroll="SQ9" class="internal">Series Convergence Strategy (SQ9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="PS.html" data-scroll="PS" class="internal"><span class="codenumber">9</span> <span class="title">Power Series (PS)</span></a><ul>
+<li><a href="PS1.html" data-scroll="PS1" class="internal">Power Series (PS1)</a></li>
+<li><a href="PS2.html" data-scroll="PS2" class="internal">Convergence of Power Series (PS2)</a></li>
+<li><a href="PS3.html" data-scroll="PS3" class="active">Manipulation of Power Series (PS3)</a></li>
+<li><a href="PS4.html" data-scroll="PS4" class="internal">Taylor Series (PS4)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="integral-table.html" data-scroll="integral-table" class="internal"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></li>
+<li class="link"><a href="trig-table.html" data-scroll="trig-table" class="internal"><span class="codenumber">B</span> <span class="title">List of Trigonometric Identities</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="PS3"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">9.3</span> <span class="title">Manipulation of Power Series (PS3)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-72"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="li-2293"><p id="p-3058">Compute power series by manipulating known exponential/trigonometric/binomial power series.</p></li></ul></article><article class="activity project-like" id="activity-PS3seriesexp2x"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.3.1</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-323"><p id="p-3059">Suppose we wish to find the power series for the function <span class="process-math">\(f(x)=e^{2x}\text{.}\)</span>  Recall that <span class="process-math">\(\exp(x)=e^x=\displaystyle\sum_{n=0}^\infty \frac{x^n}{n!}.\)</span></p></div>
+<article class="task exercise-like" id="task-968"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-3060">Which of the following represents the power series for <span class="process-math">\(\exp(a)=e^a\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-2294"><p id="p-derived-li-2294"><span class="process-math">\(\exp(a)=\displaystyle\sum_{n=0}^\infty a\frac{x^n}{n!}\text{.}\)</span></p></li>
+<li id="li-2295"><p id="p-derived-li-2295"><span class="process-math">\(\exp(a)=\displaystyle\sum_{n=0}^\infty \frac{a^n}{n!}\text{.}\)</span></p></li>
+<li id="li-2296"><p id="p-derived-li-2296"><span class="process-math">\(\exp(a)=\displaystyle\sum_{n=0}^\infty \frac{x^n}{a!}\text{.}\)</span></p></li>
+<li id="li-2297"><p id="p-derived-li-2297"><span class="process-math">\(\exp(a)=\displaystyle\sum_{a=0}^\infty \frac{x^n}{n!}\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-969"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-3061">What is the interval of convergence for <span class="process-math">\(a\)</span> in the series you found in part (a)?</p>
+<ol class="upper-alpha cols2">
+<li id="li-2298"><p id="p-derived-li-2298"><span class="process-math">\(\left(0,1\right)\text{.}\)</span></p></li>
+<li id="li-2299"><p id="p-derived-li-2299"><span class="process-math">\(\left(-1,1\right)\text{.}\)</span></p></li>
+<li id="li-2300"><p id="p-derived-li-2300"><span class="process-math">\(\left[-1,1\right]\text{.}\)</span></p></li>
+<li id="li-2301"><p id="p-derived-li-2301"><span class="process-math">\(\left[0,1\right]\text{.}\)</span></p></li>
+<li id="li-2302"><p id="p-derived-li-2302"><span class="process-math">\(\left(-\infty,\infty\right)\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-970"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-3062">Evaluating <span class="process-math">\(a=2x\text{,}\)</span> what is the power series for <span class="process-math">\(\exp(a)=\exp(2x)=f(x)\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-2303"><p id="p-derived-li-2303"><span class="process-math">\(\exp(2x)=\displaystyle\sum_{n=0}^\infty \frac{2x^n}{n!}\text{.}\)</span></p></li>
+<li id="li-2304"><p id="p-derived-li-2304"><span class="process-math">\(\exp(2x)=\displaystyle\sum_{2x=0}^\infty \frac{x^n}{n!}\text{.}\)</span></p></li>
+<li id="li-2305"><p id="p-derived-li-2305"><span class="process-math">\(\exp(2x)=\displaystyle\sum_{n=0}^\infty 2x\frac{x^n}{n!}\text{.}\)</span></p></li>
+<li id="li-2306"><p id="p-derived-li-2306"><span class="process-math">\(\exp(2x)=\displaystyle\sum_{n=0}^\infty \frac{(2x)^n}{n!}\text{.}\)</span></p></li>
+<li id="li-2307"><p id="p-derived-li-2307"><span class="process-math">\(\exp(2x)=\displaystyle\sum_{n=0}^\infty \frac{x^n}{(2x)!}\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-971"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-3063">What is the interval of convergence for <span class="process-math">\(x\)</span> in the series you found in part (c)?</p>
+<ol class="upper-alpha cols2">
+<li id="li-2308"><p id="p-derived-li-2308"><span class="process-math">\(\left(-\infty,\infty\right)\text{.}\)</span></p></li>
+<li id="li-2309"><p id="p-derived-li-2309"><span class="process-math">\(\displaystyle \left(-\frac{1}{2},\frac{1}{2}\right)\text{.}\)</span></p></li>
+<li id="li-2310"><p id="p-derived-li-2310"><span class="process-math">\(\displaystyle \left(0,\frac{1}{2}\right)\text{.}\)</span></p></li>
+<li id="li-2311"><p id="p-derived-li-2311"><span class="process-math">\(\displaystyle \left[0,\frac{1}{2}\right]\text{.}\)</span></p></li>
+<li id="li-2312"><p id="p-derived-li-2312"><span class="process-math">\(\displaystyle \left(-\frac{1}{2},\frac{1}{2}\right]\text{.}\)</span></p></li>
+</ol></article></article><article class="activity project-like" id="activity-PS3series1overx"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.3.2</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-324"><p id="p-3064">Suppose we wish to find the power series for the function <span class="process-math">\(f(x)=\frac{1}{x}\text{.}\)</span>  Recall that <span class="process-math">\(g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.\)</span></p></div>
+<article class="task exercise-like" id="task-972"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-3065">Which of the following represents the power series for <span class="process-math">\(\frac{1}{1-a}\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-2313"><p id="p-derived-li-2313"><span class="process-math">\(g(a)=\displaystyle\sum_{n=0}^\infty ax^n\text{.}\)</span></p></li>
+<li id="li-2314"><p id="p-derived-li-2314"><span class="process-math">\(g(a)=\displaystyle\sum_{n=0}^\infty (ax)^n\text{.}\)</span></p></li>
+<li id="li-2315"><p id="p-derived-li-2315"><span class="process-math">\(g(a)=\displaystyle\sum_{n=0}^\infty a^n\text{.}\)</span></p></li>
+<li id="li-2316"><p id="p-derived-li-2316"><span class="process-math">\(g(a)=\displaystyle\sum_{a=0}^\infty x^a\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-973"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-3066">What is the radius of convergence for <span class="process-math">\(a\)</span> in the series you found in part (a)?</p>
+<ol class="upper-alpha cols2">
+<li id="li-2317"><p id="p-derived-li-2317"><span class="process-math">\(\left(0,1\right)\text{.}\)</span></p></li>
+<li id="li-2318"><p id="p-derived-li-2318"><span class="process-math">\(\left(-1,1\right)\text{.}\)</span></p></li>
+<li id="li-2319"><p id="p-derived-li-2319"><span class="process-math">\(\left[-1,1\right]\text{.}\)</span></p></li>
+<li id="li-2320"><p id="p-derived-li-2320"><span class="process-math">\(\left[0,1\right]\text{.}\)</span></p></li>
+<li id="li-2321"><p id="p-derived-li-2321"><span class="process-math">\(\left(-\infty,\infty\right)\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-974"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-3067">For what value of <span class="process-math">\(a\)</span> is <span class="process-math">\(\frac{1}{1-a}=\frac{1}{x}\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-2322"><p id="p-derived-li-2322"><span class="process-math">\(a=x-1\text{.}\)</span></p></li>
+<li id="li-2323"><p id="p-derived-li-2323"><span class="process-math">\(a=1-x\text{.}\)</span></p></li>
+<li id="li-2324"><p id="p-derived-li-2324"><span class="process-math">\(a=x+1\text{.}\)</span></p></li>
+<li id="li-2325"><p id="p-derived-li-2325"><span class="process-math">\(a=-x\text{.}\)</span></p></li>
+<li id="li-2326"><p id="p-derived-li-2326"><span class="process-math">\(a=x\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-975"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-3068">Evaluating <span class="process-math">\(a\)</span> at the previously found value, which of the following is the power series of <span class="process-math">\(f(x)=\frac{1}{x}\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-2327"><p id="p-derived-li-2327"><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty x^n\text{.}\)</span></p></li>
+<li id="li-2328"><p id="p-derived-li-2328"><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (-x)^n\text{.}\)</span></p></li>
+<li id="li-2329"><p id="p-derived-li-2329"><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (1-x)^n\text{.}\)</span></p></li>
+<li id="li-2330"><p id="p-derived-li-2330"><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (x-1)^n\text{.}\)</span></p></li>
+<li id="li-2331"><p id="p-derived-li-2331"><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (1+x)^n\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-976"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-3069">Given that the interval of convergence for <span class="process-math">\(a\)</span> is <span class="process-math">\(-1 &lt; a &lt; 1\text{,}\)</span> what is the interval of convergence for <span class="process-math">\(x\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-2332"><p id="p-derived-li-2332"><span class="process-math">\(-1 &lt; x &lt; 1\text{.}\)</span></p></li>
+<li id="li-2333"><p id="p-derived-li-2333"><span class="process-math">\(-2 &lt; x &lt; 0\text{.}\)</span></p></li>
+<li id="li-2334"><p id="p-derived-li-2334"><span class="process-math">\(-2 &lt; x &lt; 2\text{.}\)</span></p></li>
+<li id="li-2335"><p id="p-derived-li-2335"><span class="process-math">\(0 &lt; x &lt; 2\text{.}\)</span></p></li>
+<li id="li-2336"><p id="p-derived-li-2336"><span class="process-math">\(2 &lt; x &lt; 0\text{.}\)</span></p></li>
+</ol></article></article><article class="activity project-like" id="activity-PS3series1overoneminus2x"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.3.3</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-325"><p id="p-3070">Suppose we wish to find the power series for the function <span class="process-math">\(f(x)=\frac{1}{3-2x}\text{.}\)</span>  Recall that <span class="process-math">\(g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.\)</span></p></div>
+<article class="task exercise-like" id="task-977"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-3071">For what value of <span class="process-math">\(a\)</span> is <span class="process-math">\(\frac{1}{1-a}=\frac{1}{3-2x}\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-2337"><p id="p-derived-li-2337"><span class="process-math">\(a=2x-2\text{.}\)</span></p></li>
+<li id="li-2338"><p id="p-derived-li-2338"><span class="process-math">\(a=2-2x\text{.}\)</span></p></li>
+<li id="li-2339"><p id="p-derived-li-2339"><span class="process-math">\(a=2x-3\text{.}\)</span></p></li>
+<li id="li-2340"><p id="p-derived-li-2340"><span class="process-math">\(a=x\text{.}\)</span></p></li>
+<li id="li-2341"><p id="p-derived-li-2341"><span class="process-math">\(a=3-2x\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-978"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-3072">Evaluating <span class="process-math">\(a\)</span> at the previously found value, which of the following is the power series of <span class="process-math">\(f(x)=\frac{1}{3-2x}\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-2342"><p id="p-derived-li-2342"><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (3-2x)^n\text{.}\)</span></p></li>
+<li id="li-2343"><p id="p-derived-li-2343"><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (2x-3)^n\text{.}\)</span></p></li>
+<li id="li-2344"><p id="p-derived-li-2344"><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (2-2x)^n\text{.}\)</span></p></li>
+<li id="li-2345"><p id="p-derived-li-2345"><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (2x-2)^n\text{.}\)</span></p></li>
+<li id="li-2346"><p id="p-derived-li-2346"><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty x^n\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-979"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-3073">Given that the interval of convergence for <span class="process-math">\(a\)</span> is <span class="process-math">\(-1 &lt; a &lt; 1\text{,}\)</span> what is the interval of convergence for <span class="process-math">\(x\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-2347"><p id="p-derived-li-2347"><span class="process-math">\(-1 &lt; x &lt; 1\text{.}\)</span></p></li>
+<li id="li-2348"><p id="p-derived-li-2348"><span class="process-math">\(-1 &lt; x &lt; \frac{3}{2}\text{.}\)</span></p></li>
+<li id="li-2349"><p id="p-derived-li-2349"><span class="process-math">\(-\frac{1}{2} &lt; x &lt; 1\text{.}\)</span></p></li>
+<li id="li-2350"><p id="p-derived-li-2350"><span class="process-math">\(\frac{1}{2} &lt; x &lt; \frac{3}{2}\text{.}\)</span></p></li>
+<li id="li-2351"><p id="p-derived-li-2351"><span class="process-math">\(-\frac{1}{2} &lt; x &lt; \frac{3}{2}\text{.}\)</span></p></li>
+</ol></article></article><article class="activity project-like" id="activity-PS3series1overoneplusxsquared"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.3.4</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-326"><p id="p-3074">Suppose we wish to find the power series for the function <span class="process-math">\(f(x)=\frac{1}{1+x^2}\text{.}\)</span>  Recall that <span class="process-math">\(g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.\)</span></p></div>
+<article class="task exercise-like" id="task-980"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-3075">For what value of <span class="process-math">\(a\)</span> is <span class="process-math">\(\frac{1}{1-a}=\frac{1}{1+x^2}\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-2352"><p id="p-derived-li-2352"><span class="process-math">\(a=x^2\text{.}\)</span></p></li>
+<li id="li-2353"><p id="p-derived-li-2353"><span class="process-math">\(a=-x^2\text{.}\)</span></p></li>
+<li id="li-2354"><p id="p-derived-li-2354"><span class="process-math">\(a=1+x^2\text{.}\)</span></p></li>
+<li id="li-2355"><p id="p-derived-li-2355"><span class="process-math">\(a=1-x^2\text{.}\)</span></p></li>
+<li id="li-2356"><p id="p-derived-li-2356"><span class="process-math">\(a=x^2-1\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-981"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-3076">Evaluating <span class="process-math">\(a\)</span> at the previously found value, which of the following is the power series of <span class="process-math">\(f(x)=\frac{1}{1+x^2}\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-2357"><p id="p-derived-li-2357"><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (-x^2)^{n}=\sum_{n=0}^\infty (-1)^nx^{2n}\text{.}\)</span></p></li>
+<li id="li-2358"><p id="p-derived-li-2358"><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (1+x^2)^n\text{.}\)</span></p></li>
+<li id="li-2359"><p id="p-derived-li-2359"><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (1-x^2)^n\text{.}\)</span></p></li>
+<li id="li-2360"><p id="p-derived-li-2360"><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (x^2)^{n}=\sum_{n=0}^\infty x^{2n}\text{.}\)</span></p></li>
+<li id="li-2361"><p id="p-derived-li-2361"><span class="process-math">\(f(x)=\displaystyle\sum_{n=0}^\infty (x^2-1)^n\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-982"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-3077">Given that the interval of convergence for <span class="process-math">\(a\)</span> is <span class="process-math">\(-1 &lt; a &lt; 1\text{,}\)</span> what is the interval of convergence for <span class="process-math">\(x\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-2362"><p id="p-derived-li-2362"><span class="process-math">\(-1 &lt; x &lt; 1\text{.}\)</span></p></li>
+<li id="li-2363"><p id="p-derived-li-2363"><span class="process-math">\(-1 &lt; x &lt; 0\text{.}\)</span></p></li>
+<li id="li-2364"><p id="p-derived-li-2364"><span class="process-math">\(0 &lt; x &lt; 1\text{.}\)</span></p></li>
+<li id="li-2365"><p id="p-derived-li-2365"><span class="process-math">\(0 &lt; x &lt; 2\text{.}\)</span></p></li>
+<li id="li-2366"><p id="p-derived-li-2366"><span class="process-math">\(-2 &lt; x &lt; 0\text{.}\)</span></p></li>
+<li id="li-2367"><p id="p-derived-li-2367"><span class="process-math">\(-2 &lt; x &lt; 2\text{.}\)</span></p></li>
+</ol></article></article><article class="activity project-like" id="activity-PS3seriesnegexp"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.3.5</span><span class="period">.</span>
+</h3>
+<p id="p-3078">What function <span class="process-math">\(f(x)\)</span> has power series <span class="process-math">\(f(x)=\displaystyle \sum_{n=0}^\infty \frac{(-1)^nx^n}{n!}=1-x+\frac{x^2}{2}-\frac{x^3}{6}+\cdots\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-2368"><p id="p-derived-li-2368"><span class="process-math">\(f(x)=(-1)^ne^x\text{.}\)</span></p></li>
+<li id="li-2369"><p id="p-derived-li-2369"><span class="process-math">\(f(x)=e^{-1}\text{.}\)</span></p></li>
+<li id="li-2370"><p id="p-derived-li-2370"><span class="process-math">\(f(x)=-e^x\text{.}\)</span></p></li>
+<li id="li-2371"><p id="p-derived-li-2371"><span class="process-math">\(f(x)=e^{-x}\text{.}\)</span></p></li>
+<li id="li-2372"><p id="p-derived-li-2372"><span class="process-math">\(f(x)=-e^{-x}\text{.}\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-PS3seriesnegexp2"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.3.6</span><span class="period">.</span>
+</h3>
+<p id="p-3079">What function <span class="process-math">\(f(x)\)</span> has power series <span class="process-math">\(f(x)=\displaystyle \sum_{n=0}^\infty \frac{x^{n+3}}{n!}=x^3+x^4+\frac{x^5}{2}+\frac{x^6}{6}+\cdots\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-2373"><p id="p-derived-li-2373"><span class="process-math">\(f(x)=e^{x+3}\text{.}\)</span></p></li>
+<li id="li-2374"><p id="p-derived-li-2374"><span class="process-math">\(f(x)=e^{x^3}\text{.}\)</span></p></li>
+<li id="li-2375"><p id="p-derived-li-2375"><span class="process-math">\(f(x)=e^{3x}\text{.}\)</span></p></li>
+<li id="li-2376"><p id="p-derived-li-2376"><span class="process-math">\(f(x)=x^3e^{x}\text{.}\)</span></p></li>
+<li id="li-2377"><p id="p-derived-li-2377"><span class="process-math">\(f(x)=3e^{x}\text{.}\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-PS3missingterms"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.3.7</span><span class="period">.</span>
+</h3>
+<p id="p-3080">What function <span class="process-math">\(f(x)\)</span> has power series <span class="process-math">\(f(x)=\displaystyle \sum_{n=3}^\infty x^n=x^3+x^4+\cdots\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-2378"><p id="p-derived-li-2378"><span class="process-math">\(f(x)=\frac{1}{1-3x}\text{.}\)</span></p></li>
+<li id="li-2379"><p id="p-derived-li-2379"><span class="process-math">\(f(x)=\frac{3}{1-x}\text{.}\)</span></p></li>
+<li id="li-2380"><p id="p-derived-li-2380"><span class="process-math">\(f(x)=\frac{1}{1-x}-x^2-x-1\text{.}\)</span></p></li>
+<li id="li-2381"><p id="p-derived-li-2381"><span class="process-math">\(f(x)=\frac{x^3}{1-x}\text{.}\)</span></p></li>
+</ol></article><article class="activity project-like" id="activity-PS3expnegxsquare"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.3.8</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-327"><p id="p-3081">The function <span class="process-math">\(n(x)=e^{-x^2}\)</span> is one whose integrals are very important for statistics.  However, it does not admit an elementary anti-derivative.</p></div>
+<article class="task exercise-like" id="task-983"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-3082">Which of the following best represents the power series for <span class="process-math">\(n(x)=e^{-x^2}\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-2382"><p id="p-derived-li-2382"><span class="process-math">\(n(x)=\displaystyle -x^2\sum_{n=0}^\infty \frac{1}{n!}x^n=\displaystyle \sum_{n=0}^\infty -\frac{1}{n!}x^{n+2}\text{.}\)</span></p></li>
+<li id="li-2383"><p id="p-derived-li-2383"><span class="process-math">\(n(x)=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}(-x^2)^n=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}(-1)^{n}x^{2n}\text{.}\)</span></p></li>
+<li id="li-2384"><p id="p-derived-li-2384"><span class="process-math">\(n(x)=\displaystyle x^{-2}\sum_{n=0}^\infty \frac{1}{n!}(-x)^n=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}(-1)^{n+2}x^{n+2}\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-984"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-3083">Which of the following best represents a degree 10 polynomial that approximates <span class="process-math">\(n(x)\text{?}\)</span></p>
+<ol class="upper-alpha">
+<li id="li-2385"><p id="p-derived-li-2385"><span class="process-math">\(n_{10}(x)=\displaystyle -x^2-x^3-\frac{1}{2}x^4-\frac{1}{6}x^5-\frac{1}{24}x^6-\frac{1}{120}x^7-\frac{1}{720}x^8-\frac{1}{5040}x^9-\frac{1}{40320}x^{10}\text{.}\)</span></p></li>
+<li id="li-2386"><p id="p-derived-li-2386"><span class="process-math">\(n_{10}(x)=\displaystyle x^2-x^3+\frac{1}{2}x^4-\frac{1}{6}x^5+\frac{1}{24}x^6-\frac{1}{120}x^7+\frac{1}{720}x^8-\frac{1}{5040}x^9+\frac{1}{40320}x^{10}\text{.}\)</span></p></li>
+<li id="li-2387"><p id="p-derived-li-2387"><span class="process-math">\(n_{10}(x)=1-x^2+\frac{1}{2}x^4-\frac{1}{6}x^6+\frac{1}{24}x^8-\frac{1}{120}x^{10}\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-985"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-3084">Use your choice of <span class="process-math">\(n_{10}(x)\)</span> to estimate <span class="process-math">\(\displaystyle \int_0^1 n(x)dx\)</span> by computing <span class="process-math">\(\displaystyle \int_0^1 n_{10}(x)dx\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-PS3ln"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.3.9</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-328">Recall  that<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+g(x)=\displaystyle\sum_{n=0}^\infty x^n=\frac{1}{1-x}
+\end{equation*}
+</div>for <span class="process-math">\(-1&lt; x&lt; 1\text{.}\)</span>
+</div>
+<article class="task exercise-like" id="task-986"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-3085">Which of the following represents an antiderivative of <span class="process-math">\(g(x)=\displaystyle \frac{1}{1-x}\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-2388"><p id="p-derived-li-2388"><span class="process-math">\(G(x)=C+\displaystyle\sum_{n=0}^\infty x^{n+1}\text{.}\)</span></p></li>
+<li id="li-2389"><p id="p-derived-li-2389"><span class="process-math">\(G(x)=C+\displaystyle\sum_{n=1}^\infty \frac{1}{n}x^{n+1}\text{.}\)</span></p></li>
+<li id="li-2390"><p id="p-derived-li-2390"><span class="process-math">\(G(x)=C+\displaystyle\sum_{n=0}^\infty \frac{1}{n+1}x^{n+1}\text{.}\)</span></p></li>
+<li id="li-2391"><p id="p-derived-li-2391"><span class="process-math">\(G(x)=C+\displaystyle\sum_{n=1}^\infty \frac{1}{n+1}x^{n}\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-987"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-3086">Find the interval of convergence for this series.</p></article><article class="task exercise-like" id="task-988"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-3087">Recall that <span class="process-math">\(\tilde{G}(x)=\ln|1-x|\)</span> is an antiderivative of <span class="process-math">\(g(x)=\displaystyle \frac{1}{1-x}\text{.}\)</span>  For which <span class="process-math">\(C\)</span> is your chosen <span class="process-math">\(G(x)=\ln|1-x|\text{?}\)</span></p></article><article class="task exercise-like" id="task-989"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-3088">Use <span class="process-math">\(G_4(x)\)</span> to estimate <span class="process-math">\(\displaystyle \int_2^4 \ln|1-x|dx\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-585"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.3.10</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-329">
+<p id="p-3089">Recall that the power series for <span class="process-math">\(f(x)=\sin\left(x\right)\)</span> is:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\sin\left(x\right)=\sum_{n=0}^{\infty} \frac{\left(-1\right)^{n} x^{2 \, n + 1}}{\left(2 \, n + 1\right)!}.
+\end{equation*}
+</div>
+</div>
+<article class="task exercise-like" id="task-990"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-3090">Find a power series for <span class="process-math">\(\sin\left(-5 \, x^{2}\right)\text{.}\)</span></p></article><article class="task exercise-like" id="task-991"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-3091">Find a power series for <span class="process-math">\(x^{4} \sin\left(x\right)\text{.}\)</span></p></article><article class="task exercise-like" id="task-992"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-3092">Find a power series for <span class="process-math">\(F(x)\text{,}\)</span> an antiderivative of <span class="process-math">\(f(x)\)</span> such that <span class="process-math">\(F(0)=4\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-586"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.3.11</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-330">
+<p id="p-3093">Recall that the power series for <span class="process-math">\(f(x)=-\frac{1}{x - 1}\)</span> is:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+-\frac{1}{x - 1}=\sum_{n=0}^{\infty} x^{n}.
+\end{equation*}
+</div>
+</div>
+<article class="task exercise-like" id="task-993"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-3094">Find a power series for <span class="process-math">\(\frac{1}{x^{4} + 1}\text{.}\)</span></p></article><article class="task exercise-like" id="task-994"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-3095">Find a power series for <span class="process-math">\(-\frac{x^{5}}{x - 1}\text{.}\)</span></p></article><article class="task exercise-like" id="task-995"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-3096">Find a power series for <span class="process-math">\(f'(x)\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-PS3arctan"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.3.12</span><span class="period">.</span>
+</h3>
+<div class="introduction" id="introduction-331">
+<p id="p-3097">Recall that</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/activity-PS3series1overoneplusxsquared.html">
+\begin{equation*}
+g(x)=\displaystyle\sum_{n=0}^\infty x^n=\frac{1}{1-x}
+\end{equation*}
+</div>
+<p class="continuation">for <span class="process-math">\(-1&lt; x&lt; 1\)</span> and <span class="process-math">\(\frac{d}{dx}[\arctan(x)]=\frac{1}{1+x^2}=g(-x^2)\text{.}\)</span>  We computed the power series for  <span class="process-math">\(g(-x^2)\)</span> in <a href="" class="xref" data-knowl="./knowl/activity-PS3series1overoneplusxsquared.html" title="Activity 9.3.4">Activity 9.3.4</a>.</p>
+</div>
+<article class="task exercise-like" id="task-996"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-3098">Anti differentiate this power series and find <span class="process-math">\(C\)</span> to find a power series for <span class="process-math">\(H(x)=\arctan(x)\text{.}\)</span>  Recall that <span class="process-math">\(\arctan(0)=0\text{.}\)</span></p></article><article class="task exercise-like" id="task-997"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-3099">Find the interval of convergence for this series.</p></article></article><article class="activity project-like" id="activity-588"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.3.13</span><span class="period">.</span>
+</h3>
+<article class="task exercise-like" id="task-998"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-3100">Find the power series for <span class="process-math">\(\alpha(x)=\ln|x|\text{.}\)</span></p></article><article class="task exercise-like" id="task-999"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-3101">Find the interval of convergence for this series.</p></article></article><article class="activity project-like" id="activity-589"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.3.14</span><span class="period">.</span>
+</h3>
+<article class="task exercise-like" id="task-1000"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-3102">Find the power series for <span class="process-math">\(\beta(x)=\arctan(-3x^2)\text{.}\)</span></p></article><article class="task exercise-like" id="task-1001"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-3103">Find the interval of convergence for this series.</p></article></article><section class="subsection" id="subsection-26"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">9.3.1</span> <span class="title">Videos</span>
+</h3>
+<figure class="figure figure-like" id="figure-155"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-PS3" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/39g1YKi1cnI?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">169<span class="period">.</span></span><span class="space"> </span>Video: Compute power series by manipulating known exponential/trigonometric/binomial power series</figcaption></figure></section></section></div></main>
+</div>
+</body>
+</html>
