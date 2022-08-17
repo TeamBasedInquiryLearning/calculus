@@ -87,8 +87,8 @@ to rewrite the integral as follows:
     <observation>
         <statement>
             <p>
-Recall that <m>u'=\frac{du}{dx}</m>. This allows for the following:
-                <me>\int g'(u)u' dx=\int g'(u)\frac{du}{dx}\,dx=\int g'(u)du=g(u)+C</me>.
+Recall that <m>\frac{du}{dx}=u'</m>, and so <m>du=u'\,dx</m>. This allows for the following common notation:
+                <me>\int f(x)\,dx=\dots=\int g'(u)du=g(u)+C</me>.
             </p>
             <p>
 Therefore, rather than dealing with equations like <m>u'=\frac{du}{dx}=x^2</m>, we will prefer to write
@@ -114,14 +114,14 @@ and rewrite it as <m>du=\unknown\,dx</m>.
         </task>
         <task>
             <p>
-Multiply both sides of the equation
-<m>du=\unknown\,dx</m> so that its right-hand side
-appears in <m>\int x^2e^{x^3}\,dx</m>.
+This <m>\unknown\,dx</m> doesn't appear in <m>\int x^2e^{x^3}\,dx</m>
+exactly, so use algebra to solve for <m>x^2\,dx</m> in terms of <m>du</m>.
             </p>
         </task>
         <task>
             <p>
-Show why <m>\int x^2e^{x^3}\,dx</m> may now be rewritten as
+Replace <m>x^2dx</m> and <m>x^3</m> with <m>u,du</m> terms to rewrite
+<m>\int x^2e^{x^3}\,dx</m> as
 <m>\int \frac{1}{3}e^u\,du</m>.
             </p>
         </task>
