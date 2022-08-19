@@ -424,12 +424,11 @@ The <m>x</m> values <m>0,2</m> were plugged in for the variable <m>u</m>.
             </ol>
         </statement>
     </activity>
-    <activity estimated-time="99">
+    <example>
         <statement>
             <p>
-When <m>x=2</m>, we know that <m>u=2^4+4=20</m>.
-Likewise, when <m>x=0</m>, we know that <m>u=0^4+4=4</m>.
-Use these facts to complete the below computation.
+Here's one way to show the computation of this definite integral by
+tracking <m>x</m> values in the bounds.
             </p>
             <md>
                 <mrow>
@@ -442,25 +441,60 @@ Use these facts to complete the below computation.
 &amp;&amp;&amp; \frac{1}{4} du = x^3\,dx
                 </mrow>
                 <mrow>
-\int_{x=0}^{x=2} \frac{x^3}{x^4+4}\,dx &amp;=
-\int_{u=\unknown}^{u=\unknown} \frac{1/4}{u}\, du
+\int_{x=0}^{x=2} \frac{x^3}{x^4+4}\,dx &amp;= \int_{x=0}^{x=2} \frac{1/4}{u}\, du
                 </mrow>
                 <mrow>
-&amp;= \dots
+&amp;= \left[ \frac{1}{4}\ln|u|\right]_{x=0}^{x=2}
+                </mrow>
+                <mrow>
+&amp;= \left[ \frac{1}{4}\ln|x^4+4|\right]_{x=0}^{x=2}
                 </mrow>
                 <mrow>
 &amp;= \frac{1}{4}\ln(20)-\frac{1}{4}\ln(4)
                 </mrow>
             </md>
         </statement>
-    </activity>
+    </example>
+    <example>
+        <statement>
+            <p>
+Instead of unsubstituting <m>u</m> values for <m>x</m> values,
+definite intergrals may be computed by also substituting <m>x</m> values in
+the bounds with <m>u</m> values. Use this idea to complete
+the following solution:
+            </p>
+            <md>
+                <mrow>
+\int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=\unknown
+                </mrow>
+                <mrow>
+&amp;&amp;&amp;du = 3x^2\,dx
+                </mrow>
+                <mrow>
+&amp;&amp;&amp;\frac{1}{3}du = x^2\,dx
+                </mrow>
+                <mrow>
+\int_1^3 x^2e^{x^3}\,dx &amp;= \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
+                </mrow>
+                <mrow>
+&amp;= \int_{u=\unknown}^{u=\unknown} e^{u} \frac{1}{3}du
+                </mrow> -->
+                <mrow>
+&amp;= \left[\frac{1}{3}e^{u}\right]_{\unknown}^{\unknown}
+                </mrow>
+                <mrow>
+&amp;= \unknown
+                </mrow>
+            </md>
+        </statement>
+    </example>
     <example>
         <statement>
             <p>
 Here is how one might write out the explanation
 of how to find
 <m>\int_1^3 x^2e^{x^3}\,dx</m> from start to finish by
-leaving bounds in terms of <m>x</m>:
+leaving bounds in terms of <m>x</m> instead:
             </p>
             <md>
                 <mrow>
@@ -486,56 +520,6 @@ leaving bounds in terms of <m>x</m>:
                 </mrow>
                 <mrow>
 &amp;= \frac{1}{3}e^{3^3} - \frac{1}{3}e^{1^3}
-                </mrow>
-                <mrow>
-&amp;= \frac{1}{3}e^{27} - \frac{1}{3}e
-                </mrow>
-            </md>
-        </statement>
-    </example>
-    <example>
-        <statement>
-            <p>
-Here is how one might write out the explanation
-of how to find
-<m>\int_1^3 x^2e^{x^3}\,dx</m> from start to finish by
-transforming bounds into terms of <m>u</m>:
-            </p>
-            <md>
-                <!-- doing transformation in margins instead...
-                <mrow>
-\int_1^3 x^2e^{x^3}\,dx &amp;\phantom{=}\text{Let }u=x^3
-&amp;\text{so }&amp;x=3\Rightarrow u=3^3=27
-                </mrow>
-                <mrow>
-&amp;\phantom{=} du = 3x^2\,dx&amp;\text{and }&amp;x=1\Rightarrow u=1^3=1
-                </mrow>
-                <mrow>
-&amp;\phantom{=} \frac{1}{3}du = x^2\,dx
-                </mrow>
-                <mrow>
-\int_1^3 x^2e^{x^3}\,dx &amp;= \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
-                </mrow>
-                <mrow>
-&amp;= \int_{u=1}^{u=27} e^{u} \frac{1}{3}du
-                </mrow> -->
-                <mrow>
-\int_1^3 x^2e^{x^3}\,dx &amp;&amp;\text{Let }&amp;u=x^3
-                </mrow>
-                <mrow>
-&amp;&amp;&amp;du = 3x^2\,dx
-                </mrow>
-                <mrow>
-&amp;&amp;&amp;\frac{1}{3}du = x^2\,dx
-                </mrow>
-                <mrow>
-\int_1^3 x^2e^{x^3}\,dx &amp;= \int_{x=1}^{x=3} e^{(x^3)} (x^2\,dx)
-                </mrow>
-                <mrow>
-&amp;= \int_{u=1^3}^{u=3^3} e^{u} \frac{1}{3}du
-                </mrow> -->
-                <mrow>
-&amp;= \left[\frac{1}{3}e^{u}\right]_{1}^{27}
                 </mrow>
                 <mrow>
 &amp;= \frac{1}{3}e^{27} - \frac{1}{3}e
