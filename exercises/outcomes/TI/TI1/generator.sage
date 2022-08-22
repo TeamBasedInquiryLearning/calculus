@@ -45,34 +45,29 @@ class Generator(BaseGenerator):
         
         dfdx=f.diff()
         
-        scenario=randint(0,2)
+        scenario=randrange(0,2)
         
         if scenario==0:
             n=randint(1,3)
             c=randint(1,4)
             a=randint(0,5)
-            b=randint(a+1, a+6)
+            b=randint(a+1, a+4)
             g(x)=e^(c*x^n)*x^(n-1)
             defint=definite_integral(g(x),x,a,b)
             
         if scenario==1:
-            c=randint(2,5)/choice([2,3,4,6])
-            a0=randint(0,5)/choice([2,3,4,6])
-            b0=randint(6, 10)
-            a=(a0*pi/c)
-            b=(b0*pi/c)
+            bounds = [a*pi/2 for a in range(5)]
+            a,b = sample(bounds,2)
+            a,b = sorted([a,b])
+            k = randrange(2,6)
+            trig = choice([sin,cos])
+            # u-sub is int_a^b trig(u)du
+            primes = [2,3,5,7,11]
+            shuffle(primes)
+            c = primes[0]/primes[1]
+            a,b=a/c,b/c
             
-            g(x)=sin(c*x)
-            defint=definite_integral(g(x),x,a,b)
-        
-        if scenario==2:
-            c=randint(2,5)
-            a0=randint(0,5)/choice([2,3,4,6])
-            b0=randint(6, 10)/choice([2,3,4,6])
-            a=(a0*pi/c)
-            b=(b0*pi/c)
-            
-            g(x)=cos(c*x)
+            g(x)=k*trig(c*x)
             defint=definite_integral(g(x),x,a,b)
             
         
