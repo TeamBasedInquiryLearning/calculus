@@ -12,8 +12,20 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>Consider all 4 slices from <a href="" class="xref" data-knowl="./knowl/activity-AI4rectangularprism.html" title="Activity 6.5.1">Activity 6.5.1</a>. <figure class="figure figure-like"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/prism4pieces.svg" role="img" class="contained" alt="\(10\times 10\times 20\) prism sliced into 4 pieces."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">117<span class="period">.</span></span><span class="space"> </span><span class="process-math">\(10\times 10\times 20\)</span> prism sliced into 4 pieces.</figcaption></figure></p>
-<span class="incontext"><a href="AI5.html#p-2186" class="internal">in-context</a></span>
+<p>Recall from <a href="" class="xref" data-knowl="./knowl/fact-arclength.html" title="Fact 6.2.2">Fact 6.2.2</a> that</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fact-arclength.html">
+\begin{align*}
+\lim_{\Delta x\to 0}\sqrt{(\Delta x)^2+(f(x_i+\Delta x)-f(x_i))^2} &amp; = \lim_{\Delta x\to 0} \sqrt{(\Delta x)^2\left(1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2\right)}\\
+&amp;= \lim_{\Delta x\to 0} \sqrt{1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2}\Delta x\\
+&amp;=\sqrt{1+(f'(x))^2}dx,
+\end{align*}
+</div>
+<p class="continuation">and that</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fact-arclength.html">
+\begin{equation*}
+\lim_{\Delta x\to 0} \frac{f(x_i)+f(x_i+\Delta x)}{2}=f(x_i).
+\end{equation*}
+</div>
+<span class="incontext"><a href="AI4.html#p-2186" class="internal">in-context</a></span>
 </body>
 </html>

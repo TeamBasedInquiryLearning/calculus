@@ -14,7 +14,8 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
 <meta property="book:author" content="TBIL Institute Fellows">
-<script>window.MathJax = {
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
@@ -34,11 +35,11 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
-startup: {
+  startup: {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
-      $(document).trigger("runestone:mathjax-ready");
+      rsMathReady();
       }
     )}
 },
@@ -216,11 +217,11 @@ startup: {
 </ol></article><section class="introduction" id="IN-intro"><section class="paragraphs" id="IN-readiness"><h2 class="heading"><span class="title">Readiness Assurance.</span></h2>
 <p id="p-1404">Before beginning this chapter, you should be able to...</p>
 <ol class="lower-alpha">
-<li id="li-861"><p id="p-1405">Find the derivative of a function using elementary derivative rules, as in <a href="DF3.html" class="internal" title="Section 2.3: Elementary derivative rules (DF3)">Section 2.3</a>. (<a class="external" href="https://stevenclontz.github.io/cal1-tbil-2021-checkit/#/bank/DF3/1/" target="_blank">CheckIt</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-38" id="fn-38"><sup> 1 </sup></a>)</p></li>
-<li id="li-862"><p id="p-1406">Use sigma notation for sums.  (<a class="external" href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-integration-and-accumulation-of-change/xa350bf684c056c5c:summation-notation/v/sigma-notation-sum" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-39" id="fn-39"><sup> 2 </sup></a> and <a class="external" href="https://activecalculus.org/single/sec-4-2-Riemann.html#jCJ" target="_blank">Active Calculus</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-40" id="fn-40"><sup> 3 </sup></a>)</p></li>
-<li id="li-863"><p id="p-1407">Find the area of a rectangle in the coordinate plane. (<a class="external" href="https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-quadrilaterals-on-plane/v/dimensions-of-rectangle-from-coordinates-example" target="_blank">Example at Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-41" id="fn-41"><sup> 4 </sup></a><a class="external" href="https://virtualnerd.com/middle-math/integers-coordinate-plane/coordinate-plane/calculate-area-rectangle-vertices" target="_blank">Example at virtual nerd</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-42" id="fn-42"><sup> 5 </sup></a>)</p></li>
-<li id="li-864"><p id="p-1408">Find the intersection of two graphs. (<a class="external" href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:eq/x2ec2f6f830c9fb89:quad-sys/v/line-and-parabola-system" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-43" id="fn-43"><sup> 6 </sup></a>)</p></li>
-<li id="li-865"><p id="p-1409">Find the area of plane shapes, such as rectangles, triangles, circles, and trapezoids. (<a class="external" href="https://www.mathsisfun.com/area.html" target="_blank">Math is fun</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-44" id="fn-44"><sup> 7 </sup></a>)</p></li>
+<li id="li-861"><p id="p-1405">Find the derivative of a function using elementary derivative rules. (<a href="DF3.html" class="internal" title="Section 2.3: Elementary derivative rules (DF3)">Section 2.3</a>)</p></li>
+<li id="li-862"><p id="p-1406">Use sigma notation for sums.  (<a class="external" href="https://www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-integration-and-accumulation-of-change/xa350bf684c056c5c:summation-notation/v/sigma-notation-sum" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-38" id="fn-38"><sup> 1 </sup></a> and <a class="external" href="https://activecalculus.org/single/sec-4-2-Riemann.html#jCJ" target="_blank">Active Calculus</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-39" id="fn-39"><sup> 2 </sup></a>)</p></li>
+<li id="li-863"><p id="p-1407">Find the area of a rectangle in the coordinate plane. (<a class="external" href="https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-quadrilaterals-on-plane/v/dimensions-of-rectangle-from-coordinates-example" target="_blank">Example at Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-40" id="fn-40"><sup> 3 </sup></a><a class="external" href="https://virtualnerd.com/middle-math/integers-coordinate-plane/coordinate-plane/calculate-area-rectangle-vertices" target="_blank">Example at virtual nerd</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-41" id="fn-41"><sup> 4 </sup></a>)</p></li>
+<li id="li-864"><p id="p-1408">Find the intersection of two graphs. (<a class="external" href="https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:eq/x2ec2f6f830c9fb89:quad-sys/v/line-and-parabola-system" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-42" id="fn-42"><sup> 5 </sup></a>)</p></li>
+<li id="li-865"><p id="p-1409">Find the area of plane shapes, such as rectangles, triangles, circles, and trapezoids. (<a class="external" href="https://www.mathsisfun.com/area.html" target="_blank">Math is fun</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-43" id="fn-43"><sup> 6 </sup></a>)</p></li>
 </ol></section></section><nav class="summary-links"><ul>
 <li><a href="IN1.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Geometry of definite integrals (IN1)</span></a></li>
 <li><a href="IN2.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Approximating definite integrals (IN2)</span></a></li>
@@ -230,13 +231,12 @@ startup: {
 <li><a href="IN6.html" class="internal"><span class="codenumber">4.6</span> <span class="title">FTC for derivatives of integrals (IN6)</span></a></li>
 <li><a href="IN7.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Area under curves (IN7)</span></a></li>
 <li><a href="IN8.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Area between curves (IN8)</span></a></li>
-</ul></nav></section><div class="hidden-content tex2jax_ignore" id="hk-fn-38"><div class="fn"><code class="code-inline tex2jax_ignore">stevenclontz.github.io/cal1-tbil-2021-checkit/#/bank/DF3/1/</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-39"><div class="fn"><code class="code-inline tex2jax_ignore">www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-integration-and-accumulation-of-change/xa350bf684c056c5c:summation-notation/v/sigma-notation-sum</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-40"><div class="fn"><code class="code-inline tex2jax_ignore">activecalculus.org/single/sec-4-2-Riemann.html#jCJ</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-41"><div class="fn"><code class="code-inline tex2jax_ignore">www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-quadrilaterals-on-plane/v/dimensions-of-rectangle-from-coordinates-example</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-42"><div class="fn"><code class="code-inline tex2jax_ignore">virtualnerd.com/middle-math/integers-coordinate-plane/coordinate-plane/calculate-area-rectangle-vertices</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-43"><div class="fn"><code class="code-inline tex2jax_ignore">www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:eq/x2ec2f6f830c9fb89:quad-sys/v/line-and-parabola-system</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-44"><div class="fn"><code class="code-inline tex2jax_ignore">www.mathsisfun.com/area.html</code></div></div>
+</ul></nav></section><div class="hidden-content tex2jax_ignore" id="hk-fn-38"><div class="fn"><code class="code-inline tex2jax_ignore">www.khanacademy.org/math/get-ready-for-ap-calc/xa350bf684c056c5c:get-ready-for-integration-and-accumulation-of-change/xa350bf684c056c5c:summation-notation/v/sigma-notation-sum</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-39"><div class="fn"><code class="code-inline tex2jax_ignore">activecalculus.org/single/sec-4-2-Riemann.html#jCJ</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-40"><div class="fn"><code class="code-inline tex2jax_ignore">www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-geometry-topic/cc-6th-quadrilaterals-on-plane/v/dimensions-of-rectangle-from-coordinates-example</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-41"><div class="fn"><code class="code-inline tex2jax_ignore">virtualnerd.com/middle-math/integers-coordinate-plane/coordinate-plane/calculate-area-rectangle-vertices</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-42"><div class="fn"><code class="code-inline tex2jax_ignore">www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:eq/x2ec2f6f830c9fb89:quad-sys/v/line-and-parabola-system</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-43"><div class="fn"><code class="code-inline tex2jax_ignore">www.mathsisfun.com/area.html</code></div></div>
 </div></main>
 </div>
 </body>

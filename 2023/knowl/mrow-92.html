@@ -13,10 +13,19 @@
 <body class="ignore-math">
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{align*}
-\lim_{n\to \infty}\sum \sqrt{(\Delta x)^2+(f(x_i+\Delta)-f(x_i))^2} &amp; =\lim_{n\to \infty}\sum \sqrt{1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2}\Delta x\\
-&amp; = \int_a^b \sqrt{1+(f'(x))^2}dx
+\int \frac{3}{x\sqrt{49x^2-4}} \,dx &amp;&amp;\text{Let }&amp;u^2=49x^2\\
+&amp;&amp;\text{Let }&amp;a^2=4                \\
+&amp;&amp;&amp; u = 7x\\
+&amp;&amp;&amp; \,du = 7\,dx\\
+&amp;&amp;&amp; \frac{1}{7}\,du = \,dx\\
+&amp;&amp;&amp; a = 2\\
+\int \frac{3}{x\sqrt{49x^2-4}} \,dx &amp;= 3\int \frac{1}{x\sqrt{49x^2-4}} (\,dx)\\
+&amp;= 3\int \frac{1}{\frac{u}{7}\sqrt{u^2-a^2}} \bigg(\frac{1}{7}\,du\bigg)\\
+&amp;= 3\int \frac{1}{u\sqrt{u^2-a^2}} \,du &amp; \text{which best matches f.}\\
+&amp;= 3\bigg(\frac{1}{a}\arcsec \bigg(\frac{u}{a}\bigg)\bigg)+C\\
+&amp;= \frac{3}{2}\arcsec \bigg(\frac{7x}{2}\bigg)+C
 \end{align*}
 </div>
-<span class="incontext"><a href="AI2.html#md-15" class="internal">in-context</a></span>
+<span class="incontext"><a href="TI5.html#md-14" class="internal">in-context</a></span>
 </body>
 </html>

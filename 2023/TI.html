@@ -14,7 +14,8 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
 <meta property="book:author" content="TBIL Institute Fellows">
-<script>window.MathJax = {
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
@@ -34,11 +35,11 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
-startup: {
+  startup: {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
-      $(document).trigger("runestone:mathjax-ready");
+      rsMathReady();
       }
     )}
 },
@@ -221,34 +222,34 @@ startup: {
 <ol class="lower-alpha">
 <li id="li-983">
 <p id="p-1642">Recognize when to apply the chain rule, and use it successfully.</p>
-<ul class="disc"><li id="li-984"><p id="p-1643">Review: <a class="external" href="https://www.khanacademy.org/math/differential-calculus/dc-chain/dc-chain-rule/v/chain-rule-introduction?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-45" id="fn-45"><sup> 1 </sup></a></p></li></ul>
+<ul class="disc"><li id="li-984"><p id="p-1643">Review: <a class="external" href="https://www.khanacademy.org/math/differential-calculus/dc-chain/dc-chain-rule/v/chain-rule-introduction?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-44" id="fn-44"><sup> 1 </sup></a></p></li></ul>
 </li>
 <li id="li-985">
 <p id="p-1644">Recognize when to apply the product rule, and use it successfully.</p>
-<ul class="disc"><li id="li-986"><p id="p-1645">Review: <a class="external" href="https://www.khanacademy.org/math/differential-calculus/dc-diff-intro/dc-product-rule/v/applying-the-product-rule-for-derivatives?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-46" id="fn-46"><sup> 2 </sup></a></p></li></ul>
+<ul class="disc"><li id="li-986"><p id="p-1645">Review: <a class="external" href="https://www.khanacademy.org/math/differential-calculus/dc-diff-intro/dc-product-rule/v/applying-the-product-rule-for-derivatives?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-45" id="fn-45"><sup> 2 </sup></a></p></li></ul>
 </li>
 <li id="li-987">
 <p id="p-1646">Perform basic definite integrals.</p>
-<ul class="disc"><li id="li-988"><p id="p-1647">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-7/v/connecting-the-first-and-second-fundamental-theorems-of-calculus?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-47" id="fn-47"><sup> 3 </sup></a></p></li></ul>
+<ul class="disc"><li id="li-988"><p id="p-1647">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-7/v/connecting-the-first-and-second-fundamental-theorems-of-calculus?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-46" id="fn-46"><sup> 3 </sup></a></p></li></ul>
 </li>
 <li id="li-989">
 <p id="p-1648">Compute basic antiderivatives.</p>
-<ul class="disc"><li id="li-990"><p id="p-1649">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-7/v/antiderivatives-and-indefinite-integrals?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-48" id="fn-48"><sup> 4 </sup></a></p></li></ul>
+<ul class="disc"><li id="li-990"><p id="p-1649">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-7/v/antiderivatives-and-indefinite-integrals?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-47" id="fn-47"><sup> 4 </sup></a></p></li></ul>
 </li>
 <li id="li-991">
 <p id="p-1650">Differentiate trigonometric functions.</p>
-<ul class="disc"><li id="li-992"><p id="p-1651">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-10/v/derivatives-of-tanx-and-cotx?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-49" id="fn-49"><sup> 5 </sup></a></p></li></ul>
+<ul class="disc"><li id="li-992"><p id="p-1651">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-10/v/derivatives-of-tanx-and-cotx?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-48" id="fn-48"><sup> 5 </sup></a></p></li></ul>
 </li>
 <li id="li-993">
 <p id="p-1652">Compute limits.</p>
 <ul class="disc">
-<li id="li-994"><p id="p-1653">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-bc/bc-limits-new/bc-1-2/v/introduction-to-limits-hd?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-50" id="fn-50"><sup> 6 </sup></a></p></li>
-<li id="li-995"><p id="p-1654">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-bc/bc-diff-contextual-applications-new/bc-4-7/v/introduction-to-l-hopital-s-rule?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-51" id="fn-51"><sup> 7 </sup></a></p></li>
+<li id="li-994"><p id="p-1653">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-bc/bc-limits-new/bc-1-2/v/introduction-to-limits-hd?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-49" id="fn-49"><sup> 6 </sup></a></p></li>
+<li id="li-995"><p id="p-1654">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-bc/bc-diff-contextual-applications-new/bc-4-7/v/introduction-to-l-hopital-s-rule?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-50" id="fn-50"><sup> 7 </sup></a></p></li>
 </ul>
 </li>
 <li id="li-996">
 <p id="p-1655">Apply the pythagorean identity.</p>
-<ul class="disc"><li id="li-997"><p id="p-1656">Review: <a class="external" href="https://www.khanacademy.org/math/trigonometry/unit-circle-trig-func/pythagorean-identity/v/using-the-pythagorean-trig-identity?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-52" id="fn-52"><sup> 8 </sup></a></p></li></ul>
+<ul class="disc"><li id="li-997"><p id="p-1656">Review: <a class="external" href="https://www.khanacademy.org/math/trigonometry/unit-circle-trig-func/pythagorean-identity/v/using-the-pythagorean-trig-identity?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-51" id="fn-51"><sup> 8 </sup></a></p></li></ul>
 </li>
 </ol></section></section><nav class="summary-links"><ul>
 <li><a href="TI1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Substitution method (TI1)</span></a></li>
@@ -259,14 +260,14 @@ startup: {
 <li><a href="TI6.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Partial fractions (TI6)</span></a></li>
 <li><a href="TI7.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Integration strategy (TI7)</span></a></li>
 <li><a href="TI8.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Improper integrals (TI8)</span></a></li>
-</ul></nav></section><div class="hidden-content tex2jax_ignore" id="hk-fn-45"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/differential-calculus/dc-chain/dc-chain-rule/v/chain-rule-introduction?modal=1</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-46"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/differential-calculus/dc-diff-intro/dc-product-rule/v/applying-the-product-rule-for-derivatives?modal=1</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-47"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-7/v/connecting-the-first-and-second-fundamental-theorems-of-calculus?modal=1</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-48"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-7/v/antiderivatives-and-indefinite-integrals?modal=1</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-49"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-10/v/derivatives-of-tanx-and-cotx?modal=1</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-50"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-bc/bc-limits-new/bc-1-2/v/introduction-to-limits-hd?modal=1</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-51"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-bc/bc-diff-contextual-applications-new/bc-4-7/v/introduction-to-l-hopital-s-rule?modal=1</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-52"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/trigonometry/unit-circle-trig-func/pythagorean-identity/v/using-the-pythagorean-trig-identity?modal=1</code></div></div>
+</ul></nav></section><div class="hidden-content tex2jax_ignore" id="hk-fn-44"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/differential-calculus/dc-chain/dc-chain-rule/v/chain-rule-introduction?modal=1</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-45"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/differential-calculus/dc-diff-intro/dc-product-rule/v/applying-the-product-rule-for-derivatives?modal=1</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-46"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-7/v/connecting-the-first-and-second-fundamental-theorems-of-calculus?modal=1</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-47"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-7/v/antiderivatives-and-indefinite-integrals?modal=1</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-48"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-10/v/derivatives-of-tanx-and-cotx?modal=1</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-49"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-bc/bc-limits-new/bc-1-2/v/introduction-to-limits-hd?modal=1</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-50"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-bc/bc-diff-contextual-applications-new/bc-4-7/v/introduction-to-l-hopital-s-rule?modal=1</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-51"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/trigonometry/unit-circle-trig-func/pythagorean-identity/v/using-the-pythagorean-trig-identity?modal=1</code></div></div>
 </div></main>
 </div>
 </body>

@@ -14,7 +14,8 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
 <meta property="book:author" content="TBIL Institute Fellows">
-<script>window.MathJax = {
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
@@ -34,11 +35,11 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
-startup: {
+  startup: {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
-      $(document).trigger("runestone:mathjax-ready");
+      rsMathReady();
       }
     )}
 },
@@ -202,17 +203,17 @@ startup: {
 <span class="type">Chapter</span> <span class="codenumber">7</span> <span class="title">Coordinates and Vectors (CO)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-52"><h2 class="heading"><span class="type">Learning Outcomes</span></h2>
-<div class="introduction" id="introduction-230">
-<p id="p-2273">How do we use alternative coordinates and vectors to describe points in the plane?</p>
-<p id="p-2274">By the end of this chapter, you should be able to...</p>
+<div class="introduction" id="introduction-232">
+<p id="p-2286">How do we use alternative coordinates and vectors to describe points in the plane?</p>
+<p id="p-2287">By the end of this chapter, you should be able to...</p>
 </div>
 <ol class="decimal">
-<li id="li-1542"><p id="p-2275">Sketch the graph of a two-dimensional parametric/vector equation, and convert such equations into equations of only <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span></p></li>
-<li id="li-1543"><p id="p-2276">Compute derivatives and tangents related to two-dimensional parametric/vector equations.</p></li>
-<li id="li-1544"><p id="p-2277">Compute arclengths related to two-dimensional parametric/vector equations.</p></li>
-<li id="li-1545"><p id="p-2278">Convert points and equations between polar and Cartesian coordinates and equations.</p></li>
-<li id="li-1546"><p id="p-2279">Compute arclengths of curves given in polar coordinates.</p></li>
-<li id="li-1547"><p id="p-2280">Compute areas bounded by curves given in polar coordinates.</p></li>
+<li id="li-1541"><p id="p-2288">Sketch the graph of a two-dimensional parametric/vector equation, and convert such equations into equations of only <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span></p></li>
+<li id="li-1542"><p id="p-2289">Compute derivatives and tangents related to two-dimensional parametric/vector equations.</p></li>
+<li id="li-1543"><p id="p-2290">Compute arclengths related to two-dimensional parametric/vector equations.</p></li>
+<li id="li-1544"><p id="p-2291">Convert points and equations between polar and Cartesian coordinates and equations.</p></li>
+<li id="li-1545"><p id="p-2292">Compute arclengths of curves given in polar coordinates.</p></li>
+<li id="li-1546"><p id="p-2293">Compute areas bounded by curves given in polar coordinates.</p></li>
 </ol></article><nav class="summary-links"><ul>
 <li><a href="CO1.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Parametric/vector equations (CO1)</span></a></li>
 <li><a href="CO2.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Parametric/vector derivatives (CO2)</span></a></li>

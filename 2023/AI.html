@@ -14,7 +14,8 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
 <meta property="book:author" content="TBIL Institute Fellows">
-<script>window.MathJax = {
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
@@ -34,11 +35,11 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
-startup: {
+  startup: {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
-      $(document).trigger("runestone:mathjax-ready");
+      rsMathReady();
       }
     )}
 },
@@ -203,38 +204,38 @@ startup: {
 <span class="type">Chapter</span> <span class="codenumber">6</span> <span class="title">Applications of Integration (AI)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-45"><h2 class="heading"><span class="type">Learning Outcomes</span></h2>
-<div class="introduction" id="introduction-197">
-<p id="p-2065">How can we use integrals to solve application questions?</p>
-<p id="p-2066">By the end of this chapter, you should be able to...</p>
+<div class="introduction" id="introduction-199">
+<p id="p-2078">How can we use integrals to solve application questions?</p>
+<p id="p-2079">By the end of this chapter, you should be able to...</p>
 </div>
 <ol class="decimal">
-<li id="li-1346"><p id="p-2067">Compute the average value of a function on an interval.</p></li>
-<li id="li-1347"><p id="p-2068">Estimate the arclength of a curve with Riemann sums and find an integral which computes the arclength.</p></li>
-<li id="li-1348"><p id="p-2069">Compute volumes of solids of revolution.</p></li>
-<li id="li-1349"><p id="p-2070">Compute surface areas of surfaces of revolution.</p></li>
-<li id="li-1350"><p id="p-2071">Set up integrals to solve problems involving density, mass, and center of mass.</p></li>
+<li id="li-1345"><p id="p-2080">Compute the average value of a function on an interval.</p></li>
+<li id="li-1346"><p id="p-2081">Estimate the arclength of a curve with Riemann sums and find an integral which computes the arclength.</p></li>
+<li id="li-1347"><p id="p-2082">Compute volumes of solids of revolution.</p></li>
+<li id="li-1348"><p id="p-2083">Compute surface areas of surfaces of revolution.</p></li>
+<li id="li-1349"><p id="p-2084">Set up integrals to solve problems involving density, mass, and center of mass.</p></li>
 </ol></article><section class="introduction" id="AI-intro"><section class="paragraphs" id="AI-readiness"><h2 class="heading"><span class="title">Readiness Assurance.</span></h2>
-<p id="p-2072">Before beginning this chapter, you should be able to...</p>
+<p id="p-2085">Before beginning this chapter, you should be able to...</p>
 <ol class="lower-alpha">
-<li id="li-1351">
-<p id="p-2073">Estimate a definite integral with a Riemann sum.</p>
-<ul class="disc"><li id="li-1352"><p id="p-2074">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/generalizing-a-left-riemann-sum-with-equally-spaced-rectangles?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-53" id="fn-53"><sup> 1 </sup></a></p></li></ul>
+<li id="li-1350">
+<p id="p-2086">Estimate a definite integral with a Riemann sum.</p>
+<ul class="disc"><li id="li-1351"><p id="p-2087">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/generalizing-a-left-riemann-sum-with-equally-spaced-rectangles?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-52" id="fn-52"><sup> 1 </sup></a></p></li></ul>
 </li>
-<li id="li-1353">
-<p id="p-2075">Evaluate the limit of a Riemann sum to find an integral.</p>
-<ul class="disc"><li id="li-1354"><p id="p-2076">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/riemann-sums-and-integrals?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-54" id="fn-54"><sup> 2 </sup></a></p></li></ul>
+<li id="li-1352">
+<p id="p-2088">Evaluate the limit of a Riemann sum to find an integral.</p>
+<ul class="disc"><li id="li-1353"><p id="p-2089">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/riemann-sums-and-integrals?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-53" id="fn-53"><sup> 2 </sup></a></p></li></ul>
 </li>
-<li id="li-1355">
-<p id="p-2077">Solve accumulation problems with definite integrals.</p>
-<ul class="disc"><li id="li-1356"><p id="p-2078">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-4/v/functions-defined-by-definite-integrals?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-55" id="fn-55"><sup> 3 </sup></a></p></li></ul>
+<li id="li-1354">
+<p id="p-2090">Solve accumulation problems with definite integrals.</p>
+<ul class="disc"><li id="li-1355"><p id="p-2091">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-4/v/functions-defined-by-definite-integrals?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-54" id="fn-54"><sup> 3 </sup></a></p></li></ul>
 </li>
-<li id="li-1357">
-<p id="p-2079">Find the distance between points on a curve.</p>
-<ul class="disc"><li id="li-1358"><p id="p-2080">Review: <a class="external" href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-distance-and-midpoints/v/distance-formula" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-56" id="fn-56"><sup> 4 </sup></a></p></li></ul>
+<li id="li-1356">
+<p id="p-2092">Find the distance between points on a curve.</p>
+<ul class="disc"><li id="li-1357"><p id="p-2093">Review: <a class="external" href="https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-distance-and-midpoints/v/distance-formula" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-55" id="fn-55"><sup> 4 </sup></a></p></li></ul>
 </li>
-<li id="li-1359">
-<p id="p-2081">Express the sum of indexed values using summation notation.</p>
-<ul class="disc"><li id="li-1360"><p id="p-2082">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/sigma-notation-sum" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-57" id="fn-57"><sup> 5 </sup></a></p></li></ul>
+<li id="li-1358">
+<p id="p-2094">Express the sum of indexed values using summation notation.</p>
+<ul class="disc"><li id="li-1359"><p id="p-2095">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/sigma-notation-sum" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-56" id="fn-56"><sup> 5 </sup></a></p></li></ul>
 </li>
 </ol></section></section><nav class="summary-links"><ul>
 <li><a href="AI1.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Average Value (AI1)</span></a></li>
@@ -243,11 +244,11 @@ startup: {
 <li><a href="AI4.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Surface Areas of Revolution (AI4)</span></a></li>
 <li><a href="AI5.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Density, Mass, and Center of Mass (AI5)</span></a></li>
 <li><a href="AI6.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Physics Applications (AI6)</span></a></li>
-</ul></nav></section><div class="hidden-content tex2jax_ignore" id="hk-fn-53"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/generalizing-a-left-riemann-sum-with-equally-spaced-rectangles?modal=1</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-54"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/riemann-sums-and-integrals?modal=1</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-55"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-4/v/functions-defined-by-definite-integrals?modal=1</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-56"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-distance-and-midpoints/v/distance-formula</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-57"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/sigma-notation-sum</code></div></div>
+</ul></nav></section><div class="hidden-content tex2jax_ignore" id="hk-fn-52"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/generalizing-a-left-riemann-sum-with-equally-spaced-rectangles?modal=1</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-53"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/riemann-sums-and-integrals?modal=1</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-54"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-4/v/functions-defined-by-definite-integrals?modal=1</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-55"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/geometry/hs-geo-analytic-geometry/hs-geo-distance-and-midpoints/v/distance-formula</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-56"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/sigma-notation-sum</code></div></div>
 </div></main>
 </div>
 </body>

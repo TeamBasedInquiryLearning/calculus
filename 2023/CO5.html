@@ -14,7 +14,8 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
 <meta property="book:author" content="TBIL Institute Fellows">
-<script>window.MathJax = {
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
@@ -34,11 +35,11 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
-startup: {
+  startup: {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
-      $(document).trigger("runestone:mathjax-ready");
+      rsMathReady();
       }
     )}
 },
@@ -202,26 +203,26 @@ startup: {
 <span class="type">Section</span> <span class="codenumber">7.5</span> <span class="title">Polar Arclength (CO5)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-57"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-1641"><p id="p-2473">Compute arclengths of curves given in polar coordinates.</p></li></ul></article><article class="activity project-like" id="co5-activity-polar-length"><h3 class="heading">
+<ul class="disc"><li id="li-1640"><p id="p-2486">Compute arclengths of curves given in polar coordinates.</p></li></ul></article><article class="activity project-like" id="co5-activity-polar-length"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.5.1</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-246">
-<p id="p-2474">Recall that the length of a parametric curve is given by</p>
+<div class="introduction" id="introduction-248">
+<p id="p-2487">Recall that the length of a parametric curve is given by</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt\text{.}
 \end{equation*}
 </div>
 </div>
-<article class="task exercise-like" id="task-742"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2475">Let <span class="process-math">\(x(t)=r\cos(\theta)\)</span> and <span class="process-math">\(y(t)=r\sin(\theta)\)</span> and show that the length of a polar curve <span class="process-math">\(r=f(\theta)\)</span> with <span class="process-math">\(\alpha\leq\theta\leq\beta\)</span> is given by</p>
+<article class="task exercise-like" id="task-747"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2488">Let <span class="process-math">\(x(t)=r\cos(\theta)\)</span> and <span class="process-math">\(y(t)=r\sin(\theta)\)</span> and show that the length of a polar curve <span class="process-math">\(r=f(\theta)\)</span> with <span class="process-math">\(\alpha\leq\theta\leq\beta\)</span> is given by</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \int_{\theta=\alpha}^{\theta=\beta} \sqrt{\left(r\right)^2+\left(\frac{dr}{d\theta}\right)^2}d\theta\text{.}
 \end{equation*}
-</div></article><article class="task exercise-like" id="task-743"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2476">Find an integral computing the arclength of the polar curve defined by <span class="process-math">\(r=3\cos(\theta)-2\)</span> on <span class="process-math">\(\pi/3\leq\theta\leq\pi\text{.}\)</span></p></article><article class="task exercise-like" id="task-744"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2477">Find the length of the cardioid <span class="process-math">\(r=1-\cos(\theta)\text{.}\)</span></p></article></article></section></div></main>
+</div></article><article class="task exercise-like" id="task-748"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2489">Find an integral computing the arclength of the polar curve defined by <span class="process-math">\(r=3\cos(\theta)-2\)</span> on <span class="process-math">\(\pi/3\leq\theta\leq\pi\text{.}\)</span></p></article><article class="task exercise-like" id="task-749"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2490">Find the length of the cardioid <span class="process-math">\(r=1-\cos(\theta)\text{.}\)</span></p></article></article></section></div></main>
 </div>
 </body>
 </html>

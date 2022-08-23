@@ -13,11 +13,19 @@
 <body class="ignore-math">
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{align*}
-\displaystyle\frac{4x^2-5x-2}{x^2(x-2)}&amp;=\displaystyle \frac{A}{x}+\frac{B}{x^2}+\frac{C}{x-2} = \frac{Ax(x-2)+B(x-2)+Cx^2}{x^2(x-2)}\\
-\displaystyle\frac{4x^2-5x-2}{x^2(x-2)}&amp; = \frac{Ax(x-2)+B(x-2)+Cx^2}{x^2(x-2)}\\
-4x^2-5x-2&amp; = Ax(x-2)+B(x-2)+Cx^2.
+\int \frac{3}{x\sqrt{49x^2-4}} \,dx &amp;&amp;\text{Let }&amp;u^2=49x^2\\
+&amp;&amp;\text{Let }&amp;a^2=4                \\
+&amp;&amp;&amp; u = 7x\\
+&amp;&amp;&amp; \,du = 7\,dx\\
+&amp;&amp;&amp; \frac{1}{7}\,du = \,dx\\
+&amp;&amp;&amp; a = 2\\
+\int \frac{3}{x\sqrt{49x^2-4}} \,dx &amp;= 3\int \frac{1}{x\sqrt{49x^2-4}} (\,dx)\\
+&amp;= 3\int \frac{1}{\frac{u}{7}\sqrt{u^2-a^2}} \bigg(\frac{1}{7}\,du\bigg)\\
+&amp;= 3\int \frac{1}{u\sqrt{u^2-a^2}} \,du &amp; \text{which best matches f.}\\
+&amp;= 3\bigg(\frac{1}{a}\arcsec \bigg(\frac{u}{a}\bigg)\bigg)+C\\
+&amp;= \frac{3}{2}\arcsec \bigg(\frac{7x}{2}\bigg)+C
 \end{align*}
 </div>
-<span class="incontext"><a href="TI6.html#md-13" class="internal">in-context</a></span>
+<span class="incontext"><a href="TI5.html#md-14" class="internal">in-context</a></span>
 </body>
 </html>

@@ -14,7 +14,8 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
 <meta property="book:author" content="TBIL Institute Fellows">
-<script>window.MathJax = {
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
@@ -34,11 +35,11 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
-startup: {
+  startup: {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
-      $(document).trigger("runestone:mathjax-ready");
+      rsMathReady();
       }
     )}
 },
@@ -202,7 +203,7 @@ startup: {
 <span class="type">Section</span> <span class="codenumber">7.6</span> <span class="title">Polar area (CO6)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-58"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-1642"><p id="p-2478">Compute areas bounded by curves given in polar coordinates.</p></li></ul></article><article class="fact theorem-like" id="fact-CO6polarIntegral"><h3 class="heading">
+<ul class="disc"><li id="li-1641"><p id="p-2491">Compute areas bounded by curves given in polar coordinates.</p></li></ul></article><article class="fact theorem-like" id="fact-CO6polarIntegral"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">7.6.1</span><span class="period">.</span>
 </h3>
 <p id="QCd">The area of the “fan-shaped” region between the pole and <span class="process-math">\(r=f(\theta)\)</span> as the angle <span class="process-math">\(\theta\)</span> ranges from <span class="process-math">\(\alpha\)</span> to <span class="process-math">\(\beta\)</span> is given by</p>
@@ -214,10 +215,10 @@ startup: {
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">148<span class="period">.</span></span><span class="space"> </span>Finding the polar area differential</figcaption></figure><article class="activity project-like" id="co6-activity-polar-area"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.6.2</span><span class="period">.</span>
 </h3>
-<article class="task exercise-like" id="task-745"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2480">Find an integral computing the area of the region defined by <span class="process-math">\(0\leq r\leq-\cos(\theta)+5\)</span> and <span class="process-math">\(\pi/2\leq \theta\leq 3\pi/4\text{.}\)</span></p></article><article class="task exercise-like" id="task-746"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2481">Find the area enclosed by the cardioid <span class="process-math">\(r=2(1+\cos(\theta)\text{.}\)</span></p></article><article class="task exercise-like" id="task-747"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2482">Find the area enclosed by one loop of the 4-petaled rose <span class="process-math">\(r=\cos(2\theta)\text{.}\)</span></p></article></article></section></div></main>
+<article class="task exercise-like" id="task-750"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2493">Find an integral computing the area of the region defined by <span class="process-math">\(0\leq r\leq-\cos(\theta)+5\)</span> and <span class="process-math">\(\pi/2\leq \theta\leq 3\pi/4\text{.}\)</span></p></article><article class="task exercise-like" id="task-751"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2494">Find the area enclosed by the cardioid <span class="process-math">\(r=2(1+\cos(\theta)\text{.}\)</span></p></article><article class="task exercise-like" id="task-752"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2495">Find the area enclosed by one loop of the 4-petaled rose <span class="process-math">\(r=\cos(2\theta)\text{.}\)</span></p></article></article></section></div></main>
 </div>
 </body>
 </html>

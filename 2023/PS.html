@@ -14,7 +14,8 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
 <meta property="book:author" content="TBIL Institute Fellows">
-<script>window.MathJax = {
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
@@ -34,11 +35,11 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
-startup: {
+  startup: {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
-      $(document).trigger("runestone:mathjax-ready");
+      rsMathReady();
       }
     )}
 },
@@ -203,38 +204,38 @@ startup: {
 <span class="type">Chapter</span> <span class="codenumber">9</span> <span class="title">Power Series (PS)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-69"><h2 class="heading"><span class="type">Learning Outcomes</span></h2>
-<div class="introduction" id="introduction-314">
-<p id="p-2987">How do we use series to understand functions?</p>
-<p id="p-2988">By the end of this chapter, you should be able to...</p>
+<div class="introduction" id="introduction-316">
+<p id="p-3000">How do we use series to understand functions?</p>
+<p id="p-3001">By the end of this chapter, you should be able to...</p>
 </div>
 <ol class="decimal">
-<li id="li-2221"><p id="p-2989">Approximate functions defined as power series.</p></li>
-<li id="li-2222"><p id="p-2990">Determine the interval of convergence for a given power series.</p></li>
-<li id="li-2223"><p id="p-2991">Compute power series by manipulating known exponential/trigonometric/binomial power series.</p></li>
-<li id="li-2224"><p id="p-2992">Determine  a Taylor or Maclaurin series for a function.</p></li>
+<li id="li-2220"><p id="p-3002">Approximate functions defined as power series.</p></li>
+<li id="li-2221"><p id="p-3003">Determine the interval of convergence for a given power series.</p></li>
+<li id="li-2222"><p id="p-3004">Compute power series by manipulating known exponential/trigonometric/binomial power series.</p></li>
+<li id="li-2223"><p id="p-3005">Determine  a Taylor or Maclaurin series for a function.</p></li>
 </ol></article><section class="introduction" id="PS-intro"><section class="paragraphs" id="PS-readiness"><h2 class="heading"><span class="title">Readiness Assurance.</span></h2>
-<p id="p-2993">Before beginning this chapter, you should be able to...</p>
+<p id="p-3006">Before beginning this chapter, you should be able to...</p>
 <ol class="lower-alpha">
-<li id="li-2225">
-<p id="p-2994">Compute limits.</p>
+<li id="li-2224">
+<p id="p-3007">Compute limits.</p>
 <ul class="disc">
-<li id="li-2226"><p id="p-2995">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-bc/bc-limits-new/bc-1-2/v/introduction-to-limits-hd?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-62" id="fn-62"><sup> 1 </sup></a></p></li>
-<li id="li-2227"><p id="p-2996">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-bc/bc-diff-contextual-applications-new/bc-4-7/v/introduction-to-l-hopital-s-rule?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-63" id="fn-63"><sup> 2 </sup></a></p></li>
+<li id="li-2225"><p id="p-3008">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-bc/bc-limits-new/bc-1-2/v/introduction-to-limits-hd?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-61" id="fn-61"><sup> 1 </sup></a></p></li>
+<li id="li-2226"><p id="p-3009">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-bc/bc-diff-contextual-applications-new/bc-4-7/v/introduction-to-l-hopital-s-rule?modal=1" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-62" id="fn-62"><sup> 2 </sup></a></p></li>
 </ul>
 </li>
-<li id="li-2228">
-<p id="p-2997">Express the sum of indexed values using summation notation.</p>
-<ul class="disc"><li id="li-2229"><p id="p-2998">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/sigma-notation-sum" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-64" id="fn-64"><sup> 3 </sup></a></p></li></ul>
+<li id="li-2227">
+<p id="p-3010">Express the sum of indexed values using summation notation.</p>
+<ul class="disc"><li id="li-2228"><p id="p-3011">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/sigma-notation-sum" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-63" id="fn-63"><sup> 3 </sup></a></p></li></ul>
 </li>
-<li id="li-2230">
-<p id="p-2999">Employ the ratio test for convergence.</p>
-<ul class="disc"><li id="li-2231"><p id="p-3000">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-bc/bc-series-new/bc-10-8/v/ratio-test-convergence" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-65" id="fn-65"><sup> 4 </sup></a></p></li></ul>
+<li id="li-2229">
+<p id="p-3012">Employ the ratio test for convergence.</p>
+<ul class="disc"><li id="li-2230"><p id="p-3013">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-bc/bc-series-new/bc-10-8/v/ratio-test-convergence" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-64" id="fn-64"><sup> 4 </sup></a></p></li></ul>
 </li>
-<li id="li-2232">
-<p id="p-3001">Power rule for differentiating and integrating.</p>
+<li id="li-2231">
+<p id="p-3014">Power rule for differentiating and integrating.</p>
 <ul class="disc">
-<li id="li-2233"><p id="p-3002">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-5/v/power-rule" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-66" id="fn-66"><sup> 5 </sup></a></p></li>
-<li id="li-2234"><p id="p-3003">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-8a/v/indefinite-integrals-of-x-raised-to-a-power" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-67" id="fn-67"><sup> 6 </sup></a></p></li>
+<li id="li-2232"><p id="p-3015">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-5/v/power-rule" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-65" id="fn-65"><sup> 5 </sup></a></p></li>
+<li id="li-2233"><p id="p-3016">Review: <a class="external" href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-8a/v/indefinite-integrals-of-x-raised-to-a-power" target="_blank">Khan Academy</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-66" id="fn-66"><sup> 6 </sup></a></p></li>
 </ul>
 </li>
 </ol></section></section><nav class="summary-links"><ul>
@@ -242,12 +243,12 @@ startup: {
 <li><a href="PS2.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Convergence of Power Series (PS2)</span></a></li>
 <li><a href="PS3.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Manipulation of Power Series (PS3)</span></a></li>
 <li><a href="PS4.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Taylor Series (PS4)</span></a></li>
-</ul></nav></section><div class="hidden-content tex2jax_ignore" id="hk-fn-62"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-bc/bc-limits-new/bc-1-2/v/introduction-to-limits-hd?modal=1</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-63"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-bc/bc-diff-contextual-applications-new/bc-4-7/v/introduction-to-l-hopital-s-rule?modal=1</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-64"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/sigma-notation-sum</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-65"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-bc/bc-series-new/bc-10-8/v/ratio-test-convergence</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-66"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-5/v/power-rule</code></div></div>
-<div class="hidden-content tex2jax_ignore" id="hk-fn-67"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-8a/v/indefinite-integrals-of-x-raised-to-a-power</code></div></div>
+</ul></nav></section><div class="hidden-content tex2jax_ignore" id="hk-fn-61"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-bc/bc-limits-new/bc-1-2/v/introduction-to-limits-hd?modal=1</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-62"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-bc/bc-diff-contextual-applications-new/bc-4-7/v/introduction-to-l-hopital-s-rule?modal=1</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-63"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-3/v/sigma-notation-sum</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-64"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-bc/bc-series-new/bc-10-8/v/ratio-test-convergence</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-65"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-5/v/power-rule</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-66"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-8a/v/indefinite-integrals-of-x-raised-to-a-power</code></div></div>
 </div></main>
 </div>
 </body>

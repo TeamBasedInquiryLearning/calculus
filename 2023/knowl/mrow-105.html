@@ -11,17 +11,13 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math" data-contains-math-knowls="">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fact-arclength.html">
 \begin{align*}
-\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]&amp;=\displaystyle \sum_{n=0}^\infty a_nnx^{n-1}\\
-(\text{Then since when }n=0, a_0(0)x^{-1}=0)&amp;\\
-&amp;=\displaystyle \sum_{n=1}^\infty a_nnx^{n-1}\\
-(\text{Then let }m=n-1, n=m+1)&amp;\\
-&amp;=\displaystyle \sum_{m=0}^\infty a_{m+1}(m+1)x^{m}\\
-(\text{Then renaming indices}.)&amp;\\
-&amp;=\displaystyle \sum_{n=0}^\infty a_{n+1}(n+1)x^{n}
+\lim_{\Delta x\to 0}\sqrt{(\Delta x)^2+(f(x_i+\Delta x)-f(x_i))^2} &amp; = \lim_{\Delta x\to 0} \sqrt{(\Delta x)^2\left(1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2\right)}\\
+&amp;= \lim_{\Delta x\to 0} \sqrt{1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2}\Delta x\\
+&amp;=\sqrt{1+(f'(x))^2}dx,
 \end{align*}
 </div>
-<span class="incontext"><a href="PS1.html#md-19" class="internal">in-context</a></span>
+<span class="incontext"><a href="AI4.html#md-18" class="internal">in-context</a></span>
 </body>
 </html>

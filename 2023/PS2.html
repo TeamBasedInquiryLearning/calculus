@@ -14,7 +14,8 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
 <meta property="book:author" content="TBIL Institute Fellows">
-<script>window.MathJax = {
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
@@ -34,11 +35,11 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
-startup: {
+  startup: {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
-      $(document).trigger("runestone:mathjax-ready");
+      rsMathReady();
       }
     )}
 },
@@ -202,18 +203,18 @@ startup: {
 <span class="type">Section</span> <span class="codenumber">9.2</span> <span class="title">Convergence of Power Series (PS2)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-71"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-2271"><p id="p-3028">Determine the interval of convergence for a given power series.</p></li></ul></article><article class="remark remark-like" id="remark-51"><h3 class="heading">
+<ul class="disc"><li id="li-2270"><p id="p-3041">Determine the interval of convergence for a given power series.</p></li></ul></article><article class="remark remark-like" id="remark-51"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">9.2.1</span><span class="period">.</span>
 </h3>
-<p id="p-3029">Consider a power series <span class="process-math">\(\displaystyle\sum c_n(x-a)^n\text{.}\)</span>  Recall from <a href="" class="xref" data-knowl="./knowl/fact-SQ7ratioTest.html" title="Fact 8.7.6: The Ratio Test">Fact 8.7.6</a> that if</p>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fact-SQ7ratioTest.html" id="md-23">
+<p id="p-3042">Consider a power series <span class="process-math">\(\displaystyle\sum c_n(x-a)^n\text{.}\)</span>  Recall from <a href="" class="xref" data-knowl="./knowl/fact-SQ7ratioTest.html" title="Fact 8.7.6: The Ratio Test">Fact 8.7.6</a> that if</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fact-SQ7ratioTest.html" id="md-25">
 \begin{align*}
 \displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)^{n+1}}{c_n(x-a)^n}\right| &amp; &lt; 1
 \end{align*}
 </div>
 <p class="continuation">then <span class="process-math">\(\displaystyle\sum c_n(x-a)^n\)</span> converges.</p>
-<p id="p-3030">Then recall:</p>
-<div class="displaymath process-math" data-contains-math-knowls="" id="md-24">
+<p id="p-3043">Then recall:</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-26">
 \begin{align*}
 \displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)^{n+1}}{c_n(x-a)^n}\right| &amp; = \displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)}{c_n}\right|\\
 &amp;=\displaystyle \lim_{n\to \infty} |x-a|\left|\frac{c_{n+1}}{c_n}\right| \\
@@ -222,77 +223,77 @@ startup: {
 </div></article><article class="activity project-like" id="activity-570"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.2.2</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-319"><p id="p-3031">Consider <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{1}{n^2+1}x^n.\)</span></p></div>
-<article class="task exercise-like" id="task-950"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-3032">Letting <span class="process-math">\(c_n=\frac{1}{n^2+1}\text{,}\)</span> find <span class="process-math">\(\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|\text{.}\)</span></p></article><article class="task exercise-like" id="task-951"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-3033">For what values of <span class="process-math">\(x\)</span> is <span class="process-math">\(\displaystyle |x|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &lt; 1\text{?}\)</span></p>
+<div class="introduction" id="introduction-321"><p id="p-3044">Consider <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{1}{n^2+1}x^n.\)</span></p></div>
+<article class="task exercise-like" id="task-955"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-3045">Letting <span class="process-math">\(c_n=\frac{1}{n^2+1}\text{,}\)</span> find <span class="process-math">\(\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|\text{.}\)</span></p></article><article class="task exercise-like" id="task-956"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-3046">For what values of <span class="process-math">\(x\)</span> is <span class="process-math">\(\displaystyle |x|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &lt; 1\text{?}\)</span></p>
 <ol class="upper-alpha cols2">
-<li id="li-2272"><p id="p-derived-li-2272"><span class="process-math">\(x &lt; 1\text{.}\)</span></p></li>
-<li id="li-2273"><p id="p-derived-li-2273"><span class="process-math">\(0\leq x &lt; 1\text{.}\)</span></p></li>
-<li id="li-2274"><p id="p-derived-li-2274"><span class="process-math">\(-1 &lt; x &lt; 1\text{.}\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-952"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-3034">If <span class="process-math">\(x=1\text{,}\)</span> does <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{1}{n^2+1}x^n\)</span> converge?</p></article><article class="task exercise-like" id="task-953"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-3035">If <span class="process-math">\(x=-1\text{,}\)</span> does <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{1}{n^2+1}x^n\)</span> converge?</p></article><article class="task exercise-like" id="task-954"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-3036">Which of the following describe the values of <span class="process-math">\(x\)</span> for which <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{1}{n^2+1}x^n\)</span> converges?</p>
+<li id="li-2271"><p id="p-derived-li-2271"><span class="process-math">\(x &lt; 1\text{.}\)</span></p></li>
+<li id="li-2272"><p id="p-derived-li-2272"><span class="process-math">\(0\leq x &lt; 1\text{.}\)</span></p></li>
+<li id="li-2273"><p id="p-derived-li-2273"><span class="process-math">\(-1 &lt; x &lt; 1\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-957"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-3047">If <span class="process-math">\(x=1\text{,}\)</span> does <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{1}{n^2+1}x^n\)</span> converge?</p></article><article class="task exercise-like" id="task-958"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-3048">If <span class="process-math">\(x=-1\text{,}\)</span> does <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{1}{n^2+1}x^n\)</span> converge?</p></article><article class="task exercise-like" id="task-959"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-3049">Which of the following describe the values of <span class="process-math">\(x\)</span> for which <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{1}{n^2+1}x^n\)</span> converges?</p>
 <ol class="upper-alpha cols2">
-<li id="li-2275"><p id="p-derived-li-2275"><span class="process-math">\((-1,1)\text{.}\)</span></p></li>
-<li id="li-2276"><p id="p-derived-li-2276"><span class="process-math">\([-1,1)\text{.}\)</span></p></li>
-<li id="li-2277"><p id="p-derived-li-2277"><span class="process-math">\((-1,1]\text{.}\)</span></p></li>
-<li id="li-2278"><p id="p-derived-li-2278"><span class="process-math">\([-1,1]\text{.}\)</span></p></li>
+<li id="li-2274"><p id="p-derived-li-2274"><span class="process-math">\((-1,1)\text{.}\)</span></p></li>
+<li id="li-2275"><p id="p-derived-li-2275"><span class="process-math">\([-1,1)\text{.}\)</span></p></li>
+<li id="li-2276"><p id="p-derived-li-2276"><span class="process-math">\((-1,1]\text{.}\)</span></p></li>
+<li id="li-2277"><p id="p-derived-li-2277"><span class="process-math">\([-1,1]\text{.}\)</span></p></li>
 </ol></article></article><article class="activity project-like" id="activity-571"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.2.3</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-320"><p id="p-3037">Consider <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{2^n}{5^n}(x-2)^n.\)</span></p></div>
-<article class="task exercise-like" id="task-955"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-3038">Letting <span class="process-math">\(c_n=\frac{2^n}{5^n}\text{,}\)</span> find <span class="process-math">\(\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|\text{.}\)</span></p></article><article class="task exercise-like" id="task-956"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-3039">For what values of <span class="process-math">\(x\)</span> is <span class="process-math">\(\displaystyle |x-2|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &lt; 1\text{?}\)</span></p>
+<div class="introduction" id="introduction-322"><p id="p-3050">Consider <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{2^n}{5^n}(x-2)^n.\)</span></p></div>
+<article class="task exercise-like" id="task-960"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-3051">Letting <span class="process-math">\(c_n=\frac{2^n}{5^n}\text{,}\)</span> find <span class="process-math">\(\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|\text{.}\)</span></p></article><article class="task exercise-like" id="task-961"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-3052">For what values of <span class="process-math">\(x\)</span> is <span class="process-math">\(\displaystyle |x-2|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &lt; 1\text{?}\)</span></p>
 <ol class="upper-alpha cols2">
-<li id="li-2279"><p id="p-derived-li-2279"><span class="process-math">\(-\frac{2}{5} &lt; x &lt; \frac{2}{5}\text{.}\)</span></p></li>
-<li id="li-2280"><p id="p-derived-li-2280"><span class="process-math">\(\frac{8}{5} &lt; x &lt; \frac{12}{5}\text{.}\)</span></p></li>
-<li id="li-2281"><p id="p-derived-li-2281"><span class="process-math">\(-\frac{5}{2} &lt; x &lt; \frac{5}{2}\text{.}\)</span></p></li>
-<li id="li-2282"><p id="p-derived-li-2282"><span class="process-math">\(-\frac{1}{2} &lt; x &lt; \frac{9}{2}\text{.}\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-957"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-3040">If <span class="process-math">\(x=\frac{9}{2}\text{,}\)</span> does <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{2^n}{5^n}(x-2)^n\)</span> converge?</p></article><article class="task exercise-like" id="task-958"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-3041">If <span class="process-math">\(x=-\frac{1}{2}\text{,}\)</span> does <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{2^n}{5^n}(x-2)^n\)</span> converge?</p></article><article class="task exercise-like" id="task-959"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-3042">Which of the following describe the values of <span class="process-math">\(x\)</span> for which <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{2^n}{5^n}(x-2)^n\)</span> converges?</p>
+<li id="li-2278"><p id="p-derived-li-2278"><span class="process-math">\(-\frac{2}{5} &lt; x &lt; \frac{2}{5}\text{.}\)</span></p></li>
+<li id="li-2279"><p id="p-derived-li-2279"><span class="process-math">\(\frac{8}{5} &lt; x &lt; \frac{12}{5}\text{.}\)</span></p></li>
+<li id="li-2280"><p id="p-derived-li-2280"><span class="process-math">\(-\frac{5}{2} &lt; x &lt; \frac{5}{2}\text{.}\)</span></p></li>
+<li id="li-2281"><p id="p-derived-li-2281"><span class="process-math">\(-\frac{1}{2} &lt; x &lt; \frac{9}{2}\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-962"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-3053">If <span class="process-math">\(x=\frac{9}{2}\text{,}\)</span> does <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{2^n}{5^n}(x-2)^n\)</span> converge?</p></article><article class="task exercise-like" id="task-963"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-3054">If <span class="process-math">\(x=-\frac{1}{2}\text{,}\)</span> does <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{2^n}{5^n}(x-2)^n\)</span> converge?</p></article><article class="task exercise-like" id="task-964"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-3055">Which of the following describe the values of <span class="process-math">\(x\)</span> for which <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{2^n}{5^n}(x-2)^n\)</span> converges?</p>
 <ol class="upper-alpha cols2">
-<li id="li-2283"><p id="p-derived-li-2283"><span class="process-math">\((-\frac{1}{2},\frac{9}{2})\text{.}\)</span></p></li>
-<li id="li-2284"><p id="p-derived-li-2284"><span class="process-math">\([-\frac{1}{2},\frac{9}{2})\text{.}\)</span></p></li>
-<li id="li-2285"><p id="p-derived-li-2285"><span class="process-math">\((-\frac{1}{2},\frac{9}{2}]\text{.}\)</span></p></li>
-<li id="li-2286"><p id="p-derived-li-2286"><span class="process-math">\([-\frac{1}{2},\frac{9}{2}]\text{.}\)</span></p></li>
+<li id="li-2282"><p id="p-derived-li-2282"><span class="process-math">\((-\frac{1}{2},\frac{9}{2})\text{.}\)</span></p></li>
+<li id="li-2283"><p id="p-derived-li-2283"><span class="process-math">\([-\frac{1}{2},\frac{9}{2})\text{.}\)</span></p></li>
+<li id="li-2284"><p id="p-derived-li-2284"><span class="process-math">\((-\frac{1}{2},\frac{9}{2}]\text{.}\)</span></p></li>
+<li id="li-2285"><p id="p-derived-li-2285"><span class="process-math">\([-\frac{1}{2},\frac{9}{2}]\text{.}\)</span></p></li>
 </ol></article></article><article class="activity project-like" id="activity-572"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.2.4</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-321"><p id="p-3043">Consider <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{n^2}{n!}\left(x+\frac{1}{2}\right)^n.\)</span></p></div>
-<article class="task exercise-like" id="task-960"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-3044">Letting <span class="process-math">\(c_n=\frac{n^2}{n!}\text{,}\)</span> find <span class="process-math">\(\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|\text{.}\)</span></p></article><article class="task exercise-like" id="task-961"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-3045">For what values of <span class="process-math">\(x\)</span> is <span class="process-math">\(\displaystyle \left|x+\frac{1}{2}\right|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &lt; 1\text{?}\)</span></p>
+<div class="introduction" id="introduction-323"><p id="p-3056">Consider <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{n^2}{n!}\left(x+\frac{1}{2}\right)^n.\)</span></p></div>
+<article class="task exercise-like" id="task-965"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-3057">Letting <span class="process-math">\(c_n=\frac{n^2}{n!}\text{,}\)</span> find <span class="process-math">\(\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|\text{.}\)</span></p></article><article class="task exercise-like" id="task-966"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-3058">For what values of <span class="process-math">\(x\)</span> is <span class="process-math">\(\displaystyle \left|x+\frac{1}{2}\right|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right| &lt; 1\text{?}\)</span></p>
 <ol class="upper-alpha cols2">
-<li id="li-2287"><p id="p-derived-li-2287"><span class="process-math">\(0\leq x &lt; \infty\text{.}\)</span></p></li>
-<li id="li-2288"><p id="p-derived-li-2288">All real numbers.</p></li>
-</ol></article><article class="task exercise-like" id="task-962"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-3046">What describes the values of <span class="process-math">\(x\)</span> for which <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{n^2}{n!}\left(x+\frac{1}{2}\right)^n\)</span> converges?</p></article></article><article class="fact theorem-like" id="intervalofconvergence"><h3 class="heading">
+<li id="li-2286"><p id="p-derived-li-2286"><span class="process-math">\(0\leq x &lt; \infty\text{.}\)</span></p></li>
+<li id="li-2287"><p id="p-derived-li-2287">All real numbers.</p></li>
+</ol></article><article class="task exercise-like" id="task-967"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-3059">What describes the values of <span class="process-math">\(x\)</span> for which <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{n^2}{n!}\left(x+\frac{1}{2}\right)^n\)</span> converges?</p></article></article><article class="fact theorem-like" id="intervalofconvergence"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">9.2.5</span><span class="period">.</span>
 </h3>
-<p id="p-3047">Given the power series <span class="process-math">\(\displaystyle\sum c_n(x-a)^n\text{,}\)</span> the <dfn class="terminology">center of convergence</dfn> is <span class="process-math">\(x=a\text{.}\)</span>  The <dfn class="terminology">radius of convergence</dfn> is</p>
+<p id="p-3060">Given the power series <span class="process-math">\(\displaystyle\sum c_n(x-a)^n\text{,}\)</span> the <dfn class="terminology">center of convergence</dfn> is <span class="process-math">\(x=a\text{.}\)</span>  The <dfn class="terminology">radius of convergence</dfn> is</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 r=\frac{1}{\displaystyle\lim_{n\to\infty} \left| \frac{c_{n+1}}{c_n} \right|}.
 \end{equation*}
 </div>
 <p class="continuation">If <span class="process-math">\(\displaystyle\lim_{n\to\infty} \left| \frac{c_{n+1}}{c_n} \right|=0\text{,}\)</span> we say that <span class="process-math">\(r=\infty\text{.}\)</span></p>
-<p id="p-3048">The <dfn class="terminology">interval of convergence</dfn> represents all possible values of <span class="process-math">\(x\)</span> for which <span class="process-math">\(\displaystyle\sum c_n(x-a)^n\)</span> converges, which is of the form:</p>
+<p id="p-3061">The <dfn class="terminology">interval of convergence</dfn> represents all possible values of <span class="process-math">\(x\)</span> for which <span class="process-math">\(\displaystyle\sum c_n(x-a)^n\)</span> converges, which is of the form:</p>
 <ul class="disc">
-<li id="li-2289"><p id="p-derived-li-2289"><span class="process-math">\(\displaystyle (a-r, a+r)\)</span></p></li>
-<li id="li-2290"><p id="p-derived-li-2290"><span class="process-math">\(\displaystyle [a-r, a+r)\)</span></p></li>
-<li id="li-2291"><p id="p-derived-li-2291"><span class="process-math">\(\displaystyle (a-r, a+r]\)</span></p></li>
-<li id="li-2292"><p id="p-derived-li-2292"><span class="process-math">\(\displaystyle [a-r, a+r]\)</span></p></li>
+<li id="li-2288"><p id="p-derived-li-2288"><span class="process-math">\(\displaystyle (a-r, a+r)\)</span></p></li>
+<li id="li-2289"><p id="p-derived-li-2289"><span class="process-math">\(\displaystyle [a-r, a+r)\)</span></p></li>
+<li id="li-2290"><p id="p-derived-li-2290"><span class="process-math">\(\displaystyle (a-r, a+r]\)</span></p></li>
+<li id="li-2291"><p id="p-derived-li-2291"><span class="process-math">\(\displaystyle [a-r, a+r]\)</span></p></li>
 </ul>
 <p class="continuation">Depending on if <span class="process-math">\(\displaystyle\sum c_n(x-a)^n\)</span> converges when <span class="process-math">\(x=a-r\)</span> or <span class="process-math">\(x=a+r\text{.}\)</span></p>
-<p id="p-3049">If <span class="process-math">\(r=\infty\)</span> the interval of convergence is all real numbers.</p></article><article class="activity project-like" id="activity-573"><h3 class="heading">
+<p id="p-3062">If <span class="process-math">\(r=\infty\)</span> the interval of convergence is all real numbers.</p></article><article class="activity project-like" id="activity-573"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.2.6</span><span class="period">.</span>
 </h3>
-<p id="p-3050">Find the center of convergence, radius of convergence, and interval of convergence for the series:</p>
+<p id="p-3063">Find the center of convergence, radius of convergence, and interval of convergence for the series:</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \sum_{n=0}^\infty \frac{3^{n} \left(-1\right)^{n} {\left(x - 1\right)}^{n}}{n!}.
@@ -300,7 +301,7 @@ r=\frac{1}{\displaystyle\lim_{n\to\infty} \left| \frac{c_{n+1}}{c_n} \right|}.
 </div></article><article class="activity project-like" id="activity-574"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.2.7</span><span class="period">.</span>
 </h3>
-<p id="p-3051">Find the center of convergence, radius of convergence, and interval of convergence for the series:</p>
+<p id="p-3064">Find the center of convergence, radius of convergence, and interval of convergence for the series:</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \sum_{n=0}^\infty \frac{3^{n} {\left(x + 2\right)}^{n}}{n}.
@@ -308,13 +309,13 @@ r=\frac{1}{\displaystyle\lim_{n\to\infty} \left| \frac{c_{n+1}}{c_n} \right|}.
 </div></article><article class="activity project-like" id="activity-575"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.2.8</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-322"><p id="p-3052">Consider the power series <span class="process-math">\(\displaystyle \sum_{n=0}^\infty \frac{2^n+1}{n3^n}\left(x+1\right)^n\text{.}\)</span></p></div>
-<article class="task exercise-like" id="task-963"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-3053">What is the center of convergence for this power series?</p></article><article class="task exercise-like" id="task-964"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-3054">What is the radius of convergence for this power series?</p></article><article class="task exercise-like" id="task-965"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-3055">What is the interval of convergence for this power series?</p></article><article class="task exercise-like" id="task-966"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-3056">If <span class="process-math">\(x=-0.5\text{,}\)</span> does this series converge? (Use the interval of convergence.)</p></article><article class="task exercise-like" id="task-967"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-3057">If <span class="process-math">\(x=1\text{,}\)</span> does this series converge? (Use the interval of convergence.)</p></article></article><section class="subsection" id="subsection-25"><h3 class="heading hide-type">
+<div class="introduction" id="introduction-324"><p id="p-3065">Consider the power series <span class="process-math">\(\displaystyle \sum_{n=0}^\infty \frac{2^n+1}{n3^n}\left(x+1\right)^n\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-968"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-3066">What is the center of convergence for this power series?</p></article><article class="task exercise-like" id="task-969"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-3067">What is the radius of convergence for this power series?</p></article><article class="task exercise-like" id="task-970"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-3068">What is the interval of convergence for this power series?</p></article><article class="task exercise-like" id="task-971"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-3069">If <span class="process-math">\(x=-0.5\text{,}\)</span> does this series converge? (Use the interval of convergence.)</p></article><article class="task exercise-like" id="task-972"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-3070">If <span class="process-math">\(x=1\text{,}\)</span> does this series converge? (Use the interval of convergence.)</p></article></article><section class="subsection" id="subsection-25"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">9.2.1</span> <span class="title">Videos</span>
 </h3>
 <figure class="figure figure-like" id="figure-154"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-PS2" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/npxONByK-GQ?&amp;modestbranding=1&amp;rel=0"></iframe></div>

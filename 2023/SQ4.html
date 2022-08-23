@@ -14,7 +14,8 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
 <meta property="book:author" content="TBIL Institute Fellows">
-<script>window.MathJax = {
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
     tags: "none",
@@ -34,11 +35,11 @@
     load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
     paths: {pretext: "https://pretextbook.org/js/lib"},
   },
-startup: {
+  startup: {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
-      $(document).trigger("runestone:mathjax-ready");
+      rsMathReady();
       }
     )}
 },
@@ -202,12 +203,12 @@ startup: {
 <span class="type">Section</span> <span class="codenumber">8.4</span> <span class="title">Geometric Series (SQ4)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-63"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-1842"><p id="p-2611">Determine if a geometric series converges, and if so, the value it converges to.</p></li></ul></article><article class="activity project-like" id="activity-SQ4whengeoconverge"><h3 class="heading">
+<ul class="disc"><li id="li-1841"><p id="p-2624">Determine if a geometric series converges, and if so, the value it converges to.</p></li></ul></article><article class="activity project-like" id="activity-SQ4whengeoconverge"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.4.1</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-266">
-<p id="p-2612">Recall from <a href="SQ3.html" class="internal" title="Section 8.3: Partial Sum Sequence (SQ3)">Section 8.3</a> that for any real numbers <span class="process-math">\(a, r\)</span> and <span class="process-math">\(\displaystyle S_n=\sum_{i=0}^n ar^i\)</span> that:</p>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/SQ3.html" id="md-17">
+<div class="introduction" id="introduction-268">
+<p id="p-2625">Recall from <a href="SQ3.html" class="internal" title="Section 8.3: Partial Sum Sequence (SQ3)">Section 8.3</a> that for any real numbers <span class="process-math">\(a, r\)</span> and <span class="process-math">\(\displaystyle S_n=\sum_{i=0}^n ar^i\)</span> that:</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/SQ3.html" id="md-19">
 \begin{align*}
 S_n=\sum_{i=0}^n ar^i &amp;= a+ar+ar^2+\cdots ar^n\\
 (1-r)S_n=(1-r)\sum_{i=0}^n ar^i&amp;= (1-r)(a+ar+ar^2+\cdots ar^n)\\
@@ -216,71 +217,71 @@ S_n&amp;=a\frac{1-r^{n+1}}{1-r}.
 \end{align*}
 </div>
 </div>
-<article class="task exercise-like" id="task-806"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2613">Using <a href="" class="xref" data-knowl="./knowl/definition-SQ3serieslimit.html" title="Definition 8.3.12">Definition 8.3.12</a>, given each restriction on <span class="process-math">\(r\text{,}\)</span> determine if <span class="process-math">\(\displaystyle \sum_{n=0}^\infty ar^n\)</span> converges.</p>
+<article class="task exercise-like" id="task-811"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2626">Using <a href="" class="xref" data-knowl="./knowl/definition-SQ3serieslimit.html" title="Definition 8.3.12">Definition 8.3.12</a>, given each restriction on <span class="process-math">\(r\text{,}\)</span> determine if <span class="process-math">\(\displaystyle \sum_{n=0}^\infty ar^n\)</span> converges.</p>
 <ol class="upper-alpha cols2">
-<li id="li-1843"><p id="p-derived-li-1843"><span class="process-math">\(r&gt;1\text{.}\)</span></p></li>
-<li id="li-1844"><p id="p-derived-li-1844"><span class="process-math">\(r=1\text{.}\)</span></p></li>
-<li id="li-1845"><p id="p-derived-li-1845"><span class="process-math">\(-1&lt;r&lt;1\text{.}\)</span></p></li>
-<li id="li-1846"><p id="p-derived-li-1846"><span class="process-math">\(r=-1\text{.}\)</span></p></li>
-<li id="li-1847"><p id="p-derived-li-1847"><span class="process-math">\(r&lt;-1\text{.}\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-807"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2614">Where possible, determine what value <span class="process-math">\(\displaystyle \sum_{n=0}^\infty ar^n\)</span> converges to.</p></article></article><article class="fact theorem-like" id="geometricseriesconverge"><h3 class="heading">
+<li id="li-1842"><p id="p-derived-li-1842"><span class="process-math">\(r&gt;1\text{.}\)</span></p></li>
+<li id="li-1843"><p id="p-derived-li-1843"><span class="process-math">\(r=1\text{.}\)</span></p></li>
+<li id="li-1844"><p id="p-derived-li-1844"><span class="process-math">\(-1&lt;r&lt;1\text{.}\)</span></p></li>
+<li id="li-1845"><p id="p-derived-li-1845"><span class="process-math">\(r=-1\text{.}\)</span></p></li>
+<li id="li-1846"><p id="p-derived-li-1846"><span class="process-math">\(r&lt;-1\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-812"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2627">Where possible, determine what value <span class="process-math">\(\displaystyle \sum_{n=0}^\infty ar^n\)</span> converges to.</p></article></article><article class="fact theorem-like" id="geometricseriesconverge"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">8.4.2</span><span class="period">.</span>
 </h3>
-<p id="p-2615"><em class="emphasis">Geometric series</em> are of the form <span class="process-math">\(\displaystyle \sum_{n=0}^\infty ar^n\text{,}\)</span> where <span class="process-math">\(a\)</span> and <span class="process-math">\(r\)</span> are real numbers. A geometric series converges only when <span class="process-math">\(|r|&lt;1\text{.}\)</span> In this case, <span class="process-math">\(\displaystyle \sum_{n=0}^\infty ar^n=\frac{a}{1-r}\text{.}\)</span> Otherwise, the geometric series diverges.</p></article><article class="activity project-like" id="activity-SQ4modifiedgeom"><h3 class="heading">
+<p id="p-2628"><em class="emphasis">Geometric series</em> are of the form <span class="process-math">\(\displaystyle \sum_{n=0}^\infty ar^n\text{,}\)</span> where <span class="process-math">\(a\)</span> and <span class="process-math">\(r\)</span> are real numbers. A geometric series converges only when <span class="process-math">\(|r|&lt;1\text{.}\)</span> In this case, <span class="process-math">\(\displaystyle \sum_{n=0}^\infty ar^n=\frac{a}{1-r}\text{.}\)</span> Otherwise, the geometric series diverges.</p></article><article class="activity project-like" id="activity-SQ4modifiedgeom"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.4.3</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-267">
-<p id="p-2616">Consider the infinite series</p>
+<div class="introduction" id="introduction-269">
+<p id="p-2629">Consider the infinite series</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 5+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots.
 \end{equation*}
 </div>
 </div>
-<article class="task exercise-like" id="task-808"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2617">What of the following approaches will best help us determine the convergence of this series?</p>
+<article class="task exercise-like" id="task-813"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2630">What of the following approaches will best help us determine the convergence of this series?</p>
 <ol class="upper-alpha cols2">
-<li id="li-1848"><p id="p-derived-li-1848">This is a geometric series of the form <span class="process-math">\(\displaystyle \sum_{n=0}^\infty 5\cdot \left(\frac{1}{2}\right)^n\text{.}\)</span></p></li>
-<li id="li-1849"><p id="p-derived-li-1849">This is a geometric series of the form <span class="process-math">\(\displaystyle \sum_{n=0}^\infty 1\cdot \left(\frac{1}{2}\right)^n\text{.}\)</span></p></li>
-<li id="li-1850"><p id="p-derived-li-1850">We can rewrite<div class="displaymath process-math" data-contains-math-knowls="">
+<li id="li-1847"><p id="p-derived-li-1847">This is a geometric series of the form <span class="process-math">\(\displaystyle \sum_{n=0}^\infty 5\cdot \left(\frac{1}{2}\right)^n\text{.}\)</span></p></li>
+<li id="li-1848"><p id="p-derived-li-1848">This is a geometric series of the form <span class="process-math">\(\displaystyle \sum_{n=0}^\infty 1\cdot \left(\frac{1}{2}\right)^n\text{.}\)</span></p></li>
+<li id="li-1849"><p id="p-derived-li-1849">We can rewrite<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 5+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots = 4+\left(1+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots \right).
 \end{equation*}
 </div></p></li>
-</ol></article><article class="task exercise-like" id="task-809"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2618">Using your chosen approach, determine if <span class="process-math">\(5+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots\)</span> converges, and if so, to what it converges.</p></article></article><article class="activity project-like" id="activity-SQ4truncatedgeom"><h3 class="heading">
+</ol></article><article class="task exercise-like" id="task-814"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2631">Using your chosen approach, determine if <span class="process-math">\(5+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots\)</span> converges, and if so, to what it converges.</p></article></article><article class="activity project-like" id="activity-SQ4truncatedgeom"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.4.4</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-268">
-<p id="p-2619">Consider the infinite series</p>
+<div class="introduction" id="introduction-270">
+<p id="p-2632">Consider the infinite series</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \displaystyle\sum_{n=3}^\infty 2(0.7)^n.
 \end{equation*}
 </div>
 </div>
-<article class="task exercise-like" id="task-810"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2620">What of the following approaches will best help us determine the convergence of this series?</p>
+<article class="task exercise-like" id="task-815"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2633">What of the following approaches will best help us determine the convergence of this series?</p>
 <ol class="upper-alpha cols2">
-<li id="li-1851"><p id="p-derived-li-1851">Noticing that <span class="process-math">\(\displaystyle 3\cdot\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n\text{.}\)</span></p></li>
-<li id="li-1852"><p id="p-derived-li-1852">Noticing that <span class="process-math">\(\displaystyle 2+\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n\text{.}\)</span></p></li>
-<li id="li-1853"><p id="p-derived-li-1853">Noticing that <span class="process-math">\(\displaystyle 2n+\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n\text{.}\)</span></p></li>
-<li id="li-1854"><p id="p-derived-li-1854">Noticing that <span class="process-math">\(\displaystyle 2(0.7)^0+2(0.7)^1+2(0.7)^2+\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n\text{.}\)</span></p></li>
-<li id="li-1855"><p id="p-derived-li-1855">Noticing that <span class="process-math">\(\displaystyle 0+1+2+\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n\text{.}\)</span></p></li>
-</ol></article><article class="task exercise-like" id="task-811"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2621">Using your chosen approach, determine if <span class="process-math">\(\displaystyle\sum_{n=3}^\infty 2(0.7)^n\)</span> converges, and if so, to what it converges.</p></article></article><article class="example example-like" id="example-SQ4modifiedgeometric"><h3 class="heading">
+<li id="li-1850"><p id="p-derived-li-1850">Noticing that <span class="process-math">\(\displaystyle 3\cdot\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n\text{.}\)</span></p></li>
+<li id="li-1851"><p id="p-derived-li-1851">Noticing that <span class="process-math">\(\displaystyle 2+\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n\text{.}\)</span></p></li>
+<li id="li-1852"><p id="p-derived-li-1852">Noticing that <span class="process-math">\(\displaystyle 2n+\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n\text{.}\)</span></p></li>
+<li id="li-1853"><p id="p-derived-li-1853">Noticing that <span class="process-math">\(\displaystyle 2(0.7)^0+2(0.7)^1+2(0.7)^2+\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n\text{.}\)</span></p></li>
+<li id="li-1854"><p id="p-derived-li-1854">Noticing that <span class="process-math">\(\displaystyle 0+1+2+\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n\text{.}\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-816"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2634">Using your chosen approach, determine if <span class="process-math">\(\displaystyle\sum_{n=3}^\infty 2(0.7)^n\)</span> converges, and if so, to what it converges.</p></article></article><article class="example example-like" id="example-SQ4modifiedgeometric"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">8.4.5</span><span class="period">.</span>
 </h3>
-<p id="p-2622">Given a series that appears to be mostly geometric:</p>
+<p id="p-2635">Given a series that appears to be mostly geometric:</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 3+(1.1)^3+(1.1)^4+\cdots(1.1)^n+\cdots
 \end{equation*}
 </div>
 <p class="continuation">we can rewrite it as the sum of a standard geometric series with some modification: <span class="process-math">\(\displaystyle ???+\sum_{n=0}^\infty a\cdot r^n\text{:}\)</span></p>
-<div class="displaymath process-math" data-contains-math-knowls="" id="md-18">
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-20">
 \begin{align*}
 &amp;3+(1.1)^3+(1.1)^4+\cdots(1.1)^n+\cdots \\
 &amp;=3-[(1.1)^0+(1.1)^1+(1.1)^2)]+[(1.1)^0+(1.1)^1+(1.1)^2]+(1.1)^3+\cdots\\
@@ -292,25 +293,25 @@ S_n&amp;=a\frac{1-r^{n+1}}{1-r}.
 <p class="continuation">which converges if and only if <span class="process-math">\(\displaystyle \sum_{n=0}^\infty (1.1)^n\)</span> converges.  In this case, it does not.</p></article><article class="activity project-like" id="activity-SQ4evaluatingmodifiedgeo"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.4.6</span><span class="period">.</span>
 </h3>
-<p id="p-2623">For each of the following modified geometric series, rewrite them in the form <span class="process-math">\(???+\displaystyle\sum_{n=0}^\infty a\cdot r^n\text{.}\)</span></p>
+<p id="p-2636">For each of the following modified geometric series, rewrite them in the form <span class="process-math">\(???+\displaystyle\sum_{n=0}^\infty a\cdot r^n\text{.}\)</span></p>
 <ol class="decimal">
-<li id="li-1856"><p id="p-derived-li-1856"><span class="process-math">\(\displaystyle -7+\left( -\frac{3}{7}\right)^2+\left( -\frac{3}{7}\right)^3+\cdots\text{.}\)</span></p></li>
-<li id="li-1857"><p id="p-derived-li-1857"><span class="process-math">\(-6+\left(\frac{5}{4}\right)^3+\left(\frac{5}{4}\right)^4+\cdots\text{.}\)</span></p></li>
-<li id="li-1858"><p id="p-derived-li-1858"><span class="process-math">\(\displaystyle 4+\sum_{n=4}^\infty \left(\frac{2}{3}\right)^n\text{.}\)</span></p></li>
-<li id="li-1859"><p id="p-derived-li-1859"><span class="process-math">\(8-1+1-1+1-1+\cdots\text{.}\)</span></p></li>
+<li id="li-1855"><p id="p-derived-li-1855"><span class="process-math">\(\displaystyle -7+\left( -\frac{3}{7}\right)^2+\left( -\frac{3}{7}\right)^3+\cdots\text{.}\)</span></p></li>
+<li id="li-1856"><p id="p-derived-li-1856"><span class="process-math">\(-6+\left(\frac{5}{4}\right)^3+\left(\frac{5}{4}\right)^4+\cdots\text{.}\)</span></p></li>
+<li id="li-1857"><p id="p-derived-li-1857"><span class="process-math">\(\displaystyle 4+\sum_{n=4}^\infty \left(\frac{2}{3}\right)^n\text{.}\)</span></p></li>
+<li id="li-1858"><p id="p-derived-li-1858"><span class="process-math">\(8-1+1-1+1-1+\cdots\text{.}\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-502"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.4.7</span><span class="period">.</span>
 </h3>
-<p id="p-2624">Use your rewritten forms from <a href="" class="xref" data-knowl="./knowl/activity-SQ4evaluatingmodifiedgeo.html" title="Activity 8.4.6">Activity 8.4.6</a> to determine which of the modified geometric series converge. If the series converges, find to what value it converges.</p>
+<p id="p-2637">Use your rewritten forms from <a href="" class="xref" data-knowl="./knowl/activity-SQ4evaluatingmodifiedgeo.html" title="Activity 8.4.6">Activity 8.4.6</a> to determine which of the modified geometric series converge. If the series converges, find to what value it converges.</p>
 <ol class="upper-alpha cols2">
-<li id="li-1860"><p id="p-derived-li-1860"><span class="process-math">\(\displaystyle -7+\left( -\frac{3}{7}\right)^2+\left( -\frac{3}{7}\right)^3+\cdots\text{.}\)</span></p></li>
-<li id="li-1861"><p id="p-derived-li-1861"><span class="process-math">\(-6+\left(\frac{5}{4}\right)^3+\left(\frac{5}{4}\right)^4+\cdots\text{.}\)</span></p></li>
-<li id="li-1862"><p id="p-derived-li-1862"><span class="process-math">\(\displaystyle 4+\sum_{n=4}^\infty \left(\frac{2}{3}\right)^n\text{.}\)</span></p></li>
-<li id="li-1863"><p id="p-derived-li-1863"><span class="process-math">\(8-1+1-1+1-1+\cdots\text{.}\)</span></p></li>
+<li id="li-1859"><p id="p-derived-li-1859"><span class="process-math">\(\displaystyle -7+\left( -\frac{3}{7}\right)^2+\left( -\frac{3}{7}\right)^3+\cdots\text{.}\)</span></p></li>
+<li id="li-1860"><p id="p-derived-li-1860"><span class="process-math">\(-6+\left(\frac{5}{4}\right)^3+\left(\frac{5}{4}\right)^4+\cdots\text{.}\)</span></p></li>
+<li id="li-1861"><p id="p-derived-li-1861"><span class="process-math">\(\displaystyle 4+\sum_{n=4}^\infty \left(\frac{2}{3}\right)^n\text{.}\)</span></p></li>
+<li id="li-1862"><p id="p-derived-li-1862"><span class="process-math">\(8-1+1-1+1-1+\cdots\text{.}\)</span></p></li>
 </ol></article><article class="activity project-like" id="activity-503"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.4.8</span><span class="period">.</span>
 </h3>
-<p id="p-2625">Find the limit of the following series.</p>
+<p id="p-2638">Find the limit of the following series.</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 -1 + \sum_{n = 1 }^\infty 2\cdot\left(\frac{1}{2}\right)^n.
