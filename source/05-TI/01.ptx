@@ -602,11 +602,10 @@ Use substitution to solve the integral.
     <subsection>
         <title>Videos</title>
     <figure>
-		<video xml:id="video-TI1" youtube="-9amHammH_I">
-			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
-		</video>
+		<video xml:id="video-TI1" youtube="-9amHammH_I"/>
         <caption>Video: Evaluate various integrals via the substitution method</caption>
     </figure>
+    <p>Note: a <m>1/6</m> was accidentally forgotten in the last example shown in the video above.</p>
     </subsection>
     
     
