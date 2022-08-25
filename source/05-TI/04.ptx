@@ -12,12 +12,12 @@
         <activity xml:id="activity-TI4fakeusub">
             <statement>
                 <p>
-                    Consider the integral <m>\displaystyle \int \frac{\sqrt{1-x^2}}{x} dx</m>.  If one were to use the method of substitution to evaluate this integral, what would be the best choice of <m>u</m>?
+                    Consider <m>\displaystyle \int \sqrt{9-4x^2} \,dx</m>.   Which substitution would you choose to evaluate this integral?
                     <ol marker="A." cols="2">
-                        <li><m>u=1-x^2</m></li>
-                        <li><m>u=\sqrt{1-x^2}</m></li>
-                        <li><m>u=\frac{1}{x}</m></li>
-                        <li>There is no u for which the method of substitution will work.</li>
+                        <li><m>u=9-4x^2</m></li>
+                        <li><m>u=\sqrt{9-4x^2}</m></li>
+                        <li><m>u=3-2x</m></li>
+                        <li>Substitution is not effective</li>
                     </ol>
                 </p>
             </statement>
@@ -26,12 +26,13 @@
         <activity xml:id="activity-TI4intropythagoras">
             <statement>
                 <p>
-                    It would be good if <m>\sqrt{1-x^2}</m> were a term that can be written more simply.  Which of the following mathematical facts could help us simplify this integrand?
+                    To find <m>\displaystyle \int \sqrt{9-4x^2} \,dx</m>, we will need a more advanced substitution.
+                    Which of these candidates is most reasonable?
                     <ol marker="A.">
-                        <li>For any real number, <m>x^2</m> must be positive (note: this isn’t even true).</li>
-                        <li><m>u=\sqrt{1-x^2}</m></li>
-                        <li>The Pythagorean theorem allows us to write <m>(\cos(\theta))^2</m> as <m>1-(\sin(\theta))^2</m>.</li>
-                        <li>The ratio of an even function and an odd function is odd.</li>
+                        <li>Let <m>v</m> satisfy <m>9-4x^2=9-9e^{2v}=9e^{-2v}</m>.</li>
+                        <li>Let <m>\theta</m> satisfy <m>9-4x^2=9-9\sin^2\theta=9\cos^2\theta</m>.</li>
+                        <li>Let <m>w</m> satisfy <m>9-4x^2=4-8\ln|w|=4\ln|2w|</m>.</li>
+                        <li>Let <m>\phi</m> satisfy <m>9-4x^2=4-4\cos^2\phi=4\sin^2\phi</m>.</li>
                     </ol>
                 </p>
             </statement>
@@ -40,13 +41,29 @@
         <activity xml:id="activity-TI4sinsub">
             <statement>
                 <p>
-                    Suppose we let <m>x=\sin(\theta)</m>. Then <m>\frac{dx}{d\theta}=\cos(\theta)</m> and <m>dx=\cos(\theta) d\theta</m>.  Which of the following best represents the integral <m>\displaystyle \int \sqrt{1-x^2}dx</m>?
-
-                    <ol marker="A." cols="2">
-                        <li><m>\displaystyle \int \sqrt{1-\sin^2(\theta)}dx</m></li>
-                        <li><m>\displaystyle \int \sqrt{ 1-\sin^2(\theta)\cos(\theta)}d\theta</m></li>
-                        <li><m>\displaystyle  \int \sqrt{ 1-\sin^2(\theta)}\cos(\theta)d\theta</m></li>
-                    </ol>
+                    Fill in the missing <m>\unknown</m>s for the following calculation.
+            <md>
+                <mrow>
+\text{Let }9-4x^2&amp;=9-9\sin^2\theta=9\cos^2\theta
+                </mrow>
+                <mrow>
+4x^2&amp;=\unknown
+                </mrow>
+                <mrow>
+x&amp;=\unknown
+                </mrow>
+                <mrow>
+dx&amp;=\unknown\,d\theta
+                </mrow>
+            </md>
+            <md>
+                <mrow>
+\int\sqrt{9-4x^2} \,dx&amp;=\int\sqrt{\unknown}\,(\unknown\,d\theta)
+                </mrow>
+                <mrow>
+&amp;= \int\cos^2 \theta\,d\theta
+                </mrow>
+            </md>
                 </p>
             </statement>
         </activity>
@@ -54,242 +71,267 @@
         <activity xml:id="activity-TI4sinsubrewrite">
             <statement>
                 <p>
-                    Use the fact from <xref ref="activity-TI4intropythagoras"/> to rewrite your choice of integral from <xref ref="activity-TI4sinsub"/> to an integral without any <m>\sin(\theta)</m> terms.
-
+                    From <xref ref="TI3"/> we may find <m>\int\cos^2 \theta\,d\theta=\frac{1}{2}\theta+\frac{1}{2}\sin\theta\cos\theta+C</m>.
+                </p>
+                <p>
+                    Use this to continue your work in the previous activity and complete the integration by trigonometric substitution.
+                </p>
+            <md>
+                <mrow>
+\sin(\theta)&amp;=\unknown
+                </mrow>
+                <mrow>
+\theta&amp;=\arcsin(\unknown)
+                </mrow>
+                <mrow>
+\cos(\theta)&amp;=\unknown\sqrt{\unknown}
+                </mrow>
+            </md>
+            <md>
+                <mrow>
+\int\sqrt{9-4x^2} \,dx&amp;= \cdots = \int\cos^2 \theta\,d\theta
+                </mrow>
+                <mrow>
+&amp;= \frac{1}{2}\theta+\frac{1}{2}\sin\theta\cos\theta+C
+                </mrow>
+                <mrow>
+&amp;= \frac{1}{2}(\unknown)+\frac{1}{2}(\unknown)(\unknown)+C
+                </mrow>
+            </md>
+            </statement>
+        </activity>
+        
+        <activity>
+            <statement>
+                <p>
+Use similar reasoning to complete the following proof that <m>\frac{d}{dx}\left[\arcsin(x)\right]=\frac{1}{\sqrt{1-x^2}}</m>.
+            <md>
+                <mrow>
+\text{Let }1-x^2&amp;=1-\unknown\theta=\unknown\theta
+                </mrow>
+                <mrow>
+x^2&amp;=\unknown
+                </mrow>
+                <mrow>
+x&amp;=\unknown
+                </mrow>
+                <mrow>
+dx&amp;=\unknown\,d\theta
+                </mrow>
+                <mrow>
+\theta&amp;=\unknown
+                </mrow>
+            </md>
+            <md>
+                <mrow>
+\int \frac{1}{\sqrt{1-x^2}} \,dx&amp;=\int\frac{1}{\sqrt{\unknown}}\,(\unknown\,d\theta)
+                </mrow>
+                <mrow>
+&amp;= \int d\theta
+                </mrow>
+                <mrow>
+&amp;= \unknown + C
+                </mrow>
+                <mrow>
+&amp;= \arcsin(x) + C
+                </mrow>
+            </md>
+                </p>
+            </statement>
+        </activity>
+        
+        <activity>
+            <statement>
+                <p>
+Substitutions of the form <me>16-25x^2=16-16\sin^2x=16\cos^2x</me> are made possible due to the
+Pythagorean identity <m>\sin^2(x)+\cos^2(x)=1</m>.
+                </p>
+                <p>
+Which two of these four identities can be obtained from dividing both sides of
+<m>\sin^2(x)+\cos^2(x)=1</m> by <m>\cos^2(x)</m> and rearranging?
                     <ol marker="A." cols="2">
-                        <li><m>\displaystyle\int \cos(\theta) d\theta</m></li>
-                        <li><m>\displaystyle\int \cos^2(\theta) d\theta</m></li>
-                        <li><m>\displaystyle\int \sqrt{\cos(\theta)} d\theta</m></li>
+                        <li><m>\tan^2(x)-1=\sec^2(x)</m> </li>
+                        <li><m>\tan^2(x)+1=\sec^2(x)</m> </li>
+                        <li><m>\sec^2(x)-1=\tan^2(x)</m> </li>
+                        <li><m>\sec^2(x)+1=\tan^2(x)</m> </li>
                     </ol>
                 </p>
             </statement>
         </activity>
         
-        <activity xml:id="activity-TI4cosdoubleanglesub">
+        <observation>
             <statement>
                 <p>
-                    Use the fact that <m>\cos^2(\theta) =\frac{1+\cos(2\theta)}{2}</m> to rewrite the integral from <xref ref="activity-TI4sinsubrewrite"/>.
+In summary, certain quadratic expressions inside an integral may be substituted with
+trigonometric functions to take advantage of trigonometric identities and simplify the integrand:
+            <md>
+                <mrow>
+\text{Let } b-ax^2&amp;=b-b\sin^2(\theta)=b\cos(\theta)
+                </mrow>
+                <mrow>
+\text{So } x&amp;=\frac{b}{a}\sin(\theta)
+                </mrow>
+            </md>
+            <md>
+                <mrow>
+\text{Let } b+ax^2&amp;=b+b\tan^2(\theta)=b\sec(\theta)
+                </mrow>
+                <mrow>
+\text{So } x&amp;=\frac{b}{a}\tan(\theta)
+                </mrow>
+            </md>
+            <md>
+                <mrow>
+\text{Let } ax^2-b&amp;=b\sec^2(\theta)-b=b\tan(\theta)
+                </mrow>
+                <mrow>
+\text{So } x&amp;=\frac{b}{a}\sec(\theta)
+                </mrow>
+            </md>
+                </p>
+            </statement>
+        </observation>
+        
+                
+        <activity>
+            <statement>
+                <p>
+Complete the following trignometric substitution to find <m>\displaystyle\int\frac{3}{4+25x^2}\,dx</m>.
+            <md>
+                <mrow>
+\text{Let }4+25x^2&amp;=2+\unknown\theta=\unknown\theta
+                </mrow>
+                <mrow>
+25x^2&amp;=\unknown
+                </mrow>
+                <mrow>
+x&amp;=\unknown
+                </mrow>
+                <mrow>
+dx&amp;=\unknown\,d\theta
+                </mrow>
+                <mrow>
+\theta&amp;=\unknown
+                </mrow>
+            </md>
+            <md>
+                <mrow>
+\int\frac{3}{4+25x^2}\,dx &amp;=\int\frac{3}{\unknown}\,(\unknown\,d\theta)
+                </mrow>
+                <mrow>
+&amp;= \int \unknown d\theta
+                </mrow>
+                <mrow>
+&amp;= \unknown + C
+                </mrow>
+                <mrow>
+&amp;= \frac{3}{10}\arctan(\frac{5}{2}x) + C
+                </mrow>
+            </md>
+                </p>
+            </statement>
+        </activity>
 
-                    <ol marker="A." cols="2">
-                        <li><m>\displaystyle\int \sqrt{\frac{1+\cos(2\theta)}{2}} d\theta</m></li>
-                        <li><m>\displaystyle\int \frac{1+\cos(2\theta)}{2} d\theta</m></li>
-                        <li><m>\displaystyle\int \left(\frac{1+\cos(2\theta)}{2} \right)^2d\theta</m></li>
-                    </ol>
+        <activity>
+            <statement>
+                <p>
+Complete the following trignometric substitution to find <m>\displaystyle\int\frac{7}{x\sqrt{9x^2-16}}\,dx</m>.
+            <md>
+                <mrow>
+\text{Let }9x^2-16&amp;=\unknown\theta-16=\unknown\theta
+                </mrow>
+                <mrow>
+9x^2&amp;=\unknown
+                </mrow>
+                <mrow>
+x&amp;=\unknown
+                </mrow>
+                <mrow>
+dx&amp;=\unknown\,d\theta
+                </mrow>
+                <mrow>
+\theta&amp;=\unknown
+                </mrow>
+            </md>
+            <md>
+                <mrow>
+\int\frac{7}{x\sqrt{9x^2-16}}\,dx &amp;=\int\frac{7}{\unknown\sqrt{\unknown}}\,(\unknown\,d\theta)
+                </mrow>
+                <mrow>
+&amp;= \int \unknown d\theta
+                </mrow>
+                <mrow>
+&amp;= \unknown + C
+                </mrow>
+                <mrow>
+&amp;= \frac{7}{4}\arcsec(\frac{3}{4}x) + C
+                </mrow>
+            </md>
                 </p>
             </statement>
         </activity>
-        
-        <activity xml:id="activity-TI4evaluatesinsub">
-            <statement>
-                <p>
-                    Evaluate the integral in terms of <m>\theta</m> that you found in <xref ref="activity-TI4cosdoubleanglesub"/>.
-                </p>
-            </statement>
-        </activity>
-        
-        <activity xml:id="activity-TI4turnbacktox">
-            <statement>
-                <p>
-                    Consider the fact that <m>x=\sin(\theta)</m> and, thus, <m>\theta=\arcsin(x)</m>.  Use this to rewrite the solution you found in <xref ref="activity-TI4evaluatesinsub"/> in terms of <m>x</m>.
-                </p>
-            </statement>
-        </activity>
-        
-        <activity xml:id="activity-TI4sinsubadjust">
-            <statement>
-                <p>
-                    Consider the integral <m>\displaystyle \int \sqrt{9-x^2} dx</m>. How can we best modify our approach in <xref ref="activity-TI4sinsub"/> and adapt it here?
 
-                    <ol marker="A.">
-                        <li>Let <m>x=\sin(\theta)</m>. It follows that <m>dx=\cos(\theta)d\theta</m> and, subsequently, <m>\displaystyle \int \sqrt{9-x^2} dx= \int \sqrt{9-\sin^2(\theta)} \cos(\theta) d\theta</m>. </li>
-                        <li>Let <m>x=3\sin(\theta)</m>. It follows that <m>dx=3\cos(\theta)d\theta</m> and, subsequently, <m>\displaystyle \int \sqrt{9-x^2} dx= \int \sqrt{9-(3\sin(\theta))^2} \cos(\theta) d\theta</m>. </li>
-                        <li>Let <m>x=\sin(3\theta)</m>. It follows that <m>dx=3\cos(3\theta)d\theta</m> and, subsequently, <m>\displaystyle \int \sqrt{9-x^2} dx= \int \sqrt{9-\sin^2(3\theta)} 3\cos(3\theta) d\theta</m>. </li>
-                    </ol>
-                </p>
-            </statement>
-        </activity>
-        
-        <activity xml:id="activity-TI4rewrite3sinsub">
-            <statement>
-                <p>
-                    Use your choice of substitution in <xref ref="activity-TI4sinsubadjust"/> and the fact that <m>\cos^2(\theta) =\frac{1+\cos(2\theta)}{2}</m> to rewrite the integral from <xref ref="activity-TI4sinsubadjust"/>
+         <activity>
+    <introduction>
+      <p> Use appropriate trignometric substitutions and the given trigonometric integrals to find each of the following. </p>
+    </introduction>
+      <task>
+        <statement>
+          <p> <md>
+            <mrow>
+\int \frac{\sqrt{-9 \, x^{2} + 16}}{x^{2}}\,dx &amp;= \cdots 
+            </mrow>
+            <mrow>
+&amp;=\int \frac{3\cos^2\theta}{\sin^2\theta}\,d\theta
+            </mrow>
+            <mrow>
+&amp;=-3\theta-3\frac{\cos\theta}{\sin\theta}+C
+            </mrow>
+            <mrow>
+&amp;=  - 3 \, \arcsin\left(\unknown\right)-\frac{\sqrt{\unknown}}{\unknown} +C
+            </mrow>
+            </md> </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p> <md>
+            <mrow>
+\int \frac{2 \, \sqrt{9 \, x^{2} - 16}}{x}\,dx &amp;= \cdots 
+            </mrow>
+            <mrow>
+&amp;=\int 8\tan^2\theta\,d\theta
+            </mrow>
+            <mrow>
+&amp;=8\tan\theta-8\theta+C
+            </mrow>
+            <mrow>
+&amp;=  \unknown \, \sqrt{\unknown} - 8 \, \operatorname{arcsec}\left(\unknown\right) +C
+            </mrow>
+            </md> </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p> <md>
+            <mrow>
+\int \frac{1}{\sqrt{81 \, x^{2} + 4}}\,dx&amp;= \cdots 
+            </mrow>
+            <mrow>
+&amp;=\int \frac{1}{9}\sec\theta\,d\theta
+            </mrow>
+            <mrow>
+&amp;=\frac{1}{9}\log|\sec\theta+\tan\theta|+C
+            </mrow>
+            <mrow>
+&amp;=  \frac{1}{9} \, \log\left| \unknown + \frac{1}{2} \, \sqrt{\unknown} \right| +C
+            </mrow>
+            </md> </p>
+        </statement>
+      </task>
+  </activity>
 
 
-                    <ol marker="A." cols="2">
-                        <li><m>\displaystyle \int \sqrt{\frac{9+9\cos(2\theta)}{2}} \cos(\theta) d\theta</m> </li>
-                        <li><m>\displaystyle \int \frac{9+9\cos(2\theta)}{2} \cos(\theta) d\theta</m> </li>
-                        <li><m>\displaystyle \int \left(\frac{9+9\cos(2\theta)}{2}\right)^2 \cos(\theta) d\theta</m> </li>
-                    </ol>
-                </p>
-            </statement>
-        </activity>
-        
-        <activity xml:id="activity-TI4evaluate3sinsub">
-            <statement>
-                <p>
-                    Evaluate the integral that you found in <xref ref="activity-TI4rewrite3sinsub"/>.  (Recall that since <m>x=3\sin(\theta), \theta=\arcsin\left(\frac{x}{3}\right)</m>.)
-                </p>
-            </statement>
-        </activity>
-        
-        
-        <activity xml:id="activity-TI4pythagorasagain">
-            <statement>
-                <p>
-                    Consider the integral <m>\displaystyle \int \frac{1}{1+x^2} dx</m>.  Which of the following facts would best simplify this expression?
-
-                    <ol marker="A.">
-                        <li><m>\cos^2(\theta) =\frac{1+\cos(2\theta)}{2}</m></li>
-                        <li><m>(\cos(\theta))^2=1-(\sin(\theta))^2</m></li>
-                        <li>Since <m>\sin^2(\theta) + \cos^2(\theta)=1, \tan^2(\theta)+1=\sec^2(\theta)</m>.</li>
-                    </ol>
-                </p>
-            </statement>
-        </activity>
-        
-        
-        <activity xml:id="activity-TI4tansub">
-            <statement>
-                <p>
-                    Suppose we let <m>x=\tan(\theta), dx =\sec^2(\theta)</m>.  Which of the following best represents the integral <m>\displaystyle \int \frac{1}{1+x^2} dx</m>?
-
-                    <ol marker="A." cols="2">
-                        <li><m>\displaystyle \int \frac{1}{1+\tan^2(\theta)} dx</m></li>
-                        <li><m>\displaystyle \int \frac{1}{1+\tan^2(\theta)\sec^2(\theta)} d\theta</m></li>
-                        <li><m>\displaystyle \int \frac{1}{1+\tan^2(\theta)} \sec^2(\theta)d\theta</m></li>
-                    </ol>
-                </p>
-            </statement>
-        </activity>
-        
-        <activity xml:id="activity-TI4tansubevaluate">
-            <statement>
-                <p>
-                    Using the fact from <xref ref="activity-TI4pythagorasagain"/>, simplify and evaluate your choice of integral from <xref ref="activity-TI4tansub"/>.  (Recall that since <m>x=\tan(\theta), \theta=\arctan(x)</m>.)
-
-                </p>
-            </statement>
-        </activity>
-        
-        
-        <activity xml:id="activity-TI4tansubadjust">
-            <statement>
-                <p>
-                    Consider the integral <m>\displaystyle \int \frac{1}{\frac{1}{4}+x^2} dx</m>. How can we best modify our approach in <xref ref="activity-TI4tansub"/> and adapt it here?
-
-                    <ol marker="A.">
-                        <li>Let <m>x=\frac{1}{2}\tan(\theta)</m>. It follows that <m>dx=\frac{1}{2}\sec^2(\theta)d\theta</m> and, subsequently, <m>\displaystyle \int \frac{1}{\frac{1}{4}+x^2} dx = \int  \frac{1}{\frac{1}{4}+\left(\frac{1}{2}\tan(\theta) \right)^2} \frac{1}{2} \sec^2(\theta)d\theta</m>. </li>
-                        <li>Let <m>x=\frac{1}{4}\tan(\theta)</m>. It follows that <m>dx=\frac{1}{4}\sec^2(\theta)d\theta</m> and, subsequently, <m>\displaystyle \int \frac{1}{\frac{1}{4}+x^2} dx = \int  \frac{1}{\frac{1}{4}+\left(\frac{1}{4}\tan(\theta) \right)^2}  \frac{1}{4}\sec^2(\theta) d\theta</m>. </li>
-                        <li>Let <m>x=\tan\left(\frac{1}{2}\theta\right)</m>. It follows that <m>dx=\sec^2\left(\frac{1}{2}\theta\right)d\theta</m> and, subsequently, <m>\displaystyle \int \frac{1}{\frac{1}{4}+x^2} dx = \int  \frac{1}{\frac{1}{4}+\left(\tan\left(\frac{1}{2}\theta\right) \right)^2}  \frac{1}{2} \sec^2\left(\frac{1}{2}\theta\right)d\theta</m>. </li>
-                    </ol>
-                </p>
-            </statement>
-        </activity>
-        
-        <activity xml:id="activity-T4subhalftan">
-            <statement>
-                <p>
-                    Evaluate the choice of integral you found in <xref ref="activity-TI4tansubadjust"/>, using the fact that if <m>x=\frac{1}{2}\tan(\theta), \theta=\arctan(2x)</m>.
-
-                </p>
-            </statement>
-        </activity>
-        
-        <activity xml:id="activity-TI4lastpythagoras">
-            <statement>
-                <p>
-                    Consider the integral <m>\displaystyle \int \sqrt{x^2-1} dx</m>.   Which of the following facts <em>best</em> simplifies this integral?
-                    <ol marker="A.">
-                        <li><m>\cos^2(\theta) =\frac{1+\cos(2\theta)}{2}</m></li>
-                        <li><m>\tan^2(\theta)+1=\sec^2(\theta)</m></li>
-                        <li>Since <m>\sin^2(\theta) =1- \cos^2(\theta), \tan^2(\theta)=\sec^2(\theta)-1</m>.</li>
-                    </ol>
-                </p>
-            </statement>
-        </activity>
-        
-        <activity xml:id="activity-TI4secsub">
-            <statement>
-                <p>
-                    Using your choice in <xref ref="activity-TI4lastpythagoras"/>, pick an appropriate trignometric substitution for <m>x</m> and rewrite <m>\displaystyle \int \sqrt{x^2-1} dx</m> as an integral in terms of <m>\theta</m>.  (Remember to compute <m>dx</m> as well!) 
-                </p>
-            </statement>
-        </activity>
-        
-        <activity xml:id="activity-T4arcsec">
-            <statement>
-                <p>
-                    Evaluate the  integral you found in <xref ref="activity-TI4secsub"/>, using the fact that if <m>x=\sec(\theta), \theta=\arcsec(x)</m>.
-
-                </p>
-            </statement>
-                    <hint>
-                        <p>
-                            To better understand the relationship between <m>x</m> and functions of <m>\theta</m>, consider this right triangle where <m>\sec(\theta)=x</m>.
-                            
-                            <figure>
-                <caption>A right triangle where <m>\sec(\theta)=x</m>.</caption>
-                    <image xml:id="secthetaisx" width="100%">
-                        <description>Right triangle with hypotenuse length x, adjacent length 1, and opposite length sqrt(x^2-1).</description>
-                        <latex-image>
-                          \begin{tikzpicture}
-                              \draw (0,0)--node[above left]{\tiny$x$} (1,1);
-                              \draw (0,0)--node[below]{\tiny$1$} (1,0);
-                              \draw (1,0)--node[right]{\tiny$\sqrt{x^2-1}$} (1,1);
-                              \node at (0.3, 0.1){\tiny $\theta$};
-  
-                              \draw (0.8, 0)--(0.8, 0.2)--(1, 0.2);
-
-  
-    
-                            \end{tikzpicture}
-                        </latex-image>
-                    </image>
-            </figure>   
-                        </p>
-                    </hint>
-        </activity>
-        
-        
-        <activity xml:id="activity-TI4whensinsub">
-            <statement>
-                <p>
-                    If we wish to simplify an expression that contained a <m>k^2-x^2</m> expression, which would be the best substitution?
-                    <ol marker="A." cols="2">
-                        <li><m>x=k\sin(\theta)</m></li>
-                        <li><m>x=k\tan(\theta)</m></li>
-                        <li><m>x=k\sec(\theta)</m></li>
-                    </ol>
-                </p>
-            </statement>
-        </activity>
-        
-        <activity xml:id="activity-TI4whentansub">
-            <statement>
-                <p>
-                    If we wish to simplify an expression that contained a <m>k^2+x^2</m> expression, which would be the best substitution?
-                    <ol marker="A." cols="2">
-                        <li><m>x=k\sin(\theta)</m></li>
-                        <li><m>x=k\tan(\theta)</m></li>
-                        <li><m>x=k\sec(\theta)</m></li>
-                    </ol>
-                </p>
-            </statement>
-        </activity>
-        
-        <activity xml:id="activity-TI4whensecsub">
-            <statement>
-                <p>
-                    If we wish to simplify an expression that contained a <m>x^2-k^2</m> expression, which would be the best substitution?
-                    <ol marker="A." cols="2">
-                        <li><m>x=k\sin(\theta)</m></li>
-                        <li><m>x=k\tan(\theta)</m></li>
-                        <li><m>x=k\sec(\theta)</m></li>
-                    </ol>
-                </p>
-            </statement>
-        </activity>
-        
         <activity xml:id="activity-TI4semicircle">
             <statement>
                 <p>
