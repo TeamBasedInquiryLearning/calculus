@@ -49,10 +49,11 @@ class Generator(BaseGenerator):
         
         if scenario==0:
             n=randint(1,3)
-            c=randint(1,4)
+            c=randint(2,5)
+            k=randint(1,4)*choice([-1,1])
+            g(x)=e^(c*x^n+k)*x^(n-1)
             a=randint(0,5)
             b=randint(a+1, a+4)
-            g(x)=e^(c*x^n)*x^(n-1)
             defint=definite_integral(g(x),x,a,b)
             
         if scenario==1:
