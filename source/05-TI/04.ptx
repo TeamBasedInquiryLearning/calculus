@@ -61,7 +61,7 @@ dx&amp;=\unknown\,d\theta
 \int\sqrt{9-4x^2} \,dx&amp;=\int\sqrt{\unknown}\,(\unknown\,d\theta)
                 </mrow>
                 <mrow>
-&amp;= \int\cos^2 \theta\,d\theta
+&amp;= \int\frac{9}{2}\cos^2 \theta\,d\theta
                 </mrow>
             </md>
                 </p>
@@ -89,13 +89,13 @@ dx&amp;=\unknown\,d\theta
             </md>
             <md>
                 <mrow>
-\int\sqrt{9-4x^2} \,dx&amp;= \cdots = \int\cos^2 \theta\,d\theta
+\int\sqrt{9-4x^2} \,dx&amp;= \cdots = \int\frac{9}{2}\cos^2 \theta\,d\theta
                 </mrow>
                 <mrow>
-&amp;= \frac{1}{2}\theta+\frac{1}{2}\sin\theta\cos\theta+C
+&amp;= \frac{9}{2}\left(\frac{1}{2}\theta+\frac{1}{2}\sin\theta\cos\theta\right)+C
                 </mrow>
                 <mrow>
-&amp;= \frac{1}{2}(\unknown)+\frac{1}{2}(\unknown)(\unknown)+C
+&amp;= \frac{9}{4}(\unknown)+\frac{9}{4}(\unknown)(\unknown)+C
                 </mrow>
             </md>
             </statement>
