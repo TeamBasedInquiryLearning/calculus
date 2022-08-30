@@ -6,6 +6,7 @@ class Generator(BaseGenerator):
         rolls = [r*choice([-1,1]) for r in rolls]
         shuffle(rolls)
         a,b,c,d,A,B,C,D = rolls
+        d=abs(d)
 
         f = ( C/(x-c)+D/(x^2+d^2) ).simplify_full()
         pf=f.partial_fraction()
