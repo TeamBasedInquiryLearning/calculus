@@ -7,7 +7,7 @@ If an integral diverges, explain why.  If it converges, explain to which value i
         </p>
     </intro>
     <knowl>
-        <content><m>\displaystyle\int_{ {{c}} }^{ {{a}} } {{f}} dx.</m></content>
+        <content><p><m>\displaystyle\int_{ {{c}} }^{ {{a}} } {{f}} dx.</m></p></content>
         <!-- {{#Problem1}} -->
             <outtro>
                 <!-- {{#Converge}} -->
@@ -20,7 +20,7 @@ If an integral diverges, explain why.  If it converges, explain to which value i
         <!-- {{/Problem1}} -->
     </knowl>
     <knowl>
-        <content><m>\displaystyle\int_{ {{a}} }^{ \infty } {{f}} dx.</m></content>
+        <content><p><m>\displaystyle\int_{ {{a}} }^{ \infty } {{f}} dx.</m></p></content>
         <!-- {{#Problem2}} -->
             <outtro>
                 <!-- {{#Converge}} -->
