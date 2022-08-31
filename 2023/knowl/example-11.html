@@ -12,10 +12,21 @@
 </head>
 <body class="ignore-math">
 <article class="example example-like"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.3.1</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.6.9</span><span class="period">.</span>
 </h3>
-<p>In <a href="" class="xref" data-knowl="./knowl/CO3-parametric-curve.html" title="Figure 143">Figure 143</a>, the blue curve is the graph of the parametric equations <span class="process-math">\(x=t^2\)</span> and <span class="process-math">\(y=t^3\)</span> for <span class="process-math">\(1\leq t\leq 2\text{.}\)</span> This curve connects the point <span class="process-math">\((1,1)\)</span> to the point <span class="process-math">\((4,8)\text{.}\)</span> The red dashed line is the straight line segment connecting these points.</p>
-<figure class="figure figure-like"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/sageplot/CO3-parametric-curve-image.svg" role="img" class="contained" alt="A parametric curve and segment from (1,1) to (4,8)."></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">143<span class="period">.</span></span><span class="space"> </span>A parametric curve and segment from <span class="process-math">\((1,1)\)</span> to <span class="process-math">\((4,8)\)</span></figcaption></figure></article><span class="incontext"><a href="CO3.html#example-11" class="internal">in-context</a></span>
+<p>Following is an example of a rather involved partial fraction decomposition.</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+&amp;\frac{7 \, x^{6} - 4 \, x^{5} + 41 \, x^{4} - 20 \, x^{3} + 24 \, x^{2} + 11 \, x + 16}{x(x-1)^2(x^2+4)^2}\\
+=&amp; \frac{A}{x}+\frac{B}{x-1}+\frac{C}{(x-1)^2}+\frac{Dx+E}{x^2+4}+\frac{Fx+G}{(x^2+4)^2}
+\end{align*}
+</div>
+<p class="continuation">Using some algebra, it's possible to find values for <span class="process-math">\(A\)</span> through <span class="process-math">\(G\)</span> to determine</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+&amp;\frac{7 \, x^{6} - 4 \, x^{5} + 41 \, x^{4} - 20 \, x^{3} + 24 \, x^{2} + 11 \, x + 16}{x(x-1)^2(x^2+4)^2}\\
+=&amp; \frac{1}{x}+\frac{2}{x-1}+\frac{3}{(x-1)^2}+\frac{4x+5}{x^2+4}+\frac{6x+7}{(x^2+4)^2}\text{.}
+\end{align*}
+</div></article><span class="incontext"><a href="TI6.html#example-11" class="internal">in-context</a></span>
 </body>
 </html>

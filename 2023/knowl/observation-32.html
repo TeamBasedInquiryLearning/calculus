@@ -12,10 +12,18 @@
 </head>
 <body class="ignore-math">
 <article class="observation remark-like"><h3 class="heading">
-<span class="type">Observation</span><span class="space"> </span><span class="codenumber">7.3.4</span><span class="period">.</span>
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">5.6.7</span><span class="period">.</span>
 </h3>
-<p>By approximating the curve by several (say <span class="process-math">\(N\)</span>) segements connecting points along the curve, we obtain a better approximation than a single line segment, as shown in <a href="" class="xref" data-knowl="./knowl/CO3-parametric-subdivide.html" title="Figure 144">Figure 144</a>.</p>
-<figure class="figure figure-like"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/sageplot/CO3-parametric-subdivide-sageplot.svg" role="img" class="contained" alt="Subdividing a parametric curve with three segments"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">144<span class="period">.</span></span><span class="space"> </span>Subdividing a parametric curve where <span class="process-math">\(N=3\)</span></figcaption></figure></article><span class="incontext"><a href="CO3.html#observation-32" class="internal">in-context</a></span>
+<p>To find integrals like <span class="process-math">\(\int \frac{x^2+x+1}{x^3+x} dx\)</span> and <span class="process-math">\(\int\frac{10x-11}{x^2+x-2}\text{,}\)</span> we'd like to <dfn class="terminology">decompose</dfn> the fractions into simpler <dfn class="terminology">partial fractions</dfn> that may be integrated with these formulas</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int\frac{1}{x+b}dx=\ln|x+b|+C
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int\frac{1}{x^2+b^2}dx=\frac{1}{b}\arctan\left(\frac{x}{b}\right)+C
+\end{equation*}
+</div></article><span class="incontext"><a href="TI6.html#observation-32" class="internal">in-context</a></span>
 </body>
 </html>
