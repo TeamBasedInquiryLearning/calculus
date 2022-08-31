@@ -1,50 +1,50 @@
 class Generator(BaseGenerator):
     def data(self):
         x=var("x")
-        from sage.symbolic.integration.integral import indefinite_integral
+        tasks = []
+       
+        bs = sample([choice([-1,1])*n for n in range(2,10)],4)
 
-        n=randint(2,5)
-        c=randint(-3,3)
-        
-        f=choice([1/(x-c)^n, 1/(x-c)^(1/n)])
-        
-        F(x)=indefinite_integral(f, x)
-        Fsymb=indefinite_integral(f, x)
-        
-        a=c+randint(2,6)
-        
-        Int1=0
-        Int2=0
-        
-        Limit1=F.limit(x=c, dir='right')
-        Converge1=False
-        if Limit1 <oo and Limit1>-oo:
-            Converge1=True
-            Int1=F(a)
-        
-        Limit2=F.limit(x=oo)
-        Converge2=False
-        if Limit2 <oo and Limit2>-oo:
-            Converge2=True
-            Int2=-1*F(a)
-        
-        
-        
-        Problem1={
-            "Limit":Int1,
-            "Converge":Converge1,
-        }
-        
-        Problem2={
-            "Limit":Int2,
-            "Converge":Converge2,
-        }
+        # converges with infinite bound
+        p = randrange(3,10)
+        q = randrange(2,p)
+        tasks.append({
+            "integrand": 1/(x-bs[0])^(SR(p)/q),
+            "converges": True,
+            "top": oo,
+            "bottom": bs[0]+randrange(1,6),
+        })
 
-        return {
-        "f": f,
-        "F": Fsymb,  
-        "a": a,
-        "c": c,
-        "Problem1": Problem1,
-        "Problem2": Problem2,  
-        }
+        # diverges with infinite bound
+        p = randrange(2,9)
+        q = randrange(p+1,10)
+        tasks.append({
+            "integrand": 1/(x-bs[1])^(SR(p)/q),
+            "converges": False,
+            "top": oo,
+            "bottom": bs[1]+randrange(1,6),
+        })
+
+        # converges with finite bounds
+        p = randrange(2,9)
+        q = randrange(p+1,10)
+        tasks.append({
+            "integrand": 1/(x-bs[2])^(SR(p)/q),
+            "converges": True,
+            "top": bs[2]+randrange(1,6),
+            "bottom": bs[2],
+        })
+
+        # diverges with finite bounds
+        p = randrange(3,10)
+        q = randrange(2,p)
+        tasks.append({
+            "integrand": 1/(x-bs[3])^(SR(p)/q),
+            "converges": False,
+            "top": bs[3]+randrange(1,6),
+            "bottom": bs[3],
+        })
+
+        shuffle(tasks)
+
+        return {"tasks": tasks}

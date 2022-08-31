@@ -2,34 +2,21 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
         <p>
-Determine which of the following integrals coverges and which diverges.
-If an integral diverges, explain why.  If it converges, explain to which value it converges.
+Explain and demonstrate how to write each of the following improper integrals
+as a limit, and why this limit coverges or diverges.
         </p>
     </intro>
+    <!-- {{#tasks}} -->
     <knowl>
-        <content><p><m>\displaystyle\int_{ {{c}} }^{ {{a}} } {{f}} dx.</m></p></content>
-        <!-- {{#Problem1}} -->
-            <outtro>
-                <!-- {{#Converge}} -->
-                <p><m>\displaystyle\int_{ {{c}} }^{ {{a}} } {{f}} dx</m> converges to <m>{{Limit}}</m>.</p>
-                <!-- {{/Converge}} -->
-                <!-- {{^Converge}} -->
-                <p><m>\displaystyle\int_{ {{c}} }^{ {{a}} } {{f}} dx</m> diverges.</p>
-                <!-- {{/Converge}} -->
-            </outtro>
-        <!-- {{/Problem1}} -->
+        <content><p><m>\displaystyle\int_{ {{bottom}} }^{ {{top}} } {{integrand}} dx.</m></p></content>
+        <outtro>
+            <!-- {{#converges}} -->
+            <p>Converges.</p>
+            <!-- {{/converges}} -->
+            <!-- {{^converges}} -->
+            <p>Diverges.</p>
+            <!-- {{/converges}} -->
+        </outtro>
     </knowl>
-    <knowl>
-        <content><p><m>\displaystyle\int_{ {{a}} }^{ \infty } {{f}} dx.</m></p></content>
-        <!-- {{#Problem2}} -->
-            <outtro>
-                <!-- {{#Converge}} -->
-                <p><m>\displaystyle\int_{ {{a}} }^{ \infty } {{f}} dx</m> converges to <m>{{Limit}}</m>.</p>
-                <!-- {{/Converge}} -->
-                <!-- {{^Converge}} -->
-                <p><m>\displaystyle\int_{ {{a}} }^{ \infty } {{f}} dx</m> diverges.</p>
-                <!-- {{/Converge}} -->
-            </outtro>
-        <!-- {{/Problem2}} -->
-    </knowl>
+    <!-- {{/tasks}} -->
 </knowl>
