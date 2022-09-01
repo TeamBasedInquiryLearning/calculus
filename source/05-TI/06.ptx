@@ -204,35 +204,43 @@ Using some algebra, it's possible to find values for <m>A</m> through <m>G</m> t
             </statement>
         </activity>
         <activity xml:id="activity-TI6SolveaCoeff">
-            <statement>
-                <p>
-                    Notice that <m>x^2+5x+3=Ax(x+1)+Bx+C(x+1)^2</m>.
-                    <task>
-                        <p>Which of the following values can we determine by setting <m>x=0</m>? Select all that apply.</p>
-                    <ol marker="A." cols="3">
-                        <li><m>A</m></li>
-                        <li><m>B</m></li>
-                        <li><m>C</m></li>
-                    </ol>
-                    </task>
-                    <task>
-                        <p>Which of the following values can we determine by setting <m>x=-1</m>? Select all that apply.</p>
-                    <ol marker="A." cols="3">
-                        <li><m>A</m></li>
-                        <li><m>B</m></li>
-                        <li><m>C</m></li>
-                    </ol>
-                    </task>
-                </p>
-            </statement>
+            <introduction><p>Use your choice in <xref ref="activity-TI6RationaltoPoly"/> (which must hold for any <m>x</m> value) to answer the following.</p></introduction>
+            <task>
+                <p>By substituting <m>x=0</m> into the equation, we may find:</p>
+                <ol marker="A." cols="3">
+                    <li><m>A=1</m></li>
+                    <li><m>B=-2</m></li>
+                    <li><m>C=3</m></li>
+                </ol>
+            </task>
+            <task>
+                <p>By substituting <m>x=-1</m> into the equation, we may find:</p>
+                <ol marker="A." cols="3">
+                    <li><m>A=-4</m></li>
+                    <li><m>B=1</m></li>
+                    <li><m>C=5</m></li>
+                </ol>
+            </task>
         </activity>
         <activity xml:id="activity-TI6SolvelastCoeff">
-            <statement>
+            <task>
                 <p>
-                    Rewrite <m>Ax(x+1)+x+3(x+1)^2</m> so that <m>Ax(x+1)+x+3(x+1)^2=?x^2+?x+?</m>.
-                    Knowing that <me>1x^2+5x+3=Ax(x+1)+x+3(x+1)^2=?x^2+?x+?,</me> can we solve for  <m>A</m>?
+                    Using the results of <xref ref="activity-TI6SolveaCoeff"/>, show how to rewrite our choice from
+                    <xref ref="activity-TI6RationaltoPoly"/> in the form
+                    <me>x^2+5x+3=(A+\unknown)x^2+(A+\unknown)x+3</me>.
                 </p>
-            </statement>
+            </task>
+            <task>
+                <p>
+                    What value of <m>A</m> satisfies this equation?
+                </p>
+                <ol marker="A." cols="4">
+                    <li><m>-2</m></li>
+                    <li><m>3</m></li>
+                    <li><m>4</m></li>
+                    <li><m>-5</m></li>
+                </ol>
+            </task>
         </activity>
         
         <activity xml:id="activity-TI6PuttingitTogether">
@@ -247,18 +255,32 @@ Using some algebra, it's possible to find values for <m>A</m> through <m>G</m> t
         
     
         <activity xml:id="activity-TI6FindCoefficients1">
-            <statement>
+            <introduction>
                 <p>
-                     Given that <m>\displaystyle\frac{x^3-7x^2-7x+15}{x^3(x+5)}=\frac{A}{x}+\frac{B}{x^2}+ \frac{C}{x^3}+\frac{D}{x+5}</m>, what are <m>A, B, C</m>, and <m>D</m>?
-
-                    <ol marker="A.">
-                        <li><m>A=1, B=-7 C=-7, D=15</m></li>
-                        <li><m>A=-1, B=-2, C=3, D=2</m></li>                        
-                        <li><m>A=1, B=-2, C=-3, D=2</m></li>
-                        <li><m>A=-1, B=2, C=3, D=-2</m></li>
-                    </ol>
+                     Given that <m>\displaystyle\frac{x^3-7x^2-7x+15}{x^3(x+5)}=\frac{A}{x}+\frac{B}{x^2}+ \frac{C}{x^3}+\frac{D}{x+5}</m> do the following
+                     to find <m>A, B, C</m>, and <m>D</m>.
                 </p>
-            </statement>
+            </introduction>
+            <task>
+                <p>
+                    Eliminate the fractions to obtain <me>x^3-7x^2-7x+15=A(\unknown)(\unknown)+B(\unknown)(\unknown)+C(\unknown)+D(\unknown)</me>.
+                </p>
+            </task>
+            <task>
+                <p>
+                    Plug in an <m>x</m> value that lets you find the value of <m>C</m>.
+                </p>
+            </task>
+            <task>
+                <p>
+                    Plug in an <m>x</m> value that lets you find the value of <m>D</m>.
+                </p>
+            </task>
+            <task>
+                <p>
+                    Use other algebra techniques to find the values of <m>A</m> and <m>B</m>.
+                </p>
+            </task>
         </activity>
         <activity xml:id="activity-TI6Evaluate1">
             <statement>
@@ -296,15 +318,6 @@ Using some algebra, it's possible to find values for <m>A</m> through <m>G</m> t
                 </p>
             </statement>
         </activity>
-        
-        <remark>
-            <statement>
-                <p>
-                    This is all well and good, but given a rational function, how might one actually find coefficients for the partial fractions if we weren't given them?
-                </p>
-            </statement>
-        </remark>
-        
         
         
         <activity xml:id="activity-TI6HandsOff">

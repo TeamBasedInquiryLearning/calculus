@@ -10,74 +10,66 @@
         </ul>
     </objectives>
         <activity xml:id="activity-T8Exploration1">
-            <introduction><p>Consider <m>\displaystyle f(x)=\frac{1}{x^2}</m>. Compute the following definite integrals.</p></introduction>
+            <introduction><p>Recall <m>\displaystyle \int\frac{1}{x^2}dx=-\frac{1}{x}+C</m>. Compute the following definite integrals.</p></introduction>
             <task>
-                <p><m>\displaystyle \int_{0.1}^1 \frac{1}{x^2} dx</m></p>
+                <p><m>\displaystyle \int_{1/100}^1 \frac{1}{x^2} dx=\left[-\frac{1}{x}\right]_{1/100}^1</m></p>
             </task>
             <task>
-                <p><m>\displaystyle \int_{0.01}^1 \frac{1}{x^2} dx</m></p>
+                <p><m>\displaystyle \int_{1/10000}^1 \frac{1}{x^2} dx</m></p>
             </task>
             <task>
-                <p><m>\displaystyle \int_{0.001}^1 \frac{1}{x^2} dx</m></p>
+                <p><m>\displaystyle \int_{1/1000000}^1 \frac{1}{x^2} dx</m></p>
             </task>
             </activity>
          <activity>
-             <task>
                 <p>What do you notice about <m>\displaystyle \int_{a}^1 \frac{1}{x^2} dx</m> as <m>a</m> approached 0 in <xref ref="activity-T8Exploration1"/>?</p>
             <ol marker="A." cols="2">
-                <li><p><m>\displaystyle \int_{a}^1 \frac{1}{x^2} dx</m> approaches a finite, non-zero constant.</p></li>
                 <li><p><m>\displaystyle \int_{a}^1 \frac{1}{x^2} dx</m> approaches <m>0</m>.</p></li>
+                <li><p><m>\displaystyle \int_{a}^1 \frac{1}{x^2} dx</m> approaches a finite constant greater than <m>0</m>.</p></li>
                 <li><p><m>\displaystyle \int_{a}^1 \frac{1}{x^2} dx</m> approaches <m>\infty</m>.</p></li>
-                <li><p><m>\displaystyle \int_{a}^1 \frac{1}{x^2} dx</m> approaches <m>-\infty</m>.</p></li>
                 <li><p>There is not enough information.</p></li>
             </ol>
-            </task>
-            <task>
-                <p>Why can't <m>a=0</m>?</p>
-            </task>
         </activity>
         <activity xml:id="activity-T8Exploration2">
-            <introduction><p>We still are considering <m>f(x)=\frac{1}{x^2}</m>. Compute the following definite integrals.</p></introduction>
+            <introduction><p>Compute the following definite integrals, again using <m>\displaystyle \int\frac{1}{x^2}dx=-\frac{1}{x}+C</m>.</p></introduction>
             <task>
-                <p><m>\displaystyle \int_{1}^{10} \frac{1}{x^2} dx</m></p>
+                <p><m>\displaystyle \int_{1}^{100} \frac{1}{x^2} dx=\left[-\frac{1}{x}\right]_{1}^{100}</m></p>
             </task>
             <task>
-                <p><m>\displaystyle \int_{1}^{100} \frac{1}{x^2} dx</m></p>
+                <p><m>\displaystyle \int_{1}^{10000} \frac{1}{x^2} dx</m></p>
             </task>
             <task>
-                <p><m>\displaystyle \int_{1}^{1000} \frac{1}{x^2} dx</m></p>
+                <p><m>\displaystyle \int_{1}^{1000000} \frac{1}{x^2} dx</m></p>
             </task>
     </activity>
     <activity>
-        <p>What do you notice about <m>\displaystyle \int_{1}^a \frac{1}{x^2} dx</m> as <m>a</m> approached <m>\infty</m> in <xref ref="activity-T8Exploration2"/>?</p>
+        <p>What do you notice about <m>\displaystyle \int_{1}^b \frac{1}{x^2} dx</m> as <m>b</m> approached <m>\infty</m> in <xref ref="activity-T8Exploration2"/>?</p>
         <ol marker="A." cols="2">
-                <li><p><m>\displaystyle \int_{1}^a \frac{1}{x^2} dx</m> approaches a finite, non-zero constant.</p></li>
-                <li><p><m>\displaystyle \int_{1}^a \frac{1}{x^2} dx</m> approaches <m>0</m>.</p></li>
-                <li><p><m>\displaystyle \int_{1}^a \frac{1}{x^2} dx</m> approaches <m>\infty</m>.</p></li>
-                <li><p><m>\displaystyle \int_{1}^a \frac{1}{x^2} dx</m> approaches <m>-\infty</m>.</p></li>
+                <li><p><m>\displaystyle  \int_{1}^b \frac{1}{x^2} dx</m> approaches <m>0</m>.</p></li>
+                <li><p><m>\displaystyle  \int_{1}^b \frac{1}{x^2} dx</m> approaches a finite constant greater than <m>0</m>.</p></li>
+                <li><p><m>\displaystyle  \int_{1}^b \frac{1}{x^2} dx</m> approaches <m>\infty</m>.</p></li>
                 <li><p>There is not enough information.</p></li>
         </ol>
     </activity>
     <activity xml:id="activity-T8Exploration3">
-        <introduction><p>Compute the following definite integrals.</p></introduction>
+        <introduction><p>Recall <m>\displaystyle \int\frac{1}{\sqrt x}dx=2\sqrt{x}+C</m>. Compute the following definite integrals.</p></introduction>
         <task>
-            <p><m>\displaystyle \int_{0.1}^1 \frac{1}{\sqrt{x}} dx</m></p>
+            <p><m>\displaystyle \int_{1/100}^1 \frac{1}{\sqrt{x}} dx=\left[2\sqrt{x}\right]_{1/100}^1</m></p>
         </task>
         <task>
-            <p><m>\displaystyle \int_{0.01}^1 \frac{1}{\sqrt{x}} dx</m></p>
+            <p><m>\displaystyle \int_{1/10000}^1 \frac{1}{\sqrt{x}} dx</m></p>
         </task>
         <task>
-            <p><m>\displaystyle \int_{0.001}^1 \frac{1}{\sqrt{x}} dx</m></p>
+            <p><m>\displaystyle \int_{1/1000000}^1 \frac{1}{\sqrt{x}} dx</m></p>
         </task>
     </activity>
     <activity>
         <task>
-            <p>What do you notice about the integral <m>\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx</m> as <m>a</m> approached 0 in <xref ref="activity-T8Exploration3"/>?</p>
+            <p>What do you notice about the integral <m>\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx</m> as <m>b</m> approached 0 in <xref ref="activity-T8Exploration3"/>?</p>
             <ol marker="A." cols="2">
-                <li><p><m>\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx</m> approaches a finite, non-zero constant.</p></li>
                 <li><p><m>\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx</m> approaches <m>0</m>.</p></li>
+                <li><p><m>\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx</m> approaches a finite constant greater than <m>0</m>.</p></li>
                 <li><p><m>\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx</m> approaches <m>\infty</m>.</p></li>
-                <li><p><m>\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx</m> approaches <m>-\infty</m>.</p></li>
                 <li><p>There is not enough information.</p></li>
             </ol>
         </task>
@@ -86,26 +78,27 @@
         </task>
     </activity>
     <activity xml:id="activity-T8Exploration4">
-        <introduction><p>Compute the following definite integrals.</p></introduction>
+        <introduction><p>Compute the following definite integrals using <m>\displaystyle \int\frac{1}{\sqrt x}dx=2\sqrt{x}+C</m>.</p></introduction>
         <task>
-            <p><m>\displaystyle \int_{1}^{10} \frac{1}{\sqrt{x}} dx</m></p>
+            <p><m>\displaystyle \int_{1}^{100} \frac{1}{\sqrt{x}} dx\left[2\sqrt{x}\right]_{1}^{100}</m></p>
         </task>
         <task>
-            <p><m>\displaystyle \int_{1}^{100} \frac{1}{\sqrt{x}} dx</m></p>
+            <p><m>\displaystyle \int_{1}^{10000} \frac{1}{\sqrt{x}} dx</m></p>
         </task>
         <task>
-            <p><m>\displaystyle \int_{1}^{1000} \frac{1}{\sqrt{x}} dx</m></p>
+            <p><m>\displaystyle \int_{1}^{1000000} \frac{1}{\sqrt{x}} dx</m></p>
         </task>
     </activity>
     <activity>
         <task>
-            <p>What do you notice the integral <m>\displaystyle \int_{1}^a \frac{1}{\sqrt{x}} dx</m> as <m>a</m> approached <m>\infty</m> in <xref ref="activity-T8Exploration4"/>?</p>
+            <p>What do you notice the integral <m>\displaystyle \int_{1}^b \frac{1}{\sqrt{x}} dx</m> as <m>a</m> approached <m>\infty</m> in <xref ref="activity-T8Exploration4"/>?</p>
             <ol marker="A." cols="2">
-                <li><p><m>\displaystyle \int_{1}^a \frac{1}{\sqrt{x}} dx</m> approaches a finite, non-zero constant.</p></li>
-                <li><p><m>\displaystyle \int_{1}^a \frac{1}{\sqrt{x}} dx</m> approaches <m>0</m>.</p></li>
-                <li><p><m>\displaystyle \int_{1}^a \frac{1}{\sqrt{x}} dx</m> approaches <m>\infty</m>.</p></li>
-                <li><p><m>\displaystyle \int_{1}^a \frac{1}{\sqrt{x}} dx</m> approaches <m>-\infty</m>.</p></li>
+            <ol marker="A." cols="2">
+                <li><p><m>\displaystyle \int_{1}^b \frac{1}{\sqrt{x}} dx</m> approaches <m>0</m>.</p></li>
+                <li><p><m>\displaystyle \int_{1}^b \frac{1}{\sqrt{x}} dx</m> approaches a finite constant greater than <m>0</m>.</p></li>
+                <li><p><m>\displaystyle \int_{1}^b \frac{1}{\sqrt{x}} dx</m> approaches <m>\infty</m>.</p></li>
                 <li><p>There is not enough information.</p></li>
+            </ol>
             </ol>
         </task>
         <task>
@@ -113,61 +106,77 @@
         </task>
     </activity>
     <definition xml:id="definition-TI8infinityint">
-        <p>For a function <m>f(x)</m> and a constant <m>c</m>, we let <m>\displaystyle \int_c^\infty f(x) dx</m> denote <me>\int_c^\infty f(x) dx=\lim_{a\to\infty}\left( \int_c^a f(x) dx\right)</me>.  If this limit is a defined real number, then we say <m>\displaystyle \int_c^\infty f(x) dx</m> is <em>convergent</em>. Otherwise, it is <em>divergent</em>.</p>
-        <p>Similarly, <me>\int_{-\infty}^c f(x) dx=\lim_{a\to-\infty}\left( \int_a^c f(x) dx\right).</me></p>
+        <p>
+For a function <m>f(x)</m> and a constant <m>a</m>, we let <m>\displaystyle \int_a^\infty f(x) dx</m> denote 
+<me>\int_a^\infty f(x) dx=\lim_{b\to\infty}\left( \int_a^b f(x) dx\right)</me>.
+If this limit is a defined real number, then we say <m>\displaystyle \int_c^\infty f(x) dx</m> is <term>convergent</term>.
+Otherwise, it is <term>divergent</term>.
+        </p>
+        <p>Similarly, <me>\int_{-\infty}^b f(x) dx=\lim_{a\to-\infty}\left( \int_a^b f(x) dx\right).</me></p>
     </definition>
     <activity xml:id="activity-T8Fabound">
-        <p>Which of the following is <m>\displaystyle \int_1^a \frac{1}{x^2} dx</m>?</p>
+        <p>Which of these limits is equal to <m>\displaystyle\int_1^\infty \frac{1}{x^2} dx</m>?</p>
         <ol marker="A." cols="2">
-                    <li><m>-\frac{1}{x}+C</m></li>
-                    <li><m>-\frac{1}{a}+C</m></li>
-                    <li><m>-\frac{1}{x}+1</m></li>
-                    <li><m>-\frac{1}{a}</m></li>
-                    <li><m>-\frac{1}{a}+1</m></li>
+            <li><m>\lim_{b\to\infty}\int_1^b\frac{1}{x^2}dx</m></li>
+            <li><m>\lim_{b\to\infty}\left[-\frac{1}{x}\right]_1^b</m></li>
+            <li><m>\lim_{b\to\infty}\left[-\frac{1}{b}+1\right]</m></li>
+            <li>All of these.</li>
         </ol>
     </activity>
     <activity xml:id="activity-T8Fevaluatexcube">
-        <p>Using your choice in <xref ref="activity-T8Fabound"/>, what is <m>\lim_{a\to \infty} \int_1^a \frac{1}{x^2} dx</m>?</p>
-        <ol marker="A." cols="3">
+        <p>Given the result of <xref ref="activity-T8Fabound"/>, what is <m>\displaystyle\int_1^\infty \frac{1}{x^2} dx</m>?</p>
+        <ol marker="A." cols="2">
             <li><m>0</m></li>
             <li><m>1</m></li>
-            <li><m>2</m></li>
             <li><m>\infty</m></li>
             <li><m>-\infty</m></li>
         </ol>
     </activity>
-    <activity xml:id="activity-T8Fcos">
-        <task>
-            <p>Find <m>\displaystyle \int_{\pi/2}^a \cos(x)dx</m>.</p>
-        </task>
-        <task>
-            <p>Which of the following is true about <m>\int_{\pi/2}^\infty \cos(x)dx</m>?</p>
-            <ol marker="A." cols="2">
-                <li><p><m>\displaystyle \int_{\pi/2}^\infty \cos(x)dx</m> is convergent.</p></li>
-                <li><p><m>\displaystyle \int_{\pi/2}^\infty \cos(x)dx</m> is divergent.</p></li>
-                <li><p>More information is needed.</p></li>
-            </ol>
-        </task>
+    <activity>
+        <p>Does <m>\displaystyle\int_1^\infty \frac{1}{\sqrt x} dx</m> converge or diverge?</p>
+        <ol marker="A.">
+            <li>Converges because <m>\displaystyle\lim_{b\to 0^+}\left[2\sqrt b-2\right]</m> converges.</li>
+            <li>Diverges because <m>\displaystyle\lim_{b\to 0^+}\left[2\sqrt b-2\right]</m> diverges.</li>
+            <li>Converges because <m>\displaystyle\lim_{b\to \infty}\left[2\sqrt b-2\right]</m> converges.</li>
+            <li>Diverges because <m>\displaystyle\lim_{b\to \infty}\left[2\sqrt b-2\right]</m> diverges.</li>
+        </ol>
     </activity>
     <definition xml:id="definition-TI8assympint">
-        <p>For a function <m>f(x)</m> with a vertical asymptote at <m>x=b</m> and a constant <m>c</m>, we let <m>\displaystyle \int_c^b f(x) dx</m> denote <me>\int_c^b f(x) dx=\lim_{a\to b^{-}}\left( \int_c^a f(x) dx\right)</me>.</p>
-        <p>Similarly, <me>\int_{b}^c f(x) dx=\lim_{a\to b^{+}}\left( \int_a^c f(x) dx\right)</me>.</p>
+        <p>
+For a function <m>f(x)</m> with a vertical asymptote at <m>x=c&gt;a</m>, 
+we let <m>\displaystyle \int_a^c f(x) dx</m> denote <me>\int_a^c f(x) dx=\lim_{b\to c^{-}}\left( \int_a^b f(x) dx\right)</me>.
+        </p>
+        <p>
+For a function <m>f(x)</m> with a vertical asymptote at <m>x=c&lt;b</m>, 
+we let <m>\displaystyle \int_c^b f(x) dx</m> denote <me>\int_c^b f(x) dx=\lim_{a\to c^{+}}\left( \int_a^b f(x) dx\right)</me>.
+        </p>
     </definition>
-    <activity xml:id="activity-TI8oneoverrootx">
-        <task>
-            <p>Find <m>\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx</m>.</p>
-        </task>
-        <task>
-            <p>Using the above result and an appropriate limit, find <m>\displaystyle \int_{0}^1 \frac{1}{\sqrt{x}} dx</m>.</p>
-        </task>
+    <activity>
+        <p>Which of these limits is equal to <m>\displaystyle\int_0^1 \frac{1}{\sqrt x} dx</m>?</p>
+        <ol marker="A." cols="2">
+            <li><m>\lim_{a\to0^+}\int_a^1\frac{1}{\sqrt x}dx</m></li>
+            <li><m>\lim_{a\to0^+}\left[2\sqrt x\right]_a^1</m></li>
+            <li><m>\lim_{a\to0^+}\left[2-2\sqrt a\right]</m></li>
+            <li>All of these.</li>
+        </ol>
+    </activity>
+    <activity>
+        <p>Given the this result, what is <m>\displaystyle\int_0^1 \frac{1}{\sqrt x} dx</m>?</p>
+        <ol marker="A." cols="2">
+            <li><m>0</m></li>
+            <li><m>1</m></li>
+            <li><m>2</m></li>
+            <li><m>\infty</m></li>
+        </ol>
     </activity>
     <activity xml:id="activity-TI8xsquare">
-        <task>
-            <p>Find <m>\displaystyle \int_{a}^1 \frac{1}{x^2} dx</m>.</p>
-        </task>
-        <task>
-            <p>Using the above result and an appropriate limit, find <m>\displaystyle \int_{0}^1 \frac{1}{x^2} dx</m>.</p>
-        </task>
+        <p>Does <m>\displaystyle\int_0^1 \frac{1}{x^2} dx</m> converge or diverge?</p>
+        <ol marker="A.">
+            <li>Converges because <m>\displaystyle\lim_{a\to 0^+}\left[-1+\frac{1}{a}\right]</m> converges.</li>
+            <li>Diverges because <m>\displaystyle\lim_{a\to 0^+}\left[-1+\frac{1}{a}\right]</m> diverges.</li>
+            <li>Converges because <m>\displaystyle\lim_{a\to 1^-}\left[-1+\frac{1}{a}\right]</m> converges.</li>
+            <li>Diverges because <m>\displaystyle\lim_{a\to 1^-}\left[-1+\frac{1}{a}\right]</m> diverges.</li>
+        </ol>
     </activity>
     <fact>
         <statement>
@@ -472,6 +481,19 @@
             </p>
             </introduction>    
         </activity>
+    <activity xml:id="activity-T8Fcos">
+        <task>
+            <p>Find <m>\displaystyle \int_{\pi/2}^a \cos(x)dx</m>.</p>
+        </task>
+        <task>
+            <p>Which of the following is true about <m>\int_{\pi/2}^\infty \cos(x)dx</m>?</p>
+            <ol marker="A." cols="2">
+                <li><p><m>\displaystyle \int_{\pi/2}^\infty \cos(x)dx</m> is convergent.</p></li>
+                <li><p><m>\displaystyle \int_{\pi/2}^\infty \cos(x)dx</m> is divergent.</p></li>
+                <li><p>More information is needed.</p></li>
+            </ol>
+        </task>
+    </activity>
     
     
     <subsection>
