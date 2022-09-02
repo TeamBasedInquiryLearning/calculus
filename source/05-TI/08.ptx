@@ -178,6 +178,39 @@ we let <m>\displaystyle \int_c^b f(x) dx</m> denote <me>\int_c^b f(x) dx=\lim_{a
             <li>Diverges because <m>\displaystyle\lim_{a\to 1^-}\left[-1+\frac{1}{a}\right]</m> diverges.</li>
         </ol>
     </activity>
+  <activity>
+    <introduction>
+      <p> Explain and demonstrate how to write each of the following improper integrals as a limit, and why this limit coverges or diverges. </p>
+    </introduction>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle\int_{ -2 }^{ +\infty } \frac{1}{\sqrt{x + 6}} dx.</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle\int_{ -4 }^{ -2 } \frac{1}{{\left(x + 4\right)}^{\frac{4}{3}}} dx.</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle\int_{ -5 }^{ 0 } \frac{1}{{\left(x + 5\right)}^{\frac{5}{9}}} dx.</m>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            <m>\displaystyle\int_{ 10 }^{ +\infty } \frac{1}{{\left(x - 8\right)}^{\frac{4}{3}}} dx.</m>
+          </p>
+        </statement>
+      </task>
+  </activity>
     <fact>
         <statement>
             <p>Suppose that <m>0&lt; p</m> and <m>p\neq 1</m>. Applying the integration power rule gives us the indefinite integral <m>\displaystyle \int \frac{1}{x^p} dx=\frac{1}{(1-p)}x^{1-p}+C</m>.</p>

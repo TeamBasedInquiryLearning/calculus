@@ -40,6 +40,7 @@
                 <p>
  To avoid repetitive substitution, the following integral formulas will be useful.
  <me>\int\frac{1}{x+b}dx=\ln|x+b|+C</me>
+ <me>\int\frac{1}{(x+b)^2}dx=-\frac{1}{x+b}+C</me>
  <me>\int\frac{1}{x^2+b^2}dx=\frac{1}{b}\arctan\left(\frac{x}{b}\right)+C</me>
                 </p>
             </statement>
@@ -95,6 +96,7 @@
  <m>\int\frac{10x-11}{x^2+x-2}</m>, we'd like to <term>decompose</term> the fractions
  into simpler <term>partial fractions</term> that may be integrated with these formulas
  <me>\int\frac{1}{x+b}dx=\ln|x+b|+C</me>
+ <me>\int\frac{1}{(x+b)^2}dx=-\frac{1}{x+b}+C</me>
  <me>\int\frac{1}{x^2+b^2}dx=\frac{1}{b}\arctan\left(\frac{x}{b}\right)+C</me>
                 </p>
             </statement>
@@ -223,14 +225,11 @@ Using some algebra, it's possible to find values for <m>A</m> through <m>G</m> t
             </task>
         </activity>
         <activity xml:id="activity-TI6SolvelastCoeff">
-            <task>
                 <p>
                     Using the results of <xref ref="activity-TI6SolveaCoeff"/>, show how to rewrite our choice from
-                    <xref ref="activity-TI6RationaltoPoly"/> in the form
-                    <me>x^2+5x+3=(A+\unknown)x^2+(A+\unknown)x+3</me>.
+                    <xref ref="activity-TI6RationaltoPoly"/>
+                    <me>\unknown x^2+\unknown x=Ax^2+Ax</me>.
                 </p>
-            </task>
-            <task>
                 <p>
                     What value of <m>A</m> satisfies this equation?
                 </p>
@@ -240,7 +239,6 @@ Using some algebra, it's possible to find values for <m>A</m> through <m>G</m> t
                     <li><m>4</m></li>
                     <li><m>-5</m></li>
                 </ol>
-            </task>
         </activity>
         
         <activity xml:id="activity-TI6PuttingitTogether">
