@@ -17,7 +17,7 @@ class Generator(BaseGenerator):
             outfactors = [
                 x^randint(2,5),
                 sqrt(x),
-                log(x),
+                log(abs(x)),
                 e^x,
                 cos(x),
                 sin(x),
@@ -26,7 +26,7 @@ class Generator(BaseGenerator):
             
             ufactors = [
                 x^randint(2,5)+randint(-5,5),
-                log(x),
+                log(abs(x)),
                 e^x,
                 cos(x),
                 sin(x),
