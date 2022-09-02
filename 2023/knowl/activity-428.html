@@ -12,30 +12,30 @@
 </head>
 <body class="ignore-math">
 <article class="activity project-like"><h3 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.3.5</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.2.4</span><span class="period">.</span>
 </h3>
-<div class="introduction"><p>How should we modify the distance formula <span class="process-math">\(\sqrt{(\Delta x)^2+(\Delta y)^2}\)</span> to measure arclength as illustrated in <a href="" class="xref" data-knowl="./knowl/CO3-parametric-subdivide.html" title="Figure 144">Figure 144</a>?</p></div>
+<div class="introduction"><p>Consider the vector equation <span class="process-math">\(\vec{r}(t)=\tuple{3t^2-9,t^3-3t}\text{.}\)</span></p></div>
 <article class="task exercise-like"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p>Let <span class="process-math">\(\Delta L_1,\Delta L_2,\Delta L_3\)</span> describe the lengths of each of the three segements. Which expression describes the total length of these segments?</p>
+<p>What are the corresponding parametric equations and their derivatives?</p>
 <ol class="upper-alpha cols2">
-<li><p><span class="process-math">\(\displaystyle \Delta L_1\times \Delta L_2\times \Delta L_3\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle \Delta L_1+ 2\Delta L_2+ 3\Delta L_3\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle \sum_{i=1}^{3} \Delta L_i\)</span></p></li>
+<li><p><span class="process-math">\(y=3t^2-9\)</span> and <span class="process-math">\(x=t^3-3t\text{;}\)</span> <span class="process-math">\(\frac{dy}{dt}=9t\)</span> and <span class="process-math">\(\frac{dx}{dt}=3t-6\)</span></p></li>
+<li><p><span class="process-math">\(x=3t^2-9\)</span> and <span class="process-math">\(y=t^3-3t\text{;}\)</span> <span class="process-math">\(\frac{dx}{dt}=9t\)</span> and <span class="process-math">\(\frac{dy}{dt}=3t-6\)</span></p></li>
+<li><p><span class="process-math">\(y=3t^2-9\)</span> and <span class="process-math">\(x=t^3-3t\text{;}\)</span> <span class="process-math">\(\frac{dy}{dt}=6t\)</span> and <span class="process-math">\(\frac{dx}{dt}=3t^2-3\)</span></p></li>
+<li><p><span class="process-math">\(x=3t^2-9\)</span> and <span class="process-math">\(y=t^3-3t\text{;}\)</span> <span class="process-math">\(\frac{dx}{dt}=6t\)</span> and <span class="process-math">\(\frac{dy}{dt}=3t^2-3\)</span></p></li>
 </ol></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p>We can let each <span class="process-math">\(\Delta L_i=\sqrt{(\Delta x_i)^2+(\Delta y_i)^2}\text{.}\)</span> But we will find it useful to involve the parameter <span class="process-math">\(t\)</span> as well, or more accurately, the change <span class="process-math">\(\Delta t_i\)</span> of <span class="process-math">\(t\)</span> between each point of the subdivision.</p>
-<p>Which of these is algebraically the same as the above formula for <span class="process-math">\(\Delta L_i\text{?}\)</span></p>
+<p>The formula <span class="process-math">\(\frac{dy}{dx}=\frac{dy/dt}{dx/dt}\)</span> allows us to compute slopes as which of the following functions of <span class="process-math">\(t\text{?}\)</span></p>
 <ol class="upper-alpha cols2">
-<li><p><span class="process-math">\(\displaystyle \sqrt{\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2}\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle \sqrt{\left[\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2\right]\Delta t_i}\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle \sqrt{\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2}\Delta t_i\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \frac{6t}{t^2+3}\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \frac{6t}{t^2+1}\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \frac{t^2-1}{2t}\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle \frac{2t}{3t^2-1}\)</span></p></li>
 </ol></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p>Finally, we'll want to increase <span class="process-math">\(N\)</span> from <span class="process-math">\(3\)</span> so that it limits to <span class="process-math">\(\infty\text{.}\)</span> What can we conclude when that happens?</p>
+<p>Find the point, tangent slope, and tangent line equation (recall <span class="process-math">\(y-y_0=m(x-x_0)\)</span>) corresponding to the parameter <span class="process-math">\(t=-2\text{.}\)</span></p>
 <ol class="upper-alpha cols2">
-<li><p>Each segment is infintely small.</p></li>
-<li><p><span class="process-math">\(\displaystyle \Delta x_i\to 0\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle \Delta t_i\to 0\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle \frac{\Delta x_i}{\Delta t_i}\to\frac{dx}{dt}\)</span></p></li>
-<li><p>All of the above.</p></li>
-</ol></article></article><span class="incontext"><a href="CO3.html#activity-428" class="internal">in-context</a></span>
+<li><p>Point <span class="process-math">\((-3,-4)\text{,}\)</span> slope <span class="process-math">\(\frac{3}{4}\text{,}\)</span> EQ <span class="process-math">\(y=\frac{3}{4}x+7\)</span></p></li>
+<li><p>Point <span class="process-math">\((3,-14)\text{,}\)</span> slope <span class="process-math">\(-\frac{4}{3}\text{,}\)</span> EQ <span class="process-math">\(y=-\frac{4}{3}x-10\)</span></p></li>
+<li><p>Point <span class="process-math">\((1,-11)\text{,}\)</span> slope <span class="process-math">\(\frac{2}{3}\text{,}\)</span> EQ <span class="process-math">\(y=\frac{2}{3}x-11\)</span></p></li>
+<li><p>Point <span class="process-math">\((-1,-9)\text{,}\)</span> slope <span class="process-math">\(-\frac{1}{6}\text{,}\)</span> EQ <span class="process-math">\(y=-\frac{1}{6}x+2\)</span></p></li>
+</ol></article></article><span class="incontext"><a href="CO2.html#activity-428" class="internal">in-context</a></span>
 </body>
 </html>
