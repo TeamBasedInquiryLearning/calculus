@@ -23,8 +23,8 @@ class Generator(BaseGenerator):
         
         f=indefinite_integral(dfdx, x)
         
-        a=randint(-5,5)
-        b=randint(a+1, a+6)
+        a=randint(1,6)
+        b=randint(a+1, a+5)
         
         fp(x)=dfdx
         
