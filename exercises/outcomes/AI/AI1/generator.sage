@@ -1,30 +1,14 @@
 class Generator(BaseGenerator):
     def data(self):
-        # FIXME very slow!
-        x=var("x")
-        from sage.symbolic.integration.integral import definite_integral
-
-        
-        
-        
-        functions=[
-            randint(1, 5)*choice([-1,1])*e^(randint(1, 5)*choice([-1,1])*x),
-            randint(1, 5)*choice([-1,1])*sin(randint(1, 5)*choice([-1,1])*x*pi/randint(2,4)),
-            randint(1, 5)*choice([-1,1])*cos(randint(1, 5)*choice([-1,1])*x*pi/randint(2,4)),
-            
-        ]
-        
-        f(x)=choice(functions)+randint(-5, 5)*x^2+randint(-5, 5)*x+randint(-5, 5)
-        
-        a=randint(0,3)
-        b=a+randint(1,4)
-        
-        fint=definite_integral(f(x),x,a,b)
-        favg=fint/(b-a)
+        a = randrange(-4,0)
+        b = randrange(2,5)
+        c = [choice([-1,1])*randrange(1,6) for _ in range(3)]
+        favg = c[0]*b+c[1]*b^2+c[2]*b^3-c[0]*a-c[1]*a^2-c[2]*a^3
 
         return {
-          "f": f(x),
-          "favg": favg,
-          "a": a,
-          "b": b,  
+            "f": 3*c[2]*x^2+2*c[1]*x+c[0],
+            "favg": favg,
+            "a": a,
+            "b": b,
+            "b-a": b-a,
         }
