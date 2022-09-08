@@ -9,7 +9,7 @@
       </li>
     </ul>
   </objectives>
-          
+
     <!--DEFINITION OF ANTIDERIVATIVE from Active Calculus -->
     <definition xml:id="def-antiderivative">
       <statement>
@@ -18,6 +18,15 @@
           we say that <m>G</m> is an <term>antiderivative</term>
               <idx><h>antiderivative</h></idx>
           of <m>g</m>.
+        </p>
+        <p>
+            The collection of all antiderivatives of <m>g</m> is called the
+            <term>general antiderivative</term> or
+            <term>indefinite integral</term>,
+            denoted by <m>\int g(x)\,dx</m>.
+            All antiderivatives differ by a constant <m>C</m> (since
+            <m>\frac{d}{dx}[C]=0</m>), so
+            we may write: <me>\int g(x)\,dx=G(x)+C</me>.
         </p>
       </statement>
     </definition>
@@ -33,9 +42,9 @@
 
             </ol>
     </statement>
-        </activity>   
-    
-        
+        </activity>
+
+
              <activity xml:id="elem-antider-intro2">
         <statement>
     <p>Consider the function <m>f(x)=x^2</m>. Which of the following could be <m>F(x)</m>, an antiderivative of <m>f(x)</m>? </p>

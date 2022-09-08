@@ -119,12 +119,6 @@
         
         <statement>
             <p>Given <m>A(x) = \int_{x^3}^{x^5}(\sin(t) - 2)\,dt</m>, what is <m>A'(x)</m>?</p>
-        <ol marker="A." cols="2">
-              <li><p><m>A'(x) = -e^x</m></p></li>
-                <li><p><m>A'(x) = e^x</m></p></li>
-                <li><p><m>A'(x) = e^b-e^x</m></p></li>
-                <li><p><m>A'(x) = e^x-e^b</m></p></li>
-            </ol>
         </statement>
        
     </activity>
