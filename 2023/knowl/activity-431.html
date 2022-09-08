@@ -12,30 +12,21 @@
 </head>
 <body class="ignore-math">
 <article class="activity project-like"><h3 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.3.5</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.3.7</span><span class="period">.</span>
 </h3>
-<div class="introduction"><p>How should we modify the distance formula <span class="process-math">\(\sqrt{(\Delta x)^2+(\Delta y)^2}\)</span> to measure arclength as illustrated in <a href="" class="xref" data-knowl="./knowl/CO3-parametric-subdivide.html" title="Figure 144">Figure 144</a>?</p></div>
+<div class="introduction">
+<p>Let's gain confidence in the arclength formula</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int_{t=a}^{t=b} \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}dt
+\end{equation*}
+</div>
+<p class="continuation">by checking to make sure it matches the distance formula for line segments.</p>
+<p>The parametric equations <span class="process-math">\(x=3t-1\)</span> and <span class="process-math">\(y=2-4t\)</span> for <span class="process-math">\(1\leq t\leq 3\)</span> represent the segment of the line <span class="process-math">\(y=-\frac{4}{3}x-\frac{2}{3}\)</span> connecting <span class="process-math">\((2,-2)\)</span> to <span class="process-math">\((8,-10)\text{.}\)</span></p>
+</div>
 <article class="task exercise-like"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p>Let <span class="process-math">\(\Delta L_1,\Delta L_2,\Delta L_3\)</span> describe the lengths of each of the three segements. Which expression describes the total length of these segments?</p>
-<ol class="upper-alpha cols2">
-<li><p><span class="process-math">\(\displaystyle \Delta L_1\times \Delta L_2\times \Delta L_3\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle \Delta L_1+ 2\Delta L_2+ 3\Delta L_3\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle \sum_{i=1}^{3} \Delta L_i\)</span></p></li>
-</ol></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p>We can let each <span class="process-math">\(\Delta L_i=\sqrt{(\Delta x_i)^2+(\Delta y_i)^2}\text{.}\)</span> But we will find it useful to involve the parameter <span class="process-math">\(t\)</span> as well, or more accurately, the change <span class="process-math">\(\Delta t_i\)</span> of <span class="process-math">\(t\)</span> between each point of the subdivision.</p>
-<p>Which of these is algebraically the same as the above formula for <span class="process-math">\(\Delta L_i\text{?}\)</span></p>
-<ol class="upper-alpha cols2">
-<li><p><span class="process-math">\(\displaystyle \sqrt{\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2}\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle \sqrt{\left[\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2\right]\Delta t_i}\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle \sqrt{\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2}\Delta t_i\)</span></p></li>
-</ol></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p>Finally, we'll want to increase <span class="process-math">\(N\)</span> from <span class="process-math">\(3\)</span> so that it limits to <span class="process-math">\(\infty\text{.}\)</span> What can we conclude when that happens?</p>
-<ol class="upper-alpha cols2">
-<li><p>Each segment is infintely small.</p></li>
-<li><p><span class="process-math">\(\displaystyle \Delta x_i\to 0\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle \Delta t_i\to 0\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle \frac{\Delta x_i}{\Delta t_i}\to\frac{dx}{dt}\)</span></p></li>
-<li><p>All of the above.</p></li>
-</ol></article></article><span class="incontext"><a href="CO3.html#activity-431" class="internal">in-context</a></span>
+<p>Find <span class="process-math">\(dx/dt\)</span> and <span class="process-math">\(dy/dt\text{,}\)</span> and substitute them into the formula above along with <span class="process-math">\(a=1\)</span> and <span class="process-math">\(b=3\text{.}\)</span></p></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p>Show that the value of this formula is <span class="process-math">\(10\text{.}\)</span></p></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p>Show that the length of the line segment connecting <span class="process-math">\((2,-2)\)</span> to <span class="process-math">\((8,-10)\)</span> is <span class="process-math">\(10\)</span> by applying the distance formula directly instead.</p></article></article><span class="incontext"><a href="CO3.html#activity-431" class="internal">in-context</a></span>
 </body>
 </html>

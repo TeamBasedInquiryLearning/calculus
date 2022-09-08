@@ -12,13 +12,22 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>Which of the following is equal to <span class="process-math">\(\displaystyle\frac{1}{x}+\frac{1}{x^2+1}\text{?}\)</span></p>
-<ol class="upper-alpha cols2">
-<li><p><span class="process-math">\(\displaystyle \frac{2x}{x^2+x+1}\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle \frac{x^3+x}{x^2+x+1}\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle \frac{2x}{x^3+x}\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle \frac{x^2+x+1}{x^3+x}\)</span></p></li>
-</ol>
+<p>To find integrals like <span class="process-math">\(\int \frac{x^2+x+1}{x^3+x} dx\)</span> and <span class="process-math">\(\int\frac{10x-11}{x^2+x-2}\text{,}\)</span> we'd like to <dfn class="terminology">decompose</dfn> the fractions into simpler <dfn class="terminology">partial fractions</dfn> that may be integrated with these formulas</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int\frac{1}{x+b}dx=\ln|x+b|+C
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int\frac{1}{(x+b)^2}dx=-\frac{1}{x+b}+C
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\int\frac{1}{x^2+b^2}dx=\frac{1}{b}\arctan\left(\frac{x}{b}\right)+C
+\end{equation*}
+</div>
 <span class="incontext"><a href="TI6.html#p-1915" class="internal">in-context</a></span>
 </body>
 </html>

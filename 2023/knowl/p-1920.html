@@ -12,24 +12,20 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<ol class="decimal">
-<li>
-<p><em class="emphasis">Linear Terms:</em> Let <span class="process-math">\((x-a)^n\)</span> divide <span class="process-math">\(q(x)\text{,}\)</span> Then the decomposition of <span class="process-math">\(\frac{p(x)}{q(x)}\)</span> will contain the terms</p>
+<p>Following is an example of a rather involved partial fraction decomposition.</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\frac{A_1}{(x-a)} + \frac{A_2}{(x-a)^2} + \cdots +\frac{A_n}{(x-a)^n}\text{.}
-\end{equation*}
+\begin{align*}
+&amp;\frac{7 \, x^{6} - 4 \, x^{5} + 41 \, x^{4} - 20 \, x^{3} + 24 \, x^{2} + 11 \, x + 16}{x(x-1)^2(x^2+4)^2}\\
+=&amp; \frac{A}{x}+\frac{B}{x-1}+\frac{C}{(x-1)^2}+\frac{Dx+E}{x^2+4}+\frac{Fx+G}{(x^2+4)^2}
+\end{align*}
 </div>
-</li>
-<li>
-<p><em class="emphasis">Quadratic Terms:</em> Let <span class="process-math">\((x^2+bx+c)^n\)</span> divide <span class="process-math">\(q(x)\text{,}\)</span> where <span class="process-math">\(x^2+bx+c\)</span> is irreducable. Then the decomposition of <span class="process-math">\(\frac{p(x)}{q(x)}\)</span> will contain the terms</p>
+<p class="continuation">Using some algebra, it's possible to find values for <span class="process-math">\(A\)</span> through <span class="process-math">\(G\)</span> to determine</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\frac{B_1x+C_1}{x^2+bx+c}+\frac{B_2x+C_2}{(x^2+bx+c)^2}+\cdots+\frac{B_nx+C_n}{(x^2+bx+c)^n}\text{.}
-\end{equation*}
+\begin{align*}
+&amp;\frac{7 \, x^{6} - 4 \, x^{5} + 41 \, x^{4} - 20 \, x^{3} + 24 \, x^{2} + 11 \, x + 16}{x(x-1)^2(x^2+4)^2}\\
+=&amp; \frac{1}{x}+\frac{2}{x-1}+\frac{3}{(x-1)^2}+\frac{4x+5}{x^2+4}+\frac{6x+7}{(x^2+4)^2}\text{.}
+\end{align*}
 </div>
-</li>
-</ol>
 <span class="incontext"><a href="TI6.html#p-1920" class="internal">in-context</a></span>
 </body>
 </html>
