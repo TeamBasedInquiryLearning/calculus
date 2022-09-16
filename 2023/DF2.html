@@ -14,7 +14,7 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
 <meta property="book:author" content="TBIL Institute Fellows">
-<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   tex: {
     inlineMath: [['\\(','\\)']],
@@ -26,6 +26,19 @@ window.MathJax = {
   options: {
     ignoreHtmlClass: "tex2jax_ignore|ignore-math",
     processHtmlClass: "process-math",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
   },
   chtml: {
     scale: 0.88,
@@ -197,6 +210,7 @@ window.MathJax = {
 <li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
 <li class="link"><a href="integral-table.html" data-scroll="integral-table" class="internal"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></li>
 <li class="link"><a href="trig-table.html" data-scroll="trig-table" class="internal"><span class="codenumber">B</span> <span class="title">List of Trigonometric Identities</span></a></li>
+<li class="link"><a href="alt-AI3.html" data-scroll="alt-AI3" class="internal"><span class="codenumber">C</span> <span class="title">Volumes of Revolution (AI3) [Alternative]</span></a></li>
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="DF2"><h2 class="heading hide-type">
@@ -411,7 +425,7 @@ f'(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">35<span class="period">.</span></span><span class="space"> </span>The graph of <span class="process-math">\(h(x)\text{.}\)</span></figcaption></figure>
 </div>
 <article class="task exercise-like" id="task-119"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-471">For which of the following points <span class="process-math">\(a\)</span> is <span class="process-math">\(f'(a)\)</span> positive? Select all that apply!</p>
+<p id="p-471">For which of the following points <span class="process-math">\(a\)</span> is <span class="process-math">\(h'(a)\)</span> positive? Select all that apply!</p>
 <ol class="upper-alpha cols2">
 <li id="li-271"><p id="p-472">-1</p></li>
 <li id="li-272"><p id="p-473">1</p></li>
@@ -419,7 +433,7 @@ f'(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
 <li id="li-274"><p id="p-475">5</p></li>
 <li id="li-275"><p id="p-476">6</p></li>
 </ol></article><article class="task exercise-like" id="task-120"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-477">For which of the following points <span class="process-math">\(a\)</span> is <span class="process-math">\(f'(a)\)</span> negative? Select all that apply!</p>
+<p id="p-477">For which of the following points <span class="process-math">\(a\)</span> is <span class="process-math">\(h'(a)\)</span> negative? Select all that apply!</p>
 <ol class="upper-alpha cols2">
 <li id="li-276"><p id="p-478">-1</p></li>
 <li id="li-277"><p id="p-479">1</p></li>
@@ -427,7 +441,7 @@ f'(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
 <li id="li-279"><p id="p-481">5</p></li>
 <li id="li-280"><p id="p-482">6</p></li>
 </ol></article><article class="task exercise-like" id="task-121"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-483">For which of the following points <span class="process-math">\(a\)</span> is <span class="process-math">\(f'(a)\)</span> zero? Select all that apply!</p>
+<p id="p-483">For which of the following points <span class="process-math">\(a\)</span> is <span class="process-math">\(h'(a)\)</span> zero? Select all that apply!</p>
 <ol class="upper-alpha cols2">
 <li id="li-281"><p id="p-484">-1</p></li>
 <li id="li-282"><p id="p-485">1</p></li>
@@ -435,7 +449,7 @@ f'(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
 <li id="li-284"><p id="p-487">5</p></li>
 <li id="li-285"><p id="p-488">6</p></li>
 </ol></article><article class="task exercise-like" id="task-122"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-489">For which of the following points <span class="process-math">\(a\)</span> the quantity <span class="process-math">\(f'(a)\)</span> does NOT exist? Select all that apply!</p>
+<p id="p-489">For which of the following points <span class="process-math">\(a\)</span> the quantity <span class="process-math">\(h'(a)\)</span> does NOT exist? Select all that apply!</p>
 <ol class="upper-alpha cols2">
 <li id="li-286"><p id="p-490">-1</p></li>
 <li id="li-287"><p id="p-491">1</p></li>

@@ -9,22 +9,34 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
+<script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
+                       linked: true,
+                       languages: ['sage'],
+                       evalButtonText: 'Evaluate (Sage)'});
+</script>
 </head>
 <body class="ignore-math">
-<article class="activity project-like"><h3 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.3.10</span><span class="period">.</span>
-</h3>
-<div class="introduction">
-<p>Recall that the power series for <span class="process-math">\(f(x)=\sin\left(x\right)\)</span> is:</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\sin\left(x\right)=\sum_{n=0}^{\infty} \frac{\left(-1\right)^{n} x^{2 \, n + 1}}{\left(2 \, n + 1\right)!}.
-\end{equation*}
-</div>
-</div>
-<article class="task exercise-like"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p>Find a power series for <span class="process-math">\(\sin\left(-5 \, x^{2}\right)\text{.}\)</span></p></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p>Find a power series for <span class="process-math">\(x^{4} \sin\left(x\right)\text{.}\)</span></p></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p>Find a power series for <span class="process-math">\(F(x)\text{,}\)</span> an antiderivative of <span class="process-math">\(f(x)\)</span> such that <span class="process-math">\(F(0)=4\text{.}\)</span></p></article></article><span class="incontext"><a href="PS3.html#activity-585" class="internal">in-context</a></span>
+<article class="activity project-like"><h2 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">C.0.1</span><span class="period">.</span>
+</h2>
+<p>Consider the following visualization to decide which of these statements is most appropriate for describing the relationship of lengths and areas.</p>
+<pre class="ptx-sagecell sagecell-sage" id="sage-1"><script type="text/x-sage">f(x) = (x-3)*(x-5)*(x-7)+40
+p = line([(2,0),(2,f(2))], color='black')
+p += line([(8,0),(8,f(8))], color='black')
+p += polygon([(2,0),(2,f(2))] + [(x, f(x)) for x in [2,2.1,..,8]] + [(8,0),(2,0)],  rgbcolor=(0.8,0.8,0.8),aspect_ratio='automatic')
+p += text("$\\mathrm{Area}=\\int_{a}^b f(x) dx$", (4, 55), fontsize=16, color='black')
+p += plot(f, (1, 8.5), thickness=3)
+p += line([(6,0),(6,f(6))], color="#8888ff")
+p += text("$\\mathrm{Length}=f(x)$", (5.9, 20), fontsize=16, color='black', horizontal_alignment='right')
+p
+</script></pre>
+<ol class="upper-alpha">
+<li><p>Length is the integral of areas.</p></li>
+<li><p>Area is the integral of lengths.</p></li>
+<li><p>Length is the derivative of areas.</p></li>
+<li><p>None of these.</p></li>
+</ol></article><span class="incontext"><a href="alt-AI3.html#activity-585" class="internal">in-context</a></span>
 </body>
 </html>

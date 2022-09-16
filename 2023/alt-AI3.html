@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Calc Volumes of Revolution (AI3) [Alternative]</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
+<meta property="book:author" content="TBIL Institute Fellows">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+},
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
+                       linked: true,
+                       languages: ['sage'],
+                       evalButtonText: 'Evaluate (Sage)'});
+</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\newcommand{\tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus for Team-Based Inquiry Learning:</span> <span class="subtitle">2023 Edition PREVIEW</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="trig-table.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="backmatter.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="trig-table.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="backmatter.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon.html" data-scroll="colophon" class="internal">Colophon</a></li>
+<li><a href="tbil-rl.html" data-scroll="tbil-rl" class="internal">TBIL Resource Library</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="LT.html" data-scroll="LT" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a><ul>
+<li><a href="LT1.html" data-scroll="LT1" class="internal">Limits graphically (LT1)</a></li>
+<li><a href="LT2.html" data-scroll="LT2" class="internal">Limits numerically (LT2)</a></li>
+<li><a href="LT3.html" data-scroll="LT3" class="internal">Limits analytically (LT3)</a></li>
+<li><a href="LT4.html" data-scroll="LT4" class="internal">Continuity (LT4)</a></li>
+<li><a href="LT5.html" data-scroll="LT5" class="internal">Limits with infinite inputs (LT5)</a></li>
+<li><a href="LT6.html" data-scroll="LT6" class="internal">Limits with infinite outputs (LT6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="DF.html" data-scroll="DF" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a><ul>
+<li><a href="DF2.html" data-scroll="DF2" class="internal">Derivatives graphically and numerically (DF1)</a></li>
+<li><a href="DF1.html" data-scroll="DF1" class="internal">Derivatives analytically (DF2)</a></li>
+<li><a href="DF3.html" data-scroll="DF3" class="internal">Elementary derivative rules (DF3)</a></li>
+<li><a href="DF4.html" data-scroll="DF4" class="internal">The product and quotient rules (DF4)</a></li>
+<li><a href="DF5.html" data-scroll="DF5" class="internal">The chain rule (DF5)</a></li>
+<li><a href="DF6.html" data-scroll="DF6" class="internal">Differentiation strategy (DF6)</a></li>
+<li><a href="DF7.html" data-scroll="DF7" class="internal">Differentiating implicitly defined functions (DF7)</a></li>
+<li><a href="DF8.html" data-scroll="DF8" class="internal">Differentiating inverse functions (DF8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AD.html" data-scroll="AD" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a><ul>
+<li><a href="AD1.html" data-scroll="AD1" class="internal">Tangents, motion, and marginals (AD1)</a></li>
+<li><a href="AD2.html" data-scroll="AD2" class="internal">Linear approximation (AD2)</a></li>
+<li><a href="AD3.html" data-scroll="AD3" class="internal">Related rates (AD3)</a></li>
+<li><a href="AD4.html" data-scroll="AD4" class="internal">Extreme values (AD4)</a></li>
+<li><a href="AD5.html" data-scroll="AD5" class="internal">Derivative tests (AD5)</a></li>
+<li><a href="AD6.html" data-scroll="AD6" class="internal">Concavity and inflection (AD6)</a></li>
+<li><a href="AD7.html" data-scroll="AD7" class="internal">Graphing with derivatives (AD7)</a></li>
+<li><a href="AD8.html" data-scroll="AD8" class="internal">Applied optimization (AD8)</a></li>
+<li><a href="AD9.html" data-scroll="AD9" class="internal">Limits and Derivatives (AD9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="IN.html" data-scroll="IN" class="internal"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a><ul>
+<li><a href="IN1.html" data-scroll="IN1" class="internal">Geometry of definite integrals (IN1)</a></li>
+<li><a href="IN2.html" data-scroll="IN2" class="internal">Approximating definite integrals (IN2)</a></li>
+<li><a href="IN3.html" data-scroll="IN3" class="internal">Elementary antiderivatives (IN3)</a></li>
+<li><a href="IN4.html" data-scroll="IN4" class="internal">Initial Value Problems (IN4)</a></li>
+<li><a href="IN5.html" data-scroll="IN5" class="internal">FTC for definite integrals (IN5)</a></li>
+<li><a href="IN6.html" data-scroll="IN6" class="internal">FTC for derivatives of integrals (IN6)</a></li>
+<li><a href="IN7.html" data-scroll="IN7" class="internal">Area under curves (IN7)</a></li>
+<li><a href="IN8.html" data-scroll="IN8" class="internal">Area between curves (IN8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="TI.html" data-scroll="TI" class="internal"><span class="codenumber">5</span> <span class="title">Techniques of Integration (TI)</span></a><ul>
+<li><a href="TI1.html" data-scroll="TI1" class="internal">Substitution method (TI1)</a></li>
+<li><a href="TI2.html" data-scroll="TI2" class="internal">Integration by Parts (TI2)</a></li>
+<li><a href="TI3.html" data-scroll="TI3" class="internal">Integration of trigonometry (TI3)</a></li>
+<li><a href="TI4.html" data-scroll="TI4" class="internal">Trigonometric Substitution (TI4)</a></li>
+<li><a href="TI5.html" data-scroll="TI5" class="internal">Tables of Integrals (TI5)</a></li>
+<li><a href="TI6.html" data-scroll="TI6" class="internal">Partial fractions (TI6)</a></li>
+<li><a href="TI7.html" data-scroll="TI7" class="internal">Integration strategy (TI7)</a></li>
+<li><a href="TI8.html" data-scroll="TI8" class="internal">Improper integrals (TI8)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="AI.html" data-scroll="AI" class="internal"><span class="codenumber">6</span> <span class="title">Applications of Integration (AI)</span></a><ul>
+<li><a href="AI1.html" data-scroll="AI1" class="internal">Average Value (AI1)</a></li>
+<li><a href="AI2.html" data-scroll="AI2" class="internal">Arclength (AI2)</a></li>
+<li><a href="AI3.html" data-scroll="AI3" class="internal">Volumes of Revolution (AI3)</a></li>
+<li><a href="AI4.html" data-scroll="AI4" class="internal">Surface Areas of Revolution (AI4)</a></li>
+<li><a href="AI5.html" data-scroll="AI5" class="internal">Density, Mass, and Center of Mass (AI5)</a></li>
+<li><a href="AI6.html" data-scroll="AI6" class="internal">Physics Applications (AI6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="CO.html" data-scroll="CO" class="internal"><span class="codenumber">7</span> <span class="title">Coordinates and Vectors (CO)</span></a><ul>
+<li><a href="CO1.html" data-scroll="CO1" class="internal">Parametric/vector equations (CO1)</a></li>
+<li><a href="CO2.html" data-scroll="CO2" class="internal">Parametric/vector derivatives (CO2)</a></li>
+<li><a href="CO3.html" data-scroll="CO3" class="internal">Parametric/vector arclength (CO3)</a></li>
+<li><a href="CO4.html" data-scroll="CO4" class="internal">Polar coordinates (CO4)</a></li>
+<li><a href="CO5.html" data-scroll="CO5" class="internal">Polar Arclength (CO5)</a></li>
+<li><a href="CO6.html" data-scroll="CO6" class="internal">Polar area (CO6)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="SQ.html" data-scroll="SQ" class="internal"><span class="codenumber">8</span> <span class="title">Sequences and Series (SQ)</span></a><ul>
+<li><a href="SQ1.html" data-scroll="SQ1" class="internal">Sequence Formulas (SQ1)</a></li>
+<li><a href="SQ2.html" data-scroll="SQ2" class="internal">Sequence Properties and Limits (SQ2)</a></li>
+<li><a href="SQ3.html" data-scroll="SQ3" class="internal">Partial Sum Sequence (SQ3)</a></li>
+<li><a href="SQ4.html" data-scroll="SQ4" class="internal">Geometric Series (SQ4)</a></li>
+<li><a href="SQ5.html" data-scroll="SQ5" class="internal">Basic Convergence Tests (SQ5)</a></li>
+<li><a href="SQ6.html" data-scroll="SQ6" class="internal">Comparison Tests (SQ6)</a></li>
+<li><a href="SQ7.html" data-scroll="SQ7" class="internal">Ratio and Root Tests (SQ7)</a></li>
+<li><a href="SQ8.html" data-scroll="SQ8" class="internal">Absolute Convergence (SQ8)</a></li>
+<li><a href="SQ9.html" data-scroll="SQ9" class="internal">Series Convergence Strategy (SQ9)</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="PS.html" data-scroll="PS" class="internal"><span class="codenumber">9</span> <span class="title">Power Series (PS)</span></a><ul>
+<li><a href="PS1.html" data-scroll="PS1" class="internal">Power Series (PS1)</a></li>
+<li><a href="PS2.html" data-scroll="PS2" class="internal">Convergence of Power Series (PS2)</a></li>
+<li><a href="PS3.html" data-scroll="PS3" class="internal">Manipulation of Power Series (PS3)</a></li>
+<li><a href="PS4.html" data-scroll="PS4" class="internal">Taylor Series (PS4)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="backmatter" class="internal"><span class="title">Backmatter</span></a></li>
+<li class="link"><a href="integral-table.html" data-scroll="integral-table" class="internal"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></li>
+<li class="link"><a href="trig-table.html" data-scroll="trig-table" class="internal"><span class="codenumber">B</span> <span class="title">List of Trigonometric Identities</span></a></li>
+<li class="link active"><a href="alt-AI3.html" data-scroll="alt-AI3" class="internal"><span class="codenumber">C</span> <span class="title">Volumes of Revolution (AI3) [Alternative]</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="appendix" id="alt-AI3"><h2 class="heading">
+<span class="type">Appendix</span> <span class="codenumber">C</span> <span class="title">Volumes of Revolution (AI3) [Alternative]</span>
+</h2>
+<article class="activity project-like" id="activity-585"><h2 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">C.0.1</span><span class="period">.</span>
+</h2>
+<p id="p-3183">Consider the following visualization to decide which of these statements is most appropriate for describing the relationship of lengths and areas.</p>
+<pre class="ptx-sagecell sagecell-sage" id="sage-1"><script type="text/x-sage">f(x) = (x-3)*(x-5)*(x-7)+40
+p = line([(2,0),(2,f(2))], color='black')
+p += line([(8,0),(8,f(8))], color='black')
+p += polygon([(2,0),(2,f(2))] + [(x, f(x)) for x in [2,2.1,..,8]] + [(8,0),(2,0)],  rgbcolor=(0.8,0.8,0.8),aspect_ratio='automatic')
+p += text("$\\mathrm{Area}=\\int_{a}^b f(x) dx$", (4, 55), fontsize=16, color='black')
+p += plot(f, (1, 8.5), thickness=3)
+p += line([(6,0),(6,f(6))], color="#8888ff")
+p += text("$\\mathrm{Length}=f(x)$", (5.9, 20), fontsize=16, color='black', horizontal_alignment='right')
+p
+</script></pre>
+<ol class="upper-alpha">
+<li id="li-2401"><p id="p-derived-li-2401">Length is the integral of areas.</p></li>
+<li id="li-2402"><p id="p-derived-li-2402">Area is the integral of lengths.</p></li>
+<li id="li-2403"><p id="p-derived-li-2403">Length is the derivative of areas.</p></li>
+<li id="li-2404"><p id="p-derived-li-2404">None of these.</p></li>
+</ol></article><article class="definition definition-like" id="definition-47"><h2 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">C.0.2</span><span class="period">.</span>
+</h2>
+<p id="p-3184">We define the <dfn class="terminology">volume</dfn> of a solid with cross sectional area given by <span class="process-math">\(A(x)\)</span> laying between <span class="process-math">\(a\leq x\leq b\)</span> to be the definite integral</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\mathrm{Volume}=\int_a^b A(x)\,dx\text{.}
+\end{equation*}
+</div>
+<pre class="ptx-sagecell sagecell-sage" id="sage-2"><script type="text/x-sage">x,y,z=var("x y z")
+p = revolution_plot3d(x/2,(x,0,4), show_curve=False,parallel_axis="x",opacity=0.5,frame=False)
+p += revolution_plot3d((4,z),(z,0,2), show_curve=False,parallel_axis="x",opacity=0.5)
+p += revolution_plot3d((2,z),(z,0,1), show_curve=False,parallel_axis="x",opacity=1)
+p += line([(0,0,-3), (0,0,3)],color="black",label="x")
+p += line([(-1,0,0), (5,0,0)],color="black")
+p += text3d("Volume=∫A(x)dx",(4,0,2.5))
+p += text3d("Area=A(x)",(2,0,1.25))
+p
+</script></pre></article><article class="activity project-like" id="activity-586"><h2 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">C.0.3</span><span class="period">.</span>
+</h2>
+<div class="introduction" id="introduction-342">
+<p id="p-3185">We will be focused on the volumes of solids obtained by revolving a region around an axis. Let's use the running example of the region bounded by the curves <span class="process-math">\(x=0,y=4,y=x^2\text{.}\)</span></p>
+<pre class="ptx-sagecell sagecell-sage" id="sage-3"><script type="text/x-sage">x,y,z = var('x y z')
+p = plot(x^2,(x,0,2),aspect_ratio=1,color='red')
+p += line([(0,0),(0,4),(2,4)],color="red")
+p
+</script></pre>
+</div>
+<article class="task exercise-like" id="task-1044"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<p id="p-3186">Consider the below illustrated revolution of this region, and the cross-section drawn from a horizontal line segment. Choose the most appropriate description of this illustration.</p>
+<pre class="ptx-sagecell sagecell-sage" id="sage-4"><script type="text/x-sage">x,y,z = var('x y z')
+p = revolution_plot3d(x^2,(x,0,2), show_curve=True,parallel_axis="z",opacity=0.5,frame=False)
+p += revolution_plot3d(4,(x,0,2), show_curve=True,parallel_axis="z",opacity=0.5)
+p += revolution_plot3d(2,(x,0,sqrt(2)), show_curve=True,parallel_axis="z",opacity=1)
+p += line([(0,0,-1), (0,0,5)],color="black",label="x")
+p += line([(-4,0,0), (4,0,0)],color="black")
+p
+</script></pre>
+<ol class="upper-alpha">
+<li id="li-2405"><p id="p-derived-li-2405">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</p></li>
+<li id="li-2406"><p id="p-derived-li-2406">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</p></li>
+<li id="li-2407"><p id="p-derived-li-2407">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</p></li>
+<li id="li-2408"><p id="p-derived-li-2408">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</p></li>
+</ol></article><article class="task exercise-like" id="task-1045"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<p id="p-3187">Which of these formulas is most appropriate to find this illustration's cross-sectional area?</p>
+<ol class="upper-alpha">
+<li id="li-2409"><p id="p-derived-li-2409"><span class="process-math">\(\displaystyle \pi r^2\)</span></p></li>
+<li id="li-2410"><p id="p-derived-li-2410"><span class="process-math">\(\displaystyle 2\pi rh\)</span></p></li>
+<li id="li-2411"><p id="p-derived-li-2411"><span class="process-math">\(\displaystyle \pi R^2-\pi r^2\)</span></p></li>
+<li id="li-2412"><p id="p-derived-li-2412"><span class="process-math">\(\displaystyle \frac{1}{2}bh\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-1046"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<p id="p-3188">Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.</p>
+<pre class="ptx-sagecell sagecell-sage" id="sage-5"><script type="text/x-sage">x,y,z = var('x y z')
+p = revolution_plot3d(x^2,(x,0,2), show_curve=True,parallel_axis="z",opacity=0.5,frame=False)
+p += revolution_plot3d(4,(x,0,2), show_curve=True,parallel_axis="z",opacity=0.5)
+p += revolution_plot3d((1,x),(x,1,4), show_curve=True,parallel_axis="z",opacity=1)
+p += line([(0,0,-1), (0,0,5)],color="black")
+p += line([(-4,0,0), (4,0,0)],color="black")
+p
+</script></pre>
+<ol class="upper-alpha">
+<li id="li-2413"><p id="p-derived-li-2413">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</p></li>
+<li id="li-2414"><p id="p-derived-li-2414">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</p></li>
+<li id="li-2415"><p id="p-derived-li-2415">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</p></li>
+<li id="li-2416"><p id="p-derived-li-2416">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</p></li>
+</ol></article><article class="task exercise-like" id="task-1047"><h3 class="heading"><span class="codenumber">(d)</span></h3>
+<p id="p-3189">Which of these formulas is most appropriate to find this illustration's cross-sectional area?</p>
+<ol class="upper-alpha">
+<li id="li-2417"><p id="p-derived-li-2417"><span class="process-math">\(\displaystyle \pi r^2\)</span></p></li>
+<li id="li-2418"><p id="p-derived-li-2418"><span class="process-math">\(\displaystyle 2\pi rh\)</span></p></li>
+<li id="li-2419"><p id="p-derived-li-2419"><span class="process-math">\(\displaystyle \pi R^2-\pi r^2\)</span></p></li>
+<li id="li-2420"><p id="p-derived-li-2420"><span class="process-math">\(\displaystyle \frac{1}{2}bh\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-1048"><h3 class="heading"><span class="codenumber">(e)</span></h3>
+<p id="p-3190">Consider the below illustrated revolution of this region, and the cross-section drawn from a horizontal line segment. Choose the most appropriate description of this illustration.</p>
+<pre class="ptx-sagecell sagecell-sage" id="sage-6"><script type="text/x-sage">x,y,z = var('x y z')
+p = revolution_plot3d(x^2,(x,0,2), show_curve=True,parallel_axis="x",opacity=0.5,frame=False)
+p += revolution_plot3d(4,(x,0,2), show_curve=True,parallel_axis="x",opacity=0.5)
+p += revolution_plot3d((0,z),(z,0,4), show_curve=True,parallel_axis="x",opacity=0.5)
+p += revolution_plot3d(2,(x,0,sqrt(2)), show_curve=True,parallel_axis="x",opacity=1)
+p += line([(0,0,-5), (0,0,5)],color="black",label="x")
+p += line([(-1,0,0), (4,0,0)],color="black")
+p
+</script></pre>
+<ol class="upper-alpha">
+<li id="li-2421"><p id="p-derived-li-2421">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</p></li>
+<li id="li-2422"><p id="p-derived-li-2422">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</p></li>
+<li id="li-2423"><p id="p-derived-li-2423">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</p></li>
+<li id="li-2424"><p id="p-derived-li-2424">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</p></li>
+</ol></article><article class="task exercise-like" id="task-1049"><h3 class="heading"><span class="codenumber">(f)</span></h3>
+<p id="p-3191">Which of these formulas is most appropriate to find this illustration's cross-sectional area?</p>
+<ol class="upper-alpha">
+<li id="li-2425"><p id="p-derived-li-2425"><span class="process-math">\(\displaystyle \pi r^2\)</span></p></li>
+<li id="li-2426"><p id="p-derived-li-2426"><span class="process-math">\(\displaystyle 2\pi rh\)</span></p></li>
+<li id="li-2427"><p id="p-derived-li-2427"><span class="process-math">\(\displaystyle \pi R^2-\pi r^2\)</span></p></li>
+<li id="li-2428"><p id="p-derived-li-2428"><span class="process-math">\(\displaystyle \frac{1}{2}bh\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-1050"><h3 class="heading"><span class="codenumber">(g)</span></h3>
+<p id="p-3192">Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.</p>
+<pre class="ptx-sagecell sagecell-sage" id="sage-7"><script type="text/x-sage">x,y,z = var('x y z')
+p = revolution_plot3d(x^2,(x,0,2), show_curve=True,parallel_axis="x",opacity=0.5,frame=False)
+p += revolution_plot3d(4,(x,0,2), show_curve=True,parallel_axis="x",opacity=0.5)
+p += revolution_plot3d((0,z),(z,0,4), show_curve=True,parallel_axis="x",opacity=0.5)
+p += revolution_plot3d((1,x),(x,1,4), show_curve=True,parallel_axis="x",opacity=1)
+p += line([(0,0,-5), (0,0,5)],color="black",label="x")
+p += line([(-1,0,0), (4,0,0)],color="black")
+p
+</script></pre>
+<ol class="upper-alpha">
+<li id="li-2429"><p id="p-derived-li-2429">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</p></li>
+<li id="li-2430"><p id="p-derived-li-2430">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</p></li>
+<li id="li-2431"><p id="p-derived-li-2431">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</p></li>
+<li id="li-2432"><p id="p-derived-li-2432">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</p></li>
+</ol></article><article class="task exercise-like" id="task-1051"><h3 class="heading"><span class="codenumber">(h)</span></h3>
+<p id="p-3193">Which of these formulas is most appropriate to find this illustration's cross-sectional area?</p>
+<ol class="upper-alpha">
+<li id="li-2433"><p id="p-derived-li-2433"><span class="process-math">\(\displaystyle \pi r^2\)</span></p></li>
+<li id="li-2434"><p id="p-derived-li-2434"><span class="process-math">\(\displaystyle 2\pi rh\)</span></p></li>
+<li id="li-2435"><p id="p-derived-li-2435"><span class="process-math">\(\displaystyle \pi R^2-\pi r^2\)</span></p></li>
+<li id="li-2436"><p id="p-derived-li-2436"><span class="process-math">\(\displaystyle \frac{1}{2}bh\)</span></p></li>
+</ol></article></article><article class="remark remark-like" id="remark-52"><h2 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">C.0.4</span><span class="period">.</span>
+</h2>
+<p id="p-3194">Generally when solving problems without the aid of technology, it's useful to draw your region in two dimensions, choose whether to use a horizontal or vertical line segment, and draw its rotation to determine the cross-sectional shape.</p>
+<p id="p-3195">When the shape is a disk, this is called the <dfn class="terminology">disk method</dfn> and we use one of these formulas depending on whether the cross-sectional area depends on <span class="process-math">\(x\)</span> or <span class="process-math">\(y\text{.}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+V=\int_a^b \pi r(x)^2\,dx,\hspace{2em}V=\int_a^b \pi r(y)^2\,dy\text{.}
+\end{equation*}
+</div>
+<p id="p-3196">When the shape is a washer, this is called the <dfn class="terminology">washer method</dfn> and we use one of these formulas depending on whether the cross-sectional area depends on <span class="process-math">\(x\)</span> or <span class="process-math">\(y\text{.}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+V=\int_a^b\left(\pi R(x)^2- \pi r(x)^2\right)\,dx,\hspace{2em}V=\int_a^b\left(\pi R(y)^2- \pi r(y)^2\right)\,dy\text{.}
+\end{equation*}
+</div>
+<p id="p-3197">When the shape is a cylindrical shell, this is called the <dfn class="terminology">shell method</dfn> and we use one of these formulas depending on whether the cross-sectional area depends on <span class="process-math">\(x\)</span> or <span class="process-math">\(y\text{.}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+V=\int_a^b 2\pi r(x)h(x)\,dx,\hspace{2em}V=\int_a^b 2\pi r(y)h(y)\,dy\text{.}
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-587"><h2 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">C.0.5</span><span class="period">.</span>
+</h2>
+<div class="introduction" id="introduction-343"><p id="p-3198">Let's now consider the region bounded by the curves <span class="process-math">\(x=0,x=1,y=0,y=5e^x\text{,}\)</span> rotated about the <span class="process-math">\(x\)</span>-axis.</p></div>
+<article class="task exercise-like" id="task-1052"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<p id="p-3199">Sketch two copies of this region in the <span class="process-math">\(xy\)</span> plane.</p></article><article class="task exercise-like" id="task-1053"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<p id="p-3200">Draw a vertical line segment in one region and its rotation around the <span class="process-math">\(x\)</span>-axis. Draw a horizontal line segment in the other region and its rotation around the <span class="process-math">\(x\)</span>-axis.</p></article><article class="task exercise-like" id="task-1054"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<p id="p-3201">Consider the method required for each cross-section drawn. Which would be the <em class="emphasis">easiest</em> strategy to proceed with?</p>
+<ol class="upper-alpha">
+<li id="li-2437"><p id="p-derived-li-2437">The horizontal line segment, using the disk/washer method.</p></li>
+<li id="li-2438"><p id="p-derived-li-2438">The horizontal line segment, using the shell method.</p></li>
+<li id="li-2439"><p id="p-derived-li-2439">The vertical line segment, using the disk/washer method.</p></li>
+<li id="li-2440"><p id="p-derived-li-2440">The vertical line segment, using the shell method.</p></li>
+</ol></article><article class="task exercise-like" id="task-1055"><h3 class="heading"><span class="codenumber">(d)</span></h3>
+<p id="p-3202">Let's proceed with the vertical segment. Which formula is most appropriate for the radius?</p>
+<ol class="upper-alpha">
+<li id="li-2441"><p id="p-derived-li-2441"><span class="process-math">\(\displaystyle r(x)=x\)</span></p></li>
+<li id="li-2442"><p id="p-derived-li-2442"><span class="process-math">\(\displaystyle r(x)=5e^x\)</span></p></li>
+<li id="li-2443"><p id="p-derived-li-2443"><span class="process-math">\(\displaystyle r(x)=5\ln(x)\)</span></p></li>
+<li id="li-2444"><p id="p-derived-li-2444"><span class="process-math">\(\displaystyle r(x)=\frac{1}{5}\ln(x)\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-1056"><h3 class="heading"><span class="codenumber">(e)</span></h3>
+<p id="p-3203">Which of these integrals is equal to the volume of the solid of revolution?</p>
+<ol class="upper-alpha">
+<li id="li-2445"><p id="p-derived-li-2445"><span class="process-math">\(\displaystyle \int_0^1 25\pi e^{2x}\,dx\)</span></p></li>
+<li id="li-2446"><p id="p-derived-li-2446"><span class="process-math">\(\displaystyle \int_0^1 5\pi^2 e^{x}\,dx\)</span></p></li>
+<li id="li-2447"><p id="p-derived-li-2447"><span class="process-math">\(\displaystyle \int_0^2 25\pi e^{x}\,dx\)</span></p></li>
+<li id="li-2448"><p id="p-derived-li-2448"><span class="process-math">\(\displaystyle \int_0^2 5\pi^2 e^{2x}\,dx\)</span></p></li>
+</ol></article></article><article class="activity project-like" id="activity-588"><h2 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">C.0.6</span><span class="period">.</span>
+</h2>
+<div class="introduction" id="introduction-344"><p id="p-3204">Let's now consider the same region, bounded by the curves <span class="process-math">\(x=0,x=1,y=0,y=5e^x\text{,}\)</span> but this time rotated about the <span class="process-math">\(y\)</span>-axis.</p></div>
+<article class="task exercise-like" id="task-1057"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<p id="p-3205">Sketch two copies of this region in the <span class="process-math">\(xy\)</span> plane.</p></article><article class="task exercise-like" id="task-1058"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<p id="p-3206">Draw a vertical line segment in one region and its rotation around the <span class="process-math">\(y\)</span>-axis. Draw a horizontal line segment in the other region and its rotation around the <span class="process-math">\(y\)</span>-axis.</p></article><article class="task exercise-like" id="task-1059"><h3 class="heading"><span class="codenumber">(c)</span></h3>
+<p id="p-3207">Consider the method required for each cross-section drawn. Which would be the <em class="emphasis">easiest</em> strategy to proceed with?</p>
+<ol class="upper-alpha">
+<li id="li-2449"><p id="p-derived-li-2449">The horizontal line segment, using the disk/washer method.</p></li>
+<li id="li-2450"><p id="p-derived-li-2450">The horizontal line segment, using the shell method.</p></li>
+<li id="li-2451"><p id="p-derived-li-2451">The vertical line segment, using the disk/washer method.</p></li>
+<li id="li-2452"><p id="p-derived-li-2452">The vertical line segment, using the shell method.</p></li>
+</ol></article><article class="task exercise-like" id="task-1060"><h3 class="heading"><span class="codenumber">(d)</span></h3>
+<p id="p-3208">Let's proceed with the vertical segment. Which formula is most appropriate for the radius?</p>
+<ol class="upper-alpha">
+<li id="li-2453"><p id="p-derived-li-2453"><span class="process-math">\(\displaystyle r(x)=x\)</span></p></li>
+<li id="li-2454"><p id="p-derived-li-2454"><span class="process-math">\(\displaystyle r(x)=5e^x\)</span></p></li>
+<li id="li-2455"><p id="p-derived-li-2455"><span class="process-math">\(\displaystyle r(x)=5\ln(x)\)</span></p></li>
+<li id="li-2456"><p id="p-derived-li-2456"><span class="process-math">\(\displaystyle r(x)=\frac{1}{5}\ln(x)\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-1061"><h3 class="heading"><span class="codenumber">(e)</span></h3>
+<p id="p-3209">Which formula is most appropriate for the height?</p>
+<ol class="upper-alpha">
+<li id="li-2457"><p id="p-derived-li-2457"><span class="process-math">\(\displaystyle h(x)=x\)</span></p></li>
+<li id="li-2458"><p id="p-derived-li-2458"><span class="process-math">\(\displaystyle h(x)=5e^x\)</span></p></li>
+<li id="li-2459"><p id="p-derived-li-2459"><span class="process-math">\(\displaystyle h(x)=5\ln(x)\)</span></p></li>
+<li id="li-2460"><p id="p-derived-li-2460"><span class="process-math">\(\displaystyle h(x)=\frac{1}{5}\ln(x)\)</span></p></li>
+</ol></article><article class="task exercise-like" id="task-1062"><h3 class="heading"><span class="codenumber">(f)</span></h3>
+<p id="p-3210">Which of these integrals is equal to the volume of the solid of revolution?</p>
+<ol class="upper-alpha">
+<li id="li-2461"><p id="p-derived-li-2461"><span class="process-math">\(\displaystyle \int_0^1 5\pi^2 xe^{x}\,dx\)</span></p></li>
+<li id="li-2462"><p id="p-derived-li-2462"><span class="process-math">\(\displaystyle \int_0^1 10\pi xe^{x}\,dx\)</span></p></li>
+<li id="li-2463"><p id="p-derived-li-2463"><span class="process-math">\(\displaystyle \int_0^2 5\pi xe^{x}\,dx\)</span></p></li>
+<li id="li-2464"><p id="p-derived-li-2464"><span class="process-math">\(\displaystyle \int_0^2 10\pi x^2e^{x}\,dx\)</span></p></li>
+</ol></article></article><article class="activity project-like" id="activity-589"><h2 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">C.0.7</span><span class="period">.</span>
+</h2>
+<div class="introduction" id="introduction-345"><p id="p-3211">Consider the region bounded by <span class="process-math">\(y=2 \, x + 3, y=0, x=4, x=7\text{.}\)</span></p></div>
+<article class="task exercise-like" id="task-1063"><h3 class="heading"><span class="codenumber">(a)</span></h3>
+<p id="p-3212">Find an integral which computes the volume of the solid formed by rotating this region about the <span class="process-math">\(x\)</span>-axis.</p></article><article class="task exercise-like" id="task-1064"><h3 class="heading"><span class="codenumber">(b)</span></h3>
+<p id="p-3213">Find an integral which computes the volume of the solid formed by rotating this region about the <span class="process-math">\(y\)</span>-axis.</p></article></article><figure class="figure figure-like" id="figure-156"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-altAI31" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/CBL66Ro9Vcc?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">170<span class="period">.</span></span><span class="space"> </span>Video: Compute volumes of solids of revolution, washer <span class="process-math">\(x\)</span>-axis</figcaption></figure><figure class="figure figure-like" id="figure-157"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-altAI32" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/KOPFv12uC68?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">171<span class="period">.</span></span><span class="space"> </span>Video: Compute volumes of solids of revolution, shell <span class="process-math">\(x\)</span>-axis</figcaption></figure><figure class="figure figure-like" id="figure-158"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-altAI33" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/Y16cc0Z43Uc?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">172<span class="period">.</span></span><span class="space"> </span>Video: Compute volumes of solids of revolution, washer <span class="process-math">\(y\)</span>-axis</figcaption></figure><figure class="figure figure-like" id="figure-159"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-altAI34" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/j8A0rflmA2I?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">173<span class="period">.</span></span><span class="space"> </span>Video: Compute volumes of solids of revolution, shell <span class="process-math">\(y\)</span>-axis</figcaption></figure></section></div></main>
+</div>
+</body>
+</html>
