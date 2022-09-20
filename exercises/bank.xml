@@ -286,10 +286,16 @@
             <description>Set up integrals to solve problems involving density, mass, and center of mass.</description>
         </outcome>
         <outcome>
-            <title>Physics Applications</title>
+            <title>Work</title>
             <slug>AI6</slug>
             <path>outcomes/AI/AI6</path>
-            <description>Set up integrals to solve problems involving work, force, and/or pressure.</description>
+            <description>Set up integrals to solve problems involving work.</description>
+        </outcome>
+        <outcome>
+            <title>Force and Pressure</title>
+            <slug>AI7</slug>
+            <path>outcomes/AI/AI7</path>
+            <description>Set up integrals to solve problems involving force and/or pressure.</description>
         </outcome>
         <outcome>
             <title>Parametric/vector equations</title>
