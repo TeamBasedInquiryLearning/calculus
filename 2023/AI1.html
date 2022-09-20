@@ -173,7 +173,8 @@ window.MathJax = {
 <li><a href="AI3.html" data-scroll="AI3" class="internal">Volumes of Revolution (AI3)</a></li>
 <li><a href="AI4.html" data-scroll="AI4" class="internal">Surface Areas of Revolution (AI4)</a></li>
 <li><a href="AI5.html" data-scroll="AI5" class="internal">Density, Mass, and Center of Mass (AI5)</a></li>
-<li><a href="AI6.html" data-scroll="AI6" class="internal">Physics Applications (AI6)</a></li>
+<li><a href="AI6.html" data-scroll="AI6" class="internal">Work (AI6)</a></li>
+<li><a href="AI7.html" data-scroll="AI7" class="internal">Force and Pressure (AI7)</a></li>
 </ul>
 </li>
 <li class="link">
@@ -217,66 +218,66 @@ window.MathJax = {
 <span class="type">Section</span> <span class="codenumber">6.1</span> <span class="title">Average Value (AI1)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-46"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-1326"><p id="p-2090">Compute the average value of a function on an interval.</p></li></ul></article><article class="activity project-like" id="activity-AI1averagespeed"><h3 class="heading">
+<ul class="disc"><li id="li-1328"><p id="p-2092">Compute the average value of a function on an interval.</p></li></ul></article><article class="activity project-like" id="activity-AI1averagespeed"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.1</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-205"><p id="p-2091">Suppose a car drives due east at 70 miles per hour for 2 hours, and then slows down to 40 miles per hour for an additional hour.</p></div>
+<div class="introduction" id="introduction-205"><p id="p-2093">Suppose a car drives due east at 70 miles per hour for 2 hours, and then slows down to 40 miles per hour for an additional hour.</p></div>
 <article class="task exercise-like" id="task-600"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2092">How far did the car travel in these 3 hours?</p>
+<p id="p-2094">How far did the car travel in these 3 hours?</p>
 <ol class="upper-alpha cols2">
-<li id="li-1327"><p id="p-derived-li-1327"><span class="process-math">\(110\)</span> miles</p></li>
-<li id="li-1328"><p id="p-derived-li-1328"><span class="process-math">\(150\)</span> miles</p></li>
-<li id="li-1329"><p id="p-derived-li-1329"><span class="process-math">\(180\)</span> miles</p></li>
-<li id="li-1330"><p id="p-derived-li-1330"><span class="process-math">\(220\)</span> miles</p></li>
+<li id="li-1329"><p id="p-derived-li-1329"><span class="process-math">\(110\)</span> miles</p></li>
+<li id="li-1330"><p id="p-derived-li-1330"><span class="process-math">\(150\)</span> miles</p></li>
+<li id="li-1331"><p id="p-derived-li-1331"><span class="process-math">\(180\)</span> miles</p></li>
+<li id="li-1332"><p id="p-derived-li-1332"><span class="process-math">\(220\)</span> miles</p></li>
 </ol></article><article class="task exercise-like" id="task-601"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2093">What was its average velocity over these 3 hours?</p>
+<p id="p-2095">What was its average velocity over these 3 hours?</p>
 <ol class="upper-alpha cols2">
-<li id="li-1331"><p id="p-derived-li-1331"><span class="process-math">\(55\)</span> miles per hour</p></li>
-<li id="li-1332"><p id="p-derived-li-1332"><span class="process-math">\(60\)</span> miles per hour</p></li>
-<li id="li-1333"><p id="p-derived-li-1333"><span class="process-math">\(70\)</span> miles per hour</p></li>
-<li id="li-1334"><p id="p-derived-li-1334"><span class="process-math">\(75\)</span> miles per hour</p></li>
+<li id="li-1333"><p id="p-derived-li-1333"><span class="process-math">\(55\)</span> miles per hour</p></li>
+<li id="li-1334"><p id="p-derived-li-1334"><span class="process-math">\(60\)</span> miles per hour</p></li>
+<li id="li-1335"><p id="p-derived-li-1335"><span class="process-math">\(70\)</span> miles per hour</p></li>
+<li id="li-1336"><p id="p-derived-li-1336"><span class="process-math">\(75\)</span> miles per hour</p></li>
 </ol></article></article><article class="activity project-like" id="activity-AI1averagespeed2"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.2</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-206"><p id="p-2094">Suppose instead the car starts with a velocity of <span class="process-math">\(30\)</span> miles per hour, and increases velocity linearly according to the function <span class="process-math">\(v(t)=30+20t\)</span> so its velocity after three hours is <span class="process-math">\(90\)</span> miles per hour?</p></div>
+<div class="introduction" id="introduction-206"><p id="p-2096">Suppose instead the car starts with a velocity of <span class="process-math">\(30\)</span> miles per hour, and increases velocity linearly according to the function <span class="process-math">\(v(t)=30+20t\)</span> so its velocity after three hours is <span class="process-math">\(90\)</span> miles per hour?</p></div>
 <article class="task exercise-like" id="task-602"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2095">How can we model the car's distance traveled using calculus?</p>
+<p id="p-2097">How can we model the car's distance traveled using calculus?</p>
 <ol class="upper-alpha">
-<li id="li-1335"><p id="p-derived-li-1335">Integrate velocity, because position is the rate of change of velocity.</p></li>
-<li id="li-1336"><p id="p-derived-li-1336">Integrate velocity, because velocity is the rate of change of position.</p></li>
-<li id="li-1337"><p id="p-derived-li-1337">Differentiate velocity, because position is the rate of change of velocity.</p></li>
-<li id="li-1338"><p id="p-derived-li-1338">Differentiate velocity, because velocity is the rate of change of position.</p></li>
+<li id="li-1337"><p id="p-derived-li-1337">Integrate velocity, because position is the rate of change of velocity.</p></li>
+<li id="li-1338"><p id="p-derived-li-1338">Integrate velocity, because velocity is the rate of change of position.</p></li>
+<li id="li-1339"><p id="p-derived-li-1339">Differentiate velocity, because position is the rate of change of velocity.</p></li>
+<li id="li-1340"><p id="p-derived-li-1340">Differentiate velocity, because velocity is the rate of change of position.</p></li>
 </ol></article><article class="task exercise-like" id="task-603"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2096">Then, which of these expressions is a mathematical model for the car's distance traveled after 2 hours?</p>
+<p id="p-2098">Then, which of these expressions is a mathematical model for the car's distance traveled after 2 hours?</p>
 <ol class="upper-alpha cols2">
-<li id="li-1339"><p id="p-derived-li-1339"><span class="process-math">\(\displaystyle \int (30+20t)\,dt\)</span></p></li>
-<li id="li-1340"><p id="p-derived-li-1340"><span class="process-math">\(\displaystyle \int (30t+10t^2)\,dt\)</span></p></li>
-<li id="li-1341"><p id="p-derived-li-1341"><span class="process-math">\(\displaystyle \int_0^3 (30+20t)\,dt\)</span></p></li>
-<li id="li-1342"><p id="p-derived-li-1342"><span class="process-math">\(\displaystyle \int_0^3 (30t+10t^2)\,dt\)</span></p></li>
+<li id="li-1341"><p id="p-derived-li-1341"><span class="process-math">\(\displaystyle \int (30+20t)\,dt\)</span></p></li>
+<li id="li-1342"><p id="p-derived-li-1342"><span class="process-math">\(\displaystyle \int (30t+10t^2)\,dt\)</span></p></li>
+<li id="li-1343"><p id="p-derived-li-1343"><span class="process-math">\(\displaystyle \int_0^3 (30+20t)\,dt\)</span></p></li>
+<li id="li-1344"><p id="p-derived-li-1344"><span class="process-math">\(\displaystyle \int_0^3 (30t+10t^2)\,dt\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-604"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2097">How far did the car travel in these 3 hours?</p>
+<p id="p-2099">How far did the car travel in these 3 hours?</p>
 <ol class="upper-alpha cols2">
-<li id="li-1343"><p id="p-derived-li-1343"><span class="process-math">\(110\)</span> miles</p></li>
-<li id="li-1344"><p id="p-derived-li-1344"><span class="process-math">\(150\)</span> miles</p></li>
-<li id="li-1345"><p id="p-derived-li-1345"><span class="process-math">\(180\)</span> miles</p></li>
-<li id="li-1346"><p id="p-derived-li-1346"><span class="process-math">\(220\)</span> miles</p></li>
+<li id="li-1345"><p id="p-derived-li-1345"><span class="process-math">\(110\)</span> miles</p></li>
+<li id="li-1346"><p id="p-derived-li-1346"><span class="process-math">\(150\)</span> miles</p></li>
+<li id="li-1347"><p id="p-derived-li-1347"><span class="process-math">\(180\)</span> miles</p></li>
+<li id="li-1348"><p id="p-derived-li-1348"><span class="process-math">\(220\)</span> miles</p></li>
 </ol></article><article class="task exercise-like" id="task-605"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-2098">Thus, what was its average velocity over three hours?</p>
+<p id="p-2100">Thus, what was its average velocity over three hours?</p>
 <ol class="upper-alpha cols2">
-<li id="li-1347"><p id="p-derived-li-1347"><span class="process-math">\(55\)</span> miles per hour</p></li>
-<li id="li-1348"><p id="p-derived-li-1348"><span class="process-math">\(60\)</span> miles per hour</p></li>
-<li id="li-1349"><p id="p-derived-li-1349"><span class="process-math">\(70\)</span> miles per hour</p></li>
-<li id="li-1350"><p id="p-derived-li-1350"><span class="process-math">\(75\)</span> miles per hour</p></li>
+<li id="li-1349"><p id="p-derived-li-1349"><span class="process-math">\(55\)</span> miles per hour</p></li>
+<li id="li-1350"><p id="p-derived-li-1350"><span class="process-math">\(60\)</span> miles per hour</p></li>
+<li id="li-1351"><p id="p-derived-li-1351"><span class="process-math">\(70\)</span> miles per hour</p></li>
+<li id="li-1352"><p id="p-derived-li-1352"><span class="process-math">\(75\)</span> miles per hour</p></li>
 </ol></article></article><article class="observation remark-like" id="observation-AI8averagevalue"><h3 class="heading">
 <span class="type">Observation</span><span class="space"> </span><span class="codenumber">6.1.3</span><span class="period">.</span>
 </h3>
-<p id="p-2099">To obtain the average velocity of an object traveling with velocity <span class="process-math">\(v(t)\)</span> for <span class="process-math">\(a\leq t\leq b\text{,}\)</span> we may find its distance traveled by calculating <span class="process-math">\(\int_a^b v(t)\text{.}\)</span> Thus, the average velocity is obtained by dividing by the time <span class="process-math">\(b-a\)</span> elapsed:</p>
+<p id="p-2101">To obtain the average velocity of an object traveling with velocity <span class="process-math">\(v(t)\)</span> for <span class="process-math">\(a\leq t\leq b\text{,}\)</span> we may find its distance traveled by calculating <span class="process-math">\(\int_a^b v(t)\text{.}\)</span> Thus, the average velocity is obtained by dividing by the time <span class="process-math">\(b-a\)</span> elapsed:</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \frac{1}{b-a}\int_a^b v(t)\,dt\text{.}
 \end{equation*}
 </div>
-<p id="p-2100">For example, the following calculuation confirms the previous activity:</p>
+<p id="p-2102">For example, the following calculuation confirms the previous activity:</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \frac{1}{3-0}\int_0^3 (30+20t)\,dt\text{.}
@@ -284,7 +285,7 @@ window.MathJax = {
 </div></article><article class="definition definition-like" id="definition-AI8averagevalue"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.1.4</span><span class="period">.</span>
 </h3>
-<p id="p-2101">Given a function <span class="process-math">\(f(x)\)</span> defined on <span class="process-math">\([a,b]\text{,}\)</span> it's average value is defined to be</p>
+<p id="p-2103">Given a function <span class="process-math">\(f(x)\)</span> defined on <span class="process-math">\([a,b]\text{,}\)</span> it's average value is defined to be</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \frac{1}{b-a}\int_a^b f(x) \,dx\text{.}
@@ -293,42 +294,42 @@ window.MathJax = {
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.5</span><span class="period">.</span>
 </h3>
 <article class="task exercise-like" id="task-606"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2102">Which of the following expressions represent the average value of <span class="process-math">\(f(x)=-12 \, x^{2} + 8 \, x + 4\)</span> over the interval <span class="process-math">\([-1, 2]\text{?}\)</span></p>
+<p id="p-2104">Which of the following expressions represent the average value of <span class="process-math">\(f(x)=-12 \, x^{2} + 8 \, x + 4\)</span> over the interval <span class="process-math">\([-1, 2]\text{?}\)</span></p>
 <ol class="upper-alpha cols2">
-<li id="li-1351"><p id="p-derived-li-1351"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{3}\int_{-1}^{2}\left(x^{2} + 8 \, x + 4 \right) dx\)</span></p></li>
-<li id="li-1352"><p id="p-derived-li-1352"><span class="process-math">\(\displaystyle \displaystyle \frac{-1}{1}\int_{1}^{2}\left(x^{2} + 8 \, x + 4 \right) dx\)</span></p></li>
-<li id="li-1353"><p id="p-derived-li-1353"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{2}\int_{1}^{2}\left(x^{2} + 8 \, x + 4 \right) dx\)</span></p></li>
-<li id="li-1354"><p id="p-derived-li-1354"><span class="process-math">\(\displaystyle \displaystyle \frac{-1}{4}\int_{-1}^{2}\left(x^{2} + 8 \, x + 4 \right) dx\)</span></p></li>
+<li id="li-1353"><p id="p-derived-li-1353"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{3}\int_{-1}^{2}\left(x^{2} + 8 \, x + 4 \right) dx\)</span></p></li>
+<li id="li-1354"><p id="p-derived-li-1354"><span class="process-math">\(\displaystyle \displaystyle \frac{-1}{1}\int_{1}^{2}\left(x^{2} + 8 \, x + 4 \right) dx\)</span></p></li>
+<li id="li-1355"><p id="p-derived-li-1355"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{2}\int_{1}^{2}\left(x^{2} + 8 \, x + 4 \right) dx\)</span></p></li>
+<li id="li-1356"><p id="p-derived-li-1356"><span class="process-math">\(\displaystyle \displaystyle \frac{-1}{4}\int_{-1}^{2}\left(x^{2} + 8 \, x + 4 \right) dx\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-607"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2103">Show that the average value of <span class="process-math">\(f(x)=-12 \, x^{2} + 8 \, x + 4\)</span> over the interval <span class="process-math">\([-1, 2]\)</span> is <span class="process-math">\(-12\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-AI1averageform"><h3 class="heading">
+<p id="p-2105">Show that the average value of <span class="process-math">\(f(x)=-12 \, x^{2} + 8 \, x + 4\)</span> over the interval <span class="process-math">\([-1, 2]\)</span> is <span class="process-math">\(-12\text{.}\)</span></p></article></article><article class="activity project-like" id="activity-AI1averageform"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.6</span><span class="period">.</span>
 </h3>
 <article class="task exercise-like" id="task-608"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2104">Which of the following expressions represent the average value of <span class="process-math">\(f(x)=x\cos(x^2)+x\)</span> on the interval <span class="process-math">\([\pi, 4\pi]\text{?}\)</span></p>
+<p id="p-2106">Which of the following expressions represent the average value of <span class="process-math">\(f(x)=x\cos(x^2)+x\)</span> on the interval <span class="process-math">\([\pi, 4\pi]\text{?}\)</span></p>
 <ol class="upper-alpha cols2">
-<li id="li-1355"><p id="p-derived-li-1355"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{3\pi}\int_{0}^{4\pi}\Big(x\cos(x^2)+x\Big) dx\)</span></p></li>
-<li id="li-1356"><p id="p-derived-li-1356"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{4\pi}\int_{0}^{4\pi}\Big(x\cos(x^2)+x\Big) dx\)</span></p></li>
-<li id="li-1357"><p id="p-derived-li-1357"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{3\pi}\int_{\pi}^{4\pi}\Big(x\cos(x^2)+x\Big) dx\)</span></p></li>
-<li id="li-1358"><p id="p-derived-li-1358"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{4\pi}\int_{\pi}^{4\pi}\Big(x\cos(x^2)+x\Big) dx\)</span></p></li>
+<li id="li-1357"><p id="p-derived-li-1357"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{3\pi}\int_{0}^{4\pi}\Big(x\cos(x^2)+x\Big) dx\)</span></p></li>
+<li id="li-1358"><p id="p-derived-li-1358"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{4\pi}\int_{0}^{4\pi}\Big(x\cos(x^2)+x\Big) dx\)</span></p></li>
+<li id="li-1359"><p id="p-derived-li-1359"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{3\pi}\int_{\pi}^{4\pi}\Big(x\cos(x^2)+x\Big) dx\)</span></p></li>
+<li id="li-1360"><p id="p-derived-li-1360"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{4\pi}\int_{\pi}^{4\pi}\Big(x\cos(x^2)+x\Big) dx\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-609"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2105">Find the average value of <span class="process-math">\(f(x)=x\cos(x^2)+x\)</span> on the interval <span class="process-math">\([\pi, 4\pi]\)</span> using the chosen expression.</p></article></article><article class="activity project-like" id="activity-AI1averagehandsoff"><h3 class="heading">
+<p id="p-2107">Find the average value of <span class="process-math">\(f(x)=x\cos(x^2)+x\)</span> on the interval <span class="process-math">\([\pi, 4\pi]\)</span> using the chosen expression.</p></article></article><article class="activity project-like" id="activity-AI1averagehandsoff"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.7</span><span class="period">.</span>
 </h3>
-<p id="p-2106">Find the average value of <span class="process-math">\(\displaystyle g(t)=\frac{t}{t^2+1}\)</span> on the interval <span class="process-math">\([0, 4]\text{.}\)</span></p></article><article class="activity project-like" id="activity-AI1averageconcentration"><h3 class="heading">
+<p id="p-2108">Find the average value of <span class="process-math">\(\displaystyle g(t)=\frac{t}{t^2+1}\)</span> on the interval <span class="process-math">\([0, 4]\text{.}\)</span></p></article><article class="activity project-like" id="activity-AI1averageconcentration"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.8</span><span class="period">.</span>
 </h3>
-<p id="p-2107">A shot of a drug is administered to a patient and the quantity of the drug in the bloodstream over time is <span class="process-math">\(q(t)=3te^{-0.25t}\text{,}\)</span> where <span class="process-math">\(t\)</span> is measured in hours and <span class="process-math">\(q\)</span> is measured in milligrams.  What is the average quantity of this drug in the patient's bloodstream over the first 6 hours after injection?</p></article><article class="activity project-like" id="activity-AI1piecewise"><h3 class="heading">
+<p id="p-2109">A shot of a drug is administered to a patient and the quantity of the drug in the bloodstream over time is <span class="process-math">\(q(t)=3te^{-0.25t}\text{,}\)</span> where <span class="process-math">\(t\)</span> is measured in hours and <span class="process-math">\(q\)</span> is measured in milligrams.  What is the average quantity of this drug in the patient's bloodstream over the first 6 hours after injection?</p></article><article class="activity project-like" id="activity-AI1piecewise"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.9</span><span class="period">.</span>
 </h3>
-<p id="p-2108">Which of the following is the average value of <span class="process-math">\(f(x)\)</span> over the interval <span class="process-math">\([0,8]\text{?}\)</span> <figure class="figure figure-like" id="figure-76"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/piecewiseaverage.svg" role="img" class="contained" alt="A plot of f(x)."></div>
+<p id="p-2110">Which of the following is the average value of <span class="process-math">\(f(x)\)</span> over the interval <span class="process-math">\([0,8]\text{?}\)</span> <figure class="figure figure-like" id="figure-76"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/piecewiseaverage.svg" role="img" class="contained" alt="A plot of f(x)."></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">87<span class="period">.</span></span><span class="space"> </span>Plot of <span class="process-math">\(f(x)\text{.}\)</span></figcaption></figure></p>
-<p id="p-2109">Note <span class="process-math">\(f(x)=\begin{cases} 1, &amp; 0\leq x\leq 3 \\ 4, &amp; 3 &lt; x \leq 6 \\ 2, &amp; 6 &lt; x \leq 8 \end{cases}\text{.}\)</span></p>
+<p id="p-2111">Note <span class="process-math">\(f(x)=\begin{cases} 1, &amp; 0\leq x\leq 3 \\ 4, &amp; 3 &lt; x \leq 6 \\ 2, &amp; 6 &lt; x \leq 8 \end{cases}\text{.}\)</span></p>
 <ol class="upper-alpha cols3">
-<li id="li-1359"><p id="p-derived-li-1359"><span class="process-math">\(\displaystyle 4\)</span></p></li>
-<li id="li-1360"><p id="p-derived-li-1360"><span class="process-math">\(\displaystyle 2\)</span></p></li>
-<li id="li-1361"><p id="p-derived-li-1361"><span class="process-math">\(\displaystyle \displaystyle \frac{7}{3}\)</span></p></li>
-<li id="li-1362"><p id="p-derived-li-1362"><span class="process-math">\(\displaystyle 19\)</span></p></li>
-<li id="li-1363"><p id="p-derived-li-1363"><span class="process-math">\(\displaystyle 2.375\)</span></p></li>
+<li id="li-1361"><p id="p-derived-li-1361"><span class="process-math">\(\displaystyle 4\)</span></p></li>
+<li id="li-1362"><p id="p-derived-li-1362"><span class="process-math">\(\displaystyle 2\)</span></p></li>
+<li id="li-1363"><p id="p-derived-li-1363"><span class="process-math">\(\displaystyle \displaystyle \frac{7}{3}\)</span></p></li>
+<li id="li-1364"><p id="p-derived-li-1364"><span class="process-math">\(\displaystyle 19\)</span></p></li>
+<li id="li-1365"><p id="p-derived-li-1365"><span class="process-math">\(\displaystyle 2.375\)</span></p></li>
 </ol></article><section class="subsection" id="subsection-9"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.1.1</span> <span class="title">Videos</span>
 </h3>

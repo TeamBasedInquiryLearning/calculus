@@ -11,21 +11,14 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<p>Recall from <a href="" class="xref" data-knowl="./knowl/fact-arclength.html" title="Fact 6.2.2">Fact 6.2.2</a> that</p>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fact-arclength.html">
-\begin{align*}
-\lim_{\Delta x\to 0}\sqrt{(\Delta x)^2+(f(x_i+\Delta x)-f(x_i))^2} &amp; = \lim_{\Delta x\to 0} \sqrt{(\Delta x)^2\left(1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2\right)}\\
-&amp;= \lim_{\Delta x\to 0} \sqrt{1+\left(\frac{f(x_i+\Delta x)-f(x_i)}{\Delta x} \right)^2}\Delta x\\
-&amp;=\sqrt{1+(f'(x))^2}dx,
-\end{align*}
-</div>
-<p class="continuation">and that</p>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fact-arclength.html">
-\begin{equation*}
-\lim_{\Delta x\to 0} \frac{f(x_i)+f(x_i+\Delta x)}{2}=f(x_i).
-\end{equation*}
-</div>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<p>Suppose we wanted to estimate the  surface area with <span class="process-math">\(n\)</span> frustums. <figure class="figure figure-like"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/rotatingrootxaboutxnpiece.svg" role="img" class="contained" alt="Bounded region rotated about \(x\)-axis."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">114<span class="period">.</span></span><span class="space"> </span>Plot of bounded region rotated about <span class="process-math">\(x\)</span>-axis.</figcaption></figure> Let <span class="process-math">\(f(x)=\sqrt{x}\text{.}\)</span>  Which of  the following expressions represents the   surface area generated bo rotating the line segment from <span class="process-math">\((x_0, f(x_0))\)</span> to <span class="process-math">\((\Delta x, f(x_0+\Delta x))\)</span> about the <span class="process-math">\(x\)</span>-axis?</p>
+<ol class="upper-alpha">
+<li><p><span class="process-math">\(\displaystyle \pi \left(\frac{f(x_0)+f(x_0+\Delta x)}{2}\right)^2\sqrt{(\Delta x)^2+(f(x_0+\Delta x)-f(x_0))^2}\text{.}\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle 2\pi\frac{f(x_0)+f(x_0+\Delta x)}{2}\sqrt{(\Delta x)^2+(f(x_0+\Delta x)-f(x_0))^2}\text{.}\)</span></p></li>
+<li><p><span class="process-math">\(\displaystyle 2\pi\frac{f(x_0)+f(x_0+\Delta x)}{2}\Delta x\text{.}\)</span></p></li>
+</ol>
 <span class="incontext"><a href="AI4.html#p-2185" class="internal">in-context</a></span>
 </body>
 </html>

@@ -173,7 +173,8 @@ window.MathJax = {
 <li><a href="AI3.html" data-scroll="AI3" class="internal">Volumes of Revolution (AI3)</a></li>
 <li><a href="AI4.html" data-scroll="AI4" class="internal">Surface Areas of Revolution (AI4)</a></li>
 <li><a href="AI5.html" data-scroll="AI5" class="internal">Density, Mass, and Center of Mass (AI5)</a></li>
-<li><a href="AI6.html" data-scroll="AI6" class="internal">Physics Applications (AI6)</a></li>
+<li><a href="AI6.html" data-scroll="AI6" class="internal">Work (AI6)</a></li>
+<li><a href="AI7.html" data-scroll="AI7" class="internal">Force and Pressure (AI7)</a></li>
 </ul>
 </li>
 <li class="link">
@@ -216,176 +217,176 @@ window.MathJax = {
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="SQ7"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">8.7</span> <span class="title">Ratio and Root Tests (SQ7)</span>
 </h2>
-<article class="objectives goal-like" id="objectives-66"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-1984"><p id="p-2725">Use the ratio and root tests to determine if a series converges or diverges.</p></li></ul></article><article class="activity project-like" id="activity-517"><h3 class="heading">
+<article class="objectives goal-like" id="objectives-67"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="li-1987"><p id="p-2728">Use the ratio and root tests to determine if a series converges or diverges.</p></li></ul></article><article class="activity project-like" id="activity-517"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.7.1</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-294"><p id="p-2726">Consider the series <span class="process-math">\(\displaystyle \sum_{n=0}^\infty \frac{2^n}{3^n-2}.\)</span></p></div>
+<div class="introduction" id="introduction-294"><p id="p-2729">Consider the series <span class="process-math">\(\displaystyle \sum_{n=0}^\infty \frac{2^n}{3^n-2}.\)</span></p></div>
 <article class="task exercise-like" id="task-880"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2727">Which of these series most closely resembles <span class="process-math">\(\displaystyle \sum_{n=0}^\infty \frac{2^n}{3^n-2}\text{?}\)</span></p>
+<p id="p-2730">Which of these series most closely resembles <span class="process-math">\(\displaystyle \sum_{n=0}^\infty \frac{2^n}{3^n-2}\text{?}\)</span></p>
 <ol class="upper-alpha cols2">
-<li id="li-1985"><p id="p-derived-li-1985"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty \frac{2}{3}\text{.}\)</span></p></li>
-<li id="li-1986"><p id="p-derived-li-1986"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty \frac{2}{3}n\text{.}\)</span></p></li>
-<li id="li-1987"><p id="p-derived-li-1987"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty \left(\frac{2}{3}\right)^n\text{.}\)</span></p></li>
+<li id="li-1988"><p id="p-derived-li-1988"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty \frac{2}{3}\text{.}\)</span></p></li>
+<li id="li-1989"><p id="p-derived-li-1989"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty \frac{2}{3}n\text{.}\)</span></p></li>
+<li id="li-1990"><p id="p-derived-li-1990"><span class="process-math">\(\displaystyle \sum_{n=0}^\infty \left(\frac{2}{3}\right)^n\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-881"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2728">Based on your previous choice, do we think this series is more likely to converge or diverge?</p></article><article class="task exercise-like" id="task-882"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2729">Find <span class="process-math">\(\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=\lim_{n\to\infty}\frac{2^{n+1}(3^n-2)}{(3^{n+1}-2)2^n}=\lim_{n\to\infty}\frac{2\cdot 2^{n}(3^n-2)}{3(3^{n}-\frac{2}{3})2^n}.\)</span></p>
+<p id="p-2731">Based on your previous choice, do we think this series is more likely to converge or diverge?</p></article><article class="task exercise-like" id="task-882"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2732">Find <span class="process-math">\(\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=\lim_{n\to\infty}\frac{2^{n+1}(3^n-2)}{(3^{n+1}-2)2^n}=\lim_{n\to\infty}\frac{2\cdot 2^{n}(3^n-2)}{3(3^{n}-\frac{2}{3})2^n}.\)</span></p>
 <ol class="upper-alpha cols2">
-<li id="li-1988"><p id="p-derived-li-1988"><span class="process-math">\(\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=0\text{.}\)</span></p></li>
-<li id="li-1989"><p id="p-derived-li-1989"><span class="process-math">\(\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=\frac{2}{3}\text{.}\)</span></p></li>
-<li id="li-1990"><p id="p-derived-li-1990"><span class="process-math">\(\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=1\text{.}\)</span></p></li>
-<li id="li-1991"><p id="p-derived-li-1991"><span class="process-math">\(\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=2\text{.}\)</span></p></li>
-<li id="li-1992"><p id="p-derived-li-1992"><span class="process-math">\(\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=3\text{.}\)</span></p></li>
+<li id="li-1991"><p id="p-derived-li-1991"><span class="process-math">\(\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=0\text{.}\)</span></p></li>
+<li id="li-1992"><p id="p-derived-li-1992"><span class="process-math">\(\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=\frac{2}{3}\text{.}\)</span></p></li>
+<li id="li-1993"><p id="p-derived-li-1993"><span class="process-math">\(\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=1\text{.}\)</span></p></li>
+<li id="li-1994"><p id="p-derived-li-1994"><span class="process-math">\(\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=2\text{.}\)</span></p></li>
+<li id="li-1995"><p id="p-derived-li-1995"><span class="process-math">\(\displaystyle \lim_{n\to\infty} \frac{\frac{2^{n+1}}{3^{n+1}-2}}{\frac{2^n}{3^n-2}}=3\text{.}\)</span></p></li>
 </ol></article></article><article class="activity project-like" id="activity-518"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.7.2</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-295"><p id="p-2730">Consider the series <span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n=\sum_{n=0}^\infty \frac{3}{2^n}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-295"><p id="p-2733">Consider the series <span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n=\sum_{n=0}^\infty \frac{3}{2^n}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-883"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2731">Does <span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n=\sum_{n=0}^\infty \frac{3}{2^n}\)</span> converge?</p></article><article class="task exercise-like" id="task-884"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2732">Find <span class="process-math">\(\displaystyle\frac{a_{n+1}}{a_n}\text{.}\)</span></p>
+<p id="p-2734">Does <span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_n=\sum_{n=0}^\infty \frac{3}{2^n}\)</span> converge?</p></article><article class="task exercise-like" id="task-884"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2735">Find <span class="process-math">\(\displaystyle\frac{a_{n+1}}{a_n}\text{.}\)</span></p>
 <ol class="upper-alpha cols2">
-<li id="li-1993"><p id="p-derived-li-1993"><span class="process-math">\(2\text{.}\)</span></p></li>
-<li id="li-1994"><p id="p-derived-li-1994"><span class="process-math">\(\displaystyle \frac{1}{2}\text{.}\)</span></p></li>
-<li id="li-1995"><p id="p-derived-li-1995"><span class="process-math">\(\displaystyle \frac{2^n}{2^n+1}\text{.}\)</span></p></li>
-<li id="li-1996"><p id="p-derived-li-1996"><span class="process-math">\(\displaystyle \frac{9}{2^{2n+1}}\text{.}\)</span></p></li>
-<li id="li-1997"><p id="p-derived-li-1997"><span class="process-math">\(\displaystyle \frac{9}{2^{n+2}}\text{.}\)</span></p></li>
+<li id="li-1996"><p id="p-derived-li-1996"><span class="process-math">\(2\text{.}\)</span></p></li>
+<li id="li-1997"><p id="p-derived-li-1997"><span class="process-math">\(\displaystyle \frac{1}{2}\text{.}\)</span></p></li>
+<li id="li-1998"><p id="p-derived-li-1998"><span class="process-math">\(\displaystyle \frac{2^n}{2^n+1}\text{.}\)</span></p></li>
+<li id="li-1999"><p id="p-derived-li-1999"><span class="process-math">\(\displaystyle \frac{9}{2^{2n+1}}\text{.}\)</span></p></li>
+<li id="li-2000"><p id="p-derived-li-2000"><span class="process-math">\(\displaystyle \frac{9}{2^{n+2}}\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-885"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2733">Find <span class="process-math">\(\displaystyle \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.\)</span></p>
+<p id="p-2736">Find <span class="process-math">\(\displaystyle \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.\)</span></p>
 <ol class="upper-alpha cols2">
-<li id="li-1998"><p id="p-derived-li-1998"><span class="process-math">\(-\infty\text{.}\)</span></p></li>
-<li id="li-1999"><p id="p-derived-li-1999"><span class="process-math">\(0\text{.}\)</span></p></li>
-<li id="li-2000"><p id="p-derived-li-2000"><span class="process-math">\(\displaystyle \frac{1}{2}\text{.}\)</span></p></li>
-<li id="li-2001"><p id="p-derived-li-2001"><span class="process-math">\(2\text{.}\)</span></p></li>
-<li id="li-2002"><p id="p-derived-li-2002"><span class="process-math">\(\infty\text{.}\)</span></p></li>
+<li id="li-2001"><p id="p-derived-li-2001"><span class="process-math">\(-\infty\text{.}\)</span></p></li>
+<li id="li-2002"><p id="p-derived-li-2002"><span class="process-math">\(0\text{.}\)</span></p></li>
+<li id="li-2003"><p id="p-derived-li-2003"><span class="process-math">\(\displaystyle \frac{1}{2}\text{.}\)</span></p></li>
+<li id="li-2004"><p id="p-derived-li-2004"><span class="process-math">\(2\text{.}\)</span></p></li>
+<li id="li-2005"><p id="p-derived-li-2005"><span class="process-math">\(\infty\text{.}\)</span></p></li>
 </ol></article></article><article class="activity project-like" id="activity-519"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.7.3</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-296"><p id="p-2734">Consider the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{n^2}{n+1}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-296"><p id="p-2737">Consider the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{n^2}{n+1}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-886"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2735">Does <span class="process-math">\(\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{n^2}{n+1}\)</span> converge?</p></article><article class="task exercise-like" id="task-887"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2736">Find <span class="process-math">\(\displaystyle\frac{a_{n+1}}{a_n}\text{.}\)</span></p>
+<p id="p-2738">Does <span class="process-math">\(\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{n^2}{n+1}\)</span> converge?</p></article><article class="task exercise-like" id="task-887"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2739">Find <span class="process-math">\(\displaystyle\frac{a_{n+1}}{a_n}\text{.}\)</span></p>
 <ol class="upper-alpha cols2">
-<li id="li-2003"><p id="p-derived-li-2003"><span class="process-math">\(\displaystyle \frac{n+1}{2}\text{.}\)</span></p></li>
-<li id="li-2004"><p id="p-derived-li-2004"><span class="process-math">\(\displaystyle \frac{(n^2+1)(n+1)}{(n+2)n^2}\text{.}\)</span></p></li>
-<li id="li-2005"><p id="p-derived-li-2005"><span class="process-math">\(\displaystyle \frac{(n+1)^2}{n+2}\text{.}\)</span></p></li>
-<li id="li-2006"><p id="p-derived-li-2006"><span class="process-math">\(\displaystyle \frac{1}{2}\text{.}\)</span></p></li>
-<li id="li-2007"><p id="p-derived-li-2007"><span class="process-math">\(\displaystyle \frac{(n+1)n^2}{n+2}\text{.}\)</span></p></li>
+<li id="li-2006"><p id="p-derived-li-2006"><span class="process-math">\(\displaystyle \frac{n+1}{2}\text{.}\)</span></p></li>
+<li id="li-2007"><p id="p-derived-li-2007"><span class="process-math">\(\displaystyle \frac{(n^2+1)(n+1)}{(n+2)n^2}\text{.}\)</span></p></li>
+<li id="li-2008"><p id="p-derived-li-2008"><span class="process-math">\(\displaystyle \frac{(n+1)^2}{n+2}\text{.}\)</span></p></li>
+<li id="li-2009"><p id="p-derived-li-2009"><span class="process-math">\(\displaystyle \frac{1}{2}\text{.}\)</span></p></li>
+<li id="li-2010"><p id="p-derived-li-2010"><span class="process-math">\(\displaystyle \frac{(n+1)n^2}{n+2}\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-888"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2737">Find <span class="process-math">\(\displaystyle \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.\)</span></p>
+<p id="p-2740">Find <span class="process-math">\(\displaystyle \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.\)</span></p>
 <ol class="upper-alpha cols2">
-<li id="li-2008"><p id="p-derived-li-2008"><span class="process-math">\(-\infty\text{.}\)</span></p></li>
-<li id="li-2009"><p id="p-derived-li-2009"><span class="process-math">\(0\text{.}\)</span></p></li>
-<li id="li-2010"><p id="p-derived-li-2010"><span class="process-math">\(\displaystyle \frac{1}{2}\text{.}\)</span></p></li>
-<li id="li-2011"><p id="p-derived-li-2011"><span class="process-math">\(2\text{.}\)</span></p></li>
-<li id="li-2012"><p id="p-derived-li-2012"><span class="process-math">\(\infty\text{.}\)</span></p></li>
+<li id="li-2011"><p id="p-derived-li-2011"><span class="process-math">\(-\infty\text{.}\)</span></p></li>
+<li id="li-2012"><p id="p-derived-li-2012"><span class="process-math">\(0\text{.}\)</span></p></li>
+<li id="li-2013"><p id="p-derived-li-2013"><span class="process-math">\(\displaystyle \frac{1}{2}\text{.}\)</span></p></li>
+<li id="li-2014"><p id="p-derived-li-2014"><span class="process-math">\(2\text{.}\)</span></p></li>
+<li id="li-2015"><p id="p-derived-li-2015"><span class="process-math">\(\infty\text{.}\)</span></p></li>
 </ol></article></article><article class="activity project-like" id="activity-SQ7harmonic"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.7.4</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-297"><p id="p-2738">Consider the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{1}{n}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-297"><p id="p-2741">Consider the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{1}{n}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-889"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2739">Does <span class="process-math">\(\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{1}{n}\)</span> converge?</p></article><article class="task exercise-like" id="task-890"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2740">Find <span class="process-math">\(\displaystyle\frac{a_{n+1}}{a_n}\text{.}\)</span></p></article><article class="task exercise-like" id="task-891"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2741">Find <span class="process-math">\(\displaystyle \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.\)</span></p></article></article><article class="activity project-like" id="activity-SQ7alternatingharmonic"><h3 class="heading">
+<p id="p-2742">Does <span class="process-math">\(\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{1}{n}\)</span> converge?</p></article><article class="task exercise-like" id="task-890"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2743">Find <span class="process-math">\(\displaystyle\frac{a_{n+1}}{a_n}\text{.}\)</span></p></article><article class="task exercise-like" id="task-891"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2744">Find <span class="process-math">\(\displaystyle \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.\)</span></p></article></article><article class="activity project-like" id="activity-SQ7alternatingharmonic"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.7.5</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-298"><p id="p-2742">Consider the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{(-1)^n}{n}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-298"><p id="p-2745">Consider the series <span class="process-math">\(\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{(-1)^n}{n}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-892"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2743">Does <span class="process-math">\(\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{(-1)^n}{n}\)</span> converge?</p></article><article class="task exercise-like" id="task-893"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2744">Find <span class="process-math">\(\frac{a_{n+1}}{a_n}\text{.}\)</span></p></article><article class="task exercise-like" id="task-894"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2745">Find <span class="process-math">\(\displaystyle \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.\)</span></p></article></article><article class="fact theorem-like" id="fact-SQ7ratioTest"><h3 class="heading">
+<p id="p-2746">Does <span class="process-math">\(\displaystyle \sum_{n=1}^\infty a_n=\sum_{n=1}^\infty \frac{(-1)^n}{n}\)</span> converge?</p></article><article class="task exercise-like" id="task-893"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2747">Find <span class="process-math">\(\frac{a_{n+1}}{a_n}\text{.}\)</span></p></article><article class="task exercise-like" id="task-894"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2748">Find <span class="process-math">\(\displaystyle \lim_{n\to\infty} \left|\frac{a_{n+1}}{a_n}\right|.\)</span></p></article></article><article class="fact theorem-like" id="fact-SQ7ratioTest"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">8.7.6</span><span class="period">.</span><span class="space"> </span><span class="title">The Ratio Test.</span>
 </h3>
 <p id="QCd">Let <span class="process-math">\(\displaystyle\sum a_n\)</span> be a series and suppose that <span class="process-math">\(\displaystyle\lim_{n\rightarrow\infty}\left|\frac{a_{n+1}}{a_n}\right|=\rho\text{.}\)</span> Then</p>
 <ol class="decimal">
-<li id="li-2013"><p id="p-derived-li-2013"><span class="process-math">\(\displaystyle\sum a_n\)</span> converges if <span class="process-math">\(\rho\)</span> is less than 1, and</p></li>
-<li id="li-2014"><p id="p-derived-li-2014"><span class="process-math">\(\displaystyle\sum a_n\)</span> diverges if <span class="process-math">\(\rho\)</span> is greater than 1.</p></li>
-<li id="li-2015"><p id="p-derived-li-2015">If <span class="process-math">\(\rho=1\text{,}\)</span> we cannot determine if <span class="process-math">\(\displaystyle\sum a_n\)</span> converges or diverges <em class="emphasis">with this method</em>.</p></li>
+<li id="li-2016"><p id="p-derived-li-2016"><span class="process-math">\(\displaystyle\sum a_n\)</span> converges if <span class="process-math">\(\rho\)</span> is less than 1, and</p></li>
+<li id="li-2017"><p id="p-derived-li-2017"><span class="process-math">\(\displaystyle\sum a_n\)</span> diverges if <span class="process-math">\(\rho\)</span> is greater than 1.</p></li>
+<li id="li-2018"><p id="p-derived-li-2018">If <span class="process-math">\(\rho=1\text{,}\)</span> we cannot determine if <span class="process-math">\(\displaystyle\sum a_n\)</span> converges or diverges <em class="emphasis">with this method</em>.</p></li>
 </ol></article><article class="fact theorem-like" id="fact-SQ7rootTest"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">8.7.7</span><span class="period">.</span><span class="space"> </span><span class="title">The Root Test.</span>
 </h3>
 <p id="QCd">Let <span class="process-math">\(N\)</span> be an integer and let <span class="process-math">\(\displaystyle\sum a_n\)</span> be a series with <span class="process-math">\(a_n\geq 0\)</span> for <span class="process-math">\(n\geq N\text{,}\)</span> and suppose that <span class="process-math">\(\displaystyle\lim_{n\rightarrow\infty}\sqrt[n]{|a_n|}=\rho\text{.}\)</span> Then</p>
 <ol class="decimal">
-<li id="li-2016"><p id="p-derived-li-2016"><span class="process-math">\(\displaystyle\sum a_n\)</span> converges if <span class="process-math">\(\rho\)</span> is less than 1, and</p></li>
-<li id="li-2017"><p id="p-derived-li-2017"><span class="process-math">\(\displaystyle\sum a_n\)</span> diverges if <span class="process-math">\(\rho\)</span> is greater than 1.</p></li>
-<li id="li-2018"><p id="p-derived-li-2018">If <span class="process-math">\(\rho=1\text{,}\)</span> we cannot determine if <span class="process-math">\(\displaystyle\sum a_n\)</span> converges or diverges <em class="emphasis">with this method</em>.</p></li>
+<li id="li-2019"><p id="p-derived-li-2019"><span class="process-math">\(\displaystyle\sum a_n\)</span> converges if <span class="process-math">\(\rho\)</span> is less than 1, and</p></li>
+<li id="li-2020"><p id="p-derived-li-2020"><span class="process-math">\(\displaystyle\sum a_n\)</span> diverges if <span class="process-math">\(\rho\)</span> is greater than 1.</p></li>
+<li id="li-2021"><p id="p-derived-li-2021">If <span class="process-math">\(\rho=1\text{,}\)</span> we cannot determine if <span class="process-math">\(\displaystyle\sum a_n\)</span> converges or diverges <em class="emphasis">with this method</em>.</p></li>
 </ol></article><article class="activity project-like" id="activity-522"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.7.8</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-299"><p id="p-2748">Consider the series <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{n^2}{n!}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-299"><p id="p-2751">Consider the series <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{n^2}{n!}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-895"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2749">Which of the following is <span class="process-math">\(a_n\text{?}\)</span></p>
+<p id="p-2752">Which of the following is <span class="process-math">\(a_n\text{?}\)</span></p>
 <ol class="upper-alpha cols2">
-<li id="li-2019"><p id="p-derived-li-2019"><span class="process-math">\(n^2\text{.}\)</span></p></li>
-<li id="li-2020"><p id="p-derived-li-2020"><span class="process-math">\(n!\text{.}\)</span></p></li>
-<li id="li-2021"><p id="p-derived-li-2021"><span class="process-math">\(\displaystyle\frac{n^2}{n!}\text{.}\)</span></p></li>
+<li id="li-2022"><p id="p-derived-li-2022"><span class="process-math">\(n^2\text{.}\)</span></p></li>
+<li id="li-2023"><p id="p-derived-li-2023"><span class="process-math">\(n!\text{.}\)</span></p></li>
+<li id="li-2024"><p id="p-derived-li-2024"><span class="process-math">\(\displaystyle\frac{n^2}{n!}\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-896"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2750">Which of the following is <span class="process-math">\(a_{n+1}\text{?}\)</span></p>
+<p id="p-2753">Which of the following is <span class="process-math">\(a_{n+1}\text{?}\)</span></p>
 <ol class="upper-alpha cols2">
-<li id="li-2022"><p id="p-derived-li-2022"><span class="process-math">\(\displaystyle\frac{n^2}{n!}\text{.}\)</span></p></li>
-<li id="li-2023"><p id="p-derived-li-2023"><span class="process-math">\(\displaystyle(n+1)^2\text{.}\)</span></p></li>
-<li id="li-2024"><p id="p-derived-li-2024"><span class="process-math">\(\displaystyle(n+1)!\text{.}\)</span></p></li>
-<li id="li-2025"><p id="p-derived-li-2025"><span class="process-math">\(\displaystyle\frac{(n+1)^2}{(n+1)!}\text{.}\)</span></p></li>
-<li id="li-2026"><p id="p-derived-li-2026"><span class="process-math">\(\displaystyle\frac{n^2+1}{n!+1}\text{.}\)</span></p></li>
+<li id="li-2025"><p id="p-derived-li-2025"><span class="process-math">\(\displaystyle\frac{n^2}{n!}\text{.}\)</span></p></li>
+<li id="li-2026"><p id="p-derived-li-2026"><span class="process-math">\(\displaystyle(n+1)^2\text{.}\)</span></p></li>
+<li id="li-2027"><p id="p-derived-li-2027"><span class="process-math">\(\displaystyle(n+1)!\text{.}\)</span></p></li>
+<li id="li-2028"><p id="p-derived-li-2028"><span class="process-math">\(\displaystyle\frac{(n+1)^2}{(n+1)!}\text{.}\)</span></p></li>
+<li id="li-2029"><p id="p-derived-li-2029"><span class="process-math">\(\displaystyle\frac{n^2+1}{n!+1}\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-897"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2751">Which of the following is <span class="process-math">\(\displaystyle\left|\frac{a_{n+1}}{a_n}\right|\text{?}\)</span></p>
+<p id="p-2754">Which of the following is <span class="process-math">\(\displaystyle\left|\frac{a_{n+1}}{a_n}\right|\text{?}\)</span></p>
 <ol class="upper-alpha cols2">
-<li id="li-2027"><p id="p-derived-li-2027"><span class="process-math">\(\displaystyle\frac{(n+1)^2n^2}{(n+1)!n!}\text{.}\)</span></p></li>
-<li id="li-2028"><p id="p-derived-li-2028"><span class="process-math">\(\displaystyle\frac{(n+1)^2n!}{(n+1)!n^2}\text{.}\)</span></p></li>
-<li id="li-2029"><p id="p-derived-li-2029"><span class="process-math">\(\displaystyle\frac{(n+1)!n!}{(n+1)^2n^2}\text{.}\)</span></p></li>
-<li id="li-2030"><p id="p-derived-li-2030"><span class="process-math">\(\displaystyle\frac{(n+1)!n^2}{(n+1)^2n!}\text{.}\)</span></p></li>
+<li id="li-2030"><p id="p-derived-li-2030"><span class="process-math">\(\displaystyle\frac{(n+1)^2n^2}{(n+1)!n!}\text{.}\)</span></p></li>
+<li id="li-2031"><p id="p-derived-li-2031"><span class="process-math">\(\displaystyle\frac{(n+1)^2n!}{(n+1)!n^2}\text{.}\)</span></p></li>
+<li id="li-2032"><p id="p-derived-li-2032"><span class="process-math">\(\displaystyle\frac{(n+1)!n!}{(n+1)^2n^2}\text{.}\)</span></p></li>
+<li id="li-2033"><p id="p-derived-li-2033"><span class="process-math">\(\displaystyle\frac{(n+1)!n^2}{(n+1)^2n!}\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-898"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-2752">Using the fact <span class="process-math">\((n+1)!=(n+1)\cdot n!\text{,}\)</span> simplify <span class="process-math">\(\displaystyle\left|\frac{a_{n+1}}{a_n}\right|\)</span> as much as possible.</p></article><article class="task exercise-like" id="task-899"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p id="p-2753">Find <span class="process-math">\(\displaystyle\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_n}\right|\text{.}\)</span></p></article><article class="task exercise-like" id="task-900"><h4 class="heading"><span class="codenumber">(f)</span></h4>
-<p id="p-2754">Does <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{n^2}{n!}\)</span> converge?</p></article></article><article class="activity project-like" id="activity-523"><h3 class="heading">
+<p id="p-2755">Using the fact <span class="process-math">\((n+1)!=(n+1)\cdot n!\text{,}\)</span> simplify <span class="process-math">\(\displaystyle\left|\frac{a_{n+1}}{a_n}\right|\)</span> as much as possible.</p></article><article class="task exercise-like" id="task-899"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p id="p-2756">Find <span class="process-math">\(\displaystyle\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_n}\right|\text{.}\)</span></p></article><article class="task exercise-like" id="task-900"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<p id="p-2757">Does <span class="process-math">\(\displaystyle\sum_{n=0}^\infty \frac{n^2}{n!}\)</span> converge?</p></article></article><article class="activity project-like" id="activity-523"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.7.9</span><span class="period">.</span>
 </h3>
 <article class="task exercise-like" id="task-901"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2756">What is <span class="process-math">\(a_n\text{?}\)</span></p></article><article class="task exercise-like" id="task-902"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2757">Which of the following is <span class="process-math">\(\displaystyle\sqrt[n]{|a_n|}\text{?}\)</span></p>
+<p id="p-2759">What is <span class="process-math">\(a_n\text{?}\)</span></p></article><article class="task exercise-like" id="task-902"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2760">Which of the following is <span class="process-math">\(\displaystyle\sqrt[n]{|a_n|}\text{?}\)</span></p>
 <ol class="upper-alpha cols2">
-<li id="li-2031"><p id="p-derived-li-2031"><span class="process-math">\(\displaystyle \frac{n+1}{9}\text{.}\)</span></p></li>
-<li id="li-2032"><p id="p-derived-li-2032"><span class="process-math">\(\displaystyle \frac{n}{9}\text{.}\)</span></p></li>
-<li id="li-2033"><p id="p-derived-li-2033"><span class="process-math">\(n\text{.}\)</span></p></li>
-<li id="li-2034"><p id="p-derived-li-2034"><span class="process-math">\(9\text{.}\)</span></p></li>
-<li id="li-2035"><p id="p-derived-li-2035"><span class="process-math">\(\displaystyle \frac{1}{9}\text{.}\)</span></p></li>
+<li id="li-2034"><p id="p-derived-li-2034"><span class="process-math">\(\displaystyle \frac{n+1}{9}\text{.}\)</span></p></li>
+<li id="li-2035"><p id="p-derived-li-2035"><span class="process-math">\(\displaystyle \frac{n}{9}\text{.}\)</span></p></li>
+<li id="li-2036"><p id="p-derived-li-2036"><span class="process-math">\(n\text{.}\)</span></p></li>
+<li id="li-2037"><p id="p-derived-li-2037"><span class="process-math">\(9\text{.}\)</span></p></li>
+<li id="li-2038"><p id="p-derived-li-2038"><span class="process-math">\(\displaystyle \frac{1}{9}\text{.}\)</span></p></li>
 </ol></article><article class="task exercise-like" id="task-903"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2758">Find <span class="process-math">\(\displaystyle\lim_{n\rightarrow\infty}\sqrt[n]{|a_n|}\text{.}\)</span></p></article><article class="task exercise-like" id="task-904"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-2759">Does <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{n^n}{9^n}\)</span> converge?</p></article></article><article class="activity project-like" id="activity-SQ7rootRatioChoices"><h3 class="heading">
+<p id="p-2761">Find <span class="process-math">\(\displaystyle\lim_{n\rightarrow\infty}\sqrt[n]{|a_n|}\text{.}\)</span></p></article><article class="task exercise-like" id="task-904"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-2762">Does <span class="process-math">\(\displaystyle \sum_{n=1}^\infty \frac{n^n}{9^n}\)</span> converge?</p></article></article><article class="activity project-like" id="activity-SQ7rootRatioChoices"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.7.10</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-300"><p id="p-2760">For each series, use the <em class="emphasis">ratio</em> or <em class="emphasis">root</em> test to determine if the series converges or diverges.</p></div>
+<div class="introduction" id="introduction-300"><p id="p-2763">For each series, use the <em class="emphasis">ratio</em> or <em class="emphasis">root</em> test to determine if the series converges or diverges.</p></div>
 <article class="task exercise-like" id="task-905"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2761"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\left(\frac{1}{1+n}\right)^n\)</span></p></article><article class="task exercise-like" id="task-906"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2762"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{2^n}{n^n}\)</span></p></article><article class="task exercise-like" id="task-907"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2763"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{(2n)!}{(n!)(n!)}\)</span></p></article><article class="task exercise-like" id="task-908"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-2764"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{4^n(n!)(n!)}{(2n)!}\)</span></p></article></article><article class="activity project-like" id="activity-SQ7rootRatioComparison2"><h3 class="heading">
+<p id="p-2764"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\left(\frac{1}{1+n}\right)^n\)</span></p></article><article class="task exercise-like" id="task-906"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2765"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{2^n}{n^n}\)</span></p></article><article class="task exercise-like" id="task-907"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2766"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{(2n)!}{(n!)(n!)}\)</span></p></article><article class="task exercise-like" id="task-908"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-2767"><span class="process-math">\(\displaystyle \sum_{n=1}^\infty \displaystyle\frac{4^n(n!)(n!)}{(2n)!}\)</span></p></article></article><article class="activity project-like" id="activity-SQ7rootRatioComparison2"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.7.11</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-301"><p id="p-2765">Consider the series <span class="process-math">\(\displaystyle \sum_{n=0}^\infty \displaystyle\frac{2^n+5}{3^n}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-301"><p id="p-2768">Consider the series <span class="process-math">\(\displaystyle \sum_{n=0}^\infty \displaystyle\frac{2^n+5}{3^n}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-909"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2766">Use the root test to check for convergence of this series.</p></article><article class="task exercise-like" id="task-910"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2767">Use the ratio test to check for convergence of this series.</p></article><article class="task exercise-like" id="task-911"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2768">Use the comparison (or limit comparison) test to check for convergence of this series.</p></article><article class="task exercise-like" id="task-912"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-2769">Find the sum of this series.</p></article></article><article class="activity project-like" id="activity-526"><h3 class="heading">
+<p id="p-2769">Use the root test to check for convergence of this series.</p></article><article class="task exercise-like" id="task-910"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2770">Use the ratio test to check for convergence of this series.</p></article><article class="task exercise-like" id="task-911"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2771">Use the comparison (or limit comparison) test to check for convergence of this series.</p></article><article class="task exercise-like" id="task-912"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-2772">Find the sum of this series.</p></article></article><article class="activity project-like" id="activity-526"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.7.12</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-302"><p id="p-2770">Consider <span class="process-math">\(\displaystyle\sum_{n=1}^\infty \frac{n}{3^n}\text{.}\)</span>  Recall that <span class="process-math">\(\displaystyle \sqrt[n]{\frac{n}{3^n}}=\left(\frac{n}{3^n}\right)^{1/n}=\frac{n^{1/n}}{(3^n)^{1/n}}.\)</span></p></div>
+<div class="introduction" id="introduction-302"><p id="p-2773">Consider <span class="process-math">\(\displaystyle\sum_{n=1}^\infty \frac{n}{3^n}\text{.}\)</span>  Recall that <span class="process-math">\(\displaystyle \sqrt[n]{\frac{n}{3^n}}=\left(\frac{n}{3^n}\right)^{1/n}=\frac{n^{1/n}}{(3^n)^{1/n}}.\)</span></p></div>
 <article class="task exercise-like" id="task-913"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2771">Let <span class="process-math">\(\displaystyle \alpha=\lim_{n\to\infty}\ln(n^{1/n})=\lim_{n\to\infty}\frac{1}{n}\ln(n)\text{.}\)</span>  Find <span class="process-math">\(\alpha\text{.}\)</span></p></article><article class="task exercise-like" id="task-914"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2772">Recall that <span class="process-math">\(\displaystyle \lim_{n\to\infty}n^{1/n}=\lim_{n\to\infty} e^{\ln(n^{1/n})}=e^\alpha.\)</span> Find <span class="process-math">\(\displaystyle \lim_{n\to\infty}n^{1/n}\text{.}\)</span></p></article><article class="task exercise-like" id="task-915"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2773">Find <span class="process-math">\(\displaystyle \lim_{n\to\infty} \sqrt[n]{\frac{n}{3^n}}=\lim_{n\to\infty}\left(\frac{n}{3^n}\right)^{1/n}=\lim_{n\to\infty}\frac{n^{1/n}}{(3^n)^{1/n}}\text{.}\)</span></p></article><article class="task exercise-like" id="task-916"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p id="p-2774">Does <span class="process-math">\(\displaystyle\sum_{n=1}^\infty \frac{n}{3^n}\)</span> converge?</p></article></article><article class="activity project-like" id="activity-SQ7rootRatioComparison"><h3 class="heading">
+<p id="p-2774">Let <span class="process-math">\(\displaystyle \alpha=\lim_{n\to\infty}\ln(n^{1/n})=\lim_{n\to\infty}\frac{1}{n}\ln(n)\text{.}\)</span>  Find <span class="process-math">\(\alpha\text{.}\)</span></p></article><article class="task exercise-like" id="task-914"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2775">Recall that <span class="process-math">\(\displaystyle \lim_{n\to\infty}n^{1/n}=\lim_{n\to\infty} e^{\ln(n^{1/n})}=e^\alpha.\)</span> Find <span class="process-math">\(\displaystyle \lim_{n\to\infty}n^{1/n}\text{.}\)</span></p></article><article class="task exercise-like" id="task-915"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2776">Find <span class="process-math">\(\displaystyle \lim_{n\to\infty} \sqrt[n]{\frac{n}{3^n}}=\lim_{n\to\infty}\left(\frac{n}{3^n}\right)^{1/n}=\lim_{n\to\infty}\frac{n^{1/n}}{(3^n)^{1/n}}\text{.}\)</span></p></article><article class="task exercise-like" id="task-916"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p id="p-2777">Does <span class="process-math">\(\displaystyle\sum_{n=1}^\infty \frac{n}{3^n}\)</span> converge?</p></article></article><article class="activity project-like" id="activity-SQ7rootRatioComparison"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.7.13</span><span class="period">.</span>
 </h3>
-<div class="introduction" id="introduction-303"><p id="p-2775">Consider the series <span class="process-math">\(\displaystyle \sum_{n=0}^\infty \displaystyle\frac{n^2}{2^n}\text{.}\)</span></p></div>
+<div class="introduction" id="introduction-303"><p id="p-2778">Consider the series <span class="process-math">\(\displaystyle \sum_{n=0}^\infty \displaystyle\frac{n^2}{2^n}\text{.}\)</span></p></div>
 <article class="task exercise-like" id="task-917"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2776">Use the root test to check for convergence of this series.</p></article><article class="task exercise-like" id="task-918"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2777">Use the ratio test to check for convergence of this series.</p></article><article class="task exercise-like" id="task-919"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p id="p-2778">Use the comparison (or limit comparison) test to check for convergence of this series.</p></article></article><section class="subsection" id="subsection-21"><h3 class="heading hide-type">
+<p id="p-2779">Use the root test to check for convergence of this series.</p></article><article class="task exercise-like" id="task-918"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2780">Use the ratio test to check for convergence of this series.</p></article><article class="task exercise-like" id="task-919"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p id="p-2781">Use the comparison (or limit comparison) test to check for convergence of this series.</p></article></article><section class="subsection" id="subsection-22"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">8.7.1</span> <span class="title">Videos</span>
 </h3>
-<figure class="figure figure-like" id="figure-142"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-SQ7" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/YmGXeuGeC3I?&amp;modestbranding=1&amp;rel=0"></iframe></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">156<span class="period">.</span></span><span class="space"> </span>Video: Use the ratio and root tests to determine if a series converges or diverges</figcaption></figure></section></section></div></main>
+<figure class="figure figure-like" id="figure-143"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-SQ7" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/YmGXeuGeC3I?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">157<span class="period">.</span></span><span class="space"> </span>Video: Use the ratio and root tests to determine if a series converges or diverges</figcaption></figure></section></section></div></main>
 </div>
 </body>
 </html>
