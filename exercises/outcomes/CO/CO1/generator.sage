@@ -2,13 +2,11 @@ class Generator(BaseGenerator):
     def data(self):        
         t=var("t")
 
-        linear=Integer(randint(1,5))*choice([-1,1])/Integer(randint(1,5))*t+Integer(randint(-5,5))
+        linear=Integer(randint(1,5))*choice([-1,1])/Integer(randint(1,5))*t+Integer(randint(1,5))*choice([-1,1])
         
         funct=choice([
-                Integer(randint(1,5))*choice([-1,1])/Integer(randint(1,5))*t+Integer(randint(-5,5)),
-                Integer(randint(1,5))*choice([-1,1])/Integer(randint(1,5))*2^(t),
-                Integer(randint(1,5))*choice([-1,1])*sin(t)+Integer(randint(1,5))*choice([-1,1]),
-                Integer(randint(1,5))*choice([-1,1])*cos(t)+Integer(randint(1,5))*choice([-1,1]),
+                Integer(randint(1,5))*choice([-1,1])*sin(t*pi/choice([3,4]))+Integer(randint(1,5))*choice([-1,1]),
+                Integer(randint(1,5))*choice([-1,1])*cos(t*pi/choice([3,4]))+Integer(randint(1,5))*choice([-1,1]),
             ])
         
         equations=[linear, funct]
