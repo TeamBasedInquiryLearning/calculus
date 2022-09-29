@@ -8,7 +8,7 @@
             </content>
             <outtro>
                 <p>
-                    <me>\int_0^{ {{height}} } 9.8\left({{bucket}}\right)dh\  \text{Nm}.</me>
+                    <me>\int_0^{ {{height}} } 9.8\left({{bucket}}\right)dh</me>
                 </p>
             </outtro>
     <!-- {{/bucket}} -->
@@ -23,7 +23,7 @@
             </content>
             <outtro>
                 <p>
-                    <me>\int_0^{ {{height}} } 9.8\cdot 1000 \left({{radius}}\right)^2\cdot({{height}}-h )dh\  \text{Nm}.</me>
+                    <me>\int_0^{ {{height}} } 9.8\cdot 1000\cdot \pi \left({{radius}}\right)^2\cdot({{height}}-h )dh</me>
                 </p>
             </outtro>
     <!-- {{/well}} -->
