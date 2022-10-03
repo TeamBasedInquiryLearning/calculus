@@ -73,7 +73,7 @@ Using the leg lengths and Pythagorean theorem, how long must the red dashed hypo
             </p>
             <ol marker="A." cols="2">
                 <li><p><m>\sqrt{20}\approx 4.47</m>.</p></li>
-                <li><p><m>\sqrt{56}\approx 7.48</m>.</p></li><!--correct-->
+                <li><p><m>\sqrt{58}\approx 7.62</m>.</p></li><!--correct-->
                 <li><p><m>\sqrt{67}\approx 8.19</m>.</p></li>
                 <li><p><m>\sqrt{100}=10</m>.</p></li>
             </ol>
@@ -111,8 +111,10 @@ This formula will need to be modified to measure a curved path between two point
         <statement>
             <p>
 By approximating the curve by several (say <m>N</m>) segements connecting
-points along the curve, we obtain a better approximation than a single line segment,
-as shown in <xref ref="CO3-parametric-subdivide"/>.
+points along the curve, we obtain a better approximation than a single line segment.
+For example, the illustration shown in <xref ref="CO3-parametric-subdivide"/> gives
+three segments whose distances sum to about <m>7.6315</m>, while the actual length of the curve turns
+out to be about <m>7.6337</m>.
             </p>
             <figure xml:id="CO3-parametric-subdivide">
                 <caption>Subdividing a parametric curve where <m>N=3</m></caption>
@@ -176,7 +178,6 @@ What can we conclude when that happens?
             <ol marker="A." cols="2">
                 <li><p>Each segment is infintely small.</p></li>
                 <li><p><m>\Delta x_i\to 0</m></p></li>
-                <li><p><m>\Delta t_i\to 0</m></p></li>
                 <li><p><m>\frac{\Delta x_i}{\Delta t_i}\to\frac{dx}{dt}</m></p></li>
                 <li><p>All of the above.</p></li>
             </ol>
@@ -188,7 +189,7 @@ What can we conclude when that happens?
             <p>
 Put together, and limiting the subdivisions of the curve <m>N\to \infty</m>, we obtain
 the Riemann sum 
-<me>\sum_{i=1}^\infty \sqrt{\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2}\Delta t_i</me>.
+<me>\lim_{N\to\infty}\sum_{i=1}^N \sqrt{\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2}\Delta t_i</me>.
             </p>
             <p>
 Thus arclength<idx>arclength formula</idx> along a parametric curve from <m>a\leq t\leq b</m> may be calculated by using the corresponding
