@@ -490,11 +490,12 @@ we let <m>\displaystyle \int_c^b f(x) dx</m> denote <me>\int_c^b f(x) dx=\lim_{a
         
         <fact xml:id="fact-TI8Comparison">
             <p>
-                Let <m>f(x), g(x), h(x)</m> be functions such that over a region <m>I</m>, <m>g(x) &lt; f(x) &lt; h(x)</m>.  Then for the integrals <m>\displaystyle \int_I f(x) dx, \int_I g(x) dx, \int_I h(x) dx</m>:
+                Let <m>f(x), g(x)</m> be functions such that for <m>a&lt;x&lt;b</m>, <m>0\leq f(x) \leq g(x)</m>.
+                Then <me>\displaystyle 0\leq \int_a^b f(x) dx\leq \int_a^b g(x) dx</me>. In particular:
                 
                 <ul>
-                    <li>If <m>f(x)</m> converges, so does <m>g(x)</m>.  We need more information to conclude anything about <m>h(x)</m>.</li>
-                    <li>If <m>f(x)</m> diverges, so does <m>h(x)</m>.  We need more information to conclude anything about <m>g(x)</m>.</li>
+                    <li><p>If <m>\int_a^b g(x)dx</m> converges, so does the smaller <m>\int_a^b f(x)dx</m>.</p></li>
+                    <li><p>If <m>\int_a^b f(x)dx</m> diverges, so does the bigger <m>\int_a^b g(x)dx</m>.</p></li>
                 </ul>
             </p>
         
