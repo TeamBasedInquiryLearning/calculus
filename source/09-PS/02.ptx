@@ -9,7 +9,45 @@
             </li>
         </ul>
     </objectives>
-    
+        <activity xml:id="activity-PS2introexp">
+        <introduction>
+            <p>
+                Consider the series <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m> where <m>x</m> is a real number.
+            </p>
+        </introduction>
+        <task>
+            <p>
+                If <m>x=2</m>, then <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{2^n}{n!}</m>.  What can be said about this series?
+                <ol marker="A.">
+                    <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{2^n}{n!}</m> converges.</li>
+                    <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{2^n}{n!}</m> diverges.</li>
+                    <li>None of the  techniques we have learned so far allow us to conclude whether <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{2^n}{n!}</m> converges or diverges.</li>
+                </ol>
+            </p>
+        </task>
+        <task>
+            <p>
+                If <m>x=-100</m>, then <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{(-100)^n}{n!}</m>.  What can be said about this series?
+                <ol marker="A.">
+                    <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{(-100)^n}{n!}</m> converges.</li>
+                    <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{(-100)^n}{n!}</m> diverges.</li>
+                    <li>None of the  techniques we have learned so far allow us to conclude whether <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=\sum_{n=0}^\infty \frac{(-100)^n}{n!}</m> converges or diverges.</li>
+                </ol>
+            </p>
+        </task>
+        
+        <task>
+            <p>
+                Suppose that <m>x</m> were some arbitrary real number.  What can be said about this series?
+                <ol marker="A.">
+                    <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m> converges.</li>
+                    <li>The techniques we have learned so far allow us to conclude that <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m> diverges.</li>
+                    <li>None of the  techniques we have learned so far allow us to conclude whether <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m> converges or diverges.</li>
+                </ol>
+            </p>
+        </task>
+    </activity>
+        
     <remark>
         <statement>
         <p>Consider a power series <m>\displaystyle\sum c_n(x-a)^n</m>.  Recall from <xref ref="fact-SQ7ratioTest"/> that if 

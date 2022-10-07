@@ -10,8 +10,117 @@
         </ul>
     </objectives>
     
-    <statement>
-    </statement>
+     
+        <example xml:id="example-PS3diffpowerseries">
+            <statement>
+                <p>
+                    Consider the power series <m>\displaystyle \sum_{n=0}^\infty a_nx^n</m>.  We could compute <m>\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]</m> by:
+                    <md>
+                        <mrow>\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]&amp;=\displaystyle \sum_{n=0}^\infty a_nnx^{n-1}</mrow>
+                        <mrow>(\text{Then since when }n=0, a_0(0)x^{-1}=0)&amp;</mrow>
+                        <mrow>&amp;=\displaystyle \sum_{n=1}^\infty a_nnx^{n-1}</mrow>
+                        <mrow>(\text{Then let }m=n-1, n=m+1)&amp;</mrow>
+                        <mrow>&amp;=\displaystyle \sum_{m=0}^\infty a_{m+1}(m+1)x^{m}</mrow>
+                        <mrow>(\text{Then renaming indices}.)&amp;</mrow>
+                        <mrow>&amp;=\displaystyle \sum_{n=0}^\infty a_{n+1}(n+1)x^{n}</mrow>
+                    </md>
+                </p>
+                
+                <p>
+                    We could also compute <m>\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]</m> by:
+                    <md>
+                        <mrow>\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]&amp;=\frac{d}{dx}\left[a_0+a_1x+a_2x^2+\cdots a_nx^n+\cdots\right]</mrow>
+                        <mrow>&amp;=a_1+a_22x+a_33x^2+\cdots a_nnx^{n-1}+a_{n+1}(n+1)x^n+\cdots</mrow>
+                        <mrow>&amp;=\displaystyle \sum_{n=0}^\infty a_{n+1}(n+1)x^{n}</mrow>
+                    </md>
+                </p>
+            </statement>
+        </example>
+        
+        
+        <activity xml:id="activity-PS3diffexp">
+            <task>
+                <p>
+                    Given <m>f(x)=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m>, which of the following best represents <m>f'(x)=\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n\right]</m>?
+                
+                
+                
+                
+                <ol marker="A." cols="2">
+                    <li><m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m>.</li>
+                    <li><m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^{n-1}</m>.</li>
+                    <li><m>\displaystyle n\sum_{n=0}^\infty \frac{1}{n!}x^{n-1}</m>.</li>
+                    <li><m>\displaystyle n\sum_{n=0}^\infty \frac{1}{(n-1)!}x^{n-1}</m>.</li>
+                    <li><m>\displaystyle n\sum_{n=1}^\infty \frac{1}{(n-1)!}x^{n-1}</m>.</li>
+                </ol>
+                    </p>
+            </task>
+            
+            <task>
+                <p>
+                    For which of the following is <m>y=\frac{dy}{dx}</m>?
+                <ol marker="A." cols="2">
+                        <li><m>y=x^2</m>.</li>
+                        <li><m>y=\sqrt{x}</m>.</li>
+                        <li><m>y=e^x</m>.</li>
+                        <li><m>y=\ln(x)</m>.</li>
+                        <li><m>y=\sin(x)</m>.</li>
+                        <li><m>y=\cos(x)</m>.</li>
+                    </ol>
+                </p>
+                
+            </task>
+        
+        </activity>
+        
+        
+        <fact xml:id="fact-PS3exp">
+            <statement>
+                <p>
+                    We have that <me>f(x)=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=e^x.</me>  What we mean by equality is that for any real number <m>x</m>, the series <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m> will converge to <m>e^x</m>.
+                </p>
+                
+            </statement>
+        </fact>
+        
+        
+        <activity xml:id="activity-PS3expneg3">
+            <statement>
+                <p>
+                    Estimate <m>e^{-3}</m> using <m>e^x\approx f_6(x)=\displaystyle \sum_{n=0}^6 \frac{1}{n!}x^n=1+x+\frac{1}{2}x^2+\frac{1}{6}x^3+\frac{1}{24}x^4+\frac{1}{120}x^5+\frac{1}{720}x^6</m> by evaluating <m>f_6(-3)</m>.
+                </p>
+                
+            </statement>
+        </activity>
+        
+        
+        <example xml:id="example-PS3intpowerseries">
+            <statement>
+                <p>
+                    Consider the power series <m>\displaystyle \sum_{n=0}^\infty a_nx^n</m>.  We could compute <m>\displaystyle\int \sum_{n=0}^\infty a_nx^ndx</m> by:
+                    <md>
+                        <mrow>\int\displaystyle \sum_{n=0}^\infty a_nx^ndx &amp;=C+\displaystyle \sum_{n=0}^\infty \frac{a_n}{n+1}x^{n+1}</mrow>
+                        <mrow>(\text{Letting }m=n+1, n=m-1)&amp;</mrow>
+                        <mrow>&amp;=C+\displaystyle \sum_{m=1}^\infty \frac{a_{m-1}}{m}x^{m}</mrow>
+                        <mrow>(\text{Then, renaming})&amp;</mrow>
+                        <mrow>&amp;=C+\displaystyle \sum_{n=1}^\infty \frac{a_{n-1}}{n}x^{n}</mrow>
+                    </md>
+                </p>
+                
+                <p>
+                    We could also compute <m>\displaystyle\int \sum_{n=0}^\infty a_nx^ndx</m> by:
+                    <md>
+                        <mrow>\int\displaystyle \sum_{n=0}^\infty a_nx^ndx &amp;=\int(a_0+a_1x+a_2x^2+\cdots a_nx^n+\cdots)dx</mrow>
+                        <mrow>&amp;=C+a_0x+\frac{a_1}{2}x^2+\frac{a_2}{3}x^3+\cdots+\frac{a_{n-1}}{n}x^n +\frac{a_n}{n+1}x^{n+1}+\cdots</mrow>
+                        <mrow>&amp;=C+\displaystyle \sum_{n=1}^\infty \frac{a_{n-1}}{n}x^{n}</mrow>
+                    </md>
+                </p>
+                
+                
+            </statement>
+        </example>
+        
+        
     
     <activity xml:id="activity-PS3seriesexp2x">
         <introduction>

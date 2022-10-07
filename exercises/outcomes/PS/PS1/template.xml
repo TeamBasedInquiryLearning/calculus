@@ -10,11 +10,11 @@
         <outtro><p> <m> p_{ {{k}} }(x)={{pk}}</m>.</p></outtro>
     </knowl>
     <knowl>
-        <content><p>Use <m>p_{ {{k}} }(x)</m> to estimate <m>p({{c}})</m> by computing <m>p_{ {{k}} }({{c}})</m>.</p></content>
+        <content><p>Use <m>p_{ {{k}} }(x)</m> to estimate <m>p({{c}})</m>.</p></content>
         <outtro><p><m>p_{ {{k}} }({{c}}) = {{pkc}}</m>.</p></outtro>
     </knowl>
-    <knowl>
+    <!-- <knowl>
         <content><p>Use <m>p_{ {{k}} }(x)</m> to estimate <m>\displaystyle \int_{ {{a}} }^{ {{b}} }p(x)dx</m> by computing <m>\displaystyle \int_{ {{a}} }^{ {{b}} }p_{ {{k}} }(x)dx</m>.</p></content>
         <outtro><p><m> \displaystyle \int_{ {{a}} }^{ {{b}} }p_{ {{k}} }(x)dx = {{pint}}</m>.</p></outtro>
-    </knowl>
+    </knowl> -->
 </knowl>
