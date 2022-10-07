@@ -515,6 +515,20 @@ we let <m>\displaystyle \int_c^b f(x) dx</m> denote <me>\int_c^b f(x) dx=\lim_{a
             </p>
             </introduction>    
         </activity>
+        
+        <activity xml:id="activity-TI8comparison2">
+            <introduction>
+            <p>
+                Comparing <m>\frac{1}{x^3-4}</m> to which of the following functions where <m>x>3</m> allows you to determine that <m>\displaystyle\int_3^{\infty} \dfrac{1}{x^3-4}\ dx</m> converges?
+                <ol marker="A." cols="2">
+                    <li><m>\displaystyle\frac{1}{x^3+x}</m></li>
+                    <li><m>\displaystyle\frac{1}{4x^3}</m></li>
+                    <li><m>\displaystyle\frac{1}{x^3}</m></li>
+                    <li><m>\displaystyle\frac{1}{x^3-x^3/2}</m></li>
+                </ol>
+            </p>
+            </introduction>    
+        </activity>
     <activity xml:id="activity-T8Fcos">
         <task>
             <p>Find <m>\displaystyle \int_{\pi/2}^a \cos(x)dx</m>.</p>
