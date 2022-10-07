@@ -2,7 +2,7 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
         <p>
-            Consider a function <m>p(x)</m> defined by <me>p(x):=\sum_{n=0}^\infty {{sn}}x^n.</me>
+            Consider a function <m>p(x)</m> defined by <me>p(x)=\sum_{n=0}^\infty {{sn}}x^n.</me>
         </p>
     </intro>
     <knowl>
