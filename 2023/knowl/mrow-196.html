@@ -13,12 +13,13 @@
 <body class="ignore-math">
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{align*}
-e^{i\theta}  &amp; =  1+\displaystyle\frac{i\theta}{1!}+\displaystyle\frac{(i\theta)^2}{2!}+\displaystyle\frac{(i\theta)^3}{3!}+\displaystyle\frac{(i\theta)^4}{4!}+\displaystyle\frac{(i\theta)^5}{5!}+\displaystyle\frac{(i\theta)^6}{6!}+\displaystyle\frac{(i\theta)^7}{7!}+\displaystyle\frac{(i\theta)^8}{8!}+\ldots\\
-&amp; =  1+i\theta-\displaystyle\frac{\theta^2}{2!}-\displaystyle\frac{i\theta^3}{3!}+\displaystyle\frac{\theta^4}{4!}+\displaystyle\frac{i\theta^5}{5!}-\displaystyle\frac{\theta^6}{6!}-\displaystyle\frac{i\theta^7}{7!}+\displaystyle\frac{\theta^8}{8!}+\ldots\\
-&amp; =  \left(1-\displaystyle\frac{\theta^2}{2!}+\displaystyle\frac{\theta^4}{4!}-\displaystyle\frac{\theta^6}{6!}+\ldots\right)+i\left(\theta-\displaystyle\frac{\theta^3}{3!}+\displaystyle\frac{\theta^5}{5!}-\displaystyle\frac{\theta^7}{7!}+\ldots\right)\\
-&amp; =  \cos(\theta)+i\sin(\theta).
+\int\displaystyle \sum_{n=0}^\infty a_nx^ndx &amp;=C+\displaystyle \sum_{n=0}^\infty \frac{a_n}{n+1}x^{n+1}\\
+(\text{Letting }m=n+1, n=m-1)&amp;\\
+&amp;=C+\displaystyle \sum_{m=1}^\infty \frac{a_{m-1}}{m}x^{m}\\
+(\text{Then, renaming})&amp;\\
+&amp;=C+\displaystyle \sum_{n=1}^\infty \frac{a_{n-1}}{n}x^{n}
 \end{align*}
 </div>
-<span class="incontext"><a href="PS4.html#md-44" class="internal">in-context</a></span>
+<span class="incontext"><a href="PS3.html#md-45" class="internal">in-context</a></span>
 </body>
 </html>

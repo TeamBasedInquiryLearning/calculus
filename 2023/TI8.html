@@ -476,31 +476,48 @@ window.MathJax = {
 </ol></article><article class="fact theorem-like" id="fact-TI8Comparison"><h3 class="heading">
 <span class="type">Fact</span><span class="space"> </span><span class="codenumber">5.8.27</span><span class="period">.</span>
 </h3>
-<p id="p-2065">Let <span class="process-math">\(f(x), g(x), h(x)\)</span> be functions such that over a region <span class="process-math">\(I\text{,}\)</span> <span class="process-math">\(g(x) &lt; f(x) &lt; h(x)\text{.}\)</span>  Then for the integrals <span class="process-math">\(\displaystyle \int_I f(x) dx, \int_I g(x) dx, \int_I h(x) dx\text{:}\)</span></p>
+<p id="p-2065">Let <span class="process-math">\(f(x), g(x)\)</span> be functions such that for <span class="process-math">\(a&lt;x&lt;b\text{,}\)</span> <span class="process-math">\(0\leq f(x) \leq g(x)\text{.}\)</span> Then</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\displaystyle 0\leq \int_a^b f(x) dx\leq \int_a^b g(x) dx\text{.}
+\end{equation*}
+</div>
+<p class="continuation">In particular:</p>
 <ul class="disc">
-<li id="li-1302"><p id="p-derived-li-1302">If <span class="process-math">\(f(x)\)</span> converges, so does <span class="process-math">\(g(x)\text{.}\)</span>  We need more information to conclude anything about <span class="process-math">\(h(x)\text{.}\)</span></p></li>
-<li id="li-1303"><p id="p-derived-li-1303">If <span class="process-math">\(f(x)\)</span> diverges, so does <span class="process-math">\(h(x)\text{.}\)</span>  We need more information to conclude anything about <span class="process-math">\(g(x)\text{.}\)</span></p></li>
+<li id="li-1302"><p id="p-2066">If <span class="process-math">\(\int_a^b g(x)dx\)</span> converges, so does the smaller <span class="process-math">\(\int_a^b f(x)dx\text{.}\)</span></p></li>
+<li id="li-1303"><p id="p-2067">If <span class="process-math">\(\int_a^b f(x)dx\)</span> diverges, so does the bigger <span class="process-math">\(\int_a^b g(x)dx\text{.}\)</span></p></li>
 </ul></article><article class="activity project-like" id="activity-TI8comparison"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.28</span><span class="period">.</span>
 </h3>
 <div class="introduction" id="introduction-202">
-<p id="p-2066">Compare <span class="process-math">\(\frac{1}{x^3+1}\)</span> to one of the following functions where <span class="process-math">\(x&gt;2\)</span> and use this to determine if <span class="process-math">\(\displaystyle \int_2^\infty \frac{1}{x^3+1}dx\)</span> is convergent or divergent.</p>
+<p id="p-2068">Compare <span class="process-math">\(\frac{1}{x^3+1}\)</span> to one of the following functions where <span class="process-math">\(x&gt;2\)</span> and use this to determine if <span class="process-math">\(\displaystyle \int_2^\infty \frac{1}{x^3+1}dx\)</span> is convergent or divergent.</p>
 <ol class="upper-alpha cols2">
 <li id="li-1304"><p id="p-derived-li-1304"><span class="process-math">\(\displaystyle \displaystyle\frac{1}{x}\)</span></p></li>
 <li id="li-1305"><p id="p-derived-li-1305"><span class="process-math">\(\displaystyle \displaystyle\frac{1}{\sqrt{x}}\)</span></p></li>
 <li id="li-1306"><p id="p-derived-li-1306"><span class="process-math">\(\displaystyle \displaystyle\frac{1}{x^2}\)</span></p></li>
 <li id="li-1307"><p id="p-derived-li-1307"><span class="process-math">\(\displaystyle \displaystyle\frac{1}{x^3}\)</span></p></li>
 </ol>
-</div></article><article class="activity project-like" id="activity-T8Fcos"><h3 class="heading">
+</div></article><article class="activity project-like" id="activity-TI8comparison2"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.29</span><span class="period">.</span>
 </h3>
-<article class="task exercise-like" id="task-598"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p id="p-2067">Find <span class="process-math">\(\displaystyle \int_{\pi/2}^a \cos(x)dx\text{.}\)</span></p></article><article class="task exercise-like" id="task-599"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p id="p-2068">Which of the following is true about <span class="process-math">\(\int_{\pi/2}^\infty \cos(x)dx\text{?}\)</span></p>
+<div class="introduction" id="introduction-203">
+<p id="p-2069">Comparing <span class="process-math">\(\frac{1}{x^3-4}\)</span> to which of the following functions where <span class="process-math">\(x&gt;3\)</span> allows you to determine that <span class="process-math">\(\displaystyle\int_3^{\infty} \dfrac{1}{x^3-4}\ dx\)</span> converges?</p>
 <ol class="upper-alpha cols2">
-<li id="li-1308"><p id="p-2069"><span class="process-math">\(\displaystyle \int_{\pi/2}^\infty \cos(x)dx\)</span> is convergent.</p></li>
-<li id="li-1309"><p id="p-2070"><span class="process-math">\(\displaystyle \int_{\pi/2}^\infty \cos(x)dx\)</span> is divergent.</p></li>
-<li id="li-1310"><p id="p-2071">More information is needed.</p></li>
+<li id="li-1308"><p id="p-derived-li-1308"><span class="process-math">\(\displaystyle \displaystyle\frac{1}{x^3+x}\)</span></p></li>
+<li id="li-1309"><p id="p-derived-li-1309"><span class="process-math">\(\displaystyle \displaystyle\frac{1}{4x^3}\)</span></p></li>
+<li id="li-1310"><p id="p-derived-li-1310"><span class="process-math">\(\displaystyle \displaystyle\frac{1}{x^3}\)</span></p></li>
+<li id="li-1311"><p id="p-derived-li-1311"><span class="process-math">\(\displaystyle \displaystyle\frac{1}{x^3-x^3/2}\)</span></p></li>
+</ol>
+</div></article><article class="activity project-like" id="activity-T8Fcos"><h3 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.30</span><span class="period">.</span>
+</h3>
+<article class="task exercise-like" id="task-598"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<p id="p-2070">Find <span class="process-math">\(\displaystyle \int_{\pi/2}^a \cos(x)dx\text{.}\)</span></p></article><article class="task exercise-like" id="task-599"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p id="p-2071">Which of the following is true about <span class="process-math">\(\int_{\pi/2}^\infty \cos(x)dx\text{?}\)</span></p>
+<ol class="upper-alpha cols2">
+<li id="li-1312"><p id="p-2072"><span class="process-math">\(\displaystyle \int_{\pi/2}^\infty \cos(x)dx\)</span> is convergent.</p></li>
+<li id="li-1313"><p id="p-2073"><span class="process-math">\(\displaystyle \int_{\pi/2}^\infty \cos(x)dx\)</span> is divergent.</p></li>
+<li id="li-1314"><p id="p-2074">More information is needed.</p></li>
 </ol></article></article><section class="subsection" id="subsection-8"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.8.1</span> <span class="title">Videos</span>
 </h3>

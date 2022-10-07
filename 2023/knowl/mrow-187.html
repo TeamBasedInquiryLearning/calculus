@@ -13,13 +13,15 @@
 <body class="ignore-math">
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{align*}
-\int\displaystyle \sum_{n=0}^\infty a_nx^ndx &amp;=C+\displaystyle \sum_{n=0}^\infty \frac{a_n}{n+1}x^{n+1}\\
-(\text{Letting }m=n+1, n=m-1)&amp;\\
-&amp;=C+\displaystyle \sum_{m=1}^\infty \frac{a_{m-1}}{m}x^{m}\\
-(\text{Then, renaming})&amp;\\
-&amp;=C+\displaystyle \sum_{n=1}^\infty \frac{a_{n-1}}{n}x^{n}
+\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]&amp;=\displaystyle \sum_{n=0}^\infty a_nnx^{n-1}\\
+(\text{Then since when }n=0, a_0(0)x^{-1}=0)&amp;\\
+&amp;=\displaystyle \sum_{n=1}^\infty a_nnx^{n-1}\\
+(\text{Then let }m=n-1, n=m+1)&amp;\\
+&amp;=\displaystyle \sum_{m=0}^\infty a_{m+1}(m+1)x^{m}\\
+(\text{Then renaming indices}.)&amp;\\
+&amp;=\displaystyle \sum_{n=0}^\infty a_{n+1}(n+1)x^{n}
 \end{align*}
 </div>
-<span class="incontext"><a href="PS1.html#md-40" class="internal">in-context</a></span>
+<span class="incontext"><a href="PS3.html#md-43" class="internal">in-context</a></span>
 </body>
 </html>

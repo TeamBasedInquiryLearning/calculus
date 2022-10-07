@@ -9,35 +9,34 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
+<script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
+                       linked: true,
+                       languages: ['sage'],
+                       evalButtonText: 'Evaluate (Sage)'});
+</script>
 </head>
 <body class="ignore-math">
 <article class="activity project-like"><h2 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">C.0.5</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">C.0.1</span><span class="period">.</span>
 </h2>
-<div class="introduction"><p>Let's now consider the region bounded by the curves <span class="process-math">\(x=0,x=1,y=0,y=5e^x\text{,}\)</span> rotated about the <span class="process-math">\(x\)</span>-axis.</p></div>
-<article class="task exercise-like"><h3 class="heading"><span class="codenumber">(a)</span></h3>
-<p>Sketch two copies of this region in the <span class="process-math">\(xy\)</span> plane.</p></article><article class="task exercise-like"><h3 class="heading"><span class="codenumber">(b)</span></h3>
-<p>Draw a vertical line segment in one region and its rotation around the <span class="process-math">\(x\)</span>-axis. Draw a horizontal line segment in the other region and its rotation around the <span class="process-math">\(x\)</span>-axis.</p></article><article class="task exercise-like"><h3 class="heading"><span class="codenumber">(c)</span></h3>
-<p>Consider the method required for each cross-section drawn. Which would be the <em class="emphasis">easiest</em> strategy to proceed with?</p>
+<p>Consider the following visualization to decide which of these statements is most appropriate for describing the relationship of lengths and areas.</p>
+<pre class="ptx-sagecell sagecell-sage" id="sage-1"><script type="text/x-sage">f(x) = (x-3)*(x-5)*(x-7)+40
+p = line([(2,0),(2,f(2))], color='black')
+p += line([(8,0),(8,f(8))], color='black')
+p += polygon([(2,0),(2,f(2))] + [(x, f(x)) for x in [2,2.1,..,8]] + [(8,0),(2,0)],  rgbcolor=(0.8,0.8,0.8),aspect_ratio='automatic')
+p += text("$\\mathrm{Area}=\\int_{a}^b f(x) dx$", (4, 55), fontsize=16, color='black')
+p += plot(f, (1, 8.5), thickness=3)
+p += line([(6,0),(6,f(6))], color="#8888ff")
+p += text("$\\mathrm{Length}=f(x)$", (5.9, 20), fontsize=16, color='black', horizontal_alignment='right')
+p
+</script></pre>
 <ol class="upper-alpha">
-<li><p>The horizontal line segment, using the disk/washer method.</p></li>
-<li><p>The horizontal line segment, using the shell method.</p></li>
-<li><p>The vertical line segment, using the disk/washer method.</p></li>
-<li><p>The vertical line segment, using the shell method.</p></li>
-</ol></article><article class="task exercise-like"><h3 class="heading"><span class="codenumber">(d)</span></h3>
-<p>Let's proceed with the vertical segment. Which formula is most appropriate for the radius?</p>
-<ol class="upper-alpha">
-<li><p><span class="process-math">\(\displaystyle r(x)=x\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle r(x)=5e^x\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle r(x)=5\ln(x)\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle r(x)=\frac{1}{5}\ln(x)\)</span></p></li>
-</ol></article><article class="task exercise-like"><h3 class="heading"><span class="codenumber">(e)</span></h3>
-<p>Which of these integrals is equal to the volume of the solid of revolution?</p>
-<ol class="upper-alpha">
-<li><p><span class="process-math">\(\displaystyle \int_0^1 25\pi e^{2x}\,dx\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle \int_0^1 5\pi^2 e^{x}\,dx\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle \int_0^2 25\pi e^{x}\,dx\)</span></p></li>
-<li><p><span class="process-math">\(\displaystyle \int_0^2 5\pi^2 e^{2x}\,dx\)</span></p></li>
-</ol></article></article><span class="incontext"><a href="alt-AI3.html#activity-587" class="internal">in-context</a></span>
+<li><p>Length is the integral of areas.</p></li>
+<li><p>Area is the integral of lengths.</p></li>
+<li><p>Length is the derivative of areas.</p></li>
+<li><p>None of these.</p></li>
+</ol></article><span class="incontext"><a href="alt-AI3.html#activity-587" class="internal">in-context</a></span>
 </body>
 </html>
