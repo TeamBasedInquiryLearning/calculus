@@ -24,13 +24,12 @@
             </introduction>
             <task>
                 <p>
-                    Using <xref ref="definition-SQ3serieslimit"/>, given each restriction on <m>r</m>, determine if <m>\displaystyle \sum_{n=0}^\infty ar^n</m> converges.
+                    Using <xref ref="definition-SQ3serieslimit"/>, for which values of <m>r</m> does <m>\displaystyle \sum_{n=0}^\infty ar^n</m> converges?
                     <ol marker="A." cols="2">
-                        <li><m>r>1</m>.</li>
-                        <li><m>r=1</m>.</li>
-                        <li><m>-1&lt;r&lt;1</m>.</li>
-                        <li><m>r=-1</m>.</li>
-                        <li><m>r&lt;-1</m>.</li>
+                        <li><m>|r|&gt;1</m>.</li>
+                        <li><m>|r|=1</m>.</li>
+                        <li><m>|r|&lt;1</m>.</li>
+                        <li>The series converges for every value of <m>r</m>.</li>
                     </ol>
                 </p>
             </task>
@@ -43,122 +42,121 @@
             
         </activity>
     
-    <fact xml:id="geometricseriesconverge"> <p><em>Geometric series</em> are of the form <m>\displaystyle \sum_{n=0}^\infty ar^n</m>, where <m>a</m> and <m>r</m> are real numbers. A geometric series converges only when <m>|r|&lt;1</m>. In this case, <m>\displaystyle \sum_{n=0}^\infty ar^n=\frac{a}{1-r}</m>. Otherwise, the geometric series diverges.</p>
+    <fact xml:id="geometricseriesconverge"> 
+        <p>
+<term>Geometric series</term> are sums of the form <me>\sum_{n=0}^\infty ar^n=a+ar+ar^2+ar^3+\dots</me>, 
+where <m>a</m> and <m>r</m> are real numbers. When <m>|r|&lt;1</m> this series converges to the value
+<m>\displaystyle\frac{a}{1-r}</m>. Otherwise, the geometric series diverges.
+    </p>
     </fact>
         
         <activity xml:id="activity-SQ4modifiedgeom">
             <introduction>
                 <p>
-                    Consider the infinite series <me>5+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots.</me>
+                    Consider the infinite series <me>5+\frac{3}{2}+\frac{3}{4}+\frac{3}{8}+\cdots.</me>
 
                 </p>
             </introduction>
             <task>
                 <p>
-                    What of the following approaches will best help us determine the convergence of this series?
-                    <ol marker="A." cols="2">
-                        <li>This is a geometric series of the form <m>\displaystyle \sum_{n=0}^\infty 5\cdot \left(\frac{1}{2}\right)^n</m>.</li>
-                        <li>This is a geometric series of the form <m>\displaystyle \sum_{n=0}^\infty 1\cdot \left(\frac{1}{2}\right)^n</m>.</li>
-                        <li>We can rewrite <me>5+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots = 4+\left(1+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots \right).</me></li>
-                    </ol>
+                    Complete the following rearrangement of terms.
+                    <md>
+<mrow>5+\frac{3}{2}+\frac{3}{4}+\frac{3}{8}+\cdots &amp; = \unknown + \left(3+\frac{3}{2}+\frac{3}{4}+\frac{3}{8}+\cdots\right)</mrow>
+<mrow>&amp; = \unknown + \sum_{n=0}^\infty \unknown \cdot \left(\frac{1}{\unknown}\right)^n</mrow>
+                    </md>
                 </p>
             </task>
-            
             <task>
                 <p>
-                    Using your chosen approach, determine if <m>5+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\cdots</m> converges, and if so, to what it converges.
+Since <m>|\frac{1}{\unknown}|&lt;1</m>, this series converges. Use the formula <m>\sum_{n=0}^\infty ar^n=\frac{a}{1-r}</m>
+to find the value of this series.
                 </p>
+                    <ol marker="A." cols="2">
+                        <li><m>\frac{7}{2}</m></li>
+                        <li><m>\frac{13}{2}</m></li>
+                        <li><m>8</m></li>
+                        <li><m>10</m></li>
+                    </ol>
             </task>
             
         </activity>
         
         
         <activity xml:id="activity-SQ4truncatedgeom">
-            <introduction>
                 <p>
-                    Consider the infinite series <me>\displaystyle\sum_{n=3}^\infty 2(0.7)^n.</me>
-
+                    Complete the following calculation, noting <m>|0.6|&lt;1</m>:
+                    <md>
+<mrow>\sum_{n=2}^\infty 2(0.6)^n &amp;=\left(\sum_{n=0}^\infty 2(0.6)^n\right) - \unknown - \unknown </mrow>
+<mrow> &amp; = \left(\frac{\unknown}{1-\unknown}\right)- \unknown - \unknown </mrow>
+                    </md>
+                    What does this simplify to?
                 </p>
-            </introduction>
-            <task>
-                <p>
-                    What of the following approaches will best help us determine the convergence of this series?
                     <ol marker="A." cols="2">
-                        <li>Noticing that <m>\displaystyle 3\cdot\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n</m>.</li>
-                        <li>Noticing that <m>\displaystyle 2+\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n</m>.</li>
-                        <li>Noticing that <m>\displaystyle 2n+\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n</m>.</li>
-                        <li>Noticing that <m>\displaystyle 2(0.7)^0+2(0.7)^1+2(0.7)^2+\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n</m>.</li>
-                        <li>Noticing that <m>\displaystyle 0+1+2+\sum_{n=3}^\infty 2(0.7)^n=\sum_{n=0}^\infty 2(0.7)^n</m>.</li>
+                        <li><m>1.1</m></li>
+                        <li><m>1.4</m></li>
+                        <li><m>1.8</m></li>
+                        <li><m>2.1</m></li>
                     </ol>
-                </p>
-            </task>
-            
-            <task>
-                <p>
-                    Using your chosen approach, determine if <m>\displaystyle\sum_{n=3}^\infty 2(0.7)^n</m> converges, and if so, to what it converges.
-                </p>
-            </task>
-            
         </activity>
         
         
-        <example xml:id="example-SQ4modifiedgeometric">
+        <observation xml:id="observation-SQ4modifiedgeometric">
             <statement>
                 <p>
-                    Given a series that appears to be mostly geometric: <me>3+(1.1)^3+(1.1)^4+\cdots(1.1)^n+\cdots</me>  we can rewrite it as the sum of a standard geometric series with some modification: <m>\displaystyle ???+\sum_{n=0}^\infty a\cdot r^n</m>:
-                    <md>
-                        <mrow>&amp;3+(1.1)^3+(1.1)^4+\cdots(1.1)^n+\cdots </mrow>
-                        <mrow>&amp;=3-[(1.1)^0+(1.1)^1+(1.1)^2)]+[(1.1)^0+(1.1)^1+(1.1)^2]+(1.1)^3+\cdots</mrow>
-                        <mrow>&amp;=3-[(1.1)^0+(1.1)^1+(1.1)^2]+(1.1)^0+(1.1)^1+(1.1)^2+(1.1)^3+\cdots</mrow>
-                        <mrow>&amp;=3-((1.1)^0+(1.1)^1+(1.1)^2)+\sum_{n=0}^\infty (1.1)^n</mrow>
-                        <mrow>&amp;=-0.31+\sum_{n=0}^\infty (1.1)^n</mrow>
-                    </md>
-                    which converges if and only if <m>\displaystyle \sum_{n=0}^\infty (1.1)^n</m> converges.  In this case, it does not.
+                    Given a series that appears to be mostly geometric such as
+                    <me>3+(1.1)^3+(1.1)^4+\cdots(1.1)^n+\cdots</me>
+                    we can always rewrite it as the sum of a standard geometric series
+                    with some finite modification, in this case: 
+                    <me>-0.31 + \sum_{n=0}^\infty (1.1)^n</me>
+                </p>
+                <p>
+Thus the original series converges if and only if <m>\displaystyle \sum_{n=0}^\infty (1.1)^n</m> converges.
+                </p>   
+                <p>
+When the series diverges as in this example, then the reason why (<m>|1.1|\geq 1</m>) can be
+seen without any modification of the original series.
                 </p>
             </statement>
-        
-        </example>
+        </observation>
         
         
         <activity xml:id="activity-SQ4evaluatingmodifiedgeo">
+        <introduction>
                 <p>
-                    For each of the following modified geometric series, rewrite them in the form <m>???+\displaystyle\sum_{n=0}^\infty a\cdot r^n</m>.
-                    <ol>
-                        <li><m>\displaystyle -7+\left( -\frac{3}{7}\right)^2+\left( -\frac{3}{7}\right)^3+\cdots</m>.</li>
-                        <li><m>-6+\left(\frac{5}{4}\right)^3+\left(\frac{5}{4}\right)^4+\cdots</m>.</li>
-                        <li><m>\displaystyle 4+\sum_{n=4}^\infty \left(\frac{2}{3}\right)^n</m>.</li>
-                        <li><m>8-1+1-1+1-1+\cdots</m>.</li>
-                    </ol>
+                    For each of the following modified geometric series, determine without rewriting if they converge or diverge.
                 </p>
+        </introduction>
+                    <task>
+                        <p><m>\displaystyle -7+\left( -\frac{3}{7}\right)^2+\left( -\frac{3}{7}\right)^3+\cdots</m>.</p>
+                    </task>
+                    <task>
+                        <p><m>-6+\left(\frac{5}{4}\right)^3+\left(\frac{5}{4}\right)^4+\cdots</m>.</p>
+                    </task>
+                    <task>
+                        <p><m>\displaystyle 4+\sum_{n=4}^\infty \left(\frac{2}{3}\right)^n</m>.</p>
+                    </task>
+                    <task>
+                        <p><m>8-1+1-1+1-1+\cdots</m>.</p>
+                    </task>
         </activity>
             
         <activity>
+        <introduction>
                 <p>
-                    Use your rewritten forms from <xref ref="activity-SQ4evaluatingmodifiedgeo"/> to determine which of the modified geometric series converge. If the series converges, find to what value it converges.
-                    <ol marker="A." cols="2">
-                        <li><m>\displaystyle -7+\left( -\frac{3}{7}\right)^2+\left( -\frac{3}{7}\right)^3+\cdots</m>.</li>
-                        <li><m>-6+\left(\frac{5}{4}\right)^3+\left(\frac{5}{4}\right)^4+\cdots</m>.</li>
-                        <li><m>\displaystyle 4+\sum_{n=4}^\infty \left(\frac{2}{3}\right)^n</m>.</li>
-                        <li><m>8-1+1-1+1-1+\cdots</m>.</li>
-                    </ol>
-                </p>            
+                    Find the value of each of the following convergent series.
+                </p>
+        </introduction>
+                    <task>
+                        <p><m>-1 + \sum_{n = 1 }^\infty 2\cdot\left(\frac{1}{2}\right)^n</m>.</p>
+                    </task>
+                    <task>
+                        <p><m>\displaystyle -7+\left( -\frac{3}{7}\right)^2+\left( -\frac{3}{7}\right)^3+\cdots</m>.</p>
+                    </task>
+                    <task>
+                        <p><m>\displaystyle 4+\sum_{n=4}^\infty \left(\frac{2}{3}\right)^n</m>.</p>
+                    </task>
         </activity>
-                
-<activity checkit-seed="7450" checkit-slug="SQ4" checkit-title="Geometric summations">
-    <statement>
-        <p>
-            Find the limit of the following series.
-        </p>
-        <me>
-            -1 + \sum_{n = 1 }^\infty 2\cdot\left(\frac{1}{2}\right)^n.
-        </me>
-    </statement>
-  <!--  <answer>
-        <me>
-            -1 + \sum_{n = 1 }^\infty 2\cdot\left(\frac{1}{2}\right)^n=1.
-        </me>
-    </answer>-->
-</activity>
+            
     
     <!-- <subsection>
         <title>Slideshow</title>

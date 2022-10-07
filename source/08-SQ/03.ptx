@@ -376,16 +376,16 @@
        
         <p>Consider the partial sum sequence <m>\displaystyle A_n=\left(-2\right)+\left(\frac{2}{3}\right)+\left(-\frac{2}{9}\right)+\cdots+\left(-2\cdot \left( -\frac{1}{3}\right)^n \right).</m></p></introduction>
                     
-                        <task>Find a closed form for <m>A_n</m>.</task>
-                        <task>Does <m>\{A_n\}</m> converge?  If so, to what value?</task>
+                        <task><p>Find a closed form for <m>A_n</m>.</p></task>
+                        <task><p>Does <m>\{A_n\}</m> converge?  If so, to what value?</p></task>
     </activity>
     <activity>
  
          <introduction>
              <p>Consider the partial sum sequence <m>\displaystyle B_n=\sum_{i=1}^n \left( \frac{1}{5 \, i + 2}-\frac{1}{5 \, i + 7} \right).</m></p></introduction>
                     
-                        <task>Find a closed form for <m>B_n</m>.</task>
-                        <task>Does <m>\{B_n\}</m> converge?  If so, to what value?</task>
+                        <task><p>Find a closed form for <m>B_n</m>.</p></task>
+                        <task><p>Does <m>\{B_n\}</m> converge?  If so, to what value?</p></task>
                     
  <!--   <answer>
         <p>
