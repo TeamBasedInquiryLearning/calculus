@@ -2,18 +2,18 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <knowl>
         <content>
-            <p>Convert the following rectangular equation to a polar equation: <m>{{lhs1}}={{rhs1}}.</m></p>
+            <p>Convert the following rectangular equation to a polar equation: <m>{{rect_q}}</m>.</p>
         </content>
         <outtro>
-            <p><m>{{lhsa1}}={{rhsa1}}.</m></p>
+            <p><m>{{rect_a}}</m>.</p>
         </outtro>
     </knowl>
     <knowl>
         <content>
-            <p>Convert the following polar equation to a rectangular equation: <m>{{lhs2}}={{rhs2}}.</m></p>
+            <p>Convert the following polar equation to a rectangular equation: <m>{{polar_q}}</m>.</p>
         </content>
         <outtro>
-            <p><m>{{lhsa2}}={{rhsa2}}.</m></p>
+            <p><m>{{polar_a}}</m>.</p>
         </outtro>
     </knowl>
 </knowl>

@@ -1,101 +1,40 @@
 class Generator(BaseGenerator):
     def data(self):
-        from sage.symbolic.integration.integral import definite_integral
         
         theta = var('t', latex_name=r"\theta")
         r=var("r")
         x=var("x")
         y=var("y")
 
+        equations = []
+
+        # line parallel to axis
+        scale = randrange(2,7)*choice([-1,1])
+        if choice([True,False]):
+            #horizontal
+            equations.append({"polar":r==scale*sec(t),"rect":x==scale})
+        else:
+            #vertical
+            equations.append({"polar":r==scale*csc(t),"rect":y==scale})
         
-        #graphs=['through', 'horizontal']
-        graphs=['through', 'horizontal', 'vertical', 'tanx', 'tany']
-        
-        
-        shuffle(graphs)
-        
-        graph1=graphs[0]
-        graph2=graphs[1]
-        
-        if graph1=='through':
-            lhs1=y
-            m=randint(1,5)*choice([-1,1])
-            rhs1=m*x
-            lhsa1=theta
-            rhsa1=arctan(m)
-        
-        if graph1=='horizontal':
-            lhs1=y
-            a=randint(1,5)*choice([-1,1])
-            rhs1=a
-            lhsa1=r
-            rhsa1=a*csc(theta)
-        
-        if graph1=='vertical':
-            lhs1=x
-            a=randint(1,5)*choice([-1,1])
-            rhs1=a
-            lhsa1=r
-            rhsa1=a*sec(theta)
-        
-        if graph1=='tanx':
-            c=randint(1,5)*choice([-1,1])
-            lhs1=(x-c)^2+y^2
-            rhs1=c^2
-            lhsa1=r
-            rhsa1=c*cos(theta)
-            
-        if graph1=='tany':
-            c=randint(1,5)*choice([-1,1])
-            lhs1=(x)^2+(y-c)^2
-            rhs1=c^2
-            lhsa1=r
-            rhsa1=c*sin(theta)
-            
-        
-            
-        if graph2=='through':
-            lhs2=theta
-            th=choice([-1,1, -2, 2])*choice([pi/6, pi/4, pi/3])    
-            rhs2=th
-            lhsa2=y
-            rhsa2=tan(th)
-        
-        if graph2=='horizontal':
-            a=randint(1,5)*choice([-1,1])
-            lhs2=r
-            rhs2=a*csc(theta)
-            lhsa2=y
-            rhsa2=a
-        
-        if graph2=='vertical':
-            a=randint(1,5)*choice([-1,1])
-            lhsa2=x
-            rhsa2=a
-            lhs2=r
-            rhs2=a*sec(theta)
-        
-        if graph2=='tanx':
-            c=randint(1,5)*choice([-1,1])
-            lhsa2=(x-c)^2+y^2
-            rhsa2=c^2
-            lhs2=r
-            rhs2=c*cos(theta)
-            
-        if graph2=='tany':
-            c=randint(1,5)*choice([-1,1])
-            lhsa2=(x)^2+(y-c)^2
-            rhsa2=c^2
-            lhs2=r
-            rhs2=c*sin(theta)    
+        # line passing through origin
+        angle = choice([pi/6,pi/4,pi/3,2*pi/3,3*pi/4,5*pi/6])
+        equations.append({"polar":t==angle,"rect":y==tan(angle)*x})
+
+        # circle tangent to axis
+        scale = randrange(2,7)*choice([-1,1])
+        if choice([True,False]):
+            #horizontal
+            equations.append({"polar":r==2*scale*sin(t),"rect":x^2+(y-scale)^2==scale^2})
+        else:
+            #vertical
+            equations.append({"polar":r==2*scale*cos(t),"rect":(x-scale)^2+y^2==scale^2})
+
+        shuffle(equations)
 
         return {
-            "lhs1": lhs1,
-            "rhs1": rhs1, 
-            "lhsa1": lhsa1,
-            "rhsa1": rhsa1,
-            "lhs2": lhs2,
-            "rhs2": rhs2, 
-            "lhsa2": lhsa2,
-            "rhsa2": rhsa2,  
+            "rect_q": equations[0]["rect"],
+            "rect_a": equations[0]["polar"],
+            "polar_q": equations[1]["polar"],
+            "polar_a": equations[1]["rect"],
         }
