@@ -13,13 +13,11 @@
 <body class="ignore-math">
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{align*}
-\int\displaystyle \sum_{n=0}^\infty a_nx^ndx &amp;=C+\displaystyle \sum_{n=0}^\infty \frac{a_n}{n+1}x^{n+1}\\
-(\text{Letting }m=n+1, n=m-1)&amp;\\
-&amp;=C+\displaystyle \sum_{m=1}^\infty \frac{a_{m-1}}{m}x^{m}\\
-(\text{Then, renaming})&amp;\\
+\int\displaystyle \sum_{n=0}^\infty a_nx^ndx &amp;=\int(a_0+a_1x+a_2x^2+\cdots a_nx^n+\cdots)dx\\
+&amp;=C+a_0x+\frac{a_1}{2}x^2+\frac{a_2}{3}x^3+\cdots+\frac{a_{n-1}}{n}x^n +\frac{a_n}{n+1}x^{n+1}+\cdots\\
 &amp;=C+\displaystyle \sum_{n=1}^\infty \frac{a_{n-1}}{n}x^{n}
 \end{align*}
 </div>
-<span class="incontext"><a href="PS3.html#md-45" class="internal">in-context</a></span>
+<span class="incontext"><a href="PS3.html#md-46" class="internal">in-context</a></span>
 </body>
 </html>

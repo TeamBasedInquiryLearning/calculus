@@ -26,13 +26,14 @@ f(x)=\sum_{n=0}^\infty a_n(x-c)^n = a_0+a_1(x-c)+a_2(x-c)^2+a_3(x-c)^3+\cdots\te
 f_N(x)=\sum_{n=0}^N a_n(x-c)^n = a_0+a_1(x-c)+a_2(x-c)^2+\cdots+a_N(x-c)^N
 \end{equation*}
 </div>
-<p class="continuation">be its <dfn class="terminology">degree <span class="process-math">\(N\)</span> polynomial approximation</dfn>.</p>
+<p class="continuation">be its <dfn class="terminology">degree <span class="process-math">\(N\)</span> polynomial approximation</dfn> for <span class="process-math">\(x\)</span> nearby <span class="process-math">\(c\text{.}\)</span></p>
 <p>For example,</p>
 <div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-g_3(x)=\sum_{n=0}^3 n^2 x^n = 0+x+4x^2+9x^3
-\end{equation*}
+\begin{align*}
+g_3(x)=\sum_{n=0}^3 n^2 (x-1)^n &amp;= 0+(x-1)+4(x-1)^2+9(x-1)^3\\
+&amp;= -6+20x-23x^3+9x^3
+\end{align*}
 </div>
-<p class="continuation">is a degree <span class="process-math">\(3\)</span> approximation of <span class="process-math">\(g(x)=\sum_{n=0}^\infty n^2 x^n\text{.}\)</span></p></article><span class="incontext"><a href="PS1.html#definition-44" class="internal">in-context</a></span>
+<p class="continuation">is a degree <span class="process-math">\(3\)</span> approximation of <span class="process-math">\(g(x)=\sum_{n=0}^\infty n^2 (x-1)^n\)</span> valid for <span class="process-math">\(x\)</span> values nearby <span class="process-math">\(1\text{.}\)</span></p></article><span class="incontext"><a href="PS1.html#definition-44" class="internal">in-context</a></span>
 </body>
 </html>

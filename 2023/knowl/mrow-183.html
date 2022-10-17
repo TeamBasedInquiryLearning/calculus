@@ -13,15 +13,11 @@
 <body class="ignore-math">
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{align*}
-\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]&amp;=\displaystyle \sum_{n=0}^\infty a_nnx^{n-1}\\
-(\text{Then since when }n=0, a_0(0)x^{-1}=0)&amp;\\
-&amp;=\displaystyle \sum_{n=1}^\infty a_nnx^{n-1}\\
-(\text{Then let }m=n-1, n=m+1)&amp;\\
-&amp;=\displaystyle \sum_{m=0}^\infty a_{m+1}(m+1)x^{m}\\
-(\text{Then renaming indices}.)&amp;\\
-&amp;=\displaystyle \sum_{n=0}^\infty a_{n+1}(n+1)x^{n}
+\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)^{n+1}}{c_n(x-a)^n}\right| &amp; = \displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)}{c_n}\right|\\
+&amp;=\displaystyle \lim_{n\to \infty} |x-a|\left|\frac{c_{n+1}}{c_n}\right| \\
+&amp;=\displaystyle |x-a|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|. 
 \end{align*}
 </div>
-<span class="incontext"><a href="PS3.html#md-43" class="internal">in-context</a></span>
+<span class="incontext"><a href="PS2.html#md-43" class="internal">in-context</a></span>
 </body>
 </html>
