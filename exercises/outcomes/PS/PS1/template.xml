@@ -10,8 +10,8 @@
         <outtro><p> <m> p_{ {{k}} }(x)={{pk}}</m>.</p></outtro>
     </knowl>
     <knowl>
-        <content><p>Use <m>p_{ {{k}} }(x)</m> to estimate <m>p({{c}})</m>.</p></content>
-        <outtro><p><m>p_{ {{k}} }({{c}}) = {{pkc}}</m>.</p></outtro>
+        <content><p>Use this polynomial approximation to estimate <m>p({{c}})</m>.</p></content>
+        <outtro><p><m>p({{c}})\approx p_{ {{k}} }({{c}}) = {{pkc}}</m>.</p></outtro>
     </knowl>
     <!-- <knowl>
         <content><p>Use <m>p_{ {{k}} }(x)</m> to estimate <m>\displaystyle \int_{ {{a}} }^{ {{b}} }p(x)dx</m> by computing <m>\displaystyle \int_{ {{a}} }^{ {{b}} }p_{ {{k}} }(x)dx</m>.</p></content>
