@@ -22,12 +22,12 @@ to find the value of
             </introduction>
             <task>
                 <p>
-Which operation appears to connect these two series?
+Which operation describes the relationship between these two series?
                 </p>
                 <ol marker="A.">
+                    <li>Bifurcation</li>
                     <li>Composition</li>
                     <li>Differentiation</li>
-                    <li>Exponentiation</li>
                     <li>Multiplication</li>
                 </ol>
             </task>
@@ -63,35 +63,60 @@ found by differentiating or integrating term-by-term:
 </fact>
         
         <activity xml:id="activity-PS3diffexp">
+            <introduction>
+                <p>
+Let's investigate the power series
+<me><m>f(x)=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=1+x+\frac{x^2}{2}+\frac{x^3}{6}+\frac{x^4}{24}+\dots</m></me>.
+                </p>
+            </introduction>
             <task>
                 <p>
-                    Given <m>f(x)=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m>, which of the following best represents <m>f'(x)=\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n\right]</m>?
-                
-                
-                
-                
-                <ol marker="A." cols="2">
-                    <li><m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m>.</li>
-                    <li><m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^{n-1}</m>.</li>
-                    <li><m>\displaystyle n\sum_{n=0}^\infty \frac{1}{n!}x^{n-1}</m>.</li>
-                    <li><m>\displaystyle n\sum_{n=0}^\infty \frac{1}{(n-1)!}x^{n-1}</m>.</li>
-                    <li><m>\displaystyle n\sum_{n=1}^\infty \frac{1}{(n-1)!}x^{n-1}</m>.</li>
-                </ol>
+                    What is the value of <m>f(0)</m>?
                     </p>
+                <ol marker="A." cols="2">
+                    <li><m>0</m>.</li>
+                    <li><m>1</m>.</li>
+                    <li><m>2</m>.</li>
+                    <li><m>\infty</m>.</li>
+                </ol>
             </task>
+            <task>
+                <p>
+                    What is the value of <m>f'(x)</m>?
+                    </p>
+                <ol marker="A." cols="2">
+                    <li><m>0+1+x+\frac{x^2}{2}+\frac{x^3}{6}+\dots</m>.</li>
+                    <li><m>1+x+\frac{x^2}{6}+\frac{x^3}{24}+\frac{x^4}{120}+\dots</m>.</li>
+                    <li><m>0+1+x+\frac{x^2}{3}+\frac{x^3}{12}+\frac{x^4}{60}+\dots</m>.</li>
+                    <li><m>1+x+\frac{x^2}{3}+\frac{x^3}{12}+\frac{x^4}{60}+\dots</m>.</li>
+                </ol>
+            </task>
+            
             
             <task>
                 <p>
-                    For which of the following is <m>y=\frac{dy}{dx}</m>?
-                <ol marker="A." cols="2">
-                        <li><m>y=x^2</m>.</li>
-                        <li><m>y=\sqrt{x}</m>.</li>
-                        <li><m>y=e^x</m>.</li>
-                        <li><m>y=\ln(x)</m>.</li>
-                        <li><m>y=\sin(x)</m>.</li>
-                        <li><m>y=\cos(x)</m>.</li>
-                    </ol>
+                    What can we conclude from our calculation of <m>f'(x)</m>?
                 </p>
+                <ol marker="A." cols="2">
+                        <li><m>f'(x)=[f(x)]^2</m>.</li>
+                        <li><m>f'(x)=f(x^2)</m>.</li>
+                        <li><m>f'(x)=2f(x)</m>.</li>
+                        <li><m>f'(x)=f(x)</m>.</li>
+                    </ol>
+                
+            </task>
+            
+            
+            <task>
+                <p>
+                    What function do we know of that shares each of these properites?
+                </p>
+                <ol marker="A." cols="2">
+                        <li><m>f(x)=\frac{1}{x}</m></li>
+                        <li><m>f(x)=\sin(x)</m></li>
+                        <li><m>f(x)=e^x</m></li>
+                        <li><m>f(x)=0</m></li>
+                    </ol>
                 
             </task>
         
