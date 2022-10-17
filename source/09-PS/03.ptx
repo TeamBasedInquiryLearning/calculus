@@ -15,9 +15,9 @@
             <introduction>
                 <p>
 How might we use the known geometric power series
-<me>\frac{1}{1-x}=1+x+x^2+x^3+x^4+\dots</me>
+<me>\frac{1}{1-x}=\sum_{n=0}^\infty x^n=1+x+x^2+x^3+x^4+\dots</me>
 to find the value of
-<me>1+2x+3x^2+4x^3+\dots</me>?
+<me>\unknown =\sum_{n=0}^\infty nx^{n-1}=0+1+2x+3x^2+4x^3+\dots</me>?
                 </p>
             </introduction>
             <task>
@@ -66,12 +66,12 @@ found by differentiating or integrating term-by-term:
             <introduction>
                 <p>
 Let's investigate the power series
-<me><m>f(x)=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=1+x+\frac{x^2}{2}+\frac{x^3}{6}+\frac{x^4}{24}+\dots</m></me>.
+<me>\exp(x)=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=1+x+\frac{x^2}{2}+\frac{x^3}{6}+\frac{x^4}{24}+\dots</me>.
                 </p>
             </introduction>
             <task>
                 <p>
-                    What is the value of <m>f(0)</m>?
+                    What is the value of <m>\exp(0)</m>?
                     </p>
                 <ol marker="A." cols="2">
                     <li><m>0</m>.</li>
@@ -82,7 +82,7 @@ Let's investigate the power series
             </task>
             <task>
                 <p>
-                    What is the value of <m>f'(x)</m>?
+                    What is the value of <m>\exp'(x)</m>?
                     </p>
                 <ol marker="A." cols="2">
                     <li><m>0+1+x+\frac{x^2}{2}+\frac{x^3}{6}+\dots</m>.</li>
@@ -98,10 +98,10 @@ Let's investigate the power series
                     What can we conclude from our calculation of <m>f'(x)</m>?
                 </p>
                 <ol marker="A." cols="2">
-                        <li><m>f'(x)=[f(x)]^2</m>.</li>
-                        <li><m>f'(x)=f(x^2)</m>.</li>
-                        <li><m>f'(x)=2f(x)</m>.</li>
-                        <li><m>f'(x)=f(x)</m>.</li>
+                        <li><m>\exp'(x)=[\exp(x)]^2</m>.</li>
+                        <li><m>\exp'(x)=\exp(x^2)</m>.</li>
+                        <li><m>\exp'(x)=2\exp(x)</m>.</li>
+                        <li><m>\exp'(x)=\exp(x)</m>.</li>
                     </ol>
                 
             </task>
@@ -112,10 +112,10 @@ Let's investigate the power series
                     What function do we know of that shares each of these properites?
                 </p>
                 <ol marker="A." cols="2">
-                        <li><m>f(x)=\frac{1}{x}</m></li>
-                        <li><m>f(x)=\sin(x)</m></li>
-                        <li><m>f(x)=e^x</m></li>
-                        <li><m>f(x)=0</m></li>
+                        <li><m>\exp(x)=\frac{1}{1+x}</m></li>
+                        <li><m>\exp(x)=\cos(x)</m></li>
+                        <li><m>\exp(x)=e^x</m></li>
+                        <li><m>\exp(x)=0</m></li>
                     </ol>
                 
             </task>
@@ -126,55 +126,21 @@ Let's investigate the power series
         <fact xml:id="fact-PS3exp">
             <statement>
                 <p>
-                    We have that <me>f(x)=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=e^x.</me>  What we mean by equality is that for any real number <m>x</m>, the series <m>\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m> will converge to <m>e^x</m>.
+                    We have that <me>\exp(x)=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n=e^x.</me>
+                    That is, for any real number <m>x</m>, the series <m>\exp(x)=\displaystyle \sum_{n=0}^\infty \frac{1}{n!}x^n</m> will converge to <m>e^x</m>.
                 </p>
                 
             </statement>
         </fact>
         
         
-        <activity xml:id="activity-PS3expneg3">
-            <statement>
-                <p>
-                    Estimate <m>e^{-3}</m> using <m>e^x\approx f_6(x)=\displaystyle \sum_{n=0}^6 \frac{1}{n!}x^n=1+x+\frac{1}{2}x^2+\frac{1}{6}x^3+\frac{1}{24}x^4+\frac{1}{120}x^5+\frac{1}{720}x^6</m> by evaluating <m>f_6(-3)</m>.
-                </p>
-                
-            </statement>
-        </activity>
-        
-        
-        <example xml:id="example-PS3intpowerseries">
-            <statement>
-                <p>
-                    Consider the power series <m>\displaystyle \sum_{n=0}^\infty a_nx^n</m>.  We could compute <m>\displaystyle\int \sum_{n=0}^\infty a_nx^ndx</m> by:
-                    <md>
-                        <mrow>\int\displaystyle \sum_{n=0}^\infty a_nx^ndx &amp;=C+\displaystyle \sum_{n=0}^\infty \frac{a_n}{n+1}x^{n+1}</mrow>
-                        <mrow>(\text{Letting }m=n+1, n=m-1)&amp;</mrow>
-                        <mrow>&amp;=C+\displaystyle \sum_{m=1}^\infty \frac{a_{m-1}}{m}x^{m}</mrow>
-                        <mrow>(\text{Then, renaming})&amp;</mrow>
-                        <mrow>&amp;=C+\displaystyle \sum_{n=1}^\infty \frac{a_{n-1}}{n}x^{n}</mrow>
-                    </md>
-                </p>
-                
-                <p>
-                    We could also compute <m>\displaystyle\int \sum_{n=0}^\infty a_nx^ndx</m> by:
-                    <md>
-                        <mrow>\int\displaystyle \sum_{n=0}^\infty a_nx^ndx &amp;=\int(a_0+a_1x+a_2x^2+\cdots a_nx^n+\cdots)dx</mrow>
-                        <mrow>&amp;=C+a_0x+\frac{a_1}{2}x^2+\frac{a_2}{3}x^3+\cdots+\frac{a_{n-1}}{n}x^n +\frac{a_n}{n+1}x^{n+1}+\cdots</mrow>
-                        <mrow>&amp;=C+\displaystyle \sum_{n=1}^\infty \frac{a_{n-1}}{n}x^{n}</mrow>
-                    </md>
-                </p>
-                
-                
-            </statement>
-        </example>
-        
         
     
     <activity xml:id="activity-PS3seriesexp2x">
         <introduction>
             <p>
-                Suppose we wish to find the power series for the function <m>f(x)=e^{2x}</m>.  Recall that <m>\exp(x)=e^x=\displaystyle\sum_{n=0}^\infty \frac{x^n}{n!}.</m>
+                Suppose we wish to find the power series for the function <m>f(x)=e^{2x}</m> by modifying
+                the power series <m>\exp(x)=e^x=\displaystyle\sum_{n=0}^\infty \frac{x^n}{n!}.</m>
             </p>
         </introduction>
         <task>
@@ -190,25 +156,11 @@ Let's investigate the power series
         </task>
         <task>
             <p>
-                What is the interval of convergence for <m>a</m> in the series you found in part (a)?
-            </p>
-            <ol marker="A." cols="2">
-                <li><m>\left(0,1\right)</m>.</li>
-                <li><m>\left(-1,1\right)</m>.</li>
-                <li><m>\left[-1,1\right]</m>.</li>
-                <li><m>\left[0,1\right]</m>.</li>
-                <li><m>\left(-\infty,\infty\right)</m>.</li>
-            </ol>            
-        </task>
-        <task>
-            <p>
                 Evaluating <m>a=2x</m>, what is the power series for <m>\exp(a)=\exp(2x)=f(x)</m>?
-                <ol marker="A." cols="2">
-                    <li><m>\exp(2x)=\displaystyle\sum_{n=0}^\infty \frac{2x^n}{n!}</m>.</li>
-                    <li><m>\exp(2x)=\displaystyle\sum_{2x=0}^\infty \frac{x^n}{n!}</m>.</li>                    
-                    <li><m>\exp(2x)=\displaystyle\sum_{n=0}^\infty 2x\frac{x^n}{n!}</m>.</li>
-                    <li><m>\exp(2x)=\displaystyle\sum_{n=0}^\infty \frac{(2x)^n}{n!}</m>.</li>
-                    <li><m>\exp(2x)=\displaystyle\sum_{n=0}^\infty \frac{x^n}{(2x)!}</m>.</li>
+                <ol marker="A.">
+                    <li><m>\exp(2x)=\displaystyle\sum_{n=0}^\infty \frac{2x^n}{n!}=2+2x+x^2+\frac{1}{3}x^3+\dots</m>.</li>             
+                    <li><m>\exp(2x)=\displaystyle\sum_{n=0}^\infty 2x\frac{x^n}{n!}=2x+2x^2+x^3+\frac{1}{3}x^4+\dots</m>.</li>
+                    <li><m>\exp(2x)=\displaystyle\sum_{n=0}^\infty \frac{(2x)^n}{n!}=1+2x+2x^2+\frac{4}{3}x^3+\dots</m>.</li>
                 </ol>
             </p>
             
@@ -221,59 +173,65 @@ Let's investigate the power series
                 <li><m>\left(-\infty,\infty\right)</m>.</li>
                 <li><m>\displaystyle \left(-\frac{1}{2},\frac{1}{2}\right)</m>.</li>
                 <li><m>\displaystyle \left(0,\frac{1}{2}\right)</m>.</li>
-                <li><m>\displaystyle \left[0,\frac{1}{2}\right]</m>.</li>
                 <li><m>\displaystyle \left(-\frac{1}{2},\frac{1}{2}\right]</m>.</li>
             </ol>             
         </task>
     </activity>
     
+    <fact>
+        <statement>
+            <p>
+                If a power series 
+                <me>f(x)=\sum_{n=0}^\infty a_n(x-c)^n</me>
+                is known, then for any polynomial <m>g(x)</m> the composition <m>f\circ g</m>
+                has a power series given by
+                <me>(f\circ g)(x)=f(g(x))=\sum_{n=0}^\infty a_n(g(x)-c)^n</me>
+                where the domain of convergence is transformed based upon the transformation
+                given by <m>g(x)</m>.
+            </p>
+            <p>
+                For example, if <m>f(x)</m> has the domain of convergence <m>-2\leq x &lt; 2</m>,
+                then <m>f(2x+4)</m> has the domain of convergence:
+                <me>-2\leq 2x+4 &lt; 2</me>
+                <me>-6\leq 2x &lt; -2</me>
+                <me>-3\leq x &lt; -1</me>
+            </p>
+        </statement>
+    </fact>
+    
     
     <activity xml:id="activity-PS3series1overx">
         <introduction>
             <p>
-                Suppose we wish to find the power series for the function <m>f(x)=\frac{1}{x}</m>.  Recall that <m>g(x)=\frac{1}{1-x}=\displaystyle\sum_{n=0}^\infty x^n.</m>
+                Suppose we wish to find the power series for the function <m>f(x)=\frac{1}{x}</m>.
             </p>
         </introduction>
         <task>
             <p>
-                Which of the following represents the power series for <m>\frac{1}{1-a}</m>?
+                Which of the following represents the power series for <m>g(r)=\frac{1}{1-r}</m>?
                 <ol marker="A." cols="2">
-                    <li><m>g(a)=\displaystyle\sum_{n=0}^\infty ax^n</m>.</li>
-                    <li><m>g(a)=\displaystyle\sum_{n=0}^\infty (ax)^n</m>.</li>
-                    <li><m>g(a)=\displaystyle\sum_{n=0}^\infty a^n</m>.</li>
-                    <li><m>g(a)=\displaystyle\sum_{a=0}^\infty x^a</m>.</li>
+                    <li><m>g(r)=\displaystyle\sum_{n=0}^\infty rx^n</m>.</li>
+                    <li><m>g(r)=\displaystyle\sum_{n=0}^\infty (rx)^n</m>.</li>
+                    <li><m>g(r)=\displaystyle\sum_{n=0}^\infty r^n</m>.</li>
+                    <li><m>g(r)=\displaystyle\sum_{r=0}^\infty x^r</m>.</li>
                 </ol>
             </p>
         </task>
         <task>
             <p>
-                What is the radius of convergence for <m>a</m> in the series you found in part (a)?
-            <ol marker="A." cols="2">
-                <li><m>\left(0,1\right)</m>.</li>
-                <li><m>\left(-1,1\right)</m>.</li>
-                <li><m>\left[-1,1\right]</m>.</li>
-                <li><m>\left[0,1\right]</m>.</li>
-                <li><m>\left(-\infty,\infty\right)</m>.</li>
-            </ol>                  
-            </p>
-        </task>
-        <task>
-            <p>
-                For what value of <m>a</m> is <m>\frac{1}{1-a}=\frac{1}{x}</m>?
+                For what value of <m>r</m> is <m>\frac{1}{1-r}=\frac{1}{x}</m>?
                 <ol marker="A." cols="2">
-                    <li><m>a=x-1</m>.</li>
-                    <li><m>a=1-x</m>.</li>
-                    <li><m>a=x+1</m>.</li>
-                    <li><m>a=-x</m>.</li>
-                    <li><m>a=x</m>.</li>
+                    <li><m>r=x-1</m>.</li>
+                    <li><m>r=1-x</m>.</li>
+                    <li><m>r=x+1</m>.</li>
+                    <li><m>r=-x</m>.</li>
                 </ol>
             </p>
         </task>
         <task>
             <p>
-                Evaluating <m>a</m> at the previously found value, which of the following is the power series of <m>f(x)=\frac{1}{x}</m>?
+                Substituting <m>r</m> with this value, which of the following is a power series for <m>f(x)=\frac{1}{x}</m>?
                 <ol marker="A." cols="2">
-                    <li><m>f(x)=\displaystyle\sum_{n=0}^\infty x^n</m>.</li>
                     <li><m>f(x)=\displaystyle\sum_{n=0}^\infty (-x)^n</m>.</li>
                     <li><m>f(x)=\displaystyle\sum_{n=0}^\infty (1-x)^n</m>.</li>
                     <li><m>f(x)=\displaystyle\sum_{n=0}^\infty (x-1)^n</m>.</li>
@@ -284,13 +242,13 @@ Let's investigate the power series
         </task>
         <task>
             <p>
-                Given that the interval of convergence for <m>a</m> is <m>-1 &lt; a &lt; 1</m>, what is the interval of convergence for <m>x</m>?
+                Given that the domain of convergence for <m>r</m> in <m>f(r)</m> is <m>-1 &lt; r &lt; 1</m>,
+                what should be the domain of convergence for <m>x</m> in <m>f(x)</m>?
                 <ol marker="A." cols="2">
                     <li><m>-1 &lt; x &lt; 1</m>.</li>
                     <li><m>-2 &lt; x &lt; 0</m>.</li>
                     <li><m>-2 &lt; x &lt; 2</m>.</li>
                     <li><m>0 &lt; x &lt; 2</m>.</li>
-                    <li><m>2 &lt; x &lt; 0</m>.</li>
                 </ol>
             </p>
         </task>
