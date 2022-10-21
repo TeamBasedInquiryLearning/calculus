@@ -14,12 +14,56 @@
 <article class="activity project-like"><h3 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.4.2</span><span class="period">.</span>
 </h3>
-<div class="introduction"><p>Suppose <span class="process-math">\(p(x)=a_0+a_1x+a_2x^2+a_3x^3\)</span> where <span class="process-math">\(p(0)=2, p'(0)=1, p''(0)=-2, p'''(0)=4\text{.}\)</span></p></div>
+<div class="introduction"><p>Let's use derivatives to rediscover the sequence <span class="process-math">\(a_n\)</span> which gives a power series representation for <span class="process-math">\(e^x\text{.}\)</span></p></div>
 <article class="task exercise-like"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<p>What must <span class="process-math">\(a_0\)</span> be for <span class="process-math">\(p(0)=2\text{?}\)</span></p></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<p>Using your choice of <span class="process-math">\(a_0\text{,}\)</span> what must <span class="process-math">\(a_1\)</span> be for <span class="process-math">\(p'(0)=1\text{?}\)</span></p></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<p>Using your choice of <span class="process-math">\(a_0, a_1\text{,}\)</span> what must <span class="process-math">\(a_2\)</span> be for <span class="process-math">\(p''(0)=-2\text{?}\)</span></p></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<p>Using your choice of <span class="process-math">\(a_0, a_1, a_2\text{,}\)</span> what must <span class="process-math">\(a_3\)</span> be for <span class="process-math">\(p'''(0)=4\text{?}\)</span></p></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<p>What is <span class="process-math">\(p(x)\text{?}\)</span></p></article></article><span class="incontext"><a href="PS4.html#activity-581" class="internal">in-context</a></span>
+<p>Let's say that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+e^x=\sum_{n=0}^\infty a_nx^n=a_0+a_1x+a_2x^2+a_3x^3+a_4x^4\dots\text{.}
+\end{equation*}
+</div>
+<p>What must <span class="process-math">\(a_0\)</span> be to satisfy <span class="process-math">\(e^0=1\text{?}\)</span></p></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<p>Then,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{d}{dx}[e^x]=e^x=a_1+2a_2x+3a_3x^2+4a_4x^3\dots\text{.}
+\end{equation*}
+</div>
+<p>What must <span class="process-math">\(a_1\)</span> be to also satisfy <span class="process-math">\(e^0=1\text{?}\)</span></p></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<p>Then,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{d^2}{dx^2}[e^x]=e^x=2a_2+6a_3x+12a_4x^2+\dots\text{.}
+\end{equation*}
+</div>
+<p>What must <span class="process-math">\(a_2\)</span> be to also satisfy <span class="process-math">\(e^0=1\text{?}\)</span></p></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<p>Then,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{d^3}{dx^3}[e^x]=e^x=6a_3+24a_4x+\dots\text{.}
+\end{equation*}
+</div>
+<p>What must <span class="process-math">\(a_3\)</span> be to also satisfy <span class="process-math">\(e^0=1\text{?}\)</span></p></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(e)</span></h4>
+<p>So this <span class="process-math">\(6a_3\)</span> term was obtained from the fact that the <span class="process-math">\(3\)</span>rd derivative of <span class="process-math">\(x^3\)</span> is <span class="process-math">\(3!=6\text{.}\)</span></p>
+<p>So finally, we may skip ahead to the <span class="process-math">\(n\)</span>th derivative:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{d^n}{dx^n}[e^x]=e^x=n!\cdot a_n+(n+1)!\cdot a_{n+1}\cdot x+\dots\text{.}
+\end{equation*}
+</div>
+<p>What must <span class="process-math">\(a_n\)</span> be to also satisfy <span class="process-math">\(e^0=1\text{?}\)</span></p></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(f)</span></h4>
+<p>This reveals the power series we previously found for <span class="process-math">\(e^x\text{:}\)</span></p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+e^x=\sum_{n=0}^\infty a_nx^n=\sum_{n=0}^\infty \frac{1}{n!}x^n\text{.}
+\end{equation*}
+</div>
+<p>So in general, if <span class="process-math">\(f(x)=a_0+a_1x+a_2x^2+\dots\text{,}\)</span> then</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\frac{d^n}{dx^n}[f(x)]=f^{(n)}(x)=n!\cdot a_n+(n+1)!\cdot a_{n+1}\cdot x+\dots\text{.}
+\end{equation*}
+</div>
+<p>What must <span class="process-math">\(a_n\)</span> be to produce the correct value for <span class="process-math">\(f^{(n)}(0)\text{?}\)</span></p></article></article><span class="incontext"><a href="PS4.html#activity-581" class="internal">in-context</a></span>
 </body>
 </html>

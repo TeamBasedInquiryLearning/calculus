@@ -12,36 +12,20 @@
 </head>
 <body class="ignore-math">
 <article class="fact theorem-like"><h3 class="heading">
-<span class="type">Fact</span><span class="space"> </span><span class="codenumber">9.3.6</span><span class="period">.</span>
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">9.3.5</span><span class="period">.</span>
 </h3>
-<p>If a power series</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
+<p>We may similarly determine that</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fact-maclaurin-series-common.html">
 \begin{equation*}
-f(x)=\sum_{n=0}^\infty a_n(x-c)^n
+\cos(x)=\displaystyle \sum_{n=0}^\infty \frac{(-1)^n}{(2n)!}x^{2n}=\sum_{n=0}^\infty (-1)^n\frac{x^{2n}}{(2n)!}
 \end{equation*}
 </div>
-<p class="continuation">is known, then for any polynomial <span class="process-math">\(g(x)\)</span> the composition <span class="process-math">\(f\circ g\)</span> has a power series given by</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
+<p class="continuation">and</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fact-maclaurin-series-common.html">
 \begin{equation*}
-(f\circ g)(x)=f(g(x))=\sum_{n=0}^\infty a_n(g(x)-c)^n
+\sin(x)=\displaystyle \sum_{n=0}^\infty \frac{(-1)^n}{(2n+1)!}x^{2n+1}=\sum_{n=0}^\infty (-1)^n\frac{x^{2n+1}}{(2n+1)!}
 \end{equation*}
 </div>
-<p class="continuation">where the domain of convergence is transformed based upon the transformation given by <span class="process-math">\(g(x)\text{.}\)</span></p>
-<p>For example, if <span class="process-math">\(f(x)\)</span> has the domain of convergence <span class="process-math">\(-2\leq x &lt; 2\text{,}\)</span> then <span class="process-math">\(f(2x+4)\)</span> has the domain of convergence:</p>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
--2\leq 2x+4 &lt; 2
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
--6\leq 2x &lt; -2
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
--3\leq x &lt; -1
-\end{equation*}
-</div></article><span class="incontext"><a href="PS3.html#fact-48" class="internal">in-context</a></span>
+<p class="continuation">for all real numbers <span class="process-math">\(x\text{.}\)</span> However, we will delay until <a href="" class="xref" data-knowl="./knowl/fact-maclaurin-series-common.html" title="Fact 9.4.6">Fact 9.4.6</a> to prove this fact another way.</p></article><span class="incontext"><a href="PS3.html#fact-48" class="internal">in-context</a></span>
 </body>
 </html>
