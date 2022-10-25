@@ -8,15 +8,15 @@ For each of the following series, determine if it converges or diverges, and exp
     <!-- {{#Problem1}} -->
     <knowl>
         <content>
-            <p><m>\displaystyle \sum_{n= {{k}} }^\infty {{Seq}}.</m></p>
+            <p><m>\renewcommand{\log}{\ln}\displaystyle \sum_{n= {{k}} }^\infty {{Seq}}.</m></p>
         </content>
         <outtro>
             <p>
 <!-- {{#Converge}} -->
-<m>\displaystyle \sum_{n= {{k}} }^\infty {{Seq}}</m> converges.
+<m>\renewcommand{\log}{\ln} \displaystyle \sum_{n= {{k}} }^\infty {{Seq}}</m> converges.
 <!-- {{/Converge}} -->
 <!-- {{^Converge}} -->
-<m>\displaystyle \sum_{n= {{k}} }^\infty {{Seq}}</m> diverges.
+<m>\renewcommand{\log}{\ln} \displaystyle \sum_{n= {{k}} }^\infty {{Seq}}</m> diverges.
 <!-- {{/Converge}} -->
             </p>
         </outtro>
@@ -25,15 +25,15 @@ For each of the following series, determine if it converges or diverges, and exp
     <!-- {{#Problem2}} -->
     <knowl>
         <content>
-            <p><m>\displaystyle \sum_{n= {{k}} }^\infty {{Seq}}.</m></p>
+            <p><m>\renewcommand{\log}{\ln} \displaystyle \sum_{n= {{k}} }^\infty {{Seq}}.</m></p>
         </content>
         <outtro>
             <p>
 <!-- {{#Converge}} -->
-<m>\displaystyle \sum_{n= {{k}} }^\infty {{Seq}}</m> converges.
+<m>\renewcommand{\log}{\ln} \displaystyle \sum_{n= {{k}} }^\infty {{Seq}}</m> converges.
 <!-- {{/Converge}} -->
 <!-- {{^Converge}} -->
-<m>\displaystyle \sum_{n= {{k}} }^\infty {{Seq}}</m> diverges.
+<m>\renewcommand{\log}{\ln} \displaystyle \sum_{n= {{k}} }^\infty {{Seq}}</m> diverges.
 <!-- {{/Converge}} -->
             </p>
         </outtro>

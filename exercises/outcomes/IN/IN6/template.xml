@@ -9,12 +9,12 @@
         <knowl>
             <content>
                 <p>
-                    <me>
+                    <me> \renewcommand{\log}{\ln}
 \frac{d}{dx} \int_{ {{a}} }^{ {{b}} } \left( {{function}} \right) dt
                     </me>
                 </p>
             </content>
-            <outtro><p><me>{{answer}}</me></p></outtro>
+            <outtro><p><me>\renewcommand{\log}{\ln} {{answer}}</me></p></outtro>
         </knowl>
     <!-- {{/functions}} -->
 </knowl>

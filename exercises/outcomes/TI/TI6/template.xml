@@ -19,7 +19,7 @@
             </p>
         </content>
         <outtro>
-            <p><me>\displaystyle\int {{f}}dx=\displaystyle\int \left({{pf}}\right)dx={{F}}+C.</me></p>
+            <p><me>\renewcommand{\log}{\ln} \displaystyle\int {{f}}dx=\displaystyle\int \left({{pf}}\right)dx={{F}}+C.</me></p>
         </outtro>
     </knowl>
 </knowl>

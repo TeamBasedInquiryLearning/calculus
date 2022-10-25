@@ -8,8 +8,8 @@
     </intro>
     <!-- {{#functions}} -->
     <knowl>
-        <content><p><me>{{fn}}({{v}})= {{f}}</me></p></content>
-        <outtro><p><me>{{fn}}&apos; ({{v}})= {{dfdx}}</me></p></outtro>
+        <content><p><me>\renewcommand{\log}{\ln} {{fn}}({{v}})= {{f}}</me></p></content>
+        <outtro><p><me>\renewcommand{\log}{\ln} {{fn}}&apos; ({{v}})= {{dfdx}}</me></p></outtro>
     </knowl>
     <!-- {{/functions}} -->
 </knowl>

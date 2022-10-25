@@ -10,7 +10,7 @@ If it can, explain how to use this rule to find the limit.
         <knowl>
             <content>
                 <p>
-                    <me>
+                    <me>\renewcommand{\log}{\ln}
 \lim_{x\to {{to}} } \frac{ {{num}} }{ {{den}} }
                     </me>
                 </p>
@@ -18,7 +18,7 @@ If it can, explain how to use this rule to find the limit.
             <outtro>
                 <p>
                     <!-- {{#is}} -->
-                    <me>
+                    <me>\renewcommand{\log}{\ln}
 \lim_{x\to {{to}} } \frac{ {{num}} }{ {{den}} } = {{is}}
                     </me>
                     <!-- {{/is}} -->

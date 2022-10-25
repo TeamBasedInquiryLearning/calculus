@@ -9,15 +9,15 @@ Justify both choices with an appropriate test.
     <!-- {{#Problems}} -->
     <knowl>
         <content>
-            <p><m>\displaystyle \sum_{n=1}^\infty {{Sequence}}.</m></p>
+            <p><m>\renewcommand{\log}{\ln} \displaystyle \sum_{n=1}^\infty {{Sequence}}.</m></p>
         </content>
         <outtro>
             <p>
 <!-- {{#Converge}} -->
-<m>\displaystyle \sum_{n=1}^\infty {{Sequence}}</m> is convergent.                
+<m>\renewcommand{\log}{\ln} \displaystyle \sum_{n=1}^\infty {{Sequence}}</m> is convergent.                
 <!-- {{/Converge}} -->
 <!-- {{^Converge}} -->
-<m>\displaystyle \sum_{n=1}^\infty {{Sequence}}</m> is divergent.               
+<m>\renewcommand{\log}{\ln} \displaystyle \sum_{n=1}^\infty {{Sequence}}</m> is divergent.               
 <!-- {{/Converge}} -->
             </p>
         </outtro>

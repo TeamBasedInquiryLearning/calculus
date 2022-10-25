@@ -8,7 +8,8 @@
         </content>
         <outtro>
             <p>
-                <m>\displaystyle \int {{dfdx}} dx={{f}}+C.</m>
+                <m>\renewcommand{\log}{\ln}
+                \displaystyle \int {{dfdx}} dx={{f}}+C.</m>
             </p>
         </outtro>
     </knowl>

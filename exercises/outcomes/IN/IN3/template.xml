@@ -7,8 +7,8 @@ Explain how to find the general antiderivative for each function.
     </intro>
     <!-- {{#functions}} -->
         <knowl>
-            <content><p><me>{{function}}</me></p></content>
-            <outtro><p><me>{{answer}}+C</me></p></outtro>
+            <content><p><me>\renewcommand{\log}{\ln}{{function}}</me></p></content>
+            <outtro><p><me>\renewcommand{\log}{\ln}{{answer}}+C</me></p></outtro>
         </knowl>
     <!-- {{/functions}} -->
 </knowl>
