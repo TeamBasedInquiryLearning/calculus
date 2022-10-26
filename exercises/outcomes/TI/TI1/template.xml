@@ -3,7 +3,7 @@
     <knowl>
         <content>
             <p>
-                Explain and demonstrate how to find the anti-derivative of <m>f(x)={{dfdx}}</m>.
+                Explain and demonstrate how to find the anti-derivative of <m>\renewcommand{\log}{\ln} f(x)={{dfdx}}</m>.
             </p>
         </content>
         <outtro>
@@ -18,13 +18,13 @@
             <p>
                 Explain and demonstrate how to evaluate the following definite integral:
                 <me>
-                    \int_{ {{a}} }^{ {{b}} } {{g}} dx.
+                    \renewcommand{\log}{\ln} \int_{ {{a}} }^{ {{b}} } {{g}} dx.
                 </me>
             </p>
         </content>
         <outtro>
             <p>
-                <m>\displaystyle \int_{ {{a}} }^{ {{b}} } {{g}} dx = {{defint}}.</m>
+                <m>\renewcommand{\log}{\ln} \displaystyle \int_{ {{a}} }^{ {{b}} } {{g}} dx = {{defint}}.</m>
             </p>
         </outtro>
     </knowl>

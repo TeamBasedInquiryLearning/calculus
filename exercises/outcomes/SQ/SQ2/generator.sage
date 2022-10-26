@@ -18,17 +18,17 @@ class Generator(BaseGenerator):
             "Mono":True,
         }
         
-        #Rational->0
-        denom=randint(1,5)
-        coeff=randint(1,5)
+        # #Rational->0
+        # denom=randint(1,5)
+        # coeff=randint(1,5)
         
-        Converge2={
-            "Sequence":coeff*n/(n^2+denom),
-            "Limit":0,
-            "Converge":True,
-            "Bounded":True,
-            "Mono":False,
-        }
+        # Converge2={
+        #     "Sequence":coeff*n/(n^2+denom),
+        #     "Limit":0,
+        #     "Converge":True,
+        #     "Bounded":True,
+        #     "Mono":False,
+        # }
         
         
         #Rational->c
@@ -108,7 +108,8 @@ class Generator(BaseGenerator):
             "Mono":False,
         }
         
-        Convergent=choice([Converge1, Converge2, Converge3, Converge4])
+        Convergent=choice([Converge1, #Converge2, 
+            Converge3, Converge4])
         
         Divergent=choice([Diverge1, Diverge2, Diverge3, Diverge4])
         
