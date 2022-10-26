@@ -1,88 +1,55 @@
 class Generator(BaseGenerator):
     def data(self):
         n=var("n")
+        a_n = var("a_n")
+        
+        def random_arithmetic():
+            a_0 = randrange(1,6)*choice([-1,1])
+            k = randrange(2,6)*choice([-1,1])
+            closed = a_0 + k*n
+            recursive = a_n + k
+            return {
+                "closed": closed,
+                "recursive": recursive,
+            }
+        
+        def random_geometric():
+            a_0 = randrange(1,6)*choice([-1,1])
+            k = randrange(2,5)*choice([-1,1])
+            closed = a_0*k^n
+            recursive = a_n*k
+            return {
+                "closed": closed,
+                "recursive": recursive,
+            }
+        
+        closed_start,recursive_start = sample(range(2),2)
+        closed,recursive = sample([random_arithmetic(),random_geometric()],2)
 
-        #define an arithmetic sequence
-        initialA1=randint(1,5)*(-1)^randint(0,1)
-        diffA1=randint(2,5)*(-1)^randint(0,1)
-        A1(n)=initialA1+diffA1*n
-        coeffA1=1
-        tailA1=diffA1
-        Seq1={
-            "Formula":A1(n),
-            "t0":A1(0),
-            "t1":A1(1),
-            "t2":A1(2),
-            "t3":A1(3),
-            "t4":A1(4),
-            "t5":A1(5),
-            "t6":A1(6),
-            "t7":A1(7),
-            "c":coeffA1,
-            "tail":tailA1,
+        find_terms = {
+            "closed": closed["closed"],
+            "closed_start": closed_start,
+            "closed_terms": [{"term": closed["closed"](n=k)} for k in range(closed_start,closed_start+5)],
+            "recursive": recursive["recursive"],
+            "recursive_start": recursive_start,
+            "recursive_first": recursive["closed"](n=recursive_start),
+            "recursive_terms": [{"term": recursive["closed"](n=k)} for k in range(recursive_start,recursive_start+5)],
         }
         
-        #define a geometric sequence
-        initialA2=randint(1,5)*(-1)^randint(0,1)
-        ratioA2list=[randint(2,4), 1/randint(2,4)]
-        shuffle(ratioA2list)
-        ratioA2=ratioA2list[0]*(-1)^randint(0,1)
-        A2(n)=initialA2*ratioA2^n
-        coeffA2=ratioA2
-        tailA2=0
-        Seq2={
-            "Formula":A2(n),
-            "t0":A2(0),
-            "t1":A2(1),
-            "t2":A2(2),
-            "t3":A2(3),
-            "t4":A2(4),
-            "t5":A2(5),
-            "t6":A2(6),
-            "t7":A2(7),
-            "c":coeffA2,
-            "tail":tailA2,
+        closed_start,recursive_start = sample(range(2),2)
+        closed,recursive = sample([random_arithmetic(),random_geometric()],2)
+
+        find_formulas = {
+            "closed": closed["closed"],
+            "closed_start": closed_start,
+            "closed_terms": [{"term": closed["closed"](n=k)} for k in range(closed_start,closed_start+5)],
+            "recursive": recursive["recursive"],
+            "recursive_start": recursive_start,
+            "recursive_first": recursive["closed"](n=recursive_start),
+            "recursive_terms": [{"term": recursive["closed"](n=k)} for k in range(recursive_start,recursive_start+5)],
         }
-        
-        #define a 'quadratic' sequence
-        initialA3=randint(0,5)
-        aA3=1
-        A3(n)=aA3*n^2+initialA3
-        m=aA3*2
-        k=-aA3
-        coeffA3=1
-        tailA3=m*n+k
-        Seq3={
-            "Formula":A3(n),
-            "t0":A3(0),
-            "t1":A3(1),
-            "t2":A3(2),
-            "t3":A3(3),
-            "t4":A3(4),
-            "t5":A3(5),
-            "t6":A3(6),
-            "t7":A3(7),
-            "c":coeffA3,
-            "tail":tailA3,
-        }
-        
-        Sequences = [Seq1, Seq2, Seq3]
-        shuffle(Sequences)
-        
-        #Shuffle the sequences with terms given
-        Given = Sequences[0]
-        
-        #Shuffle the sequences with closed forms given
-        Closed = Sequences[1]
-        
-        Recursive = Sequences[2]
-        
-        
-        
-        
 
         return {
-            "Closed": Closed,
-            "Given": Given,
-            "Recursive": Recursive,  
+            "terms": find_terms,
+            "formulas": find_formulas,
         }

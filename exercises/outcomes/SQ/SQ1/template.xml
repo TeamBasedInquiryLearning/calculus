@@ -1,51 +1,62 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
-<!-- {{#Closed}} -->
+    <!-- {{#terms}} -->
     <knowl>
         <content>
             <p>
-Find the first 5 terms of the following sequence:
-<m>a_n={{Formula}}.</m>
+Find the first 5 terms, beginning with <m>a_{ {{closed_start}} }</m>,
+of the sequence defined by the closed formula
+<m>a_n={{closed}}</m>.
             </p>
         </content>
         <outtro>
             <p>
-<m>{{t1}}, {{t2}}, {{t3}}, {{t4}}, {{t5}}</m> if you start with <m> n=1</m>, or 
-<m>{{t0}}, {{t1}}, {{t2}}, {{t3}}, {{t4}}</m> if you start with <m> n=0</m>.
+<m>{{#closed_terms}} {{term}},{{/closed_terms}} \dots</m>
             </p>
         </outtro>
     </knowl>
-<!-- {{/Closed}}, -->
-<!-- {{#Given}} -->
+    <knowl>
+        <content>
+            <p>
+Find the first 5 terms
+of the sequence defined by the recursive formula
+<m>a_{ {{recursive_start}} }= {{recursive_first}}, a_{n+1}={{recursive}}</m>.
+            </p>
+        </content>
+        <outtro>
+            <p>
+<m>{{#recursive_terms}} {{term}},{{/recursive_terms}} \dots</m>
+            </p>
+        </outtro>
+    </knowl>
+    <!-- {{/terms}} -->
+    <!-- {{#formulas}} -->
     <knowl>
         <content>
             <p>
 Find a closed form for the following sequence:
-<m>{{t0}}, {{t1}}, {{t2}}, {{t3}}, {{t4}},\ldots</m>
+<m>{{#closed_terms}} {{term}},{{/closed_terms}} \dots</m>
             </p>
         </content>
         <outtro>
             <p>
-Answers can vary depending on your choice of starting index.
-For example, <m>{{Formula}}</m> if <m> n=0,1,...</m>.
+Beginning with <m>a_{ {{closed_start}} }</m>, let
+<m>a_n={{closed}}</m>.
             </p>
         </outtro>
     </knowl>
-<!-- {{/Given}} -->
-<!-- {{#Recursive}} -->
     <knowl>
         <content>
             <p>
 Find a recursive form for the following sequence:
-<m>{{t0}}, {{t1}}, {{t2}}, {{t3}}, {{t4}},\ldots</m>
+<m>{{#recursive_terms}} {{term}},{{/recursive_terms}} \dots</m>
             </p>
         </content>
         <outtro>
             <p>
-Answers can vary depending on your choice of starting index.
-For example, if <m>a_0={{t0}}</m> then <m>a_n={{c}}\cdot a_{n-1}+{{tail}}</m>.
+<m>a_{ {{recursive_start}} }= {{recursive_first}}, a_{n+1}={{recursive}}</m>.
             </p>
         </outtro>
     </knowl>
-<!-- {{/Recursive}} -->
+    <!-- {{/formulas}} -->
 </knowl>
