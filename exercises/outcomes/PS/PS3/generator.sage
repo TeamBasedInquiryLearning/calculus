@@ -26,11 +26,11 @@ class Generator(BaseGenerator):
             f_prod=x^m*sin(x)
             seq_prod=(-1)^n*x^(2*n+1+m)/factorial(2*n+1)
             # derivative
-            seq_diff=((-1)^n).mul((2*n+1),hold=True)*x^(2*n)/factorial(2*n+1)
+            seq_diff=((-1)^n)*(2*n+1)*x^(2*n)/factorial(2*n+1)
             seq_diff_simp=(-1)^n*x^(2*n)/factorial(2*n)
             # anti-derivative
-            seq_int=(-1)^(n)*x^(2*n+2)/factorial(2*n+2)
-            seq_int_simp=(-1)^(n)*x^(2*n)/factorial(2*n)
+            seq_int=(-1)^(n)*x^(2*n+2)/factorial(2*n+1)/(2*n+2)
+            seq_int_simp=(-1)^(n+1)*x^(2*n)/factorial(2*n)
             
         if funct=='cos':
             # base power series
@@ -44,11 +44,11 @@ class Generator(BaseGenerator):
             f_prod=x^m*cos(x)
             seq_prod=(-1)^n*x^(2*n+m)/factorial(2*n)
             # derivative
-            seq_diff=((-1)^n).mul((2*n),hold=True)*x^(2*n-1)/factorial(2*n)
-            seq_diff_simp=(-1)^n*x^(2*n)/factorial(2*n)
+            seq_diff=((-1)^n)*(2*n)*x^(2*n-1)/factorial(2*n)
+            seq_diff_simp=(-1)^(n+1)*x^(2*n+1)/factorial(2*n+1)
             # anti-derivative
-            seq_int=(-1)^(n)*x^(2*n+1)/factorial(2*n+1)
-            seq_int_simp=(-1)^(n+1)*x^(2*n-1)/factorial(2*n-1)
+            seq_int=(-1)^(n)*x^(2*n+1)/factorial(2*n)/(2*n+1)
+            seq_int_simp=(-1)^(n)*x^(2*n+1)/factorial(2*n+1)
         
         if funct=='exp':
             # base power series
@@ -65,7 +65,7 @@ class Generator(BaseGenerator):
             seq_diff=n*x^(n-1)/factorial(n)
             seq_diff_simp=x^(n)/factorial(n)
             # anti-derivative
-            seq_int=x^(n+1)/factorial(n+1)
+            seq_int=x^(n+1)/factorial(n)/(n+1)
             seq_int_simp=x^n/factorial(n)
             
         if funct=='oneover':
