@@ -10,17 +10,17 @@ Consider the partial sum sequence
         </intro>
         <knowl>
             <content><p>Find a closed form for <m>A_n</m>.</p></content>
-            <outtro><p><m>\displaystyle A_n={{k}}\cdot\frac{1-\left({{r}}\right)^{n+1} }{1- \left({{r}}\right) }</m>.</p></outtro>
+            <outtro><p><m>\displaystyle A_n={{ geo_closed }}</m>.</p></outtro>
         </knowl>
         <knowl>
             <content><p>Does <m>\{A_n\}</m> converge?  If so, to what value?</p></content>
             <!-- {{#Problem1}} -->
             <outtro><p>
                 <!-- {{#Converge}} -->
-                <m>\displaystyle\lim_{n\to\infty} {{k}}\cdot\frac{1-\left({{r}}\right)^{n+1} }{1- \left({{r}}\right) } </m> converges to <m>{{Limit}}</m>.                
+                <m>\displaystyle\lim_{n\to\infty} {{ geo_closed }} </m> converges to <m>{{Limit}}</m>.                
                 <!-- {{/Converge}} -->
                 <!-- {{^Converge}} -->
-                <m>\displaystyle\lim_{n\to\infty} {{k}}\cdot\frac{1-\left({{r}}\right)^{n+1} }{1- \left({{r}}\right) }</m> diverges.               
+                <m>\displaystyle\lim_{n\to\infty} {{ geo_closed }}</m> diverges.               
                 <!-- {{/Converge}} -->
             </p></outtro>            
             <!-- {{/Problem1}} -->

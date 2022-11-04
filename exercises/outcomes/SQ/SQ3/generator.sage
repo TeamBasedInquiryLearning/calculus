@@ -53,6 +53,7 @@ class Generator(BaseGenerator):
             "fi1": f(i+1),
             "f1": f(1),
             "fn1": f(n+1),
+            "geo_closed": GeoPS(n),
             "Problem1": Problem1,
             "Problem2": Problem2,
         }
