@@ -1,6 +1,5 @@
 class Generator(BaseGenerator):
     def data(self):
-        from sage.symbolic.integration.integral import definite_integral
         import random # SB: this is needed for the c vs. d thing in partials
         
         x=var("x")
@@ -10,7 +9,7 @@ class Generator(BaseGenerator):
         out(x)=0
         u(x)=0
         
-        while(out(x)==u(x)):
+        while(out(x)==u(x) or derivative(out(u(x)), x, 2)==0):
             outfactors = [
                 x^randint(2,5),
                 sqrt(x),
@@ -28,34 +27,28 @@ class Generator(BaseGenerator):
                 cos(x),
                 sin(x),
             ]
-            shuffle(outfactors)
-            shuffle(ufactors)
-            
-            out(x)=outfactors[0]
-            u(x)=ufactors[0]    
+            out(x)=choice(outfactors)
+            u(x)=choice(ufactors)
+
         k=randint(1,5)*choice([-1,1])        
         f=(k*out(u(x)))
         dfdx=(f.diff()).simplify()
         
-        usub=[dfdx, 'Substitution']
+        integrals=[{"integrand":dfdx, "method": 'Substitution'}]
         
         #Parts
         
         g=randint(1,5)*choice([-1,1])*choice([cos(x), sin(x), e^x])*x^(2*randint(0,3)+1)
         
-        parts=[g, 'Integration by parts']
+        integrals+=[{"integrand":g, "method": 'Integration by parts'}]
         
         a=randint(1,5)*choice([-1,1])
         b=randint(1,5)*choice([-1,1])
-        # SB: If a = -b and c = d, then h works out to be 0.
-        # Fix: Force c != d. 
-        #c=randint(-5,5)
-        #d=randint(-5,5)
-        [c, d] = random.sample(range(-5, 5), 2)
+        c, d = sample(range(-5, 5), 2)
         
         h=(a*(x-d)+b*(x-c))/((x-c)*(x-d))
         
-        partial=[h, 'Partial fractions']
+        integrals+=[{"integrand":h, "method": 'Partial fractions'}]
         
         ftrig=choice([
                 1/(x^2+randint(1,5)^2), #SB EDIT: used to be x, now is x^2
@@ -63,32 +56,11 @@ class Generator(BaseGenerator):
                 sqrt(x^2-randint(1,5)^2),
             ])
         
-        trigsub=[ftrig, 'Trigonometric substitution']
-        
-        integrals=[usub, parts, partial, trigsub]
+        integrals+=[{"integrand":ftrig, "method": 'Trigonometric substitution'}]
         
         shuffle(integrals)
         
-        f1=(integrals[0])[0]
-        a1=(integrals[0])[1]
-        
-        f2=(integrals[1])[0]
-        a2=(integrals[1])[1]
-        
-        f3=(integrals[2])[0]
-        a3=(integrals[2])[1]
-        
-        f4=(integrals[3])[0]
-        a4=(integrals[3])[1]
-        
 
         return {
-        "f1": f1,
-        "a1": a1,
-        "f2": f2,
-        "a2": a2,
-        "f3": f3,
-        "a3": a3,
-        "f4": f4,
-        "a4": a4,  
+            "integrals": integrals,
         }

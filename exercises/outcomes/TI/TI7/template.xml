@@ -6,20 +6,10 @@ For each of the following integrals, describe which strategy you would use to in
 and why that is the best choice.  (You do <em>not</em> need to actually compute the integral.)
         </p>
     </intro>
-    <knowl>
-        <content><p><m>\displaystyle \int {{f1}}dx</m>.</p></content>
-        <outtro><p>{{a1}}</p></outtro>
-    </knowl>
-    <knowl>
-        <content><p><m>\displaystyle \int {{f2}}dx</m>.</p></content>
-        <outtro><p>{{a2}}</p></outtro>
-    </knowl>
-    <knowl>
-        <content><p><m>\displaystyle \int {{f3}}dx</m>.</p></content>
-        <outtro><p>{{a3}}</p></outtro>
-    </knowl>
-    <knowl>
-        <content><p><m>\displaystyle \int {{f4}}dx</m>.</p></content>
-        <outtro><p>{{a4}}</p></outtro>
-    </knowl>
+    <!-- {{#integrals}} -->
+        <knowl>
+            <content><p><m>\renewcommand{\log}{\ln}\displaystyle \int {{integrand}}dx</m>.</p></content>
+            <outtro><p>{{method}}</p></outtro>
+        </knowl>
+    <!-- {{/integrals}} -->
 </knowl>
