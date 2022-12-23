@@ -9,6 +9,8 @@
       </li>
     </ul>
   </objectives>
+  <subsection>
+    <title>Activities</title>
     
       <activity xml:id="activity-ad8-box"> <title>The box</title>
         <introduction>
@@ -285,5 +287,16 @@ Decrease the cost by <m>\$4</m>.
 
     
     </activity>
-
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-AD8" youtube="rpoDVt0nVeQ"/>
+            <caption>Video for AD8</caption>
+        </figure>
+        <figure>
+            <video xml:id="video-AD8a" youtube="nLxzVHnzTKw"/>
+            <caption>Another Video for AD8</caption>
+        </figure>
+    </subsection>
 </section>

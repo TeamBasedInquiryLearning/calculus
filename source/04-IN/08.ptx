@@ -9,6 +9,8 @@
       </li>
     </ul>
   </objectives>
+  <subsection>
+    <title>Activities</title>
   <remark>
       <p> In <xref ref="IN7"/>, we learned how to find the area between a curve and the <m>x</m>-axis (<m>f(x)=0</m>) using a definite integral. What if we want the area between any two functions? What if the <m>x</m>-axis is not one of the boundaries?</p>
        
@@ -173,6 +175,13 @@ As a definite integral with respect to <m>y</m>.
         </ol>
     </answer>-->
     </activity>    
-    
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-IN8" youtube="DnBlvPyP8Hs"/>
+            <caption>Video for IN8</caption>
+        </figure>
+    </subsection>
 </section>
 

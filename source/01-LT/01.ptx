@@ -9,6 +9,8 @@
             </li>
         </ul>
     </objectives>
+  <subsection>
+    <title>Activities</title>
     <activity xml:id="activity-limits-graphically1">
         <introduction>
             <p>
@@ -308,8 +310,14 @@
         </task>
     </activity> 
     
-
-    
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-LT1" youtube="KsemDUSJeWk"/>
+            <caption>Video for LT1</caption>
+        </figure>
+    </subsection>  
 
 </section>
 

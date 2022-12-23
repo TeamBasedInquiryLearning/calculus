@@ -9,6 +9,8 @@
             </li>
         </ul>
     </objectives>
+  <subsection>
+    <title>Activities</title>
 
 <!-- start of activities     -->
        <activity xml:id="infinity-inutition2">
@@ -311,6 +313,14 @@ Explain and demonstrate how to find the value of each limit.
         </task>
     </activity>
 
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-LT6" youtube="6dZ2ThrB2i4"/>
+            <caption>Video for LT6</caption>
+        </figure>
+    </subsection>  
 
 </section>
 

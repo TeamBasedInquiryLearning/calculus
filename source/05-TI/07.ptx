@@ -9,6 +9,8 @@
             </li>
         </ul>
     </objectives>
+  <subsection>
+    <title>Activities</title>
         <activity estimated-time="99" xml:id="activity-TI7FirstStepTrig">
         <statement>
             <p>Consider the integral <m>\displaystyle\int e^t \tan(e^t) \sec^2(e^t)\,dt</m>. Which strategy is a reasonable first step to make progress towards evaluating this integral?</p>
@@ -81,7 +83,8 @@
             </ol>
         </statement>
     </activity>
-    
+    </subsection>
+
     <subsection>
         <title>Videos</title>
     <figure>

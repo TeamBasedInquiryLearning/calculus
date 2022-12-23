@@ -9,6 +9,8 @@
       </li>
     </ul>
   </objectives>
+  <subsection>
+    <title>Activities</title>
 
     <definition xml:id="defn-local-extrema">
       <statement>
@@ -228,6 +230,15 @@ and the point <m>(x,y)=(1,6)</m> is a local maximum.</p></answer>-->
         <task> <p>Suppose <m>f</m> is continuous and differentiable on <m>[a,b]</m> and also suppose that <m>f(a)=f(b)</m>. What is the average rate of change of <m>f(x)</m> on <m>[a,b]</m>? What does the MVT (Mean Value Theorem) tell you?</p> </task>
        <task> <p> Use part (a) to show with the MWT that <m>f(x) = (x-1)^2 + 3</m> has a critical point on <m>[0,2]</m> . </p> </task>
     </activity>   
+
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure xml:id="figure-video-AD5-AD6">
+            <video xml:id="video-AD5-AD6" youtube="7HJjuMB2Ljg"/>
+            <caption>Video for AD5&amp;AD6</caption>
+        </figure>
+    </subsection> 
 
 </section>
 

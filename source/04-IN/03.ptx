@@ -9,6 +9,8 @@
       </li>
     </ul>
   </objectives>
+  <subsection>
+    <title>Activities</title>
 
     <!--DEFINITION OF ANTIDERIVATIVE from Active Calculus -->
     <definition xml:id="def-antiderivative">
@@ -221,7 +223,14 @@ Find each indefinite integral.
                 <task><me>\int (-9 \, x^{4} - 7 \, x^{2} + 4) \, dx</me></task>
                 <task><me>\int 3 \, e^{x}\, dx</me></task>
           </activity>
-    
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-IN3" youtube="Xf7dKslAR3M"/>
+            <caption>Video for IN3</caption>
+        </figure>
+    </subsection>
 </section>
 
 

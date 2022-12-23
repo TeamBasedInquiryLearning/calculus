@@ -9,6 +9,8 @@
       </li>
     </ul>
   </objectives>
+  <subsection>
+    <title>Activities</title>
     <observation xml:id="obs-df-implicit1">
     Many of the equations that has been discussed so far fall under the category of an explicit equation.  An explicit equation is one in which the relationship between <m>x</m> and <m>y</m> is given explicitly, such as <m>y = f(x)</m>.  In this section we will examine when the relationship between <m>x</m> and <m>y</m> is given implicity. An implicit equation looks like <m>f(x,y) = g(x,y)</m> where both sides of the equation may depend on both <m>x</m> and <m>y</m>.
     </observation>
@@ -140,5 +142,14 @@ Explain how to use implicit differentiation to find
      <task><p>If Valerie builds the coop with <m>y=\pi/3</m> (and wants to use her whole budget), find what side length <m>x</m> she needs to use.</p></task>
        <task><p>Find the slope of the curve at this point and interpret what this value tells Valerie.</p></task>
    </activity> 
-    
+
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-DF7" youtube="QAL8CfMPRA8"/>
+            <caption>Video for DF7</caption>
+        </figure>
+    </subsection>
+
 </section>

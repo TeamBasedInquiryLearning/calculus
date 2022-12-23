@@ -9,12 +9,8 @@
       </li>
     </ul>
   </objectives>
-
-<!--   <activity>
-    <introduction>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </introduction>
-  </activity> -->
+  <subsection>
+    <title>Activities</title>
     
     
 <definition xml:id="defn-tangent-line"> <p>
@@ -265,4 +261,14 @@ and the marginal profit is <m>-12 \, x^{2} - 20 \, x + 56</m>.
         <p>  You should find that the temperature model for this coffee cup is <m>y= 72 + 38 e^{-0.1t}</m>. Explain how the values of each parameter connects to the information given.
     </p></task>
     </activity>    
+
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-AD1" youtube="t7A3Z0ZsOVc"/>
+            <caption>Video for AD1</caption>
+        </figure>
+    </subsection>
+
 </section>

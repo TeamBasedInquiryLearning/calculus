@@ -9,12 +9,8 @@
       </li>
     </ul>
   </objectives>
-
-<!--   <activity>
-    <introduction>
-      <p>Lorem ipsum dolor sit amet.</p>
-    </introduction>
-  </activity> -->
+  <subsection>
+    <title>Activities</title>
     
 <definition>
     <p>The <term>definite integral</term> for a positive function <m>f(x) \geq 0 </m> between the points <m>x=a</m> and <m>x=b</m> is the area between the function and the <m>x</m>-axis. We denote this quantity as <m>\displaystyle \int_a^b f(x) \, dx</m></p>
@@ -124,5 +120,12 @@
     </activity>
 
     
-
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-IN1" youtube="h6ur1M83jI0"/>
+            <caption>Video for IN1</caption>
+        </figure>
+    </subsection>
 </section>

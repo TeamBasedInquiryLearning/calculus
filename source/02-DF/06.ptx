@@ -9,6 +9,8 @@
       </li>
     </ul>
   </objectives>
+  <subsection>
+    <title>Activities</title>
 
  <activity xml:id="activity-df-strat-intro">
  <introduction>
@@ -232,5 +234,14 @@ you are using in your work.
         </answer> -->
       </task>
   </activity>
+
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-DF6" youtube="kuf14dx9s-A"/>
+            <caption>Video for DF6</caption>
+        </figure>
+    </subsection> 
 
 </section>

@@ -9,6 +9,8 @@
             </li>
         </ul>
     </objectives>
+  <subsection>
+    <title>Activities</title>
         <activity estimated-time="99" xml:id="activity-TI5BestSub">
         <introduction><p>Consider the integral <m>\displaystyle\int \sqrt{16-9x^2} \,dx</m>. Which of the following substitutions appears most promising to find an antiderivaitve for this integral?</p></introduction>
             <ol marker="A." cols="2">
@@ -157,7 +159,8 @@
         </statement>
     </activity>
     
-    
+    </subsection>
+
     <subsection>
         <title>Videos</title>
     <figure>

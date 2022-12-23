@@ -9,6 +9,8 @@
       </li>
     </ul>
   </objectives>
+  <subsection>
+    <title>Activities</title>
  
 
              <activity xml:id = "activity-ball1">
@@ -482,6 +484,13 @@ The rate of change of <m>f(x)</m> when <m>x=-1</m> is positive
         <task> <p> Find the equation of the tangent line at <m>x=2</m>. </p> </task>
                    </activity>
 
-
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-DF1" youtube="QHol2dMu13o"/>
+            <caption>Video for DF1</caption>
+        </figure>
+    </subsection>  
     
 </section>

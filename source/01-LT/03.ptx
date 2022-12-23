@@ -9,6 +9,8 @@
             </li>
         </ul>
     </objectives>
+  <subsection>
+    <title>Activities</title>
     
     <remark>
          <statement>
@@ -391,8 +393,15 @@
          </statement> </task>
             <task> <statement> <p> The model <m>d=f(t)=t^2</m> does not really capture the real-world situation. Think of at least one reason why this model does not fit the scenario of Usain Bolt's 100 meters dash. </p>
          </statement> </task>
-   </activity>
+    </activity>
     
-  
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-LT3" youtube="AN5KhMEgjwA"/>
+            <caption>Video for LT3</caption>
+        </figure>
+    </subsection>  
     
 </section>

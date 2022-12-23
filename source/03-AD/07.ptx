@@ -9,6 +9,8 @@
       
     </ul>
   </objectives>
+  <subsection>
+    <title>Activities</title>
 
     <remark><statement><p>In <xref ref="AD5"/> and <xref ref="AD6"/> we learned how the first and second derivatives give us information about the graph of a function. Specifically, we can determine the intervals where a function is increasing, decreasing, concave up, or concave down as well as any local extrema or inflection points. Now we will put that information together to sketch the graph of a function.</p></statement></remark>
    
@@ -228,5 +230,9 @@ Note that some of the graphs below are definitely hard... might want to tell thi
                 <task><m>f(x)=\frac{x}{\sqrt{x^2+2}}</m></task>
                 <task><m>f(x)=x^6+\frac{12}{5}x^5-12x^4+10</m></task>  
     </activity>
-
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <p>No video is available for this learning outcome.</p>
+    </subsection>
 </section>

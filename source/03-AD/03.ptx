@@ -9,6 +9,8 @@
       </li>
     </ul>
   </objectives>
+  <subsection>
+    <title>Activities</title>
 
 <remark xml:id = "rmk-intro-related-rates">
     <p>
@@ -315,20 +317,19 @@ recall that when <m>y</m> is a function of <m>x</m>, which in turn is a function
                 </p>
             </answer>-->
     </activity>
-    
+
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-AD3" youtube="Gy0ceXX7Uek"/>
+            <caption>Video for AD3</caption>
+        </figure>
+        <figure>
+            <video xml:id="video-AD3a" youtube="ysnhwDst9hc"/>
+            <caption>Another Video for AD3</caption>
+        </figure>
+    </subsection>    
     
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
 

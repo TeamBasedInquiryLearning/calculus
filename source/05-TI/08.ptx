@@ -9,6 +9,8 @@
             </li>
         </ul>
     </objectives>
+  <subsection>
+    <title>Activities</title>
         <activity xml:id="activity-T8Exploration1">
             <introduction><p>Recall <m>\displaystyle \int\frac{1}{x^2}dx=-\frac{1}{x}+C</m>. Compute the following definite integrals.</p></introduction>
             <task>
@@ -93,12 +95,10 @@
         <task>
             <p>What do you notice the integral <m>\displaystyle \int_{1}^b \frac{1}{\sqrt{x}} dx</m> as <m>a</m> approached <m>\infty</m> in <xref ref="activity-T8Exploration4"/>?</p>
             <ol marker="A." cols="2">
-            <ol marker="A." cols="2">
                 <li><p><m>\displaystyle \int_{1}^b \frac{1}{\sqrt{x}} dx</m> approaches <m>0</m>.</p></li>
                 <li><p><m>\displaystyle \int_{1}^b \frac{1}{\sqrt{x}} dx</m> approaches a finite constant greater than <m>0</m>.</p></li>
                 <li><p><m>\displaystyle \int_{1}^b \frac{1}{\sqrt{x}} dx</m> approaches <m>\infty</m>.</p></li>
                 <li><p>There is not enough information.</p></li>
-            </ol>
             </ol>
         </task>
         <task>
@@ -543,7 +543,7 @@ we let <m>\displaystyle \int_c^b f(x) dx</m> denote <me>\int_c^b f(x) dx=\lim_{a
         </task>
     </activity>
     
-    
+    </subsection>
     <subsection>
         <title>Videos</title>
     <figure>

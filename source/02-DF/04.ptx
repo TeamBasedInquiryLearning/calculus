@@ -9,6 +9,8 @@
       </li>
     </ul>
   </objectives>
+  <subsection>
+    <title>Activities</title>
 
  <activity xml:id="activity-df-product-rule-intro">
  <introduction>
@@ -386,4 +388,13 @@ In answering the following questions, be sure to explicitly denote which derivat
             </p></task> 
     </activity>
     
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-DF4" youtube="wqdjFSZe6Dk"/>
+            <caption>Video for DF4</caption>
+        </figure>
+    </subsection> 
+
 </section>

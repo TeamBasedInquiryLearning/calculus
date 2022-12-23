@@ -9,6 +9,8 @@
             </li>
         </ul>
     </objectives>
+  <subsection>
+    <title>Activities</title>
     
     <remark><statement>
     <p>A continuous function is one whose values change smoothly, with no jumps or gaps in the graph. We'll explore the idea first, and arrive at a mathematical definition soon.</p>
@@ -418,5 +420,13 @@ jump discontinuity.
         </task>
                  </activity>
 
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-LT4" youtube="6rKqQyTD4gc"/>
+            <caption>Video for LT4</caption>
+        </figure>
+    </subsection>  
 
 </section>

@@ -9,6 +9,8 @@
       </li>
     </ul>
   </objectives>
+  <subsection>
+    <title>Activities</title>
     
     <observation> We know how to find the derivative function using the limit definition of the derivative.  From the activities in the previous section, we have seen that this process gets cumbersome when the functions are more complicated.  In this section we will discuss shortcuts to calculate derivatives, known as <q>differentiation rules</q>.</observation>
     
@@ -276,4 +278,13 @@ Find the values of the parameters <m>a,b,c</m> for the quadratic polynomial
   <p>Hint: find the values of <m>f(0),f'(0),f''(0)</m>. The values of <m>q(0),q'(0),q''(0)</m> at zero will involve some parameters. You can solve for these parameters using the equations above.</p>
       </activity>
          
+
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-DF3" youtube="Z9xDIjqNY4U"/>
+            <caption>Video for DF3</caption>
+        </figure>
+    </subsection> 
 </section>

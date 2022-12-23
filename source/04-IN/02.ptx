@@ -9,6 +9,8 @@
       </li>
     </ul>
   </objectives>
+  <subsection>
+    <title>Activities</title>
 
     <!--Preview Activity 4.1.1 from Active Calculus -->
  <activity xml:id="integration-riemann-1" permid="KNr">
@@ -185,5 +187,12 @@ sum with 3 rectangles of uniform width.
 
     </activity>    
     
-        
+    </subsection>
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-IN2" youtube="hUO4bHeiSuI"/>
+            <caption>Video for IN2</caption>
+        </figure>
+    </subsection>
 </section>

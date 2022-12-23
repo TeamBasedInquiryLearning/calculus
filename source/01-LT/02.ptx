@@ -9,6 +9,8 @@
             </li>
         </ul>
     </objectives>
+  <subsection>
+    <title>Activities</title>
 
     <activity xml:id="activity-limits-numerically1">
         <table xml:id="table-limit-numerical1">
@@ -465,6 +467,14 @@ The limit is <m>-0.7</m>.
          </statement> </task> 
     </activity>
     
+    </subsection>
 
-    
+    <subsection>
+        <title>Videos</title>
+        <figure>
+            <video xml:id="video-LT2" youtube="y6Fum0MlhSM"/>
+            <caption>Video for LT2</caption>
+        </figure>
+    </subsection>  
+
 </section>
