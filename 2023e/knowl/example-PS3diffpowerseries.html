@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.3.1</span><span class="period">.</span>
+</h3>
+<p>Consider the power series <span class="process-math">\(\displaystyle \sum_{n=0}^\infty a_nx^n\text{.}\)</span>  We could compute <span class="process-math">\(\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]\)</span> by:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]&amp;=\displaystyle \sum_{n=0}^\infty a_nnx^{n-1}\\
+(\text{Then since when }n=0, a_0(0)x^{-1}=0)&amp;\\
+&amp;=\displaystyle \sum_{n=1}^\infty a_nnx^{n-1}\\
+(\text{Then let }m=n-1, n=m+1)&amp;\\
+&amp;=\displaystyle \sum_{m=0}^\infty a_{m+1}(m+1)x^{m}\\
+(\text{Then renaming indices}.)&amp;\\
+&amp;=\displaystyle \sum_{n=0}^\infty a_{n+1}(n+1)x^{n}
+\end{align*}
+</div>
+<p>We could also compute <span class="process-math">\(\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]\)</span> by:</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{align*}
+\frac{d}{dx}\left[\displaystyle \sum_{n=0}^\infty a_nx^n\right]&amp;=\frac{d}{dx}\left[a_0+a_1x+a_2x^2+\cdots a_nx^n+\cdots\right]\\
+&amp;=a_1+a_22x+a_33x^2+\cdots a_nnx^{n-1}+a_{n+1}(n+1)x^n+\cdots\\
+&amp;=\displaystyle \sum_{n=0}^\infty a_{n+1}(n+1)x^{n}
+\end{align*}
+</div></article><span class="incontext"><a href="PS3.html#example-PS3diffpowerseries" class="internal">in-context</a></span>
+</body>
+</html>
