@@ -5542,7 +5542,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.8",
   "title": "Improper integrals (TI8)",
-  "body": " Improper integrals (TI8)     I can compute improper integrals.      Activities   Recall . Compute the following definite integrals.       What do you notice about as approached 0 in ?   approaches .  approaches a finite constant greater than .  approaches .  There is not enough information.     Compute the following definite integrals, again using .       What do you notice about as approached in ?   approaches .  approaches a finite constant greater than .  approaches .  There is not enough information.     Recall . Compute the following definite integrals.       What do you notice about the integral as approached 0 in ?  approaches .  approaches a finite constant greater than .  approaches .  There is not enough information.   How does this compare to what you found in ?    Compute the following definite integrals using .       What do you notice the integral as approached in ?   approaches .  approaches a finite constant greater than .  approaches .  There is not enough information.    How does this compare to what you found in ?    For a function and a constant , we let denote . If this limit is a defined real number, then we say is convergent . Otherwise, it is divergent .  Similarly,    Which of these limits is equal to ?      All of these.     Given the result of , what is ?          Does converge or diverge?   Converges because converges.  Diverges because diverges.  Converges because converges.  Diverges because diverges.     For a function with a vertical asymptote at , we let denote .  For a function with a vertical asymptote at , we let denote .    Which of these limits is equal to ?      All of these.     Given the this result, what is ?          Does converge or diverge?   Converges because converges.  Diverges because diverges.  Converges because converges.  Diverges because diverges.      Explain and demonstrate how to write each of the following improper integrals as a limit, and why this limit coverges or diverges.                          Suppose that and . Applying the integration power rule gives us the indefinite integral .     If , which of the following statements must be true? Select all that apply.     converges.  diverges.   If , which of the following statements must be true? Select all that apply.     converges.  diverges.     If , which of the following statements must be true?  converges.  diverges.   If , which of the following statements must be true?  converges.  diverges.     Consider when . Then and .  What can we conclude about ?  converges.  diverges.  There is not enough information to determine whether this integral converges or diverges.   What can we conclude about ?  converges.  diverges.  There is not enough information to determine whether this integral converges or diverges.      Let .   is defined if and only if .     is defined if and only if .       Consider the plots of where .   Plots of   Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x).     If is convergent, what can we say about ?  and are both convergent.  and are both divergent.  Whether or not and are convergent or divergent cannot be determined.  is convergent and is divergent.  is convergent and could be either convergent or divergent.      Consider the plots of where .  Plots of   Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x).    If is divergent, what can we say about ?  and are both convergent.  and are both divergent.  Whether or not and are convergent or divergent cannot be determined.  could be either convergent or dicergent and is divergent.  is convergent and is divergent.      Consider the plots of where .  Plots of   Plots of positive functions f(x), g(x) and h(x).    If is convergent, what can we say about and ?  and are both convergent.  and are both divergent.  Whether or not and are convergent or divergent cannot be determined.  is convergent and is divergent.  is convergent and can either be convergent or divergent.      Consider the plots of where .  Plots of   Plots of positive functions f(x), g(x) and h(x).    If is dinvergent, what can we say about and ?  and are both convergent.  and are both divergent.  Whether or not and are convergent or divergent cannot be determined.  can be either convergent or divergent and is divergent.  is convergent and is divergent.      Let be functions such that for , . Then . In particular:  If converges, so does the smaller .  If diverges, so does the bigger .       Compare to one of the following functions where and use this to determine if is convergent or divergent.            Comparing to which of the following functions where allows you to determine that converges?           Find .  Which of the following is true about ?  is convergent.  is divergent.  More information is needed.      Videos      Video: I can compute improper integrals,       Video: I can compute improper integrals,     "
+  "body": " Improper integrals (TI8)     I can compute improper integrals.      Activities   Recall . Compute the following definite integrals.       What do you notice about as approached 0 in ?   approaches .  approaches a finite constant greater than .  approaches .  There is not enough information.     Compute the following definite integrals, again using .       What do you notice about as approached in ?   approaches .  approaches a finite constant greater than .  approaches .  There is not enough information.     Recall . Compute the following definite integrals.       What do you notice about the integral as approached 0 in ?  approaches .  approaches a finite constant greater than .  approaches .  There is not enough information.   How does this compare to what you found in ?    Compute the following definite integrals using .       What do you notice the integral as approached in ?  approaches .  approaches a finite constant greater than .  approaches .  There is not enough information.   How does this compare to what you found in ?    For a function and a constant , we let denote . If this limit is a defined real number, then we say is convergent . Otherwise, it is divergent .  Similarly,    Which of these limits is equal to ?      All of these.     Given the result of , what is ?          Does converge or diverge?   Converges because converges.  Diverges because diverges.  Converges because converges.  Diverges because diverges.     For a function with a vertical asymptote at , we let denote .  For a function with a vertical asymptote at , we let denote .    Which of these limits is equal to ?      All of these.     Given the this result, what is ?          Does converge or diverge?   Converges because converges.  Diverges because diverges.  Converges because converges.  Diverges because diverges.      Explain and demonstrate how to write each of the following improper integrals as a limit, and why this limit coverges or diverges.                          Suppose that and . Applying the integration power rule gives us the indefinite integral .     If , which of the following statements must be true? Select all that apply.     converges.  diverges.   If , which of the following statements must be true? Select all that apply.     converges.  diverges.     If , which of the following statements must be true?  converges.  diverges.   If , which of the following statements must be true?  converges.  diverges.     Consider when . Then and .  What can we conclude about ?  converges.  diverges.  There is not enough information to determine whether this integral converges or diverges.   What can we conclude about ?  converges.  diverges.  There is not enough information to determine whether this integral converges or diverges.      Let .   is defined if and only if .     is defined if and only if .       Consider the plots of where .   Plots of   Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x).     If is convergent, what can we say about ?  and are both convergent.  and are both divergent.  Whether or not and are convergent or divergent cannot be determined.  is convergent and is divergent.  is convergent and could be either convergent or divergent.      Consider the plots of where .  Plots of   Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x).    If is divergent, what can we say about ?  and are both convergent.  and are both divergent.  Whether or not and are convergent or divergent cannot be determined.  could be either convergent or dicergent and is divergent.  is convergent and is divergent.      Consider the plots of where .  Plots of   Plots of positive functions f(x), g(x) and h(x).    If is convergent, what can we say about and ?  and are both convergent.  and are both divergent.  Whether or not and are convergent or divergent cannot be determined.  is convergent and is divergent.  is convergent and can either be convergent or divergent.      Consider the plots of where .  Plots of   Plots of positive functions f(x), g(x) and h(x).    If is dinvergent, what can we say about and ?  and are both convergent.  and are both divergent.  Whether or not and are convergent or divergent cannot be determined.  can be either convergent or divergent and is divergent.  is convergent and is divergent.      Let be functions such that for , . Then . In particular:  If converges, so does the smaller .  If diverges, so does the bigger .       Compare to one of the following functions where and use this to determine if is convergent or divergent.            Comparing to which of the following functions where allows you to determine that converges?           Find .  Which of the following is true about ?  is convergent.  is divergent.  More information is needed.      Videos      Video: I can compute improper integrals,       Video: I can compute improper integrals,     "
 },
 {
   "id": "objectives-44",
@@ -5623,7 +5623,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "5.8.8",
   "title": "",
-  "body": " What do you notice the integral as approached in ?   approaches .  approaches a finite constant greater than .  approaches .  There is not enough information.    How does this compare to what you found in ?  "
+  "body": " What do you notice the integral as approached in ?  approaches .  approaches a finite constant greater than .  approaches .  There is not enough information.   How does this compare to what you found in ?  "
 },
 {
   "id": "definition-TI8infinityint",
@@ -6028,7 +6028,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.3",
   "title": "Volumes of Revolution (AI3)",
-  "body": " Volumes of Revolution (AI3)     Compute volumes of solids of revolution.      Activities    Consider the function and the solid of revolution generated by rotating the region in the first quadrant bounded by about the -axis.  Plot of over .   A plot of f(x).      We wish to find the volume of this solid.   Suppose we estimate the volume of this solid by approximating it with two cylinders of height  with radii and .  Plot of over and the cross sections of two cylinders.   A plot of f(x) approximated by 2 cylinders.     What is the volume of the cylinder with radius ?            Plot of over and the cross sections of two cylinders.   A plot of f(x) approximated by 2 cylinders.     What is the volume of the cylinder with radius ?         Suppose we now use a height of .  Plot of over and the cross sections of 3 cylinders.   A plot of f(x) and cross section of 3 cylinders.     Fill out the following table.   Which of the following Reimann sums best approximates the volume of our solid?        Which of the following integrals computes the volume of our solid?        What is the volume of our solid?     Suppose we wanted to find the volume of the the solid of revolution generated by rotating the region in the first quadrant bounded by the curves about the -axis.  Plot of bounded region rotated about the -axis.   Bounded region rotated about -axis.         Plot of bounded region rotated about the -axis.   Bounded region rotated about -axis.     Consider a cross section at height . What is the radius of this cross section?         Suppose we wanted to estimate this volume with 4 cylinders with . Fill out the following table.   Which of the following Reimann sums best approximates the volume of our solid?        Which of the following integrals computes the volume of our solid?       What is the volume of our solid?    Volumes of Revolution: Disk Method   If is a nonnegative continuous function on , then the volume of the solid of revolution generated by revolving the curve about the -axis over this interval is given by .      Consider the solid of revolution generated by rotating the region bounded by about the -axis.  Plot of bounded region rotated about the -axis.   Bounded region rotated about -axis.       What is the shape of the cross section made at ?  Plot of Bounded region rotated about the -axis.   Bounded region rotated about -axis.      A circle with radius .  A circle with radius .  A circle with radius .  An annulus with outside radius and inner radius .    Suppose we wanted to estimate this volume with 4 cylinders or annular cylinders with . What is the volume of the (annular) cylinder formed at the cross section ?        We continue to estimate this volume with 4 cylinders or annular cylinders with . Fill out the following table:   Which of the following Reimann sums best approximates the volume of our solid?        Which of the following integrals computes the volume of our solid?        What is the volume of our solid?  How else could we have computed the volume?  Find the volume of the region bounded by on rotated about the -axis, and subtract the volume of the region bounded by on rotated about the -axis.  Find the volume of the region bounded by on rotated about the -axis.      The Washer Method   If and are nonnegative continuous functions on that satisfy for all in , then the volume of the solid of revolution generated by revolving the region between them about the -axis over this interval is given by .      Suppose we wanted to find the volume of the the solid of revolution generated by rotating the region in the first quadrant bounded by the curves about the -axis.    Plot of Bounded region rotated about the -axis.   Bounded region rotated about the -axis.       Suppose we wanted to estimate this volume with 3 concentric annular cylinders with heights , where are the inner radii and are the outer radii. Over which values do the radii and range?        Recall that the volume of an annular cylinder of height , inner radius and outer radius is .  Plot of Bounded region rotated about the -axis.   Bounded region rotated about -axis.     Fill out the following table.   Consider an arbitrary annular cylinder with inner radius , outer radius , and height .  Plot of Bounded region rotated about the -axis.   Bounded region rotated about -axis.     Which of the following represents the volume of this annular cylinder?        Recall that . Which of the following Riemann sums best estimates the volume of our solid?       Which of the following integrals computes the volume of our solid?       What is the volume of our solid?    The Shell Method   Let a solid be formed by revolving a region , bounded by and , around a vertical axis. Let represent the distance from the axis of rotation to (i.e., the radius of a sample shell) and let represent the height of the solid at (i.e., the height of the shell). The volume of the solid is       Consider the region bounded by    Find the volume of the solid generated by rotating this region about the -axis.  Find the volume of the solid generated by rotating this region about the -axis.     Consider the region bounded by   Find the volume of the solid generated by rotating this region about the line . (Hint: Sketch this figure, what is the outer radius ? What is the inner radius ?)       Videos      Video: Compute volumes of solids of revolution, washer -axis       Video: Compute volumes of solids of revolution, shell -axis       Video: Compute volumes of solids of revolution, washer -axis       Video: Compute volumes of solids of revolution, shell -axis    "
+  "body": " Volumes of Revolution (AI3)     Compute volumes of solids of revolution.      Activities    Consider the following visualization to decide which of these statements is most appropriate for describing the relationship of lengths and areas.    Length is the integral of areas.  Area is the integral of lengths.  Length is the derivative of areas.  None of these.       We define the volume of a solid with cross sectional area given by laying between to be the definite integral .       We will be focused on the volumes of solids obtained by revolving a region around an axis. Let's use the running example of the region bounded by the curves .    Consider the below illustrated revolution of this region, and the cross-section drawn from a horizontal line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?       Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?       Consider the below illustrated revolution of this region, and the cross-section drawn from a horizontal line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?       Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?          Generally when solving problems without the aid of technology, it's useful to draw your region in two dimensions, choose whether to use a horizontal or vertical line segment, and draw its rotation to determine the cross-sectional shape.  When the shape is a disk, this is called the disk method and we use one of these formulas depending on whether the cross-sectional area depends on or . .  When the shape is a washer, this is called the washer method and we use one of these formulas depending on whether the cross-sectional area depends on or . .  When the shape is a cylindrical shell, this is called the shell method and we use one of these formulas depending on whether the cross-sectional area depends on or . .      Let's now consider the region bounded by the curves , rotated about the -axis.   Sketch two copies of this region in the plane.  Draw a vertical line segment in one region and its rotation around the -axis. Draw a horizontal line segment in the other region and its rotation around the -axis.  Consider the method required for each cross-section drawn. Which would be the easiest strategy to proceed with?  The horizontal line segment, using the disk\/washer method.  The horizontal line segment, using the shell method.  The vertical line segment, using the disk\/washer method.  The vertical line segment, using the shell method.   Let's proceed with the vertical segment. Which formula is most appropriate for the radius?       Which of these integrals is equal to the volume of the solid of revolution?          Let's now consider the same region, bounded by the curves , but this time rotated about the -axis.   Sketch two copies of this region in the plane.  Draw a vertical line segment in one region and its rotation around the -axis. Draw a horizontal line segment in the other region and its rotation around the -axis.  Consider the method required for each cross-section drawn. Which would be the easiest strategy to proceed with?  The horizontal line segment, using the disk\/washer method.  The horizontal line segment, using the shell method.  The vertical line segment, using the disk\/washer method.  The vertical line segment, using the shell method.   Let's proceed with the vertical segment. Which formula is most appropriate for the radius?       Which formula is most appropriate for the height?       Which of these integrals is equal to the volume of the solid of revolution?          Consider the region bounded by .    Find an integral which computes the volume of the solid formed by rotating this region about the -axis.    Find an integral which computes the volume of the solid formed by rotating this region about the -axis.      Videos      Video: Compute volumes of solids of revolution, washer -axis       Video: Compute volumes of solids of revolution, shell -axis       Video: Compute volumes of solids of revolution, washer -axis       Video: Compute volumes of solids of revolution, shell -axis    "
 },
 {
   "id": "objectives-48",
@@ -6040,49 +6040,49 @@ var ptx_lunr_docs = [
   "body": "   Compute volumes of solids of revolution.    "
 },
 {
-  "id": "activity-AI3rotatexPlus1",
+  "id": "activity-379",
   "level": "2",
-  "url": "AI3.html#activity-AI3rotatexPlus1",
+  "url": "AI3.html#activity-379",
   "type": "Activity",
   "number": "6.3.1",
   "title": "",
-  "body": "  Consider the function and the solid of revolution generated by rotating the region in the first quadrant bounded by about the -axis.  Plot of over .   A plot of f(x).      We wish to find the volume of this solid.   Suppose we estimate the volume of this solid by approximating it with two cylinders of height  with radii and .  Plot of over and the cross sections of two cylinders.   A plot of f(x) approximated by 2 cylinders.     What is the volume of the cylinder with radius ?            Plot of over and the cross sections of two cylinders.   A plot of f(x) approximated by 2 cylinders.     What is the volume of the cylinder with radius ?         Suppose we now use a height of .  Plot of over and the cross sections of 3 cylinders.   A plot of f(x) and cross section of 3 cylinders.     Fill out the following table.   Which of the following Reimann sums best approximates the volume of our solid?        Which of the following integrals computes the volume of our solid?        What is the volume of our solid?  "
+  "body": "  Consider the following visualization to decide which of these statements is most appropriate for describing the relationship of lengths and areas.    Length is the integral of areas.  Area is the integral of lengths.  Length is the derivative of areas.  None of these.    "
 },
 {
-  "id": "activity-",
+  "id": "definition-32",
   "level": "2",
-  "url": "AI3.html#activity-",
-  "type": "Activity",
+  "url": "AI3.html#definition-32",
+  "type": "Definition",
   "number": "6.3.2",
   "title": "",
-  "body": "  Suppose we wanted to find the volume of the the solid of revolution generated by rotating the region in the first quadrant bounded by the curves about the -axis.  Plot of bounded region rotated about the -axis.   Bounded region rotated about -axis.         Plot of bounded region rotated about the -axis.   Bounded region rotated about -axis.     Consider a cross section at height . What is the radius of this cross section?         Suppose we wanted to estimate this volume with 4 cylinders with . Fill out the following table.   Which of the following Reimann sums best approximates the volume of our solid?        Which of the following integrals computes the volume of our solid?       What is the volume of our solid?  "
+  "body": "  We define the volume of a solid with cross sectional area given by laying between to be the definite integral .    "
 },
 {
-  "id": "fact-disk",
+  "id": "activity-380",
   "level": "2",
-  "url": "AI3.html#fact-disk",
-  "type": "Fact",
+  "url": "AI3.html#activity-380",
+  "type": "Activity",
   "number": "6.3.3",
-  "title": "Volumes of Revolution: Disk Method.",
-  "body": " Volumes of Revolution: Disk Method   If is a nonnegative continuous function on , then the volume of the solid of revolution generated by revolving the curve about the -axis over this interval is given by .   "
+  "title": "",
+  "body": "  We will be focused on the volumes of solids obtained by revolving a region around an axis. Let's use the running example of the region bounded by the curves .    Consider the below illustrated revolution of this region, and the cross-section drawn from a horizontal line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?       Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?       Consider the below illustrated revolution of this region, and the cross-section drawn from a horizontal line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?       Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?       "
+},
+{
+  "id": "remark-49",
+  "level": "2",
+  "url": "AI3.html#remark-49",
+  "type": "Remark",
+  "number": "6.3.4",
+  "title": "",
+  "body": "  Generally when solving problems without the aid of technology, it's useful to draw your region in two dimensions, choose whether to use a horizontal or vertical line segment, and draw its rotation to determine the cross-sectional shape.  When the shape is a disk, this is called the disk method and we use one of these formulas depending on whether the cross-sectional area depends on or . .  When the shape is a washer, this is called the washer method and we use one of these formulas depending on whether the cross-sectional area depends on or . .  When the shape is a cylindrical shell, this is called the shell method and we use one of these formulas depending on whether the cross-sectional area depends on or . .   "
 },
 {
   "id": "activity-381",
   "level": "2",
   "url": "AI3.html#activity-381",
   "type": "Activity",
-  "number": "6.3.4",
-  "title": "",
-  "body": "  Consider the solid of revolution generated by rotating the region bounded by about the -axis.  Plot of bounded region rotated about the -axis.   Bounded region rotated about -axis.       What is the shape of the cross section made at ?  Plot of Bounded region rotated about the -axis.   Bounded region rotated about -axis.      A circle with radius .  A circle with radius .  A circle with radius .  An annulus with outside radius and inner radius .    Suppose we wanted to estimate this volume with 4 cylinders or annular cylinders with . What is the volume of the (annular) cylinder formed at the cross section ?        We continue to estimate this volume with 4 cylinders or annular cylinders with . Fill out the following table:   Which of the following Reimann sums best approximates the volume of our solid?        Which of the following integrals computes the volume of our solid?        What is the volume of our solid?  How else could we have computed the volume?  Find the volume of the region bounded by on rotated about the -axis, and subtract the volume of the region bounded by on rotated about the -axis.  Find the volume of the region bounded by on rotated about the -axis.    "
-},
-{
-  "id": "fact-washer",
-  "level": "2",
-  "url": "AI3.html#fact-washer",
-  "type": "Fact",
   "number": "6.3.5",
-  "title": "The Washer Method.",
-  "body": " The Washer Method   If and are nonnegative continuous functions on that satisfy for all in , then the volume of the solid of revolution generated by revolving the region between them about the -axis over this interval is given by .   "
+  "title": "",
+  "body": "  Let's now consider the region bounded by the curves , rotated about the -axis.   Sketch two copies of this region in the plane.  Draw a vertical line segment in one region and its rotation around the -axis. Draw a horizontal line segment in the other region and its rotation around the -axis.  Consider the method required for each cross-section drawn. Which would be the easiest strategy to proceed with?  The horizontal line segment, using the disk\/washer method.  The horizontal line segment, using the shell method.  The vertical line segment, using the disk\/washer method.  The vertical line segment, using the shell method.   Let's proceed with the vertical segment. Which formula is most appropriate for the radius?       Which of these integrals is equal to the volume of the solid of revolution?       "
 },
 {
   "id": "activity-382",
@@ -6091,68 +6091,50 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "6.3.6",
   "title": "",
-  "body": "  Suppose we wanted to find the volume of the the solid of revolution generated by rotating the region in the first quadrant bounded by the curves about the -axis.    Plot of Bounded region rotated about the -axis.   Bounded region rotated about the -axis.       Suppose we wanted to estimate this volume with 3 concentric annular cylinders with heights , where are the inner radii and are the outer radii. Over which values do the radii and range?        Recall that the volume of an annular cylinder of height , inner radius and outer radius is .  Plot of Bounded region rotated about the -axis.   Bounded region rotated about -axis.     Fill out the following table.   Consider an arbitrary annular cylinder with inner radius , outer radius , and height .  Plot of Bounded region rotated about the -axis.   Bounded region rotated about -axis.     Which of the following represents the volume of this annular cylinder?        Recall that . Which of the following Riemann sums best estimates the volume of our solid?       Which of the following integrals computes the volume of our solid?       What is the volume of our solid?  "
-},
-{
-  "id": "fact-shell",
-  "level": "2",
-  "url": "AI3.html#fact-shell",
-  "type": "Fact",
-  "number": "6.3.7",
-  "title": "The Shell Method.",
-  "body": " The Shell Method   Let a solid be formed by revolving a region , bounded by and , around a vertical axis. Let represent the distance from the axis of rotation to (i.e., the radius of a sample shell) and let represent the height of the solid at (i.e., the height of the shell). The volume of the solid is    "
+  "body": "  Let's now consider the same region, bounded by the curves , but this time rotated about the -axis.   Sketch two copies of this region in the plane.  Draw a vertical line segment in one region and its rotation around the -axis. Draw a horizontal line segment in the other region and its rotation around the -axis.  Consider the method required for each cross-section drawn. Which would be the easiest strategy to proceed with?  The horizontal line segment, using the disk\/washer method.  The horizontal line segment, using the shell method.  The vertical line segment, using the disk\/washer method.  The vertical line segment, using the shell method.   Let's proceed with the vertical segment. Which formula is most appropriate for the radius?       Which formula is most appropriate for the height?       Which of these integrals is equal to the volume of the solid of revolution?       "
 },
 {
   "id": "activity-383",
   "level": "2",
   "url": "AI3.html#activity-383",
   "type": "Activity",
-  "number": "6.3.8",
+  "number": "6.3.7",
   "title": "",
-  "body": "  Consider the region bounded by    Find the volume of the solid generated by rotating this region about the -axis.  Find the volume of the solid generated by rotating this region about the -axis.  "
+  "body": "  Consider the region bounded by .    Find an integral which computes the volume of the solid formed by rotating this region about the -axis.    Find an integral which computes the volume of the solid formed by rotating this region about the -axis.   "
 },
 {
-  "id": "activity-384",
+  "id": "figure-114",
   "level": "2",
-  "url": "AI3.html#activity-384",
-  "type": "Activity",
-  "number": "6.3.9",
-  "title": "",
-  "body": "  Consider the region bounded by   Find the volume of the solid generated by rotating this region about the line . (Hint: Sketch this figure, what is the outer radius ? What is the inner radius ?)   "
-},
-{
-  "id": "figure-125",
-  "level": "2",
-  "url": "AI3.html#figure-125",
+  "url": "AI3.html#figure-114",
   "type": "Figure",
-  "number": "136",
+  "number": "125",
   "title": "",
   "body": "    Video: Compute volumes of solids of revolution, washer -axis  "
 },
 {
-  "id": "figure-126",
+  "id": "figure-115",
   "level": "2",
-  "url": "AI3.html#figure-126",
+  "url": "AI3.html#figure-115",
   "type": "Figure",
-  "number": "137",
+  "number": "126",
   "title": "",
   "body": "    Video: Compute volumes of solids of revolution, shell -axis  "
 },
 {
-  "id": "figure-127",
+  "id": "figure-116",
   "level": "2",
-  "url": "AI3.html#figure-127",
+  "url": "AI3.html#figure-116",
   "type": "Figure",
-  "number": "138",
+  "number": "127",
   "title": "",
   "body": "    Video: Compute volumes of solids of revolution, washer -axis  "
 },
 {
-  "id": "figure-128",
+  "id": "figure-117",
   "level": "2",
-  "url": "AI3.html#figure-128",
+  "url": "AI3.html#figure-117",
   "type": "Figure",
-  "number": "139",
+  "number": "128",
   "title": "",
   "body": "    Video: Compute volumes of solids of revolution, shell -axis  "
 },
@@ -6175,56 +6157,56 @@ var ptx_lunr_docs = [
   "body": "   Compute surface areas of surfaces of revolution.    "
 },
 {
-  "id": "fact-12",
+  "id": "fact-9",
   "level": "2",
-  "url": "AI4.html#fact-12",
+  "url": "AI4.html#fact-9",
   "type": "Fact",
   "number": "6.4.1",
   "title": "",
   "body": "  A frustum frustum is the portion of a cone that lies between one or two parallel planes.  Plot of a frustum.   frustum      The surface area of the side of the frustum is: where and are the radii of the bases, and is the length of the side.  Note that if , this reduces to the surface area of a side of a cylinder.   "
 },
 {
-  "id": "activity-385",
+  "id": "activity-384",
   "level": "2",
-  "url": "AI4.html#activity-385",
+  "url": "AI4.html#activity-384",
   "type": "Activity",
   "number": "6.4.2",
   "title": "",
   "body": "  Suppose we wanted to find the surface area of the the solid of revolution generated by rotating about the -axis.  Plot of bounded region rotated about -axis.   Bounded region rotated about -axis.       Suppose we wanted to estimate the surface area with two frustums with .  Plot of bounded region rotated about -axis.   Bounded region rotated about -axis.    What is the surface area of the frustum formed by rotating the line segment from to about the -axis?          Plot of bounded region rotated about the -axis.   Bounded region rotated about -axis.    What is the surface area of the frustum formed by rotating the line segment from to about the -axis?       Suppose we wanted to estimate the surface area with four frustums with .  Plot of bounded region rotated about -axis.   Bounded region rotated about -axis.       Suppose we wanted to estimate the surface area with frustums.  Plot of bounded region rotated about -axis.   Bounded region rotated about -axis.    Let . Which of the following expressions represents the surface area generated bo rotating the line segment from to about the -axis?  .  .  .    Which of the following Riemann sums best estimates the surface area of the solid generated by rotating over about the -axis ? Let .  .  .  .    "
 },
 {
-  "id": "fact-13",
+  "id": "fact-10",
   "level": "2",
-  "url": "AI4.html#fact-13",
+  "url": "AI4.html#fact-10",
   "type": "Fact",
   "number": "6.4.3",
   "title": "",
   "body": "  Recall from that and that   Thus given a function over , the surface area of the solid generated by rotating this function about the -axis is    "
 },
 {
-  "id": "activity-386",
+  "id": "activity-385",
   "level": "2",
-  "url": "AI4.html#activity-386",
+  "url": "AI4.html#activity-385",
   "type": "Activity",
   "number": "6.4.4",
   "title": "",
   "body": "  Consider again the solid generated by rotating over about the -axis.   Find an integral which computes the surface area of this solid.  If we instead rotate over about the -axis, what is an integral which computes the surface area for this solid?  "
 },
 {
-  "id": "activity-387",
+  "id": "activity-386",
   "level": "2",
-  "url": "AI4.html#activity-387",
+  "url": "AI4.html#activity-386",
   "type": "Activity",
   "number": "6.4.5",
   "title": "",
   "body": "  Consider again the function over .   Find an integral which computes the surface area of the solid generated by rotating the above curve about the -axis.  Find an integral which computes the surface area of the solid generated by rotating the above curve about the -axis.  "
 },
 {
-  "id": "figure-135",
+  "id": "figure-124",
   "level": "2",
-  "url": "AI4.html#figure-135",
+  "url": "AI4.html#figure-124",
   "type": "Figure",
-  "number": "146",
+  "number": "135",
   "title": "",
   "body": "    Video: Compute surface areas of surfaces of revolution  "
 },
@@ -6427,11 +6409,11 @@ var ptx_lunr_docs = [
   "body": "  Consider that for the pyramid from , a cross section of height is ft . Also recall that the density of the pyramid is lb\/feet , where is the height in feet, and that we found the total mass to be about 3414.14.6 lbs.  Use to find the height where the center of mass occurs.   "
 },
 {
-  "id": "figure-152",
+  "id": "figure-141",
   "level": "2",
-  "url": "AI5.html#figure-152",
+  "url": "AI5.html#figure-141",
   "type": "Figure",
-  "number": "163",
+  "number": "152",
   "title": "",
   "body": "    Video: Set up integrals to solve problems involving density, mass, and center of mass  "
 },
@@ -6598,11 +6580,11 @@ var ptx_lunr_docs = [
   "body": "  Recall the computations done in .   Find a Riemann sum which estimates the total work needed to pump all the water out of this tank, using slices at heights m, of width m.  Use (a) to find an integral expression which computes the amount of work needed to pump all the water out of this tank.  Evaluate the integral found in (b).  "
 },
 {
-  "id": "figure-158",
+  "id": "figure-147",
   "level": "2",
-  "url": "AI6.html#figure-158",
+  "url": "AI6.html#figure-147",
   "type": "Figure",
-  "number": "169",
+  "number": "158",
   "title": "",
   "body": "    Video: Set up integrals to solve problems involving work, force, and\/or pressure  "
 },
@@ -6652,11 +6634,11 @@ var ptx_lunr_docs = [
   "body": "  Recall the computations done in .   Find a Riemann sum which estimates the total force exerted on the dam, using slices at heights m, of width m.  Use (a) to find an integral expression which computes the amount of force exerted on this dam.  Evaluate the integral found in (b).  "
 },
 {
-  "id": "figure-160",
+  "id": "figure-149",
   "level": "2",
-  "url": "AI7.html#figure-160",
+  "url": "AI7.html#figure-149",
   "type": "Figure",
-  "number": "171",
+  "number": "160",
   "title": "",
   "body": "    Video: Set up integrals to solve problems involving work, force, and\/or pressure  "
 },
@@ -6715,9 +6697,9 @@ var ptx_lunr_docs = [
   "body": "  Earlier we obtained the same graphs for the equation and the parametric equations and . Do the following steps to find out why.   Which of the following equations describes in terms of ?       Which of these is the result of plugging this choice in for in the parametric equation for ?      Show how to simplify this choice to obtain the equation .  "
 },
 {
-  "id": "fact-18",
+  "id": "fact-15",
   "level": "2",
-  "url": "CO1.html#fact-18",
+  "url": "CO1.html#fact-15",
   "type": "Fact",
   "number": "7.1.5",
   "title": "",
@@ -6733,9 +6715,9 @@ var ptx_lunr_docs = [
   "body": "  Parametric equations have the advantage of describing paths that cannot be described by a function . One such example is the graph of and . (Use technology or the approximation to approximate coordinates as needed.)   Complete the folowing table.  Chart of approximate and values               Plot these points in the plane and connect the dots to draw a sketch of the graph.  What do you obtain by plugging the parametric equations into the expression ?       Which of these describes the equation and graph given by these parametric equations?  a parabola  a line  a circle  a square   The graph of these parametric equations cannot be described by a function. Why?  The graph fails the vertical line test.  The graph fails the horizontal line test.  The graph doesn't extend vertically to .  The graph doesn't extend horizontally to .   "
 },
 {
-  "id": "definition-33",
+  "id": "definition-34",
   "level": "2",
-  "url": "CO1.html#definition-33",
+  "url": "CO1.html#definition-34",
   "type": "Definition",
   "number": "7.1.7",
   "title": "",
@@ -6769,36 +6751,36 @@ var ptx_lunr_docs = [
   "body": "   Compute derivatives and tangents related to two-dimensional parametric\/vector equations.    "
 },
 {
-  "id": "activity-427",
+  "id": "activity-426",
   "level": "2",
-  "url": "CO2.html#activity-427",
+  "url": "CO2.html#activity-426",
   "type": "Activity",
   "number": "7.2.1",
   "title": "",
   "body": "  Consider the parametric equations and . The coordinate on this graph at is .   Which of the following equations of describes the graph of these paramteric equations?       Which of the following describes the slope of the line tangent to the graph at the point ?  , which is when .  , which is when .  , which is when .  , which is when .   Note that the parametric equation for simplifies to . What do we get for the derivatives of and for ?  and .  and .  and .  and .   It follows that when , and . Which of the following conjectures seems most likely?   The slope could also be found by computing .    The slope could also be found by computing .    The slope is always equal to .    The slope is always equal to .    "
 },
 {
-  "id": "fact-19",
+  "id": "fact-16",
   "level": "2",
-  "url": "CO2.html#fact-19",
+  "url": "CO2.html#fact-16",
   "type": "Fact",
   "number": "7.2.2",
   "title": "",
   "body": "  Suppose is a function of , and may be thought of as a function of either or . Then the Chain Rule requires that . This provides the slope formula for parametric equations: .   "
 },
 {
-  "id": "activity-428",
+  "id": "activity-427",
   "level": "2",
-  "url": "CO2.html#activity-428",
+  "url": "CO2.html#activity-427",
   "type": "Activity",
   "number": "7.2.3",
   "title": "",
   "body": "  Let's draw the picture of the line tangent to the parametric equations and when .   Use a chart to sketch the parabola given by these parametric equations for , including the point when .  Earlier we determined that the slope of the tangent line was . Draw a line with slope passing through and confirm that it appears to be tangent.  Use the point-slope formula along with the slope and point to find the exact equation for this tangent line.       "
 },
 {
-  "id": "activity-429",
+  "id": "activity-428",
   "level": "2",
-  "url": "CO2.html#activity-429",
+  "url": "CO2.html#activity-428",
   "type": "Activity",
   "number": "7.2.4",
   "title": "",
@@ -6832,18 +6814,18 @@ var ptx_lunr_docs = [
   "body": "  In , the blue curve is the graph of the parametric equations and for . This curve connects the point to the point . The red dashed line is the straight line segment connecting these points.   A parametric curve and segment from to   A parametric curve and segment from (1,1) to (4,8).      "
 },
 {
-  "id": "activity-430",
+  "id": "activity-429",
   "level": "2",
-  "url": "CO3.html#activity-430",
+  "url": "CO3.html#activity-429",
   "type": "Activity",
   "number": "7.3.2",
   "title": "",
   "body": "  Let's first investigate the length of the dashed red line segment in .   Draw a right triangle with the red dashed line segment as its hypotenuse, one leg parallel to the -axis, and the other parallel to the -axis. How long are these legs?  and .  and .  and .  and .   The Pythagorean theorem states that for a right triangle with leg lengths and hypotenuse length , we have...  .  .  .  .   Using the leg lengths and Pythagorean theorem, how long must the red dashed hypotenuse be?  .  .  .  .   Compared with the blue parametric curve connecting the same two points, is the red dashed line segement length an overestimate or underestimate?  Overestimate: the blue curve is shorter than the red line.  Underestimate: the blue curve is longer than the red line.  Exact: the blue curve is exactly as long as the red line.   "
 },
 {
-  "id": "fact-20",
+  "id": "fact-17",
   "level": "2",
-  "url": "CO3.html#fact-20",
+  "url": "CO3.html#fact-17",
   "type": "Fact",
   "number": "7.3.3",
   "title": "",
@@ -6859,9 +6841,9 @@ var ptx_lunr_docs = [
   "body": "  By approximating the curve by several (say ) segements connecting points along the curve, we obtain a better approximation than a single line segment. For example, the illustration shown in gives three segments whose distances sum to about , while the actual length of the curve turns out to be about .   Subdividing a parametric curve where   Subdividing a parametric curve with three segments      "
 },
 {
-  "id": "activity-431",
+  "id": "activity-430",
   "level": "2",
-  "url": "CO3.html#activity-431",
+  "url": "CO3.html#activity-430",
   "type": "Activity",
   "number": "7.3.5",
   "title": "",
@@ -6877,27 +6859,27 @@ var ptx_lunr_docs = [
   "body": "  Put together, and limiting the subdivisions of the curve , we obtain the Riemann sum .  Thus arclength arclength formula along a parametric curve from may be calculated by using the corresponding definite integral .   "
 },
 {
-  "id": "activity-432",
+  "id": "activity-431",
   "level": "2",
-  "url": "CO3.html#activity-432",
+  "url": "CO3.html#activity-431",
   "type": "Activity",
   "number": "7.3.7",
   "title": "",
   "body": "  Let's gain confidence in the arclength formula by checking to make sure it matches the distance formula for line segments.  The parametric equations and for represent the segment of the line connecting to .   Find and , and substitute them into the formula above along with and .  Show that the value of this formula is .  Show that the length of the line segment connecting to is by applying the distance formula directly instead.  "
 },
 {
-  "id": "activity-433",
+  "id": "activity-432",
   "level": "2",
-  "url": "CO3.html#activity-433",
+  "url": "CO3.html#activity-432",
   "type": "Activity",
   "number": "7.3.8",
   "title": "",
   "body": "  For each of these parametric equations, use to write a definite integral that computes the given length. (Do not evaluate the integral.)   The portion of where .  The portion of where .  The portion of between the points and .  "
 },
 {
-  "id": "activity-434",
+  "id": "activity-433",
   "level": "2",
-  "url": "CO3.html#activity-434",
+  "url": "CO3.html#activity-433",
   "type": "Activity",
   "number": "7.3.9",
   "title": "",
@@ -6931,20 +6913,20 @@ var ptx_lunr_docs = [
   "body": "  As the crow flies is an idiom used to describe the most direct path between two points. The polar coordinate system polar coordinate system is a useful parametrization of the plane that, rather than describing horizontal and vertical position relative to the origin in the usual way, describes a point in terms of distance from the origin and direction. The origin is also known as the pole pole (hence polar coordinates).  Let be a line segment from the origin to a given point in the plane. The length of is the distance (or radius polar coordinate system radius ) from the origin to . The polar axis polar coordinate system polar axis is a ray starting at the origin.  To define the \"direction\" of , we form an angle by letting the polar axis serve as the initial ray and as the terminal ray. We will set the positive -axis as the polar axis and assume the movement in the positive direction is counter-clockwise (as in trigonometry). Notice that, unlike in the rectangular (or Cartesian ) coordinate system, the polar coordinates for a point are not unique, as we could turn either way to face a given point (or even spin around a number of times before facing that direction).  Furthermore, by allowing to be negative, we can also \"walk backwards\" to get to a point by facing in the opposite direction. Rather than the grid lines defined by specific values for and in the rectangular coordinate system, specific values of correspond to circles of radius centered about the origin, and specific values of correspond to lines going through the pole (called radial lines polar coordinate system radial lines ).  "
 },
 {
-  "id": "figure-163",
+  "id": "figure-152",
   "level": "2",
-  "url": "CO4.html#figure-163",
+  "url": "CO4.html#figure-152",
   "type": "Figure",
-  "number": "177",
+  "number": "166",
   "title": "",
   "body": " A point in the polar coordinate system.   A point in the polar coordinate system.    "
 },
 {
-  "id": "figure-164",
+  "id": "figure-153",
   "level": "2",
-  "url": "CO4.html#figure-164",
+  "url": "CO4.html#figure-153",
   "type": "Figure",
-  "number": "178",
+  "number": "167",
   "title": "",
   "body": " The polar grid.   The polar grid    "
 },
@@ -7066,11 +7048,11 @@ var ptx_lunr_docs = [
   "body": " The area of the fan-shaped region between the pole and as the angle ranges from to is given by .  "
 },
 {
-  "id": "figure-165",
+  "id": "figure-154",
   "level": "2",
-  "url": "CO6.html#figure-165",
+  "url": "CO6.html#figure-154",
   "type": "Figure",
-  "number": "179",
+  "number": "168",
   "title": "",
   "body": " Finding the polar area differential   Illustration of polar area differential.    "
 },
@@ -7120,18 +7102,18 @@ var ptx_lunr_docs = [
   "body": " Consider the sequence .  Which of the choices below reasonably continues this sequence of numbers?        Where possible, find a formula that allows us to move from one term to the next one.  "
 },
 {
-  "id": "remark-49",
+  "id": "remark-50",
   "level": "2",
-  "url": "SQ1.html#remark-49",
+  "url": "SQ1.html#remark-50",
   "type": "Remark",
   "number": "8.1.3",
   "title": "",
   "body": "  As seen in the previous activity, having too few terms may prevent us from finding a unique way to continue creating a sequence of numbers. In fact, we need sufficiently many terms to uniquely continue a sequence of numbers (and how many terms is sufficient depends on which sequence of numbers you are trying to generate). Sometimes, we do not want to write out all of the terms needed to allow for this. Therefore, we will want to find short-hand notation that allows us to do so.   "
 },
 {
-  "id": "definition-34",
+  "id": "definition-35",
   "level": "2",
-  "url": "SQ1.html#definition-34",
+  "url": "SQ1.html#definition-35",
   "type": "Definition",
   "number": "8.1.4",
   "title": "",
@@ -7201,74 +7183,74 @@ var ptx_lunr_docs = [
   "body": "  Let be the th term in the sequence . Find a formula for .   "
 },
 {
-  "id": "definition-35",
+  "id": "definition-36",
   "level": "2",
-  "url": "SQ1.html#definition-35",
+  "url": "SQ1.html#definition-36",
   "type": "Definition",
   "number": "8.1.12",
   "title": "",
   "body": "  A sequence is recursive if the terms are defined as a function of previous terms (with the necessary initial terms provided).   "
 },
 {
-  "id": "activity-450",
+  "id": "activity-449",
   "level": "2",
-  "url": "SQ1.html#activity-450",
+  "url": "SQ1.html#activity-449",
   "type": "Activity",
   "number": "8.1.13",
   "title": "",
   "body": "Consider the sequence defined by and for . What are the first four terms?  "
 },
 {
-  "id": "activity-451",
+  "id": "activity-450",
   "level": "2",
-  "url": "SQ1.html#activity-451",
+  "url": "SQ1.html#activity-450",
   "type": "Activity",
   "number": "8.1.14",
   "title": "",
   "body": "  Consider the sequence . Which of the following offers the best recursive formula for this sequence?   for  for     "
 },
 {
-  "id": "activity-452",
+  "id": "activity-451",
   "level": "2",
-  "url": "SQ1.html#activity-452",
+  "url": "SQ1.html#activity-451",
   "type": "Activity",
   "number": "8.1.15",
   "title": "",
   "body": " Once more, consider the sequence from . Suppose and . Give a recursive formula for for all .   "
 },
 {
-  "id": "activity-453",
+  "id": "activity-452",
   "level": "2",
-  "url": "SQ1.html#activity-453",
+  "url": "SQ1.html#activity-452",
   "type": "Activity",
   "number": "8.1.16",
   "title": "",
   "body": "Give a recursive formula that generates the sequence .  "
 },
 {
-  "id": "activity-454",
+  "id": "activity-453",
   "level": "2",
-  "url": "SQ1.html#activity-454",
+  "url": "SQ1.html#activity-453",
   "type": "Activity",
   "number": "8.1.17",
   "title": "",
   "body": " Find the first 5 terms of the following sequence:  ,  Find a closed form for the following sequence:  ,  Find a recursive form for the following sequence:  ,   "
 },
 {
-  "id": "activity-455",
+  "id": "activity-454",
   "level": "2",
-  "url": "SQ1.html#activity-455",
+  "url": "SQ1.html#activity-454",
   "type": "Activity",
   "number": "8.1.18",
   "title": "",
   "body": " Find the first 5 terms of the following sequence:  ,  Find a closed form for the following sequence:  ,  Find a recursive form for the following sequence:  ,   "
 },
 {
-  "id": "figure-166",
+  "id": "figure-155",
   "level": "2",
-  "url": "SQ1.html#figure-166",
+  "url": "SQ1.html#figure-155",
   "type": "Figure",
-  "number": "180",
+  "number": "169",
   "title": "",
   "body": "    Video: Define and use explicit and recursive formulas for sequences  "
 },
@@ -7291,9 +7273,9 @@ var ptx_lunr_docs = [
   "body": "   Determine if a sequence is convergent, divergent, monotonic, or bounded, and compute limits of convergent sequences.    "
 },
 {
-  "id": "activity-456",
+  "id": "activity-455",
   "level": "2",
-  "url": "SQ2.html#activity-456",
+  "url": "SQ2.html#activity-455",
   "type": "Activity",
   "number": "8.2.1",
   "title": "",
@@ -7354,11 +7336,20 @@ var ptx_lunr_docs = [
   "body": "  A sequence is bounded if there are real numbers such that for every .   "
 },
 {
+  "id": "activity-460",
+  "level": "2",
+  "url": "SQ2.html#activity-460",
+  "type": "Activity",
+  "number": "8.2.8",
+  "title": "",
+  "body": "  Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?  "
+},
+{
   "id": "activity-461",
   "level": "2",
   "url": "SQ2.html#activity-461",
   "type": "Activity",
-  "number": "8.2.8",
+  "number": "8.2.9",
   "title": "",
   "body": "  Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?  "
 },
@@ -7367,7 +7358,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ2.html#activity-462",
   "type": "Activity",
-  "number": "8.2.9",
+  "number": "8.2.10",
   "title": "",
   "body": "  Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?  "
 },
@@ -7375,15 +7366,6 @@ var ptx_lunr_docs = [
   "id": "activity-463",
   "level": "2",
   "url": "SQ2.html#activity-463",
-  "type": "Activity",
-  "number": "8.2.10",
-  "title": "",
-  "body": "  Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?  "
-},
-{
-  "id": "activity-464",
-  "level": "2",
-  "url": "SQ2.html#activity-464",
   "type": "Activity",
   "number": "8.2.11",
   "title": "",
@@ -7399,27 +7381,27 @@ var ptx_lunr_docs = [
   "body": "  Given a sequence , we say has limit  , denoted if we can make as close to as we like by making sufficiently large. If such an exists, we say converges to . If no such exists, we say does not converge.    "
 },
 {
-  "id": "activity-465",
+  "id": "activity-464",
   "level": "2",
-  "url": "SQ2.html#activity-465",
+  "url": "SQ2.html#activity-464",
   "type": "Activity",
   "number": "8.2.13",
   "title": "",
   "body": " For each of the following, determine if the sequence converges.        Where possible, find the limit of the sequence.  "
 },
 {
-  "id": "activity-466",
+  "id": "activity-465",
   "level": "2",
-  "url": "SQ2.html#activity-466",
+  "url": "SQ2.html#activity-465",
   "type": "Activity",
   "number": "8.2.14",
   "title": "",
   "body": " Determine to what value converges.  Which of the following ia most likely true about ?  converges to 4.  converges to 0.  converges to -4.  does not converge.    "
 },
 {
-  "id": "activity-467",
+  "id": "activity-466",
   "level": "2",
-  "url": "SQ2.html#activity-467",
+  "url": "SQ2.html#activity-466",
   "type": "Activity",
   "number": "8.2.15",
   "title": "",
@@ -7435,11 +7417,11 @@ var ptx_lunr_docs = [
   "body": "  If a sequence is monotonic and bounded, then it is convergent.   "
 },
 {
-  "id": "figure-167",
+  "id": "figure-156",
   "level": "2",
-  "url": "SQ2.html#figure-167",
+  "url": "SQ2.html#figure-156",
   "type": "Figure",
-  "number": "181",
+  "number": "170",
   "title": "",
   "body": "    Video: Determine if a sequence is convergent, divergent, monotonic, or bounded, and compute limits of convergent sequences  "
 },
@@ -7552,9 +7534,9 @@ var ptx_lunr_docs = [
   "body": "  Consider the following sequences:  .  .  .     Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Find the closed form for the th partial sum for the geometric sequence .  "
 },
 {
-  "id": "activity-477",
+  "id": "activity-476",
   "level": "2",
-  "url": "SQ3.html#activity-477",
+  "url": "SQ3.html#activity-476",
   "type": "Activity",
   "number": "8.3.11",
   "title": "",
@@ -7633,38 +7615,38 @@ var ptx_lunr_docs = [
   "body": " For each of the following telescoping series, find the closed form for the th partial sum.  .  .  .    "
 },
 {
-  "id": "activity-484",
+  "id": "activity-483",
   "level": "2",
-  "url": "SQ3.html#activity-484",
+  "url": "SQ3.html#activity-483",
   "type": "Activity",
   "number": "8.3.20",
   "title": "",
   "body": " Given the closed forms you found in , determine which of the following telescoping series converge. If so, to what value does it converge?   .  .  .   "
 },
 {
-  "id": "activity-485",
+  "id": "activity-484",
   "level": "2",
-  "url": "SQ3.html#activity-485",
+  "url": "SQ3.html#activity-484",
   "type": "Activity",
   "number": "8.3.21",
   "title": "",
   "body": "  Consider the partial sum sequence  Find a closed form for .  Does converge? If so, to what value?  "
 },
 {
-  "id": "activity-486",
+  "id": "activity-485",
   "level": "2",
-  "url": "SQ3.html#activity-486",
+  "url": "SQ3.html#activity-485",
   "type": "Activity",
   "number": "8.3.22",
   "title": "",
   "body": "  Consider the partial sum sequence  Find a closed form for .  Does converge? If so, to what value?   "
 },
 {
-  "id": "figure-168",
+  "id": "figure-157",
   "level": "2",
-  "url": "SQ3.html#figure-168",
+  "url": "SQ3.html#figure-157",
   "type": "Figure",
-  "number": "182",
+  "number": "171",
   "title": "",
   "body": "    Video: Compute the first few terms of a telescoping or geometric partial sum sequence, and find a closed form for this sequence, and compute its limit.  "
 },
@@ -7741,20 +7723,20 @@ var ptx_lunr_docs = [
   "body": "  For each of the following modified geometric series, determine without rewriting if they converge or diverge.   .  .  .  .  "
 },
 {
-  "id": "activity-491",
+  "id": "activity-490",
   "level": "2",
-  "url": "SQ4.html#activity-491",
+  "url": "SQ4.html#activity-490",
   "type": "Activity",
   "number": "8.4.7",
   "title": "",
   "body": "  Find the value of each of the following convergent series.   .  .  .  "
 },
 {
-  "id": "figure-169",
+  "id": "figure-158",
   "level": "2",
-  "url": "SQ4.html#figure-169",
+  "url": "SQ4.html#figure-158",
   "type": "Figure",
-  "number": "183",
+  "number": "172",
   "title": "",
   "body": "    Video: Determine if a geometric series converges, and if so, the value it converges to.  "
 },
@@ -7831,9 +7813,9 @@ var ptx_lunr_docs = [
   "body": "  Consider the so-called harmonic series , , and let be its partial sum.   Determine which of the following inequalities hold(s).  .  .  .  .  .   Determine which of the following inequalities hold(s).  .  .  .  .  .   "
 },
 {
-  "id": "activity-495",
+  "id": "activity-494",
   "level": "2",
-  "url": "SQ5.html#activity-495",
+  "url": "SQ5.html#activity-494",
   "type": "Activity",
   "number": "8.5.7",
   "title": "",
@@ -7885,18 +7867,18 @@ var ptx_lunr_docs = [
   "body": "  Consider the series .   If we aim to use the integral test, what is an appropriate choice for ?  .  .  .  .  .   Does the series converge or diverge by ?  "
 },
 {
-  "id": "activity-499",
+  "id": "activity-498",
   "level": "2",
-  "url": "SQ5.html#activity-499",
+  "url": "SQ5.html#activity-498",
   "type": "Activity",
   "number": "8.5.13",
   "title": "",
   "body": " Prove .  "
 },
 {
-  "id": "activity-500",
+  "id": "activity-499",
   "level": "2",
-  "url": "SQ5.html#activity-500",
+  "url": "SQ5.html#activity-499",
   "type": "Activity",
   "number": "8.5.14",
   "title": "",
@@ -7912,18 +7894,18 @@ var ptx_lunr_docs = [
   "body": " The Alternating Series Test (Leibniz's Theorem)   The series converges if all of the following conditions are satisfied:  is always positive,  there is an integer such that for all , and  .     "
 },
 {
-  "id": "activity-501",
+  "id": "activity-500",
   "level": "2",
-  "url": "SQ5.html#activity-501",
+  "url": "SQ5.html#activity-500",
   "type": "Activity",
   "number": "8.5.16",
   "title": "",
   "body": " What conclusions can you now make?  diverges.  converges.  converges.  diverges.    "
 },
 {
-  "id": "activity-502",
+  "id": "activity-501",
   "level": "2",
-  "url": "SQ5.html#activity-502",
+  "url": "SQ5.html#activity-501",
   "type": "Activity",
   "number": "8.5.17",
   "title": "",
@@ -7948,11 +7930,11 @@ var ptx_lunr_docs = [
   "body": "  Consider the so-called alternating harmonic series , .   Use the alternating series test to determine if the series converges.  If so, estimate the series using the first 3 terms.  "
 },
 {
-  "id": "figure-170",
+  "id": "figure-159",
   "level": "2",
-  "url": "SQ5.html#figure-170",
+  "url": "SQ5.html#figure-159",
   "type": "Figure",
-  "number": "184",
+  "number": "173",
   "title": "",
   "body": "    Video: Use the divergence, alternating series, and integral tests to determine if a series converges or diverges  "
 },
@@ -8047,9 +8029,9 @@ var ptx_lunr_docs = [
   "body": "  We wish to determine if converges or diverges using .   To which of the following should we compare ?  .  .  .  .    Using your chosen sequence and , does converge or diverge?  "
 },
 {
-  "id": "activity-511",
+  "id": "activity-510",
   "level": "2",
-  "url": "SQ6.html#activity-511",
+  "url": "SQ6.html#activity-510",
   "type": "Activity",
   "number": "8.6.10",
   "title": "",
@@ -8110,20 +8092,20 @@ var ptx_lunr_docs = [
   "body": "  Suppose we wish to determine if converged using .   Which series should we compare to best utilize ?  .  .  .  .  .  .    Using your chosen series and , does converge or diverge?  "
 },
 {
-  "id": "activity-516",
+  "id": "activity-515",
   "level": "2",
-  "url": "SQ6.html#activity-516",
+  "url": "SQ6.html#activity-515",
   "type": "Activity",
   "number": "8.6.17",
   "title": "",
   "body": "  For each of the following series, determine if it converges or diverges, and explain your choice.     "
 },
 {
-  "id": "figure-173",
+  "id": "figure-162",
   "level": "2",
-  "url": "SQ6.html#figure-173",
+  "url": "SQ6.html#figure-162",
   "type": "Figure",
-  "number": "187",
+  "number": "176",
   "title": "",
   "body": "    Video: Use the direct comparison and limit comparison tests to determine if a series converges or diverges  "
 },
@@ -8146,27 +8128,27 @@ var ptx_lunr_docs = [
   "body": "   Use the ratio and root tests to determine if a series converges or diverges.    "
 },
 {
-  "id": "activity-517",
+  "id": "activity-516",
   "level": "2",
-  "url": "SQ7.html#activity-517",
+  "url": "SQ7.html#activity-516",
   "type": "Activity",
   "number": "8.7.1",
   "title": "",
   "body": "  Consider the series    Which of these series most closely resembles ?  .  .  .    Based on your previous choice, do we think this series is more likely to converge or diverge?  Find   .  .  .  .  .    "
 },
 {
-  "id": "activity-518",
+  "id": "activity-517",
   "level": "2",
-  "url": "SQ7.html#activity-518",
+  "url": "SQ7.html#activity-517",
   "type": "Activity",
   "number": "8.7.2",
   "title": "",
   "body": "  Consider the series .   Does converge?  Find .  .  .  .  .  .    Find   .  .  .  .  .    "
 },
 {
-  "id": "activity-519",
+  "id": "activity-518",
   "level": "2",
-  "url": "SQ7.html#activity-519",
+  "url": "SQ7.html#activity-518",
   "type": "Activity",
   "number": "8.7.3",
   "title": "",
@@ -8209,18 +8191,18 @@ var ptx_lunr_docs = [
   "body": " The Root Test   Let be an integer and let be a series with for , and suppose that . Then  converges if is less than 1, and  diverges if is greater than 1.  If , we cannot determine if converges or diverges with this method .     "
 },
 {
-  "id": "activity-522",
+  "id": "activity-521",
   "level": "2",
-  "url": "SQ7.html#activity-522",
+  "url": "SQ7.html#activity-521",
   "type": "Activity",
   "number": "8.7.8",
   "title": "",
   "body": "  Consider the series .   Which of the following is ?  .  .  .    Which of the following is ?  .  .  .  .  .    Which of the following is ?  .  .  .  .    Using the fact , simplify as much as possible.  Find .  Does converge?  "
 },
 {
-  "id": "activity-523",
+  "id": "activity-522",
   "level": "2",
-  "url": "SQ7.html#activity-523",
+  "url": "SQ7.html#activity-522",
   "type": "Activity",
   "number": "8.7.9",
   "title": "",
@@ -8245,9 +8227,9 @@ var ptx_lunr_docs = [
   "body": "  Consider the series .   Use the root test to check for convergence of this series.  Use the ratio test to check for convergence of this series.  Use the comparison (or limit comparison) test to check for convergence of this series.  Find the sum of this series.  "
 },
 {
-  "id": "activity-526",
+  "id": "activity-525",
   "level": "2",
-  "url": "SQ7.html#activity-526",
+  "url": "SQ7.html#activity-525",
   "type": "Activity",
   "number": "8.7.12",
   "title": "",
@@ -8263,11 +8245,11 @@ var ptx_lunr_docs = [
   "body": "  Consider the series .   Use the root test to check for convergence of this series.  Use the ratio test to check for convergence of this series.  Use the comparison (or limit comparison) test to check for convergence of this series.  "
 },
 {
-  "id": "figure-174",
+  "id": "figure-163",
   "level": "2",
-  "url": "SQ7.html#figure-174",
+  "url": "SQ7.html#figure-163",
   "type": "Figure",
-  "number": "188",
+  "number": "177",
   "title": "",
   "body": "    Video: Use the ratio and root tests to determine if a series converges or diverges  "
 },
@@ -8290,18 +8272,18 @@ var ptx_lunr_docs = [
   "body": "   Determine if a series converges absolutely or conditionally.    "
 },
 {
-  "id": "activity-528",
+  "id": "activity-527",
   "level": "2",
-  "url": "SQ8.html#activity-528",
+  "url": "SQ8.html#activity-527",
   "type": "Activity",
   "number": "8.8.1",
   "title": "",
   "body": "  Recall the series from .   Does the series converge or diverge?  Does the series converge or diverge?  "
 },
 {
-  "id": "activity-529",
+  "id": "activity-528",
   "level": "2",
-  "url": "SQ8.html#activity-529",
+  "url": "SQ8.html#activity-528",
   "type": "Activity",
   "number": "8.8.2",
   "title": "",
@@ -8317,74 +8299,74 @@ var ptx_lunr_docs = [
   "body": "  Given a series we say that is absolutely convergent if converges.   "
 },
 {
-  "id": "activity-530",
+  "id": "activity-529",
   "level": "2",
-  "url": "SQ8.html#activity-530",
+  "url": "SQ8.html#activity-529",
   "type": "Activity",
   "number": "8.8.4",
   "title": "",
   "body": "  Consider the series: .   Does the series converge or diverge? (Recall .)  Compute .  Does the series converge absolutely?  "
 },
 {
-  "id": "fact-42",
+  "id": "fact-39",
   "level": "2",
-  "url": "SQ8.html#fact-42",
+  "url": "SQ8.html#fact-39",
   "type": "Fact",
   "number": "8.8.5",
   "title": "",
   "body": " Notice that and both involve taking absolute values to determine convergence. As such, series that are convergent by either the Ratio Test or the Root Test are also absolutely convergent (by applying the same test after taking the absolute value).  "
 },
 {
-  "id": "activity-531",
+  "id": "activity-530",
   "level": "2",
-  "url": "SQ8.html#activity-531",
+  "url": "SQ8.html#activity-530",
   "type": "Activity",
   "number": "8.8.6",
   "title": "",
   "body": "  Consider the series: .   Does the series converge or diverge?  Compute .  Does the series converge absolutely?  "
 },
 {
-  "id": "activity-532",
+  "id": "activity-531",
   "level": "2",
-  "url": "SQ8.html#activity-532",
+  "url": "SQ8.html#activity-531",
   "type": "Activity",
   "number": "8.8.7",
   "title": "",
   "body": "  For each of the following series, determine if the series is convergent , and if the series is absolutely convergent .      "
 },
 {
-  "id": "activity-533",
+  "id": "activity-532",
   "level": "2",
-  "url": "SQ8.html#activity-533",
+  "url": "SQ8.html#activity-532",
   "type": "Activity",
   "number": "8.8.8",
   "title": "",
   "body": "  If you know a series is absolutely convergent, what can you conclude about whether or not is convergent?  We cannot determine if is convergent.  is convergent since it grows slower than (and falls slower than ).     "
 },
 {
-  "id": "fact-43",
+  "id": "fact-40",
   "level": "2",
-  "url": "SQ8.html#fact-43",
+  "url": "SQ8.html#fact-40",
   "type": "Fact",
   "number": "8.8.9",
   "title": "",
   "body": "  If is absolutely convergent, then it must be convergent.   "
 },
 {
-  "id": "activity-534",
+  "id": "activity-533",
   "level": "2",
-  "url": "SQ8.html#activity-534",
+  "url": "SQ8.html#activity-533",
   "type": "Activity",
   "number": "8.8.10",
   "title": "",
   "body": "  Find 3 series that are convergent but not absolutely convergent (recall , ).   "
 },
 {
-  "id": "figure-175",
+  "id": "figure-164",
   "level": "2",
-  "url": "SQ8.html#figure-175",
+  "url": "SQ8.html#figure-164",
   "type": "Figure",
-  "number": "189",
+  "number": "178",
   "title": "",
   "body": "    Video: Determine if a series converges absolutely or conditionally  "
 },
@@ -8569,20 +8551,20 @@ var ptx_lunr_docs = [
   "body": " Consider the series .  Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?  Divergence Test  Geometric Series  Integral Test  Direct Comparison Test  Limit Comparison Test  Ratio Test  Root Test  Alternating Series Test    Apply an appropriate test to determine the convergence of this series.  This series is convergent.  This series is divergent.    "
 },
 {
-  "id": "activity-552",
+  "id": "activity-551",
   "level": "2",
-  "url": "SQ9.html#activity-552",
+  "url": "SQ9.html#activity-551",
   "type": "Activity",
   "number": "8.9.19",
   "title": "",
   "body": "  Determine which of the following series is convergent and which is divergent . Justify both choices with an appropriate test.     "
 },
 {
-  "id": "figure-176",
+  "id": "figure-165",
   "level": "2",
-  "url": "SQ9.html#figure-176",
+  "url": "SQ9.html#figure-165",
   "type": "Figure",
-  "number": "190",
+  "number": "179",
   "title": "",
   "body": "    Video: Identify appropriate convergence tests for various series  "
 },
@@ -8605,9 +8587,9 @@ var ptx_lunr_docs = [
   "body": "   Approximate functions defined as power series.    "
 },
 {
-  "id": "activity-553",
+  "id": "activity-552",
   "level": "2",
-  "url": "PS1.html#activity-553",
+  "url": "PS1.html#activity-552",
   "type": "Activity",
   "number": "9.1.1",
   "title": "",
@@ -8632,18 +8614,18 @@ var ptx_lunr_docs = [
   "body": "  In we will learn how to prove that converges for each real value . Thus the function has the domain of all real numbers.   To estimate , use technology to compute the first few terms as follows:   Which of these choices is the closest to this value?  .  .  .  .    Estimate in a similar fashion:  Which of these choices is the closest to this value?  .  .  .  .     "
 },
 {
-  "id": "activity-555",
+  "id": "activity-554",
   "level": "2",
-  "url": "PS1.html#activity-555",
+  "url": "PS1.html#activity-554",
   "type": "Activity",
   "number": "9.1.4",
   "title": "",
   "body": "  The function is centered at . Likewise, graphing the polynomial that uses the first six terms alongside the graph of reveals the illustration given in the following figure.   Plots of .   Plots of .     What might we conclude?   near .  near .  for all .  for all .    "
 },
 {
-  "id": "definition-44",
+  "id": "definition-45",
   "level": "2",
-  "url": "PS1.html#definition-44",
+  "url": "PS1.html#definition-45",
   "type": "Definition",
   "number": "9.1.5",
   "title": "",
@@ -8659,11 +8641,11 @@ var ptx_lunr_docs = [
   "body": "  Consider a function defined by    Find , the degree 4 polynomial approximation for .  Use to estimate .  "
 },
 {
-  "id": "figure-178",
+  "id": "figure-167",
   "level": "2",
-  "url": "PS1.html#figure-178",
+  "url": "PS1.html#figure-167",
   "type": "Figure",
-  "number": "192",
+  "number": "181",
   "title": "",
   "body": "    Video: Approximate functions defined as power series  "
 },
@@ -8695,36 +8677,36 @@ var ptx_lunr_docs = [
   "body": "  Consider the series where is a real number.   If , then . What can be said about this series?  The techniques we have learned so far allow us to conclude that converges.  The techniques we have learned so far allow us to conclude that diverges.  None of the techniques we have learned so far allow us to conclude whether converges or diverges.    If , then . What can be said about this series?  The techniques we have learned so far allow us to conclude that converges.  The techniques we have learned so far allow us to conclude that diverges.  None of the techniques we have learned so far allow us to conclude whether converges or diverges.    Suppose that were some arbitrary real number. What can be said about this series?  The techniques we have learned so far allow us to conclude that converges.  The techniques we have learned so far allow us to conclude that diverges.  None of the techniques we have learned so far allow us to conclude whether converges or diverges.    "
 },
 {
-  "id": "remark-50",
+  "id": "remark-51",
   "level": "2",
-  "url": "PS2.html#remark-50",
+  "url": "PS2.html#remark-51",
   "type": "Remark",
   "number": "9.2.2",
   "title": "",
   "body": "  Consider a power series . Recall from that if then converges.  Then recall:    "
 },
 {
-  "id": "activity-558",
+  "id": "activity-557",
   "level": "2",
-  "url": "PS2.html#activity-558",
+  "url": "PS2.html#activity-557",
   "type": "Activity",
   "number": "9.2.3",
   "title": "",
   "body": "  Consider    Letting , find .  For what values of is ?  .  .  .    If , does converge?  If , does converge?  Which of the following describe the values of for which converges?  .  .  .  .    "
 },
 {
-  "id": "activity-559",
+  "id": "activity-558",
   "level": "2",
-  "url": "PS2.html#activity-559",
+  "url": "PS2.html#activity-558",
   "type": "Activity",
   "number": "9.2.4",
   "title": "",
   "body": "  Consider    Letting , find .  For what values of is ?  .  .  .  .    If , does converge?  If , does converge?  Which of the following describe the values of for which converges?  .  .  .  .    "
 },
 {
-  "id": "activity-560",
+  "id": "activity-559",
   "level": "2",
-  "url": "PS2.html#activity-560",
+  "url": "PS2.html#activity-559",
   "type": "Activity",
   "number": "9.2.5",
   "title": "",
@@ -8740,11 +8722,20 @@ var ptx_lunr_docs = [
   "body": "  Given the power series , the center of convergence center of convergence is . The radius of convergence radius of convergence is If , we say that .  The interval of convergence interval of convergence represents all possible values of for which converges, which is of the form:      Depending on if converges when or .  If the interval of convergence is all real numbers.   "
 },
 {
+  "id": "activity-560",
+  "level": "2",
+  "url": "PS2.html#activity-560",
+  "type": "Activity",
+  "number": "9.2.7",
+  "title": "",
+  "body": "  Find the center of convergence, radius of convergence, and interval of convergence for the series:     "
+},
+{
   "id": "activity-561",
   "level": "2",
   "url": "PS2.html#activity-561",
   "type": "Activity",
-  "number": "9.2.7",
+  "number": "9.2.8",
   "title": "",
   "body": "  Find the center of convergence, radius of convergence, and interval of convergence for the series:     "
 },
@@ -8753,25 +8744,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "PS2.html#activity-562",
   "type": "Activity",
-  "number": "9.2.8",
-  "title": "",
-  "body": "  Find the center of convergence, radius of convergence, and interval of convergence for the series:     "
-},
-{
-  "id": "activity-563",
-  "level": "2",
-  "url": "PS2.html#activity-563",
-  "type": "Activity",
   "number": "9.2.9",
   "title": "",
   "body": "  Consider the power series .   What is the center of convergence for this power series?  What is the radius of convergence for this power series?  What is the interval of convergence for this power series?  If , does this series converge? (Use the interval of convergence.)  If , does this series converge? (Use the interval of convergence.)  "
 },
 {
-  "id": "figure-179",
+  "id": "figure-168",
   "level": "2",
-  "url": "PS2.html#figure-179",
+  "url": "PS2.html#figure-168",
   "type": "Figure",
-  "number": "193",
+  "number": "182",
   "title": "",
   "body": "    Video: Determine the interval of convergence for a given power series  "
 },
@@ -8803,9 +8785,9 @@ var ptx_lunr_docs = [
   "body": "  How might we use the known geometric power series to find the value of ?   Which operation describes the relationship between these two series?  Bifurcation  Composition  Differentiation  Multiplication   What is the result of applying this operation to ?       "
 },
 {
-  "id": "fact-46",
+  "id": "fact-43",
   "level": "2",
-  "url": "PS3.html#fact-46",
+  "url": "PS3.html#fact-43",
   "type": "Fact",
   "number": "9.3.2",
   "title": "",
@@ -8830,9 +8812,9 @@ var ptx_lunr_docs = [
   "body": "  We have that That is, for any real number , the series will converge to .   "
 },
 {
-  "id": "fact-48",
+  "id": "fact-45",
   "level": "2",
-  "url": "PS3.html#fact-48",
+  "url": "PS3.html#fact-45",
   "type": "Fact",
   "number": "9.3.5",
   "title": "",
@@ -8848,9 +8830,9 @@ var ptx_lunr_docs = [
   "body": "  Suppose we wish to find the power series for the function by modifying the power series    Substituting , what is the power series for ?  .  .  .  .    What is the interval of convergence for for this series?  .  .  .  .   "
 },
 {
-  "id": "fact-49",
+  "id": "fact-46",
   "level": "2",
-  "url": "PS3.html#fact-49",
+  "url": "PS3.html#fact-46",
   "type": "Fact",
   "number": "9.3.7",
   "title": "",
@@ -8902,9 +8884,9 @@ var ptx_lunr_docs = [
   "body": "  What function has power series ?  .  .  .  .     "
 },
 {
-  "id": "fact-50",
+  "id": "fact-47",
   "level": "2",
-  "url": "PS3.html#fact-50",
+  "url": "PS3.html#fact-47",
   "type": "Fact",
   "number": "9.3.13",
   "title": "",
@@ -8938,18 +8920,18 @@ var ptx_lunr_docs = [
   "body": " Recall that for .  Which of the following represents an antiderivative of ?  .  .  .  .    Find the interval of convergence for this series.  Recall that is an antiderivative of . For which is your chosen ?  Use to estimate .  "
 },
 {
-  "id": "activity-575",
+  "id": "activity-574",
   "level": "2",
-  "url": "PS3.html#activity-575",
+  "url": "PS3.html#activity-574",
   "type": "Activity",
   "number": "9.3.17",
   "title": "",
   "body": "  Recall that the power series for is:  Find a power series for .  Find a power series for .  Find a power series for , an antiderivative of such that .   "
 },
 {
-  "id": "activity-576",
+  "id": "activity-575",
   "level": "2",
-  "url": "PS3.html#activity-576",
+  "url": "PS3.html#activity-575",
   "type": "Activity",
   "number": "9.3.18",
   "title": "",
@@ -8965,29 +8947,29 @@ var ptx_lunr_docs = [
   "body": "  Recall that for and . We computed the power series for in .   Anti differentiate this power series and find to find a power series for . Recall that .  Find the interval of convergence for this series.   "
 },
 {
-  "id": "activity-578",
+  "id": "activity-577",
   "level": "2",
-  "url": "PS3.html#activity-578",
+  "url": "PS3.html#activity-577",
   "type": "Activity",
   "number": "9.3.20",
   "title": "",
   "body": " Find the power series for .  Find the interval of convergence for this series.  "
 },
 {
-  "id": "activity-579",
+  "id": "activity-578",
   "level": "2",
-  "url": "PS3.html#activity-579",
+  "url": "PS3.html#activity-578",
   "type": "Activity",
   "number": "9.3.21",
   "title": "",
   "body": " Find the power series for .  Find the interval of convergence for this series.  "
 },
 {
-  "id": "figure-180",
+  "id": "figure-169",
   "level": "2",
-  "url": "PS3.html#figure-180",
+  "url": "PS3.html#figure-169",
   "type": "Figure",
-  "number": "194",
+  "number": "183",
   "title": "",
   "body": "    Video: Compute power series by manipulating known exponential\/trigonometric\/binomial power series  "
 },
@@ -9010,18 +8992,18 @@ var ptx_lunr_docs = [
   "body": "   Determine a Taylor or Maclaurin series for a function.    "
 },
 {
-  "id": "activity-580",
+  "id": "activity-579",
   "level": "2",
-  "url": "PS4.html#activity-580",
+  "url": "PS4.html#activity-579",
   "type": "Activity",
   "number": "9.4.1",
   "title": "",
   "body": "  The following tasks will help us find a mechanism to produce a power series given information about its derivatives.   Find the 2nd derivative of .       Find the 3rd derivative of .       Find the 4th derivative of .       Based on these results, which of the following should always equal the th derivative of with respect to ?        "
 },
 {
-  "id": "activity-581",
+  "id": "activity-580",
   "level": "2",
-  "url": "PS4.html#activity-581",
+  "url": "PS4.html#activity-580",
   "type": "Activity",
   "number": "9.4.2",
   "title": "",
@@ -9046,9 +9028,9 @@ var ptx_lunr_docs = [
   "body": "  The Taylor series Taylor Series generated by and centered at is given by with an interval of convergence determinable by series convergence rules.  When , is called the Maclaurin series Maclaurin Series generated by .   "
 },
 {
-  "id": "activity-582",
+  "id": "activity-581",
   "level": "2",
-  "url": "PS4.html#activity-582",
+  "url": "PS4.html#activity-581",
   "type": "Activity",
   "number": "9.4.5",
   "title": "",
@@ -9073,27 +9055,27 @@ var ptx_lunr_docs = [
   "body": "  For a function with a Taylor series centered at , where is called the degree Taylor polynomial Taylor polynomial generated by and centered at .  The degree Taylor polynomial can be seen as the best polynomial of degree or less for approximating for values close to . Note that the degree Taylor polynomial is also known as the linearization linearization of a function of .   "
 },
 {
-  "id": "activity-583",
+  "id": "activity-582",
   "level": "2",
-  "url": "PS4.html#activity-583",
+  "url": "PS4.html#activity-582",
   "type": "Activity",
   "number": "9.4.8",
   "title": "",
   "body": "  Let be a function such that:  Find a Taylor polynomial for centered at of degree .  Using the table above, find a general closed form for .  Use (b) to find a Taylor series for centered at .   "
 },
 {
-  "id": "activity-584",
+  "id": "activity-583",
   "level": "2",
-  "url": "PS4.html#activity-584",
+  "url": "PS4.html#activity-583",
   "type": "Activity",
   "number": "9.4.9",
   "title": "",
   "body": "  Let be a function such that:  Find a Taylor polynomial for centered at of degree .  Using the table above, find a general closed form for .  Use (b) to find a Taylor series for centered at .   "
 },
 {
-  "id": "remark-51",
+  "id": "remark-52",
   "level": "2",
-  "url": "PS4.html#remark-51",
+  "url": "PS4.html#remark-52",
   "type": "Remark",
   "number": "9.4.10",
   "title": "",
@@ -9118,11 +9100,11 @@ var ptx_lunr_docs = [
   "body": "  Use Euler's identity to evaluate .   "
 },
 {
-  "id": "figure-181",
+  "id": "figure-170",
   "level": "2",
-  "url": "PS4.html#figure-181",
+  "url": "PS4.html#figure-170",
   "type": "Figure",
-  "number": "195",
+  "number": "184",
   "title": "",
   "body": "    Video: Determine a Taylor or Maclaurin series for a function  "
 },
@@ -9143,114 +9125,6 @@ var ptx_lunr_docs = [
   "number": "B",
   "title": "List of Trigonometric Identities",
   "body": " List of Trigonometric Identities                   "
-},
-{
-  "id": "alt-AI3",
-  "level": "1",
-  "url": "alt-AI3.html",
-  "type": "Appendix",
-  "number": "C",
-  "title": "Volumes of Revolution (AI3) [Alternative]",
-  "body": " Volumes of Revolution (AI3) [Alternative]    Consider the following visualization to decide which of these statements is most appropriate for describing the relationship of lengths and areas.    Length is the integral of areas.  Area is the integral of lengths.  Length is the derivative of areas.  None of these.       We define the volume of a solid with cross sectional area given by laying between to be the definite integral .       We will be focused on the volumes of solids obtained by revolving a region around an axis. Let's use the running example of the region bounded by the curves .    Consider the below illustrated revolution of this region, and the cross-section drawn from a horizontal line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?       Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?       Consider the below illustrated revolution of this region, and the cross-section drawn from a horizontal line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?       Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?          Generally when solving problems without the aid of technology, it's useful to draw your region in two dimensions, choose whether to use a horizontal or vertical line segment, and draw its rotation to determine the cross-sectional shape.  When the shape is a disk, this is called the disk method and we use one of these formulas depending on whether the cross-sectional area depends on or . .  When the shape is a washer, this is called the washer method and we use one of these formulas depending on whether the cross-sectional area depends on or . .  When the shape is a cylindrical shell, this is called the shell method and we use one of these formulas depending on whether the cross-sectional area depends on or . .      Let's now consider the region bounded by the curves , rotated about the -axis.   Sketch two copies of this region in the plane.  Draw a vertical line segment in one region and its rotation around the -axis. Draw a horizontal line segment in the other region and its rotation around the -axis.  Consider the method required for each cross-section drawn. Which would be the easiest strategy to proceed with?  The horizontal line segment, using the disk\/washer method.  The horizontal line segment, using the shell method.  The vertical line segment, using the disk\/washer method.  The vertical line segment, using the shell method.   Let's proceed with the vertical segment. Which formula is most appropriate for the radius?       Which of these integrals is equal to the volume of the solid of revolution?          Let's now consider the same region, bounded by the curves , but this time rotated about the -axis.   Sketch two copies of this region in the plane.  Draw a vertical line segment in one region and its rotation around the -axis. Draw a horizontal line segment in the other region and its rotation around the -axis.  Consider the method required for each cross-section drawn. Which would be the easiest strategy to proceed with?  The horizontal line segment, using the disk\/washer method.  The horizontal line segment, using the shell method.  The vertical line segment, using the disk\/washer method.  The vertical line segment, using the shell method.   Let's proceed with the vertical segment. Which formula is most appropriate for the radius?       Which formula is most appropriate for the height?       Which of these integrals is equal to the volume of the solid of revolution?          Consider the region bounded by .    Find an integral which computes the volume of the solid formed by rotating this region about the -axis.    Find an integral which computes the volume of the solid formed by rotating this region about the -axis.        Video: Compute volumes of solids of revolution, washer -axis       Video: Compute volumes of solids of revolution, shell -axis       Video: Compute volumes of solids of revolution, washer -axis       Video: Compute volumes of solids of revolution, shell -axis   "
-},
-{
-  "id": "activity-586",
-  "level": "2",
-  "url": "alt-AI3.html#activity-586",
-  "type": "Activity",
-  "number": "C.0.1",
-  "title": "",
-  "body": "  Consider the following visualization to decide which of these statements is most appropriate for describing the relationship of lengths and areas.    Length is the integral of areas.  Area is the integral of lengths.  Length is the derivative of areas.  None of these.    "
-},
-{
-  "id": "definition-48",
-  "level": "2",
-  "url": "alt-AI3.html#definition-48",
-  "type": "Definition",
-  "number": "C.0.2",
-  "title": "",
-  "body": "  We define the volume of a solid with cross sectional area given by laying between to be the definite integral .    "
-},
-{
-  "id": "activity-587",
-  "level": "2",
-  "url": "alt-AI3.html#activity-587",
-  "type": "Activity",
-  "number": "C.0.3",
-  "title": "",
-  "body": "  We will be focused on the volumes of solids obtained by revolving a region around an axis. Let's use the running example of the region bounded by the curves .    Consider the below illustrated revolution of this region, and the cross-section drawn from a horizontal line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?       Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?       Consider the below illustrated revolution of this region, and the cross-section drawn from a horizontal line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?       Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?       "
-},
-{
-  "id": "remark-52",
-  "level": "2",
-  "url": "alt-AI3.html#remark-52",
-  "type": "Remark",
-  "number": "C.0.4",
-  "title": "",
-  "body": "  Generally when solving problems without the aid of technology, it's useful to draw your region in two dimensions, choose whether to use a horizontal or vertical line segment, and draw its rotation to determine the cross-sectional shape.  When the shape is a disk, this is called the disk method and we use one of these formulas depending on whether the cross-sectional area depends on or . .  When the shape is a washer, this is called the washer method and we use one of these formulas depending on whether the cross-sectional area depends on or . .  When the shape is a cylindrical shell, this is called the shell method and we use one of these formulas depending on whether the cross-sectional area depends on or . .   "
-},
-{
-  "id": "activity-588",
-  "level": "2",
-  "url": "alt-AI3.html#activity-588",
-  "type": "Activity",
-  "number": "C.0.5",
-  "title": "",
-  "body": "  Let's now consider the region bounded by the curves , rotated about the -axis.   Sketch two copies of this region in the plane.  Draw a vertical line segment in one region and its rotation around the -axis. Draw a horizontal line segment in the other region and its rotation around the -axis.  Consider the method required for each cross-section drawn. Which would be the easiest strategy to proceed with?  The horizontal line segment, using the disk\/washer method.  The horizontal line segment, using the shell method.  The vertical line segment, using the disk\/washer method.  The vertical line segment, using the shell method.   Let's proceed with the vertical segment. Which formula is most appropriate for the radius?       Which of these integrals is equal to the volume of the solid of revolution?       "
-},
-{
-  "id": "activity-589",
-  "level": "2",
-  "url": "alt-AI3.html#activity-589",
-  "type": "Activity",
-  "number": "C.0.6",
-  "title": "",
-  "body": "  Let's now consider the same region, bounded by the curves , but this time rotated about the -axis.   Sketch two copies of this region in the plane.  Draw a vertical line segment in one region and its rotation around the -axis. Draw a horizontal line segment in the other region and its rotation around the -axis.  Consider the method required for each cross-section drawn. Which would be the easiest strategy to proceed with?  The horizontal line segment, using the disk\/washer method.  The horizontal line segment, using the shell method.  The vertical line segment, using the disk\/washer method.  The vertical line segment, using the shell method.   Let's proceed with the vertical segment. Which formula is most appropriate for the radius?       Which formula is most appropriate for the height?       Which of these integrals is equal to the volume of the solid of revolution?       "
-},
-{
-  "id": "activity-590",
-  "level": "2",
-  "url": "alt-AI3.html#activity-590",
-  "type": "Activity",
-  "number": "C.0.7",
-  "title": "",
-  "body": "  Consider the region bounded by .    Find an integral which computes the volume of the solid formed by rotating this region about the -axis.    Find an integral which computes the volume of the solid formed by rotating this region about the -axis.   "
-},
-{
-  "id": "figure-182",
-  "level": "2",
-  "url": "alt-AI3.html#figure-182",
-  "type": "Figure",
-  "number": "196",
-  "title": "",
-  "body": "    Video: Compute volumes of solids of revolution, washer -axis  "
-},
-{
-  "id": "figure-183",
-  "level": "2",
-  "url": "alt-AI3.html#figure-183",
-  "type": "Figure",
-  "number": "197",
-  "title": "",
-  "body": "    Video: Compute volumes of solids of revolution, shell -axis  "
-},
-{
-  "id": "figure-184",
-  "level": "2",
-  "url": "alt-AI3.html#figure-184",
-  "type": "Figure",
-  "number": "198",
-  "title": "",
-  "body": "    Video: Compute volumes of solids of revolution, washer -axis  "
-},
-{
-  "id": "figure-185",
-  "level": "2",
-  "url": "alt-AI3.html#figure-185",
-  "type": "Figure",
-  "number": "199",
-  "title": "",
-  "body": "    Video: Compute volumes of solids of revolution, shell -axis  "
 }
 ]
 
