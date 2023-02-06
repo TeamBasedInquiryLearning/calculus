@@ -99,6 +99,9 @@ error-syntax.log
 *.term
 !.gitignore
 
+*.syncdb
+*.sage-chat
+
 # RAT files not put into Git
 RATs/*.pdf
 
