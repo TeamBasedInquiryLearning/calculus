@@ -8,7 +8,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>TBIL-Calc Derivatives analytically (DF2)</title>
+<title>TBIL-Calc Derivatives graphically and numerically (DF1)</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -62,7 +62,7 @@ window.MathJax = {
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
-<link href="http://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
 <link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
@@ -190,7 +190,7 @@ window.MathJax = {
 <span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
 </ol>
 </li>
-</ol></div></button><span class="treebuttons"><a class="previous-button button" href="DF2.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="DF.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="DF3.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="DF.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="DF.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="DF2.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
 </div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
@@ -260,18 +260,18 @@ window.MathJax = {
 <li>
 <div class="toc-item"><a href="DF.html" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a></div>
 <ul class="structural">
-<li>
-<div class="toc-item"><a href="DF2.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Derivatives graphically and numerically (DF1)</span></a></div>
+<li class="active">
+<div class="toc-item"><a href="DF1.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Derivatives graphically and numerically (DF1)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="DF2.html#subsection-13" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="DF2.html#subsection-14" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="DF1.html#subsection-13" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF1.html#subsection-14" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
-<li class="active">
-<div class="toc-item"><a href="DF1.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Derivatives analytically (DF2)</span></a></div>
+<li>
+<div class="toc-item"><a href="DF2.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Derivatives analytically (DF2)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="DF1.html#subsection-15" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="DF1.html#subsection-16" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="DF2.html#subsection-15" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF2.html#subsection-16" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -701,282 +701,301 @@ window.MathJax = {
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="DF1"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">2.2</span> <span class="title">Derivatives analytically (DF2)</span>
+<span class="type">Section</span> <span class="codenumber">2.1</span> <span class="title">Derivatives graphically and numerically (DF1)</span>
 </h2>
-<article class="objectives goal-like" id="objectives-10"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-300"><div class="para" id="p-509">Find derivatives using the definition of derivative as a limit.</div></li></ul></article><section class="subsection" id="subsection-15"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">2.2.1</span> <span class="title">Activities</span>
+<article class="objectives goal-like" id="objectives-9"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="li-240"><div class="para" id="p-406">Estimate the value of a derivative using difference quotients, and draw corresponding secant and tangent lines on the graph of a function.</div></li></ul></article><section class="subsection" id="subsection-13"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.1.1</span> <span class="title">Activities</span>
 </h3>
-<article class="observation remark-like" id="derivative-on-interval"><h4 class="heading">
-<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span>
+<article class="activity project-like" id="activity-ball1"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-510">Recall that <span class="process-math">\(f'(a)\text{,}\)</span> the derivative of <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=a\text{,}\)</span> was defined as the limit as <span class="process-math">\(h \to 0\)</span> of the difference quotient on the interval <span class="process-math">\([a,a+h]\)</span> as in <a href="" class="xref" data-knowl="./knowl/def-derivative-point.html" title="Definition 2.1.9">Definition 2.1.9</a>. If <span class="process-math">\(f'(a)\)</span> exists, then say that <span class="process-math">\(f(x)\)</span> is differentiable at <span class="process-math">\(a\text{.}\)</span> If for some open interval <span class="process-math">\((a,b)\text{,}\)</span> we have that <span class="process-math">\(f'(x)\)</span> exists for every point <span class="process-math">\(x\)</span> in <span class="process-math">\((a,b)\text{,}\)</span> then we say that <span class="process-math">\(f(x)\)</span> is differentiable on <span class="process-math">\((a,b)\text{.}\)</span>
-</div></article><article class="activity project-like" id="activity-derivative-analytically-point"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="period">.</span>
+<div class="introduction" id="introduction-43">
+<div class="para" id="p-407">In this activity you will study the velocity of a ball falling under gravity. The height of the ball (in feet) is given by the formula <span class="process-math">\(f(t) = 64-16(t-1)^2\text{,}\)</span> where <span class="process-math">\(t\)</span> is measured in seconds. We want to study the velocity at the instant <span class="process-math">\(t=2\text{,}\)</span> so we will look at smaller and smaller intervals around <span class="process-math">\(t=2\text{.}\)</span> For your convenience, below you will find a table of values for <span class="process-math">\(f(t)\text{.}\)</span> Recall that the average velocity is given by the change in height over the change in time.</div> <figure class="table table-like" id="table-ball1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">37<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(t\, \text{(seconds)} \)</span></td>
+<td class="l m b1 r0 l0 t0 lines">1</td>
+<td class="l m b1 r0 l0 t0 lines">1.5</td>
+<td class="l m b1 r0 l0 t0 lines">1.75</td>
+<td class="l m b1 r0 l0 t0 lines">2</td>
+<td class="l m b1 r0 l0 t0 lines">2.25</td>
+<td class="l m b1 r0 l0 t0 lines">2.5</td>
+<td class="l m b1 r0 l0 t0 lines">3</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(f(t) \, \text{(feet)} \)</span></td>
+<td class="l m b0 r0 l0 t0 lines">64</td>
+<td class="l m b0 r0 l0 t0 lines">60</td>
+<td class="l m b0 r0 l0 t0 lines">55</td>
+<td class="l m b0 r0 l0 t0 lines">48</td>
+<td class="l m b0 r0 l0 t0 lines">39</td>
+<td class="l m b0 r0 l0 t0 lines">28</td>
+<td class="l m b0 r0 l0 t0 lines">0</td>
+</tr>
+</table></div></figure>
+</div>
+<article class="task exercise-like" id="task-104"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-408">To start we will look at an interval of length one before <span class="process-math">\(t=2\)</span> and after <span class="process-math">\(t=2\text{,}\)</span> so we consider the intervals <span class="process-math">\([1,2]\)</span> and <span class="process-math">\([2,3]\text{.}\)</span> What was the average velocity on the interval <span class="process-math">\([1,2]\text{?}\)</span> What about on the interval <span class="process-math">\([2,3]\text{?}\)</span>
+</div></article><article class="task exercise-like" id="task-105"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-409">Now let's consider smaller intervals of length <span class="process-math">\(0.5\text{.}\)</span> What was the average velocity on the interval <span class="process-math">\([1.5,2]\text{?}\)</span> What about on the interval <span class="process-math">\([2,2.5]\text{?}\)</span>
+</div></article><article class="task exercise-like" id="task-106"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-410">What was the average velocity on the interval <span class="process-math">\([1.75,2]\text{?}\)</span> What about on the interval <span class="process-math">\([2,2.25]\text{?}\)</span>
+</div></article><article class="task exercise-like" id="task-107"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="p-411">If we wanted to approximate the velocity at the instant <span class="process-math">\(t=2\text{,}\)</span> what would be your best estimate for this instantaneous velocity?</div></article></article><article class="observation remark-like" id="observation-1"><h4 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-511">For the function <span class="process-math">\(f(x)=x-x^2\)</span> use the limit definition of the derivative at a point to compute <span class="process-math">\(f'(2)\text{.}\)</span>
-</div> <ol class="upper-alpha">
-<li id="li-301"><div class="para" id="p-derived-li-301"><span class="process-math">\(\displaystyle f'(2)= \displaystyle \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2+4}{h}=-3\)</span></div></li>
-<li id="li-302"><div class="para" id="p-derived-li-302">The limit <span class="process-math">\(f'(2)=  \displaystyle \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2}{h}\)</span> simplifies algebraically to <span class="process-math">\(\displaystyle \lim_{h\to 0} \frac{-3h - h^2}{h}\)</span> which does not exist, thus <span class="process-math">\(f'(2)\)</span> is not defined.</div></li>
-<li id="li-303"><div class="para" id="p-derived-li-303">The limit <span class="process-math">\(f'(2)=  \displaystyle \lim_{h\to 0} \frac{(2+h)-(2+h)^2-2}{h}\)</span> simplifies algebraically to <span class="process-math">\(\displaystyle \lim_{h\to 0} \frac{h -h^2}{h}\)</span> which does not exist, thus <span class="process-math">\(f'(2)\)</span> is not defined.</div></li>
-<li id="li-304"><div class="para" id="p-derived-li-304"><span class="process-math">\(\displaystyle f'(2) =  \displaystyle \lim_{h\to 0} \frac{(2+h)-(2^2+h^2)-2+4}{h}= 1\)</span></div></li>
-</ol></article><article class="activity project-like" id="activity-derivative-analytically-linear1"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="period">.</span>
+<div class="para" id="p-412">If we want to study the velocity at the instant <span class="process-math">\(t=2\text{,}\)</span> it is helpful to study the average velocity on small intervals around <span class="process-math">\(t=2\text{.}\)</span> If we consider the interval <span class="process-math">\([2,2+h]\text{,}\)</span> where <span class="process-math">\(h\)</span> is the width of the interval, the average velocity is given by the difference quotient</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{f(2+h)-f(2)}{(2+h)-2} = \frac{f(2+h)-f(2)}{h}.
+\end{equation*}
+</div></article><article class="observation remark-like" id="observation-2"><h4 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.1.3</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-512">Consider the function <span class="process-math">\(f(x)=3-2x\text{.}\)</span> Which of the following best summarizes the average rates of changes of  on <span class="process-math">\(f\)</span> on the intervals <span class="process-math">\([1,4]\text{,}\)</span> <span class="process-math">\([3,7]\text{,}\)</span> and <span class="process-math">\([5, 5+h]\text{?}\)</span>
+<div class="para" id="p-413">We want to be able to consider intervals before and after <span class="process-math">\(t=2\text{.}\)</span> A positive value of <span class="process-math">\(h\)</span> will give an interval after <span class="process-math">\(t=2\text{.}\)</span> For example, the interval <span class="process-math">\([2,3]\)</span> for <span class="process-math">\(h=1\text{.}\)</span> A negative value of <span class="process-math">\(h\)</span> will give an interval before <span class="process-math">\(t=2\text{.}\)</span> For example, the interval <span class="process-math">\([1,2]\)</span> corresponds <span class="process-math">\(h=-1\text{.}\)</span> In the formula above, it looks like the interval would be <span class="process-math">\([2,1]\text{,}\)</span> but the standard notation in an interval is to write the smallest number first. This does not change the difference quotient because</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{f(2+h)-f(2)}{(2+h)-2} = \frac{f(2)-f(2+h)}{2-(2+h)}.
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-ball2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.4</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-44"><div class="para" id="p-414">Consider the height of the ball falling under gravity as in <a href="" class="xref" data-knowl="./knowl/table-ball1.html" title="Table 37">Table 37</a> .</div></div>
+<article class="task exercise-like" id="task-108"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-415">What was the average velocity on the interval <span class="process-math">\([2,2+h]\)</span> for <span class="process-math">\(h=1\)</span> and <span class="process-math">\(h=-1\text{?}\)</span>
+</div></article><article class="task exercise-like" id="task-109"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-416">What was the average velocity on the interval <span class="process-math">\([2,2+h]\)</span> for <span class="process-math">\(h=0.5\)</span> and <span class="process-math">\(h=-0.5\text{?}\)</span>
+</div></article><article class="task exercise-like" id="task-110"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-417">What was the average velocity on the interval <span class="process-math">\([2,2+h]\)</span> for <span class="process-math">\(h=0.25\)</span> and <span class="process-math">\(h=-0.25\text{?}\)</span>
+</div></article><article class="task exercise-like" id="task-111"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="p-418">What is your best estimate for the limiting value of these velocities as <span class="process-math">\(h\to 0\text{?}\)</span> Notice that this is your estimate for the instantaneous velocity at <span class="process-math">\(t=2\text{!}\)</span>
+</div></article></article><article class="definition definition-like" id="def-inst-vel"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.5</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-419">The instanteous velocity at <span class="process-math">\(t=a\)</span> is the limit as <span class="process-math">\(h \to 0\)</span> of the difference quotient <span class="process-math">\(\frac{f(a+h)-f(a)}{h}\text{.}\)</span> In the activity above the instantaneous velocity at <span class="process-math">\(t=2\)</span> is given by the limit</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v(2) = \lim_{h\to 0} \frac{f(2+h)-f(2)}{h}
+\end{equation*}
+</div></article><article class="definition definition-like" id="def-slope-secant"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.6</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-420">The slope of the secant line to <span class="process-math">\(f(x)\)</span> through the points <span class="process-math">\(x=a\)</span> and <span class="process-math">\(x=b\)</span> is given by the difference quotient</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{f(b)-f(a)}{b-a}.
+\end{equation*}
+</div></article><article class="activity project-like" id="activity-der-graph1"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.7</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-45">
+<div class="para" id="p-421">In this activity you will study the slope of a graph at a point. The graph of the function <span class="process-math">\(g(x)\)</span> is given below. For your convenience, below you will find a table of values for <span class="process-math">\(g(x)\text{.}\)</span>
+</div> <figure class="figure figure-like" id="figure-31"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/image-25.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">38<span class="period">.</span></span><span class="space"> </span>The graph of <span class="process-math">\(g(x)\)</span></figcaption></figure> <figure class="table table-like" id="table-der-graph1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">39<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(x \)</span></td>
+<td class="l m b1 r0 l0 t0 lines">1</td>
+<td class="l m b1 r0 l0 t0 lines">1.5</td>
+<td class="l m b1 r0 l0 t0 lines">2</td>
+<td class="l m b1 r0 l0 t0 lines">2.5</td>
+<td class="l m b1 r0 l0 t0 lines">3</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(g(x) \)</span></td>
+<td class="l m b0 r0 l0 t0 lines">-1.5</td>
+<td class="l m b0 r0 l0 t0 lines">-0.875</td>
+<td class="l m b0 r0 l0 t0 lines">0</td>
+<td class="l m b0 r0 l0 t0 lines">1.125</td>
+<td class="l m b0 r0 l0 t0 lines">2.5</td>
+</tr>
+</table></div></figure>
+</div>
+<article class="task exercise-like" id="task-112"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-422">What is the slope of the line through <span class="process-math">\((1,g(1))\)</span> and <span class="process-math">\((2,g(2))\text{?}\)</span> Draw this line on the graph of <span class="process-math">\(g(x)\text{.}\)</span>
+</div></article><article class="task exercise-like" id="task-113"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-423">What is the slope of the line through <span class="process-math">\((1.5,g(1.5))\)</span> and <span class="process-math">\((2,g(2))\text{?}\)</span>  Draw this line on the graph of <span class="process-math">\(g(x)\text{.}\)</span>
+</div></article><article class="task exercise-like" id="task-114"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-424">Draw the line tangent to <span class="process-math">\(g(x)\)</span> at <span class="process-math">\(x=2\text{.}\)</span> What would be your best estimate for the slope of this tangent line?</div></article><article class="task exercise-like" id="task-115"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="p-425">Notice that the slope of the tangent line at <span class="process-math">\(x=2\)</span> is positive. What feature of the graph of <span class="process-math">\(f(x)\)</span> around <span class="process-math">\(x=2\)</span> do you think causes the tangent line to have positive slope?</div> <ol class="upper-alpha cols2">
+<li id="li-241"><div class="para" id="p-426">The function <span class="process-math">\(f(x)\)</span> is concave up</div></li>
+<li id="li-242"><div class="para" id="p-427">The function <span class="process-math">\(f(x)\)</span> is increasing</div></li>
+<li id="li-243"><div class="para" id="p-428">The function <span class="process-math">\(f(x)\)</span> is concave down</div></li>
+<li id="li-244"><div class="para" id="p-429">The function <span class="process-math">\(f(x)\)</span> is decreasing</div></li>
+</ol></article></article><article class="observation remark-like" id="secant-to-tangent"><h4 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.1.8</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-430">The slope of the secant line to <span class="process-math">\(f(x)\)</span> through the points <span class="process-math">\(x=a\)</span> and <span class="process-math">\(x=b\)</span> is given by the difference quotient <span class="process-math">\(\frac{f(b)-f(a)}{b-a}\text{.}\)</span> As the point <span class="process-math">\(x=b\)</span> gets closer to <span class="process-math">\(x=a\text{,}\)</span> the slope of the secant line tends to the slope of the tangent line. In symbols, the slope at <span class="process-math">\(x=a\)</span> is given by the <em class="emphasis">limit</em>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to a} \frac{f(x)-f(a)}{x-a}.
+\end{equation*}
+</div>
+<div class="para" id="p-431">Letting <span class="process-math">\(b=a+h\text{,}\)</span> we can also say that the slope of the tangent line at <span class="process-math">\(x=a\)</span> is given by the limit</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
+\end{equation*}
+</div></article><article class="definition definition-like" id="def-derivative-point"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.9</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-432">The derivative of <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=a\text{,}\)</span> denoted <span class="process-math">\(f'(a)\text{,}\)</span> is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f'(a) = \lim_{h\to 0} \frac{f(a+h)-f(a)}{h}.
+\end{equation*}
+</div></article><article class="observation remark-like" id="observation-4"><h4 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.1.10</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-433">In <a href="" class="xref" data-knowl="./knowl/activity-ball1.html" title="Activity 2.1.1">Activity 2.1.1</a>  and <a href="" class="xref" data-knowl="./knowl/activity-ball2.html" title="Activity 2.1.4">Activity 2.1.4</a> you studied a ball falling under gravity and estimated the instantaneous velocity as a limiting value of average velocities on smaller and smaller intervals. Drawing the corresponding secant lines, we see how the secant lines approximate better the tangent line, showing graphically what we previouly saw numericaly. Here is a Desmos animation showing the secant lines approaching the tangent line  <a class="external" href="https://www.desmos.com/calculator/bzs1bxz7fa" target="_blank"><code class="code-inline tex2jax_ignore">https://www.desmos.com/calculator/bzs1bxz7fa</code></a>.</div></article><article class="activity project-like" id="meanings-derivative"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.11</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-434">Suppose that the function <span class="process-math">\(f(x)\)</span> gives the position of an object at time <span class="process-math">\(x\text{.}\)</span> Which of the following quantities are the same? Select all that apply!</div> <ol class="upper-alpha cols2">
+<li id="li-245"><div class="para" id="p-435">The value of the derivative of <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=a\)</span>
+</div></li>
+<li id="li-246"><div class="para" id="p-436">The slope of the tangent line to <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=a\)</span>
+</div></li>
+<li id="li-247"><div class="para" id="p-437">The instantaneous velocity of the object at <span class="process-math">\(x=a\)</span>
+</div></li>
+<li id="li-248"><div class="para" id="p-438">The difference quotient <span class="process-math">\(\frac{f(a+h)-f(a)}{h} \)</span>
+</div></li>
+<li id="li-249"><div class="para" id="p-439">The limit <span class="process-math">\(\lim_{h \to 0} \frac{f(a+h)-f(a)}{h} \)</span>
+</div></li>
+</ol></article><article class="observation remark-like" id="estimating-der"><h4 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.1.12</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-440">We can use the difference quotient <span class="process-math">\(\frac{f(a+h)-f(a)}{h} \)</span> for small values of <span class="process-math">\(h\)</span> to <em class="emphasis">estimate</em> <span class="process-math">\(f'(a)\text{,}\)</span> the value of the derivative at <span class="process-math">\(x=a\text{.}\)</span>
+</div></article><article class="activity project-like" id="activity-61"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.13</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-441">Suppose that you know that the function <span class="process-math">\(g(x)\)</span> has values <span class="process-math">\(g(-0.5)=7\text{,}\)</span> <span class="process-math">\(g(0)=4\text{,}\)</span> and <span class="process-math">\(g(0.5)=2\text{.}\)</span> What is your best estimate for <span class="process-math">\(g'(0)?\)</span>
 </div> <ol class="upper-alpha cols2">
-<li id="li-305"><div class="para" id="p-derived-li-305">The average rate of change on the intervals <span class="process-math">\([1,4]\)</span> and <span class="process-math">\([3,7]\)</span> are equal to the slope of <span class="process-math">\(f(x)\text{,}\)</span> but the average rate of change of <span class="process-math">\(f\)</span> cannot be determined on <span class="process-math">\([5,5+h]\)</span> without a specific value of <span class="process-math">\(h\text{.}\)</span>
-</div></li>
-<li id="li-306"><div class="para" id="p-derived-li-306">The average rate of change on the intervals <span class="process-math">\([1,4]\text{,}\)</span> <span class="process-math">\([3,7]\text{,}\)</span> and <span class="process-math">\([5, 5+h]\)</span> are all different values.</div></li>
-<li id="li-307"><div class="para" id="p-derived-li-307">The average rate of change on the intervals <span class="process-math">\([1,4]\text{,}\)</span>  <span class="process-math">\([3,7]\text{,}\)</span> and <span class="process-math">\([5,5+h]\)</span> are all equal to <span class="process-math">\(-2\text{.}\)</span>
-</div></li>
-</ol></article><article class="activity project-like" id="activity-derivative-analytically-linear2"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="period">.</span>
+<li id="li-250"><div class="para" id="p-442"><span class="process-math">\(\displaystyle g'(0) \approx -3\)</span></div></li>
+<li id="li-251"><div class="para" id="p-443"><span class="process-math">\(\displaystyle g'(0) \approx -2\)</span></div></li>
+<li id="li-252"><div class="para" id="p-444"><span class="process-math">\(\displaystyle g'(0) \approx -6\)</span></div></li>
+<li id="li-253"><div class="para" id="p-445"><span class="process-math">\(\displaystyle g'(0) \approx -4\)</span></div></li>
+<li id="li-254"><div class="para" id="p-446"><span class="process-math">\(\displaystyle g'(0) \approx -5\)</span></div></li>
+</ol></article><article class="activity project-like" id="estimating-der2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.14</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-513">Can you find <span class="process-math">\(f'(\pi)\)</span> when <span class="process-math">\(f(x)=3-2x\)</span> without doing any computations?</div> <ol class="upper-alpha">
-<li id="li-308"><div class="para" id="p-derived-li-308">No, because we cannot compute the value <span class="process-math">\(f(\pi)\text{.}\)</span>
-</div></li>
-<li id="li-309"><div class="para" id="p-derived-li-309">No, because we cannot compute the average rate of change on the interval <span class="process-math">\([\pi, \pi+h]\text{.}\)</span>
-</div></li>
-<li id="li-310"><div class="para" id="p-derived-li-310">Yes, <span class="process-math">\(f'(\pi)=3\)</span> because the intercept of the tangent line at any point is equal to the constant intercept of <span class="process-math">\(f(x)\text{.}\)</span>
-</div></li>
-<li id="li-311"><div class="para" id="p-derived-li-311">Yes, <span class="process-math">\(f'(\pi)=-2\)</span> because the slope of the tangent line at any point is equal to the constant slope of <span class="process-math">\(f(x)\text{.}\)</span>
-</div></li>
-</ol></article><article class="definition definition-like" id="def-derivative-function"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.5</span><span class="period">.</span>
+<div class="para" id="p-447">Suppose that you know that the function <span class="process-math">\(f(x)\)</span> has value <span class="process-math">\(f(1)=3\)</span> and has derivative at <span class="process-math">\(x=1\)</span> given by <span class="process-math">\(f'(1)=2\text{.}\)</span> Which of the following scenarios is most likely?</div> <ol class="upper-alpha cols2">
+<li id="li-255"><div class="para" id="p-448">
+<span class="process-math">\(f(2)=3\)</span> because the function is constant</div></li>
+<li id="li-256"><div class="para" id="p-449">
+<span class="process-math">\(f(2)=2\)</span> because the derivative is constant</div></li>
+<li id="li-257"><div class="para" id="p-450">
+<span class="process-math">\(f(2) \approx 1\)</span> because the function's output decreases by about 2 units for each increase by 1 unit in the input</div></li>
+<li id="li-258"><div class="para" id="p-451">
+<span class="process-math">\(f(2) \approx 5\)</span> because the function's output increases by about 2 units for each increase by 1 unit in the input</div></li>
+</ol></article><article class="observation remark-like" id="approx-increase-derivative"><h4 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.1.15</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-514">Let <span class="process-math">\(f(x)\)</span> be function that is differentiable on an open interval <span class="process-math">\((a,b)\text{.}\)</span> The derivative function of <span class="process-math">\(f(x)\text{,}\)</span> denoted <span class="process-math">\(f'(x)\text{,}\)</span> is given by the limit</div>
-<div class="displaymath process-math">
-\begin{equation*}
-f'(x) = \lim_{h\to 0} \frac{f(x+h)-f(x)}{h}.
-\end{equation*}
+<div class="para" id="p-452">We can use the derivative at <span class="process-math">\(x=a\)</span> to estimate the increase/decrease of the function <span class="process-math">\(f(x)\)</span> close to <span class="process-math">\(x=a\text{.}\)</span> A positive derivative at <span class="process-math">\(x=a\)</span> suggests that the output values are increasing around <span class="process-math">\(x=a\)</span> approximately at a rate given by the value of the derivative.  A negative derivative at <span class="process-math">\(x=a\)</span> suggests that the output values are decreasing around <span class="process-math">\(x=a\)</span> approximately at a rate given by the value of the derivative.</div></article><article class="activity project-like" id="activity-differentiability-intuition"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.16</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-46">
+<div class="para" id="p-453">In this activity you will study the abolute value function <span class="process-math">\(f(x)=|x|\text{.}\)</span> The absolute value function is a piecewise defined function which outputs <span class="process-math">\(x\)</span> when <span class="process-math">\(x\)</span> is positive (or zero) and outputs <span class="process-math">\(-x\)</span> when <span class="process-math">\(x\)</span> is negative. So the absolute value always outputs a number which is positive (or zero). Here is the graph of this function.</div> <figure class="figure figure-like" id="figure-32"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/image-26.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">40<span class="period">.</span></span><span class="space"> </span>The graph of <span class="process-math">\(|x|\)</span></figcaption></figure>
 </div>
-<div class="para" id="p-515">At any particular input <span class="process-math">\(x=a\text{,}\)</span> the derivative function outputs <span class="process-math">\(f'(a)\text{,}\)</span> the value of derivative at the point <span class="process-math">\(x=a\text{.}\)</span>
-</div></article><article class="remark remark-like" id="derivative-notation1"><h4 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.2.6</span><span class="period">.</span>
+<article class="task exercise-like" id="task-116"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-454">What do you think is the slope of the function for any <span class="process-math">\(x\)</span> value smaller than zero?</div> <ol class="upper-alpha cols2">
+<li id="li-259"><div class="para" id="p-455">0</div></li>
+<li id="li-260"><div class="para" id="p-456">1</div></li>
+<li id="li-261"><div class="para" id="p-457">-1</div></li>
+<li id="li-262"><div class="para" id="p-458">DNE</div></li>
+</ol></article><article class="task exercise-like" id="task-117"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-459">What do you think is the slope of the function for any <span class="process-math">\(x\)</span> value greater than zero?</div> <ol class="upper-alpha cols2">
+<li id="li-263"><div class="para" id="p-460">0</div></li>
+<li id="li-264"><div class="para" id="p-461">1</div></li>
+<li id="li-265"><div class="para" id="p-462">-1</div></li>
+<li id="li-266"><div class="para" id="p-463">DNE</div></li>
+</ol></article><article class="task exercise-like" id="task-118"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-464">What do you think is the slope of the function at zero?</div> <ol class="upper-alpha cols2">
+<li id="li-267"><div class="para" id="p-465">0</div></li>
+<li id="li-268"><div class="para" id="p-466">1</div></li>
+<li id="li-269"><div class="para" id="p-467">-1</div></li>
+<li id="li-270"><div class="para" id="p-468">DNE</div></li>
+</ol></article></article><article class="observation remark-like" id="differentiability"><h4 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.1.17</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-516">To specify the indendent variable of our function, we say that <span class="process-math">\(f'(x)\)</span> is the derivative of <span class="process-math">\(f(x)\)</span> with respect to <span class="process-math">\(x\text{.}\)</span> For the derivative function of <span class="process-math">\(y=f(x)\)</span> we also use the notation:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-f'(x)=y'(x)=\frac{dy}{dx}=\frac{df}{dx}.
-\end{equation*}
+<div class="para" id="p-469">Because the derivative at a point is defined in terms of a limit, the quantity <span class="process-math">\(f'(a)\)</span> <em class="emphasis">might not exist</em>! In that case we say that <span class="process-math">\(f(x)\)</span> is not differentiable at <span class="process-math">\(x=a\text{.}\)</span> This might happen when the slope on the left of the point is different from the slope on the right, like in the case of the absolute value function. We call this behavior a corner in the graph.</div></article><article class="activity project-like" id="derivative-features-graph"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.18</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-47">
+<div class="para" id="p-470">Consider the graph of function <span class="process-math">\(h(x)\text{.}\)</span>
+</div> <figure class="figure figure-like" id="nice-piecewise-graph"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/image-27.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">41<span class="period">.</span></span><span class="space"> </span>The graph of <span class="process-math">\(h(x)\text{.}\)</span></figcaption></figure>
 </div>
-<div class="para" id="p-517">The last type of notation is known as <em class="emphasis">differential</em> (or Leibniz) notation for the derivative.</div></article><article class="remark remark-like" id="derivative-notation2"><h4 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.2.7</span><span class="period">.</span>
+<article class="task exercise-like" id="task-119"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-471">For which of the following points <span class="process-math">\(a\)</span> is <span class="process-math">\(h'(a)\)</span> positive? Select all that apply!</div>
+<ol class="upper-alpha cols2">
+<li id="li-271"><div class="para" id="p-472">-1</div></li>
+<li id="li-272"><div class="para" id="p-473">1</div></li>
+<li id="li-273"><div class="para" id="p-474">2</div></li>
+<li id="li-274"><div class="para" id="p-475">5</div></li>
+<li id="li-275"><div class="para" id="p-476">6</div></li>
+</ol></article><article class="task exercise-like" id="task-120"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-477">For which of the following points <span class="process-math">\(a\)</span> is <span class="process-math">\(h'(a)\)</span> negative? Select all that apply!</div>
+<ol class="upper-alpha cols2">
+<li id="li-276"><div class="para" id="p-478">-1</div></li>
+<li id="li-277"><div class="para" id="p-479">1</div></li>
+<li id="li-278"><div class="para" id="p-480">2</div></li>
+<li id="li-279"><div class="para" id="p-481">5</div></li>
+<li id="li-280"><div class="para" id="p-482">6</div></li>
+</ol></article><article class="task exercise-like" id="task-121"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-483">For which of the following points <span class="process-math">\(a\)</span> is <span class="process-math">\(h'(a)\)</span> zero? Select all that apply!</div>
+<ol class="upper-alpha cols2">
+<li id="li-281"><div class="para" id="p-484">-1</div></li>
+<li id="li-282"><div class="para" id="p-485">1</div></li>
+<li id="li-283"><div class="para" id="p-486">2</div></li>
+<li id="li-284"><div class="para" id="p-487">5</div></li>
+<li id="li-285"><div class="para" id="p-488">6</div></li>
+</ol></article><article class="task exercise-like" id="task-122"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="p-489">For which of the following points <span class="process-math">\(a\)</span> the quantity <span class="process-math">\(h'(a)\)</span> does NOT exist? Select all that apply!</div>
+<ol class="upper-alpha cols2">
+<li id="li-286"><div class="para" id="p-490">-1</div></li>
+<li id="li-287"><div class="para" id="p-491">1</div></li>
+<li id="li-288"><div class="para" id="p-492">2</div></li>
+<li id="li-289"><div class="para" id="p-493">5</div></li>
+<li id="li-290"><div class="para" id="p-494">6</div></li>
+</ol></article></article><article class="activity project-like" id="derivative-sketching"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.19</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-518">Notice that our notation for the derivative function is based on the name that we assign to the function along with our choice of notation for indendent and dependent variables.  For example, if we have a differentiable function <span class="process-math">\(y=v(t)\text{,}\)</span> the derivative function of <span class="process-math">\(v(t)\)</span> with respect to <span class="process-math">\(t\)</span> can be written as <span class="process-math">\(v'(t)=y'(t)=\frac{dy}{dt}=\frac{dv}{dt}\text{.}\)</span>
-</div></article><article class="activity project-like" id="activity-derivative-analytically-algebraic1"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.8</span><span class="period">.</span>
+<div class="para" id="p-495">Sketch the graph of a function <span class="process-math">\(f(x)\)</span> that satisfies the following criteria. (You do not need to define the function algebraically.)</div> <ul class="disc">
+<li id="li-291"><div class="para" id="p-496">Defined and continuous on the interval <span class="process-math">\([-5,5]\text{.}\)</span>
+</div></li>
+<li id="li-292"><div class="para" id="p-497">
+<span class="process-math">\(f'(x)\)</span> does not exist at <span class="process-math">\(x=0\)</span>
+</div></li>
+<li id="li-293"><div class="para" id="p-498"><span class="process-math">\(\displaystyle \lim_{h\to 0} \frac{f( 2 +h)-f( 2 )}{h}&lt; 0\)</span></div></li>
+<li id="li-294"><div class="para" id="p-499">The slope tangent to the graph of <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=3\)</span> is zero</div></li>
+<li id="li-295"><div class="para" id="p-500">The rate of change of <span class="process-math">\(f(x)\)</span> when <span class="process-math">\(x=-1\)</span> is positive</div></li>
+</ul></article><article class="activity project-like" id="tangent-line-estimate"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.1.20</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="introduction-49"><div class="para" id="p-519">In this activity you will consider  <span class="process-math">\(f(x)=-x^2+4\)</span> and compute its derivative function <span class="process-math">\(f'(x)\)</span> using the limit definition of the derivative function  <a href="" class="xref" data-knowl="./knowl/def-derivative-function.html" title="Definition 2.2.5">Definition 2.2.5</a>.</div></div>
-<article class="task exercise-like" id="task-126"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="p-520">What expression do you get when you simplify the difference quotient</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\frac{f(x+h)-f(x)}{h}= \frac{(-(x+h)^2+4)-(-x^2+4)}{h}?
-\end{equation*}
+<div class="introduction" id="introduction-48">
+<div class="para" id="p-501">You are given the graph of the function <span class="process-math">\(f(x)\text{.}\)</span>
+</div> <figure class="figure figure-like" id="figure-34"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/image-28.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">42<span class="period">.</span></span><span class="space"> </span>The graph of <span class="process-math">\(f(x)\)</span></figcaption></figure>
 </div>
-<ol class="upper-alpha">
-<li id="li-312"><div class="para" id="p-derived-li-312"><span class="process-math">\(\displaystyle \frac{x^2 + h^2 +4 -x^2 -4}{h} = \frac{h^2}{h}\)</span></div></li>
-<li id="li-313"><div class="para" id="p-derived-li-313"><span class="process-math">\(\displaystyle \frac{-x^2 - h^2 +4 +x^2 -4}{h} = \frac{-h^2}{h}\)</span></div></li>
-<li id="li-314"><div class="para" id="p-derived-li-314"><span class="process-math">\(\displaystyle \frac{-x^2 -2xh - h^2 +4 +x^2 -4}{h} = \frac{-2xh - h^2}{h}\)</span></div></li>
-<li id="li-315"><div class="para" id="p-derived-li-315"><span class="process-math">\(\displaystyle \frac{x^2 + 2xh + h^2 +4 - x^2 -4}{h} = \frac{2xh + h^2}{h}\)</span></div></li>
-</ol></article><article class="task exercise-like" id="task-127"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="p-521">After taking the limit as <span class="process-math">\(h \to 0\text{,}\)</span> which of the following is your result for the derivative function <span class="process-math">\(f'(x)\text{?}\)</span>
+<article class="task exercise-like" id="task-123"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-502">Using the graph, estimate the slope of the tangent line at <span class="process-math">\(x=2\text{.}\)</span> Make sure you can carefully describe your process for obtaining this estimate!</div></article><article class="task exercise-like" id="task-124"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-503">If you call your approximation for the slope <span class="process-math">\(m\text{,}\)</span> which one of the following expression gives you the equation of the tangent line at <span class="process-math">\(x=2\text{?}\)</span>
 </div>
 <ol class="upper-alpha cols2">
-<li id="li-316"><div class="para" id="p-derived-li-316"><span class="process-math">\(\displaystyle f'(x)=x \)</span></div></li>
-<li id="li-317"><div class="para" id="p-derived-li-317"><span class="process-math">\(\displaystyle f'(x)=-x \)</span></div></li>
-<li id="li-318"><div class="para" id="p-derived-li-318"><span class="process-math">\(\displaystyle f'(x)=2x \)</span></div></li>
-<li id="li-319"><div class="para" id="p-derived-li-319"><span class="process-math">\(\displaystyle f'(x)=-2x \)</span></div></li>
-</ol></article></article><article class="activity project-like" id="activity-derivative-analytically-algebraic2"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.9</span><span class="period">.</span>
-</h4>
-<div class="para" id="p-522">Using the limit definition of the derivative, find <span class="process-math">\(f'(x)\)</span> for <span class="process-math">\(f(x)=-x^2+2x-4\text{.}\)</span> Which of the following is an accurate expression for <span class="process-math">\(f'(x)\text{?}\)</span>
-</div> <ol class="upper-alpha cols2">
-<li id="li-320"><div class="para" id="p-derived-li-320"><span class="process-math">\(\displaystyle f'(x)=2x +2\)</span></div></li>
-<li id="li-321"><div class="para" id="p-derived-li-321"><span class="process-math">\(\displaystyle f'(x)=-2x \)</span></div></li>
-<li id="li-322"><div class="para" id="p-derived-li-322"><span class="process-math">\(\displaystyle f'(x)=-2x+2 \)</span></div></li>
-<li id="li-323"><div class="para" id="p-derived-li-323"><span class="process-math">\(\displaystyle f'(x)=-2x -2 \)</span></div></li>
-</ol></article><article class="activity project-like" id="activity-derivative-analytically-algebraic3"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.10</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="introduction-50"><div class="para" id="p-523">Using the limit definition of the derivative, you want to find <span class="process-math">\(f'(x)\)</span> for <span class="process-math">\(f(x)=\frac{1}{x}\text{.}\)</span> We will do this by first simplifying the difference quotient and then taking the limit as <span class="process-math">\(h\to 0\text{.}\)</span>
-</div></div>
-<article class="task exercise-like" id="task-128"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="p-524">What expression do you get when you simplify the difference quotient</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\frac{f(x+h)-f(x)}{h}= \frac{\frac{1}{x+h}-\frac{1}{x}}{h}?
-\end{equation*}
-</div>
-<ol class="upper-alpha">
-<li id="li-324"><div class="para" id="p-derived-li-324"><span class="process-math">\(\displaystyle \frac{\frac{1}{x+h}}{h} = \frac{1}{(x+h)h}\)</span></div></li>
-<li id="li-325"><div class="para" id="p-derived-li-325"><span class="process-math">\(\displaystyle \frac{\frac{h}{x+h}}{h} = \frac{h}{h(x+h)}\)</span></div></li>
-<li id="li-326"><div class="para" id="p-derived-li-326"><span class="process-math">\(\displaystyle \frac{\frac{x-(x+h)}{(x+h)x}}{h} = \frac{-h}{h(x+h)x}\)</span></div></li>
-<li id="li-327"><div class="para" id="p-derived-li-327"><span class="process-math">\(\displaystyle \frac{\frac{x-(x+h)}{(x+h)x}}{h} = \frac{-h^2}{(x+h)x}\)</span></div></li>
-<li id="li-328"><div class="para" id="p-derived-li-328"><span class="process-math">\(\displaystyle \frac{\frac{h}{(x+h)x}}{h} = \frac{h}{h(x+h)x}\)</span></div></li>
-</ol></article><article class="task exercise-like" id="task-129"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="p-525">After taking the limit as <span class="process-math">\(h \to 0\text{,}\)</span> which of the following is your result for the derivative function <span class="process-math">\(f'(x)\text{?}\)</span>
-</div>
-<ol class="upper-alpha cols2">
-<li id="li-329"><div class="para" id="p-derived-li-329"><span class="process-math">\(\displaystyle f'(x)=0 \)</span></div></li>
-<li id="li-330"><div class="para" id="p-derived-li-330"><span class="process-math">\(\displaystyle f'(x)=1/x \)</span></div></li>
-<li id="li-331"><div class="para" id="p-derived-li-331"><span class="process-math">\(\displaystyle f'(x)=-1/x \)</span></div></li>
-<li id="li-332"><div class="para" id="p-derived-li-332"><span class="process-math">\(\displaystyle f'(x)=1/x^2 \)</span></div></li>
-<li id="li-333"><div class="para" id="p-derived-li-333"><span class="process-math">\(\displaystyle f'(x)=-1/x^2 \)</span></div></li>
-</ol></article></article><article class="activity project-like" id="activity-df2-checkit"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.11</span><span class="period">.</span>
-</h4>
-<div class="para" id="p-526">Find <span class="process-math">\(f'(x)\)</span> using the limit definition of the derivative. Then evaluate at <span class="process-math">\(x=8\text{.}\)</span>
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-f(x) = x^{2} - 5 \, x - 5
-\end{equation*}
-</div></article><article class="definition definition-like" id="second-derivative"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.12</span><span class="period">.</span>
-</h4>
-<div class="para logical" id="p-527">
-<div class="para">Once we have computed the first derivative <span class="process-math">\(f'(x)\text{,}\)</span> the <dfn class="terminology">second derivative</dfn> of <span class="process-math">\(f(x)\)</span> is the first derivative of <span class="process-math">\(f'(x)\)</span> or</div>
-<div class="displaymath process-math">
-\begin{equation*}
-f''(x) = \lim_{h\to 0} \frac{f'(x+h)-f'(x)}{h}.
-\end{equation*}
-</div>
-</div></article><article class="activity project-like" id="second-der-easy"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.13</span><span class="period">.</span>
-</h4>
-<div class="para" id="p-528">Consider the function <span class="process-math">\(f(x)=-x^2+2x-4\text{.}\)</span> Earlier you saw that <span class="process-math">\(f'(x)=-2x+2\text{.}\)</span> What is the second derivative of <span class="process-math">\(f(x)\text{?}\)</span>
-</div> <ol class="upper-alpha cols2">
-<li id="li-334"><div class="para" id="p-derived-li-334"><span class="process-math">\(\displaystyle f''(x)=2 \)</span></div></li>
-<li id="li-335"><div class="para" id="p-derived-li-335"><span class="process-math">\(\displaystyle f'(x)=-2 \)</span></div></li>
-<li id="li-336"><div class="para" id="p-derived-li-336"><span class="process-math">\(\displaystyle f'(x)=2x \)</span></div></li>
-<li id="li-337"><div class="para" id="p-derived-li-337"><span class="process-math">\(\displaystyle f'(x)=-2x \)</span></div></li>
-</ol></article><article class="remark remark-like" id="remark-17"><h4 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.2.14</span><span class="period">.</span>
-</h4>
-<div class="para logical" id="p-529">
-<div class="para">The first derivative encodes information about the rate of change of the original function. In particular,</div>
-<ul class="disc">
-<li id="li-338"><div class="para" id="p-derived-li-338">If <span class="process-math">\(f'\gt 0 \text{,}\)</span> then <span class="process-math">\(f\)</span> is increasing;</div></li>
-<li id="li-339"><div class="para" id="p-derived-li-339">If <span class="process-math">\(f'\lt 0 \text{,}\)</span> then <span class="process-math">\(f\)</span> is decreasing;</div></li>
-<li id="li-340"><div class="para" id="p-derived-li-340">If <span class="process-math">\(f' = 0 \text{,}\)</span> then <span class="process-math">\(f\)</span> has a horizontal tangent line (and it might have a max or min or it might just be changing pace).</div></li>
-</ul>
-</div> <div class="para logical" id="p-530">
-<div class="para">The second derivative is the derivative of the derivative. It encodes information about the rate of change of the rate of change of the original function. In particular,</div>
-<ul class="disc">
-<li id="li-341"><div class="para" id="p-derived-li-341">If <span class="process-math">\(f'' \gt 0 \text{,}\)</span> then <span class="process-math">\(f'\)</span> is increasing;</div></li>
-<li id="li-342"><div class="para" id="p-derived-li-342">If <span class="process-math">\(f'' \lt 0 \text{,}\)</span> then <span class="process-math">\(f'\)</span> is decreasing;</div></li>
-<li id="li-343"><div class="para" id="p-derived-li-343">If <span class="process-math">\(f'' = 0 \text{,}\)</span> then <span class="process-math">\(f'\)</span> has a horizontal tangent line (and it might have a max or min or it might just be changing pace).</div></li>
-</ul>
-</div></article><article class="activity project-like" id="second-first-der-graph"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.15</span><span class="period">.</span>
-</h4>
-<div class="para" id="p-531">Consider the function <span class="process-math">\(f(x)=-x^2+2x-4\text{.}\)</span> Earlier you saw that <span class="process-math">\(f'(x)=-2x+2\)</span> and <span class="process-math">\(f''(x)=-2\text{.}\)</span> What does this tell you about the graph of <span class="process-math">\(f(x)\)</span> for <span class="process-math">\(x \gt 1\text{?}\)</span>
-</div> <ol class="upper-alpha cols2">
-<li id="li-344"><div class="para" id="p-derived-li-344">The graph is increasing and concave up</div></li>
-<li id="li-345"><div class="para" id="p-derived-li-345">The graph is increasing and concave down</div></li>
-<li id="li-346"><div class="para" id="p-derived-li-346">The graph is decreasing and concave up</div></li>
-<li id="li-347"><div class="para" id="p-derived-li-347">The graph is decreasing and concave down</div></li>
-</ol></article><article class="observation remark-like" id="two-ways-derivative-at-point"><h4 class="heading">
-<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.2.16</span><span class="period">.</span>
-</h4>
-<div class="para" id="p-532">We have two ways to compute analytically the derivative at a point. For example, to compute <span class="process-math">\(f'(1)\text{,}\)</span> the derivative of <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x=1\text{,}\)</span> we have two methods</div> <ol class="decimal">
-<li id="li-348"><div class="para" id="p-derived-li-348">We can directly compute <span class="process-math">\(f'(1)\)</span> by finding the difference quotient on the interval <span class="process-math">\([1,1+h]\)</span> and then taking the limit as <span class="process-math">\(h\to 0\text{.}\)</span>
-</div></li>
-<li id="li-349"><div class="para" id="p-derived-li-349">We can first find the derivative function <span class="process-math">\(f'(x)\)</span> by computing the difference quotient on the interval <span class="process-math">\([x,x+h]\text{,}\)</span> then taking the limit as <span class="process-math">\(h\to 0\text{,}\)</span> and finally evaluating the expression for <span class="process-math">\(f'(x)\)</span> at the input <span class="process-math">\(x=1\text{.}\)</span>
-</div></li>
-</ol> <div class="para" id="p-533">The latter approach is more convenient when you want to consider the value of the derivative function at multiple points!</div></article><article class="activity project-like" id="activity-derivative-analytically-algebraic4"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.17</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="introduction-51"><div class="para" id="p-534">Consider the function <span class="process-math">\(f(x) = \frac{1}{x^2}\text{.}\)</span> You will find <span class="process-math">\(f'(1)\)</span> in two ways!</div></div>
-<article class="task exercise-like" id="task-130"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="p-535">Using the limit definition of the derivative at a point, compute the difference quotient on the interval <span class="process-math">\([1,1+h]\)</span> and then take the limit as <span class="process-math">\(h\to 0\text{.}\)</span> What do you get?</div>
-<ol class="upper-alpha cols2">
-<li id="li-350"><div class="para" id="p-536">-1</div></li>
-<li id="li-351"><div class="para" id="p-537">1</div></li>
-<li id="li-352"><div class="para" id="p-538">2</div></li>
-<li id="li-353"><div class="para" id="p-539">-2</div></li>
-</ol></article><article class="task exercise-like" id="task-131"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="p-540">Now, using the limit definition of the derivative function, find <span class="process-math">\(f'(x)\text{.}\)</span> Which of the following is your result for the derivative function <span class="process-math">\(f'(x)\text{?}\)</span>
-</div>
-<ol class="upper-alpha cols2">
-<li id="li-354"><div class="para" id="p-derived-li-354"><span class="process-math">\(\displaystyle f'(x)=-1/x^3 \)</span></div></li>
-<li id="li-355"><div class="para" id="p-derived-li-355"><span class="process-math">\(\displaystyle f'(x)=1/x^3 \)</span></div></li>
-<li id="li-356"><div class="para" id="p-derived-li-356"><span class="process-math">\(\displaystyle f'(x)=-2/x^3 \)</span></div></li>
-<li id="li-357"><div class="para" id="p-derived-li-357"><span class="process-math">\(\displaystyle f'(x)=2/x^3 \)</span></div></li>
-</ol></article><article class="task exercise-like" id="task-132"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="p-541">Make sure that your answers match! So if you plug in <span class="process-math">\(x=1\)</span> in <span class="process-math">\(f'(x)\text{,}\)</span> you should get the same number you got when you computed <span class="process-math">\(f'(1)\text{.}\)</span>
-</div></article></article><article class="activity project-like" id="DF2-activity-ball2"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.18</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="introduction-52"><div class="para" id="p-542">In this activity you will study (again!) the velocity of a ball falling under gravity. A ball is tossed vertically in the air from a window. The height of the ball (in feet) is given by the formula <span class="process-math">\(f(t) = 64-16(t-1)^2\text{,}\)</span> where <span class="process-math">\(t\)</span> is the seconds after the ball is launched. Recall that in <a href="" class="xref" data-knowl="./knowl/activity-ball1.html" title="Activity 2.1.1">Activity 2.1.1</a>, you used numerical methods to approxmiate the instantaneous velocity of <span class="process-math">\(f(t)\)</span> to calculate <span class="process-math">\(v(2)\text{!}\)</span>
-</div></div>
-<article class="task exercise-like" id="task-133"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="p-543">Using the limit definition of the derivative function, find the velocity function <span class="process-math">\(v(t)=f'(t)\text{.}\)</span>
-</div></article><article class="task exercise-like" id="task-134"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="p-544">Using the velocity function <span class="process-math">\(v(t)\text{,}\)</span> what is <span class="process-math">\(v'(1)\text{,}\)</span> the instantaneous velocity at <span class="process-math">\(t=1\text{?}\)</span>
-</div>
-<ol class="upper-alpha cols2">
-<li id="li-358"><div class="para" id="p-545">-32 feet per second</div></li>
-<li id="li-359"><div class="para" id="p-546">32 feet per second</div></li>
-<li id="li-360"><div class="para" id="p-547">0 feet per second</div></li>
-<li id="li-361"><div class="para" id="p-548">-16 feet per second</div></li>
-<li id="li-362"><div class="para" id="p-549">16 feet per second</div></li>
-</ol></article><article class="task exercise-like" id="task-135"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="p-550">What behavior would explain your finding?</div>
-<ol class="upper-alpha cols2">
-<li id="li-363"><div class="para" id="p-551">After 1 second the ball is falling at a speed of 32 meters per second.</div></li>
-<li id="li-364"><div class="para" id="p-552">After 1 second the ball is moving upwards at a speed of 32 meters per second.</div></li>
-<li id="li-365"><div class="para" id="p-553">After 1 second the ball reaches its highest point and it stops for an instant.</div></li>
-<li id="li-366"><div class="para" id="p-554">After 1 second the ball is falling at a speed of 16 meters per second.</div></li>
-<li id="li-367"><div class="para" id="p-555">After 1 second the ball is moving upwards at a speed of 16 meters per second.</div></li>
-</ol></article></article><article class="observation remark-like" id="continuity-differentiability"><h4 class="heading">
-<span class="type">Observation</span><span class="space"> </span><span class="codenumber">2.2.19</span><span class="period">.</span>
-</h4>
-<div class="para" id="p-556">A function can only be differentiable at <span class="process-math">\(x=a\)</span> if it is also continuous at <span class="process-math">\(x=a\text{.}\)</span> But not all continuous functions are differentiable: when we have a corner in the graph of a the function, the function is continuous at the corner point, but it is not differentiable at that point!</div></article><article class="activity project-like" id="activity-differentiability-piecewise"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.2.20</span><span class="period">.</span>
-</h4>
-<div class="introduction" id="introduction-53"><div class="para" id="p-557">In  <a href="" class="xref" data-knowl="./knowl/differentiability.html" title="Observation 2.1.17">Observation 2.1.17</a>, we said that a function is not differentiable when the limit that defines it does not exist. In this activity we will study differentiability analytically.</div></div>
-<article class="task exercise-like" id="task-136"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="p-558">Consider the following continuous function</div>
-<div class="displaymath process-math">
-\begin{equation*}
-g(x) = \begin{cases}
-x + 2 \amp x \leq 2 \\
-x^2   \amp x \gt  2
-\end{cases}
-\end{equation*}
-</div>
-<div class="para" id="p-559">Consider the interval <span class="process-math">\([2,2+h]\text{.}\)</span> When <span class="process-math">\(h \lt 0 \text{,}\)</span> the interval falls under the first definition of <span class="process-math">\(g(x)\)</span> and the derivative is always equal to 1. What is the derivative function for <span class="process-math">\(x\)</span> values greater than 2? Show that at <span class="process-math">\(x=2\)</span> the value of this derivative is not equal to 1 and so <span class="process-math">\(g(x) \)</span> is not differentiable at <span class="process-math">\(x=2\text{.}\)</span>
-</div></article><article class="task exercise-like" id="task-137"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="p-560">Consider the following discontinuous function</div>
-<div class="displaymath process-math">
-\begin{equation*}
-g(x) = \begin{cases}
-x + 2 \amp x \leq 2 \\
-x   \amp x \gt  2
-\end{cases}
-\end{equation*}
-</div>
-<div class="para" id="p-561">On both sides of <span class="process-math">\(x=2\)</span> it seems that the slope is the same, but this function is still not differentiable at <span class="process-math">\(x=2\text{.}\)</span> Notice that <span class="process-math">\(g(2)=4\text{.}\)</span> When <span class="process-math">\(h \gt 0 \text{,}\)</span> the interval <span class="process-math">\([2,2+h]\)</span>falls under the second definition of <span class="process-math">\(g(x)\text{,}\)</span> but <span class="process-math">\(g(2)\)</span> is always fixed at 4. Compute the difference quotient <span class="process-math">\(\frac{g(2+h)-g(2)}{h}\)</span> assuming that <span class="process-math">\(h \gt 0 \)</span> and notice that this does not simplify as expected! Moreover, if you take the limit as <span class="process-math">\(h\to 0\text{,}\)</span> you will get infinity and not the expected slope of 1!</div></article><article class="task exercise-like" id="task-138"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="p-562">Consider the following function</div>
-<div class="displaymath process-math">
-\begin{equation*}
-g(x) = \begin{cases}
-ax + 2 \amp x \leq 2 \\
-bx^2   \amp x \gt  2
-\end{cases}
-\end{equation*}
-</div>
-<div class="para" id="p-563">where <span class="process-math">\(a,b\)</span> are some nonzero parameters you will find. Find an equation in <span class="process-math">\(a,b\)</span> that needs to be true if we want the function to be continuous at <span class="process-math">\(x=2\text{.}\)</span> Also, find an equation in <span class="process-math">\(a,b\)</span> that needs to be true if we want the function to be differentiable at <span class="process-math">\(x=2\text{.}\)</span> Solve the system of two linear equations... you should find that <span class="process-math">\(a=-2\)</span> and <span class="process-math">\(b=-1/2\)</span> are the only values that make the function differentiable (and continuous!).</div></article></article></section><section class="subsection" id="subsection-16"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">2.2.2</span> <span class="title">Videos</span>
+<li id="li-296"><div class="para" id="p-504"><span class="process-math">\(\displaystyle y - 2 = m (x-2)\)</span></div></li>
+<li id="li-297"><div class="para" id="p-505"><span class="process-math">\(\displaystyle y + 2 = m (x-2)\)</span></div></li>
+<li id="li-298"><div class="para" id="p-506"><span class="process-math">\(\displaystyle y - 2 = m (x+2)\)</span></div></li>
+<li id="li-299"><div class="para" id="p-507"><span class="process-math">\(\displaystyle y + 2 = m (x+2)\)</span></div></li>
+</ol></article><article class="task exercise-like" id="task-125"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-508">Find the equation of the tangent line at <span class="process-math">\(x=2\text{.}\)</span>
+</div></article></article></section><section class="subsection" id="subsection-14"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.1.2</span> <span class="title">Videos</span>
 </h3>
-<figure class="figure figure-like" id="figure-36"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-DF2" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/4UErodf99UE?&amp;modestbranding=1&amp;rel=0"></iframe></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">44<span class="period">.</span></span><span class="space"> </span>Video for DF2</figcaption></figure></section></section></div>
+<figure class="figure figure-like" id="figure-35"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-DF1" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/QHol2dMu13o?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">43<span class="period">.</span></span><span class="space"> </span>Video for DF1</figcaption></figure></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="DF2.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="DF3.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+<a class="previous-button button" href="DF.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="DF2.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
 </div>
 <div class="ptx-page-footer">

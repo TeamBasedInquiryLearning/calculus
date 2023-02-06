@@ -955,9 +955,9 @@ var ptx_lunr_docs = [
   "body": "  Video for LT6  "
 },
 {
-  "id": "DF2",
+  "id": "DF1",
   "level": "1",
-  "url": "DF2.html",
+  "url": "DF1.html",
   "type": "Section",
   "number": "2.1",
   "title": "Derivatives graphically and numerically (DF1)",
@@ -966,7 +966,7 @@ var ptx_lunr_docs = [
 {
   "id": "objectives-9",
   "level": "2",
-  "url": "DF2.html#objectives-9",
+  "url": "DF1.html#objectives-9",
   "type": "Learning Outcomes",
   "number": "2.1",
   "title": "",
@@ -975,7 +975,7 @@ var ptx_lunr_docs = [
 {
   "id": "activity-ball1",
   "level": "2",
-  "url": "DF2.html#activity-ball1",
+  "url": "DF1.html#activity-ball1",
   "type": "Activity",
   "number": "2.1.1",
   "title": "",
@@ -984,7 +984,7 @@ var ptx_lunr_docs = [
 {
   "id": "observation-1",
   "level": "2",
-  "url": "DF2.html#observation-1",
+  "url": "DF1.html#observation-1",
   "type": "Observation",
   "number": "2.1.2",
   "title": "",
@@ -993,7 +993,7 @@ var ptx_lunr_docs = [
 {
   "id": "observation-2",
   "level": "2",
-  "url": "DF2.html#observation-2",
+  "url": "DF1.html#observation-2",
   "type": "Observation",
   "number": "2.1.3",
   "title": "",
@@ -1002,7 +1002,7 @@ var ptx_lunr_docs = [
 {
   "id": "activity-ball2",
   "level": "2",
-  "url": "DF2.html#activity-ball2",
+  "url": "DF1.html#activity-ball2",
   "type": "Activity",
   "number": "2.1.4",
   "title": "",
@@ -1011,7 +1011,7 @@ var ptx_lunr_docs = [
 {
   "id": "def-inst-vel",
   "level": "2",
-  "url": "DF2.html#def-inst-vel",
+  "url": "DF1.html#def-inst-vel",
   "type": "Definition",
   "number": "2.1.5",
   "title": "",
@@ -1020,7 +1020,7 @@ var ptx_lunr_docs = [
 {
   "id": "def-slope-secant",
   "level": "2",
-  "url": "DF2.html#def-slope-secant",
+  "url": "DF1.html#def-slope-secant",
   "type": "Definition",
   "number": "2.1.6",
   "title": "",
@@ -1029,7 +1029,7 @@ var ptx_lunr_docs = [
 {
   "id": "activity-der-graph1",
   "level": "2",
-  "url": "DF2.html#activity-der-graph1",
+  "url": "DF1.html#activity-der-graph1",
   "type": "Activity",
   "number": "2.1.7",
   "title": "",
@@ -1038,7 +1038,7 @@ var ptx_lunr_docs = [
 {
   "id": "secant-to-tangent",
   "level": "2",
-  "url": "DF2.html#secant-to-tangent",
+  "url": "DF1.html#secant-to-tangent",
   "type": "Observation",
   "number": "2.1.8",
   "title": "",
@@ -1047,7 +1047,7 @@ var ptx_lunr_docs = [
 {
   "id": "def-derivative-point",
   "level": "2",
-  "url": "DF2.html#def-derivative-point",
+  "url": "DF1.html#def-derivative-point",
   "type": "Definition",
   "number": "2.1.9",
   "title": "",
@@ -1056,7 +1056,7 @@ var ptx_lunr_docs = [
 {
   "id": "observation-4",
   "level": "2",
-  "url": "DF2.html#observation-4",
+  "url": "DF1.html#observation-4",
   "type": "Observation",
   "number": "2.1.10",
   "title": "",
@@ -1065,7 +1065,7 @@ var ptx_lunr_docs = [
 {
   "id": "meanings-derivative",
   "level": "2",
-  "url": "DF2.html#meanings-derivative",
+  "url": "DF1.html#meanings-derivative",
   "type": "Activity",
   "number": "2.1.11",
   "title": "",
@@ -1074,7 +1074,7 @@ var ptx_lunr_docs = [
 {
   "id": "estimating-der",
   "level": "2",
-  "url": "DF2.html#estimating-der",
+  "url": "DF1.html#estimating-der",
   "type": "Observation",
   "number": "2.1.12",
   "title": "",
@@ -1083,7 +1083,7 @@ var ptx_lunr_docs = [
 {
   "id": "activity-61",
   "level": "2",
-  "url": "DF2.html#activity-61",
+  "url": "DF1.html#activity-61",
   "type": "Activity",
   "number": "2.1.13",
   "title": "",
@@ -1092,7 +1092,7 @@ var ptx_lunr_docs = [
 {
   "id": "estimating-der2",
   "level": "2",
-  "url": "DF2.html#estimating-der2",
+  "url": "DF1.html#estimating-der2",
   "type": "Activity",
   "number": "2.1.14",
   "title": "",
@@ -1101,7 +1101,7 @@ var ptx_lunr_docs = [
 {
   "id": "approx-increase-derivative",
   "level": "2",
-  "url": "DF2.html#approx-increase-derivative",
+  "url": "DF1.html#approx-increase-derivative",
   "type": "Observation",
   "number": "2.1.15",
   "title": "",
@@ -1110,7 +1110,7 @@ var ptx_lunr_docs = [
 {
   "id": "activity-differentiability-intuition",
   "level": "2",
-  "url": "DF2.html#activity-differentiability-intuition",
+  "url": "DF1.html#activity-differentiability-intuition",
   "type": "Activity",
   "number": "2.1.16",
   "title": "",
@@ -1119,7 +1119,7 @@ var ptx_lunr_docs = [
 {
   "id": "differentiability",
   "level": "2",
-  "url": "DF2.html#differentiability",
+  "url": "DF1.html#differentiability",
   "type": "Observation",
   "number": "2.1.17",
   "title": "",
@@ -1128,7 +1128,7 @@ var ptx_lunr_docs = [
 {
   "id": "derivative-features-graph",
   "level": "2",
-  "url": "DF2.html#derivative-features-graph",
+  "url": "DF1.html#derivative-features-graph",
   "type": "Activity",
   "number": "2.1.18",
   "title": "",
@@ -1137,7 +1137,7 @@ var ptx_lunr_docs = [
 {
   "id": "derivative-sketching",
   "level": "2",
-  "url": "DF2.html#derivative-sketching",
+  "url": "DF1.html#derivative-sketching",
   "type": "Activity",
   "number": "2.1.19",
   "title": "",
@@ -1146,7 +1146,7 @@ var ptx_lunr_docs = [
 {
   "id": "tangent-line-estimate",
   "level": "2",
-  "url": "DF2.html#tangent-line-estimate",
+  "url": "DF1.html#tangent-line-estimate",
   "type": "Activity",
   "number": "2.1.20",
   "title": "",
@@ -1155,16 +1155,16 @@ var ptx_lunr_docs = [
 {
   "id": "figure-35",
   "level": "2",
-  "url": "DF2.html#figure-35",
+  "url": "DF1.html#figure-35",
   "type": "Figure",
   "number": "43",
   "title": "",
   "body": "  Video for DF1  "
 },
 {
-  "id": "DF1",
+  "id": "DF2",
   "level": "1",
-  "url": "DF1.html",
+  "url": "DF2.html",
   "type": "Section",
   "number": "2.2",
   "title": "Derivatives analytically (DF2)",
@@ -1173,7 +1173,7 @@ var ptx_lunr_docs = [
 {
   "id": "objectives-10",
   "level": "2",
-  "url": "DF1.html#objectives-10",
+  "url": "DF2.html#objectives-10",
   "type": "Learning Outcomes",
   "number": "2.2",
   "title": "",
@@ -1182,7 +1182,7 @@ var ptx_lunr_docs = [
 {
   "id": "derivative-on-interval",
   "level": "2",
-  "url": "DF1.html#derivative-on-interval",
+  "url": "DF2.html#derivative-on-interval",
   "type": "Observation",
   "number": "2.2.1",
   "title": "",
@@ -1191,7 +1191,7 @@ var ptx_lunr_docs = [
 {
   "id": "activity-derivative-analytically-point",
   "level": "2",
-  "url": "DF1.html#activity-derivative-analytically-point",
+  "url": "DF2.html#activity-derivative-analytically-point",
   "type": "Activity",
   "number": "2.2.2",
   "title": "",
@@ -1200,7 +1200,7 @@ var ptx_lunr_docs = [
 {
   "id": "activity-derivative-analytically-linear1",
   "level": "2",
-  "url": "DF1.html#activity-derivative-analytically-linear1",
+  "url": "DF2.html#activity-derivative-analytically-linear1",
   "type": "Activity",
   "number": "2.2.3",
   "title": "",
@@ -1209,7 +1209,7 @@ var ptx_lunr_docs = [
 {
   "id": "activity-derivative-analytically-linear2",
   "level": "2",
-  "url": "DF1.html#activity-derivative-analytically-linear2",
+  "url": "DF2.html#activity-derivative-analytically-linear2",
   "type": "Activity",
   "number": "2.2.4",
   "title": "",
@@ -1218,7 +1218,7 @@ var ptx_lunr_docs = [
 {
   "id": "def-derivative-function",
   "level": "2",
-  "url": "DF1.html#def-derivative-function",
+  "url": "DF2.html#def-derivative-function",
   "type": "Definition",
   "number": "2.2.5",
   "title": "",
@@ -1227,7 +1227,7 @@ var ptx_lunr_docs = [
 {
   "id": "derivative-notation1",
   "level": "2",
-  "url": "DF1.html#derivative-notation1",
+  "url": "DF2.html#derivative-notation1",
   "type": "Remark",
   "number": "2.2.6",
   "title": "",
@@ -1236,7 +1236,7 @@ var ptx_lunr_docs = [
 {
   "id": "derivative-notation2",
   "level": "2",
-  "url": "DF1.html#derivative-notation2",
+  "url": "DF2.html#derivative-notation2",
   "type": "Remark",
   "number": "2.2.7",
   "title": "",
@@ -1245,7 +1245,7 @@ var ptx_lunr_docs = [
 {
   "id": "activity-derivative-analytically-algebraic1",
   "level": "2",
-  "url": "DF1.html#activity-derivative-analytically-algebraic1",
+  "url": "DF2.html#activity-derivative-analytically-algebraic1",
   "type": "Activity",
   "number": "2.2.8",
   "title": "",
@@ -1254,7 +1254,7 @@ var ptx_lunr_docs = [
 {
   "id": "activity-derivative-analytically-algebraic2",
   "level": "2",
-  "url": "DF1.html#activity-derivative-analytically-algebraic2",
+  "url": "DF2.html#activity-derivative-analytically-algebraic2",
   "type": "Activity",
   "number": "2.2.9",
   "title": "",
@@ -1263,7 +1263,7 @@ var ptx_lunr_docs = [
 {
   "id": "activity-derivative-analytically-algebraic3",
   "level": "2",
-  "url": "DF1.html#activity-derivative-analytically-algebraic3",
+  "url": "DF2.html#activity-derivative-analytically-algebraic3",
   "type": "Activity",
   "number": "2.2.10",
   "title": "",
@@ -1272,7 +1272,7 @@ var ptx_lunr_docs = [
 {
   "id": "activity-df2-checkit",
   "level": "2",
-  "url": "DF1.html#activity-df2-checkit",
+  "url": "DF2.html#activity-df2-checkit",
   "type": "Activity",
   "number": "2.2.11",
   "title": "",
@@ -1281,7 +1281,7 @@ var ptx_lunr_docs = [
 {
   "id": "second-derivative",
   "level": "2",
-  "url": "DF1.html#second-derivative",
+  "url": "DF2.html#second-derivative",
   "type": "Definition",
   "number": "2.2.12",
   "title": "",
@@ -1290,7 +1290,7 @@ var ptx_lunr_docs = [
 {
   "id": "second-der-easy",
   "level": "2",
-  "url": "DF1.html#second-der-easy",
+  "url": "DF2.html#second-der-easy",
   "type": "Activity",
   "number": "2.2.13",
   "title": "",
@@ -1299,7 +1299,7 @@ var ptx_lunr_docs = [
 {
   "id": "remark-17",
   "level": "2",
-  "url": "DF1.html#remark-17",
+  "url": "DF2.html#remark-17",
   "type": "Remark",
   "number": "2.2.14",
   "title": "",
@@ -1308,7 +1308,7 @@ var ptx_lunr_docs = [
 {
   "id": "second-first-der-graph",
   "level": "2",
-  "url": "DF1.html#second-first-der-graph",
+  "url": "DF2.html#second-first-der-graph",
   "type": "Activity",
   "number": "2.2.15",
   "title": "",
@@ -1317,7 +1317,7 @@ var ptx_lunr_docs = [
 {
   "id": "two-ways-derivative-at-point",
   "level": "2",
-  "url": "DF1.html#two-ways-derivative-at-point",
+  "url": "DF2.html#two-ways-derivative-at-point",
   "type": "Observation",
   "number": "2.2.16",
   "title": "",
@@ -1326,7 +1326,7 @@ var ptx_lunr_docs = [
 {
   "id": "activity-derivative-analytically-algebraic4",
   "level": "2",
-  "url": "DF1.html#activity-derivative-analytically-algebraic4",
+  "url": "DF2.html#activity-derivative-analytically-algebraic4",
   "type": "Activity",
   "number": "2.2.17",
   "title": "",
@@ -1335,7 +1335,7 @@ var ptx_lunr_docs = [
 {
   "id": "DF2-activity-ball2",
   "level": "2",
-  "url": "DF1.html#DF2-activity-ball2",
+  "url": "DF2.html#DF2-activity-ball2",
   "type": "Activity",
   "number": "2.2.18",
   "title": "",
@@ -1344,7 +1344,7 @@ var ptx_lunr_docs = [
 {
   "id": "continuity-differentiability",
   "level": "2",
-  "url": "DF1.html#continuity-differentiability",
+  "url": "DF2.html#continuity-differentiability",
   "type": "Observation",
   "number": "2.2.19",
   "title": "",
@@ -1353,7 +1353,7 @@ var ptx_lunr_docs = [
 {
   "id": "activity-differentiability-piecewise",
   "level": "2",
-  "url": "DF1.html#activity-differentiability-piecewise",
+  "url": "DF2.html#activity-differentiability-piecewise",
   "type": "Activity",
   "number": "2.2.20",
   "title": "",
@@ -1362,7 +1362,7 @@ var ptx_lunr_docs = [
 {
   "id": "figure-36",
   "level": "2",
-  "url": "DF1.html#figure-36",
+  "url": "DF2.html#figure-36",
   "type": "Figure",
   "number": "44",
   "title": "",
