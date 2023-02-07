@@ -96,13 +96,14 @@
     </theorem>
     <activity xml:id="activity-derivative-elementary3">
     <statement>
-        <p> Using <xref ref = "def-constant-derivative" />, which of the following statement(s) are true?  Note: Pay attention to the independent variable (the input) of the function. </p>
+        <p> Using <xref ref = "def-constant-derivative" />, which of the following statement(s) are true?  Note: Pay attention to the independent variable (the input) of the function.
         <ol marker="A." cols="2">
-                <li>The derivative of <m>y(x) = 10</m> is <m>y'(x) = 9.</m></li>
-                <li>The derivative of <m>y(t) = x</m> is <m>y'(t) = 0.</m></li>
-                <li>The derivative of <m>y(a) = x^2</m> is <m>y'(a) = 2x.</m></li>
-                <li>The derivative of <m>y(x) = -5</m> is <m>y'(x) = -4.</m>.</li>
+                <li>The derivative of <m>y(x) = 10</m> is <m>y'(x) = 9</m>.</li>
+                <li>The derivative of <m>y(t) = x</m> is <m>y'(t) = 0</m>.</li>
+                <li>The derivative of <m>y(a) = x^2</m> is <m>y'(a) = 2x</m>.</li>
+                <li>The derivative of <m>y(x) = -5</m> is <m>y'(x) = -4</m>.</li>
             </ol>
+        </p>
         </statement>
     </activity>
     <theorem xml:id="def-constmult-derivative">
@@ -112,13 +113,14 @@
     </theorem>
     <activity xml:id="activity-derivative-elementary4">
     <statement>
-        <p>What is the derivative of the function <m>y(x) = 12x^{2/3}</m>? </p>
+        <p>What is the derivative of the function <m>y(x) = 12x^{2/3}</m>?
         <ol marker="A." cols="2">
                 <li><m>y'(x) = 8x^{5/3}.</m></li>
                 <li><m>y'(x) = 18x^{-1/3}.</m></li>
                 <li><m>y'(x) = 8x^{-1/3}.</m></li>
                 <li><m>y'(x) = 18x^{5/3}.</m></li>
             </ol>
+        </p>
         </statement>
     </activity>
     <theorem xml:id="def-sumdiff-derivative">
