@@ -79,14 +79,17 @@
                </task>
                    </activity>
 
-   <definition xml:id="chain-rule">
-<p> When looking at the composite function <m>f(g(x))</m>, we have that </p>
-<me>
-       \frac{d}{dx}\Big(f( g(x) )\Big)= f'(g(x)) \cdot g'(x). </me>
-<p>       Using differential notation, if we consider the composite function <m>(v \circ u)(x)</m>, we have that </p>
-<me>
-       \frac{dv}{dx}= \frac{dv}{du} \cdot \frac{du}{dx} </me>. This defined the <term>chain rule</term><idx>chain rule</idx>.
-</definition>
+    
+<theorem xml:id="chain-rule">
+    <title>Chain Rule</title>
+    <p>
+        When looking at the composite function <m>f(g(x))</m>, we have that
+        <me>\frac{d}{dx}\Big(f( g(x) )\Big)= f'(g(x)) \cdot g'(x). </me>
+        Using differential notation, if we consider the composite function <m>(v \circ u)(x)</m>, we have that
+        <me>\frac{dv}{dx}= \frac{dv}{du} \cdot \frac{du}{dx} </me>.
+        This is known as the <term>chain rule</term><idx>chain rule</idx>.
+    </p>
+</theorem>
 
     <warning xml:id="chain-rule-warning"> <p> It is important to consider the input of a function when taking the derivative! In fact, <m>f'(g(x))</m>  and <m>f'(x)</m> are different functions... So computing <m>  \frac{dv}{dx} </m> gives a different result than computing <m>  \frac{dv}{du} </m>. </p></warning>
 
