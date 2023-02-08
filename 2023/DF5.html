@@ -766,130 +766,133 @@ window.MathJax = {
 <li id="li-456"><div class="para" id="p-702">50</div></li>
 </ol></article><article class="task exercise-like" id="task-204"><h5 class="heading"><span class="codenumber">(d)</span></h5>
 <div class="para" id="p-703">Given your answers above, what is the relationship between <span class="process-math">\(\frac{ds}{da}, \frac{da}{dt}, \frac{ds}{dt}\text{?}\)</span>
-</div></article></article><article class="definition definition-like" id="chain-rule"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.5.5</span><span class="period">.</span>
+</div></article></article><article class="theorem theorem-like" id="chain-rule"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.5.5</span><span class="period">.</span><span class="space"> </span><span class="title">Chain Rule.</span>
 </h4>
-<div class="para" id="p-704">When looking at the composite function <span class="process-math">\(f(g(x))\text{,}\)</span> we have that</div>
+<div class="para logical" id="p-704">
+<div class="para">When looking at the composite function <span class="process-math">\(f(g(x))\text{,}\)</span> we have that</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \frac{d}{dx}\Big(f( g(x) )\Big)= f'(g(x)) \cdot g'(x). 
 \end{equation*}
 </div>
-<div class="para" id="p-705">Using differential notation, if we consider the composite function <span class="process-math">\((v \circ u)(x)\text{,}\)</span> we have that</div>
+<div class="para">Using differential notation, if we consider the composite function <span class="process-math">\((v \circ u)(x)\text{,}\)</span> we have that</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \frac{dv}{dx}= \frac{dv}{du} \cdot \frac{du}{dx} \text{.}
 \end{equation*}
-</div>This defined the <dfn class="terminology">chain rule</dfn>.</article><article class="warning remark-like" id="chain-rule-warning"><h4 class="heading">
+</div>
+<div class="para">This is known as the <dfn class="terminology">chain rule</dfn>.</div>
+</div></article><article class="warning remark-like" id="chain-rule-warning"><h4 class="heading">
 <span class="type">Warning</span><span class="space"> </span><span class="codenumber">2.5.6</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-706">It is important to consider the input of a function when taking the derivative! In fact, <span class="process-math">\(f'(g(x))\)</span>  and <span class="process-math">\(f'(x)\)</span> are different functions... So computing <span class="process-math">\(\frac{dv}{dx} \)</span> gives a different result than computing <span class="process-math">\(\frac{dv}{du} \text{.}\)</span>
+<div class="para" id="p-705">It is important to consider the input of a function when taking the derivative! In fact, <span class="process-math">\(f'(g(x))\)</span>  and <span class="process-math">\(f'(x)\)</span> are different functions... So computing <span class="process-math">\(\frac{dv}{dx} \)</span> gives a different result than computing <span class="process-math">\(\frac{dv}{du} \text{.}\)</span>
 </div></article><article class="activity project-like" id="activity-chain-rule-warning"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.7</span><span class="period">.</span>
 </h4>
 <article class="task exercise-like" id="task-205"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="p-707">Consider the function <span class="process-math">\(f(x) = -x^2+5 \)</span> and <span class="process-math">\(g(x)=2x-1\text{.}\)</span> Notice that <span class="process-math">\(f(g(x))= -4x^2 +4x +4 \text{.}\)</span> Which of the following is the derivative function of the composite function <span class="process-math">\(f(g(x))\text{?}\)</span>
+<div class="para" id="p-706">Consider the function <span class="process-math">\(f(x) = -x^2+5 \)</span> and <span class="process-math">\(g(x)=2x-1\text{.}\)</span> Notice that <span class="process-math">\(f(g(x))= -4x^2 +4x +4 \text{.}\)</span> Which of the following is the derivative function of the composite function <span class="process-math">\(f(g(x))\text{?}\)</span>
 </div>
 <ol class="upper-alpha cols2">
-<li id="li-457"><div class="para" id="p-708"><span class="process-math">\(\displaystyle -8x +4 \)</span></div></li>
-<li id="li-458"><div class="para" id="p-709"><span class="process-math">\(\displaystyle -4x \)</span></div></li>
-<li id="li-459"><div class="para" id="p-710"><span class="process-math">\(\displaystyle -2x \)</span></div></li>
-<li id="li-460"><div class="para" id="p-711"><span class="process-math">\(\displaystyle 2 \)</span></div></li>
+<li id="li-457"><div class="para" id="p-707"><span class="process-math">\(\displaystyle -8x +4 \)</span></div></li>
+<li id="li-458"><div class="para" id="p-708"><span class="process-math">\(\displaystyle -4x \)</span></div></li>
+<li id="li-459"><div class="para" id="p-709"><span class="process-math">\(\displaystyle -2x \)</span></div></li>
+<li id="li-460"><div class="para" id="p-710"><span class="process-math">\(\displaystyle 2 \)</span></div></li>
 </ol></article><article class="task exercise-like" id="task-206"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="p-712">One of the options above is a formula for <span class="process-math">\(f'(x) \cdot g'(x) \text{.}\)</span> Which one? Notice that this is not the same as the derivative of <span class="process-math">\(f(g(x))\text{!}\)</span>
+<div class="para" id="p-711">One of the options above is a formula for <span class="process-math">\(f'(x) \cdot g'(x) \text{.}\)</span> Which one? Notice that this is not the same as the derivative of <span class="process-math">\(f(g(x))\text{!}\)</span>
 </div></article></article><article class="activity project-like" id="chain-rule-practice1"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.8</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-713">Consider the composite function <span class="process-math">\(\displaystyle h(x) =\sqrt{e^x} = e^{\frac{x}{2}}\text{.}\)</span> For each of the two expressions, find the derivative using the chain rule. Which of the following expressions are equal to <span class="process-math">\(h'(x)\text{?}\)</span> Select all!</div> <ol class="upper-alpha cols2">
-<li id="li-461"><div class="para" id="p-714"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{2} \left( e^x \right)^{\frac{-1}{2}} \cdot e^x \)</span></div></li>
-<li id="li-462"><div class="para" id="p-715"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{2} \left( e^x \right)^{\frac{3}{2}} \cdot e^x \)</span></div></li>
-<li id="li-463"><div class="para" id="p-716"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{2} e^{\frac{-x}{2}}  \)</span></div></li>
-<li id="li-464"><div class="para" id="p-717"><span class="process-math">\(\displaystyle \displaystyle e^{\frac{x}{2}} \cdot \frac{1}{2} \)</span></div></li>
-<li id="li-465"><div class="para" id="p-718"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{2} \sqrt{e^x}  \)</span></div></li>
-<li id="li-466"><div class="para" id="p-719"><span class="process-math">\(\displaystyle \displaystyle\sqrt{e^x} \cdot e^x \)</span></div></li>
+<div class="para" id="p-712">Consider the composite function <span class="process-math">\(\displaystyle h(x) =\sqrt{e^x} = e^{\frac{x}{2}}\text{.}\)</span> For each of the two expressions, find the derivative using the chain rule. Which of the following expressions are equal to <span class="process-math">\(h'(x)\text{?}\)</span> Select all!</div> <ol class="upper-alpha cols2">
+<li id="li-461"><div class="para" id="p-713"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{2} \left( e^x \right)^{\frac{-1}{2}} \cdot e^x \)</span></div></li>
+<li id="li-462"><div class="para" id="p-714"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{2} \left( e^x \right)^{\frac{3}{2}} \cdot e^x \)</span></div></li>
+<li id="li-463"><div class="para" id="p-715"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{2} e^{\frac{-x}{2}}  \)</span></div></li>
+<li id="li-464"><div class="para" id="p-716"><span class="process-math">\(\displaystyle \displaystyle e^{\frac{x}{2}} \cdot \frac{1}{2} \)</span></div></li>
+<li id="li-465"><div class="para" id="p-717"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{2} \sqrt{e^x}  \)</span></div></li>
+<li id="li-466"><div class="para" id="p-718"><span class="process-math">\(\displaystyle \displaystyle\sqrt{e^x} \cdot e^x \)</span></div></li>
 </ol></article><article class="activity project-like" id="chain-rule-practice-graphs"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.9</span><span class="period">.</span>
 </h4>
 <div class="introduction" id="introduction-73">
-<div class="para" id="p-720">Below you are given the graphs of two functions: <span class="process-math">\(a(x)\)</span> and <span class="process-math">\(b(x)\text{.}\)</span> Use the graphs to compute vaules of composite functions and of their derivatives, when possible (there are points where the derivative of these functions is not defined!). Notice that to compute the derivative at a point, you first want to find the derivative as a function of <span class="process-math">\(x\)</span> and then plug in the input you want to study.</div> <figure class="figure figure-like" id="figure-39"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-29.svg" role="img" class="contained"></div>
+<div class="para" id="p-719">Below you are given the graphs of two functions: <span class="process-math">\(a(x)\)</span> and <span class="process-math">\(b(x)\text{.}\)</span> Use the graphs to compute vaules of composite functions and of their derivatives, when possible (there are points where the derivative of these functions is not defined!). Notice that to compute the derivative at a point, you first want to find the derivative as a function of <span class="process-math">\(x\)</span> and then plug in the input you want to study.</div> <figure class="figure figure-like" id="figure-39"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-29.svg" role="img" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">47<span class="period">.</span></span><span class="space"> </span>The graphs of <span class="process-math">\(a(x)\)</span> and <span class="process-math">\(b(x)\)</span></figcaption></figure>
 </div>
 <article class="task exercise-like" id="task-207"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="p-721">Notice that the derivative of <span class="process-math">\(a \circ b\)</span> is given by <span class="process-math">\(a'(b(x)) \cdot b'(x)\text{,}\)</span> so the derivative of <span class="process-math">\(a \circ b\)</span>  at <span class="process-math">\(x= 4\)</span> is given by the quantity <span class="process-math">\(a'(b(4)) \cdot b'(4) = a'(-2) \cdot b'(4)\text{,}\)</span> because <span class="process-math">\(b(4)=-2\text{.}\)</span> Using the graphs to compute slopes, what is the derivative of <span class="process-math">\(a \circ b\)</span> at <span class="process-math">\(x= 4\text{?}\)</span>
+<div class="para" id="p-720">Notice that the derivative of <span class="process-math">\(a \circ b\)</span> is given by <span class="process-math">\(a'(b(x)) \cdot b'(x)\text{,}\)</span> so the derivative of <span class="process-math">\(a \circ b\)</span>  at <span class="process-math">\(x= 4\)</span> is given by the quantity <span class="process-math">\(a'(b(4)) \cdot b'(4) = a'(-2) \cdot b'(4)\text{,}\)</span> because <span class="process-math">\(b(4)=-2\text{.}\)</span> Using the graphs to compute slopes, what is the derivative of <span class="process-math">\(a \circ b\)</span> at <span class="process-math">\(x= 4\text{?}\)</span>
 </div>
 <ol class="upper-alpha cols2">
-<li id="li-467"><div class="para" id="p-722"><span class="process-math">\(\displaystyle 0 \)</span></div></li>
-<li id="li-468"><div class="para" id="p-723"><span class="process-math">\(\displaystyle -1 \)</span></div></li>
-<li id="li-469"><div class="para" id="p-724"><span class="process-math">\(\displaystyle 1 \)</span></div></li>
-<li id="li-470"><div class="para" id="p-725">
+<li id="li-467"><div class="para" id="p-721"><span class="process-math">\(\displaystyle 0 \)</span></div></li>
+<li id="li-468"><div class="para" id="p-722"><span class="process-math">\(\displaystyle -1 \)</span></div></li>
+<li id="li-469"><div class="para" id="p-723"><span class="process-math">\(\displaystyle 1 \)</span></div></li>
+<li id="li-470"><div class="para" id="p-724">
 <span class="process-math">\(\)</span> -2</div></li>
-<li id="li-471"><div class="para" id="p-726">
+<li id="li-471"><div class="para" id="p-725">
 <span class="process-math">\(\)</span> 2</div></li>
-<li id="li-472"><div class="para" id="p-727">The derivative does not exist at this point.</div></li>
+<li id="li-472"><div class="para" id="p-726">The derivative does not exist at this point.</div></li>
 </ol></article><article class="task exercise-like" id="task-208"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="p-728">Which of the following values is the derivative of <span class="process-math">\(a \circ b\)</span> at <span class="process-math">\(x=2 \text{?}\)</span>
+<div class="para" id="p-727">Which of the following values is the derivative of <span class="process-math">\(a \circ b\)</span> at <span class="process-math">\(x=2 \text{?}\)</span>
 </div>
 <ol class="upper-alpha cols2">
-<li id="li-473"><div class="para" id="p-729"><span class="process-math">\(\displaystyle 0 \)</span></div></li>
-<li id="li-474"><div class="para" id="p-730"><span class="process-math">\(\displaystyle -1 \)</span></div></li>
-<li id="li-475"><div class="para" id="p-731"><span class="process-math">\(\displaystyle 1 \)</span></div></li>
-<li id="li-476"><div class="para" id="p-732">
+<li id="li-473"><div class="para" id="p-728"><span class="process-math">\(\displaystyle 0 \)</span></div></li>
+<li id="li-474"><div class="para" id="p-729"><span class="process-math">\(\displaystyle -1 \)</span></div></li>
+<li id="li-475"><div class="para" id="p-730"><span class="process-math">\(\displaystyle 1 \)</span></div></li>
+<li id="li-476"><div class="para" id="p-731">
 <span class="process-math">\(\)</span> -2</div></li>
-<li id="li-477"><div class="para" id="p-733">
+<li id="li-477"><div class="para" id="p-732">
 <span class="process-math">\(\)</span> 2</div></li>
-<li id="li-478"><div class="para" id="p-734">The derivative does not exist at this point.</div></li>
+<li id="li-478"><div class="para" id="p-733">The derivative does not exist at this point.</div></li>
 </ol></article><article class="task exercise-like" id="task-209"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="p-735">Which of the following values is the derivative of <span class="process-math">\(b \circ a\)</span> (different order!) at <span class="process-math">\(x=-2 \text{?}\)</span>
+<div class="para" id="p-734">Which of the following values is the derivative of <span class="process-math">\(b \circ a\)</span> (different order!) at <span class="process-math">\(x=-2 \text{?}\)</span>
 </div>
 <ol class="upper-alpha cols2">
-<li id="li-479"><div class="para" id="p-736"><span class="process-math">\(\displaystyle 0 \)</span></div></li>
-<li id="li-480"><div class="para" id="p-737"><span class="process-math">\(\displaystyle -1 \)</span></div></li>
-<li id="li-481"><div class="para" id="p-738"><span class="process-math">\(\displaystyle 1 \)</span></div></li>
-<li id="li-482"><div class="para" id="p-739">
+<li id="li-479"><div class="para" id="p-735"><span class="process-math">\(\displaystyle 0 \)</span></div></li>
+<li id="li-480"><div class="para" id="p-736"><span class="process-math">\(\displaystyle -1 \)</span></div></li>
+<li id="li-481"><div class="para" id="p-737"><span class="process-math">\(\displaystyle 1 \)</span></div></li>
+<li id="li-482"><div class="para" id="p-738">
 <span class="process-math">\(\)</span> -2</div></li>
-<li id="li-483"><div class="para" id="p-740">
+<li id="li-483"><div class="para" id="p-739">
 <span class="process-math">\(\)</span> 2</div></li>
-<li id="li-484"><div class="para" id="p-741">The derivative does not exist at this point.</div></li>
+<li id="li-484"><div class="para" id="p-740">The derivative does not exist at this point.</div></li>
 </ol></article></article><article class="activity project-like" id="chain-and-power-rule"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.10</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="introduction-74"><div class="para" id="p-742">In this activity you will study the derivative of <span class="process-math">\(\cos^n(x)\)</span> for different powers <span class="process-math">\(n\text{.}\)</span>
+<div class="introduction" id="introduction-74"><div class="para" id="p-741">In this activity you will study the derivative of <span class="process-math">\(\cos^n(x)\)</span> for different powers <span class="process-math">\(n\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-210"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="p-743">Consider the function <span class="process-math">\(\cos^2(x) = \left( \cos(x) \right)^2\text{.}\)</span> Combining power and chain rule, what do you get if you differentiate <span class="process-math">\(\cos^2(x)\text{?}\)</span>
+<div class="para" id="p-742">Consider the function <span class="process-math">\(\cos^2(x) = \left( \cos(x) \right)^2\text{.}\)</span> Combining power and chain rule, what do you get if you differentiate <span class="process-math">\(\cos^2(x)\text{?}\)</span>
 </div>
 <ol class="upper-alpha cols2">
-<li id="li-485"><div class="para" id="p-744"><span class="process-math">\(\displaystyle -\cos^2(x)\sin(x) \)</span></div></li>
-<li id="li-486"><div class="para" id="p-745"><span class="process-math">\(\displaystyle -\cos^2(x)\sin(x) \)</span></div></li>
-<li id="li-487"><div class="para" id="p-746"><span class="process-math">\(\displaystyle 2\cos(x)\sin(x) \)</span></div></li>
-<li id="li-488"><div class="para" id="p-747"><span class="process-math">\(\displaystyle - 2\cos(x)\sin(x) \)</span></div></li>
+<li id="li-485"><div class="para" id="p-743"><span class="process-math">\(\displaystyle -\cos^2(x)\sin(x) \)</span></div></li>
+<li id="li-486"><div class="para" id="p-744"><span class="process-math">\(\displaystyle -\cos^2(x)\sin(x) \)</span></div></li>
+<li id="li-487"><div class="para" id="p-745"><span class="process-math">\(\displaystyle 2\cos(x)\sin(x) \)</span></div></li>
+<li id="li-488"><div class="para" id="p-746"><span class="process-math">\(\displaystyle - 2\cos(x)\sin(x) \)</span></div></li>
 </ol></article><article class="task exercise-like" id="task-211"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="p-748">Consider the function <span class="process-math">\(\cos^3(x)\text{.}\)</span> Find its derivative.</div></article><article class="task exercise-like" id="task-212"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="p-749">Consider the function <span class="process-math">\(\cos^n(x)\text{,}\)</span> for <span class="process-math">\(n\)</span> any number. Find the general formula for its derivative.</div></article></article><article class="activity project-like" id="chain-and-exp-rule"><h4 class="heading">
+<div class="para" id="p-747">Consider the function <span class="process-math">\(\cos^3(x)\text{.}\)</span> Find its derivative.</div></article><article class="task exercise-like" id="task-212"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-748">Consider the function <span class="process-math">\(\cos^n(x)\text{,}\)</span> for <span class="process-math">\(n\)</span> any number. Find the general formula for its derivative.</div></article></article><article class="activity project-like" id="chain-and-exp-rule"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.11</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="introduction-75"><div class="para" id="p-750">In this activity you will study the derivative of <span class="process-math">\(b^{\cos(x)}\)</span> for different bases <span class="process-math">\(b\text{.}\)</span>
+<div class="introduction" id="introduction-75"><div class="para" id="p-749">In this activity you will study the derivative of <span class="process-math">\(b^{\cos(x)}\)</span> for different bases <span class="process-math">\(b\text{.}\)</span>
 </div></div>
 <article class="task exercise-like" id="task-213"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="p-751">Consider the function <span class="process-math">\(e^{\cos(x)} \text{.}\)</span> Combining exponential and chain rule, what do you get if you differentiate <span class="process-math">\(e^{\cos(x)}\text{?}\)</span>
+<div class="para" id="p-750">Consider the function <span class="process-math">\(e^{\cos(x)} \text{.}\)</span> Combining exponential and chain rule, what do you get if you differentiate <span class="process-math">\(e^{\cos(x)}\text{?}\)</span>
 </div>
 <ol class="upper-alpha cols2">
-<li id="li-489"><div class="para" id="p-752"><span class="process-math">\(\displaystyle e^{\cos(x)} \)</span></div></li>
-<li id="li-490"><div class="para" id="p-753"><span class="process-math">\(\displaystyle - e^{\cos(x)} \sin(x)\)</span></div></li>
-<li id="li-491"><div class="para" id="p-754"><span class="process-math">\(\displaystyle e^{-\sin(x)} \)</span></div></li>
-<li id="li-492"><div class="para" id="p-755"><span class="process-math">\(\displaystyle e^{\cos(x)}\sin(x) \)</span></div></li>
+<li id="li-489"><div class="para" id="p-751"><span class="process-math">\(\displaystyle e^{\cos(x)} \)</span></div></li>
+<li id="li-490"><div class="para" id="p-752"><span class="process-math">\(\displaystyle - e^{\cos(x)} \sin(x)\)</span></div></li>
+<li id="li-491"><div class="para" id="p-753"><span class="process-math">\(\displaystyle e^{-\sin(x)} \)</span></div></li>
+<li id="li-492"><div class="para" id="p-754"><span class="process-math">\(\displaystyle e^{\cos(x)}\sin(x) \)</span></div></li>
 </ol></article><article class="task exercise-like" id="task-214"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="p-756">Consider the function <span class="process-math">\(2^{\cos(x)}\text{.}\)</span> Find its derivative.</div></article><article class="task exercise-like" id="task-215"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="p-757">Consider the function <span class="process-math">\(b^{\cos(x)}\text{,}\)</span> for <span class="process-math">\(b\)</span> any positive number. Find the general formula for its derivative.</div></article></article><article class="remark remark-like" id="chain-rule-power-vs-exp"><h4 class="heading">
+<div class="para" id="p-755">Consider the function <span class="process-math">\(2^{\cos(x)}\text{.}\)</span> Find its derivative.</div></article><article class="task exercise-like" id="task-215"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-756">Consider the function <span class="process-math">\(b^{\cos(x)}\text{,}\)</span> for <span class="process-math">\(b\)</span> any positive number. Find the general formula for its derivative.</div></article></article><article class="remark remark-like" id="chain-rule-power-vs-exp"><h4 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.5.12</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-758">Remember that exponential and power functions obey very different differentiation rules. This behavior continues when we consider composite function. The composite power function <span class="process-math">\(f(x)^3\)</span> has derivative</div>
+<div class="para" id="p-757">Remember that exponential and power functions obey very different differentiation rules. This behavior continues when we consider composite function. The composite power function <span class="process-math">\(f(x)^3\)</span> has derivative</div>
 <div class="displaymath process-math">
 \begin{equation*}
 3 [f(x)]^2  \cdot f'(x) 
 \end{equation*}
 </div>
-<div class="para" id="p-759">but the composite exponential function <span class="process-math">\(3^{f(x)}\)</span> has derivative</div>
+<div class="para" id="p-758">but the composite exponential function <span class="process-math">\(3^{f(x)}\)</span> has derivative</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \ln(3) \,  3^{f(x)} \cdot f'(x) 
@@ -897,7 +900,7 @@ window.MathJax = {
 </div></article><article class="activity project-like" id="chain-rule-fluency"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.13</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-760">Demonstrate and explain how to find the derivative of the following functions. Be sure to explicitly denote which derivative rules (chain, product, quotient, sum/difference, etc.) you are using in your work.</div> <ol class="decimal">
+<div class="para" id="p-759">Demonstrate and explain how to find the derivative of the following functions. Be sure to explicitly denote which derivative rules (chain, product, quotient, sum/difference, etc.) you are using in your work.</div> <ol class="decimal">
 <li id="li-493"><div class="para" id="p-derived-li-493"><div class="displaymath process-math">
 \begin{equation*}
 f(x)= -{\left(4 \, x - 3 \, e^{x} + 4\right)}^{3}
@@ -945,7 +948,7 @@ g' (t)= -\frac{63}{5} \, \cos\left(t\right)^{\frac{2}{5}} \sin\left(t\right)
 </div></article><article class="activity project-like" id="chain-for-quotient-rule"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.14</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="p-761">
+<div class="para logical" id="p-760">
 <div class="para">Notice that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -958,7 +961,7 @@ g' (t)= -\frac{63}{5} \, \cos\left(t\right)^{\frac{2}{5}} \sin\left(t\right)
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.15</span><span class="period">.</span>
 </h4>
 <div class="introduction" id="introduction-76">
-<div class="para" id="p-762">Remember my neighborhood squirrel invasion? The squirrel population grows based on acorn availability, at a rate of 2 squirrels per bushel of acorns.  Acorn availability grows at a rate of 100 bushels of acorns per week. Considering this information as pertaining to the moment <span class="process-math">\(t=0\text{,}\)</span> you are given the following possible model for the squirrel:</div>
+<div class="para" id="p-761">Remember my neighborhood squirrel invasion? The squirrel population grows based on acorn availability, at a rate of 2 squirrels per bushel of acorns.  Acorn availability grows at a rate of 100 bushels of acorns per week. Considering this information as pertaining to the moment <span class="process-math">\(t=0\text{,}\)</span> you are given the following possible model for the squirrel:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 s(a(t))= 2a(t)+10
@@ -967,14 +970,14 @@ s(a(t))= 2a(t)+10
 </div>
 </div>
 <article class="task exercise-like" id="task-216"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="p-763">Check that the model satisfies the data <span class="process-math">\(\frac{ds}{da}=2\)</span> and <span class="process-math">\(\frac{da}{dt}\big|_{t=0} = 100 \)</span>
+<div class="para" id="p-762">Check that the model satisfies the data <span class="process-math">\(\frac{ds}{da}=2\)</span> and <span class="process-math">\(\frac{da}{dt}\big|_{t=0} = 100 \)</span>
 </div></article><article class="task exercise-like" id="task-217"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="p-764">Find the derivative function <span class="process-math">\(\frac{ds}{dt}\)</span> and check that <span class="process-math">\(\frac{ds}{dt}|_{t=0} = 200\text{.}\)</span>
+<div class="para" id="p-763">Find the derivative function <span class="process-math">\(\frac{ds}{dt}\)</span> and check that <span class="process-math">\(\frac{ds}{dt}|_{t=0} = 200\text{.}\)</span>
 </div></article><article class="task exercise-like" id="task-218"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="p-765">According to this model, what is the maximum and minimum squirrel population? What is the fastest rate of increase and decrease of the squirrel population? When will these extremal scenarions occur?</div></article></article><article class="activity project-like" id="chain-rule-in-context3"><h4 class="heading">
+<div class="para" id="p-764">According to this model, what is the maximum and minimum squirrel population? What is the fastest rate of increase and decrease of the squirrel population? When will these extremal scenarions occur?</div></article></article><article class="activity project-like" id="chain-rule-in-context3"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">2.5.16</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="introduction-77"><div class="para logical" id="p-766">
+<div class="introduction" id="introduction-77"><div class="para logical" id="p-765">
 <div class="para">Suppose that a fish population at <span class="process-math">\(t\)</span> months is approximated by</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -983,8 +986,8 @@ P(t) = 100 \cdot 4^{0.05 t}
 </div>
 </div></div>
 <article class="task exercise-like" id="task-219"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="p-767">Find <span class="process-math">\(P(10)\)</span> and use units to explain what this value tells us about the population.</div></article><article class="task exercise-like" id="task-220"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="p-768">Find <span class="process-math">\(P'(10)\)</span> and use units to explain what this value tells us about the population. (If you want to avoid using a calculator, you can use the approximation <span class="process-math">\(\ln(4) = 1.4\text{.}\)</span>)</div></article></article></section><section class="subsection" id="subsection-22"><h3 class="heading hide-type">
+<div class="para" id="p-766">Find <span class="process-math">\(P(10)\)</span> and use units to explain what this value tells us about the population.</div></article><article class="task exercise-like" id="task-220"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-767">Find <span class="process-math">\(P'(10)\)</span> and use units to explain what this value tells us about the population. (If you want to avoid using a calculator, you can use the approximation <span class="process-math">\(\ln(4) = 1.4\text{.}\)</span>)</div></article></article></section><section class="subsection" id="subsection-22"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.5.2</span> <span class="title">Videos</span>
 </h3>
 <figure class="figure figure-like" id="figure-40"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-DF5" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/qGK9bgyTQH8?&amp;modestbranding=1&amp;rel=0"></iframe></div>
