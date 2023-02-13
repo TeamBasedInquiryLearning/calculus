@@ -13,13 +13,14 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Consider a power series <span class="process-math">\(\displaystyle\sum c_n(x-a)^n\text{.}\)</span>  Recall from <a href="" class="xref" data-knowl="./knowl/fact-SQ7ratioTest.html" title="Fact 8.7.6: The Ratio Test">Fact 8.7.6</a> that if</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fact-SQ7ratioTest.html">
+<div class="para">Then recall:</div>
+<div class="displaymath process-math">
 \begin{align*}
-\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)^{n+1}}{c_n(x-a)^n}\right| &amp; &lt; 1
+\displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)^{n+1}}{c_n(x-a)^n}\right| &amp; = \displaystyle \lim_{n\to \infty} \left|\frac{c_{n+1}(x-a)}{c_n}\right|\\
+&amp;=\displaystyle \lim_{n\to \infty} |x-a|\left|\frac{c_{n+1}}{c_n}\right| \\
+&amp;=\displaystyle |x-a|\lim_{n\to \infty} \left|\frac{c_{n+1}}{c_n}\right|. 
 \end{align*}
 </div>
-<div class="para">then <span class="process-math">\(\displaystyle\sum c_n(x-a)^n\)</span> converges.</div>
 </div>
 <span class="incontext"><a href="PS2.html#p-3046" class="internal">in-context</a></span>
 </body>
