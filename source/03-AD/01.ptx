@@ -238,10 +238,13 @@ and the marginal profit is <m>-12 \, x^{2} - 20 \, x + 56</m>.
     
     
 <definition xml:id = "def-temperature">
-    <p> A cooling object has temperature modelled by </p>
-<me>y=  a e^{-kt} +c , </me>
-<p> where <m>a,c,k</m> are positive constants determined by the local conditions.
-    </p></definition>
+    <statement>
+        <p> A cooling object has temperature modelled by
+            <me>y=  a e^{-kt} +c , </me>
+            where <m>a,c,k</m> are positive constants determined by the local conditions.
+                </p>
+    </statement>
+    </definition>
 
 
 <activity xml:id = "activity-temp1">
@@ -249,7 +252,7 @@ and the marginal profit is <m>-12 \, x^{2} - 20 \, x + 56</m>.
     <p> Consider a cup of coffee initially at <m> 100^\circ</m>F. The said cup of coffee was forgotten this morning in my living room where the thermostat is set at <m>72^\circ</m>F. I also observed that when I initially prepared the coffee, the temperature was decreasing at a rate of <m>3.8</m> degrees per minute.
         </p></introduction>
     <task>
-        <p> In the long run, what temperature do you expect the coffee to tend to? Use this information in the model <m>y=ae^{-kt}t+c</m> to determine the value of <m>c</m>.
+        <p> In the long run, what temperature do you expect the coffee to tend to? Use this information in the model <m>y=ae^{-kt}+c</m> to determine the value of <m>c</m>.
             </p></task>
     <task>
         <p> Using the initial temperature of the coffee and your value of <m>c</m>, find the value of <m>a</m> in the model <m>y=ae^{-kt}t+c</m>.
