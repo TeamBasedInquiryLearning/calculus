@@ -192,23 +192,6 @@ be <m>C</m> dollars, where
             </p></task>
     </activity>
 
-<activity xml:id = "activity-marginals2">
-    <introduction> <p> The quantity <m>q</m> of skateboards sold depends on the selling price <m>p</m> of a skateboard, so we write <m>q=f(p)</m>. You are given that </p>
-<me> f(140) = 15000, \quad f'(140)= -100 </me> </introduction>
-      <task>
-        <p>What does the data above tell you about the change in demand for skateboards depending on the selling price?
-            </p></task>
-         <task>
-        <p>The total revenue earned by the sale of skateboards <m>R(p) </m> is given by , <m>R(p) =q(p) \cdot p </m>. Explain why.
-            </p></task>
-    <task>
-        <p>Find </p>
-<me> \frac{dR}{dp}\Big|_{p=140} </me>
-            </task>
-    <task>  <p> What is the sign of the quantity above? What do you think would happen to the revenue if the price was changed from $140 to $141? 
-            </p></task>
-    </activity>
-
 <activity xml:id="marginals-fluency-checkit">
     <statement>
                 <p>
