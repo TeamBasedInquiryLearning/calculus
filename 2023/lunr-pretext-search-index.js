@@ -2320,7 +2320,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.1",
   "title": "Tangents, motion, and marginals (AD1)",
-  "body": " Tangents, motion, and marginals (AD1)     Use derivatives to answer questions about rates of change and equations of tangents.      Activities   The tangent line of a function at is the linear function  Notice that this is the linear function with slope and passing through in point-slope form.    For the following functions, find the required tangent line.   Find the tangent line to at              Find the tangent line to at                Let . Find an equation of the line tangent to the graph at the point .   If a particle has position function , where is measured in seconds and is measured in meters, then the derivative of the position function tells us how the position is changing over time, so gives us the (instantenous) velocity in meters per second. Also, the derivative of the velocity gives us the change in velocity over time, so so gives us the (instantenous) acceleration in meters per second squared. Summarizing,  is the velocity of the particle in .  is the acceleration of the particle in .      A particle moves on a vertical line so that its coordinate at time is   for . Here is measured in seconds and is measured in feet.   Find the velocity and acceleration functions.  Sketch graphs of the position, velocity and acceleration functions for .  When is the particle moving upward and when is it moving downward?  When is the particle's velocity increasing?  Find the total distance that the particle travels in the time interval . Careful: the total distance is not the same as the displacement (the change in position)! Compute how much the particle moves up and add it to how much the particle moves down.     Suppose the position of an object in miles is modeled by the following function:   Explain and demonstrate how to find the object's position, velocity, and acceleration at seconds. Use appropriate units for each.      In some cases, we want to also consider the speed of a particle, which is the absolute value of the velocity. In symbols is the speed of the particle. A particle is speeding up when the speed is increasing.    Consider the speed of a particle. What is the behavior of the speed in relation to velocity and acceleration?    The speed is always positive and it is increasing when the velocity and the acceleration have the same sign.  The speed is positive when the velocity is positive and negative when the velocity is negative.  The speed is positive when the acceleration is positive and negative when the acceleration is negative.  The speed is always positive and it is increasing when the velocity and the acceleration have opposite signs.     In a parametric motion on a curve given by and we have that   is the rate of change of , one component of the slope (or velocity)  is the rate of change of , one component of the slope (or velocity)  is the actual slope (or velocity) of the object and by the chain rule     An airplane is cruising at a fixed height and traveling in a pattern described by the parametric equations   where have units of miles, and is in hours.  Find the slope of the curve.  What is the slope of the curve at .  Write the equation of the tangent line to the curve at .   If is the cost of producing items and is the revenue from selling items, then is the profit. We can study their derivatives, the marginals  is the marginal cost, the rate of change of the cost per unit change in production;  is the marginal revenue, the rate of change of the revenue per unit change in sales;  is the marginal profit, the rate of change of the profit per unit change in sales (assuming we are selling all the items produced).     The manager of a computer shop has to decide how many computers to store in the back of the shop. If she stores a large number, she has to pay extra in storage costs. If she stores only a small number, she will have to reorder more often, which will involve additional handling costs. She has found that if she stores computers, the storage and handling costs will be dollars, where   What is the fixed cost of the computer shop, the cost when no computers are in storage? In practical terms this may account for rent and utilities expenses.  Find the marginal cost  Now suppose that computers give revenue . What is the marginal revenue? What is the real world interpretation of your finding?  Find a formula for the profit function and find the marginal profit using the marginal revenue and the marginal cost (assuming the number of items produced and sold is equal and given by ).     The quantity of skateboards sold depends on the selling price of a skateboard, so we write . You are given that    What does the data above tell you about the change in demand for skateboards depending on the selling price?  The total revenue earned by the sale of skateboards is given by , . Explain why.  Find  What is the sign of the quantity above? What do you think would happen to the revenue if the price was changed from $140 to $141?     A gizmo is sold for per item. Suppose that the number of items produced is equal to the number of items sold and that the cost (in dollars) of producing gizmos is given by the following function:   Explain and demonstrate how to find the marginal revenue, the marginal cost, and the marginal profit in this situation.      A cooling object has temperature modelled by   where are positive constants determined by the local conditions.    Consider a cup of coffee initially at F. The said cup of coffee was forgotten this morning in my living room where the thermostat is set at F. I also observed that when I initially prepared the coffee, the temperature was decreasing at a rate of degrees per minute.  In the long run, what temperature do you expect the coffee to tend to? Use this information in the model to determine the value of .  Using the initial temperature of the coffee and your value of , find the value of in the model .  The scenario also gives you information about the value of the rate of change at . Use this additional information to determine the model completely.  You should find that the temperature model for this coffee cup is . Explain how the values of each parameter connects to the information given.     Videos    Video for AD1    "
+  "body": " Tangents, motion, and marginals (AD1)     Use derivatives to answer questions about rates of change and equations of tangents.      Activities   The tangent line of a function at is the linear function  Notice that this is the linear function with slope and passing through in point-slope form.    For the following functions, find the required tangent line.   Find the tangent line to at              Find the tangent line to at                Let . Find an equation of the line tangent to the graph at the point .   If a particle has position function , where is measured in seconds and is measured in meters, then the derivative of the position function tells us how the position is changing over time, so gives us the (instantenous) velocity in meters per second. Also, the derivative of the velocity gives us the change in velocity over time, so so gives us the (instantenous) acceleration in meters per second squared. Summarizing,  is the velocity of the particle in .  is the acceleration of the particle in .      A particle moves on a vertical line so that its coordinate at time is   for . Here is measured in seconds and is measured in feet.   Find the velocity and acceleration functions.  Sketch graphs of the position, velocity and acceleration functions for .  When is the particle moving upward and when is it moving downward?  When is the particle's velocity increasing?  Find the total distance that the particle travels in the time interval . Careful: the total distance is not the same as the displacement (the change in position)! Compute how much the particle moves up and add it to how much the particle moves down.     Suppose the position of an object in miles is modeled by the following function:   Explain and demonstrate how to find the object's position, velocity, and acceleration at seconds. Use appropriate units for each.      In some cases, we want to also consider the speed of a particle, which is the absolute value of the velocity. In symbols is the speed of the particle. A particle is speeding up when the speed is increasing.    Consider the speed of a particle. What is the behavior of the speed in relation to velocity and acceleration?    The speed is always positive and it is increasing when the velocity and the acceleration have the same sign.  The speed is positive when the velocity is positive and negative when the velocity is negative.  The speed is positive when the acceleration is positive and negative when the acceleration is negative.  The speed is always positive and it is increasing when the velocity and the acceleration have opposite signs.     In a parametric motion on a curve given by and we have that   is the rate of change of , one component of the slope (or velocity)  is the rate of change of , one component of the slope (or velocity)  is the actual slope (or velocity) of the object and by the chain rule     An airplane is cruising at a fixed height and traveling in a pattern described by the parametric equations   where have units of miles, and is in hours.  Find the slope of the curve.  What is the slope of the curve at .  Write the equation of the tangent line to the curve at .   If is the cost of producing items and is the revenue from selling items, then is the profit. We can study their derivatives, the marginals  is the marginal cost, the rate of change of the cost per unit change in production;  is the marginal revenue, the rate of change of the revenue per unit change in sales;  is the marginal profit, the rate of change of the profit per unit change in sales (assuming we are selling all the items produced).     The manager of a computer shop has to decide how many computers to store in the back of the shop. If she stores a large number, she has to pay extra in storage costs. If she stores only a small number, she will have to reorder more often, which will involve additional handling costs. She has found that if she stores computers, the storage and handling costs will be dollars, where   What is the fixed cost of the computer shop, the cost when no computers are in storage? In practical terms this may account for rent and utilities expenses.  Find the marginal cost  Now suppose that computers give revenue . What is the marginal revenue? What is the real world interpretation of your finding?  Find a formula for the profit function and find the marginal profit using the marginal revenue and the marginal cost (assuming the number of items produced and sold is equal and given by ).     A gizmo is sold for per item. Suppose that the number of items produced is equal to the number of items sold and that the cost (in dollars) of producing gizmos is given by the following function:   Explain and demonstrate how to find the marginal revenue, the marginal cost, and the marginal profit in this situation.       A cooling object has temperature modelled by where are positive constants determined by the local conditions.      Consider a cup of coffee initially at F. The said cup of coffee was forgotten this morning in my living room where the thermostat is set at F. I also observed that when I initially prepared the coffee, the temperature was decreasing at a rate of degrees per minute.  In the long run, what temperature do you expect the coffee to tend to? Use this information in the model to determine the value of .  Using the initial temperature of the coffee and your value of , find the value of in the model .  The scenario also gives you information about the value of the rate of change at . Use this additional information to determine the model completely.  You should find that the temperature model for this coffee cup is . Explain how the values of each parameter connects to the information given.     Videos    Video for AD1    "
 },
 {
   "id": "objectives-18",
@@ -2440,20 +2440,11 @@ var ptx_lunr_docs = [
   "body": " The manager of a computer shop has to decide how many computers to store in the back of the shop. If she stores a large number, she has to pay extra in storage costs. If she stores only a small number, she will have to reorder more often, which will involve additional handling costs. She has found that if she stores computers, the storage and handling costs will be dollars, where   What is the fixed cost of the computer shop, the cost when no computers are in storage? In practical terms this may account for rent and utilities expenses.  Find the marginal cost  Now suppose that computers give revenue . What is the marginal revenue? What is the real world interpretation of your finding?  Find a formula for the profit function and find the marginal profit using the marginal revenue and the marginal cost (assuming the number of items produced and sold is equal and given by ).  "
 },
 {
-  "id": "activity-marginals2",
-  "level": "2",
-  "url": "AD1.html#activity-marginals2",
-  "type": "Activity",
-  "number": "3.1.13",
-  "title": "",
-  "body": "  The quantity of skateboards sold depends on the selling price of a skateboard, so we write . You are given that    What does the data above tell you about the change in demand for skateboards depending on the selling price?  The total revenue earned by the sale of skateboards is given by , . Explain why.  Find  What is the sign of the quantity above? What do you think would happen to the revenue if the price was changed from $140 to $141?  "
-},
-{
   "id": "marginals-fluency-checkit",
   "level": "2",
   "url": "AD1.html#marginals-fluency-checkit",
   "type": "Activity",
-  "number": "3.1.14",
+  "number": "3.1.13",
   "title": "",
   "body": "  A gizmo is sold for per item. Suppose that the number of items produced is equal to the number of items sold and that the cost (in dollars) of producing gizmos is given by the following function:   Explain and demonstrate how to find the marginal revenue, the marginal cost, and the marginal profit in this situation.    "
 },
@@ -2462,16 +2453,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "AD1.html#def-temperature",
   "type": "Definition",
-  "number": "3.1.15",
+  "number": "3.1.14",
   "title": "",
-  "body": " A cooling object has temperature modelled by   where are positive constants determined by the local conditions. "
+  "body": "  A cooling object has temperature modelled by where are positive constants determined by the local conditions.   "
 },
 {
   "id": "activity-temp1",
   "level": "2",
   "url": "AD1.html#activity-temp1",
   "type": "Activity",
-  "number": "3.1.16",
+  "number": "3.1.15",
   "title": "",
   "body": "  Consider a cup of coffee initially at F. The said cup of coffee was forgotten this morning in my living room where the thermostat is set at F. I also observed that when I initially prepared the coffee, the temperature was decreasing at a rate of degrees per minute.  In the long run, what temperature do you expect the coffee to tend to? Use this information in the model to determine the value of .  Using the initial temperature of the coffee and your value of , find the value of in the model .  The scenario also gives you information about the value of the rate of change at . Use this additional information to determine the model completely.  You should find that the temperature model for this coffee cup is . Explain how the values of each parameter connects to the information given.  "
 },
@@ -3511,9 +3502,9 @@ var ptx_lunr_docs = [
   "body": "When we compute a limit algebraically, we often encounter the indeterminate form   but this means that limit can equal any number, infinity, or it might not exist. When we encounter an indeterminate form, we just do not know (yet) what the value of the limit is. "
 },
 {
-  "id": "activity-204",
+  "id": "activity-203",
   "level": "2",
-  "url": "AD9.html#activity-204",
+  "url": "AD9.html#activity-203",
   "type": "Activity",
   "number": "3.9.2",
   "title": "",
@@ -3529,18 +3520,18 @@ var ptx_lunr_docs = [
   "body": "Consider the limits    Notice that these limits give indeterminate forms of the type . However, these limits are equal to , the derivative of at . If you can compute , then you have computed the value of the limit!  "
 },
 {
-  "id": "activity-205",
+  "id": "activity-204",
   "level": "2",
-  "url": "AD9.html#activity-205",
+  "url": "AD9.html#activity-204",
   "type": "Activity",
   "number": "3.9.4",
   "title": "",
   "body": "  Use the limit definition of the derivative to compute the following limits. Each limit is , the derivative of some function at some point . You need to determine the function and the point to find the value of the limit: .   Notice that is the derivative of at (where was used for ). Given this observation, what is this limit equal to?  2        The limit does not exist.   Consider . This limit is also the limit definition of some derivative at some point. What is the value of this limit?  1  0     The limit does not exist.   "
 },
 {
-  "id": "activity-206",
+  "id": "activity-205",
   "level": "2",
-  "url": "AD9.html#activity-206",
+  "url": "AD9.html#activity-205",
   "type": "Activity",
   "number": "3.9.5",
   "title": "",
@@ -3556,9 +3547,9 @@ var ptx_lunr_docs = [
   "body": "When we compute a limit algebraically, we might encounter the indeterminate form   but this means that limit can equal any number, infinity, or it might not exist. When we encounter an indeterminate form, we just do not know (yet) what the value of the limit is. "
 },
 {
-  "id": "activity-207",
+  "id": "activity-206",
   "level": "2",
-  "url": "AD9.html#activity-207",
+  "url": "AD9.html#activity-206",
   "type": "Activity",
   "number": "3.9.7",
   "title": "",
@@ -3574,9 +3565,9 @@ var ptx_lunr_docs = [
   "body": " L' Hospital's Rule   If the functions are both differentiable around and for the limit of as (or ) we have one of the indeterminate forms or , then   provided that the limit exists!   "
 },
 {
-  "id": "activity-208",
+  "id": "activity-207",
   "level": "2",
-  "url": "AD9.html#activity-208",
+  "url": "AD9.html#activity-207",
   "type": "Activity",
   "number": "3.9.9",
   "title": "",
@@ -3592,9 +3583,9 @@ var ptx_lunr_docs = [
   "body": " In , when we started to study limits, we encountered the Squeeze Theorem and computed the limit using this theorem. Let's find new ways to compute this limit.   Thinking about as the length of an interval , this limit is actually equal to the value of some derivative, so . What function and what point would lead to this limit? Use these to find , the value of this limit (in a new way!).  Verify, one more time, that this limit is indeed an indeterminate form. Then use L'Hospital's Rule to find this limit (again, in another way!).  "
 },
 {
-  "id": "activity-210",
+  "id": "activity-209",
   "level": "2",
-  "url": "AD9.html#activity-210",
+  "url": "AD9.html#activity-209",
   "type": "Activity",
   "number": "3.9.11",
   "title": "",
@@ -3664,36 +3655,36 @@ var ptx_lunr_docs = [
   "body": "For some functions which have known geometric shapes (like pieces of lines or circles) we can already compute these area exactly and we will do so in this section. But for most functions we do not know quite yet how to compute these areas. In the next section, we will see that because we can compute the areas of rectangles quite easily, we can always try to approximate a shape with rectangles, even if this could be a very coarse approximation. "
 },
 {
-  "id": "activity-213",
+  "id": "activity-212",
   "level": "2",
-  "url": "IN1.html#activity-213",
+  "url": "IN1.html#activity-212",
   "type": "Activity",
   "number": "4.1.3",
   "title": "",
   "body": " Consider the linear function . Sketch a graph of this function. Consider the area between the -axis and the function on the interval . What is ?   1  2  3  4   "
 },
 {
-  "id": "activity-214",
+  "id": "activity-213",
   "level": "2",
-  "url": "IN1.html#activity-214",
+  "url": "IN1.html#activity-213",
   "type": "Activity",
   "number": "4.1.4",
   "title": "",
   "body": " Consider the linear function . What is ?   1  2  3  4   "
 },
 {
-  "id": "activity-215",
+  "id": "activity-214",
   "level": "2",
-  "url": "IN1.html#activity-215",
+  "url": "IN1.html#activity-214",
   "type": "Activity",
   "number": "4.1.5",
   "title": "",
   "body": " Consider the linear function . Notice that on the interval , the shape formed between the graph and the -axis is a trapezoid. What is ?   1  2  3  4   "
 },
 {
-  "id": "activity-216",
+  "id": "activity-215",
   "level": "2",
-  "url": "IN1.html#activity-216",
+  "url": "IN1.html#activity-215",
   "type": "Activity",
   "number": "4.1.6",
   "title": "",
@@ -3709,18 +3700,18 @@ var ptx_lunr_docs = [
   "body": " If a function on , then we define the integral between and to be   So the definite integral for a negative function is the \"negative\" of the area between the graph and the -axis.  "
 },
 {
-  "id": "activity-217",
+  "id": "activity-216",
   "level": "2",
-  "url": "IN1.html#activity-217",
+  "url": "IN1.html#activity-216",
   "type": "Activity",
   "number": "4.1.8",
   "title": "",
   "body": "  Explain how to use geometric formulas for area to compute the following definite integrals. For each part, sketch the function to support your explanation.        "
 },
 {
-  "id": "activity-218",
+  "id": "activity-217",
   "level": "2",
-  "url": "IN1.html#activity-218",
+  "url": "IN1.html#activity-217",
   "type": "Activity",
   "number": "4.1.9",
   "title": "",
@@ -4087,27 +4078,27 @@ var ptx_lunr_docs = [
   "body": "  Evaluate the following definite integrals. Include a sketch of the graph with the area you've found shaded in. Approximate the area to check to see if your definite integral answer makes sense. (Note: Just a guess, you don't have to use Riemann sums. Use the grid to help.)               "
 },
 {
-  "id": "activity-239",
+  "id": "activity-238",
   "level": "2",
-  "url": "IN5.html#activity-239",
+  "url": "IN5.html#activity-238",
   "type": "Activity",
   "number": "4.5.10",
   "title": "",
   "body": "  Find the area between on the interval using  geometry  the definite integral       What do you notice?   "
 },
 {
-  "id": "activity-240",
+  "id": "activity-239",
   "level": "2",
-  "url": "IN5.html#activity-240",
+  "url": "IN5.html#activity-239",
   "type": "Activity",
   "number": "4.5.11",
   "title": "",
   "body": "  Find the area bounded by the curves , the -axis, , and .      "
 },
 {
-  "id": "activity-241",
+  "id": "activity-240",
   "level": "2",
-  "url": "IN5.html#activity-241",
+  "url": "IN5.html#activity-240",
   "type": "Activity",
   "number": "4.5.12",
   "title": "",
@@ -4267,9 +4258,9 @@ var ptx_lunr_docs = [
   "body": "  A geometrical interpretation of ( ) defines as the net area between the graph of and the -axis. By net area, we mean the area above the -axis (when is positive) minus the area below the -axis (when is negative).     As the number of subdivisions increases, the Riemann sum more closely appears to measure the net area between a curve and the x-axis.   Improving approximations of    "
 },
 {
-  "id": "activity-247",
+  "id": "activity-246",
   "level": "2",
-  "url": "IN7.html#activity-247",
+  "url": "IN7.html#activity-246",
   "type": "Activity",
   "number": "4.7.2",
   "title": "",
@@ -4285,18 +4276,18 @@ var ptx_lunr_docs = [
   "body": "  In order to find the total area between a curve and the -axis, one must break up the definite integral at points where , that is, wherever may change from positive to negative, or vice versa.     The total area is illustrated by breaking up the integral from 0 to 5 at 2 and 4 where (x-2) and (x-4) are equal to 0.   Partitioning at and .   Since is zero when and , we may compute the total area between and the -axis using absolute values as follows:    "
 },
 {
-  "id": "activity-248",
+  "id": "activity-247",
   "level": "2",
-  "url": "IN7.html#activity-248",
+  "url": "IN7.html#activity-247",
   "type": "Activity",
   "number": "4.7.4",
   "title": "",
   "body": "  Follow these steps to find the total area between and the -axis from to .    Find all values for where is equal to .    Only one such value is between and . Use this value to fill in the below, then verify that its value is square units.    "
 },
 {
-  "id": "activity-249",
+  "id": "activity-248",
   "level": "2",
-  "url": "IN7.html#activity-249",
+  "url": "IN7.html#activity-248",
   "type": "Activity",
   "number": "4.7.5",
   "title": "",
@@ -4420,27 +4411,27 @@ var ptx_lunr_docs = [
   "body": "   Evaluate various integrals via the substitution method.    "
 },
 {
-  "id": "activity-254",
+  "id": "activity-253",
   "level": "2",
-  "url": "TI1.html#activity-254",
+  "url": "TI1.html#activity-253",
   "type": "Activity",
   "number": "5.1.1",
   "title": "",
   "body": " Answer the following.  Using the chain rule, which of these is the derivative of with respect to ?       Based on this result, which of these would you suspect to equal ?       "
 },
 {
-  "id": "activity-255",
+  "id": "activity-254",
   "level": "2",
-  "url": "TI1.html#activity-255",
+  "url": "TI1.html#activity-254",
   "type": "Activity",
   "number": "5.1.2",
   "title": "",
   "body": "  Recall that if is a function of , then by the Chain Rule.  For each question, choose from the following.          What is ?    What is ?    What is ?   "
 },
 {
-  "id": "activity-256",
+  "id": "activity-255",
   "level": "2",
-  "url": "TI1.html#activity-256",
+  "url": "TI1.html#activity-255",
   "type": "Activity",
   "number": "5.1.3",
   "title": "",
@@ -4465,9 +4456,9 @@ var ptx_lunr_docs = [
   "body": "  Recall that , and so . This allows for the following common notation: .  Therefore, rather than dealing with equations like , we will prefer to write .   "
 },
 {
-  "id": "activity-257",
+  "id": "activity-256",
   "level": "2",
-  "url": "TI1.html#activity-257",
+  "url": "TI1.html#activity-256",
   "type": "Activity",
   "number": "5.1.6",
   "title": "",
@@ -4483,63 +4474,63 @@ var ptx_lunr_docs = [
   "body": "  Here is how one might write out the explanation of how to find from start to finish:    "
 },
 {
-  "id": "activity-258",
+  "id": "activity-257",
   "level": "2",
-  "url": "TI1.html#activity-258",
+  "url": "TI1.html#activity-257",
   "type": "Activity",
   "number": "5.1.8",
   "title": "",
   "body": "  Which step of the previous example do you think was the most important?    Choosing .    Finding and .    Substituting with .    Integrating .    Unsubstituting to get .     "
 },
 {
-  "id": "activity-259",
+  "id": "activity-258",
   "level": "2",
-  "url": "TI1.html#activity-259",
+  "url": "TI1.html#activity-258",
   "type": "Activity",
   "number": "5.1.9",
   "title": "",
   "body": "  Below are two correct solutions to the same integral, using two different choices for . Which method would you prefer to use yourself?           "
 },
 {
-  "id": "activity-260",
+  "id": "activity-259",
   "level": "2",
-  "url": "TI1.html#activity-260",
+  "url": "TI1.html#activity-259",
   "type": "Activity",
   "number": "5.1.10",
   "title": "",
   "body": "  Suppose we wanted to try the substitution method to find . Which of these choices for appears to be most useful?     , so      , so      , so      , so      , so      "
 },
 {
-  "id": "activity-261",
+  "id": "activity-260",
   "level": "2",
-  "url": "TI1.html#activity-261",
+  "url": "TI1.html#activity-260",
   "type": "Activity",
   "number": "5.1.11",
   "title": "",
   "body": "  Complete the following solution using your choice from the previous activity to find .    "
 },
 {
-  "id": "activity-262",
+  "id": "activity-261",
   "level": "2",
-  "url": "TI1.html#activity-262",
+  "url": "TI1.html#activity-261",
   "type": "Activity",
   "number": "5.1.12",
   "title": "",
   "body": "  Complete the following integration by substitution to find .    "
 },
 {
-  "id": "activity-263",
+  "id": "activity-262",
   "level": "2",
-  "url": "TI1.html#activity-263",
+  "url": "TI1.html#activity-262",
   "type": "Activity",
   "number": "5.1.13",
   "title": "",
   "body": "  Given that , what is the value of ?         "
 },
 {
-  "id": "activity-264",
+  "id": "activity-263",
   "level": "2",
-  "url": "TI1.html#activity-264",
+  "url": "TI1.html#activity-263",
   "type": "Activity",
   "number": "5.1.14",
   "title": "",
@@ -4573,11 +4564,20 @@ var ptx_lunr_docs = [
   "body": "  Here is how one might write out the explanation of how to find from start to finish by leaving bounds in terms of instead:    "
 },
 {
+  "id": "activity-264",
+  "level": "2",
+  "url": "TI1.html#activity-264",
+  "type": "Activity",
+  "number": "5.1.18",
+  "title": "",
+  "body": "  Use substitution to show that .   "
+},
+{
   "id": "activity-265",
   "level": "2",
   "url": "TI1.html#activity-265",
   "type": "Activity",
-  "number": "5.1.18",
+  "number": "5.1.19",
   "title": "",
   "body": "  Use substitution to show that .   "
 },
@@ -4586,7 +4586,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI1.html#activity-266",
   "type": "Activity",
-  "number": "5.1.19",
+  "number": "5.1.20",
   "title": "",
   "body": "  Use substitution to show that .   "
 },
@@ -4595,23 +4595,14 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI1.html#activity-267",
   "type": "Activity",
-  "number": "5.1.20",
-  "title": "",
-  "body": "  Use substitution to show that .   "
-},
-{
-  "id": "activity-268",
-  "level": "2",
-  "url": "TI1.html#activity-268",
-  "type": "Activity",
   "number": "5.1.21",
   "title": "",
   "body": "  Consider .   Solve this integral using substitution.  Replace with in the original integral, the solve using the reverse power rule.  Which method did you prefer?  "
 },
 {
-  "id": "activity-269",
+  "id": "activity-268",
   "level": "2",
-  "url": "TI1.html#activity-269",
+  "url": "TI1.html#activity-268",
   "type": "Activity",
   "number": "5.1.22",
   "title": "",
@@ -4825,9 +4816,9 @@ var ptx_lunr_docs = [
   "body": "  Consider the antiderivative    Noting that and letting , what equality does integration by parts yield?        Using the fact that to rewrite the above equality.  Solve algebraically for   "
 },
 {
-  "id": "activity-288",
+  "id": "activity-287",
   "level": "2",
-  "url": "TI2.html#activity-288",
+  "url": "TI2.html#activity-287",
   "type": "Activity",
   "number": "5.2.21",
   "title": "",
@@ -4861,11 +4852,20 @@ var ptx_lunr_docs = [
   "body": "   Compute integrals involving products of trigonometric functions.    "
 },
 {
+  "id": "activity-288",
+  "level": "2",
+  "url": "TI3.html#activity-288",
+  "type": "Activity",
+  "number": "5.3.1",
+  "title": "",
+  "body": "  Consider . Which substitution would you choose to evaluate this integral?     Substitution is not effective     "
+},
+{
   "id": "activity-289",
   "level": "2",
   "url": "TI3.html#activity-289",
   "type": "Activity",
-  "number": "5.3.1",
+  "number": "5.3.2",
   "title": "",
   "body": "  Consider . Which substitution would you choose to evaluate this integral?     Substitution is not effective     "
 },
@@ -4874,7 +4874,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI3.html#activity-290",
   "type": "Activity",
-  "number": "5.3.2",
+  "number": "5.3.3",
   "title": "",
   "body": "  Consider . Which substitution would you choose to evaluate this integral?     Substitution is not effective     "
 },
@@ -4883,32 +4883,23 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "TI3.html#activity-291",
   "type": "Activity",
-  "number": "5.3.3",
+  "number": "5.3.4",
   "title": "",
-  "body": "  Consider . Which substitution would you choose to evaluate this integral?     Substitution is not effective     "
+  "body": "  It's possible to use subtitution to evaluate , by taking advantage of the trigonometric identity .  Complete the following substitution of by filling in the missing s.    "
 },
 {
   "id": "activity-292",
   "level": "2",
   "url": "TI3.html#activity-292",
   "type": "Activity",
-  "number": "5.3.4",
-  "title": "",
-  "body": "  It's possible to use subtitution to evaluate , by taking advantage of the trigonometric identity .  Complete the following substitution of by filling in the missing s.    "
-},
-{
-  "id": "activity-293",
-  "level": "2",
-  "url": "TI3.html#activity-293",
-  "type": "Activity",
   "number": "5.3.5",
   "title": "",
   "body": "  Trying to substitute in the previous example is less successful.   Which feature of made the better choice?  The even power of  The odd power of     "
 },
 {
-  "id": "activity-294",
+  "id": "activity-293",
   "level": "2",
-  "url": "TI3.html#activity-294",
+  "url": "TI3.html#activity-293",
   "type": "Activity",
   "number": "5.3.6",
   "title": "",
@@ -4924,9 +4915,9 @@ var ptx_lunr_docs = [
   "body": "  When integrating the form :    If 's power is odd, rewrite the integral as and use .    If 's power is odd, rewrite the integral as and use .     "
 },
 {
-  "id": "activity-295",
+  "id": "activity-294",
   "level": "2",
-  "url": "TI3.html#activity-295",
+  "url": "TI3.html#activity-294",
   "type": "Activity",
   "number": "5.3.8",
   "title": "",
@@ -5041,18 +5032,18 @@ var ptx_lunr_docs = [
   "body": "  From we may find .  Use this to continue your work in the previous activity and complete the integration by trigonometric substitution.     "
 },
 {
-  "id": "activity-304",
+  "id": "activity-303",
   "level": "2",
-  "url": "TI4.html#activity-304",
+  "url": "TI4.html#activity-303",
   "type": "Activity",
   "number": "5.4.5",
   "title": "",
   "body": "  Use similar reasoning to complete the following proof that .     "
 },
 {
-  "id": "activity-305",
+  "id": "activity-304",
   "level": "2",
-  "url": "TI4.html#activity-305",
+  "url": "TI4.html#activity-304",
   "type": "Activity",
   "number": "5.4.6",
   "title": "",
@@ -5068,11 +5059,20 @@ var ptx_lunr_docs = [
   "body": "  In summary, certain quadratic expressions inside an integral may be substituted with trigonometric functions to take advantage of trigonometric identities and simplify the integrand:      "
 },
 {
+  "id": "activity-305",
+  "level": "2",
+  "url": "TI4.html#activity-305",
+  "type": "Activity",
+  "number": "5.4.8",
+  "title": "",
+  "body": "  Complete the following trignometric substitution to find .     "
+},
+{
   "id": "activity-306",
   "level": "2",
   "url": "TI4.html#activity-306",
   "type": "Activity",
-  "number": "5.4.8",
+  "number": "5.4.9",
   "title": "",
   "body": "  Complete the following trignometric substitution to find .     "
 },
@@ -5080,15 +5080,6 @@ var ptx_lunr_docs = [
   "id": "activity-307",
   "level": "2",
   "url": "TI4.html#activity-307",
-  "type": "Activity",
-  "number": "5.4.9",
-  "title": "",
-  "body": "  Complete the following trignometric substitution to find .     "
-},
-{
-  "id": "activity-308",
-  "level": "2",
-  "url": "TI4.html#activity-308",
   "type": "Activity",
   "number": "5.4.10",
   "title": "",
@@ -5176,9 +5167,9 @@ var ptx_lunr_docs = [
   "body": "  Here is how one might write out the explanation of how to find from start to finish:    "
 },
 {
-  "id": "activity-314",
+  "id": "activity-313",
   "level": "2",
-  "url": "TI5.html#activity-314",
+  "url": "TI5.html#activity-313",
   "type": "Activity",
   "number": "5.5.5",
   "title": "",
@@ -5302,9 +5293,9 @@ var ptx_lunr_docs = [
   "body": "  Based on the previous activities, which of these is equal to ?         "
 },
 {
-  "id": "activity-324",
+  "id": "activity-323",
   "level": "2",
-  "url": "TI6.html#activity-324",
+  "url": "TI6.html#activity-323",
   "type": "Activity",
   "number": "5.6.6",
   "title": "",
@@ -5563,9 +5554,9 @@ var ptx_lunr_docs = [
   "body": " Recall . Compute the following definite integrals.     "
 },
 {
-  "id": "activity-344",
+  "id": "activity-343",
   "level": "2",
-  "url": "TI8.html#activity-344",
+  "url": "TI8.html#activity-343",
   "type": "Activity",
   "number": "5.8.2",
   "title": "",
@@ -5581,9 +5572,9 @@ var ptx_lunr_docs = [
   "body": " Compute the following definite integrals, again using .     "
 },
 {
-  "id": "activity-346",
+  "id": "activity-345",
   "level": "2",
-  "url": "TI8.html#activity-346",
+  "url": "TI8.html#activity-345",
   "type": "Activity",
   "number": "5.8.4",
   "title": "",
@@ -5599,9 +5590,9 @@ var ptx_lunr_docs = [
   "body": " Recall . Compute the following definite integrals.     "
 },
 {
-  "id": "activity-348",
+  "id": "activity-347",
   "level": "2",
-  "url": "TI8.html#activity-348",
+  "url": "TI8.html#activity-347",
   "type": "Activity",
   "number": "5.8.6",
   "title": "",
@@ -5617,9 +5608,9 @@ var ptx_lunr_docs = [
   "body": " Compute the following definite integrals using .     "
 },
 {
-  "id": "activity-350",
+  "id": "activity-349",
   "level": "2",
-  "url": "TI8.html#activity-350",
+  "url": "TI8.html#activity-349",
   "type": "Activity",
   "number": "5.8.8",
   "title": "",
@@ -5653,9 +5644,9 @@ var ptx_lunr_docs = [
   "body": " Given the result of , what is ?        "
 },
 {
-  "id": "activity-353",
+  "id": "activity-352",
   "level": "2",
-  "url": "TI8.html#activity-353",
+  "url": "TI8.html#activity-352",
   "type": "Activity",
   "number": "5.8.12",
   "title": "",
@@ -5671,18 +5662,18 @@ var ptx_lunr_docs = [
   "body": " For a function with a vertical asymptote at , we let denote .  For a function with a vertical asymptote at , we let denote .  "
 },
 {
-  "id": "activity-354",
+  "id": "activity-353",
   "level": "2",
-  "url": "TI8.html#activity-354",
+  "url": "TI8.html#activity-353",
   "type": "Activity",
   "number": "5.8.14",
   "title": "",
   "body": " Which of these limits is equal to ?      All of these.   "
 },
 {
-  "id": "activity-355",
+  "id": "activity-354",
   "level": "2",
-  "url": "TI8.html#activity-355",
+  "url": "TI8.html#activity-354",
   "type": "Activity",
   "number": "5.8.15",
   "title": "",
@@ -5698,9 +5689,9 @@ var ptx_lunr_docs = [
   "body": " Does converge or diverge?   Converges because converges.  Diverges because diverges.  Converges because converges.  Diverges because diverges.   "
 },
 {
-  "id": "activity-357",
+  "id": "activity-356",
   "level": "2",
-  "url": "TI8.html#activity-357",
+  "url": "TI8.html#activity-356",
   "type": "Activity",
   "number": "5.8.17",
   "title": "",
@@ -5896,9 +5887,9 @@ var ptx_lunr_docs = [
   "body": "  Given a function defined on , it's average value is defined to be .   "
 },
 {
-  "id": "activity-370",
+  "id": "activity-369",
   "level": "2",
-  "url": "AI1.html#activity-370",
+  "url": "AI1.html#activity-369",
   "type": "Activity",
   "number": "6.1.5",
   "title": "",
@@ -5968,9 +5959,9 @@ var ptx_lunr_docs = [
   "body": "   Estimate the arclength of a curve with Riemann sums and find an integral which computes the arclength.    "
 },
 {
-  "id": "activity-375",
+  "id": "activity-374",
   "level": "2",
-  "url": "AI2.html#activity-375",
+  "url": "AI2.html#activity-374",
   "type": "Activity",
   "number": "6.2.1",
   "title": "",
@@ -5986,27 +5977,27 @@ var ptx_lunr_docs = [
   "body": "  Given a differentiable function , the arclength arclength of defined on is computed by the integral .   "
 },
 {
-  "id": "activity-376",
+  "id": "activity-375",
   "level": "2",
-  "url": "AI2.html#activity-376",
+  "url": "AI2.html#activity-375",
   "type": "Activity",
   "number": "6.2.3",
   "title": "",
   "body": "  Use to find an integral which measures the arclength of the parabola over the interval .   "
 },
 {
-  "id": "activity-377",
+  "id": "activity-376",
   "level": "2",
-  "url": "AI2.html#activity-377",
+  "url": "AI2.html#activity-376",
   "type": "Activity",
   "number": "6.2.4",
   "title": "",
   "body": "  Consider the curve defined on .   Estimate the arclength of this curve with two line segments where .   Estimate the arclength of this curve with four line segments where .   Find an integral which computes the arclength of the curve defined on .  "
 },
 {
-  "id": "activity-378",
+  "id": "activity-377",
   "level": "2",
-  "url": "AI2.html#activity-378",
+  "url": "AI2.html#activity-377",
   "type": "Activity",
   "number": "6.2.5",
   "title": "",
@@ -6040,9 +6031,9 @@ var ptx_lunr_docs = [
   "body": "   Compute volumes of solids of revolution.    "
 },
 {
-  "id": "activity-379",
+  "id": "activity-378",
   "level": "2",
-  "url": "AI3.html#activity-379",
+  "url": "AI3.html#activity-378",
   "type": "Activity",
   "number": "6.3.1",
   "title": "",
@@ -6058,9 +6049,9 @@ var ptx_lunr_docs = [
   "body": "  We define the volume of a solid with cross sectional area given by laying between to be the definite integral .    "
 },
 {
-  "id": "activity-380",
+  "id": "activity-379",
   "level": "2",
-  "url": "AI3.html#activity-380",
+  "url": "AI3.html#activity-379",
   "type": "Activity",
   "number": "6.3.3",
   "title": "",
@@ -6076,27 +6067,27 @@ var ptx_lunr_docs = [
   "body": "  Generally when solving problems without the aid of technology, it's useful to draw your region in two dimensions, choose whether to use a horizontal or vertical line segment, and draw its rotation to determine the cross-sectional shape.  When the shape is a disk, this is called the disk method and we use one of these formulas depending on whether the cross-sectional area depends on or . .  When the shape is a washer, this is called the washer method and we use one of these formulas depending on whether the cross-sectional area depends on or . .  When the shape is a cylindrical shell, this is called the shell method and we use one of these formulas depending on whether the cross-sectional area depends on or . .   "
 },
 {
-  "id": "activity-381",
+  "id": "activity-380",
   "level": "2",
-  "url": "AI3.html#activity-381",
+  "url": "AI3.html#activity-380",
   "type": "Activity",
   "number": "6.3.5",
   "title": "",
   "body": "  Let's now consider the region bounded by the curves , rotated about the -axis.   Sketch two copies of this region in the plane.  Draw a vertical line segment in one region and its rotation around the -axis. Draw a horizontal line segment in the other region and its rotation around the -axis.  Consider the method required for each cross-section drawn. Which would be the easiest strategy to proceed with?  The horizontal line segment, using the disk\/washer method.  The horizontal line segment, using the shell method.  The vertical line segment, using the disk\/washer method.  The vertical line segment, using the shell method.   Let's proceed with the vertical segment. Which formula is most appropriate for the radius?       Which of these integrals is equal to the volume of the solid of revolution?       "
 },
 {
-  "id": "activity-382",
+  "id": "activity-381",
   "level": "2",
-  "url": "AI3.html#activity-382",
+  "url": "AI3.html#activity-381",
   "type": "Activity",
   "number": "6.3.6",
   "title": "",
   "body": "  Let's now consider the same region, bounded by the curves , but this time rotated about the -axis.   Sketch two copies of this region in the plane.  Draw a vertical line segment in one region and its rotation around the -axis. Draw a horizontal line segment in the other region and its rotation around the -axis.  Consider the method required for each cross-section drawn. Which would be the easiest strategy to proceed with?  The horizontal line segment, using the disk\/washer method.  The horizontal line segment, using the shell method.  The vertical line segment, using the disk\/washer method.  The vertical line segment, using the shell method.   Let's proceed with the vertical segment. Which formula is most appropriate for the radius?       Which formula is most appropriate for the height?       Which of these integrals is equal to the volume of the solid of revolution?       "
 },
 {
-  "id": "activity-383",
+  "id": "activity-382",
   "level": "2",
-  "url": "AI3.html#activity-383",
+  "url": "AI3.html#activity-382",
   "type": "Activity",
   "number": "6.3.7",
   "title": "",
@@ -6166,9 +6157,9 @@ var ptx_lunr_docs = [
   "body": "  A frustum frustum is the portion of a cone that lies between one or two parallel planes.  Plot of a frustum.   frustum      The surface area of the side of the frustum is: where and are the radii of the bases, and is the length of the side.  Note that if , this reduces to the surface area of a side of a cylinder.   "
 },
 {
-  "id": "activity-384",
+  "id": "activity-383",
   "level": "2",
-  "url": "AI4.html#activity-384",
+  "url": "AI4.html#activity-383",
   "type": "Activity",
   "number": "6.4.2",
   "title": "",
@@ -6184,18 +6175,18 @@ var ptx_lunr_docs = [
   "body": "  Recall from that and that   Thus given a function over , the surface area of the solid generated by rotating this function about the -axis is    "
 },
 {
-  "id": "activity-385",
+  "id": "activity-384",
   "level": "2",
-  "url": "AI4.html#activity-385",
+  "url": "AI4.html#activity-384",
   "type": "Activity",
   "number": "6.4.4",
   "title": "",
   "body": "  Consider again the solid generated by rotating over about the -axis.   Find an integral which computes the surface area of this solid.  If we instead rotate over about the -axis, what is an integral which computes the surface area for this solid?  "
 },
 {
-  "id": "activity-386",
+  "id": "activity-385",
   "level": "2",
-  "url": "AI4.html#activity-386",
+  "url": "AI4.html#activity-385",
   "type": "Activity",
   "number": "6.4.5",
   "title": "",
@@ -6751,9 +6742,9 @@ var ptx_lunr_docs = [
   "body": "   Compute derivatives and tangents related to two-dimensional parametric\/vector equations.    "
 },
 {
-  "id": "activity-426",
+  "id": "activity-425",
   "level": "2",
-  "url": "CO2.html#activity-426",
+  "url": "CO2.html#activity-425",
   "type": "Activity",
   "number": "7.2.1",
   "title": "",
@@ -6769,18 +6760,18 @@ var ptx_lunr_docs = [
   "body": "  Suppose is a function of , and may be thought of as a function of either or . Then the Chain Rule requires that . This provides the slope formula for parametric equations: .   "
 },
 {
-  "id": "activity-427",
+  "id": "activity-426",
   "level": "2",
-  "url": "CO2.html#activity-427",
+  "url": "CO2.html#activity-426",
   "type": "Activity",
   "number": "7.2.3",
   "title": "",
   "body": "  Let's draw the picture of the line tangent to the parametric equations and when .   Use a chart to sketch the parabola given by these parametric equations for , including the point when .  Earlier we determined that the slope of the tangent line was . Draw a line with slope passing through and confirm that it appears to be tangent.  Use the point-slope formula along with the slope and point to find the exact equation for this tangent line.       "
 },
 {
-  "id": "activity-428",
+  "id": "activity-427",
   "level": "2",
-  "url": "CO2.html#activity-428",
+  "url": "CO2.html#activity-427",
   "type": "Activity",
   "number": "7.2.4",
   "title": "",
@@ -6814,9 +6805,9 @@ var ptx_lunr_docs = [
   "body": "  In , the blue curve is the graph of the parametric equations and for . This curve connects the point to the point . The red dashed line is the straight line segment connecting these points.   A parametric curve and segment from to   A parametric curve and segment from (1,1) to (4,8).      "
 },
 {
-  "id": "activity-429",
+  "id": "activity-428",
   "level": "2",
-  "url": "CO3.html#activity-429",
+  "url": "CO3.html#activity-428",
   "type": "Activity",
   "number": "7.3.2",
   "title": "",
@@ -6841,9 +6832,9 @@ var ptx_lunr_docs = [
   "body": "  By approximating the curve by several (say ) segements connecting points along the curve, we obtain a better approximation than a single line segment. For example, the illustration shown in gives three segments whose distances sum to about , while the actual length of the curve turns out to be about .   Subdividing a parametric curve where   Subdividing a parametric curve with three segments      "
 },
 {
-  "id": "activity-430",
+  "id": "activity-429",
   "level": "2",
-  "url": "CO3.html#activity-430",
+  "url": "CO3.html#activity-429",
   "type": "Activity",
   "number": "7.3.5",
   "title": "",
@@ -6859,27 +6850,27 @@ var ptx_lunr_docs = [
   "body": "  Put together, and limiting the subdivisions of the curve , we obtain the Riemann sum .  Thus arclength arclength formula along a parametric curve from may be calculated by using the corresponding definite integral .   "
 },
 {
-  "id": "activity-431",
+  "id": "activity-430",
   "level": "2",
-  "url": "CO3.html#activity-431",
+  "url": "CO3.html#activity-430",
   "type": "Activity",
   "number": "7.3.7",
   "title": "",
   "body": "  Let's gain confidence in the arclength formula by checking to make sure it matches the distance formula for line segments.  The parametric equations and for represent the segment of the line connecting to .   Find and , and substitute them into the formula above along with and .  Show that the value of this formula is .  Show that the length of the line segment connecting to is by applying the distance formula directly instead.  "
 },
 {
-  "id": "activity-432",
+  "id": "activity-431",
   "level": "2",
-  "url": "CO3.html#activity-432",
+  "url": "CO3.html#activity-431",
   "type": "Activity",
   "number": "7.3.8",
   "title": "",
   "body": "  For each of these parametric equations, use to write a definite integral that computes the given length. (Do not evaluate the integral.)   The portion of where .  The portion of where .  The portion of between the points and .  "
 },
 {
-  "id": "activity-433",
+  "id": "activity-432",
   "level": "2",
-  "url": "CO3.html#activity-433",
+  "url": "CO3.html#activity-432",
   "type": "Activity",
   "number": "7.3.9",
   "title": "",
@@ -7192,54 +7183,54 @@ var ptx_lunr_docs = [
   "body": "  A sequence is recursive if the terms are defined as a function of previous terms (with the necessary initial terms provided).   "
 },
 {
-  "id": "activity-449",
+  "id": "activity-448",
   "level": "2",
-  "url": "SQ1.html#activity-449",
+  "url": "SQ1.html#activity-448",
   "type": "Activity",
   "number": "8.1.13",
   "title": "",
   "body": "Consider the sequence defined by and for . What are the first four terms?  "
 },
 {
-  "id": "activity-450",
+  "id": "activity-449",
   "level": "2",
-  "url": "SQ1.html#activity-450",
+  "url": "SQ1.html#activity-449",
   "type": "Activity",
   "number": "8.1.14",
   "title": "",
   "body": "  Consider the sequence . Which of the following offers the best recursive formula for this sequence?   for  for     "
 },
 {
-  "id": "activity-451",
+  "id": "activity-450",
   "level": "2",
-  "url": "SQ1.html#activity-451",
+  "url": "SQ1.html#activity-450",
   "type": "Activity",
   "number": "8.1.15",
   "title": "",
   "body": " Once more, consider the sequence from . Suppose and . Give a recursive formula for for all .   "
 },
 {
-  "id": "activity-452",
+  "id": "activity-451",
   "level": "2",
-  "url": "SQ1.html#activity-452",
+  "url": "SQ1.html#activity-451",
   "type": "Activity",
   "number": "8.1.16",
   "title": "",
   "body": "Give a recursive formula that generates the sequence .  "
 },
 {
-  "id": "activity-453",
+  "id": "activity-452",
   "level": "2",
-  "url": "SQ1.html#activity-453",
+  "url": "SQ1.html#activity-452",
   "type": "Activity",
   "number": "8.1.17",
   "title": "",
   "body": " Find the first 5 terms of the following sequence:  ,  Find a closed form for the following sequence:  ,  Find a recursive form for the following sequence:  ,   "
 },
 {
-  "id": "activity-454",
+  "id": "activity-453",
   "level": "2",
-  "url": "SQ1.html#activity-454",
+  "url": "SQ1.html#activity-453",
   "type": "Activity",
   "number": "8.1.18",
   "title": "",
@@ -7273,9 +7264,9 @@ var ptx_lunr_docs = [
   "body": "   Determine if a sequence is convergent, divergent, monotonic, or bounded, and compute limits of convergent sequences.    "
 },
 {
-  "id": "activity-455",
+  "id": "activity-454",
   "level": "2",
-  "url": "SQ2.html#activity-455",
+  "url": "SQ2.html#activity-454",
   "type": "Activity",
   "number": "8.2.1",
   "title": "",
@@ -7336,11 +7327,20 @@ var ptx_lunr_docs = [
   "body": "  A sequence is bounded if there are real numbers such that for every .   "
 },
 {
+  "id": "activity-459",
+  "level": "2",
+  "url": "SQ2.html#activity-459",
+  "type": "Activity",
+  "number": "8.2.8",
+  "title": "",
+  "body": "  Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?  "
+},
+{
   "id": "activity-460",
   "level": "2",
   "url": "SQ2.html#activity-460",
   "type": "Activity",
-  "number": "8.2.8",
+  "number": "8.2.9",
   "title": "",
   "body": "  Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?  "
 },
@@ -7349,7 +7349,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "SQ2.html#activity-461",
   "type": "Activity",
-  "number": "8.2.9",
+  "number": "8.2.10",
   "title": "",
   "body": "  Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?  "
 },
@@ -7357,15 +7357,6 @@ var ptx_lunr_docs = [
   "id": "activity-462",
   "level": "2",
   "url": "SQ2.html#activity-462",
-  "type": "Activity",
-  "number": "8.2.10",
-  "title": "",
-  "body": "  Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?  "
-},
-{
-  "id": "activity-463",
-  "level": "2",
-  "url": "SQ2.html#activity-463",
   "type": "Activity",
   "number": "8.2.11",
   "title": "",
@@ -7381,27 +7372,27 @@ var ptx_lunr_docs = [
   "body": "  Given a sequence , we say has limit  , denoted if we can make as close to as we like by making sufficiently large. If such an exists, we say converges to . If no such exists, we say does not converge.    "
 },
 {
-  "id": "activity-464",
+  "id": "activity-463",
   "level": "2",
-  "url": "SQ2.html#activity-464",
+  "url": "SQ2.html#activity-463",
   "type": "Activity",
   "number": "8.2.13",
   "title": "",
   "body": " For each of the following, determine if the sequence converges.        Where possible, find the limit of the sequence.  "
 },
 {
-  "id": "activity-465",
+  "id": "activity-464",
   "level": "2",
-  "url": "SQ2.html#activity-465",
+  "url": "SQ2.html#activity-464",
   "type": "Activity",
   "number": "8.2.14",
   "title": "",
   "body": " Determine to what value converges.  Which of the following ia most likely true about ?  converges to 4.  converges to 0.  converges to -4.  does not converge.    "
 },
 {
-  "id": "activity-466",
+  "id": "activity-465",
   "level": "2",
-  "url": "SQ2.html#activity-466",
+  "url": "SQ2.html#activity-465",
   "type": "Activity",
   "number": "8.2.15",
   "title": "",
@@ -7534,9 +7525,9 @@ var ptx_lunr_docs = [
   "body": "  Consider the following sequences:  .  .  .     Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Find the closed form for the th partial sum for the geometric sequence .  "
 },
 {
-  "id": "activity-476",
+  "id": "activity-475",
   "level": "2",
-  "url": "SQ3.html#activity-476",
+  "url": "SQ3.html#activity-475",
   "type": "Activity",
   "number": "8.3.11",
   "title": "",
@@ -7615,27 +7606,27 @@ var ptx_lunr_docs = [
   "body": " For each of the following telescoping series, find the closed form for the th partial sum.  .  .  .    "
 },
 {
-  "id": "activity-483",
+  "id": "activity-482",
   "level": "2",
-  "url": "SQ3.html#activity-483",
+  "url": "SQ3.html#activity-482",
   "type": "Activity",
   "number": "8.3.20",
   "title": "",
   "body": " Given the closed forms you found in , determine which of the following telescoping series converge. If so, to what value does it converge?   .  .  .   "
 },
 {
-  "id": "activity-484",
+  "id": "activity-483",
   "level": "2",
-  "url": "SQ3.html#activity-484",
+  "url": "SQ3.html#activity-483",
   "type": "Activity",
   "number": "8.3.21",
   "title": "",
   "body": "  Consider the partial sum sequence  Find a closed form for .  Does converge? If so, to what value?  "
 },
 {
-  "id": "activity-485",
+  "id": "activity-484",
   "level": "2",
-  "url": "SQ3.html#activity-485",
+  "url": "SQ3.html#activity-484",
   "type": "Activity",
   "number": "8.3.22",
   "title": "",
@@ -7723,9 +7714,9 @@ var ptx_lunr_docs = [
   "body": "  For each of the following modified geometric series, determine without rewriting if they converge or diverge.   .  .  .  .  "
 },
 {
-  "id": "activity-490",
+  "id": "activity-489",
   "level": "2",
-  "url": "SQ4.html#activity-490",
+  "url": "SQ4.html#activity-489",
   "type": "Activity",
   "number": "8.4.7",
   "title": "",
@@ -7813,9 +7804,9 @@ var ptx_lunr_docs = [
   "body": "  Consider the so-called harmonic series , , and let be its partial sum.   Determine which of the following inequalities hold(s).  .  .  .  .  .   Determine which of the following inequalities hold(s).  .  .  .  .  .   "
 },
 {
-  "id": "activity-494",
+  "id": "activity-493",
   "level": "2",
-  "url": "SQ5.html#activity-494",
+  "url": "SQ5.html#activity-493",
   "type": "Activity",
   "number": "8.5.7",
   "title": "",
@@ -7867,18 +7858,18 @@ var ptx_lunr_docs = [
   "body": "  Consider the series .   If we aim to use the integral test, what is an appropriate choice for ?  .  .  .  .  .   Does the series converge or diverge by ?  "
 },
 {
-  "id": "activity-498",
+  "id": "activity-497",
   "level": "2",
-  "url": "SQ5.html#activity-498",
+  "url": "SQ5.html#activity-497",
   "type": "Activity",
   "number": "8.5.13",
   "title": "",
   "body": " Prove .  "
 },
 {
-  "id": "activity-499",
+  "id": "activity-498",
   "level": "2",
-  "url": "SQ5.html#activity-499",
+  "url": "SQ5.html#activity-498",
   "type": "Activity",
   "number": "8.5.14",
   "title": "",
@@ -7894,18 +7885,18 @@ var ptx_lunr_docs = [
   "body": " The Alternating Series Test (Leibniz's Theorem)   The series converges if all of the following conditions are satisfied:  is always positive,  there is an integer such that for all , and  .     "
 },
 {
-  "id": "activity-500",
+  "id": "activity-499",
   "level": "2",
-  "url": "SQ5.html#activity-500",
+  "url": "SQ5.html#activity-499",
   "type": "Activity",
   "number": "8.5.16",
   "title": "",
   "body": " What conclusions can you now make?  diverges.  converges.  converges.  diverges.    "
 },
 {
-  "id": "activity-501",
+  "id": "activity-500",
   "level": "2",
-  "url": "SQ5.html#activity-501",
+  "url": "SQ5.html#activity-500",
   "type": "Activity",
   "number": "8.5.17",
   "title": "",
@@ -8029,9 +8020,9 @@ var ptx_lunr_docs = [
   "body": "  We wish to determine if converges or diverges using .   To which of the following should we compare ?  .  .  .  .    Using your chosen sequence and , does converge or diverge?  "
 },
 {
-  "id": "activity-510",
+  "id": "activity-509",
   "level": "2",
-  "url": "SQ6.html#activity-510",
+  "url": "SQ6.html#activity-509",
   "type": "Activity",
   "number": "8.6.10",
   "title": "",
@@ -8092,9 +8083,9 @@ var ptx_lunr_docs = [
   "body": "  Suppose we wish to determine if converged using .   Which series should we compare to best utilize ?  .  .  .  .  .  .    Using your chosen series and , does converge or diverge?  "
 },
 {
-  "id": "activity-515",
+  "id": "activity-514",
   "level": "2",
-  "url": "SQ6.html#activity-515",
+  "url": "SQ6.html#activity-514",
   "type": "Activity",
   "number": "8.6.17",
   "title": "",
@@ -8128,27 +8119,27 @@ var ptx_lunr_docs = [
   "body": "   Use the ratio and root tests to determine if a series converges or diverges.    "
 },
 {
-  "id": "activity-516",
+  "id": "activity-515",
   "level": "2",
-  "url": "SQ7.html#activity-516",
+  "url": "SQ7.html#activity-515",
   "type": "Activity",
   "number": "8.7.1",
   "title": "",
   "body": "  Consider the series    Which of these series most closely resembles ?  .  .  .    Based on your previous choice, do we think this series is more likely to converge or diverge?  Find   .  .  .  .  .    "
 },
 {
-  "id": "activity-517",
+  "id": "activity-516",
   "level": "2",
-  "url": "SQ7.html#activity-517",
+  "url": "SQ7.html#activity-516",
   "type": "Activity",
   "number": "8.7.2",
   "title": "",
   "body": "  Consider the series .   Does converge?  Find .  .  .  .  .  .    Find   .  .  .  .  .    "
 },
 {
-  "id": "activity-518",
+  "id": "activity-517",
   "level": "2",
-  "url": "SQ7.html#activity-518",
+  "url": "SQ7.html#activity-517",
   "type": "Activity",
   "number": "8.7.3",
   "title": "",
@@ -8191,18 +8182,18 @@ var ptx_lunr_docs = [
   "body": " The Root Test   Let be an integer and let be a series with for , and suppose that . Then  converges if is less than 1, and  diverges if is greater than 1.  If , we cannot determine if converges or diverges with this method .     "
 },
 {
-  "id": "activity-521",
+  "id": "activity-520",
   "level": "2",
-  "url": "SQ7.html#activity-521",
+  "url": "SQ7.html#activity-520",
   "type": "Activity",
   "number": "8.7.8",
   "title": "",
   "body": "  Consider the series .   Which of the following is ?  .  .  .    Which of the following is ?  .  .  .  .  .    Which of the following is ?  .  .  .  .    Using the fact , simplify as much as possible.  Find .  Does converge?  "
 },
 {
-  "id": "activity-522",
+  "id": "activity-521",
   "level": "2",
-  "url": "SQ7.html#activity-522",
+  "url": "SQ7.html#activity-521",
   "type": "Activity",
   "number": "8.7.9",
   "title": "",
@@ -8227,9 +8218,9 @@ var ptx_lunr_docs = [
   "body": "  Consider the series .   Use the root test to check for convergence of this series.  Use the ratio test to check for convergence of this series.  Use the comparison (or limit comparison) test to check for convergence of this series.  Find the sum of this series.  "
 },
 {
-  "id": "activity-525",
+  "id": "activity-524",
   "level": "2",
-  "url": "SQ7.html#activity-525",
+  "url": "SQ7.html#activity-524",
   "type": "Activity",
   "number": "8.7.12",
   "title": "",
@@ -8272,18 +8263,18 @@ var ptx_lunr_docs = [
   "body": "   Determine if a series converges absolutely or conditionally.    "
 },
 {
-  "id": "activity-527",
+  "id": "activity-526",
   "level": "2",
-  "url": "SQ8.html#activity-527",
+  "url": "SQ8.html#activity-526",
   "type": "Activity",
   "number": "8.8.1",
   "title": "",
   "body": "  Recall the series from .   Does the series converge or diverge?  Does the series converge or diverge?  "
 },
 {
-  "id": "activity-528",
+  "id": "activity-527",
   "level": "2",
-  "url": "SQ8.html#activity-528",
+  "url": "SQ8.html#activity-527",
   "type": "Activity",
   "number": "8.8.2",
   "title": "",
@@ -8299,9 +8290,9 @@ var ptx_lunr_docs = [
   "body": "  Given a series we say that is absolutely convergent if converges.   "
 },
 {
-  "id": "activity-529",
+  "id": "activity-528",
   "level": "2",
-  "url": "SQ8.html#activity-529",
+  "url": "SQ8.html#activity-528",
   "type": "Activity",
   "number": "8.8.4",
   "title": "",
@@ -8317,27 +8308,27 @@ var ptx_lunr_docs = [
   "body": " Notice that and both involve taking absolute values to determine convergence. As such, series that are convergent by either the Ratio Test or the Root Test are also absolutely convergent (by applying the same test after taking the absolute value).  "
 },
 {
-  "id": "activity-530",
+  "id": "activity-529",
   "level": "2",
-  "url": "SQ8.html#activity-530",
+  "url": "SQ8.html#activity-529",
   "type": "Activity",
   "number": "8.8.6",
   "title": "",
   "body": "  Consider the series: .   Does the series converge or diverge?  Compute .  Does the series converge absolutely?  "
 },
 {
-  "id": "activity-531",
+  "id": "activity-530",
   "level": "2",
-  "url": "SQ8.html#activity-531",
+  "url": "SQ8.html#activity-530",
   "type": "Activity",
   "number": "8.8.7",
   "title": "",
   "body": "  For each of the following series, determine if the series is convergent , and if the series is absolutely convergent .      "
 },
 {
-  "id": "activity-532",
+  "id": "activity-531",
   "level": "2",
-  "url": "SQ8.html#activity-532",
+  "url": "SQ8.html#activity-531",
   "type": "Activity",
   "number": "8.8.8",
   "title": "",
@@ -8353,9 +8344,9 @@ var ptx_lunr_docs = [
   "body": "  If is absolutely convergent, then it must be convergent.   "
 },
 {
-  "id": "activity-533",
+  "id": "activity-532",
   "level": "2",
-  "url": "SQ8.html#activity-533",
+  "url": "SQ8.html#activity-532",
   "type": "Activity",
   "number": "8.8.10",
   "title": "",
@@ -8551,9 +8542,9 @@ var ptx_lunr_docs = [
   "body": " Consider the series .  Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?  Divergence Test  Geometric Series  Integral Test  Direct Comparison Test  Limit Comparison Test  Ratio Test  Root Test  Alternating Series Test    Apply an appropriate test to determine the convergence of this series.  This series is convergent.  This series is divergent.    "
 },
 {
-  "id": "activity-551",
+  "id": "activity-550",
   "level": "2",
-  "url": "SQ9.html#activity-551",
+  "url": "SQ9.html#activity-550",
   "type": "Activity",
   "number": "8.9.19",
   "title": "",
@@ -8587,9 +8578,9 @@ var ptx_lunr_docs = [
   "body": "   Approximate functions defined as power series.    "
 },
 {
-  "id": "activity-552",
+  "id": "activity-551",
   "level": "2",
-  "url": "PS1.html#activity-552",
+  "url": "PS1.html#activity-551",
   "type": "Activity",
   "number": "9.1.1",
   "title": "",
@@ -8614,9 +8605,9 @@ var ptx_lunr_docs = [
   "body": "  In we will learn how to prove that converges for each real value . Thus the function has the domain of all real numbers.   To estimate , use technology to compute the first few terms as follows:   Which of these choices is the closest to this value?  .  .  .  .    Estimate in a similar fashion:  Which of these choices is the closest to this value?  .  .  .  .     "
 },
 {
-  "id": "activity-554",
+  "id": "activity-553",
   "level": "2",
-  "url": "PS1.html#activity-554",
+  "url": "PS1.html#activity-553",
   "type": "Activity",
   "number": "9.1.4",
   "title": "",
@@ -8686,27 +8677,27 @@ var ptx_lunr_docs = [
   "body": "  Consider a power series . Recall from that if then converges.  Then recall:    "
 },
 {
-  "id": "activity-557",
+  "id": "activity-556",
   "level": "2",
-  "url": "PS2.html#activity-557",
+  "url": "PS2.html#activity-556",
   "type": "Activity",
   "number": "9.2.3",
   "title": "",
   "body": "  Consider    Letting , find .  For what values of is ?  .  .  .    If , does converge?  If , does converge?  Which of the following describe the values of for which converges?  .  .  .  .    "
 },
 {
-  "id": "activity-558",
+  "id": "activity-557",
   "level": "2",
-  "url": "PS2.html#activity-558",
+  "url": "PS2.html#activity-557",
   "type": "Activity",
   "number": "9.2.4",
   "title": "",
   "body": "  Consider    Letting , find .  For what values of is ?  .  .  .  .    If , does converge?  If , does converge?  Which of the following describe the values of for which converges?  .  .  .  .    "
 },
 {
-  "id": "activity-559",
+  "id": "activity-558",
   "level": "2",
-  "url": "PS2.html#activity-559",
+  "url": "PS2.html#activity-558",
   "type": "Activity",
   "number": "9.2.5",
   "title": "",
@@ -8722,11 +8713,20 @@ var ptx_lunr_docs = [
   "body": "  Given the power series , the center of convergence center of convergence is . The radius of convergence radius of convergence is If , we say that .  The interval of convergence interval of convergence represents all possible values of for which converges, which is of the form:      Depending on if converges when or .  If the interval of convergence is all real numbers.   "
 },
 {
+  "id": "activity-559",
+  "level": "2",
+  "url": "PS2.html#activity-559",
+  "type": "Activity",
+  "number": "9.2.7",
+  "title": "",
+  "body": "  Find the center of convergence, radius of convergence, and interval of convergence for the series:     "
+},
+{
   "id": "activity-560",
   "level": "2",
   "url": "PS2.html#activity-560",
   "type": "Activity",
-  "number": "9.2.7",
+  "number": "9.2.8",
   "title": "",
   "body": "  Find the center of convergence, radius of convergence, and interval of convergence for the series:     "
 },
@@ -8734,15 +8734,6 @@ var ptx_lunr_docs = [
   "id": "activity-561",
   "level": "2",
   "url": "PS2.html#activity-561",
-  "type": "Activity",
-  "number": "9.2.8",
-  "title": "",
-  "body": "  Find the center of convergence, radius of convergence, and interval of convergence for the series:     "
-},
-{
-  "id": "activity-562",
-  "level": "2",
-  "url": "PS2.html#activity-562",
   "type": "Activity",
   "number": "9.2.9",
   "title": "",
@@ -8920,18 +8911,18 @@ var ptx_lunr_docs = [
   "body": " Recall that for .  Which of the following represents an antiderivative of ?  .  .  .  .    Find the interval of convergence for this series.  Recall that is an antiderivative of . For which is your chosen ?  Use to estimate .  "
 },
 {
-  "id": "activity-574",
+  "id": "activity-573",
   "level": "2",
-  "url": "PS3.html#activity-574",
+  "url": "PS3.html#activity-573",
   "type": "Activity",
   "number": "9.3.17",
   "title": "",
   "body": "  Recall that the power series for is:  Find a power series for .  Find a power series for .  Find a power series for , an antiderivative of such that .   "
 },
 {
-  "id": "activity-575",
+  "id": "activity-574",
   "level": "2",
-  "url": "PS3.html#activity-575",
+  "url": "PS3.html#activity-574",
   "type": "Activity",
   "number": "9.3.18",
   "title": "",
@@ -8947,18 +8938,18 @@ var ptx_lunr_docs = [
   "body": "  Recall that for and . We computed the power series for in .   Anti differentiate this power series and find to find a power series for . Recall that .  Find the interval of convergence for this series.   "
 },
 {
-  "id": "activity-577",
+  "id": "activity-576",
   "level": "2",
-  "url": "PS3.html#activity-577",
+  "url": "PS3.html#activity-576",
   "type": "Activity",
   "number": "9.3.20",
   "title": "",
   "body": " Find the power series for .  Find the interval of convergence for this series.  "
 },
 {
-  "id": "activity-578",
+  "id": "activity-577",
   "level": "2",
-  "url": "PS3.html#activity-578",
+  "url": "PS3.html#activity-577",
   "type": "Activity",
   "number": "9.3.21",
   "title": "",
@@ -8992,18 +8983,18 @@ var ptx_lunr_docs = [
   "body": "   Determine a Taylor or Maclaurin series for a function.    "
 },
 {
-  "id": "activity-579",
+  "id": "activity-578",
   "level": "2",
-  "url": "PS4.html#activity-579",
+  "url": "PS4.html#activity-578",
   "type": "Activity",
   "number": "9.4.1",
   "title": "",
   "body": "  The following tasks will help us find a mechanism to produce a power series given information about its derivatives.   Find the 2nd derivative of .       Find the 3rd derivative of .       Find the 4th derivative of .       Based on these results, which of the following should always equal the th derivative of with respect to ?        "
 },
 {
-  "id": "activity-580",
+  "id": "activity-579",
   "level": "2",
-  "url": "PS4.html#activity-580",
+  "url": "PS4.html#activity-579",
   "type": "Activity",
   "number": "9.4.2",
   "title": "",
@@ -9028,9 +9019,9 @@ var ptx_lunr_docs = [
   "body": "  The Taylor series Taylor Series generated by and centered at is given by with an interval of convergence determinable by series convergence rules.  When , is called the Maclaurin series Maclaurin Series generated by .   "
 },
 {
-  "id": "activity-581",
+  "id": "activity-580",
   "level": "2",
-  "url": "PS4.html#activity-581",
+  "url": "PS4.html#activity-580",
   "type": "Activity",
   "number": "9.4.5",
   "title": "",
@@ -9055,18 +9046,18 @@ var ptx_lunr_docs = [
   "body": "  For a function with a Taylor series centered at , where is called the degree Taylor polynomial Taylor polynomial generated by and centered at .  The degree Taylor polynomial can be seen as the best polynomial of degree or less for approximating for values close to . Note that the degree Taylor polynomial is also known as the linearization linearization of a function of .   "
 },
 {
-  "id": "activity-582",
+  "id": "activity-581",
   "level": "2",
-  "url": "PS4.html#activity-582",
+  "url": "PS4.html#activity-581",
   "type": "Activity",
   "number": "9.4.8",
   "title": "",
   "body": "  Let be a function such that:  Find a Taylor polynomial for centered at of degree .  Using the table above, find a general closed form for .  Use (b) to find a Taylor series for centered at .   "
 },
 {
-  "id": "activity-583",
+  "id": "activity-582",
   "level": "2",
-  "url": "PS4.html#activity-583",
+  "url": "PS4.html#activity-582",
   "type": "Activity",
   "number": "9.4.9",
   "title": "",

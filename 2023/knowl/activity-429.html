@@ -12,45 +12,30 @@
 </head>
 <body class="ignore-math">
 <article class="activity project-like"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.3.2</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">7.3.5</span><span class="period">.</span>
 </h4>
-<div class="introduction"><div class="para">Let's first investigate the length of the dashed red line segment in <a href="" class="xref" data-knowl="./knowl/CO3-parametric-curve.html" title="Figure 164">Figure 164</a>.</div></div>
+<div class="introduction"><div class="para">How should we modify the distance formula <span class="process-math">\(\sqrt{(\Delta x)^2+(\Delta y)^2}\)</span> to measure arclength as illustrated in <a href="" class="xref" data-knowl="./knowl/CO3-parametric-subdivide.html" title="Figure 165">Figure 165</a>?</div></div>
 <article class="task exercise-like"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para">Draw a right triangle with the red dashed line segment as its hypotenuse, one leg parallel to the <span class="process-math">\(x\)</span>-axis, and the other parallel to the <span class="process-math">\(y\)</span>-axis.</div>
-<div class="para">How long are these legs?</div>
+<div class="para">Let <span class="process-math">\(\Delta L_1,\Delta L_2,\Delta L_3\)</span> describe the lengths of each of the three segements. Which expression describes the total length of these segments?</div>
 <ol class="upper-alpha cols2">
-<li><div class="para">
-<span class="process-math">\(3\)</span> and <span class="process-math">\(7\text{.}\)</span>
-</div></li>
-<li><div class="para">
-<span class="process-math">\(4\)</span> and <span class="process-math">\(8\text{.}\)</span>
-</div></li>
-<li><div class="para">
-<span class="process-math">\(3\)</span> and <span class="process-math">\(8\text{.}\)</span>
-</div></li>
-<li><div class="para">
-<span class="process-math">\(4\)</span> and <span class="process-math">\(7\text{.}\)</span>
-</div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \Delta L_1\times \Delta L_2\times \Delta L_3\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \Delta L_1+ 2\Delta L_2+ 3\Delta L_3\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \sum_{i=1}^{3} \Delta L_i\)</span></div></li>
 </ol></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para">The Pythagorean theorem states that for a right triangle with leg lengths <span class="process-math">\(a,b\)</span> and hypotenuse length <span class="process-math">\(c\text{,}\)</span> we have...</div>
+<div class="para">We can let each <span class="process-math">\(\Delta L_i=\sqrt{(\Delta x_i)^2+(\Delta y_i)^2}\text{.}\)</span> But we will find it useful to involve the parameter <span class="process-math">\(t\)</span> as well, or more accurately, the change <span class="process-math">\(\Delta t_i\)</span> of <span class="process-math">\(t\)</span> between each point of the subdivision.</div>
+<div class="para">Which of these is algebraically the same as the above formula for <span class="process-math">\(\Delta L_i\text{?}\)</span>
+</div>
 <ol class="upper-alpha cols2">
-<li><div class="para"><span class="process-math">\(a=b=c\text{.}\)</span></div></li>
-<li><div class="para"><span class="process-math">\(a+b=c\text{.}\)</span></div></li>
-<li><div class="para"><span class="process-math">\(a^2=b^2=c^2\text{.}\)</span></div></li>
-<li><div class="para"><span class="process-math">\(a^2+b^2=c^2\text{.}\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \sqrt{\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2}\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \sqrt{\left[\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2\right]\Delta t_i}\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \sqrt{\left(\frac{\Delta x_i}{\Delta t_i}\right)^2+\left(\frac{\Delta y_i}{\Delta t_i}\right)^2}\Delta t_i\)</span></div></li>
 </ol></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para">Using the leg lengths and Pythagorean theorem, how long must the red dashed hypotenuse be?</div>
+<div class="para">Finally, we'll want to increase <span class="process-math">\(N\)</span> from <span class="process-math">\(3\)</span> so that it limits to <span class="process-math">\(\infty\text{.}\)</span> What can we conclude when that happens?</div>
 <ol class="upper-alpha cols2">
-<li><div class="para"><span class="process-math">\(\sqrt{20}\approx 4.47\text{.}\)</span></div></li>
-<li><div class="para"><span class="process-math">\(\sqrt{58}\approx 7.62\text{.}\)</span></div></li>
-<li><div class="para"><span class="process-math">\(\sqrt{67}\approx 8.19\text{.}\)</span></div></li>
-<li><div class="para"><span class="process-math">\(\sqrt{100}=10\text{.}\)</span></div></li>
-</ol></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para">Compared with the blue parametric curve connecting the same two points, is the red dashed line segement length an overestimate or underestimate?</div>
-<ol class="upper-alpha cols2">
-<li><div class="para">Overestimate: the blue curve is shorter than the red line.</div></li>
-<li><div class="para">Underestimate: the blue curve is longer than the red line.</div></li>
-<li><div class="para">Exact: the blue curve is exactly as long as the red line.</div></li>
+<li><div class="para">Each segment is infintely small.</div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \Delta x_i\to 0\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \frac{\Delta x_i}{\Delta t_i}\to\frac{dx}{dt}\)</span></div></li>
+<li><div class="para">All of the above.</div></li>
 </ol></article></article><span class="incontext"><a href="CO3.html#activity-429" class="internal">in-context</a></span>
 </body>
 </html>

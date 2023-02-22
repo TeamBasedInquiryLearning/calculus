@@ -12,19 +12,24 @@
 </head>
 <body class="ignore-math">
 <article class="activity project-like"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.3.4</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.3.5</span><span class="period">.</span>
 </h4>
-<div class="para">It's possible to use subtitution to evaluate <span class="process-math">\(\displaystyle\int \sin^4(x)\cos^3(x) \, dx\text{,}\)</span> by taking advantage of the trigonometric identity <span class="process-math">\(\sin^2(x)+\cos^2(x)=1\text{.}\)</span>
-</div> <div class="para">Complete the following substitution of <span class="process-math">\(u=\sin(x),du=\cos(x)\,dx\)</span> by filling in the missing <span class="process-math">\(\unknown\)</span>s.</div>
+<div class="para">Trying to substitute <span class="process-math">\(u=\cos(x),du=-\sin(x)\,dx\)</span> in the previous example is less successful.</div>
 <div class="displaymath process-math">
 \begin{align*}
-\int \sin^4(x)\cos^3(x)\,dx &amp;=\int\sin^4(x)(\,\unknown\,)\cos(x)\,dx\\
-&amp;=\int\sin^4(x)(1-\unknown)\cos(x)\,dx\\
-&amp;= \int\unknown(1-\unknown)\,du\\
-&amp;= \int (u^4-u^6)\,du\\
-&amp;= \frac{1}{5}u^5-\frac{1}{7}u^7+C\\
-&amp;= \unknown
+\int \sin^4(x)\cos^3(x)\,dx &amp;=-\int\sin^3(x)\cos^3(x)(-\sin(x)\,dx)\\
+&amp;=-\int\sin^3(x)u^3\,du\\
+&amp;= \cdots?
 \end{align*}
+</div>
+<div class="para logical">
+<div class="para">Which feature of <span class="process-math">\(\sin^4(x)\cos^3(x)\)</span> made <span class="process-math">\(u=\sin(x)\)</span> the better choice?</div>
+<ol class="upper-alpha cols2">
+<li><div class="para">The even power of <span class="process-math">\(\sin^4(x)\)</span>
+</div></li>
+<li><div class="para">The odd power of <span class="process-math">\(\cos^3(x)\)</span>
+</div></li>
+</ol>
 </div></article><span class="incontext"><a href="TI3.html#activity-292" class="internal">in-context</a></span>
 </body>
 </html>

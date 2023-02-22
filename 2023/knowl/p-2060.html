@@ -13,14 +13,19 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(c, p&gt;0\text{.}\)</span>
+<div class="para">Let <span class="process-math">\(f(x), g(x)\)</span> be functions such that for <span class="process-math">\(a&lt;x&lt;b\text{,}\)</span> <span class="process-math">\(0\leq f(x) \leq g(x)\text{.}\)</span> Then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\displaystyle 0\leq \int_a^b f(x) dx\leq \int_a^b g(x) dx\text{.}
+\end{equation*}
 </div>
-<ul class="disc"><li><div class="para">
-<span class="process-math">\(\displaystyle \int_0^c \frac{1}{x^p} dx\)</span> is defined if and only if <span class="process-math">\(p&lt; 1\text{.}\)</span>
-</div></li></ul>
-<ul class="disc"><li><div class="para">
-<span class="process-math">\(\displaystyle \int_c^\infty \frac{1}{x^p} dx\)</span> is defined if and only if <span class="process-math">\(p&gt; 1\text{.}\)</span>
-</div></li></ul>
+<div class="para">In particular:</div>
+<ul class="disc">
+<li><div class="para">If <span class="process-math">\(\int_a^b g(x)dx\)</span> converges, so does the smaller <span class="process-math">\(\int_a^b f(x)dx\text{.}\)</span>
+</div></li>
+<li><div class="para">If <span class="process-math">\(\int_a^b f(x)dx\)</span> diverges, so does the bigger <span class="process-math">\(\int_a^b g(x)dx\text{.}\)</span>
+</div></li>
+</ul>
 </div>
 <span class="incontext"><a href="TI8.html#p-2060" class="internal">in-context</a></span>
 </body>

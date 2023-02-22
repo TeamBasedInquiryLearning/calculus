@@ -12,12 +12,21 @@
 </head>
 <body class="ignore-math">
 <article class="task exercise-like"><h5 class="heading">
-<span class="type">Task</span><span class="space"> </span><span class="codenumber">3.9.12.c</span><span class="period">.</span>
+<span class="type">Task</span><span class="space"> </span><span class="codenumber">3.9.13.c</span><span class="period">.</span>
 </h5>
-<div class="para logical"><div class="displaymath process-math">
+<div class="para logical">
+<div class="para">Now we need to be careful when computing <span class="process-math">\(\sqrt{x^2}\)</span> as <span class="process-math">\(\sqrt{x^2}=|x|\text{.}\)</span> The absolute value function <span class="process-math">\(|x|\)</span> equals <span class="process-math">\(+x\)</span> when we have a positive input and <span class="process-math">\(-x\)</span> when we have a negative output. So we have the two limits.</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\lim_{x\to 0 } \frac{ -9 \, \cos\left(3 \, x\right) + 9 }{ -3 \, x }
+\lim_{x \to +\infty} \frac{x}{|x|\sqrt{(1 +\frac{2}{x^2}) }}
 \end{equation*}
-</div></div></article><span class="incontext"><a href="AD9.html#task-449" class="internal">in-context</a></span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x \to -\infty} \frac{x}{|x|\sqrt{(1 +\frac{2}{x^2}) }}
+\end{equation*}
+</div>
+<div class="para">Thinking about what happens to the absolute values as you go towards positive or negative infinity, find the values of these two limits... The two limits have different values!</div>
+</div></article><span class="incontext"><a href="AD9.html#task-449" class="internal">in-context</a></span>
 </body>
 </html>

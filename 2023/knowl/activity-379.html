@@ -19,22 +19,106 @@ sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
 </head>
 <body class="ignore-math">
 <article class="activity project-like"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.3.1</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.3.3</span><span class="period">.</span>
 </h4>
-<div class="para">Consider the following visualization to decide which of these statements is most appropriate for describing the relationship of lengths and areas.</div> <pre class="ptx-sagecell sagecell-sage" id="sage-1"><script type="text/x-sage">f(x) = (x-3)*(x-5)*(x-7)+40
-p = line([(2,0),(2,f(2))], color='black')
-p += line([(8,0),(8,f(8))], color='black')
-p += polygon([(2,0),(2,f(2))] + [(x, f(x)) for x in [2,2.1,..,8]] + [(8,0),(2,0)],  rgbcolor=(0.8,0.8,0.8),aspect_ratio='automatic')
-p += text("$\\mathrm{Area}=\\int_{a}^b f(x) dx$", (4, 55), fontsize=16, color='black')
-p += plot(f, (1, 8.5), thickness=3)
-p += line([(6,0),(6,f(6))], color="#8888ff")
-p += text("$\\mathrm{Length}=f(x)$", (5.9, 20), fontsize=16, color='black', horizontal_alignment='right')
+<div class="introduction">
+<div class="para">We will be focused on the volumes of solids obtained by revolving a region around an axis. Let's use the running example of the region bounded by the curves <span class="process-math">\(x=0,y=4,y=x^2\text{.}\)</span>
+</div> <pre class="ptx-sagecell sagecell-sage" id="sage-3"><script type="text/x-sage">x,y,z = var('x y z')
+p = plot(x^2,(x,0,2),aspect_ratio=1,color='red')
+p += line([(0,0),(0,4),(2,4)],color="red")
 p
-</script></pre> <ol class="upper-alpha">
-<li><div class="para">Length is the integral of areas.</div></li>
-<li><div class="para">Area is the integral of lengths.</div></li>
-<li><div class="para">Length is the derivative of areas.</div></li>
-<li><div class="para">None of these.</div></li>
-</ol></article><span class="incontext"><a href="AI3.html#activity-379" class="internal">in-context</a></span>
+</script></pre>
+</div>
+<article class="task exercise-like"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para">Consider the below illustrated revolution of this region, and the cross-section drawn from a horizontal line segment. Choose the most appropriate description of this illustration.</div>
+<pre class="ptx-sagecell sagecell-sage" id="sage-4"><script type="text/x-sage">x,y,z = var('x y z')
+p = revolution_plot3d(x^2,(x,0,2), show_curve=True,parallel_axis="z",opacity=0.5,frame=False)
+p += revolution_plot3d(4,(x,0,2), show_curve=True,parallel_axis="z",opacity=0.5)
+p += revolution_plot3d(2,(x,0,sqrt(2)), show_curve=True,parallel_axis="z",opacity=1)
+p += line([(0,0,-1), (0,0,5)],color="black",label="x")
+p += line([(-4,0,0), (4,0,0)],color="black")
+p
+</script></pre>
+<ol class="upper-alpha">
+<li><div class="para">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</div></li>
+<li><div class="para">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
+<li><div class="para">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</div></li>
+<li><div class="para">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
+</ol></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para">Which of these formulas is most appropriate to find this illustration's cross-sectional area?</div>
+<ol class="upper-alpha">
+<li><div class="para"><span class="process-math">\(\displaystyle \pi r^2\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle 2\pi rh\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \pi R^2-\pi r^2\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \frac{1}{2}bh\)</span></div></li>
+</ol></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para">Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.</div>
+<pre class="ptx-sagecell sagecell-sage" id="sage-5"><script type="text/x-sage">x,y,z = var('x y z')
+p = revolution_plot3d(x^2,(x,0,2), show_curve=True,parallel_axis="z",opacity=0.5,frame=False)
+p += revolution_plot3d(4,(x,0,2), show_curve=True,parallel_axis="z",opacity=0.5)
+p += revolution_plot3d((1,x),(x,1,4), show_curve=True,parallel_axis="z",opacity=1)
+p += line([(0,0,-1), (0,0,5)],color="black")
+p += line([(-4,0,0), (4,0,0)],color="black")
+p
+</script></pre>
+<ol class="upper-alpha">
+<li><div class="para">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</div></li>
+<li><div class="para">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
+<li><div class="para">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</div></li>
+<li><div class="para">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
+</ol></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para">Which of these formulas is most appropriate to find this illustration's cross-sectional area?</div>
+<ol class="upper-alpha">
+<li><div class="para"><span class="process-math">\(\displaystyle \pi r^2\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle 2\pi rh\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \pi R^2-\pi r^2\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \frac{1}{2}bh\)</span></div></li>
+</ol></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para">Consider the below illustrated revolution of this region, and the cross-section drawn from a horizontal line segment. Choose the most appropriate description of this illustration.</div>
+<pre class="ptx-sagecell sagecell-sage" id="sage-6"><script type="text/x-sage">x,y,z = var('x y z')
+p = revolution_plot3d(x^2,(x,0,2), show_curve=True,parallel_axis="x",opacity=0.5,frame=False)
+p += revolution_plot3d(4,(x,0,2), show_curve=True,parallel_axis="x",opacity=0.5)
+p += revolution_plot3d((0,z),(z,0,4), show_curve=True,parallel_axis="x",opacity=0.5)
+p += revolution_plot3d(2,(x,0,sqrt(2)), show_curve=True,parallel_axis="x",opacity=1)
+p += line([(0,0,-5), (0,0,5)],color="black",label="x")
+p += line([(-1,0,0), (4,0,0)],color="black")
+p
+</script></pre>
+<ol class="upper-alpha">
+<li><div class="para">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</div></li>
+<li><div class="para">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
+<li><div class="para">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</div></li>
+<li><div class="para">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
+</ol></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para">Which of these formulas is most appropriate to find this illustration's cross-sectional area?</div>
+<ol class="upper-alpha">
+<li><div class="para"><span class="process-math">\(\displaystyle \pi r^2\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle 2\pi rh\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \pi R^2-\pi r^2\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \frac{1}{2}bh\)</span></div></li>
+</ol></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(g)</span></h5>
+<div class="para">Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.</div>
+<pre class="ptx-sagecell sagecell-sage" id="sage-7"><script type="text/x-sage">x,y,z = var('x y z')
+p = revolution_plot3d(x^2,(x,0,2), show_curve=True,parallel_axis="x",opacity=0.5,frame=False)
+p += revolution_plot3d(4,(x,0,2), show_curve=True,parallel_axis="x",opacity=0.5)
+p += revolution_plot3d((0,z),(z,0,4), show_curve=True,parallel_axis="x",opacity=0.5)
+p += revolution_plot3d((1,x),(x,1,4), show_curve=True,parallel_axis="x",opacity=1)
+p += line([(0,0,-5), (0,0,5)],color="black",label="x")
+p += line([(-1,0,0), (4,0,0)],color="black")
+p
+</script></pre>
+<ol class="upper-alpha">
+<li><div class="para">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</div></li>
+<li><div class="para">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
+<li><div class="para">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</div></li>
+<li><div class="para">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
+</ol></article><article class="task exercise-like"><h5 class="heading"><span class="codenumber">(h)</span></h5>
+<div class="para">Which of these formulas is most appropriate to find this illustration's cross-sectional area?</div>
+<ol class="upper-alpha">
+<li><div class="para"><span class="process-math">\(\displaystyle \pi r^2\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle 2\pi rh\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \pi R^2-\pi r^2\)</span></div></li>
+<li><div class="para"><span class="process-math">\(\displaystyle \frac{1}{2}bh\)</span></div></li>
+</ol></article></article><span class="incontext"><a href="AI3.html#activity-379" class="internal">in-context</a></span>
 </body>
 </html>

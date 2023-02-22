@@ -710,13 +710,13 @@ sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
 <span class="type">Section</span> <span class="codenumber">6.3</span> <span class="title">Volumes of Revolution (AI3)</span>
 </h2>
 <article class="objectives goal-like" id="objectives-48"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-1390"><div class="para" id="p-2136">Compute volumes of solids of revolution.</div></li></ul></article><section class="subsection" id="subsection-83"><h3 class="heading hide-type">
+<ul class="disc"><li id="li-1390"><div class="para" id="p-2130">Compute volumes of solids of revolution.</div></li></ul></article><section class="subsection" id="subsection-83"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.3.1</span> <span class="title">Activities</span>
 </h3>
-<article class="activity project-like" id="activity-379"><h4 class="heading">
+<article class="activity project-like" id="activity-378"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.3.1</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-2137">Consider the following visualization to decide which of these statements is most appropriate for describing the relationship of lengths and areas.</div> <pre class="ptx-sagecell sagecell-sage" id="sage-1"><script type="text/x-sage">f(x) = (x-3)*(x-5)*(x-7)+40
+<div class="para" id="p-2131">Consider the following visualization to decide which of these statements is most appropriate for describing the relationship of lengths and areas.</div> <pre class="ptx-sagecell sagecell-sage" id="sage-1"><script type="text/x-sage">f(x) = (x-3)*(x-5)*(x-7)+40
 p = line([(2,0),(2,f(2))], color='black')
 p += line([(8,0),(8,f(8))], color='black')
 p += polygon([(2,0),(2,f(2))] + [(x, f(x)) for x in [2,2.1,..,8]] + [(8,0),(2,0)],  rgbcolor=(0.8,0.8,0.8),aspect_ratio='automatic')
@@ -733,7 +733,7 @@ p
 </ol></article><article class="definition definition-like" id="definition-31"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.3.2</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="p-2138">
+<div class="para logical" id="p-2132">
 <div class="para">We define the <dfn class="terminology">volume</dfn> of a solid with cross sectional area given by <span class="process-math">\(A(x)\)</span> laying between <span class="process-math">\(a\leq x\leq b\)</span> to be the definite integral</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -749,19 +749,19 @@ p += line([(-1,0,0), (5,0,0)],color="black")
 p += text3d("Volume=∫A(x)dx",(4,0,2.5))
 p += text3d("Area=A(x)",(2,0,1.25))
 p
-</script></pre></article><article class="activity project-like" id="activity-380"><h4 class="heading">
+</script></pre></article><article class="activity project-like" id="activity-379"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.3.3</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="introduction-211">
-<div class="para" id="p-2139">We will be focused on the volumes of solids obtained by revolving a region around an axis. Let's use the running example of the region bounded by the curves <span class="process-math">\(x=0,y=4,y=x^2\text{.}\)</span>
+<div class="introduction" id="introduction-210">
+<div class="para" id="p-2133">We will be focused on the volumes of solids obtained by revolving a region around an axis. Let's use the running example of the region bounded by the curves <span class="process-math">\(x=0,y=4,y=x^2\text{.}\)</span>
 </div> <pre class="ptx-sagecell sagecell-sage" id="sage-3"><script type="text/x-sage">x,y,z = var('x y z')
 p = plot(x^2,(x,0,2),aspect_ratio=1,color='red')
 p += line([(0,0),(0,4),(2,4)],color="red")
 p
 </script></pre>
 </div>
-<article class="task exercise-like" id="task-620"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="p-2140">Consider the below illustrated revolution of this region, and the cross-section drawn from a horizontal line segment. Choose the most appropriate description of this illustration.</div>
+<article class="task exercise-like" id="task-616"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-2134">Consider the below illustrated revolution of this region, and the cross-section drawn from a horizontal line segment. Choose the most appropriate description of this illustration.</div>
 <pre class="ptx-sagecell sagecell-sage" id="sage-4"><script type="text/x-sage">x,y,z = var('x y z')
 p = revolution_plot3d(x^2,(x,0,2), show_curve=True,parallel_axis="z",opacity=0.5,frame=False)
 p += revolution_plot3d(4,(x,0,2), show_curve=True,parallel_axis="z",opacity=0.5)
@@ -775,15 +775,15 @@ p
 <li id="li-1396"><div class="para" id="p-derived-li-1396">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
 <li id="li-1397"><div class="para" id="p-derived-li-1397">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</div></li>
 <li id="li-1398"><div class="para" id="p-derived-li-1398">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
-</ol></article><article class="task exercise-like" id="task-621"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="p-2141">Which of these formulas is most appropriate to find this illustration's cross-sectional area?</div>
+</ol></article><article class="task exercise-like" id="task-617"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-2135">Which of these formulas is most appropriate to find this illustration's cross-sectional area?</div>
 <ol class="upper-alpha">
 <li id="li-1399"><div class="para" id="p-derived-li-1399"><span class="process-math">\(\displaystyle \pi r^2\)</span></div></li>
 <li id="li-1400"><div class="para" id="p-derived-li-1400"><span class="process-math">\(\displaystyle 2\pi rh\)</span></div></li>
 <li id="li-1401"><div class="para" id="p-derived-li-1401"><span class="process-math">\(\displaystyle \pi R^2-\pi r^2\)</span></div></li>
 <li id="li-1402"><div class="para" id="p-derived-li-1402"><span class="process-math">\(\displaystyle \frac{1}{2}bh\)</span></div></li>
-</ol></article><article class="task exercise-like" id="task-622"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="p-2142">Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.</div>
+</ol></article><article class="task exercise-like" id="task-618"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-2136">Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.</div>
 <pre class="ptx-sagecell sagecell-sage" id="sage-5"><script type="text/x-sage">x,y,z = var('x y z')
 p = revolution_plot3d(x^2,(x,0,2), show_curve=True,parallel_axis="z",opacity=0.5,frame=False)
 p += revolution_plot3d(4,(x,0,2), show_curve=True,parallel_axis="z",opacity=0.5)
@@ -797,15 +797,15 @@ p
 <li id="li-1404"><div class="para" id="p-derived-li-1404">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
 <li id="li-1405"><div class="para" id="p-derived-li-1405">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</div></li>
 <li id="li-1406"><div class="para" id="p-derived-li-1406">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
-</ol></article><article class="task exercise-like" id="task-623"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="p-2143">Which of these formulas is most appropriate to find this illustration's cross-sectional area?</div>
+</ol></article><article class="task exercise-like" id="task-619"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="p-2137">Which of these formulas is most appropriate to find this illustration's cross-sectional area?</div>
 <ol class="upper-alpha">
 <li id="li-1407"><div class="para" id="p-derived-li-1407"><span class="process-math">\(\displaystyle \pi r^2\)</span></div></li>
 <li id="li-1408"><div class="para" id="p-derived-li-1408"><span class="process-math">\(\displaystyle 2\pi rh\)</span></div></li>
 <li id="li-1409"><div class="para" id="p-derived-li-1409"><span class="process-math">\(\displaystyle \pi R^2-\pi r^2\)</span></div></li>
 <li id="li-1410"><div class="para" id="p-derived-li-1410"><span class="process-math">\(\displaystyle \frac{1}{2}bh\)</span></div></li>
-</ol></article><article class="task exercise-like" id="task-624"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="p-2144">Consider the below illustrated revolution of this region, and the cross-section drawn from a horizontal line segment. Choose the most appropriate description of this illustration.</div>
+</ol></article><article class="task exercise-like" id="task-620"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="p-2138">Consider the below illustrated revolution of this region, and the cross-section drawn from a horizontal line segment. Choose the most appropriate description of this illustration.</div>
 <pre class="ptx-sagecell sagecell-sage" id="sage-6"><script type="text/x-sage">x,y,z = var('x y z')
 p = revolution_plot3d(x^2,(x,0,2), show_curve=True,parallel_axis="x",opacity=0.5,frame=False)
 p += revolution_plot3d(4,(x,0,2), show_curve=True,parallel_axis="x",opacity=0.5)
@@ -820,15 +820,15 @@ p
 <li id="li-1412"><div class="para" id="p-derived-li-1412">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
 <li id="li-1413"><div class="para" id="p-derived-li-1413">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</div></li>
 <li id="li-1414"><div class="para" id="p-derived-li-1414">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
-</ol></article><article class="task exercise-like" id="task-625"><h5 class="heading"><span class="codenumber">(f)</span></h5>
-<div class="para" id="p-2145">Which of these formulas is most appropriate to find this illustration's cross-sectional area?</div>
+</ol></article><article class="task exercise-like" id="task-621"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="p-2139">Which of these formulas is most appropriate to find this illustration's cross-sectional area?</div>
 <ol class="upper-alpha">
 <li id="li-1415"><div class="para" id="p-derived-li-1415"><span class="process-math">\(\displaystyle \pi r^2\)</span></div></li>
 <li id="li-1416"><div class="para" id="p-derived-li-1416"><span class="process-math">\(\displaystyle 2\pi rh\)</span></div></li>
 <li id="li-1417"><div class="para" id="p-derived-li-1417"><span class="process-math">\(\displaystyle \pi R^2-\pi r^2\)</span></div></li>
 <li id="li-1418"><div class="para" id="p-derived-li-1418"><span class="process-math">\(\displaystyle \frac{1}{2}bh\)</span></div></li>
-</ol></article><article class="task exercise-like" id="task-626"><h5 class="heading"><span class="codenumber">(g)</span></h5>
-<div class="para" id="p-2146">Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.</div>
+</ol></article><article class="task exercise-like" id="task-622"><h5 class="heading"><span class="codenumber">(g)</span></h5>
+<div class="para" id="p-2140">Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.</div>
 <pre class="ptx-sagecell sagecell-sage" id="sage-7"><script type="text/x-sage">x,y,z = var('x y z')
 p = revolution_plot3d(x^2,(x,0,2), show_curve=True,parallel_axis="x",opacity=0.5,frame=False)
 p += revolution_plot3d(4,(x,0,2), show_curve=True,parallel_axis="x",opacity=0.5)
@@ -843,8 +843,8 @@ p
 <li id="li-1420"><div class="para" id="p-derived-li-1420">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
 <li id="li-1421"><div class="para" id="p-derived-li-1421">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</div></li>
 <li id="li-1422"><div class="para" id="p-derived-li-1422">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
-</ol></article><article class="task exercise-like" id="task-627"><h5 class="heading"><span class="codenumber">(h)</span></h5>
-<div class="para" id="p-2147">Which of these formulas is most appropriate to find this illustration's cross-sectional area?</div>
+</ol></article><article class="task exercise-like" id="task-623"><h5 class="heading"><span class="codenumber">(h)</span></h5>
+<div class="para" id="p-2141">Which of these formulas is most appropriate to find this illustration's cross-sectional area?</div>
 <ol class="upper-alpha">
 <li id="li-1423"><div class="para" id="p-derived-li-1423"><span class="process-math">\(\displaystyle \pi r^2\)</span></div></li>
 <li id="li-1424"><div class="para" id="p-derived-li-1424"><span class="process-math">\(\displaystyle 2\pi rh\)</span></div></li>
@@ -853,7 +853,7 @@ p
 </ol></article></article><article class="remark remark-like" id="remark-49"><h4 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">6.3.4</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-2148">Generally when solving problems without the aid of technology, it's useful to draw your region in two dimensions, choose whether to use a horizontal or vertical line segment, and draw its rotation to determine the cross-sectional shape.</div> <div class="para logical" id="p-2149">
+<div class="para" id="p-2142">Generally when solving problems without the aid of technology, it's useful to draw your region in two dimensions, choose whether to use a horizontal or vertical line segment, and draw its rotation to determine the cross-sectional shape.</div> <div class="para logical" id="p-2143">
 <div class="para">When the shape is a disk, this is called the <dfn class="terminology">disk method</dfn> and we use one of these formulas depending on whether the cross-sectional area depends on <span class="process-math">\(x\)</span> or <span class="process-math">\(y\text{.}\)</span>
 </div>
 <div class="displaymath process-math">
@@ -861,7 +861,7 @@ p
 V=\int_a^b \pi r(x)^2\,dx,\hspace{2em}V=\int_a^b \pi r(y)^2\,dy\text{.}
 \end{equation*}
 </div>
-</div> <div class="para logical" id="p-2150">
+</div> <div class="para logical" id="p-2144">
 <div class="para">When the shape is a washer, this is called the <dfn class="terminology">washer method</dfn> and we use one of these formulas depending on whether the cross-sectional area depends on <span class="process-math">\(x\)</span> or <span class="process-math">\(y\text{.}\)</span>
 </div>
 <div class="displaymath process-math">
@@ -869,7 +869,7 @@ V=\int_a^b \pi r(x)^2\,dx,\hspace{2em}V=\int_a^b \pi r(y)^2\,dy\text{.}
 V=\int_a^b\left(\pi R(x)^2- \pi r(x)^2\right)\,dx,\hspace{2em}V=\int_a^b\left(\pi R(y)^2- \pi r(y)^2\right)\,dy\text{.}
 \end{equation*}
 </div>
-</div> <div class="para logical" id="p-2151">
+</div> <div class="para logical" id="p-2145">
 <div class="para">When the shape is a cylindrical shell, this is called the <dfn class="terminology">shell method</dfn> and we use one of these formulas depending on whether the cross-sectional area depends on <span class="process-math">\(x\)</span> or <span class="process-math">\(y\text{.}\)</span>
 </div>
 <div class="displaymath process-math">
@@ -877,75 +877,75 @@ V=\int_a^b\left(\pi R(x)^2- \pi r(x)^2\right)\,dx,\hspace{2em}V=\int_a^b\left(\p
 V=\int_a^b 2\pi r(x)h(x)\,dx,\hspace{2em}V=\int_a^b 2\pi r(y)h(y)\,dy\text{.}
 \end{equation*}
 </div>
-</div></article><article class="activity project-like" id="activity-381"><h4 class="heading">
+</div></article><article class="activity project-like" id="activity-380"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.3.5</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="introduction-212"><div class="para" id="p-2152">Let's now consider the region bounded by the curves <span class="process-math">\(x=0,x=1,y=0,y=5e^x\text{,}\)</span> rotated about the <span class="process-math">\(x\)</span>-axis.</div></div>
-<article class="task exercise-like" id="task-628"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="p-2153">Sketch two copies of this region in the <span class="process-math">\(xy\)</span> plane.</div></article><article class="task exercise-like" id="task-629"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="p-2154">Draw a vertical line segment in one region and its rotation around the <span class="process-math">\(x\)</span>-axis. Draw a horizontal line segment in the other region and its rotation around the <span class="process-math">\(x\)</span>-axis.</div></article><article class="task exercise-like" id="task-630"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="p-2155">Consider the method required for each cross-section drawn. Which would be the <em class="emphasis">easiest</em> strategy to proceed with?</div>
+<div class="introduction" id="introduction-211"><div class="para" id="p-2146">Let's now consider the region bounded by the curves <span class="process-math">\(x=0,x=1,y=0,y=5e^x\text{,}\)</span> rotated about the <span class="process-math">\(x\)</span>-axis.</div></div>
+<article class="task exercise-like" id="task-624"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-2147">Sketch two copies of this region in the <span class="process-math">\(xy\)</span> plane.</div></article><article class="task exercise-like" id="task-625"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-2148">Draw a vertical line segment in one region and its rotation around the <span class="process-math">\(x\)</span>-axis. Draw a horizontal line segment in the other region and its rotation around the <span class="process-math">\(x\)</span>-axis.</div></article><article class="task exercise-like" id="task-626"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-2149">Consider the method required for each cross-section drawn. Which would be the <em class="emphasis">easiest</em> strategy to proceed with?</div>
 <ol class="upper-alpha">
 <li id="li-1427"><div class="para" id="p-derived-li-1427">The horizontal line segment, using the disk/washer method.</div></li>
 <li id="li-1428"><div class="para" id="p-derived-li-1428">The horizontal line segment, using the shell method.</div></li>
 <li id="li-1429"><div class="para" id="p-derived-li-1429">The vertical line segment, using the disk/washer method.</div></li>
 <li id="li-1430"><div class="para" id="p-derived-li-1430">The vertical line segment, using the shell method.</div></li>
-</ol></article><article class="task exercise-like" id="task-631"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="p-2156">Let's proceed with the vertical segment. Which formula is most appropriate for the radius?</div>
+</ol></article><article class="task exercise-like" id="task-627"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="p-2150">Let's proceed with the vertical segment. Which formula is most appropriate for the radius?</div>
 <ol class="upper-alpha">
 <li id="li-1431"><div class="para" id="p-derived-li-1431"><span class="process-math">\(\displaystyle r(x)=x\)</span></div></li>
 <li id="li-1432"><div class="para" id="p-derived-li-1432"><span class="process-math">\(\displaystyle r(x)=5e^x\)</span></div></li>
 <li id="li-1433"><div class="para" id="p-derived-li-1433"><span class="process-math">\(\displaystyle r(x)=5\ln(x)\)</span></div></li>
 <li id="li-1434"><div class="para" id="p-derived-li-1434"><span class="process-math">\(\displaystyle r(x)=\frac{1}{5}\ln(x)\)</span></div></li>
-</ol></article><article class="task exercise-like" id="task-632"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="p-2157">Which of these integrals is equal to the volume of the solid of revolution?</div>
+</ol></article><article class="task exercise-like" id="task-628"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="p-2151">Which of these integrals is equal to the volume of the solid of revolution?</div>
 <ol class="upper-alpha">
 <li id="li-1435"><div class="para" id="p-derived-li-1435"><span class="process-math">\(\displaystyle \int_0^1 25\pi e^{2x}\,dx\)</span></div></li>
 <li id="li-1436"><div class="para" id="p-derived-li-1436"><span class="process-math">\(\displaystyle \int_0^1 5\pi^2 e^{x}\,dx\)</span></div></li>
 <li id="li-1437"><div class="para" id="p-derived-li-1437"><span class="process-math">\(\displaystyle \int_0^2 25\pi e^{x}\,dx\)</span></div></li>
 <li id="li-1438"><div class="para" id="p-derived-li-1438"><span class="process-math">\(\displaystyle \int_0^2 5\pi^2 e^{2x}\,dx\)</span></div></li>
-</ol></article></article><article class="activity project-like" id="activity-382"><h4 class="heading">
+</ol></article></article><article class="activity project-like" id="activity-381"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.3.6</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="introduction-213"><div class="para" id="p-2158">Let's now consider the same region, bounded by the curves <span class="process-math">\(x=0,x=1,y=0,y=5e^x\text{,}\)</span> but this time rotated about the <span class="process-math">\(y\)</span>-axis.</div></div>
-<article class="task exercise-like" id="task-633"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="p-2159">Sketch two copies of this region in the <span class="process-math">\(xy\)</span> plane.</div></article><article class="task exercise-like" id="task-634"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="p-2160">Draw a vertical line segment in one region and its rotation around the <span class="process-math">\(y\)</span>-axis. Draw a horizontal line segment in the other region and its rotation around the <span class="process-math">\(y\)</span>-axis.</div></article><article class="task exercise-like" id="task-635"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="p-2161">Consider the method required for each cross-section drawn. Which would be the <em class="emphasis">easiest</em> strategy to proceed with?</div>
+<div class="introduction" id="introduction-212"><div class="para" id="p-2152">Let's now consider the same region, bounded by the curves <span class="process-math">\(x=0,x=1,y=0,y=5e^x\text{,}\)</span> but this time rotated about the <span class="process-math">\(y\)</span>-axis.</div></div>
+<article class="task exercise-like" id="task-629"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-2153">Sketch two copies of this region in the <span class="process-math">\(xy\)</span> plane.</div></article><article class="task exercise-like" id="task-630"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-2154">Draw a vertical line segment in one region and its rotation around the <span class="process-math">\(y\)</span>-axis. Draw a horizontal line segment in the other region and its rotation around the <span class="process-math">\(y\)</span>-axis.</div></article><article class="task exercise-like" id="task-631"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-2155">Consider the method required for each cross-section drawn. Which would be the <em class="emphasis">easiest</em> strategy to proceed with?</div>
 <ol class="upper-alpha">
 <li id="li-1439"><div class="para" id="p-derived-li-1439">The horizontal line segment, using the disk/washer method.</div></li>
 <li id="li-1440"><div class="para" id="p-derived-li-1440">The horizontal line segment, using the shell method.</div></li>
 <li id="li-1441"><div class="para" id="p-derived-li-1441">The vertical line segment, using the disk/washer method.</div></li>
 <li id="li-1442"><div class="para" id="p-derived-li-1442">The vertical line segment, using the shell method.</div></li>
-</ol></article><article class="task exercise-like" id="task-636"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="p-2162">Let's proceed with the vertical segment. Which formula is most appropriate for the radius?</div>
+</ol></article><article class="task exercise-like" id="task-632"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="p-2156">Let's proceed with the vertical segment. Which formula is most appropriate for the radius?</div>
 <ol class="upper-alpha">
 <li id="li-1443"><div class="para" id="p-derived-li-1443"><span class="process-math">\(\displaystyle r(x)=x\)</span></div></li>
 <li id="li-1444"><div class="para" id="p-derived-li-1444"><span class="process-math">\(\displaystyle r(x)=5e^x\)</span></div></li>
 <li id="li-1445"><div class="para" id="p-derived-li-1445"><span class="process-math">\(\displaystyle r(x)=5\ln(x)\)</span></div></li>
 <li id="li-1446"><div class="para" id="p-derived-li-1446"><span class="process-math">\(\displaystyle r(x)=\frac{1}{5}\ln(x)\)</span></div></li>
-</ol></article><article class="task exercise-like" id="task-637"><h5 class="heading"><span class="codenumber">(e)</span></h5>
-<div class="para" id="p-2163">Which formula is most appropriate for the height?</div>
+</ol></article><article class="task exercise-like" id="task-633"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="p-2157">Which formula is most appropriate for the height?</div>
 <ol class="upper-alpha">
 <li id="li-1447"><div class="para" id="p-derived-li-1447"><span class="process-math">\(\displaystyle h(x)=x\)</span></div></li>
 <li id="li-1448"><div class="para" id="p-derived-li-1448"><span class="process-math">\(\displaystyle h(x)=5e^x\)</span></div></li>
 <li id="li-1449"><div class="para" id="p-derived-li-1449"><span class="process-math">\(\displaystyle h(x)=5\ln(x)\)</span></div></li>
 <li id="li-1450"><div class="para" id="p-derived-li-1450"><span class="process-math">\(\displaystyle h(x)=\frac{1}{5}\ln(x)\)</span></div></li>
-</ol></article><article class="task exercise-like" id="task-638"><h5 class="heading"><span class="codenumber">(f)</span></h5>
-<div class="para" id="p-2164">Which of these integrals is equal to the volume of the solid of revolution?</div>
+</ol></article><article class="task exercise-like" id="task-634"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="p-2158">Which of these integrals is equal to the volume of the solid of revolution?</div>
 <ol class="upper-alpha">
 <li id="li-1451"><div class="para" id="p-derived-li-1451"><span class="process-math">\(\displaystyle \int_0^1 5\pi^2 xe^{x}\,dx\)</span></div></li>
 <li id="li-1452"><div class="para" id="p-derived-li-1452"><span class="process-math">\(\displaystyle \int_0^1 10\pi xe^{x}\,dx\)</span></div></li>
 <li id="li-1453"><div class="para" id="p-derived-li-1453"><span class="process-math">\(\displaystyle \int_0^2 5\pi xe^{x}\,dx\)</span></div></li>
 <li id="li-1454"><div class="para" id="p-derived-li-1454"><span class="process-math">\(\displaystyle \int_0^2 10\pi x^2e^{x}\,dx\)</span></div></li>
-</ol></article></article><article class="activity project-like" id="activity-383"><h4 class="heading">
+</ol></article></article><article class="activity project-like" id="activity-382"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.3.7</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="introduction-214"><div class="para" id="p-2165">Consider the region bounded by <span class="process-math">\(y=2 \, x + 3, y=0, x=4, x=7\text{.}\)</span>
+<div class="introduction" id="introduction-213"><div class="para" id="p-2159">Consider the region bounded by <span class="process-math">\(y=2 \, x + 3, y=0, x=4, x=7\text{.}\)</span>
 </div></div>
-<article class="task exercise-like" id="task-639"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="p-2166">Find an integral which computes the volume of the solid formed by rotating this region about the <span class="process-math">\(x\)</span>-axis.</div></article><article class="task exercise-like" id="task-640"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="p-2167">Find an integral which computes the volume of the solid formed by rotating this region about the <span class="process-math">\(y\)</span>-axis.</div></article></article></section><section class="subsection" id="subsection-84"><h3 class="heading hide-type">
+<article class="task exercise-like" id="task-635"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-2160">Find an integral which computes the volume of the solid formed by rotating this region about the <span class="process-math">\(x\)</span>-axis.</div></article><article class="task exercise-like" id="task-636"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-2161">Find an integral which computes the volume of the solid formed by rotating this region about the <span class="process-math">\(y\)</span>-axis.</div></article></article></section><section class="subsection" id="subsection-84"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.3.2</span> <span class="title">Videos</span>
 </h3>
 <figure class="figure figure-like" id="figure-114"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-AI31" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/CBL66Ro9Vcc?&amp;modestbranding=1&amp;rel=0"></iframe></div>
