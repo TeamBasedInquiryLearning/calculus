@@ -130,7 +130,7 @@
 <activity xml:id = "activity-ad-extrema-4">
 <introduction><p>For the following activity, draw a sketch of a function that has the following properties.</p></introduction>
     <task>
-    <p>The function is continuous and has an global minimum but no gloabl maximum.</p>
+    <p>The function is continuous and has an global minimum but no global maximum.</p>
     </task>
     <task>
     <p>The function is continuous and has an global maximum but no global minimum.</p>
@@ -189,7 +189,7 @@
 
     <activity xml:id = "activity-ad-extrema-7">
     <statement>
-    <p>What is the global extrema for <m>f(x) = x\sqrt{4-x}</m> on <m>[-2,4]</m>.
+    <p>What are the global extrema for <m>f(x) = x\sqrt{4-x}</m> on <m>[-2,4]</m>.
         </p>
         <ol marker="A." cols="2">
                 <li>Global maximum is when <m>x = -2</m> and global minimum when <m>x = \frac{8}{3}</m>. </li>
@@ -203,7 +203,7 @@
 <activity xml:id="global-extrema-fluency-checkit">
     <statement>
         <p> 
-Explain how to find the globalminimum and global maximum values of the
+Explain how to find the global minimum and global maximum values of the
 function <m>f(x)=-2 \, x^{3} + 18 \, x^{2} + 42 \, x + 33</m> on the interval <m>[-2,2]</m>.
         </p>
     </statement>
