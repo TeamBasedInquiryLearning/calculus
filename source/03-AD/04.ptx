@@ -83,6 +83,7 @@
 </observation>
     
     <theorem xml:id = "thm-extreme-value-theorem">
+        <title>Extreme Value Theorem</title>
         <statement>
             <p>If <m>f</m> is continuous on a closed interval <m>[a,b]</m>, then <m>f</m> has both a global maximum and a global minimum on the interval.</p>
         </statement>
