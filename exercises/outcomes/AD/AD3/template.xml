@@ -5,7 +5,7 @@
 
             <content>
                 <p>
-                    Suppose a ladder of length <m>{{ladderlength}}</m> ft is leaning against a wall.  Then the base of the ladder is pulled away from the way at a rate of <m>{{velocityx}}</m> feet/second.  What is the velocity of the top of the ladder when the base of the ladder is <m>{{distancex}}</m> feet away from the wall?
+                    Suppose a ladder of length <m>{{ladderlength}}</m> ft is leaning against a wall.  Then the base of the ladder is pulled away from the wall at a rate of <m>{{velocityx}}</m> feet/second.  What is the velocity of the top of the ladder when the base of the ladder is <m>{{distancex}}</m> feet away from the wall?
                 </p>
             </content>
             <outtro>
