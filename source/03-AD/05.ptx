@@ -15,7 +15,7 @@
     <definition xml:id="defn-local-extrema">
       <statement>
         <p>
-         We say that <m>f(x)</m> has a <term>local maximum</term> at <m>x=c</m> provided that <m>f(c)\geq f(x)</m> for all <m>x</m> near <m>c</m>. We also say that <m>f(c)</m> is a local maximum value for the function. On the other hand, we say that <m>f(x)</m> has a <term>local minimum</term> at <m>x=c</m> provided that <m>f(c)\leq f(x)</m> for all <m>x</m> near <m>c</m>.  We also say that <m>f(c)</m> is a local minimum value for the function. The local maxima and minima are also known as the <em>local extrema</em> (or local extrema) of the function.
+         We say that <m>f(x)</m> has a <term>local maximum</term> at <m>x=c</m> provided that <m>f(c)\geq f(x)</m> for all <m>x</m> near <m>c</m>. We also say that <m>f(c)</m> is a local maximum value for the function. On the other hand, we say that <m>f(x)</m> has a <term>local minimum</term> at <m>x=c</m> provided that <m>f(c)\leq f(x)</m> for all <m>x</m> near <m>c</m>.  We also say that <m>f(c)</m> is a local minimum value for the function. The local maxima and minima are also known as the <em>local extrema</em> (or relative extrema) of the function.
         </p>
       </statement>
     </definition>
