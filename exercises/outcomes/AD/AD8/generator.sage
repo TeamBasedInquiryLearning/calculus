@@ -79,7 +79,7 @@ class Generator(BaseGenerator):
             farmer = choice([
                 "farmer",
                 "rancher",
-                "horitculturist",
+                "horticulturist",
             ])
             plant = choice([
                 "plant",
