@@ -106,6 +106,7 @@
         
         <fact xml:id="fact-TI6PartialFractions">
                 <title>Partial Fraction Decomposition</title>
+                <statement>
                 <p>
                   Let <m>\displaystyle \frac{p(x)}{q(x)}</m> be a rational function,
                   where the degree of <m>p</m> is less than the degree of <m>q</m>.
@@ -137,10 +138,12 @@
                     </li>
                   </ol>
                 </p>
+                </statement>
         </fact>
 
 
         <example>
+        <statement>
             <p>
 Following is an example of a rather involved partial fraction decomposition.
 <md>
@@ -161,6 +164,7 @@ Using some algebra, it's possible to find values for <m>A</m> through <m>G</m> t
 </mrow>
 </md>.
             </p>
+        </statement>
         </example>
 
         <activity xml:id="activity-TI6FirstDecomp">
