@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    This file provides the overall configuration for your PreTeXt
+    project. To edit the content of your document, open `source/main.ptx`
+    (default location).
+-->
+<project>
+  <targets>
+    <target name="slide-ptx">
+      <format>custom</format>
+      <source>../source/main.ptx</source>
+      <publication>../publication/publication.ptx</publication>
+      <output-dir>.</output-dir>
+      <output-filename>TI6.ptx</output-filename>
+      <xsl>extract.xsl</xsl>
+      <stringparam key="debug.project.number" value="the-way-it-should-be"/>
+      <stringparam key="section" value="TI6"/>
+    </target>
+    <target name="slide-html">
+      <format>custom</format>
+      <source>TI6.ptx</source>
+      <publication>../publication/publication.ptx</publication>
+      <output-dir>../output/deploy/2023</output-dir>
+      <output-filename>TI6.slides.html</output-filename>
+      <xsl>slideshow.xsl</xsl>
+    </target>
+  </targets>
+  <executables>
+      <xelatex>xelatex</xelatex>
+      <pdfsvg>pdf2svg</pdfsvg>
+      <asy>asy</asy>
+      <sage>sage</sage>
+      <pdfpng>convert</pdfpng>
+      <pdfeps>pdftops</pdfeps>
+      <pdfcrop>pdf-crop-margins</pdfcrop>
+      <pageres>pageres</pageres>
+      <node>node</node>
+      <liblouis>file2brl</liblouis>
+    </executables>
+</project>
