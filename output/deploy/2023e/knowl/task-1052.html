@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
+                       linked: true,
+                       languages: ['sage'],
+                       evalButtonText: 'Evaluate (Sage)'});
+</script>
+</head>
+<body class="ignore-math">
+<article class="task exercise-like"><h3 class="heading">
+<span class="type">Task</span><span class="space"> </span><span class="codenumber">C.0.3.g</span><span class="period">.</span>
+</h3>
+<div class="para">Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.</div>
+<pre class="ptx-sagecell sagecell-sage" id="sage-7"><script type="text/x-sage">x,y,z = var('x y z')
+p = revolution_plot3d(x^2,(x,0,2), show_curve=True,parallel_axis="x",opacity=0.5,frame=False)
+p += revolution_plot3d(4,(x,0,2), show_curve=True,parallel_axis="x",opacity=0.5)
+p += revolution_plot3d((0,z),(z,0,4), show_curve=True,parallel_axis="x",opacity=0.5)
+p += revolution_plot3d((1,x),(x,1,4), show_curve=True,parallel_axis="x",opacity=1)
+p += line([(0,0,-5), (0,0,5)],color="black",label="x")
+p += line([(-1,0,0), (4,0,0)],color="black")
+p
+</script></pre>
+<ol class="upper-alpha">
+<li><div class="para">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</div></li>
+<li><div class="para">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
+<li><div class="para">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</div></li>
+<li><div class="para">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
+</ol></article><span class="incontext"><a href="alt-AI3.html#task-1052" class="internal">in-context</a></span>
+</body>
+</html>
