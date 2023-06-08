@@ -56,7 +56,13 @@
      <definition xml:id="defn-global-extrema">
       <statement>
         <p>
-         We say that <m>f(x)</m> has a <term>global maximum</term> at <m>x=c</m> provided that <m>f(c)\geq f(x)</m> for all <m>x</m>. We also say that <m>f(c)</m> is a global maximum value for the function. On the other hand, we say that <m>f(x)</m> has a <term>global minimum</term> at <m>x=c</m> provided that <m>f(c)\leq f(x)</m> for all <m>x</m> near <m>c</m>.  We also say that <m>f(c)</m> is a global minimum value for the function. The global maxima and minima are also known as the <em>global extrema</em> (or extreme values or absolute extrema) of the function. 
+         We say that <m>f(x)</m> has a <term>global maximum</term> at <m>x=c</m> provided that <m>f(c)\geq f(x)</m> for all <m>x</m>
+         in the domain of the function.
+         We also say that <m>f(c)</m> is a global maximum value for the function.
+         On the other hand, we say that <m>f(x)</m> has a <term>global minimum</term> at <m>x=c</m> provided that <m>f(c)\leq f(x)</m> for all <m>x</m>
+         in the domain of the function.
+         We also say that <m>f(c)</m> is a global minimum value for the function.
+         The global maxima and minima are also known as the <term>global extrema</term> (or extreme values or absolute extrema) of the function. 
         </p>
       </statement>
     </definition>
