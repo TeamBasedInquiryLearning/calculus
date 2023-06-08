@@ -19,7 +19,7 @@
 
 <activity>
     <introduction> <p>We can compute limits that give indeterminate forms via algebraic manipulations. Consider </p>
-<me> \lim_{x\to 1} \frac{2x - 2}{x^2 -1} .</me> </introduction>
+<me> \lim_{x\to 1} \frac{4x - 4}{x^2 -1} .</me> </introduction>
     <task>
     <p>  Verify that this limit gives an indeterminate form of the type <m>\frac{0}{0}</m>.
         </p></task>
@@ -27,8 +27,8 @@
     <p> As you are computing a limit, you can cancel common factors. After you simplify the fraction, what is the limit?
         </p>
         <ol marker="A." cols="2">
-                <li><p>  2 </p></li>
-                  <li><p>  1 </p></li> 
+                <li><p>  4 </p></li>
+                  <li><p>  2 </p></li> 
                   <li><p>  <m>\frac{1}{2}</m> </p></li>     
        <li><p> The limit does not exist. </p></li>               
     </ol>      
