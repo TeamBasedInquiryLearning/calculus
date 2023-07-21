@@ -35,7 +35,7 @@
     
     <figure>
                 <caption>A point in the polar coordinate system.</caption>
-                    <image xml:id="polarPoint" width="100%">
+                    <image xml:id="CO4-polarPoint" width="100%">
                         <description>A point in the polar coordinate system.</description>
                         <latex-image><xi:include href="./tikz/polarPoint.tex" parse="text"/></latex-image>
                     </image>
@@ -45,7 +45,7 @@
     
     <figure>
                 <caption>The polar grid.</caption>
-                    <image xml:id="polarCoord" width="100%">
+                    <image xml:id="CO4-polarCoord" width="100%">
                         <description>The polar grid</description>
                         <latex-image><xi:include href="./tikz/polarCoord.tex" parse="text"/></latex-image>
 

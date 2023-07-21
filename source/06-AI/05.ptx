@@ -41,7 +41,7 @@
                     Consider all 4 slices from <xref ref="activity-AI4rectangularprism"/>.
                     <figure>
                 <caption><m>10\times 10\times 20</m> prism sliced into 4 pieces.</caption>
-                    <image xml:id="prism4pieces" width="50%">
+                    <image xml:id="AI5-prism4pieces" width="50%">
                         <description><m>10\times 10\times 20</m> prism sliced into 4 pieces.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -101,7 +101,7 @@
                     Suppose instead that we sliced the prism from <xref ref="activity-AI4rectangularprism"/> into 5 pices of height 4 meters.
                     <figure>
                 <caption><m>10\times 10\times 20</m> prism sliced into 5 pieces.</caption>
-                    <image xml:id="prism5pieces" width="50%">
+                    <image xml:id="AI5-prism5pieces" width="50%">
                         <description><m>10\times 10\times 20</m> prism sliced into 5 pieces.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -180,7 +180,7 @@
                     
                     <figure>
                 <caption><m>10\times 10\times 20</m> prism sliced into many pieces.</caption>
-                    <image xml:id="prismmanypieces" width="50%">
+                    <image xml:id="AI5-prismmanypieces" width="50%">
                         <description><m>10\times 10\times 20</m> prism sliced into many pieces.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -223,7 +223,7 @@
                     Consider a cylindrical cone with a base radius of 15 inches and a height of 60 inches.  Suppose the density of the cone is <m>\delta(h)= 15+\sqrt{h}</m> oz/in<m>^3</m>.
                     <figure>
                 <caption>15<m>\times</m> 60 cylindrical cone sliced into two pieces.</caption>
-                    <image xml:id="conesliced" width="50%">
+                    <image xml:id="AI5-conesliced" width="50%">
                         <description>15<m>\times</m> 60 cylindrical cone sliced into two pieces.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -293,7 +293,7 @@
                     Suppose that we estimate the mass of the cone from  <xref ref="activity-AI4cone"/> with 2 cylinders of height 30 inches.
                     <figure>
                 <caption>15<m>\times</m> 60 cylindrical cone sliced into two pieces.</caption>
-                    <image xml:id="conesliced2pieces" width="50%">
+                    <image xml:id="AI5-conesliced2pieces" width="50%">
                         <description>15<m>\times</m> 60 cylindrical cone sliced into two pieces.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -353,7 +353,7 @@
                     Suppose that we estimate the mass of the cone from  <xref ref="activity-AI4cone"/> with 3 cylinders of height 20 inches.
                     <figure>
                 <caption>15<m>\times</m> 60 cylindrical cone sliced into three pieces.</caption>
-                    <image xml:id="conesliced3pieces" width="50%">
+                    <image xml:id="AI5-conesliced3pieces" width="50%">
                         <description>15<m>\times</m> 60 cylindrical cone sliced into three pieces.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -420,7 +420,7 @@
                     Suppose that we estimate the mass of the cone from  <xref ref="activity-AI4cone"/> with cylinders of height <m>\Delta h</m>.
                     <figure>
                 <caption>15<m>\times</m> 60 cylindrical cone sliced into many pieces.</caption>
-                    <image xml:id="coneslicedmanypieces" width="50%">
+                    <image xml:id="AI5-coneslicedmanypieces" width="50%">
                         <description>15<m>\times</m> 60 cylindrical cone sliced into many pieces.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -465,7 +465,7 @@
                     Consider a solid where the cross section of the solid at <m>x=x_i</m> has area <m>A(x_i)</m>, and the density when <m>x=x_i</m> is <m>\delta(x_i)</m>.
                     <figure>
                 <caption>Solid approximated with prisms of width <m>\Delta x</m>.</caption>
-                    <image xml:id="Generalsolidsliced" width="50%">
+                    <image xml:id="AI5-generalsolidsliced" width="50%">
                         <description>Solid approximated with prisms of width <m>\Delta x</m>.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -512,7 +512,7 @@
                     Consider a solid where the cross section of the solid at <m>x=x_i</m> has area <m>A(x_i)</m>, and the density when <m>x=x_i</m> is <m>\delta(x_i)</m>.  Suppose the interval <m>[a,b]</m> represents the <m>x</m> values of this solid.  If one slices the solid into <m>n</m> pieces of width <m>\Delta x=\frac{b-a}{n}</m>, then one can approximate the mass of the solid by <me>\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x.</me>
                     <figure>
                 <caption>Solid approximated with prisms of width <m>\Delta x</m>.</caption>
-                    <image xml:id="Solidmassapproximation" width="50%">
+                    <image xml:id="AI5-solidmassapproximation" width="50%">
                         <description>Solid approximated with prisms of width <m>\Delta x</m>.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -544,7 +544,7 @@
                     We can then find actual mass by taking the limit as <m>n\to\infty</m>:  <me>\lim_{n\to\infty} \left(\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x\right)=\int_a^b \delta(x)A(x) dx.</me>
                     <figure>
                 <caption>Solid mass.</caption>
-                    <image xml:id="Solidmass2" width="50%">
+                    <image xml:id="AI5-solidmass2" width="50%">
                         <description>Solid mass.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -601,7 +601,7 @@
                         Use similar triangles:
                         <figure>
                 <caption>The right triangles in this figure are similar.</caption>
-                    <image xml:id="similartrianglecone" width="50%">
+                    <image xml:id="AI5-similartrianglecone" width="50%">
                         <description>a 15 by 60 triangle, with a similar r by 60-h triangle.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -658,7 +658,7 @@
                         Use similar triangles:
                         <figure>
                 <caption>The  triangles in this figure are similar.</caption>
-                    <image xml:id="similartrianglepyramid" width="50%">
+                    <image xml:id="AI5-similartrianglepyramid" width="50%">
                         <description>a 8 by 60 triangle, with a similar r by 16-h triangle.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -703,7 +703,7 @@
                     
                     <figure>
                 <caption>Six 1 kg blocks atop the <m>x</m>-axis.</caption>
-                    <image xml:id="blocksonaxis1" width="50%">
+                    <image xml:id="AI5-blocksonaxis1" width="50%">
                         <description>Six 1 by 1 blocks on the x-axis, each weighing a kilogram.  Two blocks atop the 1, three blocks atop the 2, and one block atop the 6.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -749,7 +749,7 @@
                     
                     <figure>
                 <caption>Six 1 kg blocks atop the <m>x</m>-axis.</caption>
-                    <image xml:id="blocksonaxis2" width="50%">
+                    <image xml:id="AI5-blocksonaxis2" width="50%">
                         <description>Six 1 by 1 blocks on the x-axis, each weighing a kilogram.  Two blocks atop the 1, three blocks atop the 2, and one block atop the 8.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -791,7 +791,7 @@
                     Consider a solid where the cross section of the solid at <m>x=x_i</m> has area <m>A(x_i)</m>, and the density when <m>x=x_i</m> is <m>\delta(x_i)</m>.  Suppose the interval <m>[a,b]</m> represents the <m>x</m> values of this solid.  Since each slice has approximate mass <m>\delta(x_i)A(x_i)\delta(x_i)</m>, we can approximate the center of mass by taking the weighted <q>average</q> of the <m>x_i</m>-values weighted by the associated mass: <me>\frac{\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x}{\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x}.</me>
                     <figure>
                 <caption>Solid approximated with prisms of width <m>\Delta x</m>.</caption>
-                    <image xml:id="Solidmassapproximation2" width="50%">
+                    <image xml:id="AI5-solidmassapproximation2" width="50%">
                         <description>Solid approximated with prisms of width <m>\Delta x</m>.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -823,7 +823,7 @@
                     We can then find actual center of mass by taking the limit as <m>n\to\infty</m>:  <me>\lim_{n\to\infty} \left(\frac{\sum_{i=1}^n x_i\delta(x_i)A(x_i)\Delta x}{\sum_{i=1}^n \delta(x_i)A(x_i)\Delta x}\right)=\frac{\int_a^b x\delta(x)A(x)dx}{\int_a^b \delta(x)A(x)dx}=\frac{\int_a^b x\delta(x)A(x)dx}{\text{The Total Mass}}.</me>
                     <figure>
                 <caption>Solid mass.</caption>
-                    <image xml:id="Solidmass" width="50%">
+                    <image xml:id="AI5-solidmass" width="50%">
                         <description>Solid mass.</description>
                         <latex-image>
                           \begin{tikzpicture}

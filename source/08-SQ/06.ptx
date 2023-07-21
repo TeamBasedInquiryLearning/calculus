@@ -309,7 +309,7 @@
                     Consider sequences <m>\{a_n\}, \{b_n\}</m> where <m>a_n\geq b_n\geq 0</m>.
                     <figure>
                 <caption>Plots of <m>\{a_n\}, \{b_n\}</m></caption>
-                    <image xml:id="comparesequences" width="100%">
+                    <image xml:id="SQ6-comparesequences" width="100%">
                         <description>Plots of sequences <m>\{a_n\}, \{b_n\}</m> where <m>a_n\geq b_n\geq 0</m>.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -447,7 +447,7 @@
                     
                     <figure>
                 <caption>Plots of <m>\{a_n\}, \{b_n\}</m></caption>
-                    <image xml:id="comparepartialsequences" width="100%">
+                    <image xml:id="SQ6-comparepartialsequences" width="100%">
                         <description>Plots of sequences <m>\{a_n\}, \{b_n\}</m> where <m>a_n\geq b_n\geq 0</m> initially but eventually <m>a_n\leq b_n\geq 0</m>.</description>
                         <latex-image>
                           \begin{tikzpicture}

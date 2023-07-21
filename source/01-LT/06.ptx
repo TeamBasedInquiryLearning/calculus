@@ -19,8 +19,8 @@
                 Consider the graph in <xref ref="vert-asymp" />.
             </p>
             <figure xml:id="vert-asymp">
-                <image width="50%">
-                          <latex-image xml:id="vert-asymp-tikz"><xi:include href="./tikz/vert-asymp.tex" parse="text"/></latex-image>
+                <image width="50%" xml:id="LT6-vert-asymp-tikz">
+                          <latex-image><xi:include href="./tikz/vert-asymp.tex" parse="text"/></latex-image>
                     </image>
                     <caption> The graph of <m>1/x^2</m>.</caption>
                 </figure>
@@ -73,7 +73,7 @@ Which of the following best describes the limit as <m>x</m> approaches zero in t
 <!-- TO-DO make the graphs prettier-->
                      </p>
             <figure xml:id="asymptote-vert-fig">
-                <image xml:id="asymptote-vert-img">
+                <image xml:id="LT6-asymptote-vert-img">
                 <latex-image><xi:include href="./tikz/asymptote-vert.tex" parse="text"/></latex-image>
                 </image>
                 <caption>Choices for vertical asymptotes</caption>
@@ -228,8 +228,8 @@ Explain and demonstrate how to find the value of each limit.
         <introduction>
             <p>   The graph below represents the function <m>f(x) =  \displaystyle\frac{(x+2)(x+4)}{x^2+3x-4}</m>.   </p>
              <figure>
-                    <image width="50%">
-                    <latex-image xml:id="rational-pratice2-tikz"><xi:include href="./tikz/rational-practice2.tex" parse="text"/></latex-image>
+                    <image width="50%" xml:id="LT6-rational-pratice2-tikz">
+                    <latex-image><xi:include href="./tikz/rational-practice2.tex" parse="text"/></latex-image>
                     </image>
                     <caption>The graph of <m> f(x)</m></caption>
                 </figure>

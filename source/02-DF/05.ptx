@@ -122,7 +122,7 @@
   <activity xml:id="chain-rule-practice-graphs">
    <introduction>  <p>Below you are given the graphs of two functions: <m>a(x)</m> and <m>b(x)</m>. Use the graphs to compute vaules of composite functions and of their derivatives, when possible (there are points where the derivative of these functions is not defined!). Notice that to compute the derivative at a point, you first want to find the derivative as a function of <m>x</m> and then plug in the input you want to study.  </p>
          <figure>
-                    <image>
+                    <image xml:id="DF5-graphs-ab">
                     <latex-image>
 \begin{tikzpicture}
 \begin{axis}[

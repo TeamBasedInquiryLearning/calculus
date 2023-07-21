@@ -237,7 +237,7 @@
           Consider the function <m>f</m> whose graph is pictured below.
         </p>
                     <figure>
-                <image width="50%">
+                <image width="50%" xml:id="LT4-graph-f">
                           <latex-image>
                   \begin{tikzpicture}[scale=1]
 \begin{axis}[  %human, 

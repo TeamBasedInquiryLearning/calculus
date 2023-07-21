@@ -52,7 +52,7 @@
                     Suppose a 10 kg bucket of water is constantly losing water as it's pulled up, so at a height of <m>h</m> meters, the mass of the bucket is <m>m(h)=2+8e^{-0.2h}</m> kg.
                     <figure>
                 <caption>Bucket 5 m in the air, to be hoisted by another 5 meters.</caption>
-                    <image xml:id="bucket5meters" width="50%">
+                    <image xml:id="AI6-bucket5meters" width="50%">
                         <description>Bucket 5 m in the air, to be hoisted by another 5 meters.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -91,7 +91,7 @@
                     using the same the bucket from <xref ref="activity-A5bucket3"/>,  consider the bucket's mass at heights <m>h_i=0, 5, 10, 15</m> meters.
                     <figure>
                 <caption>Bucket lifted 5 m at a time.</caption>
-                    <image xml:id="bucketestimate" width="50%">
+                    <image xml:id="AI6-bucketestimate" width="50%">
                         <description>Bucket raised 5 m at a time, h_i are 0, 5, 10, 15 meters.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -214,7 +214,7 @@
                     
                     <figure>
                 <caption>2m thick slice of water lifted 4m.</caption>
-                    <image xml:id="tankslicelift" width="50%">
+                    <image xml:id="AI6-tankslicelift" width="50%">
                         <description>2m thick slice of water lifted 4m.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -250,7 +250,7 @@
                     
                     <figure>
                 <caption>2m thick slices of water.</caption>
-                    <image xml:id="tanksliceliftpieces" width="50%">
+                    <image xml:id="AI6-tanksliceliftpieces" width="50%">
                         <description>2m thick slice of water at 0, 2, 4, 6, 8m.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -346,7 +346,7 @@
                     
                     <figure>
                 <caption>A slice at height <m>h_i</m> of width <m>\Delta h</m>.</caption>
-                    <image xml:id="coneslicelift" width="50%">
+                    <image xml:id="AI6-coneslicelift" width="50%">
                         <description>A slice at height <m>h_i</m> of width <m>\Delta h</m>, with radius <m>r_i</m>.</description>
                         <latex-image>
                           \begin{tikzpicture}

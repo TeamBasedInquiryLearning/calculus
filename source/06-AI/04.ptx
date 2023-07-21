@@ -21,7 +21,7 @@
             
             <figure>
                 <caption>Plot of a frustum.</caption>
-                    <image xml:id="frustum" width="50%">
+                    <image xml:id="AI4-frustum" width="50%">
                         <description>frustum</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -74,7 +74,7 @@
                 
                 <figure>
                 <caption>Plot of bounded region rotated about <m>x</m>-axis.</caption>
-                    <image xml:id="rotatingrootxaboutx" width="50%">
+                    <image xml:id="AI4-rotatingrootxaboutx" width="50%">
                         <description>Bounded region rotated about <m>x</m>-axis.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -124,7 +124,7 @@
                 
                 <figure>
                 <caption>Plot of bounded region rotated about <m>x</m>-axis.</caption>
-                    <image xml:id="rotatingrootxaboutxtwopiece" width="50%">
+                    <image xml:id="AI4-rotatingrootxaboutxtwopiece" width="50%">
                         <description>Bounded region rotated about <m>x</m>-axis.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -186,7 +186,7 @@
             <p>
                 <figure>
                 <caption>Plot of bounded region rotated about the <m>x</m>-axis.</caption>
-                    <image xml:id="rotatingrootxaboutxtwopiece2" width="50%">
+                    <image xml:id="AI4-rotatingrootxaboutxtwopiece2" width="50%">
                         <description>Bounded region rotated about <m>x</m>-axis.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -241,7 +241,7 @@
                 
                 <figure>
                 <caption>Plot of bounded region rotated about <m>x</m>-axis.</caption>
-                    <image xml:id="rotatingrootxaboutxfourpiece" width="50%">
+                    <image xml:id="AI4-rotatingrootxaboutxfourpiece" width="50%">
                         <description>Bounded region rotated about <m>x</m>-axis.</description>
                         <latex-image>
                           \begin{tikzpicture}
@@ -313,7 +313,7 @@
                 
                 <figure>
                 <caption>Plot of bounded region rotated about <m>x</m>-axis.</caption>
-                    <image xml:id="rotatingrootxaboutxnpiece" width="50%">
+                    <image xml:id="AI4-rotatingrootxaboutxnpiece" width="50%">
                         <description>Bounded region rotated about <m>x</m>-axis.</description>
                         <latex-image>
                           \begin{tikzpicture}

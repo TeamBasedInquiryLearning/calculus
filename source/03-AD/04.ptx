@@ -26,7 +26,7 @@
     </p>
 
  <figure xml:id="height-function">
-                    <image width="50%">
+                    <image width="50%" xml:id="AD4-graph-height">
                     <latex-image>
 \begin{tikzpicture}[scale=1]
 \begin{axis}[
