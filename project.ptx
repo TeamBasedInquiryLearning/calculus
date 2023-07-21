@@ -6,63 +6,32 @@
 -->
 <project>
   <targets>
-    <target name="full"><!-- temp hack to be able to deploy a bunch of targets -->
-      <format>html</format>
-      <source>source/DNE.ptx</source>
-      <publication>publication/publication.ptx</publication>
-      <output-dir>output/deploy</output-dir>
-    </target>
     <target name="web">
       <format>html</format>
       <source>source/main.ptx</source>
       <publication>publication/publication.ptx</publication>
-      <output-dir>output/deploy/2023</output-dir>
+      <output-dir>output/web</output-dir>
+      <deploy-dir>./2023</deploy-dir>
       <stringparam key="debug.project.number" value="the-way-it-should-be"/>
     </target>
-    <target name="web-instructor">
-      <format>html</format>
-      <source>source/main.ptx</source>
-      <publication>publication/instructor.ptx</publication>
-      <output-dir>output/deploy/2023/instructor</output-dir>
-      <stringparam key="debug.project.number" value="the-way-it-should-be"/>
-      <stringparam key="commentary" value="yes"/>
-    </target>
-    <target name="print" pdf-method="xelatex">
+    <target name="print">
       <format>pdf</format>
       <source>source/main.ptx</source>
       <publication>publication/publication.ptx</publication>
-      <output-dir>output/deploy/2023/pdf</output-dir>
+      <output-dir>output/print</output-dir>
+      <deploy-dir>./2023/pdf</deploy-dir>
       <stringparam key="debug.project.number" value="the-way-it-should-be"/>
     </target>
-    <target name="subset">
-      <format>html</format>
-      <source>source/main.ptx</source>
-      <publication>publication/publication-subset.ptx</publication>
-      <output-dir>output/subset</output-dir>
-      <stringparam key="debug.project.number" value="the-way-it-should-be"/>
-      <stringparam key="commentary" value="yes"/>
-      <stringparam key="debug.skip-knowls" value="yes"/>
-      <!-- edit this to change the section/chapter/etc. to build -->
-      <xmlid-root>PS</xmlid-root>
-    </target>
-    <target name="print-latex">
-      <format>latex</format>
-      <source>source/main.ptx</source>
-      <publication>publication/publication.ptx</publication>
-      <output-dir>output/latex</output-dir>
-      <stringparam key="debug.project.number" value="the-way-it-should-be"/>
-    </target>
-  </targets>
   <executables>
-      <xelatex>xelatex</xelatex>
-      <pdfsvg>pdf2svg</pdfsvg>
-      <asy>asy</asy>
-      <sage>sage</sage>
-      <pdfpng>convert</pdfpng>
-      <pdfeps>pdftops</pdfeps>
-      <pdfcrop>pdf-crop-margins</pdfcrop>
-      <pageres>pageres</pageres>
-      <node>node</node>
-      <liblouis>file2brl</liblouis>
-    </executables>
+    <latex>latex</latex>
+    <pdflatex>pdflatex</pdflatex>
+    <xelatex>xelatex</xelatex>
+    <pdfsvg>pdf2svg</pdfsvg>
+    <asy>asy</asy>
+    <sage>sage</sage>
+    <pdfpng>convert</pdfpng>
+    <pdfeps>pdftops</pdfeps>
+    <node>node</node>
+    <liblouis>file2brl</liblouis>
+  </executables>
 </project>

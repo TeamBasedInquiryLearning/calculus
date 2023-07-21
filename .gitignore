@@ -1,12 +1,18 @@
 # Boilerplate list of files in a PreTeXt project for git to ignore
 # ensure this file is tracked
 !.gitignore
+
+# don't track unpublished builds
+output
+
+# don't track assets generated from source
+generated-assets
+
 # don't track node packages
 node_modules
 
 # don't track error logs
 .error_schema.log
-
 cli.log
 
 # don't track OS related files (windows/macos/linux)
@@ -83,26 +89,3 @@ GitHub.sublime-settings
 .dropbox.attr
 .dropbox.cache
 
-
-
-# assets generated from source
-generated-assets
-generated-assets-subset
-
-# error logs
-.error-schema.log
-error-schema.log
-.error-syntax.log
-error-syntax.log
-
-# cocalc
-*.term
-!.gitignore
-
-*.syncdb
-*.sage-chat
-
-# RAT files not put into Git
-RATs/*.pdf
-
-output
