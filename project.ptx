@@ -32,6 +32,7 @@
       <xsl>NOT_IMPLEMENTED</xsl>
       <deploy-dir>./2023/exercises</deploy-dir>
     </target>
+  </targets>
   <executables>
     <latex>latex</latex>
     <pdflatex>pdflatex</pdflatex>
