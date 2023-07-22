@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -11,10 +11,14 @@
 <meta name="robots" content="noindex, nofollow">
 <script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
 // Their results will be linked, only within language type
-sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
-                       linked: true,
-                       languages: ['sage'],
-                       evalButtonText: 'Evaluate (Sage)'});
+sagecell.makeSagecell({
+  "inputLocation": "pre.sagecell-sage",
+  "linked": true,
+  "languages": [
+    "sage"
+  ],
+  "evalButtonText": "Evaluate (Sage)"
+});
 </script>
 </head>
 <body class="ignore-math">
@@ -28,7 +32,7 @@ sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
 \mathrm{Volume}=\int_a^b A(x)\,dx\text{.}
 \end{equation*}
 </div>
-</div> <pre class="ptx-sagecell sagecell-sage" id="sage-2"><script type="text/x-sage">x,y,z=var("x y z")
+</div> <pre class="ptx-sagecell sagecell-sage" id="sage-1"><script type="text/x-sage">x,y,z=var("x y z")
 p = revolution_plot3d(x/2,(x,0,4), show_curve=False,parallel_axis="x",opacity=0.5,frame=False)
 p += revolution_plot3d((4,z),(z,0,2), show_curve=False,parallel_axis="x",opacity=0.5)
 p += revolution_plot3d((2,z),(z,0,1), show_curve=False,parallel_axis="x",opacity=1)

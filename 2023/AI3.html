@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>TBIL-Calc Volumes of Revolution (AI3)</title>
@@ -14,20 +14,38 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
 <meta property="book:author" content="TBIL Institute Fellows">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
-    renderActions: {
-        findScript: [10, function (doc) {
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
             document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
                 var display = !!node.type.match(/; *mode=display/);
                 var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
@@ -37,64 +55,79 @@ window.MathJax = {
                 math.end = {node: text, delim: '', n: 0};
                 doc.math.push(math);
             });
-        }, '']
-    },
+        },
+        ""
+      ]
+    }
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
 // Their results will be linked, only within language type
-sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
-                       linked: true,
-                       languages: ['sage'],
-                       evalButtonText: 'Evaluate (Sage)'});
-</script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
-<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+sagecell.makeSagecell({
+  "inputLocation": "pre.sagecell-sage",
+  "linked": true,
+  "languages": [
+    "sage"
+  ],
+  "evalButtonText": "Evaluate (Sage)"
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
-<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/shell_crc.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/banner_crc.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/navbar_crc.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/toc_crc.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/shell_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/banner_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/navbar_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/toc_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/colors_red_blue.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/setcolors.css" rel="stylesheet" type="text/css">
 </head>
 <body class="pretext book ignore-math">
-<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="cal1.html"><span class="title">Calculus for Team-Based Inquiry Learning:</span> <span class="subtitle">2023 Edition PREVIEW</span></a></h1>
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus for Team-Based Inquiry Learning:</span> <span class="subtitle">2023 Edition</span></a></h1>
 <p class="byline">TBIL Institute Fellows</p>
 </div>
-<div id="searchresultsplaceholder" style="display: none">
-<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms" class="searchterms"></span>
 </h2>
-<div id="searchempty"><span>No results.</span></div>
-<ol id="searchresults"></ol>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
 </div>
-</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
 <li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
 <ol class="hidden avatar">
 <li data-val="You!" tabindex="-1">
@@ -197,7 +230,7 @@ sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
 </ol>
 </li>
 </ol></div></button><span class="treebuttons"><a class="previous-button button" href="AI2.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="AI.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="AI4.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
-<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+<input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()">🔍</button>
 </div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
@@ -214,7 +247,7 @@ sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural">
 <li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li>
 <div class="toc-item"><a href="LT.html" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a></div>
@@ -583,18 +616,6 @@ sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
 <div class="toc-item"><a href="CO3.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Parametric/vector arclength (CO3)</span></a></div>
 <ul class="structural"><li><div class="toc-item"><a href="CO3.html#subsection-95" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Activities</span></a></div></li></ul>
 </li>
-<li>
-<div class="toc-item"><a href="CO4.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Polar coordinates (CO4)</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="CO4.html#subsection-96" class="internal"><span class="codenumber">7.4.1</span> <span class="title">Activities</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="CO5.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Polar Arclength (CO5)</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="CO5.html#subsection-97" class="internal"><span class="codenumber">7.5.1</span> <span class="title">Activities</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="CO6.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Polar area (CO6)</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="CO6.html#subsection-98" class="internal"><span class="codenumber">7.6.1</span> <span class="title">Activities</span></a></div></li></ul>
-</li>
 </ul>
 </li>
 <li>
@@ -603,64 +624,64 @@ sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
 <li>
 <div class="toc-item"><a href="SQ1.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Sequence Formulas (SQ1)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="SQ1.html#subsection-99" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="SQ1.html#subsection-100" class="internal"><span class="codenumber">8.1.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="SQ1.html#subsection-96" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ1.html#subsection-97" class="internal"><span class="codenumber">8.1.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="SQ2.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Sequence Properties and Limits (SQ2)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="SQ2.html#subsection-101" class="internal"><span class="codenumber">8.2.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="SQ2.html#subsection-102" class="internal"><span class="codenumber">8.2.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="SQ2.html#subsection-98" class="internal"><span class="codenumber">8.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ2.html#subsection-99" class="internal"><span class="codenumber">8.2.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="SQ3.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Partial Sum Sequence (SQ3)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="SQ3.html#subsection-103" class="internal"><span class="codenumber">8.3.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="SQ3.html#subsection-104" class="internal"><span class="codenumber">8.3.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="SQ3.html#subsection-100" class="internal"><span class="codenumber">8.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ3.html#subsection-101" class="internal"><span class="codenumber">8.3.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="SQ4.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Geometric Series (SQ4)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="SQ4.html#subsection-105" class="internal"><span class="codenumber">8.4.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="SQ4.html#subsection-106" class="internal"><span class="codenumber">8.4.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="SQ4.html#subsection-102" class="internal"><span class="codenumber">8.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ4.html#subsection-103" class="internal"><span class="codenumber">8.4.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="SQ5.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Basic Convergence Tests (SQ5)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="SQ5.html#subsection-107" class="internal"><span class="codenumber">8.5.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="SQ5.html#subsection-108" class="internal"><span class="codenumber">8.5.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="SQ5.html#subsection-104" class="internal"><span class="codenumber">8.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ5.html#subsection-105" class="internal"><span class="codenumber">8.5.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="SQ6.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Comparison Tests (SQ6)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="SQ6.html#subsection-109" class="internal"><span class="codenumber">8.6.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="SQ6.html#subsection-110" class="internal"><span class="codenumber">8.6.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="SQ6.html#subsection-106" class="internal"><span class="codenumber">8.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ6.html#subsection-107" class="internal"><span class="codenumber">8.6.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="SQ7.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Ratio and Root Tests (SQ7)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="SQ7.html#subsection-111" class="internal"><span class="codenumber">8.7.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="SQ7.html#subsection-112" class="internal"><span class="codenumber">8.7.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="SQ7.html#subsection-108" class="internal"><span class="codenumber">8.7.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ7.html#subsection-109" class="internal"><span class="codenumber">8.7.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="SQ8.html" class="internal"><span class="codenumber">8.8</span> <span class="title">Absolute Convergence (SQ8)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="SQ8.html#subsection-113" class="internal"><span class="codenumber">8.8.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="SQ8.html#subsection-114" class="internal"><span class="codenumber">8.8.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="SQ8.html#subsection-110" class="internal"><span class="codenumber">8.8.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ8.html#subsection-111" class="internal"><span class="codenumber">8.8.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="SQ9.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Series Convergence Strategy (SQ9)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="SQ9.html#subsection-115" class="internal"><span class="codenumber">8.9.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="SQ9.html#subsection-116" class="internal"><span class="codenumber">8.9.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="SQ9.html#subsection-112" class="internal"><span class="codenumber">8.9.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ9.html#subsection-113" class="internal"><span class="codenumber">8.9.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -671,29 +692,29 @@ sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
 <li>
 <div class="toc-item"><a href="PS1.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Power Series (PS1)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="PS1.html#subsection-117" class="internal"><span class="codenumber">9.1.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="PS1.html#subsection-118" class="internal"><span class="codenumber">9.1.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="PS1.html#subsection-114" class="internal"><span class="codenumber">9.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="PS1.html#subsection-115" class="internal"><span class="codenumber">9.1.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="PS2.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Convergence of Power Series (PS2)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="PS2.html#subsection-119" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="PS2.html#subsection-120" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="PS2.html#subsection-116" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="PS2.html#subsection-117" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="PS3.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Manipulation of Power Series (PS3)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="PS3.html#subsection-121" class="internal"><span class="codenumber">9.3.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="PS3.html#subsection-122" class="internal"><span class="codenumber">9.3.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="PS3.html#subsection-118" class="internal"><span class="codenumber">9.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="PS3.html#subsection-119" class="internal"><span class="codenumber">9.3.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="PS4.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Taylor Series (PS4)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="PS4.html#subsection-123" class="internal"><span class="codenumber">9.4.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="PS4.html#subsection-124" class="internal"><span class="codenumber">9.4.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="PS4.html#subsection-120" class="internal"><span class="codenumber">9.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="PS4.html#subsection-121" class="internal"><span class="codenumber">9.4.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -716,19 +737,11 @@ sagecell.makeSagecell({inputLocation: 'pre.sagecell-sage',
 <article class="activity project-like" id="activity-378"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.3.1</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-2131">Consider the following visualization to decide which of these statements is most appropriate for describing the relationship of lengths and areas.</div> <pre class="ptx-sagecell sagecell-sage" id="sage-1"><script type="text/x-sage">f(x) = (x-3)*(x-5)*(x-7)+40
-p = line([(2,0),(2,f(2))], color='black')
-p += line([(8,0),(8,f(8))], color='black')
-p += polygon([(2,0),(2,f(2))] + [(x, f(x)) for x in [2,2.1,..,8]] + [(8,0),(2,0)],  rgbcolor=(0.8,0.8,0.8),aspect_ratio='automatic')
-p += text("$\\mathrm{Area}=\\int_{a}^b f(x) dx$", (4, 55), fontsize=16, color='black')
-p += plot(f, (1, 8.5), thickness=3)
-p += line([(6,0),(6,f(6))], color="#8888ff")
-p += text("$\\mathrm{Length}=f(x)$", (5.9, 20), fontsize=16, color='black', horizontal_alignment='right')
-p
-</script></pre> <ol class="upper-alpha">
-<li id="li-1391"><div class="para" id="p-derived-li-1391">Length is the integral of areas.</div></li>
-<li id="li-1392"><div class="para" id="p-derived-li-1392">Area is the integral of lengths.</div></li>
-<li id="li-1393"><div class="para" id="p-derived-li-1393">Length is the derivative of areas.</div></li>
+<div class="para" id="p-2131">Consider <a href="" class="xref" data-knowl="./knowl/AI3-fig-length-vs-area.html" title="Figure 125">Figure 125</a> to decide which of these statements is most appropriate for describing the relationship of distances and areas.</div> <figure class="figure figure-like" id="AI3-fig-length-vs-area"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/sageplot/AI3-length-vs-area.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">125<span class="period">.</span></span><span class="space"> </span>Comparing distance and area</figcaption></figure> <ol class="upper-alpha cols2">
+<li id="li-1391"><div class="para" id="p-derived-li-1391">Distance is the integral of areas.</div></li>
+<li id="li-1392"><div class="para" id="p-derived-li-1392">Area is the integral of distances.</div></li>
+<li id="li-1393"><div class="para" id="p-derived-li-1393">Distance is the derivative of areas.</div></li>
 <li id="li-1394"><div class="para" id="p-derived-li-1394">None of these.</div></li>
 </ol></article><article class="definition definition-like" id="definition-31"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.3.2</span><span class="period">.</span>
@@ -740,7 +753,7 @@ p
 \mathrm{Volume}=\int_a^b A(x)\,dx\text{.}
 \end{equation*}
 </div>
-</div> <pre class="ptx-sagecell sagecell-sage" id="sage-2"><script type="text/x-sage">x,y,z=var("x y z")
+</div> <pre class="ptx-sagecell sagecell-sage" id="sage-1"><script type="text/x-sage">x,y,z=var("x y z")
 p = revolution_plot3d(x/2,(x,0,4), show_curve=False,parallel_axis="x",opacity=0.5,frame=False)
 p += revolution_plot3d((4,z),(z,0,2), show_curve=False,parallel_axis="x",opacity=0.5)
 p += revolution_plot3d((2,z),(z,0,1), show_curve=False,parallel_axis="x",opacity=1)
@@ -753,8 +766,8 @@ p
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.3.3</span><span class="period">.</span>
 </h4>
 <div class="introduction" id="introduction-211">
-<div class="para" id="p-2133">We will be focused on the volumes of solids obtained by revolving a region around an axis. Let's use the running example of the region bounded by the curves <span class="process-math">\(x=0,y=4,y=x^2\text{.}\)</span>
-</div> <pre class="ptx-sagecell sagecell-sage" id="sage-3"><script type="text/x-sage">x,y,z = var('x y z')
+<div class="para" id="p-2133">We will be focused on the volumes of solids obtained by revolving a region around an axis. Let’s use the running example of the region bounded by the curves <span class="process-math">\(x=0,y=4,y=x^2\text{.}\)</span>
+</div> <pre class="ptx-sagecell sagecell-sage" id="sage-2"><script type="text/x-sage">x,y,z = var('x y z')
 p = plot(x^2,(x,0,2),aspect_ratio=1,color='red')
 p += line([(0,0),(0,4),(2,4)],color="red")
 p
@@ -762,7 +775,7 @@ p
 </div>
 <article class="task exercise-like" id="task-616"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="p-2134">Consider the below illustrated revolution of this region, and the cross-section drawn from a horizontal line segment. Choose the most appropriate description of this illustration.</div>
-<pre class="ptx-sagecell sagecell-sage" id="sage-4"><script type="text/x-sage">x,y,z = var('x y z')
+<pre class="ptx-sagecell sagecell-sage" id="sage-3"><script type="text/x-sage">x,y,z = var('x y z')
 p = revolution_plot3d(x^2,(x,0,2), show_curve=True,parallel_axis="z",opacity=0.5,frame=False)
 p += revolution_plot3d(4,(x,0,2), show_curve=True,parallel_axis="z",opacity=0.5)
 p += revolution_plot3d(2,(x,0,sqrt(2)), show_curve=True,parallel_axis="z",opacity=1)
@@ -771,12 +784,12 @@ p += line([(-4,0,0), (4,0,0)],color="black")
 p
 </script></pre>
 <ol class="upper-alpha">
-<li id="li-1395"><div class="para" id="p-derived-li-1395">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</div></li>
-<li id="li-1396"><div class="para" id="p-derived-li-1396">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
-<li id="li-1397"><div class="para" id="p-derived-li-1397">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</div></li>
-<li id="li-1398"><div class="para" id="p-derived-li-1398">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
+<li id="li-1395"><div class="para" id="p-derived-li-1395">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment’s <span class="process-math">\(x\)</span>-value.</div></li>
+<li id="li-1396"><div class="para" id="p-derived-li-1396">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment’s <span class="process-math">\(y\)</span>-value.</div></li>
+<li id="li-1397"><div class="para" id="p-derived-li-1397">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment’s <span class="process-math">\(x\)</span>-value.</div></li>
+<li id="li-1398"><div class="para" id="p-derived-li-1398">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment’s <span class="process-math">\(y\)</span>-value.</div></li>
 </ol></article><article class="task exercise-like" id="task-617"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="p-2135">Which of these formulas is most appropriate to find this illustration's cross-sectional area?</div>
+<div class="para" id="p-2135">Which of these formulas is most appropriate to find this illustration’s cross-sectional area?</div>
 <ol class="upper-alpha">
 <li id="li-1399"><div class="para" id="p-derived-li-1399"><span class="process-math">\(\displaystyle \pi r^2\)</span></div></li>
 <li id="li-1400"><div class="para" id="p-derived-li-1400"><span class="process-math">\(\displaystyle 2\pi rh\)</span></div></li>
@@ -784,7 +797,7 @@ p
 <li id="li-1402"><div class="para" id="p-derived-li-1402"><span class="process-math">\(\displaystyle \frac{1}{2}bh\)</span></div></li>
 </ol></article><article class="task exercise-like" id="task-618"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="p-2136">Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.</div>
-<pre class="ptx-sagecell sagecell-sage" id="sage-5"><script type="text/x-sage">x,y,z = var('x y z')
+<pre class="ptx-sagecell sagecell-sage" id="sage-4"><script type="text/x-sage">x,y,z = var('x y z')
 p = revolution_plot3d(x^2,(x,0,2), show_curve=True,parallel_axis="z",opacity=0.5,frame=False)
 p += revolution_plot3d(4,(x,0,2), show_curve=True,parallel_axis="z",opacity=0.5)
 p += revolution_plot3d((1,x),(x,1,4), show_curve=True,parallel_axis="z",opacity=1)
@@ -793,12 +806,12 @@ p += line([(-4,0,0), (4,0,0)],color="black")
 p
 </script></pre>
 <ol class="upper-alpha">
-<li id="li-1403"><div class="para" id="p-derived-li-1403">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</div></li>
-<li id="li-1404"><div class="para" id="p-derived-li-1404">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
-<li id="li-1405"><div class="para" id="p-derived-li-1405">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</div></li>
-<li id="li-1406"><div class="para" id="p-derived-li-1406">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
+<li id="li-1403"><div class="para" id="p-derived-li-1403">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment’s <span class="process-math">\(x\)</span>-value.</div></li>
+<li id="li-1404"><div class="para" id="p-derived-li-1404">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment’s <span class="process-math">\(y\)</span>-value.</div></li>
+<li id="li-1405"><div class="para" id="p-derived-li-1405">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment’s <span class="process-math">\(x\)</span>-value.</div></li>
+<li id="li-1406"><div class="para" id="p-derived-li-1406">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment’s <span class="process-math">\(y\)</span>-value.</div></li>
 </ol></article><article class="task exercise-like" id="task-619"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="p-2137">Which of these formulas is most appropriate to find this illustration's cross-sectional area?</div>
+<div class="para" id="p-2137">Which of these formulas is most appropriate to find this illustration’s cross-sectional area?</div>
 <ol class="upper-alpha">
 <li id="li-1407"><div class="para" id="p-derived-li-1407"><span class="process-math">\(\displaystyle \pi r^2\)</span></div></li>
 <li id="li-1408"><div class="para" id="p-derived-li-1408"><span class="process-math">\(\displaystyle 2\pi rh\)</span></div></li>
@@ -806,7 +819,7 @@ p
 <li id="li-1410"><div class="para" id="p-derived-li-1410"><span class="process-math">\(\displaystyle \frac{1}{2}bh\)</span></div></li>
 </ol></article><article class="task exercise-like" id="task-620"><h5 class="heading"><span class="codenumber">(e)</span></h5>
 <div class="para" id="p-2138">Consider the below illustrated revolution of this region, and the cross-section drawn from a horizontal line segment. Choose the most appropriate description of this illustration.</div>
-<pre class="ptx-sagecell sagecell-sage" id="sage-6"><script type="text/x-sage">x,y,z = var('x y z')
+<pre class="ptx-sagecell sagecell-sage" id="sage-5"><script type="text/x-sage">x,y,z = var('x y z')
 p = revolution_plot3d(x^2,(x,0,2), show_curve=True,parallel_axis="x",opacity=0.5,frame=False)
 p += revolution_plot3d(4,(x,0,2), show_curve=True,parallel_axis="x",opacity=0.5)
 p += revolution_plot3d((0,z),(z,0,4), show_curve=True,parallel_axis="x",opacity=0.5)
@@ -816,12 +829,12 @@ p += line([(-1,0,0), (4,0,0)],color="black")
 p
 </script></pre>
 <ol class="upper-alpha">
-<li id="li-1411"><div class="para" id="p-derived-li-1411">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</div></li>
-<li id="li-1412"><div class="para" id="p-derived-li-1412">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
-<li id="li-1413"><div class="para" id="p-derived-li-1413">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</div></li>
-<li id="li-1414"><div class="para" id="p-derived-li-1414">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
+<li id="li-1411"><div class="para" id="p-derived-li-1411">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment’s <span class="process-math">\(x\)</span>-value.</div></li>
+<li id="li-1412"><div class="para" id="p-derived-li-1412">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment’s <span class="process-math">\(y\)</span>-value.</div></li>
+<li id="li-1413"><div class="para" id="p-derived-li-1413">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment’s <span class="process-math">\(x\)</span>-value.</div></li>
+<li id="li-1414"><div class="para" id="p-derived-li-1414">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment’s <span class="process-math">\(y\)</span>-value.</div></li>
 </ol></article><article class="task exercise-like" id="task-621"><h5 class="heading"><span class="codenumber">(f)</span></h5>
-<div class="para" id="p-2139">Which of these formulas is most appropriate to find this illustration's cross-sectional area?</div>
+<div class="para" id="p-2139">Which of these formulas is most appropriate to find this illustration’s cross-sectional area?</div>
 <ol class="upper-alpha">
 <li id="li-1415"><div class="para" id="p-derived-li-1415"><span class="process-math">\(\displaystyle \pi r^2\)</span></div></li>
 <li id="li-1416"><div class="para" id="p-derived-li-1416"><span class="process-math">\(\displaystyle 2\pi rh\)</span></div></li>
@@ -829,7 +842,7 @@ p
 <li id="li-1418"><div class="para" id="p-derived-li-1418"><span class="process-math">\(\displaystyle \frac{1}{2}bh\)</span></div></li>
 </ol></article><article class="task exercise-like" id="task-622"><h5 class="heading"><span class="codenumber">(g)</span></h5>
 <div class="para" id="p-2140">Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.</div>
-<pre class="ptx-sagecell sagecell-sage" id="sage-7"><script type="text/x-sage">x,y,z = var('x y z')
+<pre class="ptx-sagecell sagecell-sage" id="sage-6"><script type="text/x-sage">x,y,z = var('x y z')
 p = revolution_plot3d(x^2,(x,0,2), show_curve=True,parallel_axis="x",opacity=0.5,frame=False)
 p += revolution_plot3d(4,(x,0,2), show_curve=True,parallel_axis="x",opacity=0.5)
 p += revolution_plot3d((0,z),(z,0,4), show_curve=True,parallel_axis="x",opacity=0.5)
@@ -839,12 +852,12 @@ p += line([(-1,0,0), (4,0,0)],color="black")
 p
 </script></pre>
 <ol class="upper-alpha">
-<li id="li-1419"><div class="para" id="p-derived-li-1419">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</div></li>
-<li id="li-1420"><div class="para" id="p-derived-li-1420">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
-<li id="li-1421"><div class="para" id="p-derived-li-1421">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(x\)</span>-value.</div></li>
-<li id="li-1422"><div class="para" id="p-derived-li-1422">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment's <span class="process-math">\(y\)</span>-value.</div></li>
+<li id="li-1419"><div class="para" id="p-derived-li-1419">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment’s <span class="process-math">\(x\)</span>-value.</div></li>
+<li id="li-1420"><div class="para" id="p-derived-li-1420">Region is rotated around the <span class="process-math">\(x\)</span>-axis; the cross-sectional area is determined by the line segment’s <span class="process-math">\(y\)</span>-value.</div></li>
+<li id="li-1421"><div class="para" id="p-derived-li-1421">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment’s <span class="process-math">\(x\)</span>-value.</div></li>
+<li id="li-1422"><div class="para" id="p-derived-li-1422">Region is rotated around the <span class="process-math">\(y\)</span>-axis; the cross-sectional area is determined by the line segment’s <span class="process-math">\(y\)</span>-value.</div></li>
 </ol></article><article class="task exercise-like" id="task-623"><h5 class="heading"><span class="codenumber">(h)</span></h5>
-<div class="para" id="p-2141">Which of these formulas is most appropriate to find this illustration's cross-sectional area?</div>
+<div class="para" id="p-2141">Which of these formulas is most appropriate to find this illustration’s cross-sectional area?</div>
 <ol class="upper-alpha">
 <li id="li-1423"><div class="para" id="p-derived-li-1423"><span class="process-math">\(\displaystyle \pi r^2\)</span></div></li>
 <li id="li-1424"><div class="para" id="p-derived-li-1424"><span class="process-math">\(\displaystyle 2\pi rh\)</span></div></li>
@@ -853,7 +866,7 @@ p
 </ol></article></article><article class="remark remark-like" id="remark-49"><h4 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">6.3.4</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-2142">Generally when solving problems without the aid of technology, it's useful to draw your region in two dimensions, choose whether to use a horizontal or vertical line segment, and draw its rotation to determine the cross-sectional shape.</div> <div class="para logical" id="p-2143">
+<div class="para" id="p-2142">Generally when solving problems without the aid of technology, it’s useful to draw your region in two dimensions, choose whether to use a horizontal or vertical line segment, and draw its rotation to determine the cross-sectional shape.</div> <div class="para logical" id="p-2143">
 <div class="para">When the shape is a disk, this is called the <dfn class="terminology">disk method</dfn> and we use one of these formulas depending on whether the cross-sectional area depends on <span class="process-math">\(x\)</span> or <span class="process-math">\(y\text{.}\)</span>
 </div>
 <div class="displaymath process-math">
@@ -880,7 +893,7 @@ V=\int_a^b 2\pi r(x)h(x)\,dx,\hspace{2em}V=\int_a^b 2\pi r(y)h(y)\,dy\text{.}
 </div></article><article class="activity project-like" id="activity-380"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.3.5</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="introduction-212"><div class="para" id="p-2146">Let's now consider the region bounded by the curves <span class="process-math">\(x=0,x=1,y=0,y=5e^x\text{,}\)</span> rotated about the <span class="process-math">\(x\)</span>-axis.</div></div>
+<div class="introduction" id="introduction-212"><div class="para" id="p-2146">Let’s now consider the region bounded by the curves <span class="process-math">\(x=0,x=1,y=0,y=5e^x\text{,}\)</span> rotated about the <span class="process-math">\(x\)</span>-axis.</div></div>
 <article class="task exercise-like" id="task-624"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="p-2147">Sketch two copies of this region in the <span class="process-math">\(xy\)</span> plane.</div></article><article class="task exercise-like" id="task-625"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="p-2148">Draw a vertical line segment in one region and its rotation around the <span class="process-math">\(x\)</span>-axis. Draw a horizontal line segment in the other region and its rotation around the <span class="process-math">\(x\)</span>-axis.</div></article><article class="task exercise-like" id="task-626"><h5 class="heading"><span class="codenumber">(c)</span></h5>
@@ -891,7 +904,7 @@ V=\int_a^b 2\pi r(x)h(x)\,dx,\hspace{2em}V=\int_a^b 2\pi r(y)h(y)\,dy\text{.}
 <li id="li-1429"><div class="para" id="p-derived-li-1429">The vertical line segment, using the disk/washer method.</div></li>
 <li id="li-1430"><div class="para" id="p-derived-li-1430">The vertical line segment, using the shell method.</div></li>
 </ol></article><article class="task exercise-like" id="task-627"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="p-2150">Let's proceed with the vertical segment. Which formula is most appropriate for the radius?</div>
+<div class="para" id="p-2150">Let’s proceed with the vertical segment. Which formula is most appropriate for the radius?</div>
 <ol class="upper-alpha">
 <li id="li-1431"><div class="para" id="p-derived-li-1431"><span class="process-math">\(\displaystyle r(x)=x\)</span></div></li>
 <li id="li-1432"><div class="para" id="p-derived-li-1432"><span class="process-math">\(\displaystyle r(x)=5e^x\)</span></div></li>
@@ -907,7 +920,7 @@ V=\int_a^b 2\pi r(x)h(x)\,dx,\hspace{2em}V=\int_a^b 2\pi r(y)h(y)\,dy\text{.}
 </ol></article></article><article class="activity project-like" id="activity-381"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.3.6</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="introduction-213"><div class="para" id="p-2152">Let's now consider the same region, bounded by the curves <span class="process-math">\(x=0,x=1,y=0,y=5e^x\text{,}\)</span> but this time rotated about the <span class="process-math">\(y\)</span>-axis.</div></div>
+<div class="introduction" id="introduction-213"><div class="para" id="p-2152">Let’s now consider the same region, bounded by the curves <span class="process-math">\(x=0,x=1,y=0,y=5e^x\text{,}\)</span> but this time rotated about the <span class="process-math">\(y\)</span>-axis.</div></div>
 <article class="task exercise-like" id="task-629"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="p-2153">Sketch two copies of this region in the <span class="process-math">\(xy\)</span> plane.</div></article><article class="task exercise-like" id="task-630"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="p-2154">Draw a vertical line segment in one region and its rotation around the <span class="process-math">\(y\)</span>-axis. Draw a horizontal line segment in the other region and its rotation around the <span class="process-math">\(y\)</span>-axis.</div></article><article class="task exercise-like" id="task-631"><h5 class="heading"><span class="codenumber">(c)</span></h5>
@@ -918,7 +931,7 @@ V=\int_a^b 2\pi r(x)h(x)\,dx,\hspace{2em}V=\int_a^b 2\pi r(y)h(y)\,dy\text{.}
 <li id="li-1441"><div class="para" id="p-derived-li-1441">The vertical line segment, using the disk/washer method.</div></li>
 <li id="li-1442"><div class="para" id="p-derived-li-1442">The vertical line segment, using the shell method.</div></li>
 </ol></article><article class="task exercise-like" id="task-632"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="p-2156">Let's proceed with the vertical segment. Which formula is most appropriate for the radius?</div>
+<div class="para" id="p-2156">Let’s proceed with the vertical segment. Which formula is most appropriate for the radius?</div>
 <ol class="upper-alpha">
 <li id="li-1443"><div class="para" id="p-derived-li-1443"><span class="process-math">\(\displaystyle r(x)=x\)</span></div></li>
 <li id="li-1444"><div class="para" id="p-derived-li-1444"><span class="process-math">\(\displaystyle r(x)=5e^x\)</span></div></li>
@@ -948,16 +961,16 @@ V=\int_a^b 2\pi r(x)h(x)\,dx,\hspace{2em}V=\int_a^b 2\pi r(y)h(y)\,dy\text{.}
 <div class="para" id="p-2161">Find an integral which computes the volume of the solid formed by rotating this region about the <span class="process-math">\(y\)</span>-axis.</div></article></article></section><section class="subsection" id="subsection-84"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.3.2</span> <span class="title">Videos</span>
 </h3>
-<figure class="figure figure-like" id="figure-114"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-AI31" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/CBL66Ro9Vcc?&amp;modestbranding=1&amp;rel=0"></iframe></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">125<span class="period">.</span></span><span class="space"> </span>Video: Compute volumes of solids of revolution, washer <span class="process-math">\(x\)</span>-axis</figcaption></figure><figure class="figure figure-like" id="figure-115"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-AI32" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/KOPFv12uC68?&amp;modestbranding=1&amp;rel=0"></iframe></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">126<span class="period">.</span></span><span class="space"> </span>Video: Compute volumes of solids of revolution, shell <span class="process-math">\(x\)</span>-axis</figcaption></figure><figure class="figure figure-like" id="figure-116"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-AI33" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/Y16cc0Z43Uc?&amp;modestbranding=1&amp;rel=0"></iframe></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">127<span class="period">.</span></span><span class="space"> </span>Video: Compute volumes of solids of revolution, washer <span class="process-math">\(y\)</span>-axis</figcaption></figure><figure class="figure figure-like" id="figure-117"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-AI34" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/j8A0rflmA2I?&amp;modestbranding=1&amp;rel=0"></iframe></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">128<span class="period">.</span></span><span class="space"> </span>Video: Compute volumes of solids of revolution, shell <span class="process-math">\(y\)</span>-axis</figcaption></figure></section></section></div>
+<figure class="figure figure-like" id="figure-115"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-AI31" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/CBL66Ro9Vcc?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">126<span class="period">.</span></span><span class="space"> </span>Video: Compute volumes of solids of revolution, washer <span class="process-math">\(x\)</span>-axis</figcaption></figure><figure class="figure figure-like" id="figure-116"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-AI32" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/KOPFv12uC68?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">127<span class="period">.</span></span><span class="space"> </span>Video: Compute volumes of solids of revolution, shell <span class="process-math">\(x\)</span>-axis</figcaption></figure><figure class="figure figure-like" id="figure-117"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-AI33" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/Y16cc0Z43Uc?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">128<span class="period">.</span></span><span class="space"> </span>Video: Compute volumes of solids of revolution, washer <span class="process-math">\(y\)</span>-axis</figcaption></figure><figure class="figure figure-like" id="figure-118"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-AI34" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/j8A0rflmA2I?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">129<span class="period">.</span></span><span class="space"> </span>Video: Compute volumes of solids of revolution, shell <span class="process-math">\(y\)</span>-axis</figcaption></figure></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="AI2.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="AI4.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
 </div>
-<div id="ptx-page-footer">
+<div id="ptx-page-footer" class="ptx-page-footer">
 <a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
 </div>
 </body>

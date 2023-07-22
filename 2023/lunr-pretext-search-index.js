@@ -3481,7 +3481,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.9",
   "title": "Limits and Derivatives (AD9)",
-  "body": " Limits and Derivatives (AD9)     Compute the values of indeterminate limits using L'Hopital's Rule.      Activities  When we compute a limit algebraically, we often encounter the indeterminate form   but this means that limit can equal any number, infinity, or it might not exist. When we encounter an indeterminate form, we just do not know (yet) what the value of the limit is.    We can compute limits that give indeterminate forms via algebraic manipulations. Consider    Verify that this limit gives an indeterminate form of the type .  As you are computing a limit, you can cancel common factors. After you simplify the fraction, what is the limit?  4  2     The limit does not exist.    Consider the limits    Notice that these limits give indeterminate forms of the type . However, these limits are equal to , the derivative of at . If you can compute , then you have computed the value of the limit!     Use the limit definition of the derivative to compute the following limits. Each limit is , the derivative of some function at some point . You need to determine the function and the point to find the value of the limit: .   Notice that is the derivative of at (where was used for ). Given this observation, what is this limit equal to?  2        The limit does not exist.   Consider . This limit is also the limit definition of some derivative at some point. What is the value of this limit?  1  0     The limit does not exist.    Compute the following limits using the limit defintion of the derivative at a point.          When we compute a limit algebraically, we might encounter the indeterminate form   but this means that limit can equal any number, infinity, or it might not exist. When we encounter an indeterminate form, we just do not know (yet) what the value of the limit is.    We can compute limits that give indeterminate forms via algebraic manipulations. Consider    Verify that this limit gives an indeterminate form of the type .  You can manipulate this fraction algebraically by dividing numerator and denominator by . Then, notice that as . Given these observations, what is the given limit equal to?  2  1     The limit does not exist.     L' Hospital's Rule   If the functions are both differentiable around and for the limit of as (or ) we have one of the indeterminate forms or , then   provided that the limit exists!    Look back at some limits that gave you an indeterminate form. Can you use l'Hospital's Rule to find the limit? If using the L'Hospital's Rule is appropriate, then try to compute the limit this way. It should give you the same result.   In , when we started to study limits, we encountered the Squeeze Theorem and computed the limit using this theorem. Let's find new ways to compute this limit.   Thinking about as the length of an interval , this limit is actually equal to the value of some derivative, so . What function and what point would lead to this limit? Use these to find , the value of this limit (in a new way!).  Verify, one more time, that this limit is indeed an indeterminate form. Then use L'Hospital's Rule to find this limit (again, in another way!).    For the following limits, check if they give an indeterminate form. If they do, try to use l'Hospital's Rule. Does it help? It may or may not, or you may just need to use the rule repeatedly. Either way, try to compute the value of the following limits.            For each limit, explain if L'Hopital's Rule may be applied. If it can, explain how to use this rule to find the limit.                 There are situations in which using L'Hospital's Rule does not help and you do need some algebra skills! Consider the function and suppose that we want to find the limits as tends to .   Check that the limit as gives an indeterminate form . Then try to use L'Hospital's Rule... what happens? What if you use it again?  We need to use algebra to handle this limit. Informally, we would like to cancel the highest powers at the numerator and denominator. Look at the denominator, . We want to factor out an under the square root. What do you get?               Now we need to be careful when computing as . The absolute value function equals when we have a positive input and when we have a negative output. So we have the two limits.  Thinking about what happens to the absolute values as you go towards positive or negative infinity, find the values of these two limits... The two limits have different values!     Videos    Video for AD9    "
+  "body": " Limits and Derivatives (AD9)     Compute the values of indeterminate limits using L'Hopital's Rule.      Activities  When we compute a limit algebraically, we often encounter the indeterminate form   but this means that limit can equal any number, infinity, or it might not exist. When we encounter an indeterminate form, we just do not know (yet) what the value of the limit is.    We can compute limits that give indeterminate forms via algebraic manipulations. Consider    Verify that this limit gives an indeterminate form of the type .  As you are computing a limit, you can cancel common factors. After you simplify the fraction, what is the limit?  2  1     The limit does not exist.    Consider the limits    Notice that these limits give indeterminate forms of the type . However, these limits are equal to , the derivative of at . If you can compute , then you have computed the value of the limit!     Use the limit definition of the derivative to compute the following limits. Each limit is , the derivative of some function at some point . You need to determine the function and the point to find the value of the limit: .   Notice that is the derivative of at (where was used for ). Given this observation, what is this limit equal to?  2        The limit does not exist.   Consider . This limit is also the limit definition of some derivative at some point. What is the value of this limit?  1  0     The limit does not exist.    Compute the following limits using the limit defintion of the derivative at a point.          When we compute a limit algebraically, we might encounter the indeterminate form   but this means that limit can equal any number, infinity, or it might not exist. When we encounter an indeterminate form, we just do not know (yet) what the value of the limit is.    We can compute limits that give indeterminate forms via algebraic manipulations. Consider    Verify that this limit gives an indeterminate form of the type .  You can manipulate this fraction algebraically by dividing numerator and denominator by . Then, notice that as . Given these observations, what is the given limit equal to?  2  1     The limit does not exist.     L' Hospital's Rule   If the functions are both differentiable around and for the limit of as (or ) we have one of the indeterminate forms or , then   provided that the limit exists!    Look back at some limits that gave you an indeterminate form. Can you use l'Hospital's Rule to find the limit? If using the L'Hospital's Rule is appropriate, then try to compute the limit this way. It should give you the same result.   In , when we started to study limits, we encountered the Squeeze Theorem and computed the limit using this theorem. Let's find new ways to compute this limit.   Thinking about as the length of an interval , this limit is actually equal to the value of some derivative, so . What function and what point would lead to this limit? Use these to find , the value of this limit (in a new way!).  Verify, one more time, that this limit is indeed an indeterminate form. Then use L'Hospital's Rule to find this limit (again, in another way!).    For the following limits, check if they give an indeterminate form. If they do, try to use l'Hospital's Rule. Does it help? It may or may not, or you may just need to use the rule repeatedly. Either way, try to compute the value of the following limits.            For each limit, explain if L'Hopital's Rule may be applied. If it can, explain how to use this rule to find the limit.                 There are situations in which using L'Hospital's Rule does not help and you do need some algebra skills! Consider the function and suppose that we want to find the limits as tends to .   Check that the limit as gives an indeterminate form . Then try to use L'Hospital's Rule... what happens? What if you use it again?  We need to use algebra to handle this limit. Informally, we would like to cancel the highest powers at the numerator and denominator. Look at the denominator, . We want to factor out an under the square root. What do you get?               Now we need to be careful when computing as . The absolute value function equals when we have a positive input and when we have a negative output. So we have the two limits.  Thinking about what happens to the absolute values as you go towards positive or negative infinity, find the values of these two limits... The two limits have different values!     Videos    Video for AD9    "
 },
 {
   "id": "objectives-26",
@@ -3508,7 +3508,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "3.9.2",
   "title": "",
-  "body": "  We can compute limits that give indeterminate forms via algebraic manipulations. Consider    Verify that this limit gives an indeterminate form of the type .  As you are computing a limit, you can cancel common factors. After you simplify the fraction, what is the limit?  4  2     The limit does not exist.   "
+  "body": "  We can compute limits that give indeterminate forms via algebraic manipulations. Consider    Verify that this limit gives an indeterminate form of the type .  As you are computing a limit, you can cancel common factors. After you simplify the fraction, what is the limit?  2  1     The limit does not exist.   "
 },
 {
   "id": "remark-39",
@@ -3561,7 +3561,7 @@ var ptx_lunr_docs = [
   "url": "AD9.html#theorem-24",
   "type": "Theorem",
   "number": "3.9.8",
-  "title": "L' Hospital's Rule.",
+  "title": "L’ Hospital’s Rule.",
   "body": " L' Hospital's Rule   If the functions are both differentiable around and for the limit of as (or ) we have one of the indeterminate forms or , then   provided that the limit exists!   "
 },
 {
@@ -4129,7 +4129,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.6",
   "title": "FTC for derivatives of integrals (IN6)",
-  "body": " FTC for derivatives of integrals (IN6)     Find the derivative of an integral using the Fundamental Theorem of Calculus.      Activities   In this section we extend the Fundamental Theorem of Calculus discussed in to include taking the derivatives of integrals. We will call this addition to the Fundamental Theorem of Calculus (FTC) part II. First we will introduce part II and then discuss the implications of this addition.   The Fundamental Theorem of Calculus (Part II)   If a function is continuous on the closed interval , then the area function is continuous on and differentiable on . The area function satisfies . Equivalently, which means that the area function of is an antiderivative of f on .      For the following activity we will explore the Fundamental Theorem of Calculus Part II.   Given that , then by the Fundamental Theorem of Calculus Part I,       Using what you found for , what is       Use the Fundamental Theorem of Calculus Part II to find . What do you notice between what you got above and using FTC Part II? Which method do you prefer?          Given , what is ?           For the first two activities we have only explored when the function of the limits of the integrand are . Now we want to see what happens when the limits are more complicated. To do this we will follow a similar procedure as that done in activity 1.     Recall that by the Fundamental Theorem of Calculus Part I, .   Let and re-write using FTC Part I.  Using what you got find . Explain what derivative rule(s) you used.  Using what you found what is the derivative of ?         Now we have some thoughts of how to generalize the FTC Part II when the limts are more complicated.   The Fundamental Theorem of Calculus (Part II): Modified   If then where and are continous differentiable functions.      Given , what is ?      Videos    Video for IN6    "
+  "body": " FTC for derivatives of integrals (IN6)     Find the derivative of an integral using the Fundamental Theorem of Calculus.      Activities   In this section we extend the Fundamental Theorem of Calculus discussed in to include taking the derivatives of integrals. We will call this addition to the Fundamental Theorem of Calculus (FTC) part II. First we will introduce part II and then discuss the implications of this addition.   The Fundamental Theorem of Calculus (Part II)   If a function is continuous on the closed interval , then the area function is continuous on and differentiable on . The area function satisfies . Equivalently, which means that the area function of is an antiderivative of f on .      For the following activity we will explore the Fundamental Theorem of Calculus Part II.   Given that , then by the Fundamental Theorem of Calculus Part I,       Using what you found for , what is       Use the Fundamental Theorem of Calculus Part II to find . What do you notice between what you got above and using FTC Part II? Which method do you prefer?          Given , what is ?           For the first two activities we have only explored when the function of the limits of the integrand are . Now we want to see what happens when the limits are more complicated. To do this we will follow a similar procedure as that done in activity 1.     Recall that by the Fundamental Theorem of Calculus Part I, .   Let and re-write using FTC Part I.  Using what you got find . Explain what derivative rule(s) you used.  Using what you found, what is the derivative of ?         Now we have some thoughts of how to generalize the FTC Part II when the limts are more complicated.   The Fundamental Theorem of Calculus (Part II): Modified   If then where and are continous differentiable functions.      Given , what is ?      Videos    Video for IN6    "
 },
 {
   "id": "objectives-33",
@@ -4192,7 +4192,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "4.6.6",
   "title": "",
-  "body": "  Recall that by the Fundamental Theorem of Calculus Part I, .   Let and re-write using FTC Part I.  Using what you got find . Explain what derivative rule(s) you used.  Using what you found what is the derivative of ?       "
+  "body": "  Recall that by the Fundamental Theorem of Calculus Part I, .   Let and re-write using FTC Part I.  Using what you got find . Explain what derivative rule(s) you used.  Using what you found, what is the derivative of ?       "
 },
 {
   "id": "remark-45",
@@ -6019,7 +6019,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.3",
   "title": "Volumes of Revolution (AI3)",
-  "body": " Volumes of Revolution (AI3)     Compute volumes of solids of revolution.      Activities    Consider the following visualization to decide which of these statements is most appropriate for describing the relationship of lengths and areas.    Length is the integral of areas.  Area is the integral of lengths.  Length is the derivative of areas.  None of these.       We define the volume of a solid with cross sectional area given by laying between to be the definite integral .       We will be focused on the volumes of solids obtained by revolving a region around an axis. Let's use the running example of the region bounded by the curves .    Consider the below illustrated revolution of this region, and the cross-section drawn from a horizontal line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?       Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?       Consider the below illustrated revolution of this region, and the cross-section drawn from a horizontal line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?       Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?          Generally when solving problems without the aid of technology, it's useful to draw your region in two dimensions, choose whether to use a horizontal or vertical line segment, and draw its rotation to determine the cross-sectional shape.  When the shape is a disk, this is called the disk method and we use one of these formulas depending on whether the cross-sectional area depends on or . .  When the shape is a washer, this is called the washer method and we use one of these formulas depending on whether the cross-sectional area depends on or . .  When the shape is a cylindrical shell, this is called the shell method and we use one of these formulas depending on whether the cross-sectional area depends on or . .      Let's now consider the region bounded by the curves , rotated about the -axis.   Sketch two copies of this region in the plane.  Draw a vertical line segment in one region and its rotation around the -axis. Draw a horizontal line segment in the other region and its rotation around the -axis.  Consider the method required for each cross-section drawn. Which would be the easiest strategy to proceed with?  The horizontal line segment, using the disk\/washer method.  The horizontal line segment, using the shell method.  The vertical line segment, using the disk\/washer method.  The vertical line segment, using the shell method.   Let's proceed with the vertical segment. Which formula is most appropriate for the radius?       Which of these integrals is equal to the volume of the solid of revolution?          Let's now consider the same region, bounded by the curves , but this time rotated about the -axis.   Sketch two copies of this region in the plane.  Draw a vertical line segment in one region and its rotation around the -axis. Draw a horizontal line segment in the other region and its rotation around the -axis.  Consider the method required for each cross-section drawn. Which would be the easiest strategy to proceed with?  The horizontal line segment, using the disk\/washer method.  The horizontal line segment, using the shell method.  The vertical line segment, using the disk\/washer method.  The vertical line segment, using the shell method.   Let's proceed with the vertical segment. Which formula is most appropriate for the radius?       Which formula is most appropriate for the height?       Which of these integrals is equal to the volume of the solid of revolution?          Consider the region bounded by .    Find an integral which computes the volume of the solid formed by rotating this region about the -axis.    Find an integral which computes the volume of the solid formed by rotating this region about the -axis.      Videos      Video: Compute volumes of solids of revolution, washer -axis       Video: Compute volumes of solids of revolution, shell -axis       Video: Compute volumes of solids of revolution, washer -axis       Video: Compute volumes of solids of revolution, shell -axis    "
+  "body": " Volumes of Revolution (AI3)     Compute volumes of solids of revolution.      Activities    Consider to decide which of these statements is most appropriate for describing the relationship of distances and areas.      Comparing distance and area    Distance is the integral of areas.  Area is the integral of distances.  Distance is the derivative of areas.  None of these.       We define the volume of a solid with cross sectional area given by laying between to be the definite integral .       We will be focused on the volumes of solids obtained by revolving a region around an axis. Let's use the running example of the region bounded by the curves .    Consider the below illustrated revolution of this region, and the cross-section drawn from a horizontal line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?       Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?       Consider the below illustrated revolution of this region, and the cross-section drawn from a horizontal line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?       Consider the below illustrated revolution of this region, and the cross-section drawn from a vertical line segment. Choose the most appropriate description of this illustration.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.  Region is rotated around the -axis; the cross-sectional area is determined by the line segment's -value.   Which of these formulas is most appropriate to find this illustration's cross-sectional area?          Generally when solving problems without the aid of technology, it's useful to draw your region in two dimensions, choose whether to use a horizontal or vertical line segment, and draw its rotation to determine the cross-sectional shape.  When the shape is a disk, this is called the disk method and we use one of these formulas depending on whether the cross-sectional area depends on or . .  When the shape is a washer, this is called the washer method and we use one of these formulas depending on whether the cross-sectional area depends on or . .  When the shape is a cylindrical shell, this is called the shell method and we use one of these formulas depending on whether the cross-sectional area depends on or . .      Let's now consider the region bounded by the curves , rotated about the -axis.   Sketch two copies of this region in the plane.  Draw a vertical line segment in one region and its rotation around the -axis. Draw a horizontal line segment in the other region and its rotation around the -axis.  Consider the method required for each cross-section drawn. Which would be the easiest strategy to proceed with?  The horizontal line segment, using the disk\/washer method.  The horizontal line segment, using the shell method.  The vertical line segment, using the disk\/washer method.  The vertical line segment, using the shell method.   Let's proceed with the vertical segment. Which formula is most appropriate for the radius?       Which of these integrals is equal to the volume of the solid of revolution?          Let's now consider the same region, bounded by the curves , but this time rotated about the -axis.   Sketch two copies of this region in the plane.  Draw a vertical line segment in one region and its rotation around the -axis. Draw a horizontal line segment in the other region and its rotation around the -axis.  Consider the method required for each cross-section drawn. Which would be the easiest strategy to proceed with?  The horizontal line segment, using the disk\/washer method.  The horizontal line segment, using the shell method.  The vertical line segment, using the disk\/washer method.  The vertical line segment, using the shell method.   Let's proceed with the vertical segment. Which formula is most appropriate for the radius?       Which formula is most appropriate for the height?       Which of these integrals is equal to the volume of the solid of revolution?          Consider the region bounded by .    Find an integral which computes the volume of the solid formed by rotating this region about the -axis.    Find an integral which computes the volume of the solid formed by rotating this region about the -axis.      Videos      Video: Compute volumes of solids of revolution, washer -axis       Video: Compute volumes of solids of revolution, shell -axis       Video: Compute volumes of solids of revolution, washer -axis       Video: Compute volumes of solids of revolution, shell -axis    "
 },
 {
   "id": "objectives-48",
@@ -6037,7 +6037,7 @@ var ptx_lunr_docs = [
   "type": "Activity",
   "number": "6.3.1",
   "title": "",
-  "body": "  Consider the following visualization to decide which of these statements is most appropriate for describing the relationship of lengths and areas.    Length is the integral of areas.  Area is the integral of lengths.  Length is the derivative of areas.  None of these.    "
+  "body": "  Consider to decide which of these statements is most appropriate for describing the relationship of distances and areas.      Comparing distance and area    Distance is the integral of areas.  Area is the integral of distances.  Distance is the derivative of areas.  None of these.    "
 },
 {
   "id": "definition-31",
@@ -6094,22 +6094,13 @@ var ptx_lunr_docs = [
   "body": "  Consider the region bounded by .    Find an integral which computes the volume of the solid formed by rotating this region about the -axis.    Find an integral which computes the volume of the solid formed by rotating this region about the -axis.   "
 },
 {
-  "id": "figure-114",
-  "level": "2",
-  "url": "AI3.html#figure-114",
-  "type": "Figure",
-  "number": "125",
-  "title": "",
-  "body": "    Video: Compute volumes of solids of revolution, washer -axis  "
-},
-{
   "id": "figure-115",
   "level": "2",
   "url": "AI3.html#figure-115",
   "type": "Figure",
   "number": "126",
   "title": "",
-  "body": "    Video: Compute volumes of solids of revolution, shell -axis  "
+  "body": "    Video: Compute volumes of solids of revolution, washer -axis  "
 },
 {
   "id": "figure-116",
@@ -6118,7 +6109,7 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "127",
   "title": "",
-  "body": "    Video: Compute volumes of solids of revolution, washer -axis  "
+  "body": "    Video: Compute volumes of solids of revolution, shell -axis  "
 },
 {
   "id": "figure-117",
@@ -6126,6 +6117,15 @@ var ptx_lunr_docs = [
   "url": "AI3.html#figure-117",
   "type": "Figure",
   "number": "128",
+  "title": "",
+  "body": "    Video: Compute volumes of solids of revolution, washer -axis  "
+},
+{
+  "id": "figure-118",
+  "level": "2",
+  "url": "AI3.html#figure-118",
+  "type": "Figure",
+  "number": "129",
   "title": "",
   "body": "    Video: Compute volumes of solids of revolution, shell -axis  "
 },
@@ -6193,11 +6193,11 @@ var ptx_lunr_docs = [
   "body": "  Consider again the function over .   Find an integral which computes the surface area of the solid generated by rotating the above curve about the -axis.  Find an integral which computes the surface area of the solid generated by rotating the above curve about the -axis.  "
 },
 {
-  "id": "figure-124",
+  "id": "figure-125",
   "level": "2",
-  "url": "AI4.html#figure-124",
+  "url": "AI4.html#figure-125",
   "type": "Figure",
-  "number": "135",
+  "number": "136",
   "title": "",
   "body": "    Video: Compute surface areas of surfaces of revolution  "
 },
@@ -6400,11 +6400,11 @@ var ptx_lunr_docs = [
   "body": "  Consider that for the pyramid from , a cross section of height is ft . Also recall that the density of the pyramid is lb\/feet , where is the height in feet, and that we found the total mass to be about 3414.14.6 lbs.  Use to find the height where the center of mass occurs.   "
 },
 {
-  "id": "figure-141",
+  "id": "figure-142",
   "level": "2",
-  "url": "AI5.html#figure-141",
+  "url": "AI5.html#figure-142",
   "type": "Figure",
-  "number": "152",
+  "number": "153",
   "title": "",
   "body": "    Video: Set up integrals to solve problems involving density, mass, and center of mass  "
 },
@@ -6571,11 +6571,11 @@ var ptx_lunr_docs = [
   "body": "  Recall the computations done in .   Find a Riemann sum which estimates the total work needed to pump all the water out of this tank, using slices at heights m, of width m.  Use (a) to find an integral expression which computes the amount of work needed to pump all the water out of this tank.  Evaluate the integral found in (b).  "
 },
 {
-  "id": "figure-147",
+  "id": "figure-148",
   "level": "2",
-  "url": "AI6.html#figure-147",
+  "url": "AI6.html#figure-148",
   "type": "Figure",
-  "number": "158",
+  "number": "159",
   "title": "",
   "body": "    Video: Set up integrals to solve problems involving work, force, and\/or pressure  "
 },
@@ -6625,11 +6625,11 @@ var ptx_lunr_docs = [
   "body": "  Recall the computations done in .   Find a Riemann sum which estimates the total force exerted on the dam, using slices at heights m, of width m.  Use (a) to find an integral expression which computes the amount of force exerted on this dam.  Evaluate the integral found in (b).  "
 },
 {
-  "id": "figure-149",
+  "id": "figure-150",
   "level": "2",
-  "url": "AI7.html#figure-149",
+  "url": "AI7.html#figure-150",
   "type": "Figure",
-  "number": "160",
+  "number": "161",
   "title": "",
   "body": "    Video: Set up integrals to solve problems involving work, force, and\/or pressure  "
 },
@@ -6877,186 +6877,6 @@ var ptx_lunr_docs = [
   "body": "  Let's see how to modify to produce the arclength of the graph of a function .   Let . How can be simplified?       Given , how should and be rewritten?  and .  and .  and .  and .   Write a modified, simplified formula for with replaced with .  "
 },
 {
-  "id": "CO4",
-  "level": "1",
-  "url": "CO4.html",
-  "type": "Section",
-  "number": "7.4",
-  "title": "Polar coordinates (CO4)",
-  "body": " Polar coordinates (CO4)     Convert points and equations between polar and Cartesian coordinates and equations.      Activities    As the crow flies is an idiom used to describe the most direct path between two points. The polar coordinate system polar coordinate system is a useful parametrization of the plane that, rather than describing horizontal and vertical position relative to the origin in the usual way, describes a point in terms of distance from the origin and direction. The origin is also known as the pole pole (hence polar coordinates).  Let be a line segment from the origin to a given point in the plane. The length of is the distance (or radius polar coordinate system radius ) from the origin to . The polar axis polar coordinate system polar axis is a ray starting at the origin.  To define the \"direction\" of , we form an angle by letting the polar axis serve as the initial ray and as the terminal ray. We will set the positive -axis as the polar axis and assume the movement in the positive direction is counter-clockwise (as in trigonometry). Notice that, unlike in the rectangular (or Cartesian ) coordinate system, the polar coordinates for a point are not unique, as we could turn either way to face a given point (or even spin around a number of times before facing that direction).  Furthermore, by allowing to be negative, we can also \"walk backwards\" to get to a point by facing in the opposite direction. Rather than the grid lines defined by specific values for and in the rectangular coordinate system, specific values of correspond to circles of radius centered about the origin, and specific values of correspond to lines going through the pole (called radial lines polar coordinate system radial lines ).    A point in the polar coordinate system.   A point in the polar coordinate system.      The polar grid.   The polar grid      Plot the Cartesian point and draw line segments connecting the origin to , the origin to , and to .  Solve the triangle formed by the line segments you just drew (i.e. find the lengths of all sides and the measures of each angle).  Find all polar coordinates for the Cartesian point .  Find Cartesian coordinates for the polar point .     Graph each of the following.                   ,    ,    ,           If a polar graph is symmetric about the -axis, then if the point lies on the graph, then the point or also lies on the graph.    If a polar graph is symmetric about the -axis, then if the point lies on the graph, then the point or also lies on the graph.    If a polar graph is rotationally symmetric about the origin, then if the point lies on the graph, then the point or also lies on the graph.     Find a polar form of the the Cartesian equation .     Find a Cartesian form of each of the given polar equations.          The slope of a polar curve is , provided that at . Vertical tangents occur when and ; horizontal tangents occur when and .     "
-},
-{
-  "id": "objectives-57",
-  "level": "2",
-  "url": "CO4.html#objectives-57",
-  "type": "Learning Outcomes",
-  "number": "7.4",
-  "title": "",
-  "body": "   Convert points and equations between polar and Cartesian coordinates and equations.    "
-},
-{
-  "id": "fact-CO4polar",
-  "level": "2",
-  "url": "CO4.html#fact-CO4polar",
-  "type": "Fact",
-  "number": "7.4.1",
-  "title": "",
-  "body": "  As the crow flies is an idiom used to describe the most direct path between two points. The polar coordinate system polar coordinate system is a useful parametrization of the plane that, rather than describing horizontal and vertical position relative to the origin in the usual way, describes a point in terms of distance from the origin and direction. The origin is also known as the pole pole (hence polar coordinates).  Let be a line segment from the origin to a given point in the plane. The length of is the distance (or radius polar coordinate system radius ) from the origin to . The polar axis polar coordinate system polar axis is a ray starting at the origin.  To define the \"direction\" of , we form an angle by letting the polar axis serve as the initial ray and as the terminal ray. We will set the positive -axis as the polar axis and assume the movement in the positive direction is counter-clockwise (as in trigonometry). Notice that, unlike in the rectangular (or Cartesian ) coordinate system, the polar coordinates for a point are not unique, as we could turn either way to face a given point (or even spin around a number of times before facing that direction).  Furthermore, by allowing to be negative, we can also \"walk backwards\" to get to a point by facing in the opposite direction. Rather than the grid lines defined by specific values for and in the rectangular coordinate system, specific values of correspond to circles of radius centered about the origin, and specific values of correspond to lines going through the pole (called radial lines polar coordinate system radial lines ).  "
-},
-{
-  "id": "figure-152",
-  "level": "2",
-  "url": "CO4.html#figure-152",
-  "type": "Figure",
-  "number": "166",
-  "title": "",
-  "body": " A point in the polar coordinate system.   A point in the polar coordinate system.    "
-},
-{
-  "id": "figure-153",
-  "level": "2",
-  "url": "CO4.html#figure-153",
-  "type": "Figure",
-  "number": "167",
-  "title": "",
-  "body": " The polar grid.   The polar grid    "
-},
-{
-  "id": "activity-CO4pointConversions",
-  "level": "2",
-  "url": "CO4.html#activity-CO4pointConversions",
-  "type": "Activity",
-  "number": "7.4.2",
-  "title": "",
-  "body": " Plot the Cartesian point and draw line segments connecting the origin to , the origin to , and to .  Solve the triangle formed by the line segments you just drew (i.e. find the lengths of all sides and the measures of each angle).  Find all polar coordinates for the Cartesian point .  Find Cartesian coordinates for the polar point .  "
-},
-{
-  "id": "activity-CO4polarGraphs",
-  "level": "2",
-  "url": "CO4.html#activity-CO4polarGraphs",
-  "type": "Activity",
-  "number": "7.4.3",
-  "title": "",
-  "body": "  Graph each of the following.                   ,    ,    ,         "
-},
-{
-  "id": "fact-CO4symmetryTestX",
-  "level": "2",
-  "url": "CO4.html#fact-CO4symmetryTestX",
-  "type": "Fact",
-  "number": "7.4.4",
-  "title": "",
-  "body": " If a polar graph is symmetric about the -axis, then if the point lies on the graph, then the point or also lies on the graph.  "
-},
-{
-  "id": "fact-CO4symmetryTestY",
-  "level": "2",
-  "url": "CO4.html#fact-CO4symmetryTestY",
-  "type": "Fact",
-  "number": "7.4.5",
-  "title": "",
-  "body": " If a polar graph is symmetric about the -axis, then if the point lies on the graph, then the point or also lies on the graph.  "
-},
-{
-  "id": "fact-CO4symmetryTestOrigin",
-  "level": "2",
-  "url": "CO4.html#fact-CO4symmetryTestOrigin",
-  "type": "Fact",
-  "number": "7.4.6",
-  "title": "",
-  "body": " If a polar graph is rotationally symmetric about the origin, then if the point lies on the graph, then the point or also lies on the graph.  "
-},
-{
-  "id": "activity-CO4polarEquation",
-  "level": "2",
-  "url": "CO4.html#activity-CO4polarEquation",
-  "type": "Activity",
-  "number": "7.4.7",
-  "title": "",
-  "body": " Find a polar form of the the Cartesian equation .  "
-},
-{
-  "id": "activity-CO4cartesianEquation",
-  "level": "2",
-  "url": "CO4.html#activity-CO4cartesianEquation",
-  "type": "Activity",
-  "number": "7.4.8",
-  "title": "",
-  "body": "  Find a Cartesian form of each of the given polar equations.          The slope of a polar curve is , provided that at . Vertical tangents occur when and ; horizontal tangents occur when and .   "
-},
-{
-  "id": "CO5",
-  "level": "1",
-  "url": "CO5.html",
-  "type": "Section",
-  "number": "7.5",
-  "title": "Polar Arclength (CO5)",
-  "body": " Polar Arclength (CO5)     Compute arclengths of curves given in polar coordinates.      Activities    Recall that the length of a parametric curve is given by .   Let and and show that the length of a polar curve with is given by .  Find an integral computing the arclength of the polar curve defined by on .  Find the length of the cardioid .     "
-},
-{
-  "id": "objectives-58",
-  "level": "2",
-  "url": "CO5.html#objectives-58",
-  "type": "Learning Outcomes",
-  "number": "7.5",
-  "title": "",
-  "body": "   Compute arclengths of curves given in polar coordinates.    "
-},
-{
-  "id": "co5-activity-polar-length",
-  "level": "2",
-  "url": "CO5.html#co5-activity-polar-length",
-  "type": "Activity",
-  "number": "7.5.1",
-  "title": "",
-  "body": "  Recall that the length of a parametric curve is given by .   Let and and show that the length of a polar curve with is given by .  Find an integral computing the arclength of the polar curve defined by on .  Find the length of the cardioid .  "
-},
-{
-  "id": "CO6",
-  "level": "1",
-  "url": "CO6.html",
-  "type": "Section",
-  "number": "7.6",
-  "title": "Polar area (CO6)",
-  "body": " Polar area (CO6)     Compute areas bounded by curves given in polar coordinates.      Activities   The area of the fan-shaped region between the pole and as the angle ranges from to is given by .    Finding the polar area differential   Illustration of polar area differential.      Find an integral computing the area of the region defined by and .  Find the area enclosed by the cardioid .  Find the area enclosed by one loop of the 4-petaled rose .     "
-},
-{
-  "id": "objectives-59",
-  "level": "2",
-  "url": "CO6.html#objectives-59",
-  "type": "Learning Outcomes",
-  "number": "7.6",
-  "title": "",
-  "body": "   Compute areas bounded by curves given in polar coordinates.    "
-},
-{
-  "id": "fact-CO6polarIntegral",
-  "level": "2",
-  "url": "CO6.html#fact-CO6polarIntegral",
-  "type": "Fact",
-  "number": "7.6.1",
-  "title": "",
-  "body": " The area of the fan-shaped region between the pole and as the angle ranges from to is given by .  "
-},
-{
-  "id": "figure-154",
-  "level": "2",
-  "url": "CO6.html#figure-154",
-  "type": "Figure",
-  "number": "168",
-  "title": "",
-  "body": " Finding the polar area differential   Illustration of polar area differential.    "
-},
-{
-  "id": "co6-activity-polar-area",
-  "level": "2",
-  "url": "CO6.html#co6-activity-polar-area",
-  "type": "Activity",
-  "number": "7.6.2",
-  "title": "",
-  "body": " Find an integral computing the area of the region defined by and .  Find the area enclosed by the cardioid .  Find the area enclosed by one loop of the 4-petaled rose .  "
-},
-{
   "id": "SQ1",
   "level": "1",
   "url": "SQ1.html",
@@ -7066,9 +6886,9 @@ var ptx_lunr_docs = [
   "body": " Sequence Formulas (SQ1)     Define and use explicit and recursive formulas for sequences.      Activities   Which of the following are sequences?   monthly gas bill  days in the year  how long you wash dishes   how much you spend on groceries     Consider the sequence .  Which of the choices below reasonably continues this sequence of numbers?        Where possible, find a formula that allows us to move from one term to the next one.     As seen in the previous activity, having too few terms may prevent us from finding a unique way to continue creating a sequence of numbers. In fact, we need sufficiently many terms to uniquely continue a sequence of numbers (and how many terms is sufficient depends on which sequence of numbers you are trying to generate). Sometimes, we do not want to write out all of the terms needed to allow for this. Therefore, we will want to find short-hand notation that allows us to do so.      A sequence is a list of real numbers. Let denote the th term in a sequence. We will use the notation . A general formula that indicates how to explicitly find the -th term of a sequence is the closed form of the sequence.      Consider the sequence . Which of the following choices gives a closed formula for this sequence? Select all that apply.             Let be the th term in the sequence . Which of the following terms corresponds to the term of this sequence?             Let be the th term in the sequence . Which of the following terms corresponds to the term of this sequence?             Let be the th term in the sequence . Identify the st term of this sequence.             Find a closed form for the sequence .      Find a closed form for the sequence .      Let be the th term in the sequence . Find a formula for .      A sequence is recursive if the terms are defined as a function of previous terms (with the necessary initial terms provided).    Consider the sequence defined by and for . What are the first four terms?     Consider the sequence . Which of the following offers the best recursive formula for this sequence?   for  for       Once more, consider the sequence from . Suppose and . Give a recursive formula for for all .    Give a recursive formula that generates the sequence .    Find the first 5 terms of the following sequence:  ,  Find a closed form for the following sequence:  ,  Find a recursive form for the following sequence:  ,     Find the first 5 terms of the following sequence:  ,  Find a closed form for the following sequence:  ,  Find a recursive form for the following sequence:  ,       Videos      Video: Define and use explicit and recursive formulas for sequences    "
 },
 {
-  "id": "objectives-61",
+  "id": "objectives-58",
   "level": "2",
-  "url": "SQ1.html#objectives-61",
+  "url": "SQ1.html#objectives-58",
   "type": "Learning Outcomes",
   "number": "8.1",
   "title": "",
@@ -7183,65 +7003,65 @@ var ptx_lunr_docs = [
   "body": "  A sequence is recursive if the terms are defined as a function of previous terms (with the necessary initial terms provided).   "
 },
 {
-  "id": "activity-448",
+  "id": "activity-442",
   "level": "2",
-  "url": "SQ1.html#activity-448",
+  "url": "SQ1.html#activity-442",
   "type": "Activity",
   "number": "8.1.13",
   "title": "",
   "body": "Consider the sequence defined by and for . What are the first four terms?  "
 },
 {
-  "id": "activity-449",
+  "id": "activity-443",
   "level": "2",
-  "url": "SQ1.html#activity-449",
+  "url": "SQ1.html#activity-443",
   "type": "Activity",
   "number": "8.1.14",
   "title": "",
   "body": "  Consider the sequence . Which of the following offers the best recursive formula for this sequence?   for  for     "
 },
 {
-  "id": "activity-450",
+  "id": "activity-444",
   "level": "2",
-  "url": "SQ1.html#activity-450",
+  "url": "SQ1.html#activity-444",
   "type": "Activity",
   "number": "8.1.15",
   "title": "",
   "body": " Once more, consider the sequence from . Suppose and . Give a recursive formula for for all .   "
 },
 {
-  "id": "activity-451",
+  "id": "activity-445",
   "level": "2",
-  "url": "SQ1.html#activity-451",
+  "url": "SQ1.html#activity-445",
   "type": "Activity",
   "number": "8.1.16",
   "title": "",
   "body": "Give a recursive formula that generates the sequence .  "
 },
 {
-  "id": "activity-452",
+  "id": "activity-446",
   "level": "2",
-  "url": "SQ1.html#activity-452",
+  "url": "SQ1.html#activity-446",
   "type": "Activity",
   "number": "8.1.17",
   "title": "",
   "body": " Find the first 5 terms of the following sequence:  ,  Find a closed form for the following sequence:  ,  Find a recursive form for the following sequence:  ,   "
 },
 {
-  "id": "activity-453",
+  "id": "activity-447",
   "level": "2",
-  "url": "SQ1.html#activity-453",
+  "url": "SQ1.html#activity-447",
   "type": "Activity",
   "number": "8.1.18",
   "title": "",
   "body": " Find the first 5 terms of the following sequence:  ,  Find a closed form for the following sequence:  ,  Find a recursive form for the following sequence:  ,   "
 },
 {
-  "id": "figure-155",
+  "id": "figure-153",
   "level": "2",
-  "url": "SQ1.html#figure-155",
+  "url": "SQ1.html#figure-153",
   "type": "Figure",
-  "number": "169",
+  "number": "167",
   "title": "",
   "body": "    Video: Define and use explicit and recursive formulas for sequences  "
 },
@@ -7255,18 +7075,18 @@ var ptx_lunr_docs = [
   "body": " Sequence Properties and Limits (SQ2)     Determine if a sequence is convergent, divergent, monotonic, or bounded, and compute limits of convergent sequences.      Activities   We will consider the function .  Compute the limit .       Determine on which intervals is increasing and\/or decreasing. (Hint: compute first.)  Which statement best describes for ?  is bounded above by 4  is bounded below by 4  is bounded above and below by 4  is not bounded above  is not bounded below      Given a sequence :  is monotonically increasing if for every choice of .  is monotonically non-decreasing if for every choice of .  is monotonically decreasing if for every choice of .  is monotonically non-increasing if for every choice of .  All of these sequences would be monotonic .      Consider the sequence    Compute .  Which of the following is true about ? There can be more or less than one answer.  for every choice of .  for every choice of .  for every choice of .  for every choice of .    Which of the following (if any) describe   Monotonically increasing.  Monotonically non-decreasing.  Monotonically decreasing.  Monotonically non-increasing.       Consider the sequence    Compute .  Which of the following is true about ? There can be more or less than one answer.  for every choice of .  for every choice of .  for every choice of .  for every choice of .    Which of the following (if any) describe   Monotonically increasing.  Monotonically non-decreasing.  Monotonically decreasing.  Monotonically non-increasing.       Consider the sequence    Compute .  Which of the following is true about ? There can be more or less than one answer.  for every choice of .  for every choice of .  for every choice of .  for every choice of .    Which of the following (if any) describe   Monotonically increasing.  Monotonically non-decreasing.  Monotonically decreasing.  Monotonically non-increasing.       Consider the sequence    Compute .  Which of the following is true about ? There can be more or less than one answer.  for every choice of .  for every choice of .  for every choice of .  for every choice of .    Which of the following (if any) describe   Monotonically increasing.  Monotonically non-decreasing.  Monotonically decreasing.  Monotonically non-increasing.       A sequence is bounded if there are real numbers such that for every .      Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?     Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?     Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?     Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?     Given a sequence , we say has limit  , denoted if we can make as close to as we like by making sufficiently large. If such an exists, we say converges to . If no such exists, we say does not converge.      For each of the following, determine if the sequence converges.        Where possible, find the limit of the sequence.    Determine to what value converges.  Which of the following ia most likely true about ?  converges to 4.  converges to 0.  converges to -4.  does not converge.       For each of the following sequences, determine which of the properties: monotonic , bounded and convergent , the sequence satisfies. If a sequence is convergent, determine to what it converges.          If a sequence is monotonic and bounded, then it is convergent.       Videos      Video: Determine if a sequence is convergent, divergent, monotonic, or bounded, and compute limits of convergent sequences    "
 },
 {
-  "id": "objectives-62",
+  "id": "objectives-59",
   "level": "2",
-  "url": "SQ2.html#objectives-62",
+  "url": "SQ2.html#objectives-59",
   "type": "Learning Outcomes",
   "number": "8.2",
   "title": "",
   "body": "   Determine if a sequence is convergent, divergent, monotonic, or bounded, and compute limits of convergent sequences.    "
 },
 {
-  "id": "activity-454",
+  "id": "activity-448",
   "level": "2",
-  "url": "SQ2.html#activity-454",
+  "url": "SQ2.html#activity-448",
   "type": "Activity",
   "number": "8.2.1",
   "title": "",
@@ -7327,36 +7147,36 @@ var ptx_lunr_docs = [
   "body": "  A sequence is bounded if there are real numbers such that for every .   "
 },
 {
-  "id": "activity-459",
+  "id": "activity-453",
   "level": "2",
-  "url": "SQ2.html#activity-459",
+  "url": "SQ2.html#activity-453",
   "type": "Activity",
   "number": "8.2.8",
   "title": "",
   "body": "  Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?  "
 },
 {
-  "id": "activity-460",
+  "id": "activity-454",
   "level": "2",
-  "url": "SQ2.html#activity-460",
+  "url": "SQ2.html#activity-454",
   "type": "Activity",
   "number": "8.2.9",
   "title": "",
   "body": "  Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?  "
 },
 {
-  "id": "activity-461",
+  "id": "activity-455",
   "level": "2",
-  "url": "SQ2.html#activity-461",
+  "url": "SQ2.html#activity-455",
   "type": "Activity",
   "number": "8.2.10",
   "title": "",
   "body": "  Consider the sequence from .   Is there a such that for every ? If so, what would be one such ?  Is there a such that for every ? If so, what would be one such ?  Is bounded?  "
 },
 {
-  "id": "activity-462",
+  "id": "activity-456",
   "level": "2",
-  "url": "SQ2.html#activity-462",
+  "url": "SQ2.html#activity-456",
   "type": "Activity",
   "number": "8.2.11",
   "title": "",
@@ -7372,27 +7192,27 @@ var ptx_lunr_docs = [
   "body": "  Given a sequence , we say has limit  , denoted if we can make as close to as we like by making sufficiently large. If such an exists, we say converges to . If no such exists, we say does not converge.    "
 },
 {
-  "id": "activity-463",
+  "id": "activity-457",
   "level": "2",
-  "url": "SQ2.html#activity-463",
+  "url": "SQ2.html#activity-457",
   "type": "Activity",
   "number": "8.2.13",
   "title": "",
   "body": " For each of the following, determine if the sequence converges.        Where possible, find the limit of the sequence.  "
 },
 {
-  "id": "activity-464",
+  "id": "activity-458",
   "level": "2",
-  "url": "SQ2.html#activity-464",
+  "url": "SQ2.html#activity-458",
   "type": "Activity",
   "number": "8.2.14",
   "title": "",
   "body": " Determine to what value converges.  Which of the following ia most likely true about ?  converges to 4.  converges to 0.  converges to -4.  does not converge.    "
 },
 {
-  "id": "activity-465",
+  "id": "activity-459",
   "level": "2",
-  "url": "SQ2.html#activity-465",
+  "url": "SQ2.html#activity-459",
   "type": "Activity",
   "number": "8.2.15",
   "title": "",
@@ -7408,11 +7228,11 @@ var ptx_lunr_docs = [
   "body": "  If a sequence is monotonic and bounded, then it is convergent.   "
 },
 {
-  "id": "figure-156",
+  "id": "figure-154",
   "level": "2",
-  "url": "SQ2.html#figure-156",
+  "url": "SQ2.html#figure-154",
   "type": "Figure",
-  "number": "170",
+  "number": "168",
   "title": "",
   "body": "    Video: Determine if a sequence is convergent, divergent, monotonic, or bounded, and compute limits of convergent sequences  "
 },
@@ -7426,9 +7246,9 @@ var ptx_lunr_docs = [
   "body": " Partial Sum Sequence (SQ3)     Compute the first few terms of a telescoping or geometric partial sum sequence, and find a closed form for this sequence, and compute its limit.      Activities    Consider the sequence .   Find the first 5 terms of this sequence.  Compute the following:            Consider the sequence .   Find the first 5 terms of this sequence.  Compute the following:            Given a sequence define the partial sum of to be Note that is itself a sequence called the partial sum sequence .      Let Find the following partial sums:  .  .  .  .  .        Consider the sequence What is the best way to find the 100th partial sum ?  Sum the first 101 terms of the sequence .  Find a closed form for the partial sum sequence .        Expand the following polynomial products, and then reduce to as few summands as possible.  .  .  .  , where is any nonnegative integer.        Suppose Without actually computing this sum, which of the following is equal to ?  .  .  .        Recall from that    Which of the following is equal to ?  .  .  .  .    Based on your previous choice, write out an expression for .     Suppose that . Let be the th partial sum of .   Find simple expressions for the following:  .  .   . Choose from the following:   .  .  .  .  .      Based on your previous answers, solve for the following:  .  .   . Choose from the following:               Consider the following sequences:  .  .  .     Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Find the closed form for the th partial sum for the geometric sequence .    Given the closed forms you found in , which of the following limits are defined? If defined, what is the limit?  .  .  .       Given a sequence , we define the limit of the series where . We call an infinite series .      Which of the following series are infinite?  .  .  .  .  .        Let . Let .  Which of the following is the best strategy for evaluating ?  Compute , then evaluate the sum.  Rewrite , then simplify.        Recall from that and .  Compute the following partial sums:  .  .  .        Recall from that and .  Which of the following is equal to ?  .  .  .  .  .        Given a sequence and a sequence of the form we call the series to be a telescoping series .      Given a telescoping series , find:  .  .   Choose from the following options:               For each of the following telescoping series, find the closed form for the th partial sum.  .  .  .      Given the closed forms you found in , determine which of the following telescoping series converge. If so, to what value does it converge?   .  .  .      Consider the partial sum sequence  Find a closed form for .  Does converge? If so, to what value?     Consider the partial sum sequence  Find a closed form for .  Does converge? If so, to what value?       Videos      Video: Compute the first few terms of a telescoping or geometric partial sum sequence, and find a closed form for this sequence, and compute its limit.    "
 },
 {
-  "id": "objectives-63",
+  "id": "objectives-60",
   "level": "2",
-  "url": "SQ3.html#objectives-63",
+  "url": "SQ3.html#objectives-60",
   "type": "Learning Outcomes",
   "number": "8.3",
   "title": "",
@@ -7525,9 +7345,9 @@ var ptx_lunr_docs = [
   "body": "  Consider the following sequences:  .  .  .     Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Find the closed form for the th partial sum for the geometric sequence .  .  .  .  .  .    Find the closed form for the th partial sum for the geometric sequence .  "
 },
 {
-  "id": "activity-475",
+  "id": "activity-469",
   "level": "2",
-  "url": "SQ3.html#activity-475",
+  "url": "SQ3.html#activity-469",
   "type": "Activity",
   "number": "8.3.11",
   "title": "",
@@ -7606,38 +7426,38 @@ var ptx_lunr_docs = [
   "body": " For each of the following telescoping series, find the closed form for the th partial sum.  .  .  .    "
 },
 {
-  "id": "activity-482",
+  "id": "activity-476",
   "level": "2",
-  "url": "SQ3.html#activity-482",
+  "url": "SQ3.html#activity-476",
   "type": "Activity",
   "number": "8.3.20",
   "title": "",
   "body": " Given the closed forms you found in , determine which of the following telescoping series converge. If so, to what value does it converge?   .  .  .   "
 },
 {
-  "id": "activity-483",
+  "id": "activity-477",
   "level": "2",
-  "url": "SQ3.html#activity-483",
+  "url": "SQ3.html#activity-477",
   "type": "Activity",
   "number": "8.3.21",
   "title": "",
   "body": "  Consider the partial sum sequence  Find a closed form for .  Does converge? If so, to what value?  "
 },
 {
-  "id": "activity-484",
+  "id": "activity-478",
   "level": "2",
-  "url": "SQ3.html#activity-484",
+  "url": "SQ3.html#activity-478",
   "type": "Activity",
   "number": "8.3.22",
   "title": "",
   "body": "  Consider the partial sum sequence  Find a closed form for .  Does converge? If so, to what value?   "
 },
 {
-  "id": "figure-157",
+  "id": "figure-155",
   "level": "2",
-  "url": "SQ3.html#figure-157",
+  "url": "SQ3.html#figure-155",
   "type": "Figure",
-  "number": "171",
+  "number": "169",
   "title": "",
   "body": "    Video: Compute the first few terms of a telescoping or geometric partial sum sequence, and find a closed form for this sequence, and compute its limit.  "
 },
@@ -7651,9 +7471,9 @@ var ptx_lunr_docs = [
   "body": " Geometric Series (SQ4)     Determine if a geometric series converges, and if so, the value it converges to.      Activities     Recall from that for any real numbers and that:    Using , for which values of does converges?  .  .  .  The series converges for every value of .    Where possible, determine what value converges to.     Geometric series are sums of the form , where and are real numbers. When this series converges to the value . Otherwise, the geometric series diverges.     Consider the infinite series    Complete the following rearrangement of terms.   Since , this series converges. Use the formula to find the value of this series.         Complete the following calculation, noting : What does this simplify to?           Given a series that appears to be mostly geometric such as we can always rewrite it as the sum of a standard geometric series with some finite modification, in this case:   Thus the original series converges if and only if converges.  When the series diverges as in this example, then the reason why ( ) can be seen without any modification of the original series.      For each of the following modified geometric series, determine without rewriting if they converge or diverge.   .  .  .  .     Find the value of each of the following convergent series.   .  .  .      Videos      Video: Determine if a geometric series converges, and if so, the value it converges to.    "
 },
 {
-  "id": "objectives-64",
+  "id": "objectives-61",
   "level": "2",
-  "url": "SQ4.html#objectives-64",
+  "url": "SQ4.html#objectives-61",
   "type": "Learning Outcomes",
   "number": "8.4",
   "title": "",
@@ -7714,20 +7534,20 @@ var ptx_lunr_docs = [
   "body": "  For each of the following modified geometric series, determine without rewriting if they converge or diverge.   .  .  .  .  "
 },
 {
-  "id": "activity-489",
+  "id": "activity-483",
   "level": "2",
-  "url": "SQ4.html#activity-489",
+  "url": "SQ4.html#activity-483",
   "type": "Activity",
   "number": "8.4.7",
   "title": "",
   "body": "  Find the value of each of the following convergent series.   .  .  .  "
 },
 {
-  "id": "figure-158",
+  "id": "figure-156",
   "level": "2",
-  "url": "SQ4.html#figure-158",
+  "url": "SQ4.html#figure-156",
   "type": "Figure",
-  "number": "172",
+  "number": "170",
   "title": "",
   "body": "    Video: Determine if a geometric series converges, and if so, the value it converges to.  "
 },
@@ -7741,9 +7561,9 @@ var ptx_lunr_docs = [
   "body": " Basic Convergence Tests (SQ5)     Use the divergence, alternating series, and integral tests to determine if a series converges or diverges.      Activities    Which of the following series seem(s) to diverge? It might be helpful to write out the first several terms.    .  .  .  .  .      If the series is convergent, then .     The Divergence ( term) Test   If the , then diverges.     Which of the series from diverge by ?     If for all , then is convergent if and only if the sequence of partial sums is bounded from above.      Consider the so-called harmonic series , , and let be its partial sum.   Determine which of the following inequalities hold(s).  .  .  .  .  .   Determine which of the following inequalities hold(s).  .  .  .  .  .     In , we found that and . Based on these inequalities, which statement seems most likely to hold?   The harmonic series converges.  The harmonic series diverges.      Consider the series .   We want to compare this series to an improper integral. Which of the following is the best candidate?  .  .  .  .  .   Select the true statements below.  The sum corresponds to approximating the integral chosen above using left Riemann sums where .  The sum corresponds to approximating the integral chosen above using right Riemann sums where .  The sum corresponds to approximating the integral chosen above using left Riemann sums where .  The sum corresponds to approximating the integral chosen above using right Riemann sums where .    Using the Riemann sum interpretation of the series, identify which of the following inequalities holds.  .  .  .  .   What can we say about the iproper integral ?  This improper integral converges.  This improper integral diverges.    What do you think is true about the series ?  The series converges.  The series diverges.      The Integral Test   Let be a sequence of positive numbers. If is continuous, positive, and decreasing, and there is some positive integer such that for all , then and both converge or both diverge.      Consider the -series .   Recall that the harmonic series diverges. What value of corresponds to the harmonic series?  .  .  .  .  .   From , what can we conclude about the -series with ?  There is not enough information to draw a conclusion.  This series converges.  This series diverges.      The -Test   The series converges for , and diverges otherwise.      Consider the series .   If we aim to use the integral test, what is an appropriate choice for ?  .  .  .  .  .   Does the series converge or diverge by ?    Prove .    Which of the following statements seem(s) most likely to be true?  diverges.  converges.  converges.  diverges.      The Alternating Series Test (Leibniz's Theorem)   The series converges if all of the following conditions are satisfied:  is always positive,  there is an integer such that for all , and  .       What conclusions can you now make?  diverges.  converges.  converges.  diverges.       For each of the following series, use the Divergence , Alternating Summation or Integral test to determine if the series converges.        The Alternating Series Estimation Theorem   If the alternating series converges to and has partial sum , then for (as in the alternating series test):  is less than , and  has the same sign as .        Consider the so-called alternating harmonic series , .   Use the alternating series test to determine if the series converges.  If so, estimate the series using the first 3 terms.      Videos      Video: Use the divergence, alternating series, and integral tests to determine if a series converges or diverges    "
 },
 {
-  "id": "objectives-65",
+  "id": "objectives-62",
   "level": "2",
-  "url": "SQ5.html#objectives-65",
+  "url": "SQ5.html#objectives-62",
   "type": "Learning Outcomes",
   "number": "8.5",
   "title": "",
@@ -7804,9 +7624,9 @@ var ptx_lunr_docs = [
   "body": "  Consider the so-called harmonic series , , and let be its partial sum.   Determine which of the following inequalities hold(s).  .  .  .  .  .   Determine which of the following inequalities hold(s).  .  .  .  .  .   "
 },
 {
-  "id": "activity-493",
+  "id": "activity-487",
   "level": "2",
-  "url": "SQ5.html#activity-493",
+  "url": "SQ5.html#activity-487",
   "type": "Activity",
   "number": "8.5.7",
   "title": "",
@@ -7858,18 +7678,18 @@ var ptx_lunr_docs = [
   "body": "  Consider the series .   If we aim to use the integral test, what is an appropriate choice for ?  .  .  .  .  .   Does the series converge or diverge by ?  "
 },
 {
-  "id": "activity-497",
+  "id": "activity-491",
   "level": "2",
-  "url": "SQ5.html#activity-497",
+  "url": "SQ5.html#activity-491",
   "type": "Activity",
   "number": "8.5.13",
   "title": "",
   "body": " Prove .  "
 },
 {
-  "id": "activity-498",
+  "id": "activity-492",
   "level": "2",
-  "url": "SQ5.html#activity-498",
+  "url": "SQ5.html#activity-492",
   "type": "Activity",
   "number": "8.5.14",
   "title": "",
@@ -7881,22 +7701,22 @@ var ptx_lunr_docs = [
   "url": "SQ5.html#fact-SQ8alternatingSeriesTest",
   "type": "Fact",
   "number": "8.5.15",
-  "title": "The Alternating Series Test (Leibniz's Theorem).",
+  "title": "The Alternating Series Test (Leibniz’s Theorem).",
   "body": " The Alternating Series Test (Leibniz's Theorem)   The series converges if all of the following conditions are satisfied:  is always positive,  there is an integer such that for all , and  .     "
 },
 {
-  "id": "activity-499",
+  "id": "activity-493",
   "level": "2",
-  "url": "SQ5.html#activity-499",
+  "url": "SQ5.html#activity-493",
   "type": "Activity",
   "number": "8.5.16",
   "title": "",
   "body": " What conclusions can you now make?  diverges.  converges.  converges.  diverges.    "
 },
 {
-  "id": "activity-500",
+  "id": "activity-494",
   "level": "2",
-  "url": "SQ5.html#activity-500",
+  "url": "SQ5.html#activity-494",
   "type": "Activity",
   "number": "8.5.17",
   "title": "",
@@ -7921,11 +7741,11 @@ var ptx_lunr_docs = [
   "body": "  Consider the so-called alternating harmonic series , .   Use the alternating series test to determine if the series converges.  If so, estimate the series using the first 3 terms.  "
 },
 {
-  "id": "figure-159",
+  "id": "figure-157",
   "level": "2",
-  "url": "SQ5.html#figure-159",
+  "url": "SQ5.html#figure-157",
   "type": "Figure",
-  "number": "173",
+  "number": "171",
   "title": "",
   "body": "    Video: Use the divergence, alternating series, and integral tests to determine if a series converges or diverges  "
 },
@@ -7939,9 +7759,9 @@ var ptx_lunr_docs = [
   "body": " Comparison Tests (SQ6)     Use the direct comparison and limit comparison tests to determine if a series converges or diverges.      Activities    Let be a sequence, with infinite series . Suppose is a sequence where each , whith infinite series .   If what can be said about ?  converges but the value cannot be determined.  converges to .  converges to some value other than 15.  diverges.  It cannot be determined whether converges or diverges.      If , , and is a real number, then  , and  .      If diverges, what can be said about ?  converges but the value cannot be determined.  converges and the value can be determined.  diverges.  It cannot be determined whether converges or diverges.       Using , we know the geometric series    What can we say about the series   converges to .  converges to some value other than 6.  diverges.    What do you think we can say about the series   converges to .  converges to some value other than 6.  diverges.       From , we know diverges.   What can we say about the series   converges to a known value we can compute.  converges to some unknown value.  diverges.    What do you think we can say about the series   converges to a known value we can compute.  converges to some unknown value.  diverges.      The Limit Comparison Test   Let and be series with positive terms. If for some positive (finite) constant , then and either both converge or both diverge.      Recall that converges.   Let . Compute .  .  .  .  .  .   Does converge or diverge?  Let . Compute .  .  .  .  .  .   Does converge or diverge?  Let and be series with positive terms. If diverges, can we conclude that converges or diverges?     We wish to determine if converges or diverges using .   Compute   Does the geometric series converge or diverge by ?  Does converge or diverge?     We wish to determine if converges or diverges using .   To which of the following should we compare ?  .  .  .  .    Compute .  Compute .  What is true about and ?  Their values are reciprocals.  Their values negative reciprocals.  They are both positive finite constants.  Only one value is a finite positive constant.  One value is and the other value is infinite.    Does the series converge or diverge?  Using your chosen sequence and , does converge or diverge?     We wish to determine if converges or diverges using .   To which of the following should we compare ?  .  .  .  .    Using your chosen sequence and , does converge or diverge?    Use to determine if the series converges or diverges.     Consider sequences where .  Plots of   Plots of sequences where .       Suppose that converges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    Suppose that which diverges. Which of the following statements are true?  for each and is a convergent -series where .  for each and is a divergent -series where .    Suppose that was some series that diverges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    Suppose that diverges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.    Suppose that which converges. Which of the following statements are true?  for each and is a convergent geometric series where .  for each and diverges by the Divergence Test.    Suppose that was some series that converges. What could be said about ?  converges.  diverges.  Whether or not converges or diverges cannot be determined with this information.       Supppose we have sequences so that for some we have that for each . Then we have the following results:  If converges, then so does .  If diverges, then so does .        Suppose that you were handed positive sequences . For the first few values , but after that what happens is unclear until . Then for any we have that .  Plots of   Plots of sequences where initially but eventually .       How might we best utilize to determine the convergence of or ?  Since is sometimes greater than, and sometimes less than , there is no way to utilize .  Since initially, we have , we can utilize by assuming .  Since we can rewrite and and are necessarily finite, we can compare with .      The Direct Comparison Test   Let and be series with positive terms. If there is a such that for each , then:  If converges, then so does .  If diverges, then so does .        Suppose we wish to determine if converged using .   Does converge or diverge?  For which value is for each ?  for each .  for each .  for each .  for each .  There is no for which for each .    Use and compare to to determine if converges or diverges.     Suppose we wish to determine if converged using .   Which series should we compare to best utilize ?  .  .  .  .  .  .    Using your chosen series and , does converge or diverge?     For each of the following series, determine if it converges or diverges, and explain your choice.         Videos      Video: Use the direct comparison and limit comparison tests to determine if a series converges or diverges    "
 },
 {
-  "id": "objectives-66",
+  "id": "objectives-63",
   "level": "2",
-  "url": "SQ6.html#objectives-66",
+  "url": "SQ6.html#objectives-63",
   "type": "Learning Outcomes",
   "number": "8.6",
   "title": "",
@@ -8020,9 +7840,9 @@ var ptx_lunr_docs = [
   "body": "  We wish to determine if converges or diverges using .   To which of the following should we compare ?  .  .  .  .    Using your chosen sequence and , does converge or diverge?  "
 },
 {
-  "id": "activity-509",
+  "id": "activity-503",
   "level": "2",
-  "url": "SQ6.html#activity-509",
+  "url": "SQ6.html#activity-503",
   "type": "Activity",
   "number": "8.6.10",
   "title": "",
@@ -8083,20 +7903,20 @@ var ptx_lunr_docs = [
   "body": "  Suppose we wish to determine if converged using .   Which series should we compare to best utilize ?  .  .  .  .  .  .    Using your chosen series and , does converge or diverge?  "
 },
 {
-  "id": "activity-514",
+  "id": "activity-508",
   "level": "2",
-  "url": "SQ6.html#activity-514",
+  "url": "SQ6.html#activity-508",
   "type": "Activity",
   "number": "8.6.17",
   "title": "",
   "body": "  For each of the following series, determine if it converges or diverges, and explain your choice.     "
 },
 {
-  "id": "figure-162",
+  "id": "figure-160",
   "level": "2",
-  "url": "SQ6.html#figure-162",
+  "url": "SQ6.html#figure-160",
   "type": "Figure",
-  "number": "176",
+  "number": "174",
   "title": "",
   "body": "    Video: Use the direct comparison and limit comparison tests to determine if a series converges or diverges  "
 },
@@ -8110,36 +7930,36 @@ var ptx_lunr_docs = [
   "body": " Ratio and Root Tests (SQ7)     Use the ratio and root tests to determine if a series converges or diverges.      Activities    Consider the series    Which of these series most closely resembles ?  .  .  .    Based on your previous choice, do we think this series is more likely to converge or diverge?  Find   .  .  .  .  .       Consider the series .   Does converge?  Find .  .  .  .  .  .    Find   .  .  .  .  .       Consider the series .   Does converge?  Find .  .  .  .  .  .    Find   .  .  .  .  .       Consider the series .   Does converge?  Find .  Find      Consider the series .   Does converge?  Find .  Find     The Ratio Test   Let be a series and suppose that . Then  converges if is less than 1, and  diverges if is greater than 1.  If , we cannot determine if converges or diverges with this method .       The Root Test   Let be an integer and let be a series with for , and suppose that . Then  converges if is less than 1, and  diverges if is greater than 1.  If , we cannot determine if converges or diverges with this method .        Consider the series .   Which of the following is ?  .  .  .    Which of the following is ?  .  .  .  .  .    Which of the following is ?  .  .  .  .    Using the fact , simplify as much as possible.  Find .  Does converge?    Consider the series   What is ?  Which of the following is ?  .  .  .  .  .    Find .  Does converge?     For each series, use the ratio or root test to determine if the series converges or diverges.                  Consider the series .   Use the root test to check for convergence of this series.  Use the ratio test to check for convergence of this series.  Use the comparison (or limit comparison) test to check for convergence of this series.  Find the sum of this series.     Consider . Recall that    Let . Find .  Recall that Find .  Find .  Does converge?     Consider the series .   Use the root test to check for convergence of this series.  Use the ratio test to check for convergence of this series.  Use the comparison (or limit comparison) test to check for convergence of this series.      Videos      Video: Use the ratio and root tests to determine if a series converges or diverges    "
 },
 {
-  "id": "objectives-67",
+  "id": "objectives-64",
   "level": "2",
-  "url": "SQ7.html#objectives-67",
+  "url": "SQ7.html#objectives-64",
   "type": "Learning Outcomes",
   "number": "8.7",
   "title": "",
   "body": "   Use the ratio and root tests to determine if a series converges or diverges.    "
 },
 {
-  "id": "activity-515",
+  "id": "activity-509",
   "level": "2",
-  "url": "SQ7.html#activity-515",
+  "url": "SQ7.html#activity-509",
   "type": "Activity",
   "number": "8.7.1",
   "title": "",
   "body": "  Consider the series    Which of these series most closely resembles ?  .  .  .    Based on your previous choice, do we think this series is more likely to converge or diverge?  Find   .  .  .  .  .    "
 },
 {
-  "id": "activity-516",
+  "id": "activity-510",
   "level": "2",
-  "url": "SQ7.html#activity-516",
+  "url": "SQ7.html#activity-510",
   "type": "Activity",
   "number": "8.7.2",
   "title": "",
   "body": "  Consider the series .   Does converge?  Find .  .  .  .  .  .    Find   .  .  .  .  .    "
 },
 {
-  "id": "activity-517",
+  "id": "activity-511",
   "level": "2",
-  "url": "SQ7.html#activity-517",
+  "url": "SQ7.html#activity-511",
   "type": "Activity",
   "number": "8.7.3",
   "title": "",
@@ -8182,18 +8002,18 @@ var ptx_lunr_docs = [
   "body": " The Root Test   Let be an integer and let be a series with for , and suppose that . Then  converges if is less than 1, and  diverges if is greater than 1.  If , we cannot determine if converges or diverges with this method .     "
 },
 {
-  "id": "activity-520",
+  "id": "activity-514",
   "level": "2",
-  "url": "SQ7.html#activity-520",
+  "url": "SQ7.html#activity-514",
   "type": "Activity",
   "number": "8.7.8",
   "title": "",
   "body": "  Consider the series .   Which of the following is ?  .  .  .    Which of the following is ?  .  .  .  .  .    Which of the following is ?  .  .  .  .    Using the fact , simplify as much as possible.  Find .  Does converge?  "
 },
 {
-  "id": "activity-521",
+  "id": "activity-515",
   "level": "2",
-  "url": "SQ7.html#activity-521",
+  "url": "SQ7.html#activity-515",
   "type": "Activity",
   "number": "8.7.9",
   "title": "",
@@ -8218,9 +8038,9 @@ var ptx_lunr_docs = [
   "body": "  Consider the series .   Use the root test to check for convergence of this series.  Use the ratio test to check for convergence of this series.  Use the comparison (or limit comparison) test to check for convergence of this series.  Find the sum of this series.  "
 },
 {
-  "id": "activity-524",
+  "id": "activity-518",
   "level": "2",
-  "url": "SQ7.html#activity-524",
+  "url": "SQ7.html#activity-518",
   "type": "Activity",
   "number": "8.7.12",
   "title": "",
@@ -8236,11 +8056,11 @@ var ptx_lunr_docs = [
   "body": "  Consider the series .   Use the root test to check for convergence of this series.  Use the ratio test to check for convergence of this series.  Use the comparison (or limit comparison) test to check for convergence of this series.  "
 },
 {
-  "id": "figure-163",
+  "id": "figure-161",
   "level": "2",
-  "url": "SQ7.html#figure-163",
+  "url": "SQ7.html#figure-161",
   "type": "Figure",
-  "number": "177",
+  "number": "175",
   "title": "",
   "body": "    Video: Use the ratio and root tests to determine if a series converges or diverges  "
 },
@@ -8254,27 +8074,27 @@ var ptx_lunr_docs = [
   "body": " Absolute Convergence (SQ8)     Determine if a series converges absolutely or conditionally.      Activities    Recall the series from .   Does the series converge or diverge?  Does the series converge or diverge?     Consider the series .   Does the series converge or diverge?  Does the series converge or diverge?     Given a series we say that is absolutely convergent if converges.      Consider the series: .   Does the series converge or diverge? (Recall .)  Compute .  Does the series converge absolutely?    Notice that and both involve taking absolute values to determine convergence. As such, series that are convergent by either the Ratio Test or the Root Test are also absolutely convergent (by applying the same test after taking the absolute value).     Consider the series: .   Does the series converge or diverge?  Compute .  Does the series converge absolutely?     For each of the following series, determine if the series is convergent , and if the series is absolutely convergent .         If you know a series is absolutely convergent, what can you conclude about whether or not is convergent?  We cannot determine if is convergent.  is convergent since it grows slower than (and falls slower than ).        If is absolutely convergent, then it must be convergent.      Find 3 series that are convergent but not absolutely convergent (recall , ).       Videos      Video: Determine if a series converges absolutely or conditionally    "
 },
 {
-  "id": "objectives-68",
+  "id": "objectives-65",
   "level": "2",
-  "url": "SQ8.html#objectives-68",
+  "url": "SQ8.html#objectives-65",
   "type": "Learning Outcomes",
   "number": "8.8",
   "title": "",
   "body": "   Determine if a series converges absolutely or conditionally.    "
 },
 {
-  "id": "activity-526",
+  "id": "activity-520",
   "level": "2",
-  "url": "SQ8.html#activity-526",
+  "url": "SQ8.html#activity-520",
   "type": "Activity",
   "number": "8.8.1",
   "title": "",
   "body": "  Recall the series from .   Does the series converge or diverge?  Does the series converge or diverge?  "
 },
 {
-  "id": "activity-527",
+  "id": "activity-521",
   "level": "2",
-  "url": "SQ8.html#activity-527",
+  "url": "SQ8.html#activity-521",
   "type": "Activity",
   "number": "8.8.2",
   "title": "",
@@ -8290,74 +8110,74 @@ var ptx_lunr_docs = [
   "body": "  Given a series we say that is absolutely convergent if converges.   "
 },
 {
-  "id": "activity-528",
+  "id": "activity-522",
   "level": "2",
-  "url": "SQ8.html#activity-528",
+  "url": "SQ8.html#activity-522",
   "type": "Activity",
   "number": "8.8.4",
   "title": "",
   "body": "  Consider the series: .   Does the series converge or diverge? (Recall .)  Compute .  Does the series converge absolutely?  "
 },
 {
-  "id": "fact-39",
+  "id": "fact-33",
   "level": "2",
-  "url": "SQ8.html#fact-39",
+  "url": "SQ8.html#fact-33",
   "type": "Fact",
   "number": "8.8.5",
   "title": "",
   "body": " Notice that and both involve taking absolute values to determine convergence. As such, series that are convergent by either the Ratio Test or the Root Test are also absolutely convergent (by applying the same test after taking the absolute value).  "
 },
 {
-  "id": "activity-529",
+  "id": "activity-523",
   "level": "2",
-  "url": "SQ8.html#activity-529",
+  "url": "SQ8.html#activity-523",
   "type": "Activity",
   "number": "8.8.6",
   "title": "",
   "body": "  Consider the series: .   Does the series converge or diverge?  Compute .  Does the series converge absolutely?  "
 },
 {
-  "id": "activity-530",
+  "id": "activity-524",
   "level": "2",
-  "url": "SQ8.html#activity-530",
+  "url": "SQ8.html#activity-524",
   "type": "Activity",
   "number": "8.8.7",
   "title": "",
   "body": "  For each of the following series, determine if the series is convergent , and if the series is absolutely convergent .      "
 },
 {
-  "id": "activity-531",
+  "id": "activity-525",
   "level": "2",
-  "url": "SQ8.html#activity-531",
+  "url": "SQ8.html#activity-525",
   "type": "Activity",
   "number": "8.8.8",
   "title": "",
   "body": "  If you know a series is absolutely convergent, what can you conclude about whether or not is convergent?  We cannot determine if is convergent.  is convergent since it grows slower than (and falls slower than ).     "
 },
 {
-  "id": "fact-40",
+  "id": "fact-34",
   "level": "2",
-  "url": "SQ8.html#fact-40",
+  "url": "SQ8.html#fact-34",
   "type": "Fact",
   "number": "8.8.9",
   "title": "",
   "body": "  If is absolutely convergent, then it must be convergent.   "
 },
 {
-  "id": "activity-532",
+  "id": "activity-526",
   "level": "2",
-  "url": "SQ8.html#activity-532",
+  "url": "SQ8.html#activity-526",
   "type": "Activity",
   "number": "8.8.10",
   "title": "",
   "body": "  Find 3 series that are convergent but not absolutely convergent (recall , ).   "
 },
 {
-  "id": "figure-164",
+  "id": "figure-162",
   "level": "2",
-  "url": "SQ8.html#figure-164",
+  "url": "SQ8.html#figure-162",
   "type": "Figure",
-  "number": "178",
+  "number": "176",
   "title": "",
   "body": "    Video: Determine if a series converges absolutely or conditionally  "
 },
@@ -8371,9 +8191,9 @@ var ptx_lunr_docs = [
   "body": " Series Convergence Strategy (SQ9)     Identify appropriate convergence tests for various series.      Activities   Which test for convergence is the best first test to apply to any series ?   Divergence Test  Geometric Series  Integral Test  Direct Comparison Test  Limit Comparison Test  Ratio Test  Root Test  Alternating Series Test      In which of the following scenarios can we successfully apply the Direct Comparison Test to determine the convergence of the series ?   When we find a convergent series where  When we find a divergent series where  When we find a convergent series where  When we find a divergent series where      Which test(s) for convergence would we use for a series where involves powers?   Divergence Test  Geometric Series  Integral Test  Direct Comparison Test  Limit Comparison Test  Ratio Test  Root Test  Alternating Series Test      Which test(s) for convergence would we use for a series of the form ?   Divergence Test  Geometric Series  Integral Test  Direct Comparison Test  Limit Comparison Test  Ratio Test  Root Test  Alternating Series Test      Which test(s) for convergence would we use for a series where involves factorials and powers?   Divergence Test  Geometric Series  Integral Test  Direct Comparison Test  Limit Comparison Test  Ratio Test  Root Test  Alternating Series Test      Which test(s) for convergence would we use for a series where is a rational function?   Divergence Test  Geometric Series  Integral Test  Direct Comparison Test  Limit Comparison Test  Ratio Test  Root Test  Alternating Series Test      Which test(s) for convergence would we use for a series of the form ?   Divergence Test  Geometric Series  Integral Test  Direct Comparison Test  Limit Comparison Test  Ratio Test  Root Test  Alternating Series Test      Here is a strategy checklist when dealing with series:   The divergence test: unless , diverges  Geometric Series: converges if and diverges otherwise  -series: converges if and diverges otherwise  Series with no negative terms: try the ratio test, root test, integral test, or try to compare to a known series with the comparison test or limit comparison test  Series with some negative terms: check for absolute convergence  Alternating series: use the alternating series test (Leibniz's Theorem)  Anything else: consider the sequence of partial sums, possibly rewriting the series in a different form, hope for the best     Consider the series .  Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?  Divergence Test  Geometric Series  Integral Test  Direct Comparison Test  Limit Comparison Test  Ratio Test  Root Test  Alternating Series Test    Apply an appropriate test to determine the convergence of this series.  This series is convergent.  This series is divergent.      Consider the series .  Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?  Divergence Test  Geometric Series  Integral Test  Direct Comparison Test  Limit Comparison Test  Ratio Test  Root Test  Alternating Series Test    Apply an appropriate test to determine the convergence of this series.  This series is convergent.  This series is divergent.      Consider the series .  Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?  Divergence Test  Geometric Series  Integral Test  Direct Comparison Test  Limit Comparison Test  Ratio Test  Root Test  Alternating Series Test    Apply an appropriate test to determine the convergence of this series.  This series is convergent.  This series is divergent.      Consider the series .  Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?  Divergence Test  Geometric Series  Integral Test  Direct Comparison Test  Limit Comparison Test  Ratio Test  Root Test  Alternating Series Test    Apply an appropriate test to determine the convergence of this series.  This series is convergent.  This series is divergent.      Consider the series .  Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?  Divergence Test  Geometric Series  Integral Test  Direct Comparison Test  Limit Comparison Test  Ratio Test  Root Test  Alternating Series Test    Apply an appropriate test to determine the convergence of this series.  This series is convergent.  This series is divergent.      Consider the series .  Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?  Divergence Test  Geometric Series  Integral Test  Direct Comparison Test  Limit Comparison Test  Ratio Test  Root Test  Alternating Series Test    Apply an appropriate test to determine the convergence of this series.  This series is convergent.  This series is divergent.      Consider the series .  Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?  Divergence Test  Geometric Series  Integral Test  Direct Comparison Test  Limit Comparison Test  Ratio Test  Root Test  Alternating Series Test    Apply an appropriate test to determine the convergence of this series.  This series is convergent.  This series is divergent.      Consider the series .  Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?  Divergence Test  Geometric Series  Integral Test  Direct Comparison Test  Limit Comparison Test  Ratio Test  Root Test  Alternating Series Test    Apply an appropriate test to determine the convergence of this series.  This series is convergent.  This series is divergent.      Consider the series .  Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?  Divergence Test  Geometric Series  Integral Test  Direct Comparison Test  Limit Comparison Test  Ratio Test  Root Test  Alternating Series Test    Apply an appropriate test to determine the convergence of this series.  This series is convergent.  This series is divergent.      Consider the series .  Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?  Divergence Test  Geometric Series  Integral Test  Direct Comparison Test  Limit Comparison Test  Ratio Test  Root Test  Alternating Series Test    Apply an appropriate test to determine the convergence of this series.  This series is convergent.  This series is divergent.       Determine which of the following series is convergent and which is divergent . Justify both choices with an appropriate test.         Videos      Video: Identify appropriate convergence tests for various series    "
 },
 {
-  "id": "objectives-69",
+  "id": "objectives-66",
   "level": "2",
-  "url": "SQ9.html#objectives-69",
+  "url": "SQ9.html#objectives-66",
   "type": "Learning Outcomes",
   "number": "8.9",
   "title": "",
@@ -8542,20 +8362,20 @@ var ptx_lunr_docs = [
   "body": " Consider the series .  Which test(s) seem like the most appropriate one(s) to test for convergence or divergence?  Divergence Test  Geometric Series  Integral Test  Direct Comparison Test  Limit Comparison Test  Ratio Test  Root Test  Alternating Series Test    Apply an appropriate test to determine the convergence of this series.  This series is convergent.  This series is divergent.    "
 },
 {
-  "id": "activity-550",
+  "id": "activity-544",
   "level": "2",
-  "url": "SQ9.html#activity-550",
+  "url": "SQ9.html#activity-544",
   "type": "Activity",
   "number": "8.9.19",
   "title": "",
   "body": "  Determine which of the following series is convergent and which is divergent . Justify both choices with an appropriate test.     "
 },
 {
-  "id": "figure-165",
+  "id": "figure-163",
   "level": "2",
-  "url": "SQ9.html#figure-165",
+  "url": "SQ9.html#figure-163",
   "type": "Figure",
-  "number": "179",
+  "number": "177",
   "title": "",
   "body": "    Video: Identify appropriate convergence tests for various series  "
 },
@@ -8569,18 +8389,18 @@ var ptx_lunr_docs = [
   "body": " Power Series (PS1)     Approximate functions defined as power series.      Activities    Suppose we could define a function as an infinite-length polynomial : .   Would be well-defined as a finite real number?  No, the sum would diverge towards .  No, the sum would oscillate between and .  Yes, the sum would be .  Yes, the sum would be .   Would be well-defined as a finite real number?  No, the sum would diverge towards .  No, the sum would oscillate between and .  Yes, the sum would be .  Yes, the sum would be .   Would be well-defined as a finite real number?  No, the sum would diverge towards .  Yes, the sum would be approximately .  Yes, the sum would be approximately .  Yes, the sum would be exactly .   When is well-defined as a finite real number?  Its value is when .  Its value is when .  Its value is when .  Its value is when .      Given a sequence of numbers and a number , we may define a function as a power series : .  The above power series is said to be centered at . Often power series are centered at ; in this case, they may be written as: .  The domain of this function (often referred to as the domain of convergence or interval of convergence ) is exactly the set of -values for which the series converges.      In we will learn how to prove that converges for each real value . Thus the function has the domain of all real numbers.   To estimate , use technology to compute the first few terms as follows:   Which of these choices is the closest to this value?  .  .  .  .    Estimate in a similar fashion:  Which of these choices is the closest to this value?  .  .  .  .        The function is centered at . Likewise, graphing the polynomial that uses the first six terms alongside the graph of reveals the illustration given in the following figure.   Plots of .   Plots of .     What might we conclude?   near .  near .  for all .  for all .       Given a power series , let be its degree polynomial approximation for nearby .  For example, is a degree approximation of valid for values nearby .      Consider a function defined by    Find , the degree 4 polynomial approximation for .  Use to estimate .      Videos      Video: Approximate functions defined as power series    "
 },
 {
-  "id": "objectives-71",
+  "id": "objectives-68",
   "level": "2",
-  "url": "PS1.html#objectives-71",
+  "url": "PS1.html#objectives-68",
   "type": "Learning Outcomes",
   "number": "9.1",
   "title": "",
   "body": "   Approximate functions defined as power series.    "
 },
 {
-  "id": "activity-551",
+  "id": "activity-545",
   "level": "2",
-  "url": "PS1.html#activity-551",
+  "url": "PS1.html#activity-545",
   "type": "Activity",
   "number": "9.1.1",
   "title": "",
@@ -8605,9 +8425,9 @@ var ptx_lunr_docs = [
   "body": "  In we will learn how to prove that converges for each real value . Thus the function has the domain of all real numbers.   To estimate , use technology to compute the first few terms as follows:   Which of these choices is the closest to this value?  .  .  .  .    Estimate in a similar fashion:  Which of these choices is the closest to this value?  .  .  .  .     "
 },
 {
-  "id": "activity-553",
+  "id": "activity-547",
   "level": "2",
-  "url": "PS1.html#activity-553",
+  "url": "PS1.html#activity-547",
   "type": "Activity",
   "number": "9.1.4",
   "title": "",
@@ -8632,11 +8452,11 @@ var ptx_lunr_docs = [
   "body": "  Consider a function defined by    Find , the degree 4 polynomial approximation for .  Use to estimate .  "
 },
 {
-  "id": "figure-167",
+  "id": "figure-165",
   "level": "2",
-  "url": "PS1.html#figure-167",
+  "url": "PS1.html#figure-165",
   "type": "Figure",
-  "number": "181",
+  "number": "179",
   "title": "",
   "body": "    Video: Approximate functions defined as power series  "
 },
@@ -8650,9 +8470,9 @@ var ptx_lunr_docs = [
   "body": " Convergence of Power Series (PS2)     Determine the interval of convergence for a given power series.      Activities    Consider the series where is a real number.   If , then . What can be said about this series?  The techniques we have learned so far allow us to conclude that converges.  The techniques we have learned so far allow us to conclude that diverges.  None of the techniques we have learned so far allow us to conclude whether converges or diverges.    If , then . What can be said about this series?  The techniques we have learned so far allow us to conclude that converges.  The techniques we have learned so far allow us to conclude that diverges.  None of the techniques we have learned so far allow us to conclude whether converges or diverges.    Suppose that were some arbitrary real number. What can be said about this series?  The techniques we have learned so far allow us to conclude that converges.  The techniques we have learned so far allow us to conclude that diverges.  None of the techniques we have learned so far allow us to conclude whether converges or diverges.       Consider a power series . Recall from that if then converges.  Then recall:       Consider    Letting , find .  For what values of is ?  .  .  .    If , does converge?  If , does converge?  Which of the following describe the values of for which converges?  .  .  .  .       Consider    Letting , find .  For what values of is ?  .  .  .  .    If , does converge?  If , does converge?  Which of the following describe the values of for which converges?  .  .  .  .       Consider    Letting , find .  For what values of is ?  .  All real numbers.    What describes the values of for which converges?     Given the power series , the center of convergence center of convergence is . The radius of convergence radius of convergence is If , we say that .  The interval of convergence interval of convergence represents all possible values of for which converges, which is of the form:      Depending on if converges when or .  If the interval of convergence is all real numbers.      Find the center of convergence, radius of convergence, and interval of convergence for the series:        Find the center of convergence, radius of convergence, and interval of convergence for the series:        Consider the power series .   What is the center of convergence for this power series?  What is the radius of convergence for this power series?  What is the interval of convergence for this power series?  If , does this series converge? (Use the interval of convergence.)  If , does this series converge? (Use the interval of convergence.)      Videos      Video: Determine the interval of convergence for a given power series    "
 },
 {
-  "id": "objectives-72",
+  "id": "objectives-69",
   "level": "2",
-  "url": "PS2.html#objectives-72",
+  "url": "PS2.html#objectives-69",
   "type": "Learning Outcomes",
   "number": "9.2",
   "title": "",
@@ -8677,27 +8497,27 @@ var ptx_lunr_docs = [
   "body": "  Consider a power series . Recall from that if then converges.  Then recall:    "
 },
 {
-  "id": "activity-556",
+  "id": "activity-550",
   "level": "2",
-  "url": "PS2.html#activity-556",
+  "url": "PS2.html#activity-550",
   "type": "Activity",
   "number": "9.2.3",
   "title": "",
   "body": "  Consider    Letting , find .  For what values of is ?  .  .  .    If , does converge?  If , does converge?  Which of the following describe the values of for which converges?  .  .  .  .    "
 },
 {
-  "id": "activity-557",
+  "id": "activity-551",
   "level": "2",
-  "url": "PS2.html#activity-557",
+  "url": "PS2.html#activity-551",
   "type": "Activity",
   "number": "9.2.4",
   "title": "",
   "body": "  Consider    Letting , find .  For what values of is ?  .  .  .  .    If , does converge?  If , does converge?  Which of the following describe the values of for which converges?  .  .  .  .    "
 },
 {
-  "id": "activity-558",
+  "id": "activity-552",
   "level": "2",
-  "url": "PS2.html#activity-558",
+  "url": "PS2.html#activity-552",
   "type": "Activity",
   "number": "9.2.5",
   "title": "",
@@ -8713,38 +8533,38 @@ var ptx_lunr_docs = [
   "body": "  Given the power series , the center of convergence center of convergence is . The radius of convergence radius of convergence is If , we say that .  The interval of convergence interval of convergence represents all possible values of for which converges, which is of the form:      Depending on if converges when or .  If the interval of convergence is all real numbers.   "
 },
 {
-  "id": "activity-559",
+  "id": "activity-553",
   "level": "2",
-  "url": "PS2.html#activity-559",
+  "url": "PS2.html#activity-553",
   "type": "Activity",
   "number": "9.2.7",
   "title": "",
   "body": "  Find the center of convergence, radius of convergence, and interval of convergence for the series:     "
 },
 {
-  "id": "activity-560",
+  "id": "activity-554",
   "level": "2",
-  "url": "PS2.html#activity-560",
+  "url": "PS2.html#activity-554",
   "type": "Activity",
   "number": "9.2.8",
   "title": "",
   "body": "  Find the center of convergence, radius of convergence, and interval of convergence for the series:     "
 },
 {
-  "id": "activity-561",
+  "id": "activity-555",
   "level": "2",
-  "url": "PS2.html#activity-561",
+  "url": "PS2.html#activity-555",
   "type": "Activity",
   "number": "9.2.9",
   "title": "",
   "body": "  Consider the power series .   What is the center of convergence for this power series?  What is the radius of convergence for this power series?  What is the interval of convergence for this power series?  If , does this series converge? (Use the interval of convergence.)  If , does this series converge? (Use the interval of convergence.)  "
 },
 {
-  "id": "figure-168",
+  "id": "figure-166",
   "level": "2",
-  "url": "PS2.html#figure-168",
+  "url": "PS2.html#figure-166",
   "type": "Figure",
-  "number": "182",
+  "number": "180",
   "title": "",
   "body": "    Video: Determine the interval of convergence for a given power series  "
 },
@@ -8758,9 +8578,9 @@ var ptx_lunr_docs = [
   "body": " Manipulation of Power Series (PS3)     Compute power series by manipulating known exponential\/trigonometric\/binomial power series.      Activities    How might we use the known geometric power series to find the value of ?   Which operation describes the relationship between these two series?  Bifurcation  Composition  Differentiation  Multiplication   What is the result of applying this operation to ?          Whenever a function is defined as a power series: then its derivative and general antiderivative are also defined as power series with the same domain of convergence as , found by differentiating or integrating term-by-term:       Let's investigate the power series .   What is the value of ?  .  .  .  .   What is the value of ?  .  .  .  .   What can we conclude from our calculation of ?  .  .  .  .   What function do we know of that shares each of these properites?          We have that That is, for any real number , the series will converge to .      We may similarly determine that and for all real numbers . However, we will delay until to prove this fact another way.      Suppose we wish to find the power series for the function by modifying the power series    Substituting , what is the power series for ?  .  .  .  .    What is the interval of convergence for for this series?  .  .  .  .      If a power series is known, then for any polynomial the composition has a power series given by where the domain of convergence is transformed based upon the transformation given by .  For example, if has the domain of convergence , then has the domain of convergence:         Suppose we wish to find the power series for the function .   Which of the following represents the power series for ?  .  .  .  .    For what value of is ?  .  .  .  .    Substituting with this value, which of the following is a power series for ?  .  .  .  .    Given that the domain of convergence for in is , what should be the domain of convergence for in ?  .  .  .  .       Suppose we wish to find the power series for the function . Recall that    For what value of is ?  .  .  .  .    Evaluating at the previously found value, which of the following is the power series of ?  .  .  .  .    Given that the interval of convergence for is , what is the interval of convergence for ?  .  .  .  .       Suppose we wish to find the power series for the function . Recall that    For what value of is ?  .  .  .  .    Evaluating at the previously found value, which of the following is the power series of ?  .  .  .  .    Given that the interval of convergence for is , what is the interval of convergence for ?  .  .  .  .    How can the power series for be manipulated to obtain a power series for ?  Differentiate each term.  Integrate each term.  Replace with in each term.  Replace with in each term.    Which of these power series is the result of this manipulation?  .  .  .  .       What function has power series ?  .  .  .  .        What function has power series ?  .  .  .  .        If a power series is known, then for any polynomial the product has a power series given by where the domain of convergence is the same as .      What function has power series ?   .  .  .  .       The function is one whose integrals are very important for statistics. However, it does not admit an elementary anti-derivative.   Which of the following best represents the power series for ?  .  .  .    Which of the following best represents a degree 10 polynomial that approximates ?  .  .  .    Use your choice of to estimate by computing .    Recall that for .  Which of the following represents an antiderivative of ?  .  .  .  .    Find the interval of convergence for this series.  Recall that is an antiderivative of . For which is your chosen ?  Use to estimate .     Recall that the power series for is:  Find a power series for .  Find a power series for .  Find a power series for , an antiderivative of such that .      Recall that the power series for is:  Find a power series for .  Find a power series for .  Find a power series for .      Recall that for and . We computed the power series for in .   Anti differentiate this power series and find to find a power series for . Recall that .  Find the interval of convergence for this series.     Find the power series for .  Find the interval of convergence for this series.    Find the power series for .  Find the interval of convergence for this series.      Videos      Video: Compute power series by manipulating known exponential\/trigonometric\/binomial power series    "
 },
 {
-  "id": "objectives-73",
+  "id": "objectives-70",
   "level": "2",
-  "url": "PS3.html#objectives-73",
+  "url": "PS3.html#objectives-70",
   "type": "Learning Outcomes",
   "number": "9.3",
   "title": "",
@@ -8776,9 +8596,9 @@ var ptx_lunr_docs = [
   "body": "  How might we use the known geometric power series to find the value of ?   Which operation describes the relationship between these two series?  Bifurcation  Composition  Differentiation  Multiplication   What is the result of applying this operation to ?       "
 },
 {
-  "id": "fact-43",
+  "id": "fact-37",
   "level": "2",
-  "url": "PS3.html#fact-43",
+  "url": "PS3.html#fact-37",
   "type": "Fact",
   "number": "9.3.2",
   "title": "",
@@ -8803,9 +8623,9 @@ var ptx_lunr_docs = [
   "body": "  We have that That is, for any real number , the series will converge to .   "
 },
 {
-  "id": "fact-45",
+  "id": "fact-39",
   "level": "2",
-  "url": "PS3.html#fact-45",
+  "url": "PS3.html#fact-39",
   "type": "Fact",
   "number": "9.3.5",
   "title": "",
@@ -8821,9 +8641,9 @@ var ptx_lunr_docs = [
   "body": "  Suppose we wish to find the power series for the function by modifying the power series    Substituting , what is the power series for ?  .  .  .  .    What is the interval of convergence for for this series?  .  .  .  .   "
 },
 {
-  "id": "fact-46",
+  "id": "fact-40",
   "level": "2",
-  "url": "PS3.html#fact-46",
+  "url": "PS3.html#fact-40",
   "type": "Fact",
   "number": "9.3.7",
   "title": "",
@@ -8875,9 +8695,9 @@ var ptx_lunr_docs = [
   "body": "  What function has power series ?  .  .  .  .     "
 },
 {
-  "id": "fact-47",
+  "id": "fact-41",
   "level": "2",
-  "url": "PS3.html#fact-47",
+  "url": "PS3.html#fact-41",
   "type": "Fact",
   "number": "9.3.13",
   "title": "",
@@ -8911,18 +8731,18 @@ var ptx_lunr_docs = [
   "body": " Recall that for .  Which of the following represents an antiderivative of ?  .  .  .  .    Find the interval of convergence for this series.  Recall that is an antiderivative of . For which is your chosen ?  Use to estimate .  "
 },
 {
-  "id": "activity-573",
+  "id": "activity-567",
   "level": "2",
-  "url": "PS3.html#activity-573",
+  "url": "PS3.html#activity-567",
   "type": "Activity",
   "number": "9.3.17",
   "title": "",
   "body": "  Recall that the power series for is:  Find a power series for .  Find a power series for .  Find a power series for , an antiderivative of such that .   "
 },
 {
-  "id": "activity-574",
+  "id": "activity-568",
   "level": "2",
-  "url": "PS3.html#activity-574",
+  "url": "PS3.html#activity-568",
   "type": "Activity",
   "number": "9.3.18",
   "title": "",
@@ -8938,29 +8758,29 @@ var ptx_lunr_docs = [
   "body": "  Recall that for and . We computed the power series for in .   Anti differentiate this power series and find to find a power series for . Recall that .  Find the interval of convergence for this series.   "
 },
 {
-  "id": "activity-576",
+  "id": "activity-570",
   "level": "2",
-  "url": "PS3.html#activity-576",
+  "url": "PS3.html#activity-570",
   "type": "Activity",
   "number": "9.3.20",
   "title": "",
   "body": " Find the power series for .  Find the interval of convergence for this series.  "
 },
 {
-  "id": "activity-577",
+  "id": "activity-571",
   "level": "2",
-  "url": "PS3.html#activity-577",
+  "url": "PS3.html#activity-571",
   "type": "Activity",
   "number": "9.3.21",
   "title": "",
   "body": " Find the power series for .  Find the interval of convergence for this series.  "
 },
 {
-  "id": "figure-169",
+  "id": "figure-167",
   "level": "2",
-  "url": "PS3.html#figure-169",
+  "url": "PS3.html#figure-167",
   "type": "Figure",
-  "number": "183",
+  "number": "181",
   "title": "",
   "body": "    Video: Compute power series by manipulating known exponential\/trigonometric\/binomial power series  "
 },
@@ -8971,30 +8791,30 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "9.4",
   "title": "Taylor Series (PS4)",
-  "body": " Taylor Series (PS4)     Determine a Taylor or Maclaurin series for a function.      Activities    The following tasks will help us find a mechanism to produce a power series given information about its derivatives.   Find the 2nd derivative of .       Find the 3rd derivative of .       Find the 4th derivative of .       Based on these results, which of the following should always equal the th derivative of with respect to ?           Let's use derivatives to rediscover the sequence which gives a power series representation for .   Let's say that . What must be to satisfy ?  Then, . What must be to also satisfy ?  Then, . What must be to also satisfy ?  Then, . What must be to also satisfy ?  So this term was obtained from the fact that the rd derivative of is . So finally, we may skip ahead to the th derivative: . What must be to also satisfy ?  This reveals the power series we previously found for : . So in general, if , then . What must be to produce the correct value for ?      If can be written as a power series, then there is a real number such that on some interval centered at .  In fact, the functions that can be represented as power series are exactly those functions which are infinitely differentiable on some open interval.      The Taylor series Taylor Series generated by and centered at is given by with an interval of convergence determinable by series convergence rules.  When , is called the Maclaurin series Maclaurin Series generated by .      Observe that is a function such that:  Given the zeros appearing for every even derivative above, which of these is a valid simplification of the Maclarin series for ?       Now consider the following consolidated chart: Which formula yields these alternating s and s appearing for ?          The power series we've introduced for each of the following functions are in fact their Maclaurin series (Taylor series centered at ).       For a function with a Taylor series centered at , where is called the degree Taylor polynomial Taylor polynomial generated by and centered at .  The degree Taylor polynomial can be seen as the best polynomial of degree or less for approximating for values close to . Note that the degree Taylor polynomial is also known as the linearization linearization of a function of .      Let be a function such that:  Find a Taylor polynomial for centered at of degree .  Using the table above, find a general closed form for .  Use (b) to find a Taylor series for centered at .      Let be a function such that:  Find a Taylor polynomial for centered at of degree .  Using the table above, find a general closed form for .  Use (b) to find a Taylor series for centered at .       You might have seen written as , and know that is a complex number if for some real numbers and . Note that , , , , and so on. This gives rise to the following notion.     Euler's Identity   For any real number ,        Use Euler's identity to evaluate .       Videos      Video: Determine a Taylor or Maclaurin series for a function    "
+  "body": " Taylor Series (PS4)     Determine a Taylor or Maclaurin series for a function.      Activities    The following tasks will help us find a mechanism to produce a power series given information about its derivatives.   Find the 2nd derivative of .       Find the 3rd derivative of .       Find the 4th derivative of .       Based on these results, which of the following should always equal the th derivative of with respect to ?           Let's use derivatives to rediscover the sequence which gives a power series representation for .   Let's say that . What must be to satisfy ?  Then, . What must be to also satisfy ?  Then, . What must be to also satisfy ?  Then, . What must be to also satisfy ?  So this term was obtained from the fact that the rd derivative of is . So finally, we may skip ahead to the th derivative: . What must be to also satisfy ?  This reveals the power series we previously found for : . So in general, if , then . What must be to produce the correct value for ?      If can be written as a power series, then there is a real number such that on some interval centered at .  In fact, the functions that can be represented as power series are exactly those functions which are infinitely differentiable on some open interval.      The Taylor series Taylor Series generated by and centered at is given by with an interval of convergence determinable by series convergence rules.  When , is called the Maclaurin series Maclaurin Series generated by .      Observe that is a function such that:  Given the zeros appearing for every even derivative above, which of these is a valid simplification of the Maclarin series for ?       Now consider the following consolidated chart: Which formula yields these alternating s and s appearing for ?          The power series we've introduced for each of the following functions are in fact their Maclaurin series (Taylor series centered at ).       For a function with a Taylor series centered at , where is called the degree Taylor polynomial Taylor polynomial generated by and centered at .  The degree Taylor polynomial can be seen as the best polynomial of degree or less for approximating for values close to . Note that the degree Taylor polynomial is also known as the linearization linearization of a function of .      Let be a function such that:  Find a Taylor polynomial for centered at of degree .  Using the table above, find a general closed form for .  Use (b) to find a Taylor series for centered at .      Let be a function such that:  Find a Taylor polynomial for centered at of degree .  Using the table above, find a general closed form for .  Use (b) to find a Taylor series for centered at .       You might have seen written as , and know that is a complex number if for some real numbers and . Note that , , , , and so on. This gives rise to the following notion.     Euler's Identity   For any real number ,        Use Euler's identity to evaluate .      Use Euler's identity to evaluate .      Use the result of to evaluate .       Videos      Video: Determine a Taylor or Maclaurin series for a function    "
 },
 {
-  "id": "objectives-74",
+  "id": "objectives-71",
   "level": "2",
-  "url": "PS4.html#objectives-74",
+  "url": "PS4.html#objectives-71",
   "type": "Learning Outcomes",
   "number": "9.4",
   "title": "",
   "body": "   Determine a Taylor or Maclaurin series for a function.    "
 },
 {
-  "id": "activity-578",
+  "id": "activity-572",
   "level": "2",
-  "url": "PS4.html#activity-578",
+  "url": "PS4.html#activity-572",
   "type": "Activity",
   "number": "9.4.1",
   "title": "",
   "body": "  The following tasks will help us find a mechanism to produce a power series given information about its derivatives.   Find the 2nd derivative of .       Find the 3rd derivative of .       Find the 4th derivative of .       Based on these results, which of the following should always equal the th derivative of with respect to ?        "
 },
 {
-  "id": "activity-579",
+  "id": "activity-573",
   "level": "2",
-  "url": "PS4.html#activity-579",
+  "url": "PS4.html#activity-573",
   "type": "Activity",
   "number": "9.4.2",
   "title": "",
@@ -9019,9 +8839,9 @@ var ptx_lunr_docs = [
   "body": "  The Taylor series Taylor Series generated by and centered at is given by with an interval of convergence determinable by series convergence rules.  When , is called the Maclaurin series Maclaurin Series generated by .   "
 },
 {
-  "id": "activity-580",
+  "id": "activity-574",
   "level": "2",
-  "url": "PS4.html#activity-580",
+  "url": "PS4.html#activity-574",
   "type": "Activity",
   "number": "9.4.5",
   "title": "",
@@ -9046,18 +8866,18 @@ var ptx_lunr_docs = [
   "body": "  For a function with a Taylor series centered at , where is called the degree Taylor polynomial Taylor polynomial generated by and centered at .  The degree Taylor polynomial can be seen as the best polynomial of degree or less for approximating for values close to . Note that the degree Taylor polynomial is also known as the linearization linearization of a function of .   "
 },
 {
-  "id": "activity-581",
+  "id": "activity-575",
   "level": "2",
-  "url": "PS4.html#activity-581",
+  "url": "PS4.html#activity-575",
   "type": "Activity",
   "number": "9.4.8",
   "title": "",
   "body": "  Let be a function such that:  Find a Taylor polynomial for centered at of degree .  Using the table above, find a general closed form for .  Use (b) to find a Taylor series for centered at .   "
 },
 {
-  "id": "activity-582",
+  "id": "activity-576",
   "level": "2",
-  "url": "PS4.html#activity-582",
+  "url": "PS4.html#activity-576",
   "type": "Activity",
   "number": "9.4.9",
   "title": "",
@@ -9078,7 +8898,7 @@ var ptx_lunr_docs = [
   "url": "PS4.html#definition-PS4eulerIdentity",
   "type": "Definition",
   "number": "9.4.11",
-  "title": "Euler's Identity.",
+  "title": "Euler’s Identity.",
   "body": " Euler's Identity   For any real number ,     "
 },
 {
@@ -9091,11 +8911,29 @@ var ptx_lunr_docs = [
   "body": "  Use Euler's identity to evaluate .   "
 },
 {
-  "id": "figure-170",
+  "id": "activity-PS4eulerIdentityExample2",
   "level": "2",
-  "url": "PS4.html#figure-170",
+  "url": "PS4.html#activity-PS4eulerIdentityExample2",
+  "type": "Activity",
+  "number": "9.4.13",
+  "title": "",
+  "body": "  Use Euler's identity to evaluate .   "
+},
+{
+  "id": "activity-PS4eulerIdentityExample3",
+  "level": "2",
+  "url": "PS4.html#activity-PS4eulerIdentityExample3",
+  "type": "Activity",
+  "number": "9.4.14",
+  "title": "",
+  "body": "  Use the result of to evaluate .   "
+},
+{
+  "id": "figure-168",
+  "level": "2",
+  "url": "PS4.html#figure-168",
   "type": "Figure",
-  "number": "184",
+  "number": "182",
   "title": "",
   "body": "    Video: Determine a Taylor or Maclaurin series for a function  "
 },

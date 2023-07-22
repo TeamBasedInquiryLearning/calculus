@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>TBIL-Calc Power Series (PS1)</title>
@@ -14,20 +14,38 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
 <meta property="book:author" content="TBIL Institute Fellows">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
-    renderActions: {
-        findScript: [10, function (doc) {
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
             document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
                 var display = !!node.type.match(/; *mode=display/);
                 var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
@@ -37,58 +55,69 @@ window.MathJax = {
                 math.end = {node: text, delim: '', n: 0};
                 doc.math.push(math);
             });
-        }, '']
-    },
+        },
+        ""
+      ]
+    }
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
-<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
-<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/shell_crc.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/banner_crc.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/navbar_crc.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/toc_crc.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/shell_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/banner_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/navbar_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/toc_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/colors_red_blue.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/setcolors.css" rel="stylesheet" type="text/css">
 </head>
 <body class="pretext book ignore-math">
-<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="cal1.html"><span class="title">Calculus for Team-Based Inquiry Learning:</span> <span class="subtitle">2023 Edition PREVIEW</span></a></h1>
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus for Team-Based Inquiry Learning:</span> <span class="subtitle">2023 Edition</span></a></h1>
 <p class="byline">TBIL Institute Fellows</p>
 </div>
-<div id="searchresultsplaceholder" style="display: none">
-<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms" class="searchterms"></span>
 </h2>
-<div id="searchempty"><span>No results.</span></div>
-<ol id="searchresults"></ol>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
 </div>
-</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
 <li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
 <ol class="hidden avatar">
 <li data-val="You!" tabindex="-1">
@@ -191,7 +220,7 @@ window.MathJax = {
 </ol>
 </li>
 </ol></div></button><span class="treebuttons"><a class="previous-button button" href="PS.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="PS.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="PS2.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
-<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+<input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()">🔍</button>
 </div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
@@ -208,7 +237,7 @@ window.MathJax = {
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural">
 <li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li>
 <div class="toc-item"><a href="LT.html" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a></div>
@@ -577,18 +606,6 @@ window.MathJax = {
 <div class="toc-item"><a href="CO3.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Parametric/vector arclength (CO3)</span></a></div>
 <ul class="structural"><li><div class="toc-item"><a href="CO3.html#subsection-95" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Activities</span></a></div></li></ul>
 </li>
-<li>
-<div class="toc-item"><a href="CO4.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Polar coordinates (CO4)</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="CO4.html#subsection-96" class="internal"><span class="codenumber">7.4.1</span> <span class="title">Activities</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="CO5.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Polar Arclength (CO5)</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="CO5.html#subsection-97" class="internal"><span class="codenumber">7.5.1</span> <span class="title">Activities</span></a></div></li></ul>
-</li>
-<li>
-<div class="toc-item"><a href="CO6.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Polar area (CO6)</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="CO6.html#subsection-98" class="internal"><span class="codenumber">7.6.1</span> <span class="title">Activities</span></a></div></li></ul>
-</li>
 </ul>
 </li>
 <li>
@@ -597,64 +614,64 @@ window.MathJax = {
 <li>
 <div class="toc-item"><a href="SQ1.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Sequence Formulas (SQ1)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="SQ1.html#subsection-99" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="SQ1.html#subsection-100" class="internal"><span class="codenumber">8.1.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="SQ1.html#subsection-96" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ1.html#subsection-97" class="internal"><span class="codenumber">8.1.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="SQ2.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Sequence Properties and Limits (SQ2)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="SQ2.html#subsection-101" class="internal"><span class="codenumber">8.2.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="SQ2.html#subsection-102" class="internal"><span class="codenumber">8.2.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="SQ2.html#subsection-98" class="internal"><span class="codenumber">8.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ2.html#subsection-99" class="internal"><span class="codenumber">8.2.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="SQ3.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Partial Sum Sequence (SQ3)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="SQ3.html#subsection-103" class="internal"><span class="codenumber">8.3.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="SQ3.html#subsection-104" class="internal"><span class="codenumber">8.3.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="SQ3.html#subsection-100" class="internal"><span class="codenumber">8.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ3.html#subsection-101" class="internal"><span class="codenumber">8.3.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="SQ4.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Geometric Series (SQ4)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="SQ4.html#subsection-105" class="internal"><span class="codenumber">8.4.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="SQ4.html#subsection-106" class="internal"><span class="codenumber">8.4.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="SQ4.html#subsection-102" class="internal"><span class="codenumber">8.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ4.html#subsection-103" class="internal"><span class="codenumber">8.4.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="SQ5.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Basic Convergence Tests (SQ5)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="SQ5.html#subsection-107" class="internal"><span class="codenumber">8.5.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="SQ5.html#subsection-108" class="internal"><span class="codenumber">8.5.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="SQ5.html#subsection-104" class="internal"><span class="codenumber">8.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ5.html#subsection-105" class="internal"><span class="codenumber">8.5.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="SQ6.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Comparison Tests (SQ6)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="SQ6.html#subsection-109" class="internal"><span class="codenumber">8.6.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="SQ6.html#subsection-110" class="internal"><span class="codenumber">8.6.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="SQ6.html#subsection-106" class="internal"><span class="codenumber">8.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ6.html#subsection-107" class="internal"><span class="codenumber">8.6.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="SQ7.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Ratio and Root Tests (SQ7)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="SQ7.html#subsection-111" class="internal"><span class="codenumber">8.7.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="SQ7.html#subsection-112" class="internal"><span class="codenumber">8.7.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="SQ7.html#subsection-108" class="internal"><span class="codenumber">8.7.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ7.html#subsection-109" class="internal"><span class="codenumber">8.7.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="SQ8.html" class="internal"><span class="codenumber">8.8</span> <span class="title">Absolute Convergence (SQ8)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="SQ8.html#subsection-113" class="internal"><span class="codenumber">8.8.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="SQ8.html#subsection-114" class="internal"><span class="codenumber">8.8.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="SQ8.html#subsection-110" class="internal"><span class="codenumber">8.8.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ8.html#subsection-111" class="internal"><span class="codenumber">8.8.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="SQ9.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Series Convergence Strategy (SQ9)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="SQ9.html#subsection-115" class="internal"><span class="codenumber">8.9.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="SQ9.html#subsection-116" class="internal"><span class="codenumber">8.9.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="SQ9.html#subsection-112" class="internal"><span class="codenumber">8.9.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ9.html#subsection-113" class="internal"><span class="codenumber">8.9.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -665,29 +682,29 @@ window.MathJax = {
 <li class="active">
 <div class="toc-item"><a href="PS1.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Power Series (PS1)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="PS1.html#subsection-117" class="internal"><span class="codenumber">9.1.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="PS1.html#subsection-118" class="internal"><span class="codenumber">9.1.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="PS1.html#subsection-114" class="internal"><span class="codenumber">9.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="PS1.html#subsection-115" class="internal"><span class="codenumber">9.1.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="PS2.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Convergence of Power Series (PS2)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="PS2.html#subsection-119" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="PS2.html#subsection-120" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="PS2.html#subsection-116" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="PS2.html#subsection-117" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="PS3.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Manipulation of Power Series (PS3)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="PS3.html#subsection-121" class="internal"><span class="codenumber">9.3.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="PS3.html#subsection-122" class="internal"><span class="codenumber">9.3.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="PS3.html#subsection-118" class="internal"><span class="codenumber">9.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="PS3.html#subsection-119" class="internal"><span class="codenumber">9.3.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="PS4.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Taylor Series (PS4)</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="PS4.html#subsection-123" class="internal"><span class="codenumber">9.4.1</span> <span class="title">Activities</span></a></div></li>
-<li><div class="toc-item"><a href="PS4.html#subsection-124" class="internal"><span class="codenumber">9.4.2</span> <span class="title">Videos</span></a></div></li>
+<li><div class="toc-item"><a href="PS4.html#subsection-120" class="internal"><span class="codenumber">9.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="PS4.html#subsection-121" class="internal"><span class="codenumber">9.4.2</span> <span class="title">Videos</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -703,14 +720,14 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="PS1"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">9.1</span> <span class="title">Power Series (PS1)</span>
 </h2>
-<article class="objectives goal-like" id="objectives-71"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
-<ul class="disc"><li id="li-2209"><div class="para" id="p-3013">Approximate functions defined as power series.</div></li></ul></article><section class="subsection" id="subsection-117"><h3 class="heading hide-type">
+<article class="objectives goal-like" id="objectives-68"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="li-2203"><div class="para" id="p-2972">Approximate functions defined as power series.</div></li></ul></article><section class="subsection" id="subsection-114"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">9.1.1</span> <span class="title">Activities</span>
 </h3>
-<article class="activity project-like" id="activity-551"><h4 class="heading">
+<article class="activity project-like" id="activity-545"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.1.1</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="introduction-323"><div class="para logical" id="p-3014">
+<div class="introduction" id="introduction-320"><div class="para logical" id="p-2973">
 <div class="para">Suppose we could define a function as an “infinite-length polynomial”:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -718,71 +735,71 @@ f(x)=1+x+x^2+x^3+x^4+\cdots\text{.}
 \end{equation*}
 </div>
 </div></div>
-<article class="task exercise-like" id="task-951"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="p-3015">Would <span class="process-math">\(f(1)\)</span> be well-defined as a finite real number?</div>
+<article class="task exercise-like" id="task-928"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-2974">Would <span class="process-math">\(f(1)\)</span> be well-defined as a finite real number?</div>
 <ol class="upper-alpha cols2">
-<li id="li-2210"><div class="para" id="p-derived-li-2210">No, the sum would diverge towards <span class="process-math">\(\infty\text{.}\)</span>
+<li id="li-2204"><div class="para" id="p-derived-li-2204">No, the sum would diverge towards <span class="process-math">\(\infty\text{.}\)</span>
 </div></li>
-<li id="li-2211"><div class="para" id="p-derived-li-2211">No, the sum would oscillate between <span class="process-math">\(0\)</span> and <span class="process-math">\(1\text{.}\)</span>
+<li id="li-2205"><div class="para" id="p-derived-li-2205">No, the sum would oscillate between <span class="process-math">\(0\)</span> and <span class="process-math">\(1\text{.}\)</span>
 </div></li>
-<li id="li-2212"><div class="para" id="p-derived-li-2212">Yes, the sum would be <span class="process-math">\(0\text{.}\)</span>
+<li id="li-2206"><div class="para" id="p-derived-li-2206">Yes, the sum would be <span class="process-math">\(0\text{.}\)</span>
 </div></li>
-<li id="li-2213"><div class="para" id="p-derived-li-2213">Yes, the sum would be <span class="process-math">\(1\text{.}\)</span>
+<li id="li-2207"><div class="para" id="p-derived-li-2207">Yes, the sum would be <span class="process-math">\(1\text{.}\)</span>
 </div></li>
-</ol></article><article class="task exercise-like" id="task-952"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="p-3016">Would <span class="process-math">\(f(-1)\)</span> be well-defined as a finite real number?</div>
+</ol></article><article class="task exercise-like" id="task-929"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-2975">Would <span class="process-math">\(f(-1)\)</span> be well-defined as a finite real number?</div>
 <ol class="upper-alpha cols2">
-<li id="li-2214"><div class="para" id="p-derived-li-2214">No, the sum would diverge towards <span class="process-math">\(\infty\text{.}\)</span>
+<li id="li-2208"><div class="para" id="p-derived-li-2208">No, the sum would diverge towards <span class="process-math">\(\infty\text{.}\)</span>
 </div></li>
-<li id="li-2215"><div class="para" id="p-derived-li-2215">No, the sum would oscillate between <span class="process-math">\(0\)</span> and <span class="process-math">\(1\text{.}\)</span>
+<li id="li-2209"><div class="para" id="p-derived-li-2209">No, the sum would oscillate between <span class="process-math">\(0\)</span> and <span class="process-math">\(1\text{.}\)</span>
 </div></li>
-<li id="li-2216"><div class="para" id="p-derived-li-2216">Yes, the sum would be <span class="process-math">\(0\text{.}\)</span>
+<li id="li-2210"><div class="para" id="p-derived-li-2210">Yes, the sum would be <span class="process-math">\(0\text{.}\)</span>
 </div></li>
-<li id="li-2217"><div class="para" id="p-derived-li-2217">Yes, the sum would be <span class="process-math">\(1\text{.}\)</span>
+<li id="li-2211"><div class="para" id="p-derived-li-2211">Yes, the sum would be <span class="process-math">\(1\text{.}\)</span>
 </div></li>
-</ol></article><article class="task exercise-like" id="task-953"><h5 class="heading"><span class="codenumber">(c)</span></h5>
-<div class="para" id="p-3017">Would <span class="process-math">\(f(1/2)\)</span> be well-defined as a finite real number?</div>
+</ol></article><article class="task exercise-like" id="task-930"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-2976">Would <span class="process-math">\(f(1/2)\)</span> be well-defined as a finite real number?</div>
 <ol class="upper-alpha cols2">
-<li id="li-2218"><div class="para" id="p-derived-li-2218">No, the sum would diverge towards <span class="process-math">\(\infty\text{.}\)</span>
+<li id="li-2212"><div class="para" id="p-derived-li-2212">No, the sum would diverge towards <span class="process-math">\(\infty\text{.}\)</span>
 </div></li>
-<li id="li-2219"><div class="para" id="p-derived-li-2219">Yes, the sum would be approximately <span class="process-math">\(1\text{.}\)</span>
+<li id="li-2213"><div class="para" id="p-derived-li-2213">Yes, the sum would be approximately <span class="process-math">\(1\text{.}\)</span>
 </div></li>
-<li id="li-2220"><div class="para" id="p-derived-li-2220">Yes, the sum would be approximately <span class="process-math">\(2\text{.}\)</span>
+<li id="li-2214"><div class="para" id="p-derived-li-2214">Yes, the sum would be approximately <span class="process-math">\(2\text{.}\)</span>
 </div></li>
-<li id="li-2221"><div class="para" id="p-derived-li-2221">Yes, the sum would be exactly <span class="process-math">\(2\text{.}\)</span>
+<li id="li-2215"><div class="para" id="p-derived-li-2215">Yes, the sum would be exactly <span class="process-math">\(2\text{.}\)</span>
 </div></li>
-</ol></article><article class="task exercise-like" id="task-954"><h5 class="heading"><span class="codenumber">(d)</span></h5>
-<div class="para" id="p-3018">When is <span class="process-math">\(f(x)\)</span> well-defined as a finite real number?</div>
+</ol></article><article class="task exercise-like" id="task-931"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="p-2977">When is <span class="process-math">\(f(x)\)</span> well-defined as a finite real number?</div>
 <ol class="upper-alpha cols2">
-<li id="li-2222"><div class="para" id="p-derived-li-2222">Its value is <span class="process-math">\(\frac{x}{1-x}\)</span> when <span class="process-math">\(|x|&lt;1\text{.}\)</span>
+<li id="li-2216"><div class="para" id="p-derived-li-2216">Its value is <span class="process-math">\(\frac{x}{1-x}\)</span> when <span class="process-math">\(|x|&lt;1\text{.}\)</span>
 </div></li>
-<li id="li-2223"><div class="para" id="p-derived-li-2223">Its value is <span class="process-math">\(\frac{x}{1-x}\)</span> when <span class="process-math">\(x&lt;1\text{.}\)</span>
+<li id="li-2217"><div class="para" id="p-derived-li-2217">Its value is <span class="process-math">\(\frac{x}{1-x}\)</span> when <span class="process-math">\(x&lt;1\text{.}\)</span>
 </div></li>
-<li id="li-2224"><div class="para" id="p-derived-li-2224">Its value is <span class="process-math">\(\frac{1}{1-x}\)</span> when <span class="process-math">\(|x|&lt;1\text{.}\)</span>
+<li id="li-2218"><div class="para" id="p-derived-li-2218">Its value is <span class="process-math">\(\frac{1}{1-x}\)</span> when <span class="process-math">\(|x|&lt;1\text{.}\)</span>
 </div></li>
-<li id="li-2225"><div class="para" id="p-derived-li-2225">Its value is <span class="process-math">\(\frac{1}{1-x}\)</span> when <span class="process-math">\(x&lt;1\text{.}\)</span>
+<li id="li-2219"><div class="para" id="p-derived-li-2219">Its value is <span class="process-math">\(\frac{1}{1-x}\)</span> when <span class="process-math">\(x&lt;1\text{.}\)</span>
 </div></li>
 </ol></article></article><article class="definition definition-like" id="def-PS1powerseries"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.1.2</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="p-3019">
+<div class="para logical" id="p-2978">
 <div class="para">Given a sequence of numbers <span class="process-math">\(a_n\)</span> and a number <span class="process-math">\(c\text{,}\)</span> we may define a function <span class="process-math">\(f(x)\)</span> as a <dfn class="terminology">power series</dfn>:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 f(x)=\sum_{n=0}^\infty a_n(x-c)^n = a_0+a_1(x-c)+a_2(x-c)^2+a_3(x-c)^3+\cdots\text{.}
 \end{equation*}
 </div>
-</div> <div class="para logical" id="p-3020">
+</div> <div class="para logical" id="p-2979">
 <div class="para">The above power series is said to be <dfn class="terminology">centered at <span class="process-math">\(c\)</span></dfn>. Often power series are centered at <span class="process-math">\(0\text{;}\)</span> in this case, they may be written as:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 f(x)=\sum_{n=0}^\infty a_n x^n = a_0+a_1x+a_2x^2+a_3x^3+\cdots\text{.}
 \end{equation*}
 </div>
-</div> <div class="para" id="p-3021">The domain of this function (often referred to as the <dfn class="terminology">domain of convergence</dfn> or <dfn class="terminology">interval of convergence</dfn>) is exactly the set of <span class="process-math">\(x\)</span>-values for which the series converges.</div></article><article class="activity project-like" id="activity-PS1comparetoexp"><h4 class="heading">
+</div> <div class="para" id="p-2980">The domain of this function (often referred to as the <dfn class="terminology">domain of convergence</dfn> or <dfn class="terminology">interval of convergence</dfn>) is exactly the set of <span class="process-math">\(x\)</span>-values for which the series converges.</div></article><article class="activity project-like" id="activity-PS1comparetoexp"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.1.3</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="introduction-324"><div class="para logical" id="p-3022">
+<div class="introduction" id="introduction-321"><div class="para logical" id="p-2981">
 <div class="para">In <a href="PS2.html" class="internal" title="Section 9.2: Convergence of Power Series (PS2)">Section 9.2</a> we will learn how to prove that <span class="process-math">\(\displaystyle \sum_{n=0}^\infty \frac{x^n}{n!}\)</span> converges for each real value <span class="process-math">\(x\text{.}\)</span> Thus the function</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/PS2.html">
 \begin{equation*}
@@ -791,10 +808,10 @@ f(x)=\displaystyle \sum_{n=0}^\infty \frac{x^n}{n!}=1+x+\frac{x^2}{2}+\frac{x^3}
 </div>
 <div class="para">has the domain of all real numbers.</div>
 </div></div>
-<article class="task exercise-like" id="task-955"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para logical" id="p-3023">
+<article class="task exercise-like" id="task-932"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="p-2982">
 <div class="para">To estimate <span class="process-math">\(f(2)\text{,}\)</span> use technology to compute the first few terms as follows:</div>
-<div class="displaymath process-math" id="md-39">
+<div class="displaymath process-math" id="md-41">
 \begin{align*}
 f(2)=\sum_{n=0}^\infty \frac{2^n}{n!} \amp = 1+2+\frac{2^2}{2}+\frac{2^3}{6}+\frac{2^4}{24}+\frac{2^5}{120}+\cdots \\
 \amp = \unknown +\cdots \\
@@ -802,18 +819,18 @@ f(2)=\sum_{n=0}^\infty \frac{2^n}{n!} \amp = 1+2+\frac{2^2}{2}+\frac{2^3}{6}+\fr
 \end{align*}
 </div>
 </div>
-<div class="para logical" id="p-3024">
+<div class="para logical" id="p-2983">
 <div class="para">Which of these choices is the closest to this value?</div>
 <ol class="upper-alpha cols2">
-<li id="li-2226"><div class="para" id="p-derived-li-2226"><span class="process-math">\(\sqrt{2}\approx 1.414\text{.}\)</span></div></li>
-<li id="li-2227"><div class="para" id="p-derived-li-2227"><span class="process-math">\(e^2\approx 7.389\text{.}\)</span></div></li>
-<li id="li-2228"><div class="para" id="p-derived-li-2228"><span class="process-math">\(\sin(2)\approx 0.909\text{.}\)</span></div></li>
-<li id="li-2229"><div class="para" id="p-derived-li-2229"><span class="process-math">\(\cos(2)\approx -0.416\text{.}\)</span></div></li>
+<li id="li-2220"><div class="para" id="p-derived-li-2220"><span class="process-math">\(\sqrt{2}\approx 1.414\text{.}\)</span></div></li>
+<li id="li-2221"><div class="para" id="p-derived-li-2221"><span class="process-math">\(e^2\approx 7.389\text{.}\)</span></div></li>
+<li id="li-2222"><div class="para" id="p-derived-li-2222"><span class="process-math">\(\sin(2)\approx 0.909\text{.}\)</span></div></li>
+<li id="li-2223"><div class="para" id="p-derived-li-2223"><span class="process-math">\(\cos(2)\approx -0.416\text{.}\)</span></div></li>
 </ol>
-</div></article><article class="task exercise-like" id="task-956"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para logical" id="p-3025">
+</div></article><article class="task exercise-like" id="task-933"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="p-2984">
 <div class="para">Estimate <span class="process-math">\(f(-1)\)</span> in a similar fashion:</div>
-<div class="displaymath process-math" id="md-40">
+<div class="displaymath process-math" id="md-42">
 \begin{align*}
 f(-1)=\sum_{n=0}^\infty \frac{\unknown}{n!} \amp = \unknown+\unknown+\unknown+\unknown+\unknown+\unknown+\cdots \\
 \amp = \unknown +\cdots \\
@@ -821,18 +838,18 @@ f(-1)=\sum_{n=0}^\infty \frac{\unknown}{n!} \amp = \unknown+\unknown+\unknown+\u
 \end{align*}
 </div>
 </div>
-<div class="para logical" id="p-3026">
+<div class="para logical" id="p-2985">
 <div class="para">Which of these choices is the closest to this value?</div>
 <ol class="upper-alpha cols2">
-<li id="li-2230"><div class="para" id="p-derived-li-2230"><span class="process-math">\(\frac{1}{\sqrt{1}}\approx 1.000\text{.}\)</span></div></li>
-<li id="li-2231"><div class="para" id="p-derived-li-2231"><span class="process-math">\(\frac{1}{e^1}\approx 0.369\text{.}\)</span></div></li>
-<li id="li-2232"><div class="para" id="p-derived-li-2232"><span class="process-math">\(\frac{1}{\sin(1)}\approx 1.188\text{.}\)</span></div></li>
-<li id="li-2233"><div class="para" id="p-derived-li-2233"><span class="process-math">\(\frac{1}{\cos(1)}\approx 1.851\text{.}\)</span></div></li>
+<li id="li-2224"><div class="para" id="p-derived-li-2224"><span class="process-math">\(\frac{1}{\sqrt{1}}\approx 1.000\text{.}\)</span></div></li>
+<li id="li-2225"><div class="para" id="p-derived-li-2225"><span class="process-math">\(\frac{1}{e^1}\approx 0.369\text{.}\)</span></div></li>
+<li id="li-2226"><div class="para" id="p-derived-li-2226"><span class="process-math">\(\frac{1}{\sin(1)}\approx 1.188\text{.}\)</span></div></li>
+<li id="li-2227"><div class="para" id="p-derived-li-2227"><span class="process-math">\(\frac{1}{\cos(1)}\approx 1.851\text{.}\)</span></div></li>
 </ol>
-</div></article></article><article class="activity project-like" id="activity-553"><h4 class="heading">
+</div></article></article><article class="activity project-like" id="activity-547"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.1.4</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="p-3027">
+<div class="para logical" id="p-2986">
 <div class="para">The function</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -846,24 +863,24 @@ f_5(x)=1+x+\frac{x^2}{2}+\frac{x^3}{6}+\frac{x^4}{24}+\frac{x^5}{120}
 \end{equation*}
 </div>
 <div class="para">alongside the graph of <span class="process-math">\(e^x\)</span> reveals the illustration given in the following figure.</div>
-</div> <figure class="figure figure-like" id="figure-166"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="generated/latex-image/plotf5exp.svg" role="img" class="contained" alt="Plots of \(y=f_5(x), y=e^x\text{.}\)"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">180<span class="period">.</span></span><span class="space"> </span>Plots of <span class="process-math">\(y=f_5(x), y=e^x\text{.}\)</span></figcaption></figure> <div class="para" id="p-3028">What might we conclude?</div> <ol class="upper-alpha">
-<li id="li-2234"><div class="para" id="p-derived-li-2234">
+</div> <figure class="figure figure-like" id="figure-164"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="generated/latex-image/PS1-plotf5exp.svg" role="img" class="contained" alt="Plots of \(y=f_5(x), y=e^x\text{.}\)"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">178<span class="period">.</span></span><span class="space"> </span>Plots of <span class="process-math">\(y=f_5(x), y=e^x\text{.}\)</span></figcaption></figure> <div class="para" id="p-2987">What might we conclude?</div> <ol class="upper-alpha">
+<li id="li-2228"><div class="para" id="p-derived-li-2228">
 <span class="process-math">\(e^x\approx 1+x+\frac{x^2}{2}+\frac{x^3}{6}+\frac{x^4}{24}+\frac{x^5}{120}\)</span> near <span class="process-math">\(x=0\text{.}\)</span>
 </div></li>
-<li id="li-2235"><div class="para" id="p-derived-li-2235">
+<li id="li-2229"><div class="para" id="p-derived-li-2229">
 <span class="process-math">\(e^x= 1+x+\frac{x^2}{2}+\frac{x^3}{6}+\frac{x^4}{24}+\frac{x^5}{120}\)</span> near <span class="process-math">\(x=0\text{.}\)</span>
 </div></li>
-<li id="li-2236"><div class="para" id="p-derived-li-2236">
+<li id="li-2230"><div class="para" id="p-derived-li-2230">
 <span class="process-math">\(e^x\approx 1+x+\frac{x^2}{2}+\frac{x^3}{6}+\frac{x^4}{24}+\frac{x^5}{120}\)</span> for all <span class="process-math">\(x\text{.}\)</span>
 </div></li>
-<li id="li-2237"><div class="para" id="p-derived-li-2237">
+<li id="li-2231"><div class="para" id="p-derived-li-2231">
 <span class="process-math">\(e^x= 1+x+\frac{x^2}{2}+\frac{x^3}{6}+\frac{x^4}{24}+\frac{x^5}{120}\)</span> for all <span class="process-math">\(x\text{.}\)</span>
 </div></li>
 </ol></article><article class="definition definition-like" id="definition-44"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.1.5</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="p-3029">
+<div class="para logical" id="p-2988">
 <div class="para">Given a power series</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -878,9 +895,9 @@ f_N(x)=\sum_{n=0}^N a_n(x-c)^n = a_0+a_1(x-c)+a_2(x-c)^2+\cdots+a_N(x-c)^N
 </div>
 <div class="para">be its <dfn class="terminology">degree <span class="process-math">\(N\)</span> polynomial approximation</dfn> for <span class="process-math">\(x\)</span> nearby <span class="process-math">\(c\text{.}\)</span>
 </div>
-</div> <div class="para logical" id="p-3030">
+</div> <div class="para logical" id="p-2989">
 <div class="para">For example,</div>
-<div class="displaymath process-math" id="md-41">
+<div class="displaymath process-math" id="md-43">
 \begin{align*}
 g_3(x)=\sum_{n=0}^3 n^2 (x-1)^n &amp;= 0+(x-1)+4(x-1)^2+9(x-1)^3\\
 &amp;= -6+20x-23x^3+9x^3
@@ -891,22 +908,22 @@ g_3(x)=\sum_{n=0}^3 n^2 (x-1)^n &amp;= 0+(x-1)+4(x-1)^2+9(x-1)^3\\
 </div></article><article class="activity project-like" id="activity-PS1generic"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">9.1.6</span><span class="period">.</span>
 </h4>
-<div class="introduction" id="introduction-325"><div class="para" id="p-3031">Consider a function <span class="process-math">\(p(x)\)</span> defined by <span class="process-math">\(\displaystyle p(x)=\sum_{n=0}^\infty \frac{2^n}{(2n)!}x^n.\)</span>
+<div class="introduction" id="introduction-322"><div class="para" id="p-2990">Consider a function <span class="process-math">\(p(x)\)</span> defined by <span class="process-math">\(\displaystyle p(x)=\sum_{n=0}^\infty \frac{2^n}{(2n)!}x^n.\)</span>
 </div></div>
-<article class="task exercise-like" id="task-957"><h5 class="heading"><span class="codenumber">(a)</span></h5>
-<div class="para" id="p-3032">Find <span class="process-math">\(p_3(x)\text{,}\)</span> the degree 4 polynomial approximation for <span class="process-math">\(p(x)\text{.}\)</span>
-</div></article><article class="task exercise-like" id="task-958"><h5 class="heading"><span class="codenumber">(b)</span></h5>
-<div class="para" id="p-3033">Use <span class="process-math">\(p_3(x)\)</span> to estimate <span class="process-math">\(p(-1)\text{.}\)</span>
-</div></article></article></section><section class="subsection" id="subsection-118"><h3 class="heading hide-type">
+<article class="task exercise-like" id="task-934"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-2991">Find <span class="process-math">\(p_3(x)\text{,}\)</span> the degree 4 polynomial approximation for <span class="process-math">\(p(x)\text{.}\)</span>
+</div></article><article class="task exercise-like" id="task-935"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-2992">Use <span class="process-math">\(p_3(x)\)</span> to estimate <span class="process-math">\(p(-1)\text{.}\)</span>
+</div></article></article></section><section class="subsection" id="subsection-115"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">9.1.2</span> <span class="title">Videos</span>
 </h3>
-<figure class="figure figure-like" id="figure-167"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-PS1" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/MpJKiKSVIc0?&amp;modestbranding=1&amp;rel=0"></iframe></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">181<span class="period">.</span></span><span class="space"> </span>Video: Approximate functions defined as power series</figcaption></figure></section></section></div>
+<figure class="figure figure-like" id="figure-165"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-PS1" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/MpJKiKSVIc0?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">179<span class="period">.</span></span><span class="space"> </span>Video: Approximate functions defined as power series</figcaption></figure></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="PS.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="PS2.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
 </div>
-<div id="ptx-page-footer">
+<div id="ptx-page-footer" class="ptx-page-footer">
 <a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
 </div>
 </body>
