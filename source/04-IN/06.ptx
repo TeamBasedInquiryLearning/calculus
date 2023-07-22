@@ -90,12 +90,12 @@
             <p>Using what you got find <m>A'(x)</m>.  Explain what derivative rule(s) you used.</p>
         </task>
        <task>
-        <p>Using what you found what is the derivative of <m>A(x) = \int_x^{x^2}(t+2)\,dt</m>?</p>
-           <ol marker="A." cols="2">
+        <p>Using what you found, what is the derivative of <m>A(x) = \int_x^{x^2}(t+2)\,dt</m>?</p>
+           <ol marker="A.">
               <li><p><m>A'(x) = 2x(x+2)-(x+2)</m></p></li>
-                <li><p><m>A'(x) = (x+2)-2x(x^2+2)</m></p></li>
-                <li><p><m>A'(x) = (x^2+2)-(x+2)</m></p></li>
-                <li><p><m>A'(x) = 2x(x^2+2)-(x+2)</m></p></li>
+              <li><p><m>A'(x) = (x+2)-2x(x^2+2)</m></p></li>
+              <li><p><m>A'(x) = (x^2+2)-(x+2)</m></p></li>
+              <li><p><m>A'(x) = 2x(x^2+2)-(x+2)</m></p></li>
             </ol>
         </task>
     </activity>

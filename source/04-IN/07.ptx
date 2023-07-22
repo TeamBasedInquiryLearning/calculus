@@ -58,7 +58,7 @@ wherever <m>f(x)</m> may change from positive to negative, or vice versa.
   </p>
     <figure>
         <image xml:id="IN7-image-integral-as-total-area">
-            <sageplot><xi:include href="./sageplot/integral-as-total-area.sage" parse="text"/></sageplot>
+            <sageplot><xi:include href="./sageplot/integral-as-total-area.sage" parse="text"/> </sageplot>
             <description>The total area is illustrated by breaking up the integral from 0 to 5 at 2 and 4
             where (x-2) and (x-4) are equal to 0.</description>
         </image>

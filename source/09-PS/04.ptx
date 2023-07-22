@@ -456,13 +456,31 @@ This gives rise to the following notion.
     
     
     
-     <activity xml:id="activity-PS4eulerIdentityExample">
-         <statement>
-            <p>
-                Use Euler's identity to evaluate <m>e^{i\pi}</m>.
-            </p>
-        </statement>
-    </activity>
+        <activity xml:id="activity-PS4eulerIdentityExample">
+            <statement>
+               <p>
+                   Use Euler's identity to evaluate <m>e^{i\pi}</m>.
+               </p>
+           </statement>
+       </activity>
+    
+    
+       <activity xml:id="activity-PS4eulerIdentityExample2">
+           <statement>
+              <p>
+                  Use Euler's identity to evaluate <m>e^{i\pi/2}</m>.
+              </p>
+          </statement>
+      </activity>
+    
+    
+      <activity xml:id="activity-PS4eulerIdentityExample3">
+          <statement>
+             <p>
+                Use the result of <xref ref="activity-PS4eulerIdentityExample2"/> to evaluate <m>i^i=(\unknown)^i</m>.
+             </p>
+         </statement>
+     </activity>
     
     
     
