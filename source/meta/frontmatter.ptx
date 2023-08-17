@@ -6,7 +6,7 @@
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
   <titlepage>
       <author>
-        <personname>TBIL Institute Fellows</personname>
+        <personname>TBIL Fellows</personname>
         <email>sclontz@southalabama.edu</email>
       </author>
 
@@ -82,11 +82,9 @@
 
   <colophon xml:id="colophon">
     <website>
-        <name>
-            Calculus for Team-Based Inquiry Learning
-            <fn><c>teambasedinquirylearning.github.io/calculus/</c></fn>
-        </name>
-        <address>https://teambasedinquirylearning.github.io/calculus/</address>
+        <url href="https://calculus.tbil.org">
+          Calculus for Team-Based Inquiry Learning
+        </url>
     </website>
     <xi:include href="./copyright.ptx" />
       <p>
