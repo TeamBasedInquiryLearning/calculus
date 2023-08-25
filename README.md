@@ -2,10 +2,13 @@
 
 Hosted at <https://teambasedinquirylearning.github.io/calculus/>.
 
-# How to fix branch issue
+# How to fix branch issues
 
-If you accidentally make updates to the `main` branch, open the Terminal and
-enter this line, changing `my-new-branch` to something approriate.
+If you accidentally make updates to the `main` branch, after pushing you will get the error message
+`Can't push refs to remote. Try running "Pull" first to integrate your changes.`
+
+To fix this, open the Terminal and
+enter this line, changing `my-new-branch` to something approriate. 
 
 ```bash
 BRANCH=my-new-branch
