@@ -161,7 +161,7 @@ If <m>\cos</m>'s power is odd, rewrite the integral as
         </introduction>
                 <task>
                     <statement>
-                        <p>Use the fact that <m>\sin^2(\theta)=\displaystyle\frac{1-cos(2\theta)}{2}</m> to rewrite the integrand using the above identities as an integral involving <m>\cos(2x)</m>.</p>
+                        <p>Use the fact that <m>\sin^2(\theta)=\displaystyle\frac{1-\cos(2\theta)}{2}</m> to rewrite the integrand using the above identities as an integral involving <m>\cos(2x)</m>.</p>
                     </statement>
                 </task>
                 <task>
@@ -177,7 +177,7 @@ If <m>\cos</m>'s power is odd, rewrite the integral as
         </introduction>
                 <task>
                     <statement>
-                        <p>Use the fact that <m>\cos^2(\theta)=\displaystyle\frac{1+cos(2\theta)}{2}</m> and <m>\sin^2(\theta)=\displaystyle\frac{1-cos(2\theta)}{2}</m> to rewrite the integrand using the above identities as an integral involving <m>\cos^2(2x)</m>.</p>
+                        <p>Use the fact that <m>\cos^2(\theta)=\displaystyle\frac{1+\cos(2\theta)}{2}</m> and <m>\sin^2(\theta)=\displaystyle\frac{1-\cos(2\theta)}{2}</m> to rewrite the integrand using the above identities as an integral involving <m>\cos^2(2x)</m>.</p>
                     </statement>
                 </task>
                 <task>
