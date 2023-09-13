@@ -246,7 +246,6 @@
             <p>
                 Estimate the arclength of this curve with two line segments where <m>\Delta x=2</m>.
             </p>
-        <table xml:id="ai2-table-reimann-1">
             <tabular>
                 <row bottom="minor">
                   <cell>
@@ -279,14 +278,12 @@
                   <cell/>
                 </row>
             </tabular>
-        </table>
         </task>
         
         <task>
             <p>
                 Estimate the arclength of this curve with four line segments where <m>\Delta x=1</m>.
             </p>
-        <table xml:id="ai2-table-reimann-2">
             <tabular>
                 <row bottom="minor">
                   <cell>
@@ -335,7 +332,6 @@
                   <cell/>
                 </row>
             </tabular>
-        </table>
         </task>
         <task>
             <p>
