@@ -423,5 +423,11 @@
             <description>Compute a Taylor or Maclaurin series for a
             function.</description>
         </outcome>   
+        <outcome>
+            <title>Experiment</title>
+            <slug>EX</slug>
+            <path>outcomes/EX</path>
+            <description>Just messin' around.</description>
+        </outcome>   
     </outcomes>
 </bank>
