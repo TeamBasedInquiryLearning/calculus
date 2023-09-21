@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Calc Improper integrals (TI8)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
+<meta property="book:author" content="TBIL Fellows">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.7/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/shell_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/banner_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/navbar_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/toc_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus for Team-Based Inquiry Learning:</span> <span class="subtitle">2023 Edition</span></a></h1>
+<p class="byline">TBIL Fellows</p>
+</div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms" class="searchterms"></span>
+</h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="TI7.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="TI.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="AI.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\newcommand{\tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural">
+<li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li>
+<div class="toc-item"><a href="LT.html" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="LT1.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Limits graphically (LT1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="LT1.html#subsection-1" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="LT1.html#subsection-2" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="LT2.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Limits numerically (LT2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="LT2.html#subsection-3" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="LT2.html#subsection-4" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="LT3.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Limits analytically (LT3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="LT3.html#subsection-5" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="LT3.html#subsection-6" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="LT4.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Continuity (LT4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="LT4.html#subsection-7" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="LT4.html#subsection-8" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="LT5.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Limits with infinite inputs (LT5)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="LT5.html#subsection-9" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="LT5.html#subsection-10" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="LT6.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Limits with infinite outputs (LT6)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="LT6.html#subsection-11" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="LT6.html#subsection-12" class="internal"><span class="codenumber">1.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF.html" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="DF1.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Derivatives graphically and numerically (DF1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF1.html#subsection-13" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF1.html#subsection-14" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF2.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Derivatives analytically (DF2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF2.html#subsection-15" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF2.html#subsection-16" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF3.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Elementary derivative rules (DF3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF3.html#subsection-17" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF3.html#subsection-18" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF4.html" class="internal"><span class="codenumber">2.4</span> <span class="title">The product and quotient rules (DF4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF4.html#subsection-19" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF4.html#subsection-20" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF5.html" class="internal"><span class="codenumber">2.5</span> <span class="title">The chain rule (DF5)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF5.html#subsection-21" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF5.html#subsection-22" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF6.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Differentiation strategy (DF6)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF6.html#subsection-23" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF6.html#subsection-24" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF7.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Differentiating implicitly defined functions (DF7)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF7.html#subsection-25" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF7.html#subsection-26" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF8.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Differentiating inverse functions (DF8)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF8.html#subsection-27" class="internal"><span class="codenumber">2.8.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF8.html#subsection-28" class="internal"><span class="codenumber">2.8.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD.html" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="AD1.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Tangents, motion, and marginals (AD1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD1.html#subsection-29" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD1.html#subsection-30" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD2.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Linear approximation (AD2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD2.html#subsection-31" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD2.html#subsection-32" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD3.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Related rates (AD3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD3.html#subsection-33" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD3.html#subsection-34" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD4.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Extreme values (AD4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD4.html#subsection-35" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD4.html#subsection-36" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD5.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Derivative tests (AD5)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD5.html#subsection-37" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD5.html#subsection-38" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD6.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Concavity and inflection (AD6)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD6.html#subsection-39" class="internal"><span class="codenumber">3.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD6.html#subsection-40" class="internal"><span class="codenumber">3.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD7.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Graphing with derivatives (AD7)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD7.html#subsection-41" class="internal"><span class="codenumber">3.7.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD7.html#subsection-42" class="internal"><span class="codenumber">3.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD8.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Applied optimization (AD8)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD8.html#subsection-43" class="internal"><span class="codenumber">3.8.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD8.html#subsection-44" class="internal"><span class="codenumber">3.8.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD9.html" class="internal"><span class="codenumber">3.9</span> <span class="title">Limits and Derivatives (AD9)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD9.html#subsection-45" class="internal"><span class="codenumber">3.9.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD9.html#subsection-46" class="internal"><span class="codenumber">3.9.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN.html" class="internal"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="IN1.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Geometry of definite integrals (IN1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN1.html#subsection-47" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN1.html#subsection-48" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN2.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Approximating definite integrals (IN2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN2.html#subsection-49" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN2.html#subsection-50" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN3.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Elementary antiderivatives (IN3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN3.html#subsection-51" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN3.html#subsection-52" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN4.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Initial Value Problems (IN4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN4.html#subsection-53" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN4.html#subsection-54" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN5.html" class="internal"><span class="codenumber">4.5</span> <span class="title">FTC for definite integrals (IN5)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN5.html#subsection-55" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN5.html#subsection-56" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN6.html" class="internal"><span class="codenumber">4.6</span> <span class="title">FTC for derivatives of integrals (IN6)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN6.html#subsection-57" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN6.html#subsection-58" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN7.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Area under curves (IN7)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN7.html#subsection-59" class="internal"><span class="codenumber">4.7.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN7.html#subsection-60" class="internal"><span class="codenumber">4.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN8.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Area between curves (IN8)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN8.html#subsection-61" class="internal"><span class="codenumber">4.8.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN8.html#subsection-62" class="internal"><span class="codenumber">4.8.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI.html" class="internal"><span class="codenumber">5</span> <span class="title">Techniques of Integration (TI)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="TI1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Substitution method (TI1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI1.html#subsection-63" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI1.html#subsection-64" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI2.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Integration by Parts (TI2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI2.html#subsection-65" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI2.html#subsection-66" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI3.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Integration of trigonometry (TI3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI3.html#subsection-67" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI3.html#subsection-68" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI4.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Trigonometric Substitution (TI4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI4.html#subsection-69" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI4.html#subsection-70" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI5.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Tables of Integrals (TI5)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI5.html#subsection-71" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI5.html#subsection-72" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI6.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Partial fractions (TI6)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI6.html#subsection-73" class="internal"><span class="codenumber">5.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI6.html#subsection-74" class="internal"><span class="codenumber">5.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI7.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Integration strategy (TI7)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI7.html#subsection-75" class="internal"><span class="codenumber">5.7.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI7.html#subsection-76" class="internal"><span class="codenumber">5.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="active">
+<div class="toc-item"><a href="TI8.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Improper integrals (TI8)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI8.html#subsection-77" class="internal"><span class="codenumber">5.8.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI8.html#subsection-78" class="internal"><span class="codenumber">5.8.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AI.html" class="internal"><span class="codenumber">6</span> <span class="title">Applications of Integration (AI)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="AI1.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Average Value (AI1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AI1.html#subsection-79" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AI1.html#subsection-80" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AI2.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Arclength (AI2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AI2.html#subsection-81" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AI2.html#subsection-82" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AI3.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Volumes of Revolution (AI3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AI3.html#subsection-83" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AI3.html#subsection-84" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AI4.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Surface Areas of Revolution (AI4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AI4.html#subsection-85" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AI4.html#subsection-86" class="internal"><span class="codenumber">6.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AI5.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Density, Mass, and Center of Mass (AI5)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AI5.html#subsection-87" class="internal"><span class="codenumber">6.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AI5.html#subsection-88" class="internal"><span class="codenumber">6.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AI6.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Work (AI6)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AI6.html#subsection-89" class="internal"><span class="codenumber">6.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AI6.html#subsection-90" class="internal"><span class="codenumber">6.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AI7.html" class="internal"><span class="codenumber">6.7</span> <span class="title">Force and Pressure (AI7)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AI7.html#subsection-91" class="internal"><span class="codenumber">6.7.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AI7.html#subsection-92" class="internal"><span class="codenumber">6.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="CO.html" class="internal"><span class="codenumber">7</span> <span class="title">Coordinates and Vectors (CO)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="CO1.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Parametric/vector equations (CO1)</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="CO1.html#subsection-93" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Activities</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="CO2.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Parametric/vector derivatives (CO2)</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="CO2.html#subsection-94" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Activities</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="CO3.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Parametric/vector arclength (CO3)</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="CO3.html#subsection-95" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Activities</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="CO4.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Polar coordinates (CO4)</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="CO4.html#subsection-96" class="internal"><span class="codenumber">7.4.1</span> <span class="title">Activities</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="CO5.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Polar Arclength (CO5)</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="CO5.html#subsection-97" class="internal"><span class="codenumber">7.5.1</span> <span class="title">Activities</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="CO6.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Polar area (CO6)</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="CO6.html#subsection-98" class="internal"><span class="codenumber">7.6.1</span> <span class="title">Activities</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ.html" class="internal"><span class="codenumber">8</span> <span class="title">Sequences and Series (SQ)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="SQ1.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Sequence Formulas (SQ1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ1.html#subsection-99" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ1.html#subsection-100" class="internal"><span class="codenumber">8.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ2.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Sequence Properties and Limits (SQ2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ2.html#subsection-101" class="internal"><span class="codenumber">8.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ2.html#subsection-102" class="internal"><span class="codenumber">8.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ3.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Partial Sum Sequence (SQ3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ3.html#subsection-103" class="internal"><span class="codenumber">8.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ3.html#subsection-104" class="internal"><span class="codenumber">8.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ4.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Geometric Series (SQ4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ4.html#subsection-105" class="internal"><span class="codenumber">8.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ4.html#subsection-106" class="internal"><span class="codenumber">8.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ5.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Basic Convergence Tests (SQ5)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ5.html#subsection-107" class="internal"><span class="codenumber">8.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ5.html#subsection-108" class="internal"><span class="codenumber">8.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ6.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Comparison Tests (SQ6)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ6.html#subsection-109" class="internal"><span class="codenumber">8.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ6.html#subsection-110" class="internal"><span class="codenumber">8.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ7.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Ratio and Root Tests (SQ7)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ7.html#subsection-111" class="internal"><span class="codenumber">8.7.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ7.html#subsection-112" class="internal"><span class="codenumber">8.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ8.html" class="internal"><span class="codenumber">8.8</span> <span class="title">Absolute Convergence (SQ8)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ8.html#subsection-113" class="internal"><span class="codenumber">8.8.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ8.html#subsection-114" class="internal"><span class="codenumber">8.8.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ9.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Series Convergence Strategy (SQ9)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ9.html#subsection-115" class="internal"><span class="codenumber">8.9.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ9.html#subsection-116" class="internal"><span class="codenumber">8.9.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="PS.html" class="internal"><span class="codenumber">9</span> <span class="title">Power Series (PS)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="PS1.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Power Series (PS1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="PS1.html#subsection-117" class="internal"><span class="codenumber">9.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="PS1.html#subsection-118" class="internal"><span class="codenumber">9.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="PS2.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Convergence of Power Series (PS2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="PS2.html#subsection-119" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="PS2.html#subsection-120" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="PS3.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Manipulation of Power Series (PS3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="PS3.html#subsection-121" class="internal"><span class="codenumber">9.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="PS3.html#subsection-122" class="internal"><span class="codenumber">9.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="PS4.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Taylor Series (PS4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="PS4.html#subsection-123" class="internal"><span class="codenumber">9.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="PS4.html#subsection-124" class="internal"><span class="codenumber">9.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="integral-table.html" class="internal"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></div></li>
+<li><div class="toc-item"><a href="trig-table.html" class="internal"><span class="codenumber">B</span> <span class="title">List of Trigonometric Identities</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="TI8"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5.8</span> <span class="title">Improper integrals (TI8)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-44"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="li-1219"><div class="para" id="p-1972">I can compute improper integrals.</div></li></ul></article><section class="subsection" id="subsection-77"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.8.1</span> <span class="title">Activities</span>
+</h3>
+<article class="activity project-like" id="activity-T8Exploration1"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.1</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-196"><div class="para" id="p-1973">Recall <span class="process-math">\(\displaystyle \int\frac{1}{x^2}dx=-\frac{1}{x}+C\text{.}\)</span> Compute the following definite integrals.</div></div>
+<article class="task exercise-like" id="task-568"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-1974"><span class="process-math">\(\displaystyle \int_{1/100}^1 \frac{1}{x^2} dx=\left[-\frac{1}{x}\right]_{1/100}^1\)</span></div></article><article class="task exercise-like" id="task-569"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-1975"><span class="process-math">\(\displaystyle \int_{1/10000}^1 \frac{1}{x^2} dx\)</span></div></article><article class="task exercise-like" id="task-570"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-1976"><span class="process-math">\(\displaystyle \int_{1/1000000}^1 \frac{1}{x^2} dx\)</span></div></article></article><article class="activity project-like" id="activity-343"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.2</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1977">What do you notice about <span class="process-math">\(\displaystyle \int_{a}^1 \frac{1}{x^2} dx\)</span> as <span class="process-math">\(a\)</span> approached 0 in <a href="" class="xref" data-knowl="./knowl/activity-T8Exploration1.html" title="Activity 5.8.1">Activity 5.8.1</a>?</div> <ol class="upper-alpha cols2">
+<li id="li-1220"><div class="para" id="p-1978">
+<span class="process-math">\(\displaystyle \int_{a}^1 \frac{1}{x^2} dx\)</span> approaches <span class="process-math">\(0\text{.}\)</span>
+</div></li>
+<li id="li-1221"><div class="para" id="p-1979">
+<span class="process-math">\(\displaystyle \int_{a}^1 \frac{1}{x^2} dx\)</span> approaches a finite constant greater than <span class="process-math">\(0\text{.}\)</span>
+</div></li>
+<li id="li-1222"><div class="para" id="p-1980">
+<span class="process-math">\(\displaystyle \int_{a}^1 \frac{1}{x^2} dx\)</span> approaches <span class="process-math">\(\infty\text{.}\)</span>
+</div></li>
+<li id="li-1223"><div class="para" id="p-1981">There is not enough information.</div></li>
+</ol></article><article class="activity project-like" id="activity-T8Exploration2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.3</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-197"><div class="para" id="p-1982">Compute the following definite integrals, again using <span class="process-math">\(\displaystyle \int\frac{1}{x^2}dx=-\frac{1}{x}+C\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="task-571"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-1983"><span class="process-math">\(\displaystyle \int_{1}^{100} \frac{1}{x^2} dx=\left[-\frac{1}{x}\right]_{1}^{100}\)</span></div></article><article class="task exercise-like" id="task-572"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-1984"><span class="process-math">\(\displaystyle \int_{1}^{10000} \frac{1}{x^2} dx\)</span></div></article><article class="task exercise-like" id="task-573"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-1985"><span class="process-math">\(\displaystyle \int_{1}^{1000000} \frac{1}{x^2} dx\)</span></div></article></article><article class="activity project-like" id="activity-345"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-1986">What do you notice about <span class="process-math">\(\displaystyle \int_{1}^b \frac{1}{x^2} dx\)</span> as <span class="process-math">\(b\)</span> approached <span class="process-math">\(\infty\)</span> in <a href="" class="xref" data-knowl="./knowl/activity-T8Exploration2.html" title="Activity 5.8.3">Activity 5.8.3</a>?</div> <ol class="upper-alpha cols2">
+<li id="li-1224"><div class="para" id="p-1987">
+<span class="process-math">\(\displaystyle  \int_{1}^b \frac{1}{x^2} dx\)</span> approaches <span class="process-math">\(0\text{.}\)</span>
+</div></li>
+<li id="li-1225"><div class="para" id="p-1988">
+<span class="process-math">\(\displaystyle  \int_{1}^b \frac{1}{x^2} dx\)</span> approaches a finite constant greater than <span class="process-math">\(0\text{.}\)</span>
+</div></li>
+<li id="li-1226"><div class="para" id="p-1989">
+<span class="process-math">\(\displaystyle  \int_{1}^b \frac{1}{x^2} dx\)</span> approaches <span class="process-math">\(\infty\text{.}\)</span>
+</div></li>
+<li id="li-1227"><div class="para" id="p-1990">There is not enough information.</div></li>
+</ol></article><article class="activity project-like" id="activity-T8Exploration3"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.5</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-198"><div class="para" id="p-1991">Recall <span class="process-math">\(\displaystyle \int\frac{1}{\sqrt x}dx=2\sqrt{x}+C\text{.}\)</span> Compute the following definite integrals.</div></div>
+<article class="task exercise-like" id="task-574"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-1992"><span class="process-math">\(\displaystyle \int_{1/100}^1 \frac{1}{\sqrt{x}} dx=\left[2\sqrt{x}\right]_{1/100}^1\)</span></div></article><article class="task exercise-like" id="task-575"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-1993"><span class="process-math">\(\displaystyle \int_{1/10000}^1 \frac{1}{\sqrt{x}} dx\)</span></div></article><article class="task exercise-like" id="task-576"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-1994"><span class="process-math">\(\displaystyle \int_{1/1000000}^1 \frac{1}{\sqrt{x}} dx\)</span></div></article></article><article class="activity project-like" id="activity-347"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.6</span><span class="period">.</span>
+</h4>
+<article class="task exercise-like" id="task-577"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-1995">What do you notice about the integral <span class="process-math">\(\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx\)</span> as <span class="process-math">\(b\)</span> approached 0 in <a href="" class="xref" data-knowl="./knowl/activity-T8Exploration3.html" title="Activity 5.8.5">Activity 5.8.5</a>?</div>
+<ol class="upper-alpha cols2">
+<li id="li-1228"><div class="para" id="p-1996">
+<span class="process-math">\(\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx\)</span> approaches <span class="process-math">\(0\text{.}\)</span>
+</div></li>
+<li id="li-1229"><div class="para" id="p-1997">
+<span class="process-math">\(\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx\)</span> approaches a finite constant greater than <span class="process-math">\(0\text{.}\)</span>
+</div></li>
+<li id="li-1230"><div class="para" id="p-1998">
+<span class="process-math">\(\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx\)</span> approaches <span class="process-math">\(\infty\text{.}\)</span>
+</div></li>
+<li id="li-1231"><div class="para" id="p-1999">There is not enough information.</div></li>
+</ol></article><article class="task exercise-like" id="task-578"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-2000">How does this compare to what you found in <a href="" class="xref" data-knowl="./knowl/activity-T8Exploration1.html" title="Activity 5.8.1">Activity 5.8.1</a>?</div></article></article><article class="activity project-like" id="activity-T8Exploration4"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.7</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-199"><div class="para" id="p-2001">Compute the following definite integrals using <span class="process-math">\(\displaystyle \int\frac{1}{\sqrt x}dx=2\sqrt{x}+C\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="task-579"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-2002"><span class="process-math">\(\displaystyle \int_{1}^{100} \frac{1}{\sqrt{x}} dx\left[2\sqrt{x}\right]_{1}^{100}\)</span></div></article><article class="task exercise-like" id="task-580"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-2003"><span class="process-math">\(\displaystyle \int_{1}^{10000} \frac{1}{\sqrt{x}} dx\)</span></div></article><article class="task exercise-like" id="task-581"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-2004"><span class="process-math">\(\displaystyle \int_{1}^{1000000} \frac{1}{\sqrt{x}} dx\)</span></div></article></article><article class="activity project-like" id="activity-349"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.8</span><span class="period">.</span>
+</h4>
+<article class="task exercise-like" id="task-582"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-2005">What do you notice the integral <span class="process-math">\(\displaystyle \int_{1}^b \frac{1}{\sqrt{x}} dx\)</span> as <span class="process-math">\(a\)</span> approached <span class="process-math">\(\infty\)</span> in <a href="" class="xref" data-knowl="./knowl/activity-T8Exploration4.html" title="Activity 5.8.7">Activity 5.8.7</a>?</div>
+<ol class="upper-alpha cols2">
+<li id="li-1232"><div class="para" id="p-2006">
+<span class="process-math">\(\displaystyle \int_{1}^b \frac{1}{\sqrt{x}} dx\)</span> approaches <span class="process-math">\(0\text{.}\)</span>
+</div></li>
+<li id="li-1233"><div class="para" id="p-2007">
+<span class="process-math">\(\displaystyle \int_{1}^b \frac{1}{\sqrt{x}} dx\)</span> approaches a finite constant greater than <span class="process-math">\(0\text{.}\)</span>
+</div></li>
+<li id="li-1234"><div class="para" id="p-2008">
+<span class="process-math">\(\displaystyle \int_{1}^b \frac{1}{\sqrt{x}} dx\)</span> approaches <span class="process-math">\(\infty\text{.}\)</span>
+</div></li>
+<li id="li-1235"><div class="para" id="p-2009">There is not enough information.</div></li>
+</ol></article><article class="task exercise-like" id="task-583"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-2010">How does this compare to what you found in <a href="" class="xref" data-knowl="./knowl/activity-T8Exploration2.html" title="Activity 5.8.3">Activity 5.8.3</a>?</div></article></article><article class="definition definition-like" id="definition-TI8infinityint"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.8.1</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="p-2011">
+<div class="para">For a function <span class="process-math">\(f(x)\)</span> and a constant <span class="process-math">\(a\text{,}\)</span> we let <span class="process-math">\(\displaystyle \int_a^\infty f(x) dx\)</span> denote</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_a^\infty f(x) dx=\lim_{b\to\infty}\left( \int_a^b f(x) dx\right)\text{.}
+\end{equation*}
+</div>
+<div class="para">If this limit is a defined real number, then we say <span class="process-math">\(\displaystyle \int_c^\infty f(x) dx\)</span> is <dfn class="terminology">convergent</dfn>. Otherwise, it is <dfn class="terminology">divergent</dfn>.</div>
+</div> <div class="para logical" id="p-2012">
+<div class="para">Similarly,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{-\infty}^b f(x) dx=\lim_{a\to-\infty}\left( \int_a^b f(x) dx\right).
+\end{equation*}
+</div>
+</div></article><article class="activity project-like" id="activity-T8Fabound"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.9</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-2013">Which of these limits is equal to <span class="process-math">\(\displaystyle\int_1^\infty \frac{1}{x^2} dx\text{?}\)</span>
+</div> <ol class="upper-alpha cols2">
+<li id="li-1236"><div class="para" id="p-derived-li-1236"><span class="process-math">\(\displaystyle \lim_{b\to\infty}\int_1^b\frac{1}{x^2}dx\)</span></div></li>
+<li id="li-1237"><div class="para" id="p-derived-li-1237"><span class="process-math">\(\displaystyle \lim_{b\to\infty}\left[-\frac{1}{x}\right]_1^b\)</span></div></li>
+<li id="li-1238"><div class="para" id="p-derived-li-1238"><span class="process-math">\(\displaystyle \lim_{b\to\infty}\left[-\frac{1}{b}+1\right]\)</span></div></li>
+<li id="li-1239"><div class="para" id="p-derived-li-1239">All of these.</div></li>
+</ol></article><article class="activity project-like" id="activity-T8Fevaluatexcube"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.10</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-2014">Given the result of <a href="" class="xref" data-knowl="./knowl/activity-T8Fabound.html" title="Activity 5.8.9">Activity 5.8.9</a>, what is <span class="process-math">\(\displaystyle\int_1^\infty \frac{1}{x^2} dx\text{?}\)</span>
+</div> <ol class="upper-alpha cols2">
+<li id="li-1240"><div class="para" id="p-derived-li-1240"><span class="process-math">\(\displaystyle 0\)</span></div></li>
+<li id="li-1241"><div class="para" id="p-derived-li-1241"><span class="process-math">\(\displaystyle 1\)</span></div></li>
+<li id="li-1242"><div class="para" id="p-derived-li-1242"><span class="process-math">\(\displaystyle \infty\)</span></div></li>
+<li id="li-1243"><div class="para" id="p-derived-li-1243"><span class="process-math">\(\displaystyle -\infty\)</span></div></li>
+</ol></article><article class="activity project-like" id="activity-352"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.11</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-2015">Does <span class="process-math">\(\displaystyle\int_1^\infty \frac{1}{\sqrt x} dx\)</span> converge or diverge?</div> <ol class="upper-alpha">
+<li id="li-1244"><div class="para" id="p-derived-li-1244">Converges because <span class="process-math">\(\displaystyle\lim_{b\to 0^+}\left[2\sqrt b-2\right]\)</span> converges.</div></li>
+<li id="li-1245"><div class="para" id="p-derived-li-1245">Diverges because <span class="process-math">\(\displaystyle\lim_{b\to 0^+}\left[2\sqrt b-2\right]\)</span> diverges.</div></li>
+<li id="li-1246"><div class="para" id="p-derived-li-1246">Converges because <span class="process-math">\(\displaystyle\lim_{b\to \infty}\left[2\sqrt b-2\right]\)</span> converges.</div></li>
+<li id="li-1247"><div class="para" id="p-derived-li-1247">Diverges because <span class="process-math">\(\displaystyle\lim_{b\to \infty}\left[2\sqrt b-2\right]\)</span> diverges.</div></li>
+</ol></article><article class="definition definition-like" id="definition-TI8assympint"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.8.2</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="p-2016">
+<div class="para">For a function <span class="process-math">\(f(x)\)</span> with a vertical asymptote at <span class="process-math">\(x=c&gt;a\text{,}\)</span> we let <span class="process-math">\(\displaystyle \int_a^c f(x) dx\)</span> denote</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_a^c f(x) dx=\lim_{b\to c^{-}}\left( \int_a^b f(x) dx\right)\text{.}
+\end{equation*}
+</div>
+</div> <div class="para logical" id="p-2017">
+<div class="para">For a function <span class="process-math">\(f(x)\)</span> with a vertical asymptote at <span class="process-math">\(x=c&lt;b\text{,}\)</span> we let <span class="process-math">\(\displaystyle \int_c^b f(x) dx\)</span> denote</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_c^b f(x) dx=\lim_{a\to c^{+}}\left( \int_a^b f(x) dx\right)\text{.}
+\end{equation*}
+</div>
+</div></article><article class="activity project-like" id="activity-353"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.12</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-2018">Which of these limits is equal to <span class="process-math">\(\displaystyle\int_0^1 \frac{1}{\sqrt x} dx\text{?}\)</span>
+</div> <ol class="upper-alpha cols2">
+<li id="li-1248"><div class="para" id="p-derived-li-1248"><span class="process-math">\(\displaystyle \lim_{a\to0^+}\int_a^1\frac{1}{\sqrt x}dx\)</span></div></li>
+<li id="li-1249"><div class="para" id="p-derived-li-1249"><span class="process-math">\(\displaystyle \lim_{a\to0^+}\left[2\sqrt x\right]_a^1\)</span></div></li>
+<li id="li-1250"><div class="para" id="p-derived-li-1250"><span class="process-math">\(\displaystyle \lim_{a\to0^+}\left[2-2\sqrt a\right]\)</span></div></li>
+<li id="li-1251"><div class="para" id="p-derived-li-1251">All of these.</div></li>
+</ol></article><article class="activity project-like" id="activity-354"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.13</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-2019">Given the this result, what is <span class="process-math">\(\displaystyle\int_0^1 \frac{1}{\sqrt x} dx\text{?}\)</span>
+</div> <ol class="upper-alpha cols2">
+<li id="li-1252"><div class="para" id="p-derived-li-1252"><span class="process-math">\(\displaystyle 0\)</span></div></li>
+<li id="li-1253"><div class="para" id="p-derived-li-1253"><span class="process-math">\(\displaystyle 1\)</span></div></li>
+<li id="li-1254"><div class="para" id="p-derived-li-1254"><span class="process-math">\(\displaystyle 2\)</span></div></li>
+<li id="li-1255"><div class="para" id="p-derived-li-1255"><span class="process-math">\(\displaystyle \infty\)</span></div></li>
+</ol></article><article class="activity project-like" id="activity-TI8xsquare"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.14</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-2020">Does <span class="process-math">\(\displaystyle\int_0^1 \frac{1}{x^2} dx\)</span> converge or diverge?</div> <ol class="upper-alpha">
+<li id="li-1256"><div class="para" id="p-derived-li-1256">Converges because <span class="process-math">\(\displaystyle\lim_{a\to 0^+}\left[-1+\frac{1}{a}\right]\)</span> converges.</div></li>
+<li id="li-1257"><div class="para" id="p-derived-li-1257">Diverges because <span class="process-math">\(\displaystyle\lim_{a\to 0^+}\left[-1+\frac{1}{a}\right]\)</span> diverges.</div></li>
+<li id="li-1258"><div class="para" id="p-derived-li-1258">Converges because <span class="process-math">\(\displaystyle\lim_{a\to 1^-}\left[-1+\frac{1}{a}\right]\)</span> converges.</div></li>
+<li id="li-1259"><div class="para" id="p-derived-li-1259">Diverges because <span class="process-math">\(\displaystyle\lim_{a\to 1^-}\left[-1+\frac{1}{a}\right]\)</span> diverges.</div></li>
+</ol></article><article class="activity project-like" id="activity-356"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.15</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-200"><div class="para" id="p-2021">Explain and demonstrate how to write each of the following improper integrals as a limit, and why this limit coverges or diverges.</div></div>
+<article class="task exercise-like" id="task-584"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-2022"><span class="process-math">\(\displaystyle\int_{ -2 }^{ +\infty } \frac{1}{\sqrt{x + 6}} dx.\)</span></div></article><article class="task exercise-like" id="task-585"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-2023"><span class="process-math">\(\displaystyle\int_{ -4 }^{ -2 } \frac{1}{{\left(x + 4\right)}^{\frac{4}{3}}} dx.\)</span></div></article><article class="task exercise-like" id="task-586"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-2024"><span class="process-math">\(\displaystyle\int_{ -5 }^{ 0 } \frac{1}{{\left(x + 5\right)}^{\frac{5}{9}}} dx.\)</span></div></article><article class="task exercise-like" id="task-587"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="p-2025"><span class="process-math">\(\displaystyle\int_{ 10 }^{ +\infty } \frac{1}{{\left(x - 8\right)}^{\frac{4}{3}}} dx.\)</span></div></article></article><article class="fact theorem-like" id="fact-5"><h4 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">5.8.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-2026">Suppose that <span class="process-math">\(0&lt; p\)</span> and <span class="process-math">\(p\neq 1\text{.}\)</span> Applying the integration power rule gives us the indefinite integral <span class="process-math">\(\displaystyle \int \frac{1}{x^p} dx=\frac{1}{(1-p)}x^{1-p}+C\text{.}\)</span>
+</div></article><article class="activity project-like" id="activity-TI8prule1"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.16</span><span class="period">.</span>
+</h4>
+<article class="task exercise-like" id="task-588"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-2027">If <span class="process-math">\(0&lt; p&lt; 1\text{,}\)</span> which of the following statements must be true? Select all that apply.</div>
+<ol class="upper-alpha cols2">
+<li id="li-1260"><div class="para" id="p-2028"><span class="process-math">\(\displaystyle 1-p&lt; 0\)</span></div></li>
+<li id="li-1261"><div class="para" id="p-2029"><span class="process-math">\(\displaystyle 1-p&gt; 0\)</span></div></li>
+<li id="li-1262"><div class="para" id="p-2030"><span class="process-math">\(\displaystyle 1-p&lt; 1\)</span></div></li>
+<li id="li-1263"><div class="para" id="p-2031">
+<span class="process-math">\(\displaystyle \int_1^\infty \frac{1}{x^p} dx\)</span> converges.</div></li>
+<li id="li-1264"><div class="para" id="p-2032">
+<span class="process-math">\(\displaystyle \int_1^\infty \frac{1}{x^p} dx\)</span> diverges.</div></li>
+</ol></article><article class="task exercise-like" id="task-589"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-2033">If <span class="process-math">\(p&gt;1\text{,}\)</span> which of the following statements must be true? Select all that apply.</div>
+<ol class="upper-alpha cols2">
+<li id="li-1265"><div class="para" id="p-2034"><span class="process-math">\(\displaystyle 1-p&lt; 0\)</span></div></li>
+<li id="li-1266"><div class="para" id="p-2035"><span class="process-math">\(\displaystyle 1-p&gt; 0\)</span></div></li>
+<li id="li-1267"><div class="para" id="p-2036"><span class="process-math">\(\displaystyle 1-p&lt; 1\)</span></div></li>
+<li id="li-1268"><div class="para" id="p-2037">
+<span class="process-math">\(\displaystyle \int_1^\infty \frac{1}{x^p} dx\)</span> converges.</div></li>
+<li id="li-1269"><div class="para" id="p-2038">
+<span class="process-math">\(\displaystyle \int_1^\infty \frac{1}{x^p} dx\)</span> diverges.</div></li>
+</ol></article></article><article class="activity project-like" id="activity-TI8prule2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.17</span><span class="period">.</span>
+</h4>
+<article class="task exercise-like" id="task-590"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-2039">If <span class="process-math">\(0&lt; p&lt; 1\text{,}\)</span> which of the following statements must be true?</div>
+<ol class="upper-alpha cols2">
+<li id="li-1270"><div class="para" id="p-2040">
+<span class="process-math">\(\displaystyle \int_0^1 \frac{1}{x^p} dx\)</span> converges.</div></li>
+<li id="li-1271"><div class="para" id="p-2041">
+<span class="process-math">\(\displaystyle \int_0^1 \frac{1}{x^p} dx\)</span> diverges.</div></li>
+</ol></article><article class="task exercise-like" id="task-591"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-2042">If <span class="process-math">\(p&gt;1\text{,}\)</span> which of the following statements must be true?</div>
+<ol class="upper-alpha cols2">
+<li id="li-1272"><div class="para" id="p-2043">
+<span class="process-math">\(\displaystyle \int_0^1 \frac{1}{x^p} dx\)</span> converges.</div></li>
+<li id="li-1273"><div class="para" id="p-2044">
+<span class="process-math">\(\displaystyle \int_0^1 \frac{1}{x^p} dx\)</span> diverges.</div></li>
+</ol></article></article><article class="activity project-like" id="activity-TI8prule3"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.18</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-201"><div class="para" id="p-2045">Consider when <span class="process-math">\(p=1\text{.}\)</span> Then <span class="process-math">\(\frac{1}{x^p}=\frac{1}{x}\)</span> and <span class="process-math">\(\displaystyle \int \frac{1}{x^p}\ dx=\displaystyle \int \frac{1}{x}\ dx=\ln|x|+C\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="task-592"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-2046">What can we conclude about <span class="process-math">\(\displaystyle \int_1^\infty \frac{1}{x} dx\text{?}\)</span>
+</div>
+<ol class="upper-alpha cols2">
+<li id="li-1274"><div class="para" id="p-2047">
+<span class="process-math">\(\displaystyle \int_1^\infty \frac{1}{x} dx\)</span> converges.</div></li>
+<li id="li-1275"><div class="para" id="p-2048">
+<span class="process-math">\(\displaystyle \int_1^\infty \frac{1}{x} dx\)</span> diverges.</div></li>
+<li id="li-1276"><div class="para" id="p-2049">There is not enough information to determine whether this integral converges or diverges.</div></li>
+</ol></article><article class="task exercise-like" id="task-593"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-2050">What can we conclude about <span class="process-math">\(\displaystyle \int_0^1 \frac{1}{x} dx\text{?}\)</span>
+</div>
+<ol class="upper-alpha cols2">
+<li id="li-1277"><div class="para" id="p-2051">
+<span class="process-math">\(\displaystyle \int_0^1 \frac{1}{x} dx\)</span> converges.</div></li>
+<li id="li-1278"><div class="para" id="p-2052">
+<span class="process-math">\(\displaystyle \int_0^1 \frac{1}{x} dx\)</span> diverges.</div></li>
+<li id="li-1279"><div class="para" id="p-2053">There is not enough information to determine whether this integral converges or diverges.</div></li>
+</ol></article></article><article class="fact theorem-like" id="fact-TI8prule"><h4 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">5.8.4</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="p-2054">
+<div class="para">Let <span class="process-math">\(c, p&gt;0\text{.}\)</span>
+</div>
+<ul class="disc"><li id="li-1280"><div class="para" id="p-derived-li-1280">
+<span class="process-math">\(\displaystyle \int_0^c \frac{1}{x^p} dx\)</span> is defined if and only if <span class="process-math">\(p&lt; 1\text{.}\)</span>
+</div></li></ul>
+<ul class="disc"><li id="li-1281"><div class="para" id="p-derived-li-1281">
+<span class="process-math">\(\displaystyle \int_c^\infty \frac{1}{x^p} dx\)</span> is defined if and only if <span class="process-math">\(p&gt; 1\text{.}\)</span>
+</div></li></ul>
+</div></article><article class="activity project-like" id="activity-TI8finfinitybounded"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.19</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-2055">Consider the plots of <span class="process-math">\(f(x), g(x), h(x) \)</span> where <span class="process-math">\(0 &lt; g(x) &lt; f(x) &lt; h(x)\text{.}\)</span>
+</div> <figure class="figure figure-like" id="figure-101"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/finfinity.svg" role="img" class="contained" alt="Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">112<span class="period">.</span></span><span class="space"> </span>Plots of <span class="process-math">\(f(x), g(x), h(x)\)</span></figcaption></figure> <div class="para logical" id="p-2056">
+<div class="para">If <span class="process-math">\(\displaystyle \int_1^\infty f(x) dx\)</span> is convergent, what can we say about <span class="process-math">\(g(x), h(x)\text{?}\)</span>
+</div>
+<ol class="upper-alpha">
+<li id="li-1282"><div class="para" id="p-derived-li-1282">
+<span class="process-math">\(\displaystyle \int_1^\infty g(x) dx\)</span> and <span class="process-math">\(\displaystyle \int_1^\infty h(x) dx\)</span> are both convergent.</div></li>
+<li id="li-1283"><div class="para" id="p-derived-li-1283">
+<span class="process-math">\(\displaystyle \int_1^\infty g(x) dx\)</span> and <span class="process-math">\(\displaystyle \int_1^\infty h(x) dx\)</span> are both divergent.</div></li>
+<li id="li-1284"><div class="para" id="p-derived-li-1284">Whether or not <span class="process-math">\(\displaystyle \int_1^\infty g(x) dx\)</span> and <span class="process-math">\(\displaystyle \int_1^\infty h(x) dx\)</span> are convergent or divergent cannot be determined.</div></li>
+<li id="li-1285"><div class="para" id="p-derived-li-1285">
+<span class="process-math">\(\displaystyle \int_1^\infty g(x) dx\)</span> is convergent and  <span class="process-math">\(\displaystyle \int_1^\infty h(x) dx\)</span> is divergent.</div></li>
+<li id="li-1286"><div class="para" id="p-derived-li-1286">
+<span class="process-math">\(\displaystyle \int_1^\infty g(x) dx\)</span> is convergent and <span class="process-math">\(\displaystyle \int_1^\infty h(x) dx\)</span> could be either convergent or divergent.</div></li>
+</ol>
+</div></article><article class="activity project-like" id="activity-TI8finfinityunbounded"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.20</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="p-2057">
+<div class="para">Consider the plots of <span class="process-math">\(f(x), g(x), h(x) \)</span> where <span class="process-math">\(0 &lt; g(x) &lt; f(x) &lt; h(x)\text{.}\)</span> <figure class="figure figure-like" id="figure-102"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/finfinity2.svg" role="img" class="contained" alt="Plots of positive functions f(x), g(x) where f(x) is an upper bound of g(x)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">113<span class="period">.</span></span><span class="space"> </span>Plots of <span class="process-math">\(f(x), g(x), h(x)\)</span></figcaption></figure> If <span class="process-math">\(\displaystyle \int_1^\infty f(x) dx\)</span> is divergent, what can we say about <span class="process-math">\(g(x), h(x)\text{?}\)</span>
+</div>
+<ol class="upper-alpha">
+<li id="li-1287"><div class="para" id="p-derived-li-1287">
+<span class="process-math">\(\displaystyle \int_1^\infty g(x) dx\)</span> and <span class="process-math">\(\displaystyle \int_1^\infty h(x) dx\)</span> are both convergent.</div></li>
+<li id="li-1288"><div class="para" id="p-derived-li-1288">
+<span class="process-math">\(\displaystyle \int_1^\infty g(x) dx\)</span> and <span class="process-math">\(\displaystyle \int_1^\infty h(x) dx\)</span> are both divergent.</div></li>
+<li id="li-1289"><div class="para" id="p-derived-li-1289">Whether or not <span class="process-math">\(\displaystyle \int_1^\infty g(x) dx\)</span> and <span class="process-math">\(\displaystyle \int_1^\infty h(x) dx\)</span> are convergent or divergent cannot be determined.</div></li>
+<li id="li-1290"><div class="para" id="p-derived-li-1290">
+<span class="process-math">\(\displaystyle \int_1^\infty g(x) dx\)</span> could be either convergent or dicergent and  <span class="process-math">\(\displaystyle \int_1^\infty h(x) dx\)</span> is divergent.</div></li>
+<li id="li-1291"><div class="para" id="p-derived-li-1291">
+<span class="process-math">\(\displaystyle \int_1^\infty g(x) dx\)</span> is convergent and  <span class="process-math">\(\displaystyle \int_1^\infty h(x) dx\)</span> is divergent.</div></li>
+</ol>
+</div></article><article class="activity project-like" id="activity-TI8zerobounded"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.21</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="p-2058">
+<div class="para">Consider the plots of <span class="process-math">\(f(x), g(x), h(x) \)</span> where <span class="process-math">\(0 &lt; g(x) &lt; f(x) &lt; h(x)\text{.}\)</span> <figure class="figure figure-like" id="figure-103"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/fzero.svg" role="img" class="contained" alt="Plots of positive functions f(x), g(x) and h(x)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">114<span class="period">.</span></span><span class="space"> </span>Plots of <span class="process-math">\(f(x), g(x), h(x)\)</span></figcaption></figure> If <span class="process-math">\(\displaystyle \int_0^1 f(x) dx\)</span> is convergent, what can we say about <span class="process-math">\(g(x)\)</span> and <span class="process-math">\(h(x)\text{?}\)</span>
+</div>
+<ol class="upper-alpha">
+<li id="li-1292"><div class="para" id="p-derived-li-1292">
+<span class="process-math">\(\displaystyle \int_0^1 g(x) dx\)</span> and <span class="process-math">\(\displaystyle \int_0^1 h(x) dx\)</span> are both convergent.</div></li>
+<li id="li-1293"><div class="para" id="p-derived-li-1293">
+<span class="process-math">\(\displaystyle \int_0^1 g(x) dx\)</span> and <span class="process-math">\(\displaystyle \int_0^1 h(x) dx\)</span> are both divergent.</div></li>
+<li id="li-1294"><div class="para" id="p-derived-li-1294">Whether or not <span class="process-math">\(\displaystyle \int_0^1 g(x) dx\)</span>  and <span class="process-math">\(\displaystyle \int_0^1 h(x) dx\)</span> are  convergent or divergent cannot be determined.</div></li>
+<li id="li-1295"><div class="para" id="p-derived-li-1295">
+<span class="process-math">\(\displaystyle \int_0^1 g(x) dx\)</span> is convergent and  <span class="process-math">\(\displaystyle \int_0^1 h(x) dx\)</span> is divergent.</div></li>
+<li id="li-1296"><div class="para" id="p-derived-li-1296">
+<span class="process-math">\(\displaystyle \int_0^1 g(x) dx\)</span> is convergent and <span class="process-math">\(\displaystyle \int_0^1 h(x) dx\)</span> can either be convergent or divergent.</div></li>
+</ol>
+</div></article><article class="activity project-like" id="activity-TI8zerounbounded"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.22</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="p-2059">
+<div class="para">Consider the plots of <span class="process-math">\(f(x), g(x), h(x) \)</span> where <span class="process-math">\(0 &lt; g(x) &lt; f(x) &lt; h(x)\text{.}\)</span> <figure class="figure figure-like" id="figure-104"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/fzero2.svg" role="img" class="contained" alt="Plots of positive functions f(x), g(x) and h(x)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">115<span class="period">.</span></span><span class="space"> </span>Plots of <span class="process-math">\(f(x), g(x), h(x)\)</span></figcaption></figure> If <span class="process-math">\(\displaystyle \int_0^1 f(x) dx\)</span> is dinvergent, what can we say about <span class="process-math">\(g(x)\)</span> and <span class="process-math">\(h(x)\text{?}\)</span>
+</div>
+<ol class="upper-alpha">
+<li id="li-1297"><div class="para" id="p-derived-li-1297">
+<span class="process-math">\(\displaystyle \int_0^1 g(x) dx\)</span> and <span class="process-math">\(\displaystyle \int_0^1 h(x) dx\)</span> are both convergent.</div></li>
+<li id="li-1298"><div class="para" id="p-derived-li-1298">
+<span class="process-math">\(\displaystyle \int_0^1 g(x) dx\)</span> and <span class="process-math">\(\displaystyle \int_0^1 h(x) dx\)</span> are both divergent.</div></li>
+<li id="li-1299"><div class="para" id="p-derived-li-1299">Whether or not <span class="process-math">\(\displaystyle \int_0^1 g(x) dx\)</span>  and <span class="process-math">\(\displaystyle \int_0^1 h(x) dx\)</span> are  convergent or divergent cannot be determined.</div></li>
+<li id="li-1300"><div class="para" id="p-derived-li-1300">
+<span class="process-math">\(\displaystyle \int_0^1 g(x) dx\)</span> can be either convergent or divergent and <span class="process-math">\(\displaystyle \int_0^1 h(x) dx\)</span> is divergent.</div></li>
+<li id="li-1301"><div class="para" id="p-derived-li-1301">
+<span class="process-math">\(\displaystyle \int_0^1 g(x) dx\)</span> is convergent and  <span class="process-math">\(\displaystyle \int_0^1 h(x) dx\)</span> is divergent.</div></li>
+</ol>
+</div></article><article class="fact theorem-like" id="fact-TI8Comparison"><h4 class="heading">
+<span class="type">Fact</span><span class="space"> </span><span class="codenumber">5.8.5</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="p-2060">
+<div class="para">Let <span class="process-math">\(f(x), g(x)\)</span> be functions such that for <span class="process-math">\(a&lt;x&lt;b\text{,}\)</span> <span class="process-math">\(0\leq f(x) \leq g(x)\text{.}\)</span> Then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\displaystyle 0\leq \int_a^b f(x) dx\leq \int_a^b g(x) dx\text{.}
+\end{equation*}
+</div>
+<div class="para">In particular:</div>
+<ul class="disc">
+<li id="li-1302"><div class="para" id="p-2061">If <span class="process-math">\(\int_a^b g(x)dx\)</span> converges, so does the smaller <span class="process-math">\(\int_a^b f(x)dx\text{.}\)</span>
+</div></li>
+<li id="li-1303"><div class="para" id="p-2062">If <span class="process-math">\(\int_a^b f(x)dx\)</span> diverges, so does the bigger <span class="process-math">\(\int_a^b g(x)dx\text{.}\)</span>
+</div></li>
+</ul>
+</div></article><article class="activity project-like" id="activity-TI8comparison"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.23</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-202"><div class="para logical" id="p-2063">
+<div class="para">Compare <span class="process-math">\(\frac{1}{x^3+1}\)</span> to one of the following functions where <span class="process-math">\(x&gt;2\)</span> and use this to determine if <span class="process-math">\(\displaystyle \int_2^\infty \frac{1}{x^3+1}dx\)</span> is convergent or divergent.</div>
+<ol class="upper-alpha cols2">
+<li id="li-1304"><div class="para" id="p-derived-li-1304"><span class="process-math">\(\displaystyle \displaystyle\frac{1}{x}\)</span></div></li>
+<li id="li-1305"><div class="para" id="p-derived-li-1305"><span class="process-math">\(\displaystyle \displaystyle\frac{1}{\sqrt{x}}\)</span></div></li>
+<li id="li-1306"><div class="para" id="p-derived-li-1306"><span class="process-math">\(\displaystyle \displaystyle\frac{1}{x^2}\)</span></div></li>
+<li id="li-1307"><div class="para" id="p-derived-li-1307"><span class="process-math">\(\displaystyle \displaystyle\frac{1}{x^3}\)</span></div></li>
+</ol>
+</div></div></article><article class="activity project-like" id="activity-TI8comparison2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.24</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-203"><div class="para logical" id="p-2064">
+<div class="para">Comparing <span class="process-math">\(\frac{1}{x^3-4}\)</span> to which of the following functions where <span class="process-math">\(x&gt;3\)</span> allows you to determine that <span class="process-math">\(\displaystyle\int_3^{\infty} \dfrac{1}{x^3-4}\ dx\)</span> converges?</div>
+<ol class="upper-alpha cols2">
+<li id="li-1308"><div class="para" id="p-derived-li-1308"><span class="process-math">\(\displaystyle \displaystyle\frac{1}{x^3+x}\)</span></div></li>
+<li id="li-1309"><div class="para" id="p-derived-li-1309"><span class="process-math">\(\displaystyle \displaystyle\frac{1}{4x^3}\)</span></div></li>
+<li id="li-1310"><div class="para" id="p-derived-li-1310"><span class="process-math">\(\displaystyle \displaystyle\frac{1}{x^3}\)</span></div></li>
+<li id="li-1311"><div class="para" id="p-derived-li-1311"><span class="process-math">\(\displaystyle \displaystyle\frac{1}{x^3-x^3/2}\)</span></div></li>
+</ol>
+</div></div></article><article class="activity project-like" id="activity-T8Fcos"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.8.25</span><span class="period">.</span>
+</h4>
+<article class="task exercise-like" id="task-594"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-2065">Find <span class="process-math">\(\displaystyle \int_{\pi/2}^a \cos(x)dx\text{.}\)</span>
+</div></article><article class="task exercise-like" id="task-595"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-2066">Which of the following is true about <span class="process-math">\(\int_{\pi/2}^\infty \cos(x)dx\text{?}\)</span>
+</div>
+<ol class="upper-alpha cols2">
+<li id="li-1312"><div class="para" id="p-2067">
+<span class="process-math">\(\displaystyle \int_{\pi/2}^\infty \cos(x)dx\)</span> is convergent.</div></li>
+<li id="li-1313"><div class="para" id="p-2068">
+<span class="process-math">\(\displaystyle \int_{\pi/2}^\infty \cos(x)dx\)</span> is divergent.</div></li>
+<li id="li-1314"><div class="para" id="p-2069">More information is needed.</div></li>
+</ol></article></article></section><section class="subsection" id="subsection-78"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.8.2</span> <span class="title">Videos</span>
+</h3>
+<figure class="figure figure-like" id="figure-105"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-TI81" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/BPKawAzqoas?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">116<span class="period">.</span></span><span class="space"> </span>Video: I can compute improper integrals, <span class="process-math">\(p&gt;1\)</span></figcaption></figure><figure class="figure figure-like" id="figure-106"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-TI82" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/kYIv3E9Jio4?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">117<span class="period">.</span></span><span class="space"> </span>Video: I can compute improper integrals, <span class="process-math">\(p &lt; 1\)</span></figcaption></figure></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="TI7.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="AI.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>
