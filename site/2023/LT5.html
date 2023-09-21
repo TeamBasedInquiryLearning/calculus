@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Calc Limits with infinite inputs (LT5)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
+<meta property="book:author" content="TBIL Fellows">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.7/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/shell_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/banner_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/navbar_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/toc_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.7/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus for Team-Based Inquiry Learning:</span> <span class="subtitle">2023 Edition</span></a></h1>
+<p class="byline">TBIL Fellows</p>
+</div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms" class="searchterms"></span>
+</h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="LT4.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="LT.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="LT6.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\newcommand{\tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural">
+<li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li>
+<div class="toc-item"><a href="LT.html" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="LT1.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Limits graphically (LT1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="LT1.html#subsection-1" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="LT1.html#subsection-2" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="LT2.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Limits numerically (LT2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="LT2.html#subsection-3" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="LT2.html#subsection-4" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="LT3.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Limits analytically (LT3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="LT3.html#subsection-5" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="LT3.html#subsection-6" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="LT4.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Continuity (LT4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="LT4.html#subsection-7" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="LT4.html#subsection-8" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="active">
+<div class="toc-item"><a href="LT5.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Limits with infinite inputs (LT5)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="LT5.html#subsection-9" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="LT5.html#subsection-10" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="LT6.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Limits with infinite outputs (LT6)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="LT6.html#subsection-11" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="LT6.html#subsection-12" class="internal"><span class="codenumber">1.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF.html" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="DF1.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Derivatives graphically and numerically (DF1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF1.html#subsection-13" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF1.html#subsection-14" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF2.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Derivatives analytically (DF2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF2.html#subsection-15" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF2.html#subsection-16" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF3.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Elementary derivative rules (DF3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF3.html#subsection-17" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF3.html#subsection-18" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF4.html" class="internal"><span class="codenumber">2.4</span> <span class="title">The product and quotient rules (DF4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF4.html#subsection-19" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF4.html#subsection-20" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF5.html" class="internal"><span class="codenumber">2.5</span> <span class="title">The chain rule (DF5)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF5.html#subsection-21" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF5.html#subsection-22" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF6.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Differentiation strategy (DF6)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF6.html#subsection-23" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF6.html#subsection-24" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF7.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Differentiating implicitly defined functions (DF7)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF7.html#subsection-25" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF7.html#subsection-26" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF8.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Differentiating inverse functions (DF8)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF8.html#subsection-27" class="internal"><span class="codenumber">2.8.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF8.html#subsection-28" class="internal"><span class="codenumber">2.8.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD.html" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="AD1.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Tangents, motion, and marginals (AD1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD1.html#subsection-29" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD1.html#subsection-30" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD2.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Linear approximation (AD2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD2.html#subsection-31" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD2.html#subsection-32" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD3.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Related rates (AD3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD3.html#subsection-33" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD3.html#subsection-34" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD4.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Extreme values (AD4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD4.html#subsection-35" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD4.html#subsection-36" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD5.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Derivative tests (AD5)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD5.html#subsection-37" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD5.html#subsection-38" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD6.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Concavity and inflection (AD6)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD6.html#subsection-39" class="internal"><span class="codenumber">3.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD6.html#subsection-40" class="internal"><span class="codenumber">3.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD7.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Graphing with derivatives (AD7)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD7.html#subsection-41" class="internal"><span class="codenumber">3.7.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD7.html#subsection-42" class="internal"><span class="codenumber">3.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD8.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Applied optimization (AD8)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD8.html#subsection-43" class="internal"><span class="codenumber">3.8.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD8.html#subsection-44" class="internal"><span class="codenumber">3.8.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD9.html" class="internal"><span class="codenumber">3.9</span> <span class="title">Limits and Derivatives (AD9)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD9.html#subsection-45" class="internal"><span class="codenumber">3.9.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD9.html#subsection-46" class="internal"><span class="codenumber">3.9.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN.html" class="internal"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="IN1.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Geometry of definite integrals (IN1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN1.html#subsection-47" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN1.html#subsection-48" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN2.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Approximating definite integrals (IN2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN2.html#subsection-49" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN2.html#subsection-50" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN3.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Elementary antiderivatives (IN3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN3.html#subsection-51" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN3.html#subsection-52" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN4.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Initial Value Problems (IN4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN4.html#subsection-53" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN4.html#subsection-54" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN5.html" class="internal"><span class="codenumber">4.5</span> <span class="title">FTC for definite integrals (IN5)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN5.html#subsection-55" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN5.html#subsection-56" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN6.html" class="internal"><span class="codenumber">4.6</span> <span class="title">FTC for derivatives of integrals (IN6)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN6.html#subsection-57" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN6.html#subsection-58" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN7.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Area under curves (IN7)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN7.html#subsection-59" class="internal"><span class="codenumber">4.7.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN7.html#subsection-60" class="internal"><span class="codenumber">4.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN8.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Area between curves (IN8)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN8.html#subsection-61" class="internal"><span class="codenumber">4.8.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN8.html#subsection-62" class="internal"><span class="codenumber">4.8.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI.html" class="internal"><span class="codenumber">5</span> <span class="title">Techniques of Integration (TI)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="TI1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Substitution method (TI1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI1.html#subsection-63" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI1.html#subsection-64" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI2.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Integration by Parts (TI2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI2.html#subsection-65" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI2.html#subsection-66" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI3.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Integration of trigonometry (TI3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI3.html#subsection-67" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI3.html#subsection-68" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI4.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Trigonometric Substitution (TI4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI4.html#subsection-69" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI4.html#subsection-70" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI5.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Tables of Integrals (TI5)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI5.html#subsection-71" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI5.html#subsection-72" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI6.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Partial fractions (TI6)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI6.html#subsection-73" class="internal"><span class="codenumber">5.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI6.html#subsection-74" class="internal"><span class="codenumber">5.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI7.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Integration strategy (TI7)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI7.html#subsection-75" class="internal"><span class="codenumber">5.7.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI7.html#subsection-76" class="internal"><span class="codenumber">5.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI8.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Improper integrals (TI8)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI8.html#subsection-77" class="internal"><span class="codenumber">5.8.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI8.html#subsection-78" class="internal"><span class="codenumber">5.8.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AI.html" class="internal"><span class="codenumber">6</span> <span class="title">Applications of Integration (AI)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="AI1.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Average Value (AI1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AI1.html#subsection-79" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AI1.html#subsection-80" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AI2.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Arclength (AI2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AI2.html#subsection-81" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AI2.html#subsection-82" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AI3.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Volumes of Revolution (AI3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AI3.html#subsection-83" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AI3.html#subsection-84" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AI4.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Surface Areas of Revolution (AI4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AI4.html#subsection-85" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AI4.html#subsection-86" class="internal"><span class="codenumber">6.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AI5.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Density, Mass, and Center of Mass (AI5)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AI5.html#subsection-87" class="internal"><span class="codenumber">6.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AI5.html#subsection-88" class="internal"><span class="codenumber">6.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AI6.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Work (AI6)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AI6.html#subsection-89" class="internal"><span class="codenumber">6.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AI6.html#subsection-90" class="internal"><span class="codenumber">6.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AI7.html" class="internal"><span class="codenumber">6.7</span> <span class="title">Force and Pressure (AI7)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AI7.html#subsection-91" class="internal"><span class="codenumber">6.7.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AI7.html#subsection-92" class="internal"><span class="codenumber">6.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="CO.html" class="internal"><span class="codenumber">7</span> <span class="title">Coordinates and Vectors (CO)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="CO1.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Parametric/vector equations (CO1)</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="CO1.html#subsection-93" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Activities</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="CO2.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Parametric/vector derivatives (CO2)</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="CO2.html#subsection-94" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Activities</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="CO3.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Parametric/vector arclength (CO3)</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="CO3.html#subsection-95" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Activities</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="CO4.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Polar coordinates (CO4)</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="CO4.html#subsection-96" class="internal"><span class="codenumber">7.4.1</span> <span class="title">Activities</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="CO5.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Polar Arclength (CO5)</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="CO5.html#subsection-97" class="internal"><span class="codenumber">7.5.1</span> <span class="title">Activities</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="CO6.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Polar area (CO6)</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="CO6.html#subsection-98" class="internal"><span class="codenumber">7.6.1</span> <span class="title">Activities</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ.html" class="internal"><span class="codenumber">8</span> <span class="title">Sequences and Series (SQ)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="SQ1.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Sequence Formulas (SQ1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ1.html#subsection-99" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ1.html#subsection-100" class="internal"><span class="codenumber">8.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ2.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Sequence Properties and Limits (SQ2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ2.html#subsection-101" class="internal"><span class="codenumber">8.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ2.html#subsection-102" class="internal"><span class="codenumber">8.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ3.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Partial Sum Sequence (SQ3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ3.html#subsection-103" class="internal"><span class="codenumber">8.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ3.html#subsection-104" class="internal"><span class="codenumber">8.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ4.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Geometric Series (SQ4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ4.html#subsection-105" class="internal"><span class="codenumber">8.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ4.html#subsection-106" class="internal"><span class="codenumber">8.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ5.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Basic Convergence Tests (SQ5)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ5.html#subsection-107" class="internal"><span class="codenumber">8.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ5.html#subsection-108" class="internal"><span class="codenumber">8.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ6.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Comparison Tests (SQ6)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ6.html#subsection-109" class="internal"><span class="codenumber">8.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ6.html#subsection-110" class="internal"><span class="codenumber">8.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ7.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Ratio and Root Tests (SQ7)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ7.html#subsection-111" class="internal"><span class="codenumber">8.7.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ7.html#subsection-112" class="internal"><span class="codenumber">8.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ8.html" class="internal"><span class="codenumber">8.8</span> <span class="title">Absolute Convergence (SQ8)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ8.html#subsection-113" class="internal"><span class="codenumber">8.8.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ8.html#subsection-114" class="internal"><span class="codenumber">8.8.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ9.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Series Convergence Strategy (SQ9)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ9.html#subsection-115" class="internal"><span class="codenumber">8.9.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ9.html#subsection-116" class="internal"><span class="codenumber">8.9.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="PS.html" class="internal"><span class="codenumber">9</span> <span class="title">Power Series (PS)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="PS1.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Power Series (PS1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="PS1.html#subsection-117" class="internal"><span class="codenumber">9.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="PS1.html#subsection-118" class="internal"><span class="codenumber">9.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="PS2.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Convergence of Power Series (PS2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="PS2.html#subsection-119" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="PS2.html#subsection-120" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="PS3.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Manipulation of Power Series (PS3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="PS3.html#subsection-121" class="internal"><span class="codenumber">9.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="PS3.html#subsection-122" class="internal"><span class="codenumber">9.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="PS4.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Taylor Series (PS4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="PS4.html#subsection-123" class="internal"><span class="codenumber">9.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="PS4.html#subsection-124" class="internal"><span class="codenumber">9.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="integral-table.html" class="internal"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></div></li>
+<li><div class="toc-item"><a href="trig-table.html" class="internal"><span class="codenumber">B</span> <span class="title">List of Trigonometric Identities</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="LT5"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.5</span> <span class="title">Limits with infinite inputs (LT5)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-6"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="li-167"><div class="para" id="p-252">Determine limits of functions at infinity.</div></li></ul></article><section class="subsection" id="subsection-9"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.5.1</span> <span class="title">Activities</span>
+</h3>
+<article class="activity project-like" id="LT5-infinity-intuition1"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-20">
+<div class="para" id="p-253">Consider the graph of the polynomial function <span class="process-math">\(f(x) = x^3\)</span> . We want to think about what the long term behavior of this function might be. Which of the following best describes its behavior?</div> <figure class="figure figure-like" id="figure-16"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/LT5-infinity-intuition1-img.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">22<span class="period">.</span></span><span class="space"> </span>The graph of <span class="process-math">\(x^3\text{.}\)</span></figcaption></figure>
+</div> <ol class="upper-alpha">
+<li id="li-168"><div class="para" id="p-254">As <span class="process-math">\(x\)</span> gets larger, the function <span class="process-math">\(x^3\)</span> gets smaller and smaller.</div></li>
+<li id="li-169"><div class="para" id="p-255">As <span class="process-math">\(x\)</span> gets more and more negative, the function <span class="process-math">\(x^3\)</span> gets more and more negative.</div></li>
+<li id="li-170"><div class="para" id="p-256">As <span class="process-math">\(x\)</span> gets more and more positive, the function <span class="process-math">\(x^3\)</span> gets more and more negative.</div></li>
+<li id="li-171"><div class="para" id="p-257">As <span class="process-math">\(x\)</span> gets smaller, the function <span class="process-math">\(x^3\)</span> gets smaller and smaller.</div></li>
+</ol></article><article class="remark remark-like" id="remark-9"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-258">We say that “the limit as <span class="process-math">\(x\)</span> tends to negative infinity of <span class="process-math">\(x^3\)</span> is negative infinity” and that “the limit as <span class="process-math">\(x\)</span> tends to positive infinity of <span class="process-math">\(x^3\)</span> is positive infinity.” In symbols, we write</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x \to + \infty} x^3 = + \infty \, ,  \, \lim_{x \to - \infty} x^3 = - \infty. 
+\end{equation*}
+</div></article><article class="activity project-like" id="LT5-infinity-inutition2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.2</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-21">
+<div class="para" id="p-259">Consider the graph of the rational function <span class="process-math">\(f(x) = 1/ x^3\)</span> . We want to think about what the long term behavior of this function might be. Which of the following best describes its behavior?</div> <figure class="figure figure-like" id="figure-17"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/LT5-infinity-intuition2-img.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">23<span class="period">.</span></span><span class="space"> </span>The graph of <span class="process-math">\(1/x^3\text{.}\)</span></figcaption></figure>
+</div> <ol class="upper-alpha">
+<li id="li-172"><div class="para" id="p-260">As <span class="process-math">\(x\)</span> tends to positive infinity, the function <span class="process-math">\(1/x^3\)</span> tends to positive infinity</div></li>
+<li id="li-173"><div class="para" id="p-261">As <span class="process-math">\(x\)</span> tends to negative infinity, the function <span class="process-math">\(1/x^3\)</span>  tends to 0</div></li>
+<li id="li-174"><div class="para" id="p-262">As <span class="process-math">\(x\)</span> tends to positive infinity, the function <span class="process-math">\(1/x^3\)</span>  tends to negative infinity</div></li>
+<li id="li-175"><div class="para" id="p-263">As <span class="process-math">\(x\)</span> tends to 0, the function <span class="process-math">\(1/x^3\)</span>  tends to 0</div></li>
+</ol></article><article class="definition definition-like" id="definition-5"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.5.2</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-264">A function has a <dfn class="terminology">horizontal asymptote</dfn> at <span class="process-math">\(y=b\)</span> when</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to +\infty} f(x) = b
+\end{equation*}
+</div>
+<div class="para" id="p-265">or</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to -\infty} f(x) = b
+\end{equation*}
+</div>
+<div class="para" id="p-266">This means that we can make the output of <span class="process-math">\(f(x)\)</span> as close as we want to <span class="process-math">\(b\text{,}\)</span> as long as we take <span class="process-math">\(x\)</span> a large enough positive number (<span class="process-math">\(x \to \infty\)</span>) or a large enough negative number (<span class="process-math">\(x \to -\infty\)</span>).</div></article><article class="remark remark-like" id="remark-10"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.5.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-267">We say that the function <span class="process-math">\(1/x^3\)</span> has horizontal asymptote y=0 because the limit as <span class="process-math">\(x\)</span> tends to positive infinity of <span class="process-math">\(1/x^3\)</span> is 0. Alternatively, we could also justify it by saying that the limit as <span class="process-math">\(x\)</span> goes to negative infinity is 0.</div></article><article class="activity project-like" id="asymptotes-hor"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.3</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-22">
+<div class="para" id="p-268">Which of the following functions have horizontal asymptotes? Select all! </div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-18"><img src="generated/latex-image/image-14.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">24<span class="period">.</span></span><span class="space"> </span>A</figcaption></figure></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-19"><img src="generated/latex-image/image-15.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">25<span class="period">.</span></span><span class="space"> </span>B</figcaption></figure></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-20"><img src="generated/latex-image/image-16.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">26<span class="period">.</span></span><span class="space"> </span>C</figcaption></figure></div>
+</div></div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-21"><img src="generated/latex-image/image-17.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">27<span class="period">.</span></span><span class="space"> </span>D</figcaption></figure></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-22"><img src="generated/latex-image/image-18.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">28<span class="period">.</span></span><span class="space"> </span>E</figcaption></figure></div>
+<div class="sbspanel top" style="width:33.3333333333333%;"><figure class="figure figure-like" id="figure-23"><img src="generated/latex-image/image-19.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">29<span class="period">.</span></span><span class="space"> </span>F</figcaption></figure></div>
+</div></div>
+</div></article><article class="activity project-like" id="infinity-rational1"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.4</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-23"><div class="para" id="p-269">Recall that a rational function is a ratio of two polynomials. For any given rational function, what are all the possible behaviors as <span class="process-math">\(x\)</span> tends to + or - infinity?</div></div> <ol class="upper-alpha">
+<li id="li-176"><div class="para" id="p-270">The only possible limit is <span class="process-math">\(0\)</span>
+</div></li>
+<li id="li-177"><div class="para" id="p-271">The only possible limits are <span class="process-math">\(0\)</span> or <span class="process-math">\(\pm \infty\)</span>
+</div></li>
+<li id="li-178"><div class="para" id="p-272">The only possible limits are <span class="process-math">\(0\text{,}\)</span> <span class="process-math">\(1\)</span> or <span class="process-math">\(\pm \infty\)</span>
+</div></li>
+<li id="li-179"><div class="para" id="p-273">The only possible limits are any constant number or <span class="process-math">\(\pm \infty\)</span>
+</div></li>
+</ol></article><article class="activity project-like" id="infinity-rational2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.5</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-24">In this activity we will examine functions whose limit as <span class="process-math">\(x\)</span> approaches positive and negative infinity is a nonzero constant.</div>
+<article class="task exercise-like" id="task-60"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-274">Graph the following functions and consider their limits as <span class="process-math">\(x\)</span> approaches positive and negative infinity. Which function(s) have a limit that is nonzero and constant? Find each of these limits.</div>
+<ol class="upper-alpha cols2">
+<li id="li-180"><div class="para" id="p-275"><span class="process-math">\(\displaystyle \displaystyle  f(x)= \frac{x^3-x+3}{2x^3-6x+1} \)</span></div></li>
+<li id="li-181"><div class="para" id="p-276"><span class="process-math">\(\displaystyle \displaystyle  f(x)= \frac{x^2-3}{5x^3-2x^2+5} \)</span></div></li>
+<li id="li-182"><div class="para" id="p-277"><span class="process-math">\(\displaystyle \displaystyle  f(x)= \frac{x^4-3x-2}{3x^3-5x+1} \)</span></div></li>
+<li id="li-183"><div class="para" id="p-278"><span class="process-math">\(\displaystyle \displaystyle  f(x)= \frac{10x^5-3x+2}{5x^5-3x^2+1} \)</span></div></li>
+<li id="li-184"><div class="para" id="p-279"><span class="process-math">\(\displaystyle \displaystyle  f(x)= \frac{-8x^2-5x+1}{2x^2-2x+3} \)</span></div></li>
+</ol></article><article class="task exercise-like" id="task-61"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-280">Conjecture a rule for how to determine that a rational function has a nonzero constant limit as <span class="process-math">\(x\)</span> approaches positive and negative infinity. Test your rule by creating a rational function whose limit as <span class="process-math">\(x \to \infty\)</span> equals 3 and then check it graphically.</div></article></article><article class="activity project-like" id="infinity-rational3"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.6</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-25"><div class="para" id="p-281">What about when the limit is not a nonzero constant? How do we recognize those? In this activity you will first conjecture the general behavior of rational functions and then test your conjectures.</div></div>
+<article class="task exercise-like" id="task-62"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-282">Consider a rational function <span class="process-math">\(r(x) = \frac{p(x)}{q(x)}\text{.}\)</span> Looking at the numerator <span class="process-math">\(p(x)\)</span> and the denominator <span class="process-math">\(q(x)\text{,}\)</span> when does the function <span class="process-math">\(r(x) \)</span> have limit equal to 0 as <span class="process-math">\(x \to \infty? \)</span>
+</div>
+<ol class="upper-alpha">
+<li id="li-185"><div class="para" id="p-283">When the ratio of the leading terms is a constant.</div></li>
+<li id="li-186"><div class="para" id="p-284">When the degree of the numerator is greater than the degree of the denominator.</div></li>
+<li id="li-187"><div class="para" id="p-285">When the degree of the numerator is less than the degree of the denominator.</div></li>
+<li id="li-188"><div class="para" id="p-286">When the degree of the numerator is equal to the degree of the denominator.</div></li>
+</ol></article><article class="task exercise-like" id="task-63"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-287">Consider a rational function <span class="process-math">\(r(x) = \frac{p(x)}{q(x)}\text{.}\)</span> Looking at the numerator <span class="process-math">\(p(x)\)</span> and the denominator <span class="process-math">\(q(x)\text{,}\)</span> when does the function <span class="process-math">\(r(x) \)</span> have limit approaching infinity as <span class="process-math">\(x \to \infty? \)</span>
+</div>
+<ol class="upper-alpha">
+<li id="li-189"><div class="para" id="p-288">When the ratio of the leading terms is a constant.</div></li>
+<li id="li-190"><div class="para" id="p-289">When the degree of the numerator is greater than the degree of the denominator.</div></li>
+<li id="li-191"><div class="para" id="p-290">When the degree of the numerator is less than the degree of the denominator.</div></li>
+<li id="li-192"><div class="para" id="p-291">When the degree of the numerator is equal to the degree of the denominator.</div></li>
+</ol></article><article class="task exercise-like" id="task-64"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-292">Conjecture a rule for the each of the previous two parts of the activity. Test your rules by creating a rational function whose limit as <span class="process-math">\(x \to \infty\)</span> equals 0 and another whose limit as <span class="process-math">\(x \to \infty\)</span> is infinite. Then check them graphically.</div></article></article><article class="activity project-like" id="infinity-checkit"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.7</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-26"><div class="para" id="p-293">Explain how to find the value of each limit.</div></div>
+<article class="task exercise-like" id="task-65"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="p-294"><div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to-\infty } -\frac{6 \, {x^4} + 7 \, {x^3} - 7}{6 \, x - {x^4} + 9}
+\,\text{ and }\,
+\lim_{x\to+\infty } -\frac{6 \, {x^4} + 7 \, {x^3} - 7}{6 \, x - {x^4} + 9}
+\end{equation*}
+</div></div></article><article class="task exercise-like" id="task-66"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para logical" id="p-295"><div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to-\infty } -\frac{7 \, {x^4} - 5 \, {x^3} + 8}{3 \, {\left(2 \, {x^5} + 3 \, {x^2} - 3\right)}}
+\,\text{ and }\,
+\lim_{x\to+\infty } -\frac{7 \, {x^4} - 5 \, {x^3} + 8}{3 \, {\left(2 \, {x^5} + 3 \, {x^2} - 3\right)}}
+\end{equation*}
+</div></div></article><article class="task exercise-like" id="task-67"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para logical" id="p-296"><div class="displaymath process-math">
+\begin{equation*}
+\lim_{x\to-\infty } \frac{3 \, {x^6} + {x^3} - 8}{7 \, x - 6 \, {x^5} + 7}
+\,\text{ and }\,
+\lim_{x\to+\infty } \frac{3 \, {x^6} + {x^3} - 8}{7 \, x - 6 \, {x^5} + 7}
+\end{equation*}
+</div></div></article></article><article class="activity project-like" id="infinity-dne"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.8</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-27">
+<div class="para" id="p-297">What is your best guess for the limit as <span class="process-math">\(x\)</span> goes to <span class="process-math">\(+ \infty \)</span> of the function graphed below?</div> <figure class="figure figure-like" id="figure-24"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/image-20.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">30<span class="period">.</span></span><span class="space"> </span>A mysterious periodic function.</figcaption></figure>
+</div> <ol class="upper-alpha cols2">
+<li id="li-193"><div class="para" id="p-298">The limit is <span class="process-math">\(0\)</span>
+</div></li>
+<li id="li-194"><div class="para" id="p-299">The limit is <span class="process-math">\(1\)</span>
+</div></li>
+<li id="li-195"><div class="para" id="p-300">The limit is <span class="process-math">\(-1\)</span>
+</div></li>
+<li id="li-196"><div class="para" id="p-301">The limit is <span class="process-math">\(+\infty\)</span>
+</div></li>
+<li id="li-197"><div class="para" id="p-302">The limit DNE</div></li>
+</ol></article><article class="warning remark-like" id="warning-1"><h4 class="heading">
+<span class="type">Warning</span><span class="space"> </span><span class="codenumber">1.5.4</span><span class="period">.</span>
+</h4>For a periodic function, a function whose outputs repeat periodically, there is not one distinguished long term behavior, so the limit DNE. Notice that this is different from the limit being +infinity in which case the outputs have a clear behavior: they are getting larger and larger. Unfortunately, you will find in many cases that the notation DNE is used both for a limit equal to infinity and a limit that does not tend to one distinguished value. Beware!</article><article class="activity project-like" id="infinity-ext1"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.9</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-28"><div class="para" id="p-303">Compute the following limits.</div></div>
+<article class="task exercise-like" id="task-68"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-304"><span class="process-math">\(\displaystyle  \lim_{x\to -\infty} \frac{x^3-x+83}{1} \)</span></div></article><article class="task exercise-like" id="task-69"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-305"><span class="process-math">\(\displaystyle  \lim_{x\to -\infty} \frac{1}{x^3-x+83} \)</span></div></article><article class="task exercise-like" id="task-70"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-306"><span class="process-math">\(\displaystyle  \lim_{x\to +\infty} \frac{x+3}{2-x}\)</span></div></article><article class="task exercise-like" id="task-71"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="p-307"><span class="process-math">\(\displaystyle  \lim_{x\to -\infty} \frac{\pi-3x}{\pi x-3}\)</span></div></article><article class="task exercise-like" id="task-72"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="p-308">(Challenge) <span class="process-math">\(\displaystyle  \lim_{x\to + \infty} \frac{3e^x+2}{2e^x+3}\)</span>
+</div></article><article class="task exercise-like" id="task-73"><h5 class="heading"><span class="codenumber">(f)</span></h5>
+<div class="para" id="p-309">(Challenge) <span class="process-math">\(\displaystyle  \lim_{x\to - \infty} \frac{3e^x+2}{2e^x+3}\)</span>
+</div></article></article><article class="activity project-like" id="study-rational1"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.10</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-29">
+<div class="para" id="p-310">The graph below represents the function <span class="process-math">\(f(x) =  \displaystyle\frac{2(x+3)(x+1)}{x^2-2x-3}\text{.}\)</span>
+</div> <figure class="figure figure-like" id="figure-25"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/image-21.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">31<span class="period">.</span></span><span class="space"> </span>The graph of <span class="process-math">\(f(x)\)</span></figcaption></figure>
+</div>
+<article class="task exercise-like" id="task-74"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-311">Find the horizontal asymptote of <span class="process-math">\(f(x) \text{.}\)</span> First, guess it from the graph. Then, prove that your guess is right using algebra.</div></article><article class="task exercise-like" id="task-75"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-312">Use limit notation to describe the behavior of  <span class="process-math">\(f(x)\)</span> at its horizontal asymptotes.</div></article><article class="task exercise-like" id="task-76"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-313">Come up with the formula of a rational function that has horizontal asymptote <span class="process-math">\(y=3 \text{.}\)</span>
+</div></article><article class="task exercise-like" id="task-77"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="p-314">What do you think is happening at <span class="process-math">\(x=-1\text{?}\)</span> We will come back to this in the next section!</div></article></article><article class="note remark-like" id="note-2"><h4 class="heading">
+<span class="type">Note</span><span class="space"> </span><span class="codenumber">1.5.5</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-315">An exponential function <span class="process-math">\(P(t) = a \, b^t\)</span> exhibiting exponential decay will have the long term behavior <span class="process-math">\(P(t) \to 0\)</span> as <span class="process-math">\(t \to \infty\text{.}\)</span> If we shift the graph up by <span class="process-math">\(c\)</span> units, we obtain the new function <span class="process-math">\(Q(t) = a \, b^t + c\text{,}\)</span> with the long term behavior <span class="process-math">\(\lim_{t \to \infty} Q(t) = c\text{.}\)</span> A cooling object can be represented by the exponential decay model <span class="process-math">\(Q(t) = a \, b^t + c\text{.}\)</span>
+</div></article><article class="activity project-like" id="app-cooling"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.11</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-30">
+<div class="para" id="p-316">In this activity you will explore an exponential model for a cooling object.</div> <div class="para" id="p-317">Consider a cup of coffee initially at 100 degrees Fahrenheit. The said cup of coffee was forgotten this morning on the kitchen counter where the thermostat is set at 72 degrees Fahrenheit. From previous observations, we can assume that a cup of coffee looses 10 percent of its temperature each minute.</div>
+</div>
+<article class="task exercise-like" id="task-78"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-318">In the long run, what temperature do you expect the coffee to tend to? Write your observation with limit notation.</div></article><article class="task exercise-like" id="task-79"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-319">In the model <span class="process-math">\(Q(t) = a \, b^t +c\text{,}\)</span> your previous answer gives you the value of one of the parameters in this model. Which one?</div></article><article class="task exercise-like" id="task-80"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-320">From the information given, we notice that the cup of coffee has decay rate of 10% or <span class="process-math">\(r = -0.1\text{.}\)</span> When an exponential model has decay rate <span class="process-math">\(r\text{,}\)</span> its exponential base <span class="process-math">\(b\)</span> has value <span class="process-math">\(b=1+r\text{.}\)</span> Use this to find the value of <span class="process-math">\(b\)</span> for the exponential model described in this scenario.</div></article><article class="task exercise-like" id="task-81"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="p-321">Assume that the initial temperature corresponds to input <span class="process-math">\(t=0\text{.}\)</span> Use the data about the initial temperature to find the value of the parameter <span class="process-math">\(a\)</span> in the model <span class="process-math">\(Q(t) = a \, b^t + c\text{.}\)</span>
+</div></article><article class="task exercise-like" id="task-82"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="p-322">You should have found that this scenario has exponential model <span class="process-math">\(Q(t) = 28 \, (0.9)^t + 72\text{.}\)</span> If you go back to drink the cup of coffee 30 minutes after it was left on the counter, what temperature will the coffee have reached?</div></article></article></section><section class="subsection" id="subsection-10"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.5.2</span> <span class="title">Videos</span>
+</h3>
+<figure class="figure figure-like" id="figure-26"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-LT5" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/PPLvAZmSB90?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">32<span class="period">.</span></span><span class="space"> </span>Video for LT5</figcaption></figure></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="LT4.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="LT6.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>
