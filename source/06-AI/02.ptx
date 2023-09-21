@@ -245,39 +245,93 @@
         <task>
             <p>
                 Estimate the arclength of this curve with two line segments where <m>\Delta x=2</m>.
-                <me>
-                    \begin{array}{|c|c|c|c|}
-                    \hline
-                    x_i &amp; (x_i, f(x_i)) &amp; (x_i+\Delta x, f(x_i+\Delta x)) &amp; \text{Length of segment}\\
-                    \hline
-                    1 &amp; &amp; &amp; \\
-                    \hline
-                    3 &amp; &amp; &amp; \\
-                    \hline
-                    
-                    \end{array}
-                </me>
             </p>
+            <tabular>
+                <row bottom="minor">
+                  <cell>
+                      <m>x_i</m>
+                  </cell>
+                  <cell>
+                      <m>(x_i,f(x_i))</m>
+                  </cell>
+                  <cell>
+                      <m>(x_i+\Delta x,f(x_i+\Delta x))</m>
+                  </cell>
+                  <cell>
+                      Length of segment
+                  </cell>
+                </row>
+                <row>
+                  <cell>
+                      <m>1</m>
+                  </cell>
+                  <cell/>
+                  <cell/>
+                  <cell/>
+                </row>
+                <row>
+                  <cell>
+                      <m>3</m>
+                  </cell>
+                  <cell/>
+                  <cell/>
+                  <cell/>
+                </row>
+            </tabular>
         </task>
         
         <task>
             <p>
                 Estimate the arclength of this curve with four line segments where <m>\Delta x=1</m>.
-                <me>
-                    \begin{array}{|c|c|c|c|}
-                    \hline
-                    x_i &amp; (x_i, f(x_i)) &amp; (x_i+\Delta x, f(x_i+\Delta x)) &amp; \text{Length of segment}\\
-                    \hline
-                    1 &amp; &amp; &amp; \\
-                    \hline
-                    2 &amp; &amp; &amp; \\
-                    \hline
-                    3 &amp; &amp; &amp; \\
-                    \hline
-                   
-                    \end{array}
-                </me>
             </p>
+            <tabular>
+                <row bottom="minor">
+                  <cell>
+                      <m>x_i</m>
+                  </cell>
+                  <cell>
+                      <m>(x_i,f(x_i))</m>
+                  </cell>
+                  <cell>
+                      <m>(x_i+\Delta x,f(x_i+\Delta x))</m>
+                  </cell>
+                  <cell>
+                      Length of segment
+                  </cell>
+                </row>
+                <row>
+                  <cell>
+                      <m>1</m>
+                  </cell>
+                  <cell/>
+                  <cell/>
+                  <cell/>
+                </row>
+                <row>
+                  <cell>
+                      <m>2</m>
+                  </cell>
+                  <cell/>
+                  <cell/>
+                  <cell/>
+                </row>
+                <row>
+                  <cell>
+                      <m>3</m>
+                  </cell>
+                  <cell/>
+                  <cell/>
+                  <cell/>
+                </row>
+                <row>
+                  <cell>
+                      <m>4</m>
+                  </cell>
+                  <cell/>
+                  <cell/>
+                  <cell/>
+                </row>
+            </tabular>
         </task>
         <task>
             <p>
