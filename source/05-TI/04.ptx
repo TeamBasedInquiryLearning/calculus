@@ -168,7 +168,7 @@ In summary, certain quadratic expressions inside an integral may be substituted 
 trigonometric functions to take advantage of trigonometric identities and simplify the integrand:
             <md>
                 <mrow>
-\text{Let } b-ax^2&amp;=b-b\sin^2(\theta)=b\cos^2(\theta)
+\text{Let } b^2-a^2x^2&amp;=b^2-b^2\sin^2(\theta)=b^2\cos^2(\theta)
                 </mrow>
                 <mrow>
 \text{So } x&amp;=\frac{b}{a}\sin(\theta)
@@ -176,7 +176,7 @@ trigonometric functions to take advantage of trigonometric identities and simpli
             </md>
             <md>
                 <mrow>
-\text{Let } b+ax^2&amp;=b+b\tan^2(\theta)=b\sec^2(\theta)
+\text{Let } b^2+a^2x^2&amp;=b^2+b^2\tan^2(\theta)=b^2\sec^2(\theta)
                 </mrow>
                 <mrow>
 \text{So } x&amp;=\frac{b}{a}\tan(\theta)
@@ -184,7 +184,7 @@ trigonometric functions to take advantage of trigonometric identities and simpli
             </md>
             <md>
                 <mrow>
-\text{Let } ax^2-b&amp;=b\sec^2(\theta)-b=b\tan^2(\theta)
+\text{Let } a^2x^2-b^2&amp;=b^2\sec^2(\theta)-b^2=b^2\tan^2(\theta)
                 </mrow>
                 <mrow>
 \text{So } x&amp;=\frac{b}{a}\sec(\theta)
