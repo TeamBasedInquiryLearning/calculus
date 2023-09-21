@@ -228,7 +228,7 @@ and the point <m>(x,y)=(1,6)</m> is a local maximum.</p></answer>-->
 
 <activity xml:id="activity-connection-MVT">
         <task> <p>Suppose <m>f</m> is continuous and differentiable on <m>[a,b]</m> and also suppose that <m>f(a)=f(b)</m>. What is the average rate of change of <m>f(x)</m> on <m>[a,b]</m>? What does the MVT (Mean Value Theorem) tell you?</p> </task>
-       <task> <p> Use part (a) to show with the MWT that <m>f(x) = (x-1)^2 + 3</m> has a critical point on <m>[0,2]</m> . </p> </task>
+       <task> <p> Use part (a) to show with the MVT that <m>f(x) = (x-1)^2 + 3</m> has a critical point on <m>[0,2]</m> . </p> </task>
     </activity>   
 
     </subsection>
