@@ -79,7 +79,7 @@
             <statement>
                 <p>
                      Suppose we know <me>\frac{10x-11}{x^2+x-2}=\frac{7}{x-1}+\frac{3}{x+2}</me>.
-                     Which of these is equal to <m>\int\frac{10x-11}{x^2+x-2}</m>?
+                     Which of these is equal to <m>\int\frac{10x-11}{x^2+x-2} dx</m>?
                     <ol marker="A.">
                         <li><m>7\ln|x-1|+3\arctan(x+2)+C</m></li>
                         <li><m>7\ln|x-1|+3\ln|x+2|+C</m></li>
@@ -95,7 +95,7 @@
                 <p>
  To find integrals like 
  <m>\int \frac{x^2+x+1}{x^3+x} dx</m> and
- <m>\int\frac{10x-11}{x^2+x-2}</m>, we'd like to <term>decompose</term> the fractions
+ <m>\int\frac{10x-11}{x^2+x-2} dx</m>, we'd like to <term>decompose</term> the fractions
  into simpler <term>partial fractions</term> that may be integrated with these formulas
  <me>\int\frac{1}{x+b}dx=\ln|x+b|+C</me>
  <me>\int\frac{1}{(x+b)^2}dx=-\frac{1}{x+b}+C</me>
