@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Calc Average Value (AI1)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
+<meta property="book:author" content="TBIL Institute Fellows">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.8/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="https://pretextbook.org/css/0.8/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.8/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.8/shell_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.8/banner_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.8/navbar_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.8/toc_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.8/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.8/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.8/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.8/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus for Team-Based Inquiry Learning:</span> <span class="subtitle">2024 Edition PREVIEW</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms" class="searchterms"></span>
+</h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="AI.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="AI.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="AI2.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button>
+</div></div>
+<span class="nav-runestone-controls"><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\newcommand{\tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural">
+<li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li>
+<div class="toc-item"><a href="LT.html" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="LT1.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Limits graphically (LT1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="LT1.html#subsection-1" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="LT1.html#subsection-2" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="LT2.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Limits numerically (LT2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="LT2.html#subsection-3" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="LT2.html#subsection-4" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="LT3.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Limits analytically (LT3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="LT3.html#subsection-5" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="LT3.html#subsection-6" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="LT4.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Continuity (LT4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="LT4.html#subsection-7" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="LT4.html#subsection-8" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="LT5.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Limits with infinite inputs (LT5)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="LT5.html#subsection-9" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="LT5.html#subsection-10" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="LT6.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Limits with infinite outputs (LT6)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="LT6.html#subsection-11" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="LT6.html#subsection-12" class="internal"><span class="codenumber">1.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF.html" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="DF1.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Derivatives graphically and numerically (DF1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF1.html#subsection-13" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF1.html#subsection-14" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF2.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Derivatives analytically (DF2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF2.html#subsection-15" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF2.html#subsection-16" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF3.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Elementary derivative rules (DF3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF3.html#subsection-17" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF3.html#subsection-18" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF4.html" class="internal"><span class="codenumber">2.4</span> <span class="title">The product and quotient rules (DF4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF4.html#subsection-19" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF4.html#subsection-20" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF5.html" class="internal"><span class="codenumber">2.5</span> <span class="title">The chain rule (DF5)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF5.html#subsection-21" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF5.html#subsection-22" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF6.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Differentiation strategy (DF6)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF6.html#subsection-23" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF6.html#subsection-24" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF7.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Differentiating implicitly defined functions (DF7)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF7.html#subsection-25" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF7.html#subsection-26" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="DF8.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Differentiating inverse functions (DF8)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="DF8.html#subsection-27" class="internal"><span class="codenumber">2.8.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="DF8.html#subsection-28" class="internal"><span class="codenumber">2.8.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD.html" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="AD1.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Tangents, motion, and marginals (AD1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD1.html#subsection-29" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD1.html#subsection-30" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD2.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Linear approximation (AD2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD2.html#subsection-31" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD2.html#subsection-32" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD3.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Related rates (AD3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD3.html#subsection-33" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD3.html#subsection-34" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD4.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Extreme values (AD4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD4.html#subsection-35" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD4.html#subsection-36" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD5.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Derivative tests (AD5)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD5.html#subsection-37" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD5.html#subsection-38" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD6.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Concavity and inflection (AD6)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD6.html#subsection-39" class="internal"><span class="codenumber">3.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD6.html#subsection-40" class="internal"><span class="codenumber">3.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD7.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Graphing with derivatives (AD7)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD7.html#subsection-41" class="internal"><span class="codenumber">3.7.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD7.html#subsection-42" class="internal"><span class="codenumber">3.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD8.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Applied optimization (AD8)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD8.html#subsection-43" class="internal"><span class="codenumber">3.8.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD8.html#subsection-44" class="internal"><span class="codenumber">3.8.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AD9.html" class="internal"><span class="codenumber">3.9</span> <span class="title">Limits and Derivatives (AD9)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AD9.html#subsection-45" class="internal"><span class="codenumber">3.9.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AD9.html#subsection-46" class="internal"><span class="codenumber">3.9.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN.html" class="internal"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="IN1.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Geometry of definite integrals (IN1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN1.html#subsection-47" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN1.html#subsection-48" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN2.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Approximating definite integrals (IN2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN2.html#subsection-49" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN2.html#subsection-50" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN3.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Elementary antiderivatives (IN3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN3.html#subsection-51" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN3.html#subsection-52" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN4.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Initial Value Problems (IN4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN4.html#subsection-53" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN4.html#subsection-54" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN5.html" class="internal"><span class="codenumber">4.5</span> <span class="title">FTC for definite integrals (IN5)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN5.html#subsection-55" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN5.html#subsection-56" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN6.html" class="internal"><span class="codenumber">4.6</span> <span class="title">FTC for derivatives of integrals (IN6)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN6.html#subsection-57" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN6.html#subsection-58" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN7.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Area under curves (IN7)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN7.html#subsection-59" class="internal"><span class="codenumber">4.7.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN7.html#subsection-60" class="internal"><span class="codenumber">4.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="IN8.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Area between curves (IN8)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="IN8.html#subsection-61" class="internal"><span class="codenumber">4.8.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="IN8.html#subsection-62" class="internal"><span class="codenumber">4.8.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI.html" class="internal"><span class="codenumber">5</span> <span class="title">Techniques of Integration (TI)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="TI1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Substitution method (TI1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI1.html#subsection-63" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI1.html#subsection-64" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI2.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Integration by Parts (TI2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI2.html#subsection-65" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI2.html#subsection-66" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI3.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Integration of trigonometry (TI3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI3.html#subsection-67" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI3.html#subsection-68" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI4.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Trigonometric Substitution (TI4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI4.html#subsection-69" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI4.html#subsection-70" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI5.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Tables of Integrals (TI5)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI5.html#subsection-71" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI5.html#subsection-72" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI6.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Partial fractions (TI6)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI6.html#subsection-73" class="internal"><span class="codenumber">5.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI6.html#subsection-74" class="internal"><span class="codenumber">5.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI7.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Integration strategy (TI7)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI7.html#subsection-75" class="internal"><span class="codenumber">5.7.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI7.html#subsection-76" class="internal"><span class="codenumber">5.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="TI8.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Improper integrals (TI8)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="TI8.html#subsection-77" class="internal"><span class="codenumber">5.8.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="TI8.html#subsection-78" class="internal"><span class="codenumber">5.8.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AI.html" class="internal"><span class="codenumber">6</span> <span class="title">Applications of Integration (AI)</span></a></div>
+<ul class="structural">
+<li class="active">
+<div class="toc-item"><a href="AI1.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Average Value (AI1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AI1.html#subsection-79" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AI1.html#subsection-80" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AI2.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Arclength (AI2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AI2.html#subsection-81" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AI2.html#subsection-82" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AI3.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Volumes of Revolution (AI3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AI3.html#subsection-83" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AI3.html#subsection-84" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AI4.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Surface Areas of Revolution (AI4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AI4.html#subsection-85" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AI4.html#subsection-86" class="internal"><span class="codenumber">6.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AI5.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Density, Mass, and Center of Mass (AI5)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AI5.html#subsection-87" class="internal"><span class="codenumber">6.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AI5.html#subsection-88" class="internal"><span class="codenumber">6.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AI6.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Work (AI6)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AI6.html#subsection-89" class="internal"><span class="codenumber">6.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AI6.html#subsection-90" class="internal"><span class="codenumber">6.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="AI7.html" class="internal"><span class="codenumber">6.7</span> <span class="title">Force and Pressure (AI7)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="AI7.html#subsection-91" class="internal"><span class="codenumber">6.7.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="AI7.html#subsection-92" class="internal"><span class="codenumber">6.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="CO.html" class="internal"><span class="codenumber">7</span> <span class="title">Coordinates and Vectors (CO)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="CO1.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Parametric/vector equations (CO1)</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="CO1.html#subsection-93" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Activities</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="CO2.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Parametric/vector derivatives (CO2)</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="CO2.html#subsection-94" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Activities</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="CO3.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Parametric/vector arclength (CO3)</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="CO3.html#subsection-95" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Activities</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="CO4.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Polar coordinates (CO4)</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="CO4.html#subsection-96" class="internal"><span class="codenumber">7.4.1</span> <span class="title">Activities</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="CO5.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Polar Arclength (CO5)</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="CO5.html#subsection-97" class="internal"><span class="codenumber">7.5.1</span> <span class="title">Activities</span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="CO6.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Polar area (CO6)</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="CO6.html#subsection-98" class="internal"><span class="codenumber">7.6.1</span> <span class="title">Activities</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ.html" class="internal"><span class="codenumber">8</span> <span class="title">Sequences and Series (SQ)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="SQ1.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Sequence Formulas (SQ1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ1.html#subsection-99" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ1.html#subsection-100" class="internal"><span class="codenumber">8.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ2.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Sequence Properties and Limits (SQ2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ2.html#subsection-101" class="internal"><span class="codenumber">8.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ2.html#subsection-102" class="internal"><span class="codenumber">8.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ3.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Partial Sum Sequence (SQ3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ3.html#subsection-103" class="internal"><span class="codenumber">8.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ3.html#subsection-104" class="internal"><span class="codenumber">8.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ4.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Geometric Series (SQ4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ4.html#subsection-105" class="internal"><span class="codenumber">8.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ4.html#subsection-106" class="internal"><span class="codenumber">8.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ5.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Basic Convergence Tests (SQ5)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ5.html#subsection-107" class="internal"><span class="codenumber">8.5.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ5.html#subsection-108" class="internal"><span class="codenumber">8.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ6.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Comparison Tests (SQ6)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ6.html#subsection-109" class="internal"><span class="codenumber">8.6.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ6.html#subsection-110" class="internal"><span class="codenumber">8.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ7.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Ratio and Root Tests (SQ7)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ7.html#subsection-111" class="internal"><span class="codenumber">8.7.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ7.html#subsection-112" class="internal"><span class="codenumber">8.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ8.html" class="internal"><span class="codenumber">8.8</span> <span class="title">Absolute Convergence (SQ8)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ8.html#subsection-113" class="internal"><span class="codenumber">8.8.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ8.html#subsection-114" class="internal"><span class="codenumber">8.8.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="SQ9.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Series Convergence Strategy (SQ9)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="SQ9.html#subsection-115" class="internal"><span class="codenumber">8.9.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="SQ9.html#subsection-116" class="internal"><span class="codenumber">8.9.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="PS.html" class="internal"><span class="codenumber">9</span> <span class="title">Power Series (PS)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="PS1.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Power Series (PS1)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="PS1.html#subsection-117" class="internal"><span class="codenumber">9.1.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="PS1.html#subsection-118" class="internal"><span class="codenumber">9.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="PS2.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Convergence of Power Series (PS2)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="PS2.html#subsection-119" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="PS2.html#subsection-120" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="PS3.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Manipulation of Power Series (PS3)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="PS3.html#subsection-121" class="internal"><span class="codenumber">9.3.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="PS3.html#subsection-122" class="internal"><span class="codenumber">9.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="PS4.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Taylor Series (PS4)</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="PS4.html#subsection-123" class="internal"><span class="codenumber">9.4.1</span> <span class="title">Activities</span></a></div></li>
+<li><div class="toc-item"><a href="PS4.html#subsection-124" class="internal"><span class="codenumber">9.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="integral-table.html" class="internal"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></div></li>
+<li><div class="toc-item"><a href="trig-table.html" class="internal"><span class="codenumber">B</span> <span class="title">List of Trigonometric Identities</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="AI1"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">6.1</span><span class="space"> </span><span class="title">Average Value (AI1)</span>
+</h2>
+<article class="objectives goal-like" id="objectives-46"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="li-1332"><div class="para" id="p-2090">Compute the average value of a function on an interval.</div></li></ul></article><section class="subsection" id="subsection-79"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.1.1</span><span class="space"> </span><span class="title">Activities</span>
+</h3>
+<article class="activity project-like" id="activity-AI1averagespeed"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.1</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-206"><div class="para" id="p-2091">Suppose a car drives due east at 70 miles per hour for 2 hours, and then slows down to 40 miles per hour for an additional hour.</div></div>
+<article class="task exercise-like" id="task-596"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-2092">How far did the car travel in these 3 hours?</div>
+<ol class="upper-alpha cols2">
+<li id="li-1333"><div class="para" id="p-derived-li-1333">
+<span class="process-math">\(110\)</span> miles</div></li>
+<li id="li-1334"><div class="para" id="p-derived-li-1334">
+<span class="process-math">\(150\)</span> miles</div></li>
+<li id="li-1335"><div class="para" id="p-derived-li-1335">
+<span class="process-math">\(180\)</span> miles</div></li>
+<li id="li-1336"><div class="para" id="p-derived-li-1336">
+<span class="process-math">\(220\)</span> miles</div></li>
+</ol></article><article class="task exercise-like" id="task-597"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-2093">What was its average velocity over these 3 hours?</div>
+<ol class="upper-alpha cols2">
+<li id="li-1337"><div class="para" id="p-derived-li-1337">
+<span class="process-math">\(55\)</span> miles per hour</div></li>
+<li id="li-1338"><div class="para" id="p-derived-li-1338">
+<span class="process-math">\(60\)</span> miles per hour</div></li>
+<li id="li-1339"><div class="para" id="p-derived-li-1339">
+<span class="process-math">\(70\)</span> miles per hour</div></li>
+<li id="li-1340"><div class="para" id="p-derived-li-1340">
+<span class="process-math">\(75\)</span> miles per hour</div></li>
+</ol></article></article><article class="activity project-like" id="activity-AI1averagespeed2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.2</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="introduction-207"><div class="para" id="p-2094">Suppose instead the car starts with a velocity of <span class="process-math">\(30\)</span> miles per hour, and increases velocity linearly according to the function <span class="process-math">\(v(t)=30+20t\)</span> so its velocity after three hours is <span class="process-math">\(90\)</span> miles per hour?</div></div>
+<article class="task exercise-like" id="task-598"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-2095">How can we model the car’s distance traveled using calculus?</div>
+<ol class="upper-alpha">
+<li id="li-1341"><div class="para" id="p-derived-li-1341">Integrate velocity, because position is the rate of change of velocity.</div></li>
+<li id="li-1342"><div class="para" id="p-derived-li-1342">Integrate velocity, because velocity is the rate of change of position.</div></li>
+<li id="li-1343"><div class="para" id="p-derived-li-1343">Differentiate velocity, because position is the rate of change of velocity.</div></li>
+<li id="li-1344"><div class="para" id="p-derived-li-1344">Differentiate velocity, because velocity is the rate of change of position.</div></li>
+</ol></article><article class="task exercise-like" id="task-599"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-2096">Then, which of these expressions is a mathematical model for the car’s distance traveled after 2 hours?</div>
+<ol class="upper-alpha cols2">
+<li id="li-1345"><div class="para" id="p-derived-li-1345"><span class="process-math">\(\displaystyle \int (30+20t)\,dt\)</span></div></li>
+<li id="li-1346"><div class="para" id="p-derived-li-1346"><span class="process-math">\(\displaystyle \int (30t+10t^2)\,dt\)</span></div></li>
+<li id="li-1347"><div class="para" id="p-derived-li-1347"><span class="process-math">\(\displaystyle \int_0^3 (30+20t)\,dt\)</span></div></li>
+<li id="li-1348"><div class="para" id="p-derived-li-1348"><span class="process-math">\(\displaystyle \int_0^3 (30t+10t^2)\,dt\)</span></div></li>
+</ol></article><article class="task exercise-like" id="task-600"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-2097">How far did the car travel in these 3 hours?</div>
+<ol class="upper-alpha cols2">
+<li id="li-1349"><div class="para" id="p-derived-li-1349">
+<span class="process-math">\(110\)</span> miles</div></li>
+<li id="li-1350"><div class="para" id="p-derived-li-1350">
+<span class="process-math">\(150\)</span> miles</div></li>
+<li id="li-1351"><div class="para" id="p-derived-li-1351">
+<span class="process-math">\(180\)</span> miles</div></li>
+<li id="li-1352"><div class="para" id="p-derived-li-1352">
+<span class="process-math">\(220\)</span> miles</div></li>
+</ol></article><article class="task exercise-like" id="task-601"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="p-2098">Thus, what was its average velocity over three hours?</div>
+<ol class="upper-alpha cols2">
+<li id="li-1353"><div class="para" id="p-derived-li-1353">
+<span class="process-math">\(55\)</span> miles per hour</div></li>
+<li id="li-1354"><div class="para" id="p-derived-li-1354">
+<span class="process-math">\(60\)</span> miles per hour</div></li>
+<li id="li-1355"><div class="para" id="p-derived-li-1355">
+<span class="process-math">\(70\)</span> miles per hour</div></li>
+<li id="li-1356"><div class="para" id="p-derived-li-1356">
+<span class="process-math">\(75\)</span> miles per hour</div></li>
+</ol></article></article><article class="observation remark-like" id="observation-AI8averagevalue"><h4 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">6.1.3</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="p-2099">
+<div class="para">To obtain the average velocity of an object traveling with velocity <span class="process-math">\(v(t)\)</span> for <span class="process-math">\(a\leq t\leq b\text{,}\)</span> we may find its distance traveled by calculating <span class="process-math">\(\int_a^b v(t)\text{.}\)</span> Thus, the average velocity is obtained by dividing by the time <span class="process-math">\(b-a\)</span> elapsed:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{b-a}\int_a^b v(t)\,dt\text{.}
+\end{equation*}
+</div>
+</div> <div class="para logical" id="p-2100">
+<div class="para">For example, the following calculuation confirms the previous activity:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{3-0}\int_0^3 (30+20t)\,dt\text{.}
+\end{equation*}
+</div>
+</div></article><article class="definition definition-like" id="definition-AI8averagevalue"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.1.4</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="p-2101">
+<div class="para">Given a function <span class="process-math">\(f(x)\)</span> defined on <span class="process-math">\([a,b]\text{,}\)</span> it’s average value is defined to be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{b-a}\int_a^b f(x) \,dx\text{.}
+\end{equation*}
+</div>
+</div></article><article class="activity project-like" id="activity-369"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.5</span><span class="period">.</span>
+</h4>
+<article class="task exercise-like" id="task-602"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="p-2102">
+<div class="para">Which of the following expressions represent the average value of <span class="process-math">\(f(x)=-12 \, x^{2} + 8 \, x + 4\)</span> over the interval <span class="process-math">\([-1, 2]\text{?}\)</span>
+</div>
+<ol class="upper-alpha cols2">
+<li id="li-1357"><div class="para" id="p-derived-li-1357"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{3}\int_{-1}^{2}\left(x^{2} + 8 \, x + 4 \right) dx\)</span></div></li>
+<li id="li-1358"><div class="para" id="p-derived-li-1358"><span class="process-math">\(\displaystyle \displaystyle \frac{-1}{1}\int_{1}^{2}\left(x^{2} + 8 \, x + 4 \right) dx\)</span></div></li>
+<li id="li-1359"><div class="para" id="p-derived-li-1359"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{2}\int_{1}^{2}\left(x^{2} + 8 \, x + 4 \right) dx\)</span></div></li>
+<li id="li-1360"><div class="para" id="p-derived-li-1360"><span class="process-math">\(\displaystyle \displaystyle \frac{-1}{4}\int_{-1}^{2}\left(x^{2} + 8 \, x + 4 \right) dx\)</span></div></li>
+</ol>
+</div></article><article class="task exercise-like" id="task-603"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-2103">Show that the average value of <span class="process-math">\(f(x)=-12 \, x^{2} + 8 \, x + 4\)</span> over the interval <span class="process-math">\([-1, 2]\)</span> is <span class="process-math">\(-12\text{.}\)</span>
+</div></article></article><article class="activity project-like" id="activity-AI1averageform"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.6</span><span class="period">.</span>
+</h4>
+<article class="task exercise-like" id="task-604"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para logical" id="p-2104">
+<div class="para">Which of the following expressions represent the average value of <span class="process-math">\(f(x)=x\cos(x^2)+x\)</span> on the interval <span class="process-math">\([\pi, 4\pi]\text{?}\)</span>
+</div>
+<ol class="upper-alpha cols2">
+<li id="li-1361"><div class="para" id="p-derived-li-1361"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{3\pi}\int_{0}^{4\pi}\Big(x\cos(x^2)+x\Big) dx\)</span></div></li>
+<li id="li-1362"><div class="para" id="p-derived-li-1362"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{4\pi}\int_{0}^{4\pi}\Big(x\cos(x^2)+x\Big) dx\)</span></div></li>
+<li id="li-1363"><div class="para" id="p-derived-li-1363"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{3\pi}\int_{\pi}^{4\pi}\Big(x\cos(x^2)+x\Big) dx\)</span></div></li>
+<li id="li-1364"><div class="para" id="p-derived-li-1364"><span class="process-math">\(\displaystyle \displaystyle \frac{1}{4\pi}\int_{\pi}^{4\pi}\Big(x\cos(x^2)+x\Big) dx\)</span></div></li>
+</ol>
+</div></article><article class="task exercise-like" id="task-605"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-2105">Find the average value of <span class="process-math">\(f(x)=x\cos(x^2)+x\)</span> on the interval <span class="process-math">\([\pi, 4\pi]\)</span> using the chosen expression.</div></article></article><article class="activity project-like" id="activity-AI1averagehandsoff"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.7</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-2106">Find the average value of <span class="process-math">\(\displaystyle g(t)=\frac{t}{t^2+1}\)</span> on the interval <span class="process-math">\([0, 4]\text{.}\)</span>
+</div></article><article class="activity project-like" id="activity-AI1averageconcentration"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.8</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-2107">A shot of a drug is administered to a patient and the quantity of the drug in the bloodstream over time is <span class="process-math">\(q(t)=3te^{-0.25t}\text{,}\)</span> where <span class="process-math">\(t\)</span> is measured in hours and <span class="process-math">\(q\)</span> is measured in milligrams.  What is the average quantity of this drug in the patient’s bloodstream over the first 6 hours after injection?</div></article><article class="activity project-like" id="activity-AI1piecewise"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.1.9</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-2108">Which of the following is the average value of <span class="process-math">\(f(x)\)</span> over the interval <span class="process-math">\([0,8]\text{?}\)</span> <figure class="figure figure-like" id="figure-107"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/piecewiseaverage.svg" role="img" class="contained" alt="A plot of f(x)."></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">118<span class="period">.</span></span><span class="space"> </span>Plot of <span class="process-math">\(f(x)\text{.}\)</span></figcaption></figure>
+</div> <div class="para" id="p-2109">Note <span class="process-math">\(f(x)=\begin{cases} 1, &amp; 0\leq x\leq 3 \\ 4, &amp; 3 &lt; x \leq 6 \\ 2, &amp; 6 &lt; x \leq 8 \end{cases}\text{.}\)</span>
+</div> <ol class="upper-alpha cols3">
+<li id="li-1365"><div class="para" id="p-derived-li-1365"><span class="process-math">\(\displaystyle 4\)</span></div></li>
+<li id="li-1366"><div class="para" id="p-derived-li-1366"><span class="process-math">\(\displaystyle 2\)</span></div></li>
+<li id="li-1367"><div class="para" id="p-derived-li-1367"><span class="process-math">\(\displaystyle \displaystyle \frac{7}{3}\)</span></div></li>
+<li id="li-1368"><div class="para" id="p-derived-li-1368"><span class="process-math">\(\displaystyle 19\)</span></div></li>
+<li id="li-1369"><div class="para" id="p-derived-li-1369"><span class="process-math">\(\displaystyle 2.375\)</span></div></li>
+</ol></article></section><section class="subsection" id="subsection-80"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.1.2</span><span class="space"> </span><span class="title">Videos</span>
+</h3>
+<figure class="figure figure-like" id="figure-108"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe id="video-AI1" class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/rwAl4trDIac?&amp;modestbranding=1&amp;rel=0"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">119<span class="period">.</span></span><span class="space"> </span>Video: Compute the average value of a function on an interval</figcaption></figure></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="AI.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="AI2.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>
