@@ -55,9 +55,9 @@
         <p>Use the Fundamental Theorem of Calculus Part II to find <m>A'(x)</m>.  What do you notice between what you got above and using FTC Part II?  Which method do you prefer?</p>
         <ol marker="A." cols="2">
               <li><p><m>A'(x) = 3x^2</m></p></li>
-                <li><p><m>A(x) = 4a^3 - 4x^3</m></p></li>
-                <li><p><m>A(x) = x^3</m></p></li>
-                <li><p><m>A(x) = 6x</m></p></li>
+                <li><p><m>A'(x) = 4a^3 - 4x^3</m></p></li>
+                <li><p><m>A'(x) = x^3</m></p></li>
+                <li><p><m>A'(x) = 6x</m></p></li>
             </ol>
         </task>
     </activity>
