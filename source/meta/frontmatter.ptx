@@ -82,12 +82,9 @@
 
   <colophon xml:id="colophon">
     <website>
-        <name>
-            Calculus for Team-Based Inquiry Learning
-            <fn><c>teambasedinquirylearning.github.io/calculus/</c></fn>
-        </name>
-        <address>https://teambasedinquirylearning.github.io/calculus/</address>
+      <url href="http://calculus.tbil.org">Calculus for Team-Based Inquiry Learning</url>
     </website>
+
     <xi:include href="./copyright.ptx" />
       <p>
 This work includes materials used under license from the following works:
