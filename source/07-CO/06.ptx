@@ -139,7 +139,7 @@ into the equation to produce its <m>y</m> value.
             <p>Plot each point <m>(x,y)</m> in your chart in the <m>xy</m> plane.</p>
             <figure>
                 <caption>Plot of <m>y=2-x^2</m>.</caption>
-                <image width="100%">
+                <image width="100%" xml:id="graph-parabola-plotpoints-3">
                     <description>Plot of <m>y=2-x^2</m>.</description>
                     <latex-image>
                         \begin{tikzpicture}
@@ -200,7 +200,7 @@ into the equations to produce its <m>x</m> and <m>y</m> values.
             <p>Plot each point <m>(x,y)</m> in your chart in the <m>xy</m> plane, labeling it with its <m>t</m> value.</p>
             <figure>
                 <caption>Plot of <m>x=t-2</m>, <m>y=-t^2+4t-2</m>.</caption>
-                <image width="100%">
+                <image width="100%" xml:id="graph-parbola-plot-points-4">
                     <description>Plot of <m>y=2-x^2</m>.</description>
                     <latex-image>
                         \begin{tikzpicture}

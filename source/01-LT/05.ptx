@@ -92,7 +92,7 @@
             </p>
             <sidebyside>
                 <figure>
-                    <image>
+                    <image xml:id="graph-horizontal-asymptotes-1">
                     <latex-image>
 
                         \begin{tikzpicture}[scale=0.6]
@@ -112,7 +112,7 @@
                     <caption>A</caption>
                 </figure>
                 <figure>
-                    <image>
+                    <image xml:id="graph-horizontal-asymptotes-2">
                     <latex-image>
                         \begin{tikzpicture}[scale=0.6]
                         \begin{axis}[
@@ -131,7 +131,7 @@
                     <caption>B</caption>
                 </figure>
                 <figure>
-                    <image>
+                    <image xml:id="graph-horizontal-asymptotes-3">
                     <latex-image>
                   \begin{tikzpicture}[scale=0.6]
                         \begin{axis}[
@@ -153,7 +153,7 @@
             </sidebyside>
             <sidebyside>
                 <figure>
-                    <image>
+                    <image xml:id="graph-horizontal-asymptotes-4">
                     <latex-image>
                 \begin{tikzpicture}[scale=0.6]
                         \begin{axis}[
@@ -173,7 +173,7 @@
                     <caption>D</caption>
                 </figure>
                 <figure>
-                    <image>
+                    <image xml:id="graph-horizontal-asymptotes-5">
                     <latex-image>
                        \begin{tikzpicture}[scale=0.6]
                         \begin{axis}[
@@ -193,7 +193,7 @@
                     <caption>E</caption>
                 </figure>
                 <figure>
-                    <image>
+                    <image xml:id="graph-horizontal-asymptotes-6">
                     <latex-image>
                      \begin{tikzpicture}[scale=0.6]
                         \begin{axis}[
@@ -339,7 +339,7 @@ the value of each limit.
 What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of the function graphed below?
             </p>
             <figure>
-                <image width="50%">
+                <image width="50%" xml:id="graph-limit-guess">
                           <latex-image>
                 \begin{tikzpicture}
 \begin{axis}[
@@ -396,7 +396,7 @@ What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of t
         <introduction>
             <p>   The graph below represents the function <m>f(x) =  \displaystyle\frac{2(x+3)(x+1)}{x^2-2x-3}</m>.   </p>
              <figure>
-                    <image width="50%">
+                    <image width="50%" xml:id="graph-rational-function">
                     <latex-image>
 \begin{tikzpicture}[scale=1]
 \begin{axis}[

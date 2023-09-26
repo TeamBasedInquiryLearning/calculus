@@ -130,7 +130,7 @@
                 <p> In this activity you will study the slope of a graph at a point. The graph of the function <m>g(x)</m> is given below. For your convenience, below you will find a table of values for <m>g(x)</m>.
 </p>
                    <figure>
-                    <image width="50%">
+                    <image width="50%" xml:id="graph-parabola">
                     <latex-image>  
 \begin{tikzpicture}[scale=1]
 \begin{axis}[
@@ -275,7 +275,7 @@
               <introduction> 
                 <p> In this activity you will study the abolute value function <m>f(x)=|x|</m>. The absolute value function is a piecewise defined function which outputs <m>x</m> when <m>x</m> is positive (or zero) and outputs <m>-x</m> when <m>x</m> is negative. So the absolute value always outputs a number which is positive (or zero). Here is the graph of this function. </p>
                    <figure>
-                    <image width="50%">
+                    <image width="50%" xml:id="graph-absolute-value">
                     <latex-image>  
 \begin{tikzpicture}[scale=1]
 \begin{axis}[
@@ -332,7 +332,7 @@
         <introduction>
         <p>Consider the graph of function <m>h(x)</m>. </p>
        <figure xml:id = "nice-piecewise-graph">
-                    <image width="50%">
+                    <image width="50%" xml:id="graph-derivative-features">
                     <latex-image>  
         \begin{tikzpicture}[scale=1]
 \begin{axis}[
@@ -446,7 +446,7 @@ The rate of change of <m>f(x)</m> when <m>x=-1</m> is positive
         <introduction>
         <p>You are given the graph of the function <m>f(x)</m>.</p>
          <figure>
-                    <image width="50%">
+                    <image width="50%" xml:id="graph-tangent-line-estimate">
                     <latex-image>  
 \begin{tikzpicture}[scale=1]
 \begin{axis}[

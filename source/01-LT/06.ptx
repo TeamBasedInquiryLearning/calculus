@@ -19,7 +19,7 @@
                 Consider the graph in <xref ref="vert-asymp" />.
             </p>
             <figure xml:id="vert-asymp">
-                <image width="50%">
+                <image width="50%" xml:id="graph-vertical-asymptote">
                           <latex-image xml:id="vert-asymp-tikz"><xi:include href="./tikz/vert-asymp.tex" parse="text"/></latex-image>
                     </image>
                     <caption> The graph of <m>1/x^2</m>.</caption>
@@ -228,7 +228,7 @@ Explain and demonstrate how to find the value of each limit.
         <introduction>
             <p>   The graph below represents the function <m>f(x) =  \displaystyle\frac{(x+2)(x+4)}{x^2+3x-4}</m>.   </p>
              <figure>
-                    <image width="50%">
+                    <image width="50%" xml:id="graph-rational-practice-2">
                     <latex-image xml:id="rational-pratice2-tikz"><xi:include href="./tikz/rational-practice2.tex" parse="text"/></latex-image>
                     </image>
                     <caption>The graph of <m> f(x)</m></caption>
