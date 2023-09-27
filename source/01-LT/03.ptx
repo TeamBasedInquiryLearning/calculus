@@ -202,7 +202,7 @@
     </p>
                        <sidebyside>
                    <figure>
-                <image width="50%">
+                <image width="50%" xml:id="two-functions-limits">
                           <latex-image>
                   \begin{tikzpicture}[scale=1]
 \begin{axis}[ %human,
@@ -242,7 +242,7 @@
                     <caption> The graph of <m>f(x)</m>.</caption>
                 </figure>
   <figure>
-                <image width="50%">
+                <image width="50%" xml:id="graph-piecewise">
                           <latex-image>
 \begin{tikzpicture}[scale=1]
 

@@ -80,7 +80,7 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
     
 <activity xml:id="activity-df-inv-graph"> <introduction><p>In this problem you will apply the general formula for the derivative of the inverse function to find the values of some derivatives graphically.</p> 
     <figure>
-                    <image>
+                    <image xml:id="graph-df-inv">
                     <latex-image>  
     \begin{tikzpicture}[scale=1]
 \begin{axis}[
@@ -196,7 +196,7 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
 </p></task>
     <task><p>From the graph of <m>y=\sin(x)</m> and your table above, graph the arcsine function  <m>y=\sin^{-1}(x)</m> </p>
      <figure>
-                    <image>
+                    <image xml:id="graph-tan">
                     <latex-image>  
 \begin{tikzpicture}
 \begin{axis}[
@@ -306,7 +306,7 @@ the derivative of <m>g = f^{-1}</m>, the inverse function of <m>f</m>, is given 
       <introduction><p>Let <m>y=f(v)</m> be the gas consumption (in ml/km) of a car at velocity <m>v</m> (in km/hr). We use the notation: ml for milliliters, km for kilometers, and hr for hours. Also consider the function <m>g(y)</m>, where <m>v=g(y)</m> is the function that gives the velocity <m>v</m> (in km/hr) when the gas consumption is <m>y</m> (in ml/km).
 You are given the graphs of <m>f(v), f'(v)</m> below. </p>
  <figure>
-                    <image>
+                    <image xml:id="graph-inverses-in-context2">
                     <latex-image>  
       \begin{tikzpicture}[scale=0.8]
 \begin{axis}[
