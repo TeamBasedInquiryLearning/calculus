@@ -56,7 +56,7 @@
             <introduction>
                 <p>
                     Suppose instead the car starts with a velocity of <m>30</m> miles per hour, and increases velocity
-                    linearly according to the function <m>v(t)=30+20t</m> so its velocity after three hours is <m>90</m> miles per hour?
+                    linearly according to the function <m>v(t)=30+20t</m> so its velocity after three hours is <m>90</m> miles per hour.
                 </p>
             </introduction>
             <task>
@@ -77,7 +77,7 @@
                 </ol>
             </task>
             <task>
-                <p>Then, which of these expressions is a mathematical model for the car's distance traveled after 2 hours?</p>
+                <p>Then, which of these expressions is a mathematical model for the car's distance traveled after 3 hours?</p>
                 <ol marker="A." cols="2">
                     <li>
                         <m>\int (30+20t)\,dt</m>
@@ -160,15 +160,15 @@ For example, the following calculuation confirms the previous activity:
                     Which of the following expressions represent the average value of <m>f(x)=-12 \, x^{2} + 8 \, x + 4</m> over the interval <m>[-1, 2]</m>?
                     
                     <ol marker="A." cols="2">
-                        <li><m>\displaystyle \frac{1}{3}\int_{-1}^{2}\left(x^{2} + 8 \, x + 4 \right) dx</m></li>
-                        <li><m>\displaystyle \frac{-1}{1}\int_{1}^{2}\left(x^{2} + 8 \, x + 4 \right) dx</m></li>
-                        <li><m>\displaystyle \frac{1}{2}\int_{1}^{2}\left(x^{2} + 8 \, x + 4 \right) dx</m></li>
-                        <li><m>\displaystyle \frac{-1}{4}\int_{-1}^{2}\left(x^{2} + 8 \, x + 4 \right) dx</m></li>
+                        <li><m>\displaystyle \frac{1}{3}\int_{-1}^{2}\left(-12 \,x^{2} + 8 \, x + 4 \right) dx</m></li>
+                        <li><m>\displaystyle \frac{-1}{1}\int_{1}^{2}\left(-12 \,x^{2} + 8 \, x + 4 \right) dx</m></li>
+                        <li><m>\displaystyle \frac{1}{2}\int_{1}^{2}\left(-12 \,x^{2} + 8 \, x + 4 \right) dx</m></li>
+                        <li><m>\displaystyle \frac{-1}{4}\int_{-1}^{2}\left(-12 \,x^{2} + 8 \, x + 4 \right) dx</m></li>
                     </ol>
                 </p>
                 </task>
             <task>
-                <p>Show that the average value of <m>f(x)=-12 \, x^{2} + 8 \, x + 4</m> over the interval <m>[-1, 2]</m> is <m>-12</m>. </p>
+                <p>Show that the average value of <m>f(x)=-12 \, x^{2} + 8 \, x + 4</m> over the interval <m>[-1, 2]</m> is <m>-4</m>. </p>
             </task>
         </activity>
         
