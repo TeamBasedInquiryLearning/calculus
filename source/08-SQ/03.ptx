@@ -112,7 +112,7 @@
         <activity xml:id="activity-SQ3simplifyingsum">
             <statement>
                 <p>Suppose <m>\displaystyle S_5=1+\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{16}+\frac{1}{32}.</m>  Without actually computing this sum, which of the following is equal to <m>\left(1-\frac{1}{2}\right)S_5</m>?
-                    <ol marker="A." cols="2">
+                    <ol marker="A." cols="1">
                         <li><m>\displaystyle\frac{1}{2}+\frac{1}{4}+\frac{1}{8}+\frac{1}{16}+\frac{1}{32}-\frac{1}{64}</m>.</li>
                         <li><m>\displaystyle1-\frac{1}{64}</m>.</li>
                         <li><m>\displaystyle1-\frac{1}{2}-\frac{1}{4}-\frac{1}{8}-\frac{1}{16}-\frac{1}{32}</m>.</li>
