@@ -438,7 +438,7 @@ Let's investigate the power series
     <activity xml:id="activity-PS3expnegxsquare">
             <introduction>
                 <p>
-                    The function <m>n(x)=e^{-x^2}</m> is one whose integrals are very important for statistics.  However, it does not admit an elementary anti-derivative.
+                    The function <m>n(x)=e^{-x^2}</m> is one whose integrals are very important for statistics.  However, it does not admit an elementary antiderivative.
                 </p>
             </introduction>
             <task>
@@ -556,7 +556,7 @@ Let's investigate the power series
             </introduction>
             <task>
                 <p>
-                    Anti differentiate this power series and find <m>C</m> to find a power series for <m>H(x)=\arctan(x)</m>.  Recall that <m>\arctan(0)=0</m>.  
+                    Integrate this power series and find <m>C</m> to find a power series for <m>H(x)=\arctan(x)</m>.  Recall that <m>\arctan(0)=0</m>.  
                 </p>
             </task>
             
