@@ -25,9 +25,7 @@
     <!-- The attribute @chapter-start give the number of the first    -->
     <!-- chapter.  @level says how deep (chapter->section->subsection)-->
     <!-- numbering should appear.                                     -->
-      <!-- For use with a book organized by parts
-    <divisions part-structure="decorative" chapter-start="1" level="3"/>
-      -->
+        <!--    <divisions part-structure="decorative" chapter-start="1" level="3"/> -->
     <!-- The next elements say how the levels deep to break up the    -->
     <!-- numbering of the respective elements. Can't be more than the -->
     <!-- @level on divisions above.                                   -->
@@ -41,7 +39,7 @@
     <!-- for printing; set @sides="two" if the printing woudl be two- -->
     <!-- sided.  The asymptote/@links set to "yes" would produce      -->
     <!-- links the html version of asymptote graphics.                -->
-  <latex print="no" sides="one" font-size="12">
+  <latex print="no" sides="one" font-size="14">
     <asymptote links="no"/>
     <page>
       <geometry>letterpaper,margin=1in</geometry>
@@ -58,7 +56,7 @@
     <!-- @colors now implemented                               -->
     <!-- also @knowls, @toc, and @banner, although no          -->
     <!-- alternative styles exist yet for those.               -->
-    <css style="default" colors="blue_red" toc="crc" navbar="crc" banner="crc" shell="crc"/>
+    <css style="default" colors="blue_green" toc="crc" navbar="crc" banner="crc" shell="crc"/>
     <!-- Magic IDs identify HTML pages to analytics services   -->
     <!-- Presence implies relevant Javascript will be added    -->
     <!-- StatCounter requires both values to be set            -->
