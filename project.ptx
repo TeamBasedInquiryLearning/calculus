@@ -1,17 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project ptx-version="2">
   <targets>
-    <target name="web" format="html" deploy-dir="2024">
+    <target
+      name="web"
+      format="html"
+      deploy-dir="2024">
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
-    <target name="print" format="pdf" output-filename="TBIL-Calculus-2024.pdf" deploy-dir="2024/pdf/">
+    <target
+      name="print"
+      format="pdf"
+      output-filename="TBIL-Calculus-2024.pdf"
+      deploy-dir="2024/pdf/">
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
-    <target name="slides" format="pdf" xsl="slides.xsl" output-filename="TBIL-Calculus-2024-slides.pdf" deploy-dir="2024/pdf">
+    <target
+      name="slides"
+      format="pdf"
+      publication="slides.ptx"
+      xsl="slides.xsl"
+      output-filename="TBIL-Calculus-2024-slides.pdf"
+      deploy-dir="2024/pdf">
       <stringparams debug.project.number="the-way-it-should-be"/>
     </target>
     <!-- use `python scripts/bank.py` for this target -->
-    <target name="checkit" format="custom" output-dir="../exercises/docs" deploy-dir="2024/exercises">
+    <target
+      name="checkit"
+      format="custom"
+      output-dir="../exercises/docs"
+      deploy-dir="2024/exercises">
       <!-- built by checkit, not pretext -->
       <!-- everything except output-dir and deploy-dir is unused -->
     </target>
