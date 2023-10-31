@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="LT7" tbil-slides="build" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Special Limit Laws (LT7)</title>
+    <objectives>
+        <ul>
+            <li>
+                <xi:include href="outcomes/07.ptx" />
+            </li>
+        </ul>
+    </objectives>
+    <subsection>
+        <title>Special Limit Laws</title>
+        <p>Recall the Squeeze Theorem <xref ref="squeeze-thm" />.</p>
+
+
+        <activity>
+            <introduction>
+                <p>The area of a circular sector is given by <m>\frac{r^2 \theta}{2}</m>, where <m>r</m>
+                    is the radius of the circle and <m>\theta</m> is the angle of the sector. In
+                    this activity we will use the geometry of this Figure and <xref
+                        ref="squeeze-thm" /> to obtain the important limits <md>
+                        <mrow>\lim_{x \to 0} \frac{\sin(x)}{x} \amp = 1</mrow>
+                        <mrow>\lim_{x \to 0} \frac{\cos(x) - 1}{x} \amp = 0 </mrow>
+                    </md>
+                    .</p>
+            </introduction>
+            <task>
+                <statement>
+                    <figure>
+                        <caption>Testing</caption>
+                        <interactive xml:id="interactive-jsx-squeeze" source="squeeze.js"
+                            platform="jsxgraph">
+                            <slate xml:id="jsx-squeeze" surface="jsxboard" />
+                        </interactive>
+                    </figure>
+                    <p>
+                        Find a chain of inequalities relating the areas of sector ADE, triangle ADC,
+                        and
+                        sector ABC in Figure.
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>Divide your inequalities by an appropriate positive number so that the middle
+                        term is of the form <m>\sin(x)/x</m>.</p>
+                </statement>
+            </task>
+            <task xml:id="task-sinx-x">
+                <statement>
+                    <p>Use the squeeze theorem to conclude that <m>\lim_{x\to 0} \sin(x)/x = 1</m>.</p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>Multiply the expression <me>
+                            \frac{\cos(x) - 1}{x}
+                        </me> on top and
+                        bottom so that the top becomes an expression involving <m>\sin(x)</m>.</p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>Use limit laws and the result of <xref ref="task-sinx-x" /> to deduce that <m>\lim_{x\to
+                        0} \frac{\cos(x) - 1}{x} = 0</m>.</p>
+                </statement>
+            </task>
+        </activity>
+    </subsection>
+</section>
