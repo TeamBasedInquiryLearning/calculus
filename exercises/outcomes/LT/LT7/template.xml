@@ -1,13 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
-    <!-- {{#package}} -->
-    <intro>
-        <p>
-            Find the value of the limit using the special limit laws.
-        </p>
-    </intro>
     <content>
         <p>
+            Find the value of the limit using the special limit laws.
             <me>\lim_{ {{x}}\to {{place}} } {{f}}</me>
         </p>
     </content>
@@ -16,5 +11,4 @@
             <me>\lim_{ {{x}}\to {{place}} } {{f}}={{lim}}</me>
         </p>
     </outtro>
-    <!-- {{/package}} -->
 </knowl>
