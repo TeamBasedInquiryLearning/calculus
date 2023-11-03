@@ -11,15 +11,16 @@
     </objectives>
   <subsection>
     <title>Activities</title>
-    
+
         <activity>
             <statement>
                 <p>
 Consider the following visualization to decide which of these statements is most appropriate for
 describing the relationship of lengths and areas.
                 </p>
-                <sage>
-                    <input>
+                <image>
+                    <description>(for accessibility)</description>
+                    <sageplot>
 f(x) = (x-3)*(x-5)*(x-7)+40
 p = line([(2,0),(2,f(2))], color='black')
 p += line([(8,0),(8,f(8))], color='black')
@@ -29,14 +30,16 @@ p += plot(f, (1, 8.5), thickness=3)
 p += line([(6,0),(6,f(6))], color="#8888ff")
 p += text("$\\mathrm{Length}=f(x)$", (5.9, 20), fontsize=16, color='black', horizontal_alignment='right')
 p
-                    </input>
-                </sage>
-                <ol marker="A.">
-                    <li>Length is the integral of areas.</li>
-                    <li>Area is the integral of lengths.</li>
-                    <li>Length is the derivative of areas.</li>
-                    <li>None of these.</li>
-                </ol>
+                    </sageplot>
+                </image>
+                <p>
+                    <ol marker="A.">
+                        <li>Length is the integral of areas.</li>
+                        <li>Area is the integral of lengths.</li>
+                        <li>Length is the derivative of areas.</li>
+                        <li>None of these.</li>
+                    </ol>
+                </p>
             </statement>
         </activity>
 
@@ -362,7 +365,7 @@ Which of these integrals is equal to the volume of the solid of revolution?
             </task>
         </activity>
 
-        
+
   <activity>
     <introduction>
       <p> Consider the region bounded by <m>y=2 \, x + 3, y=0, x=4, x=7</m>. </p>
@@ -378,7 +381,7 @@ Which of these integrals is equal to the volume of the solid of revolution?
         </statement>
       </task>
   </activity>
-    
+
     </subsection>
     <subsection>
         <title>Videos</title>
@@ -394,7 +397,7 @@ Which of these integrals is equal to the volume of the solid of revolution?
 		</video>
         <caption>Video: Compute volumes of solids of revolution, shell <m>x</m>-axis</caption>
     </figure>
-        
+
     <figure>
 		<video xml:id="video-AI33" youtube="Y16cc0Z43Uc">
 			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
@@ -406,14 +409,13 @@ Which of these integrals is equal to the volume of the solid of revolution?
 			<!--<track kind="subtitles" label="US English" xml:lang="en" source="videos/E1-captions.vtt" default=""/>-->
 		</video>
         <caption>Video: Compute volumes of solids of revolution, shell <m>y</m>-axis</caption>
-    </figure>    
-        
-        
-    </subsection>
-    
-    
-        
-       
-    
-</section>
+    </figure>
 
+
+    </subsection>
+
+
+
+
+
+</section>
