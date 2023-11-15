@@ -39,11 +39,11 @@ We define the <term>volume</term> of a solid with cross sectional area given by 
 laying between <m>a\leq x\leq b</m> to be the definite integral
 <me>\mathrm{Volume}=\int_a^b A(x)\,dx</me>.
                 </p>
-                <!-- <image xml:id="AI3-gadefawergaweasrdegfasdf">
+                <image xml:id="AI3-gadefawergaweasrdegfasdf">
                     <sageplot variant="3d" aspect="1.0">
 <xi:include href="../sage/AI3-gadefawergaweasrdegfasdf.sage" parse="text"/>
                     </sageplot>
-                </image> -->
+                </image>
             </statement> 
         </definition>
 
@@ -53,11 +53,11 @@ laying between <m>a\leq x\leq b</m> to be the definite integral
 We will be focused on the volumes of solids obtained by revolving a region around an axis.
 Let's use the running example of the region bounded by the curves <m>x=0,y=4,y=x^2</m>.
                 </p>
-                <!-- <image xml:id="AI3-thwrqgweasdfasd">
-                    <sageplot variant="3d" aspect="1.0">
+                <image width="50%" xml:id="AI3-thwrqgweasdfasd">
+                    <sageplot>
 <xi:include href="../sage/AI3-thwrqgweasdfasd.sage" parse="text"/>
                     </sageplot>
-                </image> -->
+                </image>
             </introduction>
             <task>
                 <p>
