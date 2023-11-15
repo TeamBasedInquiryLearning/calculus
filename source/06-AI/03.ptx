@@ -10,7 +10,7 @@
         </ul>
     </objectives>
   <subsection>
-    <title>Activities</title>
+    <title>Activities</title> 
     
         <activity>
             <statement>
@@ -18,17 +18,9 @@
 Consider the following visualization to decide which of these statements is most appropriate for
 describing the relationship of lengths and areas.
                 </p>
-                <image xml:id="ai3-gawerfeasfasgasegad">
+                <image xml:id="AI3-gawerfeasfasgasegad">
                     <sageplot>
-f(x) = (x-3)*(x-5)*(x-7)+40
-p = line([(2,0),(2,f(2))], color='black')
-p += line([(8,0),(8,f(8))], color='black')
-p += polygon([(2,0),(2,f(2))] + [(x, f(x)) for x in [2,2.1,..,8]] + [(8,0),(2,0)],  rgbcolor=(0.8,0.8,0.8),aspect_ratio='automatic')
-p += text("$\\mathrm{Area}=\\int_{a}^b f(x) dx$", (4, 55), fontsize=16, color='black')
-p += plot(f, (1, 8.5), thickness=3)
-p += line([(6,0),(6,f(6))], color="#8888ff")
-p += text("$\\mathrm{Length}=f(x)$", (5.9, 20), fontsize=16, color='black', horizontal_alignment='right')
-p
+<xi:include href="../sage/AI3-gawerfeasfasgasegad.sage" parse="text" />
                     </sageplot>
                 </image>
                 <ol marker="A.">
@@ -47,19 +39,11 @@ We define the <term>volume</term> of a solid with cross sectional area given by 
 laying between <m>a\leq x\leq b</m> to be the definite integral
 <me>\mathrm{Volume}=\int_a^b A(x)\,dx</me>.
                 </p>
-                <image xml:id="ai3-gadefawergaweasrdegfasdf">
+                <!-- <image xml:id="AI3-gadefawergaweasrdegfasdf">
                     <sageplot variant="3d" aspect="1.0">
-x,y,z=var("x y z")
-p = revolution_plot3d(x/2,(x,0,4), show_curve=False,parallel_axis="x",opacity=0.5,frame=False)
-p += revolution_plot3d((4,z),(z,0,2), show_curve=False,parallel_axis="x",opacity=0.5)
-p += revolution_plot3d((2,z),(z,0,1), show_curve=False,parallel_axis="x",opacity=1)
-p += line([(0,0,-3), (0,0,3)],color="black",label="x")
-p += line([(-1,0,0), (5,0,0)],color="black")
-p += text3d("Volume=∫A(x)dx",(4,0,2.5))
-p += text3d("Area=A(x)",(2,0,1.25))
-p
+<xi:include href="../sage/AI3-gadefawergaweasrdegfasdf.sage" parse="text"/>
                     </sageplot>
-                </image>
+                </image> -->
             </statement> 
         </definition>
 
@@ -69,29 +53,20 @@ p
 We will be focused on the volumes of solids obtained by revolving a region around an axis.
 Let's use the running example of the region bounded by the curves <m>x=0,y=4,y=x^2</m>.
                 </p>
-                <image xml:id="ai3-thwrqgweasdfasd">
+                <!-- <image xml:id="AI3-thwrqgweasdfasd">
                     <sageplot variant="3d" aspect="1.0">
-x,y,z = var('x y z')
-p = plot(x^2,(x,0,2),aspect_ratio=1,color='red')
-p += line([(0,0),(0,4),(2,4)],color="red")
-p
+<xi:include href="../sage/AI3-thwrqgweasdfasd.sage" parse="text"/>
                     </sageplot>
-                </image>
+                </image> -->
             </introduction>
             <task>
                 <p>
 Consider the below illustrated revolution of this region, and the cross-section drawn
 from a horizontal line segment. Choose the most appropriate description of this illustration.
                 </p>
-                <image xml:id="ai3-rheagherhearhasdgfasd">
+                <image xml:id="AI3-rheagherhearhasdgfasd">
                     <sageplot variant="3d" aspect="1.0">
-x,y,z = var('x y z')
-p = revolution_plot3d(x^2,(x,0,2), show_curve=True,parallel_axis="z",opacity=0.5,frame=False)
-p += revolution_plot3d(4,(x,0,2), show_curve=True,parallel_axis="z",opacity=0.5)
-p += revolution_plot3d(2,(x,0,sqrt(2)), show_curve=True,parallel_axis="z",opacity=1)
-p += line([(0,0,-1), (0,0,5)],color="black",label="x")
-p += line([(-4,0,0), (4,0,0)],color="black")
-p
+<xi:include href="../sage/AI3-rheagherhearhasdgfasd.sage" parse="text"/>
                     </sageplot>
                 </image>
                 <ol marker="A.">
@@ -117,15 +92,9 @@ Which of these formulas is most appropriate to find this illustration's cross-se
 Consider the below illustrated revolution of this region, and the cross-section drawn
 from a vertical line segment. Choose the most appropriate description of this illustration.
                 </p>
-                <image xml:id="ai3-rqgewagwerhqwereqw">
+                <image xml:id="AI3-rqgewagwerhqwereqw">
                     <sageplot variant="3d" aspect="1.0">
-x,y,z = var('x y z')
-p = revolution_plot3d(x^2,(x,0,2), show_curve=True,parallel_axis="z",opacity=0.5,frame=False)
-p += revolution_plot3d(4,(x,0,2), show_curve=True,parallel_axis="z",opacity=0.5)
-p += revolution_plot3d((1,x),(x,1,4), show_curve=True,parallel_axis="z",opacity=1)
-p += line([(0,0,-1), (0,0,5)],color="black")
-p += line([(-4,0,0), (4,0,0)],color="black")
-p
+<xi:include href="../sage/AI3-rqgewagwerhqwereqw.sage" parse="text"/>
                     </sageplot>
                 </image>
                 <ol marker="A.">
@@ -151,16 +120,9 @@ Which of these formulas is most appropriate to find this illustration's cross-se
 Consider the below illustrated revolution of this region, and the cross-section drawn
 from a horizontal line segment. Choose the most appropriate description of this illustration.
                 </p>
-                <image xml:id="ai3-htergasgserhwserhasdrg">
+                <image xml:id="AI3-htergasgserhwserhasdrg">
                     <sageplot variant="3d" aspect="1.0">
-x,y,z = var('x y z')
-p = revolution_plot3d(x^2,(x,0,2), show_curve=True,parallel_axis="x",opacity=0.5,frame=False)
-p += revolution_plot3d(4,(x,0,2), show_curve=True,parallel_axis="x",opacity=0.5)
-p += revolution_plot3d((0,z),(z,0,4), show_curve=True,parallel_axis="x",opacity=0.5)
-p += revolution_plot3d(2,(x,0,sqrt(2)), show_curve=True,parallel_axis="x",opacity=1)
-p += line([(0,0,-5), (0,0,5)],color="black",label="x")
-p += line([(-1,0,0), (4,0,0)],color="black")
-p
+<xi:include href="../sage/AI3-htergasgserhwserhasdrg.sage" parse="text"/>
                     </sageplot>
                 </image>
                 <ol marker="A.">
@@ -186,16 +148,9 @@ Which of these formulas is most appropriate to find this illustration's cross-se
 Consider the below illustrated revolution of this region, and the cross-section drawn
 from a vertical line segment. Choose the most appropriate description of this illustration.
                 </p>
-                <image xml:id="ai3-ht4hrgrwewgasdf">
+                <image xml:id="AI3-ht4hrgrwewgasdf">
                     <sageplot variant="3d" aspect="1.0">
-x,y,z = var('x y z')
-p = revolution_plot3d(x^2,(x,0,2), show_curve=True,parallel_axis="x",opacity=0.5,frame=False)
-p += revolution_plot3d(4,(x,0,2), show_curve=True,parallel_axis="x",opacity=0.5)
-p += revolution_plot3d((0,z),(z,0,4), show_curve=True,parallel_axis="x",opacity=0.5)
-p += revolution_plot3d((1,x),(x,1,4), show_curve=True,parallel_axis="x",opacity=1)
-p += line([(0,0,-5), (0,0,5)],color="black",label="x")
-p += line([(-1,0,0), (4,0,0)],color="black")
-p
+<xi:include href="../sage/AI3-ht4hrgrwewgasdf.sage" parse="text"/>
                     </sageplot>
                 </image>
                 <ol marker="A.">
