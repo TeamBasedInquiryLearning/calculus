@@ -67,7 +67,7 @@
     </activity>
     <activity>
         <task>
-            <p>What do you notice about the integral <m>\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx</m> as <m>b</m> approached 0 in <xref ref="activity-T8Exploration3"/>?</p>
+            <p>What do you notice about the integral <m>\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx</m> as <m>a</m> approached 0 in <xref ref="activity-T8Exploration3"/>?</p>
             <ol marker="A." cols="2">
                 <li><p><m>\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx</m> approaches <m>0</m>.</p></li>
                 <li><p><m>\displaystyle \int_{a}^1 \frac{1}{\sqrt{x}} dx</m> approaches a finite constant greater than <m>0</m>.</p></li>
@@ -82,7 +82,7 @@
     <activity xml:id="activity-T8Exploration4">
         <introduction><p>Compute the following definite integrals using <m>\displaystyle \int\frac{1}{\sqrt x}dx=2\sqrt{x}+C</m>.</p></introduction>
         <task>
-            <p><m>\displaystyle \int_{1}^{100} \frac{1}{\sqrt{x}} dx\left[2\sqrt{x}\right]_{1}^{100}</m></p>
+            <p><m>\displaystyle \int_{1}^{100} \frac{1}{\sqrt{x}} dx = \left[2\sqrt{x}\right]_{1}^{100}</m></p>
         </task>
         <task>
             <p><m>\displaystyle \int_{1}^{10000} \frac{1}{\sqrt{x}} dx</m></p>
@@ -93,7 +93,7 @@
     </activity>
     <activity>
         <task>
-            <p>What do you notice the integral <m>\displaystyle \int_{1}^b \frac{1}{\sqrt{x}} dx</m> as <m>a</m> approached <m>\infty</m> in <xref ref="activity-T8Exploration4"/>?</p>
+            <p>What do you notice the integral <m>\displaystyle \int_{1}^b \frac{1}{\sqrt{x}} dx</m> as <m>b</m> approached <m>\infty</m> in <xref ref="activity-T8Exploration4"/>?</p>
             <ol marker="A." cols="2">
                 <li><p><m>\displaystyle \int_{1}^b \frac{1}{\sqrt{x}} dx</m> approaches <m>0</m>.</p></li>
                 <li><p><m>\displaystyle \int_{1}^b \frac{1}{\sqrt{x}} dx</m> approaches a finite constant greater than <m>0</m>.</p></li>
@@ -109,7 +109,7 @@
         <p>
 For a function <m>f(x)</m> and a constant <m>a</m>, we let <m>\displaystyle \int_a^\infty f(x) dx</m> denote 
 <me>\int_a^\infty f(x) dx=\lim_{b\to\infty}\left( \int_a^b f(x) dx\right)</me>.
-If this limit is a defined real number, then we say <m>\displaystyle \int_c^\infty f(x) dx</m> is <term>convergent</term>.
+If this limit is a defined real number, then we say <m>\displaystyle \int_a^\infty f(x) dx</m> is <term>convergent</term>.
 Otherwise, it is <term>divergent</term>.
         </p>
         <p>Similarly, <me>\int_{-\infty}^b f(x) dx=\lim_{a\to-\infty}\left( \int_a^b f(x) dx\right).</me></p>
@@ -180,7 +180,7 @@ we let <m>\displaystyle \int_c^b f(x) dx</m> denote <me>\int_c^b f(x) dx=\lim_{a
     </activity>
   <activity>
     <introduction>
-      <p> Explain and demonstrate how to write each of the following improper integrals as a limit, and why this limit coverges or diverges. </p>
+      <p> Explain and demonstrate how to write each of the following improper integrals as a limit, and why this limit converges or diverges. </p>
     </introduction>
       <task>
         <statement>
@@ -280,12 +280,12 @@ we let <m>\displaystyle \int_c^b f(x) dx</m> denote <me>\int_c^b f(x) dx=\lim_{a
                     Let <m>c, p>0</m>.
                     <ul>
                         <li>
-                            <m>\displaystyle \int_0^c \frac{1}{x^p} dx</m> is defined if and only if <m>p&lt; 1</m>.
+                            <m>\displaystyle \int_0^c \frac{1}{x^p} dx</m> converges if and only if <m>p&lt; 1</m>.
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <m>\displaystyle \int_c^\infty \frac{1}{x^p} dx</m> is defined if and only if <m>p> 1</m>.
+                            <m>\displaystyle \int_c^\infty \frac{1}{x^p} dx</m> converges if and only if <m>p> 1</m>.
                         </li>
                     </ul>
                 </p>
