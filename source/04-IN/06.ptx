@@ -23,7 +23,7 @@
         <p>If a function <m>f</m> is continuous on the closed interval <m>[a,b]</m>, then the area function 
         <me>A(x) = \int_a^x f(t)\,dt \,\,\,\,\, \mathrm{for}\,\,\, a\leq x\leq b,</me>
             is continuous on <m>[a,b]</m> and differentiable on <m>(a,b)</m>.  The area function satisfies <m>A'(x) = f(x)</m>.  Equivalently,
-            <me>A'(x) = \frac{d}{dx}\int_0^x f(t)\,dt = f(x),</me>
+            <me>A'(x) = \frac{d}{dx}\int_a^x f(t)\,dt = f(x),</me>
             which means that the area function of <m>f</m> is an antiderivative of f on <m>[a,b]</m>.
         </p>
     </statement>
