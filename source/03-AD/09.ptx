@@ -97,8 +97,9 @@
     
     </activity>
 
+<!-- Use &#xF4; to get the circumflex o in L'Hopital-->
+<theorem> <title>L' H&#xF4;pital's Rule</title> <statement> <p> If the functions <m>f(x), g(x)</m> are both differentiable around <m>x = a</m> and for the limit of <m>\frac{f(x)}{g(x)}</m> as <m>x \to a</m> (or <m>x \to \pm \infty</m>) we have one of the indeterminate forms <m>\frac{0}{0}</m> or <m>\frac{\infty}{\infty}</m>, then </p>
 
-<theorem> <title>L' Hospital's Rule</title> <statement> <p> If the functions <m>f(x), g(x)</m> are both differentiable around <m>x = a</m> and for the limit of <m>\frac{f(x)}{g(x)}</m> as <m>x \to a</m> (or <m>x \to \pm \infty</m>) we have one of the indeterminate forms <m>\frac{0}{0}</m> or <m>\frac{\infty}{\infty}</m>, then </p>
 <me> \lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \frac{f'(x)}{g'(x)} </me> 
 <p>provided that the limit exists! </p> 
     </statement>
@@ -106,7 +107,8 @@
 
 
 
-<activity><p>Look back at some limits that gave you an indeterminate form. Can you use l'Hospital's Rule to find the limit? If using the L'Hospital's Rule is appropriate, then try to compute the limit this way. It should give you the same result.  </p></activity>
+<activity><p>Look back at some limits that gave you an indeterminate form. Can you use L'H&#xF4;pital's Rule to find the limit? 
+    If using the L'H&#xF4;pital's Rule is appropriate, then try to compute the limit this way. It should give you the same result.  </p></activity>
 
 <activity xml:id="lhospital-instead-squeeze">
         <introduction><p> In <xref ref="squeeze-thm-ex"/>, when we started to study limits, we encountered the Squeeze Theorem and computed the limit <m>\displaystyle \lim_{x\to 0} \frac{\sin(x)}{x}</m> using this theorem. Let's find new ways to compute this limit. </p>
@@ -115,13 +117,13 @@
     <p>Thinking about <m>x</m> as the length of an interval <m>h</m>, this limit is actually equal to the value of some derivative, so <m>f'(a) = \displaystyle \lim_{h\to 0} \frac{\sin(h)}{h}</m>. What function <m>f(x)</m> and what point <m>x=a</m> would lead to this limit? Use these to find <m>f'(a)</m>, the value of this limit (in a new way!).</p>
     </task>
        <task>
-    <p>Verify, one more time, that this limit is indeed an indeterminate form. Then use L'Hospital's Rule to find this limit (again, in another way!).</p>
+    <p>Verify, one more time, that this limit is indeed an indeterminate form. Then use L'H&#xF4;pital's Rule to find this limit (again, in another way!).</p>
     </task>
     </activity>
 
 <activity>
     <introduction><p>
-    For the following limits, check if they give an indeterminate form. If they do, try to use l'Hospital's Rule. Does it help? It may or may not, or you may just need to use the rule repeatedly. Either way, try to compute the value of the following limits. </p>
+    For the following limits, check if they give an indeterminate form. If they do, try to use L'H&#xF4;pital's Rule. Does it help? It may or may not, or you may just need to use the rule repeatedly. Either way, try to compute the value of the following limits. </p>
     </introduction>
     <task>
     <p><m>\displaystyle \lim_{x\to 0} \frac{\sin(x)}{x}</m></p>
@@ -146,7 +148,7 @@
     <activity xml:id="checkit-ad9">
     <introduction>
         <p>
-For each limit, explain if L'Hopital's Rule may be applied.
+For each limit, explain if L'H&#xF4;pital's Rule may be applied.
 If it can, explain how to use this rule to find the limit.
         </p></introduction>
         
@@ -214,10 +216,10 @@ L'H&#244;ptial's Rule does not apply.
     
     <activity xml:id="lhospital-fail">
     <introduction><p>
-        There are situations in which using L'Hospital's Rule does not help and you do need some algebra skills! Consider the function <m>r(x)=\frac{x}{\sqrt{x^2 +2}}</m> and suppose that we want to find the limits as <m>x</m> tends to <m>\pm \infty</m>.</p>
+        There are situations in which using L'H&#xF4;pital's Rule does not help and you do need some algebra skills! Consider the function <m>r(x)=\frac{x}{\sqrt{x^2 +2}}</m> and suppose that we want to find the limits as <m>x</m> tends to <m>\pm \infty</m>.</p>
     </introduction>
     <task>
-    <p>Check that the limit as <m>x \to + \infty</m> gives an indeterminate form <m>\frac{\infty}{\infty}</m>. Then try to use L'Hospital's Rule... what happens? What if you use it again? </p>
+    <p>Check that the limit as <m>x \to + \infty</m> gives an indeterminate form <m>\frac{\infty}{\infty}</m>. Then try to use L'H&#xF4;pital's Rule... what happens? What if you use it again? </p>
     </task>
     <task>
     <p>We need to use algebra to handle this limit. Informally, we would like to cancel the highest powers at the numerator and denominator. Look at the denominator, <m>\sqrt{x^2 +2}</m>. We want to factor out an <m>x^2</m> under the square root. What do you get? </p>
