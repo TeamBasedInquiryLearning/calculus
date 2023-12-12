@@ -7,12 +7,12 @@
     </intro> 
     
     <knowl>
-        <content><p>Find an integral which computes the volume of the solid formed by rotating this region about the <m>x</m>-axis.</p></content>
+        <content><p>Find an integral or sum of integrals which computes the volume of the solid formed by rotating this region about the <m>x</m>-axis.</p></content>
         <outtro><p>Using the washer/disk method, we obtain <me>\int_{ {{a}} }^{ {{b}} } \pi \left({{f}}\right)^2dx</me> and using the shell method, we obtain 
             <me>\int_0^{ {{low}} } 2\pi y\left( {{b}}-{{a}}\right)dy +\int_{ {{low}} }^{ {{high}} } 2\pi y\left( {{b}}-\left({{g}}\right)\right)dy.</me></p></outtro>
     </knowl>
     <knowl>  
-        <content><p>Find an integral which computes the volume of the solid formed by rotating this region about the <m>y</m>-axis.</p></content>
+        <content><p>Find an integral or sum of integrals which computes the volume of the solid formed by rotating this region about the <m>y</m>-axis.</p></content>
         <outtro><p>Using the washer/disk method, we obtain 
             <me>\int_0^{ {{low}} } \pi\left({{b}}^2-{{a}}^2\right)dy + \int_{ {{low}} }^{ {{high}} } \pi\left({{b}}^2-\left({{g}}\right)^2\right)dy</me> and using the shell method, we obtain 
             <me>\int_{ {{a}} }^{ {{b}} }2\pi x \left({{f}}\right)dx.</me></p>
