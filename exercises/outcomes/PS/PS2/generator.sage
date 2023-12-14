@@ -48,6 +48,12 @@ class Generator(BaseGenerator):
         
         Sequence=num/denom
         
+        #Randomize starting index
+        #But make sure denominator isn't zero at starting index
+        if denom==n:
+            startIndex=choice([1,2])
+        else:
+            startIndex=choice([0,1,2])
         
 
         return {
@@ -58,4 +64,5 @@ class Generator(BaseGenerator):
             "rightsymb":rightsymb,
             "center":center,
             "radius":radius,  
+            "startIndex": startIndex,
         }
