@@ -1,8 +1,7 @@
 class Generator(BaseGenerator):
     def data(self):
         x = var("x")
-        negatives=[-1,1]
-        shuffle(negatives)
+        negative=choice([-1,1])
         def concavity_from_sign(sgn):
             if sgn<0:
                 return "down"
@@ -16,12 +15,12 @@ class Generator(BaseGenerator):
             0,
             randrange(1,6),
         ]
-        fpp = prod([x-z for z in zeros])*negatives[0]*randrange(3,6)
+        fpp = prod([x-z for z in zeros])*negative*randrange(3,6)
         f = integrate(integrate(fpp,x),x)
         data = [
             {
                 "interval": f"(-\\infty, {zeros[0]} )",
-                "concavity": concavity_from_sign(-negatives[0]),
+                "concavity": concavity_from_sign(-negative),
             },
             {
                 "point": zeros[0],
@@ -29,7 +28,7 @@ class Generator(BaseGenerator):
             },
             {
                 "interval": f"( {zeros[0]} , {zeros[1]} )",
-                "concavity": concavity_from_sign(negatives[0]),
+                "concavity": concavity_from_sign(negative),
             },
             {
                 "point": zeros[1],
@@ -37,7 +36,7 @@ class Generator(BaseGenerator):
             },
             {
                 "interval": f"( {zeros[1]} , {zeros[2]} )",
-                "concavity": concavity_from_sign(-negatives[0]),
+                "concavity": concavity_from_sign(-negative),
             },
             {
                 "point": zeros[2],
@@ -45,7 +44,7 @@ class Generator(BaseGenerator):
             },
             {
                 "interval": f"( {zeros[2]} , \\infty )",
-                "concavity": concavity_from_sign(negatives[0]),
+                "concavity": concavity_from_sign(negative),
             },
         ]
         fs = [
@@ -57,12 +56,12 @@ class Generator(BaseGenerator):
         ]
 
         double_root = randrange(1,6)*choice([-1,1])
-        fpp = x*(x-double_root)^2*negatives[1]*randrange(3,6)
+        fpp = x*(x-double_root)^2*negative*randrange(3,6)
         if double_root < 0:
             data = [
                 {
                     "interval": f"(-\\infty, {double_root} )",
-                    "concavity": concavity_from_sign(-negatives[0]),
+                    "concavity": concavity_from_sign(-negative),
                 },
                 {
                     "point": double_root,
@@ -70,7 +69,7 @@ class Generator(BaseGenerator):
                 },
                 {
                     "interval": f"( {double_root} , 0 )",
-                    "concavity": concavity_from_sign(-negatives[0]),
+                    "concavity": concavity_from_sign(-negative),
                 },
                 {
                     "point": 0,
@@ -78,14 +77,14 @@ class Generator(BaseGenerator):
                 },
                 {
                     "interval": f"( 0, \\infty )",
-                    "concavity": concavity_from_sign(negatives[0]),
+                    "concavity": concavity_from_sign(negative),
                 },
             ]
         else:
             data = [
                 {
                     "interval": f"(-\\infty, 0 )",
-                    "concavity": concavity_from_sign(-negatives[0]),
+                    "concavity": concavity_from_sign(-negative),
                 },
                 {
                     "point": 0,
@@ -93,7 +92,7 @@ class Generator(BaseGenerator):
                 },
                 {
                     "interval": f"( 0, {double_root} )",
-                    "concavity": concavity_from_sign(negatives[0]),
+                    "concavity": concavity_from_sign(negative),
                 },
                 {
                     "point": double_root,
@@ -101,7 +100,7 @@ class Generator(BaseGenerator):
                 },
                 {
                     "interval": f"( {double_root} , \\infty )",
-                    "concavity": concavity_from_sign(negatives[0]),
+                    "concavity": concavity_from_sign(negative),
                 },
             ]
         f = integrate(integrate(fpp,x),x)
