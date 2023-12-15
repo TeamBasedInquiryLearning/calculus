@@ -18,9 +18,9 @@
 Consider the following visualization to decide which of these statements is most appropriate for
 describing the relationship of lengths and areas.
                 </p>
-                <image xml:id="AI3-gawerfeasfasgasegad">
+                <image xml:id="AI3-length-area-relationship">
                     <sageplot>
-<xi:include href="../sage/AI3-gawerfeasfasgasegad.sage" parse="text" />
+<xi:include href="../sage/AI3-length-area-relationship.sage" parse="text" />
                     </sageplot>
                 </image>
                 <ol marker="A.">
@@ -39,9 +39,9 @@ We define the <term>volume</term> of a solid with cross sectional area given by 
 laying between <m>a\leq x\leq b</m> to be the definite integral
 <me>\mathrm{Volume}=\int_a^b A(x)\,dx</me>.
                 </p>
-                <image xml:id="AI3-gadefawergaweasrdegfasdf">
+                <image xml:id="AI3-volume-definition">
                     <sageplot variant="3d" aspect="1.0">
-<xi:include href="../sage/AI3-gadefawergaweasrdegfasdf.sage" parse="text"/>
+<xi:include href="../sage/AI3-volume-definition.sage" parse="text"/>
                     </sageplot>
                 </image>
             </statement> 
@@ -53,9 +53,9 @@ laying between <m>a\leq x\leq b</m> to be the definite integral
 We will be focused on the volumes of solids obtained by revolving a region around an axis.
 Let's use the running example of the region bounded by the curves <m>x=0,y=4,y=x^2</m>.
                 </p>
-                <image width="50%" xml:id="AI3-thwrqgweasdfasd">
+                <image width="50%" xml:id="AI3-x0-y4-yx2">
                     <sageplot>
-<xi:include href="../sage/AI3-thwrqgweasdfasd.sage" parse="text"/>
+<xi:include href="../sage/AI3-x0-y4-yx2.sage" parse="text"/>
                     </sageplot>
                 </image>
             </introduction>
@@ -64,9 +64,9 @@ Let's use the running example of the region bounded by the curves <m>x=0,y=4,y=x
 Consider the below illustrated revolution of this region, and the cross-section drawn
 from a horizontal line segment. Choose the most appropriate description of this illustration.
                 </p>
-                <image xml:id="AI3-rheagherhearhasdgfasd">
+                <image xml:id="AI3-x0-y4-yx2-revolution-1">
                     <sageplot variant="3d" aspect="1.0">
-<xi:include href="../sage/AI3-rheagherhearhasdgfasd.sage" parse="text"/>
+<xi:include href="../sage/AI3-x0-y4-yx2-revolution-1.sage" parse="text"/>
                     </sageplot>
                 </image>
                 <ol marker="A.">
@@ -92,9 +92,9 @@ Which of these formulas is most appropriate to find this illustration's cross-se
 Consider the below illustrated revolution of this region, and the cross-section drawn
 from a vertical line segment. Choose the most appropriate description of this illustration.
                 </p>
-                <image xml:id="AI3-rqgewagwerhqwereqw">
+                <image xml:id="AI3-x0-y4-yx2-revolution-2">
                     <sageplot variant="3d" aspect="1.0">
-<xi:include href="../sage/AI3-rqgewagwerhqwereqw.sage" parse="text"/>
+<xi:include href="../sage/AI3-x0-y4-yx2-revolution-2.sage" parse="text"/>
                     </sageplot>
                 </image>
                 <ol marker="A.">
@@ -120,9 +120,9 @@ Which of these formulas is most appropriate to find this illustration's cross-se
 Consider the below illustrated revolution of this region, and the cross-section drawn
 from a horizontal line segment. Choose the most appropriate description of this illustration.
                 </p>
-                <image xml:id="AI3-htergasgserhwserhasdrg">
+                <image xml:id="AI3-x0-y4-yx2-revolution-3">
                     <sageplot variant="3d" aspect="1.0">
-<xi:include href="../sage/AI3-htergasgserhwserhasdrg.sage" parse="text"/>
+<xi:include href="../sage/AI3-x0-y4-yx2-revolution-3.sage" parse="text"/>
                     </sageplot>
                 </image>
                 <ol marker="A.">
@@ -148,9 +148,9 @@ Which of these formulas is most appropriate to find this illustration's cross-se
 Consider the below illustrated revolution of this region, and the cross-section drawn
 from a vertical line segment. Choose the most appropriate description of this illustration.
                 </p>
-                <image xml:id="AI3-ht4hrgrwewgasdf">
+                <image xml:id="AI3-x0-y4-yx2-revolution-4">
                     <sageplot variant="3d" aspect="1.0">
-<xi:include href="../sage/AI3-ht4hrgrwewgasdf.sage" parse="text"/>
+<xi:include href="../sage/AI3-x0-y4-yx2-revolution-4.sage" parse="text"/>
                     </sageplot>
                 </image>
                 <ol marker="A.">

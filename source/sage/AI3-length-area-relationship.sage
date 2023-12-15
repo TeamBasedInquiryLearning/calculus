@@ -1,3 +1,4 @@
+
 f(x) = (x-3)*(x-5)*(x-7)+40
 p = line([(2,0),(2,f(2))], color='black')
 p += line([(8,0),(8,f(8))], color='black')
