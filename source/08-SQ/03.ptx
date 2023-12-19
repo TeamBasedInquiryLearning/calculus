@@ -64,7 +64,13 @@
         <definition xml:id="definition-SQ3partialsumsequence">
             <statement>
                 <p>
-                    Given a sequence <m>\{a_n\}_{n=0}^\infty</m> define the <em><m>k^{\text{th}}</m> partial sum</em> of <m>\{a_n\}</m> to be <me>A_k=\sum_{i=0}^k a_i=a_1+a_2+\cdots+a_k.</me>  Note that <m>\{A_n\}=A_0, A_1, A_2, \ldots</m> is itself a sequence called the <em>partial sum sequence</em>.
+Given a sequence <m>\{a_n\}_{n=0}^\infty</m> define the <term><m>k^{\text{th}}</m> partial sum</term> for this sequence to be
+<me>A_k=\sum_{i=0}^k a_i=a_0+a_1+a_2+\cdots+a_k.</me> 
+Note that <m>\{A_n\}_{n=0}^\infty=A_0, A_1, A_2, \ldots</m> is itself a sequence called the <em>partial sum sequence</em>.
+                </p>
+                <p>
+More generally, partial sums may be defined for any starting index. Given <m>\{a_n\}_{n=N}^\infty</m>, let
+<me>A_k=\sum_{i=N}^k a_i=a_N+a_{N+1}+a_{N+2}+\cdots+a_k.</me> 
                 </p>
             </statement>
         </definition>
@@ -72,17 +78,14 @@
         <activity xml:id="activity-SQ3geompartialsum">
             <statement>
                 <p>
-                     Let <m>a_n=\frac{2}{3^n}.</m> Find the following partial sums:
-                    <ol>
-                        <li><m>A_0</m>.</li>
-                        <li><m>A_1</m>.</li>
-                        <li><m>A_2</m>.</li>
-                        <li><m>A_3</m>.</li>
-                        <li><m>A_{100}</m>.</li>
-                    </ol>
-                </p>
-                 
+                     Let <m>a_n=\frac{2}{3^n}.</m> Find the following partial sums of the sequence <m>\{a_n\}_{n=0}^\infty</m>.
+                </p>        
             </statement>
+            <task><m>A_0</m>.</task>
+            <task><m>A_1</m>.</task>
+            <task><m>A_2</m>.</task>
+            <task><m>A_3</m>.</task>
+            <task><m>A_{100}</m>.</task>
         </activity>
         
         <activity xml:id="activity-SQ3closedformmotivation">
