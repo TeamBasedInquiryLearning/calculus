@@ -43,7 +43,7 @@
 
 
 <!-- We start a new page after each thing-->
-<xsl:template match="activity|definition|observation|fact|remark|example|objectives">
+<xsl:template match="activity|definition|observation|fact|remark|example|objectives|note">
     <xsl:apply-imports />
     <xsl:text>\cleardoublepage&#xA;&#xA;</xsl:text>
 </xsl:template>
