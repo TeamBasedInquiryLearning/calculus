@@ -50,7 +50,7 @@
 
 <!-- We pull activities,etc. from each subsection -->
 <xsl:template match="subsection">
-    <xsl:apply-templates select="activity|definition|observation|fact|remark|example" />
+    <xsl:apply-templates select="activity|definition|observation|fact|remark|example|note" />
 </xsl:template>
 
 <!--Exercise groups are not in a subsection, so drop them -->
