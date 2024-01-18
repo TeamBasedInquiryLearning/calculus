@@ -324,11 +324,11 @@
     </theorem>
     
     <activity xml:id="activity-limits-rationals2">
-        <statement><p>Consider taking the limit of a rational function <m>\frac{p(x)}{q(x)}</m> as <m>x \to c</m>. If <m>q(c)=0</m>, is it possible for <m>\lim_{x \to c}\frac{p(x)}{q(x)} </m> to equal a number? </p> 
+        <statement><p>Consider taking the limit of a rational function <m>\frac{p(x)}{q(x)}</m> as <m>x \to c</m>. If <m>q(c)=0</m>, is it possible for <m>\displaymath\lim_{x \to c}\frac{p(x)}{q(x)} </m> to equal a number? </p> 
   <ol marker="A.">
             <li>No, because <m>\frac{p(x)}{q(x)}</m> is not defined at <m>x=c</m> since <m>q(c)=0</m>.</li>
             <li>Yes, because if you graph <m>f(x)=\frac{x^2-1}{x-1}</m>, the value <m>f(1)</m> is not defined, but the graph shows that the limit of <m>f(x)</m> does exist as <m>x \to 1</m>.</li>
-            <li>No, because if you graph <m>g(x)=\frac{x^2+1}{x-1}</m>, the value <m>g(1)</m> is not defined and the graph shows that the limit of <m>\lim_{x \to c}g(x)</m> does not exist.</li>
+            <li>No, because if you graph <m>g(x)=\frac{x^2+1}{x-1}</m>, the value <m>g(1)</m> is not defined and the graph shows that the limit of <m>\displaymath\lim_{x \to c}g(x)</m> does not exist.</li>
             <li>Yes, because we can use  <xref ref="theorem-limits-rationals"/>.</li>
         </ol>
         </statement>

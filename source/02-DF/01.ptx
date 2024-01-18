@@ -242,7 +242,7 @@
          <li><p> The slope of the tangent line to <m>f(x)</m> at <m>x=a</m> </p></li>
          <li><p> The instantaneous velocity of the object at <m>x=a</m> </p></li>
          <li><p> The difference quotient <m>\frac{f(a+h)-f(a)}{h} </m> </p></li>
-         <li><p> The limit <m>\lim_{h \to 0} \frac{f(a+h)-f(a)}{h} </m> </p></li>                    
+         <li><p> The limit <m>\displaymath\lim_{h \to 0} \frac{f(a+h)-f(a)}{h} </m> </p></li>                    
               </ol>    
                    </activity>
  
@@ -425,7 +425,7 @@ Defined and continuous on the interval <m>[-5,5]</m>.
                         </li>
                         <li>
                             <p>
-<m>\lim_{h\to 0} \frac{f( 2 +h)-f( 2 )}{h}&lt; 0</m>
+<m>\displaymath\lim_{h\to 0} \frac{f( 2 +h)-f( 2 )}{h}&lt; 0</m>
                             </p>
                         </li>
                         <li>

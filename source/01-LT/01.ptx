@@ -269,9 +269,9 @@
              <p> Suppose that: </p> 
              <ul>
                   <li> <p> for an interval around <m>x=a</m>, we have that <m>f(x) \leq g(x) \leq h(x) </m> ;</p></li>
-                  <li> <p> the limit as <m>x</m> approaches <m>a</m> of <m> f(x) </m> is equal to the same value <m>L</m> as the limit of <m>h(x)</m>, so <m>\lim_{x\to a} f(x) = L =\lim_{x\to a} h(x) .</m></p></li>
+                  <li> <p> the limit as <m>x</m> approaches <m>a</m> of <m> f(x) </m> is equal to the same value <m>L</m> as the limit of <m>h(x)</m>, so <m>\displaymath\lim_{x\to a} f(x) = L =\lim_{x\to a} h(x) .</m></p></li>
              </ul>
-<p>Then, the limit of <m>g(x)</m> as <m>x \to a</m> is also <m> L</m>, so <m>\lim_{x\to a} g(x) = L </m>. </p></statement> </theorem>
+<p>Then, the limit of <m>g(x)</m> as <m>x \to a</m> is also <m> L</m>, so <m>\displaymath\lim_{x\to a} g(x) = L </m>. </p></statement> </theorem>
          
    <activity  xml:id="squeeze-thm-ex" estimated-time="10">
         <introduction>
@@ -305,7 +305,7 @@
         </task>
         <task>
             <statement>
-                <p> Using trigonometry, one can show algebraically that <m>\cos(x) \leq \frac{\sin(x)}{x} \leq 1 </m> for <m>x</m> values close to zero. Moreover, <m>\lim_{x \to 0} \cos(x) = \cos(0)=1</m> (we say that cosine is a continuous function). Use these facts and the Squeeze Theorem, to find the limit <m>\lim_{x\to 0} \frac{\sin(x)}{x} </m>.</p>
+                <p> Using trigonometry, one can show algebraically that <m>\cos(x) \leq \frac{\sin(x)}{x} \leq 1 </m> for <m>x</m> values close to zero. Moreover, <m>\displaymath\lim_{x \to 0} \cos(x) = \cos(0)=1</m> (we say that cosine is a continuous function). Use these facts and the Squeeze Theorem, to find the limit <m>\displaymath\lim_{x\to 0} \frac{\sin(x)}{x} </m>.</p>
             </statement>
         </task>
     </activity> 
