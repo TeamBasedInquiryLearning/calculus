@@ -117,9 +117,9 @@ Otherwise, it is <term>divergent</term>.
     <activity xml:id="activity-T8Fabound">
         <p>Which of these limits is equal to <m>\displaystyle\int_1^\infty \frac{1}{x^2} dx</m>?</p>
         <ol marker="A." cols="2">
-            <li><m>\lim_{b\to\infty}\int_1^b\frac{1}{x^2}dx</m></li>
-            <li><m>\lim_{b\to\infty}\left[-\frac{1}{x}\right]_1^b</m></li>
-            <li><m>\lim_{b\to\infty}\left[-\frac{1}{b}+1\right]</m></li>
+            <li><m>\displaymath\lim_{b\to\infty}\int_1^b\frac{1}{x^2}dx</m></li>
+            <li><m>\displaymath\lim_{b\to\infty}\left[-\frac{1}{x}\right]_1^b</m></li>
+            <li><m>\displaymath\lim_{b\to\infty}\left[-\frac{1}{b}+1\right]</m></li>
             <li>All of these.</li>
         </ol>
     </activity>
@@ -154,9 +154,9 @@ we let <m>\displaystyle \int_c^b f(x) dx</m> denote <me>\int_c^b f(x) dx=\lim_{a
     <activity>
         <p>Which of these limits is equal to <m>\displaystyle\int_0^1 \frac{1}{\sqrt x} dx</m>?</p>
         <ol marker="A." cols="2">
-            <li><m>\lim_{a\to0^+}\int_a^1\frac{1}{\sqrt x}dx</m></li>
-            <li><m>\lim_{a\to0^+}\left[2\sqrt x\right]_a^1</m></li>
-            <li><m>\lim_{a\to0^+}\left[2-2\sqrt a\right]</m></li>
+            <li><m>\displaymath\lim_{a\to0^+}\int_a^1\frac{1}{\sqrt x}dx</m></li>
+            <li><m>\displaymath\lim_{a\to0^+}\left[2\sqrt x\right]_a^1</m></li>
+            <li><m>\displaymath\lim_{a\to0^+}\left[2-2\sqrt a\right]</m></li>
             <li>All of these.</li>
         </ol>
     </activity>

@@ -70,7 +70,7 @@
             </tabular>
         </table>
         <p>
-        Based on the values of <xref ref="table-limit-numerical1"/>, what is the best approximation for <m>\lim_{x\to 7} f(x)</m>?
+        Based on the values of <xref ref="table-limit-numerical1"/>, what is the best approximation for <m>\displaymath\lim_{x\to 7} f(x)</m>?
         <ol marker="A." cols="2">
             <li><p> the limit is approximately 7</p></li>
             <li><p> the limit is approximately 0.17 </p></li>
@@ -218,10 +218,10 @@ the function as <m>x</m> tends to 2?
     <p>Based on <xref ref = "table-limit-numerical3"/>, what information can be inferred about <m>\displaystyle \lim_{x\to 1^-}f(x)</m>, <m>\displaystyle \lim_{x\to 1^+}f(x)</m>, and <m>\displaystyle \lim_{x\to 1}f(x)</m>?
 </p>
         <ol marker="A.">
-            <li><p> <m> \displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\lim_{x\rightarrow 1}f(x) = 0</m></p></li>
-            <li><p> <m> \displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\lim_{x\rightarrow 1}f(x)</m> does not exist </p></li>
-            <li><p> <m>\displaystyle \lim_{x\rightarrow 1^-}f(x) = 0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = -0.5</m>, and <m>\lim_{x\rightarrow 1}f(x)</m> does not exist</p></li>
-            <li><p> <m>\displaystyle \lim_{x\rightarrow 1^-}f(x) = 0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = -0.5</m>, and <m>\lim_{x\rightarrow 1}f(x) = 0</m></p></li>
+            <li><p> <m> \displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\displaymath\lim_{x\rightarrow 1}f(x) = 0</m></p></li>
+            <li><p> <m> \displaystyle \lim_{x\to 1^-}f(x) = -0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = 0.5</m>, and <m>\displaymath\lim_{x\rightarrow 1}f(x)</m> does not exist </p></li>
+            <li><p> <m>\displaystyle \lim_{x\rightarrow 1^-}f(x) = 0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = -0.5</m>, and <m>\displaymath\lim_{x\rightarrow 1}f(x)</m> does not exist</p></li>
+            <li><p> <m>\displaystyle \lim_{x\rightarrow 1^-}f(x) = 0.5,\,\, \lim_{x\rightarrow 1^+}f(x) = -0.5</m>, and <m>\displaymath\lim_{x\rightarrow 1}f(x) = 0</m></p></li>
         </ol>
     </activity>
 
@@ -243,7 +243,7 @@ the function as <m>x</m> tends to 2?
         </task>
 
 <task>  
-        <p> Use the values that you chose in part (a) to calculate an approximation for <m>\lim_{x \to 2}f(x)</m>. </p>
+        <p> Use the values that you chose in part (a) to calculate an approximation for <m>\displaymath\lim_{x \to 2}f(x)</m>. </p>
         </task>
 <task>
         <p> Which value best describes the limit that you obtained in part (b)?</p>
