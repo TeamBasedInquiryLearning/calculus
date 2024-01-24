@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TBIL-Calc Integration of trigonometry (TI3)</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus for Team-Based Inquiry Learning">
+<meta property="book:author" content="TBIL Institute Fellows">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.33/pretext_search.js"></script><link href="https://pretextbook.org/css/0.83/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.33</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.33/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.33/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.33/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="https://pretextbook.org/css/0.83/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/shell_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/banner_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/navbar_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/toc_crc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
+<h1 class="heading"><a href="cal1.html"><span class="title">Calculus for Team-Based Inquiry Learning:</span> <span class="subtitle">2024 Edition PREVIEW</span></a></h1>
+<p class="byline">TBIL Institute Fellows</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="TI2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="TI.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="TI4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\unknown}{{\color{gray} ?}}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\newcommand{\tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="LT.html" class="internal"><span class="codenumber">1</span> <span class="title">Limits (LT)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="LT1.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Limits graphically (LT1)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LT1.html#LT1-3" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LT1.html#LT1-4" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="LT2.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Limits numerically (LT2)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LT2.html#LT2-3" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LT2.html#LT2-4" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="LT3.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Limits analytically (LT3)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LT3.html#LT3-3" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LT3.html#LT3-4" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="LT4.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Continuity (LT4)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LT4.html#LT4-3" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LT4.html#LT4-4" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="LT5.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Limits with infinite inputs (LT5)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LT5.html#LT5-3" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LT5.html#LT5-4" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="LT6.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Limits with infinite outputs (LT6)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LT6.html#LT6-3" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="LT6.html#LT6-4" class="internal"><span class="codenumber">1.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="DF.html" class="internal"><span class="codenumber">2</span> <span class="title">Derivatives (DF)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="DF1.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Derivatives graphically and numerically (DF1)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="DF1.html#DF1-3" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="DF1.html#DF1-4" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="DF2.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Derivatives analytically (DF2)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="DF2.html#DF2-3" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="DF2.html#DF2-4" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="DF3.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Elementary derivative rules (DF3)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="DF3.html#DF3-3" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="DF3.html#DF3-4" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="DF4.html" class="internal"><span class="codenumber">2.4</span> <span class="title">The product and quotient rules (DF4)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="DF4.html#DF4-3" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="DF4.html#DF4-4" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="DF5.html" class="internal"><span class="codenumber">2.5</span> <span class="title">The chain rule (DF5)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="DF5.html#DF5-3" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="DF5.html#DF5-4" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="DF6.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Differentiation strategy (DF6)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="DF6.html#DF6-3" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="DF6.html#DF6-4" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="DF7.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Differentiating implicitly defined functions (DF7)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="DF7.html#DF7-3" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="DF7.html#DF7-4" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="DF8.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Differentiating inverse functions (DF8)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="DF8.html#DF8-3" class="internal"><span class="codenumber">2.8.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="DF8.html#DF8-4" class="internal"><span class="codenumber">2.8.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="AD.html" class="internal"><span class="codenumber">3</span> <span class="title">Applications of Derivatives (AD)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AD1.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Tangents, motion, and marginals (AD1)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AD1.html#AD1-3" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AD1.html#AD1-4" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AD2.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Linear approximation (AD2)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AD2.html#AD2-3" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AD2.html#AD2-4" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AD3.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Related rates (AD3)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AD3.html#AD3-3" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AD3.html#AD3-4" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AD4.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Extreme values (AD4)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AD4.html#AD4-3" class="internal"><span class="codenumber">3.4.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AD4.html#AD4-4" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AD5.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Derivative tests (AD5)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AD5.html#AD5-3" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AD5.html#AD5-4" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AD6.html" class="internal"><span class="codenumber">3.6</span> <span class="title">Concavity and inflection (AD6)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AD6.html#AD6-3" class="internal"><span class="codenumber">3.6.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AD6.html#AD6-4" class="internal"><span class="codenumber">3.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AD7.html" class="internal"><span class="codenumber">3.7</span> <span class="title">Graphing with derivatives (AD7)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AD7.html#AD7-3" class="internal"><span class="codenumber">3.7.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AD7.html#AD7-4" class="internal"><span class="codenumber">3.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AD8.html" class="internal"><span class="codenumber">3.8</span> <span class="title">Applied optimization (AD8)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AD8.html#AD8-3" class="internal"><span class="codenumber">3.8.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AD8.html#AD8-4" class="internal"><span class="codenumber">3.8.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AD9.html" class="internal"><span class="codenumber">3.9</span> <span class="title">Limits and Derivatives (AD9)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AD9.html#AD9-3" class="internal"><span class="codenumber">3.9.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AD9.html#AD9-4" class="internal"><span class="codenumber">3.9.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="IN.html" class="internal"><span class="codenumber">4</span> <span class="title">Definite and Indefinite Integrals (IN)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="IN1.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Geometry of definite integrals (IN1)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IN1.html#IN1-3" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IN1.html#IN1-4" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="IN2.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Approximating definite integrals (IN2)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IN2.html#IN2-3" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IN2.html#IN2-4" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="IN3.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Elementary antiderivatives (IN3)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IN3.html#IN3-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IN3.html#IN3-4" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="IN4.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Initial Value Problems (IN4)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IN4.html#IN4-3" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IN4.html#IN4-4" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="IN5.html" class="internal"><span class="codenumber">4.5</span> <span class="title">FTC for definite integrals (IN5)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IN5.html#IN5-3" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IN5.html#IN5-4" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="IN6.html" class="internal"><span class="codenumber">4.6</span> <span class="title">FTC for derivatives of integrals (IN6)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IN6.html#IN6-3" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IN6.html#IN6-4" class="internal"><span class="codenumber">4.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="IN7.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Area under curves (IN7)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IN7.html#IN7-3" class="internal"><span class="codenumber">4.7.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IN7.html#IN7-4" class="internal"><span class="codenumber">4.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="IN8.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Area between curves (IN8)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IN8.html#IN8-3" class="internal"><span class="codenumber">4.8.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="IN8.html#IN8-4" class="internal"><span class="codenumber">4.8.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="TI.html" class="internal"><span class="codenumber">5</span> <span class="title">Techniques of Integration (TI)</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="TI1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Substitution method (TI1)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="TI1.html#TI1-3" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="TI1.html#TI1-4" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="TI2.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Integration by Parts (TI2)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="TI2.html#TI2-3" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="TI2.html#TI2-4" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="TI3.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Integration of trigonometry (TI3)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="TI3.html#TI3-3" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="TI3.html#TI3-4" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="TI4.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Trigonometric Substitution (TI4)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="TI4.html#TI4-3" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="TI4.html#TI4-4" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="TI5.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Tables of Integrals (TI5)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="TI5.html#TI5-3" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="TI5.html#TI5-4" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="TI6.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Partial fractions (TI6)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="TI6.html#TI6-3" class="internal"><span class="codenumber">5.6.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="TI6.html#TI6-4" class="internal"><span class="codenumber">5.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="TI7.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Integration strategy (TI7)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="TI7.html#TI7-3" class="internal"><span class="codenumber">5.7.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="TI7.html#TI7-4" class="internal"><span class="codenumber">5.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="TI8.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Improper integrals (TI8)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="TI8.html#TI8-3" class="internal"><span class="codenumber">5.8.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="TI8.html#TI8-4" class="internal"><span class="codenumber">5.8.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="AI.html" class="internal"><span class="codenumber">6</span> <span class="title">Applications of Integration (AI)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AI1.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Average Value (AI1)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AI1.html#AI1-3" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AI1.html#AI1-4" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AI2.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Arclength (AI2)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AI2.html#AI2-3" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AI2.html#AI2-4" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AI3.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Volumes of Revolution (AI3)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AI3.html#AI3-3" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AI3.html#AI3-4" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AI4.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Surface Areas of Revolution (AI4)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AI4.html#AI4-3" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AI4.html#AI4-4" class="internal"><span class="codenumber">6.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AI5.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Density, Mass, and Center of Mass (AI5)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AI5.html#AI5-3" class="internal"><span class="codenumber">6.5.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AI5.html#AI5-4" class="internal"><span class="codenumber">6.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AI6.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Work (AI6)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AI6.html#AI6-3" class="internal"><span class="codenumber">6.6.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AI6.html#AI6-4" class="internal"><span class="codenumber">6.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="AI7.html" class="internal"><span class="codenumber">6.7</span> <span class="title">Force and Pressure (AI7)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AI7.html#AI7-3" class="internal"><span class="codenumber">6.7.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="AI7.html#AI7-4" class="internal"><span class="codenumber">6.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="CO.html" class="internal"><span class="codenumber">7</span> <span class="title">Coordinates and Vectors (CO)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="CO1.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Parametric/vector equations (CO1)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="CO1.html#CO1-3" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="CO1.html#CO1-4" class="internal"><span class="codenumber">7.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="CO2.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Parametric/vector derivatives (CO2)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="CO2.html#CO2-3" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="CO2.html#CO2-4" class="internal"><span class="codenumber">7.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="CO3.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Parametric/vector arclength (CO3)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="CO3.html#CO3-3" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="CO3.html#CO3-4" class="internal"><span class="codenumber">7.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="CO4.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Polar coordinates (CO4)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="CO4.html#CO4-3" class="internal"><span class="codenumber">7.4.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="CO4.html#CO4-4" class="internal"><span class="codenumber">7.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="CO5.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Polar Arclength (CO5)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="CO5.html#CO5-3" class="internal"><span class="codenumber">7.5.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="CO5.html#CO5-4" class="internal"><span class="codenumber">7.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="CO6.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Polar area (CO6)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="CO6.html#CO6-3" class="internal"><span class="codenumber">7.6.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="CO6.html#CO6-4" class="internal"><span class="codenumber">7.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="SQ.html" class="internal"><span class="codenumber">8</span> <span class="title">Sequences and Series (SQ)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="SQ1.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Sequence Formulas (SQ1)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SQ1.html#SQ1-3" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SQ1.html#SQ1-4" class="internal"><span class="codenumber">8.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="SQ2.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Sequence Properties and Limits (SQ2)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SQ2.html#SQ2-3" class="internal"><span class="codenumber">8.2.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SQ2.html#SQ2-4" class="internal"><span class="codenumber">8.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="SQ3.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Partial Sum Sequence (SQ3)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SQ3.html#SQ3-3" class="internal"><span class="codenumber">8.3.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SQ3.html#SQ3-4" class="internal"><span class="codenumber">8.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="SQ4.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Geometric Series (SQ4)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SQ4.html#SQ4-3" class="internal"><span class="codenumber">8.4.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SQ4.html#SQ4-4" class="internal"><span class="codenumber">8.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="SQ5.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Basic Convergence Tests (SQ5)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SQ5.html#SQ5-3" class="internal"><span class="codenumber">8.5.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SQ5.html#SQ5-4" class="internal"><span class="codenumber">8.5.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="SQ6.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Comparison Tests (SQ6)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SQ6.html#SQ6-3" class="internal"><span class="codenumber">8.6.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SQ6.html#SQ6-4" class="internal"><span class="codenumber">8.6.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="SQ7.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Ratio and Root Tests (SQ7)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SQ7.html#SQ7-3" class="internal"><span class="codenumber">8.7.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SQ7.html#SQ7-4" class="internal"><span class="codenumber">8.7.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="SQ8.html" class="internal"><span class="codenumber">8.8</span> <span class="title">Absolute Convergence (SQ8)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SQ8.html#SQ8-3" class="internal"><span class="codenumber">8.8.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SQ8.html#SQ8-4" class="internal"><span class="codenumber">8.8.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="SQ9.html" class="internal"><span class="codenumber">8.9</span> <span class="title">Series Convergence Strategy (SQ9)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SQ9.html#SQ9-3" class="internal"><span class="codenumber">8.9.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="SQ9.html#SQ9-4" class="internal"><span class="codenumber">8.9.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="PS.html" class="internal"><span class="codenumber">9</span> <span class="title">Power Series (PS)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="PS1.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Power Series (PS1)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="PS1.html#PS1-3" class="internal"><span class="codenumber">9.1.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="PS1.html#PS1-4" class="internal"><span class="codenumber">9.1.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="PS2.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Convergence of Power Series (PS2)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="PS2.html#PS2-3" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="PS2.html#PS2-4" class="internal"><span class="codenumber">9.2.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="PS3.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Manipulation of Power Series (PS3)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="PS3.html#PS3-3" class="internal"><span class="codenumber">9.3.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="PS3.html#PS3-4" class="internal"><span class="codenumber">9.3.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="PS4.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Taylor Series (PS4)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="PS4.html#PS4-3" class="internal"><span class="codenumber">9.4.1</span> <span class="title">Activities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="PS4.html#PS4-4" class="internal"><span class="codenumber">9.4.2</span> <span class="title">Videos</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="integral-table.html" class="internal"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></div></li>
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="trig-table.html" class="internal"><span class="codenumber">B</span> <span class="title">List of Trigonometric Identities</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="TI3"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">5.3</span><span class="space"> </span><span class="title">Integration of trigonometry (TI3)</span>
+</h2>
+<article class="objectives goal-like" id="TI3-2"><h3 class="heading"><span class="type">Learning Outcomes</span></h3>
+<ul class="disc"><li id="TI3-2-1-1"><div class="para" id="TI3-2-1-1-1">Compute integrals involving products of trigonometric functions.</div></li></ul></article><section class="subsection" id="TI3-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.3.1</span><span class="space"> </span><span class="title">Activities</span>
+</h3>
+<article class="activity project-like" id="TI3-3-2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.3.1</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="TI3-3-2-1-1">
+<div class="para">Consider <span class="process-math">\(\displaystyle\int \sin(x)\cos(x) \, dx\text{.}\)</span>  Which substitution would you choose to evaluate this integral?</div>
+<ol class="upper-alpha cols2">
+<li id="TI3-3-2-1-1-2-1"><div class="para" id="p-derived-TI3-3-2-1-1-2-1"><span class="process-math">\(\displaystyle u=\sin(x)\)</span></div></li>
+<li id="TI3-3-2-1-1-2-2"><div class="para" id="p-derived-TI3-3-2-1-1-2-2"><span class="process-math">\(\displaystyle u=\cos(x)\)</span></div></li>
+<li id="TI3-3-2-1-1-2-3"><div class="para" id="p-derived-TI3-3-2-1-1-2-3"><span class="process-math">\(\displaystyle u=\sin(x)\cos(x)\)</span></div></li>
+<li id="TI3-3-2-1-1-2-4"><div class="para" id="p-derived-TI3-3-2-1-1-2-4">Substitution is not effective</div></li>
+</ol>
+</div></article><article class="activity project-like" id="TI3-3-3"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.3.2</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="TI3-3-3-1-1">
+<div class="para">Consider <span class="process-math">\(\displaystyle\int \sin^4(x)\cos(x) \, dx\text{.}\)</span>  Which substitution would you choose to evaluate this integral?</div>
+<ol class="upper-alpha cols2">
+<li id="TI3-3-3-1-1-2-1"><div class="para" id="p-derived-TI3-3-3-1-1-2-1"><span class="process-math">\(\displaystyle u=\sin(x)\)</span></div></li>
+<li id="TI3-3-3-1-1-2-2"><div class="para" id="p-derived-TI3-3-3-1-1-2-2"><span class="process-math">\(\displaystyle u=\sin^4(x)\)</span></div></li>
+<li id="TI3-3-3-1-1-2-3"><div class="para" id="p-derived-TI3-3-3-1-1-2-3"><span class="process-math">\(\displaystyle u=\cos(x)\)</span></div></li>
+<li id="TI3-3-3-1-1-2-4"><div class="para" id="p-derived-TI3-3-3-1-1-2-4">Substitution is not effective</div></li>
+</ol>
+</div></article><article class="activity project-like" id="TI3-3-4"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.3.3</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="TI3-3-4-1-1">
+<div class="para">Consider <span class="process-math">\(\displaystyle\int \sin^4(x)\cos^3(x) \, dx\text{.}\)</span>  Which substitution would you choose to evaluate this integral?</div>
+<ol class="upper-alpha cols2">
+<li id="TI3-3-4-1-1-2-1"><div class="para" id="p-derived-TI3-3-4-1-1-2-1"><span class="process-math">\(\displaystyle u=\sin(x)\)</span></div></li>
+<li id="TI3-3-4-1-1-2-2"><div class="para" id="p-derived-TI3-3-4-1-1-2-2"><span class="process-math">\(\displaystyle u=\cos^3(x)\)</span></div></li>
+<li id="TI3-3-4-1-1-2-3"><div class="para" id="p-derived-TI3-3-4-1-1-2-3"><span class="process-math">\(\displaystyle u=\cos(x)\)</span></div></li>
+<li id="TI3-3-4-1-1-2-4"><div class="para" id="p-derived-TI3-3-4-1-1-2-4">Substitution is not effective</div></li>
+</ol>
+</div></article><article class="activity project-like" id="TI3-3-5"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.3.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="TI3-3-5-1-1">It’s possible to use subtitution to evaluate <span class="process-math">\(\displaystyle\int \sin^4(x)\cos^3(x) \, dx\text{,}\)</span> by taking advantage of the trigonometric identity <span class="process-math">\(\sin^2(x)+\cos^2(x)=1\text{.}\)</span>
+</div> <div class="para" id="TI3-3-5-1-2">Complete the following substitution of <span class="process-math">\(u=\sin(x),du=\cos(x)\,dx\)</span> by filling in the missing <span class="process-math">\(\unknown\)</span>s.</div>
+<div class="displaymath process-math" id="TI3-3-5-1-3">
+\begin{align*}
+\int \sin^4(x)\cos^3(x)\,dx &amp;=\int\sin^4(x)(\,\unknown\,)\cos(x)\,dx\\
+&amp;=\int\sin^4(x)(1-\unknown)\cos(x)\,dx\\
+&amp;= \int\unknown(1-\unknown)\,du\\
+&amp;= \int (u^4-u^6)\,du\\
+&amp;= \frac{1}{5}u^5-\frac{1}{7}u^7+C\\
+&amp;= \unknown
+\end{align*}
+</div></article><article class="activity project-like" id="TI3-3-6"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.3.5</span><span class="period">.</span>
+</h4>
+<div class="para" id="TI3-3-6-1-1">Trying to substitute <span class="process-math">\(u=\cos(x),du=-\sin(x)\,dx\)</span> in the previous example is less successful.</div>
+<div class="displaymath process-math" id="TI3-3-6-1-2">
+\begin{align*}
+\int \sin^4(x)\cos^3(x)\,dx &amp;=-\int\sin^3(x)\cos^3(x)(-\sin(x)\,dx)\\
+&amp;=-\int\sin^3(x)u^3\,du\\
+&amp;= \cdots?
+\end{align*}
+</div>
+<div class="para logical" id="TI3-3-6-1-3">
+<div class="para">Which feature of <span class="process-math">\(\sin^4(x)\cos^3(x)\)</span> made <span class="process-math">\(u=\sin(x)\)</span> the better choice?</div>
+<ol class="upper-alpha cols2">
+<li id="TI3-3-6-1-3-3-1"><div class="para" id="p-derived-TI3-3-6-1-3-3-1">The even power of <span class="process-math">\(\sin^4(x)\)</span>
+</div></li>
+<li id="TI3-3-6-1-3-3-2"><div class="para" id="p-derived-TI3-3-6-1-3-3-2">The odd power of <span class="process-math">\(\cos^3(x)\)</span>
+</div></li>
+</ol>
+</div></article><article class="activity project-like" id="TI3-3-7"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.3.6</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="TI3-3-7-1-1">
+<div class="para">Try to show</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \sin^5(x)\cos^2(x)\,dx=
+-\frac{1}{7} \, \cos^{7}\left(x\right) + \frac{2}{5} \, \cos^{5}\left(x\right) - \frac{1}{3} \, \cos^{3}\left(x\right)+C
+\end{equation*}
+</div>
+<div class="para">by first trying <span class="process-math">\(u=\sin(x)\text{,}\)</span> and then trying <span class="process-math">\(u=\cos(x)\)</span> instead.</div>
+</div> <div class="para logical" id="TI3-3-7-1-2">
+<div class="para">Which substitution worked better and why?</div>
+<ol class="upper-alpha cols2">
+<li id="TI3-3-7-1-2-1-1"><div class="para" id="p-derived-TI3-3-7-1-2-1-1">
+<span class="process-math">\(u=\sin(x)\)</span> due to <span class="process-math">\(\sin^5(x)\)</span>’s odd power.</div></li>
+<li id="TI3-3-7-1-2-1-2"><div class="para" id="p-derived-TI3-3-7-1-2-1-2">
+<span class="process-math">\(u=\sin(x)\)</span> due to <span class="process-math">\(\cos^2(x)\)</span>’s even power.</div></li>
+<li id="TI3-3-7-1-2-1-3"><div class="para" id="p-derived-TI3-3-7-1-2-1-3">
+<span class="process-math">\(u=\cos(x)\)</span> due to <span class="process-math">\(\sin^5(x)\)</span>’s odd power.</div></li>
+<li id="TI3-3-7-1-2-1-4"><div class="para" id="p-derived-TI3-3-7-1-2-1-4">
+<span class="process-math">\(u=\cos(x)\)</span> due to <span class="process-math">\(\cos^2(x)\)</span>’s even power.</div></li>
+</ol>
+</div></article><article class="observation remark-like" id="TI3-3-8"><h4 class="heading">
+<span class="type">Observation</span><span class="space"> </span><span class="codenumber">5.3.7</span><span class="period">.</span>
+</h4>
+<div class="para" id="TI3-3-8-1-1">When integrating the form <span class="process-math">\(\int \sin^m(x)\cos^n(x)\,dx\text{:}\)</span>
+</div> <ul class="disc">
+<li id="TI3-3-8-1-2-1"><div class="para" id="TI3-3-8-1-2-1-1">If <span class="process-math">\(\sin\)</span>’s power is odd, rewrite the integral as <span class="process-math">\(\int g(\cos(x))\sin(x)\,dx\)</span> and use <span class="process-math">\(u=\cos(x)\text{.}\)</span>
+</div></li>
+<li id="TI3-3-8-1-2-2"><div class="para" id="TI3-3-8-1-2-2-1">If <span class="process-math">\(\cos\)</span>’s power is odd, rewrite the integral as <span class="process-math">\(\int h(\sin(x))\cos(x)\,dx\)</span> and use <span class="process-math">\(u=\sin(x)\text{.}\)</span>
+</div></li>
+</ul></article><article class="activity project-like" id="TI3-3-9"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.3.8</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="TI3-3-9-1"><div class="para" id="TI3-3-9-1-1">Let’s consider <span class="process-math">\(\displaystyle\int \sin^2(x) \, dx\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="TI3-3-9-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="TI3-3-9-2-1-1">Use the fact that <span class="process-math">\(\sin^2(\theta)=\displaystyle\frac{1-\cos(2\theta)}{2}\)</span> to rewrite the integrand using the above identities as an integral involving <span class="process-math">\(\cos(2x)\text{.}\)</span>
+</div></article><article class="task exercise-like" id="TI3-3-9-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="TI3-3-9-3-1-1">Show that the integral evaluates to <span class="process-math">\(\frac{1}{2} \, x - \frac{1}{4} \, \sin\left(2 \, x\right)+C\text{.}\)</span>
+</div></article></article><article class="activity project-like" id="activity-TI3evenEvenRedux"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.3.9</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="activity-TI3evenEvenRedux-1"><div class="para" id="activity-TI3evenEvenRedux-1-1">Let’s consider <span class="process-math">\(\displaystyle\int \sin^2(x)\cos^2(x) \, dx\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="activity-TI3evenEvenRedux-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="activity-TI3evenEvenRedux-2-1-1">Use the fact that <span class="process-math">\(\cos^2(\theta)=\displaystyle\frac{1+\cos(2\theta)}{2}\)</span> and <span class="process-math">\(\sin^2(\theta)=\displaystyle\frac{1-\cos(2\theta)}{2}\)</span> to rewrite the integrand using the above identities as an integral involving <span class="process-math">\(\cos^2(2x)\text{.}\)</span>
+</div></article><article class="task exercise-like" id="activity-TI3evenEvenRedux-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="activity-TI3evenEvenRedux-3-1-1">Use the above identities to rewrite this new integrand as one involving <span class="process-math">\(\cos(4x)\text{.}\)</span>
+</div></article><article class="task exercise-like" id="activity-TI3evenEvenRedux-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="activity-TI3evenEvenRedux-4-1-1">Show that integral evaluates to <span class="process-math">\(\frac{1}{8} \, x - \frac{1}{32} \, \sin\left(4 \, x\right)+C\text{.}\)</span>
+</div></article></article><article class="activity project-like" id="activity-TI3evenEvenFluency"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.3.10</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="activity-TI3evenEvenFluency-1-1">
+<div class="para">Consider <span class="process-math">\(\displaystyle\int \sin^4(x)\cos^4(x) \, dx\text{.}\)</span>  Which would be the most useful way to rewrite the integral?</div>
+<ol class="upper-alpha">
+<li id="activity-TI3evenEvenFluency-1-1-2-1"><div class="para" id="p-derived-activity-TI3evenEvenFluency-1-1-2-1"><span class="process-math">\(\displaystyle \displaystyle\int (1-\cos^2(x))^2\cos^4(x) \, dx\)</span></div></li>
+<li id="activity-TI3evenEvenFluency-1-1-2-2"><div class="para" id="p-derived-activity-TI3evenEvenFluency-1-1-2-2"><span class="process-math">\(\displaystyle \displaystyle\int \sin^4(x)(1-\sin^2(x))^2 \, dx\)</span></div></li>
+<li id="activity-TI3evenEvenFluency-1-1-2-3"><div class="para" id="p-derived-activity-TI3evenEvenFluency-1-1-2-3"><span class="process-math">\(\displaystyle \displaystyle\int \left(\frac{1-\cos(2x)}{2}\right)^2\left(\frac{1+\cos(2x)}{2}\right)^2 \, dx\)</span></div></li>
+</ol>
+</div></article><article class="activity project-like" id="activity-TI3oddOddFluency"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.3.11</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="activity-TI3oddOddFluency-1-1">
+<div class="para">Consider <span class="process-math">\(\displaystyle\int \sin^3(x)\cos^5(x) \, dx\text{.}\)</span>  Which would be the most useful way to rewrite the integral?</div>
+<ol class="upper-alpha">
+<li id="activity-TI3oddOddFluency-1-1-2-1"><div class="para" id="p-derived-activity-TI3oddOddFluency-1-1-2-1"><span class="process-math">\(\displaystyle \displaystyle\int (1-\cos^2(x))\cos^5(x) \sin(x)\, dx\)</span></div></li>
+<li id="activity-TI3oddOddFluency-1-1-2-2"><div class="para" id="p-derived-activity-TI3oddOddFluency-1-1-2-2"><span class="process-math">\(\displaystyle \displaystyle\int \sin^3(x)\left(\frac{1+\cos(2x)}{2}\right)^2\cos(x) \, dx\)</span></div></li>
+<li id="activity-TI3oddOddFluency-1-1-2-3"><div class="para" id="p-derived-activity-TI3oddOddFluency-1-1-2-3"><span class="process-math">\(\displaystyle \displaystyle\int \sin^3(x)(1-\sin^2(x))^2\cos(x) \, dx\)</span></div></li>
+</ol>
+</div></article><article class="remark remark-like" id="TI3-3-13"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">5.3.12</span><span class="period">.</span>
+</h4>
+<div class="para" id="TI3-3-13-1-1">We might also use some other trigonometric identities to manipulate our integrands, listed in <a href="trig-table.html" class="internal" title="Appendix B: List of Trigonometric Identities">Appendix B</a>.</div></article><article class="activity project-like" id="activity-TI3productSumFlex"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">5.3.13</span><span class="period">.</span>
+</h4>
+<div class="introduction" id="activity-TI3productSumFlex-1"><div class="para" id="activity-TI3productSumFlex-1-1">Consider <span class="process-math">\(\displaystyle\int \sin(\theta)\sin(3\theta) \, d\theta\text{.}\)</span>
+</div></div>
+<article class="task exercise-like" id="activity-TI3productSumFlex-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="activity-TI3productSumFlex-2-1">Find an identity from <a href="trig-table.html" class="internal" title="Appendix B: List of Trigonometric Identities">Appendix B</a> which could be used to transform our integrand.</div></article><article class="task exercise-like" id="activity-TI3productSumFlex-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="activity-TI3productSumFlex-3-1">Rewrite the integrand using the selected identity.</div></article><article class="task exercise-like" id="activity-TI3productSumFlex-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="activity-TI3productSumFlex-4-1">Evaluate the integral.</div></article></article></section><section class="subsection" id="TI3-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.3.2</span><span class="space"> </span><span class="title">Videos</span>
+</h3>
+<figure class="figure figure-like" id="TI3-4-2"><div class="video-box" style="width: 100%;padding-top: 56.25%; margin-left: 0%; margin-right: 0%;"><iframe class="video" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/1iPsINVuHuQ?&amp;modestbranding=1&amp;rel=0" id="video-TI3"></iframe></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">107<span class="period">.</span></span><span class="space"> </span>Video: Compute integrals involving products of trigonometric functions</figcaption></figure></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="TI2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="TI4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>
