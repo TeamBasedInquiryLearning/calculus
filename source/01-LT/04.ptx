@@ -67,7 +67,7 @@
           </introduction>
         <task>
             <p>
-              For each of the values <m>a = -3</m>, <m>-2</m>, <m>-1</m>, <m>0</m>, <m>1</m>, <m>2</m>, <m>3</m>, determine whether the limit <m>\displaymath\lim_{x \to a} f(x)</m> exists. If the limit does not exist, be ready to explain why not.
+              For each of the values <m>a = -3</m>, <m>-2</m>, <m>-1</m>, <m>0</m>, <m>1</m>, <m>2</m>, <m>3</m>, determine whether the limit <m>\displaystyle\lim_{x \to a} f(x)</m> exists. If the limit does not exist, be ready to explain why not.
             </p>
         </task>
         <task>
@@ -77,7 +77,7 @@
          </task>
          <task>
             <p>
-              For each such <m>a</m> value, is <m>f(a)</m> equal to <m>\displaymath\lim_{x \to a} f(x)</m>?
+              For each such <m>a</m> value, is <m>f(a)</m> equal to <m>\displaystyle\lim_{x \to a} f(x)</m>?
             </p>
          </task>
          <task>
@@ -109,7 +109,7 @@
             </li>
             <li>
               <p>
-                <m>\displaymath\lim_{x \to a} f(x) = f(a)</m>.
+                <m>\displaystyle\lim_{x \to a} f(x) = f(a)</m>.
               </p>
             </li>
           </ol>
@@ -125,17 +125,17 @@
         <ol marker="A." cols="2">
           <li>
             <p>
-              <m>\displaymath\lim_{x \to -3^+} h(x)</m>
+              <m>\displaystyle\lim_{x \to -3^+} h(x)</m>
             </p>
           </li>
           <li>
             <p>
-              <m>\displaymath\lim_{x \to -3^-} h(x)</m>
+              <m>\displaystyle\lim_{x \to -3^-} h(x)</m>
             </p>
           </li>
           <li>
             <p>
-              <m>\displaymath\lim_{x \to -3} h(x)</m>
+              <m>\displaystyle\lim_{x \to -3} h(x)</m>
             </p>
           </li>
           <li>
@@ -161,7 +161,7 @@
       </introduction>
         <task>
             <p>
-              For which values of <m>a</m> do we have <m>\displaymath\lim_{x \to a^-} f(x) \ne \lim_{x \to a^+} f(x)</m>?
+              For which values of <m>a</m> do we have <m>\displaystyle\lim_{x \to a^-} f(x) \ne \lim_{x \to a^+} f(x)</m>?
             </p>
         </task>
         <task>
@@ -285,7 +285,7 @@
     <remark>
       <statement>
         <p>
-          When <m>\displaymath\lim_{x \to a} f(x)</m> exists but is not equal to <m>f(a)</m>, we say that <m>f</m> has a <term>removable discontinuity</term><idx>removable discontinuity</idx> at <m>x = a</m>. This is because if <m>f(a)</m> were redefined to be equal to <m>\displaymath\lim_{x \to a} f(x)</m>, the redefined function would be continuous at <m>x = a</m>, thus <q>removing</q> the discontinuity.
+          When <m>\displaystyle\lim_{x \to a} f(x)</m> exists but is not equal to <m>f(a)</m>, we say that <m>f</m> has a <term>removable discontinuity</term><idx>removable discontinuity</idx> at <m>x = a</m>. This is because if <m>f(a)</m> were redefined to be equal to <m>\displaystyle\lim_{x \to a} f(x)</m>, the redefined function would be continuous at <m>x = a</m>, thus <q>removing</q> the discontinuity.
         </p>
         <p>
           When the left and right limit exist separately, but are not equal, the discontinuity is not removable and is called a <term>jump discontinuity</term><idx>jump discontinuity</idx>.
