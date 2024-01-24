@@ -455,7 +455,7 @@ What is your best guess for the limit as <m> x</m> goes to <m>+ \infty </m> of t
 <!-- application activity  -->
 <note>
     <statement>
-    <p> An exponential function <m>P(t) = a \, b^t</m> exhibiting exponential decay will have the long term behavior <m>P(t) \to 0</m> as <m> t \to \infty</m>. If we shift the graph up by <m>c</m> units, we obtain the new function <m>Q(t) = a \, b^t + c</m>, with the long term behavior <m>\displaymath\lim_{t \to \infty} Q(t) = c</m>. A cooling object can be represented by the exponential decay model <m>Q(t) = a \, b^t + c</m>. </p>
+    <p> An exponential function <m>P(t) = a \, b^t</m> exhibiting exponential decay will have the long term behavior <m>P(t) \to 0</m> as <m> t \to \infty</m>. If we shift the graph up by <m>c</m> units, we obtain the new function <m>Q(t) = a \, b^t + c</m>, with the long term behavior <m>\displaystyle\lim_{t \to \infty} Q(t) = c</m>. A cooling object can be represented by the exponential decay model <m>Q(t) = a \, b^t + c</m>. </p>
 </statement> </note>
 
    <activity xml:id="app-cooling">
