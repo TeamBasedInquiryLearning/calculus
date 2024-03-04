@@ -28,7 +28,7 @@ To find the extreme values of a function we can consider all its <em>local extre
            
     <activity xml:id="activity-extrema-terminology">
         <introduction><p>We have encountered several terms recently, so we should make sure that we understand how they are related. Which of the following statements are true?</p></introduction>
-        <ol marker="A." cols="2">
+        <ol marker="A." >
                 <li><p>In a closed interval an endpoint is always a local extrema but it might or might not be a global extrema.</p></li>
                 <li><p>In a closed interval an endpoint is always a global extrema.</p></li>
             <li><p>A crtical point is always a local extrema but it might or might not be a global extrema.</p></li>
@@ -67,7 +67,7 @@ To find the extreme values of a function we can consider all its <em>local extre
       <task>
       <statement>
           <p>How would you describe the derivative of the function on each interval?</p>
-          <ol marker="A." cols="2">
+          <ol marker="A." >
               <li><p>For <m>x &lt; -2</m> we have <m>f'(x) &lt; 0</m>, then <m>f'(x) &lt; 0</m> on the interval <m>(-2,3)</m>, and on the interval <m>(3,5)</m> we have <m>f'(x) &gt; 0</m>.</p></li>
                <li><p>For <m>x &lt; -2</m> we have <m>f'(x) &gt; 0</m>, then <m>f'(x) &lt; 0</m> on the interval <m>(-2,3)</m>, and on the interval <m>(3,5)</m> we have <m>f'(x) </m> is undefined.</p></li>
                <li><p>For <m>x &lt; -2</m> we have <m>f'(x) &gt; 0</m>, then <m>f'(x) &lt; 0</m> on the interval <m>(-2,3)</m>, and on the interval <m>(3,5)</m> we have <m>f'(x)=0 </m>.</p></li>
