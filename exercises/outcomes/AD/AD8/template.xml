@@ -62,7 +62,7 @@ you are able to sell <m>{{base_sales}}</m> {{widget}}s each week when
 priced at <m>\${{base_cost}}</m> per {{widget}}. According to
 a survey of customers, decreasing this price by <m>\$1</m> will result
 in adding <m>{{change_in_sales}}</m> weekly sales; increasing by <m>\$1</m>
-will lose <m>{{change_in_sales}}</m> daily sales.
+will lose <m>{{change_in_sales}}</m> weekly sales.
 Your {{person}} is considering changing the price per {{widget}} to
 maximize revenue (units sold times price). Explain what this change
 in price should be, and why.
