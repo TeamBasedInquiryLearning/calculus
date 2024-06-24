@@ -129,7 +129,7 @@
                       <p>
                         <em>Quadratic Terms:</em> Let
                         <m>(x^2+bx+c)^n</m> divide <m>q(x)</m>,
-                        where <m>x^2+bx+c</m> is irreducable.
+                        where <m>x^2+bx+c</m> is irreducible.
                         Then the decomposition of <m>\frac{p(x)}{q(x)}</m> will contain the terms
                         <me>
                           \frac{B_1x+C_1}{x^2+bx+c}+\frac{B_2x+C_2}{(x^2+bx+c)^2}+\cdots+\frac{B_nx+C_n}{(x^2+bx+c)^n}
