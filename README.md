@@ -1,3 +1,7 @@
+# ARCHIVED
+
+This project is now part of <https://github.com/TeamBasedInquiryLearning/library>
+
 # Calculus for Team-Based Inquiry Learning
 
 Materials for teaching linear algebra using
